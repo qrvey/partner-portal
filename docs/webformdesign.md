@@ -1,5 +1,5 @@
 ---
-id: webformdesign test here
+id: webformdesign
 title: Web Forms Design Widget
 ---
 
