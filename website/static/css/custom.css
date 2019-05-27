@@ -1,9 +1,143 @@
 /* your custom css */
 
+.gray-background{
+    background: #FBFBFB;
+}
+
+.card-categories{
+    /* Rectangle: */
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 30px 30px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding:10px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.section-card-title .icon{
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+
+.flex-categories-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.main-description {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 0px;   
+    margin-top: 0px;    
+}
+.section-title {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0px;  
+    font-weight: 600;   
+  }
+  
+  .section-card-title {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0;
+    color: black;
+    margin-bottom: 0;
+    margin-top: 0px ;   
+    font-weight: 600; 
+  }
+  
+  .section-description {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0;
+    margin-top: 0px;    
+  }
+
+
+  div#home-wrapper {
+    padding-bottom: 0px;
+    }
+
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+    
+      
 }
 
 @media only screen and (min-width: 1024px) {
+    .main-title{
+        font-size: 45px;
+        line-height: 61px;
+        text-align: start;
+        margin-top: 100px;
+    }
+    .main-description {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 300;
+        text-align: start;
+    }
+    .section-title {
+        font-size: 36px;
+        line-height: 52px;
+        text-align: start;
+    }
+      
+      .section-card-title {
+        font-size: 20px;
+        line-height: 52px;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0px;    
+      }
+      
+      .section-description {
+        font-size: 19px;
+        line-height: 38px;
+      }
+
+      .flex-container{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      .flex-container .two-row{
+          max-width: 50%;
+      }
+      
+      
 }
 
 @media only screen and (max-width: 1023px) {

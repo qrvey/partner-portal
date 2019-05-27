@@ -13,33 +13,31 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
+
+
 class HomeSplash extends React.Component {
   render() {
     const {siteConfig, language = ''} = this.props;
     const {baseUrl, docsUrl} = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    //const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
+          <div className="wrapper homeWrapper" id="home-wrapper">
+          <TopFold/>
+          </div>
         </div>
       </div>
     );
 
+    /*
     const Logo = props => (
       <div className="projectLogo">
-        <img src={props.img_src} alt="Project Logo" />
+        <img src={siteConfig.baseUrl + 'img/docs-top-fold.jpg'} alt="Project Logo" />
       </div>
-    );
-
-    const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        {siteConfig.title}
-        <small>{siteConfig.tagline}</small>
-      </h2>
     );
 
     const PromoSection = props => (
@@ -49,6 +47,7 @@ class HomeSplash extends React.Component {
         </div>
       </div>
     );
+    
 
     const Button = props => (
       <div className="pluginWrapper buttonWrapper">
@@ -57,18 +56,25 @@ class HomeSplash extends React.Component {
         </a>
       </div>
     );
+    */
+
+    const TopFold = () => (
+      <div className="flex-container">
+      <div className="two-row">
+        <h2 className="main-title">
+        Begin your journey <br/>
+        with our Detailed <br/>
+        Documents
+        </h2>
+      </div>
+      <div className="two-row">
+        <img src={siteConfig.baseUrl + 'img/docs-top-fold.jpg'} alt="Project Logo"/>
+      </div>
+      </div>
+    );
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
-        <div className="inner">
-          <ProjectTitle siteConfig={siteConfig} />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
-          </PromoSection>
-        </div>
       </SplashContainer>
     );
   }
@@ -92,6 +98,7 @@ class Index extends React.Component {
       </Container>
     );
 
+    /*
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
@@ -128,7 +135,7 @@ class Index extends React.Component {
       </Block>
     );
 
-    const LearnHow = () => (
+        const LearnHow = () => (
       <Block background="light">
         {[
           {
@@ -189,16 +196,35 @@ class Index extends React.Component {
       );
     };
 
+    */
+
+    const Categories = () => {
+      const categories = [
+        {name:'Get Started', icon:'ready-icon', path:'/docs/webformdesign'},
+        {name:'Business Analytics', icon:'bunisses-icon'},
+        {name:'Data Router', icon:'data-icon'},
+        {name:'Admin', icon:'admin-icon'},
+        {name:'Embedding', icon:'embedding-icon'},
+        {name:'Setup & Deployments', icon:'cloud-icon'},
+      ];
+      const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
+      return  (<div className="flex-categories-container">
+        {categoriesElem}
+      </div>)
+    };
+
+    const Category = (props) => (
+      <a className="card-categories" href={props.value.path}>
+        <h1 className="section-card-title"><img className="icon" src={siteConfig.baseUrl + 'img/categories/' + props.value.icon + '.svg'}/>{props.value.name}</h1>
+      </a>
+    );
+    
+
     return (
-      <div>
+      <div className="gray-background" onClick={()=> alert("Hello! I am an alert box!!")}>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
-          <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
+        <div className="mainContainer" id="main-container">
+        <Categories/>
         </div>
       </div>
     );

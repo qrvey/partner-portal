@@ -1,7 +1,10 @@
 {
   "docs": {
-    "Widgets List": [
+    "Getting Started": [
       "webformdesign",
+      "summaryview"
+    ],
+    "Installation": [
       "summaryview"
     ]
   }
