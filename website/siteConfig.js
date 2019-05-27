@@ -38,7 +38,9 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'webformdesign', label: 'Docs'}
+    {doc: 'webformdesign', label: 'Admin'},
+    {doc: 'webformdesign', label: 'Embedding'},
+    {doc: 'webformdesign', label: 'Setup & Deployments'},
   ],
 
   // If you have users set above, you add it here:
@@ -88,6 +90,7 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/Qrvey.png',
   twitterImage: 'img/Qrvey.png',
+  docsSideNavCollapsible: true
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,

@@ -4,5 +4,38 @@
       "webformdesign",
       "summaryview"
     ]
+  },
+  "api" : {
+    "API" : ["apiTest"]
+  },
+  "datarouter" : {
+    "DataRouter" : ["drTest"]
+  },
+  "get-started/get-started-intro": {
+    "Get Started": [
+      "get-started/get-started-intro",
+      "get-started/get-started-setup-deployments",
+      "get-started/get-started-embedding-platform-components",
+      {
+        "type": "subcategory",
+        "label": "Platform Components",
+        "ids": [
+          "get-started/platform-components/get-started-platform-components-admin",
+          "get-started/platform-components/get-started-platform-components-data-router",
+          "get-started/platform-components/get-started-platform-components-business-analytics",
+          "get-started/platform-components/get-started-platform-components-embedding"
+        ]
+      }
+    ]
+  },
+  "business-analytics/business-analytics-doc": {
+    "Business Analytics": [
+      "business-analytics/business-analytics-doc"
+    ]
+  },
+  "data-router/data-router-intro": {
+    "Data Router": [
+      "data-router/data-router-intro"
+    ]
   }
 }
