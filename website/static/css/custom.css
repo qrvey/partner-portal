@@ -1,5 +1,9 @@
 /* your custom css */
 
+.fixedHeaderContainer{
+    height: 60px;
+}
+
 .gray-background{
     background: #FBFBFB;
 }
@@ -93,7 +97,6 @@
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
     
-      
 }
 
 @media only screen and (min-width: 1024px) {
@@ -115,32 +118,41 @@
         text-align: start;
     }
       
-      .section-card-title {
+    .section-card-title {
         font-size: 20px;
         line-height: 52px;
         text-align: center;
         margin-bottom: 0;
         margin-top: 0px;    
-      }
+    }
       
-      .section-description {
+    .section-description {
         font-size: 19px;
         line-height: 38px;
-      }
+    }
 
-      .flex-container{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-      }
-      .flex-container .two-row{
-          max-width: 50%;
-      }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-container .two-row{
+        max-width: 50%;
+    }
+
+    .fixedHeaderContainer{
+        height: 80px;
+        padding-top: 20px;
+    }
       
       
 }
 
 @media only screen and (max-width: 1023px) {
+    .top-fold-image{
+        max-width: 600px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
