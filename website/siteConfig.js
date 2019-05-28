@@ -21,7 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Qrvey Docs V1', // Title for your website.
+  homeTitle:'Begin your journey with our Detailed Documents',
+  title: '', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
