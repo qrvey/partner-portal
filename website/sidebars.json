@@ -12,21 +12,7 @@
     "DataRouter" : ["drTest"]
   },
   "get-started/get-started-intro": {
-    "Get Started": [
-      "get-started/get-started-intro",
-      "get-started/get-started-setup-deployments",
-      "get-started/get-started-embedding-platform-components",
-      {
-        "type": "subcategory",
-        "label": "Platform Components",
-        "ids": [
-          "get-started/platform-components/get-started-platform-components-admin",
-          "get-started/platform-components/get-started-platform-components-data-router",
-          "get-started/platform-components/get-started-platform-components-business-analytics",
-          "get-started/platform-components/get-started-platform-components-embedding"
-        ]
-      }
-    ]
+    "Get Started": []
   },
   "business-analytics/business-analytics-doc": {
     "Business Analytics": [
