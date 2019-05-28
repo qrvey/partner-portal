@@ -66,6 +66,9 @@ class HomeSplash extends React.Component {
             <Button href={docUrl('get-started/get-started-intro')}>Get Started</Button>
             <Button href={docUrl('business-analytics/business-analytics-doc')}>Business Analytics</Button>
             <Button href={docUrl('data-router/data-router-intro')}>Data Router</Button>
+            <Button href={docUrl('embedding/embedding-intro')}>Embedding</Button>
+            <Button href={docUrl('admin/admin-intro')}>Admin</Button>
+            <Button href={docUrl('setup-deployments/setup-deployments-getting-started')}>Setup & Deployments</Button>
           </PromoSection>
         </div>
       </SplashContainer>

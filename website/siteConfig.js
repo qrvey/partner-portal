@@ -38,9 +38,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'webformdesign', label: 'Admin'},
-    {doc: 'webformdesign', label: 'Embedding'},
-    {doc: 'webformdesign', label: 'Setup & Deployments'},
+    {
+      href: 'https://qrvey.com/why',
+      label: 'About',
+    }
   ],
 
   // If you have users set above, you add it here:
@@ -80,7 +81,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ['https://buttons.github.io/buttons.js','/js/custom.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

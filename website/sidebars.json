@@ -37,5 +37,45 @@
     "Data Router": [
       "data-router/data-router-intro"
     ]
+  },
+  "embedding/embedding-intro": {
+    "Embedding": [
+      "embedding/embedding-intro",
+      {
+        "type": "subcategory",
+        "label": "Widgets",
+        "ids": [
+          "embedding/widgets/embedding-widgets-getting-started"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "API",
+        "ids": [
+          "embedding/api/embedding-api-getting-started"
+        ]
+      }
+    ]
+  },
+  "admin/admin-intro": {
+    "Admin": [
+      "admin/admin-intro",
+      "admin/admin-managing-users",
+      {
+        "type": "subcategory",
+        "label": "Sections",
+        "ids": [
+          "admin/sections/admin-sections-platform",
+          "admin/sections/admin-sections-deployments",
+          "admin/sections/admin-sections-data-router"
+        ]
+      }
+    ]
+  },
+  "setup-deployments/setup-deployments-getting-started": {
+    "Setup & Deployments": [
+      "setup-deployments/setup-deployments-getting-started",
+      "setup-deployments/setup-deployments-setup"
+    ]
   }
 }

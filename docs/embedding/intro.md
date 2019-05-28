@@ -1,7 +1,7 @@
 ---
-id: admin-intro
+id: embedding-intro
 title: Introduction
 sidebar_label: Introduction
 ---
 
-Admin - Intro copy.
+Embedding Intro copy.
