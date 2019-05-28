@@ -23,9 +23,9 @@ const users = [
 const siteConfig = {
   homeTitle:'Begin your journey with our Detailed Documents',
   title: '', // Title for your website.
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  tagline: 'Qrvey Documentation',
+  url: 'http://partners-staging.qrvey.com.s3-website-us-east-1.amazonaws.com', // Your website URL
+  baseUrl: '/docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -82,7 +82,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js','/js/custom.js'],
+  scripts: ['https://buttons.github.io/buttons.js','/docs/js/custom.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

@@ -37,64 +37,41 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('get-started/get-started-intro', this.props.language)}>
+              Getting Started
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('business-analytics/business-analytics-doc', this.props.language)}>
+              Business Analytics
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.docUrl('data-router/data-router-intro', this.props.language)}>
+              Data Router
+            </a>
+            <a href={this.docUrl('admin/admin-intro', this.props.language)}>
+              Admin
+            </a>
+            <a href={this.docUrl('setup-deployments/setup-deployments-getting-started', this.props.language)}>
+              Setup & Deployment
             </a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
+            <h5>Embedding & Samples</h5>
+            <a href={this.docUrl('embedding/embedding-intro', this.props.language)}>
+              Embedding
             </a>
-            <a
-              href="http://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
+            <a href={this.docUrl('embedding/widgets/embedding-widgets-getting-started', this.props.language)}>
+              Widgets
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
+            <a href={this.docUrl('embedding/api/embedding-api-getting-started', this.props.language)}>
+              API
             </a>
+     
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
-              className="github-button"
-              href={this.props.config.repoUrl}
-              data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
-              data-show-count="true"
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
-              Star
-            </a>
+            <a href="https://blog.qrvey.com/" target="blank">Blog</a>
+            <a href="https://qrvey.com/contact/" target="blank">Contact Us</a>
           </div>
         </section>
-
-        <a
-          href="https://opensource.facebook.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className="fbOpenSource">
-          <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
-            alt="Facebook Open Source"
-            width="170"
-            height="45"
-          />
-        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );

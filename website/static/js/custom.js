@@ -41,8 +41,8 @@ function visitLog(){
 }
 
 // Checking Cookie
-if( getCookie('qrveyuser') ){
-    console.log("Yes! Logged In!");
+if( getCookie('partners_user') ){
+    console.log("Yes! Logged In!", getCookie('partners_user'));
     visitLog();
 }else{
     console.log("Not Logged!");
