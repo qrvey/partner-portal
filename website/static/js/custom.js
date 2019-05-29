@@ -49,5 +49,5 @@ if( getCookie('partners_user') ){
     // setCookie('qrveyuser','qrveyuseridhere',365);
     // console.log("Cookie created", getCookie('qrveyuser') )
     // debugger;
-    // window.location.href = 'https://qrvey.com';
+    // window.location.href = 'http://partners-staging.qrvey.com.s3-website-us-east-1.amazonaws.com';
 }
