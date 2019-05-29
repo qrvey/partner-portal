@@ -8,6 +8,8 @@ let ipAddress = '';
 let title = '';
 let elementId = currentPage.length > 1 ? currentPage.substring(1, currentPage.length) : currentPage;
 
+const PAGE = 'page_docs_';
+
 
 window.onload = () => {
     title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
@@ -62,22 +64,26 @@ function postActivy(){
         contentType: CONTENT_TYPE, 
         date: new Date(),
     };
+    
+
     fetch(datarouter.url, {
         headers:headers,
-        method:'post',
-        body:[
-            { metadataId:datarouter.metadataId,
-                data:[{newActivity}] 
-            }
-        ]
+        method:'POST',
+        body:JSON.stringify([{
+            metadataId: datarouter.metadataId,
+            data: [{
+                newActivity
+            }]
+        }])
     })
     .then(response => response.json())
     .then(
         response => {
             console.log(response);
-            setCookie(currentPage, currentPage, 0.5);
+            setCookie(PAGE + currentPage, currentPage, 0.5);
         }
     ).catch(error => console.error('We could not find ip address',error));
+    
 
 }
 
@@ -98,9 +104,9 @@ function deleteCooke(cname) {
 }
 
 setTimeout( ()=> {
-    if( getCookie(COOKIE_USER)){
+    if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){
         postActivy();
-    }else{
-        console.log("Not Logged!");
+    } else {
+        console.log('Activity already sent it');
     }
 }, 5000);
