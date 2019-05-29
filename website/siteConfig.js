@@ -40,13 +40,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      href: 'http://localhost:4200/training/',
+      href: '/training',
       label: 'Training Sessions',
     },
-    {
-      href: 'https://qrvey.com/company',
-      label: 'About',
-    }
+
   ],
 
   // If you have users set above, you add it here:

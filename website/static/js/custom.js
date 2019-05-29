@@ -7,13 +7,21 @@ const CONTENT_TYPE = 'docs';
 let ipAddress = '';
 let title = '';
 let elementId = currentPage.length > 1 ? currentPage.substring(1, currentPage.length) : currentPage;
+let currentUser = null;
 
 const PAGE = 'page_docs_';
 
 
 window.onload = () => {
     title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+    if(getCookie(COOKIE_USER)){
+        currentUser = JSON.parse(getCookie(COOKIE_USER));
+        //insertChildToNav();
+    } else {
+        window.location.href = '/';
+    }
 }
+
 
 const datarouter = {
     url: 'https://stgdatarouter.qrvey.com/data?saveUserLog=false&returnAllLog=true',
@@ -26,7 +34,7 @@ const headers = {
     'x-api-key': datarouter['x-api-key']
 }
 
-let currentUser = getCookie(COOKIE_USER) ? JSON.parse(getCookie(COOKIE_USER)) : null;
+
 
 // Cookie check function
 function getCookie(cname){
@@ -102,6 +110,25 @@ function postActivy(){
 function deleteCooke(cname) {
     document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
+
+function logOut(){
+    deleteCooke(COOKIE_USER);
+    window.location.href = '/auth/login';
+}
+
+function insertChildToNav(){
+    let navBar = document.querySelector('ul.nav-site.nav-site-internal');
+    const nodeTagLi = document.createElement("LI");                 // Create a <li> node
+    const nodeTagA = document.createElement("A");                 // Create a <li> node
+    const textnodeLi = document.createTextNode("Log out");         // Create a text node
+    nodeTagA.classList = 'primary-button';
+    nodeTagLi.onclick = 'logOut()';
+    nodeTagA.appendChild(textnodeLi);
+    nodeTagLi.appendChild(nodeTagA);                              // Append the text to <li>
+    navBar.appendChild(nodeTagLi);     // Append <li> to <ul> 
+}
+
+
 
 setTimeout( ()=> {
     if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){

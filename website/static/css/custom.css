@@ -100,6 +100,33 @@
     font-weight: 600;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
+
+  .primary-button {
+    height: 40px;
+    background: #F57C41;
+    border-radius: 4px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: auto;
+    max-width: 300px;
+    padding: 5px 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .primary-button:hover{
+    text-decoration: none;
+    color: white;
+    background: #F57C41;
+  }
+  .primary-button:focus{
+    outline:0; 
+  }
   
 
 
@@ -151,11 +178,16 @@
 
     .fixedHeaderContainer{
         height: 80px;
-        padding-top: 20px;
+        padding-top: 18px;
     }
       
     ul.nav-site.nav-site-internal li a{
-        padding: 0 30px;
+        padding: 5px 30px 5px;
+        margin-top: 5px;
+    }
+
+    .nav-button{
+
     }
       
 }
@@ -168,8 +200,17 @@
 
 @media only screen and (min-width: 1160px) {
     .headerWrapper{
-        max-width: 1160px;
+        max-width: 1160px !important;
         padding: 0 0;
+    }
+    .headerWrapper header a{
+        height: 40px;
+    }
+    .fixedHeaderContainer header img {
+        height: 100%;
+        margin-right: 0px; 
+        height: 40px;
+        width: 109px;
     }
 }
 
