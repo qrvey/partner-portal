@@ -14,20 +14,6 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class Index extends React.Component {
-  
-
-  componentDidMount(){
-    this.insertItemToNav();
-  }
-
-  insertItemToNav(){
-    console.log('hola');
-    let navbar = document.querySelector('.slidingNav ul');
-    const newItem = document.createElement("LI");
-    const textnode = document.createTextNode("Training");
-    newItem.appendChild(textnode);
-    navbar.insertBefore(newItem, list.childNodes[0]);
-  }
 
   render() {
     const {config: siteConfig, language = ''} = this.props;
@@ -40,6 +26,7 @@ class Index extends React.Component {
         {name:'Admin', icon:'admin-icon', path:'/docs/admin/admin-intro'},
         {name:'Embedding', icon:'embedding-icon', path:'/docs/embedding/embedding-intro'},
         {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-deployments-getting-started'},
+
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -84,7 +71,9 @@ class Index extends React.Component {
       <div className="gray-background" onClick={()=> alert("Hello! I am an alert box!!")}>
         <SplashContainer siteConfig={siteConfig} language={language} />
         <div className="mainContainer" id="main-container">
-        <Categories/>
+        <div className="wrapper">
+          <Categories/>
+        </div>
         </div>
       </div>
     );

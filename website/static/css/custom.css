@@ -92,7 +92,15 @@
 
   div#home-wrapper {
     padding-bottom: 0px;
-    }
+  }
+  
+
+  ul.nav-site.nav-site-internal li a{
+    color: white;
+    font-weight: 600;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  
 
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
@@ -146,12 +154,22 @@
         padding-top: 20px;
     }
       
+    ul.nav-site.nav-site-internal li a{
+        padding: 0 30px;
+    }
       
 }
 
 @media only screen and (max-width: 1023px) {
     .top-fold-image{
         max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .headerWrapper{
+        max-width: 1160px;
+        padding: 0 0;
     }
 }
 

@@ -40,7 +40,11 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      href: 'https://qrvey.com/why',
+      href: 'http://localhost:4200/training/',
+      label: 'Training Sessions',
+    },
+    {
+      href: 'https://qrvey.com/company',
       label: 'About',
     }
   ],
@@ -55,7 +59,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#001f52',
+    primaryColor: '#1C3E75',
     secondaryColor: '#2d476c',
   },
 
