@@ -121,8 +121,8 @@
 
   .primary-button:hover{
     text-decoration: none;
-    color: white;
-    background: #F57C41;
+    color: white !important;
+    background: #F57C41 !important;
   }
   .primary-button:focus{
     outline:0; 
