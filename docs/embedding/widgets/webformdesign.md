@@ -2,12 +2,70 @@
 id: webformdesign
 title: Web Forms Design Widget
 ---
+*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas lacinia elit, a vestibulum neque facilisis id. Curabitur pellentesque ipsum eget tellus laoreet mollis. Pellentesque pellentesque lorem lacus, vitae aliquam ipsum lacinia id.*
 
-The JSON Reference is designed to document the structure of the JSON configuration object to configure the  Webform Design Widget.
+## Widget Overview
+*Maecenas ut purus vehicula, rhoncus odio ac, accumsan purus. Maecenas lacinia magna id ligula laoreet cursus. Vivamus varius turpis eu diam lacinia rutrum. Praesent blandit efficitur vehicula. Nullam interdum turpis sit amet quam vulputate scelerisque. Praesent sit amet pharetra massa, vel pulvinar dolor.*
 
-## JSON object overview
+## Samples
+*Cras ac erat tempor, tincidunt massa in, porttitor erat. Sed sollicitudin leo vitae mauris tincidunt, eget pellentesque lorem molestie. Quisque id consectetur mi.* 
 
-The Schema object has the following properties defined below:
+### Form Sample
+In the following example, we have the design widget configuration object for a form, in which the creation of intro and end page have been disabled along with the options to duplicate and delete questions. Also some question types can't be added like look up and image upload. Note how we only use the admin app configuration object for form as the qrvey type we set is that, and the field types and options not included are set as enabled.
+
+```
+{
+"api_key": "YOURAPIKEYGOESHERE",
+"app_id": "DewFuKJ",
+"domain": "https://qrvey.com",
+"qrvey_id": "42cnM4T",
+"user_id": "fD6Jl43",
+"app_type": "FORM",
+    "adminApp": {
+        "Form": {
+            "General": [{
+                    "name": "Intro Page",
+                    "status": false
+                },
+                {
+                    "name": "End Page",
+                    "status": false
+                }
+            ],
+            "Field Types": [{
+                    "name": "Image Upload",
+                    "status": false
+                },
+                {
+                    "name": "Lookup",
+                    "status": false
+                }
+            ],
+            "Field Options": [{
+                    "name": "Deleting",
+                    "status": false
+                },
+                {
+                    "name": "Duplicate",
+                    "status": false
+                }
+            ]
+        }
+    }
+}
+```
+**Note:** all optionals fields omitted will be interpreted by the system as true, you can just use the fields that you want to declare false.
+
+### Security
+*Quisque varius neque id viverra imperdiet. Sed mattis ac tellus ac fringilla. Integer eu elementum mauris. Curabitur pretium risus erat, quis tincidunt metus cursus et. Proin ex leo, efficitur in massa at, posuere aliquam sem. Integer ultricies id lectus id vestibulum. Donec id lorem nec eros aliquet dapibus id sit amet diam.*
+
+### Customize
+*Quisque varius neque id viverra imperdiet. Sed mattis ac tellus ac fringilla. Integer eu elementum mauris. Curabitur pretium risus erat, quis tincidunt metus cursus et. Proin ex leo, efficitur in massa at, posuere aliquam sem. Integer ultricies id lectus id vestibulum. Donec id lorem nec eros aliquet dapibus id sit amet diam.*
+
+## Schema Reference
+The JSON Reference is designed to document the structure of the JSON configuration object to configure the Webform Design Widget. The Schema object has the following properties defined below:
+
+### JSON object overview
 
 ```
 {
@@ -366,8 +424,7 @@ The Schema object has the following properties defined below:
     }
 }
 ```
-## Properties and Values for Each Object
-
+### Properties and Values for Each Object
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the design widget.
 
 | **Property** | **Value** | **Required** |
@@ -400,51 +457,3 @@ Each object is defined by common properties. The table below provides general in
 | "General" | Object array, this array contains objects with 2 properties: "name" and "status", each object represent a general feature of the webform."name" is a string referring to the name of the feature we are configuring."status" is a boolean referring to to the status of the feature, in which true means enabled and false disabled.If a feature is missing in the array it will be taken as enabled. The features that can be configured are:-"Name": this is the name of the webform. -"Description": this is the description of the webform. -"Text": this feature refers to the option to add texts elements in the webform.. -"Intro Page": this is the intro page of the webform.  -"End Page": this is the end page of the webform.  -"Favorite Fields": this is the option to add questions from the ones saved as favorites. | No |
 | "Field Types" | Object array, this array contains objects with 2 properties: "name" and "status", each object represent a type  of question that can be created in the  webform."name" is a string referring to the name of the question type we are configuring."status" is a boolean referring to to the status of the question type, in which true means enabled and false disabled.At least 1 question type must be enabled, if any question type is missing in the array  it will be assumed as enabled. The available question types for Survey are:-"Address (Global)"-"Address (US)"-"Date"-"Digital Signature"-"Dropdown"-"Email"-"Expression"-"Image"-"Image Upload"-"Lookup"-"Multiple Choice"-"Yes/No",-"Name"-"Numeric"-"Password"-"Phone Number"-"Ranking"-"Rating"-"Slide Bar"-"Text (Long)"-"Text (Short)"  |
 | "Field Options" | Object array, this array contains objects with 2 properties: "name" and "status", each object represent a feature or action related to the questions such as deleting or duplicating. "name" is a string referring to the name of the feature we are configuring."status" is a boolean referring to to the status of the feature, in which true means enabled and false disabled. The available field options for Survey are:-"Branching": this refers to the creation of branches. -"Drag and drop": this refers to the action changing the order of questions through dragging. -"Duplicate": this refers to the option to duplicate a question. -"Deleting": this refers to the option of deleting questions  |
-
-## Schema Property Combination Title
-
-In the following example, we have the design widget configuration object for a form, in which the creation of intro and end page have been disabled along with the options to duplicate and delete questions. Also some question types can&#39;t be added like look up and image upload. Note how we only use the admin app configuration object for form as the qrvey type we set is that, and the field types and options not included are set as enabled.
-
-```
-{
-"api_key": "YOURAPIKEYGOESHERE",
-"app_id": "DewFuKJ",
-"domain": "https://qrvey.com",
-"qrvey_id": "42cnM4T",
-"user_id": "fD6Jl43",
-"app_type": "FORM",
-    "adminApp": {
-        "Form": {
-            "General": [{
-                    "name": "Intro Page",
-                    "status": false
-                },
-                {
-                    "name": "End Page",
-                    "status": false
-                }
-            ],
-            "Field Types": [{
-                    "name": "Image Upload",
-                    "status": false
-                },
-                {
-                    "name": "Lookup",
-                    "status": false
-                }
-            ],
-            "Field Options": [{
-                    "name": "Deleting",
-                    "status": false
-                },
-                {
-                    "name": "Duplicate",
-                    "status": false
-                }
-            ]
-        }
-    }
-}
-```
-
-**Note:** all optionals fields omitted will be interpreted by the system as true, you can just use the fields that you want to declare false.
