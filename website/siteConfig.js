@@ -25,7 +25,7 @@ const siteConfig = {
   title: '', // Title for your website.
   tagline: 'Qrvey Documentation',
   url: 'http://partners-staging.qrvey.com.s3-website-us-east-1.amazonaws.com', // Your website URL
-  baseUrl: '/docs/', // Base URL for your project */
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
