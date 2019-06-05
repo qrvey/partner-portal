@@ -1,5 +1,5 @@
 ---
-id: embedding-api-workflows
+id: api-workflows
 title: API - Worflows
 sidebar_label: Workflows
 ---

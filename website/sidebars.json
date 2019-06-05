@@ -1,50 +1,33 @@
 {
-  "docs": {
-    "Widgets List": [
-      "webformdesign",
-      "summaryview"
-    ]
-  },
-  "api" : {
-    "API" : ["apiTest"]
-  },
-  "datarouter" : {
-    "DataRouter" : ["drTest"]
-  },
-  "get-started/get-started-intro": {
-    "Get Started": []
-  },
-  "business-analytics/business-analytics-doc": {
+  "get-started": {
+    "Get Started": [
+      "get-started/get-started-intro"
+    ],
     "Business Analytics": [
       "business-analytics/business-analytics-doc"
-    ]
-  },
-  "data-router/data-router-intro": {
+    ],
     "Data Router": [
       "data-router/data-router-intro"
-    ]
-  },
-  "embedding/embedding-intro": {
+    ],
     "Embedding": [
+      "embedding/embedding-intro",
       {
         "type": "subcategory",
         "label": "Widgets",
         "ids": [
-          "embedding/embedding-intro",
-          "embedding/widgets/webformdesign"
+          "embedding/widgets/widget-intro",
+          "embedding/widgets/widget-webformdesign"
         ]
       },
       {
         "type": "subcategory",
         "label": "API",
         "ids": [
-          "embedding/api/embedding-api-getting-started",
-          "embedding/api/embedding-api-workflows"
+          "embedding/api/api-intro",
+          "embedding/api/api-workflows"
         ]
       }
-    ]
-  },
-  "admin/admin-intro": {
+    ],
     "Admin": [
       "admin/admin-intro",
       "admin/admin-managing-users",
@@ -57,9 +40,7 @@
           "admin/sections/admin-sections-data-router"
         ]
       }
-    ]
-  },
-  "setup-deployments/setup-deployments-getting-started": {
+    ],
     "Setup & Deployments": [
       "setup-deployments/setup-deployments-getting-started",
       "setup-deployments/setup-deployments-setup"

@@ -1,5 +1,5 @@
 ---
-id: embedding-api-getting-started
+id: api-intro
 title: Qrvey API Quick Start Guide
 sidebar_label: Quick Start Guide
 ---

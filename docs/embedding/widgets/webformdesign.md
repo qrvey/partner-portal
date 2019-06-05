@@ -1,5 +1,5 @@
 ---
-id: webformdesign
+id: widget-webformdesign
 title: Web Forms Design Widget
 ---
 *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas lacinia elit, a vestibulum neque facilisis id. Curabitur pellentesque ipsum eget tellus laoreet mollis. Pellentesque pellentesque lorem lacus, vitae aliquam ipsum lacinia id.*
