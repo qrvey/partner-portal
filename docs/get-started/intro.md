@@ -1,10 +1,8 @@
 ---
 id: get-started-intro
-title: Get Started
-sidebar_label: Introduction
+title: Overview
+sidebar_label: Overview
 ---
-
-## Overview
 
 Qrvey is an all-in-one, self-service data platform that combines analytics, data collection, and automation  technologies. 
 

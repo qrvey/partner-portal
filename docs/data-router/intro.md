@@ -4,4 +4,18 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-Data Router Intro copy.
+Qrvey DataRouter provides developers with a means for loading their data from a variety of different sources into Qrvey’s high performance, ElasticSearch backend. DataRouter provides an API that can be used for creating metadata data mapping and custom transformations, live update data push, and large volume historical data loads.   It is designed to scale for all types of data volume and velocity scenarios.
+
+## Versioning
+To minimize any compatibility issues, the DataRouter API is versioned, so the API you begin working with does not need to be changed unless you decide to upgrade to a newer version. We encourage developers to upgrade, however, as we are rapidly adding new features and functionality.
+
+## API Key
+Just like the Qrvey developer API, all DataRouter API requests will require an API key.  This is a separate key from other APIs, so you will need to use your DataRouter-specific API key to work with DataRouter.   If you would like to obtain a DataRouter API key, please contact your Qrvey account representative or send an email to help@qrvey.com.
+
+## Getting Started
+In order to make DataRouter API requests, you will need your:
+
+* Base DataRouter URL - where all your DataRouter API calls will be made
+* DataRouter API-key - your unique key that must be a part of every DataRouter API call
+
+> Note: Be sure to keep this information private and do not post it publicly in your code.
