@@ -13,13 +13,18 @@ const PAGE = 'page_docs_';
 
 window.onload = () => {
     title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    if(getCookie(COOKIE_USER)){
-        currentUser = JSON.parse(getCookie(COOKIE_USER));
+    document.querySelector('.headerWrapper header a').href =  '/';
+    if(currentUser){
         insertChildToNav();
-    } else {
-        window.location.href = '/auth/login';
-    }
+        highlightDocNavItem();
+    } 
    
+}
+
+if(getCookie(COOKIE_USER)){
+    currentUser = JSON.parse(getCookie(COOKIE_USER));
+} else {
+    window.location.href = '/auth/login';
 }
 
 /*
@@ -132,13 +137,22 @@ function insertChildToNav(){
     let navBar = document.querySelector('ul.nav-site.nav-site-internal');
     const nodeTagLi = document.createElement("LI");                 // Create a <li> node
     const nodeTagA = document.createElement("A");                 // Create a <li> node
-    const textnodeLi = document.createTextNode("Log out");         // Create a text node
+    const textnodeLi = document.createTextNode("Log Out");         // Create a text node
     nodeTagA.classList = 'primary-button';
     nodeTagLi.onclick =  logOut;
     nodeTagA.appendChild(textnodeLi);
     nodeTagLi.appendChild(nodeTagA);                              // Append the text to <li>
     navBar.appendChild(nodeTagLi);     // Append <li> to <ul> 
 }
+
+function highlightDocNavItem(){
+   const navItems =  document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+   navItems.forEach(element => {
+        if(element.innerText == 'Documents'){
+            element.classList.add('primary-color');
+        }
+   });
+};
 
 setTimeout( ()=> {
     if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){

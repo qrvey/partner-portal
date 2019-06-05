@@ -127,6 +127,15 @@
   .primary-button:focus{
     outline:0; 
   }
+
+  .docMainWrapper{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+.primary-color {
+    color: #F57C41 !important;
+}
   
 
 
@@ -134,12 +143,50 @@
     
 }
 
+@media only screen and (min-width:768px){
+    .docMainWrapper{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .headerWrapper{
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 1px;
+    }
+
+    ul.nav-site.nav-site-internal li .primary-button{
+        margin-left:30px;
+        width: 140px;
+        font-size: 14px;
+    }
+
+    .headerWrapper header a{
+        height: 40px;
+    }
+    .fixedHeaderContainer header img {
+        height: 100%;
+        margin-right: 0px; 
+        height: 40px;
+        width: 109px;
+    }
+
+    div#home-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    
+    
+}
+
 @media only screen and (min-width: 1024px) {
+    
     .main-title{
         font-size: 45px;
         line-height: 61px;
         text-align: start;
-        margin-top: 100px;
+        margin-top: 60px;
     }
     .main-description {
         font-size: 30px;
@@ -183,39 +230,58 @@
       
     ul.nav-site.nav-site-internal li a{
         padding: 5px 30px 5px;
-        margin-top: 5px;
+        margin-top: 1px;
     }
 
-    .nav-button{
 
+    .top-fold-image{
+        max-width: 100%;
     }
+    
+
       
 }
 
 @media only screen and (max-width: 1023px) {
-    .top-fold-image{
-        max-width: 600px;
-    }
 }
 
 @media only screen and (min-width: 1160px) {
+    .docMainWrapper{
+        max-width: 1160px !important;
+        margin: auto;
+        padding-left: 0px;
+        padding-right:0px;
+        padding-top: 20px;
+    }
     .headerWrapper{
         max-width: 1160px !important;
         padding: 0 0;
     }
-    .headerWrapper header a{
-        height: 40px;
+
+    .main-title{
+        margin-top: 100px;
     }
-    .fixedHeaderContainer header img {
-        height: 100%;
-        margin-right: 0px; 
-        height: 40px;
-        width: 109px;
+
+    ul.nav-site.nav-site-internal li .primary-button{
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        margin-left:30px;
+        margin-top: 2px;
     }
 }
 
 @media only screen and (min-width: 1400px) {
+    
 }
 
 @media only screen and (min-width: 1500px) {
+    .headerWrapper{
+        max-width: 1400px !important;
+        padding: 0 0;
+    }
+    .docMainWrapper{
+        max-width: 1400px !important;
+        padding: 0 0;
+    }
 }

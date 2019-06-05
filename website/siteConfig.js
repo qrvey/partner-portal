@@ -43,7 +43,10 @@ const siteConfig = {
       href: '/training',
       label: 'Training Sessions',
     },
-
+    {
+      href: '/docs',
+      label: 'Documents',
+    },
   ],
 
   // If you have users set above, you add it here:
