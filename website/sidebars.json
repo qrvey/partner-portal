@@ -26,11 +26,11 @@
   },
   "embedding/embedding-intro": {
     "Embedding": [
-      "embedding/embedding-intro",
       {
         "type": "subcategory",
         "label": "Widgets",
         "ids": [
+          "embedding/embedding-intro",
           "embedding/widgets/webformdesign"
         ]
       },
@@ -38,7 +38,8 @@
         "type": "subcategory",
         "label": "API",
         "ids": [
-          "embedding/api/embedding-api-getting-started"
+          "embedding/api/embedding-api-getting-started",
+          "embedding/api/embedding-api-workflows"
         ]
       }
     ]
