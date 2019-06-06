@@ -11,9 +11,8 @@ title: Report Builder Widget
 ## Samples
 *Cras ac erat tempor, tincidunt massa in, porttitor erat. Sed sollicitudin leo vitae mauris tincidunt, eget pellentesque lorem molestie. Quisque id consectetur mi.* 
 
-# Report Builder Widget
+## How to use it?
 
-How to use it?
 
 1. Put the script tag of the given launcher url in your website. For example:
 
