@@ -1,10 +1,11 @@
 ---
 id: data-router-intro
-title: Introduction
+title: Data Router Introduction
 sidebar_label: Introduction
 ---
+<div style="text-align: justify">
 
-Qrvey DataRouter provides developers with a means for loading their data from a variety of different sources into Qrvey’s high performance, ElasticSearch backend. DataRouter provides an API that can be used for creating metadata data mapping and custom transformations, live update data push, and large volume historical data loads.   It is designed to scale for all types of data volume and velocity scenarios.
+Qrvey DataRouter provides developers with a means for loading their data from a variety of different sources into Qrvey’s high performance, ElasticSearch backend. DataRouter provides an API that can be used for creating metadata data mapping and custom transformations, live update data push, and large volume historical data loads.   It is designed to scale for all types of data volume and velocity scenarios. For additional information, check out the article on [DataRouter Architecture](https://devhelp.qrvey.com/article/233-architecture-overview).
 
 ## Versioning
 To minimize any compatibility issues, the DataRouter API is versioned, so the API you begin working with does not need to be changed unless you decide to upgrade to a newer version. We encourage developers to upgrade, however, as we are rapidly adding new features and functionality.
@@ -15,7 +16,9 @@ Just like the Qrvey developer API, all DataRouter API requests will require an A
 ## Getting Started
 In order to make DataRouter API requests, you will need your:
 
-* Base DataRouter URL - where all your DataRouter API calls will be made
-* DataRouter API-key - your unique key that must be a part of every DataRouter API call
+* **Base DataRouter URL** - where all your DataRouter API calls will be made
+* **DataRouter API-key** - your unique key that must be a part of every DataRouter API call
 
 > Note: Be sure to keep this information private and do not post it publicly in your code.
+
+</div>
