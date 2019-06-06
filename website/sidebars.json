@@ -17,6 +17,13 @@
       },
       {
         "type": "subcategory",
+        "label": "Transformations",
+        "ids": [
+          "data-router/Transforms/transforms-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Data Rules",
         "ids": [
           "data-router/DataRules/data-rules-intro"
