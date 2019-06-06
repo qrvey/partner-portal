@@ -30,7 +30,6 @@
     ],
     "Admin": [
       "admin/admin-intro",
-      "admin/admin-managing-users",
       {
         "type": "subcategory",
         "label": "Sections",
