@@ -36,13 +36,7 @@
           "data-router/ReusablesDataRules/reusable-data-rules-intro"
         ]
       },
-      {
-        "type": "subcategory",
-        "label": "Postdata",
-        "ids": [
-          "data-router/Postdata/postdata-intro"
-        ]
-      },
+      "data-router/postdata-content",
       {
         "type": "subcategory",
         "label": "Connectors",
