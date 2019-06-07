@@ -52,16 +52,11 @@ class Index extends React.Component {
     );
 
     const TopFold = () => (
-      <div className="flex-container">
+      <div className="flex-container flex-vertical-container">
       <div className="two-row">
         <h2 className="main-title">
-        Begin your journey <br/>
-        with our Detailed <br/>
-        Documents
+        Qrvey Documentation
         </h2>
-      </div>
-      <div className="two-row">
-        <img className="top-fold-image" src={siteConfig.baseUrl + 'img/docs-top-fold.jpg'} alt="Project Logo"/>
       </div>
       </div>
     );

@@ -54,7 +54,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/qrvey_footer_logo.svg',
-  footerIcon: 'img/qrvey_footer_logo.svg',
+  footerIcon: 'img/qrvey_logo.png',
   favicon: 'img/Qrvey.png',
 
   /* Colors for website */

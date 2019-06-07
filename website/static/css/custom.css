@@ -12,7 +12,7 @@
     /* Rectangle: */
     background: #FFFFFF;
     border-radius: 5px;
-    box-shadow: 0px 30px 30px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
     width: 300px;
     padding:10px 20px;
     margin: 20px;
@@ -38,8 +38,8 @@
     font-weight: 500;
     line-height: 54px;
     letter-spacing: 0;
-    color: black;
-    margin-bottom: 0px;
+    color: white;
+    padding: 0px 0 30px;
     margin-top: 0px;
 }
 .main-description {
@@ -137,13 +137,44 @@
     color: #F57C41 !important;
 }
   
+.nav-footer{
+    background: #f7f6f6;
+    opacity: 1 !important;
+}
+.nav-footer .sitemap a{
+    color: black !important;
+}
 
+.nav-footer .sitemap h5 {
+    color: black !important;
+}
+.nav-footer .copyright{
+    color: black !important;
+}
+
+.nav-footer .sitemap .nav-home {
+    display: block;
+    height: auto;
+    opacity: 1;
+    width: 107px;
+}
+
+.homeContainer{
+    background: url('/docs/img/top-fold-background.jpg');
+    background-size: cover;
+}
+
+.navigationSlider .slidingNav ul{
+    background: #1C3E75;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
     
 }
 
 @media only screen and (min-width:768px){
+
+    
     .docMainWrapper{
         padding-left: 60px;
         padding-right: 60px;
@@ -186,7 +217,8 @@
         font-size: 45px;
         line-height: 61px;
         text-align: start;
-        margin-top: 60px;
+        color: white;
+        padding-top: 30px;
     }
     .main-description {
         font-size: 30px;
@@ -259,7 +291,7 @@
     }
 
     .main-title{
-        margin-top: 100px;
+        
     }
 
     ul.nav-site.nav-site-internal li .primary-button{
