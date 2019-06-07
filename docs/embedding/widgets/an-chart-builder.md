@@ -4,8 +4,8 @@ title: Chart Builder - <an-chart-builder/>
 sidebar_label: AN Chart Builder
 ---
 
-This Chart Builder Modal widget require `<my_cdn>/chart-builder/anchartbuilder.js` script file and 
-use the `<an-chart-builder>` Custom HTML Tag
+This Chart Builder Modal widget requires `<my_cdn>/chart-builder/anchartbuilder.js` script file and 
+uses the `<an-chart-builder>` Custom HTML Tag
 
 ## 1. Configuration Object
 > The Chart Builder widget doesn't have a configuration object.
@@ -15,7 +15,7 @@ use the `<an-chart-builder>` Custom HTML Tag
 
 * ### ON_OPEN_CHART_BUILDER
 
-    This event is emitted when the user clicks on the &quot;Next&quot; button after chart type selected.
+    This event is emitted when the user clicks on the &quot;Next&quot; button after chart type is selected.
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
@@ -101,20 +101,20 @@ use the `<an-chart-builder>` Custom HTML Tag
 
 * ### ON_OPEN_CHART_BUILDER
 
-    This event call a method inside the widget to open the chart builder modal.
+    Use this event get the widget to open a chart builder modal window.
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
-    | **filters** | Array, Current applied filters transformed for requests. | No |
+    | **filters** | Array, Currently applied transform filters for data requests. | No |
     | **isNew** | Boolean, Determines if it is on creation or editing mode. | Yes |
     | **user_id** | String, Id of Qrvey User. | Yes |
     | **app_id** | String, Id of Qrvey App. | Yes |
-    | **chart_id** | String, Id of current chart editing chart, if is the case. | No |
+    | **chart_id** | String, Id of current chart editing chart, if isNew is false. | No |
     | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
 
 * ### ON_AN_DUPLICATE_CHART
 
-    This event call a method inside the widget when a chart is being duplicated.
+    Use this event call to use the widget to duplicate an existing chart.
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
