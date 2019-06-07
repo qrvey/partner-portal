@@ -1,7 +1,7 @@
 ---
 id: connectors-intro
-title: Connectors Introduction
-sidebar_label: Overview
+title: Connectors Overview
+sidebar_label: Connectors
 ---
 
 lorem ipsum

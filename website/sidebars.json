@@ -1,5 +1,5 @@
 {
-  "get-started": {
+  "docs": {
     "Get Started": [
       "get-started/get-started-intro"
     ],
@@ -8,42 +8,12 @@
     ],
     "Data Router": [
       "data-router/data-router-intro",
-      {
-        "type": "subcategory",
-        "label": "Metadata",
-        "ids": [
-          "data-router/Metadata/metadata-intro"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Transformations",
-        "ids": [
-          "data-router/Transforms/transforms-intro"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Data Rules",
-        "ids": [
-          "data-router/DataRules/data-rules-intro"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Reusable Data Rules",
-        "ids": [
-          "data-router/ReusablesDataRules/reusable-data-rules-intro"
-        ]
-      },
+      "data-router/Metadata/metadata-intro",
+      "data-router/Transforms/transforms-intro",
+      "data-router/DataRules/data-rules-intro",
+      "data-router/ReusablesDataRules/reusable-data-rules-intro",
       "data-router/postdata-content",
-      {
-        "type": "subcategory",
-        "label": "Connectors",
-        "ids": [
-          "data-router/Connectors/connectors-intro"
-        ]
-      },
+      "data-router/Connectors/connectors-intro",
       {
         "type": "subcategory",
         "label": "API Reference",
@@ -52,8 +22,16 @@
         ]
       }
     ],
+    "Admin": [
+      "admin/admin-intro",
+      "admin/admin-sections-platform",
+      "admin/admin-data",
+      "admin/admin-sections-data-router",
+      "admin/admin-sections-deployments"
+    ],
     "Embedding": [
       "embedding/embedding-intro",
+      "embedding/embed-solution",
       {
         "type": "subcategory",
         "label": "Widgets",
@@ -68,18 +46,6 @@
         "ids": [
           "embedding/api/api-intro",
           "embedding/api/api-workflows"
-        ]
-      }
-    ],
-    "Admin": [
-      "admin/admin-intro",
-      {
-        "type": "subcategory",
-        "label": "Sections",
-        "ids": [
-          "admin/sections/admin-sections-platform",
-          "admin/sections/admin-sections-deployments",
-          "admin/sections/admin-sections-data-router"
         ]
       }
     ],
