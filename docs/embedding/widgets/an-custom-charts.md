@@ -25,14 +25,14 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
   "filters": "<FILTERS_OBJECT>",
   "drilldowns": "<DRILLDOWNS_OBJECT>",
   "options": {
-    dragger: "<true | false>",
+    dragger: false,
     filter: "<true | false>",
     menu: "<true | false | [ MENU_OPTIONS_ARRAY ]>",
   },
   "insidemenu": {
     drilldown: "<true | false>",
     filterby: "<true | false>",
-    seedata: "<true | false>",
+    seedata: false,
   },
   "id": "<COMPONENT_ID>",
   "page_id": "<PAGE_ID>",
@@ -51,13 +51,13 @@ Chart properties are defined below:
 *   **filters:** (optional) `Object`, Data of filters.
 *   **drilldowns:** (optional) `Object`, Data of drilldowns.
 *   **options:** `Object`, Chart menu configuration data.
-    *   **dragger:** `Boolean`, Determines if the panel is draggable. Must be false.
+    *   **dragger:** `Boolean`, Determines if the panel is draggable. **Must be `false`**.
     *   **filter:** `Boolean`, Determines if the panel has the filter button.
     *   **menu:** `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu.
 *   **insidemenu:** `Object`, Chart data point menu configuration data.
     *   **drilldown:** `Boolean`, Determines if the panel has drill down options.
     *   **filterby:** `Boolean`, Determines if the panel has the Filter By option.
-    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. Must be false.
+    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. **Must be `false`**.
 *   **id:** `String`, Id of the web component.
 *   **page_id:** `String`, Id of the page inside the Builder.
 *   **tab_id:** (optional) `String`, Id of the tab inside the page.
