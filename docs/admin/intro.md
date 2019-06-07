@@ -1,6 +1,6 @@
 ---
 id: admin-intro
-title: Introduction
+title: Overview
 sidebar_label: Overview
 ---
 

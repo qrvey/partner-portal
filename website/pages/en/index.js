@@ -35,7 +35,7 @@ class Index extends React.Component {
     const Categories = () => {
       const categories = [
         {name:'Get Started', icon:'ready-icon', path:'/docs/get-started/get-started-intro'},
-        {name:'Business Analytics', icon:'bunisses-icon', path:'/docs/business-analytics/business-analytics-doc'},
+        {name:'Business Analytics', icon:'bunisses-icon', path:'/docs/business-analytics/business-overview'},
         {name:'Data Router', icon:'data-icon', path:'/docs/data-router/data-router-intro'},
         {name:'Admin', icon:'admin-icon', path:'/docs/admin/admin-intro'},
         {name:'Embedding', icon:'embedding-icon', path:'/docs/embedding/embedding-intro'},
