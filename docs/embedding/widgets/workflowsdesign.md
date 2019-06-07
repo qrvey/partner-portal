@@ -42,11 +42,11 @@ The schema of the settings value has the following properties defined below (req
 
 Properties and Values for Each Object:
 
-Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the question object.
+Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the configuration object.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **appid** | String. Application id | Yes |
 | **domain** | String, Data server url | Yes |
 | **userid** | String. User id | Yes |
-| apikey | String, Optional, you can set up the widget without an api key if it&#39;s set a qrvey cookie session. | No |
+| apikey | String, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
