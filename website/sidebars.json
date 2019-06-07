@@ -29,7 +29,7 @@
       }
     ],
     "Admin": [
-      "admin/admin-intro",
+      "admin/admin-overview",
       {
         "type": "subcategory",
         "label": "Sections",
