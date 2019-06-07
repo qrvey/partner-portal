@@ -4,148 +4,154 @@ title: AN Summary View - <an-summary-view/>
 sidebar_label: AN Summary View
 ---
 
-This Summary View widget require `<my_cdn>/summary-panel/ansummarypanel.js` and `<my_cdn>/summary-view/ansummaryview.js` scripts file and 
+This Summary View widget requires `"<my_cdn>"/summary-panel/ansummarypanel.js` and `"<my_cdn>"/summary-view/ansummaryview.js` scripts file and
 use the `<an-summary-view>` Custom HTML Tag
 
 
 ## 1. Configuration Object
 ```javascript
 {
-  domain: "<QRVEY_CORE_URL>",	
-  api_key: "<API_KEY>",
-  user_id: "<USER_ID>"
-  app_id: "<APP_ID>",
-  qrveyhash: "<QRVEY_HASH>",
-  qrveyid: "<QRVEY_ID>",
+  domain: "<QRVEY_CORE_URL>",
+  api_key: "<API_KEY>",
+  user_id: "<USER_ID>"
+  app_id: "<APP_ID>",
+  qrveyhash: "<QRVEY_HASH>",
+  qrveyid: "<QRVEY_ID>",
 }
 ```
-  **Properties and Values**
 
-* **domain:** `String`, Qrvey Core URL.
-* **api_key:** `String`, Api Key. Código de identificación para conectarse a los datos.
-* **user_id:** `String`, Identificador de usuario.
-* **app_id:** `String`, Identificador de la aplicación de Qrvey.
-* **qrveyhash:** `String`, Qrvey Hash.
-* **qrveyid:** `String`, Identificador del Qrvey.
+**Properties and Values ​**
 
-**Others configuration properties**
+| **Property** | **Value**|
+| --- | --- |
+| **domain** | `String`, Qrvey Core URL. |
+| **api_key** | `String`, Api Key. Identification code to connect to the data. |
+| **user_id** | `String`, User identifier. |
+| **app_id** | `String`, Identifier of the Qrvey application. |
+| **qrveyhash** | `String`, Qrvey Hash. |
+| **qrveyid** | `String`, Identifier of the Qrvey. |
+
+**Other configuration properties**
+
 ```json
 {
-  "panelConfig": {
-    "drillConfig": {
-      "persist": <true|false>,
-      "enabled": <true|false>
-    },
-    "filters": <true|false>
-  }
+  "panelConfig": {
+    "drillConfig": {
+      "persist": <true | false>,
+      "enabled": <true | false>
+    },
+    "filters": <true | false>
+  }
 }
 ```
 
-* **filters:** ``Boolean``. Activar o desactivar el botón de filtros dentro de los paneles.
-* **panelConfig:** `Object`. Configuración para el panel, recibe algunas propiedades para cambiar la apariencia o comportamiento de los paneles
-  * **drillConfig:** `Object`. configuración para usar la funcionalidad de Drill-down que se usan en los histogram charts
-    * **persist:** ``Boolean``. Condición para establecer si necesitan que los filtros del Drill-down escogidos persistan en el tiempo.
-    * **enabled:** ``Boolean``. Condición para habilitar la funcionalidad de Drill-down
+| **Property** | **Value**|
+| --- | --- |
+| **panelConfig** | `Object`. Configuration for the panel, receives some properties to change the appearance or behavior of the panels |
+| &#8627;**drillConfig** | `Object`. settings to use the Drill-down functionality that are used in the histogram charts |
+| &#9492;&#8594;**persist** | `Boolean`. Condition to establish if they need the chosen Drill-down filters to persist over time. |
+| &#9492;&#8594;**enabled** | `Boolean`. Condition to enable Drill-down functionality. |
+| &#8627;**filters** | `Boolean`. Activate or deactivate the filter button within the panels. |
 
 ## 2. Event Listeners:
 
-* ### ON_CLOSE_BUCKET_MODAL
+* #### ON_CLOSE_BUCKET_MODAL
 
-  Listener para refrescar el componente Summary View cuando se cierra el Modal de Buckets.
+  Listener to refresh the Summary View component when the Buckets Modal is closed.
 
-  _`event.detail`_ object:
+  _`event.detail`_ object:
 
-  | **Property** | **Value** | **Required** |
-  | --- | --- | --- |
-  | **hasChanges** | `Boolean`, Condición para establecer cambios dentro de Summary View siempre y cuando hubo cambios. | Yes |
-
-
-
-* ### triggerOpenBranch
-
-  Listener para agregar, dentro del Summary View, los paneles extras de branches.
-
-  _`event.detail`_ object:
-
-  | **Property** | **Value** | **Required** |
-  | --- | --- | --- |
-  | **questionid** | `String`, El identificador de la pregunta relacionada a los branches | Yes |
-  | **questions** | `Array`, Conjunto de branches concatenadas en un mismo nivel | Yes |
-  | **branches** | `Array`, Conjunto de branches. | Yes |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **hasChanges** | `Boolean`, Condition to establish changes within Summary View as long as there were changes. | Yes |
 
 
+* #### triggerOpenBranch
 
-* ### triggerCloseBranch
+  Listener to add, within the Summary View, the extra panels of branches.
 
-  Listener para ocultar, dentro del Summary view, los paneles extras de branches
+  _`event.detail`_ object:
 
-  _`event.detail`_ object:
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **questionid** | `String`, The identifier of the question related to the branches | Yes |
+| **questions** | `Array`, Set of concatenated branches in the same level | Yes |
+| **branches** | `Array`, Set of branches. | Yes |
 
-  | **Property** | **Value** | **Required** |
-  | --- | --- | --- |
-  | **closeQuestion** | `Boolean`, Condición para cerrar los branches | Yes |
-  | **questionid** | `String`, El identificador de la pregunta relacionada a los branches | Yes |
-  | **hasBranches** | `Boolean`, propiedad para concoer si existen branches o no. | Yes |
-  | **element** | `HTMLAnSummaryHeaderElement`, Elemento html del header. | Yes |
-  | **inBranch** |   | No |
+
+
+* #### triggerCloseBranch
+
+  Listener to hide, within the Summary view, the extra panels of branches
+
+  _`event.detail`_ object:
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **closeQuestion** | `Boolean`, Condition to close the branches | Yes |
+| **questionid** | `String`, The identifier of the question related to the branches | Yes |
+| **hasBranches** | `Boolean`, property to concoer if there are branches or not. | Yes |
+| **element** | `HTMLAnSummaryHeaderElement`, Html element of the header. | Yes |
+| **inBranch** | | No |
 
 ## 3. Methods:
 
-* ### applyFilters
+* #### applyFilters
 
-  Establece los filtros entrantes por parámetro
+  Set incoming filters by parameter
 
-  | **Param** | **Description** | **Required** |
-  | --- | --- | --- |
-  | **filters** | `Array`, Conjunto de filtros. | Yes |
+| **Param** | **Description** | **Required** |
+| --- | --- | --- |
+| **filters** | `Array`, Set of filters. | Yes |
 
-* ### checkBranchOpen
+* #### checkBranchOpen
 
-  Chequea si los paneles de branch se están mostrando a partir del questionId
+  Check if the branch panels are showing from the questionId
 
-  | **Param** | **Description** | **Required** |
-  | --- | --- | --- |
-  | **questionid** | `String`, Identificador de la pregunta. | Yes |
-  
-  **Returns :** `Boolean`.
+| **Param** | **Description** | **Required** |
+| --- | --- | --- |
+| **questionid** | `String`, Identifier of the question. | Yes |
+  
+  ** Returns: ** `Boolean`.
 
-* ### downloadData
+* #### downloadData
 
-  Descarga la información visible dentro de Summary View, dependiendo del tipo de archivo.
+  Download the visible information within Summary View, depending on the type of file.
 
-  | **Param** | **Description** | **Required** |
-  | --- | --- | --- |
-  | **type** | `String`,El tipo de descarga. Pueden ser `csv`, `pdf`, `jpg`. | Yes |
+| **Param** | **Description** | **Required** |
+| --- | --- | --- |
+| **type** | `String`, The type of download. They can be `csv`,` pdf`, `jpg`. | Yes |
 
-  **Returns** `<Promise | undefined>`, Si no existe questions a descargar devolverá `undefined`, de lo contrario devolverá una `Promise` con los datos.
+  **Returns** `<Promise | undefined> `, If there are no questions to download it will return` undefined`, otherwise it will return a `Promise` with the data.
 
 
-* ### reloadAllSummaryView
+* #### reloadAllSummaryView
 
-  Recarga el Summary View nuevamente.
+  Reload the Summary View again.
 
 
 ## 4. Example:
+
 ```xml
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-panel/ansummarypanel.js"></script>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-view/ansummaryview.js"></script>
- 
+<script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-panel/ansummarypanel.js"> </ script>
+<script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-view/ansummaryview.js"> </ script>
+ 
 <script>
-  window.summaryConfig = {
-    qrveyhash: '745b5b74af7a5d2c678683f734b69f5c',
-    domain: 'https://qdev.qrvey.com',
-    api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0',
-    qrveyid: "Uag5tG4NE",
-    app_id: "S4tLP9k",
-    user_id: "FyHYizH"
-    panelConfig: {
-      drillConfig: {
-        persist: true,
-        enabled: true
-      },
-      filters: true
-    }
-  }
-</script>
-<an-summary-view config="summaryConfig"></an-summary-view>
+  window.summaryConfig = {
+    qrveyhash: '745b5b74af7a5d2c678683f734b69f5c',
+    domain: 'https://qdev.qrvey.com',
+    api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0',
+    qrveyid: "Uag5tG4NE",
+    app_id: "S4tLP9k",
+    user_id: "FyHYizH"
+    panelConfig: {
+      drillConfig: {
+        persist: true,
+        enabled: true
+      },
+      filters: true
+    }
+  }
+</ script>
+<an-summary-view config = "summaryConfig"> </ an-summary-view>
 ```
