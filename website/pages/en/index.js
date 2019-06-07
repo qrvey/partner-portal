@@ -14,20 +14,6 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class Index extends React.Component {
-  
-
-  componentDidMount(){
-    this.insertItemToNav();
-  }
-
-  insertItemToNav(){
-    console.log('hola');
-    let navbar = document.querySelector('.slidingNav ul');
-    const newItem = document.createElement("LI");
-    const textnode = document.createTextNode("Training");
-    newItem.appendChild(textnode);
-    navbar.insertBefore(newItem, list.childNodes[0]);
-  }
 
   render() {
     const {config: siteConfig, language = ''} = this.props;
@@ -35,11 +21,11 @@ class Index extends React.Component {
     const Categories = () => {
       const categories = [
         {name:'Get Started', icon:'ready-icon', path:'/docs/get-started/get-started-intro'},
-        {name:'Business Analytics', icon:'bunisses-icon', path:'/docs/business-analytics/business-analytics-doc'},
+        {name:'Business Analytics', icon:'bunisses-icon', path:'/docs/business-analytics/business-overview'},
         {name:'Data Router', icon:'data-icon', path:'/docs/data-router/data-router-intro'},
         {name:'Admin', icon:'admin-icon', path:'/docs/admin/admin-intro'},
         {name:'Embedding', icon:'embedding-icon', path:'/docs/embedding/embedding-intro'},
-        {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-deployments-getting-started'},
+        {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-overview'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -65,16 +51,11 @@ class Index extends React.Component {
     );
 
     const TopFold = () => (
-      <div className="flex-container">
+      <div className="flex-container flex-vertical-container">
       <div className="two-row">
         <h2 className="main-title">
-        Begin your journey <br/>
-        with our Detailed <br/>
-        Documents
+        Qrvey Documentation
         </h2>
-      </div>
-      <div className="two-row">
-        <img className="top-fold-image" src={siteConfig.baseUrl + 'img/docs-top-fold.jpg'} alt="Project Logo"/>
       </div>
       </div>
     );
@@ -84,7 +65,9 @@ class Index extends React.Component {
       <div className="gray-background" onClick={()=> alert("Hello! I am an alert box!!")}>
         <SplashContainer siteConfig={siteConfig} language={language} />
         <div className="mainContainer" id="main-container">
-        <Categories/>
+        <div className="wrapper">
+          <Categories/>
+        </div>
         </div>
       </div>
     );

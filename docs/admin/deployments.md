@@ -1,6 +1,6 @@
 ---
 id: admin-sections-deployments
-title: Sections - Deployments
+title: Deployments
 sidebar_label: Deployments
 ---
 
