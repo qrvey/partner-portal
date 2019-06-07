@@ -4,7 +4,7 @@ title: AN Summary Panel - "<an-summary-panel />"
 sidebar_label: AN Summary Panel
 ---
 
-This Summary View widget requires `<my_cdn>/summary-panel/ ansummarypanel.js` script file and
+This Summary View widget requires `"<my_cdn>"/summary-panel/ ansummarypanel.js` script file and
 use the `<an-summary-panel>` Custom HTML Tag.
 
 
@@ -15,8 +15,8 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 ```javascript
 {
     domain: "<QRVEY_CORE_URL>",
-api_key: "<API_KEY>",
-    user_id: "<USER_ID>"
+    api_key: "<API_KEY>",
+    user_id: "<USER_ID>",
     app_id: "<APP_ID>",
     qrveyhash: "<QRVEY_HASH>",
     qrveyid: "<QRVEY_ID>",
@@ -24,17 +24,20 @@ api_key: "<API_KEY>",
 }
 ```
 
-** Properties and Values: **
+**Properties and Values:**
 
-- ** domain: ** `String`, Qrvey Core URL.
-- ** api \ _key: ** `String`, Api Key. Identification code to connect to the data.
-- ** user \ _id: ** `String`, User identifier.
-- ** app \ _id: ** `String`, Identifier of the Qrvey application.
-- ** qrveyhash: ** `String`, Qrvey Hash.
-- ** qrveyid: ** `String`, Identifier of the Qrvey.
-- ** questionid: ** `String`, Identifier of the question or column
+| **Property** | **Value** |
+| --- | --- |
+| **domain** | `String`, Qrvey Core URL. |
+| **api_key** | `String`, Api Key. Identification code to connect to the data. |
+| **user_id** | `String`, User identifier. |
+| **app_id** | `String`, Identifier of the Qrvey application. |
+| **qrveyhash** | `String`, Qrvey Hash. |
+| **qrveyid** | `String`, Identifier of the Qrvey. |
+| **questionid** | `String`, Identifier of the question or column |
+    
 
-** Other configuration properties **
+**Other configuration properties**
 ```javascript
 {
     widgetConfig: {
@@ -64,28 +67,32 @@ api_key: "<API_KEY>",
 }
 ```
 
-- ** widgetConfig **: `Object`, Configuration for the panel, receives some properties to change the appearance or behavior of the panel.
-- ** height **: `String`, Length or percentage of the height that the panel will take.
-- ** filters **: `Boolean`, Activate or deactivate the filter button inside the panels.
-- ** showIndex **: `Boolean`. Condition to enable indexes within the panels.
-- ** globalFilter **: `Boolean`,
-- ** bitbucket **: `Boolean`,
-- ** search **: `Boolean`,
-- ** branch **: `Boolean`, activate the branches of the panels if they exist.
-- ** menu **: `Boolean`, activate the panel menu.
-- ** download **: `Boolean`, activate the options for downloading panels.
-- ** embed **: `Boolean`, establishes behaviors and appearance when the panel is embedded, for example, do not show branches, execute external filters to the component and ignore the showIndex.
-- ** viewAction **: `Boolean`, show the change view list.
-- ** sort **: `Boolean`, show the list of data organization.
-- ** activeView **: `String`. Type of View to show the results; It will depend on the type of panel.
-- ** groupingActive **: `String`, Type of result grouping for certain panel types; It is not required for all panel types.
-- ** sortingActive **: `String`, Type of organization of results. It will depend on the type of panel; It is not required for all panel types.
-- ** displayingActive **: `String`, Type of display for the Lookup panel type. It shows several titles for the results.
-- ** drillConfig **: `Object`, configuration for the drilldown present in some visualizations of the panels.
-- ** enabled **: `Boolean`, enable or disable the panel drilldown.
-- ** persist **: `Boolean`, keep the drilldown with the last configuration activated.
-- ** tab \ _id **: `String`, optional identifier of the Report Builder tab and Page Builder to set preferences and filters.
-- ** page \ _id **: `String`, optional identifier of the page in Page Builder to set filters.
+**Properties and Values:**
+
+| **Property** | **Value** |
+| --- | --- |
+| **widgetConfig** | `Object`, Configuration for the panel, receives some properties to change the appearance or behavior of the panel. |
+| **height** | `String`, Length or percentage of the height that the panel will take. |
+| **filters** | `Boolean`, Activate or deactivate the filter button inside the panels. |
+| **showIndex** | `Boolean`. Condition to enable indexes within the panels. |
+| **globalFilter** | `Boolean`, |
+| **bitbucket** | `Boolean`, |
+| **search** | `Boolean`, |
+| **branch** | `Boolean`, activate the branches of the panels if they exist. |
+| **menu** | `Boolean`, activate the panel menu. |
+| **download** | `Boolean`, activate the options for downloading panels. |
+| **embed** | `Boolean`, establishes behaviors and appearance when the panel is embedded, for example, do not show branches, execute external filters to the component and ignore the showIndex. |
+| **viewAction** | `Boolean`, show the change view list. |
+| **sort** | `Boolean`, show the list of data organization. |
+| **activeView** | `String`. Type of View to show the results; It will depend on the type of panel. |
+| **groupingActive** | `String`, Type of result grouping for certain panel types; It is not required for all panel types. |
+| **sortingActive** | `String`, Type of organization of results. It will depend on the type of panel; It is not required for all panel types. |
+| **displayingActive** | `String`, Type of display for the Lookup panel type. It shows several titles for the results. |
+| **drillConfig** | `Object`, configuration for the drilldown present in some visualizations of the panels. |
+| **enabled** | `Boolean`, enable or disable the panel drilldown. |
+| **persist** | `Boolean`, keep the drilldown with the last configuration activated. |
+| **tab_id** | `String`, optional identifier of the Report Builder tab and Page Builder to set preferences and filters. |
+| **page_id** | `String`, optional identifier of the page in Page Builder to set filters. |
 
 
 
@@ -101,9 +108,9 @@ api_key: "<API_KEY>",
 
     _`event.detail`_ Object:
 
-    | ** Property ** | ** Value ** | ** Required ** |
+    | **Property** | **Value** | **Required** |
     | --- | --- | --- |
-    | ** preferences ** | `` any``, Object with panel preferences | Yes |
+    | **preferences** | `` any``, Object with panel preferences | Yes |
 
 
 
@@ -113,7 +120,7 @@ api_key: "<API_KEY>",
 
     _`event.detail`_ Object:
 
-    | ** Value ** | ** Required ** |
+    | **Value** | **Required** |
     | --- | --- |
     | `` any``, the filter selected to save. | Yes |
 
@@ -123,7 +130,7 @@ api_key: "<API_KEY>",
 
     _`event.detail`_ Object:
 
-    | ** Value ** | ** Required ** |
+    | **Value** | **Required** |
     | --- | --- |
     | `any`, the group selected to save. | Yes |
 
@@ -133,7 +140,7 @@ api_key: "<API_KEY>",
 
     _`event.detail`_ Object:
 
-    | ** Value ** | ** Required ** |
+    | **Value** | **Required** |
     | --- | --- |
     | `any`, the selected display to save. | Yes |
 
@@ -143,7 +150,7 @@ api_key: "<API_KEY>",
 
     _`event.detail`_ Object:
 
-    | ** Value ** | ** Required ** |
+    | **Value** | **Required** |
     | --- | --- |
     | `String`, the type of panel download. The types of downloads are: `csv`,` pdf`, `jpg` | Yes |
 
@@ -153,10 +160,10 @@ api_key: "<API_KEY>",
 
     Inside _detail_ of _Event_ you will find the properties that the function will receive:
 
-    | ** Property ** | ** Value ** | ** Required ** |
+    | **Property** | **Value** | **Required** |
     | --- | --- | --- |
-    | ** status ** | `Boolean`, the state of the branch. True for active, False for inactive. | Yes |
-    | ** close ** | `Boolean`, the branch closed or shown. | |
+    | **status** | `Boolean`, the state of the branch. True for active, False for inactive. | Yes |
+    | **close** | `Boolean`, the branch closed or shown. | |
 
 
 
@@ -166,19 +173,19 @@ api_key: "<API_KEY>",
 
     Get the height of the panel.
 
-    ** Returns **: `Number`. The height of the panel.
+    **Returns**: `Number`. The height of the panel.
 
 
 * ### getHtmlToDownload
 
     Get the HTML of the panel to download it.
 
-    | ** Param ** | ** Description ** | ** Required ** |
+    | **Param** | **Description** | **Required** |
     | --- | --- | --- |
-    | ** width ** | `Number`, The width of the panel that you want to download. | Yes |
-    | ** height ** | `Number`, the height of the panel that you want to download. | Yes |
+    | **width** | `Number`, The width of the panel that you want to download. | Yes |
+    | **height** | `Number`, the height of the panel that you want to download. | Yes |
     
-    ** Returns **: `String`. The HTML of the panel.
+    ** Returns**: `String`. The HTML of the panel.
 
 * ### resize
 
