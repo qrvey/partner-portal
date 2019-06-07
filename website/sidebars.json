@@ -7,7 +7,50 @@
       "business-analytics/business-analytics-doc"
     ],
     "Data Router": [
-      "data-router/data-router-intro"
+      "data-router/data-router-intro",
+      {
+        "type": "subcategory",
+        "label": "Metadata",
+        "ids": [
+          "data-router/Metadata/metadata-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Transformations",
+        "ids": [
+          "data-router/Transforms/transforms-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Data Rules",
+        "ids": [
+          "data-router/DataRules/data-rules-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Reusable Data Rules",
+        "ids": [
+          "data-router/ReusablesDataRules/reusable-data-rules-intro"
+        ]
+      },
+      "data-router/postdata-content",
+      {
+        "type": "subcategory",
+        "label": "Connectors",
+        "ids": [
+          "data-router/Connectors/connectors-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "API Reference",
+        "ids": [
+          "data-router/apireference/api-reference-intro"
+        ]
+      }
     ],
     "Embedding": [
       "embedding/embedding-intro",
