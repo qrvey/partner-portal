@@ -1,20 +1,18 @@
-5000/5000
-Character limit: 5000
 ---
 id: an-summary-panel
 title: AN Summary Panel - "<an-summary-panel />"
 sidebar_label: AN Summary Panel
 ---
 
-This Summary View widget requires `" <my_cdn> "/ summary-panel / ansummarypanel.js` script file and
-use the `" <an-summary-panel> "` Custom HTML Tag.
+This Summary View widget requires `<my_cdn>/summary-panel/ ansummarypanel.js` script file and
+use the `<an-summary-panel>` Custom HTML Tag.
 
 
 ## 1. Configuration Object
 
 To configure a Summary Panel widget, use the following JSON schema as Configuration Object:
 
-`` `javascript
+```javascript
 {
     domain: "<QRVEY_CORE_URL>",
 api_key: "<API_KEY>",
@@ -24,7 +22,7 @@ api_key: "<API_KEY>",
     qrveyid: "<QRVEY_ID>",
     questionid: "<QUESTION_ID>"
 }
-`` `
+```
 
 ** Properties and Values: **
 
@@ -37,7 +35,7 @@ api_key: "<API_KEY>",
 - ** questionid: ** `String`, Identifier of the question or column
 
 ** Other configuration properties **
-`` `javascript
+```javascript
 {
     widgetConfig: {
         height: "<String>"
@@ -64,7 +62,7 @@ api_key: "<API_KEY>",
     tab_id: "<String>",
     page_id: "<String>"
 }
-`` `
+```
 
 - ** widgetConfig **: `Object`, Configuration for the panel, receives some properties to change the appearance or behavior of the panel.
 - ** height **: `String`, Length or percentage of the height that the panel will take.
@@ -97,7 +95,7 @@ api_key: "<API_KEY>",
 
     Listener that closes the menus of the panel when it is clicked out of its contents.
 
-* ### ON \ _AN \ _SAVE \ _PREFERENCE \ _COMPONENT
+* ### ON_AN_SAVE_PREFERENCE_COMPONENT
 
     Listener to save panel preferences.
 
