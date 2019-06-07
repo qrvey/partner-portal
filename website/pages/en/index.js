@@ -17,15 +17,16 @@ class Index extends React.Component {
 
   render() {
     const {config: siteConfig, language = ''} = this.props;
+    const background_title = "url('" + siteConfig.baseUrl + "img/top-fold-background.jpg')";
 
     const Categories = () => {
       const categories = [
-        {name:'Get Started', icon:'ready-icon', path:'/docs/get-started/get-started-intro'},
-        {name:'Business Analytics', icon:'bunisses-icon', path:'/docs/business-analytics/business-overview'},
-        {name:'Data Router', icon:'data-icon', path:'/docs/data-router/data-router-intro'},
-        {name:'Admin', icon:'admin-icon', path:'/docs/admin/admin-intro'},
-        {name:'Embedding', icon:'embedding-icon', path:'/docs/embedding/embedding-intro'},
-        {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-overview'},
+        {name:'Get Started', icon:'ready-icon', path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
+        {name:'Business Analytics', icon:'bunisses-icon', path: siteConfig.baseUrl+'docs/business-analytics/business-overview'},
+        {name:'Data Router', icon:'data-icon', path: siteConfig.baseUrl+'docs/data-router/data-router-intro'},
+        {name:'Admin', icon:'admin-icon', path: siteConfig.baseUrl+'docs/admin/admin-intro'},
+        {name:'Embedding', icon:'embedding-icon', path: siteConfig.baseUrl+'docs/embedding/embedding-intro'},
+        {name:'Setup & Deployments', icon:'cloud-icon', path: siteConfig.baseUrl+'docs/setup-deployments/setup-overview'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -41,7 +42,7 @@ class Index extends React.Component {
 
 
     const SplashContainer = props => (
-      <div className="homeContainer">
+      <div className="homeContainer" style={{backgroundImage : background_title}}>
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper" id="home-wrapper">
           <TopFold/>
