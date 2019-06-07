@@ -73,34 +73,34 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;preferenceFilters&quot;** | `Object`, Applied filters ready to use in other widgets. | Yes |
-  | **&quot;panelData&quot;** | `Object`, Data of the panel. | Yes |
-  | **&quot;qrveyid&quot;** | `String`, Id to identify the Qrvey Dataset or Webform. | Yes |
-  | **&quot;panelId&quot;** | `String`, Id to identify the panel. | Yes |
-  | **&quot;pageId&quot;** | `String`, Id to identify the page. | Yes |
-  | **&quot;tabId&quot;** | `String`, Id to identify the tab of the page. | No |
+  | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets. | Yes |
+  | **panelData** | `Object`, Data of the panel. | Yes |
+  | **qrveyid** | `String`, Id to identify the Qrvey Dataset or Webform. | Yes |
+  | **panelId** | `String`, Id to identify the panel. | Yes |
+  | **pageId** | `String`, Id to identify the page. | Yes |
+  | **tabId** | `String`, Id to identify the tab of the page. | No |
 
 * ### ON\_OPEN\_CHART\_BUILDER
 
-  This event is emitted when the user clicks on the &quot;Edit&quot; option of the panel menu.
+  This event is emitted when the user clicks on the Edit option of the panel menu.
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;filters&quot;** | `Array`, Current applied filters transformed for requests. | No |
-  | **&quot;isNew&quot;** | `Boolean`, Determines if the chart is on editing mode. Must be false. | Yes |
-  | **&quot;user\_id&quot;** | `String`, Id of Qrvey User. | Yes |
-  | **&quot;app\_id&quot;** | `String`, Id of Qrvey App. | Yes |
-  | **&quot;chart\_id&quot;** | `String`, Id of current chart. | Yes |
-  | **&quot;qrveyid&quot;** | `String`, Id of current Qrvey Dataset/Webform. | Yes |
+  | **filters** | `Array`, Current applied filters transformed for requests. | No |
+  | **isNew** | `Boolean`, Determines if the chart is on editing mode. Must be false. | Yes |
+  | **user\_id** | `String`, Id of Qrvey User. | Yes |
+  | **app\_id** | `String`, Id of Qrvey App. | Yes |
+  | **chart\_id** | `String`, Id of current chart. | Yes |
+  | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform. | Yes |
 
 * ### ON\_AN\_FILTERS\_APPLIED
 
-  This event is emitted when the user clicks on the &quot;Filter By&quot; option of the data point menu.
+  This event is emitted when the user clicks on the Filter By option of the data point menu.
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;preferenceFilters&quot;** | `Object`, Applied filters ready to use in other widgets. | Yes |
-  | **&quot;requestFilters&quot;** | `Array`, Current applied filters transformed for requests. | Yes |
+  | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets. | Yes |
+  | **requestFilters** | `Array`, Current applied filters transformed for requests. | Yes |
 
 * ### ON\_AN\_CHART\_DRILLDOWN
 
@@ -108,7 +108,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;drilldowns&quot;** | `Object`, Data of drilldowns. | Yes |
+  | **drilldowns** | `Object`, Data of drilldowns. | Yes |
 
 
 
@@ -120,7 +120,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;preferenceFilters&quot;** | `Object`, Previously applied filters ready to update the current filters data. | Yes |
+  | **preferenceFilters** | `Object`, Previously applied filters ready to update the current filters data. | Yes |
 
 * ### ON\_AN\_CHART\_BUILDER\_SAVED
 
@@ -128,7 +128,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;chartid&quot;** | `String`, Id to identify the current chart. | Yes |
+  | **chartid** | `String`, Id to identify the current chart. | Yes |
 
 * ### ON\_AN\_CHART\_DRILLDOWN
 
@@ -136,7 +136,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **&quot;drilldowns&quot;** | `Object`, Data of drilldowns. | Yes |
+  | **drilldowns** | `Object`, Data of drilldowns. | Yes |
 
 
 
