@@ -48,10 +48,10 @@ use the `<an-summary-view>` Custom HTML Tag
 | **Property** | **Value**|
 | --- | --- |
 | **panelConfig** | `Object`. Configuration for the panel, receives some properties to change the appearance or behavior of the panels |
-| &#8627;**drillConfig** | `Object`. settings to use the Drill-down functionality that are used in the histogram charts |
-| &#9492;&#8594;**persist** | `Boolean`. Condition to establish if they need the chosen Drill-down filters to persist over time. |
-| &#9492;&#8594;**enabled** | `Boolean`. Condition to enable Drill-down functionality. |
-| &#8627;**filters** | `Boolean`. Activate or deactivate the filter button within the panels. |
+| **panelConfig.drillConfig** | `Object`. settings to use the Drill-down functionality that are used in the histogram charts |
+| **panelConfig.drillConfig.persist** | `Boolean`. Condition to establish if they need the chosen Drill-down filters to persist over time. |
+| **panelConfig.drillConfig.enabled** | `Boolean`. Condition to enable Drill-down functionality. |
+| **panelConfig.filters** | `Boolean`. Activate or deactivate the filter button within the panels. |
 
 ## 2. Event Listeners:
 
