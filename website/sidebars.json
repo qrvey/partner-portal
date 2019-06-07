@@ -16,7 +16,8 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
-          "embedding/widgets/widget-webformdesign"
+          "embedding/widgets/widget-webformdesign",
+          "embedding/widgets/an-summary-panel"
         ]
       },
       {
