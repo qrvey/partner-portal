@@ -1,10 +1,10 @@
 ---
 id: an-custom-charts
 title: AN Custom Charts - <an-custom-charts />
-sidebar_label: AN Custom Chart
+sidebar_label: AN Custom Chart - PB
 ---
 
-This document is for any developer who wants to know how to implement the custom chart panel widget inside Page Builder.
+This document is for any developer who wants to know how to implement the custom chart panel widget inside `Page Builder`.
 
 Bellow are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.
 
