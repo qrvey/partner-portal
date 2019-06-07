@@ -39,7 +39,7 @@ class Index extends React.Component {
         {name:'Data Router', icon:'data-icon', path:'/docs/data-router/data-router-intro'},
         {name:'Admin', icon:'admin-icon', path:'/docs/admin/admin-intro'},
         {name:'Embedding', icon:'embedding-icon', path:'/docs/embedding/embedding-intro'},
-        {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-deployments-getting-started'},
+        {name:'Setup & Deployments', icon:'cloud-icon', path:'/docs/setup-deployments/setup-overview'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">

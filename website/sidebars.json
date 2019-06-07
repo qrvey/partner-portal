@@ -4,7 +4,9 @@
       "get-started/get-started-intro"
     ],
     "Business Analytics": [
-      "business-analytics/business-analytics-doc"
+      "business-analytics/business-overview",
+      "business-analytics/business-architecture",
+      "business-analytics/business-users"
     ],
     "Data Router": [
       "data-router/data-router-intro",
@@ -37,7 +39,28 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
-          "embedding/widgets/widget-webformdesign"
+          "embedding/widgets/data-sources/widget-datasets",
+          "embedding/widgets/data-sources/widget-webforms",
+          "embedding/widgets/data-sources/widget-dataconnectors",
+          "embedding/widgets/data-sources/widget-datalinks",
+          "embedding/widgets/data-sources/widget-metadata",
+          "embedding/widgets/analytics/widget-summary-view",
+          "embedding/widgets/analytics/widget-tabular-view",
+          "embedding/widgets/analytics/widget-custom-view",
+          "embedding/widgets/analytics/widget-panel-builder",
+          "embedding/widgets/analytics/widget-panels",
+          "embedding/widgets/analytics/widget-summary-panel",
+          "embedding/widgets/analytics/widget-filter-panel",
+          "embedding/widgets/analytics/widget-filter-modal",
+          "embedding/widgets/analytics/widget-buckets-modal",
+          "embedding/widgets/analytics/widget-formula-modal",
+          "embedding/widgets/app-building/widget-report-builder",
+          "embedding/widgets/app-building/widget-page-builder",
+          "embedding/widgets/app-building/widget-end-user",
+          "embedding/widgets/app-building/widget-user-management",
+          "embedding/widgets/automation/widget-automation",
+          "embedding/widgets/automation/widget-tokens-manager",
+          "embedding/widgets/automation/widget-tokens-suggestion-box"
         ]
       },
       {
@@ -45,16 +68,22 @@
         "label": "API",
         "ids": [
           "embedding/api/api-intro",
-          "embedding/api/api-workflows"
+          "embedding/api/api-data-sources",
+          "embedding/api/api-analytics",
+          "embedding/api/api-automation"
         ]
       }
     ],
     "Setup & Deployments": [
-      "setup-deployments/setup-deployments-getting-started",
-      "setup-deployments/setup-deployments-setup"
+      "setup-deployments/setup-overview",
+      "setup-deployments/setup-initial-deployment",
+      "setup-deployments/setup-setup",
+      "setup-deployments/setup-upgrades",
+      "setup-deployments/setup-cost",
+      "setup-deployments/setup-security"
     ],
     "Release Notes": [
-      "release-notes/release-jun"
+      "release-notes/releases"
     ]
   }
 }

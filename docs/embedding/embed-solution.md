@@ -1,5 +1,7 @@
 ---
 id: embed-solution
-title: Embedding Solution
-sidebar_label: Embedding Solution
+title: Embedded Solutions
+sidebar_label: Embedded Solutions
 ---
+
+Lorem Ipsum
