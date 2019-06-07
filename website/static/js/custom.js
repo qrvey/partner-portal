@@ -79,6 +79,7 @@ function setCookie(cname, cvalue, exdays) {
 
 // Log visitor page function
 function postActivy(){
+    let data = [];
     const newActivity = {
         userName:currentUser.userName,
         userAgent: userAgent, 
@@ -89,6 +90,7 @@ function postActivy(){
         contentType: CONTENT_TYPE, 
         date: new Date(),
     };
+    data.push(newActivity);
     
 
     fetch(datarouter.url, {
@@ -96,9 +98,7 @@ function postActivy(){
         method:'POST',
         body:JSON.stringify([{
             metadataId: datarouter.metadataId,
-            data: [{
-                newActivity
-            }]
+            data: data
         }])
     })
     .then(response => response.json())
