@@ -157,6 +157,8 @@
     height: auto;
     opacity: 1;
     width: 107px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .homeContainer{
@@ -207,6 +209,10 @@
         padding-right: 60px;
     }
 
+    .nav-footer .sitemap .nav-home {
+        margin-left: 30px;
+        margin-right: 60px;
+    }
     
     
 }
@@ -290,7 +296,7 @@
         padding: 0 0;
     }
 
-    .main-title{
+    .main-title{  
         
     }
 
