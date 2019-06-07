@@ -86,6 +86,9 @@
     "Setup & Deployments": [
       "setup-deployments/setup-deployments-getting-started",
       "setup-deployments/setup-deployments-setup"
+    ],
+    "Release Notes": [
+      "release-notes/release-jun"
     ]
   }
 }
