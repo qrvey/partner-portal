@@ -5,13 +5,10 @@ title: Workflow Design Widget
 *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas lacinia elit, a vestibulum neque facilisis id. Curabitur pellentesque ipsum eget tellus laoreet mollis. Pellentesque pellentesque lorem lacus, vitae aliquam ipsum lacinia id.*
 
 ## Widget Overview
-*Maecenas ut purus vehicula, rhoncus odio ac, accumsan purus. Maecenas lacinia magna id ligula laoreet cursus. Vivamus varius turpis eu diam lacinia rutrum. Praesent blandit efficitur vehicula. Nullam interdum turpis sit amet quam vulputate scelerisque. Praesent sit amet pharetra massa, vel pulvinar dolor.*
+*Este widget proporciona herramientas para automatizar trabajos, seleccionando el trigger correcto puedes iniciar una sucesion de tareas, que seran ejecutadas de forma automatica cuando las condiciones del trigger se cumplan.*
 
 ## Samples
 *Cras ac erat tempor, tincidunt massa in, porttitor erat. Sed sollicitudin leo vitae mauris tincidunt, eget pellentesque lorem molestie. Quisque id consectetur mi.* 
-
-### Form Sample
-In the following example, we have the design widget configuration object for a form, in which the creation of intro and end page have been disabled along with the options to duplicate and delete questions. Also some question types can't be added like look up and image upload. Note how we only use the admin app configuration object for form as the qrvey type we set is that, and the field types and options not included are set as enabled.
 
 # Workflow Design Widget
 
