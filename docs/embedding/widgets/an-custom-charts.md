@@ -6,7 +6,7 @@ sidebar_label: AN Custom Chart - PB
 
 This document is for any developer who wants to know how to implement the custom chart panel widget inside `Page Builder`.
 
-Bellow are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.
+Below are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
 This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
 
@@ -44,30 +44,32 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
 
 Chart properties are defined below:
 
-*   **user_id:** `String`, Id of Qrvey User.
-*   **app_id:** `String`, Id of Qrvey App.
-*   **chart_id:** `String`, Id of Chart.
-*   **qrveyid:** `String`, Id of Qrvey Dataset/Webform.
-*   **filters:** (optional) `Object`, Data of filters.
-*   **drilldowns:** (optional) `Object`, Data of drilldowns.
-*   **options:** `Object`, Chart menu configuration data.
-    *   **dragger:** `Boolean`, Determines if the panel is draggable. **Must be `false`**.
-    *   **filter:** `Boolean`, Determines if the panel has the filter button.
-    *   **menu:** `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu.
-*   **insidemenu:** `Object`, Chart data point menu configuration data.
-    *   **drilldown:** `Boolean`, Determines if the panel has drill down options.
-    *   **filterby:** `Boolean`, Determines if the panel has the Filter By option.
-    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. **Must be `false`**.
-*   **id:** `String`, Id of the web component.
-*   **page_id:** `String`, Id of the page inside the Builder.
-*   **tab_id:** (optional) `String`, Id of the tab inside the page.
+| **Property** | **Value** |
+| --- | --- |
+| **user_id** | `String`, Id of Qrvey User. |
+| **app_id** | `String`, Id of Qrvey App. |
+| **chart_id** | `String`, Id of Chart. |
+| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. |
+| **filters** | (optional) `Object`, Data of filters. |
+| **drilldowns** | (optional) `Object`, Data of drilldowns. |
+| **options** | `Object`, Chart menu configuration data. |
+| **options.dragger** | `Boolean`, Determines if the panel is draggable. **Must be `false`**. |
+| **options.filter** | `Boolean`, Determines if the panel has the filter button. |
+| **options.menu** | `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. |
+| **insidemenu** | `Object`, Chart data point menu configuration data. |
+| **insidemenu.drilldown** | `Boolean`, Determines if the panel has drill down options. |
+| **insidemenu.filterby** | `Boolean`, Determines if the panel has the Filter By option. |
+| **insidemenu.seedata** | `Boolean`, Determines if the panel has the See Data option. **Must be `false`**. |
+| **id** | `String`, Id of the web component. |
+| **page_id** | `String`, Id of the page inside the Builder. |
+| **tab_id** | (optional) `String`, Id of the tab inside the page. |
 
 
 
 
 ## 2. Dispatched Events:
 
-* ### ON\_AN\_OPEN\_FILTERS\_MODAL
+* #### ON\_AN\_OPEN\_FILTERS\_MODAL
 
   This event is emitted when the user clicks on the filter button.
 
@@ -80,7 +82,7 @@ Chart properties are defined below:
   | **pageId** | `String`, Id to identify the page. | Yes |
   | **tabId** | `String`, Id to identify the tab of the page. | No |
 
-* ### ON\_OPEN\_CHART\_BUILDER
+* #### ON\_OPEN\_CHART\_BUILDER
 
   This event is emitted when the user clicks on the Edit option of the panel menu.
 
@@ -93,7 +95,7 @@ Chart properties are defined below:
   | **chart\_id** | `String`, Id of current chart. | Yes |
   | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform. | Yes |
 
-* ### ON\_AN\_FILTERS\_APPLIED
+* #### ON\_AN\_FILTERS\_APPLIED
 
   This event is emitted when the user clicks on the Filter By option of the data point menu.
 
@@ -102,7 +104,7 @@ Chart properties are defined below:
   | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets. | Yes |
   | **requestFilters** | `Array`, Current applied filters transformed for requests. | Yes |
 
-* ### ON\_AN\_CHART\_DRILLDOWN
+* #### ON\_AN\_CHART\_DRILLDOWN
 
   This event is emitted when the user clicks on a drill down option of the data point menu
 
@@ -114,25 +116,25 @@ Chart properties are defined below:
 
 ## 3. Event Listeners:
 
-* ### ON\_AN\_FILTERS\_APPLIED
+* #### ON\_AN\_FILTERS\_APPLIED
 
-  This event call a method inside the widget to update the filter data.
+  Use this event to update the filter data.
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
   | **preferenceFilters** | `Object`, Previously applied filters ready to update the current filters data. | Yes |
 
-* ### ON\_AN\_CHART\_BUILDER\_SAVED
+* #### ON\_AN\_CHART\_BUILDER\_SAVED
 
-  This event call a method inside the widget to update the chart data.
+  Use this event to update the chart data.
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
   | **chartid** | `String`, Id to identify the current chart. | Yes |
 
-* ### ON\_AN\_CHART\_DRILLDOWN
+* #### ON\_AN\_CHART\_DRILLDOWN
 
-  This event call a method inside the widget to update the chart data.
+  Use this event to update the chart drilldown data.
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
@@ -145,7 +147,7 @@ Chart properties are defined below:
 There are two ways to implement this widget:
 
 
-*   ### Inline Config Object as String:
+*   #### Inline Config Object as String:
 
 
 ```
@@ -157,7 +159,7 @@ There are two ways to implement this widget:
 ```
 
 
-*   ### Separated Config Object in `window` environment:
+*   #### Separate Config Object in `window` environment:
 
 
 ```
