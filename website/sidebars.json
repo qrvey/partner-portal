@@ -39,6 +39,7 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
+          "embedding/widgets/an-summary-view",
           "embedding/widgets/data-sources/widget-datasets",
           "embedding/widgets/data-sources/widget-webforms",
           "embedding/widgets/data-sources/widget-dataconnectors",
