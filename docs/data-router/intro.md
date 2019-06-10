@@ -1,7 +1,7 @@
 ---
 id: data-router-intro
 title: Introduction
-sidebar_label: Introduction
+sidebar_label: Overview
 ---
 
 Qrvey DataRouter provides developers with a means for loading their data from a variety of different sources into Qrvey’s high performance, ElasticSearch backend. DataRouter provides an API that can be used for creating metadata data mapping and custom transformations, live update data push, and large volume historical data loads.   It is designed to scale for all types of data volume and velocity scenarios.
