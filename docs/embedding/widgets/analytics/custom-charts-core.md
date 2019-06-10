@@ -1,5 +1,5 @@
 ---
-id: an-custom-charts-core
+id: widget-custom-charts-core
 title: AN Custom Charts In Core - <an-custom-charts />
 sidebar_label: AN Custom Chart - Core
 ---

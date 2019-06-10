@@ -1,5 +1,5 @@
 ---
-id: setup-deployments-setup
+id: setup-setup
 title: Setup
 sidebar_label: Setup
 ---

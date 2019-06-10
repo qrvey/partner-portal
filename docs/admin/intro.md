@@ -1,7 +1,0 @@
----
-id: admin-intro
-title: Introduction
-sidebar_label: Introduction
----
-
-Admin - Intro copy.
