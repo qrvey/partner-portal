@@ -72,25 +72,25 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 | **Property** | **Value** |
 | --- | --- |
 | **widgetConfig** | `Object`, Configuration for the panel, receives some properties to change the appearance or behavior of the panel. |
-| **height** | `String`, Length or percentage of the height that the panel will take. |
-| **filters** | `Boolean`, Activate or deactivate the filter button inside the panels. |
-| **showIndex** | `Boolean`. Condition to enable indexes within the panels. |
-| **globalFilter** | `Boolean`, |
-| **bitbucket** | `Boolean`, |
-| **search** | `Boolean`, |
-| **branch** | `Boolean`, activate the branches of the panels if they exist. |
-| **menu** | `Boolean`, activate the panel menu. |
-| **download** | `Boolean`, activate the options for downloading panels. |
-| **embed** | `Boolean`, establishes behaviors and appearance when the panel is embedded, for example, do not show branches, execute external filters to the component and ignore the showIndex. |
-| **viewAction** | `Boolean`, show the change view list. |
-| **sort** | `Boolean`, show the list of data organization. |
-| **activeView** | `String`. Type of View to show the results; It will depend on the type of panel. |
-| **groupingActive** | `String`, Type of result grouping for certain panel types; It is not required for all panel types. |
-| **sortingActive** | `String`, Type of organization of results. It will depend on the type of panel; It is not required for all panel types. |
-| **displayingActive** | `String`, Type of display for the Lookup panel type. It shows several titles for the results. |
-| **drillConfig** | `Object`, configuration for the drilldown present in some visualizations of the panels. |
-| **enabled** | `Boolean`, enable or disable the panel drilldown. |
-| **persist** | `Boolean`, keep the drilldown with the last configuration activated. |
+| **widgetConfig.height** | `String`, Length or percentage of the height that the panel will take. |
+| **widgetConfig.filters** | `Boolean`, Activate or deactivate the filter button inside the panels. |
+| **widgetConfig.showIndex** | `Boolean`. Condition to enable indexes within the panels. |
+| **widgetConfig.globalFilter** | `Boolean`, |
+| **widgetConfig.bitbucket** | `Boolean`, |
+| **widgetConfig.search** | `Boolean`, |
+| **widgetConfig.branch** | `Boolean`, activate the branches of the panels if they exist. |
+| **widgetConfig.menu** | `Boolean`, activate the panel menu. |
+| **widgetConfig.download** | `Boolean`, activate the options for downloading panels. |
+| **widgetConfig.embed** | `Boolean`, establishes behaviors and appearance when the panel is embedded, for example, do not show branches, execute external filters to the component and ignore the showIndex. |
+| **widgetConfig.viewAction** | `Boolean`, show the change view list. |
+| **widgetConfig.sort** | `Boolean`, show the list of data organization. |
+| **widgetConfig.activeView** | `String`. Type of View to show the results; It will depend on the type of panel. |
+| **widgetConfig.groupingActive** | `String`, Type of result grouping for certain panel types; It is not required for all panel types. |
+| **widgetConfig.sortingActive** | `String`, Type of organization of results. It will depend on the type of panel; It is not required for all panel types. |
+| **widgetConfig.displayingActive** | `String`, Type of display for the Lookup panel type. It shows several titles for the results. |
+| **widgetConfig.drillConfig** | `Object`, configuration for the drilldown present in some visualizations of the panels. |
+| **widgetConfig.drillConfig.enabled** | `Boolean`, enable or disable the panel drilldown. |
+| **widgetConfig.drillConfig.persist** | `Boolean`, keep the drilldown with the last configuration activated. |
 | **tab_id** | `String`, optional identifier of the Report Builder tab and Page Builder to set preferences and filters. |
 | **page_id** | `String`, optional identifier of the page in Page Builder to set filters. |
 
