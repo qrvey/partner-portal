@@ -18,12 +18,12 @@ In the following example, we have the design widget configuration object for a S
 
 <script>
 var configWebForm = {
-"api_key": "YOURAPIKEYGOESHERE",
-"app_id": "APPID",
-"domain": "https://your_qrvey_domain",
-"qrvey_id": "QRVEYID",
-"user_id": "USERID",
-"app_type": "SURVEY"
+    "api_key": "YOURAPIKEYGOESHERE",
+    "app_id": "APPID",
+    "domain": "https://your_qrvey_domain",
+    "qrvey_id": "QRVEYID",
+    "user_id": "USERID",
+    "app_type": "SURVEY"
 }
 </script>
 
@@ -39,12 +39,12 @@ In the following example, we have the design widget configuration object for a F
 
 <script>
 var configWebForm = {
-"api_key": "YOURAPIKEYGOESHERE",
-"app_id": "APPID",
-"domain": "https://your_qrvey_domain",
-"qrvey_id": "QRVEYID",
-"user_id": "USERID",
-"app_type": "FORM"
+    "api_key": "YOURAPIKEYGOESHERE",
+    "app_id": "APPID",
+    "domain": "https://your_qrvey_domain",
+    "qrvey_id": "QRVEYID",
+    "user_id": "USERID",
+    "app_type": "FORM"
 }
 </script>
 
@@ -60,12 +60,12 @@ In the following example, we have the design widget configuration object for a Q
 
 <script>
 var configWebForm = {
-"api_key": "YOURAPIKEYGOESHERE",
-"app_id": "APPID",
-"domain": "https://your_qrvey_domain",
-"qrvey_id": "QRVEYID",
-"user_id": "USERID",
-"app_type": "QUIZ"
+    "api_key": "YOURAPIKEYGOESHERE",
+    "app_id": "APPID",
+    "domain": "https://your_qrvey_domain",
+    "qrvey_id": "QRVEYID",
+    "user_id": "USERID",
+    "app_type": "QUIZ"
 }
 </script>
 
@@ -78,7 +78,35 @@ var configWebForm = {
 *Quisque varius neque id viverra imperdiet. Sed mattis ac tellus ac fringilla. Integer eu elementum mauris. Curabitur pretium risus erat, quis tincidunt metus cursus et. Proin ex leo, efficitur in massa at, posuere aliquam sem. Integer ultricies id lectus id vestibulum. Donec id lorem nec eros aliquet dapibus id sit amet diam.*
 
 ### Customize
-*Quisque varius neque id viverra imperdiet. Sed mattis ac tellus ac fringilla. Integer eu elementum mauris. Curabitur pretium risus erat, quis tincidunt metus cursus et. Proin ex leo, efficitur in massa at, posuere aliquam sem. Integer ultricies id lectus id vestibulum. Donec id lorem nec eros aliquet dapibus id sit amet diam.*
+this widget have a customization option, you can change main color, secondary color, icon color, etc. all the color values **must be on hexadecimal** to avoid errors, the following example show how it's work
+
+```
+<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
+
+<script>
+var configWebForm = {
+    "api_key": "YOURAPIKEYGOESHERE",
+    "app_id": "APPID",
+    "domain": "https://your_qrvey_domain",
+    "qrvey_id": "QRVEYID",
+    "user_id": "USERID",
+    "app_type": "FORM",
+    "style_options": {
+        main_color: "#FF420E",
+        secondary_color: "#B2B2B2",
+        tab_bar: "#666666",
+        field_icon: "#89928d",
+        error: "#FF420E",
+        notification: "#CCCCCC",
+        successful: "#666666",
+        warning: "#CCCCCC"
+    }
+}
+</script>
+
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+```
 
 ## Schema Reference
 The JSON Reference is designed to document the structure of the JSON configuration object to configure the Webform Design Widget. The Schema object has the following properties defined below:
