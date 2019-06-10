@@ -74,9 +74,6 @@ var configWebForm = {
 ```
 **Note:** all optionals fields omitted will be interpreted by the system as true, you can just use the fields that you want to declare false.
 
-### Security
-*Quisque varius neque id viverra imperdiet. Sed mattis ac tellus ac fringilla. Integer eu elementum mauris. Curabitur pretium risus erat, quis tincidunt metus cursus et. Proin ex leo, efficitur in massa at, posuere aliquam sem. Integer ultricies id lectus id vestibulum. Donec id lorem nec eros aliquet dapibus id sit amet diam.*
-
 ### Customize
 this widget have a customization option, you can change main color, secondary color, icon color, etc. all the color values **must be on hexadecimal** to avoid errors, the following example show how it's work
 
