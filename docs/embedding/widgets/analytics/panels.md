@@ -40,7 +40,7 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
 }
 ```
 
-### Properties and Values:
+### Properties and Values
 
 Chart properties are defined below:
 
@@ -67,7 +67,7 @@ Chart properties are defined below:
 
 
 
-## Dispatched Events:
+## Dispatched Events
 
 * ### ON\_AN\_OPEN\_FILTERS\_MODAL
 
@@ -114,7 +114,7 @@ Chart properties are defined below:
 
 
 
-## Event Listeners:
+## Event Listeners
 
 * ### ON\_AN\_FILTERS\_APPLIED
 
@@ -142,12 +142,12 @@ Chart properties are defined below:
 
 
 
-## Example:
+## Example
 
 There are two ways to implement this widget:
 
 
-*   ### Inline Config Object as String:
+*   ### Inline Config Object as String
 
 
 ```
@@ -159,7 +159,7 @@ There are two ways to implement this widget:
 ```
 
 
-*   ### Separate Config Object in `window` environment:
+*   ### Separate Config Object in `window` environment
 
 
 ```
