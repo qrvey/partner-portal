@@ -1,59 +1,76 @@
 ---
-id: widget-webforms
-title: Web Forms
-sidebar_label: Web Forms
+id: widget-webformdesign
+title: Web Forms Design Widget
 ---
-*Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas lacinia elit, a vestibulum neque facilisis id. Curabitur pellentesque ipsum eget tellus laoreet mollis. Pellentesque pellentesque lorem lacus, vitae aliquam ipsum lacinia id.*
+The web form widget design is a powerful but light tool to allow you embed the webform design on your own web application, we provide three differents type of webforms, Survey, Form and Quiz. Everyone of them with his particular behabiour.
 
 ## Widget Overview
-*Maecenas ut purus vehicula, rhoncus odio ac, accumsan purus. Maecenas lacinia magna id ligula laoreet cursus. Vivamus varius turpis eu diam lacinia rutrum. Praesent blandit efficitur vehicula. Nullam interdum turpis sit amet quam vulputate scelerisque. Praesent sit amet pharetra massa, vel pulvinar dolor.*
+This widget give you the view and allow to create new questions, sections and branches on your webforms just with a few code lines in your web application, we will explore the differents type of webforms and the way to embed it.
 
 ## Samples
-*Cras ac erat tempor, tincidunt massa in, porttitor erat. Sed sollicitudin leo vitae mauris tincidunt, eget pellentesque lorem molestie. Quisque id consectetur mi.* 
+We gonna explore the way to embed all kind of webforms in your own application, starting with Surveys following by Forms and concluding with Quiz.
 
-### Form Sample
-In the following example, we have the design widget configuration object for a form, in which the creation of intro and end page have been disabled along with the options to duplicate and delete questions. Also some question types can't be added like look up and image upload. Note how we only use the admin app configuration object for form as the qrvey type we set is that, and the field types and options not included are set as enabled.
+### Survey Sample
+In the following example, we have the design widget configuration object for a Survey, the following is the minimum configuration object required to embed the design widget, also you have to has a valir and active application and a draft Survey in your server.
 
 ```
-{
+<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
+
+<script>
+var configWebForm = {
 "api_key": "YOURAPIKEYGOESHERE",
-"app_id": "DewFuKJ",
-"domain": "https://qrvey.com",
-"qrvey_id": "42cnM4T",
-"user_id": "fD6Jl43",
-"app_type": "FORM",
-    "adminApp": {
-        "Form": {
-            "General": [{
-                    "name": "Intro Page",
-                    "status": false
-                },
-                {
-                    "name": "End Page",
-                    "status": false
-                }
-            ],
-            "Field Types": [{
-                    "name": "Image Upload",
-                    "status": false
-                },
-                {
-                    "name": "Lookup",
-                    "status": false
-                }
-            ],
-            "Field Options": [{
-                    "name": "Deleting",
-                    "status": false
-                },
-                {
-                    "name": "Duplicate",
-                    "status": false
-                }
-            ]
-        }
-    }
+"app_id": "APPID",
+"domain": "https://your_qrvey_domain",
+"qrvey_id": "QRVEYID",
+"user_id": "USERID",
+"app_type": "SURVEY"
 }
+</script>
+
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+```
+
+### Form Sample
+In the following example, we have the design widget configuration object for a Form, the following is the minimum configuration object required to embed the design widget, also you have to has a valir and active application and a draft Form in your server.
+
+```
+<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
+
+<script>
+var configWebForm = {
+"api_key": "YOURAPIKEYGOESHERE",
+"app_id": "APPID",
+"domain": "https://your_qrvey_domain",
+"qrvey_id": "QRVEYID",
+"user_id": "USERID",
+"app_type": "FORM"
+}
+</script>
+
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+```
+
+### Quiz Sample
+In the following example, we have the design widget configuration object for a Quiz, the following is the minimum configuration object required to embed the design widget, also you have to has a valir and active application and a draft Quiz in your server.
+
+```
+<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
+
+<script>
+var configWebForm = {
+"api_key": "YOURAPIKEYGOESHERE",
+"app_id": "APPID",
+"domain": "https://your_qrvey_domain",
+"qrvey_id": "QRVEYID",
+"user_id": "USERID",
+"app_type": "QUIZ"
+}
+</script>
+
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
 **Note:** all optionals fields omitted will be interpreted by the system as true, you can just use the fields that you want to declare false.
 
