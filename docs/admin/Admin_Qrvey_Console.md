@@ -1,12 +1,16 @@
-#### Business Analytics Console
+---
+id: admin-sections-platform
+title: Business Analytics Console
+sidebar_label: Business Analytics Console
+---
 
-**User Management**
+## User Management
 
 This section is where Admins add their “Creator” users to grant them access to the Business Analytics application. Admins can choose to allow creators to sign up through the Business Analytics application sign up page, or only by adding them in the User Management section. 
 
 When adding a creator, admins can assign or automatically generate a password that creators will receive by email to access the Analytics Application. Creators can be edited or deleted at any time. Once a creator has been added successfully admins will have access to their content that can be used to share applications. 
 
-**Customization**
+## Customization
 
 Admins can customize the look and feel as well as any feature available on the Businesa Analytics application to their liking and their branding styles. 
 
@@ -20,7 +24,7 @@ In the Emails section admins can use the default template we provide or they can
 
 All of these settings can be reset to their original setting at any time.
 
-**Feature Configuration**
+## Feature Configuration
 
 In the Features section admins can turn on/off each of the creator application sections and features depending on what they would like to make available to creators. For example if creators only have the need of connecting to databases like MySQL, Aurora, or Postgres admins can turn off other options in Datasets like creating Elasticsearch or Spreadsheet datasets. They can also only make available these types of databases and turn others off like MS SQL or Oracle. 
 
