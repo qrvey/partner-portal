@@ -25,14 +25,14 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
   "filters": "<FILTERS_OBJECT>",
   "drilldowns": "<DRILLDOWNS_OBJECT>",
   "options": {
-    dragger: "<true | false>",
-    filter: "<true | false>",
-    menu: "<true | false | [ MENU_OPTIONS_ARRAY ]>",
+    dragger: true,
+    filter: true,
+    menu: true,
   },
   "insidemenu": {
-    drilldown: "<true | false>",
-    filterby: "<true | false>",
-    seedata: "<true | false>",
+    drilldown: true,
+    filterby: true,
+    seedata: true,
   },
   "model": "<QRVEY_MODEL_OBJECT>",
   "view_id": "<QRVEY_ID>",
@@ -51,16 +51,16 @@ Chart properties are defined below:
 *   **filters:** (optional) `Object`, Data of filters.
 *   **drilldowns:** (optional) `Object`, Data of drilldowns.
 *   **options:** `Object`, Chart menu configuration data.
-    *   **dragger:** `Boolean`, Determines if the panel is draggable. Must be false.
-    *   **filter:** `Boolean`, Determines if the panel has the filter button.
-    *   **menu:** `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu.
+    *   **dragger:** `Boolean`, Determines if the panel is draggable. Must be `true`.
+    *   **filter:** `Boolean`, Determines if the panel has the filter button. Must be `true`.
+    *   **menu:** `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. Must be `true`.
 *   **insidemenu:** `Object`, Chart data point menu configuration data.
-    *   **drilldown:** `Boolean`, Determines if the panel has drill down options.
-    *   **filterby:** `Boolean`, Determines if the panel has the Filter By option.
-    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. Must be false.
-*   **id:** `String`, Id of the web component.
-*   **page_id:** `String`, Id of the page inside the Builder.
-*   **tab_id:** (optional) `String`, Id of the tab inside the page.
+    *   **drilldown:** `Boolean`, Determines if the panel has drill down options. Must be `true`. 
+    *   **filterby:** `Boolean`, Determines if the panel has the Filter By option. Must be `true`.
+    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. Must be false. Must be `true`.
+*   **model:** (optional) `Object`, Qrvey Model Object from webform/dataset.
+*   **view_id:** `String`, must be the same value as `qrveyid`.
+*   **global:** (optional) `String`, determines whether the filter should always be applied as Global. Must be `true`.
 
 
 
@@ -76,9 +76,6 @@ Chart properties are defined below:
   | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets. | Yes |
   | **panelData** | `Object`, Data of the panel. | Yes |
   | **qrveyid** | `String`, Id to identify the Qrvey Dataset or Webform. | Yes |
-  | **panelId** | `String`, Id to identify the panel. | Yes |
-  | **pageId** | `String`, Id to identify the page. | Yes |
-  | **tabId** | `String`, Id to identify the tab of the page. | No |
 
 * ### ON\_OPEN\_CHART\_BUILDER
 
@@ -92,6 +89,27 @@ Chart properties are defined below:
   | **app\_id** | `String`, Id of Qrvey App. | Yes |
   | **chart\_id** | `String`, Id of current chart. | Yes |
   | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform. | Yes |
+
+* ### ON_AN_DELETE_CHART
+  This event is emitted when the user clicks on the "Delete" option of the panel menu.
+  | **Property** | **Value** | **Required** |
+  | --- | --- | --- |
+  | **chartid** | `String`, ID of current chart. | Yes |
+
+
+* ### ON_AN_DUPLICATE_CHART
+  This event is emitted when the user clicks on the "Duplicate" option of the panel menu.
+
+  | **Property** | **Value** | **Required** |
+  | --- | --- | --- |
+  | **body** | `Array`, Data of current chart. | Yes |
+  | **user\_id** | `String`, Id of Qrvey User. | Yes |
+  | **app\_id** | `String`, Id of Qrvey App. | Yes |
+  | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform. | Yes |
+
+* ### ON_AN_FILTERS_SEE_DATA
+  This event is emitted when the user clicks on the "See Data" option of the data point menu.
+
 
 * ### ON\_AN\_FILTERS\_APPLIED
 
@@ -113,6 +131,14 @@ Chart properties are defined below:
 
 
 ## 3. Event Listeners:
+
+* ### ON_CLOSE_BUCKET_MODAL
+  This event call a method inside the widget to update the chart data.
+  
+  | **Property** | **Value** | **Required** |
+  | --- | --- | --- |
+  | **hasChanges** | `Boolean`, Determines if the chart data will update. | Yes |
+
 
 * ### ON\_AN\_FILTERS\_APPLIED
 
@@ -150,10 +176,9 @@ There are two ways to implement this widget:
 
 ```
 <div style="height: 515px; padding: 5px; width: 33.33333%;">
-<an-custom-charts config='{"user_id":"c0T3iVh","app_id":"lgVBzjr","qrveyid":"Nw9eKKe","global":true,"options":{"dragger":false,"filter":true,"menu":["EDIT"]},"insidemenu":{"seedata":false,"filterby":true,"drilldown":true},"chart_id":"Nw9eKKe_3AADdEW","page_id":"PAGEABC","tab_id":"TABABC"}'></an-custom-charts>
+<an-custom-charts config='{"user_id":"c0T3iVh","app_id":"lgVBzjr","qrveyid":"Nw9eKKe","global":true,"options":{"dragger":true,"filter":true,"menu":true},"insidemenu":{"seedata":true,"filterby":true,"drilldown":true},"chart_id":"Nw9eKKe_3AADdEW","view_id":"Nw9eKKe"}'></an-custom-charts>
 </div>
 <script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/custom-chart/ancustomcharts.js"></script>
-
 ```
 
 
@@ -163,22 +188,22 @@ There are two ways to implement this widget:
 ```
 <script>
 window.CustomChartConfig = {
-"user_id": "c0T3iVh",
-"app_id": "lgVBzjr",
-    "qrveyid": "Nw9eKKe",
-"options": {
-    "dragger": false,
+  "user_id": "c0T3iVh",
+  "app_id": "lgVBzjr",
+  "qrveyid": "Nw9eKKe",
+  "global": true,
+  "options": {
+    "dragger": true,
     "filter": true,
-    "menu": ["EDIT"]
-    },
-"insidemenu": {
-    "seedata": false,
+    "menu": true
+  },
+  "insidemenu": {
+    "seedata": true,
     "filterby": true,
     "drilldown": true
-},
-"chart_id": "Nw9eKKe_3AADdEW",
-"Page_id": "PAGEABC",
-"tab_id": "TABABC"
+  },
+  "chart_id": "Nw9eKKe_3AADdEW",
+  "view_id": "Nw9eKKe"
 }
 </script>
 <div style="height: 515px; padding: 5px; width: 33.33333%;">
