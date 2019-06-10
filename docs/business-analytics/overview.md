@@ -1,7 +1,7 @@
 ---
-id: admin-intro
+id: business-overview
 title: Overview
 sidebar_label: Overview
 ---
 
-Admin - Intro copy.
+Business Analytics copy.

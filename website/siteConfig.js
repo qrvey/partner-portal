@@ -40,9 +40,13 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      href: 'https://qrvey.com/why',
-      label: 'About',
-    }
+      href: '/training',
+      label: 'Training Sessions',
+    },
+    {
+      href: '/docs',
+      label: 'Documents',
+    },
   ],
 
   // If you have users set above, you add it here:
@@ -50,12 +54,12 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/qrvey_footer_logo.svg',
-  footerIcon: 'img/qrvey_footer_logo.svg',
+  footerIcon: 'img/qrvey_logo.png',
   favicon: 'img/Qrvey.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#001f52',
+    primaryColor: '#1C3E75',
     secondaryColor: '#2d476c',
   },
 
