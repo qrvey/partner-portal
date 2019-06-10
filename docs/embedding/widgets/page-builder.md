@@ -13,7 +13,7 @@ title: Page Builder Widget
 
 ## How to use it?
 
-1. Putthescripttagofthegivenlauncherurlinyourwebsite.Forexample:
+1. Put the script tag of the given launcher url in your website. For example:
 
 ```
 <script​ ​type="​text/javascript​" src="​https://s3.amazonaws.com/cdn.qrvey.com/widgets-launcher-dev/app.js​"></script >
