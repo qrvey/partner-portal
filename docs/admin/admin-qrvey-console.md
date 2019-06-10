@@ -1,7 +1,7 @@
 ---
 id: admin-sections-platform
-title: Business Analytics Console
-sidebar_label: Business Analytics Console
+title: Business Analytics
+sidebar_label: Business Analytics
 ---
 
 ## User Management
