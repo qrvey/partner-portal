@@ -1,6 +1,7 @@
 ---
-id: widget-webformdesign
-title: Web Forms Design Widget
+id: widget-webforms
+title: Web Forms
+sidebar_label: Web Forms
 ---
 The web form widget design is a powerful and effective tool to allow you embed the webform design on your own web application, we provide three differents type of webforms, Survey, Form and Quiz. Everyone of them with his particular behabiour.
 
