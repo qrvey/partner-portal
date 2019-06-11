@@ -3,6 +3,7 @@ id: simple-metadata
 title: Creating a Simple Metadata
 sidebar_label: Create Simple Metadata
 ---
+
 <div style="text-align: justify">
 
 # Metadata Structure
@@ -66,14 +67,14 @@ A metadata is created with a JSON document. This JSON can be divided into three 
 }
 ```
 
->It is required for you to specify the data type for each column
+>You must specify the data type for each column.
 
 ## Properties
-We are defining the Elasticsearch index where data will be stored: `my_first_index`. Also, we are indicating the date format we will use for date fields: `YYYY-MM-DDTHH:mm:ss`.
+This section defines the name of the Elasticsearch index where data will be stored: `my_first_index`. Also, we are indicating the date format we will use for date fields: `YYYY-MM-DDTHH:mm:ss`.
 
 ## Columns
 
-From the previous metadata we can expect to receive 4 columns with data: a sender, a destinatary, a subject and a carbon copy.
+In this metadata example we can expect to receive 4 columns with data: a sender, a destination, a subject and a carbon copy.
 
 ## Transformations
 
