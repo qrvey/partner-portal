@@ -1,7 +1,7 @@
 ---
 id: data-router-intro
-title: Data rule flatMao
-sidebar_label: Overview
+title: Data rule flatMap
+sidebar_label: Definition
 ---
 
 <div style="text-align: justify">
