@@ -4,9 +4,9 @@ title: AN Custom Charts In Core - <an-custom-charts />
 sidebar_label: AN Custom Chart - Core
 ---
 
-This document is for any developer who wants to know how to implement the custom chart panel widget inside `Qrvey Core platform`.
+This document shows how to implement the custom chart panel widget inside `Page Builder`.
 
-Bellow are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.
+Below are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.
 
 This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
 
@@ -44,23 +44,25 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
 
 Chart properties are defined below:
 
-*   **user_id:** `String`, Id of Qrvey User.
-*   **app_id:** `String`, Id of Qrvey App.
-*   **chart_id:** `String`, Id of Chart.
-*   **qrveyid:** `String`, Id of Qrvey Dataset/Webform.
-*   **filters:** (optional) `Object`, Data of filters.
-*   **drilldowns:** (optional) `Object`, Data of drilldowns.
-*   **options:** `Object`, Chart menu configuration data.
-    *   **dragger:** `Boolean`, Determines if the panel is draggable. Must be `true`.
-    *   **filter:** `Boolean`, Determines if the panel has the filter button. Must be `true`.
-    *   **menu:** `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. Must be `true`.
-*   **insidemenu:** `Object`, Chart data point menu configuration data.
-    *   **drilldown:** `Boolean`, Determines if the panel has drill down options. Must be `true`. 
-    *   **filterby:** `Boolean`, Determines if the panel has the Filter By option. Must be `true`.
-    *   **seedata:** `Boolean`, Determines if the panel has the See Data option. Must be false. Must be `true`.
-*   **model:** (optional) `Object`, Qrvey Model Object from webform/dataset.
-*   **view_id:** `String`, must be the same value as `qrveyid`.
-*   **global:** (optional) `String`, determines whether the filter should always be applied as Global. Must be `true`.
+| **Property** | **Value** |
+| --- | --- |
+| **user_id** | `String`, Id of Qrvey User. |
+| **app_id** | `String`, Id of Qrvey App. |
+| **chart_id** | `String`, Id of Chart. |
+| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. |
+| **filters** | (optional) `Object`, Data of filters. |
+| **drilldowns** | (optional) `Object`, Data of drilldowns. |
+| **options** | `Object`, Chart menu configuration data. |
+| **options.dragger** | `Boolean`, Determines if the panel is draggable. Must be `true`. |
+| **options.filter** | `Boolean`, Determines if the panel has the filter button. Must be `true`. |
+| **options.menu** | `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. Must be `true`. |
+| **insidemenu** | `Object`, Chart data point menu configuration data. |
+| **insidemenu.drilldown** | `Boolean`, Determines if the panel has drill down options. Must be `true`.  |
+| **insidemenu.filterby** | `Boolean`, Determines if the panel has the Filter By option. Must be `true`. |
+| **insidemenu.seedata** | `Boolean`, Determines if the panel has the See Data option. Must be `true`. |
+| **model** | (optional) `Object`, Qrvey Model Object from webform/dataset. |
+| **view_id** | `String`, must be the same value as `qrveyid`. |
+| **global** | (optional) `String`, determines whether the filter should always be applied as Global. Must be `true`. |
 
 
 
@@ -92,7 +94,8 @@ Chart properties are defined below:
 
 * ### ON_AN_DELETE_CHART
   This event is emitted when the user clicks on the "Delete" option of the panel menu.
-  | **Property** | **Value** | **Required** |
+
+    | **Property** | **Value** | **Required** |
   | --- | --- | --- |
   | **chartid** | `String`, ID of current chart. | Yes |
 
@@ -171,7 +174,7 @@ Chart properties are defined below:
 There are two ways to implement this widget:
 
 
-*   ### Inline Config Object as String:
+*   #### Inline Config Object as String:
 
 
 ```
@@ -182,7 +185,7 @@ There are two ways to implement this widget:
 ```
 
 
-*   ### Separated Config Object in `window` environment:
+*   #### Separated Config Object in `window` environment:
 
 
 ```
