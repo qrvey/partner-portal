@@ -1,7 +1,7 @@
 ---
 id: simple-metadata
-title: Creating a Simple Metadata
-sidebar_label: Create Simple Metadata
+title: Metadata Quick Start Guide
+sidebar_label: Quick Start Guide
 ---
 
 <div style="text-align: justify">
