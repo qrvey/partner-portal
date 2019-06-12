@@ -1,5 +1,5 @@
 ---
-id: data-router-intro
+id: data-router-flatMap
 title: Data rule flatMap
 sidebar_label: Definition
 ---
