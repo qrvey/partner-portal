@@ -1,7 +1,7 @@
 ---
 id: widget-custom-charts-core
-title: AN Custom Charts In Core - <an-custom-charts />
-sidebar_label: AN Custom Chart - Core
+title: Panels In Core
+sidebar_label: Panels - Core
 ---
 
 This document shows how to implement the custom chart panel widget inside `Page Builder`.
@@ -11,7 +11,7 @@ Below are displayed the configuration Object, events, event listeners, methods a
 This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
 
 
-## 1. Configuration bject
+## Configuration bject
 
 To configure a Custom Chart Panel, use the following JSON schema as configuration Object:
 
@@ -40,7 +40,7 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
 }
 ```
 
-**Properties and Values:**
+### Properties and Values:
 
 Chart properties are defined below:
 
@@ -67,7 +67,7 @@ Chart properties are defined below:
 
 
 
-## 2. Dispatched Events:
+## Dispatched Events
 
 * ### ON\_AN\_OPEN\_FILTERS\_MODAL
 
@@ -133,7 +133,7 @@ Chart properties are defined below:
 
 
 
-## 3. Event Listeners:
+## Event Listeners
 
 * ### ON_CLOSE_BUCKET_MODAL
   This event call a method inside the widget to update the chart data.
@@ -169,7 +169,7 @@ Chart properties are defined below:
 
 
 
-## 4. Example:
+## Example
 
 There are two ways to implement this widget:
 
