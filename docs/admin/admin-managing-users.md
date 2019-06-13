@@ -4,8 +4,8 @@ Qrvey Platform’s Admin app is used to manage and monitor other products in Qrv
 
 
 
-*   Manage Maker accounts
-*   Customize Qrvey Platform
+*   Manage Creator accounts
+*   Customize the Analytics application
 *   Monitor DataRouter Resources
 *   Customize and Manage DataRouter configuration
 *   Share Qrvey Apps between different servers or installations
