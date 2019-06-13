@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 <div style="text-align: justify">
 
-Qrvey is a 100% Cloud native product built with dozens of AWS services like Elastic Container Service (ECS), DynamoDB, S3, Load Balancers, Auto scaling, SES, SQS, etc. We deploy directly into your own Amazon Web Services (AWS) account. This gives you full control over your installation and data. You can decide how big of a deployment you need and have full control to scale up or down as needed to balance cost with performance.
+Qrvey is a 100% Cloud native product built with dozens of AWS services like Elastic Container Service (ECS), DynamoDB, S3, Load Balancers, Auto scaling, SES, SQS, etc. We deploy directly into your own Amazon Web Services (AWS) account. This gives you full control over your installation and data. You can decide how big a deployment you need and have full control to scale up or down as needed to balance cost with performance.
 Qrvey Platform is deployed using a combination of Cloudformation templates and Code Pipelines. This makes the deployment fully automated and there is no downtime during upgrades. An upgrade is as simple as copying a few Zip files into an S3 bucket which will trigger the pipelines and deploy the new version including any updates to the infrastructure.
 One environment of Qrvey Platform consists of 5 components and each of these components are deployed to your Amazon Web Services (AWS) account. 
 
