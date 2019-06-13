@@ -143,7 +143,7 @@ function insertParternsLogo(){
 function highlightDocNavItem(){
    const navItems =  document.querySelectorAll('ul.nav-site.nav-site-internal li a');
    navItems.forEach(element => {
-        if(element.innerText == 'Documents'){
+        if(element.innerText == 'Documentation'){
             element.classList.add('primary-color');
         }
    });

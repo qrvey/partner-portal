@@ -41,11 +41,11 @@ const siteConfig = {
   headerLinks: [
     {
       href: '/docs',
-      label: 'Documents',
+      label: 'Documentation',
     },
     {
       href: '/training',
-      label: 'Training Sessions',
+      label: 'Video Training',
     },
   ],
 
