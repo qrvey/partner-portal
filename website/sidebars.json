@@ -40,6 +40,7 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
+          "embedding/widgets/widget-webformdesign",
           "embedding/widgets/data-sources/widget-datasets",
           "embedding/widgets/data-sources/widget-webforms",
           "embedding/widgets/data-sources/widget-dataconnectors",
@@ -48,6 +49,7 @@
           "embedding/widgets/analytics/widget-summary-view",
           "embedding/widgets/analytics/widget-tabular-view",
           "embedding/widgets/analytics/widget-custom-view",
+          "embedding/widgets/analytics/widget-custom-charts-core",
           "embedding/widgets/analytics/widget-panel-builder",
           "embedding/widgets/analytics/widget-panels",
           "embedding/widgets/analytics/widget-summary-panel",
