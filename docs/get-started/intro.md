@@ -30,7 +30,7 @@ Data router provides flexible metadata including column mapping, transformations
 
 It also includes a full suite of administrator tools for testing, debugging and logging, as well as performance and load monitoring for the health of your deployments.
 
-### Business Analytics
+### Qrvey Analytics Applications
 
 Qrvey’s business analytics application is built on a modern cloud architecture to maximize flexibility, scalability and performance. It bundles data collection, analytics and automation. 
 
