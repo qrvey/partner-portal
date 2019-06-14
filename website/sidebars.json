@@ -71,6 +71,7 @@
         "label": "API",
         "ids": [
           "embedding/api/api-intro",
+          "embedding/api/api-tutorial",
           "embedding/api/api-data-sources",
           "embedding/api/api-analytics",
           "embedding/api/api-automation"
