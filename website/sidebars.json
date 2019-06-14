@@ -6,7 +6,8 @@
     "Business Analytics": [
       "business-analytics/business-overview",
       "business-analytics/business-architecture",
-      "business-analytics/business-users"
+      "business-analytics/business-users",
+      "business-analytics/business-analytics-application"
     ],
     "Data Router": [
       "data-router/data-router-intro",

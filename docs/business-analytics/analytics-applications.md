@@ -1,7 +1,10 @@
-## Qrvey Business Analytics Application
+---
+id: business-analytics-application
+title: Qrvey Business Analytics Application
+sidebar_label: Analytics Application
+---
 
-
-### Creating Analytic Applications
+## Creating Analytic Applications
 
 With Qrvey you can create analytic applications that can be shared, distributed or embedded.
 
