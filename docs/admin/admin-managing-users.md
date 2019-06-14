@@ -1,42 +1,46 @@
-## Qrvey Admin App - User Management
+## Qrvey Platform Administrator Portal - User Management
 
-Qrvey Platform’s Admin app is used to manage and monitor other products in Qrvey platform. Admin app allows System Administrator to
+The Qrvey Platform Administrator Portal is used to manage and monitor other aspects of the Qrvey Platform. Specifically, it allows Admins to
 
 
 
 *   Manage Creator accounts
-*   Customize the Analytics application
-*   Monitor DataRouter Resources
-*   Customize and Manage DataRouter configuration
-*   Share Qrvey Apps between different servers or installations
+*   Customize the Business Analytics application
+*   Monitor Data Router resources
+*   Customize and Manage the Data Router configuration
+*   Share created Apps between different servers or installations
 
 
 ## Create a new Admin User
 
-Admin App uses AWS IAM for user accounts instead of managing its own users. To provide access to Admin app, you’ll have to create a new User under AWS IAM service. Here are the steps
+Admin users are defined using AWS IAM. To provide access to the Administrator Portal, you’ll have to create a new User in the AWS IAM service. Here are the steps
 
 
 ### Step 1: Login to [AWS Console](https://aws.amazon.com/) 
 
-Use an account that has permissions to create new IAM users
+_Use an account that has permissions to create new IAM users_
 
 
-### Step 2: Navigate to [AWS IAM](https://console.aws.amazon.com/iam/home?#/home) service page and click on Users sub menu option on the left menu
+### Step 2: Navigate to [AWS IAM](https://console.aws.amazon.com/iam/home?#/home) service page
+
+_Then click on Users sub menu option on the left menu_
 
 
 ### Step 3: Create a new IAM user
 
-Enter a username and make sure the “Programmatic Access” checkbox is selected
+_Enter a username and make sure the “Programmatic Access” checkbox is selected_
 
 
 ### Step 4: Assign new user to Qrvey Admin user group
 
-Click on Next button to set permissions. On the permissions tab make sure the group called “qrvey-admin-dev” is selected
+_Click on Next button to set permissions. On the permissions tab make sure the group called “qrvey-admin-dev” is selected_
 
 
 ### Step 5: Download the AccessKeys
 
-Make a note of username and Access Key ID for this user as these values will be used to Login into Admin App
+_Make a note of username and Access Key ID for this user as these values will be used to Login into the Administrator Portal_
 
 
-### Step 6: Navigate to Admin App and use the username and Access Key ID to login
+### Step 6: Navigate to the Administrator Portal
+
+_Use the username and Access Key ID to login_
