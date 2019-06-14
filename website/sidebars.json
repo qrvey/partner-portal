@@ -11,8 +11,14 @@
     ],
     "Data Router": [
       "data-router/data-router-intro",
-      "data-router/Metadata/metadata-intro",
-      "data-router/Metadata/simple-metadata",
+      {
+        "type": "subcategory",
+        "label": "Metadata",
+        "ids": [
+          "data-router/Metadata/metadata-intro",
+          "data-router/Metadata/simple-metadata"
+        ]
+      },
       "data-router/Transforms/transforms-intro",
       "data-router/DataRules/data-rules-intro",
       "data-router/ReusablesDataRules/reusable-data-rules-intro",
