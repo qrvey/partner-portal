@@ -77,7 +77,7 @@ function postActivy(){
         title: title,
         elementId: elementId,
         contentType: CONTENT_TYPE, 
-        date: new Date(),
+        date: new Date().toISOString().replace(/T|Z|\.\d{3}/g, ' ').trim(),
     };
     data.push(newActivity);
     
