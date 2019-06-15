@@ -13,30 +13,32 @@ img[src*="#thumbnail"] {
 
 <div style="text-align: justify">
 
-Qrvey’s developer API lets you access all of the functions of the Qrvey application programmatically.  In your integrated app, this means you’ll be able to do everything from creating or editing forms and quizzes to building workflows, or even accessing or creating your analytic charts all using API requests.
+The Qrvey Platform developer API lets you access all of the functions of the Qrvey Platform programmatically.  In your integrated app, this means you’ll be able to do everything from creating or editing forms and quizzes to building workflows, or even accessing or creating your analytic charts all using API requests.
 
 In this tutorial, we will step through a typical, end-to-end process for building and accessing web forms programmatically.   We will show how to call the developer API to create a new Quiz web form, and use the Quiz widget UI to insert the web form into any application page for end users.   We will also show how to activate the Quiz, so that end users can begin to fill in their answers from the Quiz URL.
 
 ## Prerequisites
 For this tutorial, we will assume that you have a basic understanding of REST APIs, how to make various web requests, and how to work with API responses in JSON format. We also recommend using an API dev environment such as Postman.
 
-* You can download Postman from the following URL: <https://www.getpostman.com>
+* You can download Postman from the following URL: 
+
+<https://www.getpostman.com>
 
 You will also need to have the following tokens:
 
 * API Key (for calling the API - if you need to obtain an API key, contact help@qrvey.com)
 * API URL (current version is your qrvey URL + /devapi/v3)
 
-It is also a good idea to familiarize yourself with the Qrvey application.  In this tutorial, we’ll be illustrating how to do things programmatically that you can also do via the U/I directly.  As an exercise: log in to Qrvey, create a new Application, create a new Quiz web form, activate it, and then get the URL to take it and start filling in answers.
+It is also a good idea to familiarize yourself with the Qrvey Platform.  In this tutorial, we’ll be illustrating how to do things programmatically that you can also do via the user interface directly.  As an exercise: log in to the Qrvey Platform, create a new Application, create a new Quiz web form, activate it, and then get the URL to take the quiz and start filling in answers.
 
-## Understanding the Qrvey Structure
-Qrvey has 2 main concepts that control how all content is saved and managed:
+## Understanding the Qrvey Platform Structure
+The Qrvey Platform has two main concepts that control how all content is saved and managed:
 
 * ### Users
-Users are what we call “creators”.  They create the content that is distributed, embedded, or managed within Qrvey for end-users to consume. In the context of an API integration, you might have one creator that is the owner of all of your content, or you might decide to add several creators to control different aspects of your integration.   In any case, each User can own one or more applications.
+Users are what we call “creators”.  They create the content that is distributed, embedded, or managed within the Qrvey Platform for end-users to consume. In the context of an API integration, you might have one creator that is the owner of all of your content, or you might decide to add several creators to control different aspects of your integration. In any case, each User can own one or more Applications.
 
 * ### Applications
-Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, pages, etc. In the context of an API integration, each creator user might have many applications they’re working with, or you may choose to manage everything within a single application.
+Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, pages, etc. In the context of an API integration, each creator User might have many Applications they’re working with, or you may choose to manage everything within a single Application.
 
 The first steps for working with the developer API is to establish a user and an application where your new content will be saved.
 
@@ -76,7 +78,7 @@ Hit Send to complete the POST and your response will return a valid “userid”
 
 ### Option 2: Get the user list
 
-To obtain a previously created “userid”, you can also call the API to get the list of users already in your Qrvey system.
+To obtain a previously created “userid”, you can also call the API to get the list of users already in your Qrvey Platform.
 
 In Postman, Set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit “Send” to complete the request.
 
@@ -142,7 +144,7 @@ Specify your correct headers, enter the /app endpoint and hit “Send”.  The r
 
 Select the “appid” that you want to use for our next steps.
 
-> ***NOTE***:  Now that you’ve created a user and app using the API, if you login to Qrvey with this new user, you’ll see the content that has been built.
+> ***NOTE***:  Now that you’ve created a user and app using the API, if you login to the Qrvey Platform with this new user, you’ll see the content that has been built.
 
 ## Creating the Web Form
 Now that we have a user and application, we can start creating our content for end users, including our Web Forms, Quizzes, Surveys and more.
@@ -168,7 +170,7 @@ Click Send, to save the quiz and get the response including the qrveyid:
 Now we have all the parts we need to embed using our widget, the “userid”, the “appid”, and the “qrveyid” for our new quiz.
 
 ## Embedding a Quiz Widget
-Once you’ve created a web form Quiz, you’re ready to embed it into your product using the Qrvey widget.   The widget is a block of HTML and javascript code that can be inserted into any web application page to render the user interface for building a web form, in this case, our quiz.
+Once you’ve created a web form Quiz, you’re ready to embed it into your product using the Qrvey Platform widget.   The widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form, in this case, our quiz.
 
 To learn more about embedding and working with Widgets, visit our [Widget QuickStart Guide](embedding/widgets/intro.md). 
 
@@ -198,6 +200,6 @@ Remember to set your Headers properly, and hit Send to get the response, which w
 You can now use the response to send the URL to your users so they can take the Quiz that was created using the API.
 
 ## Further Reading
-You should now have a basic understanding of how to use the API to programmatically generate new content in the Qrvey platform, and embed that content for use in your application.   
+You should now have a basic understanding of how to use the API to programmatically generate new content in the Qrvey Platform, and embed that content for use in your application.   
 
 For additional API details, including the full API specification, visit the [API Reference](embedding/api/data-sources.md).
