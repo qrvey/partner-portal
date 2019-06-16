@@ -1,8 +1,16 @@
 ---
-id: business-architecture
+id: get-started-architecture
 title: Architectural Overview
 sidebar_label: Architectural Overview
 ---
+<style>
+img[src*="#thumbnail"] {
+   width:100%;
+   border: 1px solid black;
+}
+</style>
+
+<div style="text-align: justify">
 
 In this section, we'll discuss the Qrvey architecture and how all of our components work together to deliver on the promise of a unified, all-in-one data solution.
 
@@ -13,8 +21,7 @@ There are three main ways to interact with Qrvey. First, we offer a robust API t
 
 Finally, there is the Qrvey itself, which is a web-based application where end-users can build forms, analytics, workflows and more. The Qrvey application has been 100% widgetized, ensuring that everything you can do with the app can also be done with embedded widgets. 
 
-![1_working_with_qrvey] ()
-
+![1_working_with_qrvey](assets/architecture/1_working_with_qrvey.jpg#thumbnail)
 
 ## Qrvey Architecture 
 
@@ -26,7 +33,7 @@ For developers, we provide a comprehensive set of APIs and widgets to integrate 
 
 Out of the box, we also provide a number of supporting services to provide advanced analytics, messaging, and additional customizations.
 
-![2_architecture] ()
+![2_architecture](assets/architecture/2_architecture.png#thumbnail)
 
 
 ## Data Router Architecture
@@ -35,4 +42,4 @@ Qrvey DataRouter is built on a system of highly scalable APIs and services that 
 
 The API Gateway routes your data through our metadata and data services for managing everything from large volume historical batch loading, and more real-time live data updates.
 
-![3_datarouter_architecture] ()
+![3_datarouter_architecture](assets/architecture/3_datarouter_architecture.png#thumbnail)
