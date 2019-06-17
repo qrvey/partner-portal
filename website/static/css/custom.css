@@ -1,72 +1,48 @@
 /* your custom css */
-
-.fixedHeaderContainer{
-    height: 60px;
-}
-
 .gray-background{
     background: #FBFBFB;
 }
-
+.fixedHeaderContainer{
+    height: 60px;
+}
+.headerTitleWithLogo{
+   /* PARTNER PORTAL: */
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12.96px !important;
+    color: #D2D8E3;
+    letter-spacing: 0.5px;
+    line-height: 18.72px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
 .card-categories{
     /* Rectangle: */
-    background: #FFFFFF;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
-    width: 300px;
-    padding:10px 20px;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.section-card-title .icon{
-    padding-right: 10px;
-    margin-top: 5px;
-}
-
-
-.flex-categories-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
+     background: #FFFFFF;
+     border-radius: 5px;
+     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+     width: 300px;
+     padding:10px 20px;
+     margin: 20px;
+     cursor: pointer;
+ }
+ .flex-categories-container{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
 .main-title {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 54px;
+    font-size: 24px;
+    font-weight: 600;
     letter-spacing: 0;
     color: white;
-    padding: 0px 0 30px;
-    margin-top: 0px;
+    line-height: 1;
 }
-.main-description {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0;
-    color: black;
-    margin-bottom: 0px;   
-    margin-top: 0px;    
-}
-.section-title {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 50px;
-    letter-spacing: 0;
-    color: black;
-    margin-bottom: 0;
-    margin-top: 0px;  
-    font-weight: 600;   
-  }
-  
-  .section-card-title {
+
+.section-card-title {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 20px;
@@ -75,33 +51,19 @@
     letter-spacing: 0;
     color: black;
     margin-bottom: 0;
-    margin-top: 0px ;   
-    font-weight: 600; 
-  }
-  
-  .section-description {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0;
-    margin-top: 0px;    
-  }
-
-
-  div#home-wrapper {
+    margin-top: 0px ;
+    font-weight: 600;
+}
+div#home-wrapper {
     padding-bottom: 0px;
-  }
-  
-
-  ul.nav-site.nav-site-internal li a{
+    padding-top: 0px;
+}
+ul.nav-site.nav-site-internal li a{
     color: white;
     font-weight: 600;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  }
-
-  .primary-button {
+}
+.primary-button {
     height: 40px;
     background: #F57C41;
     border-radius: 4px;
@@ -117,171 +79,135 @@
     margin-top: 5px;
     border: none;
     cursor: pointer;
-  }
-
-  .primary-button:hover{
+}
+.primary-button:hover{
     text-decoration: none;
     color: white !important;
     background: #F57C41 !important;
-  }
-  .primary-button:focus{
-    outline:0; 
-  }
-
-  .docMainWrapper{
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-
+}
+.primary-button:focus{
+    outline:0;
+}
+.docMainWrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .primary-color {
     color: #F57C41 !important;
 }
-  
-.nav-footer{
-    background: #f7f6f6;
-    opacity: 1 !important;
-}
-.nav-footer .sitemap a{
-    color: black !important;
-}
-
-.nav-footer .sitemap h5 {
-    color: black !important;
-}
-.nav-footer .copyright{
-    color: black !important;
-}
-
-.nav-footer .sitemap .nav-home {
-    display: block;
-    height: auto;
-    opacity: 1;
-    width: 107px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .homeContainer{
     background-size: cover;
+    background-image: -webkit-linear-gradient(138deg, #016CFF 0%, #029EFF 100%);
+    background-image: -o-linear-gradient(138deg, #016CFF 0%, #029EFF 100%);
+    background-image: linear-gradient(-48deg, #016CFF 0%, #029EFF 100%);
 }
-
 .navigationSlider .slidingNav ul{
     background: #1C3E75;
 }
-
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-    
+.footer{
+    background: #FBFBFB;
+    padding-top: 10px;
 }
-
+.footer p{
+    text-align: center;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: .76px;
+    font-size: 14px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+#main-title{
+    padding: 30px 0 10px;
+    margin: 0;
+}
+.main-description{
+    padding: 10px 20px 40px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.full-row {
+    width: 100%;
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
 @media only screen and (min-width:768px){
-
-    
     .docMainWrapper{
         padding-left: 60px;
         padding-right: 60px;
+   }
+   .main-title{
+        text-align: center;
+        color: white;
+        font-size: 32px;
     }
-
+    .main-description{
+        text-align: center;
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    div#home-wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1160px;
+    }
     .headerWrapper{
         padding-left: 60px;
         padding-right: 60px;
         margin-top: 1px;
-    }
-
+   }
     ul.nav-site.nav-site-internal li .primary-button{
         margin-left:30px;
         width: 140px;
         font-size: 14px;
-    }
-
+   }
     .headerWrapper header a{
         height: 40px;
-    }
+   }
     .fixedHeaderContainer header img {
         height: 100%;
-        margin-right: 0px; 
+        margin-right: 0px;
         height: 40px;
         width: 109px;
-    }
-
-    div#home-wrapper {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .nav-footer .sitemap .nav-home {
-        margin-left: 30px;
-        margin-right: 60px;
-    }
-    
-    
+   }
 }
-
 @media only screen and (min-width: 1024px) {
     
-    .main-title{
-        font-size: 45px;
-        line-height: 61px;
-        text-align: start;
-        color: white;
-        padding-top: 30px;
-    }
-    .main-description {
-        font-size: 30px;
-        line-height: 45px;
-        font-weight: 300;
-        text-align: start;
-    }
-    .section-title {
-        font-size: 36px;
-        line-height: 52px;
-        text-align: start;
-    }
-      
     .section-card-title {
         font-size: 20px;
         line-height: 52px;
         text-align: center;
         margin-bottom: 0;
-        margin-top: 0px;    
-    }
-      
-    .section-description {
-        font-size: 19px;
-        line-height: 38px;
-    }
-
+        margin-top: 0px;
+   }
     .flex-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
+   }
     .flex-container .two-row{
         max-width: 50%;
-    }
-
+   }
     .fixedHeaderContainer{
         height: 80px;
         padding-top: 18px;
-    }
-      
+   }
     ul.nav-site.nav-site-internal li a{
         padding: 5px 30px 5px;
         margin-top: 1px;
-    }
-
-
+   }
     .top-fold-image{
         max-width: 100%;
+   }
+   div#home-wrapper {
+        padding-top: 30px;
     }
-    
-
-      
 }
-
 @media only screen and (max-width: 1023px) {
 }
-
 @media only screen and (min-width: 1160px) {
     .docMainWrapper{
         max-width: 1160px !important;
@@ -289,36 +215,38 @@
         padding-left: 0px;
         padding-right:0px;
         padding-top: 20px;
+   }
+   .main-title{
+        text-align: start;
+    }
+    .main-description{
+        text-align: start;
     }
     .headerWrapper{
         max-width: 1160px !important;
         padding: 0 0;
-    }
-
-    .main-title{  
-        
-    }
-
+   }
     ul.nav-site.nav-site-internal li .primary-button{
         width: 140px;
         height: 30px;
         font-size: 14px;
         margin-left:30px;
         margin-top: 2px;
-    }
+   }
 }
-
 @media only screen and (min-width: 1400px) {
-    
 }
-
 @media only screen and (min-width: 1500px) {
     .headerWrapper{
         max-width: 1400px !important;
         padding: 0 0;
-    }
+   }
     .docMainWrapper{
         max-width: 1400px !important;
         padding: 0 0;
+   }
+
+   div#home-wrapper {
+        max-width: 1400px !important;
     }
 }

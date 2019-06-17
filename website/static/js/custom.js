@@ -15,7 +15,8 @@ window.onload = () => {
     title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
     document.querySelector('.headerWrapper header a').href =  '/';
     if(currentUser){
-        insertChildToNav();
+        insertLogOutToNav();
+        insertParternsLogo();
         highlightDocNavItem();
     } 
    
@@ -27,23 +28,11 @@ if(getCookie(COOKIE_USER)){
     window.location.href = '/auth/login';
 }
 
-/*
-window.onload = () => {
-    title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    if(getCookie(COOKIE_USER)){
-        currentUser = JSON.parse(getCookie(COOKIE_USER));
-        //insertChildToNav();
-    } else {
-        window.location.href = '/';
-    }
-}
-
-*/
 
 const datarouter = {
     url: 'https://stgdatarouter.qrvey.com/data?saveUserLog=false&returnAllLog=true',
     'x-api-key':'359cc29538554a',
-    metadataId:'wilson_marketing'
+    metadataId:'marketing_test'
 };
 
 const headers = {
@@ -88,7 +77,7 @@ function postActivy(){
         title: title,
         elementId: elementId,
         contentType: CONTENT_TYPE, 
-        date: new Date(),
+        date: new Date().toISOString().replace(/T|Z|\.\d{3}/g, ' ').trim(),
     };
     data.push(newActivity);
     
@@ -133,7 +122,8 @@ function logOut(){
     window.location.href = '/auth/login';
 }
 
-function insertChildToNav(){
+function insertLogOutToNav(){
+    
     let navBar = document.querySelector('ul.nav-site.nav-site-internal');
     const nodeTagLi = document.createElement("LI");                 // Create a <li> node
     const nodeTagA = document.createElement("A");                 // Create a <li> node
@@ -142,17 +132,24 @@ function insertChildToNav(){
     nodeTagLi.onclick =  logOut;
     nodeTagA.appendChild(textnodeLi);
     nodeTagLi.appendChild(nodeTagA);                              // Append the text to <li>
-    navBar.appendChild(nodeTagLi);     // Append <li> to <ul> 
+    navBar.appendChild(nodeTagLi);       // Append <li> to <ul> 
+}
+
+function insertParternsLogo(){
+    let navbar = document.querySelector('.headerTitleWithLogo');
+    navbar.innerHTML = '<strong>PARTNER</strong><br>PORTAL';
 }
 
 function highlightDocNavItem(){
    const navItems =  document.querySelectorAll('ul.nav-site.nav-site-internal li a');
    navItems.forEach(element => {
-        if(element.innerText == 'Documents'){
+        if(element.innerText == 'Documentation'){
             element.classList.add('primary-color');
         }
    });
 };
+
+
 
 setTimeout( ()=> {
     if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){

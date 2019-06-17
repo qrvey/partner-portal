@@ -40,12 +40,12 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {
-      href: '/training',
-      label: 'Training Sessions',
+      href: '/docs',
+      label: 'Documentation',
     },
     {
-      href: '/docs',
-      label: 'Documents',
+      href: '/training',
+      label: 'Video Training',
     },
   ],
 
