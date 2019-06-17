@@ -4,6 +4,8 @@ title: Report Builder
 sidebar_label: Report Builder
 ---
 
+<div style="text-align: justify">
+
 The Report Builder widget allows users to manage report definitions.
 
 ## Widget Overview

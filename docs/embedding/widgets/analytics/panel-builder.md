@@ -4,6 +4,8 @@ title: Panel Builder
 sidebar_label: Panel Builder
 ---
 
+<div style="text-align: justify">
+
 This Chart Builder Modal widget requires `<my_cdn>/chart-builder/anchartbuilder.js` script file and 
 uses the `<an-chart-builder>` Custom HTML Tag
 

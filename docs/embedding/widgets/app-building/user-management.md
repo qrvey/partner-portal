@@ -4,6 +4,8 @@ title: User Management
 sidebar_label: User Management
 ---
 
+<div style="text-align: justify">
+
 The User Management widget allows authorised admins to create and modify user accounts for a deployment.
 
 ## User Management Widget

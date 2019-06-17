@@ -3,6 +3,9 @@ id: widget-intro
 title: Widget Quick Start Guide
 sidebar_label: Quick Start Guide
 ---
+
+<div style="text-align: justify">
+
 Qrvey provides developers with front-end “Widgets” to allow developers to seamlessly embed Qrvey’s self-service data collection, automation, or analytics to power your applications. Widgets are directly embedded into web applications using simple Javascript and custom HTML tags. Qrvey Widgets are available for embedding various front-end application features, including Web Form builders (Survey, Quiz, Forms, etc), Data Visualizations for both creating and consuming charts and report outputs, and for a variety of additional end-user self-service tools.
 
 ## Versioning

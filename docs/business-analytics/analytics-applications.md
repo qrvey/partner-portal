@@ -4,6 +4,8 @@ title: Qrvey Business Analytics Application
 sidebar_label: Analytics Application
 ---
 
+<div style="text-align: justify">
+
 ## Creating Analytic Applications
 
 With Qrvey you can create analytic applications that can be shared, distributed or embedded.

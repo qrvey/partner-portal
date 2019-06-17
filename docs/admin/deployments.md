@@ -4,6 +4,8 @@ title: Deployments
 sidebar_label: Deployments
 ---
 
+<div style="text-align: justify">
+
 ## Servers
 
 In this section admins can add different servers from which they can pull accounts and content, or servers that can also be used as destinations when sharing an application. To add a server the Host URL and API Key is required. Servers can be managed and edited from this section. 

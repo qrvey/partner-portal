@@ -4,6 +4,8 @@ title: Summary Panel
 sidebar_label: Summary Panel
 ---
 
+<div style="text-align: justify">
+
 This Summary View widget requires `"<my_cdn>"/summary-panel/ ansummarypanel.js` script file and
 use the `<an-summary-panel>` Custom HTML Tag.
 

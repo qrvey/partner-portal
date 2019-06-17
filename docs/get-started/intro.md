@@ -4,6 +4,8 @@ title: Overview
 sidebar_label: Overview
 ---
 
+<div style="text-align: justify">
+
 Qrvey is an all-in-one, self-service data platform that combines analytics, data collection, and automation  technologies. 
 
 Qrvey is comprised of 4 main components which are built on a native cloud architecture to maximize flexibility, scalability and performance. These components are powered by many individual features that can be combined to perform different analysis, automation, or collection related tasks. All of Qrvey components can be deployed as a stand-alone application or be embedded into other applications and platforms through the use of Widgets and APIs.

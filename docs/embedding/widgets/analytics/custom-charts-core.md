@@ -4,6 +4,8 @@ title: Panels In Core
 sidebar_label: Panels - Core
 ---
 
+<div style="text-align: justify">
+
 This document shows how to implement the custom chart panel widget inside `Page Builder`.
 
 Below are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.

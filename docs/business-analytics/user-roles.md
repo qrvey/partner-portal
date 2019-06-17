@@ -4,6 +4,8 @@ title: Users Roles
 sidebar_label: Users Roles
 ---
 
+<div style="text-align: justify">
+
 In this document we will review the types of users that work and interact with the Qrvey Platform. There are 4 different types of users with access to the Qrvey Platform and embeddable components. Each of the user types relate to a particular aspect of the Qrvey Platforn. Admin users use the Admin Portal, Creators use the Business Analytics Application or widgets to create content for End Users, and Developers work with the embeddable widgets and APIs.
 
 

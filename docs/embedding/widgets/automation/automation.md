@@ -4,6 +4,8 @@ title: Automation
 sidebar_label: Automation
 ---
 
+<div style="text-align: justify">
+
 The Automation widget allows users to create, edit and delete workflow definitions.
 
 ## Automation Widget

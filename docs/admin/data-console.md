@@ -3,6 +3,9 @@ id: admin-data
 title: Data
 sidebar_label: Data
 ---
+
+<div style="text-align: justify">
+
 ## Connectors
 
 Admin users can create, edit and delete Database Connections in this section. Connections can be established to MySQl, MS SQL, Aurora, Postgres and Oracle databases. These connections can be used to create Datasets which generate Elasticsearch indexes, which in turn can be used by creators in the Analytics Application.

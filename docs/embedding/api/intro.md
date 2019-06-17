@@ -3,6 +3,9 @@ id: api-intro
 title: Qrvey API Quick Start Guide
 sidebar_label: Quick Start Guide
 ---
+
+<div style="text-align: justify">
+
 Qrvey provides a comprehensive REST API that can be accessed via standard HTTP requests and responses (GET, POST, etc.). Developers may use a variety of programming languages and platforms, as most have built-in libraries for HTTP communication. You may use the Qrvey API in order to programmatically work with any of the core Qrvey application features for data collection, automation and analytics or when integrating Qrvey into your own applications.
 
 ## Versioning

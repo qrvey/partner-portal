@@ -4,6 +4,8 @@ title: Page Builder
 sidebar_label: Page Builder
 ---
 
+<div style="text-align: justify">
+
 The Page Builder widget allows a user to manage the pages for an application. Pages may contain embedded reports and forms, as well as other static content.
 
 ## Widget Overview

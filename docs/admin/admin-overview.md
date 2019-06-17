@@ -4,6 +4,8 @@ title: Admin Overview
 sidebar_label: Admin Overview
 ---
 
+<div style="text-align: justify">
+
 ## Admin Portal
 
 The Admin Portal is an application to manage your Qrvey instance, Data Router settings, Amazon AWS infrastructure options and application deployments. This document provides information on how to set up your users (creators) and configure their Business Analytics Application tools, how to set up Data Router preferences, create Elasticsearch indexes and do client deployments. 

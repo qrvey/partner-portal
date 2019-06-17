@@ -4,6 +4,8 @@ title: Business Analytics
 sidebar_label: Business Analytics
 ---
 
+<div style="text-align: justify">
+
 ## User Management
 
 This section is where Admins add their “Creator” users to grant them access to the Business Analytics application. Admins can choose to allow creators to sign up through the Business Analytics application sign up page, or only by adding them in the User Management section. 
