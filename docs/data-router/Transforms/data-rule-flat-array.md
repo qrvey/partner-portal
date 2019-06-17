@@ -5,11 +5,11 @@ sidebar_label: Definition
 ---
 
 <div style="text-align: justify">
-This is a transform data the flat data type, the idea with this data rule is to flatten data inside the fields the array type.
+This is a transform in the flatten data family. With this data rule you can flatten data inside the fields of an array of objects.
 
 ## Example
 
-consider that it has the next JSON :
+Consider the following JSON data to be posted to Data Router:
 
 ```
 [
@@ -44,8 +44,10 @@ consider that it has the next JSON :
 ]
 ```
 
-And you want to flatten the array 'countries', for this case you can use the data rule flatArray for do it.
-First, you should create two new metadata a child and other parent, example:
+And you want to flatten the array 'countries', for this case you can use the data transform function _flatArray_ to do it.
+To do this you need to create a child metadata index to hold the child data items, and refer to that in the parent metadata index.
+
+For example:
 
 ```
 // child metadata
@@ -145,8 +147,8 @@ First, you should create two new metadata a child and other parent, example:
 
 ```
 
-In the metadata parent, we could specify where to save the data resulting in the transformation data, in this case, we specificated the metadata child "flatarraychild_1" for later we can query the information.
-At the metadata rule parent we specify that want to do "flatData" by field "data.visas" and "flatArray" by field "data.visas.countries" the result for this flatten will be:
+In the metadata parent, we specify where to save the data resulting in the transformation data. In this case, we specified the metadata child "flatarraychild_1".
+The metadata parent transform "flatData" is applied to field "data.visas" and the transform "flatArray" is applied to the field "data.visas.countries". The result for this flatten transform will be:
 
 ```
 {
@@ -204,7 +206,7 @@ At the metadata rule parent we specify that want to do "flatData" by field "data
 
 ```
 
-Also we can add filtering the result with the fields condition, could we specify a condition like "{{$flatArray.id}} == 3" for filter the data and are sure that only return the records where "data.visas.countries.id" == 3 . The data saved at \_source or destination named "flatArray" is result the filter applied in the data rule 'flatArray' and the data saved at
-\_source or destination named "labResult" is a result the 'flatData'.
+Note we used a filter condition "{{$flatArray.id}} == 3" to filter the data to only return the records where "data.visas.countries.id" == 3. The data saved at \_source for destination named "flatArray" is the result of the filter applied in the data rule 'flatArray' and the data saved at
+\_source for destination named "labResult" is the result the 'flatData' transform.
 
 </div>
