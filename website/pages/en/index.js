@@ -56,7 +56,7 @@ class Index extends React.Component {
       <div className="flex-container flex-vertical-container">
       <div className="full-row">
         <h2 className="main-title" id="main-title">
-        Qrvey Documentation
+        Documentation
         </h2>
         <h4 className="main-description" id="main-description">
         Find documentation and setup guides for Qrvey, Data Router and Admin Portal
