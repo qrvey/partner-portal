@@ -20,6 +20,7 @@
         ]
       },
       "data-router/Transforms/transforms-intro",
+      "data-router/Transforms/data-router-flatArray",
       "data-router/DataRules/data-rules-intro",
       "data-router/ReusablesDataRules/reusable-data-rules-intro",
       "data-router/postdata-content",

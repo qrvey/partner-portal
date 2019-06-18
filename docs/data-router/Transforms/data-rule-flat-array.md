@@ -1,7 +1,7 @@
 ---
 id: data-router-flatArray
-title: Data rule flatArray
-sidebar_label: Definition
+title: Data Rule flatArray
+sidebar_label: Data Rule flatArray
 ---
 
 <div style="text-align: justify">
