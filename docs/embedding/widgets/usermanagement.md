@@ -17,7 +17,7 @@ How to use it?
 <script type="text/javascript" src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-user-management-dev/usermanagement.js"></script >
 ```
 
-2. Put the **qrvey-workflows** tag in the container you want to embed the widget, and set the **config** attribute of the tag with a valid JSON object to launch the widget. For example:
+2. Put the **User Management** tag in the container you want to embed the widget, and set the **config** attribute of the tag with a valid JSON object to launch the widget. For example:
 
 ```
 <qum-user-management config="config"></qum-user-management>
