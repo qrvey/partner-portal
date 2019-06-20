@@ -3,6 +3,7 @@ const IP_ADDRES_URL = 'https://api.ipify.org/?format=json';
 const currentPage = window.location.pathname;
 const userAgent = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
+const metadataid = 'MKT_METADATAID';
 
 let ipAddress = '';
 let title = '';
@@ -32,7 +33,7 @@ if(getCookie(COOKIE_USER)){
 const datarouter = {
     url: 'https://stgdatarouter.qrvey.com/data?saveUserLog=false&returnAllLog=true',
     'x-api-key':'359cc29538554a',
-    metadataId:'marketing_test'
+    metadataId: metadataid
 };
 
 const headers = {
