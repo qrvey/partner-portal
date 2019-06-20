@@ -1,10 +1,10 @@
 ---
 id: get-started-intro
-title: Get Started
-sidebar_label: Introduction
+title: Overview
+sidebar_label: Overview
 ---
 
-## Overview
+<div style="text-align: justify">
 
 Qrvey is an all-in-one, self-service data platform that combines analytics, data collection, and automation  technologies. 
 
@@ -32,7 +32,7 @@ Data router provides flexible metadata including column mapping, transformations
 
 It also includes a full suite of administrator tools for testing, debugging and logging, as well as performance and load monitoring for the health of your deployments.
 
-### Business Analytics
+### Qrvey Analytics Applications
 
 Qrvey’s business analytics application is built on a modern cloud architecture to maximize flexibility, scalability and performance. It bundles data collection, analytics and automation. 
 

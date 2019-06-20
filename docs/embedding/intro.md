@@ -1,45 +1,48 @@
 ---
 id: embedding-intro
-title: Widget Quick Start Guide
-sidebar_label: Quick Start Guide
+title: Embeding Overview
+sidebar_label: Overview
 ---
-Qrvey provides developers with front-end “Widgets” to allow developers to seamlessly embed Qrvey’s self-service data collection, automation, or analytics to power your applications. Widgets are directly embedded into web applications using simple Javascript and custom HTML tags. Qrvey Widgets are available for embedding various front-end application features, including Web Form builders (Survey, Quiz, Forms, etc), Data Visualizations for both creating and consuming charts and report outputs, and for a variety of additional end-user self-service tools.
 
-## Versioning
-To minimize any compatibility issues, the Qrvey Widgets version are tied directly to the Qrvey application and will be automatically upgraded whenever your Qrvey application is updated. We encourage developers to always consider upgrades as we are rapidly adding new features and functionality.
+<div style="text-align: justify">
 
-## API Key
-All Qrvey Widget request will require access a Qrvey developer API key.  If you would like to obtain an API key, please contact your Qrvey account representative or send an email to help@qrvey.com.
+The Qrvey Platform provides a suite of widgets to allow the various features to be seamlessly embedded into web or mobile applications. These Widgets include self-service data collection, workflow automation, and business analytics to supercharge your applications. The Qrvey Platform also provides a comprehensive REST API that can be accessed via standard HTTP/HTTPS requests and responses (GET, POST, etc.).
 
-## Getting Started
-It is a good idea to familiarize yourself with the Qrvey application front-end before starting to use Widgets as many of the items you create or access from the Qrvey front-end are also accessible via Widgets.  As in the Qrvey application, you can embed Widgets for web form design/building (including Forms, Quizzes, Surveys), for Charts (including chart builder), and several other features.
+## Widgets
 
-In order to embed a widget, you will need to have:
+Use the pre-built widget samples below to jumpstart your development and explore the many functions they offer. 
 
-- Qrvey base URL - where all your Widget and API calls will be made
-- API-key - your unique key that must be a part of every API call
-- Launcher URL - javascript link to needed for any widget
+|**Widget**|**Tag**|
+|:--- | :---: |
+|Datasets|**<`qrvey-data-sets`>**|
+|Web Forms Design|**<`qrvey-design-widgets`>**|
+|Data Connectors|**<`qrvey-data-connectors`>**|
+|Data Links|**<`qrvey-datalinks`>**|
+|Metadata Builder|**<`qrvey-metadata-builder`>**|
+|Summary View|**<`an-summary-view`>**|
+|Tabular View|**<`an-tabular-view`>**|
+|Custom View|**<`an-custom-view`>**|
+|Panel Builder|**<`an-chart-builder`>**|
+|Panels|**<`an-custom-charts`>**|
+|Summary Panels|**<`an-summary-panel`>**|
+|Filter Panel|**<`an-filter-panel`>**|
+|Filter Modal|**<`an-filter-modal`>**|
+|Buckets Modal|**<`an-bucket-modal`>**|
+|Formula Modal|**<`an-formula-modal`>**|
+|Metric Builder|**<`an-metric-builder`>**|
+|Metric Panel|**<`an-metric-panel`>**|
+|Report Builder|**<`qrvey-report-builder`>**|
+|Page Builder|**<`qrvey-page-builder`>**|
+|End User|**<`qrvey-end-user`>**|
+|User Management|**<`qum-user-management`>**|
+|Automations Flows|**<`qrvey-workflow-design`>**|
+|Tokens Manager|**<`qtk-tokens-modal-wraper`>**|
+|Token Suggestion Box|**<`q-token-box`>**|
 
-> Note: Be sure to keep this information private and do not post it publicly in your code.
+## API
+Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
 
-The general structure of a Widget includes a JSON config object for all of the Widget details, the Widget HTML tag, and the Script tag to access the Widget launcher.
-
-Here’s an example of an embedded Form Design Widget:
-
-```
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
-
-<script>
-var configWebForm = {
-"api_key": "API_KEY_HERE", //replace with your API key
-"app_id": "APP_ID", // replace with the app_id value
-"domain": "https://your_qrvey_domain", // insert your domain
-"qrvey_id": "QRVEY_ID", // ID for the FORM
-"user_id": "USER_ID", // ID for the USER
-"app_type": "FORM"
-}
-</script>
-
-<!-- your launcher js link (replace with your js link) -->
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
-```
+* [Data Sources API Reference]().
+* [Business Analytics API Reference]().
+* [Workflow Automation API Reference]().
+* [Data Router API Reference]().

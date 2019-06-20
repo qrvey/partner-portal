@@ -13,66 +13,19 @@ class Footer extends React.Component {
     const docsUrl = this.props.config.docsUrl;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
-    return `${baseUrl}${docsPart}${langPart}${doc}`;
+    return `${baseUrl}${docsPart}${doc}`;
   }
 
   pageUrl(doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return baseUrl + (language ? `${language}/` : '') + doc;
+    //return baseUrl + (language ? `${language}/` : '') + doc;
+    return baseUrl + doc;
   }
 
   render() {
     return (
-      <footer className="nav-footer" id="footer">
-        <section className="sitemap">
-          <a href={this.props.config.baseUrl} className="nav-home">
-            {this.props.config.footerIcon && (
-              <img
-                src={this.props.config.baseUrl + this.props.config.footerIcon}
-                alt={this.props.config.title}
-                width="66"
-                height="58"
-              />
-            )}
-          </a>
-          <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('get-started/get-started-intro', this.props.language)}>
-              Getting Started
-            </a>
-            <a href={this.docUrl('business-analytics/business-analytics-doc', this.props.language)}>
-              Business Analytics
-            </a>
-            <a href={this.docUrl('data-router/data-router-intro', this.props.language)}>
-              Data Router
-            </a>
-            <a href={this.docUrl('admin/admin-intro', this.props.language)}>
-              Admin
-            </a>
-            <a href={this.docUrl('setup-deployments/setup-deployments-getting-started', this.props.language)}>
-              Setup & Deployment
-            </a>
-          </div>
-          <div>
-            <h5>Embedding & Samples</h5>
-            <a href={this.docUrl('embedding/embedding-intro', this.props.language)}>
-              Embedding
-            </a>
-            <a href={this.docUrl('embedding/widgets/embedding-widgets-getting-started', this.props.language)}>
-              Widgets
-            </a>
-            <a href={this.docUrl('embedding/api/embedding-api-getting-started', this.props.language)}>
-              API
-            </a>
-     
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href="https://blog.qrvey.com/" target="blank">Blog</a>
-            <a href="https://qrvey.com/contact/" target="blank">Contact Us</a>
-          </div>
-        </section>
-        <section className="copyright">{this.props.config.copyright}</section>
+      <footer className="footer" id="footer">
+        <p>Qrvey Inc. © 2019 All Rights Reserved</p>
       </footer>
     );
   }
