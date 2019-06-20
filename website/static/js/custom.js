@@ -67,6 +67,13 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+ function formatDate(){
+    const date = new Date();
+    const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
+    const month = date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getDate()+1;
+    const year = date.getFullYear();
+    return  `${day}/${month}/${year}`;
+}
 // Log visitor page function
 function postActivy(){
     let data = [];
@@ -78,7 +85,7 @@ function postActivy(){
         title: title,
         elementId: elementId,
         contentType: CONTENT_TYPE, 
-        date: new Date().toISOString().replace(/T|Z|\.\d{3}/g, ' ').trim(),
+        date: formatDate(),
     };
     data.push(newActivity);
     
