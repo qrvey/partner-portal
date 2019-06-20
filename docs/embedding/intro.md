@@ -6,7 +6,7 @@ sidebar_label: Overview
 
 <div style="text-align: justify">
 
-Qrvey allows to embed any portion of the Qrvey platform into other web or mobile applications. For this has available a list of Widgets to allow developers to seamlessly embed Qrvey’s self-service data collection, automation, or analytics to power your applications. And also provides a comprehensive REST API that can be accessed via standard HTTP requests and responses (GET, POST, etc.).
+The Qrvey Platform provides a suite of widgets to allow the various features to be seamlessly embedded into web or mobile applications. These Widgets include self-service data collection, workflow automation, and business analytics to supercharge your applications. The Qrvey Platform also provides a comprehensive REST API that can be accessed via standard HTTP/HTTPS requests and responses (GET, POST, etc.).
 
 ## Widgets
 
@@ -43,6 +43,6 @@ Use the pre-built widget samples below to jumpstart your development and explore
 Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
 
 * [Data Sources API Reference](embedding/api/data-sources.md).
-* [Analytics API Reference](embedding/api/analytics.md).
-* [Automation API Reference](embedding/api/automation.md).
+* [Business Analytics API Reference](embedding/api/analytics.md).
+* [Workflow Automation API Reference](embedding/api/automation.md).
 * [Data Router API Reference](data-router/apireference/api-reference-intro.md).
