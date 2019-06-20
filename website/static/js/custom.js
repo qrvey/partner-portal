@@ -31,7 +31,7 @@ if(getCookie(COOKIE_USER)){
 
 
 const datarouter = {
-    url: 'https://stgdatarouter.qrvey.com/data?saveUserLog=false&returnAllLog=true',
+    url: 'https://zbxl4n8sk5.execute-api.us-east-1.amazonaws.com/DataRouter/data?saveUserLog=false&returnAllLog=true',
     'x-api-key':'359cc29538554a',
     metadataId: metadataid
 };
