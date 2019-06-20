@@ -5,7 +5,6 @@
       "get-started/get-started-architecture"
     ],
     "Business Analytics": [
-      "business-analytics/business-overview",
       "business-analytics/business-users",
       "business-analytics/business-analytics-application"
     ],
@@ -19,60 +18,32 @@
           "data-router/Metadata/simple-metadata"
         ]
       },
-      "data-router/Transforms/transforms-intro",
-      "data-router/Transforms/data-router-flatArray",
-      "data-router/DataRules/data-rules-intro",
-      "data-router/ReusablesDataRules/reusable-data-rules-intro",
-      "data-router/postdata-content",
-      "data-router/Connectors/connectors-intro",
-      {
-        "type": "subcategory",
-        "label": "API Reference",
-        "ids": [
-          "data-router/apireference/api-reference-intro"
-        ]
-      }
+      "data-router/Transforms/data-router-flatArray"
     ],
     "Admin": [
       "admin/admin-intro",
       "admin/admin-managing-users",
       "admin/admin-sections-platform",
       "admin/admin-data",
-      "admin/admin-sections-data-router",
       "admin/admin-sections-deployments"
     ],
     "Embedding": [
       "embedding/embedding-intro",
-      "embedding/embed-solution",
       {
         "type": "subcategory",
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
-          "embedding/widgets/widget-webformdesign",
-          "embedding/widgets/data-sources/widget-datasets",
           "embedding/widgets/data-sources/widget-webforms",
-          "embedding/widgets/data-sources/widget-dataconnectors",
-          "embedding/widgets/data-sources/widget-datalinks",
-          "embedding/widgets/data-sources/widget-metadata",
           "embedding/widgets/analytics/widget-summary-view",
-          "embedding/widgets/analytics/widget-tabular-view",
-          "embedding/widgets/analytics/widget-custom-view",
           "embedding/widgets/analytics/widget-custom-charts-core",
           "embedding/widgets/analytics/widget-panel-builder",
           "embedding/widgets/analytics/widget-panels",
           "embedding/widgets/analytics/widget-summary-panel",
-          "embedding/widgets/analytics/widget-filter-panel",
-          "embedding/widgets/analytics/widget-filter-modal",
-          "embedding/widgets/analytics/widget-buckets-modal",
-          "embedding/widgets/analytics/widget-formula-modal",
           "embedding/widgets/app-building/widget-report-builder",
           "embedding/widgets/app-building/widget-page-builder",
-          "embedding/widgets/app-building/widget-end-user",
           "embedding/widgets/app-building/widget-user-management",
-          "embedding/widgets/automation/widget-automation",
-          "embedding/widgets/automation/widget-tokens-manager",
-          "embedding/widgets/automation/widget-tokens-suggestion-box"
+          "embedding/widgets/automation/widget-automation"
         ]
       },
       {
@@ -80,21 +51,17 @@
         "label": "API",
         "ids": [
           "embedding/api/api-intro",
-          "embedding/api/api-tutorial",
-          "embedding/api/api-data-sources",
-          "embedding/api/api-analytics",
-          "embedding/api/api-automation"
+          "embedding/api/api-tutorial"
         ]
       }
     ],
     "Setup & Deployments": [
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
-      "setup-deployments/setup-cost",
-      "setup-deployments/setup-security"
+      "setup-deployments/setup-cost"
     ],
     "Release Notes": [
-      "release-notes/releases-2019"
+      "release-notes/release-2019"
     ]
   }
 }
