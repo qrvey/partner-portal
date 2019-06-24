@@ -7,13 +7,13 @@ sidebar_label: Overview
 
 # Introduction
 
-**Data Rules** is a set of operations and rules that are applied over hierarchical data to put your data into a new Elasticsearch index through a 'child' Metadata. 
+The **Data Rules** object specifies a set of operations and rules that are applied over hierarchical data to put your data into a new Elasticsearch index through a 'child' Metadata. 
 
-With these rules, you can navigate and organize your hierarchical data before uploading to Elasticsearch. These can work as new transformations to validate, create or modify your data establishing simple or complex conditions.
+With these rules, you can transform and organize your hierarchical data before uploading to Elasticsearch. These rules allow you to validate, create or modify your data, and can establish simple or complex relationships.
 
 ## Hierarchical Data
 
-An example of hierarchical data could be a list of documents for different companies where each document has a list of employees, and each employee could have details about their kids.
+An example of hierarchical data could be a list of documents for different companies where each document has a list of employees, and each employee could have details about their children.
 
 
 ```json
@@ -64,32 +64,33 @@ Data Router provides different rules that can be applied to hierarchical data. W
 
 ## Merge
 
-This rule is used to join or merge two or more arrays from the JSON data to create a new in memory array with data. It will use conditions to do the merge. After merging the first two arrays, the resulting array can be joined with new arrays. There can be any number of additional arrays to merge.
+This rule is used to join or merge two or more arrays from the JSON data to create a new in-memory array with data. It will use conditions to do the merge. After merging the first two arrays, the resulting array can be joined with new arrays. There can be any number of additional arrays to merge.
 
 ### Properties
 
-*   **Left Array:** This an array from the JSON data. It is defined as the left side array.
-*   **Right Array:** This is an array from the JSON data. It is defined as the left side array.
-*   **Merge Type:** This is the merge or join type between the two arrays: Inner Join, Left Join, Right Join and Full Join.
-*   **Conditions**
-    *   **On:** This is the main condition to merge the two arrays by their identifiers
-    *   **Additional Conditions:** These are other conditions that can be made over the merge to validate the information. For example:
-        * Selecting only north american countries
-        * Getting employees with a minimum salary
+| **Property** | **Details** |
+| --- | --- |
+| **Left Array** | This an array from the JSON data. It is defined as the left side array. |
+| **Right Array** | This is an array from the JSON data. It is defined as the left side array. |
+| **Merge Type** | This is the merge or join type between the two arrays: Inner Join, Left Join, Right Join and Full Join. |
+| **Conditions** |  Object with conditions.|
+| **Conditions.On** | This is the main condition to merge the two arrays by their identifiers |
+| **Conditions.Conditions** | These are other conditions that can be made over the merge to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
 
 ## ArrayLookup
 
 This rule is used to search for a value or object inside an array.
 
 ### Properties
-*   **Source Array:** This an array from the JSON data.
-*   **Condition:** These are the conditions that can be made over the array to do the search. For example:
-    * Selecting only north american countries
-    * Getting employees with a minimum salary
-*   **Sorting:** The sorting method that will be applied.
-    *   **Field:** The source array field used to do the sorting.
-    *   **Direction**: The sorting direction: Ascending or Descending.
-    *   **Null treatment**: Nulls first or Nulls last.
+
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Conditions** | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
+| **Sorting** | The sorting that will be applied. |
+| **Sorting.Field** | The source array field used to do the sorting. |
+| **Sorting.Direction** | The sorting direction: Ascending or Descending. |
+| **Sorting.Null treatment** | Nulls first or Nulls last. |
 
 
 ## Multi ArrayLookup
@@ -97,36 +98,39 @@ This rule is used to search for a value or object inside an array.
 This rule is used to search for values in different arrays. This is almost the same as an [ArrayLookup](##ArrayLookup) but you can add as many Lookups as needed. The process ends when a match is found.
 
 
-### Properties
-*   **Source Array:** This an array from the JSON data.
-*   **Condition:** These are the conditions that can be made over the array to do the search. For example:
-    * Selecting only north american countries
-    * Getting employees with a minimum salary
-*   **Sorting:** The sorting method that will be applied.
-    *   **Field:** The source array field used to do the sorting.
-    *   **Direction**: The sorting direction: Ascending or Descending.
-    *   **Null treatment**: Nulls first or Nulls last.
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Conditions** | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
+| **Sorting** | The sorting that will be applied. |
+| **Sorting.Field** | The source array field used to do the sorting. |
+| **Sorting.Direction** | The sorting direction: Ascending or Descending. |
+| **Sorting.Null treatment** | Nulls first or Nulls last. |
 
 
 ## Modify Array
 
 This rule is used to modify an existing array by adding new columns or attributes.
 ### Properties
-*   **Source Array:** This an array from the JSON data.
-*   **Functions:** Each function will add a new attribute to the array. There can be as many functions as needed. Each function has these attributes:
-    *   **Statement:** The operation that will be used to add the new attribute, for example:
-        *   An arithmetic operation 
-        *   A custom function
-    *   **Name:** The name of the new attribute to be added to the array.
+
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Functions** | Each function will add a new attribute to the array. There can be as many functions as needed. Each function has these attributes: |
+| **Functions.Statement** | The operation that will be used to add the new attribute, for example: <ul><li>An arithmetic operation</li><li>A custom function</li></ul> |
+| **Functions.Name** | The name of the new attribute to be added to the array. |
 
 ## Flat Array
 This rule is used to transform an array by [flattening](##Flattening-Data) over a field.
 ### Properties
-*   **Flat By:** This an array from the JSON data.
-*   **Condition:** These are condition data needs to match to apply the flattening.
+
+| **Property** | **Details** |
+| --- | --- |
+| **Flat By** | This an array from the JSON data. |
+| **Condition** | These are condition data needs to match to apply the flattening. |
 
 # Destinations
-Set of *destination* fields in the 'child' Metadata. Each destination field will most likely represent the result of a Data Rule. It can also represent a column or attribute coming from the original data.
+Each 'child' Metadata items can have a set of *destination* fields. Each destination field will most likely represent the result of a Data Rule. It can also represent a column or attribute coming from the original data.
 
 ## Flattening Data
 Data Router allows you to flatten your data so it is easier to analyse in an Elasticsearch index using Qrvey's analytics.
