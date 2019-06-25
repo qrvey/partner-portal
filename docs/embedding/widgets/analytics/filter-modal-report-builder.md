@@ -14,7 +14,7 @@ Bellow are displayed the configuration object, events, event listeners, methods 
 
 
 ## 1. Configuration Object
-To configure a Filter Modal, use the following JSON schema as configuration object:
+To configure a Filter Modal widget, use the following JSON schema as configuration object:
 
 ``` 
 {
@@ -37,35 +37,37 @@ To configure a Filter Modal, use the following JSON schema as configuration obje
 
 **Properties and Values**
 
-Chart properties are defined below:
+The configuration object properties are defined below:
 
-* **domain**: `String`, Main url of Qrvey Core platform.
-* **api_key**: `String`, API Key of current Qrvey Environment.
-* **user_id**: `String`, Id of Qrvey User.
-* **app_id**: `String`, Id of Qrvey App.
-* **datasets**: `Array`, set of dataset objects currently used in the view.
-* **tokenBoxConfig**: (optional) `Object`, QrveyTokenBox Widget configuration.
-    * **manage_button**: `Boolean`, true or false.
-    * **data_tokens**: `Array`, set of predefined data tokens.
 
+| **Property** | **Value** | **Required** |
+|---|---|---|
+| **domain** | `String`, Main url of Qrvey Core platform. | Yes |
+| **api_key** | `String`, API Key of current Qrvey Environment. | Yes |
+| **user_id** | `String`, Id of Qrvey User. | Yes |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+| **datasets** | `Array`, set of dataset objects currently used in the view. | Yes |
+| tokenBoxConfig| (optional) `Object`, QrveyTokenBox Widget configuration. | No |
+| tokenBoxConfig.manage_button | `Boolean`, true or false. | No |
+| tokenBoxConfig.data_tokens | `Array`, set of predefined data tokens. | No |
 
 ## 2. Dispatched Events
 
 * ### ON_AN_FILTERS_APPLIED
-    This event call a method inside the widget to open the filter modal.
+    This event is sent when the filter is applied in the widget.
 
     | **Property**      | **Value**                                                          | **Required** |
     |-------------------|--------------------------------------------------------------------|----------|
     | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets                    | Yes      |
     | **requestFilters**    | `Array`, Applied filters ready to send to backend                          | Yes      |
-    | **applyTo**           | `String`, Target name for the filters (ALL). This has no use here.         | No       |
-    | **panelId**           | `String`, Id to identify the Panel in a Tab or Page. This has no use here. | No       |
+    | **applyTo**           | `String`, Target name for the filters (ALL). _Not currently used._         | No       |
+    | **panelId**           | `String`, Id to identify the Panel in a Tab or Page. _Not currently used._ | No       |
 
 ## 3. Event Listeners
 
 * ### ON\_AN\_OPEN\_FILTERS\_MODAL
 
-    This event call a method inside the widget to open the filter modal.
+    Send this event to open the filter modal widget.
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
