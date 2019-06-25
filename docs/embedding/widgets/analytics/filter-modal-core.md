@@ -4,13 +4,11 @@ title: Filter Modal - Core
 sidebar_label: Filter Modal - Core
 ---
 
-This document is for any developer who wants to know how to implement the `filter modal widget` inside `Qrvey Core platform`.
+This document explains how to implement the `filter modal widget` inside `Qrvey Core platform`.
 
-Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
+Below are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-> This must be used inside Qrvey Core platform only. 
-
-> Other scenarios like **Metric Dashboard**, **Report Builder** and **Page Builder** needs a different implementation.
+> This must be used inside Qrvey Core platform only. <br/>Other scenarios like **Metric Dashboard**, **Report Builder** and **Page Builder** each need a different implementation.
 
 ## 1. Configuration Object
 To configure a Filter Modal, use the following JSON schema as configuration object:
@@ -33,14 +31,17 @@ To configure a Filter Modal, use the following JSON schema as configuration obje
 
 Chart properties are defined below:
 
-* **user_id**: `String`, Id of Qrvey User.
-* **app_id**: `String`, Id of Qrvey App.
-* **qrveyid**: `String`, Id of Qrvey Dataset/Webform.
-* **model**: (optional) `Object`, Data of Qrvey Dataset/Webform.
-* **view_id**: `String`, Id of Qrvey Dataset/Webform.
-* **tokenBoxConfig**: (optional) `Object`, QrveyTokenBox Widget configuration.
-    * **manage_button**: `Boolean`, true or false.
-    * **data_tokens**: `Array`, set of predefined data tokens.
+
+| **Property** | **Value** | **Required** |
+|---|---|---|
+| **user_id** | `String`, Id of Qrvey User. | Yes |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
+| model | (optional) `Object`, Data of Qrvey Dataset/Webform. | No |
+| **view_id** | `String`, Id of Qrvey Dataset/Webform. | Yes |
+| tokenBoxConfig| (optional) `Object`, QrveyTokenBox Widget configuration. | No |
+| tokenBoxConfig.manage_button | `Boolean`, true or false. | No |
+| tokenBoxConfig.data_tokens | `Array`, set of predefined data tokens. | No |
 
 
 ## 2. Dispatched Events
@@ -50,10 +51,10 @@ Chart properties are defined below:
 
     | **Property**      | **Value**                                                          | **Required** |
     |-------------------|--------------------------------------------------------------------|----------|
-    | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets                    | Yes      |
-    | **requestFilters**    | `Array`, Applied filters ready to send to backend                          | Yes      |
-    | **applyTo**           | `String`, Target name for the filters (ALL). This has no use here.         | No       |
-    | **panelId**           | `String`, Id to identify the Panel in a Tab or Page. This has no use here. | No       |
+    | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets.                   | Yes      |
+    | **requestFilters**    | `Array`, Applied filters ready to send to backend.                         | Yes      |
+    | applyTo           | `String`, Target name for the filters (ALL). _Not currently used._         | No       |
+    | panelId         | `String`, Id to identify the Panel in a Tab or Page. _Not currently used._ | No       |
 
 ## 3. Event Listeners
 
@@ -65,9 +66,9 @@ Chart properties are defined below:
     | --- | --- | --- |
     | **preferenceFilters** | `Object`, Previously applied filters | Yes |
     | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform | Yes |
-    | **questionid** | `String`, Id of current Column/Question | No |
-    | **panelData** | `Object`, Data of current Custom Chart | No |
-    | **panelId** | `String`, Id of current Custom Chart | No |
+    | questionid | `String`, Id of current Column/Question | No |
+    | panelData | `Object`, Data of current Custom Chart | No |
+    | panelId | `String`, Id of current Custom Chart | No |
 
 
 ## 4. Example
