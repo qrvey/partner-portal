@@ -8,7 +8,9 @@ This document is for any developer who wants to know how to implement the `filte
 
 Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-> This must be used inside Qrvey Core platform only, the other scenarios like **Report Builder** and **Page Builder** needs a different implementation.
+> This must be used inside Qrvey Core platform only. 
+
+> Other scenarios like **Metric Dashboard**, **Report Builder** and **Page Builder** needs a different implementation.
 
 ## 1. Configuration Object
 To configure a Filter Modal, use the following JSON schema as configuration object:
