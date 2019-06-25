@@ -1,5 +1,10 @@
-## Qrvey 3.13.0   2019-07-12
+---
+id: release-2019
+title: Release Notes 2019
+sidebar_label: Release Notes 2019
+---
 
+## Qrvey 3.13.0   2019-07-12
 
 ### Admin Portal 
 
@@ -63,7 +68,7 @@
 
 *   **Datasets - MS SQL Preparing Data.** Preparing data stage had performance issues when there were more than 1M records. 
 
-*   **Survey - Pausing Surveys.** When pausing a survey that has existing answers the button remained in "Pausing..." state but the web form wasn’t  paused. 
+*   **Survey - Pausing Surveys.** When pausing a survey that has existing answers the button remained in "Pausing..." state but the web form wasnï¿½t  paused. 
 
 *   **Custom View - Pie Chart - Labels.** When the values of a wedge are very low the labels from different wedges that are too close together and everything might overlap.  
 

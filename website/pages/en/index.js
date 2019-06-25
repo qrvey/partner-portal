@@ -22,12 +22,12 @@ class Index extends React.Component {
     const Categories = () => {
       const categories = [
         {name:'Get Started',path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
-        {name:'Business Analytics', path: siteConfig.baseUrl+'docs/business-analytics/business-overview'},
+        {name:'Business Analytics', path: siteConfig.baseUrl+'docs/business-analytics/business-analytics-application'},
         {name:'Data Router', path: siteConfig.baseUrl+'docs/data-router/data-router-intro'},
         {name:'Admin', path: siteConfig.baseUrl+'docs/admin/admin-intro'},
         {name:'Embedding', path: siteConfig.baseUrl+'docs/embedding/embedding-intro'},
         {name:'Setup & Deployments', path: siteConfig.baseUrl+'docs/setup-deployments/setup-overview'},
-        {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/releases'},
+        {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-2019'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
