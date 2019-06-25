@@ -55,6 +55,7 @@
           "embedding/widgets/data-sources/widget-dataconnectors",
           "embedding/widgets/data-sources/widget-datalinks",
           "embedding/widgets/data-sources/widget-metadata",
+
           "embedding/widgets/analytics/widget-summary-view",
           "embedding/widgets/analytics/widget-tabular-view",
           "embedding/widgets/analytics/widget-custom-view",
@@ -66,6 +67,8 @@
           "embedding/widgets/analytics/widget-filter-modal",
           "embedding/widgets/analytics/widget-buckets-modal",
           "embedding/widgets/analytics/widget-formula-modal",
+          "embedding/widgets/analytics/widget-filter-modal-report-builder",
+
           "embedding/widgets/app-building/widget-report-builder",
           "embedding/widgets/app-building/widget-page-builder",
           "embedding/widgets/app-building/widget-end-user",
