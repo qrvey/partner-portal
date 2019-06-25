@@ -29,7 +29,7 @@ To configure a Filter Modal, use the following JSON schema as configuration obje
 
 **Properties and Values**
 
-Chart properties are defined below:
+The configuration object properties are defined below:
 
 
 | **Property** | **Value** | **Required** |
