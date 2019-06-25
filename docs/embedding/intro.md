@@ -1,7 +1,7 @@
 ---
 id: embedding-intro
-title: Embeding Overview
-sidebar_label: Overview
+title: Embedding Overview
+sidebar_label: Embedding Overview
 ---
 
 <div style="text-align: justify">

@@ -1,7 +1,7 @@
 ---
 id: transforms-intro
-title: Transformns Introduction
-sidebar_label: Transform
+title: Transforms Overview
+sidebar_label: Transforms Overview
 ---
 
 Lorem ipsum

@@ -5,7 +5,6 @@
       "get-started/get-started-architecture"
     ],
     "Business Analytics": [
-      "business-analytics/business-overview",
       "business-analytics/business-users",
       "business-analytics/business-analytics-application"
     ],
@@ -19,10 +18,15 @@
           "data-router/Metadata/simple-metadata"
         ]
       },
-      "data-router/Transforms/transforms-intro",
-      "data-router/Transforms/data-router-flatArray",
+      {
+        "type": "subcategory",
+        "label": "Transforms",
+        "ids": [
+          "data-router/Transforms/transforms-intro",
+          "data-router/Transforms/data-router-flatArray"
+        ]
+      },
       "data-router/DataRules/data-rules-intro",
-      "data-router/ReusablesDataRules/reusable-data-rules-intro",
       "data-router/postdata-content",
       "data-router/Connectors/connectors-intro",
       {
@@ -43,13 +47,11 @@
     ],
     "Embedding": [
       "embedding/embedding-intro",
-      "embedding/embed-solution",
       {
         "type": "subcategory",
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
-          "embedding/widgets/widget-webformdesign",
           "embedding/widgets/data-sources/widget-datasets",
           "embedding/widgets/data-sources/widget-webforms",
           "embedding/widgets/data-sources/widget-dataconnectors",

@@ -1,7 +1,7 @@
 ---
 id: setup-overview
-title: Overview
-sidebar_label: Overview
+title: Setup Overview
+sidebar_label: Setup Overview
 ---
 
 <div style="text-align: justify">
