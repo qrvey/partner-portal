@@ -103,6 +103,6 @@ window.FilterModalConfig = {
     }
 }
 </script>
-<an-filter-modal config="window.FilterModalConfig"></an-filter-modal>
+<an-filter-modal config="FilterModalConfig"></an-filter-modal>
 <script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
 ```
