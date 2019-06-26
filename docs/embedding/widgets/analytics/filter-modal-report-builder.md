@@ -8,9 +8,7 @@ This document is for any developer who wants to know how to implement the filter
 
 Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-> This must be used inside **Report Builder only**. 
-
-> Other scenarios like **Qrvey Core**, **Metric Dashboard** and **Page Builder** needs a different implementation.
+> This must be used inside **Report Builder only**. <br/>Other scenarios like **Qrvey Core**, **Metric Dashboard** and **Page Builder** each need a different implementation.
 
 
 ## 1. Configuration Object
