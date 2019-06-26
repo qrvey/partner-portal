@@ -4,7 +4,7 @@ title: Filter Modal - RB
 sidebar_label: Filter Modal - RB
 ---
 
-This document is for any developer who wants to know how to implement the filter modal widget inside Report Builder.
+This document explains how to implement the filter modal widget inside Report Builder.
 
 Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
@@ -12,7 +12,7 @@ Bellow are displayed the configuration object, events, event listeners, methods 
 
 
 ## 1. Configuration Object
-To configure a Filter Modal widget, use the following JSON schema as configuration object:
+To configure a Filter Modal widget, use the following JSON schema as the configuration object:
 
 ``` 
 {
@@ -103,6 +103,6 @@ window.FilterModalConfig = {
     }
 }
 </script>
-<an-filter-modal config="FilterModalConfig"></an-filter-modal>
+<an-filter-modal config="window.FilterModalConfig"></an-filter-modal>
 <script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
 ```
