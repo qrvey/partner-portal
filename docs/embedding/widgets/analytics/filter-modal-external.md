@@ -4,17 +4,15 @@ title: Filter Modal - Outside Qrvey
 sidebar_label: Filter Modal - Outside Qrvey
 ---
 
-This document is for any developer who wants to know how to implement the filter modal widget outside Qrvey.
+This document explains how to implement the filter modal widget outside of Qrvey.
 
-Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
+Below are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-> This must be used `outside` the Qrvey Platform,.
-
-> Other scenarios like `Qrvey Core`, `Metric Dashboard`, `Page Builder`and `Report Builder` needs a different implementation.
+> This must be used `outside` the Qrvey Platform.<br/>Other scenarios like `Qrvey Core`, `Metric Dashboard`, `Page Builder`and `Report Builder` each need a different implementation.
 
 
 ## 1. Configuration Object
-To configure a Filter Modal, use the following JSON schema as configuration object:
+To configure a Filter Modal, use the following JSON schema as the configuration object:
 
 ``` 
 {
@@ -35,8 +33,7 @@ To configure a Filter Modal, use the following JSON schema as configuration obje
 
 **Properties and Values**
 
-Chart properties are defined below:
-
+The configuration object properties are defined below:
 
 | **Property** | **Value** | **Required** |
 |---|---|---|
