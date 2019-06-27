@@ -1,8 +1,7 @@
 {
   "docs": {
     "Get Started": [
-      "get-started/get-started-intro",
-      "get-started/get-started-architecture"
+      "get-started/get-started-intro"
     ],
     "Business Analytics": [
       "business-analytics/business-users",
