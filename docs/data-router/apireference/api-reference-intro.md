@@ -5,12 +5,12 @@ sidebar_label: API Reference
 ---
 <div style="text-align: justify">
 
-# Introduction
+## Introduction
 We have created a series of collections to show how to use each of Data Router's main functionalities.
 
 These collections were created using Postman so you can easily test them.
 
-# Collections
+## Collections
 Here is the list of those collections:
 
 * [Introduction](https://documenter.getpostman.com/view/6666071/S1a4Wm6A)

@@ -6,12 +6,9 @@ sidebar_label: Postdata
 
 <div style="text-align: justify">
 
-# Overview
-
 Posting, uploading or sending data is the process where the information provided by the user is stored in an Elasticsearch index through Data Router. In this process, all transformations defined in the Metadata are applied.
 
-
-# Request structure
+## Request structure
 
 All data has to be in JSON format and must indicate the Metadata that is going to be used.
 
@@ -34,7 +31,7 @@ When using the API (`{{postdataendpoint}}/data`), the body must be an applicatio
 | **metadataId** | This is the ID of the Metadata that is going to be used. This Metadata indicates the Elasticsearch index |
 | **data** | This is the data to be uploaded. It is an array of objects where each element represents a row of the data.
 
-# Response structure
+## Response structure
 When calling the `postadata` endpoint a simple response is returned:
 ```json
 {
@@ -81,5 +78,3 @@ If the query string `returnAllLog` is set to `true`, then information more detai
     }
 }
 ```
-
-</div>

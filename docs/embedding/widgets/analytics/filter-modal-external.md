@@ -1,8 +1,10 @@
 ---
-id: widget-filter-modal-external
-title: Filter Modal - Outside Qrvey
-sidebar_label: Filter Modal - Outside Qrvey
+id: widget-filter-modal
+title: Filter Modal
+sidebar_label: Filter Modal
 ---
+
+<div style="text-align: justify">
 
 This document explains how to implement the filter modal widget outside of Qrvey.
 

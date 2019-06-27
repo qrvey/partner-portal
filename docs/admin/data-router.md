@@ -4,6 +4,8 @@ title: Data Router
 sidebar_label: Data Router
 ---
 
+<div style="text-align: justify">
+
 ## Data Router Console: 
 
 ### Data Management (Health Dashboard)
