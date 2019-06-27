@@ -68,6 +68,7 @@
           "embedding/widgets/analytics/widget-filter-modal",
           "embedding/widgets/analytics/widget-buckets-modal",
           "embedding/widgets/analytics/widget-formula-modal",
+          "embedding/widgets/analytics/widget-filter-modal-external",
           "embedding/widgets/app-building/widget-report-builder",
           "embedding/widgets/app-building/widget-page-builder",
           "embedding/widgets/app-building/widget-end-user",
