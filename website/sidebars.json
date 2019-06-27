@@ -65,6 +65,7 @@
           "embedding/widgets/analytics/widget-panels",
           "embedding/widgets/analytics/widget-summary-panel",
           "embedding/widgets/analytics/widget-filter-panel",
+          "embedding/widgets/analytics/widget-filter-panel-external",
           "embedding/widgets/analytics/widget-filter-modal",
           "embedding/widgets/analytics/widget-buckets-modal",
           "embedding/widgets/analytics/widget-formula-modal",
