@@ -64,7 +64,7 @@ The configuration object properties are defined below:
     | linkid | `String`, Id to identify the Data Link if the editing column is linked. | No      |
     | question | `Object`, Data of the editing column. | No      |
     | label | `String`, Target name for the editing filters scope (GLOBAL/PAGE/TAB/PANEL). In this case, it is always GLOBAL. | No      |
-    | panelId | `String`, Id to identify the Panel of the editing column. This has no use here. | No      |
+    | panelId | `String`, Id to identify the Panel of the editing column. _Not currently used_. | No      |
 
 * ### ON_AN_FILTERS_APPLIED
     This event is emitted when the user clicks on the button "Apply Filters".
