@@ -67,12 +67,12 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
- function formatDate(){
+function formatDate(){
     const date = new Date();
     const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
     const month = date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getDate()+1;
     const year = date.getFullYear();
-    return  `${day}/${month}/${year}`;
+    return  `${month}/${day}/${year}`;
 }
 // Log visitor page function
 function postActivy(){
@@ -85,7 +85,7 @@ function postActivy(){
         title: title,
         elementId: elementId,
         contentType: CONTENT_TYPE, 
-        date: formatDate(),
+        updateDate: formatDate(),
     };
     data.push(newActivity);
     
