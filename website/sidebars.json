@@ -18,13 +18,30 @@
           "data-router/Metadata/simple-metadata"
         ]
       },
-      "data-router/Transforms/data-router-flatArray"
+      {
+        "type": "subcategory",
+        "label": "Transforms",
+        "ids": [
+          "data-router/Transforms/transforms-intro",
+          "data-router/Transforms/data-router-flatArray"
+        ]
+      },
+      "data-router/DataRules/data-rules-intro",
+      "data-router/postdata-content",
+      {
+        "type": "subcategory",
+        "label": "API Reference",
+        "ids": [
+          "data-router/apireference/api-reference-intro"
+        ]
+      }
     ],
     "Admin": [
       "admin/admin-intro",
       "admin/admin-managing-users",
       "admin/admin-sections-platform",
       "admin/admin-data",
+      "admin/admin-sections-data-router",
       "admin/admin-sections-deployments"
     ],
     "Embedding": [
@@ -36,14 +53,15 @@
           "embedding/widgets/widget-intro",
           "embedding/widgets/data-sources/widget-webforms",
           "embedding/widgets/analytics/widget-summary-view",
-          "embedding/widgets/analytics/widget-custom-charts-core",
           "embedding/widgets/analytics/widget-panel-builder",
           "embedding/widgets/analytics/widget-panels",
           "embedding/widgets/analytics/widget-summary-panel",
+          "embedding/widgets/analytics/widget-filter-modal",
           "embedding/widgets/app-building/widget-report-builder",
           "embedding/widgets/app-building/widget-page-builder",
           "embedding/widgets/app-building/widget-user-management",
-          "embedding/widgets/automation/widget-automation"
+          "embedding/widgets/automation/widget-automation",
+          "embedding/widgets/automation/widget-tokens-manager"
         ]
       },
       {
@@ -51,14 +69,16 @@
         "label": "API",
         "ids": [
           "embedding/api/api-intro",
-          "embedding/api/api-tutorial"
+          "embedding/api/api-tutorial",
+          "embedding/api/api-automation"
         ]
       }
     ],
     "Setup & Deployments": [
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
-      "setup-deployments/setup-cost"
+      "setup-deployments/setup-cost",
+      "setup-deployments/setup-security"
     ],
     "Release Notes": [
       "release-notes/release-2019"

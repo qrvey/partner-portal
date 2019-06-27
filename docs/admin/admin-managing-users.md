@@ -6,8 +6,6 @@ sidebar_label: Admin User Management
 
 <div style="text-align: justify">
 
-## Qrvey Platform Administrator Portal - User Management
-
 The Qrvey Platform Administrator Portal is used to manage and monitor other aspects of the Qrvey Platform. Specifically, it allows Admins to
 
 *   Manage Creator accounts

@@ -1,11 +1,9 @@
 ---
 id: data-rules-intro
 title: Data Rules Overview
-sidebar_label: Overview
+sidebar_label: Data Rules Overview
 ---
 <div style="text-align: justify">
-
-# Introduction
 
 The **Data Rules** object specifies a set of operations and rules that are applied over hierarchical data to put your data into a new Elasticsearch index through a 'child' Metadata. 
 

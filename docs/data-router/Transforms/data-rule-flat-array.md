@@ -7,7 +7,7 @@ sidebar_label: Data Rule flatArray
 <div style="text-align: justify">
 This is a transform in the flatten data family. With this data rule you can flatten data inside the fields of an array of objects.
 
-## Example
+## Sample
 
 Consider the following JSON data to be posted to Data Router:
 
