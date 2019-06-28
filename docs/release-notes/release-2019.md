@@ -4,6 +4,8 @@ title: Release Notes 2019
 sidebar_label: Release Notes 2019
 ---
 
+We are in the process of adding all of our release notes for 2019 to the documentation site. These are a subset of our complete release notes and only mention the items released on June 27 2019.
+
 ## Qrvey 3.13.0   2019-07-12
 
 
