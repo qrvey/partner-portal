@@ -151,9 +151,9 @@ We are in the process of adding all of our release notes for 2019 to the documen
 
 *   **Data Links - Heatmap.** Sorting values with max data points doesn't show the correct data. \
 
-*   **Data links - Combo Chart.** Is not working correctly and doesn’t provide the expected results.  \
+*   **Data Links - Combo Chart.** Is not working correctly and doesn’t provide the expected results.  \
 
-*   **Data Link - Multiseries.** Error is shown when filtering a chart using the multi-series option and when the filter is set on a linked column.   \
+*   **Data Links - Multi-series.** Error is shown when filtering a chart using the multi-series option and when the filter is set on a linked column.   \
 
 *   **Sharing Applications - Append Data.** All the applications sent from different releases are updated when updates are made. \
 
