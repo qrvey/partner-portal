@@ -43,15 +43,15 @@ The configuration object properties are defined below:
 | **api_key** | `String`, API Key of current Qrvey Environment. | Yes |
 | **user_id** | `String`, Id of Qrvey User. | Yes |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
-| **datasets** | `Array`, set of dataset objects currently used in the view. | No |
-| **tokenBoxConfig**| `Object`, QrveyTokenBox Widget configuration. | No |
-| **tokenBoxConfig.manage_button** | `Boolean`, true or false. | No |
-| **tokenBoxConfig.data_tokens** | `Array`, set of predefined data tokens. | No |
-| **permissions**| `Object`, allows to manage permissions. | No |
-| **permissions.targets** | `Object`, limits available targets in filter configuration. **Note**: If this object isn't defined, all targets will be available | No |
-| **permissions.targets.global** | `Boolean`, manages global target option availability. | No |
-| **permissions.targets.page** | `Boolean`, manages page target option availability. | No |
-| **permissions.targets.tab** | `Boolean`, manages tab target option availability. | No |
+| datasets | `Array`, set of dataset objects currently used in the view. | No |
+| tokenBoxConfig| `Object`, QrveyTokenBox Widget configuration. | No |
+| tokenBoxConfig.manage_button | `Boolean`, true or false. | No |
+| tokenBoxConfig.data_tokens | `Array`, set of predefined data tokens. | No |
+| permissions| `Object`, allows to manage permissions. | No |
+| permissions.targets | `Object`, limits available targets in filter configuration. Note: If this object isn't defined, all targets will be available | No |
+| permissions.targets.global | `Boolean`, manages global target option availability. | No |
+| permissions.targets.page | `Boolean`, manages page target option availability. | No |
+| permissions.targets.tab | `Boolean`, manages tab target option availability. | No |
 
 
 ## 2. Dispatched Events
@@ -63,8 +63,8 @@ The configuration object properties are defined below:
     |-------------------|--------------------------------------------------------------------|----------|
     | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets.                   | Yes      |
     | **requestFilters**    | `Array`, Applied filters ready to send to backend.                         | Yes      |
-    | **applyTo**           | `String`, Target name for the filters (ALL or CURRENT_TAB).        | No       |
-    | **panelId**         | `String`, Id to identify the Panel in a Tab or Page.| No       |
+    | applyTo           | `String`, Target name for the filters (ALL or CURRENT_TAB).        | No       |
+    | panelId         | `String`, Id to identify the Panel in a Tab or Page.| No       |
 
 ## 3. Event Listeners
 
@@ -76,9 +76,9 @@ The configuration object properties are defined below:
     | --- | --- | --- |
     | **preferenceFilters** | `Object`, Previously applied filters | Yes |
     | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform | Yes |
-    | **questionid** | `String`, Id of current Column/Question | No |
-    | **panelData** | `Object`, Data of current Custom Chart | No |
-    | **panelId** | `String`, Id of current Custom Chart | No |
+    | questionid | `String`, Id of current Column/Question | No |
+    | panelData | `Object`, Data of current Custom Chart | No |
+    | panelId | `String`, Id of current Custom Chart | No |
 
 
 ## 4. Example
