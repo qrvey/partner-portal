@@ -44,9 +44,14 @@ The configuration object properties are defined below:
 | **user_id** | `String`, Id of Qrvey User. | Yes |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
 | **datasets** | `Array`, set of dataset objects currently used in the view. | No |
-| **tokenBoxConfig**| (optional) `Object`, QrveyTokenBox Widget configuration. | No |
+| **tokenBoxConfig**| `Object`, QrveyTokenBox Widget configuration. | No |
 | **tokenBoxConfig.manage_button** | `Boolean`, true or false. | No |
 | **tokenBoxConfig.data_tokens** | `Array`, set of predefined data tokens. | No |
+| **permissions**| `Object`, allows to manage permissions. | No |
+| **permissions.targets** | `Object`, limits available targets in filter configuration. **Note**: If this object isn't defined, all targets will be available | No |
+| **permissions.targets.global** | `Boolean`, manages global target option availability. | No |
+| **permissions.targets.page** | `Boolean`, manages page target option availability. | No |
+| **permissions.targets.tab** | `Boolean`, manages tab target option availability. | No |
 
 
 ## 2. Dispatched Events
