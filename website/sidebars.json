@@ -20,13 +20,26 @@
       },
       {
         "type": "subcategory",
-        "label": "Transforms",
+        "label": "Transformations",
         "ids": [
-          "data-router/Transforms/transforms-intro",
-          "data-router/Transforms/data-router-flatArray"
+          "data-router/Transforms/transforms-intro"
         ]
       },
-      "data-router/DataRules/data-rules-intro",
+      {
+        "type": "subcategory",
+        "label": "Data Rules",
+        "ids": [
+          "data-router/DataRules/data-rules-intro",
+          "data-router/DataRules/data-router-flatArray"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Reusable Data Rules",
+        "ids": [
+          "data-router/ReusablesDataRules/reusable-data-rules-intro"
+        ]
+      },
       "data-router/postdata-content",
       "data-router/Connectors/connectors-intro",
       {
