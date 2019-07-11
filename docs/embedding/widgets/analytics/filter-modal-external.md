@@ -48,10 +48,10 @@ The configuration object properties are defined below:
 | tokenBoxConfig.manage_button | `Boolean`, true or false. | No |
 | tokenBoxConfig.data_tokens | `Array`, set of predefined data tokens. | No |
 | permissions| `Object`, allows to manage permissions. | No |
-| permissions.targets | `Object`, limits available targets in filter configuration. Note: If this object isn't defined, all targets will be available | No |
-| permissions.targets.global | `Boolean`, manages global target option availability. | No |
-| permissions.targets.page | `Boolean`, manages page target option availability. | No |
-| permissions.targets.tab | `Boolean`, manages tab target option availability. | No |
+| permissions.scopes | `Object`, limits scope in filter configuration. Note: If this object isn't defined, all scopes will be available | No |
+| permissions.scopes.global | `Boolean`, manages global scopes option availability. | No |
+| permissions.scopes.page | `Boolean`, manages page scopes option availability. | No |
+| permissions.scopes.tab | `Boolean`, manages tab scopes option availability. | No |
 
 
 ## 2. Dispatched Events
