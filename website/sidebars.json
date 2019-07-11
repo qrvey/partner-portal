@@ -41,7 +41,6 @@
         ]
       },
       "data-router/postdata-content",
-      "data-router/Connectors/connectors-intro",
       {
         "type": "subcategory",
         "label": "API Reference",
