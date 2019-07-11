@@ -41,13 +41,7 @@
         ]
       },
       "data-router/postdata-content",
-      {
-        "type": "subcategory",
-        "label": "API Reference",
-        "ids": [
-          "data-router/apireference/api-reference-intro"
-        ]
-      }
+      "data-router/apireference/api-reference-intro"
     ],
     "Admin": [
       "admin/admin-intro",
