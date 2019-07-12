@@ -32,13 +32,13 @@ The following sample show how to embed connectors.
 
 
 
-Properties and Values for Each Object:
+## Properties and Values for Each Object:
 
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the configuration object.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **"api_key"** | String, secret identification token to access the application. | Yes |
+| **api_key** | String, secret identification token to access the application. | Yes |
 | **appid** | String. Application id | Yes |
 | **domain** | String, Data server url | Yes |
 | **userid** | String. User id | Yes |
