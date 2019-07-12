@@ -7,7 +7,7 @@ sidebar_label: Data Connectors
 
 The connector widget is a powerful and effective tool to allow you embed the connectors on your own web application. This widget allows your users to create and edit MySQL, MS SQL, Oracle, Aurora and Postgres connectors.
 
-## Connectors Sample
+## Data Connectors Sample
 The following sample show how to embed connectors.
 
 ```
