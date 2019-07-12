@@ -5,12 +5,14 @@ sidebar_label: Data Connectors
 ---
 <div style="text-align: justify">
 
-The connector widget is a powerful and effective tool to allow you embed the connectors on your own web application. You can create MySQL, MS SQL, Oracle, Aurora and Postgres connectors.
+The connector widget is a powerful and effective tool to allow you embed the connectors on your own web application. This widget allows your users to create and edit MySQL, MS SQL, Oracle, Aurora and Postgres connectors.
 
-## Samples
-The following samples show how to embed connectors.
+## Connectors Sample
+The following sample show how to embed connectors.
 
+```
 <qrvey-data-connectors settings='connectorConfig'></qrvey-data-connectors>
+
 
 <script>
   var connectorConfig = {
@@ -22,6 +24,13 @@ The following samples show how to embed connectors.
     
     }
 </script>
+
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+```
+
+
+
 
 Properties and Values for Each Object:
 
