@@ -20,22 +20,28 @@
       },
       {
         "type": "subcategory",
-        "label": "Transforms",
+        "label": "Transformations",
         "ids": [
-          "data-router/Transforms/transforms-intro",
-          "data-router/Transforms/data-router-flatArray"
+          "data-router/Transforms/transforms-intro"
         ]
       },
-      "data-router/DataRules/data-rules-intro",
-      "data-router/postdata-content",
-      "data-router/Connectors/connectors-intro",
       {
         "type": "subcategory",
-        "label": "API Reference",
+        "label": "Data Rules",
         "ids": [
-          "data-router/apireference/api-reference-intro"
+          "data-router/DataRules/data-rules-intro",
+          "data-router/DataRules/data-router-flatArray"
         ]
-      }
+      },
+      {
+        "type": "subcategory",
+        "label": "Reusable Data Rules",
+        "ids": [
+          "data-router/ReusablesDataRules/reusable-data-rules-intro"
+        ]
+      },
+      "data-router/postdata-content",
+      "data-router/apireference/api-reference-intro"
     ],
     "Admin": [
       "admin/admin-intro",

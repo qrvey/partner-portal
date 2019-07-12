@@ -1,11 +1,9 @@
 ---
 id: transforms-intro
-title: Transforms Overview
-sidebar_label: Overview
+title: Overview
+sidebar_label: Transformations Overview
 ---
 <div style="text-align: justify">
-
-# Overview
 
 Transforms are the required manipulation over the user data before being analyzed by Qrvey. The user can define any number of transformations inside metadata, and the result of this manipulation is reflected in the stored data. 
 
