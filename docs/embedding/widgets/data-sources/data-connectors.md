@@ -38,9 +38,9 @@ Each object is defined by common properties. The table below provides general in
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | String, secret identification token to access the application. | Yes |
+| api_key | String, Optional API Key, you can set up the widget without this if it's set in a qrvey session cookie. | No |
 | **appid** | String. Application id | Yes |
 | **domain** | String, Data server url | Yes |
-| **userid** | String. User id | Yes |
+| user_id | String, Optional User id, you can set up the widget without a user id if it's set in a qrvey session cookie. | No |
 | **isAdminApp** | Boolean. Admin app property set to false for Platform | Yes |
 
