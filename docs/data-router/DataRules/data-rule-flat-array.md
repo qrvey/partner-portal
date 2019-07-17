@@ -1,10 +1,11 @@
 ---
 id: data-router-flatArray
-title: Data Rule flatArray
-sidebar_label: Data Rule flatArray
+title: Overview
+sidebar_label: Flat Array
 ---
 
 <div style="text-align: justify">
+
 This is a transform in the flatten data family. With this data rule you can flatten data inside the fields of an array of objects.
 
 ## Sample
