@@ -58,7 +58,7 @@ The configuration object properties are defined below:
 ## 3. Dispatched Events
 
 * ### ON_AN_OPEN_FILTERS_MODAL
-    This event is emitted when the user clicks on the button "Apply Filters".
+    This event is emitted when the user clicks on the button "Add Filters".
 
     | Property   | Value                                                                                            | Required |
     |------------|--------------------------------------------------------------------------------------------------|----------|
@@ -71,7 +71,7 @@ The configuration object properties are defined below:
     | panelId | `String`, Id to identify the Panel of the editing column. This has no use here. | No      |
 
 * ### ON_AN_FILTERS_APPLIED
-    This event is emitted when the user clicks on the button "Apply Filters".
+    This event is emitted when the user performs changes directly in the filters bar.
 
     | Property   | Value                                                                                            | Required |
     |------------|--------------------------------------------------------------------------------------------------|----------|
