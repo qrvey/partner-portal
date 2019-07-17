@@ -98,7 +98,7 @@ With the previously defined metadata, we are defining a structure for data (JSON
 ```
 
 ## Creating the Metadata
-After calling **(POST)** `{{base_datarouter_url}}/metadata/v1` you will be given the Metadata ID. This ID is needed for posting data and manipulating the recently created metadata.
+After calling **(POST)** `{{base_datarouter_url}}/v1/metadata` you will be given the Metadata ID. This ID is needed for posting data and manipulating the recently created metadata.
 
 ~~~json
 {
