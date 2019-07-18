@@ -33,8 +33,23 @@ The configuration object properties are defined below:
 | **api_key** | `String`, API Key of current Qrvey Environment. | Yes |
 | **user_id** | `String`, Id of Qrvey User. | Yes |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
-| tab_id | (optional) `String`, Id of current Tab, if the page has tabs. | No |
-| filters | (optional) `Object` JSON Object, Data of filters. | No |
+| tab_id | `String`, Id of current Tab, if the page has tabs. | No |
+| filters | `Object` JSON Object, Data of filters. | No |
+| permissions| `Object`, allows to manage permissions. | No |
+| permissions.scopes | `Object`, limits scope/target/group capability in filter bar. Note: If this object isn't defined, all scopes will be work normally | No |
+| permissions.scopes.global | `Object`, manages global scope/target capability. | No |
+| permissions.scopes.global.interact | `Boolean`, manage global scope/target capability to interact. | No |
+| permissions.scopes.global.edit | `Boolean`, manage global scope/target capability to edit. | No |
+| permissions.scopes.page | `Object`, manages page scope/target capability. | No |
+| permissions.scopes.page.interact | `Boolean`, manage page scope/target capability to interact. | No |
+| permissions.scopes.page.edit | `Boolean`, manage page scope/target capability to edit. | No |
+| permissions.scopes.tab | `Object`, manages tab scope/target capability. | No |
+| permissions.scopes.tab.interact | `Boolean`, manage tab scope/target capability to interact. | No |
+| permissions.scopes.tab.edit | `Boolean`, manage tab scope/target capability to edit. | No |
+| permissions.scopes.panel | `Object`, manages panel scope/target capability. | No |
+| permissions.scopes.panel.interact | `Boolean`, manage panel scope/target capability to interact. | No |
+| permissions.scopes.panel.edit | `Boolean`, manage panel scope/target capability to edit. | No |
+| permissions.add_filter | `Boolean`, show/hide "Add Filter" button. | No |
 
 
 ## 2. Event Listeners
