@@ -4,11 +4,11 @@ title: Panels
 sidebar_label: Panels
 ---
 
-This document is for any developer who wants to know how to implement the custom chart panel widget inside `Page Builder`.
+This document shows how to implement the custom chart panel widget inside `Page Builder`.
 
 Below are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
+This must be used inside Page Builder only, other scenarios such as Qrvey Core Platform need a different implementation.
 
 
 ## Configuration object
@@ -81,7 +81,7 @@ Chart properties are defined below:
   | **qrveyid** | `String`, Id to identify the Qrvey Dataset or Webform. | Yes |
   | **panelId** | `String`, Id to identify the panel. | Yes |
   | **pageId** | `String`, Id to identify the page. | Yes |
-  | **tabId** | `String`, Id to identify the tab of the page. | No |
+  | tabId | `String`, Id to identify the tab of the page. | No |
 
 * ### ON\_OPEN\_CHART\_BUILDER
 
@@ -89,7 +89,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **filters** | `Array`, Current applied filters transformed for requests. | No |
+  | filters | `Array`, Current applied filters transformed for requests. | No |
   | **isNew** | `Boolean`, Determines if the chart is on editing mode. Must be false. | Yes |
   | **user\_id** | `String`, Id of Qrvey User. | Yes |
   | **app\_id** | `String`, Id of Qrvey App. | Yes |
