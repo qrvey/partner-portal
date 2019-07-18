@@ -28,15 +28,17 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
 ### Properties and Values
 
-| **Property** | **Value** |
-| --- | --- |
-| **domain** | `String`, Qrvey Core URL. |
-| **api_key** | `String`, Api Key. Identification code to connect to the data. |
-| **user_id** | `String`, User identifier. |
-| **app_id** | `String`, Identifier of the Qrvey application. |
-| **qrveyhash** | `String`, Qrvey Hash. |
-| **qrveyid** | `String`, Identifier of the Qrvey. |
-| **questionid** | `String`, Identifier of the question or column |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **domain** | `String`, Qrvey Core URL. | Yes |
+| **api_key** | `String`, Api Key. Identification code to connect to the data. | Yes |
+| **user_id** | `String`, User identifier. | Yes |
+| **app_id** | `String`, Identifier of the Qrvey application. | Yes |
+| **qrveyhash** | `String`, Qrvey Hash. | Yes |
+| **qrveyid** | `String`, Identifier of the Qrvey. | Yes |
+| **questionid** | `String`, Identifier of the question or column | Yes |
+| filters | `Object`, Data of filters. | No |
+| maker_filters | `Object`, Data of filters by Maker, in order to hide these filters to end user. | No |
     
 
 ### Other configuration properties
