@@ -30,7 +30,8 @@
         "label": "Data Rules",
         "ids": [
           "data-router/DataRules/data-rules-intro",
-          "data-router/DataRules/data-router-flatArray"
+          "data-router/DataRules/data-router-flatArray",
+          "data-router/DataRules/conditionals-intro"
         ]
       },
       {
