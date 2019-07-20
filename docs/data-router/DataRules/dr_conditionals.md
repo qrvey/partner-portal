@@ -70,3 +70,5 @@ The statements that can be evaluated are: mathematical operations, field existen
 }
 ```
 In this example, `$otherDataRuleId` holds the result of another **Data Rule**, and this value is evaluated in the statement. Meanwhile, `{{$userData.field1}}` is a reference to the user data, this will be replaced during the execution time.
+
+>Note, when the data comes from user input files, we use the double curly brackets. However when the data comes from another Data Rule, we do not use the double curly brackets.
