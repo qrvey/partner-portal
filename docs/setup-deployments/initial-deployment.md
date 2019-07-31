@@ -44,8 +44,8 @@ Verify Account using Email or Phone number verification. Once done you should se
 Pick desired Support plan (if needed)
 
 ![alt text](assets/initial-deployment/1.6.CreateAWSAccount.png#thumbnail)
-## Step 2: Create an IAM user
-This step will create a new User in your AWS account that Qrvey will use to deploy the Platform.
+## Step 2: Create a cross account IAM role
+This step will create a new IAM role in your AWS account that Qrvey will use to deploy the Platform.
  
 Login to AWS Console (using the email and password created in last step)
 
@@ -59,58 +59,30 @@ Navigate to AWS IAM (Identity and Access Management)
 
 ![alt text](assets/initial-deployment/2.3.CreateIAMUser.png#thumbnail)
 
-Click on “Users” Menu group
+Click on "Roles" Menu group
 
-![alt text](assets/initial-deployment/2.4.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.4.CreateIAMRole.png#thumbnail)
 
-Click on Add User
+Click on "Create Role" and select "Another AWS Account" in step 1
+Enter AWS AccountID that you received from Qrvey (*6381xxxxxxxx*)
 
-![alt text](assets/initial-deployment/2.5.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.5.CreateIAMRole.png#thumbnail)
 
-Enter a username (we recommend using *Qrvey* but you can use any username)
-Select Programmatic Access and Console Access
+Select “AdministratorAccess” in step 2(this is a high permission but we only need to be able to deploy all the services we use in Qrvey Platform). You will be able to remove this permission once we have deployed the platform (about 1-2 days)
 
-![alt text](assets/initial-deployment/2.6.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.6.CreateIAMRole.png#thumbnail)
 
-In the next step, create a Default group that will be assigned to this user. This group does not need any permissions but will be used by Admin App to allow users to sign in to the App (Admin App). 
+In the next step, add any optional tags as needed
 
-![alt text](assets/initial-deployment/2.7.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.7.CreateIAMRole.png#thumbnail)
 
-Click on Create Group and name the group as “qrvey-admin-app”. No permissions are needed for this group.
+In the next step enter a name for this new role and review all the information and click on save.
 
-![alt text](assets/initial-deployment/2.8.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.8.CreateIAMRole.png#thumbnail)
 
-Click on Create Group to go back to Add User wizard.
+New role should have been created now. From the Roles list page click on the name of the role you just created to see its details. From the role details page copy the URL for *Give this link to users who can switch roles in the console*. Save this url somewhere as you’ll be sending this to Qrvey’s deployment team in the last step.
 
-![alt text](assets/initial-deployment/2.9.CreateIAMUser.png#thumbnail)
-
-(Optional) add any tags if needed
-
-![alt text](assets/initial-deployment/2.10.CreateIAMUser.png#thumbnail)
-
-Review the information and click on Create User.
-
-![alt text](assets/initial-deployment/2.11.CreateIAMUser.png#thumbnail)
-
-New user should have been created now. Click on “Download .csv” to download all credentials at this point. These credentials have to be downloaded from this screen as they are not available after this point. If credentials are not download please remove the user and go through the steps again (Creating a new user). Store this file in a location as you’ll be sending this to Qrvey’s deployment team in the last step.
-
-![alt text](assets/initial-deployment/2.12.CreateIAMUser.png#thumbnail)
-
-Go back to Users page and click on the newly created user (Qrvey)
-
-![alt text](assets/initial-deployment/2.13.CreateIAMUser.png#thumbnail)
-
-Click on “Add Permissions” button and Select “Attach existing policies directly”
-
-![alt text](assets/initial-deployment/2.14.CreateIAMUser.png#thumbnail)
-
-Select “AdministratorAccess” (this is a high permission but we only need to be able to deploy all the services we use in Qrvey Platform). You will be able to remove this permission once we have deployed the platform (about 1-2 days)
-
-![alt text](assets/initial-deployment/2.15.CreateIAMUser.png#thumbnail)
-
-Review and Save the permission
-
-![alt text](assets/initial-deployment/2.16.CreateIAMUser.png#thumbnail)
+![alt text](assets/initial-deployment/2.9.CreateIAMRole.png#thumbnail)
 
 ## Step 3: Identify an Email Address 
 This email address will be used as “From” field for all emails that will be sent from Qrvey Platform. You can use any valid email address for this. If you don’t have one we’ll use “hello+<companyname>@qrvey.com”
@@ -151,11 +123,18 @@ Please send the following information to Qrvey’s deployment team
 
 Email Address (Step 3)
 Application URL (Step 4)
-AWS IAM Credentials file (Step 2)
+AWS IAM Role URL (Step 2)
 
-Sample Email
+Sample Email Body (to be sent to Qrvey at help@qrvey.com)
+```
+Email Address: hello+qrveytrial@qrvey.com
 
-![alt text](assets/initial-deployment/5.1.SendInfoToQrvey.png#thumbnail)
+Application URL: 	qrveytrial.qrvey.com
+			qrveytrial-datarouter.qrvey.com
+			qrveytrial-admin.qrvey.com
+
+IAM Crossaccount role URL: https://signin.aws.amazon.com/switchrole?roleName=QrveyxxxxxRole&account=9653xxxxxxxx
+```
 
 ## Step 6: Move SES out of Sandbox (Offline)
 _If you prefer, this step can be done later as it does not stop the deployment process. Note however that until this is done your instance of the Qrvey Platform will not be able to send out any emails._ 
