@@ -100,8 +100,11 @@
     ]
   },
   "release-notes":{
-    "Release Notes": [
-      "release-notes/release-2019"
+    "Release Notes 2019": [
+      "release-notes/release-jul-2019",
+      "release-notes/release-mar-2019",
+      "release-notes/release-feb-2019",
+      "release-notes/release-jan-2019"
     ]
   }
 }
