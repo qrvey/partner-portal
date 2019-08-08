@@ -1,13 +1,19 @@
+---
+id: manage-aws-elasticsearch
+title: Managing AWS Elasticsearch Cluster
+sidebar_label: Managing AWS Elasticsearch Cluster
+---
+
 # Managing AWS Elasticsearch Cluster
 
-Qrvey platform uses AWS Elasticsearch service to store all Analytics data and runs queries on this cluster to show Charts and Metrics in UI. This document explains how to monitor and Resize an AWS Elasticsearch cluster based on your needs and requirements.
+The Qrvey platform uses AWS Elasticsearch service to store all Analytics data and runs queries on this cluster to show Charts and Metrics in UI. This document explains how to monitor and Resize an AWS Elasticsearch cluster based on your needs and requirements.
 
 Elasticsearch is an open-source, RESTful, distributed search and analytics engine built on Apache Lucene. Since its release in 2010, Elasticsearch has quickly become the most popular search engine, and is commonly used for log analytics, full-text search, security intelligence, business analytics, and operational intelligence use cases. More information about AWS Elasticsearch service can be found on [AWS Elasticsearch website here](https://aws.amazon.com/elasticsearch-service/).
 
 
 ## Architecture
 
-Inside Qrvey platform, data is stored in Elasticsearch as documents part of an index. Each index is equivalent to a Table or data set. There are 2 sets of indexes that store data
+Inside the Qrvey platform, data is stored in Elasticsearch as documents in an index. Each index is equivalent to a Table or data set. There are 2 sets of indexes that store data.
 
 
 
