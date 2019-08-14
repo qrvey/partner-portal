@@ -95,6 +95,7 @@
     "Setup & Deployments": [
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
+      "setup-deployments/manage-aws-elasticsearch",
       "setup-deployments/setup-cost",
       "setup-deployments/setup-security"
     ]

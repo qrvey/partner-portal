@@ -6,7 +6,7 @@ sidebar_label: Architectural Overview
 <style>
 img[src*="#thumbnail"] {
    width:100%;
-   border: 1px solid black;
+   border: 1px solid whitesmoke;
 }
 </style>
 

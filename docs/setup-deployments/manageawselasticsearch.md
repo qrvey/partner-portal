@@ -4,7 +4,14 @@ title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
 ---
 
-# Managing AWS Elasticsearch Cluster
+<style>
+img[src*="#thumbnail"] {
+   width:100%;
+   border: 1px solid whitesmoke;
+}
+</style>
+
+<div style="text-align: justify">
 
 The Qrvey platform uses AWS Elasticsearch service to store all Analytics data and runs queries on this cluster to show Charts and Metrics in UI. This document explains how to monitor and Resize an AWS Elasticsearch cluster based on your needs and requirements.
 
@@ -40,7 +47,7 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 1. You can use Qrvey’s Admin app under DataRouter >> Health Dashboard. This dashboard shows you information about the number of records added and basic information about the Elasticsearch cluster index like space used, server type and overall health of the cluster.
 
 
-![alt_text](assets/manageawselasticsearch/Managing-AWS0.png "image_tooltip")
+![alt_text](assets/manageawselasticsearch/Managing-AWS0.png#thumbnail "image_tooltip")
 
 2. AWS Elasticsearch service console: AWS console shows a lot of information about the cluster under “Cluster Health” and “Instance health” tabs. A few important metrics to monitor here are
     1. Cluster Status : This should be green.
@@ -51,7 +58,7 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 
         
 
-![alt_text](assets/manageawselasticsearch/Managing-AWS1.png "image_tooltip")
+![alt_text](assets/manageawselasticsearch/Managing-AWS1.png#thumbnail "image_tooltip")
 
 
 
@@ -77,7 +84,7 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 
         
 
-![alt_text](assets/manageawselasticsearch/Managing-AWS2.png "image_tooltip")
+![alt_text](assets/manageawselasticsearch/Managing-AWS2.png#thumbnail "image_tooltip")
 
 
 
