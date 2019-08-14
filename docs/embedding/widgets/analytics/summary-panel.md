@@ -6,8 +6,7 @@ sidebar_label: Summary Panel
 
 <div style="text-align: justify">
 
-This Summary View widget requires `"<my_cdn>"/summary-panel/ ansummarypanel.js` script file and
-use the `<an-summary-panel>` Custom HTML Tag.
+This Summary View widget requires `"<my_cdn>"/summary-panel/ansummarypanel.js` script file and use of the `<an-summary-panel>` Custom HTML Tag.
 
 
 ## Configuration Object
@@ -28,15 +27,17 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
 ### Properties and Values
 
-| **Property** | **Value** |
-| --- | --- |
-| **domain** | `String`, Qrvey Core URL. |
-| **api_key** | `String`, Api Key. Identification code to connect to the data. |
-| **user_id** | `String`, User identifier. |
-| **app_id** | `String`, Identifier of the Qrvey application. |
-| **qrveyhash** | `String`, Qrvey Hash. |
-| **qrveyid** | `String`, Identifier of the Qrvey. |
-| **questionid** | `String`, Identifier of the question or column |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **domain** | `String`, Qrvey Core URL. | Yes |
+| **api_key** | `String`, Api Key. Identification code to connect to the data. | Yes |
+| **user_id** | `String`, User identifier. | Yes |
+| **app_id** | `String`, Identifier of the Qrvey application. | Yes |
+| **qrveyhash** | `String`, Qrvey Hash. | Yes |
+| **qrveyid** | `String`, Identifier of the Qrvey. | Yes |
+| **questionid** | `String`, Identifier of the question or column | Yes |
+| filters | `Object`, Data of filters. | No |
+| maker_filters | `Object`, Data of filters by Maker, in order to hide these filters to end user. | No |
     
 
 ### Other configuration properties
@@ -150,11 +151,14 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
     Listener to download the panel information.
 
+
     _`event.detail`_ Object:
 
-    | **Value** | **Required** |
-    | --- | --- |
-    | `String`, the type of panel download. The types of downloads are: `csv`,` pdf`, `jpg` | Yes |
+
+| **Value** | **Required** |
+| --- | --- |
+| `String`, the type of panel download. The types of downloads are: `csv`,` pdf`, `jpg` | Yes |
+
 
 * ### triggerToggleBranch
 
@@ -162,10 +166,10 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
     Inside _detail_ of _Event_ you will find the properties that the function will receive:
 
-    | **Property** | **Value** | **Required** |
-    | --- | --- | --- |
-    | **status** | `Boolean`, the state of the branch. True for active, False for inactive. | Yes |
-    | **close** | `Boolean`, the branch closed or shown. | |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **status** | `Boolean`, the state of the branch. True for active, False for inactive. | Yes |
+| **close** | `Boolean`, the branch closed or shown. | |
 
 
 
@@ -182,10 +186,10 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
     Get the HTML of the panel to download it.
 
-    | **Param** | **Description** | **Required** |
-    | --- | --- | --- |
-    | **width** | `Number`, The width of the panel that you want to download. | Yes |
-    | **height** | `Number`, the height of the panel that you want to download. | Yes |
+| **Param** | **Description** | **Required** |
+| --- | --- | --- |
+| **width** | `Number`, The width of the panel that you want to download. | Yes |
+| **height** | `Number`, the height of the panel that you want to download. | Yes |
     
     ** Returns**: `String`. The HTML of the panel.
 

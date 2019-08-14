@@ -4,6 +4,8 @@ title: Tokens Manager
 sidebar_label: Tokens Manager
 ---
 
+<div style="text-align: justify">
+
 ## Widget Overview
 
 The Tokens Management Widget allows authorised users to create/modify tokens, the tokens can be used inside the Qrvey Platform widgets.

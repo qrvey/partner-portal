@@ -1,7 +1,7 @@
 ---
 id: transforms-intro
-title: Overview
-sidebar_label: Transformations Overview
+title: Transforms Overview
+sidebar_label: Transforms Overview
 ---
 <div style="text-align: justify">
 
@@ -65,7 +65,7 @@ Inside `DataRouter` you can find a number of predefined transforms, grouped by t
 - `Conversions`: are transforms applied to change one data type to another, available are: `convertToDate`, `convertToNumeric`, `convertToString`.
 - `Comprenhend`: are transforms based on text comprenhend feature of `AWS`, available functions are: `Detect Entities`, `Detect Keyphrases`, `Detect Sentiment`, `Detect Sentiment IBM`, `Detect Dominant Language`.
 - `Rekognition`: are transforms based on text rekognition feature of `AWS`, available functions are: `Detect Faces`, `Detect Labels`, `Detect Text on Image`, `Detect Celebrities`, `Compare Faces by Bucket`, `Compare Faces by URL`, `Detect Faces on Video`, `Detect Labels on Video`, `Detect Celebrities on Video`. 
-- `Data Rules`: Data Rules are an special and diferent form of transform, you can find more information in the section [Data Rules]()
-- `Reusable Data Rules`: These are an special and diferent form of transform, you can find more information in the section [Reusable Data Rules]()
+- `Data Rules`: Data Rules are an special and diferent form of transform, you can find more information in the section [Data Rules](data-router/DataRules/data-rules-intro.md).
+- `Reusable Data Rules`: These are a special set of transform, that can be configured to use multiple time according to some parameters.
 
 </div>

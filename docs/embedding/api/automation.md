@@ -3,6 +3,7 @@ id: api-automation
 title: Automation API Reference
 sidebar_label: Automation API Reference
 ---
+<div style="text-align: justify">
 
 Automation API references imply all the actions that can be made by developers to use all the Automation features available in the list below
 

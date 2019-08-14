@@ -3,6 +3,7 @@ id: release-2019
 title: Release Notes 2019
 sidebar_label: Release Notes 2019
 ---
+<div style="text-align: justify">
 
 
 ## Qrvey 3.14   2019-08-09

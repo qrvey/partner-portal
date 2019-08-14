@@ -202,4 +202,4 @@ You can now use the response to send the URL to your users so they can take the 
 ## Further Reading
 You should now have a basic understanding of how to use the API to programmatically generate new content in the Qrvey Platform, and embed that content for use in your application.   
 
-For additional API details, including the full API specification, visit the [API Reference](embedding/api/data-sources.md).
+For additional API details, including the full API specification, visit the [API Reference](embedding/api/intro.md).
