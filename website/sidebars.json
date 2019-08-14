@@ -24,7 +24,8 @@
     ],
     "Data Rules":[
       "data-router/DataRules/data-rules-intro",
-      "data-router/DataRules/data-router-flatArray"
+      "data-router/DataRules/data-router-flatArray",
+      "data-router/DataRules/conditionals-intro"
     ],
     "Reusable Data Rules":[
       "data-router/ReusablesDataRules/reusable-data-rules-intro"

@@ -1,6 +1,6 @@
 ---
 id: data-router-flatArray
-title: Overview
+title: Flat Array
 sidebar_label: Flat Array
 ---
 
