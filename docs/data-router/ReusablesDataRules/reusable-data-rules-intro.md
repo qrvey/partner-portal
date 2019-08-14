@@ -5,4 +5,4 @@ sidebar_label: Reusable Data Rules Overview
 ---
 <div style="text-align: justify">
 
-loren ipsum
+This document is under construction.

@@ -4,7 +4,9 @@ title: Custom View
 sidebar_label: Custom View
 ---
 
-## 1. Configuration Object
+<div style="text-align: justify">
+
+## Configuration Object
 To configure Custom View, use the following JSON schema as configuration object:
  
 ```
@@ -67,7 +69,7 @@ Custom View properties are defined below:
 | **options.menu** | `Boolean` | Yes |
 
 
-## 2. Event Listeners
+## Event Listeners
 
 * ### ON_CLOSE_BUCKET_MODAL
 
@@ -123,7 +125,7 @@ Your event handler will receive the following object:
 | **tabId** | `String`, tab identifier, if applicable (Report Builder or Page Builder) | Yes |
 
 
-## 3. Methods
+## Methods
 * ### downloadView
 
 Download the visible information within Custom View, depending on the type of file.
@@ -132,7 +134,7 @@ Download the visible information within Custom View, depending on the type of fi
 |---|---|---|
 | **type** | `String`, The type of download. This can be `csv`,` pdf` or `jpg`. | Yes |
 
-## 4. Example
+## Example
 
 ```
 <script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/custom-view/ancustomview.js"></script>

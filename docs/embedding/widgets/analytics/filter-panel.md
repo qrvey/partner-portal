@@ -1,7 +1,7 @@
 ---
 id: widget-filter-panel
-title: Filter Panel - Core
-sidebar_label: Filter Panel - Core
+title: Filter Panel
+sidebar_label: Filter Panel
 ---
 
 This document explains how to implement the filter panel widget inside Qrvey Core platform.

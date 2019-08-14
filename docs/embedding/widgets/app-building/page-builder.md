@@ -37,7 +37,7 @@ The schema of the settings value has the following properties defined below (req
 }
 ```
 
-Properties and Values for Each Object:
+## Properties and Values for Each Object:
 
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the question object.
 

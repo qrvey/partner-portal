@@ -35,7 +35,7 @@ The schema of the config value has the following properties defined below (requi
 }
 ```
 
-Properties and Values for Each Object:
+## Properties and Values for Each Object:
 
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the configuration object.
 

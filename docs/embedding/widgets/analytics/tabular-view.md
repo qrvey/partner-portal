@@ -4,4 +4,4 @@ title: Tabular View
 sidebar_label: Tabular View
 ---
 
-Lorem Ipsum
+This document is under construction.

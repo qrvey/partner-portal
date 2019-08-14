@@ -3,6 +3,7 @@ id: widget-panels
 title: Panels
 sidebar_label: Panels
 ---
+<div style="text-align: justify">
 
 This document shows how to implement the custom chart panel widget inside `Page Builder`.
 
