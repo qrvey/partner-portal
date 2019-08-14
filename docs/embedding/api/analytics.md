@@ -8,4 +8,15 @@ Analytics API references imply all the actions that can be made by developers to
 
 ## List of Collections
 
-* [Workflows](https://documenter.getpostman.com/view/1152381/S1TVVx81)
+<ul>
+  <li><a href="http://bit.ly/2YSEYLe" target="blank">Answers</li>
+  <li><a href="http://bit.ly/2Z5SWbG" target="blank">Summary Panel</li>
+  <li><a href="http://bit.ly/2KzgOwv" target="blank">Charts</li>
+  <li><a href="http://bit.ly/2YUR5aF" target="blank">uCharts</li>
+  <li><a href="http://bit.ly/302aUJu" target="blank">Core</li>
+  <li><a href="http://bit.ly/2Z4PqtW" target="blank">Metrics</li>
+  <li><a href="http://bit.ly/2Z2VGCA" target="blank">Formula</li>
+  <li><a href="http://bit.ly/2OY7syq" target="blank">Buckets</li>
+  <li><a href="http://bit.ly/2OUhpwT" target="blank">Preferences</li>
+  <li><a href="http://bit.ly/2TxhzsP" target="blank">Tokens</li>
+</ul>

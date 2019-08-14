@@ -84,8 +84,7 @@ function postActivy(){
         contentUrl: currentPage,
         title: title,
         elementId: elementId,
-        contentType: CONTENT_TYPE, 
-        updateDate: formatDate(),
+        contentType: CONTENT_TYPE
     };
     data.push(newActivity);
     

@@ -1,7 +1,7 @@
 ---
 id: api-intro
 title: Qrvey API Quick Start Guide
-sidebar_label: Quick Start Guide
+sidebar_label: API Start Guide
 ---
 
 <div style="text-align: justify">

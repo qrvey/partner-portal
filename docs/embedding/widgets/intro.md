@@ -1,7 +1,7 @@
 ---
 id: widget-intro
-title: Widget Quick Start Guide
-sidebar_label: Quick Start Guide
+title: Widgets Quick Start Guide
+sidebar_label: Widgets Start Guide
 ---
 
 <div style="text-align: justify">
