@@ -11,7 +11,7 @@ To configure Custom View, use the following JSON schema as configuration object:
  
 ```
 {
-    "domain": "<QRVEY_CORE_URL>",
+    "domain": "https://your_qrvey_domain",
     "api_key": "<API_KEY>",
     "user_id": "<USER_ID>",
     "app_id": "<APP_ID>",
@@ -137,15 +137,15 @@ Download the visible information within Custom View, depending on the type of fi
 ## Example
 
 ```
-<script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/custom-view/ancustomview.js"></script>
+<script src = "https://your_qrvey_domain_widget_launcher/app.js"></script>
  
 <script>
 window.customConfig = {
-    domain: 'https://qdev.qrvey.com',
-    api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0',
-    qrveyid: "Nw9eKKe",
-    app_id: "lgVBzjr",
-    user_id: "c0T3iVh",
+    domain: 'https://your_qrvey_domain',
+    api_key: '<API_KEY>',
+    qrveyid: '<QRVEY_ID>',
+    app_id: '<APP_ID>',
+    user_id: '<USER_ID>',
     charts_config: {
       insidemenu: {
         seedata: false,

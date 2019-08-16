@@ -68,8 +68,6 @@ The configuration object properties are defined below:
     |------------|--------------------------------------------------------------------------------------------------|----------|
     | **numResponses** | `Number`, Total responses updated. | Yes      |
 
-
-
 ## 3. Dispatched Events
 
 * ### ON_AN_OPEN_FILTERS_MODAL
@@ -100,23 +98,23 @@ There are two ways to implement this widget:
 * **Inline Config Object as String:**
 ```
 <div class="panel-container" style="height: 100vh; width: 260px;">
-<an-filter-panel config='{"user_id":"c0T3iVh","app_id":"lgVBzjr","qrveyid":"Nw9eKKe","view_id":"Nw9eKKe","total_responses":300}'></an-filter-panel>
+<an-filter-panel config='{"user_id":"<USER_ID>","app_id":"<APP_ID>","qrveyid":"<QRVEY_ID>","view_id":"<VIEW_ID>","total_responses":<TOTAL_RESPONSES>}'></an-filter-panel>
 </div>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-panel/anfilterpanel.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
 * **Separated Config Object in 'window' environment:**
 ```
 <script>
 window.FilterPanelConfig = {
-    "user_id": "c0T3iVh",
-    "app_id": "lgVBzjr",
-    "qrveyid": "Nw9eKKe",
-    "view_id": "Nw9eKKe",
-    "total_responses": 300
+    "user_id": "<USER_ID>",
+    "app_id": "<APP_ID>",
+    "qrveyid": "<QRVEY_ID>",
+    "view_id": "<VIEW_ID>",
+    "total_responses": <TOTAL_RESPONSES>
 }
 </script>
 <div class="panel-container" style="height: 100vh; width: 260px;">
 <an-filter-panel config="FilterPanelConfig"></an-filter-panel>
 </div>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-panel/anfilterpanel.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```

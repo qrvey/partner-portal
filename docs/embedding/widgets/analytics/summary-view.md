@@ -13,7 +13,7 @@ use the `<an-summary-view>` Custom HTML Tag
 ## Configuration Object
 ```javascript
 {
-  domain: "<QRVEY_CORE_URL>",
+  domain: "https://your_qrvey_domain",
   api_key: "<API_KEY>",
   user_id: "<USER_ID>"
   app_id: "<APP_ID>",
@@ -135,17 +135,17 @@ use the `<an-summary-view>` Custom HTML Tag
 ## Example
 
 ```xml
-<script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-panel/ansummarypanel.js"> </ script>
-<script src = "https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-view/ansummaryview.js"> </ script>
+<script src = "<WIDGET_SUMMARY_PANEL_LOADER_URL>"> </ script>
+<script src = "<WIDGET_SUMMARY_VIEW_LOADER_URL>"> </ script>
  
 <script>
   window.summaryConfig = {
-    qrveyhash: '745b5b74af7a5d2c678683f734b69f5c',
-    domain: 'https://qdev.qrvey.com',
-    api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0',
-    qrveyid: "Uag5tG4NE",
-    app_id: "S4tLP9k",
-    user_id: "FyHYizH"
+    qrveyhash: '<QRVEYHASH>',
+    domain: 'https://your_qrvey_domain',
+    api_key: '<API_KEY>',
+    qrveyid: "<QRVEY_ID>",
+    app_id: "<APP_ID>",
+    user_id: "<USER_ID>"
     panelConfig: {
       drillConfig: {
         persist: true,

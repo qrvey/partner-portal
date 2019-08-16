@@ -18,7 +18,7 @@ To configure a Filter Modal, use the following JSON schema as the configuration 
 
 ``` 
 {
-    "domain": "<QRVEY_CORE_URL>",
+    "domain": "https://your_qrvey_domain",
     "api_key": "<API_KEY>",
     "user_id": "<USER_ID>",
     "app_id": "<APP_ID>",
@@ -85,22 +85,22 @@ The configuration object properties are defined below:
 
 * Inline Configuration Object as String
 ```
-<an-filter-modal config='{"domain":"https://qdev.qrvey.com","api_key":"TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND","user_id":"c0T3iVh","app_id":"lgVBzjr","view_id":"METRIC","datasets":[{"dataset_id":"Nw9eKKe"},{"dataset_id":"Y74Zy87"}],"tokenBoxConfig":{"manage_button":false,"data_tokens":[]}}'></an-filter-modal>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
+<an-filter-modal config='{"domain":"https://your_qrvey_domain","api_key":"<API_KEY>","user_id":"<USER_ID>","app_id":"<APP_ID>","view_id":"<VIEW_ID>","datasets":[{"dataset_id":"<DATASET_ID>"},{"dataset_id":"<DATASET_ID>"}],"tokenBoxConfig":{"manage_button":false,"data_tokens":[]}}'></an-filter-modal>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
 
 * Separated Config Object in 'window' environment:
 ```
 <script>
 window.FilterModalConfig = {
-    "domain": "https://qdev.qrvey.com",
-    "api_key": "TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND",
-    "user_id": "c0T3iVh",
-    "app_id": "lgVBzjr",
-    "view_id": "METRIC",
+    "domain": "https://your_qrvey_domain",
+    "api_key": "<API_KEY>",
+    "user_id": "<USER_ID>",
+    "app_id": "<APP_ID>",
+    "view_id": "<VIEW_ID>",
     "datasets": [
-        { "dataset_id": "Nw9eKKe" },
-        { "dataset_id": "Y74Zy87" }
+        { "dataset_id": "<DATASET_ID>" },
+        { "dataset_id": "<DATASET_ID>" }
     ],
     "tokenBoxConfig": {
         "manage_button": false,
@@ -109,5 +109,5 @@ window.FilterModalConfig = {
 }
 </script>
 <an-filter-modal config="FilterModalConfig"></an-filter-modal>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```

@@ -15,7 +15,7 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
 
 ```javascript
 {
-    domain: "<QRVEY_CORE_URL>",
+    domain: "https://your_qrvey_domain",
     api_key: "<API_KEY>",
     user_id: "<USER_ID>",
     app_id: "<APP_ID>",
@@ -199,15 +199,15 @@ To configure a Summary Panel widget, use the following JSON schema as Configurat
     
 ## Example
 ```xml
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/summary-panel/ansummarypanel.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
  
 <script>
   window.summaryPanelConfig = {
-    domain: 'https://qdev.qrvey.com',
-    api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0',
-    qrveyid: "Uag5tG4NE",
-    app_id: "S4tLP9k",
-    user_id: "FyHYizH"
+    domain: 'https://your_qrvey_domain',
+    api_key: '<API_KEY>',
+    qrveyid: "<QRVEY_ID>",
+    app_id: "<APP_ID>",
+    user_id: "<USER_ID>"
     widgetConfig: {
       height: '100%'
     }

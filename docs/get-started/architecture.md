@@ -33,9 +33,6 @@ For developers, we provide a comprehensive set of APIs and widgets to integrate 
 
 Out of the box, we also provide a number of supporting services to provide advanced analytics, messaging, and additional customizations.
 
-![2_architecture](assets/architecture/2_architecture.png#thumbnail)
-
-
 ## Data Router Architecture
 
 Qrvey DataRouter is built on a system of highly scalable APIs and services that support loading all of your data into Qrvey’s Elasticsearch backend.
