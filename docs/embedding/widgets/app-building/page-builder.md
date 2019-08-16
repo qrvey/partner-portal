@@ -17,7 +17,7 @@ The Page Builder widget allows a user to create, edit, publish and delete one or
 1. Put the script tag of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://s3.amazonaws.com/cdn.qrvey.com/widgets-launcher-dev/app.js"></script >
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script >
 ```
 
 2. Put the **qrvey-page-builder** tag in the container you want to embed the widget, and set the **settings** attribute of the tag with a valid JSON object to launch the widget. For example:
@@ -30,10 +30,10 @@ The schema of the settings value has the following properties defined below (req
 
 ```
 {
-    "appid": "pzE019Y",
-    "domain": "https://qdev.qrvey.com",
-    "userid": "TQudSqH",
-    "apikey": "TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND"		
+    "appid": "<APP_ID>",
+    "domain": "https://your_qrvey_domain",
+    "userid": "<USER_ID>",
+    "apikey": "<API_KEY>"	
 }
 ```
 

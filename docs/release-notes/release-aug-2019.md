@@ -29,6 +29,8 @@ sidebar_label: August 2019
 
 *   **Formulas - Null Function**. This new function replaces NULL with the specified replacement value. 
 
+*   **Median Aggregate**. This calculation was added to all charts to calculate Median.
+
 ### Automation 
 
 *   **Metric Tokens.** Metric tokens can now be used in different fields in automated flows. These tokens include the metric value, change or % difference, any thresholds values added to the metric. These can be accessed through the suggestion box. 
@@ -80,8 +82,6 @@ sidebar_label: August 2019
 
 *   **Appending - Buckets and Formulas.** "This chart is no longer available" appears in charts with buckets and formulas. 
 
-*   **Sharing Applications - Metric Filters**. Metric Filters are not being shared. 
-
 *   **Datasets - Spreadsheets.** Progress bar remains in 100% for a long time and it seems to be stuck. 
 
 *   **Lookup Field - SQL Connection.** When the SQL connection is deleted and it's being used in a lookup there is no error shown and the lookup field stops working. 
@@ -97,5 +97,4 @@ sidebar_label: August 2019
 *   **Web Forms - Deleting Answers.** When user executes a query trying to delete all answers from a web form, the application takes some time to completely delete all of the answers. The response time depends on the size of the web form dataset and the amount of records. 
 
 *   **Web Forms Analytics - Branching.** Branch fields for Lookup are not showing in Tabular View.
-
 

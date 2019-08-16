@@ -16,10 +16,10 @@ The following sample show how to embed connectors.
 
 <script>
   var connectorConfig = {
-    "api_key": "YOURAPIKEYGOESHERE",
-    "app_id": "APPID",
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "user_id": "USERID",
+    "user_id": "<USER_ID>",
     "isAdminApp": false 
     
     }
