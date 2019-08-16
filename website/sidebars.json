@@ -27,9 +27,6 @@
       "data-router/DataRules/data-router-flatArray",
       "data-router/DataRules/conditionals-intro"
     ],
-    "Reusable Data Rules":[
-      "data-router/ReusablesDataRules/reusable-data-rules-intro"
-    ],
     "Postdata":[
       "data-router/postdata-content"
     ],
@@ -54,23 +51,17 @@
       "embedding/api/api-intro"
     ],
     "Data Collection Widgets":[
-      "embedding/widgets/data-sources/widget-datasets",
       "embedding/widgets/data-sources/widget-webforms",
-      "embedding/widgets/data-sources/widget-dataconnectors",
-      "embedding/widgets/data-sources/widget-datalinks",
-      "embedding/widgets/data-sources/widget-metadata"
+      "embedding/widgets/data-sources/widget-dataconnectors"
     ],
     "Analytics Widgets":[
       "embedding/widgets/analytics/widget-summary-view",
-      "embedding/widgets/analytics/widget-tabular-view",
       "embedding/widgets/analytics/widget-custom-view",
       "embedding/widgets/analytics/widget-custom-charts-core",
       "embedding/widgets/analytics/widget-panel-builder",
       "embedding/widgets/analytics/widget-summary-panel",
       "embedding/widgets/analytics/widget-filter-panel",
-      "embedding/widgets/analytics/widget-filter-modal",
-      "embedding/widgets/analytics/widget-buckets-modal",
-      "embedding/widgets/analytics/widget-formula-modal"
+      "embedding/widgets/analytics/widget-filter-modal"
     ],
     "App Building Widgets":[
       "embedding/widgets/app-building/widget-report-builder",
