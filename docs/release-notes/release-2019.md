@@ -29,6 +29,8 @@ sidebar_label: Release Notes 2019
 
 *   **Formulas - Null Function**. This new function replaces NULL with the specified replacement value. 
 
+*   **Median Aggregate**. This calculation was added to all charts to calculate Median.
+
 ### Automation 
 
 *   **Metric Tokens.** Metric tokens can now be used in different fields in automated flows. These tokens include the metric value, change or % difference, any thresholds values added to the metric. These can be accessed through the suggestion box. 
@@ -79,8 +81,6 @@ sidebar_label: Release Notes 2019
 *   **Table Chart.** Grouping Table Charts by date-week is causing the chart to show as “Not Available”. 
 
 *   **Appending - Buckets and Formulas.** "This chart is no longer available" appears in charts with buckets and formulas. 
-
-*   **Sharing Applications - Metric Filters**. Metric Filters are not being shared. 
 
 *   **Datasets - Spreadsheets.** Progress bar remains in 100% for a long time and it seems to be stuck. 
 
