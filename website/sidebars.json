@@ -48,19 +48,19 @@
     ]
   },
   "embedding":{
-    "Overview":[
+    "Embedding":[
       "embedding/embedding-intro",
       "embedding/widgets/widget-intro",
       "embedding/api/api-intro"
     ],
-    "Data Collection":[
+    "Data Collection Widgets":[
       "embedding/widgets/data-sources/widget-datasets",
       "embedding/widgets/data-sources/widget-webforms",
       "embedding/widgets/data-sources/widget-dataconnectors",
       "embedding/widgets/data-sources/widget-datalinks",
       "embedding/widgets/data-sources/widget-metadata"
     ],
-    "Analytics":[
+    "Analytics Widgets":[
       "embedding/widgets/analytics/widget-summary-view",
       "embedding/widgets/analytics/widget-tabular-view",
       "embedding/widgets/analytics/widget-custom-view",
@@ -73,13 +73,13 @@
       "embedding/widgets/analytics/widget-buckets-modal",
       "embedding/widgets/analytics/widget-formula-modal"
     ],
-    "Application Building":[
+    "Application Building Widgets":[
       "embedding/widgets/app-building/widget-report-builder",
       "embedding/widgets/app-building/widget-page-builder",
       "embedding/widgets/app-building/widget-end-user",
       "embedding/widgets/app-building/widget-user-management"
     ],
-    "Automation":[
+    "Automation Widgets":[
       "embedding/widgets/automation/widget-automation",
       "embedding/widgets/automation/widget-tokens-manager",
       "embedding/widgets/automation/widget-tokens-suggestion-box"
