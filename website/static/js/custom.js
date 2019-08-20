@@ -167,7 +167,7 @@ function toggleSubNav(element){
                     <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/embedding/embedding-intro">Embedding</a>
                         <a class="dropdown-item" href="${baseUrl}docs/setup-deployments/setup-overview">Setup & Deployments</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-2019">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-aug-2019">Releases Notes</a>
                     </div>
                 </div>`);
         }
