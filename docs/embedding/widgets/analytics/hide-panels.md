@@ -3,12 +3,13 @@ id: widget-panels
 title: Panels
 sidebar_label: Panels
 ---
+<div style="text-align: justify">
 
-This document is for any developer who wants to know how to implement the custom chart panel widget inside `Page Builder`.
+This document shows how to implement the custom chart panel widget inside `Page Builder`.
 
 Below are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
 
-This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
+This must be used inside Page Builder only, other scenarios such as Qrvey Core Platform need a different implementation.
 
 
 ## Configuration object
@@ -44,25 +45,26 @@ To configure a Custom Chart Panel, use the following JSON schema as configuratio
 
 Chart properties are defined below:
 
-| **Property** | **Value** |
-| --- | --- |
-| **user_id** | `String`, Id of Qrvey User. |
-| **app_id** | `String`, Id of Qrvey App. |
-| **chart_id** | `String`, Id of Chart. |
-| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. |
-| **filters** | (optional) `Object`, Data of filters. |
-| **drilldowns** | (optional) `Object`, Data of drilldowns. |
-| **options** | `Object`, Chart menu configuration data. |
-| **options.dragger** | `Boolean`, Determines if the panel is draggable. **Must be `false`**. |
-| **options.filter** | `Boolean`, Determines if the panel has the filter button. |
-| **options.menu** | `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. |
-| **insidemenu** | `Object`, Chart data point menu configuration data. |
-| **insidemenu.drilldown** | `Boolean`, Determines if the panel has drill down options. |
-| **insidemenu.filterby** | `Boolean`, Determines if the panel has the Filter By option. |
-| **insidemenu.seedata** | `Boolean`, Determines if the panel has the See Data option. **Must be `false`**. |
-| **id** | `String`, Id of the web component. |
-| **page_id** | `String`, Id of the page inside the Builder. |
-| **tab_id** | (optional) `String`, Id of the tab inside the page. |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **user_id** | `String`, Id of Qrvey User. | Yes |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+| **chart_id** | `String`, Id of Chart. | Yes |
+| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
+| filters | `Object`, Data of filters. | No |
+| maker_filters | `Object`, Data of filters by Maker, in order to hide these filters to end user. | No |
+| drilldowns | `Object`, Data of drilldowns. | No |
+| options | `Object`, Chart menu configuration data. | No |
+| options.dragger | `Boolean`, Determines if the panel is draggable. **Must be `false`**. | No |
+| options.filter | `Boolean`, Determines if the panel has the filter button. | No |
+| options.menu | `Boolean` or `Array`, Determines if the panel has menu button and/or set the options for that menu. | No |
+| insidemenu | `Object`, Chart data point menu configuration data. | No |
+| insidemenu.drilldown | `Boolean`, Determines if the panel has drill down options. | No |
+| insidemenu.filterby | `Boolean`, Determines if the panel has the Filter By option. | No |
+| insidemenu.seedata | `Boolean`, Determines if the panel has the See Data option. **Must be `false`**. | No |
+| id | `String`, Id of the web component. | No |
+| page_id | `String`, Id of the page inside the Builder. | No |
+| tab_id | `String`, Id of the tab inside the page. | No |
 
 
 
@@ -80,7 +82,7 @@ Chart properties are defined below:
   | **qrveyid** | `String`, Id to identify the Qrvey Dataset or Webform. | Yes |
   | **panelId** | `String`, Id to identify the panel. | Yes |
   | **pageId** | `String`, Id to identify the page. | Yes |
-  | **tabId** | `String`, Id to identify the tab of the page. | No |
+  | tabId | `String`, Id to identify the tab of the page. | No |
 
 * ### ON\_OPEN\_CHART\_BUILDER
 
@@ -88,7 +90,7 @@ Chart properties are defined below:
 
   | **Property** | **Value** | **Required** |
   | --- | --- | --- |
-  | **filters** | `Array`, Current applied filters transformed for requests. | No |
+  | filters | `Array`, Current applied filters transformed for requests. | No |
   | **isNew** | `Boolean`, Determines if the chart is on editing mode. Must be false. | Yes |
   | **user\_id** | `String`, Id of Qrvey User. | Yes |
   | **app\_id** | `String`, Id of Qrvey App. | Yes |

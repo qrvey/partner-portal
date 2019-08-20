@@ -7,7 +7,7 @@ sidebar_label: Setup Initial Deployment
 <style>
 img[src*="#thumbnail"] {
    width:80%;
-   border: 1px solid black;
+   border: 1px solid whitesmoke;
 }
 </style>
 

@@ -1,22 +1,18 @@
 ---
 id: widget-custom-charts-core
-title: Panels In Core
-sidebar_label: Panels - Core
+title: Panels
+sidebar_label: Panels
 ---
 
 <div style="text-align: justify">
 
-This document shows how to implement the custom chart panel widget inside `Page Builder`.
+This document shows how to implement the custom chart panel.
 
 Below are displayed the configuration Object, events, event listeners, methods and an implementation example for this widget.
 
-This must be used inside Page Builder only, the other scenarios like Qrvey Core Platform needs a different implementation.
-
-
-## Configuration bject
+## Configuration Object
 
 To configure a Custom Chart Panel, use the following JSON schema as configuration Object:
-
 
 ```
 {
@@ -65,9 +61,6 @@ Chart properties are defined below:
 | **model** | (optional) `Object`, Qrvey Model Object from webform/dataset. |
 | **view_id** | `String`, must be the same value as `qrveyid`. |
 | **global** | (optional) `String`, determines whether the filter should always be applied as Global. Must be `true`. |
-
-
-
 
 ## Dispatched Events
 
@@ -169,33 +162,28 @@ Chart properties are defined below:
   | --- | --- | --- |
   | **drilldowns** | `Object`, Data of drilldowns. | Yes |
 
-
-
 ## Example
 
 There are two ways to implement this widget:
 
-
 *   #### Inline Config Object as String:
-
 
 ```
 <div style="height: 515px; padding: 5px; width: 33.33333%;">
-<an-custom-charts config='{"user_id":"c0T3iVh","app_id":"lgVBzjr","qrveyid":"Nw9eKKe","global":true,"options":{"dragger":true,"filter":true,"menu":true},"insidemenu":{"seedata":true,"filterby":true,"drilldown":true},"chart_id":"Nw9eKKe_3AADdEW","view_id":"Nw9eKKe"}'></an-custom-charts>
+<an-custom-charts config='{"user_id":"<USER_ID>","app_id":"<APP_ID>","qrveyid":"<QRVEY_ID>","global":true,"options":{"dragger":true,"filter":true,"menu":true},"insidemenu":{"seedata":true,"filterby":true,"drilldown":true},"chart_id":"<CHART_ID>","view_id":"<VIEW_ID>"}'></an-custom-charts>
 </div>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/custom-chart/ancustomcharts.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
 
-
 *   #### Separated Config Object in `window` environment:
-
 
 ```
 <script>
 window.CustomChartConfig = {
-  "user_id": "c0T3iVh",
-  "app_id": "lgVBzjr",
-  "qrveyid": "Nw9eKKe",
+  "domain": "https://your_qrvey_domain",
+  "user_id": "<USER_ID>",
+  "app_id": "<APP_ID>",
+  "qrveyid": "<QRVEY_ID>",
   "global": true,
   "options": {
     "dragger": true,
@@ -207,12 +195,12 @@ window.CustomChartConfig = {
     "filterby": true,
     "drilldown": true
   },
-  "chart_id": "Nw9eKKe_3AADdEW",
-  "view_id": "Nw9eKKe"
+  "chart_id": "<CHART_ID>",
+  "view_id": "<VIEW_ID>"
 }
 </script>
 <div style="height: 515px; padding: 5px; width: 33.33333%;">
 <an-custom-charts config="CustomChartConfig"></an-custom-charts>
 </div>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/custom-chart/ancustomcharts.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```

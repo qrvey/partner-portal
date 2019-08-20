@@ -4,4 +4,4 @@ title: Metadata Builder
 sidebar_label: Metadata Builder
 ---
 
-Lorem Ipsum
+This document is under construction.

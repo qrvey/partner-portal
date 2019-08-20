@@ -1,7 +1,8 @@
 ---
 id: reusable-data-rules-intro
-title: Reusable Data Rules Introduction
-sidebar_label: Reusable Data Rules
+title: Overview
+sidebar_label: Reusable Data Rules Overview
 ---
+<div style="text-align: justify">
 
-loren ipsum
+This document is under construction.

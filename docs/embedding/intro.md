@@ -1,7 +1,7 @@
 ---
 id: embedding-intro
 title: Embedding Overview
-sidebar_label: Embedding Overview
+sidebar_label: Overview
 ---
 
 <div style="text-align: justify">
@@ -42,7 +42,7 @@ Use the pre-built widget samples below to jumpstart your development and explore
 ## API
 Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
 
-* Data Sources API Reference.
-* Business Analytics API Reference.
+* [Data Sources API Reference](embedding/api/data-sources.md).
+* [Business Analytics API Reference](embedding/api/analytics.md).
 * [Workflow Automation API Reference](embedding/api/automation.md).
 * [Data Router API Reference](data-router/apireference/api-reference-intro.md).

@@ -10,14 +10,14 @@ sidebar_label: Tokens Manager
 
 The Tokens Management Widget allows authorised users to create/modify tokens, the tokens can be used inside the Qrvey Platform widgets.
 
-# Tokens Management Widget
+## Tokens Management Widget
 
 To use it:
 
 1. Put the script tag of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-tokens-widgets-dev/token_management/tokensmanagement.js"></script >
+<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script >
 ```
 
 2. Put the  **Tokens Management** tag in the container you want to embed the widget in, and set the  **config** attribute of the tag with a valid JSON object to launch the widget. For example:
@@ -31,21 +31,21 @@ The schema of the config value has the following properties defined below (requi
 ```
 { 
     settings: {
-       app_id: 'pzE019Y',
-       domain: 'https://qdev.qrvey.com',
-       user_id: 'TQudSqH',
-       api_key: 'TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND',
+        appid: "<APP_ID>",
+        domain: "https://your_qrvey_domain",
+        userid: "<USER_ID>",
+        apikey: "<API_KEY>"
      },
      general: {
-       title: 'Modal Title'
+       title: "Modal Title"
      },
     dataTokens: [
         {   id: "trigger",
-            tokens: [   {   actionid: "trigger",
+            tokens: [   {   actionid: "<ACTION_ID>",
                             alias: null, 
-                            id: "tZtR4oShS",
+                            id: "<TOKEN_ID>",
                             label: "{{9DJ1A5M1.expression.form.asdasd}}",
-                            questionid: "_B_4J38F",
+                            questionid: "<QUESTION_ID>",
                             type: "WORKFLOW_TOKEN"
                         },
                         ...
@@ -56,7 +56,7 @@ The schema of the config value has the following properties defined below (requi
 }
 ```
 
-**Properties and Values for Each Object:**
+## Properties and Values for Each Object:
 
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the question object.
 

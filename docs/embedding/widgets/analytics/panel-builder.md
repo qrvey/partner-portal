@@ -12,7 +12,6 @@ uses the `<an-chart-builder>` Custom HTML Tag
 ## Configuration Object
 > The Chart Builder widget doesn't have a configuration object.
 
-
 ## Dispatched Events
 
 * ### ON_OPEN_CHART_BUILDER
@@ -131,9 +130,9 @@ uses the `<an-chart-builder>` Custom HTML Tag
     function openChartBuilder() {
         var eventData = {
             detail: {
-                user_id: "c0T3iVh",
-                app_id: "lgVBzjr",
-                qrveyid: "Nw9eKKe",
+                user_id: "<USER_ID>",
+                app_id: "<APP_ID>",
+                qrveyid: "<QRVEY_ID>",
                 isNew: true
             }
         };
@@ -142,5 +141,5 @@ uses the `<an-chart-builder>` Custom HTML Tag
 </script>
 <button onclick="openChartBuilder()">Open Chart Builder</button>
 <an-chart-builder></an-chart-builder>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/chart-builder/anchartbuilder.js"></script>
+<script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```

@@ -16,7 +16,7 @@ The Report Builder widget allows users to created, edit, publish and delete repo
 1. Put the script tag of the given launcher url in your website. For example:
 
 ```
-<script type=”text/javascript”  src=”https://s3.amazonaws.com/cdn.qrvey.com/widgets-launcher-dev/app.js”></script>
+<script type=”text/javascript”  src=”https://your_qrvey_domain_widget_launcher/app.js”></script>
 ```
 
 2. Put the **qrvey-report-builder** tag in the container you want to embed the widget, and set the **settings** attribute of the tag with a valid JSON object to launch the widget. For example:
@@ -29,14 +29,14 @@ The schema of the settings value has the following properties defined below (req
 
 ```
 {
-    "appid": "pXE019Q",
-    "domain": "https://qdev.qrvey.com",
-    "userid": "TAuPSqH",
-    "apiKey": "Tñdmnhscm434nsakjneLeaLaDDL-3SAaadmjw3Cut0-QRVEY-FRONTEND"
+    "appid": "<APP_ID>",
+    "domain": "https://your_qrvey_domain",
+    "userid": "<USER_ID>",
+    "apikey": "<API_KEY>"	
 }
 ```
 
-Properties and Values for Each Object:
+## Properties and Values for Each Object:
 
 Each object is defined by common properties. The table below provides general information about each property and value. The Required column indicates whether the property is required for the question object.
 

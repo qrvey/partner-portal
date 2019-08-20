@@ -6,7 +6,7 @@ sidebar_label: Architectural Overview
 <style>
 img[src*="#thumbnail"] {
    width:100%;
-   border: 1px solid lightgrey;
+   border: 1px solid whitesmoke;
 }
 </style>
 
@@ -32,9 +32,6 @@ On the backend, we leverage Elasticsearch and DynamoDB to support both massive s
 For developers, we provide a comprehensive set of APIs and widgets to integrate with your existing applications, data and services.
 
 Out of the box, we also provide a number of supporting services to provide advanced analytics, messaging, and additional customizations.
-
-![2_architecture](assets/architecture/2_architecture.png#thumbnail)
-
 
 ## Data Router Architecture
 

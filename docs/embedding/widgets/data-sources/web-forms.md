@@ -22,11 +22,11 @@ In this example, we have the design widget configuration object for a Survey. Th
 
 <script>
 var configWebForm = {
-    "api_key": "YOURAPIKEYGOESHERE",
-    "app_id": "APPID",
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "qrvey_id": "QRVEYID",
-    "user_id": "USERID",
+    "user_id": "<USER_ID>",
+    "qrvey_id": "<QRVEY_ID>",
     "app_type": "SURVEY"
 }
 </script>
@@ -43,11 +43,11 @@ In this example, we have the design widget configuration object for a Form. This
 
 <script>
 var configWebForm = {
-    "api_key": "YOURAPIKEYGOESHERE",
-    "app_id": "APPID",
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "qrvey_id": "QRVEYID",
-    "user_id": "USERID",
+    "user_id": "<USER_ID>",
+    "qrvey_id": "<QRVEY_ID>",
     "app_type": "FORM"
 }
 </script>
@@ -64,11 +64,11 @@ In this example, we have the design widget configuration object for a Quiz. This
 
 <script>
 var configWebForm = {
-    "api_key": "YOURAPIKEYGOESHERE",
-    "app_id": "APPID",
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "qrvey_id": "QRVEYID",
-    "user_id": "USERID",
+    "user_id": "<USER_ID>",
+    "qrvey_id": "<QRVEY_ID>",
     "app_type": "QUIZ"
 }
 </script>
@@ -86,11 +86,11 @@ this widget have a customization option, you can change main color, secondary co
 
 <script>
 var configWebForm = {
-    "api_key": "YOURAPIKEYGOESHERE",
-    "app_id": "APPID",
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "qrvey_id": "QRVEYID",
-    "user_id": "USERID",
+    "user_id": "<USER_ID>",
+    "qrvey_id": "<QRVEY_ID>",
     "app_type": "FORM",
     "style_options": {
         main_color: "#FF420E",

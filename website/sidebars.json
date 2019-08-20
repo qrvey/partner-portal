@@ -1,40 +1,40 @@
 {
-  "docs": {
+  "get-started": {
     "Get Started": [
-      "get-started/get-started-intro"
-    ],
+      "get-started/get-started-intro",
+      "get-started/get-started-architecture"
+    ]
+  },
+  "business-analytics":{
     "Business Analytics": [
-      "business-analytics/business-users",
-      "business-analytics/business-analytics-application"
+      "business-analytics/business-analytics-application",
+      "business-analytics/business-users"
+    ]
+  },
+  "data-router":{
+    "Overview":[
+      "data-router/data-router-intro"
     ],
-    "Data Router": [
-      "data-router/data-router-intro",
-      {
-        "type": "subcategory",
-        "label": "Metadata",
-        "ids": [
-          "data-router/Metadata/metadata-intro",
-          "data-router/Metadata/simple-metadata"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Transforms",
-        "ids": [
-          "data-router/Transforms/transforms-intro",
-          "data-router/Transforms/data-router-flatArray"
-        ]
-      },
+    "Metadata":[
+      "data-router/Metadata/metadata-intro",
+      "data-router/Metadata/simple-metadata"
+    ],
+    "Transformations":[
+      "data-router/Transforms/transforms-intro"
+    ],
+    "Data Rules":[
       "data-router/DataRules/data-rules-intro",
-      "data-router/postdata-content",
-      {
-        "type": "subcategory",
-        "label": "API Reference",
-        "ids": [
-          "data-router/apireference/api-reference-intro"
-        ]
-      }
+      "data-router/DataRules/data-router-flatArray",
+      "data-router/DataRules/conditionals-intro"
     ],
+    "Postdata":[
+      "data-router/postdata-content"
+    ],
+    "Data Router API":[
+      "data-router/apireference/api-reference-intro"
+    ]
+  },
+  "admin":{
     "Admin": [
       "admin/admin-intro",
       "admin/admin-managing-users",
@@ -42,45 +42,61 @@
       "admin/admin-data",
       "admin/admin-sections-data-router",
       "admin/admin-sections-deployments"
-    ],
-    "Embedding": [
+    ]
+  },
+  "embedding":{
+    "Embedding":[
       "embedding/embedding-intro",
-      {
-        "type": "subcategory",
-        "label": "Widgets",
-        "ids": [
-          "embedding/widgets/widget-intro",
-          "embedding/widgets/data-sources/widget-webforms",
-          "embedding/widgets/analytics/widget-summary-view",
-          "embedding/widgets/analytics/widget-panel-builder",
-          "embedding/widgets/analytics/widget-panels",
-          "embedding/widgets/analytics/widget-summary-panel",
-          "embedding/widgets/analytics/widget-filter-modal",
-          "embedding/widgets/app-building/widget-report-builder",
-          "embedding/widgets/app-building/widget-page-builder",
-          "embedding/widgets/app-building/widget-user-management",
-          "embedding/widgets/automation/widget-automation",
-          "embedding/widgets/automation/widget-tokens-manager"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "API",
-        "ids": [
-          "embedding/api/api-intro",
-          "embedding/api/api-tutorial",
-          "embedding/api/api-automation"
-        ]
-      }
+      "embedding/widgets/widget-intro",
+      "embedding/api/api-intro"
     ],
+    "Data Collection Widgets":[
+      "embedding/widgets/data-sources/widget-webforms",
+      "embedding/widgets/data-sources/widget-dataconnectors"
+    ],
+    "Analytics Widgets":[
+      "embedding/widgets/analytics/widget-summary-view",
+      "embedding/widgets/analytics/widget-custom-view",
+      "embedding/widgets/analytics/widget-custom-charts-core",
+      "embedding/widgets/analytics/widget-panel-builder",
+      "embedding/widgets/analytics/widget-summary-panel",
+      "embedding/widgets/analytics/widget-filter-panel",
+      "embedding/widgets/analytics/widget-filter-modal"
+    ],
+    "App Building Widgets":[
+      "embedding/widgets/app-building/widget-report-builder",
+      "embedding/widgets/app-building/widget-page-builder",
+      "embedding/widgets/app-building/widget-end-user",
+      "embedding/widgets/app-building/widget-user-management"
+    ],
+    "Automation Widgets":[
+      "embedding/widgets/automation/widget-automation",
+      "embedding/widgets/automation/widget-tokens-manager",
+      "embedding/widgets/automation/widget-tokens-suggestion-box"
+    ],
+    "API References": [
+      "embedding/api/api-tutorial",
+      "embedding/api/api-data-sources",
+      "embedding/api/api-analytics",
+      "embedding/api/api-automation"
+    ]
+  },
+  "setup-deployments":{
     "Setup & Deployments": [
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
+      "setup-deployments/manage-aws-elasticsearch",
       "setup-deployments/setup-cost",
       "setup-deployments/setup-security"
-    ],
-    "Release Notes": [
-      "release-notes/release-2019"
+    ]
+  },
+  "release-notes":{
+    "Release Notes 2019": [
+      "release-notes/release-aug-2019",
+      "release-notes/release-jul-2019",
+      "release-notes/release-mar-2019",
+      "release-notes/release-feb-2019",
+      "release-notes/release-jan-2019"
     ]
   }
 }
