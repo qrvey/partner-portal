@@ -6,71 +6,105 @@ sidebar_label: Bucketed Column Modal
 
 <div style="text-align: justify">
 
-This document explains how to implement the bucket modal widget outside of Qrvey.
+## Configuration Object
 
-Below are displayed the events, event listeners, methods and an implementation example for this widget.
-
-> This must be used `outside` the Qrvey Platform.<br/>Other scenarios like `Qrvey Core`, `Metric Dashboard`, `Page Builder`and `Report Builder` each need a different implementation.
+Buckets Modal does not need Configuration object passed as component property.
 
 
-## 1. Configuration Object
-> The Buckets Modal widget doesn't have a configuration object.
+
+## Dispatched Events
+
+* ### ON\_CLOSE\_BUCKET\_MODAL
+
+This event is emitted when the user close the Bukets modal.
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **hasChanges** | `Boolean`, Determines if Buckets Modal has been updated. | Yes |
 
 
-## 2. Dispatched Events
 
-* ### ON_AN_FILTERS_APPLIED
-    This event call a method inside the widget to open the filter modal.
+## Listener Events
 
-    | **Property**      | **Value**                                                          | **Required** |
-    |-------------------|--------------------------------------------------------------------|----------|
-    | **preferenceFilters** | `Object`, Applied filters ready to use in other widgets.                   | Yes      |
-    | **requestFilters**    | `Array`, Applied filters ready to send to backend.                         | Yes      |
-    | **applyTo**           | `String`, Target name for the filters (ALL or CURRENT_TAB).        | No       |
-    | **panelId**         | `String`, Id to identify the Panel in a Tab or Page.| No       |
+* ### ON\_AN\_OPEN\_BUCKETS\_MODAL
 
-## 3. Event Listeners
+This event sets the bucket data and the modal type and displays modal.
 
-* ### ON_AN_OPEN_BUCKETS_MODAL
-
-    This event call a method inside the widget to open the bucket modal.
-
-    | **Property** | **Value** | **Required** |
-    | --- | --- | --- |
-    | **preferenceFilters** | `Object`, Previously applied filters | Yes |
-    | **qrveyid** | `String`, Id of current Qrvey Dataset/Webform | Yes |
-    | **questionid** | `String`, Id of current Column/Question | No |
-    | **panelData** | `Object`, Data of current Custom Chart | No |
-    | **panelId** | `String`, Id of current Custom Chart | No |
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **config** | `Object`, Configuration Object. | Yes |
+| **isNew** | `Boolean`, Determines if Buckets modal will edit or create buckets. | Yes |
+| **currentModal** | `String`, Modal type of Bucket Modal. It only accepts LIST or BUILDER as string. | Yes |
+| **bucket** | `Object`, The bucketed column info. | No |
+| **fromChart** | `Boolean`, Determines if Buckets Modal has been opened by Custom Chart. | No |
+| **onReturn** | `Void`, Callback function that returns the bucketed column info. | No |
 
 
-## 4. Example
-
-* Inline Configuration Object as String
+#### Configuration Object
 ```
-<an-filter-modal config='{"domain":"https://qdev.qrvey.com","api_key":"TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND","user_id":"c0T3iVh","app_id":"lgVBzjr","view_id":"METRIC","datasets":[{"dataset_id":"Nw9eKKe"},{"dataset_id":"Y74Zy87"}],"tokenBoxConfig":{"manage_button":false,"data_tokens":[]}}'></an-filter-modal>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
-```
-
-* Separated Config Object in 'window' environment:
-```
-<script>
-window.FilterModalConfig = {
-    "domain": "https://qdev.qrvey.com",
-    "api_key": "TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0-QRVEY-FRONTEND",
-    "user_id": "c0T3iVh",
-    "app_id": "lgVBzjr",
-    "view_id": "METRIC",
-    "datasets": [
-        { "dataset_id": "Nw9eKKe" },
-        { "dataset_id": "Y74Zy87" }
-    ],
-    "tokenBoxConfig": {
-        "manage_button": false,
-        "data_tokens": []
-    }
+{
+    "domain": "<QRVEY_CORE_URL>",
+    "api_key": "<API_KEY>",
+    "user_id": "<USER_ID>",
+    "app_id": "<APP_ID>",
+    "qrveyid": "<QRVEY_ID>"
 }
-</script>
-<an-filter-modal config="FilterModalConfig"></an-filter-modal>
-<script src="https://s3.amazonaws.com/cdn.qrvey.com/qrvey-an-widgets-dev/filter-modal/anfiltermodal.js"></script>
 ```
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **domain** | `String`, Qrvey Core URL. | Yes |
+| **api_key** | `String`, Main url of Qrvey Core platform. | Yes |
+| **user_id** | `String`, Id of Qrvey User. | Yes |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+| **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
+
+
+### Methods
+
+No current Methods for Buckets Modal
+
+
+
+### Eample
+
+```
+<button onclick="openBucketModal()">Open Bucket Modal</button>
+<button onclick="openBucketFormChartModalBuilder()">Open Bucket Modal From chart</button>
+<button onclick="openBucketModalBuilder()">Open Bucket Modal (Builder)</button>
+
+<an-bucket-modal></an-bucket-modal>
+
+<script>
+    window.addEventListener('ON_CLOSE_BUCKET_MODAL', function(event) {
+        if (event.detail.hasChanges) {
+            window.logText.innerHTML += ' - Has changes in Buckets, please reload your view!.<br />';
+        } else {
+            window.logText.innerHTML += ' - Has NO changes.<br />';
+        }
+    });
+
+    const configs = {
+        "domain": "http://qdev.qrvey.com",
+        "api_key": "TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0",
+        "app_id": "CXuWuec",
+        "user_id": "Gi8U8f5",
+        "qrvey_id": "hVS8i1S"
+    };
+
+    function openBucketModal(props = {}) {
+        window.dispatchEvent(new CustomEvent('ON_AN_OPEN_BUCKETS_MODAL', {
+        detail: { config: getSelectedConfig(), ...props }
+        }));
+    }
+
+    function openBucketFormChartModalBuilder() {
+        openBucketModal({ fromChart: true});
+    }
+
+    function openBucketModalBuilder() {
+        openBucketModal({ isNew: true, currentModal: 'BUILDER' });
+    }
+</script>
+```
+</div>
