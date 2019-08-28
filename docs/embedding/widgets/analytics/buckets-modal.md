@@ -66,7 +66,7 @@ No current Methods for Buckets Modal
 
 
 
-### Eample
+### Example
 
 ```
 <button onclick="openBucketModal()">Open Bucket Modal</button>
