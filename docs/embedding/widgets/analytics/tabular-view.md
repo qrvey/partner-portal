@@ -10,7 +10,7 @@ This document shows how to implement Tabular View.
 
 Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
 
-
+> This Tabular View widget requires `"<my_cdn>"/tabular-view/andatagrid.js` script file and use of the `<an-datagrid>` Custom HTML Tag.
 
 ## Configuration Object
 
