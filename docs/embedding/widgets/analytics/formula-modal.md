@@ -6,7 +6,7 @@ sidebar_label: Formulas Modal
 
 <div style="text-align: justify">
 
-This document shows how to implement Tabular View.
+This document shows how to implement Formulas Modal.
 
 Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
 
