@@ -6,6 +6,12 @@ sidebar_label: Bucketed Column Modal
 
 <div style="text-align: justify">
 
+This document shows how to implement Buckets Modal.
+
+Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
+
+> This Buclets Modal widget requires `"<my_cdn>"/bucket-modal/anbucketmodal.js` script file and use of the `<an-bucket-modal>` Custom HTML Tag.
+
 ## Configuration Object
 
 Buckets Modal does not need Configuration object passed as component property.
@@ -16,7 +22,7 @@ Buckets Modal does not need Configuration object passed as component property.
 
 * ### ON\_CLOSE\_BUCKET\_MODAL
 
-This event is emitted when the user close the Bukets modal.
+This event is emitted when the user closes Buckets Modal.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -28,13 +34,13 @@ This event is emitted when the user close the Bukets modal.
 
 * ### ON\_AN\_OPEN\_BUCKETS\_MODAL
 
-This event sets the bucket data and the modal type and displays modal.
+This event sets the bucket data and the modal type, then displays modal.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **config** | `Object`, Configuration Object. | Yes |
 | **isNew** | `Boolean`, Determines if Buckets modal will edit or create buckets. | Yes |
-| **currentModal** | `String`, Modal type of Bucket Modal. It only accepts LIST or BUILDER as string. | Yes |
+| **currentModal** | `String`, Type of Bucket Modal. It only accepts LIST or BUILDER as string. LIST is about to display a list of created buckets. DETAIL is about to display a specific bucket | Yes |
 | **bucket** | `Object`, The bucketed column info. | No |
 | **fromChart** | `Boolean`, Determines if Buckets Modal has been opened by Custom Chart. | No |
 | **onReturn** | `Void`, Callback function that returns the bucketed column info. | No |
