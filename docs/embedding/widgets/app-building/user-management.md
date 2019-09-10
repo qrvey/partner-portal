@@ -46,7 +46,7 @@ Each object is defined by common properties. The table below provides general in
 | **domain** | String, Data server url | Yes |
 | **userid** | String. User id of the admin.| Yes |
 | apikey | String, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
-| doNotAllow | Strings Array,  | No |
+| doNotAllow | Strings Array, Collection of permissions, block or hide widget content | No |
 
 
 ## Permissions
