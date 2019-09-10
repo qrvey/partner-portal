@@ -56,6 +56,8 @@ Add one or more of the followings strings in the **doNotAllow** Property to conf
 
 | **Permission** | **Description** |
 | --- | --- |
-| USERS_AUTHENTICATION | Block all content in Authentication tab |
-| USERS_LIST | Block all content in Users tab |
-| USERS_GROUPS | Block all content in Groups tab |
+| USERS_AUTHENTICATION | Hide Authentication tab |
+| USERS_LIST | Hide Users tab |
+| USERS_GROUPS | Hide Groups tab |
+| GROUPS_CRUD | Hide the actions for create, duplicate or delete groups |
+| GROUPS_USERS_DETAIL | Hide the users table inside the group detail view |
