@@ -17,9 +17,9 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
 ```javascript
 {
     domain: "https://your_qrvey_domain",
-    apikey: "<API_KEY>",
-    userid: "<USER_ID>",
     appid: "<APP_ID>",
+    userid: "<USER_ID>",
+    apikey: "<API_KEY>",
 }
 ```
 
@@ -29,8 +29,8 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
 | --- | --- | --- |
 | **domain** | `String`, Qrvey Core URL. | Yes |
 | **appid** | `String`, Identifier of the Application. | Yes |
-| userid | `String`, User identifier. | No |
-| apikey | `String`, Api Key. Identification code to connect to the data. | No |
+| apikey | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
+| userid | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
 
 
 ### Other configuration properties
