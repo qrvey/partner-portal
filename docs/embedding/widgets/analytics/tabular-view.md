@@ -6,9 +6,9 @@ sidebar_label: Tabular View
 
 <div style="text-align: justify">
 
-This document shows how to implement Tabular View.
+This document shows how to implement the Tabular View widget.
 
-Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
+Below you will find details of the configuration object, event, listeners, menthods available with this widget.
 
 > This Tabular View widget requires `"<my_cdn>"/tabular-view/andatagrid.js` script file and use of the `<an-datagrid>` Custom HTML Tag.
 
@@ -38,13 +38,13 @@ Tabular View properties are defined below:
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **domain** | `String`, Qrvey Core URL. | Yes |
-| **api_key** | `String`, Main url of Qrvey Core platform. | Yes |
-| **user_id** | `String`, Id of Qrvey User. | Yes |
+| api_key | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
+| user_id | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
 | **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
-| **filters** | `Object`, Filter preferences of Dataset/Webform. | No |
-| **height** | `number`, Height in pixel of Tabular View component. | No |
-| **width** | `number`, Width in pixel of Tabular View component. | No |
+| filters | `Object`, Filter preferences of Dataset/Webform. | No |
+| height | `number`, Height in pixel of Tabular View component. | No |
+| width | `number`, Width in pixel of Tabular View component. | No |
 
 
 
@@ -53,11 +53,11 @@ Tabular View properties are defined below:
 
 * ### ON\_CLICK\_COLUMN\_OPTION
 
-This event is emitted when the user clicks in options button of each column
+This event is emitted when the user clicks the options button of a column.
 
 * ### ON\_APPLY\_DATAGRID\_ACTIONS
 
-This event is emitted when the datagrid has updated preferences
+This event is emitted when the datagrid preferences are updated.
 
 
 
@@ -65,7 +65,7 @@ This event is emitted when the datagrid has updated preferences
 
 * ### ON\_CLOSE\_BUCKET\_MODAL
 
-This event calls method for reloading Tabular View when Bucket Modal was closed and modifications were made.
+This event causes the Tabular View to be reloaded, and is usually triggered  when Bucket Modal is closed and modifications were made.
 
 Your event handler will receive the following object:
 
@@ -75,7 +75,7 @@ Your event handler will receive the following object:
 
 * ### ON\_CLOSE\_FORMULAS\_MODAL
 
-This event calls method for reloading Tabular View when Formulas Modal was closed and modifications were made.
+This event causes the Tabular View to be reloaded, and is usually triggered  when Formulas Modal is closed and modifications were made.
 
 Your event handler will receive the following object:
 
