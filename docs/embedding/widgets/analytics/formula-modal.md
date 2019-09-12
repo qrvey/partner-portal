@@ -6,9 +6,9 @@ sidebar_label: Formulas Modal
 
 <div style="text-align: justify">
 
-This document shows how to implement Formulas Modal.
+This document shows how to implement the Formulas Modal dialog.
 
-Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
+Below you will find details of the configuration object, event, listeners, menthods available with this widget.
 
 > This Formulas Modal widget requires `"<my_cdn>"/formula-modal/anformulamodal.js` script file and use of the `<an-formula-modal>` Custom HTML Tag.
 
@@ -16,7 +16,7 @@ Inside of this document, we will check what configuration object, event, listene
 
 ## Configuration Object
 
-Formulas Modal does not need configuration object passed as component property.
+Formulas Modal does not need configuration object passed as component property. Instead the configuration is passed in with via the ON_AN_OPEN_FORMULAS_MODAL event.
 
 
 
@@ -36,16 +36,16 @@ This event is emitted when the user closes formulas modal.
 
 * ### ON\_AN\_OPEN\_FORMULAS\_MODAL
 
-This event sets the formula data and the modal type, then displays modal.
+This event is used to set the formula data and the modal type, and display the modal dialog.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **config** | `Object`, Configuration Object. | Yes |
 | **isNew** | `Boolean`, Determines if Formulas Modal will edit or create formulas. | Yes |
 | **currentModal** | `String`, type of Formulas Modal. It only accepts LIST or DETAIL as string. LIST is about to display a list of created formulas. DETAIL is about to display an specific formula. | Yes |
-| **formula** | `Object`, The Formula column info. | No |
-| **fromChart** | `Boolean`, Determines if Formulas Modal has been opened by Custom Chart. | No |
-| **onReturn** | `Void`, Callback function that returns the formula object. | No |
+| formula | `Object`, The Formula column info. | No |
+| fromChart | `Boolean`, Determines if Formulas Modal has been opened by Custom Chart. | No |
+| onReturn | `Void`, Callback function that returns the formula object. | No |
 
 
 #### Configuration Object
@@ -62,8 +62,8 @@ This event sets the formula data and the modal type, then displays modal.
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **domain** | `String`, Qrvey Core URL. | Yes |
-| **api_key** | `String`, Main url of Qrvey Core platform. | Yes |
-| **user_id** | `String`, Id of Qrvey User. | Yes |
+| api_key | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
+| user_id | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
 | **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
 
