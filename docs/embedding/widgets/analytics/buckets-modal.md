@@ -6,11 +6,11 @@ sidebar_label: Bucketed Column Modal
 
 <div style="text-align: justify">
 
-This document shows how to implement Buckets Modal.
+This document shows how to implement the Buckets Modal dialog.
 
-Inside of this document, we will check what configuration object, event, listeners, menthods are needed to widget works.
+Below you will find details of the configuration object, event, listeners, menthods available with this widget.
 
-> This Buclets Modal widget requires `"<my_cdn>"/bucket-modal/anbucketmodal.js` script file and use of the `<an-bucket-modal>` Custom HTML Tag.
+> This Buckets Modal widget requires `"<my_cdn>"/bucket-modal/anbucketmodal.js` script file and use of the `<an-bucket-modal>` Custom HTML Tag.
 
 ## Configuration Object
 
@@ -41,9 +41,9 @@ This event sets the bucket data and the modal type, then displays modal.
 | **config** | `Object`, Configuration Object. | Yes |
 | **isNew** | `Boolean`, Determines if Buckets modal will edit or create buckets. | Yes |
 | **currentModal** | `String`, Type of Bucket Modal. It only accepts LIST or BUILDER as string. LIST is about to display a list of created buckets. DETAIL is about to display a specific bucket | Yes |
-| **bucket** | `Object`, The bucketed column info. | No |
-| **fromChart** | `Boolean`, Determines if Buckets Modal has been opened by Custom Chart. | No |
-| **onReturn** | `Void`, Callback function that returns the bucketed column info. | No |
+| bucket | `Object`, The bucketed column info. | No |
+| fromChart | `Boolean`, Determines if Buckets Modal has been opened by Custom Chart. | No |
+| **onReturn** | `Void`, Callback function that returns the bucketed column info. | Yes |
 
 
 #### Configuration Object
@@ -60,8 +60,8 @@ This event sets the bucket data and the modal type, then displays modal.
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **domain** | `String`, Qrvey Core URL. | Yes |
-| **api_key** | `String`, Main url of Qrvey Core platform. | Yes |
-| **user_id** | `String`, Id of Qrvey User. | Yes |
+| api_key | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
+| user_id | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
 | **app_id** | `String`, Id of Qrvey App. | Yes |
 | **qrveyid** | `String`, Id of Qrvey Dataset/Webform. | Yes |
 
