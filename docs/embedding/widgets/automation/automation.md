@@ -28,8 +28,8 @@ Each object is defined by common properties. The table below provides general in
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **domain** | `String`, Data server url. | Yes |
-| **apikey** | `String`, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
-| **userid** | `String`, User identifier. | Yes |
+| apikey | `String`, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
+| userid | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
 | **appid** | `String`, Identifier of the Qrvey application. | Yes |
     
 
