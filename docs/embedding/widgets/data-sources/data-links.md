@@ -6,10 +6,18 @@ sidebar_label: Data Links
 <div style="text-align: justify">
 
 ## Widget Overview
-The datalinks widget is a tool think to manage all the links between your data related to an application, the user can embed this widget in his web application, once the process is complete, you can create, edit or delete different data connections and use it later to create differents charts or analysis. 
+The datalinks widget is a tool used to manage all the links between your data for an application. The user can embed this widget in his web application. Once the process is complete, you can create, edit or delete different data links. These links are then used to create different charts or for analysis. 
 
 ## Samples
-The way to embed and use this widget is pretty simple, you just need to declare an object with some information and you're ready to work.
+To embed and use this widget, declare an object with the configuration details and refer to this in the qrvey-datalinks element. The configuration object is described in the following table.
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **domain** | `String`, Qrvey Core URL. | Yes |
+| api_key | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
+| user_id | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+
 
 ### Code Sample
 
@@ -17,14 +25,14 @@ The way to embed and use this widget is pretty simple, you just need to declare 
 ```
 <script>
 var configWebForm = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
-    "user_id": "<USER_ID>"
+    "api_key": "<API_KEY>",
+    "user_id": "<USER_ID>",
+    "app_id": "<APP_ID>"
 }
 </script>
 
-<qrvey-datalinks settings='datalinks_settings'></qrvey-datalinks>
+<qrvey-datalinks settings='configWebForm'></qrvey-datalinks>
 
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
