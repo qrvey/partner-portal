@@ -4,6 +4,8 @@ title: Filter Modal - RB
 sidebar_label: Filter Modal - RB
 ---
 
+## No Public Doc
+
 This document explains how to implement the filter modal widget inside Report Builder.
 
 Bellow are displayed the configuration object, events, event listeners, methods and an implementation example for this widget.
