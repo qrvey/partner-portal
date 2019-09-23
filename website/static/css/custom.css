@@ -161,6 +161,11 @@ ul.nav-site.nav-site-internal li a{
     display: flex;
 }
 
+#nav-item-dropdown{
+    position: relative;
+    cursor: pointer;
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -233,10 +238,6 @@ ul.nav-site.nav-site-internal li a{
    }
    div#home-wrapper {
         padding-top: 30px;
-    }
-    
-    #nav-item-dropdown{
-        position: relative;
     }
 
     #nav-item-dropdown::after{
