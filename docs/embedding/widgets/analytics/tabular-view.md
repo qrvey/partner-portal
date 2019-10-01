@@ -4,6 +4,8 @@ title: Tabular View
 sidebar_label: Tabular View
 ---
 
+## No Public Doc
+
 <div style="text-align: justify">
 
 This document shows how to implement the Tabular View widget.
