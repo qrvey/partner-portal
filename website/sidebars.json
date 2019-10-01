@@ -53,7 +53,10 @@
     ],
     "Data Collection Widgets":[
       "embedding/widgets/data-sources/widget-webforms",
-      "embedding/widgets/data-sources/widget-dataconnectors"
+      "embedding/widgets/data-sources/widget-dataconnectors",
+      "embedding/widgets/data-sources/widget-datalinks",
+      "embedding/widgets/data-sources/activity-log"
+
     ],
     "Analytics Widgets":[
       "embedding/widgets/analytics/widget-summary-view",

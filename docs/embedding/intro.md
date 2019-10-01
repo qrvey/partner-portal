@@ -19,6 +19,7 @@ Use the pre-built widget samples below to jumpstart your development and explore
 |Data Connectors|**<`qrvey-data-connectors`>**|
 |Data Links|**<`qrvey-datalinks`>**|
 |Metadata Builder|**<`qrvey-metadata-builder`>**|
+|Activity Logs|**<`log-widget`>**|
 |Summary View|**<`an-summary-view`>**|
 |Tabular View|**<`an-tabular-view`>**|
 |Custom View|**<`an-custom-view`>**|
