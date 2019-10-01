@@ -1,7 +1,7 @@
 ---
 id: data-router-switch
-title: Overview
-sidebar_label: Case
+title: Switch
+sidebar_label: Switch
 ---
 
 <div style="text-align: justify">
