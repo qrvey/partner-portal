@@ -4,6 +4,8 @@ title: Bucketed Column Modal
 sidebar_label: Bucketed Column Modal
 ---
 
+## No Public Doc
+
 <div style="text-align: justify">
 
 This document shows how to implement the Buckets Modal dialog.
