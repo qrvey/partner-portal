@@ -1,7 +1,7 @@
 ---
 id: widget-automation
-title: Workflows
-sidebar_label: Workflows
+title: Automation
+sidebar_label: Automation
 ---
 
 <div style="text-align: justify">
