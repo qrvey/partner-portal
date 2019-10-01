@@ -4,6 +4,8 @@ title: Formulas Modal
 sidebar_label: Formulas Modal
 ---
 
+## No Public Doc
+
 <div style="text-align: justify">
 
 This document shows how to implement the Formulas Modal dialog.
