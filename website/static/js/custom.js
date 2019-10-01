@@ -4,6 +4,8 @@ const currentPage = window.location.pathname;
 const userAgent = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
+const isMobile = !window.matchMedia('(max-width: 1023px)').matches;
+const baseUrl = '/docs/';
 
 let ipAddress = '';
 let title = '';
@@ -20,7 +22,6 @@ window.onload = () => {
         insertParternsLogo();
         highlightDocNavItem();
     } 
-   
 }
 
 if(getCookie(COOKIE_USER)){
@@ -28,7 +29,6 @@ if(getCookie(COOKIE_USER)){
 } else {
     window.location.href = '/auth/login';
 }
-
 
 const datarouter = {
     url: 'https://zbxl4n8sk5.execute-api.us-east-1.amazonaws.com/DataRouter/data?saveUserLog=false&returnAllLog=true',
@@ -40,8 +40,6 @@ const headers = {
     'Content-Type':  'application/json',
     'x-api-key': datarouter['x-api-key']
 }
-
-
 
 // Cookie check function
 function getCookie(cname){
@@ -104,10 +102,7 @@ function postActivy(){
             setCookie(PAGE + currentPage, currentPage, 0.5);
         }
     ).catch(error => console.error('We could not find ip address',error));
-    
-
 }
-
 
 (function getIp(){
     fetch(IP_ADDRES_URL)
@@ -130,7 +125,6 @@ function logOut(){
 }
 
 function insertLogOutToNav(){
-    
     let navBar = document.querySelector('ul.nav-site.nav-site-internal');
     const nodeTagLi = document.createElement("LI");                 // Create a <li> node
     const nodeTagA = document.createElement("A");                 // Create a <li> node
@@ -151,12 +145,37 @@ function highlightDocNavItem(){
    const navItems =  document.querySelectorAll('ul.nav-site.nav-site-internal li a');
    navItems.forEach(element => {
         if(element.innerText == 'Documentation'){
+            element.onclick = () => toggleSubNav(element);
             element.classList.add('primary-color');
+            element.setAttribute('id', 'nav-item-dropdown');
         }
    });
 };
 
-
+function toggleSubNav(element){
+    if(isMobile){
+        const navbarDropdown = document.getElementById('navbar-item-dropdown');
+        if (!navbarDropdown){
+            element.insertAdjacentHTML('beforeend',`
+                <div class="dropdown flex" id="navbar-item-dropdown"> 
+                    <div class="column">
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/business-analytics/business-analytics-application">Business Analytics</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/data-router/data-router-intro">Data Router</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin</a>
+                    </div>  
+                    <div class="column">
+                        <a class="dropdown-item" href="${baseUrl}docs/embedding/embedding-intro">Embedding</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/setup-deployments/setup-overview">Setup & Deployments</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-aug-2019">Releases Notes</a>
+                    </div>
+                </div>`);
+        }
+        else {
+            navbarDropdown.classList.toggle('flex');
+        }
+    }
+}
 
 setTimeout( ()=> {
     if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){
