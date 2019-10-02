@@ -11,7 +11,7 @@ Data Sources API references imply all the actions that can be made by developers
 ## List of Collections
 
 <ul>
-  <li><a href="http://bit.ly/2KAoLl3" target="blank">Qrvey</li>
+  <li><a href="http://bit.ly/2ozrxyq" target="blank">Data Source</li>
   <li><a href="http://bit.ly/2KyU937" target="blank">Data Links</li>
   <li><a href="http://bit.ly/2Z3eTIs" target="blank">End user</li>
   <li><a href="http://bit.ly/2KJuofC" target="blank">Connectors</li>
