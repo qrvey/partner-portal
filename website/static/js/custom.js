@@ -4,7 +4,7 @@ const currentPage = window.location.pathname;
 const userAgent = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
-const isMobile = !window.matchMedia('(max-width: 1023px)').matches;
+const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
 const baseUrl = '/docs/';
 
 let ipAddress = '';
@@ -126,14 +126,7 @@ function logOut(){
 
 function insertLogOutToNav(){
     let navBar = document.querySelector('ul.nav-site.nav-site-internal');
-    const nodeTagLi = document.createElement("LI");                 // Create a <li> node
-    const nodeTagA = document.createElement("A");                 // Create a <li> node
-    const textnodeLi = document.createTextNode("Log Out");         // Create a text node
-    nodeTagA.classList = 'primary-button';
-    nodeTagLi.onclick =  logOut;
-    nodeTagA.appendChild(textnodeLi);
-    nodeTagLi.appendChild(nodeTagA);                              // Append the text to <li>
-    navBar.appendChild(nodeTagLi);       // Append <li> to <ul> 
+    navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`)
 }
 
 function insertParternsLogo(){
@@ -153,7 +146,7 @@ function highlightDocNavItem(){
 };
 
 function toggleSubNav(element){
-    if(isMobile){
+    if(isDesktop){
         const navbarDropdown = document.getElementById('navbar-item-dropdown');
         if (!navbarDropdown){
             element.insertAdjacentHTML('beforeend',`
@@ -174,6 +167,8 @@ function toggleSubNav(element){
         else {
             navbarDropdown.classList.toggle('flex');
         }
+    } else {
+        window.location.href = '/docs';
     }
 }
 
