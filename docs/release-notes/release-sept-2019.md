@@ -1,12 +1,12 @@
-# Qrvey 3.2   2019-09-12
+---
+id: release-sep-2019
+title: Release Notes September 2019
+sidebar_label: September 2019
+---
 
-
-## New Features
-
+## Qrvey 3.2   2019-09-12
 
 ### Admin Portal
-
-
 
 *   **Sharing Applications - Releases Activity Log:** An activity log was added to the Releases section so users can monitor the sharing process and see the events and errors.
 *   **Sharing Workflows:** The option to add Workflows to the content package to be shared in applications when creating a new application or appending is now available. 
@@ -14,10 +14,7 @@
 *   **Sharing - Activity Log:** The events “Start Restoring”, “Restore Successfully”, “Restore Failed” are recorded in the Activity Log so Makers can review these events.
 *   **Sharing Applications - Share/Append - Summary Panels in Pages:** An Admin can share or append a Page with Summary Panels to multiple users on different servers. The Makers who own the app can use it as part of their existing app for their own requirements.
 
-
 ### Data Sources
-
-
 
 *   **Applications - Activity Log:** An activity log was added to the Applications section so users can monitor the installation process and see the events and errors when an application is shared.
 *   **Applications - Append Updates Label:** We added an Updated Label for applications that have received updates as append when sharing from Admin App. 
@@ -26,10 +23,7 @@
 *   **Tabular View - Add Data via Web Forms:** An Add action is available in the tabular view for web form datasets. This action will call up a modal that shows the web form so the user can add data to the dataset via the web form, which could be a Form or Survey.
 *   **Tabular View - Deleting Records:** A Delete action is available in the tabular view, for web form - Form and Survey. This action allows the Maker to delete rows of data.
 
-
 ### Application Building
-
-
 
 *   **Page Builder Widget - White Labelling:** The Page Builder widget can be modified to change main colors like the Qrvey orange.
 *   **Exports - Individual Components:** Metrics and Chart panels can now be exported to CSV, PDF and JPG individually from Page/Report Builders and End User Interface.
@@ -38,20 +32,14 @@
 *   **Page Builder Link Button & Page URL as Widget Parameter:** Creators can hide or show Application Link button from Page builder topbar using widget parameters, and can hide or show Page URL field from Page info side panel using widget parameters.
 *   **User Management Widget - Show/Hide Parameters:** The User Management Widget now uses a parameter to hide or show Users Tab, Delete Groups & Add New Group buttons, and Groups Menu icon in Groups tab, as well as User section inside a Group, when the widget is embedded.
 
-
 ### Analytics
-
-
 
 *   **Table Chart - Grouping (Multi-level):** Table Chart that allows multi-level and single level grouping.
 *   **Data Links for Table Charts:** Data Links are enabled for single-level grouped tables.
 *   **Calculated Columns in Pie, Heatmap and Word Cloud Charts:** Calculated columns created through the Formula Builder are enabled to be used in Pie, Heatmap and Word Cloud creation.
 *   **Median Aggregate:** The Median calculation was added as an aggregate option.
 
-
 ### Data Router
-
-
 
 *   **Postdata - Optimize Elasticsearch Bulk Insert.** We optimized the way we were inserting data into Elasticsearch. This will benefit from parallelism. We also optimized the way we are processing transformations and Data Rules including a local caching mechanism for ES Query Lookups. 
 *   **Profiling - Performance Logs.** By setting a parameter, we can enable a performance log for each post data execution call. This log file will include total execution times and Data Rules and transformation times among others. 
@@ -59,19 +47,14 @@
 *   **Array Lookup - Optimize Searching Mechanism.** We optimized the searching mechanism of an Array Lookup when there's no sorting. In this case we are returning the first match. 
 *   **Postdata - Retryable Errors.** We added more retryable Elasticsearch errors to the list, mostly due to high concurrency: socket disconnected, null pointer exception, authorization exceptions, among others
 
-
 ### Other Enhancements
-
-
 
 *   **Documentation - API Enhancements:** The endpoint documentation includes JSON schema details.
 *   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
 *   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
 *   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
 
-
 ### General Tweaks and Bug Fixes 
-
 
 *   **Admin - Platforms Emails:** The RTF Editor used for the Emails used for the activation of new User Accounts creation and the Password restoring has been refactored.
 *   **Admin - Sharing - Deploy Connectors Between Servers:** An Admin can send a new connector to the recipient as a “shared” connector to use this one on the required Datasets. Connectors handle substitution in the connection string if necessary.
@@ -94,10 +77,7 @@
 *   **Data Router - Unhandled error on missing JS custom function on flat data condition.** There was an error as we weren't handling missing JS Custom functions on a condition on flat data. Postdata was timing out.
 *   **Tabular view - Edit records with a Password question:** Previously a Password question field was shown as empty, rather than as a masked out password. This has been corrected and a Password question field is now shown as a masked value.
 
-
 ### Known Issues 
-
-
 
 *   **Formulas - Date Add/Date Subtract:** There are some inconsistencies 
 *   **Crosstab - Data Links:** Inconsistencies in the displayed records.
