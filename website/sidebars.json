@@ -25,6 +25,7 @@
     "Data Rules":[
       "data-router/DataRules/data-rules-intro",
       "data-router/DataRules/data-router-flatArray",
+      "data-router/DataRules/data-router-switch",
       "data-router/DataRules/conditionals-intro"
     ],
     "Postdata":[
@@ -52,7 +53,10 @@
     ],
     "Data Collection Widgets":[
       "embedding/widgets/data-sources/widget-webforms",
-      "embedding/widgets/data-sources/widget-dataconnectors"
+      "embedding/widgets/data-sources/widget-dataconnectors",
+      "embedding/widgets/data-sources/widget-datalinks",
+      "embedding/widgets/data-sources/activity-log"
+
     ],
     "Analytics Widgets":[
       "embedding/widgets/analytics/widget-summary-view",
@@ -92,6 +96,7 @@
   },
   "release-notes":{
     "Release Notes 2019": [
+      "release-notes/release-sep-2019",
       "release-notes/release-aug-2019",
       "release-notes/release-jul-2019",
       "release-notes/release-mar-2019",

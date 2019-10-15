@@ -31,7 +31,8 @@ The schema of the config value has the following properties defined below (requi
     "appid": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
     "userid": "<USER_ID>",
-    "apikey": "<API_KEY>"			
+    "apikey": "<API_KEY>"
+    "doNotAllow": ['<PERMISSION>']			
 }
 ```
 
@@ -45,3 +46,18 @@ Each object is defined by common properties. The table below provides general in
 | **domain** | String, Data server url | Yes |
 | **userid** | String. User id of the admin.| Yes |
 | apikey | String, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
+| doNotAllow | Strings Array, Collection of permissions, block or hide widget content | No |
+
+
+## Permissions
+
+Add one or more of the followings strings in the **doNotAllow** Property to configure the widget. The order does not matter.
+
+
+| **Permission** | **Description** |
+| --- | --- |
+| USERS_AUTHENTICATION | Hide Authentication tab |
+| USERS_LIST | Hide Users tab |
+| USERS_GROUPS | Hide Groups tab |
+| GROUPS_CRUD | Hide the actions for create, duplicate or delete groups |
+| GROUPS_USERS_DETAIL | Hide the users table inside the group detail view |
