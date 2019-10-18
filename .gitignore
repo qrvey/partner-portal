@@ -17,4 +17,4 @@ website/docker-compose.yml
 website/docs/*
 website/pages/en/help.js
 website/pages/en/users.js
-
+Migration/*
