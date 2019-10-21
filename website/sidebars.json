@@ -5,6 +5,23 @@
       "get-started/get-started-architecture"
     ]
   },
+  "ui-docs": {
+    "UI Documentation": [
+      "ui-docs/logging-in",
+      "ui-docs/profile",
+      "ui-docs/introduction",
+      "ui-docs/applications",
+      "ui-docs/web-forms",
+      "ui-docs/datasets",
+      "ui-docs/data-views",
+      "ui-docs/report-builder",
+      "ui-docs/page-builder",
+      "ui-docs/automation",
+      "ui-docs/settings",
+      "ui-docs/send",
+      "ui-docs/activity-log"
+    ]
+  },
   "business-analytics":{
     "Business Analytics": [
       "business-analytics/business-analytics-application",
