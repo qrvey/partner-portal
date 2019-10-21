@@ -22,6 +22,7 @@ class Index extends React.Component {
     const Categories = () => {
       const categories = [
         {name:'Get Started',path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
+        {name:'UI Documentation',path: siteConfig.baseUrl+'docs/ui-docs/logging-in'},
         {name:'Business Analytics', path: siteConfig.baseUrl+'docs/business-analytics/business-analytics-application'},
         {name:'Data Router', path: siteConfig.baseUrl+'docs/data-router/data-router-intro'},
         {name:'Admin', path: siteConfig.baseUrl+'docs/admin/admin-intro'},

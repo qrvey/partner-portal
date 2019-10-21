@@ -153,11 +153,12 @@ function toggleSubNav(element){
                 <div class="dropdown flex" id="navbar-item-dropdown"> 
                     <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/logging-in">UI Documentation</a>
                         <a class="dropdown-item" href="${baseUrl}docs/business-analytics/business-analytics-application">Business Analytics</a>
                         <a class="dropdown-item" href="${baseUrl}docs/data-router/data-router-intro">Data Router</a>
+                        </div>  
+                        <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin</a>
-                    </div>  
-                    <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/embedding/embedding-intro">Embedding</a>
                         <a class="dropdown-item" href="${baseUrl}docs/setup-deployments/setup-overview">Setup & Deployments</a>
                         <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-sep-2019">Releases Notes</a>
