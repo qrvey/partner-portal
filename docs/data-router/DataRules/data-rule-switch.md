@@ -37,13 +37,13 @@ This rule, follows the standard **Data Rules** structure, as follow:
 
 Where the `id` field is the identifier to access the result of the Data Rule, and `function` defines the object type of Data Rule to apply. This object contains three basic properties:
 
-| Property  | description                                            |
+| Property  | Description                                            |
 | --------- | ------------------------------------------------------ |
 | `key`     | Condition or option used to evaluate the cases.              |
 | `cases`   | Array of options, to implement if the condition is met. _Note, only the first matching case will be processed._|
 | `cases.when`   | Value or expression to determine if the condition is met for this case. |
 | `cases.then`   | Action to perform if the condition is met for this case. |
-| `default` | Default action to take if no `case` is used            |
+| `default` | Default action to take if no `case` is used.            |
 
 **Example** Case Data Rule:
 
