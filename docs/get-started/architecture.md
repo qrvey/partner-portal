@@ -3,12 +3,6 @@ id: get-started-architecture
 title: Architectural Overview
 sidebar_label: Architectural Overview
 ---
-<style>
-img[src*="#thumbnail"] {
-   width:100%;
-   border: 1px solid whitesmoke;
-}
-</style>
 
 <div style="text-align: justify">
 
