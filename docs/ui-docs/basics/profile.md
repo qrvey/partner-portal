@@ -1,23 +1,24 @@
 ---
 id: profile
-title: Profile/Account
+title: Managing Your Profile  
 sidebar_label: Profile/Account
 ---
 
-## [Title]
-[A summary of what is it]
+<div style="text-align: justify">
 
-### Use case
-[Where/why should one use this. What problem does it solve?]
-[Image / screen shot where relevant]
+In this document, we’ll discuss managing your user profile inside of the Qrvey application.  Information contained in your profile will be used within the application where needed.
 
-### How It Works
-[all explanation]
+To access your profile, select **Profile/Account** from the menu in the upper-righthand corner. 
 
-### Example [/ Sample]
-[a real example that can be followed by the reader.
-Any code snippets
-Any images/screenshots, etc.]
+![1_profile](assets/profile/1_profile.png#thumbnail-60)
 
-### Further Reading
-[links to other related stuff. Whether they are under it, or just related.]
+Once inside your profile, you’ll find fields to update your name, email address, password, address, organization and phone number. Changes made to your profile are automatically saved. 
+
+![2_profile](assets/profile/2_profile.png#thumbnail)
+
+Profile images are provided by gravatar.com and cannot be edited within Qrvey. 
+
+## Updating Your Password
+To update your existing password, click **Change Password** to reveal additional fields. You will need to reenter your existing password before adding a new one. 
+
+![3_profile](assets/profile/3_profile.png#thumbnail-60)
