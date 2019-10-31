@@ -10,39 +10,41 @@ The Qrvey glossary serves as a tool to help take the mystery out of some of our 
 
 ## A
 
-**Actions** -  the workflow element that performs the work you designate.
+**Action** -  The workflow element that performs the work you designate.
 
 **Analytics** - Qrvey's analytics platform is used for analyzing collected feedback or other data sources.
 
-**API** - the application programming interface developers use to integrate Qrvey with their websites and applications.
+**API** - The application programming interface developers use to integrate Qrvey with their websites and applications.
 
-**Application** - a collection of web forms, pages and workflows that all work together to help automate your workday.
+**Application** - A collection of web forms, pages and workflows that all work together to help automate your workday.
 
 ## B
 
-**Branching** - a series of questions that a respondent will answer as a result of answering a conditional question.
+**Branching** - A series of questions that a respondent will answer as a result of answering a conditional question.
 
 ## C
 
-**Chart Builder** - a tool that allows users to build custom charts to visualize their data.
+**Chart Builder** - A tool that allows users to build custom charts to visualize their data.
 
-**Conditional Question** - a question that, depending on how a respondent answers, will spawn a series of additional questions.
+**Conditional Question** - A question that, depending on how a respondent answers, will be used to trigger branching.
 
 **Creator** - Someone who uses Qrvey to make or build forms, analytics, workflows or even entire applications that others will use and interact with.
 
 ## D
 
-**Dashboard** - a single place to view data from multiple web forms all at once in real-time.
+**Dashboard** - A single place to view data from multiple web forms all at once in real-time.
+
+**Dataset** - A collection of data items conforming to a specified schema. Within Qrvey applications the data items are mapped to rows of data.
 
 ## E
 
-**Expression Question** - a question type that allows a respondent to express how they feel by selecting from a pre-chosen list of words.
+**Expression Question** - A question type that allows a respondent to express how they feel by selecting from a pre-chosen list of words.
 
 ## F
 
-**Filters** - a condition that is added to data to temporarily remove some of the data from a view.
+**Filter** - A condition applied to a datasource view to temporarily exclude data which does not meet the specified conditions.
 
-**Form** - a specific type of web form that is typically used to collect information and interact with applications.
+**Form** - A specific type of web form that is typically used to collect information and interact with applications.
 
 ## G
 
@@ -50,15 +52,15 @@ The Qrvey glossary serves as a tool to help take the mystery out of some of our 
 
 ## H
 
-**Histogram** - a visual representation of when your web form responses were received.
+**Histogram** - The first chart in the Summary view in the Analyze section of a Web Form. This chart shows when your web form responses were received.
 
 ## I
 
-**In-Context** - a web form that can be easily added to a webpage using a snippet of Javascript code.
+**In-Context Form** - A web form that can be easily added to a webpage using a snippet of Javascript code.
 
 ## J
 
-**JSON** - The open standard data object used my Qrvey's API to pass data.
+**JSON** - The open standard data object used by Qrvey's API to pass data.
 
 ## K
 
@@ -66,7 +68,7 @@ The Qrvey glossary serves as a tool to help take the mystery out of some of our 
 
 ## L
 
-**Lookups** - A field type that displays a predefined list of values from which a respondent must choose. Lookups get their data from manually typed lists, other web forms, web hooks or other data sources like Google Docs.
+**Lookup** - A field type that displays a predefined list of values from which a respondent must choose. Lookups get their data from manually typed lists, other web forms, web hooks or other data sources like Google Docs.
 
 ## M
 
@@ -78,39 +80,39 @@ The Qrvey glossary serves as a tool to help take the mystery out of some of our 
 
 ## O
 
-**Outlier** - a data point that falls outside statistical norms. These values are 
+**Outlier** - A data point that falls outside statistical norms. These values are considered anomalies.
 
 ## P
 
-**Page** - Qrvey elements that can be used to house web forms and select workflow actions. Multiple pages can be combined with a common navigation bar and authentication to build complete applications.
+**Page** - Qrvey elements that can be used to house web forms and select workflow actions. Multiple pages can be combined with a common navigation bar and, optionally, authentication to build complete applications.
 
-**Page Flows** - A page that is combined with workflow actions to complete a task. For example, a page flow may display a form, then process the submission of that form.
+**Page Flow** - A page that is combined with workflow actions to complete a task. For example, a page flow may display a form, then process the submission of that form.
 
-**Piping** - piping allows the answer from one question to automatically be inserted into other questions. Qrvey uses the hashtag (##) and the name you provide to invoke a pipe in subsequent questions.
+**Piping** - Piping allows the answer from one question to automatically be inserted into other questions. Qrvey uses the hashtag (##) and the name you provide as a placeholder for the answer in subsequent questions.
 
 ## Q
 
-**Qrvey** - an all-in-one analytics platform for software and service providers that includes data collection, analysis, automation and integration tools to promote data-driven decision making.
+**Qrvey** - An all-in-one analytics platform for software and service providers that includes data collection, analysis, automation and integration tools to promote data-driven decision making.
 
 ## R
 
-**Recipients** - we refer to those who receive and respond to web forms as respondents. See our entry below for respondents.
+**Recipient** - Someone who received an automated email from a workflow action. If the recipient clicks on a link in an email they may be shown a web form to complete. If they complete the form they become a respondent. See our entry below for _respondent_.
 
-**Respondents** - someone who completes a web form. A respondent can be someone you ask to answer via email or text, or someone who responds to a Qrvey link on a website, blog or social media post.
+**Respondent** - Someone who completes a web form. For example a respondent may be someone you ask to answer via email or text, or someone who responds to a Qrvey link on a website, blog or social media post.
 
 ## S
 
-**Survey** - A type of web form that collects data from individuals using a variety of question formats
+**Survey** - A type of web form that collects data from individuals using a collection of questions.
 
 ## T
 
-**Time Series** - the ability to view, analyze and compare results segmented over time, such as by days, weeks, months or years.
+**Time Series** - A dataset with a date/time field. This provides the ability to view, analyze and compare results over time, such as by days, weeks, months or years.
 
-**Tokens** - variables that are used inside formulas and workflows.
+**Token** - A placeholder used inside formulas and workflows, eg it may correspond to a field or system variable.
 
-**Trend Analysis** - displaying feedback results visually in a manner where trends and patterns can quickly be identified.
+**Trend Analysis** - A chart of a _Time Series_ used to visually explore time related patterns and correlations.
 
-**Trigger** - The workflow element that initiates the process.
+**Trigger** - A workflow element used to initiate a process.
 
 ## U
 
@@ -118,20 +120,20 @@ The Qrvey glossary serves as a tool to help take the mystery out of some of our 
  
 ## V
 
-**Variables** - see Tokens
+**Variable** - A system variable - eg the current user name, the system date/time, etc. See also - _Token_.
 
 ## W
 
-**Web Forms** - data collection tools that can be used inside Qrvey as a part of pages and workflows, or shared externally via email, social media or direct website embed.
+**Web Form** - A data collection tool that can be used inside Qrvey as a part of pages and workflows, or shared externally via email, social media or embdded in a website.
 
-**Widgets** - pre-built code snippets that allow for the quick embedding of Qrvey into a website or application with little to no coding or development.
+**Widget** - A pre-built web control, eg chart, form, etc, that used to allow easi=y embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed, with little to no associated coding or development.
 
-**Workflows** - a series of triggers, conditions and actions that work together to perform a function.
+**Workflow** - A series of triggers, conditions and actions that work together to perform a business function.
 
 ## Y
 
-**Yes/No** - a simple binary question type that only has two responses, such as "yes" or "no", "true' or false" or similar combination.
+**Yes/No** - A simple binary question type that only has two responses, such as "yes" or "no", "true' or false" or similar alternatives.
 
 ## Z
 
-**Zapier** - rhymes with "happier" and is one of Qrvey's integration partners that connects our platform to hundreds of other web-based services.
+**Zapier** - One of Qrvey's integration partners that connects our platform to hundreds of other web-based services. _Note, it rhymes with "happier"_.
