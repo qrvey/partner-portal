@@ -6,7 +6,7 @@ sidebar_label: Logging In
 
 <div style="text-align: justify">
 
-In this document, we’ll review logging in and out of the Qrvey creator application, creating a new account and how to recover a lost password. This document does not cover logging into end-user applications. 
+In this document, we’ll review logging in and out of the Qrvey creator application, creating a new account and how to recover a lost password. This document does not cover logging in to end-user applications. 
 
 ## Logging In
 
