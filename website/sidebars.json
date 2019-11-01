@@ -5,6 +5,14 @@
       "get-started/get-started-architecture"
     ]
   },
+  "ui-docs": {
+    "Basics": [
+      "ui-docs/basics/logging-in",
+      "ui-docs/basics/profile",
+      "ui-docs/basics/introduction",
+      "ui-docs/basics/applications"
+    ]
+  },
   "business-analytics":{
     "Business Analytics": [
       "business-analytics/business-analytics-application",
@@ -26,7 +34,8 @@
       "data-router/DataRules/data-rules-intro",
       "data-router/DataRules/data-router-flatArray",
       "data-router/DataRules/data-router-switch",
-      "data-router/DataRules/conditionals-intro"
+      "data-router/DataRules/conditionals-intro",
+      "data-router/DataRules/destinations-intro"
     ],
     "Postdata":[
       "data-router/postdata-content"
@@ -56,7 +65,6 @@
       "embedding/widgets/data-sources/widget-dataconnectors",
       "embedding/widgets/data-sources/widget-datalinks",
       "embedding/widgets/data-sources/activity-log"
-
     ],
     "Analytics Widgets":[
       "embedding/widgets/analytics/widget-summary-view",

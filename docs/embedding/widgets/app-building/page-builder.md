@@ -74,7 +74,6 @@ Add one or more of the followings strings in the **doNotAllow** Property to conf
 | CREATE_CHART | Hide Create Chart button. |
 | USERS_AUTHENTICATION | Hide Authentication tab. |
 | USERS_LIST | Hide Users tab. |
-| USERS_GROUPS | Hide Groups tab. |
 | GROUPS_CRUD | Hide the actions for create, duplicate or delete groups. |
 | GROUPS_USERS_DETAIL | Hide the users table inside the group detail view. |
 
@@ -88,7 +87,7 @@ Add one or more of the followings strings in the **doNotAllow** Property to conf
     apikey: '<API_KEY>',
     appid: '<APP_ID>',
     userid: '<USER_ID>'
-    doNotAllow: ['CREATE_CHART', 'USERS_AUTHENTICATION', 'USERS_GROUPS'],
+    doNotAllow: ['CREATE_CHART', 'USERS_AUTHENTICATION'],
     styles: {
         main_color: '#3E94FF',
         main_text_color: '#000000',

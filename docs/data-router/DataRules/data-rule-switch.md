@@ -1,13 +1,14 @@
 ---
 id: data-router-switch
-title: Switch
-sidebar_label: Switch
+title: Case
+sidebar_label: Case
 ---
 
 <div style="text-align: justify">
 
-The **Case Data Rule**, as in software development, is a feature that will perform different actions depending on the variable or the option passed to the operation. This condition can be evaluated to any data type [boolean, string, number]. 
-> This Data Rule, behave like a Switch/Case, as in most programing language.
+The **Case Data Rule** allows different actions to be performed depending on the variable or the option passed to the operation. This condition can be evaluated to any data type [boolean, string, number].
+
+> This Data Rule, behaves like a Switch/Case, as in most programing language.
 
 This rule, follows the standard **Data Rules** structure, as follow:
 
@@ -33,13 +34,16 @@ This rule, follows the standard **Data Rules** structure, as follow:
         }
 }
 ```
+
 Where the `id` field is the identifier to access the result of the Data Rule, and `function` defines the object type of Data Rule to apply. This object contains three basic properties:
 
-|Property|description|
-|--------|-----------|
-|`key`| condition or option to evaluate the cases|
-|`cases`| Array of options, to implement if the condition is met|
-|`default`| default action to take if no `case` is used|
+| Property  | Description                                            |
+| --------- | ------------------------------------------------------ |
+| `key`     | Condition or option used to evaluate the cases.              |
+| `cases`   | Array of options, to implement if the condition is met. _Note, only the first matching case will be processed._|
+| `cases.when`   | Value or expression to determine if the condition is met for this case. |
+| `cases.then`   | Action to perform if the condition is met for this case. |
+| `default` | Default action to take if no `case` is used.            |
 
 **Example** Case Data Rule:
 
