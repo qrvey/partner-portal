@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: Introduction To The UI
-sidebar_label: Introduction
+title: Introduction to the UI
+sidebar_label: Introduction to the UI
 ---
 
 In this document, we’ll show you the basics of navigating the Qrvey creator interface.  When you first log into Qrvey, you’ll see the following layout. 

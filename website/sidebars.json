@@ -2,10 +2,7 @@
   "get-started": {
     "Get Started": [
       "get-started/get-started-intro",
-      "get-started/roles",
-      "get-started/modules",
-      "get-started/get-started-architecture",
-      "get-started/glossary"
+      "get-started/get-started-architecture"
     ]
   },
   "ui-docs": {
