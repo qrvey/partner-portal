@@ -1,7 +1,7 @@
 ---
 id: get-started-intro
-title: Introduction (What is Qrvey)
-sidebar_label: Introduction
+title: Overview
+sidebar_label: Overview
 ---
 
 <div style="text-align: justify">
