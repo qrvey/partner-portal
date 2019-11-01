@@ -2,17 +2,26 @@
   "get-started": {
     "Get Started": [
       "get-started/get-started-intro",
-      "get-started/get-started-architecture"
+      "get-started/roles",
+      "get-started/modules",
+      "get-started/get-started-architecture",
+      "get-started/glossary"
     ]
   },
   "ui-docs": {
-    "UI Documentation": [
-      "ui-docs/logging-in",
-      "ui-docs/profile",
-      "ui-docs/introduction",
-      "ui-docs/applications",
-      "ui-docs/web-forms",
-      "ui-docs/datasets",
+    "Basics": [
+      "ui-docs/basics/logging-in",
+      "ui-docs/basics/profile",
+      "ui-docs/basics/introduction",
+      "ui-docs/basics/applications"
+    ],
+    "Web Forms": [
+      "ui-docs/web-forms/web-forms"
+    ],
+    "Datasets": [
+      "ui-docs/datasets"
+    ],
+    "Others": [
       "ui-docs/data-views",
       "ui-docs/report-builder",
       "ui-docs/page-builder",
