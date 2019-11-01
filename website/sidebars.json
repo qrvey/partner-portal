@@ -14,21 +14,6 @@
       "ui-docs/basics/profile",
       "ui-docs/basics/introduction",
       "ui-docs/basics/applications"
-    ],
-    "Web Forms": [
-      "ui-docs/web-forms/web-forms"
-    ],
-    "Datasets": [
-      "ui-docs/datasets"
-    ],
-    "Others": [
-      "ui-docs/data-views",
-      "ui-docs/report-builder",
-      "ui-docs/page-builder",
-      "ui-docs/automation",
-      "ui-docs/settings",
-      "ui-docs/send",
-      "ui-docs/activity-log"
     ]
   },
   "business-analytics":{
