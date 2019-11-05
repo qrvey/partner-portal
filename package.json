@@ -1,0 +1,25 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.",
+  "main": "search.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "algoliasearch": "^3.35.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wilsonmanzano@bitbucket.org/qrvey/documentation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/qrvey/documentation#readme"
+}

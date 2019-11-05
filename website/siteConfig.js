@@ -52,7 +52,7 @@ const siteConfig = {
   algolia: {
     apiKey: '7799174e3198189be19d4bcfa852f9f6',
     appId:'FKFO2CGR6S',
-    indexName: 'staging',
+    indexName: 'dev_qrvey',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
 
