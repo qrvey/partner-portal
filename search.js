@@ -28,13 +28,14 @@ async function readFile(dir, file){
                 content = content.substring(0, 100);
             }
             let hierarchies = [null, null, null, null, null, null];
-            var regex = /###\s(.*)\s\n/g;
+            var regex = /##\s(.*)\s\n/g;
             var matches;
             let idx = 0;
             while (matches = regex.exec(data)) {
                 hierarchies[idx] = matches[1];
                 idx++;
             }
+            console.log('matches', hierarchies);
             let url = `https://partners.qrvey.com/docs/${dir}/${id}`;
             documents.push({
                 anchor: id,
