@@ -40,11 +40,29 @@ firebase.auth().onAuthStateChanged((user) => {
     } else {
         // User is signed out.
         currentUser = null;
-        if (window.location.pathname !== '/login' && window.location.pathname !== '/forgot-password' && window.location.pathname !== '/support') {
+        if (!isAllowedPath(window.location.pathname)) {
             window.location.href = '/login';
         }
     }
 });
+
+function isAllowedPath(path) {
+    const allowedPath = [
+        '/login',
+        '/login/',
+        '/forgot-password',
+        '/forgot-password/',
+        '/support',
+        '/support/'
+    ];
+    let allowed = false;
+    allowedPath.forEach((allowPath) => {
+        if (allowPath === path){
+            allowed = true;
+        }
+    });
+    return allowed;
+}
 
 // Cookie check function
 function getCookie(cname) {

@@ -1,13 +1,14 @@
 const loginEvent = new Event('LOGIN_EVENT');
 let errorDisplayText = null;
+const pathname = window.location.pathname;
 
-if (window.location.pathname === '/login'){
+if (pathname === '/login' || pathname === '/login/'){
     window.onload = () => {
         listenLoginSubmit();
     }
 }
 
-if (window.location.pathname === '/forgot-password'){
+if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
     window.onload = () => {
         listenForgotPasswordSubmit();
     }
