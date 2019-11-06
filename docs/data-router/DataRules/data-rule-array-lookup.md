@@ -35,12 +35,12 @@ The `id` field is the identifier to access the result of the Data Rule, and `fun
 
 |Property|description|
 |--------|-----------|
-|`sourceArray`| this is the array where the lookup is going to take place|
-|`condition`| (optional) set of conditions that will be matched when doing the lookup|
-|`orderby`| (optional) ordering or sorting method to be applied|
-|`orderby.field`| the sorting will be applied over the specified field|
-|`orderby.direction`| this will indicate the direction of sorting: `asc` or `desc`|
-|`orderby.nulls`| this will indicate if null results (of the sorting `field`) are going to appear `first` or `last`|
+|`sourceArray`| This is the array where the lookup is going to take place.|
+|`condition`| An _optional_ set of conditions that will be matched when doing the lookup.|
+|`orderby`| An _optional_ ordering or sorting method to be applied.|
+|`orderby.field`| The sorting will be applied over the specified field.|
+|`orderby.direction`| This will indicate the direction of sorting: `asc` or `desc`.|
+|`orderby.nulls`| This will indicate if null results, of the sorting `field`, are going to appear `first` or `last`.|
 
 **Example**:
 
@@ -158,4 +158,4 @@ This will give us these two employees:
 ]
 ```
 
-> _Note: To reference the `income` and the `age` we had to use the function id: `arrayLookupID`_
+> _Note: To reference the `income` and the `age` we had to use the function id: `arrayLookupID`_.
