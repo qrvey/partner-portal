@@ -14,142 +14,144 @@ let currentUser = null;
 
 const PAGE = 'page_docs_';
 
-window.onload = () => {
-    title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    document.querySelector('.headerWrapper header a').href =  '/';
-    if(currentUser){
-        insertLogOutToNav();
-        insertParternsLogo();
-        highlightDocNavItem();
-    } 
-}
-
-if(getCookie(COOKIE_USER)){
-    currentUser = JSON.parse(getCookie(COOKIE_USER));
-} else {
-    window.location.href = '/auth/login';
-}
-
 const datarouter = {
     url: 'https://zbxl4n8sk5.execute-api.us-east-1.amazonaws.com/DataRouter/data?saveUserLog=false&returnAllLog=true',
-    'x-api-key':'359cc29538554a',
+    'x-api-key': '359cc29538554a',
     metadataId: metadataid
 };
 
 const headers = {
-    'Content-Type':  'application/json',
+    'Content-Type': 'application/json',
     'x-api-key': datarouter['x-api-key']
 }
 
+window.onload = () => {
+    title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+    document.querySelector('.headerWrapper header a').href = '/';
+}
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        // User is signed in.
+        currentUser = { userName: user.email, displayName: user.displayName };
+        insertLogOutToNav();
+        insertParternsLogo();
+        highlightDocNavItem();
+    } else {
+        // User is signed out.
+        currentUser = null;
+        if (window.location.pathname !== '/login' && window.location.pathname !== '/forgot-password' && window.location.pathname !== '/support') {
+            window.location.href = '/login';
+        }
+    }
+});
+
 // Cookie check function
-function getCookie(cname){
+function getCookie(cname) {
     const name = cname + "=";
     const decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return '';
 }
 
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*1000));
-    const expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function formatDate(){
+function formatDate() {
     const date = new Date();
     const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
-    const month = date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getDate()+1;
+    const month = date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getDate() + 1;
     const year = date.getFullYear();
-    return  `${month}/${day}/${year}`;
+    return `${month}/${day}/${year}`;
 }
 // Log visitor page function
-function postActivy(){
+function postActivy() {
     let data = [];
     const newActivity = {
-        userName:currentUser.userName,
-        userAgent: userAgent, 
-        ipAddress:ipAddress,
+        userName: currentUser.userName,
+        userAgent: userAgent,
+        ipAddress: ipAddress,
         contentUrl: currentPage,
         title: title,
         elementId: elementId,
         contentType: CONTENT_TYPE
     };
     data.push(newActivity);
-    
+
 
     fetch(datarouter.url, {
-        headers:headers,
-        method:'POST',
-        body:JSON.stringify([{
+        headers: headers,
+        method: 'POST',
+        body: JSON.stringify([{
             metadataId: datarouter.metadataId,
             data: data
         }])
     })
-    .then(response => response.json())
-    .then(
-        response => {
-            console.log(response);
-            setCookie(PAGE + currentPage, currentPage, 0.5);
-        }
-    ).catch(error => console.error('We could not find ip address',error));
+        .then(response => response.json())
+        .then(
+            response => {
+                console.log(response);
+                setCookie(PAGE + currentPage, currentPage, 0.5);
+            }
+        ).catch(error => console.error('We could not find ip address', error));
 }
 
-(function getIp(){
+(function getIp() {
     fetch(IP_ADDRES_URL)
-    .then(response => response.json())
-    .then(
-        response => {
-            ipAddress = response.ip;
-        }
-    ).catch(error => console.error('We could not find ip address',error));
+        .then(response => response.json())
+        .then(
+            response => {
+                ipAddress = response.ip;
+            }
+        ).catch(error => console.error('We could not find ip address', error));
 })();
 
 
-function deleteCooke(cname) {
-    document.cookie = cname + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+function logOut() {
+    // deleteCooke(COOKIE_USER);
+    // window.location.href = '/login';
+    firebase.auth().signOut();
 }
 
-function logOut(){
-    deleteCooke(COOKIE_USER);
-    window.location.href = '/auth/login';
-}
-
-function insertLogOutToNav(){
+function insertLogOutToNav() {
     let navBar = document.querySelector('ul.nav-site.nav-site-internal');
     navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`)
 }
 
-function insertParternsLogo(){
+function insertParternsLogo() {
     let navbar = document.querySelector('.headerTitleWithLogo');
     navbar.innerHTML = '<strong>PARTNER</strong><br>PORTAL';
 }
 
-function highlightDocNavItem(){
-   const navItems =  document.querySelectorAll('ul.nav-site.nav-site-internal li a');
-   navItems.forEach(element => {
-        if(element.innerText == 'Documentation'){
+function highlightDocNavItem() {
+    const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    navItems.forEach(element => {
+        if (element.innerText == 'Documentation') {
             element.onclick = () => toggleSubNav(element);
             element.classList.add('primary-color');
             element.setAttribute('id', 'nav-item-dropdown');
         }
-   });
+    });
 };
 
-function toggleSubNav(element){
-    if(isDesktop){
+function toggleSubNav(element) {
+    if (isDesktop) {
         const navbarDropdown = document.getElementById('navbar-item-dropdown');
-        if (!navbarDropdown){
-            element.insertAdjacentHTML('beforeend',`
+        if (!navbarDropdown) {
+            element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown flex" id="navbar-item-dropdown"> 
                     <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
@@ -173,8 +175,8 @@ function toggleSubNav(element){
     }
 }
 
-setTimeout( ()=> {
-    if( getCookie(COOKIE_USER) && !getCookie(PAGE + currentPage)){
+setTimeout(() => {
+    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + currentPage)) {
         postActivy();
     } else {
         console.log('Activity already sent it');

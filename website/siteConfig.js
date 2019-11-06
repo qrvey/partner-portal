@@ -94,7 +94,14 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js','/docs/js/custom.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
+    'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
+    '/docs/js/firebase.js',
+    '/docs/js/custom.js',
+    '/docs/js/login.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
