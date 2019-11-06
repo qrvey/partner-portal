@@ -49,11 +49,11 @@ The `id` field is the identifier to access the result of the Data Rule, and `fun
 
 |Property|description|
 |--------|-----------|
-|`query`| this is the query to be executed in Elasticsearch (Query DSL)|
-|`sourceIndex`| (optional) set of conditions that will be matched when doing the lookup|
-|`aggs`| (optional) list of aggregates|
-|`aggs.name`| name of the new column with the resulting aggregate|
-|`aggs.type`| type of aggregate to apply: `sum`, `count`, `avg`, `min`, `max` |
-|`aggs.arrayField`| this is the source array to loop |
-|`aggs.field`| this is the field where the aggregate is going to be applied to. It is important to note that this is not required for the count|
+|`query`| This is the query to be executed in Elasticsearch (Query DSL).|
+|`sourceIndex`| An _optional_ set of conditions that will be matched when doing the lookup.|
+|`aggs`| An _optional_ list of aggregates.|
+|`aggs.name`| The name of the new column with the resulting aggregate.|
+|`aggs.type`| The type of aggregate to apply: `sum`, `count`, `avg`, `min`, `max`. |
+|`aggs.arrayField`| This is the source array containing the data to aggregate. |
+|`aggs.field`| This is the field where the aggregate is going to be applied to. It is important to note that this is not required for `count` aggregates.|
 
