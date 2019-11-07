@@ -8,7 +8,7 @@ sidebar_label: Overview
 Web Forms are the mechanism by which Qrvey collects new information from humans. It’s also the primary way people update existing data within Qrvey. 
 
 ## Types of Web Forms
-Qrvey currently has three different types of web forms, and these are forms, surveys and quizzes. Each of these form types are similar but have slightly different features depending on your data collection use case.  Web form types are discussed elsewhere in our documentation. 
+Qrvey currently has three different types of web forms, and these are forms, surveys and quizzes. Each of these form types are similar but have slightly different features depending on your data collection use case.  Web form types are discussed in the next section. 
 
 ## Uses Cases
 Web Forms can be used in a variety of ways.  They can be a vital part of your Qrvey applications, residing inside the pages and reports you create with Qrvey. They can also be embedded into other websites or applications. And they can be shared in a variety of ways including via social media or email. 
