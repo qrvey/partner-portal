@@ -5,7 +5,7 @@ const userAgent = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
 const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
-const baseUrl = '/docs/';
+const baseUrl = '/';
 
 let ipAddress = '';
 let title = '';
@@ -189,7 +189,7 @@ function toggleSubNav(element) {
             navbarDropdown.classList.toggle('flex');
         }
     } else {
-        window.location.href = '/docs';
+        window.location.href = baseUrl;
     }
 }
 

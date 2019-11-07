@@ -98,9 +98,9 @@ const siteConfig = {
     'https://buttons.github.io/buttons.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
-    '/docs/js/firebase.js',
-    '/docs/js/custom.js',
-    '/docs/js/login.js',
+    '/js/firebase.js',
+    '/js/custom.js',
+    '/js/login.js',
   ],
 
   // On page navigation for the current documentation page.
