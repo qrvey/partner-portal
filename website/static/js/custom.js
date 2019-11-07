@@ -1,15 +1,15 @@
 const COOKIE_USER = 'partners_user';
 const IP_ADDRES_URL = 'https://api.ipify.org/?format=json';
-const currentPage = window.location.pathname;
-const userAgent = navigator.userAgent;
+const CURRENT_PAGE = window.location.pathname;
+const USER_AGENT = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
 const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
 const baseUrl = '/';
 
-let ipAddress = '';
-let title = '';
-let elementId = currentPage.length > 1 ? currentPage.substring(1, currentPage.length) : currentPage;
+let IP_ADDRESS = '';
+let TITLE_DOCUMENT = '';
+let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.length) : CURRENT_PAGE;
 let currentUser = null;
 
 const PAGE = 'page_docs_';
@@ -25,9 +25,25 @@ const headers = {
     'x-api-key': datarouter['x-api-key']
 }
 
+function Activity(userName, contentUrl, title, elementId, contentType) {
+    this.userName = userName;
+    this.contentUrl = contentUrl;
+    this.title = title;
+    this.elementId = elementId;
+    this.contentType = contentType;
+    this.ipAddress = IP_ADDRESS;
+    this.userAgent = USER_AGENT;
+}
+
 window.onload = () => {
-    title = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    document.querySelector('.headerWrapper header a').href = '/';
+    TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+    //document.querySelector('.headerWrapper header a').href = '/';
+    // Check if this page contains a video
+    const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+    console.log(videoContanier);
+    if (videoContanier){
+        checkVideoIsPlayed(videoContanier);
+    }
 }
 
 firebase.auth().onAuthStateChanged((user) => {
@@ -45,6 +61,21 @@ firebase.auth().onAuthStateChanged((user) => {
         }
     }
 });
+
+function checkVideoIsPlayed(videoContanier){
+    const CONTENT_TYPE = 'videos'
+    videoContanier.onclick = () => {
+        let videoId;
+        videoContanier.classList.forEach(value => {
+            if(value.search('wistia_async_') > -1){
+                videoId = value.replace('wistia_async_', '');
+            }
+        });
+        console.log(videoId);
+        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
+    }
+}
+
 
 function isAllowedPath(path) {
     const allowedPath = [
@@ -96,17 +127,8 @@ function formatDate() {
     return `${month}/${day}/${year}`;
 }
 // Log visitor page function
-function postActivy() {
+function postActivy(newActivity) {
     let data = [];
-    const newActivity = {
-        userName: currentUser.userName,
-        userAgent: userAgent,
-        ipAddress: ipAddress,
-        contentUrl: currentPage,
-        title: title,
-        elementId: elementId,
-        contentType: CONTENT_TYPE
-    };
     data.push(newActivity);
 
 
@@ -122,7 +144,7 @@ function postActivy() {
         .then(
             response => {
                 console.log(response);
-                setCookie(PAGE + currentPage, currentPage, 0.5);
+                setCookie(PAGE + CURRENT_PAGE, CURRENT_PAGE, 0.5);
             }
         ).catch(error => console.error('We could not find ip address', error));
 }
@@ -132,7 +154,7 @@ function postActivy() {
         .then(response => response.json())
         .then(
             response => {
-                ipAddress = response.ip;
+                IP_ADDRESS = response.ip;
             }
         ).catch(error => console.error('We could not find ip address', error));
 })();
@@ -194,8 +216,8 @@ function toggleSubNav(element) {
 }
 
 setTimeout(() => {
-    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + currentPage)) {
-        postActivy();
+    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + CURRENT_PAGE)) {
+        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
     } else {
         console.log('Activity already sent it');
     }

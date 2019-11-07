@@ -163,5 +163,10 @@
       "release-notes/release-feb-2019",
       "release-notes/release-jan-2019"
     ]
+  },
+  "video-training":{
+    "Analytics":[
+      "video-training/intro-analytics-apps"
+    ]
   }
 }
