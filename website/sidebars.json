@@ -11,6 +11,15 @@
       "ui-docs/basics/profile",
       "ui-docs/basics/introduction",
       "ui-docs/basics/applications"
+    ],
+    "Web Forms":[
+      "ui-docs/web-forms/web-forms",
+      "ui-docs/web-forms/type-web-forms",
+      "ui-docs/web-forms/create-web-forms",
+      "ui-docs/web-forms/branching",
+      "ui-docs/web-forms/customize-web-forms",
+      "ui-docs/web-forms/publishing",
+      "ui-docs/web-forms/embedding"
     ]
   },
   "business-analytics":{

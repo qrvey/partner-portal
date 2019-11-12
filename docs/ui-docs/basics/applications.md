@@ -26,7 +26,7 @@ At a high level, Qrvey offers the following functionality:
 * Automation Workflows - Qrvey has a built-in automation engine that is constantly monitoring your data for changes and updating your charts, metrics and analytics in real-time. These automation services can be used to build workflows for alerts, notifications, data write-backs and countless other data-related tasks.
 
 ## Creating Analytic Applications
-When creating a Qrvey application, the first thing you will need to do is define the data your application will work with. This can be accomplished by connecting to an existing dataset or by creating a web form that will collect new data.  
+When creating a Qrvey application, the first thing you will need to do is define the data your application will work with. This can be accomplished by connecting an existing dataset or by creating a web form that will collect new data.  
 
 In the screenshot below, you’ll see the **Data** section of a Qrvey application, with options for connecting an existing dataset, creating a web form, linking multiple datasets together (**Data Links**) and connectors for legacy data sources. 
 
