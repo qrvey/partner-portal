@@ -2,9 +2,14 @@ const loginEvent = new Event('LOGIN_EVENT');
 let errorDisplayText = null;
 const pathname = window.location.pathname;
 
+firebase.auth().onAuthStateChanged((user) => {
+    updateUser(user);
+});
+
 if (pathname === '/login' || pathname === '/login/'){
     window.onload = () => {
         listenLoginSubmit();
+        removeLogOutButton();
     }
 }
 
@@ -63,4 +68,20 @@ function listenForgotPasswordSubmit(){
         e.preventDefault();
         forgotPassword(email);
     }
+}
+
+function logOut() {
+    // deleteCooke(COOKIE_USER);
+    // window.location.href = '/login';
+    firebase.auth().signOut();
+    localStorage.removeItem(COOKIE_USER);
+}
+
+function removeLogOutButton() {
+    const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    navItems.forEach(element => {
+        if (element.innerText == 'Log Out') {
+            element.innerText = 'Log In';
+        }
+    });
 }

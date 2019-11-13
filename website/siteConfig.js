@@ -48,6 +48,10 @@ const siteConfig = {
       label: 'Video Training',
     },
     { blog: true, label: 'Blog' },
+    {
+      href: '',
+      label: 'Log Out',
+    },
   ],
 
   algolia: {
@@ -96,13 +100,14 @@ const siteConfig = {
   // Add custom scripts here that would be placed in <script> tags.
   scripts: [
     'https://buttons.github.io/buttons.js',
+    '/js/custom.js',
+  ],
+  footerscripts:[
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
-    '/js/custom.js',
     '/js/login.js',
   ],
-
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

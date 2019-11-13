@@ -35,24 +35,41 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userAgent = USER_AGENT;
 }
 
+//////////
+/// INIT APP
+currentUser = getUserOnLocalStorage();
+updateUser(currentUser);
+
 window.onload = () => {
     TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
     //document.querySelector('.headerWrapper header a').href = '/';
     // Check if this page contains a video
     const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-    console.log(videoContanier);
     if (videoContanier){
         checkVideoIsPlayed(videoContanier);
     }
-}
-
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-        // User is signed in.
-        currentUser = { userName: user.email, displayName: user.displayName };
+    if(currentUser){
         insertLogOutToNav();
         insertParternsLogo();
         highlightDocNavItem();
+    }
+}
+
+setTimeout(() => {
+    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + CURRENT_PAGE)) {
+        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+    } else {
+        console.log('Activity already sent it');
+    }
+}, 5000);
+
+///FIN INIT
+/////
+function updateUser(user) {
+    if (user) {
+        // User is signed in.
+        currentUser = { userName: user.email, displayName: user.displayName };
+        saveOnLocalStorage(currentUser);
     } else {
         // User is signed out.
         currentUser = null;
@@ -60,7 +77,15 @@ firebase.auth().onAuthStateChanged((user) => {
             window.location.href = '/login';
         }
     }
-});
+}
+
+function saveOnLocalStorage(user){
+    localStorage.setItem(COOKIE_USER, JSON.stringify(user));
+}
+
+function getUserOnLocalStorage(){
+    return localStorage.getItem(COOKIE_USER);
+}
 
 function checkVideoIsPlayed(videoContanier){
     const CONTENT_TYPE = 'videos'
@@ -160,15 +185,16 @@ function postActivy(newActivity) {
 })();
 
 
-function logOut() {
-    // deleteCooke(COOKIE_USER);
-    // window.location.href = '/login';
-    firebase.auth().signOut();
-}
-
 function insertLogOutToNav() {
-    let navBar = document.querySelector('ul.nav-site.nav-site-internal');
-    navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`)
+    const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    navItems.forEach(element => {
+        if (element.innerText == 'Log Out') {
+            element.onclick = () => logOut();
+            element.classList.add('primary-button');
+           //element.setAttribute('id', 'nav-item-dropdown');
+        }
+    });
+    // navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`)
 }
 
 function insertParternsLogo() {
@@ -214,12 +240,4 @@ function toggleSubNav(element) {
         window.location.href = baseUrl;
     }
 }
-
-setTimeout(() => {
-    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + CURRENT_PAGE)) {
-        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
-    } else {
-        console.log('Activity already sent it');
-    }
-}, 5000);
 
