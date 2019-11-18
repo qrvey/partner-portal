@@ -27,7 +27,8 @@
       "ui-docs/datasets/datasets",
       "ui-docs/datasets/databases",
       "ui-docs/datasets/elasticsearch",
-      "ui-docs/datasets/csv"
+      "ui-docs/datasets/csv",
+      "ui-docs/datasets/datalinks"
     ]
   },
   "business-analytics":{
