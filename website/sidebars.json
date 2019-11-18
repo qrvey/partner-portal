@@ -22,6 +22,10 @@
       "ui-docs/web-forms/customize-web-forms",
       "ui-docs/web-forms/publishing",
       "ui-docs/web-forms/embedding"
+    ],
+    "Datasets":[
+      "ui-docs/datasets/datasets",
+      "ui-docs/datasets/databases"
     ]
   },
   "business-analytics":{

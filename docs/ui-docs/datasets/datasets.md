@@ -4,6 +4,8 @@ title: Data Section Overview
 sidebar_label: Data Section Overview
 ---
 
+<div style="text-align: justify">
+
 In the Data section you can import or connect to external data, define web forms to capture new data, and link datasets together. The Data section has tabs on toolbar, corresponding to the four categories of data.  In this article, we’ll outline these four categories.
 
 ![1_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/1_datasets.png#thumbnail)
