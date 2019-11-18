@@ -33,16 +33,17 @@ Next, you’ll be asked to identify your data. Qrvey will automatically identify
 
 ![4_csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/4_csv.png#thumbnail)
 
-# Supported Data Types
-Date/Time: Date and/or time formatted data.
-Numeric - Currency: Formats numeric data in currency format with two decimal places.
-Numeric - Percentage: Formats numeric data in percentage format.
-Numeric - General: Numeric data with no specified formatting.
-Yes_No: Binary data (yes_no, true/false, 1/0).
-Text: Text fields requiring sentiment analysis
-Text - Category: Text that can be categorized into less than 15 discreet options (multiple choice).
-Text - Label: Text that does not require formatting or analysis, i.e. names, dates, etc.
-Lookup: Text that can be categorized into more than 15 discreet options.
+## Supported Data Types
+
+- **Date/Time:** Date and/or time formatted data.
+- **Numeric - Currency:** Formats numeric data in currency format with two decimal places.
+- **Numeric - Percentage:** Formats numeric data in percentage format.
+- **Numeric - General:** Numeric data with no specified formatting.
+- **Yes\_No:** Binary data (yes/no, true/false, 1/0).
+- **Text:** Text fields requiring sentiment analysis
+- **Text - Category:** Text that can be categorized into less than 15 discreet options (multiple choice).
+- **Text - Label:** Text that does not require formatting or analysis, i.e. names, dates, etc.
+- **Lookup:** Text that can be categorized into more than 15 discreet options.
 
 You may choose to not import a column by unchecking the box next to the column number on the left. 
 
