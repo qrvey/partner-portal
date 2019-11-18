@@ -30,6 +30,6 @@ When creating a Qrvey application, the first thing you will need to do is define
 
 In the screenshot below, you’ll see the **Data** section of a Qrvey application, with options for connecting an existing dataset, creating a web form, linking multiple datasets together (**Data Links**) and connectors for legacy data sources. 
 
-![1_applications](assets/applications/1_applications.png#thumbnail)
+![1_applications](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.4_applications/1_applications.png#thumbnail)
 
 Once you have created or connected at least one data source, you may then begin accessing other sections of your application such as page builder, report builder and workflows.
