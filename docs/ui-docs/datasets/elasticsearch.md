@@ -8,7 +8,7 @@ sidebar_label: Elasticsearch Connections
 
 Elasticsearch is a highly-scalable cloud database provided by Amazon Web Services. In this article, we’ll outline the steps for connecting to Elasticsearch and how to use it within Qrvey.
 
-Once inside your desired application, select **Data** from the left menu, then click the orange**Add Dataset** button to create a new data source. 
+Once inside your desired application, select **Data** from the left menu, then click the orange **Add Dataset** button to create a new data source. 
 
 ![1_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/1_elasticsearch.png#thumbnail)
 
@@ -30,7 +30,7 @@ To learn more about the available data types, just look on the right side of the
 
 ![5_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/5_elasticsearch.png#thumbnail-60)
 
-If your data contains address information, you may choose to create a **Geolocation Group** by setting geolocation as a data type for one column, then letting Qrvey know where to find the remainder of the information as seen below. Once your group has a name and all of its fields defined, you may save your group and continue.
+If your data contains address information, you may choose to create a **Geolocation Group** by setting geolocation as a data type for one column, then letting Qrvey know where to find the remainder of the information as seen below. Once your group has a name and all of its fields defined, you may save your group and continue. **Note**, a **Geolocation Group** is used for mapping data records.
 
 ![6_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/6_elasticsearch.png#thumbnail)
 
