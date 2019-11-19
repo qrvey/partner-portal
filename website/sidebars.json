@@ -30,6 +30,17 @@
       "ui-docs/datasets/csv",
       "ui-docs/datasets/datalinks",
       "ui-docs/datasets/connectors"
+    ],
+    "Data Views":[
+      "ui-docs/dataviews/filters",
+      "ui-docs/dataviews/formulas",
+      "ui-docs/dataviews/buckets",
+      "ui-docs/dataviews/exporting",
+      "ui-docs/dataviews/summary-view",
+      "ui-docs/dataviews/tabular-view",
+      "ui-docs/dataviews/custom-view",
+      "ui-docs/dataviews/chart-builder",
+      "ui-docs/dataviews/metric-view"
     ]
   },
   "business-analytics":{
