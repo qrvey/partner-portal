@@ -59,7 +59,7 @@ Make sure to set you Header values:
 Content-Type = application/json
 x-api-key = your api key
 ```
-![img1](assets/api-tutorial/api_tutorial_1.png#thumbnail)
+![api_tutorial_1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_1.png#thumbnail)
 
 In order to create a new user, we will also be entering our JSON values into the Body, select the Body tab, and choose “raw” to enter your JSON.    The JSON structure for creating a new user takes email and password values looks like this:
 
@@ -70,7 +70,7 @@ In order to create a new user, we will also be entering our JSON values into the
 }
 ```
 
-![img1](assets/api-tutorial/api_tutorial_2.png#thumbnail)
+![api_tutorial_2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_2.png#thumbnail)
 
 Hit Send to complete the POST and your response will return a valid “userid”.   Keep this userid for later use. 
 
@@ -82,7 +82,7 @@ To obtain a previously created “userid”, you can also call the API to get th
 
 In Postman, Set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit “Send” to complete the request.
 
-![img1](assets/api-tutorial/api_tutorial_3.png#thumbnail)
+![api_tutorial_3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_3.png#thumbnail)
 
 This will return a response with a list of users in your app, each one with a unique “userid”.  The response will look something like this for each user:
 
@@ -126,11 +126,11 @@ In order to create a the new application, we will also be entering JSON values i
 }
 ```
 
-![img1](assets/api-tutorial/api_tutorial_4.png#thumbnail)
+![api_tutorial_4](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_4.png#thumbnail)
 
 Click “Send” to post your new Application, and you will receive a response with the relevant details, including the “appid”, when successful. Like this:
 
-![img1](assets/api-tutorial/api_tutorial_5.png#thumbnail)
+![api_tutorial_5](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_5.png#thumbnail)
 
 When we build our Quiz web form, we’ll need to know both our “userid” and “appid” values to pass to the API endpoint.
 
@@ -140,7 +140,7 @@ To get a previously created application, you will use the same /app endpoint but
 
 Specify your correct headers, enter the /app endpoint and hit “Send”.  The response will return all of the apps associated with that userid, similar to what you see below:
 
-![img1](assets/api-tutorial/api_tutorial_6.png#thumbnail)
+![api_tutorial_6](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_6.png#thumbnail)
 
 Select the “appid” that you want to use for our next steps.
 
@@ -157,15 +157,15 @@ We will POST some basic JSON to establish to the /webform/quiz endpoint.  In ord
 
 In Postman, the quiz endpoint will look like this (make sure to set your headers):
 
-![img1](assets/api-tutorial/api_tutorial_7.png#thumbnail)
+![api_tutorial_7](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_7.png#thumbnail)
 
 In the Body, we’ll also need to specify our JSON for name and description:
 
-![img1](assets/api-tutorial/api_tutorial_8.png#thumbnail)
+![api_tutorial_8](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_8.png#thumbnail)
 
 Click Send, to save the quiz and get the response including the qrveyid:
 
-![img1](assets/api-tutorial/api_tutorial_9.png#thumbnail)
+![api_tutorial_9](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_9.png#thumbnail)
 
 Now we have all the parts we need to embed using our widget, the “userid”, the “appid”, and the “qrveyid” for our new quiz.
 
@@ -178,7 +178,7 @@ Embed your widget by following the instructions on the QuickStart guide.
 
 After embedding your widget using the widget code, you’ll be able to load the UI inside your application to show how to build a quiz:
 
-![img1](assets/api-tutorial/api_tutorial_10.png#thumbnail)
+![api_tutorial_10](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_10.png#thumbnail)
 
 Your users can now build the quiz directly inside your app. When finished building inside the UI, the final steps will be to activate the Quiz, and make the Quiz URL available for users to take.
 
@@ -195,7 +195,7 @@ POST {{URL}}/devapi/v3/user/{{userid}}/app/{{appid}}/webform/quiz/{{quiz}}/activ
 
 Remember to set your Headers properly, and hit Send to get the response, which will be the valid URL for users to take your quiz
 
-![img1](assets/api-tutorial/api_tutorial_11.png#thumbnail)
+![api_tutorial_11](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_11.png#thumbnail)
 
 You can now use the response to send the URL to your users so they can take the Quiz that was created using the API.
 

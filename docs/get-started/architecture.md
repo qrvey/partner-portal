@@ -3,12 +3,6 @@ id: get-started-architecture
 title: Architectural Overview
 sidebar_label: Architectural Overview
 ---
-<style>
-img[src*="#thumbnail"] {
-   width:100%;
-   border: 1px solid whitesmoke;
-}
-</style>
 
 <div style="text-align: justify">
 
@@ -21,7 +15,7 @@ There are three main ways to interact with Qrvey. First, we offer a robust API t
 
 Finally, there is the Qrvey itself, which is a web-based application where end-users can build forms, analytics, workflows and more. The Qrvey application has been 100% widgetized, ensuring that everything you can do with the app can also be done with embedded widgets. 
 
-![1_working_with_qrvey](assets/architecture/1_working_with_qrvey.jpg#thumbnail)
+![1_working_with_qrvey](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/architecture/1_working_with_qrvey.jpg#thumbnail)
 
 ## Qrvey Architecture 
 
@@ -39,4 +33,4 @@ Qrvey DataRouter is built on a system of highly scalable APIs and services that 
 
 The API Gateway routes your data through our metadata and data services for managing everything from large volume historical batch loading, and more real-time live data updates.
 
-![3_datarouter_architecture](assets/architecture/3_datarouter_architecture.png#thumbnail)
+![3_datarouter_architecture](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/architecture/3_datarouter_architecture.png#thumbnail)

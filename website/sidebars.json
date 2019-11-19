@@ -6,20 +6,30 @@
     ]
   },
   "ui-docs": {
-    "UI Documentation": [
-      "ui-docs/logging-in",
-      "ui-docs/profile",
-      "ui-docs/introduction",
-      "ui-docs/applications",
-      "ui-docs/web-forms",
-      "ui-docs/datasets",
-      "ui-docs/data-views",
-      "ui-docs/report-builder",
-      "ui-docs/page-builder",
-      "ui-docs/automation",
-      "ui-docs/settings",
-      "ui-docs/send",
-      "ui-docs/activity-log"
+    "Basics": [
+      "ui-docs/basics/logging-in",
+      "ui-docs/basics/profile",
+      "ui-docs/basics/introduction",
+      "ui-docs/basics/applications"
+    ],
+    "Web Forms":[
+      "ui-docs/web-forms/web-forms",
+      "ui-docs/web-forms/type-web-forms",
+      "ui-docs/web-forms/create-web-forms",
+      "ui-docs/web-forms/field-guide",
+      "ui-docs/web-forms/branching",
+      "ui-docs/web-forms/lookup",
+      "ui-docs/web-forms/customize-web-forms",
+      "ui-docs/web-forms/publishing",
+      "ui-docs/web-forms/embedding"
+    ],
+    "Datasets":[
+      "ui-docs/datasets/datasets",
+      "ui-docs/datasets/databases",
+      "ui-docs/datasets/elasticsearch",
+      "ui-docs/datasets/csv",
+      "ui-docs/datasets/datalinks",
+      "ui-docs/datasets/connectors"
     ]
   },
   "business-analytics":{
@@ -41,6 +51,8 @@
     ],
     "Data Rules":[
       "data-router/DataRules/data-rules-intro",
+      "data-router/DataRules/data-router-array-lookup",
+      "data-router/DataRules/data-router-es-lookup",
       "data-router/DataRules/data-router-flatArray",
       "data-router/DataRules/data-router-switch",
       "data-router/DataRules/conditionals-intro",

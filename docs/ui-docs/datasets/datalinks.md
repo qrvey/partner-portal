@@ -1,0 +1,55 @@
+---
+id: datalinks
+title: Data Links
+sidebar_label: Data Links
+---
+
+<div style="text-align: justify">
+
+Data links allow you to combine multiple datasets into a new single dataset for analysis and automation. This article shows the steps for linking an Elasticsearch dataset with a web form dataset. Note, the same process can be used to link any combination of datasets inside Qrvey.
+
+To begin, enter the Data section of your application. 
+
+![1_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/1_datalinks.png#thumbnail-40)
+
+Then choose Data Links from the top toolbar. 
+
+![2_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/2_datalinks.png#thumbnail-80)
+
+Next, click **Add Link**.
+
+![3_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/3_datalinks.png#thumbnail-40)
+
+Give your data link a name and description so you can easily identify it later, then click **Create**.
+
+![4_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/4_datalinks.png#thumbnail-60)
+
+Now choose your first source dataset. In this example, we’re choosing ES Live Connection, then selecting our Elasticsearch dataset.
+
+![5_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/5_datalinks.png#thumbnail-80)
+
+Next, choose the column that you’d like to match with the second dataset. This column must have the same data type (text, numeric, date) as the column you’ll be matching to in the second dataset.
+
+![6_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/6_datalinks.png#thumbnail-60)
+
+Once you have selected your source column, you’ll be able to select the second dataset, column and the type of link you’d like to have. The **Link Type** will vary depending on the column type.
+
+![7_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/7_datalinks.png#thumbnail)
+
+Once complete, your data link will look similar to the example below. If you’d like to link additional datasets, just click the orange **Add Link Block** button.
+
+![8_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/8_datalinks.png#thumbnail)
+
+## Using Data Links
+Once your data link has been added, you’ll see linked data columns appear in your custom charts and automations. In the example below, the links dataset, **Purchase Feedback**, appears next to the source dataset Purchase Data. Columns from both datasets can be used inside this custom chart.
+
+![9_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/9_datalinks.png#thumbnail-60)
+
+## Removing Data Links
+
+To remove a data link, just return to the data link menu and choose Delete from the menu on the right side of the data link.
+
+![10_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/10_datalinks.png#thumbnail-40)
+
+
+
