@@ -1,9 +1,21 @@
+require('dotenv').config();
+const env = process.argv.slice(2)[0];
+let baseURL = process.env.BASE_URL_DEV;
+let indexENV = process.env.INDEX_DEV;
+
+if(env === "--staging"){
+    baseURL = process.env.BASE_URL_STAGING;
+    indexENV = process.env.INDEX_STAGING;
+}
+if(env === "--prod"){
+    indexENV = process.env.INDEX_PROD;
+    baseURL = process.env.BASE_URL_PROD;
+}
 const algoliasearch = require('algoliasearch');
 const client = algoliasearch('FKFO2CGR6S', '6b0e7e5081d0df16768a9472e845b284');
-const index = client.initIndex('dev_qrvey');
+const index = client.initIndex(indexENV);
 const fs = require('fs');
 
-const basePath = '/docs/';
 let documents = [];
 
 fs.readFile('website/sidebars.json', (err, data) => {
@@ -35,8 +47,7 @@ async function readFile(dir, file){
                 hierarchies[idx] = matches[1];
                 idx++;
             }
-            console.log('matches', hierarchies);
-            let url = `https://partners.qrvey.com/docs/${dir}/${id}`;
+            let url = `${baseURL}${dir}/${id}`;
             documents.push({
                 anchor: id,
                 title,
@@ -96,4 +107,4 @@ setTimeout(() => {
     index.addObjects(documents, (err, content) => {
         console.log('documents has been uploaded');
       });
-}, 10000);
+}, 5000);

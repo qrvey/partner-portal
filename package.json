@@ -7,13 +7,17 @@
     "doc": "docs"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "node-sass": "^4.12.0"
   },
   "devDependencies": {
     "algoliasearch": "^3.35.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node clear.js && node search.js",
+    "staging": "node clear.js --staging && node search.js --staging",
+    "prod": "node clear.js --prod && node search.js --prod"
   },
   "repository": {
     "type": "git",
