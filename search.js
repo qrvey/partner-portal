@@ -32,8 +32,12 @@ async function readFile(dir, file){
             // convert to array
             let newfile = data.replace(/(\r\n|\n|\r)/gm,"*");
             newfile = newfile.split('---');
-            newfile = newfile[1].split('*')
-            let id = newfile[1].split(':')[1].replace(' ','');
+            newfile = newfile[1] ? newfile[1].split('*') : newfile[1];
+            // If the document doesn't have id, title or sidebar_label return;
+            if(!newfile || (newfile[1].search('id:') < 0 || newfile[2].search('title:') < 0 || newfile[3].search('sidebar_label:') || 0)){
+                return;
+            }
+            let id =  newfile[1].split(':')[1].replace(' ','');
             let title = newfile[2].split(':')[1];
             let content = data.split('---')[2].replace(`<div style="text-align: justify">`, '').replace('###', '').replace('##', '');
             if(content.length > 100) {
@@ -105,6 +109,6 @@ setTimeout(() => {
 
 setTimeout(() => {
     index.addObjects(documents, (err, content) => {
-        console.log('documents has been uploaded');
+        console.log(`${documents.length} documents has been uploaded`);
       });
 }, 5000);
