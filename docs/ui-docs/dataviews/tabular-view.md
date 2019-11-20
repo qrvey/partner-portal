@@ -6,7 +6,7 @@ sidebar_label: Tabular View
 
 <div style="text-align: justify">
 
-**Tabular View** offers a traditional, spreadsheet-style view of your data that is organized into familiar rows and columns. You can add, edit and delete data as needed and your entire table is searchable. Tabular view also allows for analysis such as filtering, bucketing, grouping and aggregate functions.
+**Tabular View** offers a traditional, spreadsheet-style, view of your data. This is organized into familiar rows and columns. You can add, edit and delete data as needed and your entire table is searchable. Tabular view also allows for analysis such as filtering, bucketing, grouping and aggregate functions.
 
 ![1_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/1_tabular-view.png#thumbnail)
 
@@ -25,7 +25,7 @@ You may export your data from tabular view by clicking the **Download** button a
 
 
 ## Filtering
-You can apply filters to any summary panel by clicking the filter icon. This will bring up a filter dialog box. The exact filter options will vary depending on the field type of the panel. All filter changes are immediately applied to summary view.
+You can apply filters to the table by clicking the filter icon. This will bring up a filter dialog box. The exact filter options will vary depending on the field type of the panel. All filter changes are immediately applied to the table.
 
 ![4_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/4_tabular-view.png#thumbnail)
 

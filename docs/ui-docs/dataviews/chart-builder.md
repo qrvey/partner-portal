@@ -6,7 +6,7 @@ sidebar_label: Chart Builder
 
 <div style="text-align: justify">
 
-Chart Builder is how you build custom visualizations on top of your data so you can quickly see what matters most to you and spot trends that you might have otherwise missed. In this article, we’ll walk you through the process of creating a custom chart.
+The Chart Builder is used to build custom visualizations on top of your data, so you can quickly see what matters most to you, and spot trends that you might have otherwise missed. In this article, we will walk you through the process of creating a custom chart.
 
 ## Creating a Chart
 Inside your application, navigate to **Data**, select the form or dataset you’d like to analyze, then choose the **Analyze** tab, followed by the **Custom View.**
@@ -33,11 +33,11 @@ When you first enter the Chart Builder, you’ll find three tabs for **Values**,
 In the **Values** tab, you can provide your chart with a name, then assign your category and value columns from the drop-down menus. You can provide custom labels for either column. Finally, you can select an aggregate value for your data. Once you have assigned all of the required values, a sample of your chart will appear on the right.
 ![5_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5_chart-builder.png#thumbnail)
 
-If you’ve created a linked dataset using Data Links, you will see columns for both your source dataset and the additional datasets you’ve linked to as seen below.
+If you’ve created a linked dataset using Data Links, you will see columns for both your source dataset and the additional datasets you’ve linked to, as shown below.
 
 ![6_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6_chart-builder.png#thumbnail-60)
 
-If your category column is a date field, you will also see a **Date Grouping** dropdown list where you can select how you’d like the dates in the column to be grouped.
+If your category column is a date field, you will also see a **Date Grouping** dropdown list, where you can select how you’d like the dates in the column to be grouped.
 
 ![7_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7_chart-builder.png#thumbnail-60)
 
@@ -47,7 +47,7 @@ If you’ve selected a **Crosstab Table**, you’ll find a slightly different se
 ![8_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8_chart-builder.png#thumbnail-60)
 
 ## Chart Options
-In the **Chart Options** tab, you can choose to add additional layers to your chart for things like combo and multi-series charts as well as trend and reference lines. To begin, just click **+ Add Another Layer** and then choose which type of layer you’d like to add.
+In the **Chart Options** tab, you can choose to add additional layers to your chart for things like combo and multi-series charts, as well as trend and reference lines. To begin, just click **+ Add Another Layer** and then choose which type of layer you’d like to add.
 ![9_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/9_chart-builder.png#thumbnail-60)
 ![10_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/10_chart-builder.png#thumbnail-60)
 
@@ -57,7 +57,7 @@ If you choose to add a trend line, you can then select which type of trend you�
 ![11_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/11_chart-builder.png#thumbnail-80)
 
 ### Reference Line
-If you choose to add a reference line, you can select from a number of options, including which axis you’d like the reference to appear, whether that line should be fixed or dynamic in nature and you may provide a label for the line.
+If you choose to add a reference line, you can select from a number of options, including which axis you’d like the reference to appear, whether that line should be fixed or dynamic in nature, and you may provide a label for the line.
 
 ![12_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12_chart-builder.png#thumbnail-80)
 
@@ -89,7 +89,7 @@ You may edit your chart at any time by clicking on the three-dot menu in the low
 ![17_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/17_chart-builder.png#thumbnail-40)
 
 ## Maps
-Maps are a great way to display geographic or address information. Mapping is available for any **Address** and **US Address** field in a web form or can be built from a collection of data columns containing address information.
+Maps are a great way to display geographic or address information. Mapping is available for any **Address** or **US Address** field in a web form, or for a Geolocation Group in a dataset.
 
 After selecting **Geo Maps** as a chart type, you can give you map a name, then select the type of map you’d like to create. At the current time, we support bubble and dot maps.
 
@@ -107,7 +107,7 @@ When you are happy with the values you’ve selected, you can either save your m
 
 ![20_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/20_chart-builder.png#thumbnail)
 
-In the **Geo Maps Settings** area, you’ll find settings for the type of base map, street view or satellite, you’d like, along with the region and opacity settings you’d prefer. 
+In the **Geo Maps Settings** area, you’ll find settings for the type of base map, street view or satellite view, you’d like, along with the region and opacity settings you’d prefer. 
 
 ![21_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/21_chart-builder.png#thumbnail-60)
 

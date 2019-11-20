@@ -8,7 +8,7 @@ sidebar_label: Bucketing Data
 
 Bucketing is a powerful feature that allows for the grouping of multiple data points into a single item, or bucket, to make analysis easier.
 
-**Note**: Bucketing is not available for question or data types.
+**Note**: Bucketing is not available for all question or data types.
 
 ## Creating Buckets
 To create a bucket, first navigate to the **Analyze** tab of your web form or dataset, then look for the bucket icon in the upper right toolbar.

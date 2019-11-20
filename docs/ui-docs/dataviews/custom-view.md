@@ -24,10 +24,10 @@ In the upper-righthand corner you’ll find options to add **Formulas** and **Bu
 
 
 ## Filtering
-You can apply filters to any summary panel by clicking the filter icon. This will bring up a filter dialog box. The exact filter options will vary depending on the field type of the panel. All filter changes are immediately applied to summary view.
+You can apply filters to any custom panel by clicking the filter icon. This will bring up a filter dialog box. The exact filter options will vary depending on the field type of the panel. All filter changes are immediately applied to the panel.
 
 ![4_custom-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_custom-view/4_custom-view.png#thumbnail)
 
-All of the applied filters are aggregated in the **Filters** panel on the right side of the page. Here, some or all of your filters can be quickly enabled or disabled. Use the **Reset All** link to remove all filters from summary view.
+All of the created filters are shown in the **Filters** panel on the right side of the page. Here, some or all of your filters can be quickly enabled or disabled. Use the **Reset All** link to remove all filters from the custom view.
 
 ![5_custom-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_custom-view/5_custom-view.png#thumbnail-40)
