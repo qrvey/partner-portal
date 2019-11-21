@@ -6,11 +6,11 @@ sidebar_label: Logging In
 
 <div style="text-align: justify">
 
-In this document we’ll review logging in and out of the Qrvey creator application, creating a new account and recovering a lost password. This document does not cover logging in to end-user applications.
+In this document we’ll review logging in and out of the Qrvey Composer application, creating a new account and recovering a lost password. This document does not cover logging in to end-user applications.
 
 ## Logging In
 
-Navigate to the URL provided by your Qrvey administrator and you’ll be presented with a dialog for logging into the creator application. If you were given a login email address and password for your account, you can enter them here and proceed to the application.
+Navigate to the URL provided by your Qrvey administrator and you’ll be presented with a dialog for logging into Qrvey Composer. If you were given a login email address and password for your account, you can enter them here and proceed to the application.
 
 ![1_logging-in](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.1_logging-in/1_logging-in.png#thumbnail-60)
 

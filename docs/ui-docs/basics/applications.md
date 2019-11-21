@@ -13,7 +13,7 @@ All of the application’s functionality can be accessed using Qrvey’s web int
 ## Components
 At a high level, Qrvey offers the following functionality:
 
-* Data Collection - Qrvey has a series of different Web Forms for collecting new information. Currently generic forms, surveys, quizzes, and checklists are available.
+* Data Collection - Qrvey has a series of different Web Forms for collecting new information. Currently generic forms, surveys, and quizzes are available.
 
 * Data Connections - Qrvey connects to existing databases and repositories, including ElasticSearch, SQL-based systems and simple CSV uploads.
 

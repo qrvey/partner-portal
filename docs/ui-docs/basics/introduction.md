@@ -4,7 +4,7 @@ title: Introduction to the UI
 sidebar_label: Introduction to the UI
 ---
 
-In this document we’ll show you the basic features of the Qrvey creator interface, and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout. 
+In this document we’ll show you the basic features of the Qrvey Composer interface, and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout. 
 
 ![1_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/2_introduction.png#thumbnail)
 
@@ -17,7 +17,7 @@ Your Qrvey projects are called “Applications”, and are organized on the star
  
 ![3_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/3_introduction.png#thumbnail-20)
 
-If other Qrvey uses have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or send one to another user on the same Qrvey installation. 
+If other Qrvey users have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or send one to another user on the same Qrvey installation. 
 
 ![4_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/4_introduction.png#thumbnail)
 
