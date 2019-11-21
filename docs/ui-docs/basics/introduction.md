@@ -4,20 +4,20 @@ title: Introduction to the UI
 sidebar_label: Introduction to the UI
 ---
 
-In this document, we’ll show you the basics of navigating the Qrvey creator interface.  When you first log into Qrvey, you’ll see the following layout. 
+In this document we’ll show you the basic features of the Qrvey Composer interface, and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout. 
 
 ![1_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/2_introduction.png#thumbnail)
 
-The Qrvey logo in the upper-left corner will always return you to this start page. The menu in the upper-right corner provides options to manage your profile, view help documentation and logout as seen below. Your current version of Qrvey is also displayed.  
+Click on the Qrvey logo in the upper-left corner whenever you want to get back to this startup page. The menu in the upper-right corner, shown below, provides options to manage your profile, view help documentation, and logout. Your current version of Qrvey is also displayed.  
 
 ![2_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/1_introduction.png#thumbnail-40)
 
 ## Applications
-Your Qrvey projects are called Applications, and they’ll be organized on the start page based on how recently you’ve accessed them. To create a new application, click **Create Application**
+Your Qrvey projects are called “Applications”, and are organized on the startup page based on how recently you’ve accessed them. To create a new application, click **Create Application**
  
 ![3_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/3_introduction.png#thumbnail-20)
 
-If other Qrvey used have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or send one to another user on the same Qrvey installation. 
+If other Qrvey users have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or send one to another user on the same Qrvey installation. 
 
 ![4_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/4_introduction.png#thumbnail)
 
@@ -25,16 +25,58 @@ The **Activity Log** tab is where you’ll find a history of activity surroundin
 
 ![5_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/5_introduction.png#thumbnail)
 
-## Inside Applications
+## Inside an Application
 Once inside an application, you’ll find all of the major components in the left-hand menu as shown below. 
 
 ![6_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/6_introduction.png#thumbnail-40)
 
-The **Data** section is where you will connect to all of the datasets your applications will be using. **Report Builder** is a wysiwyg tool for building data-driven reports. Use **Page Builder** to build webpages. **Workflows** accesses Qrvey’s data automation engine and allows for 24/7 monitoring of your data.
+### Data
 
-In the **Settings** section, you can edit your application’s name, customize its look and feel, as well as upload and manage any supporting files it may require. 
+The Data component allows you to:
 
-Depending on which area of the application you’re using, you will find additional navigation options in the blue toolbar that runs across the top of the application. The orange line shows you the selected menu option. 
+* connect to or import external datasets.
+* define new datasets by creating web forms.
+* link datasets together to form new virtual datasets.
+* connect to external databases.
+* analyze datasets by creating aggregates and or visualisations.
+* delete datasets and connections.
+
+### Report Builder
+
+The Report Builder component allows you to:
+
+* build data-driven reports using a WYSIWYG editor. 
+* duplicate or delete reports.
+
+### Page Builder
+
+The Page Builder component allows you to:
+
+* build web pages using a WYSIWYG editor. 
+* duplicate or delete web pages.
+* configure page navigation.
+* manage application users and security.
+
+Note, web pages can incorporate outputs from other components - such as metrics, charts, reports.
+
+### Workflows
+
+The Workflows component allows you to:
+
+* build workflows, ie automated business processes, using a drag and drop flowchart tool.
+* configure workflows to run on a set schedule, in response to a webhook, or in response to a data change event.
+
+Note, Workflows can incorporate outputs from other components - such as metrics, charts, reports.
+
+### Settings
+
+The Settings component allows you to:
+
+* edit your application’s name.
+* customize the application's appearance.
+* upload and manage any supporting files it may require. 
+
+Depending on which area of the application you’re using, you will find additional options in the set of blue tabs, which are displayed across the top of the application. The orange line shows you the active tab. 
 
 ![7_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/7_introduction.png#thumbnail)
 
