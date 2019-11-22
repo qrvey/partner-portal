@@ -24,9 +24,9 @@ On the **Select Index** page you will see the available indexes along with the c
 
 ![4_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/4_elasticsearch.png#thumbnail)
 
-Finally select which columns you’d like to import by using the checkboxes in the left-hand column. A search box is provided for datasets with large numbers of columns. Qrvey Composer will automatically profile your data and choose an appropriate data type, but you can further refine how you’d like each column to appear in Qrvey Composer by updating the data types as needed. 
+Finally, select which columns you’d like to import by using the checkboxes in the left-hand column. A search box is provided for datasets with large numbers of columns. Qrvey Composer will automatically profile your data and choose an appropriate data type, but you can further refine how you’d like each column to appear in Qrvey Composer by updating the data types as needed. 
 
-To learn more about the available data types just look on the right side of the window.
+To learn more about the available data types just look at the right side of the window.
 
 ![5_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/5_elasticsearch.png#thumbnail-60)
 
