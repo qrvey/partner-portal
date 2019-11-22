@@ -6,19 +6,19 @@ sidebar_label: Database Connections
 
 <div style="text-align: justify">
 
-You can quickly connect to SQL and Oracle datasets by using the Database Connection feature under the Datasets tab. 
+You can quickly connect to SQL and Oracle datasets by using the **Database Connection** feature under the Datasets tab. 
 
 ![1_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/1_databases.png#thumbnail)
 
-To begin, click the **Add Dataset** button, then choose **Database Connection,** followed by **Create New.**
+To begin, click the **Add Dataset** button and choose **Database Connection,** followed by **Create New.**
 
 ![2_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/2_databases.png#thumbnail)
 
-Next, choose the type of database you’d like to connect to. Qrvey currently supports MySQL, MS-SQL and Oracle databases.
+Next, choose the type of database you’d like to connect to. Qrvey currently supports MySQL, MS-SQL, and Oracle databases.
 
 ![3_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/3_databases.png#thumbnail)
 
-Next, enter your connection information, including Host Name, Port, along with your Username and Password. Then click **Test and get Databases** to verify the information provided.
+Next, enter your connection information, including Host Name and Port, along with your Username and Password. Click **Test and get Databases** to verify the information provided.
 
 ![4_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/4_databases.png#thumbnail-60)
 
@@ -34,8 +34,8 @@ Finally, you may also copy/paste a SQL query by clicking the **SQL** button. You
 
 ![7_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/7_databases.png#thumbnail)
 
-Once all of your objects are selected and verified, you may click the **Add** button in the lower-right corner to add your new connection to Qrvey. After saving, click the **Load Data** button in the upper-right to begin loading your data into Qrvey.
+Once all of your objects are selected and verified, you can click the **Add** button in the lower-right corner to add your new connection to Qrvey. After saving, click the **Load Data** button in the upper-right to begin loading your data into Qrvey.
 
 ![8_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/8_databases.png#thumbnail-40)
 
-The data load may take a few minutes to complete. You may leave this page while the load is in process. Once completed, your database can then be used for analytics and workflows and also for lookups in web forms.
+The data load may take a few minutes to complete. You may leave this page while the load is in process. Once completed, your database can then be used for analytics and workflows as well as for lookups in web forms.
