@@ -44,7 +44,7 @@ const siteConfig = {
       label: 'Documentation',
     },
     {
-      href: '/docs/video-training/intro-analytics-apps',
+      href: '/training',
       label: 'Video Training',
     },
     { blog: true, label: 'Blog' },

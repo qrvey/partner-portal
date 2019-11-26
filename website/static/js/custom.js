@@ -41,16 +41,18 @@ currentUser = getUserOnLocalStorage();
 updateUser(currentUser);
 
 window.onload = () => {
+    // Add partner name to logo
+    insertParternsLogo();
+    // Check title document to save it 
     TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    //document.querySelector('.headerWrapper header a').href = '/';
     // Check if this page contains a video
     const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
     if (videoContanier){
         checkVideoIsPlayed(videoContanier);
     }
+    // CHECK IS THE USER IS LOGGED IN
     if(currentUser){
         insertLogOutToNav();
-        insertParternsLogo();
         highlightDocNavItem();
     }
 }
@@ -186,7 +188,8 @@ function postActivy(newActivity) {
 
 
 function insertLogOutToNav() {
-    const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    // const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    /*
     navItems.forEach(element => {
         if (element.innerText == 'Log Out') {
             element.onclick = () => logOut();
@@ -194,7 +197,10 @@ function insertLogOutToNav() {
            //element.setAttribute('id', 'nav-item-dropdown');
         }
     });
-    // navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`)
+    */
+    const navBar = document.querySelector('ul.nav-site.nav-site-internal');
+    navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
+    console.log('navbar', navBar);
 }
 
 function insertParternsLogo() {

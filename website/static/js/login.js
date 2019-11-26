@@ -2,20 +2,27 @@ const loginEvent = new Event('LOGIN_EVENT');
 let errorDisplayText = null;
 const pathname = window.location.pathname;
 
+const blackList = [
+    '/login',
+    '/login/',
+    '/forgot-password',
+    '/forgot-password/',
+    '/support',
+    '/support/'
+];
+
 firebase.auth().onAuthStateChanged((user) => {
     updateUser(user);
 });
 
-if (pathname === '/login' || pathname === '/login/'){
-    window.onload = () => {
-        listenLoginSubmit();
-        removeLogOutButton();
-    }
-}
 
-if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
-    window.onload = () => {
+if(blackList.find(path => path === pathname)){
+    removeSearchBar();
+    if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
         listenForgotPasswordSubmit();
+    }
+    if (pathname === '/login' || pathname === '/login/'){
+        listenLoginSubmit();
     }
 }
 
@@ -84,4 +91,10 @@ function removeLogOutButton() {
             element.innerText = 'Log In';
         }
     });
+}
+
+
+function removeSearchBar(){
+    const searchbar = document.querySelector('li.navSearchWrapper.reactNavSearchWrapper');
+    searchbar.style.display = 'none';
 }
