@@ -34,6 +34,7 @@ function loginAttempt(email, password){
             displayName: user.displayName,
             email: user.email
         }
+        updateUser(currentUser);
         window.location.href = '/';
     })
     .catch((error) => {

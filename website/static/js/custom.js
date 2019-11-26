@@ -1,4 +1,3 @@
-const COOKIE_USER = 'partners_user';
 const IP_ADDRES_URL = 'https://api.ipify.org/?format=json';
 const CURRENT_PAGE = window.location.pathname;
 const USER_AGENT = navigator.userAgent;
@@ -10,7 +9,6 @@ const baseUrl = '/';
 let IP_ADDRESS = '';
 let TITLE_DOCUMENT = '';
 let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.length) : CURRENT_PAGE;
-let currentUser = null;
 
 const PAGE = 'page_docs_';
 
@@ -37,24 +35,21 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
 
 //////////
 /// INIT APP
-currentUser = getUserOnLocalStorage();
-updateUser(currentUser);
 
-window.onload = () => {
-    // Add partner name to logo
-    insertParternsLogo();
-    // Check title document to save it 
-    TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-    // Check if this page contains a video
-    const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-    if (videoContanier){
-        checkVideoIsPlayed(videoContanier);
-    }
-    // CHECK IS THE USER IS LOGGED IN
-    if(currentUser){
-        insertLogOutToNav();
-        highlightDocNavItem();
-    }
+// Add partner name to logo
+insertParternsLogo();
+// Check title document to save it 
+TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+// Check if this page contains a video
+const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+if (videoContanier){
+    checkVideoIsPlayed(videoContanier);
+}
+// CHECK IS THE USER IS LOGGED IN
+console.log('user', currentUser);
+if(currentUser){
+    insertLogOutToNav();
+    highlightDocNavItem();
 }
 
 setTimeout(() => {
@@ -67,27 +62,6 @@ setTimeout(() => {
 
 ///FIN INIT
 /////
-function updateUser(user) {
-    if (user) {
-        // User is signed in.
-        currentUser = { userName: user.email, displayName: user.displayName };
-        saveOnLocalStorage(currentUser);
-    } else {
-        // User is signed out.
-        currentUser = null;
-        if (!isAllowedPath(window.location.pathname)) {
-            window.location.href = '/login';
-        }
-    }
-}
-
-function saveOnLocalStorage(user){
-    localStorage.setItem(COOKIE_USER, JSON.stringify(user));
-}
-
-function getUserOnLocalStorage(){
-    return localStorage.getItem(COOKIE_USER);
-}
 
 function checkVideoIsPlayed(videoContanier){
     const CONTENT_TYPE = 'videos'
@@ -103,24 +77,6 @@ function checkVideoIsPlayed(videoContanier){
     }
 }
 
-
-function isAllowedPath(path) {
-    const allowedPath = [
-        '/login',
-        '/login/',
-        '/forgot-password',
-        '/forgot-password/',
-        '/support',
-        '/support/'
-    ];
-    let allowed = false;
-    allowedPath.forEach((allowPath) => {
-        if (allowPath === path){
-            allowed = true;
-        }
-    });
-    return allowed;
-}
 
 // Cookie check function
 function getCookie(cname) {
@@ -200,7 +156,6 @@ function insertLogOutToNav() {
     */
     const navBar = document.querySelector('ul.nav-site.nav-site-internal');
     navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
-    console.log('navbar', navBar);
 }
 
 function insertParternsLogo() {
