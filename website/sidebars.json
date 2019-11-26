@@ -30,6 +30,12 @@
       "ui-docs/datasets/csv",
       "ui-docs/datasets/datalinks",
       "ui-docs/datasets/connectors"
+    ],
+    "Builders":[
+      "ui-docs/builders/reports",
+      "ui-docs/builders/pages",
+      "ui-docs/builders/navigation",
+      "ui-docs/builders/user-management"
     ]
   },
   "business-analytics":{
