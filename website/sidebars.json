@@ -41,6 +41,11 @@
       "ui-docs/dataviews/custom-view",
       "ui-docs/dataviews/chart-builder",
       "ui-docs/dataviews/metric-view"
+    ],
+    "Others":[
+      "ui-docs/others/settings",
+      "ui-docs/others/sending",
+      "ui-docs/others/activity-log"
     ]
   },
   "business-analytics":{
