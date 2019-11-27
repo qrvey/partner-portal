@@ -30,6 +30,14 @@
       "ui-docs/datasets/csv",
       "ui-docs/datasets/datalinks",
       "ui-docs/datasets/connectors"
+    ],
+    "Automation":[
+      "ui-docs/automation/flows",
+      "ui-docs/automation/triggers",
+      "ui-docs/automation/conditions",
+      "ui-docs/automation/send-actions",
+      "ui-docs/automation/data-actions",
+      "ui-docs/automation/tokens"
     ]
   },
   "business-analytics":{
