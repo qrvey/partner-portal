@@ -6,7 +6,7 @@ sidebar_label: Metric View
 
 <div style="text-align: justify">
 
-Metrics are a powerful feature that allows you to keep an eye on your most important data at a glance. They can be used stand alone or as a part of a page, report, dashboard or workflow. 
+Metrics are a powerful feature that allows you to keep an eye on your most important data at a glance. It can be used by itself or it can be used as a part of a page, report, dashboard, or workflow. 
 
 With Metric Builder, you can build the three different gauges below 
 
@@ -20,7 +20,7 @@ With Metric Builder, you can build the three different gauges below
 ![3_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/3_metric-view.png#thumbnail-60)
 
 # Building a Metric
-To build your first metric, enter your application, then click the Analyze tab of the dataset you’d like to use and select the Metric View as shown below. You can then click **Add Metric** to begin.
+To build your first metric, enter your application, click the **Analyze** tab of the dataset you’d like to use and select the Metric View, as shown below. You can then click **Add Metric** to begin.
 
 ![4_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/4_metric-view.png#thumbnail)
 
@@ -36,7 +36,7 @@ In the **Thresholds** tab, you can choose to provide color-coded ranges for your
 
 ![7_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/7_metric-view.png#thumbnail-60)
 
-Finally, in the **Visualization** tab, you can choose which type of visualization type you’d like, and set additional color, size and display options. These will vary depending on the type of metric you select. Once you are happy with your settings, click Save in the lower-right corner and your metric will be added to your dashboard, where it can then be used for pages, reports and workflows.
+Finally, in the **Visualization** tab, you can choose which type of visualization you’d like, and set an additional color, size and display options. These will vary depending on the type of metric you select. Once you are happy with your settings, click **Save** in the lower-right corner and your metric will be added to your dashboard where it can then be used for pages, reports and workflows.
 
 ![8_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/8_metric-view.png#thumbnail-60)
 
