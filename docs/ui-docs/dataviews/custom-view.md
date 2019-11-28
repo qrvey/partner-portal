@@ -33,7 +33,7 @@ Use the **Export** button to export the data in CSV format or to export the char
 
 ### Filters
 
-Use the **Filters** button to show or hide the **Filters** panel, which lists all of the defined filters. Some or all of your filters can be quickly enabled, revised, or disabled. Use the **Reset All** link to remove all filters from tabular view.
+Use the **Filters** button to show or hide the **Filters** panel, which lists all of the defined filters. Some or all of your filters can be quickly enabled, revised, or disabled. Use the **Reset All** link to remove all filters from custom view.
 
 ![5_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/5_tabular-view.png#thumbnail-40)
 
