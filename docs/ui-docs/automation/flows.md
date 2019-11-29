@@ -19,7 +19,7 @@ Workflows are built from the following types of components:
 
  **Data Actions** - actions which access or update data.
 
-For example, you may have a simple Flow that says, when a new survey response is received (*trigger*) send me an alert email (*action*). Or you may choose to send a follow-up survey (*action*) when a for response is received (*trigger*) but only if the respondent is from the U.S. (*condition*). These are just two basic examples of Flows in action. The amazing variety of business use cases which can be implemented through Flows are only limited by your imagination.
+For example, you may have a simple Flow that says, when a new survey response is received (*trigger*) send me an alert email (*action*). Or you may choose to send a follow-up survey (*action*) when a new response is received (*trigger*) but only if the respondent is from the U.S. (*condition*). These are just two basic examples of Flows in action. The amazing variety of business use cases which can be implemented through Flows are only limited by your imagination.
 
 ## Creating a Flow
 To create a Flow, choose **Flows** from the left-hand menu and then click the **Create Flow** button.
@@ -30,7 +30,7 @@ Give your new Flow a name and a description, then click **Create**.
 
 ![2_flows](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/2_flows.png#thumbnail-60)
 
-You’ll now be placed in the Flow design area where you can begin to build your Flow. The Flow designer consists of a blank canvas on the left and a palatte with all of the components you’ll need on the right. The components are grouped by type.
+You’ll now be placed in the Flow design area where you can begin to build your Flow. The Flow designer consists of a blank canvas on the left and a palette with all of the components you’ll need on the right. The components are grouped by type.
 
 Start by clicking on your desired trigger type and dragging it onto your canvas. Configure the trigger and then continue to drag and drop condition and action components onto your canvas to build your Flow. Components will automatically be run from from top to bottom on the page. 
 
