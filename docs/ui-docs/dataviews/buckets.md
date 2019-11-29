@@ -23,7 +23,7 @@ Once inside the bucket editor select the column of data you’d like to group in
 
 If you select a numeric column to bucket then you can allow Qrvey to manage the buckets by selecting the **Basic** option. Within the **Basic** option you can have either a variable or fixed number of buckets by using the **Dynamic** or **Fixed** options respectively. When you choose **Dynamic** the current set of buckets will be shown on the right, however as your data changes the buckets will be adjusted by Qrvey. If you choose **Fixed** buckets you can then specify the number of buckets, the minimum range value, and the maximum range value. If you select **Custom** buckets then the current set of Qrvey generated buckets will be shown and you can then label, adjust, remove or add buckets as you desire.
 
-If you select a text column to bucket then you can enter a comma delimited list of bucket names and click the **Add Bucket** button to create the buckets. Each bucket name has an associated radio button - use this to select a bucket and then use the checkbox, next to each distinct text value in the values list on the right panel, to add or remove values from the bucket. There is a search field at the top of the values list to help you find values easily. You can create an _Other_ bucket using the **Unasigned Values As "Other"** option. Use the **╳** button for a bucket value to remove it, or use the **╳** button for a bucket name to delete that bucket.
+If you select a text column to bucket then you can enter a comma delimited list of bucket names and click the **Add Bucket** button to create the buckets. Each bucket name has an associated radio button - use this to select a bucket and then use the checkbox, next to each distinct text value in the values list on the right panel, to add or remove values from the bucket. There is a search field at the top of the values list to help you find values easily. You can create an _Other_ bucket using the **Unassigned Values As "Other"** option. Use the **╳** button for a bucket value to remove it, or use the **╳** button for a bucket name to delete that bucket.
 
 If you select a date column to bucket then you begin creating your buckets by clicking **+&nbsp;Add&nbsp;Custom&nbsp;Bucket**.
 
@@ -42,4 +42,4 @@ Once you have added bucketed columns, then they will be listed in the **Buckets*
 
 Each bucketed column has 3 associated icons which allow you to duplicate, edit or delete the column.
 
->Note that when yoe remove a bucketed column by clicking the **╳** button the bucketed column is removed **immediately**. 
+>Note that when you remove a bucketed column by clicking the **╳** button the bucketed column is removed **immediately**. 

@@ -6,7 +6,7 @@ sidebar_label: Formulas
 
 <div style="text-align: justify">
 
-Formulas can be used throughout the Qrvey platform to perform complex trasformations and calculations. This article outlines the structure of our formulas. 
+Formulas can be used throughout the Qrvey platform to perform complex transformations and calculations. This article outlines the structure of our formulas. 
 
 ## Basic Components
 **Fields/Columns** - Dimensions or measures (columns) from your data source.
@@ -15,11 +15,8 @@ Formulas can be used throughout the Qrvey platform to perform complex trasformat
 
 **Operators** - Symbols that denote an operation.
 
-**Tokens†** - Placeholder variables that can be inserted into calculations to replace constant values.  
->† Tokens not yet supported in Formula.
-
 ## Syntax
-**Fields/Columns** - use [] around the field orc column name, e.g. [Sales].
+**Fields/Columns** - use [] around the field or column name, e.g. [Sales].
 
 **Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).
 
@@ -43,8 +40,6 @@ Formulas can be used throughout the Qrvey platform to perform complex trasformat
 |**OR**|Logical _or_ of two values.|
 |**NOT**|Logical _not_ of a value.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
-
-**Tokens** - use {} around the token name, e.g. {country}.
 
 ## Use Cases
 Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
@@ -80,4 +75,4 @@ TABLEAU example with multiple nested functions _ZN(SUM([Order Quantity])) - WIND
 
 * **Text:** [Elasticsearch Text API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-String)
 
-* **Date:** Supported functions include: now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull and isNullDate.
+* **Date:** Supported functions include: now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull, and isNullDate.
