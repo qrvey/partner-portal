@@ -40,14 +40,14 @@ Changes are saved automatically as you build.
 
 ## Activating a Flow
 
-When you have finished building your flow, click the**Activate** button in the upper-right corner to make it operational. 
+When you have finished building your Flow, click the **Activate** button in the upper-right corner to make it operational. 
  
 ![2_triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/2_triggers.png#thumbnail-20)
 
 Once your Flow is active the **Activate** button will be replaced with a **Pause** button, which can be used to suspend the Flow at any stage.
 
 ## Flow Activity Log
-Every Flow keeps a log of all its activity, including any changes made by creators and every time the Flow is triggered.  If you ever have questions about how your Flow is performing, the activity log is the place to see detailed information about it’s activities, errors and events. 
+Every Flow keeps a log of all its activities, including any changes made by creators and every time the Flow is triggered.  If you ever have questions about how your Flow is performing, the activity log is the place to see detailed information about it’s activities, errors and events. 
 
 To access the activity log, click the **Activity** link in the top blue toolbar. The activity log can be searched and filtered to make finding relevant events easier. 
 

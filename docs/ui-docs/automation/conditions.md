@@ -40,7 +40,7 @@ For a New Data trigger, with a Quiz dataset, the following four conditions can a
 ![4_conditions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.3_conditions/4_conditions.png#thumbnail)
 
 
->**Note**: A quiz’s rank is determined in real time and represents that person’s position on the leaderboard at the time of their submission. Ranks will change with every submission received. As a result, if you are sending notifications based on a rank condition, it is more accurate to say “You are _currently_ in first place” rather than “You _are_ in first place”. While the latter is correct at that time, it could change with the next quiz submission.
+>**Note**: A quiz’s rank is determined in real time and represents that person’s position on the leaderboard at the time of their submission. Ranks will change with every submission received. As a result, if you are sending notifications based on a rank condition, it is more accurate to say “You are _currently_ in the first place” rather than “You _are_ in the first place”. While the latter is correct at that time, it could change with the next quiz submission.
 
 >**Also Note**: In the event of a tie, with two or more submissions having the exact same score, rankings are determined in the order in which they were received. The earlier the quiz was received, the higher its rank will be.
 

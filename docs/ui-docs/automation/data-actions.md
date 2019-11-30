@@ -20,7 +20,7 @@ To begin, select the type and name of the dataset to search, then the field(s) a
 
 Underneath the search box, you’ll see three branch options where you can place actions depending on the number of results found. You can specify different sets of actions for each of these three branch options. 
 
->**NOTE**: The Search Record action will loop through multiple records found individually. For example, if five records are found, the actions under the _Multiple Records Found_ will be performed five times, once for each record.
+>**Note:** The **Search Record** action will loop through multiple records found individually. For example, if five records are found, the actions under the _Multiple Records Found_ will be performed five times, once for each record.
 
 ## Updating/Deleting Records
 Once you have searched and found one or more records in your dataset, you can use the  **Update Record** and **Delete Record** actions to take appropriate actions. 
@@ -40,18 +40,18 @@ Use the **Insert Record** action to add a new record to an existing dataset.  Ju
 ![5_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/5_data-actions.png#thumbnail)
 
 ## Submit Data
-Use the **Submit Data** to send data to a third party system via a URL, similar to a “form POST” in HTML. Simply provide the URL you’d like to submit your data to, the format you’d like to use, followed by the parameters, or field/value pairs you’d like to send. 
+Use the **Submit Data** action to send data to a third party system via a URL, similar to a “form POST” in HTML. Simply provide the URL you’d like to submit your data to, the format you’d like to use, followed by the parameters, or field/value pairs you’d like to send. 
 
 ![6_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/6_data-actions.png#thumbnail)
 
 ## Post Data
-Use the **Post Data** to send data to a connected data source.  Select the connection, database and table to update, followed by the data itself. 
+Use the **Post Data** action to send data to a connected data source.  Select the connection, database and table to update, followed by the data itself. 
 
 ![7_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/7_data-actions.png#thumbnail)
 
 
 ## Reload Data
-Use the **Reload Data** action to reload the data from an existing data connection. To use it, just provide the name of connection you wish to reload. Note that it may take a few minutes for the reload to complete depending on the size of your dataset and the speed of the data connection to it. 
+Use the **Reload Data** action to reload the data from an existing data connection. To use it, just provide the name of the connection you wish to reload. Note that it may take a few minutes for the reload to complete depending on the size of your dataset and the speed of the data connection. 
 
 ![8_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/8_data-actions.png#thumbnail)
 
