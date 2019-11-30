@@ -41,6 +41,12 @@
       "ui-docs/dataviews/custom-view",
       "ui-docs/dataviews/chart-builder",
       "ui-docs/dataviews/metric-view"
+    ],
+    "Builders":[
+      "ui-docs/builders/reports",
+      "ui-docs/builders/pages",
+      "ui-docs/builders/navigation",
+      "ui-docs/builders/user-management"
     ]
   },
   "business-analytics":{
