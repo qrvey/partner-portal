@@ -6,7 +6,7 @@ sidebar_label: User Management
 
 <div style="text-align: justify">
 
-In the **User Management** tab, you can not only create users and groups, but also restrict access to certain portions on your application. For instance, you may wish to hide certain pages or components from certain users or allow certain groups of users to access only certain datasets.
+In the **User Management** tab, you can not only create users and groups, but also restrict access to certain portions of your application. For instance, you may wish to hide certain pages or components from certain users or allow certain groups of users to access only certain datasets.
 
 ## Authentication Settings
 In this tab, you can enable and disable authentication as well as set authentication settings. First, you can choose whether to allow new users to sign up by themselves. If this is disabled, you will need to add new users manually in the **User Table** tab.
@@ -53,4 +53,4 @@ In the **Pages** section, you’ll see a list of all the pages in your applicati
 
 ![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/9_user-management.png#thumbnail)
 
-Any changes you make to users and/or permissions are updated in realtime as you make them.
+Any changes you make to users and/or permissions are updated in real time as you make them.

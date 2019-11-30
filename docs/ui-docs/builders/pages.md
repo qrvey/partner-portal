@@ -27,7 +27,7 @@ Along the right side of your canvas, you’ll find the **Tool Palette** where yo
 
 ![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4_pages.png#thumbnail-40)
 
-In the **Page Info** section, you’ll find areas to give your page a name and a description. You’ll also find the unique URL for the specific page you’re working on (as opposed to the application overall. Finally, you’ll find access permissions to set the page as either public or private. If set to private, users will need to log in before accessing the page.
+In the **Page Info** section, you’ll find areas to give your page a name and a description. You’ll also find the unique URL for the specific page you’re working on (as opposed to the application overall). Finally, you’ll find access permissions to set the page as either public or private. If set to private, users will need to log in before accessing the page.
 
 ![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5_pages.png#thumbnail-40)
 

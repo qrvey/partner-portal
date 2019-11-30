@@ -57,7 +57,7 @@ The **Elements** menu item provides access to the analytic and metric components
 
 ![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-40)
 
-First choose the dataset which will contains the data for the component. Then either select **Summary View**, to access the Qrvey generated components, or select **Custom View**, to access the components you have created. 
+First choose the dataset which contains the data for the component. Then either select **Summary View**, to access the Qrvey generated components, or select **Custom View**, to access the components you have created. 
 
 Drag your desired component onto the canvas, or use the **Create Chart** button to create a new dynamic component. 
 
@@ -74,7 +74,7 @@ To enable or disable all filters for a group click on the toggle button or check
 
 ![8_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/8_reports.png#thumbnail-40)
 
-To create a new global filter click the **Add Filter** button and choose your data source. Next, select the column in drop-down list and select the scope of the filter, ie **All** or **Current Tab**. See the **Filtering Data** page for further details.
+To create a new global filter click the **Add Filter** button and choose your data source. Next, select the column in drop-down list and select the scope of the filter, ie **All** or **Current Tab**. See the [**Filtering Data**](../dataviews/filtering) page for further details.
 
 ![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail)
 
