@@ -47,6 +47,7 @@ const siteConfig = {
       href: '/training',
       label: 'Video Training',
     },
+    { blog: true, label: 'Blog' },
   ],
 
   algolia: {
