@@ -47,7 +47,15 @@ const siteConfig = {
       href: '/training',
       label: 'Video Training',
     },
+    { blog: true, label: 'Blog' },
   ],
+
+  algolia: {
+    apiKey: '7799174e3198189be19d4bcfa852f9f6',
+    appId:'FKFO2CGR6S',
+    indexName: 'dev_qrvey',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // If you have users set above, you add it here:
   users,
