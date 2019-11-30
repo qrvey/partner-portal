@@ -6,23 +6,21 @@ sidebar_label: Formulas
 
 <div style="text-align: justify">
 
-Formulas can be used throughout the Qrvey application to perform complex functions and calculations. This article outlines the structure of our formulas. 
+Formulas can be used throughout the Qrvey platform to perform complex transformations and calculations. This article outlines the structure of our formulas. 
 
-## Basic components
+## Basic Components
 **Fields/Columns** - Dimensions or measures (columns) from your data source.
 
 **Functions** - Statements used to transform the values or members in a field.
 
 **Operators** - Symbols that denote an operation.
 
-**Tokens** - Placeholder variables that can be inserted into calculations to replace constant values.  *Tokens not supported yet in Formula
-
 ## Syntax
-**Fields/Columns** - use [] around the field orc column name, eg [Sales].
+**Fields/Columns** - use [] around the field or column name, e.g. [Sales].
 
-**Functions** - function names must be in lowercase and must be followeed by a bracketed argument list, eg sum([Items]) or avg([Temp]).
+**Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).
 
-**Operators** - the following table shows the available operators. Note, normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five nineths of [Temperature].
+**Operators** - the following table shows the available operators. Note that normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five ninths of [Temperature].
 
 | Symbol | Operation |
 |---|---|
@@ -30,7 +28,7 @@ Formulas can be used throughout the Qrvey application to perform complex functio
 |**\***|_Product_ of two numbers.|
 |**/**|_Division_ of two numbers.|
 |**+**|_Addition_ of two numbers.|
-|**-**|_Subtraction_ of two numbers, or negating a number.|
+|**-**|_Subtraction_ of two numbers, or negation of a number.|
 |**==**|Test _equality_ of two values.|
 |**>**|Test if the first value is _greater than_ the second value.|
 |**<**|Test if the first value is _less than_ the second value.|
@@ -43,10 +41,8 @@ Formulas can be used throughout the Qrvey application to perform complex functio
 |**NOT**|Logical _not_ of a value.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
 
-**Tokens** - use {} around the token name, eg {country}.
-
 ## Use Cases
-Formulas can be used to segment data, to convert the data type of a field, such as converting a string to a date, to aggregate data, to filter results and to calculate ratios.
+Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
 
 ## Examples Formulas
 1. Date/Time Function Formulas
@@ -79,4 +75,4 @@ TABLEAU example with multiple nested functions _ZN(SUM([Order Quantity])) - WIND
 
 * **Text:** [Elasticsearch Text API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-String)
 
-* **Date:** Supported functions include: now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull and isNullDate.
+* **Date:** Supported functions include: now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull, and isNullDate.
