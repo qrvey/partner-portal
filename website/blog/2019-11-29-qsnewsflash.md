@@ -20,9 +20,9 @@ A complete list of these enhancements can be found on the Partner Portal site:
 
 We now have better names for different parts of the platform:
 
-* Data Links are now part of the shared application
+* The main "Qrvey application" is now called "Qrvey Composer"
 
-* We switched to AWS Comprehend for text analysis
+* "Admin Portal" is now called the "Admin Center"
 
 You will see these names in all future communication.
 
@@ -53,5 +53,5 @@ We will have another release before the end of the year. Here are some enhanceme
     Here are some fun facts/analytics around Thanksgiving:
     <p>
     <br>
-    <img src="/img/blog/infographic.png" style="margin:auto; display:block;" width="500" />
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/blog/infographic.png" style="margin:auto; display:block;" width="500" />
 <div>
