@@ -17,6 +17,9 @@
     padding-left: 10px;
     padding-top: 5px;
 }
+.algolia-autocomplete{
+    z-index: 10001 !important;
+}
 .card-categories{
     /* Rectangle: */
      background: #FFFFFF;
