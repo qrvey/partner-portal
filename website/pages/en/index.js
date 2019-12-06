@@ -60,7 +60,7 @@ class Index extends React.Component {
         Documentation
         </h2>
         <h4 className="main-description" id="main-description">
-        Find documentation and setup guides for Qrvey, Data Router and Admin Portal
+        Find documentation and setup guides for Qrvey, Data Router and Admin Center
         </h4>
       </div>
       </div>
