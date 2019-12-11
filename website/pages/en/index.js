@@ -29,6 +29,7 @@ class Index extends React.Component {
         {name:'Embedding', path: siteConfig.baseUrl+'docs/embedding/embedding-intro'},
         {name:'Setup & Deployments', path: siteConfig.baseUrl+'docs/setup-deployments/setup-overview'},
         {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-nov-2019'},
+        {name:'How To Slides', path: siteConfig.baseUrl+'docs/how-to-slides/first-analytic-app'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">

@@ -144,7 +144,7 @@ ul.nav-site.nav-site-internal li a{
     padding: 10px 0px 0px 30px;
     border-radius: 0px 0px 10px 10px;
     background: #214b8e;
-    height: 140px;
+    height: auto;
     width: 370px;
     left: 10px;
 }

@@ -163,5 +163,10 @@
       "release-notes/release-feb-2019",
       "release-notes/release-jan-2019"
     ]
+  },
+  "how-to-slides":{
+    "How to Slides": [
+      "how-to-slides/first-analytic-app"
+    ]
   }
 }
