@@ -47,7 +47,7 @@ const siteConfig = {
       href: '/training',
       label: 'Video Training',
     },
-    { blog: true, label: 'Blog' },
+    { blog: true, label: 'Newsletters' },
   ],
 
   algolia: {
@@ -56,6 +56,8 @@ const siteConfig = {
     indexName: 'dev_qrvey',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
+
+  blogSidebarTitle: { default: 'Newsletters', all: 'Newsletters' },
 
   // If you have users set above, you add it here:
   users,
