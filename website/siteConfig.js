@@ -48,10 +48,6 @@ const siteConfig = {
       label: 'Video Training',
     },
     { blog: true, label: 'Blog' },
-    {
-      href: '',
-      label: 'Log Out',
-    },
   ],
 
   algolia: {
