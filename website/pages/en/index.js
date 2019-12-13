@@ -29,6 +29,7 @@ class Index extends React.Component {
         {name:'Setup & Deployments', path: siteConfig.baseUrl+'docs/setup-deployments/setup-overview'},
         {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-nov-2019'},
         {name:'How To Slides', path: siteConfig.baseUrl+'docs/how-to-slides/first-analytic-app'},
+        {name:'Video Training', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -57,7 +58,7 @@ class Index extends React.Component {
       <div className="flex-container flex-vertical-container">
       <div className="full-row">
         <h2 className="main-title" id="main-title">
-        Documentation
+        Documentationd
         </h2>
         <h4 className="main-description" id="main-description">
         Find documentation and setup guides for Qrvey, Data Router and Admin Center

@@ -184,12 +184,11 @@ function toggleSubNav(element) {
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
                         <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">UI Documentation</a>
                         <a class="dropdown-item" href="${baseUrl}docs/business-analytics/business-analytics-application">Business Analytics</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/data-router/data-router-intro">Data Router</a>
                         <a class="dropdown-item" href="${baseUrl}docs/how-to-slides/first-analytic-app">How to Slides</a>
                         </div>  
                         <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/embedding/embedding-intro">Embedding</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Documentation</a>
                         <a class="dropdown-item" href="${baseUrl}docs/setup-deployments/setup-overview">Setup & Deployments</a>
                         <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-nov-2019">Releases Notes</a>
                     </div>

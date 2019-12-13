@@ -211,7 +211,25 @@
   },
   "video-training":{
     "Analytics":[
-      "video-training/intro-analytics-apps"
+      "video-training/analytics/intro-analytics-apps",
+      "video-training/analytics/datasets",
+      "video-training/analytics/analytic-views",
+      "video-training/analytics/reports-pages",
+      "video-training/analytics/web-forms",
+      "video-training/analytics/metrics",
+      "video-training/analytics/automation"
+    ],
+    "Data Router":[
+      "video-training/datarouter/intro-datarouter",
+      "video-training/datarouter/tools-api",
+      "video-training/datarouter/metadata",
+      "video-training/datarouter/data",
+      "video-training/datarouter/transformations",
+      "video-training/datarouter/demo",
+      "video-training/datarouter/advanced-functions"
+    ],
+    "Admin Center":[
+      "video-training/admin-center/intro-admin-center"
     ]
   }
 }
