@@ -164,6 +164,11 @@
       "release-notes/release-jan-2019"
     ]
   },
+  "how-to-slides":{
+    "How to Slides": [
+      "how-to-slides/first-analytic-app"
+    ]
+  },
   "video-training":{
     "Analytics":[
       "video-training/intro-analytics-apps"
