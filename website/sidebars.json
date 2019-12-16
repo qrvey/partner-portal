@@ -1,13 +1,14 @@
 {
   "get-started": {
-    "Get Started": [
+    "Getting Started": [
       "get-started/get-started-intro",
       "business-analytics/business-users",
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
       "setup-deployments/manage-aws-elasticsearch",
       "setup-deployments/setup-cost",
-      "setup-deployments/setup-security"
+      "setup-deployments/setup-security",
+      "get-started/glossary"
     ]
   },
   "ui-docs": {
@@ -61,7 +62,7 @@
       "ui-docs/automation/data-actions",
       "ui-docs/automation/tokens"
     ],
-    "Others": [
+    "Other": [
       "ui-docs/others/settings",
       "ui-docs/others/sending",
       "ui-docs/others/activity-log"

@@ -1,5 +1,5 @@
 ---
-id: webforms
+id: web-forms
 title: Web Forms
 sidebar_label: Web Forms
 ---
