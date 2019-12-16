@@ -44,7 +44,7 @@ async function readFile(dir, file){
             }
             let content = data.split('---')[2].replace(`<div style="text-align: justify">`, '').replace('###', '').replace('##', '');
             if(content.length > 100) {
-                content = content.substring(1, 100);
+                content = content.substring(1, 100).replace('/', '');
             }
             let hierarchies = [null, null, null, null, null, null];
             var regex = /##\s(.*)\s\n/g;
