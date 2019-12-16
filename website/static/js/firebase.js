@@ -7,6 +7,15 @@ const firebaseConfig = {
     messagingSenderId: '1:941167350794:web:8e5b10922c4fda92'
 };
 
+const firebaseConfigProd = {
+    apiKey: "AIzaSyDg2By7wkCfYSKh8T2xVwOXhuwZWSoiP6s",
+    authDomain: "qrvey-partners.firebaseapp.com",
+    databaseURL: "https://qrvey-partners.firebaseio.com",
+    projectId: "qrvey-partners",
+    storageBucket: "qrvey-partners.appspot.com",
+    messagingSenderId: "190936437552",
+    appId: "1:190936437552:web:6a3f15ed52c19868"
+}
 /*
 const firebaseConfig = {
     apiKey: "AIzaSyDg2By7wkCfYSKh8T2xVwOXhuwZWSoiP6s",
