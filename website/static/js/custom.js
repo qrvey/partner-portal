@@ -181,13 +181,13 @@ function toggleSubNav(element) {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown flex" id="navbar-item-dropdown"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">Qrvey Composer</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Docs</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-nov-2019">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
                         </div>  
                         <div class="column">
+                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">Qrvey Composer</a>
                         <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin Docs</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-nov-2019">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Docs</a>
                     </div>
                 </div>`);
         }
