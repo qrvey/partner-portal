@@ -238,17 +238,6 @@ img[src*="#thumbnail-20"] {
         
          font-size: 20px;
     }
-
-    #documentation-page .flex-categories-container{
-        max-width: 900px;
-        margin: auto;
-        justify-content: flex-end;
-    }
-
-    #documentation-page .card-categories{
-        margin: 0 30px 30px;
-        width: 350px;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -290,6 +279,18 @@ img[src*="#thumbnail-20"] {
         border-top: 7px solid white;
         clear: both;
         */
+    }
+
+
+    #documentation-page .flex-categories-container{
+        max-width: 820px;
+        margin: auto;
+        justify-content: flex-end;
+    }
+
+    #documentation-page .card-categories{
+        margin: 0 30px 30px;
+        width: 350px;
     }
     
 }
