@@ -1,7 +1,13 @@
 {
   "get-started": {
     "Get Started": [
-      "get-started/get-started-intro"
+      "get-started/get-started-intro",
+      "business-analytics/business-users",
+      "setup-deployments/setup-overview",
+      "setup-deployments/setup-initial-deployment",
+      "setup-deployments/manage-aws-elasticsearch",
+      "setup-deployments/setup-cost",
+      "setup-deployments/setup-security"
     ]
   },
   "ui-docs": {
@@ -63,8 +69,6 @@
   },
   "business-analytics": {
     "Business Analytics": [
-      "business-analytics/business-analytics-application",
-      "business-analytics/business-users"
     ]
   },
   "admin": {
@@ -184,15 +188,6 @@
       }
     ]
   },
-  "setup-deployments": {
-    "Setup & Deployments": [
-      "setup-deployments/setup-overview",
-      "setup-deployments/setup-initial-deployment",
-      "setup-deployments/manage-aws-elasticsearch",
-      "setup-deployments/setup-cost",
-      "setup-deployments/setup-security"
-    ]
-  },
   "release-notes": {
     "Release Notes 2019": [
       "release-notes/release-nov-2019",
@@ -204,9 +199,9 @@
       "release-notes/release-jan-2019"
     ]
   },
-  "how-to-slides":{
-    "How to Slides": [
-      "how-to-slides/first-analytic-app"
+  "tutorials":{
+    "Tutorials": [
+      "tutorials/first-analytic-app"
     ]
   },
   "video-training":{

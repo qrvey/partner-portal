@@ -3,13 +3,13 @@
     background: #FBFBFB;
 }
 .fixedHeaderContainer{
-    height: 60px;
+    padding: 10px 0;
 }
 .headerTitleWithLogo{
    /* PARTNER PORTAL: */
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 12.96px !important;
+    font-size: 11px !important;
     color: #D2D8E3;
     letter-spacing: 0.5px;
     line-height: 18.72px;
@@ -26,7 +26,7 @@
      border-radius: 5px;
      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
      width: 300px;
-     padding:10px 20px;
+     padding:10px 10px;
      margin: 20px;
      cursor: pointer;
  }
@@ -65,6 +65,7 @@ ul.nav-site.nav-site-internal li a{
     color: white;
     font-weight: 600;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 .primary-button {
     height: 40px;
@@ -98,7 +99,7 @@ ul.nav-site.nav-site-internal li a{
 .primary-color {
     color: #F57C41 !important;
 }
-.homeContainer{
+#documentation-page .homeContainer{
     background-size: cover;
     background-image: -webkit-linear-gradient(138deg, #016CFF 0%, #029EFF 100%);
     background-image: -o-linear-gradient(138deg, #016CFF 0%, #029EFF 100%);
@@ -140,24 +141,23 @@ ul.nav-site.nav-site-internal li a{
 .dropdown{
     display: none;
     position: absolute;
-    top: 62px;
-    padding: 10px 0px 0px 30px;
+    top: 50px;
     border-radius: 0px 0px 10px 10px;
     background: #214b8e;
     height: auto;
-    width: 370px;
-    left: 10px;
+    width: auto;
+    left: -10px;
 }
 .dropdown .column{
-    width: 170px;
+    width: auto;
 }
 .dropdown-item {
     font-size: 80% !important;
-    text-align: start !important;
     display: block !important;
-    height: 32px;
-    padding: 0 !important;
+    height: auto !important;
+    text-align: start !important;
     margin-top: 0px !important;
+    padding: 10px 20px !important;
 }
 
 .flex{
@@ -199,7 +199,6 @@ img[src*="#thumbnail-20"] {
    }
    .main-title{
         text-align: center;
-        color: white;
         font-size: 32px;
     }
     .main-description{
@@ -217,9 +216,7 @@ img[src*="#thumbnail-20"] {
         padding-right: 60px;
    }
     ul.nav-site.nav-site-internal li .primary-button{
-        margin-left:30px;
-        width: 140px;
-        font-size: 14px;
+        width: 100px;
    }
     .headerWrapper header a{
         height: 40px;
@@ -227,9 +224,20 @@ img[src*="#thumbnail-20"] {
     .fixedHeaderContainer header img {
         height: 100%;
         margin-right: 0px;
-        height: 40px;
-        width: 109px;
+        height: auto;
+        width: 90px;
    }
+   #home-page .card-categories{
+    /* Rectangle: */
+     width: 30%;
+     margin: 0 30px 30px;
+     padding: 20px 20px;
+     margin-bottom: 30px;
+    }
+    #home-page .card-categories .section-card-title{
+        /* Rectangle: */
+         font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -249,12 +257,11 @@ img[src*="#thumbnail-20"] {
     .flex-container .two-row{
         max-width: 50%;
    }
-    .fixedHeaderContainer{
-        height: 80px;
-        padding-top: 18px;
-   }
     ul.nav-site.nav-site-internal li a{
+        padding: 0 15px;
+        /*
         padding: 5px 30px 5px;
+        */
    }
     .top-fold-image{
         max-width: 100%;
@@ -262,9 +269,10 @@ img[src*="#thumbnail-20"] {
    div#home-wrapper {
         padding-top: 30px;
     }
-
+    
     #nav-item-dropdown::after{
-        right: 10px;
+        /*
+        right:-5px;
         display: block;
         content: '';
         position: absolute;
@@ -273,9 +281,11 @@ img[src*="#thumbnail-20"] {
         height: 0;
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
-        border-top: 7px solid #F57C41;
+        border-top: 7px solid white;
         clear: both;
+        */
     }
+    
 }
 
 @media only screen and (max-width: 1023px) {
@@ -300,11 +310,15 @@ img[src*="#thumbnail-20"] {
         padding: 0 0;
    }
     ul.nav-site.nav-site-internal li .primary-button{
-        width: 140px;
+        width: 100px;
         height: 30px;
         font-size: 14px;
-        margin-left:30px;
+        margin-left:20px;
         margin-top: 2px;
+   }
+   .card-categories{
+       width: 320px;
+       margin: 0 15px 30px;
    }
 }
 

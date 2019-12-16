@@ -166,9 +166,8 @@ function insertParternsLogo() {
 function highlightDocNavItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
     navItems.forEach(element => {
-        if (element.innerText == 'Documentation') {
+        if (element.innerText == 'Docs') {
             element.onclick = () => toggleSubNav(element);
-            element.classList.add('primary-color');
             element.setAttribute('id', 'nav-item-dropdown');
         }
     });
@@ -177,19 +176,17 @@ function highlightDocNavItem() {
 function toggleSubNav(element) {
     if (isDesktop) {
         const navbarDropdown = document.getElementById('navbar-item-dropdown');
+        element.classList.toggle('primary-color');
         if (!navbarDropdown) {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown flex" id="navbar-item-dropdown"> 
                     <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Get Started</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">UI Documentation</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/business-analytics/business-analytics-application">Business Analytics</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/how-to-slides/first-analytic-app">How to Slides</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">Qrvey Composer</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Docs</a>
                         </div>  
                         <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Documentation</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/setup-deployments/setup-overview">Setup & Deployments</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin Docs</a>
                         <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-nov-2019">Releases Notes</a>
                     </div>
                 </div>`);
@@ -198,7 +195,7 @@ function toggleSubNav(element) {
             navbarDropdown.classList.toggle('flex');
         }
     } else {
-        window.location.href = baseUrl;
+        window.location.href = '/documentation';
     }
 }
 

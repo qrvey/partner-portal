@@ -41,11 +41,15 @@ const siteConfig = {
   headerLinks: [
     {
       href: '',
-      label: 'Documentation',
+      label: 'Docs',
     },
     {
       href: '/docs/video-training/analytics/intro-analytics-apps',
-      label: 'Video Training',
+      label: 'Videos',
+    },
+    {
+      href: '/docs/tutorials/first-analytic-app',
+      label: 'Tutorials',
     },
     { blog: true, label: 'Newsletters' },
   ],
