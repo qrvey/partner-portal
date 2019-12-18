@@ -44,6 +44,10 @@ const siteConfig = {
       label: 'Docs',
     },
     {
+      href: '/docs/faqs/faqs-intro',
+      label: 'Faqs',
+    },
+    {
       href: '/docs/video-training/analytics/intro-analytics-apps',
       label: 'Videos',
     },

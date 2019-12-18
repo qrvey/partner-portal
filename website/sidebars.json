@@ -205,6 +205,11 @@
       "tutorials/first-analytic-app"
     ]
   },
+  "faqs":{
+    "FAQS": [
+      "faqs/faqs-intro"
+    ]
+  },
   "video-training":{
     "Analytics":[
       "video-training/analytics/intro-analytics-apps",
