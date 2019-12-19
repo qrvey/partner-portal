@@ -44,16 +44,16 @@ const siteConfig = {
       label: 'Docs',
     },
     {
-      href: '/docs/faqs/faqs-intro',
-      label: 'Faqs',
+      href: '/docs/tutorials/first-analytic-app',
+      label: 'Tutorials',
     },
     {
       href: '/docs/video-training/analytics/intro-analytics-apps',
       label: 'Videos',
     },
     {
-      href: '/docs/tutorials/first-analytic-app',
-      label: 'Tutorials',
+      href: '/docs/faqs/faqs-intro',
+      label: 'Faqs',
     },
     { blog: true, label: 'Newsletters' },
   ],
