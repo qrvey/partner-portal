@@ -1,6 +1,8 @@
 ---
-title: Qrvey Version 4.0
+title: December 2019
 ---
+
+<h2 style="color:#FF8143; margin-top: -10px;">Qrvey Version 4.0</h2>
 
 We wrapped up and released Qrvey V4.0 on December 18th. Some of the highlights of this release are:
 
@@ -21,9 +23,9 @@ We have been working on upgrading the internal instance of Elasticsearch from V5
 
 <h2 style="color:#FF8143">  New In Documentation </h2>
 
-* Not sure how to get started with creating an analytic application? Check out our new <strong>Tutorials</strong> section on the documentation site for step-by-step guides for real-life scenarios: [https://partners.qrvey.com/docs/tutorials/first-analytic-app/](https://partners.qrvey.com/docs/tutorials/first-analytic-app/)
+* Not sure how to get started with creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section on the documentation site for step-by-step guides for real-life scenarios: [https://partners.qrvey.com/docs/tutorials/first-analytic-app/](https://partners.qrvey.com/docs/tutorials/first-analytic-app/)
 
-* Have pressing questions that you can’t find an answer to in the regular docs? Look in the new FAQs section to see if someone else has asked the same question before and submit your own questions: 
+* Have pressing questions that you can’t find an answer to in the regular docs? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has asked the same question before and submit your own questions: 
 [https://partners.qrvey.com/docs/faqs/faqs-intro](https://partners.qrvey.com/docs/faqs/faqs-intro)
 
 Check the site frequently as we’re adding new content every week.
@@ -48,5 +50,5 @@ Being an agile, customer-centric company, we don’t set our roadmap in stone bu
     <strong> Here are some fun analytics around Christmastime: </strong>
     <p>
     <br>
-    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics2.png" style="margin:auto; display:block;" width="500" />
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics2.jpg" style="margin:auto; display:block;" width="500" />
 <div>

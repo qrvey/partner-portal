@@ -53,7 +53,7 @@ const siteConfig = {
     },
     {
       href: '/docs/faqs/faqs-intro',
-      label: 'Faqs',
+      label: 'FAQs',
     },
     { blog: true, label: 'Newsletters' },
   ],
