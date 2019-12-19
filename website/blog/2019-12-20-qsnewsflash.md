@@ -23,10 +23,9 @@ We have been working on upgrading the internal instance of Elasticsearch from V5
 
 <h2 style="color:#FF8143">  New In Documentation </h2>
 
-* Not sure how to get started with creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section on the documentation site for step-by-step guides for real-life scenarios: [https://partners.qrvey.com/docs/tutorials/first-analytic-app/](https://partners.qrvey.com/docs/tutorials/first-analytic-app/)
+* Not sure how to get started with creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section on the documentation site for step-by-step guides for real-life scenarios.
 
-* Have pressing questions that you can’t find an answer to in the regular docs? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has asked the same question before and submit your own questions: 
-[https://partners.qrvey.com/docs/faqs/faqs-intro](https://partners.qrvey.com/docs/faqs/faqs-intro)
+* Have pressing questions that you can’t find an answer to in the regular docs? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has asked the same question before and submit your own questions.
 
 Check the site frequently as we’re adding new content every week.
 
