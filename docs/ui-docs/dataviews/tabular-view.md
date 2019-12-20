@@ -35,7 +35,7 @@ Use the **Filters** button to show or hide the **Filters** panel, which lists al
 The three buttons above the table column headings allow you to filter and sort the rows as well as select columns for display. 
 
 ### Filter
-You can apply filters to the table by clicking the **Filter** button. This will bring up a filter dialog box. The exact filter options will vary depending on the column selected to filter on. See the separate **Filtering Data** page for more details.
+You can apply filters to the table by clicking the **Filter** button. This will bring up a filter dialog box. The exact filter options will vary depending on the column selected to filter on. See the [**Filtering Data**](./filters) page for more details.
 
 ![4_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/4_tabular-view.png#thumbnail)
 ### Sort

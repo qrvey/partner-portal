@@ -1,11 +1,10 @@
 ---
 id: release-feb-2019
-title: Release Notes February 2019
+title: Qrvey Version 3.11 - Release Date: 2019-02-28
 sidebar_label: February 2019
 ---
 
-## Qrvey 3.11   2019-02-28
-
+## New Features
 
 ### Admin Portal
 
@@ -71,9 +70,7 @@ sidebar_label: February 2019
 
 
 
-### General Tweaks and Bug Fixes
-
-
+### **General Tweaks and Bug Fixes**
 
 *   **Metadata - Reserved Words.** At creation time, the use of reserved words for column names is prohibited, but using an uppercase letter or the whole word, allows the use of these words as names. 
 
@@ -102,7 +99,7 @@ sidebar_label: February 2019
 
 *   **Metadata Creator - DataRouter URL.** The URL was hardcoded in the app and whereas it should have been dynamic based on installation.
 
-### Known Issues
+### **Known Issues**
 
 *   **Lookup Field - SQL Connection.** When the SQL connection is deleted and it's being used in a lookup there is no error shown but the lookup field stops working. 
 

@@ -1,10 +1,10 @@
 ---
 id: release-sep-2019
-title: Release Notes September 2019
+title: Qrvey Version 3.2 - Release Date: 2019-09-12
 sidebar_label: September 2019
 ---
 
-## Qrvey 3.2   2019-09-12
+## New Features
 
 ### Admin Portal
 
@@ -47,14 +47,14 @@ sidebar_label: September 2019
 *   **Array Lookup - Optimize Searching Mechanism.** We optimized the searching mechanism of an Array Lookup when there's no sorting. In this case we are returning the first match. 
 *   **Postdata - Retryable Errors.** We added more retryable Elasticsearch errors to the list, mostly due to high concurrency: socket disconnected, null pointer exception, authorization exceptions, among others
 
-### Other Enhancements
+### **Other Enhancements**
 
 *   **Documentation - API Enhancements:** The endpoint documentation includes JSON schema details.
 *   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
 *   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
 *   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
 
-### General Tweaks and Bug Fixes 
+### **General Tweaks and Bug Fixes** 
 
 *   **Admin - Platforms Emails:** The RTF Editor used for the Emails used for the activation of new User Accounts creation and the Password restoring has been refactored.
 *   **Admin - Sharing - Deploy Connectors Between Servers:** An Admin can send a new connector to the recipient as a “shared” connector to use this one on the required Datasets. Connectors handle substitution in the connection string if necessary.
@@ -77,7 +77,7 @@ sidebar_label: September 2019
 *   **Data Router - Unhandled error on missing JS custom function on flat data condition.** There was an error as we weren't handling missing JS Custom functions on a condition on flat data. Postdata was timing out.
 *   **Tabular view - Edit records with a Password question:** Previously a Password question field was shown as empty, rather than as a masked out password. This has been corrected and a Password question field is now shown as a masked value.
 
-### Known Issues 
+### **Known Issues** 
 
 *   **Formulas - Date Add/Date Subtract:** There are some inconsistencies 
 *   **Crosstab - Data Links:** Inconsistencies in the displayed records.

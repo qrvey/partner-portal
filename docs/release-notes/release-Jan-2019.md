@@ -1,10 +1,11 @@
 ---
 id: release-jan-2019
-title: Release Notes January 2019
+title: Qrvey Version 3.10 - Release Date: 2019-01-30
 sidebar_label: January 2019
 ---
 
-## Qrvey 3.10   2019-01-30
+## New Features
+
 ### Admin Portal
 *   **Sharing Model - Deploy Application.** Allows adding servers so they can be used to pull content from a specific application to be shared across servers and to multiple accounts. Admin users can create a content package and decide to share an entire application, or individual ES Live Connection Datasets, or Web Forms, then they can select the destination server and account to share and install the application.
 
@@ -61,7 +62,7 @@ sidebar_label: January 2019
 
 *   **Web Forms - SQL Lookup Field - Branches.** Supporting Branching in Lookup Fields that use SQL Connections. 
 
-### General Tweaks and Bug Fixes
+### **General Tweaks and Bug Fixes**
 
 *   **BigInt column in SQL Server.** Loading Data with primary key. 
 
@@ -80,9 +81,7 @@ sidebar_label: January 2019
 *   **Datasets - Database Connection - Loading Unsaved Data.** When a connection was edited, and the changes were saved users could continue to upload data again. However if the changes were not saved they shouldn't have been able to upload data. The "Load" button was active, which allowed users to "Load" at any time with or without saved changes.
 
 
-### Known Issues
-
-
+### **Known Issues**
 
 *   **Lookup Field - SQL Connection.** When the SQL connection is deleted, and it's being used in a lookup, no error is shown but the lookup field stops working. 
 
