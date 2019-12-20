@@ -4,40 +4,39 @@ title: December 2019
 
 <h2 style="color:#FF8143; margin-top: -10px;">Qrvey Version 4.0</h2>
 
-We wrapped up and released Qrvey V4.0 on December 18th. Some of the highlights of this release are:
+We just wrapped up and released Qrvey V4.0 on December 18th. Here are some of the highlights:
 
 * Machine Learning model definition has been added to the Admin Center.
 
-* Page Builder and Report Builder have several usability enhancements.
+* Page Builder and Report Builder have gotten several usability enhancements.
 
-* Charts can now have filters added at the time of the creation.
+* Charts can now have filters added right at the time of the creation.
 
 <!--truncate-->
 
-For a complete list of new features, enhancements, and fixes see:
-[https://partners.qrvey.com/docs/docs/release-notes/release-dec-2019/](https://partners.qrvey.com/docs/docs/release-notes/release-dec-2019/)
+For a complete list of new features, enhancements, and fixes see our <a href="https://partners.qrvey.com/docs/docs/release-notes/release-dec-2019/"><strong>Release Notes.</strong></a>
 
 <h2 style="color:#FF8143">Unplanned Enhancement</h2>
 
-We have been working on upgrading the internal instance of Elasticsearch from V5 to V7 for almost two months now and are finally ready to release it after careful testing. This change gives you better performance and more reliable data loading.
+We have been working for the past two months on upgrading the internal instance of Elasticsearch from V5 to V7 and, after lots of careful testing, are finally ready to release it! This upgrade gives you better performance as well as more reliable data loading.
 
 <h2 style="color:#FF8143">  New In Documentation </h2>
 
-* Not sure how to get started with creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section on the documentation site for step-by-step guides for real-life scenarios.
+* Are you not sure how to get started when creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section in the Partner Portal for step-by-step guides for real-life scenarios.
 
-* Have pressing questions that you can’t find an answer to in the regular docs? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has asked the same question before and submit your own questions.
+* Do you have pressing questions that you can’t find the answers to in our documentation? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has already asked the same question, or submit your questions so everyone can benefit.
 
-Check the site frequently as we’re adding new content every week.
+Be sure to check the Partner Portal frequently as we continue to add new content every week.
 
 <h2 style="color:#FF8143"> Coming In 2020 </h2>
 
-Being an agile, customer-centric company, we don’t set our roadmap in stone but we know one thing for sure: Our main focus in 2020 will be on ‘making a good thing better’ by improving the usability of our most critical functionalities, which are:
+Being an agile, customer-centric company, we don’t have our entire roadmap set in stone, but we do know one thing for sure: Our main focus in 2020 will be “making a good thing better” by improving the usability of our most critical functionalities, including:
 
 * New and improved data management
 
 * Major improvements to the Page Builder
 
-* Fully redesigned Chart Builder
+* A fully redesigned Chart Builder
 
 * And more...
 
