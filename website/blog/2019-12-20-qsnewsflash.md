@@ -38,7 +38,6 @@ Being an agile, customer-centric company, we don’t have our entire roadmap set
 
 * A fully redesigned Chart Builder
 
-* And more...
 
 <div style="background:#FAFAFA; padding-top:10px;">
     <h2 style="text-align:center; color:#FF8143">
