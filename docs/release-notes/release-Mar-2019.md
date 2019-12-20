@@ -1,10 +1,10 @@
 ---
 id: release-mar-2019
-title: Release Notes March 2019
+title: Qrvey Version 3.12 - Release Date: 2019-03-30
 sidebar_label: March 2019
 ---
 
-## Qrvey 3.12   2019-03-30
+## New Features
 
 ### Admin Portal
 
@@ -54,7 +54,7 @@ sidebar_label: March 2019
 *   **Web Forms - Rich Text Formatting.** RTF option was added to field descriptions and headlines
 
 
-### General Tweaks and Bug Fixes
+### **General Tweaks and Bug Fixes**
 
 *   **Workflow V2 - New Data.** Data tokens were not being replaced with elastic search. A notification error was fixed when uploading data into Elasticsearch. Two messages were being sent: one empty and one with the required information. 
 
@@ -95,9 +95,7 @@ sidebar_label: March 2019
 *   **Database Connections - MS SQL Editing.** When these types of datasets were loaded, and then edited, once the changes were saved the datasets did not work properly. 
 
 
-### Known Issues
-
-
+### **Known Issues**
 
 *   **Lookup Field - SQL Connection.** When the SQL connection is deleted, and it's being used in a lookup, there is no error shown but the lookup field stops working. 
 

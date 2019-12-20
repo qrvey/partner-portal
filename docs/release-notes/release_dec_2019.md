@@ -1,12 +1,12 @@
-## Qrvey 4.0 - 2019-12-18
+---
+id: release-dec-2019
+ title: Qrvey Version 4.0 - Release Date: 2019-12-18
+ sidebar_label: December 2019
+---
 
-
-### **New Features**
-
+## New Features
 
 ### Admin Portal
-
-
 
 *   **ADMIN - 1677 Machine Learning Model Definition:** We added a new feature where a data scientist user will be able to create models to later be used on the Qrvey platform for “Predictions and Categorization”, based on the machine learning technology “AWS Sage Maker”.
 
@@ -17,13 +17,9 @@
 
 *   **AT-5158 - Page Components Order:** We added this new feature to the Page and Report Builders to allow users to arrange elements. Now, an element can be placed on top of another and can be sent to the front or back of the "stack" of elements.
 
-
 ### Analytics
 
-
-
 *   **AN-8555 - Add Filtering in Chart Creation:** We added the ability to create filters for a chart while it’s being created, in order to apply these filters every time the chart is reused in page or report builder.
-
 
 ### **Other Enhancements**
 
@@ -36,8 +32,6 @@
 
 ### **General Tweaks and Bug Fixes**
 
-
-
 *   **QV-9351 - Column Data Types Changes:** On the Admin Center, after using the SQL View from a database connection, all column data types were set as text-label by default. We fixed this setting the column data types based on the content.
 *   **QV-8963 - Spreadsheets - Data Load:** The displayed number of records in a spreadsheet was not always accurate - it is now accurate.
 *   **AN-8446 - Change of Dates Due to Time Zone** For a user in a different time zone than the Qrvey Platform, the date selected to create buckets or filters was changed by the system to a previous date. This has been fixed.
@@ -46,7 +40,6 @@
 *   **AN-8249 - Date Drill Downs - Changing Date Columns:** If a user applied a drill down using a date column and then changed the drill down to use a different date column, the drill down had to be restored before the correct dates were displayed.  This has been fixed.
 *   **AN-7914 - Crosstab - Sorting by Columns:** When applying sorting option on a column in a crosstab chart with multiple levels the sorting is only reflected on the second column and not the rest.   This has been fixed.
 *   **DR-1213 - Manifest: Managing partial files do not update DynamoDB file status:** Managing partial files did not update the DynamoDB file status: When ES did a partial insertion from a file, it rejected the rest, and a partial file was created. The manifest process does not handle partial files - in the DynamoDB table (fileproccesedstatus) if a file is partially generated, it is marked as failed, with status code 206. Once the related partial file is processed, the status of the parent file is not updated, causing the rupture of the manifest upload process. This bug is no longer happening as we removed the use of partial files.
-
 
 ### **Known Issues**
 

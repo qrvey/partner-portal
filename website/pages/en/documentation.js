@@ -21,7 +21,7 @@ class Documentation extends React.Component {
 
     const Categories = () => {
       const categories = [
-        {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-nov-2019'},
+        {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-dec-2019'},
         {name:'Qrvey Composer',path: siteConfig.baseUrl+'docs/ui-docs/basics/logging-in'},
         {name:'Getting Started',path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
         {name:'Administrator Documentation', path: siteConfig.baseUrl+'docs/admin/admin-intro'},

@@ -1,13 +1,12 @@
 ---
 id: release-aug-2019
-title: Release Notes August 2019
+title: Qrvey Version 3.14 - Release Date: 2019-08-09
 sidebar_label: August 2019
 ---
 <div style="text-align: justify">
 
 
-## Qrvey 3.14   2019-08-09
-
+## New Features
 
 ### Admin Portal
 
@@ -56,7 +55,7 @@ sidebar_label: August 2019
 
 *   **Array Lookup - sourceArray should work with sub arrays.** When defining an Array Lookup, it is now possible to use a sub array. The returning value will be the object in the subarray that matches the condition. The lookup up will be done in all records from the parent array. 
 
-### General Tweaks and Bug Fixes 
+### **General Tweaks and Bug Fixes**
 
 *   **Page Builder - Multiseries**. Category label was not visible even when resizing and making a chart bigger. This was fixed. 
 
@@ -76,7 +75,7 @@ sidebar_label: August 2019
 
 *   **Survey - Branches - Dropdown Question.** Changing the answer when the "Jump to" option is enabled was not working properly. This has been fixed.
 
-### Known Issues 
+### **Known Issues**
 
 *   **Table Chart.** Grouping Table Charts by date-week is causing the chart to show as “Not Available”. 
 
@@ -97,4 +96,3 @@ sidebar_label: August 2019
 *   **Web Forms - Deleting Answers.** When user executes a query trying to delete all answers from a web form, the application takes some time to completely delete all of the answers. The response time depends on the size of the web form dataset and the amount of records. 
 
 *   **Web Forms Analytics - Branching.** Branch fields for Lookup are not showing in Tabular View.
-
