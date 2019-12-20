@@ -13,7 +13,7 @@ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-class Index extends React.Component {
+class Documentation extends React.Component {
 
   render() {
     const {config: siteConfig, language = ''} = this.props;
@@ -21,10 +21,11 @@ class Index extends React.Component {
 
     const Categories = () => {
       const categories = [
-        {name:'Documentation',path: siteConfig.baseUrl+'documentation'},
-        {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app'},
-        {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps'},
-        {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro'},
+        {name:'Releases Notes', path: siteConfig.baseUrl+'docs/release-notes/release-nov-2019'},
+        {name:'Qrvey Composer',path: siteConfig.baseUrl+'docs/ui-docs/basics/logging-in'},
+        {name:'Getting Started',path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
+        {name:'Administrator Documentation', path: siteConfig.baseUrl+'docs/admin/admin-intro'},
+        {name:'Developer Documentation', path: siteConfig.baseUrl+'docs/get-started/get-started-architecture'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -52,16 +53,19 @@ class Index extends React.Component {
     const TopFold = () => (
       <div className="flex-container flex-vertical-container">
       <div className="full-row">
-        <h2 className="section-title" >
-        Welcome to Qrvey Partner Portal, your Qrvey knowledgebase
+        <h2 className="main-title" id="main-title">
+        Documentation
         </h2>
+        <h4 className="main-description" id="main-description">
+        Find documentation and setup guides for Qrvey, Data Router and Admin Center
+        </h4>
       </div>
       </div>
     );
     
 
     return (
-      <div className="gray-background" id="home-page">
+      <div className="gray-background" id="documentation-page">
         <SplashContainer siteConfig={siteConfig} language={language} />
         <div className="mainContainer" id="main-container">
         <div className="wrapper">
@@ -73,4 +77,4 @@ class Index extends React.Component {
   }
 }
 
-module.exports = Index;
+module.exports = Documentation;

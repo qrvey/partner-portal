@@ -1,6 +1,8 @@
 ---
-title: Qrvey Version 3.3
+title: November 2019
 ---
+
+<h2 style="color:#FF8143; margin-top: -10px;"> Qrvey Version 3.3 </h2>
 
 We released Qrvey V3.3 this month. The new release has new features, enhancements, and bug fixes, as usual. <br>
 Some of the highlights of this release are:

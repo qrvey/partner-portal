@@ -41,13 +41,21 @@ const siteConfig = {
   headerLinks: [
     {
       href: '',
-      label: 'Documentation',
+      label: 'Docs',
     },
     {
-      href: '/training',
-      label: 'Video Training',
+      href: '/docs/tutorials/first-analytic-app',
+      label: 'Tutorials',
     },
-    { blog: true, label: 'Blog' },
+    {
+      href: '/docs/video-training/analytics/intro-analytics-apps',
+      label: 'Videos',
+    },
+    {
+      href: '/docs/faqs/faqs-intro',
+      label: 'FAQs',
+    },
+    { blog: true, label: 'Newsletters' },
   ],
 
   algolia: {
@@ -56,6 +64,8 @@ const siteConfig = {
     indexName: 'dev_qrvey',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
+
+  blogSidebarTitle: { default: 'Newsletters', all: 'Newsletters' },
 
   // If you have users set above, you add it here:
   users,
@@ -94,8 +104,16 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js','/docs/js/custom.js'],
-
+  scripts: [
+    '/js/user.js',
+  ],
+  footerscripts:[
+    '/js/custom.js',
+    'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
+    'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
+    '/js/firebase.js',
+    '/js/login.js',
+  ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.

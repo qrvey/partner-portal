@@ -25,6 +25,17 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer" id="footer">
+      {/* External scripts */}
+      {this.props.config.footerscripts &&
+          this.props.config.footerscripts.map(function(source, idx) {
+            return (
+              <script
+                type="text/javascript"
+                key={'script' + idx}
+                src={source}
+              />
+            );
+        })}
         <p>Qrvey Inc. © 2019 All Rights Reserved</p>
       </footer>
     );
