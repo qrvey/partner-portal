@@ -4,7 +4,7 @@ title: Introduction to the UI
 sidebar_label: Introduction to the UI
 ---
 
-In this document we’ll show you the basic features of the Qrvey Composer interface, and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout. 
+In this document we’ll show you the basic features of the Qrvey Composer interface and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout: 
 
 ![1_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/2_introduction.png#thumbnail)
 
@@ -13,7 +13,7 @@ Click on the Qrvey logo in the upper-left corner whenever you want to get back t
 ![2_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/1_introduction.png#thumbnail-40)
 
 ## Applications
-Your Qrvey projects are called “Applications”, and are organized on the startup page based on how recently you’ve accessed them. To create a new application, click **Create Application**
+Your Qrvey projects are called _Applications_, and are organized on the startup page based on how recently you’ve accessed them. To create a new application, click **Create Application**.
  
 ![3_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/3_introduction.png#thumbnail-20)
 
@@ -26,7 +26,7 @@ The **Activity Log** tab is where you’ll find a history of activity surroundin
 ![5_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/5_introduction.png#thumbnail)
 
 ## Inside an Application
-Once inside an application, you’ll find all of the major components in the left-hand menu as shown below. 
+Once inside an application, you’ll find all of the major components in the left-hand menu, as shown below. 
 
 ![6_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/6_introduction.png#thumbnail-40)
 
@@ -38,7 +38,7 @@ The Data component allows you to:
 * define new datasets by creating web forms.
 * link datasets together to form new virtual datasets.
 * connect to external databases.
-* analyze datasets by creating aggregates and or visualisations.
+* analyze datasets by creating aggregates and or visualizations.
 * delete datasets and connections.
 
 ### Report Builder
@@ -57,16 +57,16 @@ The Page Builder component allows you to:
 * configure page navigation.
 * manage application users and security.
 
-Note, web pages can incorporate outputs from other components - such as metrics, charts, reports.
+Note: Web pages can incorporate outputs from other components - such as metrics, charts, or reports.
 
 ### Workflows
 
 The Workflows component allows you to:
 
-* build workflows, ie automated business processes, using a drag and drop flowchart tool.
-* configure workflows to run on a set schedule, in response to a webhook, or in response to a data change event.
+* build workflows, i.e. automated business processes, using a drag and drop flowchart tool.
+* configure workflows to run on a set schedule in response to a webhook or in response to a data change event.
 
-Note, Workflows can incorporate outputs from other components - such as metrics, charts, reports.
+Note: Workflows can incorporate outputs from other components - such as metrics, charts, or reports.
 
 ### Settings
 
@@ -74,7 +74,7 @@ The Settings component allows you to:
 
 * edit your application’s name.
 * customize the application's appearance.
-* upload and manage any supporting files it may require. 
+* upload and manage any supporting files the application may require. 
 
 Depending on which area of the application you’re using, you will find additional options in the set of blue tabs, which are displayed across the top of the application. The orange line shows you the active tab. 
 
