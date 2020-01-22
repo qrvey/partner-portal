@@ -6,11 +6,12 @@
 image: node:10.15.3
 
 pipelines:
-  default:
-    - step:
-        caches:
-          - node
-        script: # Modify the commands below to build your repository.
+  pull-requests:
+    '**':
+     - step:
+        script:
+          - node -v
+          - cd website
           - npm install
           - npm run build
         artifacts:
