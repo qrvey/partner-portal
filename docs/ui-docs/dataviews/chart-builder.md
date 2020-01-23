@@ -6,7 +6,7 @@ sidebar_label: Chart Builder
 
 <div style="text-align: justify">
 
-The Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends that you might have otherwise missed. In this article, we will walk you through the process of creating a custom chart.
+The Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.
 
 ## Creating a Chart
 Inside your application, navigate to **Data**, select the form or dataset you’d like to analyze, and choose the **Analyze** tab, followed by the **Custom View.**
@@ -57,12 +57,12 @@ If you choose to add a trend line, you can then select the type of trend you’d
 ![11_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/11_chart-builder.png#thumbnail-80)
 
 ### Reference Line
-If you choose to add a reference line, you can select from a number of options, including which axis you’d like the reference to appear on, whether that line should be fixed or dynamic in nature, and provide a label for the line itself.
+If you choose to add a reference line, you can choose from a number of options, including which axis you’d like the reference to appear on, whether that line should be fixed or dynamic in nature. You can also provide a label for the line itself.
 
 ![12_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12_chart-builder.png#thumbnail-80)
 
 ### Combo Chart
-If you choose to create a combo chart, you will be asked to provide the column for your additional data, along with the chart type, axis and label. In the example below, we’ve added Units as a line chart along the X-Axis. You can add even more columns to this chart by clicking on the **+** icon.
+If you choose to create a combo chart, you will be asked to provide the column for your additional data, along with the chart type, axis and label. In the example below, we’ve added Units as a line chart along the X-Axis. You can add even more columns to this chart by clicking on the ' **+** ' icon.
 
 ![13_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13_chart-builder.png#thumbnail-80)
 

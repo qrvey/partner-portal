@@ -16,11 +16,11 @@ Formulas can be used throughout the Qrvey platform to perform complex transforma
 **Operators** - Symbols that denote an operation.
 
 ## Syntax
-**Fields/Columns** - use [] around the field or column name, e.g. [Sales].
+**Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].
 
 **Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).
 
-**Operators** - the following table shows the available operators. Note that normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five ninths of [Temperature].
+**Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five ninths of [Temperature].
 
 | Symbol | Operation |
 |---|---|
@@ -75,4 +75,4 @@ TABLEAU example with multiple nested functions _ZN(SUM([Order Quantity])) - WIND
 
 * **Text:** [Elasticsearch Text API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-String)
 
-* **Date:** Supported functions include: now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull, and isNullDate.
+* **Date:** Supported functions include now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull, and isNullDate.

@@ -8,7 +8,7 @@ sidebar_label: Metric View
 
 Metrics are a powerful feature that allows you to keep an eye on your most important data at a glance. It can be used by itself or it can be used as a part of a page, report, dashboard, or workflow. 
 
-With Metric Builder, you can build the three different gauges below 
+With Metric Builder, you can build the three different gauges seen below:
 
 ### Indicator
 ![1_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/1_metric-view.png#thumbnail-60)
@@ -32,7 +32,7 @@ The **Metric** tab is where you’ll define the data that makes up your metric. 
 
 ![6_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/6_metric-view.png#thumbnail-60)
 
-In the **Thresholds** tab, you can choose to provide color-coded ranges for your data. Typically, people use three thresholds to indicate good, bad and in-between ranges for their metrics. You can provide each threshold a name and assign it a color.
+In the **Thresholds** tab, you can choose to provide color-coded ranges for your data. Typically, people use three thresholds to indicate good, bad and in-between ranges for their metrics. You can provide each threshold with a name and assign it a color.
 
 ![7_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/7_metric-view.png#thumbnail-60)
 
