@@ -20,7 +20,7 @@ With Metric Builder, you can build the three different gauges seen below:
 ![3_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/3_metric-view.png#thumbnail-60)
 
 # Building a Metric
-To build your first metric, enter your application, click the **Analyze** tab of the dataset you’d like to use and select the Metric View, as shown below. You can then click **Add Metric** to begin.
+To build your first metric, enter your application, click the **Analyze** tab of the dataset you’d like to use and select the Metric View as shown below. You can then click **Add Metric** to begin.
 
 ![4_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/4_metric-view.png#thumbnail)
 

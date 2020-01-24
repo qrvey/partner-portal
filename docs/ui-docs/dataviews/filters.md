@@ -8,7 +8,7 @@ sidebar_label: Filtering Data
 
 Filters allow you to drill down into your data by selecting only rows that meet certain criteria. Filters can be applied from a number of different places within the analysis areas of Qrvey.  You will find the Filter icon in every analytic view.  
 
-In Tabular view just look for the **Filter** icon, as shown below. 
+In Tabular view just look for the **Filter** icon as shown below. 
 
 ![1_filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.1_filters/1_filters.png#thumbnail-60)
 
@@ -18,7 +18,7 @@ In Summary, Custom, and Metric views, filters can be applied from any individual
 
 
 ## Adding a Filter
-After clicking on the **Filter** icon the **Filters** window will appear, as shown below.  
+After clicking on the **Filter** icon the **Filters** window will appear as shown below.  
 
 ![6_filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.1_filters/6_filters.png#thumbnail-80)
 

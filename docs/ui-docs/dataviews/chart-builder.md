@@ -33,7 +33,7 @@ When you first enter the Chart Builder, you’ll find three tabs: **Values**, **
 In the **Values** tab, you can name your chart, and then assign your category and value columns from the drop-down menus. You can provide custom labels for any of the columns. Finally, you can select an aggregate value for your data. Once you have assigned all of the required values, a sample of your chart will appear on the right.
 ![5_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5_chart-builder.png#thumbnail)
 
-If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to, as shown below.
+If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below.
 
 ![6_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6_chart-builder.png#thumbnail-60)
 
