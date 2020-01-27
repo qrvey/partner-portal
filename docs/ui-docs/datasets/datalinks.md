@@ -6,7 +6,7 @@ sidebar_label: Data Links
 
 <div style="text-align: justify">
 
-**Data Links** allow you to combine multiple datasets into a new single dataset for analysis and automation. This article shows the steps for linking an Elasticsearch dataset with a web form dataset. The same process can be used to link any combination of datasets inside Qrvey Composer.
+**Data Links** allow you to combine multiple datasets into a new single dataset for analysis and automation. This article shows the steps for linking an Elasticsearch dataset with a web form dataset. The same process can be used to link any combination of datasets within Qrvey Composer.
 
 To begin, enter the **Data** section of your application. 
 
@@ -20,7 +20,7 @@ Then click **Add Link**.
 
 ![3_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/3_datalinks.png#thumbnail-40)
 
-Give your data link a name and a description so you can easily identify it later and click **Create**.
+Give your data link a name and a description so you can easily identify it later, and click **Create**.
 
 ![4_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/4_datalinks.png#thumbnail-60)
 
@@ -41,7 +41,7 @@ Once completed, your data link should look similar to the example below. If you�
 ![8_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/8_datalinks.png#thumbnail)
 
 ## Using Data Links
-Once your data link has been added you’ll see linked data columns appear in your custom charts and automations. In the example below the links dataset, **Purchase Feedback**, appears next to the source dataset **Purchase Data**. Columns from both datasets can be used inside this custom chart.
+Once your data link has been added, you’ll see linked data columns appear in your custom charts and automations. In the example below the linked dataset, **Purchase Feedback**, appears next to the source dataset **Purchase Data**. Columns from both datasets can be used inside this custom chart.
 
 ![9_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/9_datalinks.png#thumbnail-60)
 
