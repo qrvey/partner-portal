@@ -6,15 +6,15 @@ sidebar_label: Actions - Data
 
 <div style="text-align: justify">
 
-In this article we’ll review all of the Flow actions available under **Data Actions.** In general, “Record” functions are for web form and uploaded CSV  datasets, while “Data” functions work with connected datasources such as Elasticsearch, SQL and Oracle databases.
+In this article, we’ll review all of the Flow actions available under **Data Actions.** In general, “Record” functions are for web forms and uploaded CSV  datasets, while “Data” functions work with connected datasources such as Elasticsearch, SQL and Oracle databases.
 
 ![1_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/1_data-actions.png#thumbnail-40)
 
 
 ## Search Record
-Use the **Search Record** action to lookup data based on the criteria you select. Use the branch options to perform actions based on the number of records found. 
+Use the **Search Record** action to look up data based on the criteria you select. Use the branch options to perform actions based on the number of records found. 
 
-To begin, select the type and name of the dataset to search, then the field(s) and value(s) to search for.
+First, select the type and name of the dataset to search, then choose the field(s) and value(s) you want to search for.
 
 ![2_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/2_data-actions.png#thumbnail)
 
@@ -25,7 +25,7 @@ Underneath the search box, you’ll see three branch options where you can place
 ## Updating/Deleting Records
 Once you have searched and found one or more records in your dataset, you can use the  **Update Record** and **Delete Record** actions to take appropriate actions. 
 
->**Note:** These actions can only be used on Search action branch options corresponding to one or multiple records are found. 
+>**Note:** These actions can only be used in Search action branch options corresponding to one or multiple found records. 
 
 ![3_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/3_data-actions.png#thumbnail)
 
@@ -35,7 +35,7 @@ The **Delete Record** action deletes a previously located record(s).
 
 
 ## Insert Record
-Use the **Insert Record** action to add a new record to an existing dataset.  Just select the type and name of the dataset and select the values for each field or column. 
+Use the **Insert Record** action to add a new record to an existing dataset.  Just select the type and name of the dataset, and select the values for each field or column. 
 
 ![5_data-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_data-actions/5_data-actions.png#thumbnail)
 
