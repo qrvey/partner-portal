@@ -4,7 +4,7 @@ title: January 2020
 
 <h2 style="color:#FF8143; margin-top: -10px;">New Year, New Website</h2>
 
-Qrvey updated our website earlier this month. In addition to a whole new look, you’ll also find all-new messaging that better explains who we are, what we do and all of the many ways you can use the Qrvey platform for your analytics needs. We also have additional resources to help spread the word about everything Qrvey can do. 
+Qrvey updated the website earlier this month. In addition to a whole new look, you’ll also find all-new messaging that better explains who we are, what we do and all of the many ways you can use the Qrvey platform for your analytics needs. We also have additional resources to help spread the word about everything Qrvey can do. 
 
 Be sure to <a href="https://qrvey.com/"><strong>check it out</strong></a> and let us know what you think.
 
@@ -14,7 +14,7 @@ Be sure to <a href="https://qrvey.com/"><strong>check it out</strong></a> and le
 
 A new link has been added to the Partner Portal to gather your feedback. Let us know what you would like to see in the Portal and we will make your suggestions our priority. 
 
-<h2 style="color:#FF8143">Enhancement In the Portal</h2>
+<h2 style="color:#FF8143">Enhancement Of the Portal</h2>
 
 We held an internal idea session and gathered ideas around making the Partner Portal more useful. The three ideas with most votes were:
 
@@ -22,7 +22,7 @@ We held an internal idea session and gathered ideas around making the Partner Po
 
 * Include a link to JSD in the Portal
 
-* Get user feedback on articles by adding a “Was this helpful” question to each
+* Get user feedback in articles by adding a “Was this helpful” question to each
 
 These improvements are in the works and will take effect in the near future.
 
@@ -38,5 +38,5 @@ We have more content in the <a href="https://partners.qrvey.com/docs/tutorials/f
     <strong> Don’t let the “Dark Data” take over your business! </strong>
     <p>
     <br>
-    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics2.jpg" style="margin:auto; display:block;" width="500" />
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics3.jpg" style="margin:auto; display:block;" width="500" />
 <div>
