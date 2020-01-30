@@ -19,7 +19,7 @@ Workflows are built from the following types of components:
 
  **Data Actions** - actions which access or update data.
 
-For example, you can create a simple Flow that whenever a new survey response is received (*trigger*), you are sent an alert email (*action*), or maybe you prefer to choose sending a follow-up survey (*action*) when a new response is received (*trigger*), but only if the respondent is from the U.S. (*condition*). These are just two basic examples of Flows in action. The amazing variety of business use cases, which can be implemented through Flows, are limited only by your imagination.
+For example, you can create a simple Flow so that whenever a new survey response is received (*trigger*), you are sent an alert email (*action*), or maybe you prefer to choose sending a follow-up survey (*action*) when a new response is received (*trigger*), but only if the respondent is from the U.S. (*condition*). These are just two basic examples of Flows in action. The amazing variety of business use cases, which can be implemented through Flows, are limited only by your imagination.
 
 ## Creating a Flow
 To create a Flow, choose **Flows** from the left-hand menu and then click the **Create Flow** button.
