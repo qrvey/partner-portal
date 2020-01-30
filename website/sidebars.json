@@ -208,7 +208,8 @@
   },
   "faqs":{
     "FAQs": [
-      "faqs/faqs-intro"
+      "faqs/faqs-intro",
+      "faqs/ask-us"
     ]
   },
   "video-training":{
