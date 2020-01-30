@@ -4,7 +4,7 @@ title: January 2020
 
 <h2 style="color:#FF8143; margin-top: -10px;">New Year, New Website</h2>
 
-Qrvey updated the website earlier this month. In addition to a whole new look, you’ll also find all-new messaging that better explains who we are, what we do and all of the many ways you can use the Qrvey platform for your analytics needs. We also have additional resources to help spread the word about everything Qrvey can do. 
+Qrvey’s website has been updated earlier this month. In addition to a whole new look, you’ll also find all-new messaging that better explains who we are, what we do and all of the many ways you can use the Qrvey platform for your analytics needs. We also have additional resources to help spread the word about everything Qrvey can do. 
 
 Be sure to <a href="https://qrvey.com/"><strong>check it out</strong></a> and let us know what you think.
 
