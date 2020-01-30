@@ -36,7 +36,7 @@ class Footer extends React.Component {
               />
             );
         })}
-        <p>Qrvey Inc. © 2019 All Rights Reserved</p>
+        <p>Qrvey Inc. © 2020 All Rights Reserved</p>
       </footer>
     );
   }
