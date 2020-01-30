@@ -10,7 +10,7 @@ The **Connectors** tab is used to access the **Connectors** area, where you can 
 
 ![1_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/1_connectors.png#thumbnail)
 
-When you enter the **Connectors** area you will see a list of existing data sources - if you have any. These sources may have been created by you or a Qrvey administrator. The **Source** column will display where data sources originated from.  Use the search box to find a specific data source if you have many connections. 
+When you enter the **Connectors** area you will see a list of existing data sources – if you have any. These sources may have been created by you or a Qrvey administrator. The **Source** column will display where data sources originated from.  Use the search box to find a specific data source if you have many connections. 
 
 ![2_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/2_connectors.png#thumbnail)
 

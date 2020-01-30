@@ -203,12 +203,14 @@
   },
   "tutorials":{
     "Tutorials": [
-      "tutorials/first-analytic-app"
+      "tutorials/first-analytic-app",
+      "tutorials/create-charts"
     ]
   },
   "faqs":{
     "FAQs": [
-      "faqs/faqs-intro"
+      "faqs/faqs-intro",
+      "faqs/ask-us"
     ]
   },
   "video-training":{

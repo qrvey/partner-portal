@@ -6,7 +6,7 @@ sidebar_label: Profile/Account
 
 <div style="text-align: justify">
 
-In this document we’ll discuss managing your user profile inside Qrvey Composer. Information contained in your profile will be used within the application where needed.
+In this document we’ll discuss managing your user profile in Qrvey Composer. Information contained in your profile will be used within the application where needed.
 
 To access your profile, select **Profile/Account** from the arrow menu in the upper right-hand corner of your browser page. 
 
