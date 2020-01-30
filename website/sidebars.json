@@ -203,7 +203,8 @@
   },
   "tutorials":{
     "Tutorials": [
-      "tutorials/first-analytic-app"
+      "tutorials/first-analytic-app",
+      "tutorials/create-charts"
     ]
   },
   "faqs":{
