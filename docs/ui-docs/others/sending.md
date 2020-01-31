@@ -8,18 +8,18 @@ sidebar_label: Sending Applications
 
 You can package up your entire application, including any data you’ve added or collected, and send it to another Qrvey user so that they can either use the app themselves or build upon it. 
 
-In this article we’ll review the steps to both sending and receiving an application. 
+In this article, we’ll review the steps to both, sending and receiving an application. 
 
 ## Sending an Application
 To send an app to another user, start by navigating to the application dashboard and select **Send** from the drop-down menu in the lower-right corner.
 
 ![1_sending](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/1_sending.png#thumbnail-80)
 
-Next, select the email address of the Qrvey user you’d like to send your application to.
+Next, select the email address of the Qrvey user you'd like to send your application to.
 
-Note that your recipient(s) must have an active account with the same Qrvey instance in order to receive your application.  If your recipients do not have a Qrvey account, they must sign up before attempting to send them an application.
+Note, that your recipient(s) must have an active account with the same Qrvey instance in order to receive your application.  If your recipients do not have a Qrvey account, they must sign up before attempting to send them an application.
 
-You may modify the application’s name and description if you’d like, or just use the app’s existing information. 
+You can modify the application's name and description if you'd like, or just use the app's existing information. 
 
 ![2_sending](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/2_sending.png#thumbnail-80)
 
@@ -38,7 +38,7 @@ Click on the application name to see more details, including who sent you the ap
 
 ![5_sending](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/5_sending.png#thumbnail-60)
 
-Depending on the size of the application, it may take a few minutes for the application to finish installing. Once it’s complete, the green notification below will be displayed to let you know that the application is ready to begin being used. Once installed, the application will look and behave just like all of your other applications. 
+Depending on the size of the application, it may take a few minutes for the application to finish installing it. Once it’s complete, the green notification below will be displayed to let you know that the application is ready to begin being used. Once installed, the application will look and behave just like your other applications. 
 
 ![7_sending](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/7_sending.png#thumbnail-40)
 
