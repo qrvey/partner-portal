@@ -8,7 +8,7 @@ sidebar_label: Sending Applications
 
 You can package up your entire application, including any data you’ve added or collected, and send it to another Qrvey user so that they can either use the app themselves or build upon it. 
 
-In this article, we’ll review the steps to both, sending and receiving an application. 
+In this article, we’ll review the steps needed for both sending, and receiving, an application. 
 
 ## Sending an Application
 To send an app to another user, start by navigating to the application dashboard and select **Send** from the drop-down menu in the lower-right corner.
