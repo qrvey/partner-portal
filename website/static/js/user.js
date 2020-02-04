@@ -37,6 +37,7 @@ function getUserOnLocalStorage(){
 function isAllowedPath(path) {
     const blackList = [
         {path:'/docs/get-started/get-started-architecture', exact: true},
+        {path:'/docs/get-started/get-started-architecture/', exact: true},
         {path:'/docs/embedding/', exact: false},
         {path:'/docs/data-router/', exact: false},
     ];
