@@ -2,7 +2,7 @@ const loginEvent = new Event('LOGIN_EVENT');
 let errorDisplayText = null;
 const pathname = window.location.pathname;
 
-const blackList = [
+const loginList = [
     '/login',
     '/login/',
     '/forgot-password',
@@ -12,12 +12,13 @@ const blackList = [
 ];
 
 firebase.auth().onAuthStateChanged((user) => {
+    console.log(user);
     updateUser(user);
 });
 
 
-if(blackList.find(path => path === pathname)){
-    removeSearchBar();
+if(loginList.find(path => path === pathname)){
+    // removeSearchBar();
     if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
         listenForgotPasswordSubmit();
     }
@@ -80,7 +81,7 @@ function listenForgotPasswordSubmit(){
 
 function logOut() {
     // deleteCooke(COOKIE_USER);
-    // window.location.href = '/login';
+    window.location.href = '/login';
     firebase.auth().signOut();
     localStorage.removeItem(COOKIE_USER);
 }

@@ -35,18 +35,18 @@ function getUserOnLocalStorage(){
 }
 
 function isAllowedPath(path) {
-    const allowedPath = [
-        '/login',
-        '/login/',
-        '/forgot-password',
-        '/forgot-password/',
-        '/support',
-        '/support/'
+    const blackList = [
+        {path:'/docs/get-started/get-started-architecture', exact: true},
+        {path:'/docs/embedding/', exact: false},
+        {path:'/docs/data-router/', exact: false},
     ];
-    let allowed = false;
-    allowedPath.forEach((allowPath) => {
-        if (allowPath === path){
-            allowed = true;
+    let allowed = true;
+    blackList.forEach((route) => {
+        if (route.exact && (route.path === path)){
+            allowed = false;
+        }
+        if (!route.exact && (path.search(route.path) > -1)){
+            allowed = false;
         }
     });
     return allowed;
