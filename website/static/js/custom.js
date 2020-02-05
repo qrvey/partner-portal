@@ -52,8 +52,9 @@ if (videoContanier){
 console.log('user', currentUser);
 
 setTimeout(() => {
-    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + CURRENT_PAGE)) {
-        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+    if (!getCookie(PAGE + CURRENT_PAGE)) {
+        console.log('activity send', CURRENT_PAGE);
+        postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
     } else {
         console.log('Activity already sent it');
     }
@@ -71,8 +72,8 @@ function checkVideoIsPlayed(videoContanier){
                 videoId = value.replace('wistia_async_', '');
             }
         });
-        console.log(videoId);
-        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
+        console.log('activity send',videoId);
+        postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
     }
 }
 

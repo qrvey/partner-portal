@@ -3,7 +3,10 @@
 // NOT MANIPULATE DOM HERE 
 // AUTH VALIDATOR ON THE HEADER TO QUICKLY LOADING
 const COOKIE_USER = 'partners_user';
+const REDIRECT_URL = 'history';
+const LOG_OUT_EVENT = 'logout';
 let currentUser = null;
+let logOutEvent = false;
 
 currentUser = getUserOnLocalStorage();
 updateUser(currentUser);
@@ -17,6 +20,11 @@ function updateUser(user) {
         // User is signed out.
         currentUser = null;
         if (!isAllowedPath(window.location.pathname)) {
+            if(!logOutEvent){
+                console.log('redirect saved');
+                sessionStorage.setItem(REDIRECT_URL, window.location.pathname);
+            }
+            logOutEvent = false;
             window.location.href = '/login';
         }
     }

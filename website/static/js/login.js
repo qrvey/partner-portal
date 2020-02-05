@@ -36,7 +36,13 @@ function loginAttempt(email, password){
             email: user.email
         }
         updateUser(currentUser);
-        window.location.href = '/';
+        const lastUrl = sessionStorage.getItem(REDIRECT_URL);
+        if(lastUrl){
+            sessionStorage.removeItem(REDIRECT_URL);
+            window.location.href = lastUrl;
+        } else {
+            window.location.href = '/';
+        }
     })
     .catch((error) => {
         // Handle Errors here.
@@ -84,6 +90,7 @@ function logOut() {
     window.location.href = '/login';
     firebase.auth().signOut();
     localStorage.removeItem(COOKIE_USER);
+    logOutEvent = true;
 }
 
 function removeLogOutButton() {
