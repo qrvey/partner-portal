@@ -36,8 +36,11 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
 //////////
 /// INIT APP
 
-// Add partner name to logo
+// Add partner name to logo and log button
 insertParternsLogo();
+insertLogButtonToNav();
+// ADD DROPDOWN ITEM
+addDropdownItem();
 // Check title document to save it 
 TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
 // Check if this page contains a video
@@ -47,14 +50,11 @@ if (videoContanier){
 }
 // CHECK IS THE USER IS LOGGED IN
 console.log('user', currentUser);
-if(currentUser){
-    insertLogOutToNav();
-    highlightDocNavItem();
-}
 
 setTimeout(() => {
-    if (!!currentUser && !!currentUser.userName && !getCookie(PAGE + CURRENT_PAGE)) {
-        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+    if (!getCookie(PAGE + CURRENT_PAGE)) {
+        console.log('activity send', CURRENT_PAGE);
+        postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
     } else {
         console.log('Activity already sent it');
     }
@@ -72,8 +72,8 @@ function checkVideoIsPlayed(videoContanier){
                 videoId = value.replace('wistia_async_', '');
             }
         });
-        console.log(videoId);
-        postActivy(new Activity(currentUser.userName, CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
+        console.log('activity send',videoId);
+        postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
     }
 }
 
@@ -143,7 +143,7 @@ function postActivy(newActivity) {
 })();
 
 
-function insertLogOutToNav() {
+function insertLogButtonToNav() {
     // const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
     /*
     navItems.forEach(element => {
@@ -155,7 +155,11 @@ function insertLogOutToNav() {
     });
     */
     const navBar = document.querySelector('ul.nav-site.nav-site-internal');
-    navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
+    if(currentUser){
+        navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
+    } else {
+        navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" href="/login">Log In</a></li>`);
+    }
 }
 
 function insertParternsLogo() {
@@ -163,7 +167,7 @@ function insertParternsLogo() {
     navbar.innerHTML = '<strong>PARTNER</strong><br>PORTAL';
 }
 
-function highlightDocNavItem() {
+function addDropdownItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
     navItems.forEach(element => {
         if (element.innerText == 'Docs') {
