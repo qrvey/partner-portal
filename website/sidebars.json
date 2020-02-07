@@ -223,15 +223,6 @@
       "video-training/analytics/metrics",
       "video-training/analytics/automation"
     ],
-    "Data Router":[
-      "video-training/datarouter/intro-datarouter",
-      "video-training/datarouter/tools-api",
-      "video-training/datarouter/metadata",
-      "video-training/datarouter/data",
-      "video-training/datarouter/transformations",
-      "video-training/datarouter/demo",
-      "video-training/datarouter/advanced-functions"
-    ],
     "Admin Center":[
       "video-training/admin-center/intro-admin-center"
     ]
