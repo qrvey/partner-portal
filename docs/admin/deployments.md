@@ -8,7 +8,7 @@ sidebar_label: Deployments
 
 ## Servers
 
-In this section, admins can add different servers from which they can pull accounts and content, or servers that can also be used as destinations when sharing an application. To add a server the Host URL and API Key are required. Servers can be managed and edited from this section. 
+In this section, admins can add different servers from which they can pull accounts and content or servers that can also be used as destinations when sharing an application. To add a server, the Host URL and API Key are required. Servers can be managed and edited from this section. 
 
 When adding servers, admins can create replacements for all of the Databases and Elasticsearch Indexes. When sharing Datasets, the connection details will be replaced on the recipient side to show the data for the specified database or ES index in the client's server. For Elasticsearch, the URL and Index on the receiving end need to be specified. The Host, Database, User, Password, Table and Schema are needed for Databases. Once replacements have been added to servers, they become available for use on the releases section.
 
