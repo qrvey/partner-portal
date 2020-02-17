@@ -18,7 +18,7 @@ This is the place where Admins can create and manage everything related to Metad
 
 When creating a Metadata, Admins can start defining the column mapping. They can indicate column names, column types as well as "identifier columns" from the data. Metadata Builder will let Admins load a data sample so the Metadata Creator can create the column mapping automatically.
 
-After defining the columns, Admins can create simple and complex transformations, all from UI. They can create new columns depending on the selected transformation or simply modify the current columns.
+After defining the columns, Admins can create simple and complex transformations, all from the UI. They can create new columns depending on the selected transformation or simply modify the current columns.
 
 Admins can test the Metadata they are defining by sending some data, and validating consistency and the result of transformations.
 
