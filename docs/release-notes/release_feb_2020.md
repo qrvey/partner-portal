@@ -44,7 +44,6 @@ sidebar_label: February 2020
 
 * **ADMIN-1928 - Content Deployment - Share Spreadsheets:** We are not currently supporting the sharing of CSVs data in application sharing. 
 * **AN-8296 - Crosstab Grouped Total:** When there are more than 25 max data points shown, the grouped totals are calculated only for the top 25 max data points. 
-* **AN-6668 - Metrics Time Period - Quarter:** Count and Distinct Count are not working correctly for some field types used in Web Forms such as Signature, Word Expression Multiselection, Address.
 * **AN-8189 - Crosstab - Null Values Displayed:** When crosstab charts are created using multiple levels of columns and values and these columns are expanded, cells are shown empty instead of displaying the values that exist in the data.
 * **AT-5218 - Workflows - If condition - Drop area gets stuck:** The drop area gets stuck when the action is moved from “if” to “else”, it is happening when the user moves the card several times.
 * **AN-6668 - Metric Builder - Data doesn't count correctly on text data types:** Count and Distinct Count are not working correctly for some field types used in Web Forms such as Signature, Word Expression Multiselection, Address.
