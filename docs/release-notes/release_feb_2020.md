@@ -3,8 +3,9 @@ id: release-feb-2020
 title: Qrvey Version 4.1
 sidebar_label: February 2020
 ---
+<div style="text-align: justify">
 Release Date: 2020-02-18
- 
+
 ## New Features
 
 ### Application Building
