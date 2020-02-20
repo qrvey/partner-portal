@@ -185,7 +185,7 @@ function toggleSubNav(element) {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown flex" id="navbar-item-dropdown"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-dec-2019">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-feb-2020">Releases Notes</a>
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
                         </div>  
                         <div class="column">

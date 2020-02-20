@@ -1,9 +1,11 @@
 ---
 id: release-jul-2019
-title: Qrvey Version 3.13 - Release Date: 2019-07-12
+title: Qrvey Version 3.13
 sidebar_label: July 2019
 ---
+<div style="text-align: justify">
 
+Release Date: 2019-07-12
 ## New Features
 
 ### Admin Portal
