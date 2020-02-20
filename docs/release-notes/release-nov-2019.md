@@ -1,9 +1,11 @@
 ---
 id: release-nov-2019
-title: Qrvey Version 3.3 - Release Date: 2019-11-13
+title: Qrvey Version 3.3
 sidebar_label: November 2019
 ---
+<div style="text-align: justify">
 
+Release Date: 2019-11-13
 ## New Features
 
 

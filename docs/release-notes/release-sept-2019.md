@@ -1,9 +1,11 @@
 ---
 id: release-sep-2019
-title: Qrvey Version 3.2 - Release Date: 2019-09-12
+title: Qrvey Version 3.2
 sidebar_label: September 2019
 ---
+<div style="text-align: justify">
 
+Release Date: 2019-09-12
 ## New Features
 
 ### Admin Portal

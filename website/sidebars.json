@@ -190,6 +190,9 @@
     ]
   },
   "release-notes": {
+    "Release Notes 2020": [
+      "release-notes/release-feb-2020"
+    ],
     "Release Notes 2019": [
       "release-notes/release-dec-2019",
       "release-notes/release-nov-2019",
