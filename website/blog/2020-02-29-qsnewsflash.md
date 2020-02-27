@@ -24,7 +24,7 @@ This is a good opportunity to see these features in action and find out how they
 
 Our next release, currently scheduled for the end of March, will include groundbreaking changes and enhancements that have been in the works for a while now. 
 
-**** Spoiler alert! **** 
+<strong>**** Spoiler alert! ****</strong> 
 
 Stay tuned for a whole new Chart Builder and Data Prep experience!
 
@@ -36,8 +36,9 @@ Check it out <a href="https://partners.qrvey.com///"> <strong> here </strong> </
 
 <h2 style="color:#FF8143"> Love Is in the Air – and the Same Goes for Pollution</h2>
 
-
-
+<div>
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics_february.jpg" style="margin:auto; display:block;" width="500" />
+<div>
 
 
 
