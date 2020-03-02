@@ -13,12 +13,12 @@ Some of the highlights of this release are:
 * Ability to use formulas in bucketing, grouping, and drill-downs.
 
  
-A complete list of these enhancements can be found on the <a href="https://partners.qrvey.com/docs/release-notes/release-feb-2020//"> <strong> Partner Portal </strong> </a> site.
+A complete list of these enhancements can be found on the <a href="https://partners.qrvey.com/docs/release-notes/release-feb-2020/"> <strong> Partner Portal </strong> </a> site.
 
 <h2 style="color:#FF8143"> Our First Customer Update Webinar</h2>
 
 We will have a webinar on April 16th to update everyone on the most important features that were released in 2020 and to talk about the plans on the roadmap for the rest of this year. 
-This is a good opportunity to see these features in action and find out how they can help you. Make sure to sign up <a href=" "> <strong> here </strong> </a>. 
+This is a good opportunity to see these features in action and find out how they can help you. Make sure to sign up <a href="https://event.webinarjam.com/register/qy6zxt8"> <strong> here </strong> </a>. 
  
 <h2 style="color:#FF8143"> Major Enhancements Coming in March</h2>
 
