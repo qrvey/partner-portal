@@ -18,7 +18,7 @@ A complete list of these enhancements can be found on the <a href="https://partn
 <h2 style="color:#FF8143"> Our First Customer Update Webinar</h2>
 
 We will have a webinar on April 16th to update everyone on the most important features that were released in 2020 and to talk about the plans on the roadmap for the rest of this year. 
-This is a good opportunity to see these features in action and find out how they can help you. Make sure to sign up <a href="https://event.webinarjam.com/register/qy6zxt8"> <strong> here </strong> </a>. 
+This is a good opportunity to see these features in action and find out how they can help you. Make sure to sign up <a href="https://register.gotowebinar.com/register/2826860193465570061"> <strong> here </strong> </a>. 
  
 <h2 style="color:#FF8143"> Major Enhancements Coming in March</h2>
 
