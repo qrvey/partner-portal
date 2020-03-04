@@ -189,10 +189,10 @@ function outsiteClickDropdown(e){
 
 function toggleSubNav(element) {
     if (isDesktop) {
+        element.classList.toggle('active');
         if(element.classList.contains('active')){
             document.body.addEventListener('click', outsiteClickDropdown);
         }
-        element.classList.toggle('active');
     } else {
         window.location.href = '/documentation';
     }

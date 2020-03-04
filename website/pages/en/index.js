@@ -21,10 +21,15 @@ class Index extends React.Component {
 
     const Categories = () => {
       const categories = [
-        {name:'Documentation',path: siteConfig.baseUrl+'documentation'},
-        {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app'},
-        {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps'},
-        {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro'},
+        {name:'Documentation',path: siteConfig.baseUrl+'documentation', iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`, 
+        topLinks: [
+          { link: siteConfig.baseUrl+'docs/release-notes/release-feb-2020', name: 'Release Notes' },
+          { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
+          { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
+        ]},
+        {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', topLinks: [], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
+        {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps', topLinks: [], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
+        {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
@@ -32,37 +37,49 @@ class Index extends React.Component {
       </div>)
     };
 
-    const Category = (props) => (
-      <a className="card-categories" href={props.value.path}>
-        <h1 className="section-card-title">{props.value.name}</h1>
-      </a>
-    );
+    const Category = (props) => {
+      return(
+        <div className="card-home">
+          <div className="card-home-img">
+            <img src={props.value.iconUrl} alt="icon"/>
+          </div>
+          <div className="card-home-content">
+            <a className="card-home-content-title" href={props.value.path}>{props.value.name}</a>
+            {
+              props.value.topLinks.map((item, idx) => (<a key={idx} href={item.link} className="card-home-content-link">{item.name}</a>))
+            }
+          </div>
+        </div>
+      );
+    }
 
 
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper" id="home-wrapper">
-          <TopFold/>
           </div>
         </div>
       </div>
     );
 
     const TopFold = () => (
-      <div className="flex-container flex-vertical-container">
-      <div className="full-row">
-        <h2 className="section-title" >
-        Welcome to Qrvey Partner Portal, your Qrvey knowledgebase
+      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
+        <div className="wrapper vertical-align">
+          <h2 className="main-title">
+            Welcome to Partner Portal
         </h2>
-      </div>
+        </div>
       </div>
     );
     
 
     return (
       <div className="gray-background" id="home-page">
-        <SplashContainer siteConfig={siteConfig} language={language} />
+        <TopFold/>
+        {
+          //<SplashContainer siteConfig={siteConfig} language={language} />
+        }
         <div className="mainContainer" id="main-container">
         <div className="wrapper">
           <Categories/>

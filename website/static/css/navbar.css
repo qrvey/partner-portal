@@ -19,7 +19,8 @@ ul.nav-site.nav-site-internal li a{
     font-size: 13px;
 }
 .fixedHeaderContainer{
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .navSearchWrapper:before{
     border-color: #889DBD;
@@ -75,10 +76,6 @@ a.nav-item-dropdown.active{
 }
 
 @media only screen and (min-width:768px){
-    .headerWrapper{
-        padding-left: 60px;
-        padding-right: 60px;
-   }
     ul.nav-site.nav-site-internal li .primary-button{
         width: 100px;
    }
@@ -96,18 +93,19 @@ a.nav-item-dropdown.active{
     ul.nav-site.nav-site-internal li a{
         padding: 0 15px;
     }
+    ul.nav-site.nav-site-internal li .primary-button{
+        margin-left:20px;
+    }
 }
 
 @media only screen and (min-width: 1160px) {
     .headerWrapper{
-        max-width: 1160px !important;
-        padding: 0 0;
+        /*max-width: 1160px !important;*/
    }
    ul.nav-site.nav-site-internal li .primary-button{
         width: 100px;
         height: 30px;
         font-size: 14px;
-        margin-left:20px;
         margin-top: 2px;
     }
 }
@@ -115,6 +113,5 @@ a.nav-item-dropdown.active{
 @media only screen and (min-width: 1500px) {
     .headerWrapper{
         max-width: 1400px !important;
-        padding: 0 0;
    }
 }

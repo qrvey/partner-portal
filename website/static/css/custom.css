@@ -1,11 +1,48 @@
-:root{
-    --primary-font:'Montserrat', sans-serif;
-    --primary-color: #FF5400;
-}
+
 /* your custom css */
-.gray-background{
-    background-color: #FBFBFB;
+.top-fold-background{
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.flex-categories-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-home{
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+.card-home-img{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    width: 30%;
+}
+.card-home-img img{
+    height: 50px;
+    width: auto;
+}
+.card-home-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+.card-home-content-title, .card-home-content-link{
+    text-align: center;
+    padding: 5px 0;
+}
+
 .card-categories{
      background-color: #FFFFFF;
      border-radius: 5px;
@@ -14,20 +51,14 @@
      padding:10px 10px;
      margin: 20px;
      cursor: pointer;
- }
- .flex-categories-container{
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
- }
+}
 .main-title {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
+    font-family: var(--primary-font);
+    font-size: 34px;
+    color: #FFFFFF;
     letter-spacing: 0;
-    color: white;
-    line-height: 1;
+    margin: 0;
+    text-align: center;
 }
 .section-card-title {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -41,41 +72,10 @@
     margin-top: 0px ;
     font-weight: 600;
 }
-div#home-wrapper {
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-.primary-button {
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 4px;
-    display: block;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-    margin: auto;
-    max-width: 300px;
-    padding: 5px 12px;
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    border: none;
-    cursor: pointer;
-}
-.primary-button:hover{
-    text-decoration: none;
-    color: white !important;
-    background: var(--primary-color) !important;
-}
-.primary-button:focus{
-    outline:0;
-}
+
 .docMainWrapper{
     padding-left: 20px;
     padding-right: 20px;
-}
-.primary-color {
-    color: var(--primary-color) !important;
 }
 #documentation-page .homeContainer{
     background-size: cover;
@@ -98,7 +98,6 @@ div#home-wrapper {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 #main-title{
-    padding: 10px 0 10px;
     margin: 0;
 }
 .main-description{
@@ -147,10 +146,6 @@ img[src*="#thumbnail-20"] {
 }
 
 @media only screen and (min-width:768px){
-    .docMainWrapper{
-        padding-left: 60px;
-        padding-right: 60px;
-   }
    .main-title{
         text-align: center;
         font-size: 32px;
@@ -160,19 +155,17 @@ img[src*="#thumbnail-20"] {
         font-size: 18px;
         padding-left: 0px;
     }
-    div#home-wrapper {
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 1160px;
-    }
    .card-categories{
      width: 30%;
      margin: 0 30px 30px;
      padding: 20px 20px;
      margin-bottom: 30px;
     }
+    .card-home{
+        width: 40%;
+        margin: 0 30px 30px;
+    }
     #home-page .card-categories .section-card-title{
-        
          font-size: 20px;
     }
 }
@@ -214,13 +207,11 @@ img[src*="#thumbnail-20"] {
 
 @media only screen and (min-width: 1160px) {
     .docMainWrapper{
-        max-width: 1160px !important;
+        /*max-width: 1160px !important;*/
         margin: auto;
-        padding-left: 0px;
-        padding-right:0px;
         padding-top: 20px;
    }
-   .main-title{
+   .top-fold-background .main-title{
         text-align: start;
     }
     .main-description{
@@ -234,7 +225,6 @@ img[src*="#thumbnail-20"] {
 @media only screen and (min-width: 1500px) {
     .docMainWrapper{
         max-width: 1400px !important;
-        padding: 0 0;
    }
 
    div#home-wrapper {
