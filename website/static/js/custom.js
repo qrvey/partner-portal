@@ -144,16 +144,6 @@ function postActivy(newActivity) {
 
 
 function insertLogButtonToNav() {
-    // const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
-    /*
-    navItems.forEach(element => {
-        if (element.innerText == 'Log Out') {
-            element.onclick = () => logOut();
-            element.classList.add('primary-button');
-           //element.setAttribute('id', 'nav-item-dropdown');
-        }
-    });
-    */
     const navBar = document.querySelector('ul.nav-site.nav-site-internal');
     if(currentUser){
         navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
@@ -164,26 +154,17 @@ function insertLogButtonToNav() {
 
 function insertParternsLogo() {
     let navbar = document.querySelector('.headerTitleWithLogo');
-    navbar.innerHTML = '<strong>PARTNER</strong><br>PORTAL';
+    navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span';
 }
 
 function addDropdownItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
     navItems.forEach(element => {
-        if (element.innerText == 'Docs') {
+        if (element.innerText == 'DOCS') {
             element.onclick = () => toggleSubNav(element);
-            element.setAttribute('id', 'nav-item-dropdown');
-        }
-    });
-};
-
-function toggleSubNav(element) {
-    if (isDesktop) {
-        const navbarDropdown = document.getElementById('navbar-item-dropdown');
-        element.classList.toggle('primary-color');
-        if (!navbarDropdown) {
+            element.classList.add('nav-item-dropdown');
             element.insertAdjacentHTML('beforeend', `
-                <div class="dropdown flex" id="navbar-item-dropdown"> 
+                <div class="dropdown-nav flex" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-feb-2020">Releases Notes</a>
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
@@ -195,9 +176,23 @@ function toggleSubNav(element) {
                     </div>
                 </div>`);
         }
-        else {
-            navbarDropdown.classList.toggle('flex');
+    });
+};
+
+function outsiteClickDropdown(e){
+    const element = document.querySelector('a.nav-item-dropdown.active');
+    if (element && !element.contains(e.target)) {
+      element.classList.remove('active');
+      document.body.removeEventListener('click', outsiteClickDropdown);
+    }
+}
+
+function toggleSubNav(element) {
+    if (isDesktop) {
+        if(element.classList.contains('active')){
+            document.body.addEventListener('click', outsiteClickDropdown);
         }
+        element.classList.toggle('active');
     } else {
         window.location.href = '/documentation';
     }

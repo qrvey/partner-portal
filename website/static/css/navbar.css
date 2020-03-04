@@ -1,0 +1,120 @@
+header .navigationWrapper.navigationSlider .nav-site{
+    background-color: #0B111A;
+}
+header .headerTitleWithLogo{
+     font-family: var(--primary-font);
+     font-weight: 300;
+     font-size: 12px !important;
+     color: #D2D8E3;
+     letter-spacing: 0.5px;
+     line-height: 18.72px;
+     margin: auto;
+     padding-left: 10px;
+     padding-top: 5px;
+}
+ul.nav-site.nav-site-internal li a{
+    color: white;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    font-size: 13px;
+}
+.fixedHeaderContainer{
+    padding: 10px 0;
+}
+.navSearchWrapper:before{
+    border-color: #889DBD;
+}
+.navSearchWrapper:after{
+    background-color: #889DBD;
+}
+.algolia-autocomplete{
+}
+.algolia-autocomplete input#search_input_react{
+    background-color: #26344A;
+}
+.algolia-autocomplete .aaa-dropdown-menu{
+    z-index: 800px;
+}
+.nav-item-dropdown{
+    z-index: 99 !important;
+}
+.dropdown-nav{
+    display: none;
+    position: absolute;
+    top: calc( 100% + 12px);
+    border-radius: 0px 0px 10px 10px;
+    background: #0B111A;
+    height: auto;
+    width: auto;
+    left: -10px;
+    z-index: 99 !important;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    transform-origin: top;
+}
+.dropdown-nav .column{
+    width: auto;
+}
+.dropdown-nav .dropdown-item {
+    font-size: 12px;
+    font-family: var(--primary-font);
+    display: block;
+    height: auto;
+    text-align: start;
+    margin-top: 0px;
+    padding: 10px 20px;
+    z-index: 99;
+}
+/* Dropdown active: */
+a.nav-item-dropdown.active{
+    color: var(--primary-color) !important;
+}
+.nav-item-dropdown.active .dropdown-nav{
+    transform: scaleY(1) !important;
+}
+
+@media only screen and (min-width:768px){
+    .headerWrapper{
+        padding-left: 60px;
+        padding-right: 60px;
+   }
+    ul.nav-site.nav-site-internal li .primary-button{
+        width: 100px;
+   }
+    .headerWrapper header a{
+   }
+    .fixedHeaderContainer header img {
+        height: 100%;
+        margin-right: 0px;
+        height: auto;
+        width: 90px;
+   }
+}
+
+@media only screen and (min-width: 1024px) {
+    ul.nav-site.nav-site-internal li a{
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .headerWrapper{
+        max-width: 1160px !important;
+        padding: 0 0;
+   }
+   ul.nav-site.nav-site-internal li .primary-button{
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        margin-left:20px;
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .headerWrapper{
+        max-width: 1400px !important;
+        padding: 0 0;
+   }
+}

@@ -1,28 +1,13 @@
+:root{
+    --primary-font:'Montserrat', sans-serif;
+    --primary-color: #FF5400;
+}
 /* your custom css */
 .gray-background{
-    background: #FBFBFB;
-}
-.fixedHeaderContainer{
-    padding: 10px 0;
-}
-.headerTitleWithLogo{
-   /* PARTNER PORTAL: */
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 11px !important;
-    color: #D2D8E3;
-    letter-spacing: 0.5px;
-    line-height: 18.72px;
-    margin: auto;
-    padding-left: 10px;
-    padding-top: 5px;
-}
-.algolia-autocomplete{
-    z-index: 10001 !important;
+    background-color: #FBFBFB;
 }
 .card-categories{
-    
-     background: #FFFFFF;
+     background-color: #FFFFFF;
      border-radius: 5px;
      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
      width: 300px;
@@ -44,7 +29,6 @@
     color: white;
     line-height: 1;
 }
-
 .section-card-title {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     text-align: center;
@@ -61,15 +45,9 @@ div#home-wrapper {
     padding-bottom: 0px;
     padding-top: 0px;
 }
-ul.nav-site.nav-site-internal li a{
-    color: white;
-    font-weight: 600;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
 .primary-button {
     height: 40px;
-    background: #F57C41;
+    background: var(--primary-color);
     border-radius: 4px;
     display: block;
     font-weight: 600;
@@ -87,7 +65,7 @@ ul.nav-site.nav-site-internal li a{
 .primary-button:hover{
     text-decoration: none;
     color: white !important;
-    background: #F57C41 !important;
+    background: var(--primary-color) !important;
 }
 .primary-button:focus{
     outline:0;
@@ -97,7 +75,7 @@ ul.nav-site.nav-site-internal li a{
     padding-right: 20px;
 }
 .primary-color {
-    color: #F57C41 !important;
+    color: var(--primary-color) !important;
 }
 #documentation-page .homeContainer{
     background-size: cover;
@@ -105,8 +83,7 @@ ul.nav-site.nav-site-internal li a{
     background-image: -o-linear-gradient(138deg, #016CFF 0%, #029EFF 100%);
     background-image: linear-gradient(-48deg, #016CFF 0%, #029EFF 100%);
 }
-.navigationSlider .slidingNav ul{
-    background: #1C3E75;
+.headerWrapper .navigationWrapper.navigationSlider{
 }
 .footer{
     background: #FBFBFB;
@@ -137,34 +114,11 @@ ul.nav-site.nav-site-internal li a{
 .full-row {
     width: 100%;
 }
-
-.dropdown{
-    display: none;
-    position: absolute;
-    top: 50px;
-    border-radius: 0px 0px 10px 10px;
-    background: #214b8e;
-    height: auto;
-    width: auto;
-    left: -10px;
-}
-.dropdown .column{
-    width: auto;
-}
-.dropdown-item {
-    font-size: 80% !important;
-    display: block !important;
-    height: auto !important;
-    text-align: start !important;
-    margin-top: 0px !important;
-    padding: 10px 20px !important;
-}
-
 .flex{
     display: flex;
 }
 
-#nav-item-dropdown{
+.nav-item-dropdown{
     position: relative;
     cursor: pointer;
 }
@@ -211,24 +165,7 @@ img[src*="#thumbnail-20"] {
         padding-right: 0px;
         max-width: 1160px;
     }
-    .headerWrapper{
-        padding-left: 60px;
-        padding-right: 60px;
-   }
-    ul.nav-site.nav-site-internal li .primary-button{
-        width: 100px;
-   }
-    .headerWrapper header a{
-        height: 40px;
-   }
-    .fixedHeaderContainer header img {
-        height: 100%;
-        margin-right: 0px;
-        height: auto;
-        width: 90px;
-   }
    .card-categories{
-    
      width: 30%;
      margin: 0 30px 30px;
      padding: 20px 20px;
@@ -256,32 +193,9 @@ img[src*="#thumbnail-20"] {
     .flex-container .two-row{
         max-width: 50%;
    }
-    ul.nav-site.nav-site-internal li a{
-        padding: 0 15px;
-        /*
-        padding: 5px 30px 5px;
-        */
-   }
     .top-fold-image{
         max-width: 100%;
    }
-    #nav-item-dropdown::after{
-        /*
-        right:-5px;
-        display: block;
-        content: '';
-        position: absolute;
-        top: 13px;
-        width: 0;
-        height: 0;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-top: 7px solid white;
-        clear: both;
-        */
-    }
-
-
     #documentation-page .flex-categories-container{
         max-width: 820px;
         margin: auto;
@@ -312,27 +226,12 @@ img[src*="#thumbnail-20"] {
     .main-description{
         text-align: start;
     }
-    .headerWrapper{
-        max-width: 1160px !important;
-        padding: 0 0;
-   }
-    ul.nav-site.nav-site-internal li .primary-button{
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-        margin-left:20px;
-        margin-top: 2px;
-   }
 }
 
 @media only screen and (min-width: 1400px) {
 }
 
 @media only screen and (min-width: 1500px) {
-    .headerWrapper{
-        max-width: 1400px !important;
-        padding: 0 0;
-   }
     .docMainWrapper{
         max-width: 1400px !important;
         padding: 0 0;
