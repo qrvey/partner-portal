@@ -292,6 +292,10 @@ img[src*="#thumbnail-20"] {
         max-width: 1400px !important;
    }
 
+   .card-home{
+     margin-right: 40px; 
+   }
+
    div#home-wrapper {
         max-width: 1400px !important;
     }

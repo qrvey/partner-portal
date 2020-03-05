@@ -114,6 +114,8 @@ const siteConfig = {
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
     '/js/login.js',
+  ],
+  homepagescripts:[
     '/js/homepage.js',
   ],
   stylesheets: [
