@@ -12,6 +12,7 @@ Some of the highlights of this release are:
 * Custom drill-down from charts to other charts, including tables.
 * Ability to use formulas in bucketing, grouping, and drill-downs.
 
+<!--truncate-->
  
 A complete list of these enhancements can be found on the <a href="https://partners.qrvey.com/docs/release-notes/release-feb-2020/"> <strong> Partner Portal </strong> </a> site.
 
