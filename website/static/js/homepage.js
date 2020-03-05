@@ -60,7 +60,7 @@ const myHeaders = new Headers({
             }
         });
         let popularPagesHTMl = ``;
-        popularPages.splice(0, 8).forEach(
+        popularPages.splice(0, 3).forEach(
             value => {
                 popularPagesHTMl+= `<a class="side-right-nav-item" href=${value.link}>
                                         ${value.title} (${value.visited})
