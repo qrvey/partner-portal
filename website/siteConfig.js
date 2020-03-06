@@ -39,23 +39,24 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
+    // IF YOU CHANGE DOCS LABEL YOU MUST UPDATE CUSTOM JS DROPDOWN(It's the id)
     {
       href: '',
-      label: 'Docs',
+      label: 'DOCS',
     },
     {
       href: '/docs/tutorials/first-analytic-app',
-      label: 'Tutorials',
+      label: 'TUTORIALS',
     },
     {
       href: '/docs/video-training/analytics/intro-analytics-apps',
-      label: 'Videos',
+      label: 'VIDEOS',
     },
     {
       href: '/docs/faqs/faqs-intro',
-      label: 'FAQs',
+      label: 'FAQS',
     },
-    { blog: true, label: 'Newsletters' },
+    { blog: true, label: 'NEWSLETTERS' },
   ],
 
   algolia: {
@@ -77,7 +78,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#1C3E75',
+    primaryColor: '#0B111A',
     secondaryColor: '#2d476c',
   },
 
@@ -113,6 +114,12 @@ const siteConfig = {
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
     '/js/login.js',
+  ],
+  homepagescripts:[
+    '/js/homepage.js',
+  ],
+  stylesheets: [
+    "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap",
   ],
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

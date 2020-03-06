@@ -15,59 +15,124 @@ const GridBlock = CompLibrary.GridBlock;
 
 class Index extends React.Component {
 
+  constructor(props){
+    const {config: siteConfig} = props;
+    super(props);
+    this.categories = [
+      {name:'Documentation',path: siteConfig.baseUrl+'documentation', iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`, 
+      topLinks: [
+        { link: siteConfig.baseUrl+'docs/release-notes/release-feb-2020', name: 'Release Notes' },
+        { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
+        { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
+      ]},
+      {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', topLinks: [
+        { link: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', name: 'Your First Analytic App' },
+        { link: siteConfig.baseUrl+'docs/tutorials/create-charts', name: 'Create Charts' },
+      ], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
+      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps', topLinks: [
+        { link: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps', name: 'Intro to Analytic Apps' },
+        { link: siteConfig.baseUrl+'docs/video-training/analytics/datasets', name: 'Datasets' },
+        { link: siteConfig.baseUrl+'docs/video-training/analytics/web-forms', name: 'Web Forms' }
+      ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
+      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
+        { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
+      ], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
+    ];
+  }
+
   render() {
     const {config: siteConfig, language = ''} = this.props;
     //const background_title = "url('" + siteConfig.baseUrl + "img/top-fold-background.jpg')";
 
     const Categories = () => {
-      const categories = [
-        {name:'Documentation',path: siteConfig.baseUrl+'documentation'},
-        {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app'},
-        {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps'},
-        {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro'},
-      ];
-      const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
+      const categoriesElem = this.categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
         {categoriesElem}
       </div>)
     };
 
-    const Category = (props) => (
-      <a className="card-categories" href={props.value.path}>
-        <h1 className="section-card-title">{props.value.name}</h1>
-      </a>
-    );
+    const Category = (props) => {
+      return(
+        <div className="card-home">
+          <a className="card-home-img" href={props.value.path}>
+            <img src={props.value.iconUrl} alt="icon"/>
+          </a>
+          <div className="card-home-content">
+            <a className="card-home-content-title" href={props.value.path}>{props.value.name}</a>
+            {
+              props.value.topLinks.map((item, idx) => (<a key={idx} href={item.link} className="card-home-content-link">{item.name}</a>))
+            }
+          </div>
+        </div>
+      );
+    }
 
 
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper" id="home-wrapper">
-          <TopFold/>
           </div>
         </div>
       </div>
     );
 
     const TopFold = () => (
-      <div className="flex-container flex-vertical-container">
-      <div className="full-row">
-        <h2 className="section-title" >
-        Welcome to Qrvey Partner Portal, your Qrvey knowledgebase
-        </h2>
-      </div>
+      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
+        <div className="wrapper vertical-align">
+          <h1 className="main-title">
+            Welcome to Partner Portal
+          </h1>
+        </div>
       </div>
     );
-    
 
+    const SidRightNav = () => {
+      const announcements = [
+        {name:'Release Notes February',path: siteConfig.baseUrl+'docs/release-notes/release-feb-2020/'},
+        {name:'February Newsletter',path: siteConfig.baseUrl+'blog/2020/02/29/qsnewsflash/'}
+      ];
+      return(
+        <div className="side-right-nav">
+          <div className="side-right-nav-container">
+          <div className="side-right-nav-container-announcements">
+              {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
+              <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
+              <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
+              <h3 className="side-right-nav-container-announcements-item"> 
+              Version 4.1 has been released, <a className="primary-color" href="docs/release-notes/release-feb-2020/">learn more.</a>
+               </h3>
+          </div>
+          <div className="side-right-nav-container-popular">
+          <h3 className="side-right-nav-container-popular-title"> <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/> POPULAR ARTICLES</h3>
+          </div>
+          </div>
+        </div>
+      );
+    }
+  
     return (
       <div className="gray-background" id="home-page">
-        <SplashContainer siteConfig={siteConfig} language={language} />
+        <TopFold/>
+        {
+          //<SplashContainer siteConfig={siteConfig} language={language} />
+        }
         <div className="mainContainer" id="main-container">
         <div className="wrapper">
           <Categories/>
+          <SidRightNav/>
         </div>
         </div>
+        {this.props.config.homepagescripts &&
+          this.props.config.homepagescripts.map((source, idx) => {
+            return (
+              <script
+                type="text/javascript"
+                key={'script' + idx}
+                src={source}
+              />
+            );
+        })}
       </div>
     );
   }

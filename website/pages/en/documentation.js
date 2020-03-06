@@ -29,8 +29,8 @@ class Documentation extends React.Component {
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);
       return  (<div className="flex-categories-container">
-        {categoriesElem}
-      </div>)
+                {categoriesElem}
+              </div>);
     };
 
     const Category = (props) => (
@@ -44,29 +44,31 @@ class Documentation extends React.Component {
       <div className="homeContainer">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper" id="home-wrapper">
-          <TopFold/>
           </div>
         </div>
       </div>
     );
 
     const TopFold = () => (
-      <div className="flex-container flex-vertical-container">
-      <div className="full-row">
-        <h2 className="main-title" id="main-title">
-        Documentation
-        </h2>
-        <h4 className="main-description" id="main-description">
-        Find documentation and setup guides for Qrvey, Data Router and Admin Center
-        </h4>
-      </div>
+      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
+        <div className="wrapper vertical-align">
+          <h2 className="main-title">
+          Documentation
+          </h2>
+          <h4 className="main-description">
+          Find documentation and setup guides for Qrvey, Data Router and Admin Center
+          </h4>
+        </div>
       </div>
     );
     
 
     return (
       <div className="gray-background" id="documentation-page">
-        <SplashContainer siteConfig={siteConfig} language={language} />
+        {
+          //        <SplashContainer siteConfig={siteConfig} language={language} />
+        }
+        <TopFold/>
         <div className="mainContainer" id="main-container">
         <div className="wrapper">
           <Categories/>
