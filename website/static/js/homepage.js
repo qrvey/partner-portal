@@ -52,7 +52,9 @@ const myHeaders = new Headers({
   fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/uuiHm0u3O/analytiq/uchart/results", requestOptions)
     .then(response => response.json())
     .then(result => {
-        const popularPages = result[0].data.filter((value) => !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1) )).map(value => {
+        const popularPages = result[0].data.filter((value) => 
+        !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1)  || (value.key.search('/docs/docs') > -1) || (value.key.search('/docs/docs') > -1) || (value.key.search('/training/') === 0) ))
+        .map(value => {
             return {
                 link: value.key,
                 title: value.items[0].key,
@@ -67,7 +69,7 @@ const myHeaders = new Headers({
                                     </a>`;
             }
         );
-        const sidenavHTML = document.querySelector(`.side-right-nav`);
+        const sidenavHTML = document.querySelector(`.side-right-nav-container`);
         sidenavHTML.insertAdjacentHTML(`beforeend`, popularPagesHTMl);
     })
     .catch(error => console.log('error', error));

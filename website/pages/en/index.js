@@ -34,7 +34,9 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/video-training/analytics/datasets', name: 'Datasets' },
         { link: siteConfig.baseUrl+'docs/video-training/analytics/web-forms', name: 'Web Forms' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
-      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
+      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
+        { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
+      ], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
     ];
   }
 
@@ -52,9 +54,9 @@ class Index extends React.Component {
     const Category = (props) => {
       return(
         <div className="card-home">
-          <div className="card-home-img">
+          <a className="card-home-img" href={props.value.path}>
             <img src={props.value.iconUrl} alt="icon"/>
-          </div>
+          </a>
           <div className="card-home-content">
             <a className="card-home-content-title" href={props.value.path}>{props.value.name}</a>
             {
@@ -87,7 +89,7 @@ class Index extends React.Component {
 
     const SidRightNav = () => {
       const announcements = [
-        {name:'Release Notes February',path: siteConfig.baseUrl+'blog/2020/01/31/qsnewsflash/'},
+        {name:'Release Notes February',path: siteConfig.baseUrl+'blog/2020/02/29/qsnewsflash/'},
         {name:'February Newsletter',path: siteConfig.baseUrl+'docs/release-notes/release-feb-2020/'}
       ];
       return(
