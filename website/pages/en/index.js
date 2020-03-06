@@ -83,7 +83,6 @@ class Index extends React.Component {
           <h1 className="main-title">
             Welcome to Partner Portal
           </h1>
-          <h1 className="main-description">Version 4.1 has been released, learn more <a className="primary-color" href={siteConfig.baseUrl+'docs/release-notes/release-feb-2020/'}>Clicking Here !</a></h1>
         </div>
       </div>
     );
@@ -99,9 +98,9 @@ class Index extends React.Component {
           <div className="side-right-nav-container-announcements">
               {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
               <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
-              <h3 className="side-right-nav-container-announcements-title"> Announcements !</h3>
+              <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
-               February newsletter is out, <a className="primary-color" href="/blog/2020/02/29/qsnewsflash/">learn more.</a>
+              Version 4.1 has been released, <a className="primary-color" href="docs/release-notes/release-feb-2020/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">

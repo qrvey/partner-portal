@@ -129,7 +129,7 @@
     color: #FFFFFF;
     margin: 0;
     font-size: 16px;
-    color: #889DBD;
+    color: #E1E1E1;
 }
 
 .side-right-nav-container-popular{
@@ -319,7 +319,7 @@ img[src*="#thumbnail-20"] {
     }
     .side-right-nav-container-announcements{
         /* 198px top fold */
-        height: 201px;
+        height: 200px;
     }
     .side-right-nav-title, .side-right-nav-item{
         text-align: start;
@@ -329,6 +329,15 @@ img[src*="#thumbnail-20"] {
     }
     #home-page .top-fold-background{
         background-position-x: -200px;
+    }
+    #home-page .top-fold-background{
+        height: 200px;
+    }
+    #home-page .top-fold-background .vertical-align{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
     }
 }
 
