@@ -89,8 +89,8 @@ class Index extends React.Component {
 
     const SidRightNav = () => {
       const announcements = [
-        {name:'Release Notes February',path: siteConfig.baseUrl+'blog/2020/02/29/qsnewsflash/'},
-        {name:'February Newsletter',path: siteConfig.baseUrl+'docs/release-notes/release-feb-2020/'}
+        {name:'Release Notes February',path: siteConfig.baseUrl+'docs/release-notes/release-feb-2020/'},
+        {name:'February Newsletter',path: siteConfig.baseUrl+'blog/2020/02/29/qsnewsflash/'}
       ];
       return(
         <div className="side-right-nav" style={{ backgroundColor: `#222E41` }}>
