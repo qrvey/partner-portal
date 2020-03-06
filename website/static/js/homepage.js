@@ -53,7 +53,7 @@ const myHeaders = new Headers({
     .then(response => response.json())
     .then(result => {
         const popularPages = result[0].data.filter((value) => 
-        !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1)  || (value.key.search('/docs/docs') > -1) || (value.key.search('/docs/docs') > -1) || (value.key.search('/training/') === 0) ))
+        !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1)  || (value.key.search('/training/') === 0) ))
         .map(value => {
             return {
                 link: value.key,
@@ -64,7 +64,7 @@ const myHeaders = new Headers({
         let popularPagesHTMl = ``;
         popularPages.splice(0, 3).forEach(
             value => {
-                popularPagesHTMl+= `<a class="side-right-nav-item" href=${value.link}>
+                popularPagesHTMl+= `<a class="side-right-nav-item" href=${value.link.replace('/docs/docs', '/docs')}>
                                         ${value.title} (${value.visited})
                                     </a>`;
             }
