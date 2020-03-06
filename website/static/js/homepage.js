@@ -58,18 +58,18 @@ const myHeaders = new Headers({
             return {
                 link: value.key,
                 title: value.items[0].key,
-                visited: value.items[0].summary[0]
+                visited: value.summary[0]
             }
         });
         let popularPagesHTMl = ``;
-        popularPages.splice(0, 3).forEach(
+        popularPages.splice(0, 9).forEach(
             value => {
-                popularPagesHTMl+= `<a class="side-right-nav-item" href=${value.link.replace('/docs/docs', '/docs')}>
+                popularPagesHTMl+= `<a class="side-right-nav-container-popular-item" href=${value.link.replace('/docs/docs', '/docs')}>
                                         ${value.title} (${value.visited})
                                     </a>`;
             }
         );
-        const sidenavHTML = document.querySelector(`.side-right-nav-container`);
+        const sidenavHTML = document.querySelector(`.side-right-nav-container-popular`);
         sidenavHTML.insertAdjacentHTML(`beforeend`, popularPagesHTMl);
     })
     .catch(error => console.log('error', error));
