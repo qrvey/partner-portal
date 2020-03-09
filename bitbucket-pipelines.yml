@@ -55,29 +55,29 @@ pipelines:
               S3_BUCKET: "partners-staging.qrvey.com"
               LOCAL_PATH: "website/build/docs-site"
     master:
-          - step:
-            script:
-              - npm install
-              - npm run prod
-              - cd website
-              - npm install
-              - npm install replace@1.0.0 -g --force
-              - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" siteConfig.js
-              - cd static/js
-              - replace "firebaseProd = false" "firebaseProd = true"  firebase.js
-              - replace "MKT_METADATAID" "marketing_prod" custom.js
-              - cd ../..
-              - npm run build
-            artifacts:
-              - website/**
-          - step:
-            name: Deploy
-            deployment: production
-            script:
-              - pipe: atlassian/aws-s3-deploy:0.3.7
-                variables:
-                  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-                  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-                  AWS_DEFAULT_REGION: "us-east-1"
-                  S3_BUCKET: "partners.qrvey.com"
-                  LOCAL_PATH: "website/build/docs-site"
+      - step:
+          script:
+            - npm install
+            - npm run prod
+            - cd website
+            - npm install
+            - npm install replace@1.0.0 -g --force
+            - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" siteConfig.js
+            - cd static/js
+            - replace "firebaseProd = false" "firebaseProd = true"  firebase.js
+            - replace "MKT_METADATAID" "marketing_prod" custom.js
+            - cd ../..
+            - npm run build
+          artifacts:
+            - website/**
+      - step:
+          name: Deploy
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.3.7
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: "us-east-1"
+                S3_BUCKET: "partners.qrvey.com"
+                LOCAL_PATH: "website/build/docs-site"
