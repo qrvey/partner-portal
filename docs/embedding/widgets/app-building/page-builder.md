@@ -56,7 +56,7 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
 | **Property** | **Value** |
 | --- | --- |
 | **doNotAllow** | `Array<String>`, Collection of permissions, block or hide widget content. |
-| **privatePages** | `Boolean`, Optional, The created pages will be set on private as default. |
+| **privatePages** | `Boolean`, Optional, The created pages will be set to private as default. |
 | **styles** | `Object`, |
 | **styles.main_color** | `String`, |
 | **styles.main_text_color** | `String`. |
