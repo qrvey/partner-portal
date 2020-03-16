@@ -19,7 +19,7 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
     domain: "https://your_qrvey_domain",
     appid: "<APP_ID>",
     userid: "<USER_ID>",
-    apikey: "<API_KEY>",
+    apikey: "<API_KEY>"
 }
 ```
 
@@ -38,6 +38,7 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
 ```javascript
 {
     doNotAllow: "Array<String>",
+    privatePages: true,
     styles: {
         main_color: "<String>",
         main_text_color: "<String>",
@@ -55,6 +56,7 @@ To configure a Page Builder widget, use the following JSON schema as Configurati
 | **Property** | **Value** |
 | --- | --- |
 | **doNotAllow** | `Array<String>`, Collection of permissions, block or hide widget content. |
+| **privatePages** | `Boolean`, Optional, The created pages will be set on private as default. |
 | **styles** | `Object`, |
 | **styles.main_color** | `String`, |
 | **styles.main_text_color** | `String`. |
@@ -88,6 +90,7 @@ Add one or more of the followings strings in the **doNotAllow** Property to conf
     appid: '<APP_ID>',
     userid: '<USER_ID>'
     doNotAllow: ['CREATE_CHART', 'USERS_AUTHENTICATION'],
+    privatePages: false,
     styles: {
         main_color: '#3E94FF',
         main_text_color: '#000000',
