@@ -35,7 +35,7 @@ Once you have selected your source column, you’ll be able to select the second
 
 ![7_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/7_datalinks.png#thumbnail)
 
-Once completed, your data link should look similar to the example below. If you’d like to link additional datasets, just click the orange Add Link Block button.
+Once completed, your data link should look similar to the example below. If you’d like to link additional datasets, just click the orange **Add Link Block** button.
 
 ![8_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/8_datalinks.png#thumbnail)
 
