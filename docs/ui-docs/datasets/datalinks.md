@@ -9,6 +9,8 @@ sidebar_label: Data Links
 Data Links allow you to combine multiple datasets into a new single dataset for analysis and automation. This article shows the steps for linking a dataset to a web form dataset. The same process can be used to link any combination of datasets within the Composer.
 To begin, enter the Data section of your application.
 
+Note: Alternatively the Data Joins feature is also available in dataset creation to combine multiple data sources and datasets. The difference between Data Links and Joins is that Joins will “physically” combine the multiple sources into one dataset, while Links does not create any physical object. Therefore it's easier and faster to create, but is limited in many ways and slower in performance.
+
 ![1_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/1_datalinksV2.png#thumbnail-40)
 
 Now choose Data Links from the top toolbar.

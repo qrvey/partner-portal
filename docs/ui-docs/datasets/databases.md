@@ -28,7 +28,7 @@ A connection can either be saved without setting a database, or including a data
 
 ![5_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/5_databasesV2.png#thumbnail-60)
 
-You may also copy/paste a SQL query by clicking the **SQL Query** button. You can use the Test link in the bottom-right corner to test your query. 
+You may also enter an SQL query by clicking the **SQL Query** button. You can use the **Test** link in the bottom-right corner to test your query.
 
 ![6_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/6_databasesV2.png#thumbnail)
 
