@@ -7,70 +7,47 @@ sidebar_label: Panel Builder
 <div style="text-align: justify">
 
 This Chart Builder Modal widget requires `<my_cdn>/chart-builder/anchartbuilder.js` script file and 
-uses the `<an-chart-builder>` Custom HTML Tag
+uses the `<an-chart-builder-modal>` Custom HTML Tag
 
 ## Configuration Object
 > The Chart Builder widget doesn't have a configuration object.
 
+## Chart Model Object
+
+This object represent the genereated Model implemented by Chart Panels .
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **chartid** | String, Id to identify the chart. | Yes |
+| **createdDate** | String, Chart creation date. | Yes |
+| **globalSettings** | Object, Global chart settings data. | Yes |
+| **is100** | Boolean, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
+| **isChartOptions** | Boolean, Determines if the chart options are available for the chart. | Yes |
+| **isCombo** | Boolean, Determines if the chart has a combo chart layer. | Yes |
+| **isMulti** | Boolean, Determines if the chart has a multiseries layer. | Yes |
+| **isSmallMultiples** | Boolean, Determines if the chart has a small multiples layer. | Yes |
+| **isStackedBar** | Boolean, Determines if the chart has a &quot;stacked&quot; multiseries layer. | Yes |
+| **isTrend** | Boolean, Determines if the chart has a trendline layer. | Yes |
+| **layerList** | Array, List of chart layers | Yes |
+| **modifyDate** | String, Date when the chart was updated. | Yes |
+| **position** | Number, Position of the chart in the custom view | Yes |
+| **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
+| **title** | String, Chart name, | Yes |
+| **userid** | String, Id of Qrvey User. | Yes |
+
 ## Dispatched Events
-
-* ### ON_OPEN_CHART_BUILDER
-
-    This event is emitted when the user clicks on the &quot;Next&quot; button after chart type is selected.
-
-    | **Property** | **Value** | **Required** |
-    | --- | --- | --- |
-    | **chartType** | String, Value for the selected chart type. | Yes |
-    | **isNew** | Boolean, Determines if the chart is new. Must be true. | Yes |
-    | **user_id** | String, Id of Qrvey User. | Yes |
-    | **app_id** | String, Id of Qrvey App. | Yes |
-    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
 
 * ### ON_AN_CHART_DUPLICATED
 
     This event is emitted when a chart has been duplicated.
 
-    | **Property** | **Value** | **Required** |
-    | --- | --- | --- |
-    | **chartid** | String, Id to identify the chart. | Yes |
-    | **createdDate** | String, Chart creation date. | Yes |
-    | **globalSettings** | Object, Global chart settings data. | Yes |
-    | **is100** | Boolean, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
-    | **isChartOptions** | Boolean, Determines if the chart options are available for the chart. | Yes |
-    | **isCombo** | Boolean, Determines if the chart has a combo chart layer. | Yes |
-    | **isMulti** | Boolean, Determines if the chart has a multiseries layer. | Yes |
-    | **isSmallMultiples** | Boolean, Determines if the chart has a small multiples layer. | Yes |
-    | **isStackedBar** | Boolean, Determines if the chart has a &quot;stacked&quot; multiseries layer. | Yes |
-    | **isTrend** | Boolean, Determines if the chart has a trendline layer. | Yes |
-    | **layerList** | Array, List of chart layers | Yes |
-    | **modifyDate** | String, Date when the chart was updated. | Yes |
-    | **position** | Number, Position of the chart in the custom view | Yes |
-    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
-    | **title** | String, Chart name, | Yes |
-    | **userid** | String, Id of Qrvey User. | Yes |
+    Detail: Chart Model Object
 
 * ### ON_AN_CHART_BUILDER_SAVED
 
     This event is emitted when a chart has been created.
 
-    | **Property** | **Value** | **Required** |
-    | --- | --- | --- |
-    | **chartid** | String, Id to identify the chart. | Yes |
-    | **createdDate** | String, Chart creation date. | Yes |
-    | **globalSettings** | Object, Global chart settings data. | Yes |
-    | **is100** | Boolean, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
-    | **isChartOptions** | Boolean, Determines if the chart options are available for the chart. | Yes |
-    | **isCombo** | Boolean, Determines if the chart has a combo chart layer. | Yes |
-    | **isMulti** | Boolean, Determines if the chart has a multiseries layer. | Yes |
-    | **isSmallMultiples** | Boolean, Determines if the chart has a small multiples layer. | Yes |
-    | **isStackedBar** | Boolean, Determines if the chart has a &quot;stacked&quot; multiseries layer. | Yes |
-    | **isTrend** | Boolean, Determines if the chart has a trendline layer. | Yes |
-    | **layerList** | Array, List of chart layers | Yes |
-    | **modifyDate** | String, Date when the chart was updated. | Yes |
-    | **position** | Number, Position of the chart in the custom view | Yes |
-    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
-    | **title** | String, Chart name, | Yes |
-    | **userid** | String, Id of Qrvey User. | Yes |
+    Detail: Chart Model Object
 
 * ### ON_AN_CHART_BUILDER_CLOSE
 
@@ -102,16 +79,29 @@ uses the `<an-chart-builder>` Custom HTML Tag
 
 * ### ON_OPEN_CHART_BUILDER
 
-    Use this event get the widget to open a chart builder modal window.
+    Use this event get the widget to open a chart builder modal window in order to create a new chart.
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
+    | **domain** | String, Main url of Qrvey Core platform. | Yes |
+    | **api_key** | String, API Key of current Qrvey Environment. | Yes |
     | **filters** | Array, Currently applied transform filters for data requests. | No |
-    | **isNew** | Boolean, Determines if it is on creation or editing mode. | Yes |
+    | **isNew** | Boolean, in this case set to `true`. | Yes |
     | **user_id** | String, Id of Qrvey User. | Yes |
     | **app_id** | String, Id of Qrvey App. | Yes |
-    | **chart_id** | String, Id of current chart editing chart, if isNew is false. | No |
-    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
+    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | No |
+    
+    For Chart Edition, it's required to send the **ChartModel Object** adding it the following properties:
+
+    | **Property** | **Value** | **Required** |
+    | --- | --- | --- |
+    | **domain** | String, Main url of Qrvey Core platform. | Yes |
+    | **api_key** | String, API Key of current Qrvey Environment. | Yes |
+    | **filters** | Array, Currently applied transform filters for data requests. | No |
+    | **isNew** | Boolean, in this case set to `false` | Yes |
+    | **user_id** | String, Id of Qrvey User. | Yes |
+    | **app_id** | String, Id of Qrvey App. | Yes |
+    | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | No |
 
 * ### ON_AN_DUPLICATE_CHART
 
@@ -119,7 +109,7 @@ uses the `<an-chart-builder>` Custom HTML Tag
 
     | **Property** | **Value** | **Required** |
     | --- | --- | --- |
-    | **body** | Object, Data of current chart. | Yes |
+    | **body** | Chart Model Object, Data of current chart. | Yes |
     | **user_id** | String, Id of Qrvey User. | Yes |
     | **app_id** | String, Id of Qrvey App. | Yes |
     | **qrveyid** | String, Id of current Qrvey Dataset/Webform. | Yes |
@@ -130,6 +120,8 @@ uses the `<an-chart-builder>` Custom HTML Tag
     function openChartBuilder() {
         var eventData = {
             detail: {
+                "domain": "https://your_qrvey_domain",
+                "api_key": "<API_KEY>",
                 user_id: "<USER_ID>",
                 app_id: "<APP_ID>",
                 qrveyid: "<QRVEY_ID>",
@@ -140,6 +132,6 @@ uses the `<an-chart-builder>` Custom HTML Tag
     }
 </script>
 <button onclick="openChartBuilder()">Open Chart Builder</button>
-<an-chart-builder></an-chart-builder>
+<an-chart-builder-modal></an-chart-builder-modal>
 <script src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
