@@ -21,6 +21,13 @@ This object represent the genereated Model implemented by Chart Panels .
 | **chartid** | `String`, Id to identify the chart. | Yes |
 | **createdDate** | `String`, Chart creation date. | Yes |
 | **globalSettings** | `Object`, Global chart settings data. | Yes |
+| **globalSettings.size** | `Number`, 1, 2 or 3 - useful in Analyze section to define the width of the panel.| Yes |
+| **globalSettings.tooltips** | `Boolean`, Show / hide tooltip| Yes |
+| **globalSettings.legends** | `Boolean`, Show / hide legends.| Yes |
+| **globalSettings.maxNumDataPoints** | `Number`, Number of categories to show. up to 10.000.| Yes |
+| **globalSettings.color** | `String`, Any css color format.| Yes |
+| **globalSettings.theme** | `Object`, Theme colors. | Yes |
+| **globalSettings.theme.value** | `Array<String>`, List of css colors | Yes |
 | **is100** | `Boolean`, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
 | **isChartOptions** | `Boolean`, Determines if the chart options are available for the chart. | Yes |
 | **isCombo** | `Boolean`, Determines if the chart has a combo chart layer. | Yes |
