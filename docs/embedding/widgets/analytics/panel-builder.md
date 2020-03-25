@@ -21,13 +21,13 @@ This object represent the genereated Model implemented by Chart Panels .
 | **chartid** | `String`, Id to identify the chart. | Yes |
 | **createdDate** | `String`, Chart creation date. | Yes |
 | **globalSettings** | `Object`, Global chart settings data. | Yes |
-| **globalSettings.is100** | `Boolean`, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
-| **globalSettings.isChartOptions** | `Boolean`, Determines if the chart options are available for the chart. | Yes |
-| **globalSettings.isCombo** | `Boolean`, Determines if the chart has a combo chart layer. | Yes |
-| **globalSettings.isMulti** | `Boolean`, Determines if the chart has a multiseries layer. | Yes |
-| **globalSettings.isSmallMultiples** | `Boolean`, Determines if the chart has a small multiples layer. | Yes |
-| **globalSettings.isStackedBar** | `Boolean`, Determines if the chart has a &quot;stacked&quot; multiseries layer. | Yes |
-| **globalSettings.isTrend** | `Boolean`, Determines if the chart has a trendline layer. | Yes |
+| **is100** | `Boolean`, Determines if the chart has a &quot;100%&quot; multiseries layer. | Yes |
+| **isChartOptions** | `Boolean`, Determines if the chart options are available for the chart. | Yes |
+| **isCombo** | `Boolean`, Determines if the chart has a combo chart layer. | Yes |
+| **isMulti** | `Boolean`, Determines if the chart has a multiseries layer. | Yes |
+| **isSmallMultiples** | `Boolean`, Determines if the chart has a small multiples layer. | Yes |
+| **isStackedBar** | `Boolean`, Determines if the chart has a &quot;stacked&quot; multiseries layer. | Yes |
+| **isTrend** | `Boolean`, Determines if the chart has a trendline layer. | Yes |
 | **layerList** | `Array`, List of chart layers | Yes |
 | **modifyDate** | `String`, Date when the chart was updated. | Yes |
 | **position** | `Number`, Position of the chart in the custom view | Yes |
