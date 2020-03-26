@@ -216,16 +216,19 @@
     ]
   },
   "video-training":{
-    "Analytics":[
+    "Building Qrvey Sample":[
+      "video-training/building-qrvey-sample/connections",
+      "video-training/building-qrvey-sample/datasets",
+      "video-training/building-qrvey-sample/complex-datasets"
+    ],
+    "Training Session":[
       "video-training/analytics/intro-analytics-apps",
       "video-training/analytics/datasets",
       "video-training/analytics/analytic-views",
       "video-training/analytics/reports-pages",
       "video-training/analytics/web-forms",
       "video-training/analytics/metrics",
-      "video-training/analytics/automation"
-    ],
-    "Admin Center":[
+      "video-training/analytics/automation",
       "video-training/admin-center/intro-admin-center"
     ]
   }
