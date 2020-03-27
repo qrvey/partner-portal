@@ -46,3 +46,18 @@ var configWebForm = {
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
 ```
+
+## Embed a Widget From Qrvey Composer 
+
+![1_working_with_qrvey](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/embed-widget-from-qrvey-composer.png#thumbnail)
+
+Inspect the widget that you want to implement using browser’s developer tools (we suggest Chrome), and get the config object from the element with the following command in the console:
+```
+JSON.parse($0.config)
+```
+Where $0 is the inspected HTML element (our widget) and "config" is the config property of the widget.
+
+> Note 1: in some cases the config properties might have another name, please read the specific object for each widget.
+
+> Note 2: If your Qrvey Composer is in another domain, DON’T forget to update your domain and API-key properties.
+
