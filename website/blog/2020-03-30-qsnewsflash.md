@@ -1,0 +1,40 @@
+---
+title: March 2020
+---
+
+<h2 style="color:#FF8143; margin-top: -10px;">Qrvey Mar. Release - Version 5.0
+</h2>
+
+Qrvey V5.0, due to be released on March 31st, is a major upgrade. 
+The new features and enhancements include: 
+* A new dataset preparation model that allows joins between different datasets.  
+* An all new chart builder experience where chart types can be switched in an instant.
+
+A complete list of these enhancements can be found on the
+ <a href="https://partners.qrvey.com/docs/release-notes/"> <strong> Partner Portal </strong> </a>.
+
+<h2 style="color:#FF8143"> Sample App
+</h2>
+
+We are diligently working on developing a sample application to showcase all of the features Qrvey Composer offers and how to use them effortlessly. It is currently available on demand. 
+ 
+<h2 style="color:#FF8143"> Partner Portal: New Look & Content </h2>
+Partner Portal has a whole new look and features, including a list of popular articles.
+New training videos, based on the sample app, are being added daily. Check those out in our <a href="https://partners.qrvey.com/docs/Videos///"> <strong> Videos section </strong> </a>. 
+
+<h2 style="color:#FF8143"> Webinar</h2>
+
+
+
+<h2 style="color:#FF8143"> Life in the Time of COVID-19
+</h2>
+
+<div>
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/newsletter/infographics4.jpg" style="margin:auto; display:block;" width="500" />
+<div>
+
+
+
+
+
+
