@@ -219,7 +219,8 @@
     "Building Qrvey Sample":[
       "video-training/building-qrvey-sample/connections",
       "video-training/building-qrvey-sample/datasets",
-      "video-training/building-qrvey-sample/complex-datasets"
+      "video-training/building-qrvey-sample/complex-datasets",
+      "video-training/building-qrvey-sample/analyzing-data"
     ],
     "Training Session":[
       "video-training/analytics/intro-analytics-apps",
