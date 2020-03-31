@@ -220,7 +220,10 @@
       "video-training/building-qrvey-sample/connections",
       "video-training/building-qrvey-sample/datasets",
       "video-training/building-qrvey-sample/complex-datasets",
-      "video-training/building-qrvey-sample/analyzing-data"
+      "video-training/building-qrvey-sample/analyzing-data",
+      "video-training/building-qrvey-sample/analysis-view",
+      "video-training/building-qrvey-sample/bucketing",
+      "video-training/building-qrvey-sample/formulas"
     ],
     "Training Session":[
       "video-training/analytics/intro-analytics-apps",
