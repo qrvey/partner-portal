@@ -1,0 +1,22 @@
+---
+id: release-mar-2020
+title: Qrvey Version 5.0
+sidebar_label: March 2020
+---
+<div style="text-align: justify">
+Release Date: 2020-03-31
+
+## New Features
+
+### Data Preparation 
+* **QV-9804 - Dataset Creation**: We made substantial changes in the data creation and preparation flow. Datasets can now be created using the same data connections we supported before — MySQL, SQL Server, PostgreSQL and Oracle — and in addition users will be able to create datasets from existing datasets that have been created through our APIs or directly in Qrvey Composer. 
+
+* **QV-9804 - Data Joins**: We added the ability to create datasets from joined data. This means that during the creation process, creators can begin with a single data source and start joining data from different data sources. We are supporting Left, Full, Inner, Right joins and the ability to select multiple columns for the join definition. Creators will be able to see all of the joined columns in the “Join Output” section. 
+
+
+* **QV-9700 - View Data**: After setting up connections, creators can see a view of the data to know if the data source they selected has the correct set of data. For Database Connections, a database and table are needed in order to have the view of the data. In addition, while creating and configuring the dataset the same view is available for each data source added. 
+
+### **Analytics**
+
+
+### **Known Issues**
