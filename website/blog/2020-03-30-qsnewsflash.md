@@ -20,11 +20,11 @@ We are diligently working on developing a sample application to showcase all of 
  
 <h2 style="color:#FF8143"> Partner Portal: New Look & Content </h2>
 Partner Portal has a whole new look and features, including a list of popular articles.
-New training videos, based on the sample app, are being added daily. Check those out in our <a href="https://partners.qrvey.com/docs/Videos///"> <strong> Videos section </strong> </a>. 
+New training videos, based on the sample app, are being added daily. Check those out in our <a href="https://partners.qrvey.com/docs/video-training/analytics/intro-analytics-apps/"> <strong> Videos section </strong> </a>. 
 
 <h2 style="color:#FF8143"> Webinar</h2>
 
-
+Our first Customer Update Webinar has been moved to **May 14th**, 1:00 PM - 2:00 PM COT. We’ll be glad to share all the updates of 2020 and show you the features of the Qrvey platform in action. You can register for it <a href="https://register.gotowebinar.com/register/2826860193465570061/"> <strong> here</strong> </a>.
 
 <h2 style="color:#FF8143"> Life in the Time of COVID-19
 </h2>
