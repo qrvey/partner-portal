@@ -36,4 +36,4 @@ Next, you can create a dataset from your file upload to use your data. Go to the
 
 ![5_FilesUp](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/5_FilesUp.png#thumbnail-80)
 
-For more information on creating datasets and working with your file upload data, go to Creating Datasets
+For more information on creating datasets and working with your file upload data, go to [Creating Datasets](ui-docs/datasets/datasets.md)
