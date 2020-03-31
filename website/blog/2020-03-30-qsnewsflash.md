@@ -5,7 +5,7 @@ title: March 2020
 <h2 style="color:#FF8143; margin-top: -10px;">Qrvey Mar. Release - Version 5.0
 </h2>
 
-Qrvey V5.0, due to be released on March 31st, is a major upgrade. 
+Qrvey V5.0 is due to be released on March 31st and it is a major upgrade. 
 The new features and enhancements include: 
 * Data preparation model has been overhauled to enable joins between datasets and much more.
 * An all new chart builder experience where chart types can be switched in an instant.
