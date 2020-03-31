@@ -1,7 +1,7 @@
 ---
 id: intro-admin-center
-title: Overview
-sidebar_label: Overview
+title: Intro Admin Center
+sidebar_label:  Admin Center
 ---
 
 ### Admin Center 01
