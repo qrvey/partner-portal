@@ -30,6 +30,7 @@
       "ui-docs/web-forms/embedding"
     ],
     "Datasets": [
+      "ui-docs/datasets/data_overview",
       "ui-docs/datasets/datasets",
       "ui-docs/datasets/databases",
       "ui-docs/datasets/csv",
