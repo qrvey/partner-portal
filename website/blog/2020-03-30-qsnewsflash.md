@@ -7,7 +7,7 @@ title: March 2020
 
 Qrvey V5.0 is due to be released on March 31st and it is a major upgrade. 
 The new features and enhancements include: 
-* Data preparation model has been overhauled to enable joins between datasets and much more.
+* Data preparation model that has been overhauled to enable joins between datasets and much more.
 * An all new chart builder experience where chart types can be switched in an instant.
 
 A complete list of these enhancements can be found on the
