@@ -37,3 +37,36 @@ Release Date: 2020-03-31
 * **AT - 5803 - Page Builder - Filters not Duplicated when Duplicating Pages**: When a page is duplicated, the filters of  Tabs, Pages, and Panels are not duplicated.
 
 ### **Known Issues**
+* **QV-10327 -Datasets/Connections - Cards are not shown using Edge**: Using Microsoft Edge 42.17134.1.0, the Dataset and Connection cards are not displayed in these sections. 
+
+* **QV-10182 - Datasets - View Data**: The column headers are shown with an extra ID which is the name of the columns when they get saved to Elasticsearch. 
+
+* **QV-10238 - Datasets - Column Name**: When the name is changed in the data source, it is not updated in the Join Data modal. 
+
+* **QV-10089 - Dataset Loading in Safari**: Data page isn't loading immediately in Safari. The site’s frame loads but the content has a 10-second delay. 
+
+* **QV-10267 - Datasets - Column Order**: The order in which columns are displayed is different from the Columns tab to the View tab in Datasets.  
+
+* **QV-10320 - Last Updated - Sort Applications and Datasets**: These are not being sorted by the most recently updated in the Applications section or inside applications in the Dataset section. 
+
+* **AN-7999 - Calculated Columns in Heatmap - Sorting by Label Issue**: When using 'dateDiff' to create a calculated column and sorting by label is applied, the values are sorted as a label and not as a date due to an Elasticsearch limitation. 
+
+* **AN-8809 - Crosstab Values Using Data Links**: Crosstab with 2 levels of rows and one column is showing values in a field that should not be displaying any values.
+
+* **AN-8296 - Crosstab Grouped Total****: When there are more than 25 max data points shown, the grouped totals are calculated only for the top 25 max data points. 
+
+* **AN-6668 - Metrics Time Period - Quarter**: Count and Distinct Count are not working correctly for some field types used in Web Forms such as Signature, Word Expression Multiselection, and Address.
+
+* **AN-8189 - Crosstab - Null Values Displayed**: When crosstab charts are created using multiple levels of columns and values and these columns are expanded, cells are shown empty instead of displaying the values that exist in the data.
+
+* **AN-9130 - Chart Dependencies**: Filters applied to deleted charts are not removed from the filter panel component.
+
+* **AN-9121 - Reference Lines For Negative Values**: When a SUM reference line is added to a chart with negative values, the reference line is not displayed.
+
+* **AT-6023 - Flows - Searching Dates in Get Data**: For connections used in the Get Data action, the search with dates is not working. 
+
+* **AT-5760 - Conditions Using Quarter, Month, Days Are Not Working**: Flows are not being executed if one of these time frames is used in a condition and the condition is met. This is being fixed. 
+
+* **AT-6056 - Flows - Post Data**: Records are not being inserted using an Oracle connection.
+
+* **DR-1168 - Transformations - Columns Edition in Transformation**: When a column is edited or deleted in the “columns section”, it does not change in the transformation previously created.
