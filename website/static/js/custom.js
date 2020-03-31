@@ -166,12 +166,12 @@ function addDropdownItem() {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-feb-2020">Releases Notes</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
-                        </div>  
-                        <div class="column">
+                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-mar-2020">Releases Notes</a>
                         <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">Qrvey Composer</a>
                         <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin Docs</a>
+                        </div>  
+                        <div class="column">
+                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
                         <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Docs</a>
                     </div>
                 </div>`);

@@ -32,7 +32,6 @@
     "Datasets": [
       "ui-docs/datasets/datasets",
       "ui-docs/datasets/databases",
-      "ui-docs/datasets/elasticsearch",
       "ui-docs/datasets/csv",
       "ui-docs/datasets/datalinks",
       "ui-docs/datasets/connectors"
@@ -191,6 +190,7 @@
   },
   "release-notes": {
     "Release Notes 2020": [
+      "release-notes/release-mar-2020",
       "release-notes/release-feb-2020"
     ],
     "Release Notes 2019": [
@@ -217,16 +217,20 @@
     ]
   },
   "video-training":{
-    "Analytics":[
+    "Building Qrvey Sample":[
+      "video-training/building-qrvey-sample/connections",
+      "video-training/building-qrvey-sample/datasets",
+      "video-training/building-qrvey-sample/complex-datasets",
+      "video-training/building-qrvey-sample/analyzing-data"
+    ],
+    "Training Session":[
       "video-training/analytics/intro-analytics-apps",
       "video-training/analytics/datasets",
       "video-training/analytics/analytic-views",
       "video-training/analytics/reports-pages",
       "video-training/analytics/web-forms",
       "video-training/analytics/metrics",
-      "video-training/analytics/automation"
-    ],
-    "Admin Center":[
+      "video-training/analytics/automation",
       "video-training/admin-center/intro-admin-center"
     ]
   }

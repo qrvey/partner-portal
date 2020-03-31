@@ -49,7 +49,7 @@ const siteConfig = {
       label: 'TUTORIALS',
     },
     {
-      href: '/docs/video-training/analytics/intro-analytics-apps',
+      href: '/docs/video-training/building-qrvey-sample/connections',
       label: 'VIDEOS',
     },
     {
