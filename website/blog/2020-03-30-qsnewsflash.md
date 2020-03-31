@@ -11,7 +11,7 @@ The new features and enhancements include:
 * An all new chart builder experience where chart types can be switched in an instant.
 
 A complete list of these enhancements can be found on the
- <a href="https://partners.qrvey.com/docs/release-notes/"> <strong> Partner Portal </strong> </a>.
+ <a href="https://partners.qrvey.com/docs/release-notes/release-mar-2020/"> <strong> Partner Portal </strong> </a>.
 
 <h2 style="color:#FF8143"> Sample App
 </h2>
