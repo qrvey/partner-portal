@@ -9,7 +9,7 @@ Our upcoming release, Qrvey V5.0, is going to be a major upgrade. The new featur
 * Data preparation model that has been overhauled to enable joins between datasets and much more.
 * An all new chart builder experience where chart types can be switched in an instant.
 
-
+<!--truncate-->
 
 <h2 style="color:#FF8143"> Sample App
 </h2>
