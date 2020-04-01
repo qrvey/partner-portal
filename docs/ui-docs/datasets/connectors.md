@@ -1,7 +1,7 @@
 ---
 id: connectors
-title: Data Connections
-sidebar_label: Data Connections
+title: Connections
+sidebar_label: Connections Overview
 ---
 
 <div style="text-align: justify">
