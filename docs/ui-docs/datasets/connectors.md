@@ -1,25 +1,33 @@
 ---
 id: connectors
-title: Data Connectors
-sidebar_label: Data Connectors
+title: Data Connections
+sidebar_label: Data Connections
 ---
 
 <div style="text-align: justify">
 
-The **Connectors** tab is used to access the **Connectors** area, where you can create and manage your connections to various data sources. 
+The Connections tab is where you can create and manage your connections to various data sources.
 
-![1_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/1_connectors.png#thumbnail)
+![1_connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/1_Connections.png#thumbnail-60)
 
-When you enter the **Connectors** area you will see a list of existing data sources – if you have any. These sources may have been created by you or a Qrvey administrator. The **Source** column will display where data sources originated from.  Use the search box to find a specific data source if you have many connections. 
+When you enter the Connections section for the first time, you will see all the types of connections we support, including SQL Server, MySQL, Oracle, PostgreSQL, File Upload. 
 
-![2_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/2_connectors.png#thumbnail)
+Please go to the documents below to get more information on:
+* [Database Connections](ui-docs/datasets/databases.md)
+* [File Upload Connections](ui-docs/datasets/csv.md) 
 
-To add a new data connection click the **Add Connectors** button and select from the available choices.  You can then follow the instructions for adding your connection string and credentials to complete the connection. 
+Once you have created your connections, you will see them listed as shown below:
 
-![3_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/3_connectors.png#thumbnail)
+![2_connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/2_Connections.png#thumbnail)
 
-To edit or delete an existing connection use the three-dot menu in the right-most column of the row, containing the data connector you want to edit or delete. 
+To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Editing connections could affect related datasets and cause that data is not reloaded to the dataset. 
 
-![4_connectors](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/4_connectors.png#thumbnail-40)
+Clicking on View Data will pop up a partial view of the data for file upload connections and database connections that have a database and table selected.  
 
-**Note:** If you select **Delete** from the three-dot menu the connection is deleted **immediately**, _with no confirmation dialog_.
+![3_connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/3_Connections.png#thumbnail-80)
+
+
+
+
+
+

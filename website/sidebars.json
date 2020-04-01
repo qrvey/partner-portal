@@ -30,11 +30,13 @@
       "ui-docs/web-forms/embedding"
     ],
     "Datasets": [
-      "ui-docs/datasets/datasets",
+      "ui-docs/datasets/data_overview",
+      "ui-docs/datasets/connectors",
       "ui-docs/datasets/databases",
       "ui-docs/datasets/csv",
-      "ui-docs/datasets/datalinks",
-      "ui-docs/datasets/connectors"
+      "ui-docs/datasets/datasets",
+      "ui-docs/datasets/joins",
+      "ui-docs/datasets/datalinks"
     ],
     "Data Views": [
       "ui-docs/dataviews/filters",
