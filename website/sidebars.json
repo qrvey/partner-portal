@@ -36,7 +36,7 @@
       "ui-docs/datasets/datalinks",
       "ui-docs/datasets/connectors"
     ],
-    "Data Views": [
+    "Analysis Views": [
       "ui-docs/dataviews/filters",
       "ui-docs/dataviews/formulas",
       "ui-docs/dataviews/buckets",
