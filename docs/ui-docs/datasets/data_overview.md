@@ -1,6 +1,6 @@
 ---
 id: data_overview
-title: Data Section Overview
+title: Data Overview 
 sidebar_label: Data Section Overview
 ---
 
@@ -13,7 +13,7 @@ In the Data Section, you can import or connect to external data, define web form
 ## Datasets
 The Datasets tab is where you can create Datasets and see them listed. Each dataset card will indicate the name, created and updated date, and the dataset status. 
 In order to create datasets, there need to be existing connections. These connections are created in the Connections tab. Datasets can also be created from already existing datasets. 
-The different statuses will indicate if the data was loaded successfully to the dataset and is active and therefore ready to be used for creating visualizations, or if the data is loading and the dataset is in draft state. When the data fails to load, the dataset card will show a red indicator and the status will be shown as Failed.
+The different statuses will indicate if the data was loaded successfully to the dataset and is ***active*** and therefore ready to be used for creating visualizations, or if the data is loading and the dataset is in ***draft*** state. When the data fails to load, the dataset card will show a red indicator and the status will be shown as ***Failed***.
 
 ![2_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/2_datasets.png#thumbnail)
 

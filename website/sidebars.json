@@ -29,11 +29,17 @@
       "ui-docs/web-forms/publishing",
       "ui-docs/web-forms/embedding"
     ],
-    "Datasets": [
+    "Data": [
       "ui-docs/datasets/data_overview",
-      "ui-docs/datasets/connectors",
-      "ui-docs/datasets/databases",
-      "ui-docs/datasets/csv",
+      {
+        "type": "subcategory",
+        "label": "Connections",
+        "ids": [
+          "ui-docs/datasets/connectors",
+          "ui-docs/datasets/databases",
+          "ui-docs/datasets/csv"
+        ]
+      },
       "ui-docs/datasets/datasets",
       "ui-docs/datasets/joins",
       "ui-docs/datasets/datalinks"
