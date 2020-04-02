@@ -44,7 +44,7 @@
       "ui-docs/datasets/joins",
       "ui-docs/datasets/datalinks"
     ],
-    "Data Views": [
+    "Analysis Views": [
       "ui-docs/dataviews/filters",
       "ui-docs/dataviews/formulas",
       "ui-docs/dataviews/buckets",
