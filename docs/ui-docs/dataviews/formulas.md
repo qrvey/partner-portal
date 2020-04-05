@@ -6,21 +6,74 @@ sidebar_label: Formulas
 
 <div style="text-align: justify">
 
-Formulas can be used throughout the Qrvey platform to perform complex transformations and calculations. This article outlines the structure of our formulas. 
+You can find Formulas in the **Analyze** section of Qrvey Composer to create calculated columns that can be used like any other column of data.
+
+## Use Cases
+Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
+
 
 ## Basic Components
-**Fields/Columns** - Dimensions or measures (columns) from your data source.
+1. **Functions** - Statements used to transform the values or members in a field.
+2. **Columns** - Dimensions or measures (columns) from your data source.
+3. **Operators** - Symbols that denote an operation.  
 
-**Functions** - Statements used to transform the values or members in a field.
 
-**Operators** - Symbols that denote an operation.
 
-## Syntax
-**Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].
+    <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/basic_overview.png" style="margin:auto; display:block;" width="500" />
 
-**Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).
 
+
+## Examples
+* **Extracting a Month From a Date**
+
+The function that returns any part of a date or date/time value is dateFormat:               
+**Syntax**: dateFormat(date_value, 'format')      
+**Example**: orderDate is a date data type and we need to extract the month part of it to use on the x-axis of a bar chart.  
+We can create a new formula as <span style="color:#F3841C"> dateFormat</span>
+(<span style="color:#4491F9"> [orderDate]</span>, 'MM') and call it orderMonth. 
+The new column will list the month number of order date (i.e. 01 for January, 02 for February, etc.)
+
+ 
+
+
+
+* **Aggregate Values of All Rows**
+
+You can get the aggregate of a column based on all rows of data to use in a calculation. An example use case of this would be calculating the percentage of one product's inventory to all products. All aggregate functions start with **agg_**.   
+**Syntax**: agg_sum(value)  
+**Example**: quantityInStock is a number data type and we need to calculate the percentage of each product's quantity to the entire inventory of products.
+We can create a new formula as: <span style="color:#4491F9">[quantityInStock]</span>*100/<span style="color:#F3841C">agg_sum</span>(<span style="color:#4491F9">[quantityInStock]</span>) and call it **quantityPercent**. 
+
+* **Concatenating Text Columns**  
+
+Simple **+** sign can be used to stitch strings of text together. An example would be creating full name from first and last name columns.  
+**Syntax**: value1 + value2 + value3...  
+**Example**: contactFirstName and contactLastName are text type columns and we want to concatenate these together for searches with the last name at the beginning to facilitate sorting. 
+We can create a new formula as: <span style="color:#4491F9">[contactLastName]</span>+' , '+<span style="color:#4491F9">[contactFirstName]</span> and call it **contactName**. The returned result for a contact with first name ‘John’ and last name ‘Doe’ will be ‘Doe, John’.
+
+* **Using Other Scripting Functions**
+
+Painless scripting can be used to create calculated columns. An example of this use case would be to use the ‘if’ function to return a value based on a condition.   
+**Syntax**: if (condition) {return result1;} else {return result2;}  
+**Example**: orderDate and shippedDate are date type columns that contain order and shipping dates in an ERP system. We want to decide in which cases our shipping department did a good job and for which orders reacted to slowly. 
+
+<br>**The function:** </br>if<span style="color:#868585">(</span><span style="color:#F3841C">dateDiff</span><span style="color:#868585">(</span> <span style="color:#4491F9">[orderDate]</span>,<span style="color:#F3841C">isNull</span><span style="color:#868585">(</span><span style="color:#4491F9">[shippedDate]</span>,<span style="color:#F3841C">now</span><span style="color:#868585">())</span>),'DAYS'<span style="color:#868585">)<=</span>3<span style="color:#868585">)</span> {return 'fast';} else {return 'slow';}</br>
+First makes sure that null values of shippedDate are replaced with a data value (now) and then does a comparison to return “fast” when shipping happened within three days of taking the order and “slow” in all other cases.
+
+**Notes**  
+1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added with parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
+
+2. Even if a Painless function is not listed in the Functions list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value.
+
+
+
+
+## **Syntax**
+**Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].  
+**Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).  
 **Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five ninths of [Temperature].
+
+
 
 | Symbol | Operation |
 |---|---|
@@ -41,29 +94,47 @@ Formulas can be used throughout the Qrvey platform to perform complex transforma
 |**NOT**|Logical _not_ of a value.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
 
-## Use Cases
-Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
 
-## Examples Formulas
-1. Date/Time Function Formulas
-Dataset: Superstore - Orders
-Month  _datePart(Order Date,'MM')_
+## Supported Functions
+* **Numeric:** [Elasticsearch Math API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-Math)
 
-2. Aggregation Function Formulas
-Dataset: Superstore - Orders
-Profit Sales Ratio _agg_sum([fbiduOs])/agg_sum([hLhQIXC])_
+* **Text:** [Elasticsearch Text API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-String)  
+* **Date**: Supported functions include *now, dateFormat, dateParse, dateAdd, dateSubtract, dateDiff,* and *dateIsNull*.
 
-3. Numeric Function Formulas
-Dataset: Superstore - Orders
-Minimum Sales Transaction _min([Sales],[Profit])_
+## Creating a Formula 
+1. To create a formula click on the **uppercase sigma** letter. 
 
-4. String /Text Function Formulas
-Dataset: Superstore - Orders
-Region _[Region].length()_
-Upper Case Regions _[Region].upper()_
+   <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/where_is_formulas.png" style="margin:auto; display:block;" width="500" >
 
-5. Null Function Formulas
-Dataset: Any dataset containing a column with some NULL or EMPTY records.
+
+
+2. Click on **Create Formula**.
+ <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/create_formulas.png" style="margin:auto; display:block;" width="500" >
+
+
+3. Look for the function you want to insert, choose it, check it and click **Add to formula**.
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/formulas_gif_overview.gif" style="margin:auto; display:block;" width="500" >
+
+
+
+4. Look for the column you want to Insert and add it to the parentheses. Add any additional parameters that are needed for the function (e.g. dateFormat function needs a "format" parameter that can be set to 'MM' - if the date is to be formatted as month - or 'yyyy' - if it has to be formatted as a 4-digit year)
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/date_format_gif.gif" style="margin:auto; display:block;" width="500" >
+
+
+5. **Test** the formula. Don’t forget to name your formula, and **Save** it.
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/date_format_gif_2.gif" style="margin:auto; display:block;" width="500" >
+
+
+
+6. Use your new formula. Note, that newly added columns are hidden by default and have to be made visible from the **Select Columns** command.
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/select_formula.gif" style="margin:auto; display:block;" width="500" >
+
+
+
+
+
+ containing a column with some NULL or EMPTY records.
 Default (non-date) value _isNull(column, ‘replacement’)_ -any string MUST USE the ‘’ 
 Default (date) value _dateIsNull(column, now())_
 
