@@ -17,7 +17,8 @@ To use it:
 1. Put the script tag of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script >
+<script type="module" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.esm.js"></script>
+<script nomodule="" type="text/javascript" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.js"></script>
 ```
 
 2. Put the  **Tokens Management** tag in the container you want to embed the widget in, and set the  **config** attribute of the tag with a valid JSON object to launch the widget. For example:

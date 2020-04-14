@@ -10,10 +10,11 @@ The Tokens Suggestion Widget allows authorised users to select from the avaliabl
 
 To use it:
 
-1. Put the script tag of the given launcher url in your website. For example:
+1. Put the script tags of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+<script type="module" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.esm.js"></script>
+<script nomodule="" type="text/javascript" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.js"></script>
 ```
 
 2. Put the **Tokens Suggestion Box directive** in the input element that will launch the suggestion box. For example:
