@@ -21,7 +21,6 @@ The following sample show how to embed connectors.
     "domain": "https://your_qrvey_domain",
     "user_id": "<USER_ID>",
     "isAdminApp": false 
-    
     }
 </script>
 
