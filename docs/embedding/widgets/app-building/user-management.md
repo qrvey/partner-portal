@@ -15,7 +15,8 @@ How to use it?
 1. Put the script tag of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script >
+<script type="module" src="https://your_qrvey_domain_widget_launcher/usermanagement/usermanagement.esm.js"></script>
+<script nomodule="" type="text/javascript" src="https://your_qrvey_domain_widget_launcher/usermanagement/usermanagement.js"></script>
 ```
 
 2. Put the **User Management** tag in the container you want to embed the widget, and set the **config** attribute of the tag with a valid JSON object to launch the widget. For example:
