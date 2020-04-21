@@ -10,9 +10,9 @@ The User Management widget allows authorised admins to create and modify user ac
 
 ## User Management Widget
 
-How to use it?
+To use this widget:
 
-1. Put the script tag of the given launcher url in your website. For example:
+1. Put the script tag of the given launcher URL in your website. For example:
 
 ```
 <script type="module" src="https://your_qrvey_domain_widget_launcher/usermanagement/usermanagement.esm.js"></script>
@@ -43,11 +43,11 @@ Each object is defined by common properties. The table below provides general in
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **appid** | String. Application id | Yes |
-| **domain** | String, Data server url | Yes |
-| **userid** | String. User id of the admin.| Yes |
-| apikey | String, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
-| doNotAllow | Strings Array, Collection of permissions, block or hide widget content | No |
+| **appid** | `String`, Application id. | Yes |
+| **domain** | `String`, Data server url. | Yes |
+| **userid** | `String`, User id of the admin.| Yes |
+| apikey | `String`, Optional, you can set up the widget without an api key if it&#39;s set in a Qrvey session cookie. | No |
+| doNotAllow | `String[]`, Array of _permissions_, used to block or hide widget content. | No |
 
 
 ## Permissions
@@ -57,7 +57,7 @@ Add one or more of the followings strings in the **doNotAllow** Property to conf
 
 | **Permission** | **Description** |
 | --- | --- |
-| USERS_AUTHENTICATION | Hide Authentication tab |
-| USERS_LIST | Hide Users tab |
-| GROUPS_CRUD | Hide the actions for create, duplicate or delete groups |
-| GROUPS_USERS_DETAIL | Hide the users table inside the group detail view |
+| USERS_AUTHENTICATION | Hide Authentication tab. |
+| USERS_LIST | Hide Users tab. |
+| GROUPS_CRUD | Hide the actions for create, duplicate or delete groups. |
+| GROUPS_USERS_DETAIL | Hide the users table inside the group detail view. |
