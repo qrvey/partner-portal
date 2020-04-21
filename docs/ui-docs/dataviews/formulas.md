@@ -133,17 +133,3 @@ First makes sure that null values of shippedDate are replaced with a data value 
 
 
 
-
- containing a column with some NULL or EMPTY records.
-Default (non-date) value _isNull(column, ‘replacement’)_ -any string MUST USE the ‘’ 
-Default (date) value _dateIsNull(column, now())_
-
-6. Multiple Functions Formulas (WIP)
-TABLEAU example with multiple nested functions _ZN(SUM([Order Quantity])) - WINDOW_AVG(SUM([Order Quantity]))_  
-
-## Supported Functions
-* **Numeric:** [Elasticsearch Math API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-Math)
-
-* **Text:** [Elasticsearch Text API reference](https://www.elastic.co/guide/en/elasticsearch/painless/7.0/painless-api-reference.html#painless-api-reference-String)
-
-* **Date:** Supported functions include now, today, datePart, dateAdd, dateSubtract, dateDiff, isNull, and isNullDate.
