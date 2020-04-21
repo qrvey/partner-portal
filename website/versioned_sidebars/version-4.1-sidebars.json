@@ -1,0 +1,232 @@
+{
+  "version-4.1-get-started": {
+    "Getting Started": [
+      "version-4.1-get-started/get-started-intro",
+      "version-4.1-business-analytics/business-users",
+      "version-4.1-setup-deployments/setup-overview",
+      "version-4.1-setup-deployments/setup-initial-deployment",
+      "version-4.1-setup-deployments/manage-aws-elasticsearch",
+      "version-4.1-setup-deployments/setup-cost",
+      "version-4.1-setup-deployments/setup-security",
+      "version-4.1-get-started/glossary"
+    ]
+  },
+  "version-4.1-ui-docs": {
+    "Basics": [
+      "version-4.1-ui-docs/basics/logging-in",
+      "version-4.1-ui-docs/basics/profile",
+      "version-4.1-ui-docs/basics/introduction",
+      "version-4.1-ui-docs/basics/applications"
+    ],
+    "Web Forms": [
+      "version-4.1-ui-docs/web-forms/web-forms",
+      "version-4.1-ui-docs/web-forms/type-web-forms",
+      "version-4.1-ui-docs/web-forms/create-web-forms",
+      "version-4.1-ui-docs/web-forms/field-guide",
+      "version-4.1-ui-docs/web-forms/branching",
+      "version-4.1-ui-docs/web-forms/lookup",
+      "version-4.1-ui-docs/web-forms/customize-web-forms",
+      "version-4.1-ui-docs/web-forms/publishing",
+      "version-4.1-ui-docs/web-forms/embedding"
+    ],
+    "Datasets": [
+      "version-4.1-ui-docs/datasets/datasets",
+      "version-4.1-ui-docs/datasets/databases",
+      "version-4.1-ui-docs/datasets/elasticsearch",
+      "version-4.1-ui-docs/datasets/csv",
+      "version-4.1-ui-docs/datasets/datalinks",
+      "version-4.1-ui-docs/datasets/connectors"
+    ],
+    "Data Views": [
+      "version-4.1-ui-docs/dataviews/filters",
+      "version-4.1-ui-docs/dataviews/formulas",
+      "version-4.1-ui-docs/dataviews/buckets",
+      "version-4.1-ui-docs/dataviews/exporting",
+      "version-4.1-ui-docs/dataviews/summary-view",
+      "version-4.1-ui-docs/dataviews/tabular-view",
+      "version-4.1-ui-docs/dataviews/custom-view",
+      "version-4.1-ui-docs/dataviews/chart-builder",
+      "version-4.1-ui-docs/dataviews/metric-view"
+    ],
+    "Builders": [
+      "version-4.1-ui-docs/builders/reports",
+      "version-4.1-ui-docs/builders/pages",
+      "version-4.1-ui-docs/builders/navigation",
+      "version-4.1-ui-docs/builders/user-management"
+    ],
+    "Automation": [
+      "version-4.1-ui-docs/automation/flows",
+      "version-4.1-ui-docs/automation/triggers",
+      "version-4.1-ui-docs/automation/conditions",
+      "version-4.1-ui-docs/automation/send-actions",
+      "version-4.1-ui-docs/automation/data-actions",
+      "version-4.1-ui-docs/automation/tokens"
+    ],
+    "Other": [
+      "version-4.1-ui-docs/others/settings",
+      "version-4.1-ui-docs/others/sending",
+      "version-4.1-ui-docs/others/activity-log"
+    ]
+  },
+  "version-4.1-business-analytics": {
+    "Business Analytics": []
+  },
+  "version-4.1-admin": {
+    "Admin": [
+      "version-4.1-admin/admin-intro",
+      "version-4.1-admin/admin-managing-users",
+      "version-4.1-admin/admin-sections-platform",
+      "version-4.1-admin/admin-data",
+      "version-4.1-admin/admin-sections-data-router",
+      "version-4.1-admin/admin-sections-deployments"
+    ]
+  },
+  "version-4.1-embedding": {
+    "Architecture": [
+      "version-4.1-get-started/get-started-architecture"
+    ],
+    "Embedding": [
+      "version-4.1-embedding/embedding-intro",
+      "version-4.1-embedding/widgets/widget-intro",
+      "version-4.1-embedding/api/api-intro",
+      {
+        "type": "subcategory",
+        "label": "Data Collection Widgets",
+        "ids": [
+          "version-4.1-embedding/widgets/data-sources/widget-webforms",
+          "version-4.1-embedding/widgets/data-sources/widget-dataconnectors",
+          "version-4.1-embedding/widgets/data-sources/widget-datalinks",
+          "version-4.1-embedding/widgets/data-sources/activity-log"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Analytics Widgets",
+        "ids": [
+          "version-4.1-embedding/widgets/analytics/widget-summary-view",
+          "version-4.1-embedding/widgets/analytics/widget-custom-view",
+          "version-4.1-embedding/widgets/analytics/widget-custom-charts-core",
+          "version-4.1-embedding/widgets/analytics/widget-panel-builder",
+          "version-4.1-embedding/widgets/analytics/widget-summary-panel",
+          "version-4.1-embedding/widgets/analytics/widget-filter-panel",
+          "version-4.1-embedding/widgets/analytics/widget-filter-modal"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "App Building Widgets",
+        "ids": [
+          "version-4.1-embedding/widgets/app-building/widget-report-builder",
+          "version-4.1-embedding/widgets/app-building/widget-page-builder",
+          "version-4.1-embedding/widgets/app-building/widget-end-user",
+          "version-4.1-embedding/widgets/app-building/widget-user-management"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Automation Widgets",
+        "ids": [
+          "version-4.1-embedding/widgets/automation/widget-automation",
+          "version-4.1-embedding/widgets/automation/widget-tokens-manager",
+          "version-4.1-embedding/widgets/automation/widget-tokens-suggestion-box"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "API References",
+        "ids": [
+          "version-4.1-embedding/api/api-tutorial",
+          "version-4.1-embedding/api/api-data-sources",
+          "version-4.1-embedding/api/api-analytics",
+          "version-4.1-embedding/api/api-automation"
+        ]
+      }
+    ],
+    "Data Router": [
+      "version-4.1-data-router/data-router-intro",
+      {
+        "type": "subcategory",
+        "label": "Metadata",
+        "ids": [
+          "version-4.1-data-router/Metadata/metadata-intro",
+          "version-4.1-data-router/Metadata/simple-metadata"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Transformations",
+        "ids": [
+          "version-4.1-data-router/Transforms/transforms-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Data Rules",
+        "ids": [
+          "version-4.1-data-router/DataRules/data-rules-intro",
+          "version-4.1-data-router/DataRules/data-router-array-lookup",
+          "version-4.1-data-router/DataRules/data-router-es-lookup",
+          "version-4.1-data-router/DataRules/data-router-flatArray",
+          "version-4.1-data-router/DataRules/data-router-switch",
+          "version-4.1-data-router/DataRules/conditionals-intro",
+          "version-4.1-data-router/DataRules/destinations-intro"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Postdata",
+        "ids": [
+          "version-4.1-data-router/postdata-content"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Data Router API",
+        "ids": [
+          "version-4.1-data-router/apireference/api-reference-intro"
+        ]
+      }
+    ]
+  },
+  "version-4.1-release-notes": {
+    "Release Notes 2020": [
+      "version-4.1-release-notes/release-feb-2020"
+    ],
+    "Release Notes 2019": [
+      "version-4.1-release-notes/release-dec-2019",
+      "version-4.1-release-notes/release-nov-2019",
+      "version-4.1-release-notes/release-sep-2019",
+      "version-4.1-release-notes/release-aug-2019",
+      "version-4.1-release-notes/release-jul-2019",
+      "version-4.1-release-notes/release-mar-2019",
+      "version-4.1-release-notes/release-feb-2019",
+      "version-4.1-release-notes/release-jan-2019"
+    ]
+  },
+  "version-4.1-tutorials": {
+    "Tutorials": [
+      "version-4.1-tutorials/first-analytic-app",
+      "version-4.1-tutorials/create-charts"
+    ]
+  },
+  "version-4.1-faqs": {
+    "FAQs": [
+      "version-4.1-faqs/faqs-intro",
+      "version-4.1-faqs/ask-us"
+    ]
+  },
+  "version-4.1-video-training": {
+    "Analytics": [
+      "version-4.1-video-training/analytics/intro-analytics-apps",
+      "version-4.1-video-training/analytics/datasets",
+      "version-4.1-video-training/analytics/analytic-views",
+      "version-4.1-video-training/analytics/reports-pages",
+      "version-4.1-video-training/analytics/web-forms",
+      "version-4.1-video-training/analytics/metrics",
+      "version-4.1-video-training/analytics/automation"
+    ],
+    "Admin Center": [
+      "version-4.1-video-training/admin-center/intro-admin-center"
+    ]
+  }
+}
