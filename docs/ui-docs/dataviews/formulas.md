@@ -55,13 +55,13 @@ We can create a new formula as: <span style="color:#4491F9">[contactLastName]</s
 
 Painless scripting can be used to create calculated columns. An example of this use case would be to use the ‘if’ function to return a value based on a condition.   
 **Syntax**: if (condition) {return result1;} else {return result2;}  
-**Example**: orderDate and shippedDate are date type columns that contain order and shipping dates in an ERP system. We want to decide in which cases our shipping department did a good job and for which orders reacted to slowly. 
-
-<br>**The function:** </br>if<span style="color:#868585">(</span><span style="color:#F3841C">dateDiff</span><span style="color:#868585">(</span> <span style="color:#4491F9">[orderDate]</span>,<span style="color:#F3841C">isNull</span><span style="color:#868585">(</span><span style="color:#4491F9">[shippedDate]</span>,<span style="color:#F3841C">now</span><span style="color:#868585">())</span>),'DAYS'<span style="color:#868585">)<=</span>3<span style="color:#868585">)</span> {return 'fast';} else {return 'slow';}</br>
-First makes sure that null values of shippedDate are replaced with a data value (now) and then does a comparison to return “fast” when shipping happened within three days of taking the order and “slow” in all other cases.
+**Example**: orderDate and shippedDate are date type columns that contain order and shipping dates in an ERP system. We want to decide in which cases our shipping department did a good job and for which orders it reacted too slow.  
+**The Function:**                     
+if<span style="color:#868585">(</span><span style="color:#F3841C">dateDiff</span><span style="color:#868585">(</span> <span style="color:#4491F9">[orderDate]</span>,<span style="color:#F3841C">isNull</span><span style="color:#868585">(</span><span style="color:#4491F9">[shippedDate]</span>,<span style="color:#F3841C">now</span><span style="color:#868585">())</span>,'DAYS'<span style="color:#868585">)<=</span>3<span style="color:#868585">)</span> {return 'fast';} else {return 'slow';}</br>
+First, make sure that null values of shippedDate are replaced with a data value (<span style="color:#F3841C">now</span>) and then run a comparison to get the result _fast_ when shipping happened within three days of taking the order and _slow_ in all other cases.
 
 **Notes**  
-1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added with parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
+1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added within parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
 
 2. Even if a Painless function is not listed in the Functions list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value.
 
@@ -117,7 +117,7 @@ First makes sure that null values of shippedDate are replaced with a data value 
 
 
 
-4. Look for the column you want to Insert and add it to the parentheses. Add any additional parameters that are needed for the function (e.g. dateFormat function needs a "format" parameter that can be set to 'MM' - if the date is to be formatted as month - or 'yyyy' - if it has to be formatted as a 4-digit year)
+4. Look for the column you want to Insert and add it to the parentheses. Add any additional parameters that are needed for the function (e.g. dateFormat function needs a _format_ parameter that can be set to 'MM' if the date is to be formatted as month - or 'yyyy' if it has to be formatted as a 4-digit year)
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/date_format_gif.gif" style="margin:auto; display:block;" width="500" >
 
 
