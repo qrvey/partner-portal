@@ -41,7 +41,7 @@ function Versions(props) {
                   </a>
                 </td>
                 <td>
-                  <a href="">Release Notes</a>
+                  <a href="/docs${version}/release-notes/release-last">Release Notes</a>
                 </td>
               </tr>
             </tbody>
