@@ -43,11 +43,19 @@ function getUserOnLocalStorage(){
 }
 
 function isAllowedPath(path) {
+    let version = '';
+    if (!isNaN(path[6]) && path[7] === '.') {
+        if (path[9] === '.') {
+            version = '/'+path.substring(6, 11);
+        } else {
+            version = '/'+path.substring(6, 9);
+        } 
+    }
     const blackList = [
-        {path:'/docs/get-started/get-started-architecture', exact: true},
-        {path:'/docs/get-started/get-started-architecture/', exact: true},
-        {path:'/docs/embedding/', exact: false},
-        {path:'/docs/data-router/', exact: false},
+        {path:'/docs'+version+'/get-started/get-started-architecture', exact: true},
+        {path:'/docs'+version+'/get-started/get-started-architecture/', exact: true},
+        {path:'/docs'+version+'/embedding/', exact: false},
+        {path:'/docs'+version+'/data-router/', exact: false},
     ];
     let allowed = true;
     blackList.forEach((route) => {

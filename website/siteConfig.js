@@ -7,21 +7,18 @@
 
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
-
 // List of projects/orgs using your project for the users page.
-const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/qrvey-logo.png',
-    infoLink: 'https://www.qrvey.com',
-    pinned: true,
-  },
-];
+const users = [{
+  caption: 'User1',
+  // You will need to prepend the image path with your baseUrl
+  // if it is not '/', like: '/test-site/img/docusaurus.svg'.
+  image: '/img/qrvey-logo.png',
+  infoLink: 'https://www.qrvey.com',
+  pinned: true,
+}, ];
 
 const siteConfig = {
-  homeTitle:'Begin your journey with our Detailed Documents',
+  homeTitle: 'Begin your journey with our Detailed Documents',
   title: '', // Title for your website.
   tagline: 'Qrvey Documentation',
   url: 'http://partners-staging.qrvey.com.s3-website-us-east-1.amazonaws.com', // Your website URL
@@ -45,28 +42,34 @@ const siteConfig = {
       label: 'DOCS',
     },
     {
-      href: '/docs/tutorials/first-analytic-app',
+      doc: 'tutorials/first-analytic-app',
       label: 'TUTORIALS',
     },
     {
-      href: '/docs/video-training/building-qrvey-sample/connections',
+      doc: 'video-training/analytics/intro-analytics-apps',
       label: 'VIDEOS',
     },
     {
-      href: '/docs/faqs/faqs-intro',
+      doc: 'faqs/faqs-intro',
       label: 'FAQS',
     },
-    { blog: true, label: 'NEWSLETTERS' },
+    {
+      blog: true,
+      label: 'NEWSLETTERS'
+    },
   ],
 
   algolia: {
     apiKey: '7799174e3198189be19d4bcfa852f9f6',
-    appId:'FKFO2CGR6S',
-    indexName:'dev_qrvey',
+    appId: 'FKFO2CGR6S',
+    indexName: 'dev_qrvey',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
 
-  blogSidebarTitle: { default: 'Newsletters', all: 'Newsletters' },
+  blogSidebarTitle: {
+    default: 'Newsletters',
+    all: 'Newsletters'
+  },
 
   // If you have users set above, you add it here:
   users,
@@ -83,7 +86,7 @@ const siteConfig = {
   },
 
   /* Custom fonts for website */
-  
+
   fonts: {
     myFont: [
       "Roboto-Regular",
@@ -94,7 +97,7 @@ const siteConfig = {
       "system-ui"
     ]
   },
-  
+
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Qrvey`,
@@ -108,14 +111,14 @@ const siteConfig = {
   scripts: [
     '/js/user.js',
   ],
-  footerscripts:[
+  footerscripts: [
     '/js/custom.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
     '/js/login.js',
   ],
-  homepagescripts:[
+  homepagescripts: [
     '/js/homepage.js',
   ],
   stylesheets: [
