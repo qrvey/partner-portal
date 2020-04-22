@@ -9,7 +9,7 @@ sidebar_label: Formulas
 You can find Formulas in the **Analyze** and **Chart Builder** sections of Qrvey Composer to create calculated columns that can be used like any other column of data.
 
 ## Use Cases
-Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
+Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, to calculate ratios, and much more.
 
 
 ## Basic Components
@@ -19,14 +19,14 @@ Formulas can be used to segment data, to convert the data type of a field (such 
 
 
 
-    <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/basic_overview.png" style="margin:auto; display:block;" width="500" />
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/basic_overview.png" style="margin:auto; display:block;" width="500" />
 
 
 
 ## Examples
 * **Extracting a Month From a Date**
 
-The function that returns any part of a date or date/time value is dateFormat:               
+The function that returns any part of a date or date/time value is **dateFormat**:               
 **Syntax**: dateFormat(date_value, 'format')      
 **Example**: orderDate is a date data type and we need to extract the month part of it to use on the x-axis of a bar chart.  
 We can create a new formula as <span style="color:#F3841C"> dateFormat</span>
@@ -46,32 +46,32 @@ We can create a new formula as: <span style="color:#4491F9">[quantityInStock]</s
 
 * **Concatenating Text Columns**  
 
-Simple **+** sign can be used to stitch strings of text together. An example would be creating full name from first and last name columns.  
+Thw simple **+** sign can be used to stitch strings of text together. An example would be creating full name from first and last name columns.  
 **Syntax**: value1 + value2 + value3...  
 **Example**: contactFirstName and contactLastName are text type columns and we want to concatenate these together for searches with the last name at the beginning to facilitate sorting. 
 We can create a new formula as: <span style="color:#4491F9">[contactLastName]</span>+' , '+<span style="color:#4491F9">[contactFirstName]</span> and call it **contactName**. The returned result for a contact with first name ‘John’ and last name ‘Doe’ will be ‘Doe, John’.
 
 * **Using Other Scripting Functions**
 
-Painless scripting can be used to create calculated columns. An example of this use case would be to use the ‘if’ function to return a value based on a condition.   
+Other scripting functions can be used to create calculated columns. An example of this use case would be to use the **if** function to return a value based on a condition.   
 **Syntax**: if (condition) {return result1;} else {return result2;}  
 **Example**: orderDate and shippedDate are date type columns that contain order and shipping dates in an ERP system. We want to decide in which cases our shipping department did a good job and for which orders it reacted too slow.  
 **The Function:**                     
 if<span style="color:#868585">(</span><span style="color:#F3841C">dateDiff</span><span style="color:#868585">(</span> <span style="color:#4491F9">[orderDate]</span>,<span style="color:#F3841C">isNull</span><span style="color:#868585">(</span><span style="color:#4491F9">[shippedDate]</span>,<span style="color:#F3841C">now</span><span style="color:#868585">())</span>,'DAYS'<span style="color:#868585">)<=</span>3<span style="color:#868585">)</span> {return 'fast';} else {return 'slow';}</br>
-First, make sure that null values of shippedDate are replaced with a data value (<span style="color:#F3841C">now</span>) and then run a comparison to get the result _fast_ when shipping happened within three days of taking the order and _slow_ in all other cases.
+First, make sure that _null_ values of shippedDate are replaced with a data value (<span style="color:#F3841C">now</span>) and then run a comparison to get the result _fast_ when shipping happened within three days of taking the order and _slow_ in all other cases.
 
 **Notes**  
 1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added within parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
 
-2. Even if a Painless function is not listed in the Functions list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value.
+2. Even if a function is not listed in the **Functions** list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value. _Note, this also illustrates the use of the **Apply** operator as an alternative way to invoke a function._
 
 
 
 
 ## **Syntax**
 **Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].  
-**Functions** - function names must be in lowercase and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).  
-**Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression 32 + 5 * [Temperature] / 9, 32 is added to five ninths of [Temperature].
+**Functions** - function names are case sensitive and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).  
+**Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression **32 + 5 * [Temperature] / 9**, 32 is added to five ninths of [Temperature].
 
 
 
