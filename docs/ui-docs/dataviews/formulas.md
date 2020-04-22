@@ -6,7 +6,7 @@ sidebar_label: Formulas
 
 <div style="text-align: justify">
 
-You can find Formulas in the **Analyze** section of Qrvey Composer to create calculated columns that can be used like any other column of data.
+You can find Formulas in the **Analyze** and **Chart Builder** sections of Qrvey Composer to create calculated columns that can be used like any other column of data.
 
 ## Use Cases
 Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, and to calculate ratios.
