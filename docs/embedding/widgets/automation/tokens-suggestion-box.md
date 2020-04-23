@@ -6,14 +6,15 @@ sidebar_label: Tokens Suggestion Box
 
 ## Widget Overview
 
-The Tokens Suggestion Widget allows authorised users to select from the avaliable tokes. It can also launch the Tokens Manager Widget to define new tokens.
+The Tokens Suggestion Widget allows authorised users to select from the avaliable tokens. It can also launch the Tokens Manager Widget to define new tokens.
 
 To use it:
 
-1. Put the script tag of the given launcher url in your website. For example:
+1. Put the script tags of the given launcher url in your website. For example:
 
 ```
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+<script type="module" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.esm.js"></script>
+<script nomodule="" type="text/javascript" src="https://your_qrvey_domain_widget_launcher/qrveytokens/qrveytokens.js"></script>
 ```
 
 2. Put the **Tokens Suggestion Box directive** in the input element that will launch the suggestion box. For example:
@@ -75,13 +76,22 @@ Each object is defined by common properties. The table below provides general in
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **app\_id** | String, Application id | Yes |
-| **domain** | String, Data server url | Yes |
-| user\_id | String, Optional, you can set up the widget without a User ID if it&#39;s set in the Qrvey session cookie | No |
-| api_key | String, Optional, you can set up the widget without an api key if it&#39;s set in the Qrvey session cookie | No |
-| manage\_button | Boolean: show or hide the token modal button | No |
-| qrveyid | String. Webform id to autogenerate tokens | No |
-| custom\_tokens | Object: Each key contain a list of tokens, the key will be used as a title of the list | No |
-| data\_tokens | Array: Contains the list of tokens that will be displayed in the DataTokens list | No |
-| user\_tokens | Array: Contains the list of tokens that will be displayed in the User Defined  list | No |
-| pattern | String: This is text which will trigger the suggestion box | No |
+| **app_id** | `String`, Application id. | Yes |
+| **domain** | `String`, Data server url. | Yes |
+| user_id | `String`, Optional, you can set up the widget without a User ID if it&#39;s set in the Qrvey session cookie. | No |
+| api_key | `String`, Optional, you can set up the widget without an api key if it&#39;s set in the Qrvey session cookie. | No |
+| manage_button | `Boolean`, show or hide the token modal button. | No |
+| qrveyid | `String`, Webform id to autogenerate tokens. | No |
+| custom_tokens | `Object`, Each _key_ contains an array of tokens, the _key_ will be used as a title of the list. | No |
+| custom_tokens._key_[..].label | `String`, token label. | No |
+| custom_tokens._key_[..].Value | `String`, taken value. | No |
+| custom_tokens._key_[..].questionid | `String`, reference of the question used to create the token. | No |
+| data_tokens | `Array`, Contains the list of tokens that will be displayed in the DataTokens list. | No |
+| data_tokens[..].label | `String`, token label. | No |
+| data_tokens[..].Value | `String`, taken value. | No |
+| data_tokens[..].questionid | `String`, reference of the question used to create the token. | No |
+| user_tokens | `Array`, Contains the list of tokens that will be displayed in the User Defined list. | No |
+| user_tokens.label | `String`, token label. | No |
+| user_tokens.Value | `String`, taken value. | No |
+| user_tokens.questionid | `String`, reference of the question used to create the token. | No |
+| pattern | `String`, This is text which will trigger the suggestion box | No |
