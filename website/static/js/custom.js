@@ -6,6 +6,7 @@ const metadataid = 'MKT_METADATAID';
 const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
 const baseUrl = '/';
 
+let version = '';
 let IP_ADDRESS = '';
 let TITLE_DOCUMENT = '';
 let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.length) : CURRENT_PAGE;
@@ -41,11 +42,13 @@ insertParternsLogo();
 insertLogButtonToNav();
 // ADD DROPDOWN ITEM
 addDropdownItem();
+//Dropdown To Change Doc Version
+changeVersion();
 // Check title document to save it 
 TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
 // Check if this page contains a video
 const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-if (videoContanier){
+if (videoContanier) {
     checkVideoIsPlayed(videoContanier);
 }
 // CHECK IS THE USER IS LOGGED IN
@@ -63,16 +66,16 @@ setTimeout(() => {
 ///FIN INIT
 /////
 
-function checkVideoIsPlayed(videoContanier){
+function checkVideoIsPlayed(videoContanier) {
     const CONTENT_TYPE = 'videos'
     videoContanier.onclick = () => {
         let videoId;
         videoContanier.classList.forEach(value => {
-            if(value.search('wistia_async_') > -1){
+            if (value.search('wistia_async_') > -1) {
                 videoId = value.replace('wistia_async_', '');
             }
         });
-        console.log('activity send',videoId);
+        console.log('activity send', videoId);
         postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, videoId, CONTENT_TYPE));
     }
 }
@@ -116,13 +119,13 @@ function postActivy(newActivity) {
 
 
     fetch(datarouter.url, {
-        headers: headers,
-        method: 'POST',
-        body: JSON.stringify([{
-            metadataId: datarouter.metadataId,
-            data: data
-        }])
-    })
+            headers: headers,
+            method: 'POST',
+            body: JSON.stringify([{
+                metadataId: datarouter.metadataId,
+                data: data
+            }])
+        })
         .then(response => response.json())
         .then(
             response => {
@@ -145,7 +148,7 @@ function postActivy(newActivity) {
 
 function insertLogButtonToNav() {
     const navBar = document.querySelector('ul.nav-site.nav-site-internal');
-    if(currentUser){
+    if (currentUser) {
         navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
     } else {
         navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" href="/login">Log In</a></li>`);
@@ -154,11 +157,48 @@ function insertLogButtonToNav() {
 
 function insertParternsLogo() {
     let navbar = document.querySelector('.headerTitleWithLogo');
-    navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span';
+    navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span>';
+}
+
+function changeVersion() {
+    let navbar = document.querySelector('.fixedHeaderContainer a h3');
+    const newelem = navbar.parentElement;
+    newelem.removeAttribute("href");
+    const pathname = window.location.pathname;
+    if (pathname.includes("docs")) {
+        navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.0</span><span><a>Change</a></span></div>';
+        if (!isNaN(pathname[6]) && pathname[7] === '.') {
+            if (pathname[9] === '.') {
+            } else {
+                navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.1</span><span><a>Change</a></span></div>';
+            } 
+        } 
+    } else {
+        navbar.innerHTML = '<span style="display:none;"></span>';
+    }
+    const pathVersion = document.location.pathname.split(/\/docs\/(\d+(?:\.\d+)+\/)?/g).pop();
+    navbar.onclick = () => toggleSubNav(navbar);
+            console.log(toggleSubNav);
+            navbar.classList.add('nav-item-dropdown');
+            navbar.insertAdjacentHTML('beforeend', `
+                <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
+                    <div class="column">
+                    <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.0</a>
+                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.1</a>
+                        </div>  
+                </div>`);
 }
 
 function addDropdownItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
+    const pathname = window.location.pathname;
+    if (!isNaN(pathname[6]) && pathname[7] === '.') {
+        if (pathname[9] === '.') {
+            version = '/'+pathname.substring(6, 11);
+        } else {
+            version = '/'+pathname.substring(6, 9);
+        } 
+    }
     navItems.forEach(element => {
         if (element.innerText == 'DOCS') {
             element.onclick = () => toggleSubNav(element);
@@ -166,35 +206,34 @@ function addDropdownItem() {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/release-notes/release-mar-2020">Releases Notes</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/ui-docs/basics/logging-in">Qrvey Composer</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/admin/admin-intro">Admin Docs</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/release-notes/release-last">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/ui-docs/basics/logging-in">Qrvey Composer</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/admin/admin-intro">Admin Docs</a>
                         </div>  
                         <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-intro">Getting Started</a>
-                        <a class="dropdown-item" href="${baseUrl}docs/get-started/get-started-architecture">Developer Docs</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/get-started/get-started-intro">Getting Started</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/get-started/get-started-architecture">Developer Docs</a>
                     </div>
                 </div>`);
         }
     });
 };
 
-function outsiteClickDropdown(e){
+function outsiteClickDropdown(e) {
     const element = document.querySelector('a.nav-item-dropdown.active');
     if (element && !element.contains(e.target)) {
-      element.classList.remove('active');
-      document.body.removeEventListener('click', outsiteClickDropdown);
+        element.classList.remove('active');
+        document.body.removeEventListener('click', outsiteClickDropdown);
     }
 }
 
 function toggleSubNav(element) {
     if (isDesktop) {
         element.classList.toggle('active');
-        if(element.classList.contains('active')){
+        if (element.classList.contains('active')) {
             document.body.addEventListener('click', outsiteClickDropdown);
         }
     } else {
         window.location.href = '/documentation';
     }
 }
-

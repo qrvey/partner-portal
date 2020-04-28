@@ -2,7 +2,7 @@
 title: March 2020
 ---
 
-<h2 style="color:#FF8143; margin-top: -10px;">Qrvey Mar. Release - Version 5.0
+<h2 style="color:#FF8143; margin-top: -10px;">Qrvey Version 5.0
 </h2>
 
 Qrvey V5.0 is due to be released on March 31st and it is a major upgrade. 

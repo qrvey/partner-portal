@@ -22,6 +22,28 @@ ul.nav-site.nav-site-internal li a{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.fixedHeaderContainer a h3{
+    text-decoration: none;
+    font-size: 11px;
+    line-height: normal;
+    margin-left: 40px;
+    margin-top: 7px;
+}
+.changeversioncont {
+    display: flex;
+}
+.changeversioncont span{
+    display: inline;
+    font-size: 12px;
+    margin-top: 3px;
+    font-weight: 500;
+}
+.changeversioncont a{
+    height: auto;
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #0063FF;
+}
 .navSearchWrapper:before{
     border-color: #889DBD;
 }
@@ -43,7 +65,7 @@ ul.nav-site.nav-site-internal li a{
     display: none;
     position: absolute;
     top: calc( 100% + 12px);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 3px 3px;
     background: #0B111A;
     height: auto;
     width: auto;
@@ -53,6 +75,13 @@ ul.nav-site.nav-site-internal li a{
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     transform-origin: top;
+}
+.dropdown-nav--version {
+    margin-top:-5px;
+    margin-left:35px;
+}
+.dropdown-nav--version .dropdown-item{
+    padding: 5px 16px !important;
 }
 .dropdown-nav .column{
     width: auto;
