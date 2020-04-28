@@ -101,7 +101,7 @@ async function getFiles(dir) {
 }
 
 getFiles('docs');
-getFiles('website/versioned_docs')
+
 /*
 setTimeout(() => {
     fs.writeFile('search.json', JSON.stringify(documents), 'utf8', (err) => {
