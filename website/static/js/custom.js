@@ -180,13 +180,23 @@ function changeVersion() {
     navbar.onclick = () => toggleSubNav(navbar);
             console.log(toggleSubNav);
             navbar.classList.add('nav-item-dropdown');
-            navbar.insertAdjacentHTML('beforeend', `
+            if (pathname.includes("video-training")) {
+                navbar.insertAdjacentHTML('beforeend', `
+                <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
+                    <div class="column">
+                    <a class="dropdown-item" href="${baseUrl}docs${''}/release-notes/release-last">5.0</a>
+                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/release-notes/release-last">4.1</a>
+                        </div>  
+                </div>`);
+            } else {
+                navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
                     <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.0</a>
                     <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.1</a>
                         </div>  
                 </div>`);
+            }
 }
 
 function addDropdownItem() {
