@@ -184,8 +184,8 @@ function changeVersion() {
                 navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                    <a class="dropdown-item" href="${baseUrl}docs${''}/release-notes/release-last">5.0</a>
-                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/release-notes/release-last">4.1</a>
+                    <a class="dropdown-item" href="${baseUrl}docs${''}/analytics/intro-analytics-apps">5.0</a>
+                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/analytics/intro-analytics-apps">4.1</a>
                         </div>  
                 </div>`);
             } else {
