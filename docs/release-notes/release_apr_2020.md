@@ -15,9 +15,9 @@ Release Date: 2020-04-30
 
 * <a href="http://uidoc.qrvey.com.s3-website-us-east-1.amazonaws.com/docs/ui-docs/datasets/databases/"> <strong>QV-9700 - View Data: </strong></a> After setting up connections, creators can see a view of the data to know if the data source they selected has the correct set of data. For Database Connections, a database and table are needed in order to have the view of the data. In addition, while creating and configuring the dataset the same view is available for each data source added. 
 
-* **QV-9924 - Data Synchronization - Single Source - Full Reload**: We added a feature that allows users to configure and schedule the reload of their data. For this version, we will only support the syncing of data when there is only one single data source in a dataset. This will work for database data sources only.
+* <a href="http://partners-staging.qrvey.com/docs/ui-docs/datasets/datasets/"> <strong>QV-9924 - Data Synchronization - Single Source - Full Reload: </strong></a>We added a feature that allows users to configure and schedule the reload of their data. For this version, we will only support the syncing of data when there is only one single data source in a dataset. This will work for database data sources only.
 
-* **QV-10282 - Dataset - Activity Log**: We added an Activity Log tab inside of each dataset enabling the creators to see the events related to the dataset. The creators will be able to see a list of basic successful events and the details of failed events for data load and data sync processes.
+* <a href="http://partners-staging.qrvey.com/docs/ui-docs/datasets/datasets/"> <strong>QV-10282 - Dataset - Activity Log: </strong></a> We added an Activity Log tab inside of each dataset enabling the creators to see the events related to the dataset. The creators will be able to see a list of basic successful events and the details of failed events for data load and data sync processes.
 
 
 ### Analytics
