@@ -161,16 +161,18 @@ function insertParternsLogo() {
     navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span>';
 }
 
-function changeVersion() {
+async function changeVersion() {
 	let navbar = document.querySelector('.fixedHeaderContainer a h3');
 	const newelem = navbar.parentElement;
 	newelem.removeAttribute("href");
-	const pathname = window.location.pathname;
+    const pathname = window.location.pathname;
+    let previousVersion = '';
 	if (pathname.includes("docs")) {
-		navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.0</span><span><a>Change</a></span></div>';
+        previousVersion = await validateVersionWork('4.1');
+		navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.X</span><span><a>Change</a></span></div>';
 		if (!isNaN(pathname[6]) && pathname[7] === '.') {
 			if (pathname[9] === '.') {} else {
-				navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.1</span><span><a>Change</a></span></div>';
+				navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.X</span><span><a>Change</a></span></div>';
 			}
 		}
 	} else {
@@ -182,20 +184,27 @@ function changeVersion() {
 	navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                    <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.0</a>
-                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.1</a>
-                        </div>  
+                        <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.X</a>
+                        ${ previousVersion ? `<a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.X</a>` : '' }
+                    </div>  
                 </div>`);
 }
 
-fetch('notExists').then(function (response) {
-    if (response.status !== 200) {
-    } else {
-        window.location.assign() = baseUrl + "docs/" + pathVersion;
-    }
-}).catch(function (err) {
-});
-
+function validateVersionWork(version){
+    return new Promise((resolve, reject) => {
+        fetch(`${baseUrl}docs/${version}/${pathVersion}`).then(function (response) {
+            console.log(response);
+            if (response.status !== 200) {
+                resolve(false);
+            } else {
+                resolve(true);
+            }
+            }).catch(function (error) {
+                console.error(error);
+                reject(error);
+        });
+    })
+}
 
 function addDropdownItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
