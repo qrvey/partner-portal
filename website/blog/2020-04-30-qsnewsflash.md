@@ -18,7 +18,7 @@ A complete list of these enhancements can be found on the
 <h2 style="color:#FF8143"> Partner Portal: Versioning 
 </h2>
 
-With the release of the drastically different V5, the need for versioning in documentation became more apparent than ever before. We took immediate action and added the ability to choose your version from the header to filter the documentation.
+With the release of the drastically different V5.1, the need for versioning in documentation became more apparent than ever before. We took immediate action and added the ability to choose your version from the header to filter the documentation.
 
 Check out the feature on the 
  <a href="https://partners.qrvey.com/"> <strong> Partner Portal </strong> </a>and provide us with your feedback. 
