@@ -5,11 +5,12 @@ title: April 2020
 <h2 style="color:#FF8143; margin-top: -10px;">Version 5.1 Now Available
 </h2>
 
-Qrvey V5.1 is released on April 30th. This is a major release with drastic changes which is why the version spent a month in beta and was tried by some of our customers. This helped us improve and eliminate minor glitches along with some usability issues — a big <span style="color:#F3841C"> **THANK YOU**</span> to our beta customers for such valuable feedback!   
+Qrvey V5.1 is released on April 30th. This is a major release with drastic changes which is why the version spent a month in beta being tested by some of our customers. This helped us eliminate a few minor glitches and improve some usability issues — a big <span style="color:#F3841C"> **THANK YOU**</span> to our beta customers for their valuable feedback!   
 The new features and enhancements include: 
 * Data preparation model that has been overhauled to enable joins between datasets and much more.
 * An all-new chart builder experience where chart types can be switched in an instant.
-* Complex data types in the Chart Builder.
+* The addition of complex data types in the Chart Builder.
+
  
 <!--truncate-->
 A complete list of these enhancements can be found on the
