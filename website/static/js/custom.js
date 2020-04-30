@@ -169,10 +169,10 @@ async function changeVersion() {
     let previousVersion = '';
 	if (pathname.includes("docs")) {
         previousVersion = await validateVersionWork('4.1');
-		navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.0</span><span><a>Change</a></span></div>';
+		navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.X</span><span><a>Change</a></span></div>';
 		if (!isNaN(pathname[6]) && pathname[7] === '.') {
 			if (pathname[9] === '.') {} else {
-				navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.1</span><span><a>Change</a></span></div>';
+				navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.X</span><span><a>Change</a></span></div>';
 			}
 		}
 	} else {
@@ -184,8 +184,8 @@ async function changeVersion() {
 	navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.0</a>
-                        ${ previousVersion ? `<a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.1</a>` : '' }
+                        <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.X</a>
+                        ${ previousVersion ? `<a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/${pathVersion}">4.X</a>` : '' }
                     </div>  
                 </div>`);
 }
