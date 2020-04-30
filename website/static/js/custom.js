@@ -180,12 +180,14 @@ function changeVersion() {
     navbar.onclick = () => toggleSubNav(navbar);
             console.log(toggleSubNav);
             navbar.classList.add('nav-item-dropdown');
-            if (pathname.includes("video-training")) {
+            var exceptions = ["video-training"];
+            for (i = 0; i < exceptions.length; i++) {
+            if (pathname.includes(exceptions[i])) {
                 navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                    <a class="dropdown-item" href="${baseUrl}docs${''}/analytics/intro-analytics-apps">5.0</a>
-                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/analytics/intro-analytics-apps">4.1</a>
+                    <a class="dropdown-item" href="${baseUrl}docs${''}/release-notes/release-last">5.0</a>
+                    <a class="dropdown-item" href="${baseUrl}docs/${'4.1'}/release-notes/release-last">4.1</a>
                         </div>  
                 </div>`);
             } else {
@@ -197,6 +199,7 @@ function changeVersion() {
                         </div>  
                 </div>`);
             }
+        }
 }
 
 function addDropdownItem() {
