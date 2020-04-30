@@ -5,6 +5,7 @@ const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
 const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
 const baseUrl = '/';
+const pathVersion = document.location.pathname.split(/\/docs\/(\d+(?:\.\d+)+\/)?/g).pop();
 
 let version = '';
 let IP_ADDRESS = '';
@@ -161,26 +162,24 @@ function insertParternsLogo() {
 }
 
 function changeVersion() {
-    let navbar = document.querySelector('.fixedHeaderContainer a h3');
-    const newelem = navbar.parentElement;
-    newelem.removeAttribute("href");
-    const pathname = window.location.pathname;
-    if (pathname.includes("docs")) {
-        navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.0</span><span><a>Change</a></span></div>';
-        if (!isNaN(pathname[6]) && pathname[7] === '.') {
-            if (pathname[9] === '.') {
-            } else {
-                navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.1</span><span><a>Change</a></span></div>';
-            } 
-        } 
-    } else {
-        navbar.innerHTML = '<span style="display:none;"></span>';
-    }
-    const pathVersion = document.location.pathname.split(/\/docs\/(\d+(?:\.\d+)+\/)?/g).pop();
-    navbar.onclick = () => toggleSubNav(navbar);
-            console.log(toggleSubNav);
-            navbar.classList.add('nav-item-dropdown');
-            navbar.insertAdjacentHTML('beforeend', `
+	let navbar = document.querySelector('.fixedHeaderContainer a h3');
+	const newelem = navbar.parentElement;
+	newelem.removeAttribute("href");
+	const pathname = window.location.pathname;
+	if (pathname.includes("docs")) {
+		navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>5.0</span><span><a>Change</a></span></div>';
+		if (!isNaN(pathname[6]) && pathname[7] === '.') {
+			if (pathname[9] === '.') {} else {
+				navbar.innerHTML = '<span>Selected Version:</span><br><div class="changeversioncont"><span>4.1</span><span><a>Change</a></span></div>';
+			}
+		}
+	} else {
+		navbar.innerHTML = '<span style="display:none;"></span>';
+	}
+	navbar.onclick = () => toggleSubNav(navbar);
+	console.log(toggleSubNav);
+	navbar.classList.add('nav-item-dropdown');
+	navbar.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex dropdown-nav--version" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
                     <a class="dropdown-item" href="${baseUrl}docs${''}/${pathVersion}">5.0</a>
@@ -188,6 +187,15 @@ function changeVersion() {
                         </div>  
                 </div>`);
 }
+
+fetch('notExists').then(function (response) {
+    if (response.status !== 200) {
+    } else {
+        window.location.assign() = baseUrl + "docs/" + pathVersion;
+    }
+}).catch(function (err) {
+});
+
 
 function addDropdownItem() {
     const navItems = document.querySelectorAll('ul.nav-site.nav-site-internal li a');
