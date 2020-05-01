@@ -3,6 +3,7 @@
     "Getting Started": [
       "get-started/get-started-intro",
       "business-analytics/business-users",
+      "get-started/aws_marketplace",
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
       "setup-deployments/manage-aws-elasticsearch",

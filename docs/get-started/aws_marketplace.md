@@ -1,4 +1,11 @@
-# Getting Qrvey From AWS Marketplace
+---
+id: aws_marketplace
+title: Getting Qrvey From AWS Marketplace
+sidebar_label: Getting Qrvey From AWS Marketplace
+---
+
+<div style="text-align: justify">
+
 This document explains the steps to download and install Qrvey Business Analytics platform from AWS marketplace. The listing on Marketplace can be found 
 <a href="https://aws.amazon.com/marketplace/pp/B0863DDPQG"> <strong> here</strong> </a>.
 

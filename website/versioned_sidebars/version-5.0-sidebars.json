@@ -3,6 +3,7 @@
     "Getting Started": [
       "version-5.0-get-started/get-started-intro",
       "version-5.0-business-analytics/business-users",
+      "get-started/aws_marketplace",
       "version-5.0-setup-deployments/setup-overview",
       "version-5.0-setup-deployments/setup-initial-deployment",
       "version-5.0-setup-deployments/manage-aws-elasticsearch",
