@@ -3,6 +3,7 @@
     "Getting Started": [
       "get-started/get-started-intro",
       "business-analytics/business-users",
+      "get-started/aws_marketplace",
       "setup-deployments/setup-overview",
       "setup-deployments/setup-initial-deployment",
       "setup-deployments/manage-aws-elasticsearch",
@@ -23,20 +24,29 @@
       "ui-docs/web-forms/type-web-forms",
       "ui-docs/web-forms/create-web-forms",
       "ui-docs/web-forms/field-guide",
+      "ui-docs/web-forms/complex-data",
       "ui-docs/web-forms/branching",
       "ui-docs/web-forms/lookup",
       "ui-docs/web-forms/customize-web-forms",
       "ui-docs/web-forms/publishing",
       "ui-docs/web-forms/embedding"
     ],
-    "Datasets": [
+    "Data": [
+      "ui-docs/datasets/data_overview",
+      {
+        "type": "subcategory",
+        "label": "Connections",
+        "ids": [
+          "ui-docs/datasets/connectors",
+          "ui-docs/datasets/databases",
+          "ui-docs/datasets/csv"
+        ]
+      },
       "ui-docs/datasets/datasets",
-      "ui-docs/datasets/databases",
-      "ui-docs/datasets/csv",
-      "ui-docs/datasets/datalinks",
-      "ui-docs/datasets/connectors"
+      "ui-docs/datasets/joins",
+      "ui-docs/datasets/datalinks"
     ],
-    "Data Views": [
+    "Analysis Views": [
       "ui-docs/dataviews/filters",
       "ui-docs/dataviews/formulas",
       "ui-docs/dataviews/buckets",
@@ -221,7 +231,11 @@
       "video-training/building-qrvey-sample/connections",
       "video-training/building-qrvey-sample/datasets",
       "video-training/building-qrvey-sample/complex-datasets",
-      "video-training/building-qrvey-sample/analyzing-data"
+      "video-training/building-qrvey-sample/analysis-views",
+      "video-training/building-qrvey-sample/formulas",
+      "video-training/building-qrvey-sample/bucketing",
+      "video-training/building-qrvey-sample/summary-view",
+      "video-training/building-qrvey-sample/tabular-view"
     ],
     "Training Session":[
       "video-training/analytics/intro-analytics-apps",
