@@ -230,7 +230,9 @@
       "version-5.0-video-training/building-qrvey-sample/complex-datasets",
       "version-5.0-video-training/building-qrvey-sample/analysis-views",
       "version-5.0-video-training/building-qrvey-sample/formulas",
-      "version-5.0-video-training/building-qrvey-sample/bucketing"
+      "version-5.0-video-training/building-qrvey-sample/bucketing",
+      "video-training/building-qrvey-sample/summary-view",
+      "video-training/building-qrvey-sample/tabular-view"
     ],
     "Training Session": [
       "version-5.0-video-training/analytics/intro-analytics-apps",

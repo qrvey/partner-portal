@@ -231,7 +231,9 @@
       "video-training/building-qrvey-sample/complex-datasets",
       "video-training/building-qrvey-sample/analysis-views",
       "video-training/building-qrvey-sample/formulas",
-      "video-training/building-qrvey-sample/bucketing"
+      "video-training/building-qrvey-sample/bucketing",
+      "video-training/building-qrvey-sample/summary-view",
+      "video-training/building-qrvey-sample/tabular-view"
     ],
     "Training Session":[
       "video-training/analytics/intro-analytics-apps",
