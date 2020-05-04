@@ -15,7 +15,7 @@ The new features and enhancements include:
  
 <!--truncate-->
 A complete list of these enhancements can be found on the
- <a href="https://partners.qrvey.com/docs/release-notes/release-apr-2020/"> <strong> Partner Portal </strong> </a>.
+ <a href="https://partners.qrvey.com/docs/release-notes/release-last/"> <strong> Partner Portal </strong> </a>.
 
 <h2 style="color:#FF8143"> Partner Portal: Versioning 
 </h2>
