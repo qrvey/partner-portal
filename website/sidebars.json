@@ -44,8 +44,7 @@
       },
       "ui-docs/datasets/datasets",
       "ui-docs/datasets/joins",
-      "ui-docs/datasets/datalinks",
-      "ui-docs/datasets/sample"
+      "ui-docs/datasets/datalinks"
     ],
     "Analysis Views": [
       "ui-docs/dataviews/filters",
