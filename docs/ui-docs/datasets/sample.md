@@ -10,7 +10,7 @@ sidebar_label: Super Sample
 
 ![sample_img](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/sample/stamp_free.png#thumbnail-60)
 
-## Subtitle
+## Subtitle 1
 *Curabitur consequat bibendum lectus*, vel commodo lorem fringilla et. Donec sem mauris, facilisis sit amet purus et, consectetur efficitur lacus. Nulla a augue id lacus mattis viverra. Curabitur a libero accumsan, tristique orci vitae, faucibus est. Vivamus nec maximus nisl. Nulla gravida mauris quis eros sollicitudin gravida. Curabitur eget metus sodales, dignissim dolor ac, bibendum tellus. Ut in tellus in nibh lacinia tristique sed et ipsum. Fusce pellentesque efficitur congue. Phasellus id arcu id eros vulputate mattis.
 
 > NOTE: This Sample Works [see more](../basics/introduction.md)
