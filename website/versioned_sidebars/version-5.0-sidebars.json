@@ -12,6 +12,12 @@
       "version-5.0-get-started/glossary"
     ]
   },
+  "version-5.0-aws": {
+    "AWS": [
+      "aws/manage-aws-elasticsearch",
+      "aws/setup-cost"
+    ]
+  },
   "version-5.0-ui-docs": {
     "Basics": [
       "version-5.0-ui-docs/basics/logging-in",
@@ -200,6 +206,7 @@
   "version-5.0-release-notes": {
     "Release Notes 2020": [
       "version-5.0-release-notes/release-last",
+      "version-5.0-release-notes/release-mar-2020",
       "version-5.0-release-notes/release-feb-2020"
     ],
     "Release Notes 2019": [
