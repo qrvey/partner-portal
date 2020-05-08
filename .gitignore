@@ -17,4 +17,6 @@ website/docker-compose.yml
 website/docs/*
 website/pages/en/help.js
 website/pages/en/users.js
+website/package-lock.json
+website/package.json
 Migration/*
