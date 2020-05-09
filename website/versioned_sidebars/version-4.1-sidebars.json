@@ -5,8 +5,6 @@
       "version-4.1-business-analytics/business-users",
       "version-4.1-setup-deployments/setup-overview",
       "version-4.1-setup-deployments/setup-initial-deployment",
-      "version-4.1-setup-deployments/manage-aws-elasticsearch",
-      "version-4.1-setup-deployments/setup-cost",
       "version-4.1-setup-deployments/setup-security",
       "version-4.1-get-started/glossary"
     ]

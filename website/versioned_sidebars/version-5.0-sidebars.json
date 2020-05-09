@@ -6,16 +6,8 @@
       "get-started/aws_marketplace",
       "version-5.0-setup-deployments/setup-overview",
       "version-5.0-setup-deployments/setup-initial-deployment",
-      "version-5.0-setup-deployments/manage-aws-elasticsearch",
-      "version-5.0-setup-deployments/setup-cost",
       "version-5.0-setup-deployments/setup-security",
       "version-5.0-get-started/glossary"
-    ]
-  },
-  "version-5.0-aws": {
-    "AWS": [
-      "version-5.0-aws/manage-aws-elasticsearch",
-      "version-5.0-aws/setup-cost"
     ]
   },
   "version-5.0-ui-docs": {

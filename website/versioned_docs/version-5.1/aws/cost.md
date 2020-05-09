@@ -1,5 +1,5 @@
 ---
-id: version-5.0-setup-cost
+id: version-5.1-setup-cost
 title: Cost
 sidebar_label: Cost
 original_id: setup-cost

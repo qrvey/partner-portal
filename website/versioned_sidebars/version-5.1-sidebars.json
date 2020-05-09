@@ -6,14 +6,11 @@
       "version-5.1-get-started/aws_marketplace",
       "version-5.1-setup-deployments/setup-overview",
       "version-5.1-setup-deployments/setup-initial-deployment",
-      "version-5.1-setup-deployments/manage-aws-elasticsearch",
-      "version-5.1-setup-deployments/setup-cost",
       "version-5.1-setup-deployments/setup-security",
       "version-5.1-get-started/glossary"
     ]
-  },
-  "version-5.1-aws": {
-    "AWS": [
+  },"version-5.1-aws": {
+    "aws": [
       "aws/manage-aws-elasticsearch",
       "aws/setup-cost"
     ]

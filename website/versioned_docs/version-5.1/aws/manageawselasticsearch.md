@@ -1,5 +1,5 @@
 ---
-id: version-5.0-manage-aws-elasticsearch
+id: version-5.1-manage-aws-elasticsearch
 title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
 original_id: manage-aws-elasticsearch
