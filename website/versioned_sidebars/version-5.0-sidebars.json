@@ -14,8 +14,8 @@
   },
   "version-5.0-aws": {
     "AWS": [
-      "aws/manage-aws-elasticsearch",
-      "aws/setup-cost"
+      "version-5.0-aws/manage-aws-elasticsearch",
+      "version-5.0-aws/setup-cost"
     ]
   },
   "version-5.0-ui-docs": {
@@ -206,7 +206,7 @@
   "version-5.0-release-notes": {
     "Release Notes 2020": [
       "version-5.0-release-notes/release-last",
-      "version-5.0-release-notes/release-mar-2020",
+      "release-notes/release-mar-2020",
       "version-5.0-release-notes/release-feb-2020"
     ],
     "Release Notes 2019": [
