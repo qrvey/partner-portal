@@ -13,7 +13,7 @@
     ]
   },
   "aws": {
-    "aws": [
+    "AWS": [
       "aws/manage-aws-elasticsearch",
       "aws/setup-cost"
     ]
