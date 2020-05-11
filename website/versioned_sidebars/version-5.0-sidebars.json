@@ -6,8 +6,6 @@
       "get-started/aws_marketplace",
       "version-5.0-setup-deployments/setup-overview",
       "version-5.0-setup-deployments/setup-initial-deployment",
-      "version-5.0-setup-deployments/manage-aws-elasticsearch",
-      "version-5.0-setup-deployments/setup-cost",
       "version-5.0-setup-deployments/setup-security",
       "version-5.0-get-started/glossary"
     ]
@@ -200,6 +198,7 @@
   "version-5.0-release-notes": {
     "Release Notes 2020": [
       "version-5.0-release-notes/release-last",
+      "release-notes/release-mar-2020",
       "version-5.0-release-notes/release-feb-2020"
     ],
     "Release Notes 2019": [
