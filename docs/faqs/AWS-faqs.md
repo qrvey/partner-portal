@@ -10,7 +10,7 @@ sidebar_label: Qrvey FAQs
 **Q: What are the options and correct process of connecting to an AWS RDS?**
 
 A: There are 2 components in Qrvey that connect to a data source and download data. The first one is an ECS container running on an EC2 instance called *qrvey*_*_*microservice_ECSInstance* and the second one is a Lambda function called **_dataload_drDataSourcePump*.   
-Both of these components should be able to connect to your data source. For example, if you are using an RDS with restricted access, refer to <a href="//"> <strong>this document </strong></a> for details. If your data source is outside of AWS and can only be restricted using IP addresses, then you can configure a VPC with a private subnet and Internet/NAT gateway to get a static IP for Lambda functions.
+Both of these components should be able to connect to your data source. For example, if you are using an RDS with restricted access, have a look at <a href="/docs/aws/connect-to-RDS-instance/"> <strong>this document </strong></a> for more details. If your data source is outside of AWS and can only be restricted using IP addresses, then you can configure a VPC with a private subnet and Internet/NAT gateway to get a static IP for Lambda functions.
 
 **Q: How can I speed up my data load?**
 
