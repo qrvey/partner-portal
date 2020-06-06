@@ -1,7 +1,8 @@
 ---
-id: publishing-faqs-intro
+id: version-5.1-publishing-faqs-intro
 title: Publishing FAQs
 sidebar_label: Publishing FAQs
+original_id: publishing-faqs-intro
 ---
 
 <div style="text-align: justify">

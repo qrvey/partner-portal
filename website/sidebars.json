@@ -230,7 +230,9 @@
   "faqs":{
     "FAQs": [
       "faqs/faqs-intro",
-      "faqs/ask-us"
+      "faqs/ask-us",
+      "faqs/aws-faqs-intro",
+      "faqs/publishing-faqs-intro"
     ]
   },
   "video-training":{
