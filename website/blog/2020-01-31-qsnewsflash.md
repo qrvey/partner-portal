@@ -28,7 +28,7 @@ These improvements are in the works and will take effect in the near future.
 
 <h2 style="color:#FF8143"> New In Documentation </h2>
 
-We have more content in the <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"> <strong> Tutorials </strong> </a> and <a href="https://partners.qrvey.com/docs/faqs/aws-faqs-intro/"> <strong> FAQs </strong></a> sections of the documentation site. Check those out and provide us with your feedback.
+We have more content in the <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"> <strong> Tutorials </strong> </a> and <a href="https://partners.qrvey.com/docs/faqs/faqs-intro/"> <strong> FAQs </strong></a> sections of the documentation site. Check those out and provide us with your feedback.
 
 <div style="background:#FAFAFA; padding-top:10px;">
     <h2 style="text-align:center; color:#FF8143">

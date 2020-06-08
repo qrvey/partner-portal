@@ -34,7 +34,7 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps', name: 'Training Session' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Datasets' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
-      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/aws-faqs-intro', topLinks: [
+      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
         { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
     ];

@@ -24,7 +24,7 @@ We have been working for the past two months on upgrading the internal instance 
 
 * Are you not sure how to get started when creating an analytic application? Check out our new <a href="https://partners.qrvey.com/docs/tutorials/first-analytic-app/"><strong>Tutorials</strong></a> section in the Partner Portal for step-by-step guides for real-life scenarios.
 
-* Do you have pressing questions that you can’t find the answers to in our documentation? Look in the new <a href="https://partners.qrvey.com/docs/faqs/aws-faqs-intro"><strong>FAQs</strong></a> section to see if someone else has already asked the same question, or submit your questions so everyone can benefit.
+* Do you have pressing questions that you can’t find the answers to in our documentation? Look in the new <a href="https://partners.qrvey.com/docs/faqs/faqs-intro"><strong>FAQs</strong></a> section to see if someone else has already asked the same question, or submit your questions so everyone can benefit.
 
 Be sure to check the Partner Portal frequently as we continue to add new content every week.
 
