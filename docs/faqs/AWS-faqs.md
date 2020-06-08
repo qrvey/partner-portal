@@ -25,6 +25,19 @@ A: This is probably because your AWS account is in Sandbox mode for Simple Email
 
 A: Yes. At the moment this is standard for all installations, however, it will change in the near future as we are constantly improving our architecture and planning to remove the EC2 instances. 
 
+**Q: How do I know if my Elasticsearch cluster is short on space?**
+
+A: There are 2 ways to monitor the Elasticsearch cluster.
+1. Using Admin Center: 
+    1. Login to Admin center using your AWS IAM credentials
+    2. Click on DataRouter section
+    3. Review the node usage in the Elasticsearch section at the bottom. It shows the total space vs used and then per node. 
+2. AWS Elasticsearch console
+    1. Login to your AWS account with a user that has permissions to access Elasticsearch domains.
+    2. Select “Dashboard” tab from top left menu.
+    3. You can review the free storage space in the table for your Elasticsearch cluster.
+
+
 
 
 

@@ -15,8 +15,7 @@
   "aws": {
     "AWS": [
       "aws/manage-aws-elasticsearch",
-      "aws/setup-cost",
-      "faqs/faqs-intro"
+      "aws/setup-cost"
     ]
   },
   "ui-docs": {
