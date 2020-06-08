@@ -33,6 +33,7 @@ pipelines:
           - npm install
           - npm run staging
           - cd website
+          - npm update
           - npm install
           - npm install replace@1.0.0 -g --force
           - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" siteConfig.js
