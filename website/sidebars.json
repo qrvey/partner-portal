@@ -15,7 +15,8 @@
   "aws": {
     "AWS": [
       "aws/manage-aws-elasticsearch",
-      "aws/setup-cost"
+      "aws/setup-cost",
+      "faqs/faqs-intro"
     ]
   },
   "ui-docs": {
@@ -229,10 +230,9 @@
   },
   "faqs":{
     "FAQs": [
-      "faqs/faqs-intro",
-      "faqs/ask-us",
       "faqs/aws-faqs-intro",
-      "faqs/publishing-faqs-intro"
+      "faqs/publishing-faqs-intro",
+      "faqs/ask-us"
     ]
   },
   "video-training":{

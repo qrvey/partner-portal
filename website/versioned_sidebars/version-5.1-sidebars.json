@@ -12,7 +12,8 @@
   },"version-5.1-aws": {
     "AWS": [
       "version-5.1-aws/manage-aws-elasticsearch",
-      "version-5.1-aws/setup-cost"
+      "version-5.1-aws/setup-cost",
+      "version-5.1-faqs/faqs-intro"
     ]
   },
   "version-5.1-ui-docs": {
@@ -225,10 +226,9 @@
   },
   "version-5.1-faqs": {
     "FAQs": [
-      "version-5.1-faqs/faqs-intro",
-      "version-5.1-faqs/ask-us",
       "version-5.1-faqs/aws-faqs-intro",
-      "version-5.1-faqs/publishing-faqs-intro"
+      "version-5.1-faqs/publishing-faqs-intro",
+      "version-5.1-faqs/ask-us"
     ]
   },
   "version-5.1-video-training": {
