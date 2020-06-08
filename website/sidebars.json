@@ -15,7 +15,8 @@
   "aws": {
     "AWS": [
       "aws/manage-aws-elasticsearch",
-      "aws/setup-cost"
+      "aws/setup-cost",
+      "aws/connect-to-RDS-instance"
     ]
   },
   "ui-docs": {
