@@ -230,8 +230,8 @@
   },
   "faqs":{
     "FAQs": [
-      "faqs/aws-faqs-intro",
-      "faqs/publishing-faqs-intro",
+      "faqs/aws-faqs",
+      "faqs/publishing-faqs",
       "faqs/ask-us"
     ]
   },

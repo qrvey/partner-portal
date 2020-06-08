@@ -1,5 +1,5 @@
 ---
-id: publishing-faqs-intro
+id: publishing-faqs
 title: Publishing FAQs
 sidebar_label: Publishing FAQs
 ---

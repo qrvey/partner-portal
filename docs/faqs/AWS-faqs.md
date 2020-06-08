@@ -1,5 +1,5 @@
 ---
-id: aws-faqs-intro
+id: aws-faqs
 title: AWS FAQs
 sidebar_label: AWS FAQs
 ---
