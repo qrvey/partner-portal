@@ -227,6 +227,8 @@
   "version-5.1-faqs": {
     "FAQs": [
       "version-5.1-faqs/faqs-intro",
+      "faqs/aws-faqs",
+      "faqs/publishing-faqs",
       "version-5.1-faqs/ask-us"
     ]
   },

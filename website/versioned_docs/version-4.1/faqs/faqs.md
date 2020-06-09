@@ -1,7 +1,7 @@
 ---
 id: version-4.1-faqs-intro
-title: Qrvey FAQs
-sidebar_label: Qrvey FAQs
+title: General
+sidebar_label: General
 original_id: faqs-intro
 ---
 
