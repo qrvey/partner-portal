@@ -1,7 +1,7 @@
 ---
 id: faqs-intro
-title: Qrvey FAQs
-sidebar_label: Qrvey FAQs
+title: General
+sidebar_label: General
 ---
 
 <div style="text-align: justify">

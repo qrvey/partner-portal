@@ -231,6 +231,8 @@
   "faqs":{
     "FAQs": [
       "faqs/faqs-intro",
+      "faqs/aws-faqs",
+      "faqs/publishing-faqs",
       "faqs/ask-us"
     ]
   },

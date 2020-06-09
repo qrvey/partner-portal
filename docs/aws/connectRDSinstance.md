@@ -2,7 +2,6 @@
 id: connect-to-RDS-instance
 title: Connecting Qrvey Platform to Your Secure RDS Instance
 sidebar_label: Connecting Qrvey Platform to Your Secure RDS Instance
-
 ---
 
 <style>
