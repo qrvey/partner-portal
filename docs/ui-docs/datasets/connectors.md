@@ -22,10 +22,11 @@ Once you have created your connections, you will see them listed as shown below:
 
 To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Editing connections could affect related datasets and cause that data is not reloaded to the dataset. 
 
-Clicking on View Data will pop up a partial view of the data for file upload connections and database connections that have a database and table selected.  
-
 ![3_connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/3_Connections.png#thumbnail-80)
 
+When about to delete a connection, you will be shown a modal that contains places where the connection is being used, which can be either in **Datasets** or in **Automated Flows**. If a connection that is being used is deleted, the assets that depend on that connection can break. In the case of datasets, the dataset will remain active, however, the data cannot be reloaded. In the case of Automation, flows will be executed but the actions using the connection will not work. 
+
+![3_connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/4_Connections.png#thumbnail-80)
 
 
 
