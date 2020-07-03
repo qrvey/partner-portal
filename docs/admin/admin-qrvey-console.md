@@ -1,16 +1,25 @@
 ---
 id: admin-sections-platform
-title: Business Analytics
-sidebar_label: Business Analytics
+title: Administering Qrvey Composer
+sidebar_label: Administering Qrvey Composer
 ---
 
 <div style="text-align: justify">
 
 ## Creator User Management
 
-This section is where Admins add their “Creator” users to grant them access to the Business Analytics application. Admins can choose to allow creators to sign up through the Business Analytics application signup page. Alternatively, Admins can add Creator accounts in the User Management section. 
+This section is where Admins add their “Creator” users to grant them access to the Qrvey Composer. 
 
-When adding a creator, Admins can assign or automatically generate a password. Creators will receive this password by email, and can use this to access the Analytics Application. Creators can be edited or deleted at any time. Once a Creator has been added successfully, Admins will have access to their content which can be used to share applications. 
+   <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_management.png
+" style="margin:auto; display:block;" width="500" />
+
+Admins can choose to allow creators to sign up through the Composer signup page, they can add Creator accounts in the User Management section, alternatively, they can set up OpenID Authentication as well. 
+
+When adding a creator, Admins can assign or automatically generate a password. Creators will receive this password by email and can use this to access Qrvey Composer. Creator accounts can be edited or deleted at any time. 
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/new_user.png
+" style="margin:auto; display:block;" width="500" />
+
 
 ## Customization
 
