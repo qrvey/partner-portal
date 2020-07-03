@@ -76,9 +76,12 @@ To edit your dataset, you can click on the three-dot menu in the right corner of
 
 ![13_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/13_Datasets.png#thumbnail)
  
-Most of the changes that you make to your dataset will require the data to be reloaded. The only changes that do not require a data reload are changing the name of the dataset or the name of any of the data source columns. Once you are finished editing the dataset, click on **Save** and then reload the data. 
+Most of the changes that you make to your dataset will require the data to be reloaded. The only changes that do not require a data reload are those that don’t make a fundamental change in the dataset, like changing the name of the dataset or the name of any of the data source columns. If a change requires you to reload data, you will be notified when you apply your changes. Once you are finished editing the dataset, click on **Apply Changes** and then reload the data, if you are prompted or otherwise want to. 
+If you would like to go back to the last loaded version of the dataset you can use the **Discard Changes** option.
 
 You can reload your data at any time, without having to edit the dataset. If you need to update the dataset, just click on **Reload Data** and your data will begin loading again. 
+
+
 
 ## Data Syncs
 When creating datasets from *Database Connections*, you will have the option to automatically sync your data. Data Synchronization settings are found when clicking on a data source inside the dataset. 
@@ -94,7 +97,10 @@ On the *Data Syncs tab*, you will be able to set up a schedule to automatically 
 
 **Append and Update Records** loads only the new and updated records whenever a scheduled process begins. 
 
-You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should load, and when it should stop, if ever.
+You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should load, and when it should stop, if ever. 
+
+Data Syncing is available for single-source datasets as well as datasets using joins. 
+
 
 ## Activity Log
 
