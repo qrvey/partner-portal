@@ -29,8 +29,8 @@ Don’t forget to check the site when you look for information and let us know i
 
 <h3 style="color:#FF8143"> New Videos </h3>
 
-* <a href="https://qrvey.wistia.com/medias/gecrw0jeye"><strong> Chart Builder Overview</strong>
-* <a href="https://qrvey.wistia.com/medias/1o8vj8j0uz"> <strong>
+* <a href="docs/video-training/building-qrvey-sample/chart_builder_overview"><strong> Chart Builder Overview</strong>
+* <a href="docs/video-training/building-qrvey-sample/custom_metric_views/"> <strong>
 Custom and Metric Views</strong>
 
 
