@@ -1,5 +1,5 @@
 ---
-title: June 2020
+title: July 2020
 ---
 
 <h2 style="color:#FF8143; margin-top: -10px;">Version 5.2 Now Available
