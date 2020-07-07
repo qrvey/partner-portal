@@ -241,7 +241,9 @@
       "version-5.1-video-training/building-qrvey-sample/formulas",
       "version-5.1-video-training/building-qrvey-sample/bucketing",
       "version-5.1-video-training/building-qrvey-sample/summary-view",
-      "version-5.1-video-training/building-qrvey-sample/tabular-view"
+      "version-5.1-video-training/building-qrvey-sample/tabular-view",
+      "version-5.1-video-training/building-qrvey-sample/chart_builder_overview",
+      "version-5.1-video-training/building-qrvey-sample/custom_metric_views"
     ],
     "Training Session": [
       "version-5.1-video-training/analytics/intro-analytics-apps",
