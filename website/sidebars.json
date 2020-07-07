@@ -258,6 +258,9 @@
       "video-training/analytics/metrics",
       "video-training/analytics/automation",
       "video-training/admin-center/intro-admin-center"
+    ],
+    "Release Demos":[
+      "video-training/release/version-5.2"
     ]
   }
 }
