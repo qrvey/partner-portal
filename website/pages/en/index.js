@@ -21,7 +21,7 @@ class Index extends React.Component {
     this.categories = [
       {name:'Documentation',path: siteConfig.baseUrl+'documentation', iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`, 
       topLinks: [
-        { link: siteConfig.baseUrl+'docs/release-notes/release-mar-2020', name: 'Release Notes' },
+        { link: siteConfig.baseUrl+'docs/release-notes/release-last', name: 'Release Notes' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
@@ -100,7 +100,7 @@ class Index extends React.Component {
               <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
               <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
-              Version 5.1 has been released, <a className="primary-color" href="docs/release-notes/release-apr-2020/">learn more.</a>
+              Version 5.2 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">
