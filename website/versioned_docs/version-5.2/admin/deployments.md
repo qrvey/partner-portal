@@ -1,5 +1,5 @@
 ---
-id: version-4.1-admin-sections-deployments
+id: version-5.2-admin-sections-deployments
 title: Deployments
 sidebar_label: Deployments
 original_id: admin-sections-deployments

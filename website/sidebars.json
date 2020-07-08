@@ -12,6 +12,13 @@
       "get-started/glossary"
     ]
   },
+  "aws": {
+    "AWS": [
+      "aws/manage-aws-elasticsearch",
+      "aws/setup-cost",
+      "aws/connect-to-RDS-instance"
+    ]
+  },
   "ui-docs": {
     "Basics": [
       "ui-docs/basics/logging-in",
@@ -201,6 +208,7 @@
   "release-notes": {
     "Release Notes 2020": [
       "release-notes/release-last",
+      "release-notes/release-apr-2020",
       "release-notes/release-mar-2020",
       "release-notes/release-feb-2020"
     ],
@@ -224,6 +232,8 @@
   "faqs":{
     "FAQs": [
       "faqs/faqs-intro",
+      "faqs/aws-faqs",
+      "faqs/publishing-faqs",
       "faqs/ask-us"
     ]
   },
@@ -236,7 +246,9 @@
       "video-training/building-qrvey-sample/formulas",
       "video-training/building-qrvey-sample/bucketing",
       "video-training/building-qrvey-sample/summary-view",
-      "video-training/building-qrvey-sample/tabular-view"
+      "video-training/building-qrvey-sample/tabular-view",
+      "video-training/building-qrvey-sample/chart_builder_overview",
+      "video-training/building-qrvey-sample/custom_metric_views"
     ],
     "Training Session":[
       "video-training/analytics/intro-analytics-apps",
@@ -247,6 +259,9 @@
       "video-training/analytics/metrics",
       "video-training/analytics/automation",
       "video-training/admin-center/intro-admin-center"
+    ],
+    "Release Demos":[
+      "video-training/release/version-5.2"
     ]
   }
 }

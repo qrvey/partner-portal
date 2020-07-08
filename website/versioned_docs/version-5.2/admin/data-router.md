@@ -1,5 +1,5 @@
 ---
-id: version-4.1-admin-sections-data-router
+id: version-5.2-admin-sections-data-router
 title: Data Router
 sidebar_label: Data Router
 original_id: admin-sections-data-router

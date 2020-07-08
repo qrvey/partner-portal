@@ -43,8 +43,9 @@ async function readFile(dir, file){
                 title = title.substring(1, title.length);
             }
             let content = data.split('---')[2].replace(`<div style="text-align: justify">`, '').replace('###', '').replace('##', '');
+            let body = content.substring(1, 8000).replace('/', '');
             if(content.length > 100) {
-                content = content.substring(1, 100).replace('/', '');
+                content = content.substring(1, 100).replace('/', '') + '...';
             }
             let hierarchies = [null, null, null, null, null, null];
             var regex = /##\s(.*)\s\n/g;
@@ -60,6 +61,7 @@ async function readFile(dir, file){
                 title,
                 content,
                 url,
+                body,
                 hierarchy: {
                     lvl0: title,
                     lvl1: hierarchies[0],

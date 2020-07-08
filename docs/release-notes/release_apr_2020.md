@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-apr-2020
 title: Qrvey Version 5.1
 sidebar_label: April 2020
 ---
@@ -15,7 +15,7 @@ Release Date: 2020-04-30
 
 * <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-9700 - View Data: </strong></a> After setting up connections, creators can see a view of the data to know if the data source they selected has the correct set of data. For Database Connections, a database and table are needed in order to have the view of the data. In addition, while creating and configuring the dataset the same view is available for each data source added. 
 
-* <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-9924 - Data Synchronization - Single Source - Full Reload: </strong></a>We added a feature that allows users to configure and schedule the reload of their data. For this version, we will only support the syncing of data when there is only one single data source in a dataset. This will work for database data sources only.
+* <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-9924 - Data Synchronization </strong></a>**- Single Source - Full Reload:** We added a feature that allows users to configure and schedule the reload of their data. For this version, we will only support the syncing of data when there is only one single data source in a dataset. This will work for database data sources only.
 
 * <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-10282 - Dataset - Activity Log: </strong></a> We added an Activity Log tab inside of each dataset enabling the creators to see the events related to the dataset. The creators will be able to see a list of basic successful events and the details of failed events for data load and data sync processes.
 
@@ -26,7 +26,7 @@ Release Date: 2020-04-30
 * **AN-5892 - Chart Builder - Complex Data**: We added new visualization options for more complex data types in chart builder. This includes making additional column values available to our standard charts. The Creator will be able to create a chart that contains complex data such as entities, keywords, file types, address,  and other data parts as the Category/Label, Value, Pivot, or Groups of a chart. Documentation needed for Complex Data.
 
 
-* <a href="/docs/ui-docs/dataviews/formulas/"> <strong>AN-6439 - Formulas - Calculated Columns in Summary View:</strong></a> We added the feature to display formula columns that the user had created as summary panels in the summary view.
+* **AN-6439 - Formulas -** <a href="/docs/ui-docs/dataviews/formulas/"> <strong> Calculated Columns in Summary View</strong></a>: We added the feature to display formula columns that the user had created as summary panels in the summary view.
 
 ## Automation
 
@@ -43,7 +43,7 @@ Release Date: 2020-04-30
 
 * **AN- 8989 - Analytics System Messages**: We improved the error and system messages for charts when handling dependencies such as deleting data links, buckets and formulas so that users can see the issue when a chart is not displayed. 
 
-* <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-10209 - Datasets - Create New Connection:</strong></a> We improved the dataset creation process by allowing  creators to generate connections during the process of creating datasets without having to go back to the connections section. 
+* **QV-10209 - Datasets -**<a href="/docs/ui-docs/datasets/datasets/"> <strong>Create New Connection:</strong></a> We improved the dataset creation process by allowing  creators to generate connections during the process of creating datasets without having to go back to the connections section. 
 
 
 * **AT-6014 - Improve Data Flow From Builders**: We improved the user experience by adding new shortcuts to builders in order to give creators direct access to the dataset creation section. There are cases when a creator goes to the report/page/chart builders or to Automation without having any datasets created. An empty state message will appear in the data panel with a link to the data section.

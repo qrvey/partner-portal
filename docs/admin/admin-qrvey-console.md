@@ -1,16 +1,89 @@
 ---
 id: admin-sections-platform
-title: Business Analytics
-sidebar_label: Business Analytics
+title: Administering Qrvey Composer
+sidebar_label: Administering Qrvey Composer
 ---
 
 <div style="text-align: justify">
 
-## Creator User Management
+##  User Management
 
-This section is where Admins add their “Creator” users to grant them access to the Business Analytics application. Admins can choose to allow creators to sign up through the Business Analytics application signup page. Alternatively, Admins can add Creator accounts in the User Management section. 
+In this section, the Administrators can manage their “Creator” users by granting them access to the Qrvey Composer and setting up authentication methods for them. By default, Qrvey Authentication is available; the Administrator can manually add new users or choose to allow Creators to sign up through the composer signup page. This along with other options for the login page can be customized by Administrators in the Onboarding Tab of General Settings in the Customization section. 
+Alternatively, SSO methods can be enabled in the Authentication Tab. Currently, OpenID (OpenID Connect based on OAuth 2.0 protocol) is supported. More SSO compliant protocols will be added later. 
 
-When adding a creator, Admins can assign or automatically generate a password. Creators will receive this password by email, and can use this to access the Analytics Application. Creators can be edited or deleted at any time. Once a Creator has been added successfully, Admins will have access to their content which can be used to share applications. 
+![1admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_management.png#thumbnail-80)
+
+
+## Users
+When adding a Creator, Admins can assign or automatically generate a password. Creators will receive this password by email and can use this to access Qrvey Composer. Creator accounts can be edited or deleted at any time.
+
+![2admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/new_user.png#thumbnail-80)
+
+
+## Authentication
+In this Tab, Administrators can enable and set up Authentication methods for Creators to log in and even sign up to Qrvey Composer — at least one method must be enabled. Currently, besides Qrvey Authentication, Administrators can enable OpenID using an OpenID Connect compliant Provider based on OAuth 2.0 protocol. 
+
+If a new user logs in using OpenID, a new Creator account is created using the account details obtained from OpenID provider, such as: email, name and last name. 
+
+If an existing user that has been added by an administrator or that signed up using their email and password uses the OpenID Login Option, and if the email used to log into the OpenID provider matches the email already stored in Qrvey’s Admin Center, then the Creator will be identified as the same account, and no new account will be added.
+
+![3admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/um.png#thumbnail-80)
+
+If only the Qrvey Authentication option is enabled, the Log In page will look as it is customized in the Onboarding Tab, but no OpenID option will be visible: 
+
+
+![4admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/custom.png#thumbnail-80)
+
+
+If both methods are enabled, the Log In with OpenID option will now be visible. Components related to Qrvey authentication will still be controlled by Onboarding Tab. Creators can choose their preferred method to sign up or log in to the Qrvey Composer.
+
+![5admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/custom2.png#thumbnail-80)
+
+If only the OpenID method is enabled and Qrvey Authentication is disabled, all components related to Qrvey Authentication will be hidden in the Log In page, and only the Log In with OpenID option will be visible. Also, the related options will be deactivated and blocked in the Onboarding Tab. 
+
+![6admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/custom3.png#thumbnail-80)
+
+
+In order to set up OpenID authentication method for Creators, administrators must enter the following parameters: 
+
+* **Realm:** The OpenID Connect provider URL 
+* **Client ID:** OAuth 2.0 credential that must be obtained from the API Console Credentials page, in the OpenID provider. 
+* **Client Secret:** OAuth 2.0 credential that must be obtained from the API Console Credentials page, in the OpenID provider.
+
+The following will be automatically loaded for view only purposes: 
+* **Return URL:** The HTTP endpoint that will receive the response from OpenID provider — the URL that the OpenID providers redirect to once the authentication and authorization process has been successful. For Creators Authentication, this URL corresponds to the Qrvey Composer Main URL.
+   
+   * **Important:** The Return URL must be added to the OpenID provider as Authorized Redirect URLs. 
+
+Once all parameters have been entered, the Administrator can click on the **Generate URL** button. All required fields will be validated and the Realm will be tested using a request. This will verify that the Realm does exist and it’s OpenID enabled. If all validations and verifications are successful, the Log In URL will be shown and the Copy URL option is enabled. This URL is the one linked to the **Log In with OpenID** button. Also, it can be pasted in an explorer. If that’s so, Creators can skip the Qrvey Composer Login page and go directly to the OpenID login process.
+
+
+## Example of Configuration in OpenID Provider 
+Before Creators can use the OpenID provider to log in, you must set up your OpenID provider account in order to obtain the OAuth 2.0 credentials: ClientID, Client Secret, Realm; set a redirect URL (Return URL); and optionally, customize the branding information that creators will see on the user-consent screen. 
+
+As an example, the configuration of Google as OpenID provider will be explained in the following steps:
+1. Set up a project in the <a href="https://console.developers.google.com/ "> <strong>
+Google API Console</strong></a>.
+2. Create an OAuth consent screen. In this screen you can set up how you want to configure and register your App. Also, you can configure what data and permissions the users will share or grant to Qrvey when authenticating. In this case: email, name and last name. 
+
+![7admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth.png#thumbnail-80)
+
+
+3. Name your application.
+
+![8dmin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_name.png#thumbnail-80)
+
+4. Go to <a href="https://console.developers.google.com/apis/credentials"> <strong>Credentials</strong></a> page to generate OAuth 2.0 Credentials. 
+
+5. Go to Create OAuth client ID. Select the Application Type and give the client a Name. Add the Return URL as authorized redirect URI.
+
+![9dmin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientid.png#thumbnail-80)
+
+
+6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. 
+
+![10dmin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientcreated.png#thumbnail-80)
+
 
 ## Customization
 

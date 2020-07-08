@@ -1,5 +1,5 @@
 ---
-id: version-4.1-admin-intro
+id: version-5.2-admin-intro
 title: Admin Overview
 sidebar_label: Admin Overview
 original_id: admin-intro

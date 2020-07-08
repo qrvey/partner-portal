@@ -229,6 +229,7 @@ function addDropdownItem() {
                         </div>  
                         <div class="column">
                         <a class="dropdown-item" href="${baseUrl}docs${version}/get-started/get-started-intro">Getting Started</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/aws/manage-aws-elasticsearch">AWS</a>
                         <a class="dropdown-item" href="${baseUrl}docs${version}/get-started/get-started-architecture">Developer Docs</a>
                     </div>
                 </div>`);

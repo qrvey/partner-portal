@@ -23,7 +23,7 @@ All the available columns will be listed in the data panel on the left side of t
 
 ![1_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_CB.png#thumbnail-60)
 
-If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below.
+If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below.  Just click on the linked dataset pill to see the linked columns.
 
 ![1_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_1_CB.png#thumbnail-40)
 
@@ -96,11 +96,11 @@ In the format section, you will find the option to create a *Small Multiples* vi
 
 ![13_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13_CB.png#thumbnail-40)
 
-Starting in the data panel, drag the column you would like to use for the comparison and drop it in the Small Multiple field. In the chart preview you will see a chart for each of the values in the selected column. In this example, a date column was used., For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day) where you can select how you’d like the dates in the column to be grouped.
+Starting in the data panel, drag the column you would like to use for the comparison and drop it in the Small Multiple field. In the chart preview, you will see a chart for each of the values in the selected column. In this example, a date column was used. For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day, Hour, Minute, and Second) where you can select how you’d like the dates in the column to be grouped.
 
 ![14_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/14_CB.png#thumbnail)
 
-## Filters
+## Filters
 While building your chart, you are able to apply default filters. These filters will be retained in all instances of the chart across the entire application. To add a filter click on **Add Filters**
 
 ![15_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/15_CB.png#thumbnail-40)
@@ -116,3 +116,217 @@ You will see the selected values in the filter panel. This is a hidden filter th
 You can edit your chart at any time by clicking on the three-dot menu in the lower-right corner of the panel and selecting **Edit**. Your custom view charts can quickly be filtered to meet your needs. You can also remove a panel from this location as well.
 
 ![18_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/18_CB.png#thumbnail-80)
+
+## Table Calculations
+
+Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
+
+Qrvey supports the following table calculations:
+* Running Calculations
+
+### Running Calculations
+These calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data. 
+
+Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* on the grouped table chart. 
+
+How Qrvey generally describes these running calculations:
+
+<code>
+
+<p style="margin-left: 40px">
+Running_[sum, avg, min, max, cnt] <br> 
+ (<br>
+     agg_value   <br>
+     ,[ sortorder_field ASC_or_DESC, ... ]<br>  
+     ,[ grouped field, ... ]   <br>
+)
+</p>
+</code> 
+
+
+| Argument | Description |
+|---|---|
+|**agg_value**|*agg_value* is the aggregated field.|
+|**sortorder_field**|The *sortorder_field* corresponds to how the table chart orders the data. It orders the parent groups and tables in an ascending way by default.|
+|**grouped_field**|The *grouped_field* is any number of fields that you have grouped.
+
+## Types Of Running Calculations
+### Running Sum
+
+A running sum is the summation of a sequence of numbers, adding the current value to the preceding values and is updated each time a new number is added to the series.
+
+The following example shows how Running Sum is calculated:
+
+
+<table class="demo">
+	<caption></caption>
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Sum</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>1 (0+1)</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>3 (1+2)</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>6 (3+3)</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>10 (6+4)</td>
+	</tr>
+    <tr>
+		<td>5</td>
+		<td>15 (10+5)</td>
+	</tr>
+	</tbody>
+</table> 
+
+The following image is an example of Running Sum in Qrvey:
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1cb.png" style="margin:auto; display:block;" width="500" >
+
+Running Average
+The running average is the calculation function that moves through a list of values adding the current one to the sum of the preceding values and dividing by the current count of values.
+
+The following example shows how Running Average is calculated.
+
+<table class="demo">
+	<caption></caption>
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Average</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>10</td>
+		<td>10 (10/1)</td>
+	</tr>
+	<tr>
+		<td>20</td>
+		<td>15 (30/2)</td>
+	</tr>
+	<tr>
+		<td>30</td>
+		<td>20 (60/3)</td>
+	</tr>
+	<tr>
+		<td>40</td>
+		<td>25 (100/4)</td>
+	</tr>
+    <tr>
+		<td>50</td>
+		<td>30 (150/5)</td>
+	</tr>
+	</tbody>
+</table> 
+
+The following image is an example of Running Average in Qrvey.
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2cb.png" style="margin:auto; display:block;" width="500" >
+
+### Running Minimum
+The running minimum is the calculation function that moves through a list of values comparing each of them to the lowest one identified so far and returning the minimum value as it progresses.
+
+The following example shows how *Running Minimum* is calculated.
+
+<table class="demo">
+	<caption></caption>
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Minimum</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>8</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>6 (8<6)</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>6 (6<10)</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>6 (6<9)</td>
+	</tr>
+    <tr>
+		<td>5</td>
+		<td>5 (5<6)</td>
+	</tr>
+	</tbody>
+</table> 
+
+The following image is an example of Running Minimum in Qrvey:
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3cb.png" style="margin:auto; display:block;" width="500" >
+
+
+
+### Running Maximum
+The running maximum is the calculation function that moves through a list of values comparing each value to the highest value identified so far and returning the maximum value as it progresses.
+
+The following example shows how Running Maximum is calculated:
+
+<table class="demo">
+	<caption></caption>
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Maximum</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>8</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>8 (8>6)</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>10 (10>8)</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>10 (10>9)</td>
+	</tr>
+    <tr>
+		<td>5</td>
+		<td>10 (10>5)</td>
+	</tr>
+	</tbody>
+</table> 
+
+The following image is an example of Running Maximum in Qrvey:
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4cb.png" style="margin:auto; display:block;" width="500" >
+
+
+
+
+### Create a Running Calculation
+To add a running calculation, drag a numeric value from your dataset and drop it on the *Columns* field of the chart’s shelf. Then select the dot menu to see the available menu options. Next select *Table Calculations*, to see the available types of calculations and finally select the desired option.
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5cb.png" style="margin:auto; display:block;" width="500" >
+
+Right to the left of the three dots icon you will see a summary of aggregate functions applied to the numeric column with RSUM (Running Sum applied).
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png" style="margin:auto; display:block;" width="500" >

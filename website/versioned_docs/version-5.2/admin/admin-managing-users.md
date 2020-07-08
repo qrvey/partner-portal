@@ -1,5 +1,5 @@
 ---
-id: version-4.1-admin-managing-users
+id: version-5.2-admin-managing-users
 title: Admin User Management
 sidebar_label: Admin User Management
 original_id: admin-managing-users

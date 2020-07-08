@@ -6,10 +6,14 @@
       "version-5.1-get-started/aws_marketplace",
       "version-5.1-setup-deployments/setup-overview",
       "version-5.1-setup-deployments/setup-initial-deployment",
-      "version-5.1-setup-deployments/manage-aws-elasticsearch",
-      "version-5.1-setup-deployments/setup-cost",
       "version-5.1-setup-deployments/setup-security",
       "version-5.1-get-started/glossary"
+    ]
+  },"version-5.1-aws": {
+    "AWS": [
+      "version-5.1-aws/manage-aws-elasticsearch",
+      "version-5.1-aws/setup-cost",
+      "version-5.1-aws/connect-to-RDS-instance"
     ]
   },
   "version-5.1-ui-docs": {
@@ -223,6 +227,8 @@
   "version-5.1-faqs": {
     "FAQs": [
       "version-5.1-faqs/faqs-intro",
+      "faqs/aws-faqs",
+      "faqs/publishing-faqs",
       "version-5.1-faqs/ask-us"
     ]
   },
@@ -235,7 +241,9 @@
       "version-5.1-video-training/building-qrvey-sample/formulas",
       "version-5.1-video-training/building-qrvey-sample/bucketing",
       "version-5.1-video-training/building-qrvey-sample/summary-view",
-      "version-5.1-video-training/building-qrvey-sample/tabular-view"
+      "version-5.1-video-training/building-qrvey-sample/tabular-view",
+      "version-5.1-video-training/building-qrvey-sample/chart_builder_overview",
+      "version-5.1-video-training/building-qrvey-sample/custom_metric_views"
     ],
     "Training Session": [
       "version-5.1-video-training/analytics/intro-analytics-apps",
@@ -246,6 +254,9 @@
       "version-5.1-video-training/analytics/metrics",
       "version-5.1-video-training/analytics/automation",
       "version-5.1-video-training/admin-center/intro-admin-center"
+    ],
+    "Release Demos":[
+      "video-training/release/version-5.2"
     ]
   }
 }
