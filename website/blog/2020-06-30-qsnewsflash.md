@@ -14,7 +14,11 @@ These new features and enhancements include:
 * Running calculations in table charts
  
 A complete list of these enhancements can be found on the  <a href="https://partners.qrvey.com/"> <strong> Partner Portal</strong> </a>. 
- 
+ <br>
+<h2 style="color:#FF8143"> Release Demo Videos </h2>
+
+Starting with this release we will post short videos to demonstrate some of the features that were included in that version. You can find these under the Videos > Release Demos section of the portal.
+<br>
 <h2 style="color:#FF8143"> New Content On Partner Portal </h2>
 Documentation on Partner Portal has been updated for V5.2 and new content has been added to the site. Following is a list of new content.
 Don’t forget to check the site when you look for information and let us know if you can’t find what you were looking for.
@@ -29,12 +33,14 @@ Don’t forget to check the site when you look for information and let us know i
 
 <h3 style="color:#FF8143"> New Videos </h3>
 
-* <a href="docs/video-training/building-qrvey-sample/chart_builder_overview"><strong> Chart Builder Overview</strong>
-* <a href="docs/video-training/building-qrvey-sample/custom_metric_views/"> <strong>
-Custom and Metric Views</strong>
+* Building Qrvey Sample ><a href="docs/video-training/building-qrvey-sample/chart_builder_overview"><strong> Chart Builder Overview</strong> </a>
+* Building Qrvey Sample > <a href="docs/video-training/building-qrvey-sample/custom_metric_views/"> <strong>
+Custom and Metric Views</strong></a>
+
+* Release Demos > Version 5.2
 
 
-
+<br>
  <h2 style="color:#FF8143"> Happy Independence Day!
 
 </h2>
