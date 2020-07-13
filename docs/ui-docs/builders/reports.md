@@ -23,63 +23,75 @@ Next, provide a name and a brief description for your report and click **Create*
 Once your report has been created, you’ll see the main Report Builder interface. In the center, you’ll see a blank canvas, on which you can drag components from the menu on the right. Your report can contain multiple tabs, which can be created, renamed and reordered using the toolbar on the top edge of the canvas.
 
 ![4_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/4_reports.png#thumbnail)
-### The Report Builder Toolbar
-To add new tabs to your report click the **+** button after the last tab. Click the tab title to make it the active tab - this will also let you change the title. Click outside the tab title to save your changes if you make any. To reorder a tab, click to the left of the title and drag it to a new position. To delete a tab click the **╳** button to the right of the tab title. You can use the drop-down menu in the top left of the toolbar to change the active tab - this is very useful if there are a large number of tabs.
 
-Towards the right side of the toolbar you will see the usual download button - you can use this to download the report data in CSV format. In the far right is the button to show and hide the background grid on canvas.
+## Toolbar
 
-### The Canvas
-The canvas not only shows you how the report will appear to your users, it also allows you to edit the components. Click on any component to activate the drag handle, on the top left corner, and the delete button, on the top right corner. Reposition components using the drag handle. Note that components will be aligned to the grid and can not be placed on another component. Drag any component border, or the bottom right corner, to resize it. Click the **╳** (delete) button to remove the component from the canvas.
+In the toolbar, you will find the options to configure your report tabs and options to add content.
 
-### The Report Builder Menu
+![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail)
 
-Use the menu to the right of the canvas to configure the report properties, manage filters, and to access the palette of report components. 
 
-#### Report Properties
 
-The **Report Properties** menu item is used to revise the report name and description. It also incorporates a drop-down menu which allows you to **Delete** or **Duplicate** the report.
+From the toolbar, you will also be able to access the chart builder by clicking on the chart icon. Once you configure and save your chart, this will be added to your page right away. 
 
-![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail-40)
+There you can find page objects options: image, text, and button. When selecting the icon, you can click and drag the size of the object on the canvas. 
 
-#### Page Objects
+Once there are multiple objects added to a page, you will find the option to arrange your objects by sending them to the front or back. 
 
-The **Page Objects** menu item provides access to the palette of static elements - i.e. text and image blocks. These components can be dragged onto the canvas, where you can position and resize them to fit the content you’d like to add. 
+You can configure grid options such as showing the gridlines or the snap to grid option. 
 
-![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail-40)
 
-Text can be formatted with size, font, color, and style options.
+Towards the right side of the toolbar, you will see the download button - you can use this to download the report data in CSV format. If there are multiple datasets being used on the same pages, they will be exported as separate files.
 
-You can either upload an image from your computer or enter the URL of an image on the web. In either case you can adjust the image scaling to suit your frame.  
 
-#### Elements
+## Data & Configuration
+In order to begin creating charts and filters for your reports, you will need to have configured at least one dataset first. This can be done in the <a href="docs/ui-docs/datasets/data_overview/"> <strong>Data section </strong></a>. 
 
-The **Elements** menu item provides access to the analytic and metric components you’ve already created. You can also use this menu item to create new dynamic components inside the Report Builder. 
+Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a tab. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for Shift + Click to add multiple charts at the same time. 
 
-![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-40)
+![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail)
 
-First choose the dataset which contains the data for the component. Then either select **Summary View**, to access the Qrvey generated components, or select **Custom View**, to access the components you have created. 
+If you have a long list of datasets, you can also select favorites by clicking on the blue star. It will turn orange to indicate the dataset has been marked as favorite, and by clicking the orange button beside **Data**, you will see only your favorite datasets. 
 
-Drag your desired component onto the canvas, or use the **Create Chart** button to create a new dynamic component. 
+
+![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail)
+
+
+## Object Configuration
+As you are building reports, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a tab. 
+
+![8_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/8_reports.png#thumbnail)
+
+
+For Text, Images, and Buttons you will find options to style fonts, colors, text alignment, and image aspect. 
+
+To access the configuration options, you must click on the object you would like to work with. To switch back and view your datasets, you can click anywhere on the canvas. 
+
+To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
+
+
+![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail)
+
+
+
+## Filters
+
+The Filters menu item lets you easily manage global filters defined in your report, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
+
+To enable or disable all filters for a group, click on the toggle button or check-box next to the group’s name. To enable or disable an individual filter value, use the check-box next to it.
 
 ![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail)
 
-A dynamic component, also referred to as a panel, is automatically updated as the underlying data changes. On each panel you will see the usual **Filter** button to the right of the title - you can use this button to define filters for that panel. The drop-down menu to the right of the **Filter** button has options to **Edit** and to **Download** the panel. Downloads are available in PDF, PNG, and CSV format.
+To create a new global filter, click the **Add Filter** button and choose your data source. Next, select the column in the drop-down list and select the scope of the filter, i.e. All or Current Tab. See the <a href="docs/ui-docs/builders/dataviews/filters"> <strong>Filtering Data</strong></a> page for further details.
 
+![12_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/12_reports.png#thumbnail)
 
-#### Filters
-
-The **Filters** menu item lets you easily manage global filters defined in your report, as well as all the filters defined in your panels. When you select the **Filters** menu item you will see the list of filters defined. The filters are grouped under the headings **Global Filters**, **Tab Filters**, **Panel Filters**. Panel filters are grouped by panel name. 
-
-To enable or disable all filters for a group click on the toggle button or check-box next to the group name. To enable or disable an individual filter value use the check-box next to it.  
-
-![8_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/8_reports.png#thumbnail-40)
-
-To create a new global filter click the **Add Filter** button and choose your data source. Next, select the column in drop-down list and select the scope of the filter, ie **All** or **Current Tab**. See the [**Filtering Data**](../dataviews/filters) page for further details.
-
-![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail)
 
 ## Report Dashboard
 
 Once you’ve completed building your reports, you can return to the report dashboard  where you can view, delete or duplicate reports as needed. 
 
 ![11_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/11_reports.png#thumbnail)
+
+
+
