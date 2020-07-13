@@ -46,7 +46,7 @@ The **Report Properties** menu item is used to revise the report name and descri
 
 The **Page Objects** menu item provides access to the palette of static elements - i.e. text and image blocks. These components can be dragged onto the canvas, where you can position and resize them to fit the content you’d like to add. 
 
-![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail-40)
+![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail-60)
 
 Text can be formatted with size, font, color, and style options.
 
@@ -56,13 +56,13 @@ You can either upload an image from your computer or enter the URL of an image o
 
 The **Elements** menu item provides access to the analytic and metric components you’ve already created. You can also use this menu item to create new dynamic components inside the Report Builder. 
 
-![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-40)
+![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-80)
 
 First choose the dataset which contains the data for the component. Then either select **Summary View**, to access the Qrvey generated components, or select **Custom View**, to access the components you have created. 
 
 Drag your desired component onto the canvas, or use the **Create Chart** button to create a new dynamic component. 
 
-![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail)
+![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail-20)
 
 A dynamic component, also referred to as a panel, is automatically updated as the underlying data changes. On each panel you will see the usual **Filter** button to the right of the title - you can use this button to define filters for that panel. The drop-down menu to the right of the **Filter** button has options to **Edit** and to **Download** the panel. Downloads are available in PDF, PNG, and CSV format.
 
@@ -73,11 +73,11 @@ The **Filters** menu item lets you easily manage global filters defined in your 
 
 To enable or disable all filters for a group click on the toggle button or check-box next to the group name. To enable or disable an individual filter value use the check-box next to it.  
 
-![8_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/8_reports.png#thumbnail-40)
+![8_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/8_reports.png#thumbnail-10)
 
 To create a new global filter click the **Add Filter** button and choose your data source. Next, select the column in drop-down list and select the scope of the filter, ie **All** or **Current Tab**. See the [**Filtering Data**](../dataviews/filters) page for further details.
 
-![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail)
+![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail-40)
 
 ## Report Dashboard
 
