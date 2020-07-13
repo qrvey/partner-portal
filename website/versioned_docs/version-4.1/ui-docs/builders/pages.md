@@ -7,45 +7,109 @@ original_id: pages
 
 <div style="text-align: justify">
 
-**Page Builder** makes it easy to combine multiple **Qrvey Composer** components, like forms, charts and metrics, into beautiful web pages, each with their own unique URL you can share. You can also combine multiple pages into a complete information application by using navigation, which is discussed  in another article.
+**Page Builder** makes it easy to combine multiple **Qrvey Composer** components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple pages into a complete information application by using navigation, which is discussed  in another article.
 
 To begin building a page, click the page builder icon in the left navigation bar and you will be taken to the page building canvas.
+<br>
+
+## Canvas Layout
 
 ![1_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1_pages.png#thumbnail)
 
-Along the top of the main canvas area, you’ll find an orange **Create New Page** button on the left; a drop-down menu in the center where you can navigate between pages; and the status of your page (Draft or Published) on the right. You’ll also see a button to show/hide the grid lines on your canvas.
+The top of the canvas is divided into three sections: the main menu, the toolbar, and the page status and publishing options. 
 
-![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2_pages.png#thumbnail-20)
+![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2_pages.png#thumbnail)
 
-In the blue navigation bar along the top, you’ll also find a button to **Publish Application** and a link button to take you to your application in a new browser window or tab.
+The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
 
-![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3_pages.png#thumbnail-40)
+![1.3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.3_pages.png#thumbnail-40)
 
-**Note**: Your application must be published in order to use the link button. Accessing the URL of an application/individual page that is not published will display a message to users that the resource is currently unavailable.
+Filters and Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you will see them listed in the Data Panel. 
 
-## Tool Palette
-Along the right side of your canvas, you’ll find the **Tool Palette** where you can configure your page settings and find the elements you can drag onto your canvas to construct your page. The tool palette is comprised of several sections.
+![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-80)
 
-![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4_pages.png#thumbnail-40)
 
-In the **Page Info** section, you’ll find areas to give your page a name and a description. You’ll also find the unique URL for the specific page you’re working on (as opposed to the application overall). Finally, you’ll find access permissions to set the page as either public or private. If set to private, users will need to log in before accessing the page.
 
-![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5_pages.png#thumbnail-40)
+## Toolbar
+In the toolbar, you will find the options to configure your page and options to add content.
 
-In the **Page Objects** section, you’ll find basic HTML page elements like text areas, images and buttons. You can click and drag any of these elements to your canvas, reposition and resize them, or change their contents by clicking on them. You’ll also find elements to add a header and a footer to your page.
+![1.5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.5_pages.png#thumbnail-60)
 
-![6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/6_pages.png#thumbnail-40)
 
-In the **Elements** section you’ll find components from the rest of your application. Any active web forms you have can be added to your page, as can any reports, metrics or custom charts you’ve built using Chart Builder.
+You can choose the page resolution that will fit your page viewers best. You can change this setting at any time keeping in mind that this affects the sizes of all pages, and when switching to a smaller resolution some objects may be repositioned, which is an action that cannot be reverted. 
 
-![7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/7_pages.png#thumbnail-40)
+From the toolbar, you will also be able to click on the chart icon to access the chart builder. Once you configure and save your chart, this will be added to your page right away. 
 
-Finally, in the **Filters** section, you can apply filters to any dataset that will be displayed on your page.
+There you can find page objects options: image, text, and button. When selecting the icon, you can click and drag the size of the object on the canvas. 
 
-![8_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/8_pages.png#thumbnail-40)
+Once there are multiple objects added to a page here, you will find the option to arrange your objects by sending them to the front or back. 
 
-## Working with Page Elements
-Once you have clicked on an element in the palette and moved it onto your canvas, the tool palette will change to provide more options for the element you’re working with. In the example below, we’re working with a text area, so the palette will display familiar text options for font, size, color, alignment, etc. Click the top-left corner of the element to reposition it, the lower-right corner to drag-to-resize and the right corner to delete.
+You can configure grid options such as showing the gridlines or the snap to grid option. 
 
-![9_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/9_pages.png#thumbnail)
+While designing your pages, you will see how your content is displayed on different devices. In the toolbar, you will find the option to switch from desktop to tablet and mobile devices view. Configuration options are disabled in mobile views, you may only rearrange page components to further define your tablet and mobile layouts. 
 
+
+Towards the right side of the toolbar, you will see the download button - you can use this to download the page data in CSV format. If there are multiple datasets being used on the same pages, they will be exported as separate files.
+
+## Data & Configuration
+
+
+In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the 
+<a href="docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
+
+Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
+
+
+![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail-80)
+
+If you have a long list of datasets, you can also select favorites by clicking on the blue star. It will turn orange to indicate the dataset is marked as favorite, and by clicking the orange button besides **Data** you will see only your favorite datasets. 
+
+
+![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail-80)
+
+
+## Object Configuration
+As you are building your pages, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a page. 
+
+
+
+![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail)
+
+For Text, Images and Buttons, you will find options to style fonts, colors, text alignment, image aspect, and an option to add a URL to create links from the objects. 
+
+For charts, you will find the Page Actions access point where you will be able to define chart actions like Filter By or Drill-Downs in a customized way for your page viewers. 
+
+To access the configuration options, you must click on the object you would like to work with. To switch back and view your datasets, you can click anywhere on the canvas. 
+
+To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
+
+
+![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-60)
+
+### Filters
+The Filters menu item lets you easily manage global, page, and tab filters defined in your pages, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
+
+To enable or disable all filters for a group, click on the toggle button or check-box next to the group name. To enable or disable an individual filter value, use the check-box next to it.
+
+![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4.0_pages.png#thumbnail-20)
+
+
+
+To create a new global filter, click the Add Filter button and choose your data source. Next, select the column in the drop-down list and select the scope of the filter, i.e. All or Current Tab. See the <a href="/docs/ui-docs/builders/dataviews/filters/"> <strong>Filtering Data</strong></a> page for further details.
+
+ 
+
+![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5.0_pages.png#thumbnail)
+
+
+
+
+
+## Publishing an Application
+In the blue navigation bar along the top, you’ll find a button to **Publish Application** and a link button to view your application in a new browser window or tab.
+
+![6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/6.0_pages.png#thumbnail-40)
+
+**Note**: Your application must be published in order to use the link button. Accessing the URL of an application/individual page that is not published will display a message to users that the resource is currently unavailable.
+
+Once a page is published, its content is locked in place and cannot be changed unless the **Edit** button is clicked, or the application is unpublished. When you edit a page, your changes can be discarded or republished. Your changes are auto-saved but are not reflected in the published application until the page is republished. 
