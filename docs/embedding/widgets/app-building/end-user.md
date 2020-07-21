@@ -26,6 +26,14 @@ The End User widget allows a user access to one or more pages of an application 
 <qrvey-end-user settings="settings"></qrvey-end-user>
 ```
 
+The widget height is defined by his container, it will take all the space it needs to display the content if theres no restrictions, for restrict the height you can follow the next example:
+
+```
+<div style="height:500px; overflow-y:hidden;">
+    <qrvey-end-user settings="settings"></qrvey-end-user>
+</div>
+```
+
 The schema of the settings value has the following properties defined below (required items are bold):
 
 ```
