@@ -28,6 +28,7 @@ If you’ve created a linked dataset using Data Links, you will see columns for 
 ![1_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_1_CB.png#thumbnail-40)
 
 To get started, simply drag and drop a column onto the canvas in the *Category* or *Value* drop zone or in the Category or Value fields on the top shelf. 
+
 Canvas:
 
 ![2_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2_CB.png#thumbnail)
@@ -38,7 +39,7 @@ Shelf:
 
 Once the first column is dropped, a chart will be drawn showing a count of the selected values. You will need to add a second column, depending on the chart. 
 
-When a column is dropped on the canvas, it will automatically reflect in the corresponding field of the shelf. To change the aggregate of the column, click on the **dot menu** to the right of the column name and select an option from the list of aggregates. These options may vary depending on the data type. 
+When a column is dropped on the canvas, it will automatically reflect on the corresponding  shelf. To change the aggregate of the column, click on the **dot menu** to the right of the column name and select an option from the list of aggregates. These options may vary depending on the data type. 
 
 ![4_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4_CB.png#thumbnail)
 
@@ -58,7 +59,11 @@ The options and settings for each chart will slightly vary from the example belo
 ## General Settings
 In this section, you will find the *Sort by*, *Tooltips* and *Max Data Points* options. 
 
-Sorting of values is by default done in a descending order. To sort the categories click on the **ABC** icon.
+Default sorting depends on the data type used for Category.
+
+* *Numeric*: Label ASC, sorted from min. to max. value 
+* *String/Text*: Label DESC
+* *Date*: Label ASC, sorted by chronological dates from the oldest to the latest
 
 To define max data points, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times. 
 
@@ -101,7 +106,7 @@ Starting in the data panel, drag the column you would like to use for the compar
 ![14_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/14_CB.png#thumbnail)
 
 ## Filters
-While building your chart, you are able to apply default filters. These filters will be retained in all instances of the chart across the entire application. To add a filter click on **Add Filters**
+While building your chart, you are able to apply default filters. These filters will be retained in all instances of the chart across the entire application. To add a filter click on **Add Filters**.
 
 ![15_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/15_CB.png#thumbnail-40)
 
@@ -132,9 +137,8 @@ Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Runn
 How Qrvey generally describes these running calculations:
 
 <code>
-
 <p style="margin-left: 40px">
-Running_[sum, avg, min, max, cnt] <br> 
+Running_[sum, avg, min, max] <br> 
  (<br>
      agg_value   <br>
      ,[ sortorder_field ASC_or_DESC, ... ]<br>  
@@ -255,7 +259,7 @@ The following example shows how *Running Minimum* is calculated.
 	</tr>
 	<tr>
 		<td>6</td>
-		<td>6 (8<6)</td>
+		<td>6 (6<8)</td>
 	</tr>
 	<tr>
 		<td>10</td>
@@ -322,7 +326,7 @@ The following image is an example of Running Maximum in Qrvey:
 
 
 
-### Create a Running Calculation
+### Creating a Running Calculation
 To add a running calculation, drag a numeric value from your dataset and drop it on the *Columns* field of the chart’s shelf. Then select the dot menu to see the available menu options. Next select *Table Calculations*, to see the available types of calculations and finally select the desired option.
 
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5cb.png" style="margin:auto; display:block;" width="500" >
@@ -330,3 +334,27 @@ To add a running calculation, drag a numeric value from your dataset and drop it
 Right to the left of the three dots icon you will see a summary of aggregate functions applied to the numeric column with RSUM (Running Sum applied).
 
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png" style="margin:auto; display:block;" width="500" >
+
+
+
+
+
+## Discrete and Continuous Values
+
+Discrete values are unconnected values in a dataset. Continuous values are connected values that can take on any value within a finite or infinite interval. With Date values — if you want to create a chart where you see all Dates, like *months*,  it is best to use continuous values. With Numeric values — if you want to create a chart where you count something, like *quantity*, it is best to use discrete values. If you want to measure something to an infinite degree, it is best to use continuous values. 
+
+Using discrete values in a custom chart , the Categorical column displays an axis with separate, distinct dates or numeric values that are found within the dataset used to construct the chart. 
+
+For continuous values, the Categorical column displays an axis with continuous dates or numeric values, and some values, which are not found in the dataset used to create the chart, but are useful to see for the purpose of analysis.  
+
+To apply Discrete or Continuous values, access chart builder and create a chart with dates as categorical dimension(s). Then you can open the column options where you will see Discrete Values preselected. If you select Continuous Values, you will see continuous date categories in the chart even though the data does not contain them.
+
+The *Discrete*  and *Continuous*  feature are options only available for date and numeric columns used in Chart Building. 
+
+* Discrete Dates
+![29_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build29.png#thumbnail-40)
+
+
+
+* Continuous Dates
+![28_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail-40)
