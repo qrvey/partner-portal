@@ -15,28 +15,36 @@ In this section, we’ll explain how datasets are created using a single data so
 ## Creating Datasets
 To create a dataset, go to the *Datasets* tab and click on **New Dataset**. 
 
-![1_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-60)
+![1_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-40)
 
 Next, you will see a list of connections available to select as your data source. You could also select existing datasets as sources in the *Datasets* tab. 
-
 Select the desired connection and click on **Create**. 
 
-![2_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/2_Datasets.png#thumbnail)
+![2_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_1.png#thumbnail-40)
 
-You will land in the Design section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data. 
+
+You will land in the _Design_ section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data. 
 
 Click on **Untitled Dataset** to give your dataset a name.
 
-![3_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/3_Datasets.png#thumbnail)
+![3_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/3_Datasets.png#thumbnail-40)
 <br> <br/>
-![4_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail)
+![4_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail-40)
 
 At this point, you can load the data and begin using it to create charts, pages or reports. 
 
 You can also perform different actions with the data before loading it. You can select which columns you’d like to include or exclude by using the checkboxes in the left-hand column. A search box is provided for data sources with large numbers of columns so that you can easily find the one you are looking to select or deselect. The system will automatically profile your data and choose an appropriate data type, but you can further refine how you’d like each column to appear by updating the data types as needed.
 
 
-![5_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5_Datasets.png#thumbnail)
+![5_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_2.png#thumbnail-40)
+
+
+You can also change the formatting of the date and numeric columns. This format will be visible in the rest of the application when the column is used. For example a numeric column is assigned a _Currency_ format, meaning that if this column is used to build a chart, the values should be displayed as currency with the $ sign. 
+
+![5b_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_3.png#thumbnail-40)
+
+
+To find the date or numeric formatting options, click on the Column’s dropdown in the Visualization Format section and the different formatting options will appear. Here, you can also define the number of decimal places you would like to work with and display in your visualizations.
 
 ### Supported Data Types:
 * **Text - Label:** Text that does not require formatting or analysis, i.e. names, dates, etc.
@@ -77,6 +85,7 @@ To edit your dataset, you can click on the three-dot menu in the right corner of
 ![13_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/13_Datasets.png#thumbnail)
  
 Most of the changes that you make to your dataset will require the data to be reloaded. The only changes that do not require a data reload are those that don’t make a fundamental change in the dataset, like changing the name of the dataset or the name of any of the data source columns. If a change requires you to reload data, you will be notified when you apply your changes. Once you are finished editing the dataset, click on **Apply Changes** and then reload the data, if you are prompted or otherwise want to. 
+
 If you would like to go back to the last loaded version of the dataset you can use the **Discard Changes** option.
 
 You can reload your data at any time, without having to edit the dataset. If you need to update the dataset, just click on **Reload Data** and your data will begin loading again. 
