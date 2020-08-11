@@ -8,7 +8,7 @@ Release Date: 2020-08-03
 
  
 
-Click <a href="/docs/next/video-training/release/version-5.2"> <strong>here</strong></a> for demo videos on some of the released features.
+Click <a href="docs/next/video-training/release/version-5.2"> <strong>here</strong></a> for demo videos on some of the released features.
 
 ## New Features
 
@@ -30,7 +30,7 @@ We added the option that allows Admins to enable and set up OpenID parameters fo
 * <a href=""> <strong> AT-6653 - Page Actions - Metrics</strong></a>: We added a feature to let creators set up page drill actions on Metric Panels so that end-users can be redirected to another page, tab, or an external page.
 
 
-* <a href=""> <strong> AT-6651 - OpenID Authentication for End-Users</strong></a>: We added a feature to give end-users a way to use their own authentication methods like OpenID when logging in the Qrvey Application.
+* <a href="docs/ui-docs/builders/user-management/"> <strong> AT-6651 - OpenID Authentication for End-Users</strong></a>: We added a feature to give end-users a way to use their own authentication methods like OpenID when logging in the Qrvey Application.
 
 
 
