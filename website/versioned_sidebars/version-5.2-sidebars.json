@@ -67,6 +67,7 @@
     "Builders": [
       "version-5.2-ui-docs/builders/reports",
       "version-5.2-ui-docs/builders/pages",
+      "version-5.2-ui-docs/builders/pages_actions",
       "version-5.2-ui-docs/builders/navigation",
       "version-5.2-ui-docs/builders/user-management"
     ],
@@ -207,6 +208,7 @@
   "version-5.2-release-notes": {
     "Release Notes 2020": [
       "version-5.2-release-notes/release-last",
+      "version-5.2-release-notes/release-jun-2020",
       "version-5.2-release-notes/release-apr-2020",
       "version-5.2-release-notes/release-mar-2020",
       "version-5.2-release-notes/release-feb-2020"

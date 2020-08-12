@@ -67,6 +67,7 @@
     "Builders": [
       "ui-docs/builders/reports",
       "ui-docs/builders/pages",
+      "ui-docs/builders/pages_actions",
       "ui-docs/builders/navigation",
       "ui-docs/builders/user-management"
     ],
@@ -208,6 +209,7 @@
   "release-notes": {
     "Release Notes 2020": [
       "release-notes/release-last",
+      "release-notes/release-jun-2020",
       "release-notes/release-apr-2020",
       "release-notes/release-mar-2020",
       "release-notes/release-feb-2020"
