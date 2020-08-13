@@ -9,7 +9,7 @@ sidebar_label: Datasets
 In this section, we’ll explain how datasets are created using a single data source, how columns and data types are modified, how data is loaded, and how a dataset can be edited and reloaded
 
 > Note: To see how datasets are created from multiple data sources, please see the
- <a href="http://uidoc.qrvey.com.s3-website-us-east-1.amazonaws.com/docs/ui-docs/datasets/joins/#joins"> <strong> Data Joins  </strong> </a> article.
+ <a href="/docs/ui-docs/datasets/joins/#joins"> <strong> Data Joins  </strong> </a> article.
 
 
 ## Creating Datasets
