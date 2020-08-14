@@ -11,13 +11,13 @@ sidebar_label: Administering Qrvey Composer
 In this section, the Administrators can manage their “Creator” users by granting them access to the Qrvey Composer and setting up authentication methods for them. By default, Qrvey Authentication is available; the Administrator can manually add new users or choose to allow Creators to sign up through the composer signup page. This along with other options for the login page can be customized by Administrators in the Onboarding Tab of General Settings in the Customization section. 
 Alternatively, SSO methods can be enabled in the Authentication Tab. Currently, OpenID (OpenID Connect based on OAuth 2.0 protocol) is supported. More SSO compliant protocols will be added later. 
 
-![1admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_management.png#thumbnail-80)
+![1admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_management.png#thumbnail)
 
 
 ## Users
 When adding a Creator, Admins can assign or automatically generate a password. Creators will receive this password by email and can use this to access Qrvey Composer. Creator accounts can be edited or deleted at any time.
 
-![2admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/new_user.png#thumbnail-80)
+![2admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/new_user.png#thumbnail)
 
 
 ## Authentication
@@ -31,7 +31,7 @@ For both Creators and End Users, Administrators can enable the following Authent
 1. Qrvey Authentication (using an email address and password) as it was shown in the previous section. 
 2. OpenID Authentication using an OpenID Connect compliant Provider based on OAuth 2.0 protocol. 
 
-![3admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag1.png#thumbnail-40)
+![3admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag1.png#thumbnail)
 
 
 
@@ -65,37 +65,37 @@ The following rules will apply for both Creators users logging in into the Compo
 2. If an existing user that has been added by an administrator, to the Composer; or by a creator, to an End User Web App Page; or that it was allowed to sign up using an email address and password, logs in using OpenID, if the email address obtained from the OpenID provider matches the email address already stored in Qrvey’s Database, then this user will be identified as existing and no new account will be added. 
 3. Users that were created using OpenID, will be identified with an icon that on hover will show a tooltip message indicating that the user was created with OpenID.
 
-![4admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag2.png#thumbnail-40)
+![4admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag2.png#thumbnail)
 
 
 **Note**: for End Users, besides identifying them with the icon, they will be placed in a default group named OpenID. 
 
 
-![5admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag3.png#thumbnail-40)
+![5admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag3.png#thumbnail)
 
 If only Qrvey Authentication option is enabled for Creators, the Log In page will look as it is customized in Customization > General Settings > Onboarding Tab, but no OpenID option will be visible:
 
-![6admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag4.png#thumbnail-40)
+![6admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag4.png#thumbnail)
 
 In the same way, if only Qrvey Authentication option is enabled for End Users, the Log In page will look as follows: 
 
-![7admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag5.png#thumbnail-40)
+![7admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag5.png#thumbnail)
 
 If both methods are enabled, the Log In with OpenID option will now be visible. For Creators, components related to Qrvey authentication will still be controlled by Onboarding Tab. For End Users, components related to Qrvey Authentication will be controlled by User Management Tab in Page Builder Widget. 
 
 Users can choose their preferred method to sign up or log in to the Qrvey Composer.
 
-![8admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag6.png#thumbnail-40)
-![9admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag7.png#thumbnail-40)
+![8admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag6.png#thumbnail)
+![9admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag7.png#thumbnail)
 
 If only the OpenID method is enabled and Qrvey Authentication is disabled, all components related to Qrvey Authentication will be hidden in the Log In page, and only the Log In with OpenID option will be visible. Also, the related options will be deactivated and blocked in the Onboarding Tab (Creators) and User Management Tab (Page Builder). 
 
 
-![10admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag8.png#thumbnail-40)
+![10admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag8.png#thumbnail)
 
-![11admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag9.png#thumbnail-40)
+![11admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag9.png#thumbnail)
 
-![12admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag10.png#thumbnail-40)
+![12admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag10.png#thumbnail)
 
 
 
@@ -108,23 +108,23 @@ As an example, the configuration of Google as OpenID provider will be explained 
 Google API Console</strong></a>.
 2. Create an OAuth consent screen. In this screen you can set up how you want to configure and register your App. Also, you can configure what data and permissions the users will share or grant to Qrvey when authenticating. In this case: email, name and last name. 
 
-![13admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth.png#thumbnail-80)
+![13admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth.png#thumbnail)
 
 
 3. Name your application.
 
-![14admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_name.png#thumbnail-80)
+![14admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_name.png#thumbnail)
 
 4. Go to <a href="https://console.developers.google.com/apis/credentials"> <strong>Credentials</strong></a> page to generate OAuth 2.0 Credentials. 
 
 5. Go to Create OAuth client ID. Select the Application Type and give the client a Name. Add the Return URL as authorized redirect URI.
 
-![15admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientid.png#thumbnail-80)
+![15admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientid.png#thumbnail)
 
 
 6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. 
 
-![16admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientcreated.png#thumbnail-80)
+![16admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientcreated.png#thumbnail)
 
 
 
@@ -134,23 +134,23 @@ Google API Console</strong></a>.
 
 a. Basic Information: 
 
-![17admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag11.png#thumbnail-40)
+![17admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag11.png#thumbnail)
 
 b. Application Properties:
 
-![18admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag12.png#thumbnail-40)
+![18admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag12.png#thumbnail)
 <br>
 c. Application URIs:
 
-![19admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag13.png#thumbnail-40)
+![19admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag13.png#thumbnail)
 
 d. Connections:
 
-![20admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag14.png#thumbnail-40)
+![20admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag14.png#thumbnail)
 
 
 2. Setup OpenID parameters in Qrvey’s Admin Center
-![21admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag15.png#thumbnail-40)
+![21admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag15.png#thumbnail)
 
 
 ## Customization
