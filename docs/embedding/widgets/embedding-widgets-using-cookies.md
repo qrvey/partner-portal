@@ -18,12 +18,10 @@ There are 3 components necessary to authenticate requests:
 The authentication flow follows these steps:
 1. A user requests a web page.
 2. The UI (web browser) makes a call to the backend/server for the website (e.g. REST API or async page request/update).
-3. The backend calls the Qrvey API (using the “generateToken” endpoint) to get a new temporary token (JWT).
-<br>
+3. The backend calls the Qrvey API (using the “generateToken” endpoint) to get a new temporary token (JWT).<br>
 a. Sample code is in the “auth” function below.
-5. The backend then sends this token to the UI.
-6. The UI uses this JWT token with the Qrvey API for authentication. 
-<br>
+4. The backend then sends this token to the UI.
+5. The UI uses this JWT token with the Qrvey API for authentication. <br>
 a. Sample code is in the “getCookies” function below.
 6. Lastly, the web page displays the widget with a proper config object.
  
@@ -74,8 +72,9 @@ The following script, also placed in the HTML for the web page, performs the aut
 </script>
 ```
 
-### Code For Server Side (Backend) Call to Get the JWT
+## Code For Server Side (Backend) Call to Get the JWT
 The following sample has to be added to your backend code. The sample is in Javascript but you can use any language of your choice.
+
 JWT token must be sent to the UI.
 
 ```
