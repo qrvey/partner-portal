@@ -84,7 +84,7 @@ ul.nav-site.nav-site-internal li a{
     padding: 5px 16px !important;
 }
 .dropdown-nav .column{
-    width: 120px;
+    width: auto;
 }
 .dropdown-nav .dropdown-item {
     font-size: 12px;
