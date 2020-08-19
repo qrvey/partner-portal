@@ -10,7 +10,7 @@ You can configure chart interactions on the page builder by setting up actions w
 
 First, you need to select a chart in the page builder canvas with the page actions section visible in the configuration panel. Select the **On Click** option to configure the actions you want to execute when the users click on the selected chart.
 
-![1_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_1.png#thumbnail)
+![1_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_1.png#thumbnail-40)
 
 
 There are three main sections in the actions configuration page. 
@@ -22,7 +22,7 @@ There are three main sections in the actions configuration page.
 * The third and last section shows the available actions to configure. This list could vary depending on the type of chart selected.
 
 
-![2_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_2.png#thumbnail-40)
+![2_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_2.png#thumbnail-60)
 
 The following is the list of available actions that we currently support. Section Action Types will provide a more detailed description of each one.
 
@@ -64,6 +64,6 @@ To activate it, you first need to define the behavior of the action. There are t
 * **Custom**: Users will drill down on the data, and the chart could change according to the configuration made. You can create different levels where the users will navigate through them while the information is filtered based on where the users clicked.
 
 
-![7_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_7.png#thumbnail-40)
+![7_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_7.png#thumbnail-50)
 
 
