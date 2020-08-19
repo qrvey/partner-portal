@@ -15,11 +15,11 @@ To begin building a page, click the page builder icon in the left navigation bar
 
 ## **Canvas Layout**
 
-![1_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1_pages.png#thumbnail-60)
+![1_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1_pages.png#thumbnail)
 
 The top of the canvas is divided into three sections: the main menu, the toolbar, and the page status with publishing options. 
 
-![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2_pages.png#thumbnail-60)
+![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2_pages.png#thumbnail)
 
 The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
 
@@ -27,7 +27,7 @@ The bottom of the canvas will display a tab for every page you create. This is w
 
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
 
-![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-60)
+![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail)
 
 <br>
 
@@ -60,12 +60,12 @@ In order to begin creating charts and filters for your pages, you will need to h
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
 
-![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail-60)
+![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail)
 
 If you have a long list of datasets, you can also select favorites by clicking on the blue star. It will turn orange to indicate the dataset is marked as favorite, and by clicking the orange button besides **Data** you will see only your favorite datasets. 
 
 
-![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail-60)
+![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail)
 
 
 ## Object Configuration
@@ -73,7 +73,7 @@ As you are building your pages, you will need to use the Data & Configuration pa
 
 
 
-![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail-60)
+![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail)
 
 For Text, Images and Buttons, you will find options to style fonts, colors, text alignment, image aspect, and an option to add a URL to create links from the objects. 
 
@@ -84,14 +84,14 @@ To access the configuration options, you must click on the object you would like
 To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
 
 
-![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-60)
+![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-40)
 
 ## **Filters**
 The Filters menu item lets you easily manage global, page, and tab filters defined in your pages, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
 
 To enable or disable all filters for a group, click on the toggle button or check-box next to the group name. To enable or disable an individual filter value, use the check-box next to it.
 
-![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4.0_pages.png#thumbnail-60)
+![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4.0_pages.png#thumbnail)
 
 
 
@@ -99,7 +99,7 @@ To create a new global filter, click the Add Filter button and choose your data 
 
  
 
-![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5.0_pages.png#thumbnail-60)
+![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5.0_pages.png#thumbnail)
 
 
 ## Filter Panel
