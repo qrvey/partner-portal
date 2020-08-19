@@ -109,23 +109,23 @@ As an example, the configuration of Google as OpenID provider will be explained 
 Google API Console</strong></a>.
 2. Create an OAuth consent screen. In this screen you can set up how you want to configure and register your App. Also, you can configure what data and permissions the users will share or grant to Qrvey when authenticating. In this case: email, name and last name. 
 
-![13admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth.png#thumbnail-40)
+![13admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth.png#thumbnail-50)
 
 
 3. Name your application.
 
-![14admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_name.png#thumbnail)
+![14admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_name.png#thumbnail-50)
 
 4. Go to <a href="https://console.developers.google.com/apis/credentials"> <strong>Credentials</strong></a> page to generate OAuth 2.0 Credentials. 
 
 5. Go to Create OAuth client ID. Select the Application Type and give the client a Name. Add the Return URL as authorized redirect URI.
 
-![15admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientid.png#thumbnail-40)
+![15admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientid.png#thumbnail-50)
 
 
 6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. 
 
-![16admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientcreated.png#thumbnail-40)
+![16admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/oauth_clientcreated.png#thumbnail-50)
 
 
 
@@ -135,24 +135,24 @@ Google API Console</strong></a>.
 
 a. Basic Information: 
 
-![17admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag11.png#thumbnail-40)
+![17admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag11.png#thumbnail-50)
 
 b. Application Properties:
 
-![18admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag12.png#thumbnail-40)
+![18admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag12.png#thumbnail-50)
 <br>
 c. Application URIs:
 
-![19admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag13.png#thumbnail-40)
+![19admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag13.png#thumbnail-50)
 
 d. Connections:
 
-![20admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag14.png#thumbnail-40)
+![20admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag14.png#thumbnail-50)
 
 
 2. Setup OpenID parameters in Qrvey’s Admin Center
 
-![21admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag15.png#thumbnail-40)
+![21admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user_manag15.png#thumbnail-50)
 
 
 ## Customization
