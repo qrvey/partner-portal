@@ -20,26 +20,26 @@ Qrvey is the traditional way to authenticate users. When enabled, users must sig
 
 If you require authentication for your users, the Qrvey method sets it as default when you turn on the option.
 
-![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail-60)
+![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail)
 
 
 If an end-user wants to login on a page that has Qrvey login as the authentication method, the following login form will appear:
 
-![2_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_2.png#thumbnail-60)
+![2_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_2.png#thumbnail-50)
 
 
 ## OpenId Authentication
 OpenId is the new authentication method and if an admin user enabled it from the admin portal, a new option called “Enable OpenId Log In” will appear.
 
-![3_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_3.png#thumbnail-60)
+![3_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_3.png#thumbnail-80)
 
 When enabled, users will be able to use their existing credentials based on the configured provider. For example, an admin user sets Google as the OpenId provider for end-users, a creator turns on the OpenId authentication and finally, an end-user will see the following page when they try to log in:
 
-![4_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_4.png#thumbnail-60)
+![4_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_4.png#thumbnail-50)
 
 If a creator enables both methods (Qrvey and OpenId), an end-user should see the following page:
 
-![5_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_5.png#thumbnail-60)
+![5_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_5.png#thumbnail-50)
 
 
 After clicking on the **Log in with Google** button, the OpenId authentication flow will redirect the users to the Google login page so they can log in with their Google credentials. 
@@ -60,7 +60,7 @@ Next, you can choose whether your login page defaults to signups for new users o
 
 Finally, you can choose whether or not to add an email recovery system for lost passwords.
 
-![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail-60)
+![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail)
 
 
 
@@ -68,49 +68,49 @@ Finally, you can choose whether or not to add an email recovery system for lost 
 The **User Table** tab is where you will add and manage the users of your application.
 
 
-![7_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_7.png#thumbnail-60)
+![7_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_7.png#thumbnail-70)
 
 To add a new user, click the **Add New User** button and enter the user’s information as shown below. When a new user is added Qrvey will automatically send an email, to the address you entered, with an auto-generated password. Upon their first login, the user will be prompted to change their password.
 
 
-![8_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_8.png#thumbnail-60)
+![8_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_8.png#thumbnail-50)
 
 
 >**Note**: Users that are not assigned to a group will have full access to your application. It is recommended that you create groups and permissions first (see **Groups** below), then assign new users to those groups as you create them.
 
 Once added, you can activate, deactivate and delete users by using the **Bulk Actions** drop-down menu. You can also use this menu to quickly assign multiple users to groups.
 
-![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail-50)
+![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail)
 
 ## Groups
 You can organize users into groups in the **Groups** tab and assign permissions to them.  Permissions cannot be assigned to users individually.
 
 
-![10_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_10.png#thumbnail-60)
+![10_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_10.png#thumbnail)
 
 To create a new user group, click the orange **Create New Group** button. You’ll then be shown the screen below, where you can give your group a name, assign users to it, and create permissions.
 
-![11_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_11.png#thumbnail-60)
+![11_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_11.png#thumbnail)
 
 In the **Users** pane, you can search for existing users and add them to your group.
 
-![12_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_12.png#thumbnail-60)
+![12_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_12.png#thumbnail)
 
 In the **Permissions** pane, you can add restrictions in two areas: datasets and pages. In the **Data** section, you’ll see a list of all the datasets currently connected to your app. You can choose to show or hide data from each dataset individually.
 
 
-![13_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_13.png#thumbnail-60)
+![13_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_13.png#thumbnail)
 
 In the **Pages** section, you’ll see a list of all the pages in your application. You can choose to provide read/write access or hide each of these pages individually.
 
 
-![14_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_14.png#thumbnail-60)
+![14_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_14.png#thumbnail)
 
 
 
 In the Actions section, you’ll see the different filter types, and you will be able to enable or disable these filters for the end-users. So they will not be able to use those types of filters in your application.
 
-![15_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_15.png#thumbnail-60)
+![15_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_15.png#thumbnail)
 
 The following are the filter types supported by this settings:
 * **Global Filters**: Filters that apply to all pages in your application.
