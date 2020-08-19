@@ -16,7 +16,8 @@
     "AWS": [
       "aws/manage-aws-elasticsearch",
       "aws/setup-cost",
-      "aws/connect-to-RDS-instance"
+      "aws/connect-to-RDS-instance",
+      "aws/deploying-enterprise-edition-aws"
     ]
   },
   "ui-docs": {
@@ -107,6 +108,7 @@
       "embedding/embedding-intro",
       "embedding/widgets/widget-intro",
       "embedding/api/api-intro",
+      "embedding/widgets/widget-embedding-using-cookies",
       {
         "type": "subcategory",
         "label": "Data Collection Widgets",
