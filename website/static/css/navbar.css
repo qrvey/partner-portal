@@ -78,10 +78,10 @@ ul.nav-site.nav-site-internal li a{
 }
 .dropdown-nav--version {
     margin-top:-5px;
-    margin-left:35px;
+    margin-left:39px;
 }
 .dropdown-nav--version .dropdown-item{
-    padding: 5px 16px !important;
+    padding: 5px 10px !important;
 }
 .dropdown-nav .column{
     width: auto;
