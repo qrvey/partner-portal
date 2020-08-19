@@ -21,7 +21,7 @@ Qrvey is the traditional way to authenticate users. When enabled, users must sig
 
 If you require authentication for your users, the Qrvey method sets it as default when you turn on the option.
 
-![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail-50)
+![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail-40)
 
 
 If an end-user wants to login on a page that has Qrvey login as the authentication method, the following login form will appear:
@@ -61,7 +61,7 @@ Next, you can choose whether your login page defaults to signups for new users o
 
 Finally, you can choose whether or not to add an email recovery system for lost passwords.
 
-![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail)
+![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail-70)
 
 
 
@@ -81,7 +81,7 @@ To add a new user, click the **Add New User** button and enter the user’s info
 
 Once added, you can activate, deactivate and delete users by using the **Bulk Actions** drop-down menu. You can also use this menu to quickly assign multiple users to groups.
 
-![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail-40)
+![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail-30)
 
 ## Groups
 You can organize users into groups in the **Groups** tab and assign permissions to them.  Permissions cannot be assigned to users individually.
@@ -95,7 +95,7 @@ To create a new user group, click the orange **Create New Group** button. You’
 
 In the **Users** pane, you can search for existing users and add them to your group.
 
-![12_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_12.png#thumbnail)
+![12_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_12.png#thumbnail-70)
 
 In the **Permissions** pane, you can add restrictions in two areas: datasets and pages. In the **Data** section, you’ll see a list of all the datasets currently connected to your app. You can choose to show or hide data from each dataset individually.
 
