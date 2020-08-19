@@ -21,23 +21,23 @@ To create a dataset, go to the *Datasets* tab and click on **New Dataset**.
 Next, you will see a list of connections available to select as your data source. You could also select existing datasets as sources in the *Datasets* tab. 
 Select the desired connection and click on **Create**. 
 
-![2_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_1.png#thumbnail-40)
+![2_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_1.png#thumbnail)
 
 
 You will land in the _Design_ section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data. 
 
 Click on **Untitled Dataset** to give your dataset a name.
 
-![3_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/3_Datasets.png#thumbnail-40)
+![3_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/3_Datasets.png#thumbnail)
 <br> <br/>
-![4_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail-40)
+![4_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail)
 
 At this point, you can load the data and begin using it to create charts, pages or reports. 
 
 You can also perform different actions with the data before loading it. You can select which columns you’d like to include or exclude by using the checkboxes in the left-hand column. A search box is provided for data sources with large numbers of columns so that you can easily find the one you are looking to select or deselect. The system will automatically profile your data and choose an appropriate data type, but you can further refine how you’d like each column to appear by updating the data types as needed.
 
 
-![5_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_2.png#thumbnail-40)
+![5_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_2.png#thumbnail)
 
 
 You can also change the formatting of the date and numeric columns. This format will be visible in the rest of the application when the column is used. For example a numeric column is assigned a _Currency_ format, meaning that if this column is used to build a chart, the values should be displayed as currency with the $ sign. 
@@ -59,9 +59,9 @@ If you would like to see a partial view of the data, click on **View Data** and 
 
 There are other options available to work with your data, like creating Geolocation Groups. If your data contains address information, you can choose to create a Geolocation Group by clicking on the location pin icon. A Geolocation Group is required for mapping data records.
 
-![7_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7_Datasets.png#thumbnail-80)
+![7_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7_Datasets.png#thumbnail)
 <br/>
-![8_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8_Datasets.png#thumbnail-80)
+![8_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8_Datasets.png#thumbnail-60)
 
 Assign a name to your group and select either a country or zip code location to begin. After selecting your country column, you can map additional columns to Street Line, City, State, Zip Code. Once your dataset is active, you can create a map visualization and use the Geolocation Group(s) you have created. 
 
@@ -71,7 +71,7 @@ Assign a name to your group and select either a country or zip code location to 
 When you’re done selecting, you can begin loading your data by clicking **Load Data**. In most cases, data loading will complete in a few seconds. If however, you are uploading a large amount of information, it may take a few minutes to complete.
 The progress bar at the top-right of the screen will indicate the current progress of the data load. You do NOT need to remain on this page as the loading will continue in the background until it has been completed.
 
-![10_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10_Datasets.png#thumbnail-60)
+![10_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10_Datasets.png#thumbnail-40)
 
 Once your data has been successfully loaded, you will be redirected to the *Summary View* where you’ll have access to your data profile. 
 
@@ -96,9 +96,8 @@ You can reload your data at any time, without having to edit the dataset. If you
 ## Data Syncs
 When creating datasets from *Database Connections*, you will have the option to automatically sync your data. Data Synchronization settings are found when clicking on a data source inside the dataset. 
 
-<div>
-    <img src=" https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14_Datasets.png" style="margin:auto; display:block;" width="500" />
-<div>
+
+![14_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14_Datasets.png#thumbnail)
 
 
 On the *Data Syncs tab*, you will be able to set up a schedule to automatically synchronize the Dataset with the source data, replace all records or pull in just the ones updated during the latest data load.   
@@ -116,10 +115,10 @@ Data Syncing is available for single-source datasets as well as datasets using j
 
 In the *Activity Log* section, you can find the actions taken on the dataset logged for your information. A *success* message will be shown when the event is completed successfully, and an *error* message  will appear when the event failed. Error messages have the option of seeing the details of why the error occurred. 
 
-With the *Download Log File* option, you can download the event in the activity log and get the error details in text format as well. 
-<div>
-    <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/15_Datasets.png" style="margin:auto; display:block;" width="500" />
-<div>
+With the *Download Log File* option, you can download the event in the activity log and get the error details in text format as well.
+
+
+![15_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/15_Datasets.png#thumbnail)
 
 
 
