@@ -28,7 +28,7 @@ The bottom of the canvas will display a tab for every page you create. This is w
 
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
 
-![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-50)
+![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-80)
 
 <br>
 
@@ -53,7 +53,6 @@ While designing your pages, you can see how your content will be displayed on di
 
 Towards the right side of the toolbar, you will see the download button - you can use this to download the page data in CSV format. If there are multiple datasets being used on the same pages, they will be exported as separate files.
 
-<br>
 
 ## **Data & Configuration**
 In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
@@ -61,12 +60,12 @@ In order to begin creating charts and filters for your pages, you will need to h
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
 
-![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail-80)
+![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail-60)
 
 If you have a long list of datasets, you can also select favorites by clicking on the blue star. It will turn orange to indicate the dataset is marked as favorite, and by clicking the orange button besides **Data** you will see only your favorite datasets. 
 
 
-![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail-80)
+![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail-60)
 
 
 ## Object Configuration
@@ -74,7 +73,7 @@ As you are building your pages, you will need to use the Data & Configuration pa
 
 
 
-![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail)
+![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail-80)
 
 For Text, Images and Buttons, you will find options to style fonts, colors, text alignment, image aspect, and an option to add a URL to create links from the objects. 
 
@@ -85,7 +84,7 @@ To access the configuration options, you must click on the object you would like
 To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
 
 
-![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-40)
+![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-20)
 
 ## **Filters**
 The Filters menu item lets you easily manage global, page, and tab filters defined in your pages, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
@@ -100,7 +99,7 @@ To create a new global filter, click the Add Filter button and choose your data 
 
  
 
-![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5.0_pages.png#thumbnail-50)
+![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/5.0_pages.png#thumbnail-60)
 
 
 ## Filter Panel
