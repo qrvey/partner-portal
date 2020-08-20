@@ -21,26 +21,26 @@ Qrvey is the traditional way to authenticate users. When enabled, users must sig
 
 If you require authentication for your users, the Qrvey method sets it as default when you turn on the option.
 
-![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail-40)
+![1_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_1.png#thumbnail-100)
 
 
 If an end-user wants to login on a page that has Qrvey login as the authentication method, the following login form will appear:
 
-![2_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_2.png#thumbnail-40)
+![2_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_2.png#thumbnail-60)
 
 
 ## OpenId Authentication
 OpenId is the new authentication method and if an admin user enabled it from the admin portal, a new option called “Enable OpenId Log In” will appear.
 
-![3_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_3.png#thumbnail-80)
+![3_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_3.png#thumbnail-100)
 
 When enabled, users will be able to use their existing credentials based on the configured provider. For example, an admin user sets Google as the OpenId provider for end-users, a creator turns on the OpenId authentication and finally, an end-user will see the following page when they try to log in:
 
-![4_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_4.png#thumbnail-40)
+![4_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_4.png#thumbnail-60)
 
 If a creator enables both methods (Qrvey and OpenId), an end-user should see the following page:
 
-![5_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_5.png#thumbnail-40)
+![5_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_5.png#thumbnail-60)
 
 
 After clicking on the **Log in with Google** button, the OpenId authentication flow will redirect the users to the Google login page so they can log in with their Google credentials. 
@@ -74,14 +74,14 @@ The **User Table** tab is where you will add and manage the users of your applic
 To add a new user, click the **Add New User** button and enter the user’s information as shown below. When a new user is added Qrvey will automatically send an email, to the address you entered, with an auto-generated password. Upon their first login, the user will be prompted to change their password.
 
 
-![8_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_8.png#thumbnail-40)
+![8_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_8.png#thumbnail-60)
 
 
 >**Note**: Users that are not assigned to a group will have full access to your application. It is recommended that you create groups and permissions first (see **Groups** below), then assign new users to those groups as you create them.
 
 Once added, you can activate, deactivate and delete users by using the **Bulk Actions** drop-down menu. You can also use this menu to quickly assign multiple users to groups.
 
-![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail-30)
+![9_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_9.png#thumbnail-40)
 
 ## Groups
 You can organize users into groups in the **Groups** tab and assign permissions to them.  Permissions cannot be assigned to users individually.
