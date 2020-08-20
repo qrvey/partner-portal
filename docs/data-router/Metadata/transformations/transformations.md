@@ -9,7 +9,7 @@ Transforms are the required manipulation over the user data before being analyze
 
 In this set of transformations are described in the JSON body of the metadata as an array of objects, with three mandatory properties inside each, `id`, `function` and `action`.
 
-these properties are required to identification, and data manipulation, each of those has a particular usage.
+These properties are required to identification, and data manipulation, each of those has a particular usage.
 
 ## Properties
  - `id` [`string`]: used to identify each transformation inside the groups of all transforms.

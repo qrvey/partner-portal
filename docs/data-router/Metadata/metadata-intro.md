@@ -6,11 +6,8 @@ sidebar_label: Metadata Overview
 
 <div style="text-align: justify">
 
-Metadata is how we define the column mappings and transformations required by your data to be used within a **Qrvey Application**.
 
-Before you can start uploading data into **DataRouter**, you have to construct a new metadata definition and use the Metadata API to save the metadata definition to DataRouter.
-
-## Definition
+## Introduction
 
 A metadata corresponds to a definition of the data that the user wants to upload. It is a JSON format that allows you to create a schema that refers to how you want to save the data, taking into account the columns, the data rules and other elements that allows to create mutations of the information. Likewise, it has rules on the data that allows the creation of new destinations for the information with these rules.
 
