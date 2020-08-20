@@ -18,7 +18,6 @@ Before you begin, please be sure to have the following:
 * A tool or software you can use to make REST APIs calls. We recommend Postman or cURL commands.
 
 ## Steps
-
 ### 1. Create Metadata
 
 The first step is to create a metadata definition before loading data into an index or dataset. You will define:
