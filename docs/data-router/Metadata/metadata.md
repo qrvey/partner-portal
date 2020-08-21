@@ -1,7 +1,7 @@
 ---
 id: metadata-API
-title: Metadata API
-sidebar_label: Metadata API
+title: Metadata
+sidebar_label: Metadata
 ---
 
 ## Introduction

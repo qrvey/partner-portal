@@ -163,13 +163,14 @@
       }
     ],
     "Data Router": [
-      "data-router/data-router-intro",
+      "data-router/introduction/data-router-intro",
+      "data-router/introduction/data-router-loading-data",
       {
         "type": "subcategory",
         "label": "Metadata",
         "ids": [
-          "data-router/Metadata/metadata-intro",
-          "data-router/Metadata/simple-metadata"
+          "data-router/Metadata/metadata-overview",
+          "data-router/Metadata/metadata-API"
         ]
       },
       {
