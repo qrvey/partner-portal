@@ -195,6 +195,15 @@
       },
       {
         "type": "subcategory",
+        "label": "Data Loading",
+        "ids": [
+          "data-router/DataLoading/postdata-content",
+          "data-router/dataload-S3",
+          "data-router/batch-manager"
+        ]
+      },
+      {
+        "type": "subcategory",
         "label": "Postdata",
         "ids": [
           "data-router/postdata-content"
