@@ -223,7 +223,7 @@ function addDropdownItem() {
             element.insertAdjacentHTML('beforeend', `
                 <div class="dropdown-nav flex" id="navbar-item-dropdown" style="transform:scaleY(0)"> 
                     <div class="column">
-                        <a class="dropdown-item" href="${baseUrl}docs${version}/release-notes/release-last">Releases Notes</a>
+                        <a class="dropdown-item" href="${baseUrl}docs${version}/release-notes/release-last">Release Notes</a>
                         <a class="dropdown-item" href="${baseUrl}docs${version}/ui-docs/basics/logging-in">Qrvey Composer</a>
                         <a class="dropdown-item" href="${baseUrl}docs${version}/admin/admin-intro">Admin Docs</a>
                         </div>  
