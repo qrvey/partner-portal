@@ -177,7 +177,7 @@
         "type": "subcategory",
         "label": "Transformations",
         "ids": [
-          "data-router/Transforms/transforms-intro"
+          "data-router/Metadata/transformations/transformations-intro"
         ]
       },
       {

@@ -1,7 +1,7 @@
 ---
-id: transforms-intro
-title: Transforms Overview
-sidebar_label: Transforms Overview
+id: transformations-intro
+title: Transformations
+sidebar_label: Transformations
 ---
 <div style="text-align: justify">
 
