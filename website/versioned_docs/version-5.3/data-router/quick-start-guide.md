@@ -1,7 +1,8 @@
 ---
-id: data-router-loading-data
-title: Quick Start Guide
-sidebar_label: Quick Start
+id: version-5.3-data-router-loading-data
+title: Quick Start Guide - Loading Data
+sidebar_label: Quick Start Guide - Loading Data
+original_id: data-router-loading-data
 ---
 
 <div style="text-align: justify">
@@ -18,6 +19,7 @@ Before you begin, please be sure to have the following:
 * A tool or software you can use to make REST APIs calls. We recommend Postman or cURL commands.
 
 ## Steps
+
 ### 1. Create Metadata
 
 The first step is to create a metadata definition before loading data into an index or dataset. You will define:
@@ -35,7 +37,33 @@ Replace “MetadataEndpoint” and “api-key” with values for your Qrvey inst
 
 > **Note**: **“MetaDataId”** and **“indexName”** must contain the same value using lowercase.
 
-![1_loading_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/Quick+Start+Guide%3A+Loading+Data/qsg_1.png#thumbnail)
+curl example: 
+
+```json
+curl --location --request POST '{{MetadataEndpoint}}/v5/metadata?publicConnection=true' \
+--header 'x-api-key: {{api-key}}' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "MetaDataId": "quick_start_index_name",
+    "indexName": "quick_start_index_name",
+    "skipOnPartialData": false,
+    "dateFormat": "YYYY-MM-DDTHH:mm:ss",
+    "columnType": [
+        {
+            "columnName": "CompanyId",
+            "type": "numeric-general"
+        },
+        {
+            "columnName": "Company Name",
+            "type": "text-label"
+        },
+        {
+            "columnName": "Foundation Date",
+            "type": "date"
+        }
+    ]
+}'
+```
 
 
 
@@ -46,12 +74,40 @@ This step will load data via Post Data API. You can use this API multiple times 
 
 Replace “dataloadendpoint” and “api-key” with values for your Qrvey instance.
 
-![2_loading_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/Quick+Start+Guide%3A+Loading+Data/qsg_2.png#thumbnail)
-
+```JSON
+curl --location --request POST '{{dataloadendpoint}}/dataload/v1/postdata' \
+--header 'x-api-key: {{api-key}}' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "metadataId": "quick_start_index_name",
+        "data": [
+            {
+                "CompanyId": 1,
+                "Company Name": "Apple",
+                "Foundation Date": "1976-04-1"
+            },
+            {
+                "CompanyId": 2,
+                "Company Name": "Amazon",
+                "Foundation Date": "1995-07-16"
+            },
+            {
+                "CompanyId": 3,
+                "Company Name": "Google",
+                "Foundation Date": "1998-08-04"
+            }
+        ]
+    }
+]'
+```
 Response example:
 
-![3_loading_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/Quick+Start+Guide%3A+Loading+Data/qsg_3.png#thumbnail)
-
+```JSON
+{
+    "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3"
+}
+```
 This API will add the records into the DataRouter queue and it returns the JobID so you can track the progress of your record. This helps DataRouter manage sudden spikes and large volumes of data. 
 
 ### 3. Get job status (optional)
@@ -60,11 +116,29 @@ This API call will verify the progress of the data load job from the previous st
 
 Replace “dataloadendpoint” and “api-key” with values for your Qrvey instance.
 
-![4_loading_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/Quick+Start+Guide%3A+Loading+Data/qsg_4.png#thumbnail)
+```JSON
+curl --location --request GET '{{dataloadendpoint}}/dataload/{{jobId}}/status' \
+--header 'x-api-key: {{api-key}}'
+```
 
 Response example
 
-![5_loading_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/Quick+Start+Guide%3A+Loading+Data/qsg_5.png#thumbnail)
+```JSON
+
+{
+    "statusJob": {
+        "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3",
+        "status": "Complete",
+        "approximatePercentComplete": 100
+    },
+    "jobCompletionStatistics": {
+        "failed": 0,
+        "successful": 3,
+        "updated": 0
+    }
+}
+
+```
 
 ### 4. Create DataSet on Qrvey Composer
 Now that you have created an index and with data, we are ready to use this data for analysis in Qrvey Composer. Launch the Composer URL in a new browser window to access the UI.

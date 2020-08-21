@@ -1,7 +1,7 @@
 ---
 id: data-router-intro
 title: Introduction
-sidebar_label: Data Router Overview
+sidebar_label: Overview
 ---
 <div style="text-align: justify">
 

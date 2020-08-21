@@ -1,7 +1,8 @@
 ---
-id: metadata-intro
+id: version-5.3-metadata-intro
 title: Metadata Overview
 sidebar_label: Metadata Overview
+original_id: metadata-intro
 ---
 
 <div style="text-align: justify">

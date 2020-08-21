@@ -162,13 +162,14 @@
       }
     ],
     "Data Router": [
-      "version-5.3-data-router/data-router-intro",
+      "version-5.3-data-router/introduction/data-router-intro",
+      "version-5.3-data-router/introduction/data-router-loading-data",
       {
         "type": "subcategory",
         "label": "Metadata",
         "ids": [
-          "version-5.3-data-router/Metadata/metadata-intro",
-          "version-5.3-data-router/Metadata/simple-metadata"
+          "version-5.3-data-router/Metadata/metadata-overview",
+          "version-5.3-data-router/Metadata/metadata-API"
         ]
       },
       {

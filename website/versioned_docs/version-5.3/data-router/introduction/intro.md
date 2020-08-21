@@ -1,7 +1,7 @@
 ---
 id: version-5.3-data-router-intro
 title: Introduction
-sidebar_label: Data Router Overview
+sidebar_label: Overview
 original_id: data-router-intro
 ---
 <div style="text-align: justify">

@@ -1,7 +1,7 @@
 ---
 id: version-5.3-data-router-loading-data
-title: Quick Start Guide - Loading Data
-sidebar_label: Quick Start Guide - Loading Data
+title: Quick Start Guide
+sidebar_label: Quick Start
 original_id: data-router-loading-data
 ---
 
