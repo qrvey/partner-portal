@@ -168,7 +168,7 @@
         "type": "subcategory",
         "label": "Metadata",
         "ids": [
-          "version-5.3-data-router/Metadata/metadata-overview",
+          "version-5.3-data-router/Metadata/metadata-intro",
           "version-5.3-data-router/Metadata/metadata-API"
         ]
       },

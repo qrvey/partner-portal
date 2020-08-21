@@ -169,7 +169,7 @@
         "type": "subcategory",
         "label": "Metadata",
         "ids": [
-          "data-router/Metadata/metadata-overview",
+          "data-router/Metadata/metadata-intro",
           "data-router/Metadata/metadata-API"
         ]
       },
