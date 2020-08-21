@@ -6,75 +6,106 @@ sidebar_label: Postdata
 
 <div style="text-align: justify">
 
-Posting, uploading or sending data is the process where the information provided by the user is stored in an Elasticsearch index through Data Router. In this process, all transformations defined in the Metadata are applied.
+## Introduction
+The user can load data to the Qrvey platform using an API that receives a body with a JSON structure.
 
-## Request structure
 
-All data has to be in JSON format and must indicate the Metadata that is going to be used.
+## Pre-requisites
+Before you can start following these steps, please make sure you have the following:
+* URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
+  * Dataload Endpoint
+  * API Key 
+* A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
+Create a metadata using the metadata API.
 
-When using the API (`{{postdataendpoint}}/data`), the body must be an application/json.
+## Limits
+* The max body size is 5MB.
+
+## Post data structure
 
 ```json
-{
-        "metadataId": "the_metadataId",
+[
+    {
+        "metadataId": "{{metadataId}}", //MetadataId generated on metadata creation
         "data": [
-            { row1 },
-            { row2 },
-            ...
+            //Data to load on JSON format
         ]
     }
+]
+
 ```
->When uploading data through an S3 bucket, several data files can be zipped in single file: application/x-zip-compressed, application/zip and application/x-gzip formats are supported.
+cURL example:
 
-| **Property** | **Details** |
-| --- | --- |
-| **metadataId** | This is the ID of the Metadata that is going to be used. This Metadata indicates the Elasticsearch index |
-| **data** | This is the data to be uploaded. It is an array of objects where each element represents a row of the data.
+```JSON
+curl --location --request POST '{{dataloadendpoint}}/dataload/v1/postdata' \
+--header 'x-api-key: {{api-key}}' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "metadataId": "quick_start_index_name",
+        "data": [
+            {
+                "CompanyId": 1,
+                "Company Name": "Apple",
+                "Foundation Date": "1976-04-1"
+            },
+            {
+                "CompanyId": 2,
+                "Company Name": "Amazon",
+                "Foundation Date": "1995-07-16"
+            },
+            {
+                "CompanyId": 3,
+                "Company Name": "Google",
+                "Foundation Date": "1998-08-04"
+            }
+        ]
+    }
+]'
+```
 
-## Response structure
-When calling the `postadata` endpoint a simple response is returned:
-```json
+
+Response example:
+
+```JSON
 {
-    "state": {
-        "id": "3",
-        "name": "Successful"
-    },
-    "metadataId": "the_metadataId"
+    "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3"
 }
 ```
-If the query string `returnAllLog` is set to `true`, then information more detailed information about the process is returned. This includes Elasticsearch information.
 
-```json
+## Get job status (optional)
+
+This API call will verify the progress of the data load job from the previous step.
+
+Replace “dataloadendpoint” and “api-key” with values for your Qrvey instance.
+
+
+```JSON
+curl --location --request GET '{{dataloadendpoint}}/dataload/{{jobId}}/status' \
+--header 'x-api-key: {{api-key}}'
+```
+
+
+Response example:
+```JSON
 {
-    "state": {
-        "id": "3",
-        "name": "Successful"
+    "statusJob": {
+        "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3",
+        "status": "Complete",
+        "approximatePercentComplete": 100
     },
-    "request": {
-        "ip": "127.0.0.1",
-        "startTime": "2019-06-26 21:02:29:115",
-        "endTime": "2019-06-26 21:02:29:225",
-        "token": "554a",
-        "totalTime": 110,
-        "statusCode": 200
-    },
-    "metaDataId": "the_metadataId",
-    "transforms": {
-        ...
-    },
-    "dataRules": [],
-    "responseES": {
-        "countToProcess": 3,
-        "countSaved": 3,
-        "countUpdated": 0,
-        "countWithErrors": 0,
-        "rowSaved": "",
-        "rowUpdated": "[]",
-        "errors": "[]",
-        "rowSkip": "[]",
-        "rowsWithErrors": "[]",
-        "countRowsRejected": 0,
-        "rowsRejected": "[]"
+    "jobCompletionStatistics": {
+        "failed": 0,
+        "successful": 3,
+        "updated": 0
     }
 }
+
 ```
+
+## API Reference
+
+https://documenter.getpostman.com/view/6666071/S1a4Wm6D
+
+
+
