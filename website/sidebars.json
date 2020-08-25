@@ -95,7 +95,6 @@
       "admin/admin-intro",
       "admin/admin-managing-users",
       "admin/admin-sections-platform",
-      "admin/admin-data",
       "admin/admin-sections-data-router",
       "admin/admin-sections-deployments"
     ]
