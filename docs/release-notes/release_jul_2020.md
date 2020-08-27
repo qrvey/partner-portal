@@ -6,6 +6,8 @@ sidebar_label: July 2020
 <div style="text-align: justify">
 Release Date: 2020-08-03
 
+Click <a href="/docs/next/video-training/release/version-5.3"> <strong>here</strong></a> for demo videos on some of the released features.
+
 
 ## New Features
 
