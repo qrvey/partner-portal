@@ -251,10 +251,11 @@
     ]
   },
   "video-training":{
-    "Building Qrvey Sample":[
+    "Short Topic Videos":[
       "video-training/building-qrvey-sample/connections",
       "video-training/building-qrvey-sample/datasets",
       "video-training/building-qrvey-sample/complex-datasets",
+      "video-training/building-qrvey-sample/datalinks",
       "video-training/building-qrvey-sample/analysis-views",
       "video-training/building-qrvey-sample/formulas",
       "video-training/building-qrvey-sample/bucketing",
@@ -274,7 +275,8 @@
       "video-training/admin-center/intro-admin-center"
     ],
     "Release Demos":[
-      "video-training/release/version-5.2"
+      "video-training/release/version-5.2",
+      "video-training/release/version-5.3"
     ]
   }
 }
