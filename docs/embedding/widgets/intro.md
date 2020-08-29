@@ -6,26 +6,32 @@ sidebar_label: Widgets Quick Start Guide
 
 <div style="text-align: justify">
 
-Qrvey provides developers with front-end “Widgets” to allow them to seamlessly embed Qrvey’s self-service data collection, automation, or analytics to power your applications. Widgets are directly embedded into web applications using simple Javascript and custom HTML tags. Qrvey Widgets are available for embedding various front-end application features, including Web Form builders (Survey, Quiz, Forms, etc), Data Visualizations for both creating and consuming charts and report outputs, and for a variety of additional end-user self-service tools.
+Qrvey provides developers with front-end “Widgets” to allow them to seamlessly embed Qrvey’s self-service data collection, automation, or analytics to power their applications. Widgets are directly embedded into web applications using simple Javascript and custom HTML tags. Qrvey Widgets are available for embedding various front-end application features, including Web Form builders (Survey, Quiz, Forms, etc), Data Visualizations for both creating and consuming charts and report outputs, and more.
 
 ## Versioning
-To minimize any compatibility issues, the Qrvey Widgets version are tied directly to the Qrvey application and will be automatically upgraded whenever your Qrvey application is updated. We encourage developers to always consider upgrades as we are rapidly adding new features and functionality.
+To minimize any compatibility issues, the Qrvey Widgets versions are directly tied to the Qrvey application and are automatically upgraded whenever the Qrvey application is updated. We encourage developers to always consider upgrades as we are rapidly adding new features and functionality.
 
 ## API Key
-All Qrvey Widget request will require access a Qrvey developer API key.  If you would like to obtain an API key, please contact your Qrvey account representative or send an email to help@qrvey.com.
+All Qrvey Widget requests will require a Qrvey developer API key. If you would like to obtain an API key, please contact your Qrvey account representative or send an email to help@qrvey.com.
 
 ## Getting Started
-It is a good idea to familiarize yourself with the Qrvey application front-end before starting to use Widgets as many of the items you create or access from the Qrvey front-end are also accessible via Widgets.  As in the Qrvey application, you can embed Widgets for web form design/building (including Forms, Quizzes, Surveys), for Charts (including chart builder), and several other features.
+It is a good idea to familiarize yourself with the Qrvey application front-end before starting to use Widgets, as many of the widgets are either available in the Qrvey Composer or have very close ties to the functionality of an area of the Composer. Therefore it is recommended that those ties are fully understood to enable you a seamless integration and provide the best user experience for your users. 
 
-In order to embed a widget, you will need to have:
+In order to embed any widget, you will need to have the following information handy:
+- Qrvey base URL - This is the URL of your Qrvey instance and the location where all your Widget and API calls will be made. This element will be referred to as  ```https://your_qrvey_domain``` in these documents. 
+- API-key - This is your unique key that must be a part of every API call. This key is shared in the onboarding email that you receive right after your Qrvey instance is set up. This element will be referred to like: API_KEY in these documents.
+- Launcher URL - This is a link to a piece of Javascript code that is needed for any widget.
 
-- Qrvey base URL - where all your Widget and API calls will be made
-- API-key - your unique key that must be a part of every API call
-- Launcher URL - javascript link to needed for any widget
 
 > **Note 1**: These pieces of information remain the same for most widgets. There are a few exceptions where the launcher is different. Please refer to each widget’s document for the exact launcher. 
 
 > **Note 2**: Be sure to keep this information private and do not post it publicly in your production code. Refer to  <a href="/docs/embedding/widgets/widget-intro/#embed-a-widget-from-qrvey-composer "> this document</a> for guidelines on how to embed widgets without including any of this information in your HTML code.
+
+> **Note 3**: Aside from the API key and user id, most of the required properties of widgets are visible in the URL. Find the most common methods of obtaining the others in the FAQs. link the word FAQs to the General section of FAQs.
+
+> **Note 4**: Watch for occasional differences in the spelling of properties, as well as the “config” property (sometimes used as “settings”). 
+
+
 
 The general structure of a Widget includes:
 1. A JSON config object that defines all of the Widget’s details
