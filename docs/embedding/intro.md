@@ -10,35 +10,20 @@ The Qrvey Platform provides a suite of widgets to allow the various features to 
 
 ## Widgets
 
-Use the pre-built widget samples below to jumpstart your development and explore the many functions they offer. 
+Most of the UI components in Qrvey are “widgets" that can be used to jumpstart your development. This alphabetically sorted list provides a brief description of a few most commonly used widgets. Click on any link to get redirected to the selected widget’s documentation for detailed information and sample code. 
 
-|**Widget**|**Tag**|
-|:--- | :---: |
-|Datasets|**<`qrvey-data-sets`>**|
-|Web Forms Design|**<`qrvey-design-widgets`>**|
-|Data Connectors|**<`qrvey-data-connectors`>**|
-|Data Links|**<`qrvey-datalinks`>**|
-|Metadata Builder|**<`qrvey-metadata-builder`>**|
-|Activity Logs|**<`log-widget`>**|
-|Summary View|**<`an-summary-view`>**|
-|Tabular View|**<`an-tabular-view`>**|
-|Custom View|**<`an-custom-view`>**|
-|Panel Builder|**<`an-chart-builder`>**|
-|Panels|**<`an-custom-charts`>**|
-|Summary Panels|**<`an-summary-panel`>**|
-|Filter Panel|**<`an-filter-panel`>**|
-|Filter Modal|**<`an-filter-modal`>**|
-|Buckets Modal|**<`an-bucket-modal`>**|
-|Formula Modal|**<`an-formula-modal`>**|
-|Metric Builder|**<`an-metric-builder`>**|
-|Metric Panel|**<`an-metric-panel`>**|
-|Report Builder|**<`qrvey-report-builder`>**|
-|Page Builder|**<`qrvey-page-builder`>**|
-|End User|**<`qrvey-end-user`>**|
-|User Management|**<`qum-user-management`>**|
-|Automations Flows|**<`qrvey-workflow-design`>**|
-|Tokens Manager|**<`qtk-tokens-modal-wraper`>**|
-|Token Suggestion Box|**<`q-token-box`>**|
+Please contact help@qrvey.com if you would like to embed any other Qrvey widget in your custom application.
+
+* **Analysis Dashboard** (tag: ```<an-dashboard>```) - This widget is a one-stop-shop that gives you the functionality of all Analysis Views: Summary, Tabular, and Custom Views. This is the newer version of Custom and Summary View widgets that we recommended using over those.
+* **Builders** (tag: ```<qrvey-builders>```) - This is the second most popular widget used to embed the entire Report Builder or Page Builder in your custom application.
+* **Chart Builder** (tag: ```<an-chart-builder-modal>```) - This widget embeds the powerful chart builder widget inside your application, allowing your users to create their own charts.
+* **Data Connectors** (tag: ```<qrvey-data-connectors>```) - This widget embeds the “data connections” dashboard, with its full functionality inside any application.
+* **Data Links** (tag: ```<qrvey-datalinks>```) - Data Links can be created by users of your application when you embed this widget in your product.
+* **Datasets** (tag: ```<qrvey-data-sets>```) - Give your users access to the powerful dataset widget with all of its capabilities (tie to creating connections, creating complex datasets with joins, data synchronization, etc.). Access to this widget has to be enabled with care, as it enables users to access any connections that have been created for the application.
+* **End User** (tag: ```<qrvey-end-user>```) - End-User widget is the number one reused widget of the entire set and it allows end-user dashboards that are created in Page Builder to be embedded in your custom applications.
+* **Single Panel** (tag: ```<an-panel>```) - This widget can be used to embed a single visualization panel.
+* **Webform Design** (tag: ```<qrvey-design-widgets>```) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
+* **Workflow Design** (tag: ``` <qrvey-workflow-design>```) - This widget can be used to embed the flow builder in your applications.
 
 ## API
 Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
