@@ -6,7 +6,7 @@ sidebar_label: Metric View
 
 <div style="text-align: justify">
 
-Metrics are a powerful feature that allows you to keep an eye on your most important data at a glance. It can be used by itself or it can be used as a part of a page, report, dashboard, or workflow. 
+Metrics are a powerful feature that allows you to keep an eye on your most important data in a glance. It can be used by itself or as a part of a page, report, dashboard, or workflow.
 
 With Metric Builder, you can build the three different gauges seen below:
 
@@ -20,23 +20,30 @@ With Metric Builder, you can build the three different gauges seen below:
 ![3_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/3_metric-view.png#thumbnail-60)
 
 # Building a Metric
-To build your first metric, enter your application, click the **Analyze** tab of the dataset you’d like to use and select the Metric View as shown below. You can then click **Add Metric** to begin.
+To build your first metric, you can access the Chart Builder from the **Analyze** tab of the dataset you’d like to use, or through Page and Report Builder. Select the type of metric you would like to build, Indicator, Bullet or Gauge, and drag a value to the fields shelf or onto the canvas zone.
 
-![4_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/4_metric-view.png#thumbnail)
+![5_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/5.png#thumbnail)
 
-If you are already familiar with **Chart Builder,** you’ll find the layout below familiar. You can make your selections on the left and your metric will appear on the right in real-time as you construct it. There are three tabs across the top of the panel for metric, thresholds and visualization options.
+As soon as you add the field, the value will be shown and you can continue styling your metric accessing the Comparison and Styles section from the right-side panel. 
 
-![5_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/5_metric-view.png#thumbnail)
+You can add time comparison options by dragging a date field to the right-side panel in the **Date Column** area and selecting a time period to compare with from a series of options such as *Last Hour, Today, This month, Last quarter, This year*, and others.
 
-The **Metric** tab is where you’ll define the data that makes up your metric. You can provide a name and description, then choose the dataset and value column. There are also options for aggregates, time periods and comparison data.
+In the Comparison section, you can also define the styles for fonts and the change value. You can set colors and symbols for *Increasing/Decreasing Change* and *No Change* which will reflect depending on the data.
 
-![6_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/6_metric-view.png#thumbnail-60)
 
-In the **Thresholds** tab, you can choose to provide color-coded ranges for your data. Typically, people use three thresholds to indicate good, bad and in-between ranges for their metrics. You can provide each threshold with a name and assign it a color.
+![6_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/6.png#thumbnail)
 
-![7_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/7_metric-view.png#thumbnail-60)
 
-Finally, in the **Visualization** tab, you can choose which type of visualization you’d like, and set an additional color, size and display options. These will vary depending on the type of metric you select. Once you are happy with your settings, click **Save** in the lower-right corner and your metric will be added to your dashboard where it can then be used for pages, reports and workflows.
+There are other options to control visual aspects and behaviour of the metric, like the automatic resizing of the content which will re-adjust itself to the size of the panel when it’s on. When it’s off, it will take the defined font size. Another available option is to turn on/off the animation used to display the indicator metric while the data is loading.
 
-![8_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/8_metric-view.png#thumbnail-60)
+
+![7_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/7.png#thumbnail-50)
+
+
+
+For Dial and Bullet Gauge style metrics, Thresholds can be set. You can choose to provide color-coded ranges for your data. Typically, users create three thresholds to indicate good, bad and in-between ranges for their metrics. You can provide each threshold with a name and assign a color to it. 
+
+
+![8_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/8.png#thumbnail)
+
 
