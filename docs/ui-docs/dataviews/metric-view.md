@@ -6,7 +6,7 @@ sidebar_label: Metric View
 
 <div style="text-align: justify">
 
-Metrics are a powerful feature that allows you to keep an eye on your most important data in a glance. It can be used by itself or as a part of a page, report, dashboard, or workflow.
+Metrics are a powerful feature that allows you to keep an eye on your most important data at glance. It can be used by itself or as a part of a page, report, dashboard, or workflow.
 
 With Metric Builder, you can build the three different gauges seen below:
 
