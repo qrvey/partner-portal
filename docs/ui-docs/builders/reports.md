@@ -8,7 +8,7 @@ sidebar_label: Report Builder
 
 Report Builder is a quick and easy way to build and publish reports. To begin, enter an application and click the Report Builder icon in the left toolbar.
 
-![1_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/1_reports.png#thumbnail-20)
+![1_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/1_reports.png#thumbnail)
 
 ## Creating a Report
 Once inside the Report Builder, you can begin by clicking **Create New Report**.
@@ -28,7 +28,7 @@ Once your report has been created, you’ll see the main Report Builder interfac
 
 In the toolbar, you will find the options to configure your report tabs and options to add content.
 
-![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail-40)
+![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail-20)
 
 
 From the toolbar, you will also be able to access the chart builder by clicking on the chart icon. Once you configure and save your chart, this will be added to your page right away. 
@@ -48,12 +48,12 @@ In order to begin creating charts and filters for your reports, you will need to
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a tab. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for Shift + Click to add multiple charts at the same time. 
 
-![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail-40)
+![6_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/6_reports.png#thumbnail-20)
 
 If you have a long list of datasets, you can also select favorites by clicking on the blue star. It will turn orange to indicate the dataset has been marked as favorite, and by clicking the orange button beside **Data**, you will see only your favorite datasets. 
 
 
-![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-40)
+![7_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/7_reports.png#thumbnail-20)
 
 
 ## Object Configuration
@@ -69,7 +69,7 @@ To access the configuration options, you must click on the object you would like
 To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
 
 
-![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail-40)
+![9_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/9_reports.png#thumbnail)
 
 
 
@@ -79,11 +79,11 @@ The Filters menu item lets you easily manage global filters defined in your repo
 
 To enable or disable all filters for a group, click on the toggle button or check-box next to the group’s name. To enable or disable an individual filter value, use the check-box next to it.
 
-![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail-40)
+![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail-20)
 
 To create a new global filter, click the **Add Filter** button and choose your data source. Next, select the column in the drop-down list and select the scope of the filter, i.e. All or Current Tab. See the <a href="docs/ui-docs/builders/dataviews/filters"> <strong>Filtering Data</strong></a> page for further details.
 
-![12_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/12_reports.png#thumbnail-40)
+![12_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/12_reports.png#thumbnail-20)
 
 
 ## Report Dashboard
