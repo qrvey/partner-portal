@@ -25,9 +25,9 @@ In order to embed any widget, you will need to have the following information ha
 
 > **Note 1**: These pieces of information remain the same for most widgets. There are a few exceptions where the launcher is different. Please refer to each widget’s document for the exact launcher. 
 
-> **Note 2**: Be sure to keep this information private and do not post it publicly in your production code. Refer to  <a href="/docs/embedding/widgets/widget-intro/#embed-a-widget-from-qrvey-composer "> this document</a> for guidelines on how to embed widgets without including any of this information in your HTML code.
+> **Note 2**: Be sure to keep this information private and do not post it publicly in your production code. Refer to  <a href="/docs/embedding/widgets/widget-embedding-using-cookies/"> this document</a> for guidelines on how to embed widgets without including any of this information in your HTML code.
 
-> **Note 3**: Aside from the API key and user id, most of the required properties of widgets are visible in the URL. Find the most common methods of obtaining the others in the FAQs. link the word FAQs to the General section of FAQs.
+> **Note 3**: Aside from the API key and user id, most of the required properties of widgets are visible in the URL. Find the most common methods of obtaining the others in the  <a href="/docs/faqs/faqs-intro/">FAQs</a> .
 
 > **Note 4**: Watch for occasional differences in the spelling of properties, as well as the “config” property (sometimes used as “settings”). 
 
