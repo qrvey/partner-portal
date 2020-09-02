@@ -35,7 +35,8 @@ The table below provides general information about each property of this widget�
 | **app_type** | `String`, a type of webform the widget will instance. Options: "FORM" / "QUIZ" / "SURVEY". | Yes |
 | **Style_option** |Object {<br>"main_color": String (HEX Color),<br>"secondary_color": String (HEX Color),<br>"tab_bar": String (HEX Color),<br> "field_icon": String (HEX Color),<br>"error": String (HEX Color),<br>"notification": String (HEX Color),<br>"successful": String (HEX Color), <br>"warning": String (HEX Color)<br> } <br><br>to change widget colors| No |
 
-> **Note**: Refer to the FAQs if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a>
+if you don’t know where to find any of the required configuration properties. 
 
 ## Sample
 In this example, we have the design widget configuration object for a Form. This shows the minimum configuration object required to embed the webform design widget. 
