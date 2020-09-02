@@ -5,103 +5,71 @@ sidebar_label: Page Builder
 ---
 <div style="text-align: justify">
 
-The Page Builder widget allows a user to manage the pages for an application (create, edit, publish and delete). Pages may contain embedded reports and forms, as well as other static content.
+The Page Builder widget allows users to manage pages for an application (create, edit, publish and delete). Pages may contain embedded reports and webforms, as well as other static content.
 
-This Page Builder widget requires `"<your_qrvey_domain_widget_launcher>"/app.js` script file and use of the `<qrvey-page-builder>` Custom HTML Tag.
+## HTML Tag And Launcher
+The HTML tag for this widget is:
+`<qrvey-builders settings=...>`
 
+You can use the following script to launch this widget:
+`<widgets-launcher/app.js>`
 
 ## Configuration Object
-
-To configure a Page Builder widget, use the following JSON schema as Configuration Object:
-
-```javascript
-{
-    domain: "https://your_qrvey_domain",
-    appid: "<APP_ID>",
-    userid: "<USER_ID>",
-    apikey: "<API_KEY>"
-}
-```
-
-### Properties and Values
+The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The Required column indicates whether the property is required for the configuration object to work properly.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **domain** | `String`, Qrvey Core URL. | Yes |
-| **appid** | `String`, Identifier of the Application. | Yes |
-| apikey | `String`, Optional API Key, you can set up the widget without an api key if it&#39;s set in a qrvey session cookie. | No |
-| userid | `String`, Optional User id, you can set up the widget without a user id if it&#39;s set in a qrvey session cookie. | No  |
+| **api_key** | `String`, Application ID | Yes |
+| **app_id** | `String`, Qrvey App ID| Yes |
+| **user_id** | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
+| **domain** | `String`, Qrvey Core URL | Yes | 
+| **private_pages** | `Boolean`, predefine the state of new pages. If *True*, new pages will be private, if not new pages will be public. | No |
+| **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br><br>**CREATE_CHART**: Hide Create Chart button.<br>**USERS_AUTHENTICATION**: Hide Authentication tab.<br>**USERS_LIST**: Hide Users tab.<br>**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br>**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
+| **styles** | `Object`, an JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br><br>* **main_color**: `String`<br>* **main_text_color**: `String`<br>* **secondary_color**: `String`<br>* **icon_color**: `String`<br>* **tab_bar_color**: `String`<br>* **tab_font_color**: `String`<br>* **error_color**: `String` | No |
 
 
-### Other configuration properties
+> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
-```javascript
-{
-    doNotAllow: "Array<String>",
-    privatePages: true,
-    styles: {
-        main_color: "<String>",
-        main_text_color: "<String>",
-        secondary_color: "<String>",
-        icon_color: "<String>",
-        tab_bar_color: "<String>",
-        tab_font_color: "<String>",
-        error_color: "<String>"
+## Sample
+The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
+
+You can copy and paste this code to your application after replacing the red values with your own valid values, in order to see the embedded widget in action.
+
+```<qrvey-builders settings="config"></qrvey-builders>```
+
+```<script>
+var config = {
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
+    "user_id": "<USER_ID>",
+    "domain": "https://your_qrvey_domain",
+    "private_pages": true,
+    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'],
+    "styles": {
+        "main_color": '#3E94FF',
+        "main_text_color": '#000000',
+        "secondary_color": 'black',
+        "icon_color": '#000000',
+        "tab_bar_color": '#EEEEEE',
+        "tab_font_color": '#000000',
+        "error_color": '#FF0000'
     }
 }
-```
-
-### Properties and Values
-
-| **Property** | **Value** |
-| --- | --- |
-| **doNotAllow** | `Array<String>`, Collection of permissions, block or hide widget content. |
-| **privatePages** | `Boolean`, Optional, The created pages will be set to private as default. |
-| **styles** | `Object`, |
-| **styles.main_color** | `String`, |
-| **styles.main_text_color** | `String`. |
-| **styles.secondary_color** | `String`, |
-| **styles.icon_color** | `String`, |
-| **styles.tab_bar_color** | `String`, |
-| **styles.tab_font_color** | `String`, |
-| **styles.error_color** | `String`, |
-
-## Permissions
-
-Add one or more of the followings strings in the **doNotAllow** Property to configure the widget. The order does not matter.
-
-
-| **Permission** | **Description** |
-| --- | --- |
-| CREATE_CHART | Hide Create Chart button. |
-| USERS_AUTHENTICATION | Hide Authentication tab. |
-| USERS_LIST | Hide Users tab. |
-| GROUPS_CRUD | Hide the actions for create, duplicate or delete groups. |
-| GROUPS_USERS_DETAIL | Hide the users table inside the group detail view. |
-
-## Example
-```xml
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
- 
-<script>
-  window.pageBuilderConfig = {
-    domain: 'https://your_qrvey_domain',
-    apikey: '<API_KEY>',
-    appid: '<APP_ID>',
-    userid: '<USER_ID>'
-    doNotAllow: ['CREATE_CHART', 'USERS_AUTHENTICATION'],
-    privatePages: false,
-    styles: {
-        main_color: '#3E94FF',
-        main_text_color: '#000000',
-        secondary_color: 'black',
-        icon_color: '#000000',
-        tab_bar_color: '#EEEEEE',
-        tab_font_color: '#000000',
-        error_color: '#FF0000'
-    }
-  }
 </script>
-
-<qrvey-page-builder config="pageBuilderConfig"></qrvey-page-builder>
 ```
+```
+<!-- your launcher js link (replace with your js link) -->
+<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
+
+## See It In Action
+See the widget in CodePen:
+
+<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWyvrdZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Page Builder">
+  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWyvrdZ">
+  Sample- Qrvey Page Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
