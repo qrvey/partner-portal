@@ -1,7 +1,8 @@
 ---
-id: faqs-intro
+id: version-5.3-faqs-intro
 title: General
 sidebar_label: General
+original_id: faqs-intro
 ---
 
 <div style="text-align: justify">

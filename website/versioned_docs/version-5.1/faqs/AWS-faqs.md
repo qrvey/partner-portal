@@ -41,4 +41,3 @@ A: There are 2 ways to monitor the Elasticsearch cluster.
 
 
 
-

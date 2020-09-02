@@ -50,7 +50,7 @@ const siteConfig = {
       label: 'VIDEOS',
     },
     {
-      doc: 'faqs/faqs-intro',
+      doc: 'faqs/ask-us',
       label: 'FAQS',
     },
     {

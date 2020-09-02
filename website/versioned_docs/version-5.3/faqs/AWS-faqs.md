@@ -1,7 +1,8 @@
 ---
-id: aws-faqs
+id: version-5.3-aws-faqs
 title: AWS FAQs
 sidebar_label: AWS FAQs
+original_id: aws-faqs
 ---
 
 <div style="text-align: justify">
