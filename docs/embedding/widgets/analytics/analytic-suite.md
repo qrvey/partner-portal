@@ -43,7 +43,7 @@ The table below provides general information about each property of this widgetâ
 ## Sample
 The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
 
-You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
+You can copy and paste this code to your application after replacing the red values with your own valid values in order to see the embedded widget in action.
 [sample code:
 ```
 <an-dashboard config="configDashBoard"></an-dashboard>
@@ -67,7 +67,7 @@ var configDashBoard = {
 <script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
 <script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
  ```
- 
+
 ]
 ## See It In Action
 See the widget in CodePen:
