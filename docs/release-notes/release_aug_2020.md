@@ -76,3 +76,10 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 * **AT-6182 - Page Builder - Global Filters on Blocked Pages**: When a page is deployed through content deployment in Admin Center, any global filter applied to other pages on the recipient’s side will also be applied to the blocked page. It shouldn’t be applied since this page is blocked to be edited by recipients.
 * **ADMIN-2936 - Different sessions in the same browser**: The Composer does not indicate a session has started when a creator starts another session with a different account in the same browser, causing an error to appear.
 * **ADMIN-2421 - Content Deployment - Data Loading Process Fails**: When a user deploys an application that contains Datasets that use other Datasets as data sources, the multiple layers of connections can make the installation fail because of an interruption of the loading process by the external database service.
+
+
+
+
+
+
+
