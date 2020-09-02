@@ -18,7 +18,7 @@ There are three main sections in the actions configuration page.
 
 * The first section describes the type of chart where these actions will apply to.
 
-* The second section indicates the trigger of the action, data point, or panel. When choosing the panel option, it will trigger a response whenever users click any place inside the chart.
+* The second section indicates the trigger of the action, data point, or panel. When choosing the panel option, it will trigger a response whenever users click anywhere inside the chart.
 
 * The third and last section shows the available actions to configure. This list could vary depending on the type of chart selected.
 
@@ -68,3 +68,34 @@ To activate it, you first need to define the behavior of the action. There are t
 ![7_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_7.png#thumbnail-60)
 
 
+## Page Actions in Charts
+Once a creator defines page actions for charts, end-users will interact with them when navigating between pages. In this section, we will describe how page actions look like in every supported chart.
+
+### Tables
+
+#### Filter By in Tables
+We support Filter By action for grouped tables. When a grouped table has this action defined, users can click on any cell value, and the table will automatically filter by all the categorical values located on the left of the column where the user clicked.
+
+![8_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/8.png#thumbnail)
+
+
+
+
+When clicking on the cell with the value “Health and beauty” of the column Product Line, the table will filter the data, including the one the user clicks, and all the parent’s values than conform the grouping. The action will add these values as filters, and you will be able to see it on the filter panel if there is one available.
+
+The same behavior will occur if the user clicks,for example, on any cell in the Total column.
+
+![9_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/9.png#thumbnail)
+If the user clicks on the first column’s value, the action will add just just that value to the filters.
+
+![10_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/10.png#thumbnail)
+
+#### Page Drill in Tables
+The Page Drill action is available in grouped and ungrouped tables. When a table has this action enabled, end-users will see an underline style onf each cell value. When the mouse cursor is hovering over one of these values, the hand cursor will appear, indicating to the user that this is a clickable value.
+
+![11_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/11.png#thumbnail)
+
+After clicking on the value, the action will redirect the user to the targeted page defined by the creator. If there is more than one action specified in the table, a contextual menu will appear when the user clicks on a cell value showing all of the available page actions.
+
+
+![12_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/12.png#thumbnail)
