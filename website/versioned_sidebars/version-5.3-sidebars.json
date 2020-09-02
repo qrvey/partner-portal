@@ -83,6 +83,7 @@
     "Other": [
       "version-5.3-ui-docs/others/settings",
       "version-5.3-ui-docs/others/sending",
+      "version-5.3-ui-docs/others/sharing-editing",
       "version-5.3-ui-docs/others/activity-log"
     ]
   },
@@ -219,6 +220,7 @@
   "version-5.3-release-notes": {
     "Release Notes 2020": [
       "version-5.3-release-notes/release-last",
+      "version-5.3-release-notes/release-jul-2020",
       "version-5.3-release-notes/release-jun-2020",
       "version-5.3-release-notes/release-apr-2020",
       "version-5.3-release-notes/release-mar-2020",
