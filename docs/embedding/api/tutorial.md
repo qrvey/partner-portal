@@ -28,7 +28,8 @@ For this tutorial, we will assume that you have a basic understanding of REST AP
 You will also need to have the following tokens:
 
 * API Key (for calling the API - if you need to obtain an API key, contact help@qrvey.com)
-* API URL (current version is your qrvey URL + /devapi/v3)
+* API URL (current version is your Qrvey Composer URL + /devapi/v4)
+
 
 It is also a good idea to familiarize yourself with the Qrvey Platform.  In this tutorial, we’ll be illustrating how to do things programmatically that you can also do via the user interface directly.  As an exercise: log in to the Qrvey Platform, create a new Application, create a new Quiz web form, activate it, and then get the URL to take the quiz and start filling in answers.
 
