@@ -35,9 +35,11 @@ The following sample shows the way this widget is used in an HTML page. Please n
 
 You can copy and paste this code to your application after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
-```<qrvey-builders settings="config"></qrvey-builders>```
-
-```<script>
+```
+<qrvey-builders settings="config"></qrvey-builders>
+```
+```
+<script>
 var config = {
     "api_key": "<API_KEY>",
     "app_id": "<APP_ID>",
