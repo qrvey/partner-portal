@@ -1,7 +1,7 @@
 ---
 id: widget-dataconnectors
-title: Data Connectors
-sidebar_label: Data Connectors
+title: Data Connections
+sidebar_label: Data Connections
 ---
 <div style="text-align: justify">
 

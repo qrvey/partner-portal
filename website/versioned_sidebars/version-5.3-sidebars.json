@@ -112,11 +112,10 @@
         "type": "subcategory",
         "label": "Data Collection Widgets",
         "ids": [
-          "version-5.3-embedding/widgets/data-sources/datasets-widget",
-          "version-5.3-embedding/widgets/data-sources/widget-webforms",
           "version-5.3-embedding/widgets/data-sources/widget-dataconnectors",
+          "version-5.3-embedding/widgets/data-sources/datasets-widget",
           "version-5.3-embedding/widgets/data-sources/widget-datalinks",
-          "version-5.3-embedding/widgets/data-sources/activity-log"
+          "version-5.3-embedding/widgets/data-sources/widget-webforms"
         ]
       },
       {
@@ -124,34 +123,24 @@
         "label": "Analytics Widgets",
         "ids": [
           "version-5.3-embedding/widgets/analytics/analytic-suite",
-          "version-5.3-embedding/widgets/analytics/widget-summary-view",
-          "version-5.3-embedding/widgets/analytics/widget-custom-view",
-          "version-5.3-embedding/widgets/analytics/widget-custom-charts-core",
-          "version-5.3-embedding/widgets/analytics/widget-panel-builder",
-          "version-5.3-embedding/widgets/analytics/widget-summary-panel",
-          "version-5.3-embedding/widgets/analytics/widget-filter-panel",
-          "version-5.3-embedding/widgets/analytics/widget-filter-modal",
-          "version-5.3-embedding/widgets/analytics/single-panel"
+          "version-5.3-embedding/widgets/analytics/single-panel",
+          "version-5.3-embedding/widgets/app-building/chart-builder"
         ]
       },
       {
         "type": "subcategory",
         "label": "App Building Widgets",
         "ids": [
-          "version-5.3-embedding/widgets/app-building/chart-builder",
           "version-5.3-embedding/widgets/app-building/widget-report-builder",
           "version-5.3-embedding/widgets/app-building/widget-page-builder",
-          "version-5.3-embedding/widgets/app-building/widget-end-user",
-          "version-5.3-embedding/widgets/app-building/widget-user-management"
+          "version-5.3-embedding/widgets/app-building/widget-end-user"
         ]
       },
       {
         "type": "subcategory",
         "label": "Automation Widgets",
         "ids": [
-          "version-5.3-embedding/widgets/automation/widget-automation",
-          "version-5.3-embedding/widgets/automation/widget-tokens-manager",
-          "version-5.3-embedding/widgets/automation/widget-tokens-suggestion-box"
+          "version-5.3-embedding/widgets/automation/widget-automation"
         ]
       },
       {

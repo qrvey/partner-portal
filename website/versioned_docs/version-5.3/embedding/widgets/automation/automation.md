@@ -1,7 +1,7 @@
 ---
 id: version-5.3-widget-automation
-title: Automation
-sidebar_label: Automation
+title: Automation Design
+sidebar_label: Automation Design
 original_id: widget-automation
 ---
 

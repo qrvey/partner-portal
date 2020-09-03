@@ -1,7 +1,7 @@
 ---
 id: widget-webforms
-title: Web Forms
-sidebar_label: Web Forms
+title: Web Form Design
+sidebar_label: Web Form Design
 ---
 
 <div style="text-align: justify">

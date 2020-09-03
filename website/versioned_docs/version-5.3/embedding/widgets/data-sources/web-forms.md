@@ -1,7 +1,7 @@
 ---
 id: version-5.3-widget-webforms
-title: Web Forms
-sidebar_label: Web Forms
+title: Web Form Design
+sidebar_label: Web Form Design
 original_id: widget-webforms
 ---
 
