@@ -22,8 +22,8 @@ The table below provides general information about each property of this widgetâ
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **domain** | `String`, Qrvey Core URL | Yes |
-| api_key | `String`, Optional API Key: you can set up the widget without an api key if it's set in a qrvey session cookie. | Yes |
-| user_id | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
+|**api_key** | `String`, Optional API Key: you can set up the widget without an api key if it's set in a qrvey session cookie. | Yes |
+|**user_id**| `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
 | **app_id** | `String`, Qrvey App ID | Yes |
 | **datalink_id** | `String`, set to display specific data link | No |
 
@@ -57,8 +57,7 @@ var configWidget = {
 
 ## See It In Action
 See the widget in CodePen:
-
-       <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="rNemxVb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Links">
+    <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="rNemxVb" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Links">
         <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/rNemxVb">
         Sample- Qrvey Data Links</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
         on <a href="https://codepen.io">CodePen</a>.</span>
