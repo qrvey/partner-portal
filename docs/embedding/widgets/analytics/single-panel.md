@@ -77,6 +77,7 @@ To open the chart builder modal and create a new chart, you need to emit a custo
 
 ## Sample
 The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
+
 You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
 [sample code:
