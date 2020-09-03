@@ -13,7 +13,7 @@ These new features and enhancements include:
 * SSO support (using Open ID)
 * Running calculations in table charts
  
-A complete list of these enhancements can be found on the  <a href="https://partners.qrvey.com/"> <strong> Partner Portal</strong> </a>. 
+A complete list of these enhancements can be found on the  <a href="/docs/release-notes/release-jun-2020/"> <strong> Partner Portal</strong> </a>. 
  <br>
 <h2 style="color:#FF8143"> Release Demo Videos </h2>
 
