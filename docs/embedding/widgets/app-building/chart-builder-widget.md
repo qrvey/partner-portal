@@ -31,8 +31,7 @@ To open the chart builder modal and create a new chart, you need to emit a custo
 | --- | --- | --- |
 | **api_key** | `String`, secret identification token to access the application. | Yes |
 | **app_id** | `String`, Qrvey application ID where chart builder is being accessed from.| Yes |
-| **user_id** | `String`, ID of the user that is accessing chart builder
- | Yes  |
+| **user_id** | `String`, ID of the user that is accessing chart builder| Yes  |
 | **domain** | `String`,  domain URL in which the application is in. | Yes | 
 | **qrveyid** | `String`, ID of the dataset being used. | Yes |
 | **isNew** | `Boolean`, determines if chart builder is being used as new or for edition. | Yes |
