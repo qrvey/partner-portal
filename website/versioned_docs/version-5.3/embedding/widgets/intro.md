@@ -43,21 +43,43 @@ The following example embeds a web form widget of type Form in a very basic  HTM
 
 
 ```
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets>
+<!-- your html page -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Forms Widget</title>
+</head>
 
-<script>
-var configWebForm = {
-"api_key": "API_KEY_HERE", //replace with your API key
-"app_id": "APP_ID", // replace with the app_id value
-"domain": "https://your_qrvey_domain", // insert your domain
-"qrvey_id": "QRVEY_ID", // ID for the FORM
-"user_id": "USER_ID", // ID for the USER
-"app_type": "FORM"
-}
+<body>
+  <h1>Web Forms Widget</h1>
+  <a href="index.html">Back to home page</a>
+
+  <!-- start of embedding the web form widget -->
+  <!-- Part 1: widget's configuration object -->
+  <script>
+    var myConfig = {
+      "api_key": "API_KEY", //replace with your api_key
+        "app_id": "APP_ID", // replace with the app_id for the web form
+        "domain": "https://your_qrvey_domain", // replace with your domain
+        "user_id": "USER_ID", // replace with the id of the owner of the app
+        "qrvey_id": "QRVEY_ID", // ID for the FORM
+        "app_type": "FORM"
+    }
+  </script>
+
+  <!-- Part 2: widget's launcher -->
+  <script src="https://<WIDGETS_URL>//widgets-launcher/app.js">
 </script>
 
-<!-- your launcher js link (replace with your js link) -->
-<script type="text/javascript" src="https://your_qrvey_domain_widget_launcher/app.js"></script>
+  <!-- Part 3: widget's tag -->
+  <qrvey-design-widgets settings="myConfig"></qrvey-design-widgets>
+
+  <!-- end of embedding the web form widget -->
+
+</body>
+
+</html>
+
 ```
 
 It is needless to mention that the three parts of the code required for the widget can be separated and put in the appropriate place inside your code.
