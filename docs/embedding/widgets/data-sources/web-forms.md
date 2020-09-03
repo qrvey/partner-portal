@@ -43,7 +43,7 @@ In this example, we have the design widget configuration object for a Form. This
 
 > **Note**: <APP_ID> must refer to a valid and active application defined on your Qrvey instance, and <QRVEY_ID> must refer to a draft form in that application.
 
-```json
+```
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 var configWebForm = {
     "api_key": "<API_KEY>",
@@ -63,9 +63,10 @@ As we mentioned earlier, this widget allows us to collect three types of webform
 ## See It In Action
 See the widget in CodePen:
 
-    <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="KKzWYXE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Webform Design">
+   <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="KKzWYXE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Webform Design">
       <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/KKzWYXE">
       Sample- Webform Design</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
       on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
     <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
