@@ -113,6 +113,7 @@
         "type": "subcategory",
         "label": "Data Collection Widgets",
         "ids": [
+          "embedding/widgets/data-sources/datasets-widget",
           "embedding/widgets/data-sources/widget-webforms",
           "embedding/widgets/data-sources/widget-dataconnectors",
           "embedding/widgets/data-sources/widget-datalinks",
@@ -123,19 +124,22 @@
         "type": "subcategory",
         "label": "Analytics Widgets",
         "ids": [
+          "embedding/widgets/analytics/analytic-suite",
           "embedding/widgets/analytics/widget-summary-view",
           "embedding/widgets/analytics/widget-custom-view",
           "embedding/widgets/analytics/widget-custom-charts-core",
           "embedding/widgets/analytics/widget-panel-builder",
           "embedding/widgets/analytics/widget-summary-panel",
           "embedding/widgets/analytics/widget-filter-panel",
-          "embedding/widgets/analytics/widget-filter-modal"
+          "embedding/widgets/analytics/widget-filter-modal",
+          "embedding/widgets/analytics/single-panel"
         ]
       },
       {
         "type": "subcategory",
         "label": "App Building Widgets",
         "ids": [
+          "embedding/widgets/app-building/chart-builder",
           "embedding/widgets/app-building/widget-report-builder",
           "embedding/widgets/app-building/widget-page-builder",
           "embedding/widgets/app-building/widget-end-user",
