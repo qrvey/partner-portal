@@ -25,6 +25,9 @@ The bottom of the canvas will display a tab for every page you create. This is w
 
 ![1.3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.3_pages.png#thumbnail-50)
 
+You can arrange every tab’s width by clicking on the resize button located to the left of the first tab. By clicking it, the width will change to fit the page name and clicking it again will reset the tab to its default size.
+
+
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
 
 ![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-50)
@@ -107,7 +110,7 @@ The filter panel has the same functionality as the filter described in the secti
 
 To add a filter panel to the page, you just need to insert it from the **Insert** menu in the top-left corner of the page builder. After adding it, you will see a little icon in the top-right corner of the canvas (see image below.)
 
-![5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/page_builder_00.png#thumbnail-30)
+![6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/page_builder_00.png#thumbnail-30)
 
 
 Filter panel has a set of settings you can edit to personalize styles and behavior. To edit these settings, click on the filter panel icon, and the configuration panel will show them.
@@ -125,6 +128,20 @@ Filter panel has a set of settings you can edit to personalize styles and behavi
   This setting applies only for desktop and table view. If end-users visit the page from their mobile device, the filter panel will ignore this setting.
 
 <br>
+
+## Tabs
+
+The tab strip lets you separate the content of a page in different sections. When you add a tab strip, it by default creates a tab with the name “Untitled Tab” that you can modify by clicking on the text and type in a new one. If you want to add more tabs to the strip, you need to click on the plus (+) icon located on the left side of the strip.
+
+![7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/13.png#thumbnail)
+
+
+When selecting a tab, the configuration panel shows the properties of the tab strip you can edit. First, you will find the “Tabs” section; these settings apply to the whole strip and tabs. Here you will be able to change the font, border, selector, and background color of every tab or the complete strip.
+
+![8_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/14.png#thumbnail-40)
+
+
+In the second section named “Tab Size,” you can change the tab width by changing the numbers of pixels you want. By default, the size is 150px. You can change the width of every tab individually by dragging their edges or keep the same size for all tabs by selecting the option “Apply Size to all Tabs.”
 
 ## **Publishing an Application**
 In the blue navigation bar along the top, you’ll find a button to **Publish Application** and a link button to view your application in a new browser window or tab.
