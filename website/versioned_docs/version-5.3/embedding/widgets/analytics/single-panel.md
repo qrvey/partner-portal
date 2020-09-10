@@ -34,7 +34,7 @@ To open the chart builder modal and create a new chart, you need to emit a custo
 | **user_id** | `String`, ID of the user that is accessing chart builder| Yes  |
 | **domain** | `String`,  domain URL in which the application is in. | Yes | 
 | **qrveyid** | `String`, ID of the dataset being used. | Yes |
-| **type** | `String`, type of the panel.<br>Accepted values: `CHART | METRIC | SUMMARY` | Yes |
+| **type** | `String`, type of the panel.<br>Accepted values: <br>* CHART <br>* METRIC <br>* SUMMARY | Yes |
 | **chart_id** | `String`, ID of the chart to display. **Required if type is CHART.**| Yes |
 | **metric_id** | `String`, ID of the metric to display. **Required if type is METRIC.** | Yes |
 | **summary_id** | `String`, ID of the summary panel to display. **Required if type is SUMMARY**.| No |
