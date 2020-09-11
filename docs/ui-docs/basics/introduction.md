@@ -8,16 +8,16 @@ In this document we’ll show you the basic features of the Qrvey Composer inter
 
 ![1_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/2_introduction.png#thumbnail)
 
-Click on the Qrvey logo in the upper-left corner whenever you want to get back to this startup page. The menu in the upper-right corner, shown below, provides options to manage your profile, view help documentation, and logout. Your current version of Qrvey is also displayed.  
+Click on the Qrvey logo in the upper-left corner whenever you want to get back to this startup page. The menu in the upper-right corner, shown below, provides options to manage your profile, view help documentation, and log out. Your current version of Qrvey is also displayed. 
 
 ![2_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/1_introduction.png#thumbnail-40)
 
 ## Applications
-Your Qrvey projects are called _Applications_, and are organized on the startup page based on how recently you’ve accessed them. To create a new application, click **Create Application**.
+Your Qrvey projects are called _Applications_ and can be found organized on the startup page based on how recently you’ve accessed them. To create a new application, click **Create Application**.
  
 ![3_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/3_introduction.png#thumbnail-20)
 
-If other Qrvey users have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or send one to another user on the same Qrvey installation. 
+If other Qrvey users have sent applications to you, you’ll find them under the **Received Apps** tab. To install an application, click **Install**.  Use the arrow menu to delete an application or to send one to another user within the same Qrvey installation. 
 
 ![4_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/4_introduction.png#thumbnail)
 
@@ -72,11 +72,11 @@ Note: Workflows can incorporate outputs from other components - such as metrics,
 
 The Settings component allows you to:
 
-* edit your application’s name.
-* customize the application's appearance.
+* edit your application name.
+* customize the application appearance.
 * upload and manage any supporting files the application may require. 
 
-Depending on which area of the application you’re using, you will find additional options in the set of blue tabs, which are displayed across the top of the application. The orange line shows you the active tab. 
+Depending on which area of the application you’re using, you will find additional options in the set of blue tabs, which are displayed across the top of the application. The orange line shows you which tab is active. 
 
 ![7_introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.3_introduction/7_introduction.png#thumbnail)
 
