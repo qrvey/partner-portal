@@ -12,14 +12,16 @@ This document explains the steps to install Qrvey Business Analytics platform (E
 
 **Before you are ready to start the deployment please send the AWS Account ID to Qrvey at help@qrvey.com to enable access.**
 
-Currently, the **N.Virginia region (us-east-1)** is supported for the deployment.
+Currently, the **N.Virginia (us-east-1), Ohio (us-east-2), Oregon (us-west-2)** regions are supported for the deployment. For other regions, please contact support at help@qrvey.com.
+
+
 
 We highly recommend using a new AWS account to avoid running into AWS Service Quota limits. You can easily create a new AWS account using AWS Organizations. If you run into any issues during Deployment steps, please email support at help@qrvey.com.
 
 Before deploying Qrvey Platform, please check the following in your AWS account to make sure they are available:
-* Default VPC in us-east-1 with 6 subnets
-* 4 Elastic IP addresses (default limit in AWS is 5).
-* Deployment creates about 7-10 t2.micro EC2 instances. The default service quota limit for AWS accounts is 20 but in some cases, it might be 5.
+* A VPC with a public subnet for each availability zone of that region
+* 3 Elastic IP addresses (default limit in AWS is 5)
+* Deployment creates about 6 t2.micro EC2 instances. The default service quota limit for AWS accounts is 20 but in some cases, it might be 5.
 
 The application uses AWS SES to send out all transactional emails from the platform. AWS SES is in SANDBOX mode by default. Please, open a support ticket with AWS to move your account out of Sandbox mode.
 
@@ -27,12 +29,12 @@ The application uses AWS SES to send out all transactional emails from the platf
 
 The following steps will walk you through installing Qrvey Business Analytics platform in your own AWS account using a Cloudformation template. Before starting these steps, please confirm if your AWS Account ID has been enabled for deployment from Qrvey’s side.
 
-1. Log in to your AWS account. Make sure the region is selected as *“N.Virginia (us-east-1)”*.
+1. Log in to your AWS account. Select your desired AWS region.
 2. Launch
 <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-5.3.json&stackName=Qrvey-Deployment-Manager"> <strong> this URL  </strong> </a> in your browser window.  This will take you to Cloudformation's quick create page. Enter values for the following parameters and click on **Create Stack**. <br>
 
   a. Stack name - name this Cloudformation stack. <br>
-  b. SubnetID - pick at least 3 subnets.<br>
+  b. SubnetID - pick all public subnets in your VPC. We recommend having 1 Subnet per Availability Zone (AZ) for your region.<br>
   c. VPC ID - pick the VpcID that matches the subnets.<br>
   d. WebAppInboundIPrange - IP address that will be added to the security group used by the deployment app. To make it available from any browser, you can use “0.0.0.0/0” or you can insert an IP address or range.
 
@@ -47,7 +49,7 @@ The following steps will walk you through installing Qrvey Business Analytics pl
 To upgrade the platform from an old version, you need to:
 
 1. Get the URL for Cloudformation template for the latest version 
-(<a href=" https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-5.3.json">5.3 is the latest</a>).
+(<a href=" https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-5.4.json">5.4 is the latest</a>).
 
 2. Find the template you used for the earlier deployment. This is from Installation Step #2. In Cloudformation UI, this would be the template at the bottom of the list and will have a URL in the Output tab with Export name as *“AutoDeployAppURL”*. If you have removed this template, then just create a new stack with the Quick Create URL from step 2 of Installation Steps.
 
@@ -90,9 +92,9 @@ a. If the failed step is of the “AWS Code Build” type, then you can click on
 b. If the step is of “AWS Cloudformation” type, you can find the error message by navigating to AWS Cloudformation console and looking at the *“Events”* tab for the template that is in *“FAILED”* or *“ROLLBACK_***”* state.
 
 Common service quota limits are:
-* Elastic IP Address: The deployment will create 4 Elastic IP Addresses, however, the default limit in AWS is 5.
+* Elastic IP Address: The deployment will create 3 Elastic IP Addresses, however, the default limit in AWS is 5.
 * S3 buckets: The deployment will create about 30 S3 buckets, whereas the default limit in AWS is 100.
-* EC2 instances: You should have 10 t2.micro EC2 instances available, however, the default limit in AWS is 20 (in some cases the limit could be 5). 
+* EC2 instances: You should have 6 t2.micro EC2 instances available, however, the default limit in AWS is 20 (in some cases the limit could be 5). 
 
 Once you have resolved the issue, you can restart the deployment by clicking on the **Restart** button in the Installation app. Alternatively, you can restart the pipeline directly from AWS Codepipeline to make sure it reaches the *Successful* state and then click on the **Restart** button in the installation app.
 
