@@ -94,6 +94,7 @@
   "admin": {
     "Admin": [
       "admin/admin-intro",
+      "admin/elasticsearch-management",
       "admin/admin-managing-users",
       "admin/admin-sections-platform",
       "admin/admin-sections-deployments"
