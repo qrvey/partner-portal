@@ -20,7 +20,7 @@ Currently, the **N.Virginia (us-east-1), Ohio (us-east-2), Oregon (us-west-2)** 
 We highly recommend using a new AWS account to avoid running into AWS Service Quota limits. You can easily create a new AWS account using AWS Organizations. If you run into any issues during Deployment steps, please email support at help@qrvey.com.
 
 Before deploying Qrvey Platform, please check the following in your AWS account to make sure they are available:
-* A VPC with a public subnet for each availability zone of that region
+* A **Default VPC** with a public subnet for each availability zone of that region
 * 3 Elastic IP addresses (default limit in AWS is 5)
 * Deployment creates about 6 t2.micro EC2 instances. The default service quota limit for AWS accounts is 20 but in some cases, it might be 5.
 
@@ -35,7 +35,7 @@ The following steps will walk you through installing Qrvey Business Analytics pl
 <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-5.3.json&stackName=Qrvey-Deployment-Manager"> <strong> this URL  </strong> </a> in your browser window.  This will take you to Cloudformation's quick create page. Enter values for the following parameters and click on **Create Stack**. <br>
 
   a. Stack name - name this Cloudformation stack. <br>
-  b. SubnetID - pick all public subnets in your VPC. We recommend having 1 Subnet per Availability Zone (AZ) for your region.<br>
+  b. SubnetID - pick all public subnets in your VPC. We require having 1 Subnet per Availability Zone (AZ) for your region.<br>
   c. VPC ID - pick the VpcID that matches the subnets.<br>
   d. WebAppInboundIPrange - IP address that will be added to the security group used by the deployment app. To make it available from any browser, you can use “0.0.0.0/0” or you can insert an IP address or range.
 
@@ -58,11 +58,13 @@ To upgrade the platform from an old version, you need to:
 
 4. Pick **Replace current template**. Paste the URL from Step 1 above.
 
-5. Click on **Next** for the next steps till the end and **Submit** at the end to start the update.
+5. **Important**: Please select ALL subnets in the parameters dropdown. In versions 5.3 and earlier, we required up to 3 subnets. However, from v5.4 onwards, we require all subnets (with 1 subnet per AZ).
 
-6. Once the update is complete, launch the URL from the output tab in a new window.
+6. Click on **Next** for the next steps till the end and **Submit** at the end to start the update.
 
-7. In the UI, you will see an upgrade button.  Click on the **Upgrade** button to start the deployment process. This may take about 2-3hrs to finish; there is no downtime for the application but we would recommend doing this during off-hours to avoid any issues.
+7. Once the update is complete, launch the URL from the output tab in a new window.
+
+8. In the UI, you will see an upgrade button.  Click on the **Upgrade** button to start the deployment process. This may take about 2-3hrs to finish; there is no downtime for the application but we would recommend doing this during off-hours to avoid any issues.
 
 8. Once the upgrade is complete, you will be able to use the new version.
 

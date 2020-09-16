@@ -48,3 +48,9 @@ For Dial and Bullet Gauge style metrics, Thresholds can be set. You can choose t
 ![8_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/8.png#thumbnail-50)
 
 
+## Ability to Control Metric Animation 
+This is a new option located inside Chart Builder Metrics Styles that allows you to add and turn off the metric animations. Once turned off, every time a page containing that metric is loaded or new data comes in, the metric will no longer show the default animation.
+
+![10_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/metric_view.gif#thumbnail)
+
+![9_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/9.png#thumbnail-40)
