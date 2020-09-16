@@ -7,10 +7,10 @@ original_id: chart-builder
 
 <div style="text-align: justify">
 
-The Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.
+Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.
 
 ## Creating a Chart
-Inside your application, navigate to Data, select the form or dataset you’d like to analyze, and choose the Analyze tab, followed by the Custom View.
+Inside your application, select the form or dataset you’d like to analyze, and choose the Analyze tab, followed by the Custom View.
 
 ![1_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_chart-builder.png#thumbnail-40)
 
@@ -60,11 +60,13 @@ The options and settings for each chart will slightly vary from the example belo
 ## General Settings
 In this section, you will find the *Sort by*, *Tooltips* and *Max Data Points* options. 
 
-Default sorting depends on the data type used for Category.
+Default sorting depends on the data type used for Category:
 
 * *Numeric*: Label ASC, sorted from min. to max. value 
 * *String/Text*: Label DESC
-* *Date*: Label ASC, sorted by chronological dates from the oldest to the latest
+* *Date*: Label ASC, sorted by chronological dates from the oldest to the latest.
+
+ To sort the categories click on the **ABC** icon. 
 
 To define max data points, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times. 
 
@@ -167,37 +169,15 @@ A running sum is the summation of a sequence of numbers, adding the current valu
 The following example shows how Running Sum is calculated:
 
 
-<table class="demo">
-	<caption></caption>
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Running Sum</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>1</td>
-		<td>1 (0+1)</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>3 (1+2)</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>6 (3+3)</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td>10 (6+4)</td>
-	</tr>
-    <tr>
-		<td>5</td>
-		<td>15 (10+5)</td>
-	</tr>
-	</tbody>
-</table> 
+| **Values** | **Running Sum** |
+| --- | --- | --- |
+| 1 | 1 (0+1)|
+| 2 |3 (1+2)|
+| 3 |6 (3+3)| 
+| 4 |10 (6+4)|
+| 5 |15 (10+5)|
+
+
 
 The following image is an example of Running Sum in Qrvey:
 
@@ -211,37 +191,15 @@ The running average is the calculation function that moves through a list of val
 
 The following example shows how Running Average is calculated.
 
-<table class="demo">
-	<caption></caption>
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Running Average</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>10</td>
-		<td>10 (10/1)</td>
-	</tr>
-	<tr>
-		<td>20</td>
-		<td>15 (30/2)</td>
-	</tr>
-	<tr>
-		<td>30</td>
-		<td>20 (60/3)</td>
-	</tr>
-	<tr>
-		<td>40</td>
-		<td>25 (100/4)</td>
-	</tr>
-    <tr>
-		<td>50</td>
-		<td>30 (150/5)</td>
-	</tr>
-	</tbody>
-</table> 
+
+| **Values** | **Running Average** |
+| --- | --- | --- |
+| 10 | 10 (10/1)|
+| 20 |15 (30/2)|
+| 30 |20 (60/3)| 
+| 40 |25 (100/4)|
+| 50 |30 (150/5)|
+
 
 The following image is an example of Running Average in Qrvey.
 
@@ -254,37 +212,16 @@ The running minimum is the calculation function that moves through a list of val
 
 The following example shows how *Running Minimum* is calculated.
 
-<table class="demo">
-	<caption></caption>
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Running Minimum</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>8</td>
-		<td>8</td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>6 (6<8)</td>
-	</tr>
-	<tr>
-		<td>10</td>
-		<td>6 (6<10)</td>
-	</tr>
-	<tr>
-		<td>9</td>
-		<td>6 (6<9)</td>
-	</tr>
-    <tr>
-		<td>5</td>
-		<td>5 (5<6)</td>
-	</tr>
-	</tbody>
-</table> 
+
+
+| **Values** | **Running Minimum** |
+| --- | --- | --- |
+| 8 | 8|
+| 6 |6 (6<8)|
+| 10 |6 (6<10)| 
+| 9 |6 (6<9)|
+| 5 |5 (5<6)|
+
 
 The following image is an example of Running Minimum in Qrvey:
 
@@ -298,37 +235,15 @@ The running maximum is the calculation function that moves through a list of val
 
 The following example shows how Running Maximum is calculated:
 
-<table class="demo">
-	<caption></caption>
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Running Maximum</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>8</td>
-		<td>8</td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>8 (8>6)</td>
-	</tr>
-	<tr>
-		<td>10</td>
-		<td>10 (10>8)</td>
-	</tr>
-	<tr>
-		<td>9</td>
-		<td>10 (10>9)</td>
-	</tr>
-    <tr>
-		<td>5</td>
-		<td>10 (10>5)</td>
-	</tr>
-	</tbody>
-</table> 
+
+| **Values** | **Running Maximum** |
+| --- | --- | --- |
+| 8 | 8|
+| 6 |8 (8>6)|
+| 10 |10 (10>8)| 
+| 9 |10 (10>9)|
+| 5 |10 (10>5)|
+
 
 The following image is an example of Running Maximum in Qrvey:
 
@@ -351,6 +266,89 @@ Right to the left of the three dots icon, you will see a summary of aggregate fu
 ![24_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png#thumbnail)
 
 
+### Table Calculations - Difference
+*Difference* is a row-by-row type of calculation that generates the difference between two values (the current value subtracted from the previous value) of an aggregated column.
+
+The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records are added, groups are edited/removed/added, or when max data points are applied. 
+
+The following example shows how *Difference* is calculated:
+
+| **Values** | **Difference** |
+| --- | --- | --- |
+| 8 | |
+| 6 |-2 (6-8)|
+| 10 |4 (10-6)| 
+| 9 |-1 (9-10)|
+| 5 |-4 (5-9)|
+
+
+The following example demonstrates how the difference is calculated between each total quarterly sales.
+
+![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail-0)
+
+**2018-2020 Quarterly Sales Difference**
+
+2018 Q1 Difference = blank 
+
+2018 Q2 Difference = Q2 Sales - Q1 Sales = $32,091,427.62 - $27,893,544.84 = $4,197,882.78 
+
+Etc.
+
+
+The following images show an example of *Difference* applied in Qrvey.
+
+![31_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build31.png#thumbnail-0)
+
+![32_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build32.png#thumbnail-0)
+
+![33_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build33.png#thumbnail-0)
+
+### Table Calculations - Percent Difference 
+*Percent Difference* is a row-by-row type of calculation that is calculated based on the following formula:
+
+`Percent Difference = (value - previous value) x 100 / previous value`
+
+At present, the calculation is performed on a table-down basis, i.e. all values in the column are consistently compared to the same value in the previous row, throughout the entire table.
+
+The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records are added, groups are edited/removed/added, or when max data points are applied. 
+
+The following example shows how Percent Difference is calculated:
+
+
+| **Values** | **Difference** |
+| --- | --- | --- |
+| 8 | |
+| 6 |-25 (i.e.: (6-8)x100/8)|
+| 10 |66.67 (i.e.: (10-6)x100/6)| 
+| 9 |-10 (i.e.: (9-10)x100/10)|
+| 5 |-44.44 (i.e.: (5-9)x100/9)|
+
+
+
+The following example demonstrates how the difference  between each total quarterly sales is calculated:
+
+![34_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build34.png#thumbnail-0)
+
+**2018-2020 Quarterly Sales Difference**
+
+2018 Q1 Difference = Blank
+
+2018 Q2 Difference = (Q2 Sales - Q1 Sales)*100/Q1 Sales = 15.05%
+
+2018 Q3 Difference = (Q3 Sales - Q2 Sales)*100/Q2 Sales = -65.25 %
+
+2018 Q4 Difference = (Q4 Sales - Q3 Sales)*100/Q3 Sales = 1164.48%
+
+Etc.
+
+The following images show an example of *Percent Difference* applied in Qrvey.
+
+
+![35_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build35.png#thumbnail-0)
+
+![36_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build36.png#thumbnail-0)
+
+![37_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build37.png#thumbnail-0)
 
 
 
