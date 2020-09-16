@@ -10,9 +10,15 @@ This document explains the steps to download and install Qrvey Business Analytic
 <a href="https://aws.amazon.com/marketplace/pp/B0863DDPQG"> <strong> here</strong> </a>.
 
 ## Prerequisites & Recommendations
-Currently, the **N.Virginia region (us-east-1)** is supported for the deployment.
+Currently, the **N.Virginia (us-east-1), Ohio (us-east-2) and Oregon (us-west-2)** regions are supported for the deployment. For other regions, please email support at help@qrvey.com.
 
 We highly recommend using a new AWS account to avoid running into AWS Service Quota limits. You can easily create a new AWS account using AWS Organizations. If you run into any issues during Deployment steps, please email support at help@qrvey.com.
+
+
+Before deploying Qrvey Platform, please check the following in your AWS account to make sure they are available:
+* A VPC with a public subnet for each availability zone of that region.
+* 3 Elastic IP addresses.
+* Deployment creates about 6 t2.micro EC2 instances. Default service quota limit for AWS accounts is 20 but in some cases it might be 5.
 
 The application uses AWS SES to send out all transactional emails from the platform. AWS SES is in SANDBOX mode by default. Please open a support ticket with AWS to move your account out of Sandbox mode.
 
