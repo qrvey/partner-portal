@@ -16,7 +16,7 @@ We highly recommend using a new AWS account to avoid running into AWS Service Qu
 
 
 Before deploying Qrvey Platform, please check the following in your AWS account to make sure they are available:
-* A VPC with a public subnet for each availability zone of that region.
+* A **Default VPC** with a public subnet for each availability zone of that region.
 * 3 Elastic IP addresses.
 * Deployment creates about 6 t2.micro EC2 instances. Default service quota limit for AWS accounts is 20 but in some cases it might be 5.
 
@@ -30,7 +30,7 @@ The following steps will walk you through installing Qrvey Business Analytics pl
 
    **a.** *Stack name* - name this Cloudformation stack.  
   **b.** *SubnetID* - pick at least 3 subnets.  
-**c.** *VPC ID* - pick the VpcID that matches the subnets.   
+**c.** *VPC ID* - pick the Default VpcID that matches the subnets.   
 **d.** *WebAppInboundIPrange* - IP address that will be added to the security group used by the deployment app. To make it available from any browser, you can use “0.0.0.0/0” or you can insert an IP address or range.
 
 3. Once the template is ready (it takes about 7 minutes), you can navigate to the output tab and copy the URL. This URL can be used to launch the deployment app. Open a new browser window and launch this URL.
@@ -39,9 +39,23 @@ The following steps will walk you through installing Qrvey Business Analytics pl
 6. Once the deployment is finished, you will receive an email with a URL to access your deployed application as well as a link to the documentation portal.
 7. Open the URL in a browser window and sign up for an account to start using the application. You can share the same URL with your users, who can sign up for their own accounts. 
 
+## Ugrading From an Old Version
+
+To upgrade the platform from an old version, you would need to:
+1. Get the URL for Cloudformation template for the latest version (5.4 is latest).
+2. Find the template you used for the earlier deployment. This is from Installation Step #2. In Cloudformation UI this would be the template at the bottom of the list and will have a URL in the Output tab with Export name as “AutoDeployAppURL”.
+3. Click on the button to **Update** template.
+4. Pick **Replace current template**. Paste the URL from Step 1 above.
+5. **Important**: Please select ALL subnets in the parameters dropdown. In versions 5.3 and earlier, we required up to 3 subnets. However, from v5.4 onwards, we require all subnets (with 1 subnet per AZ).
+6. Click on Next for the next steps till the end and Submit at the end to start the update.
+7. Once the update is complete, Launch the URL from the output tab in a new window.
+8. In the UI, you will see an upgrade button.  Click on the upgrade button to start the deployment process. This may take about 2-3hrs to finish but there is no downtime for the application but we would recommend doing this during off hours to avoid any issues.
+9. Once the upgrade is complete you will be able to use the new version.
+
+
 ## Deleting an Installation
 To delete an existing installation, you need to: 
-1. Delete the deployment by clicking on the Delete button in the installation app’s UI. You can get the URL in step 3 of Installation Steps above.
+1. Delete the deployment by clicking on the Delete button in the installation app’s UI. You can get the URL in step 3 of **Installation Steps** above.
 2. Once the deployment is removed, you’ll see the initial form in the UI. At this point, you can delete the Cloudformation template created in Step 2 of Installation Steps above.
 3. Unsubscribe from Marketplace console.
 
