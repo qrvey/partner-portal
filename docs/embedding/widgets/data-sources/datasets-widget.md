@@ -27,7 +27,7 @@ To open the chart builder modal and create a new chart, you need to emit a custo
 | **app_id** | `String`, Qrvey App ID| Yes |
 | **user_id** | `String`, Optional User ID:  you can set up the widget without a user id if it's set in a qrvey session cookie.| Yes  |
 | **domain** | `String`, Qrvey Core URL | Yes | 
-| **datase_id** | `String`, For displaying a specific dataset | No |
+| **dataset_id** | `String`, For displaying a specific dataset | No |
 
 > **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
