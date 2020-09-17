@@ -256,7 +256,9 @@
       "version-5.3-video-training/building-qrvey-sample/summary-view",
       "version-5.3-video-training/building-qrvey-sample/tabular-view",
       "version-5.3-video-training/building-qrvey-sample/chart_builder_overview",
-      "version-5.3-video-training/building-qrvey-sample/custom_metric_views"
+      "version-5.3-video-training/building-qrvey-sample/custom_metric_views",
+      "version-5.3-video-training/building-qrvey-sample/webforms-overview",
+      "version-5.3-video-training/building-qrvey-sample/automation-overview"
     ],
     "Training Session": [
       "version-5.3-video-training/analytics/intro-analytics-apps",
