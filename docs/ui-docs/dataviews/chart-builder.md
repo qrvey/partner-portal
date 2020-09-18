@@ -133,9 +133,8 @@ You can edit your chart at any time by clicking on the three-dot menu in the low
 Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
 
 Qrvey supports the following table calculations:
-* Running Calculations
 
-### Running Calculations
+## 1. Running Calculations
 These calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data. 
 
 Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* on the grouped table chart. 
@@ -160,21 +159,45 @@ Running_[sum, avg, min, max] <br>
 |**sortorder_field**|The *sortorder_field* corresponds to how the table chart orders the data. It orders the parent groups and tables in an ascending way by default.|
 |**grouped_field**|The *grouped_field* is any number of fields that you have grouped.
 
-## Types Of Running Calculations
-### Running Sum
+### Types Of Running Calculations
+#### 1.1 Running Sum
 
 A running sum is the summation of a sequence of numbers, adding the current value to the preceding values and is updated each time a new number is added to the series.
 
 The following example shows how Running Sum is calculated:
 
 
-| **Values** | **Running Sum** |
-| --- | --- | --- |
-| 1 | 1 (0+1)|
-| 2 |3 (1+2)|
-| 3 |6 (3+3)| 
-| 4 |10 (6+4)|
-| 5 |15 (10+5)|
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Sum</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>1</td>
+        <td>1(0+1)</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>3(1+2)</td>
+    </tr>
+	<tr>   
+        <td>3</td>
+        <td>6(3+3)</td>
+    </tr>
+	<tr>
+        <td>4</td>
+        <td>10(6+4)</td>
+	</tr>
+        <td>5</td>
+        <td>15(10+5)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
+
 
 
 
@@ -185,19 +208,44 @@ The following image is an example of Running Sum in Qrvey:
 ![19_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1cb.png#thumbnail)
 
 
-Running Average
+#### 1.2 Running Average
 The running average is the calculation function that moves through a list of values adding the current one to the sum of the preceding values and dividing by the current count of values.
 
 The following example shows how Running Average is calculated.
+<br>
 
 
-| **Values** | **Running Average** |
-| --- | --- | --- |
-| 10 | 10 (10/1)|
-| 20 |15 (30/2)|
-| 30 |20 (60/3)| 
-| 40 |25 (100/4)|
-| 50 |30 (150/5)|
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Average</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>10</td>
+        <td>10 (10/1)</td>
+	</tr>
+	<tr>
+		<td>20</td>
+		<td>15 (30/2)</td>
+    </tr>
+	<tr>   
+        <td>30</td>
+        <td>20 (60/3)</td>
+    </tr>
+	<tr>
+        <td>40</td>
+        <td>25 (100/4)</td>
+	</tr>
+        <td>50</td>
+        <td>30 (150/5)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
+
 
 
 The following image is an example of Running Average in Qrvey.
@@ -206,20 +254,43 @@ The following image is an example of Running Average in Qrvey.
 
 ![20_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2cb.png#thumbnail)
 
-### Running Minimum
+#### 1.3 Running Minimum
 The running minimum is the calculation function that moves through a list of values comparing each of them to the lowest one identified so far and returning the minimum value as it progresses.
 
 The following example shows how *Running Minimum* is calculated.
 
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Minimum</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>8</td>
+        <td>8</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>6 (6<8)</td>
+    </tr>
+	<tr>   
+        <td>10</td>
+        <td>6 (6<10)</td>
+    </tr>
+	<tr>
+        <td>9</td>
+        <td>6 (6<9)</td>
+	</tr>
+        <td>5</td>
+        <td>5 (5<6)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
 
 
-| **Values** | **Running Minimum** |
-| --- | --- | --- |
-| 8 | 8|
-| 6 |6 (6<8)|
-| 10 |6 (6<10)| 
-| 9 |6 (6<9)|
-| 5 |5 (5<6)|
 
 
 The following image is an example of Running Minimum in Qrvey:
@@ -229,19 +300,44 @@ The following image is an example of Running Minimum in Qrvey:
 
 
 
-### Running Maximum
+#### 1.4 Running Maximum
 The running maximum is the calculation function that moves through a list of values comparing each value to the highest value identified so far and returning the maximum value as it progresses.
 
 The following example shows how Running Maximum is calculated:
 
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Running Maximum</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>8</td>
+        <td>8</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>8 (8>6)</td>
+    </tr>
+	<tr>   
+        <td>10</td>
+        <td>10 (10>8)</td>
+    </tr>
+	<tr>
+        <td>9</td>
+        <td>10 (10>9)</td>
+	</tr>
+        <td>5</td>
+        <td>10 (10>5)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
 
-| **Values** | **Running Maximum** |
-| --- | --- | --- |
-| 8 | 8|
-| 6 |8 (8>6)|
-| 10 |10 (10>8)| 
-| 9 |10 (10>9)|
-| 5 |10 (10>5)|
+
+
 
 
 The following image is an example of Running Maximum in Qrvey:
@@ -265,20 +361,44 @@ Right to the left of the three dots icon, you will see a summary of aggregate fu
 ![24_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png#thumbnail)
 
 
-### Table Calculations - Difference
+## 2. Difference
 *Difference* is a row-by-row type of calculation that generates the difference between two values (the current value subtracted from the previous value) of an aggregated column.
 
 The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records are added, groups are edited/removed/added, or when max data points are applied. 
 
 The following example shows how *Difference* is calculated:
 
-| **Values** | **Difference** |
-| --- | --- | --- |
-| 8 | |
-| 6 |-2 (6-8)|
-| 10 |4 (10-6)| 
-| 9 |-1 (9-10)|
-| 5 |-4 (5-9)|
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Difference</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>8</td>
+        <td></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>-2 (6-8)</td>
+    </tr>
+	<tr>   
+        <td>10</td>
+        <td>4 (10-6)</td>
+    </tr>
+	<tr>
+        <td>9</td>
+        <td>-1 (9-10)</td>
+	</tr>
+        <td>5</td>
+        <td>-4 (5-9)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
+
 
 
 The following example demonstrates how the difference is calculated between each total quarterly sales.
@@ -302,7 +422,7 @@ The following images show an example of *Difference* applied in Qrvey.
 
 ![33_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build33.png#thumbnail-0)
 
-### Table Calculations - Percent Difference 
+## 3. Percent Difference 
 *Percent Difference* is a row-by-row type of calculation that is calculated based on the following formula:
 
 `Percent Difference = (value - previous value) x 100 / previous value`
@@ -314,13 +434,37 @@ The calculation is recalculated every time that an event is applied to the chart
 The following example shows how Percent Difference is calculated:
 
 
-| **Values** | **Difference** |
-| --- | --- | --- |
-| 8 | |
-| 6 |-25 (i.e.: (6-8)x100/8)|
-| 10 |66.67 (i.e.: (10-6)x100/6)| 
-| 9 |-10 (i.e.: (9-10)x100/10)|
-| 5 |-44.44 (i.e.: (5-9)x100/9)|
+
+<table class="demo">
+	<thead>
+	<tr>
+		<th>Values</th>
+		<th>Difference</th>
+	</tr>
+	</thead>
+	<tbody>
+</td>
+		<td>8</td>
+        <td></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>-25 (i.e.: (6-8)x100/8)</td>
+    </tr>
+	<tr>   
+        <td>10</td>
+        <td>66.67 (i.e.: (10-6)x100/6)</td>
+    </tr>
+	<tr>
+        <td>9</td>
+        <td>-10 (i.e.: (9-10)x100/10)</td>
+	</tr>
+        <td>5</td>
+        <td>-44.44 (i.e.: (5-9)x100/9)</td>
+    	</tr>
+	<tr>
+	</tbody>
+</table> 
 
 
 
@@ -351,17 +495,22 @@ The following images show an example of *Percent Difference* applied in Qrvey.
 
 
 
-## Discrete and Continuous Values
+## Discrete vs. Continuous Values
 
-Discrete values are unconnected values in a dataset. Continuous values are connected values that can take on any value within a finite or infinite interval. With Date values — if you want to create a chart where you see all Dates, like *months*,  it is best to use continuous values. With Numeric values — if you want to create a chart where you count something, like *quantity*, it is best to use discrete values. If you want to measure something to an infinite degree, it is best to use continuous values. 
+When using xy charts to plot data, the expectations for how categories have to be plotted may differ when the category has a continuous nature. This happens because continuous categories, such as dates and numbers, have the potential of being treated in a discrete manner.
 
-Using discrete values in a custom chart , the Categorical column displays an axis with separate, distinct dates or numeric values that are found within the dataset used to construct the chart. 
+For example, if our chart is depicting the number of sales per month in one year, we want to see it plot every single month of the year, even if there were no sales in some months. In fact, the lack of sales in those months is an important piece of information that should not be ignored. <br>
+However, if the visualization is about the number of casualties in each major flu outbreak in recent history, we are only interested in the years 1918, 1957, 1968, 1997, and 2009. In this case, the years between those don’t matter and while we are still working with “dates”, the nature of our analysis requires us to treat those dates in a discrete manner.<br>
+With the Chart Builder, you get to choose between these two methods depending on your use case.
 
-For continuous values, the Categorical column displays an axis with continuous dates or numeric values, and some values, which are not found in the dataset used to create the chart, but are useful to see for the purpose of analysis.  
 
-To apply Discrete or Continuous values, access chart builder and create a chart with dates as categorical dimension(s). Then you can open the column options where you will see Discrete Values preselected. If you select Continuous Values, you will see continuous date categories in the chart even though the data does not contain them.
+Using discrete values in a custom chart, the Categorical column displays an axis with separate, distinct dates or numeric values that are found within the dataset used to construct the chart. 
+When switching to the continuous mode, the product fills in the gaps in data to show all categories that make the data continuous.
+ 
 
-The *Discrete*  and *Continuous*  feature are options only available for date and numeric columns used in Chart Building. 
+To apply Discrete or Continuous values, your chart must use a date or numeric column in a category position. Open the column options where you will see Discrete Values preselected. If you select Continuous Values, you will see continuous date categories in the chart even if the data does not contain them.
+
+The *Discrete*  and *Continuous*  features are options only available for the date and numeric columns used in Chart Builder. 
 
 * Discrete Dates
 
