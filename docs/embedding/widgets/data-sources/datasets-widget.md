@@ -55,7 +55,7 @@ var datasets_settings = {
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
-
+]
 
 ## See It In Action
 See the widget in CodePen:
