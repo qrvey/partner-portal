@@ -33,47 +33,29 @@ To open the chart builder modal and create a new chart, you need to emit a custo
 > **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 ## Sample
-The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
+The following sample shows the way this widget is used in an HTML page. Please note, that the example may not include the non-required properties of the configuration object. 
 
 You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
 [sample code:
 
 ```
-<an-panel config="anpanelConfig"></an-panel>
+<qrvey-data-sets settings="datasets_settings"></qrvey-data-sets>
 ```
-
 ```
 <script>
-var anpanelConfig = {
+var datasets_settings = {
     "api_key": "<API_KEY>",
     "app_id": "<APP_ID>",
     "domain": "https://your_qrvey_domain",
     "user_id": "<USER_ID>",
-    "qrvey_id": "<QRVEY_ID>",
-    "type": "CHART",
-    "chart_id": "<CHART_ID>",
-    "panel": {
-        "header": {
-            "menu": ["DOWNLOAD"]
-        },
-        "body": {
-            "popup": {
-                "items": [
-                    { "label": "FILTERBY" },
-                    { "label": "DRILLDOWN" }
-                ]
-            }
-        }
-    }
 }
 </script>
 ```
 ```
 <!-- your launcher js link (replace with your js link) -->
-<script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
-<script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
- ```
+<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
 ]
 
 ## See It In Action
