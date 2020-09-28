@@ -11,7 +11,7 @@ The user can see the loading status to verify the percentage and the status of l
 
 
 ## Pre-requisites
-Before you can start following these steps, please make sure you have the following:
+Before you can start, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
   * Dataload Endpoint
   * API Key 
