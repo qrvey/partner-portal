@@ -10,7 +10,7 @@ sidebar_label: Loading Status
 The user can load data to the Qrvey platform using an API that receives a body with a JSON structure with the necessary parameters to get data from databases like **MYSQL, MS_SQL, ORACLE** and **POSTGRES**.
 
 ## Pre-requisites
-Before you can start following these steps, please make sure you have the following:
+Before you can start, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
   * Dataload Endpoint
   * API Key 
