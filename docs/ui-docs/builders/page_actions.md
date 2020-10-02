@@ -80,7 +80,6 @@ We support Filter By action for grouped tables. When a grouped table has this ac
 
 
 
-
 When clicking on the cell with the value “Health and beauty” of the column Product Line, the table will filter the data, including the one the user clicks, and all the parent’s values than conform the grouping. The action will add these values as filters, and you will be able to see it on the filter panel if there is one available.
 
 The same behavior will occur if the user clicks,for example, on any cell in the Total column.
@@ -99,3 +98,29 @@ After clicking on the value, the action will redirect the user to the targeted p
 
 
 ![12_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/12.png#thumbnail)
+
+### Maps 
+#### Go to URL in Maps
+
+We support the Go to URL in Dot Maps and Bubble Maps. When a map has this action defined, users can click on the dot or bubble, and the chart will redirect them to the target URL.
+
+![13_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/13.png#thumbnail)
+
+This action works slightly differently in maps compared to other charts. A creator can define a single “Go to URL” behavior where clicking on a data point will redirect the users to the targeted page or define a multi-level behavior. In this case, you need to set what columns of your dataset the action will use to construct the hierarchical navigation through the contextual menu.
+
+![14_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/14.png#thumbnail)
+
+To set a multi-level behavior, a creator needs to configure the following fields:
+* Levels: Defines the data that will appear as part of each level. Only geolocation columns can be used here. A creator can set up to five different levels. Each level must contain a different column.
+
+* The number of records per level: The number of records displayed on each level (based on the sort method.)
+
+* Sort Records: This field defines the sort order of each level: Ascending (Default) or Descending.
+
+If “Go to URL” is the only action defined by the map, users will be redirected to the targeted page immediately. However, if more than one action is specified, a contextual menu will appear with the label specified by the creator to let users decide which action they want to trigger.
+
+
+![15_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/15.png#thumbnail)
+
+The “Go to URL” action in maps has an additional setting called “Multi-Level,” where users can navigate a multi-level contextual menu built by the creator if the dots or bubbles are plotted on the map contain a geographical hierarchy like State, City, Zip Code. Clicking in each level will show the next until the last one, where finally, users will be redirected to the targeted URL.
+
