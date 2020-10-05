@@ -18,10 +18,19 @@ Use the **Send to Webhook** action to send data to an external Webhook URL. Just
 ![3_send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/3_send-actions.png#thumbnail-60)
 
 
-## Send Email
+## Send an Email
 Use the **Send Email** action to send notifications and alerts via email. To use this action enter a comma delimited list of email addresses along with a subject and a message. The message body can be formatted with any of the formatting tools provided, including bold, italic and underline. There are also justification and list options.
 
 ![4_send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/4_send-actions.png#thumbnail)
+
+You’ll see your corporate signature at the bottom of the action card, added by your admin user from the Admin app. The signature will appear by default at the bottom of every email sent by the action.
+
+![4.1_send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/4.1_send-actions.png#thumbnail)
+
+If you do not want to include your corporate signature as part of your emails’ body, uncheck the option Include Signature located on the right side of the toolbar.
+
+![4.2_send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/4.2_send-actions.png#thumbnail)
+
 
 In the lower-right corner, you’ll find the **Insert / Attach** menu with a number of different items you can add to your message. These include a link to any active web form, the results of any web form, the details of a specific response or a file that you specify.
 
