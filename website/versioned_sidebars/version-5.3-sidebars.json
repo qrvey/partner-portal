@@ -51,8 +51,10 @@
         ]
       },
       "version-5.3-ui-docs/datasets/datasets",
+      "version-5.3-ui-docs/datasets/data-sync",
       "version-5.3-ui-docs/datasets/joins",
-      "version-5.3-ui-docs/datasets/datalinks"
+      "version-5.3-ui-docs/datasets/datalinks",
+      "version-5.3-ui-docs/datasets/transformations"
     ],
     "Analysis Views": [
       "version-5.3-ui-docs/dataviews/filters",
@@ -213,6 +215,7 @@
   "version-5.3-release-notes": {
     "Release Notes 2020": [
       "version-5.3-release-notes/release-last",
+      "version-5.3-release-notes/release-aug-2020",
       "version-5.3-release-notes/release-jul-2020",
       "version-5.3-release-notes/release-jun-2020",
       "version-5.3-release-notes/release-apr-2020",

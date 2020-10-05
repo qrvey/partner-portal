@@ -51,8 +51,10 @@
         ]
       },
       "ui-docs/datasets/datasets",
+      "ui-docs/datasets/data-sync",
       "ui-docs/datasets/joins",
-      "ui-docs/datasets/datalinks"
+      "ui-docs/datasets/datalinks",
+      "ui-docs/datasets/transformations"
     ],
     "Analysis Views": [
       "ui-docs/dataviews/filters",
@@ -214,6 +216,7 @@
   "release-notes": {
     "Release Notes 2020": [
       "release-notes/release-last",
+      "release-notes/release-aug-2020",
       "release-notes/release-jul-2020",
       "release-notes/release-jun-2020",
       "release-notes/release-apr-2020",
