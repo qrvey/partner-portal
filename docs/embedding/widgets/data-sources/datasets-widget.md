@@ -17,8 +17,6 @@ You can use the following script to launch this widget:
 ## Configuration Object
 The table below provides general information about each property of this widget’s configuration object along with a description of the expected value. The **Required** column indicates whether the property is required for the configuration object to work properly. 
 
-To open the chart builder modal and create a new chart, you need to emit a custom event named ON_OPEN_CHART_BUILDER and pass into the detail object these configuration parameters:
-
 
 
 | **Property** | **Value** | **Required** |
