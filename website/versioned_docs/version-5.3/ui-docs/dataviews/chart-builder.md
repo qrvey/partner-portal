@@ -12,11 +12,11 @@ Chart Builder is used to build custom visualizations on top of your data – you
 ## Creating a Chart
 Inside your application, select the form or dataset you’d like to analyze, and choose the Analyze tab, followed by the Custom View.
 
-![1_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_chart-builder.png#thumbnail-40)
+![1_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_chart-builder.png#thumbnail-40)
 
 To create your first custom chart, click the **Add Chart** icon.
 
-![2_chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2_chart-builder.png#thumbnail-20)
+![2_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2_chart-builder.png#thumbnail-20)
 
 The Chart Builder screen will open up and you can begin exploring your data by creating different visualizations. 
 
@@ -133,12 +133,12 @@ You can edit your chart at any time by clicking on the three-dot menu in the low
 
 Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
 
-Qrvey supports the following table calculations:
+Qrvey supports the following table calculations in Table, Bar, and Line Charts:
 
 ## 1. Running Calculations
 These calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data. 
 
-Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* on the grouped table chart. 
+Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* on grouped Tables, Bar, and Line charts. 
 
 How Qrvey generally describes these running calculations:
 
@@ -361,6 +361,14 @@ Right to the left of the three dots icon, you will see a summary of aggregate fu
 
 ![24_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png#thumbnail)
 
+The following image is an example of Running Calculations in Bar and Line charts.
+
+
+![1gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1gif.gif#thumbnail)
+
+![2gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2gif.gif#thumbnail)
+
+
 
 ## 2. Difference
 *Difference* is a row-by-row type of calculation that generates the difference between two values (the current value subtracted from the previous value) of an aggregated column.
@@ -415,13 +423,23 @@ The following example demonstrates how the difference is calculated between each
 Etc.
 
 
-The following images show an example of *Difference* applied in Qrvey.
+The following images show an example of *Difference* applied in Tables.
 
-![31_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build31.png#thumbnail-0)
+![31_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build31.png#thumbnail-0)
 
-![32_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build32.png#thumbnail-0)
+![32_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build32.png#thumbnail-0)
 
-![33_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build33.png#thumbnail-0)
+![33_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build33.png#thumbnail-0)
+
+
+The following images show an example of * Difference* applied in Bar charts.
+![3gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3agif.gif#thumbnail)
+
+The following images show an example of * Difference% applied in Line charts.
+
+![4gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3bgif.gif#thumbnail)
+
+
 
 ## 3. Percent Difference 
 *Percent Difference* is a row-by-row type of calculation that is calculated based on the following formula:
@@ -471,7 +489,7 @@ The following example shows how Percent Difference is calculated:
 
 The following example demonstrates how the difference  between each total quarterly sales is calculated:
 
-![34_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build34.png#thumbnail-0)
+![34_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build34.png#thumbnail-0)
 
 **2018-2020 Quarterly Sales Difference**
 
@@ -488,11 +506,18 @@ Etc.
 The following images show an example of *Percent Difference* applied in Qrvey.
 
 
-![35_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build35.png#thumbnail-0)
+![35_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build35.png#thumbnail-0)
 
-![36_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build36.png#thumbnail-0)
+![36_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build36.png#thumbnail-0)
 
-![37_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build37.png#thumbnail-0)
+![37_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build37.png#thumbnail-0)
+
+The following images show an example of *%Difference* applied in Bar charts.
+![4agif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4agif.gif#thumbnail)
+
+The following images show an example of *%Difference* applied in Line charts.
+
+![4bgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4bgif.gif#thumbnail)
 
 
 
@@ -521,4 +546,51 @@ The *Discrete*  and *Continuous*  features are options only available for the da
 
 * Continuous Dates
 
-![28_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail-80)
+![28_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail-80)
+
+
+
+
+## Sorting From the Column Pill
+Creators can now use the column pills in the shelves inside Chart Builder to sort. 
+
+Charts that currently support this method:
+* Bar
+* Line
+* Symbol 
+* Multiseries
+* Table 
+* Crosstab
+
+By default, the column pills will show the default sorting. To change the  sorting by using the pill method, all you have to do is go to a column pill located in a shelf such as Category, Value, or Series, and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu. Sorting options are Ascending and Descending.
+
+For charts such as Bar, Line, Symbol you can only sort by one dimension such as Category or Value, but not both at the same time. Some special exceptions and additional functions for sorting apply to certain charts. 
+
+![5gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail)
+
+For Multiseries, you can switch by “Category” or “Value” and at the same time sort  “Series” independently. 
+
+![6gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
+
+For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of   aggregated “Columns” and the innermost “Group” column. 
+
+![7gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
+
+For Crosstab, you can do multi sorting on both the Rows and Columns at the same time.  Sorting on the Value columns is not possible. 
+
+![8gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8gif.gif#thumbnail)
+
+For both Table and Crosstab you can remove the sorting that was applied to a column used to construct the chart. To remove the sorting, just go to the column pill located in any of the shelves used to construct the chart and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu and select the “ Clear Sorting” option that is located in the sorting options. 
+
+![38_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build38.png#thumbnail)
+
+## Table Subtotal + Grand Totals
+Table Users are currently able to add Totals to aggregated columns down the entire table, essentially giving them what would be a Grand Total of values for the selected column. With the new UI for adding Totals, Table Creators will be able to apply totals by a selected group  in the Table so that they can get Subtotals per group category for the selected aggregated column. With this new method for adding totals, Creators can:
+* Add totals to multiple columns at once 
+* Add multiple totals to the selected column(s)
+* Add both Grand Totals and Subtotals to the same aggregated columns at once
+* Have different total calculations for Grand Totals and Subtotals using the same aggregated column 
+
+To add totals on a Table, you need to go to Chart Builder’s “Configuration Pane” and find the “Totals” option located in the “General” section. Once a Totals layer is added, you can set up which aggregated columns will be used for the selected totals, and  at which level (partition) the total will be performed - over the Table or a selected Group.
+
+ ![9gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/9gif.gif#thumbnail)

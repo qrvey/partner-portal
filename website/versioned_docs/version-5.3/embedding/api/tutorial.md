@@ -19,6 +19,7 @@ The Qrvey Platform developer API lets you access all of the functions of the Qrv
 In this tutorial, we will go through a typical end-to-end process for building and accessing web forms programmatically. We will show you how to call the developer API to create a new Quiz web form and how to use the Quiz widget UI to insert the web form into any application page for end-users. We will also show you how to activate the Quiz, so that end users can begin to answer given questions using the Quiz URL.
 
 
+
 ## Prerequisites
 For this tutorial, we will assume that you have a basic understanding of REST APIs, as well as how to make various web requests, and how to work with API responses in JSON format. We also recommend using an API dev environment such as Postman.
 
@@ -82,7 +83,11 @@ Hit **Send** to complete the POST and your response will return a valid “useri
 
 ### Option 2: Get the user list
 
-To obtain a previously created “userid”, you can also call the API to get the list of users already in your Qrvey Platform.
+To obtain a previously created “userid”, you can also call the API to get the list of users already in your Qrvey Platform:
+
+```
+POST https://{{url}}/devapi/v4/core/user/all
+```
 
 In Postman, Set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit **Send** to complete the request.
 
@@ -175,7 +180,7 @@ Now that we have a user and an application, we can start creating our content fo
 To create a new Quiz, we’ll use the Create Quiz endpoint: /qrvey along with appType=QUIZ.
 
 ```
-POST to https://{{url}}/devapi/v4/user/{{userid}}/app/{{appid}}qrvey
+POST to https://{{url}}/devapi/v4/user/{{userid}}/app/{{appid}}/qrvey
 ```
 
 This endpoint also requires our “userid” and “appid” from the previous steps.
@@ -225,7 +230,7 @@ PUT {{URL}}/devapi/v4/user/{{userid}}/app/{{appid}}/qrvey/{{qrveyid}}/activate
 
 Remember to set your Headers properly, and hit **Send** to get the response, which will be the valid URL for users to take your quiz.
 
-![api_tutorial_11](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tut2.png#thumbnail-40)
+![api_tutorial_11](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_11.png#thumbnail-40)
 
 You can now use that response to send the URL to your users so they can take the Quiz that was created using the API.
 
