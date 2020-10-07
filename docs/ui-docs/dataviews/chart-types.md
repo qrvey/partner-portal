@@ -8,7 +8,7 @@ sidebar_label: Chart Types
 The following chart types are currently supported by Qrvey. The list is sorted in alphabetical order of the chart type and provides use cases and details about each type.
 Metrics have their own section at the end of this document.
 
-## Bar
+## Bar Chart
 ### Overview
 The bar chart presents categorical data with rectangular bars that show heights or lengths in proportion to the values they represent. The bars can be plotted vertically or horizontally.
 
@@ -24,29 +24,27 @@ Inside Qrvey, there are different sections where you can create a Bar Chart. For
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+
+![1_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/1_ct.png#thumbnail)
 
 On the right of the window, there is the properties panel. The first section is related to chart type selection, where a user decides which type of chart they want to create. For the purpose of this guide, we will choose the Bar Chart.
 
-Image 2 - Bar chart in the charts panel section
+![2_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/2_ct.png#thumbnail-40)
 
 After selecting the Bar Chart, the center of the chart builder window will update to reflect the actions required.
-
-
 
 
 At the top of the chart builder, there are 2 fields: Category and Values. You can drag and drop columns from your data panel located on the left side to these fields. In the middle section, you can set a title and a description for the chart. Finally, there is a canvas where the Bar Chart will be displayed once at least one column is dropped as category or value.
 
 
-Image 3 - Default Bar chart
+![3_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/3_ct.png#thumbnail)
 
 Users can create two types of Bar Charts:
 
 * **Horizontal Bar Chart**: A user can create a Horizontal Bar chart by dragging and dropping columns from the data panel into the shelves on top of the chart builder. Another way to create a horizontal bar chart is by dragging and dropping columns to the top-table guideline of the canvas that shows a label *Drop column as column* when hovered by the cursor. Horizontal type will always be the default chart. The orientation can be modified from the **Style Configuration** panel on the right side.
 
 
-Image 4 - Vertical Bar chart
-
+![4_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/4_ct.png#thumbnail)
 
 * **Vertical Bar Chart**: Once the Bar Chart is created, the user can change its orientation to Vertical in the Style Configuration panel, in order to create the visualization seen in image 4.
 
@@ -73,7 +71,7 @@ In this section, you can find a guide through the settings specific for the Bar 
 #### Format
 * Change the format of the chart visualization to small multiples.
 
-## Box & Whiskers
+## Box & Whiskers Chart
 ### Overview
 A Box & Whisker chart presents information from a five-number summary. It is especially useful for indicating whether a distribution is skewed and whether there are any potentially unusual observations or outliers in the data set. Box & Whisker charts are also very useful when large numbers of observations are involved and when two or more data sets are being compared.
 This chart is used to show the shape of the distribution, its central value, and its variability.
@@ -90,21 +88,20 @@ In Qrvey Composer, there are different places where you can create a Box & Whisk
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![5_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/5_ct.png#thumbnail)
 
 On the right side of the window, there is the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Box & Whiskers chart.
 
-Image 2 - Box & Whiskers chart in the charts panel section.
+![6_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/6_ct.png#thumbnail-40)
 
 After selecting the Box & Whiskers chart, the center of the chart builder window will update to reflect the actions required.
-
 
 
 
 At the top of the chart builder, there are 3 fields: *Category, Values,* and *Distribution*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, Box & Whiskers will be displayed on the canvas once at least one dataset column is dropped as a category field or value.
 
 
-Image 3 - Default Box & Whiskers chart.
+![7_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/7_ct.png#thumbnail)
 
 In a Box & Whisker chart:
 * The ends of the box are the upper and lower quartiles, so the box spans the interquartile range.
@@ -131,7 +128,7 @@ In this section, you can find a guide through the settings specific for the Box 
 * **Fill**: Change to have the symbol filled or not.
 * **Symbol Opacity**: Change the degree of symbol´s opacity.
 
-## Crosstab
+## Crosstab Chart
 ### Overview
 A crosstab is a data summarization tool that allows structuring, summarizing, and displaying large amounts of data. It is most commonly used to analyze the multiple measures in multiple dimensions at the same time. A crosstab can display totals and subtotals for columns and rows, and it allows users to rearrange the measures and dimensions to get a different view of the data.
 
@@ -150,11 +147,11 @@ In Qrvey Composer, there are different places where you can create a Crosstab Ch
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![8_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/8_ct.png#thumbnail)
 
 On the right of the window, you can find the properties panel. The first section is related to chart type selection, where a user decides which type of chart they want to create. Here, we will choose the Crosstab chart.
 
-Image 2 - Crosstab chart in the charts panel section
+![9_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/9_ct.png#thumbnail-40)
 
 After selecting the Crosstab chart, the center of the chart builder window will update to reflect the actions required.
 
@@ -164,14 +161,14 @@ After selecting the Crosstab chart, the center of the chart builder window will 
 At the top of the chart builder, there are 3 fields for Rows, Columns and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Crosstab will be displayed on the canvas once at least one dataset column is dropped as a column field or value.
 
 
-Image 3 - Default Crosstab chart
+![10_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/10_ct.png#thumbnail)
 
 Users can add subtotals and change the aggregates depending on their needs.
 
 By adding a second dataset column on the Column or Row shelf, groups will be created so that subtotals can be calculated. These subtotals will be visualized as aggregates like *Sum, Average, Median, Count, Distinct Count, Minimum,* and *Maximum*.
 
 
-Image 4 - Crosstab chart with subtotals.
+![11_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/11_ct.png#thumbnail)
 
 ### Properties
 Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel on the right side of the window shows different sections for chart settings.
@@ -207,11 +204,11 @@ Inside Qrvey Composer, there are different places where you can create a Heatmap
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![12_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/12_ct.png#thumbnail)
 
 On the right side of the window, we can see the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Heatmap chart.
 
-Image 2 - Heatmap chart in the charts panel section.
+![13_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/13_ct.png#thumbnail-40)
 
 After selecting the Heatmap chart, the center of the chart builder window will update to reflect the actions required.
 
@@ -220,7 +217,7 @@ After selecting the Heatmap chart, the center of the chart builder window will u
 At the top of the chart builder, there are 3 fields for *Categories, Values*, and *Pivot*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Heatmap will be displayed on the canvas once at least one dataset column is dropped as a category field or value.
 
 
-Image 3 - Default Heatmap chart.
+![14_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/14_ct.png#thumbnail)
 
 Users need to add a third dataset column to the pivot shelf in order to complete the creation of the chart. The pivot column will work as a second category on the horizontal axis.
 
@@ -257,18 +254,18 @@ Inside Qrvey Composer, there are different places where you can create a Line ch
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![15_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/15_ct.png#thumbnail)
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Line chart.
 
-Image 2 - Line chart in the charts panel section.
+![16_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/16_ct.png#thumbnail-40)
 
 After selecting the Line chart, the center of the chart builder window will update to reflect the actions required.
 
 At the top of the chart builder, there are 2 fields for Category and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Line chart will be displayed on the canvas once at least one column is dropped as category or value.
 
 
-Image 3 - Default Line chart.
+![17_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/17_ct.png#thumbnail)
 
 Users can create five types of Line charts depending on the visualization they need:
 
@@ -318,30 +315,33 @@ Bubble Maps are best suited for showing values based on locations in order to co
 Inside Qrvey Composer, there are different places where you can create a map chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 Before getting to the Chart Builder, the data needs to be prepared for the correct use of maps.
+
+![18_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/18_ct.png#thumbnail-40)
+
 When preparing data, the user needs to create a geolocation group to identify parts of an address that will be used for geolocation on a map. It's important to define these groups correctly for accurate map locations.
 
 After setting the geolocation group and loading data, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![19_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/19_ct.png#thumbnail)
+
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose either the bubble or the dot map chart.
 
-
-
-Image 2 - Dot and Bubble map chart in the charts panel section.
+![20_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20_ct.png#thumbnail)
 
 After selecting a bubble or dot map chart, the center of the chart builder window will update to reflect the actions required.
 
 #### Bubble Map
 At the top of the chart builder, there are 2 fields for Geolocation and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Bubble Map chart will be displayed on the canvas once at least one column is dropped as Geolocation.
 
-Image 3 - Default Bubble Map chart.
+![21_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/21_ct.png#thumbnail)
 
 #### Dot Map
 At the top of the chart builder, there is 1 field for Geolocation. In this field, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Dot Map chart will be displayed on the canvas once at least one column is dropped as Geolocation. 
 
 By default, dot-maps have clustering enabled allowing you to see a large amount of points clustered based on the position proximity of each point. As you zoom in and out of your clustered map, Qrvey re-calibrates the number of points we can display. If you click a cluster, we automatically zoom in and show individual points (if possible) or sub-clusters.
 
+![22_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/22_ct.png#thumbnail) 
 
 ### Properties
 Charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, behavior, and other options. The properties panel located on the right side of the window shows different sections for chart settings.
@@ -363,7 +363,7 @@ In this section, you will find a guide through the settings specific for the Bub
 * **Map Borders**: Turn On/Off map borders.
 * **Allow Clustering**: Turn On/Off clustering. (Dot Maps only)
 
-## Pie Chart
+## Pie Chart
 ### Overview
 The pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents. There are variations on the way it can be presented, it can be in the form of a Pie or a Donut.
 
@@ -379,21 +379,19 @@ Inside Qrvey Composer, there are different places where you can create a Pie cha
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![23_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/23_ct.png#thumbnail)  
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Pie chart.
 
-Image 2 - Pie chart in the charts panel section.
+![24_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/24_ct.png#thumbnail-40) 
 
 After selecting the Pie chart, the center of the chart builder window will update to reflect the actions required.
-
-
 
 
 At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Pie will be displayed on the canvas once at least one column is dropped as category or value.
 
 
-Image 3 - Default Pie chart.
+![26_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/26_ct.png#thumbnail) 
 
 Users can create two types of Pie charts:
 
@@ -402,9 +400,7 @@ Users can create two types of Pie charts:
 
 
 
-
-
-Image 4 - Donut chart.
+![27_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/27_ct.png#thumbnail) 
 
 * **Donut**: Once the Pie chart is created, the user can change the Type to Donut in the Style configuration panel to have the visualization presented in image 4.
 
@@ -443,23 +439,17 @@ To get started, open the chart builder, and a new window will open up in the cen
 
 
 
-
-
-
-
-
-Image 1 - Chart builder window
+![28_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/28_ct.png#thumbnail) 
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Symbol chart.
 
-Image 2 - Symbol chart in the charts panel section.
+![29_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/29_ct.png#thumbnail-40) 
 
 After selecting the Symbol chart, the center of the chart builder window will update to reflect the actions required.
 
 At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Symbol chart will be displayed on the canvas once at least one column is dropped as category or value.
 
-
-Image 3 - Default Symbol chart.
+![30_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/30_ct.png#thumbnail) 
 
 Users can create 7 types of symbol charts depending on the visualization they need:
 * Circle (default)
@@ -471,7 +461,7 @@ Users can create 7 types of symbol charts depending on the visualization they ne
 * Cross
 
 
-### Properties
+### Properties
 Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Symbol chart.
@@ -511,12 +501,12 @@ Inside Qrvey Composer, there are different places where you can create a Word Cl
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![31_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/31_ct.png#thumbnail) 
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Word Cloud chart.
 
 
-Image 2 - Word Cloud chart in the charts panel section.
+![32_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/32_ct.png#thumbnail-40) 
 
 After selecting the Word cloud chart, the center of the chart builder window will update to reflect the actions required.
 
@@ -526,7 +516,7 @@ After selecting the Word cloud chart, the center of the chart builder window wil
 At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Word cloud will be displayed on the canvas once at least one column is dropped as category or value.
 
 
-Image 3 - Word Cloud chart.
+![33_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/33_ct.png#thumbnail) 
 
 ### Properties
 These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
@@ -559,53 +549,51 @@ Inside the Qrvey Composer, there are different places where you can create a tab
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-Image 1 - Chart builder window
+![34_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/34_ct.png#thumbnail) 
 
 On the right side of the window, we will find the properties panel. The first section is related to chart type selection, where users can select which type of chart they want to create. Here, we will choose the Table.
 
 
-Image 2 - Tables in the charts panel section.
+![35_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/35_ct.png#thumbnail-40) 
 
 After selecting the Table, the center of the chart builder window will update to reflect the actions required.
 
 
-Image 2 - Center section of the chart builder.
+![36_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/36_ct.png#thumbnail) 
 
 At the top of the screen (1), there are fields for columns and groups. In these fields, you can drag columns from your data source located on the right side of the window and see them appear as a table column in the middle of the screen. In the middle section (2), you can set the title and a description. Finally, in the middle of the screen (3), is where the table is displayed.
 
 
-Image 3 - Simple table.
+![37_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/37_ct.gif#thumbnail) 
 
 Users can create two types of tables:
 
 * **Simple**: A user creates a simple table dragging and dropping fields from the data source into the columns section on top of the window, as described in image 3 above. Another way to create a simple table is by dragging and dropping fields into the top table guideline with the label “Drop column as column” when the mouse hovers over the table, as described in the image below.
 
 
-Image 4 - Drag and drop columns for a simple chart.
-
+![38_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/38_ct.gif#thumbnail) 
 
 In the end, a user can review which fields of the data source are part of the table looking at the top of the window in the columns - group section.
 
 
-Image 5 - Columns of the simple table.
+![38_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/38_ct.png#thumbnail) 
 
 If there are duplicate values in any column used in the table, multiple rows will be shown
 as duplicate values. In the examples below, the value USA appears twice in the column *country*.
 
-Image 5 - Simple table.
+![39_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/39_ct.png#thumbnail) 
 
 * **Grouped**: A user can create this type of table dragging and dropping columns from the data source in the columns and groups section at the top of the window. In this scenario, the table treats fields in the group section as a pivot and fields left in the column section as aggregated values.
 
 
-Image 6 - Grouped table.
+![40_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/40_ct.gif#thumbnail) 
 
 Another way to create a grouped table is by using the vertical and horizontal guidelines that appear over the chart when the mouse is hovering it.
 
 
-Image 7 - Grouped table using chart guidelines.
+![41_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/41_ct.gif#thumbnail) 
 
-
-### Properties
+### Properties
 Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Table chart.
@@ -627,7 +615,7 @@ In this section, you will find *Menu Actions* and *Max Groups*.
 	
 The following image shows how **Menu Action** settings work.
 
-
+![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.gif#thumbnail) 
 
 ## Metrics
 
@@ -658,11 +646,9 @@ To get started, open the chart builder, and a new window will open up in the cen
 
 To build your first metric, you can access the Chart Builder from the Analyze tab of the dataset you’d like to use, or from the Page and Report Builder. Select the type of metric you would like to build choosing between *Indicator, Bullet* or *Gauge* and drag a value to the shelf or into the drop zone. 
 
-Image 1 - Chart builder window
+![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.png#thumbnail) 
 
-
-Image 2 - Metrics in the charts panel section.
-
+![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.png#thumbnail) 
 
 As soon as you add the field, the value will be shown and you can continue to style your metric from the Comparison and Styles section on the right side panel. 
 
@@ -670,22 +656,28 @@ You can add time comparison options by dragging a date field to the right-side p
 
 In the Comparison section, you can also define the styles for fonts and the change value. You can set colors and symbols for *Increasing/Decreasing Change* and *No Change* which will reflect depending on the data. 
 
+![44_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/44_ct.png#thumbnail) 
+
 There are other options to control visual aspects and behavior of the metric like the automatic resizing of the content which will re-adjust itself to the size of the panel when it’s enabled. When it’s turned off, it will take the defined font size. Another available option is to turn on/off the animation used to display the indicator metric while the data is loading. 
+
+![45_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/45_ct.png#thumbnail-40) 
 
 For Dial and Bullet Gauge style metrics Thresholds can be set. You can choose to provide color-coded ranges for your data. Typically, people use three thresholds for indicating good, bad and in-between ranges for their metrics. You can provide each threshold with a name and assign it a color. 
 
+![46_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/46_ct.png#thumbnail) 
 
 
-
-## Bullet Gauge
+### Bullet Gauge
 The bullet metric is used to compare one or more measures to enrich its meaning, and displays it in the context of qualitative ranges of performance, such as poor, satisfactory, or good. The qualitative ranges are displayed as different colors that can be customized.
 
-### Properties
+![47_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/47_ct.png#thumbnail) 
+
+#### Properties
 Metrics have a set of properties that allows users to customize the aspect and modify the look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for metric settings.
 
 In this section, you will find a guide through the settings specific for Metrics.
 
-### General
+#### General
 * **Legends**: Turn on/off legends. (Dial, Bullet)
 * **Tooltips**: Turn on/off tooltips of each data point. (Dial, Bullet)
 * **Fixed Scale**: Turn on/off tooltips of each data point. (Dial, Bullet)
@@ -693,7 +685,7 @@ In this section, you will find a guide through the settings specific for Metrics
 ### Comparison
 * **Date Column**: Add the date column to visualize comparison value.
 
-### Styles
+#### Styles
 * **Color**: Change the colors of the metric.
 * **Font Style**: Change the font style of the values. (Indicator)
 * **Automatic Resize**: Turn on/off the resizing of the metric in the panel. (Indicator)
@@ -704,8 +696,9 @@ Show Animations:  Turn On/Off the metric animations.
 
 **Note**: Once turned off, every time a page containing that metric is loaded or new data comes in, the metric will no longer show the default animation.
 
+![48_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/48_ct.gif#thumbnail) 
 
-
+![49_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/49_ct.png#thumbnail-40) 
 
 
 
@@ -713,6 +706,9 @@ Show Animations:  Turn On/Off the metric animations.
 Dial Gauge Metrics use needles to show information as a reading on a dial.
 The value for each needle is read against the colored data range or chart axis. This chart type is commonly used in dashboard reports to show key business indicators.
  
+ ![50_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/50_ct.png#thumbnail) 
+
 ## Indicator
 An indicator is a qualitative or quantitative variable that provides a simple and reliable means to express achievement, the attainment of a goal, or the results stemming from a specific change. It often aggregates or combines a comparison based on different dates.
 
+ ![51_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/51_ct.png#thumbnail-40) 
