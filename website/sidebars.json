@@ -64,6 +64,7 @@
       "ui-docs/dataviews/summary-view",
       "ui-docs/dataviews/tabular-view",
       "ui-docs/dataviews/custom-view",
+      "ui-docs/dataviews/chart-types",
       "ui-docs/dataviews/chart-builder",
       "ui-docs/dataviews/metric-view"
     ],
