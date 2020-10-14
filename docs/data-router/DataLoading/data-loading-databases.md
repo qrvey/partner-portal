@@ -1,7 +1,7 @@
 ---
-id: loading-status
-title: Loading Status 
-sidebar_label: Loading Status
+id: loading-status-databases
+title: Loading Status Data Bases
+sidebar_label: Loading Status Data Bases
 ---
 
 <div style="text-align: justify">

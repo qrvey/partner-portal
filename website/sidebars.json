@@ -173,7 +173,8 @@
         "type": "subcategory",
         "label": "Transformations",
         "ids": [
-          "data-router/Metadata/transformations/transformations-intro"
+          "data-router/Metadata/transformations/transformations-intro",
+          "data-router/Metadata/transformations/reusable-transforms"
         ]
       },
       {
@@ -194,15 +195,10 @@
         "label": "Data Loading",
         "ids": [
           "data-router/DataLoading/postdata-content",
+          "data-router/DataLoading/loading-status",
+          "data-router/DataLoading/loading-status-databases",
           "data-router/dataload-S3",
           "data-router/batch-manager"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Postdata",
-        "ids": [
-          "data-router/postdata-content"
         ]
       },
       {
