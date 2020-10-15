@@ -118,9 +118,10 @@ Manifest file will let the Data Load know which files need to be processed insid
     "S3_PATH_BUCKET": "{{S3Bucket}}",
     "S3_PATH_NEXT": "{{nextBatch}}"
 }
+```
 
-	cURL example:
-
+cURL example:
+```
 curl --location --request POST '{{dataloadendpoint}}/dataload/batchManager/start?resetAllBatches=true' \
 --header 'x-api-key: {{apikey}}' \
 --header 'Content-Type: application/json' \
