@@ -1,7 +1,7 @@
 ---
 id: version-5.3-loading-status-databases
-title: Loading Status Data Bases
-sidebar_label: Loading Status Data Bases
+title: Loading Status Databases
+sidebar_label: Loading Status Databases
 original_id: loading-status-databases
 ---
 
