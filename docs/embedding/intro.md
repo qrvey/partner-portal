@@ -1,5 +1,5 @@
 ---
-id: embedding-intro
+id: embedding-overview
 title: Embedding Overview
 sidebar_label: Overview
 ---
@@ -42,10 +42,15 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 
 
 
-## API
-Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
+## APIs
+Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. The APIs can be divided into the following groups. These links can be bookmarked for quick reference.
 
-* [Data Sources API Reference](embedding/api/data-sources.md).
-* [Business Analytics API Reference](embedding/api/analytics.md).
-* [Workflow Automation API Reference](embedding/api/automation.md).
-* [Data Router API Reference](data-router/apireference/api-reference-intro.md).
+
+* <a href="docs/embedding/api/api-core">Core API Reference</a>
+
+* <a href="docs/embedding/api/api-admin">Admin API Reference</a>
+
+* <a href="docs/embedding/api/api-analytics">Data Views API Reference</a>
+
+* <a href="docs/embedding/api/api-automation/">Automation (Workflow) API Reference</a>
+
