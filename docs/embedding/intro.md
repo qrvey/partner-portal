@@ -1,5 +1,5 @@
 ---
-id: embedding-overview
+id: embedding-intro
 title: Embedding Overview
 sidebar_label: Overview
 ---
