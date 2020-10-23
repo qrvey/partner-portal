@@ -150,8 +150,7 @@
         "type": "subcategory",
         "label": "API References",
         "ids": [
-          "version-5.3-embedding/api/api-tutorial",
-          "version-5.3-tutorials/multi-datasets-one-filter"
+          "version-5.3-embedding/api/api-tutorial"
         ]
       }
     ],
@@ -224,7 +223,8 @@
   "version-5.3-tutorials": {
     "Tutorials": [
       "version-5.3-tutorials/first-analytic-app",
-      "version-5.3-tutorials/create-charts"
+      "version-5.3-tutorials/create-charts",
+      "version-5.3-tutorials/multi-datasets-one-filter"
     ]
   },
   "version-5.3-faqs": {
