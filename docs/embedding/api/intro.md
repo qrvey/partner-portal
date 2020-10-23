@@ -1,6 +1,6 @@
 ---
 id: api-intro
-title: Qrvey API Quick Start Guide
+title: Qrvey API Start Guide
 sidebar_label: API Start Guide
 ---
 
@@ -23,3 +23,6 @@ In order to make Qrvey API requests, you will need your:
 * API-key - your unique key that must be a part of every API call
 
 > Note: Be sure to keep this information private and do not post it publicly in your code.
+
+Qrvey APIs are documented in Postman so they can be easily accessed and tried out. The full collection can be found <a href="https://bit.ly/3lUHsQg">here</a>.
+
