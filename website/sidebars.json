@@ -152,9 +152,7 @@
         "label": "API References",
         "ids": [
           "embedding/api/api-tutorial",
-          "embedding/api/api-data-sources",
-          "embedding/api/api-analytics",
-          "embedding/api/api-automation"
+          "tutorials/multi-datasets-one-filter"
         ]
       }
     ],
@@ -199,13 +197,6 @@
           "data-router/DataLoading/loading-status-databases",
           "data-router/dataload-S3",
           "data-router/batch-manager"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Data Router API",
-        "ids": [
-          "data-router/apireference/api-reference-intro"
         ]
       }
     ]

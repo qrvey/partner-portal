@@ -43,10 +43,5 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 
 
 
-## API
-Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. These links can be bookmarked for quick reference.
-
-* [Data Sources API Reference](embedding/api/data-sources.md).
-* [Business Analytics API Reference](embedding/api/analytics.md).
-* [Workflow Automation API Reference](embedding/api/automation.md).
-* [Data Router API Reference](data-router/apireference/api-reference-intro.md).
+## APIs
+Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. Qrvey APIs are documented in Postman so they can be easily accessed and tried out. The full collection can be accessed <a href="https://bit.ly/3lUHsQg">here</a>.

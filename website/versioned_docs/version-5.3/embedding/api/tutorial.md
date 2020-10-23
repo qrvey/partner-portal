@@ -5,19 +5,13 @@ sidebar_label: Tutorial
 original_id: api-tutorial
 ---
 
-<style>
-img[src*="#thumbnail"] {
-   width:100%;
-   border: 1px solid whitesmoke;
-}
-</style>
-
 <div style="text-align: justify">
 
 The Qrvey Platform developer API lets you access all of the functions of the Qrvey Platform programmatically. In your integrated app, this means you’ll be able to do everything from creating or editing forms and quizzes to building workflows, even accessing or creating your analytic charts, all by using API requests.
 
 In this tutorial, we will go through a typical end-to-end process for building and accessing web forms programmatically. We will show you how to call the developer API to create a new Quiz web form and how to use the Quiz widget UI to insert the web form into any application page for end-users. We will also show you how to activate the Quiz, so that end users can begin to answer given questions using the Quiz URL.
 
+>**Note**: The full list of Qrvey APIs and examples can be accessed <a href="https://bit.ly/3lUHsQg">here</a>.
 
 
 ## Prerequisites
@@ -48,9 +42,13 @@ The first step for working with the developer API is to establish a user and an 
 
 
 ## Get the User
+
+>**Note**: User and Application API endpoints are under the <a href="https://bit.ly/2IX7Z12">Core group</a>.
+
+
 ### Option 1: Create a new user
 
-To create a new user, open Postman and make a call to the /user endpoint.
+To create a new user programmatically, open Postman and make a call to the /user endpoint.
 
 In Postman, set your request type as “POST”, and enter the URL to create a new user:
 
@@ -79,7 +77,7 @@ In order to create a new user, we will also be entering our JSON values into the
 
 Hit **Send** to complete the POST and your response will return a valid “userid”.   Keep this userID for later use. 
 
-> **NOTE:** All user emails in the Qrvey app must be unique. If a user has already been created, a “User already exists” message will pop up. In case this happens, you can try with option 2 to create a user.
+> **Note:** All user emails in the Qrvey app must be unique. If a user has already been created, a “User already exists” message will pop up. In case this happens, you can try with option 2 to get a user.
 
 ### Option 2: Get the user list
 
@@ -170,10 +168,15 @@ Specify the correct headers, enter /app endpoint and press **Send**. The respons
 
 Select the “appid” that you want to use for your next steps.
 
-> **NOTE**: Now that you’ve created a user and app using the API, you’ll see the content that has been built whenever you log in to the Qrvey Platform as this new user. 
+> **Note**: Now that you’ve created a user and app using the API, you’ll see the content that has been built whenever you log in to the Qrvey Platform as this new user. 
 
 
-## Creating the Web Form
+## Creating a Web Form
+>**Note 1**: Webform API endpoints are under the
+<a href="https://bit.ly/3jlyhXj">Data Sources</a> group.
+
+
+>**Note 2**: Webforms, in general, are referred to as “*qrvey*”s.
 
 Now that we have a user and an application, we can start creating our content for end-users, including Web Forms, Quizzes, Surveys, and more.
 
@@ -206,9 +209,9 @@ Now we have all the parts we need to embed using our widget: the “userid”, t
 
 Once you’ve created a web form Quiz, you’re ready to embed it into your product using the Qrvey Platform widget.   The widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form, in this case, our quiz.
 
-To learn more about embedding and working with Widgets, visit our [Widget QuickStart Guide](embedding/widgets/intro.md). 
+To learn more about embedding and working with Widgets, visit our [Widget Quick Start Guide](embedding/widgets/intro.md). 
 
-Embed your widget by following the instructions in the QuickStart guide.
+Embed your widget by following the instructions in the aforementioned guide.
 
 After embedding your widget using the widget code, you’ll be able to load the UI inside your application to show how to build a quiz:
 
@@ -237,4 +240,4 @@ You can now use that response to send the URL to your users so they can take the
 ## Further Reading
 You should now have a basic understanding of how to use the API to programmatically generate new content in the Qrvey Platform, and embed that content for use in your application.   
 
-For additional API details, including the full API specification, visit the [API Reference](embedding/api/intro.md).
+For additional API details, including the full API specification, visit the [API Reference](https://bit.ly/3lUHsQg).
