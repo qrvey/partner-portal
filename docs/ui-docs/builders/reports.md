@@ -22,13 +22,13 @@ Next, provide a name and a brief description for your report and click **Create*
 ## Editing a Report
 Once your report has been created, you’ll see the main Report Builder interface. In the center, you’ll see a blank canvas, on which you can drag components from the menu on the right. Your report can contain multiple tabs, which can be created, renamed and reordered using the toolbar on the top edge of the canvas.
 
-![4_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/4_reports.png#thumbnail-0)
+![4_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/4a_reports.png#thumbnail)
 
 ## Toolbar
 
 In the toolbar, you will find the options to configure your report tabs and options to add content.
 
-![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail-40)
+![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5a_reports.png#thumbnail-40) 
 
 
 From the toolbar, you will also be able to access the chart builder by clicking on the chart icon. Once you configure and save your chart, this will be added to your page right away. 
@@ -44,7 +44,7 @@ Towards the right side of the toolbar, you will see the download button - you ca
 
 
 ## Data & Configuration
-In order to begin creating charts and filters for your reports, you will need to have configured at least one dataset first. This can be done in the <a href="docs/ui-docs/datasets/data_overview/"> <strong>Data section </strong></a>. 
+In order to begin creating charts and filters for your reports, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/"> <strong>Data section </strong></a>. 
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a tab. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for Shift + Click to add multiple charts at the same time. 
 
@@ -81,7 +81,7 @@ To enable or disable all filters for a group, click on the toggle button or chec
 
 ![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail-40)
 
-To create a new global filter, click the **Add Filter** button and choose your data source. Next, select the column in the drop-down list and select the scope of the filter, i.e. All or Current Tab. See the <a href="docs/ui-docs/builders/dataviews/filters"> <strong>Filtering Data</strong></a> page for further details.
+To create a new global filter, click the **Add Filter** button and choose your data source. Next, select the column in the drop-down list and select the scope of the filter, i.e. All or Current Tab. See the <a href="/docs/ui-docs/builders/dataviews/filters"> <strong>Filtering Data</strong></a> page for further details.
 
 ![12_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/12_reports.png#thumbnail-0)
 
