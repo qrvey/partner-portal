@@ -238,7 +238,7 @@
     ]
   },
   "video-training":{
-    "Short Topic Videos":[
+    "Short Training Videos":[
       "video-training/building-qrvey-sample/connections",
       "video-training/building-qrvey-sample/datasets",
       "video-training/building-qrvey-sample/complex-datasets",
@@ -253,7 +253,7 @@
       "video-training/building-qrvey-sample/webforms-overview",
       "video-training/building-qrvey-sample/automation-overview"
     ],
-    "Training Session":[
+    "Training Sessions":[
       "video-training/analytics/intro-analytics-apps",
       "video-training/analytics/datasets",
       "video-training/analytics/analytic-views",
@@ -264,9 +264,10 @@
       "video-training/admin-center/intro-admin-center"
     ],
     "Release Demos":[
-      "video-training/release/version-5.2",
+      "video-training/release/version-5.5",
+      "video-training/release/version-5.4",
       "video-training/release/version-5.3",
-      "video-training/release/version-5.4"
+      "video-training/release/version-5.2"
     ]
   }
 }
