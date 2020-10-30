@@ -22,13 +22,13 @@ Next, provide a name and a brief description for your report and click **Create*
 ## Editing a Report
 Once your report has been created, you’ll see the main Report Builder interface. In the center, you’ll see a blank canvas, on which you can drag components from the menu on the right. Your report can contain multiple tabs, which can be created, renamed and reordered using the toolbar on the top edge of the canvas.
 
-![4_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/4_reports.png#thumbnail-0)
+![4_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/4a_reports.png#thumbnail)
 
 ## Toolbar
 
 In the toolbar, you will find the options to configure your report tabs and options to add content.
 
-![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5_reports.png#thumbnail-40)
+![5_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/5a_reports.png#thumbnail-40) 
 
 
 From the toolbar, you will also be able to access the chart builder by clicking on the chart icon. Once you configure and save your chart, this will be added to your page right away. 
