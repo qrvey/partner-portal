@@ -35,7 +35,7 @@ Canvas:
 
 Shelf:
 
-![3_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3_CB.png#thumbnail)-80
+![3_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3_CB.png#thumbnail-80)
 
 Once the first column is dropped, a chart will be drawn showing a count of the selected values. You will need to add a second column, depending on the chart. 
 
@@ -65,7 +65,7 @@ Default sorting depends on the data type used for Category:
 * *String/Text*: Label DESC
 * *Date*: Label ASC, sorted by chronological dates from the oldest to the latest.
 
- To sort the categories click on the **ABC** icon. 
+ To sort the categories, click on the **ABC** icon. 
 
 To define max data points, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times. 
 
@@ -73,20 +73,20 @@ To define max data points, set the desired number in the box which will immediat
 
 ## Style Settings
 
-In the styles section, you will be able to change the color of the chart, turn on/off axis labels, and find other options that vary from chart to chart. For this bar chart example, you can change the bar orientation from vertical to horizontal, turn bar shading on/off and add data labels that will show the value for each bar presented in the chart. 
+In the styles section, you will be able to change the color of the chart, turn on/off-axis labels, and find other options that vary from chart to chart. For this bar chart example, you can change the bar orientation from vertical to horizontal, turn bar shading on/off. and add data labels that will show the value for each bar presented in the chart. 
 
 You will also find the x and y axis options.
 
 ![7_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7_CB.png#thumbnail-20)
 
-For both axes you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and for the y-axis you can define the format of the values. 
+For both axes you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and you can define the format of the values for the y-axis. 
 
 ![8_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8_CB.png#thumbnail-20)
 
 ## Layers
 In this section you will be able to set trend and reference lines. 
 
-If you choose to add a trend line, you can then select the type of trend you’d like from the drop-down menu. The preview chart on the left will automatically be updated with your selection.
+If you choose to add a trend line, you can select the type of trend you’d like from the drop-down menu. The preview chart on the left will automatically be updated with your selection.
 
 ![9_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/9_CB.png#thumbnail-20)
 
@@ -107,7 +107,7 @@ In the format section, you will find the option to create a *Small Multiples* vi
 
 ![13_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13_CB.png#thumbnail-20)
 
-Starting in the data panel, drag the column you would like to use for the comparison and drop it in the Small Multiple field. In the chart preview, you will see a chart for each of the values in the selected column. In this example, a date column was used. For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day, Hour, Minute, and Second) where you can select how you’d like the dates in the column to be grouped.
+Starting in the data panel, drag the column you would like to use for the comparison and drop it in the *Small Multiple* field. In the chart preview, you will see a chart for each of the values in the selected column. In this example, a date column was used. For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day, Hour, Minute, and Second) where you can select how you’d like the dates in the column to be grouped.
 
 ![14_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/14_CB.png#thumbnail)
 
@@ -132,12 +132,12 @@ You can edit your chart at any time by clicking on the three-dot menu in the low
 
 Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
 
-Qrvey supports the following table calculations in Table Charts, Bar Charts, Line Charts, and Heatmap:
+Qrvey supports the following table calculations in Table Charts, Bar Charts, Line Charts, and Heatmap.
 
 ## 1. Running Calculations
 These calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data. 
 
-Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* on grouped Table, Bar, and Line charts. 
+Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* in grouped Table, Bar, and Line charts. 
 
 How Qrvey generally describes these running calculations:
 
@@ -164,7 +164,7 @@ Running_[sum, avg, min, max] <br>
 
 A running sum is the summation of a sequence of numbers, adding the current value to the preceding values and is updated each time a new number is added to the series.
 
-The following example shows how Running Sum is calculated:
+The following example shows how *Running Sum* is calculated:
 
 
 <table class="demo">
@@ -209,9 +209,9 @@ The following image is an example of Running Sum in Qrvey:
 
 
 #### 1.2 Running Average
-The running average is the calculation function that moves through a list of values adding the current one to the sum of the preceding values and dividing by the current count of values.
+The running average is the calculation function that moves through a list of values adding the current one to the sum of the preceding values and dividing it by the current count of values.
 
-The following example shows how Running Average is calculated.
+The following example shows how *Running Average* is calculated.
 <br>
 
 
@@ -303,7 +303,7 @@ The following image is an example of Running Minimum in Qrvey:
 #### 1.4 Running Maximum
 The running maximum is the calculation function that moves through a list of values comparing each value to the highest value identified so far and returning the maximum value as it progresses.
 
-The following example shows how Running Maximum is calculated:
+The following example shows how *Running Maximum* is calculated:
 
 <table class="demo">
 	<thead>
@@ -349,7 +349,7 @@ The following image is an example of Running Maximum in Qrvey:
 
 
 ### Creating a Running Calculation
-To add a running calculation, drag a numeric value from your dataset and drop it on the *Columns* field of the chart’s shelf. Then select the dot menu to see the available menu options. Next select *Table Calculations*, to see the available types of calculations and finally select the desired option.
+To add a running calculation, drag a numeric value from your dataset and drop it on the *Columns* field of the chart’s shelf. Then, select the dot menu to see the available menu options. Next, select *Table Calculations* to see the available types of calculations, and finally select the desired option.
 
 ![23_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5cb.png#thumbnail)
 
@@ -368,11 +368,12 @@ The following image is an example of Running Calculations in Bar and Line charts
 ![2gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2gif.gif#thumbnail)
 
 
+
 ## 2. Difference Calculations
 ### 2.1 Difference
 *Difference* is a row-by-row type of calculation that generates the difference between two values (the current value subtracted from the previous value) of an aggregated column.
 
-The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records are added, groups are edited/removed/added, or when max data points are applied. 
+The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records added, groups edited/removed/added, or when max data points are applied. 
 
 The following example shows how *Difference* is calculated:
 
@@ -409,7 +410,7 @@ The following example shows how *Difference* is calculated:
 
 
 
-The following example demonstrates how the difference is calculated between each total quarterly sales.
+The following example demonstrates how the difference between each total quarterly sales is calculated.
 
 ![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail-0)
 
@@ -438,11 +439,9 @@ The following images show an example of *Difference* applied in Line charts.
 
 ![4gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3bgif.gif#thumbnail)
 
-
 The following images show an example of *Difference* applied in Heatmap.
 
-![4.1gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4.1gif.gif#thumbnail) 
-
+![4a_gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3cgif.gif#thumbnail) 
 
 ### 2.2 Percent Difference 
 *Percent Difference* is a row-by-row type of calculation that is calculated based on the following formula:
@@ -453,7 +452,7 @@ At present, the calculation is performed on a table-down basis, i.e. all values 
 
 The calculation is recalculated every time that an event is applied to the chart, such as sorting, filtering, new records are added, groups are edited/removed/added, or when max data points are applied. 
 
-The following example shows how Percent Difference is calculated:
+The following example shows how *Percent Difference* is calculated:
 
 
 
@@ -522,24 +521,24 @@ The following images show an example of *%Difference* applied in Line charts.
 
 ![4bgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4bgif.gif#thumbnail)
 
+
 The following images show an example of *% Difference* applied in Heatmap. 
 
-![4cgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4cgif.gif#thumbnail)
-
+![4bgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4cgif.gif#thumbnail)
 
 ## 3. Partitions 
 Users can define partitions in order to have table calculations performed at each group level or the entire table.
 
 To define partitions in Table Calculations, you need to add a Table Calculation and then go to the “Level” dropdown to define the partition as Table or a selected column that will be used to define the group.  
 
-“Leve;”  defines how to group the calculation (the scope of data it is performed on). The table calculation is performed separately within each partition.
+“Level”  defines how to group the calculation (the scope of data it is performed on). The table calculation is performed separately within each partition.
 
 Partitioning fields break the view up into multiple sub-views (or sub-tables), and then the table calculation is applied to the marks within each such partition. 
-
-The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
-
-![4dgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4dgif.gif#thumbnail)
  
+The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
+ 
+![4dgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4dgif.gif#thumbnail)
+
 ## Discrete vs. Continuous Values
 
 When using xy charts to plot data, the expectations for how categories have to be plotted may differ when the category has a continuous nature. This happens because continuous categories, such as dates and numbers, have the potential of being treated in a discrete manner.
@@ -604,18 +603,17 @@ For both Table and Crosstab you can remove the sorting that was applied to a col
 ![38_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build38.png#thumbnail)
 
 ## Table Subtotal + Grand Totals
-Table Users are currently able to add Totals to aggregated columns down the entire table, essentially giving them what would be a Grand Total of values for the selected column. With the new UI for adding Totals, Table Creators will be able to apply totals by a selected group  in the Table so that they can get Subtotals per group category for the selected aggregated column. With this new method for adding totals, Creators can:
-* Add totals to multiple columns at once 
+Table Users are currently able to add *Totals* to aggregated columns to the entire table, essentially showing what would be a *Grand Total* of values for the selected column. With the new UI for adding *Totals*, Table Creators will be able to apply totals by a selected group  in the Table so that they can get *Subtotals* per group category for the selected aggregated column. With this new method for adding totals, Creators can:
+* Add totals to multiple columns all at once 
 * Add multiple totals to the selected column(s)
 * Add both Grand Totals and Subtotals to the same aggregated columns at once
 * Have different total calculations for Grand Totals and Subtotals using the same aggregated column 
 
-To add totals on a Table, you need to go to Chart Builder’s “Configuration Pane” and find the “Totals” option located in the “General” section. Once a Totals layer is added, you can set up which aggregated columns will be used for the selected totals, and  at which level (partition) the total will be performed - over the Table or a selected Group.
+To add totals to a Table, you need to go to Chart Builder’s “Configuration Pane” and find the “Totals” option located in the “General” section. Once a "Totals" layer is added, you can set up which aggregated columns will be used for the selected totals, and  at which level (partition) the total will be performed - for the Table or a selected Group.
 
  ![9gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/9gif.gif#thumbnail)
 
-
-
+ 
 ## Data Formatting 
 
 **Table charts** support Numeric and Date Formatting in Grouped and Simple Tables.
@@ -646,23 +644,22 @@ There are 3 basic components required to create a condition:
 
 To apply Conditional Formatting, you have to:
 1. Go to the “Format” section located inside the Chart Builder’s configuration pane.  
-2. Click on the “Conditional Formatting” subsection and click on “+Add Condition”.
-3. A condition tab will appear where you can set up your condition. 
-4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
+2. Click on the “Conditional Formatting” subsection and then select “+Add Condition”.
+3. A condition tab where you can set up your condition will appear. 
+4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart, as long as the condition criteria are met. 
 
 
-Currently, the Conditional Formatting is supported by Table Charts with more charts coming soon. 
+Currently, the Conditional Formatting is supported by *Table Charts* with more chart options coming soon. 
 
 ![12gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12gif.gif#thumbnail)
 
 
 ## Chart Themes 
 ### 1. Text Styles
-Create customized themes for your analytics that can be used to replace Qrvey’s default theme settings. With Text Styles, you can change the default global Qrvey text styles shown in charts to something that fits your needs.
+Create customized themes for your analytics that can be used to replace Qrvey’s default theme settings. With Text Styles, you can change the default global Qrvey text styles shown in charts to something that better fits your needs.
 
-To create custom themes, just go to the “Style Themes” button that can be found in the “Analyze” section of the dataset, and inside Report and Page Builders. 
+To create custom themes, just click on the “Style Themes” button, that can be found in the “Analyze” section of the dataset or inside Report and Page Builders. 
 
-Next, create a new theme that will be listed in all of your applications. That newly created theme will be reflected on all charts in the origin application. If you select “
-Use this theme in all applications”, this same theme will be applied across all applications in your Qrvey account.
+Next, create a new theme that will be listed in all of your applications. That newly created theme will be reflected in all charts of the origin application. If you select “Use this theme in all applications”, this same theme will be applied to all applications in your Qrvey account.
 
 ![13gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13gif.gif#thumbnail)
