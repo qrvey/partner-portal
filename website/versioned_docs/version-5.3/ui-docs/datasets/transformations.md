@@ -24,7 +24,7 @@ When creating a transformation, you will be able to decide if you want to update
 ![4_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4_transformation.png#thumbnail)
 
 
-## Transformations with Multiple Data Sources
+### Transformations with Multiple Data Sources
 When working with joined Data Sources you will have different workspaces. One for each Data Source and another one for the Join Output (Post-join Transformations).
 
 Data Source transformations are applied before joining the Data. This can be either used to fix the data so that it can be joined or even to improve performance by transforming a small Data Source without having to go through all joined records.
@@ -35,12 +35,20 @@ Join Output Transformations are applied after joining the Data. In this workspac
 
 ## Transformation Testing
 You will have the chance to test transformations before loading the actual data. This will let you verify that all of your transformations are working as expected.
-You just have to select your Data Source, fill the input parameters and press “Test” to get the results.
+
+You just have to select your Data Source, fill in the input parameters and press **Test** to get the results.
 
 ![6_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/6_transformation.png#thumbnail)
 
 
-## Formula Transformation
+## Applying Transformations to the Data
+In order to apply the transformations to your data, you will need to apply the changes to your Dataset first. If you want to see those transformations in existing data, a reload is required.
+
+**If no reload is done, Transformations will be applied only to new records**, for instance, when a Data Sync is initiated.
+
+## General Purpose Transformations
+### Formula Transformation
+
 This transformation will let you calculate values by writing a custom formula to enhance your data. Formulas are written in Javascript, however, there’s a list of the available functions as well as an autocomplete feature to assist you.
 
 ![7_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/7_transformation.png#thumbnail)
@@ -50,8 +58,26 @@ This transformation will let you calculate values by writing a custom formula to
 
 ![8_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/8_transformation.png#thumbnail)
 
+## Text Transformations
+### Trim Text
+This transformation will allow you to remove the specified characters at the start or the end of a text in a column.
 
-## Applying Transformations to the Data
-In order to apply the transformations to your data, you will need to apply the changes to your Dataset first. If you want to see those transformations in existing data, **a reload is required**.
+![9_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/9_transformation.png#thumbnail)
 
-**If no reload is done, Transformations will be applied only to new records**, for instance, when a Data Sync is initiated.
+
+### Uppercase
+This transformation will allow you to make the text in one or more columns uppercase.  Standardizing the case can help when analyzing data, grouping and creating charts.
+
+![10_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/10_transformation.png#thumbnail)
+
+### Lowercase
+This transformation will allow you to make the text in one or more columns lowercase.  Standardizing the case can help when analyzing data, grouping and creating charts.
+
+![11_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/11_transformation.png#thumbnail)
+
+## Numeric Transformations
+### Round
+This transformation will allow you to round one or more numeric columns to the nearest integer.
+
+![12_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/12_transformation.png#thumbnail)
+

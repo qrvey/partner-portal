@@ -16,11 +16,11 @@ To begin building a page, click the page builder icon in the left navigation bar
 
 ## **Canvas Layout**
 
-![1_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1_pages.png#thumbnail)
+![1_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1a_pages.png#thumbnail)
 
 The top of the canvas is divided into three sections: the main menu, the toolbar, and the page status with publishing options. 
 
-![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2_pages.png#thumbnail)
+![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2a_pages.png#thumbnail)
 
 The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
 
@@ -31,14 +31,14 @@ You can arrange every tab’s width by clicking on the resize button located to 
 
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
 
-![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4_pages.png#thumbnail-80)
+![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4a_pages.png#thumbnail-80) 
 
 <br>
 
 ## **Toolbar**
 In the toolbar, you will find the options to configure your page and options to add content.
 
-![1.5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.5_pages.png#thumbnail-60)
+![1.5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.5a_pages.png#thumbnail-60)
 
 
 You can choose the page resolution that will fit your page viewers best. You can change this setting at any time keeping in mind that this affects the sizes of all pages, and when switching to a smaller resolution, some objects may be repositioned which is an action that cannot be reverted. 
@@ -58,7 +58,7 @@ Towards the right side of the toolbar, you will see the download button - you ca
 
 
 ## **Data & Configuration**
-In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
+In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
