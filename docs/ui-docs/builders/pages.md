@@ -57,7 +57,7 @@ Towards the right side of the toolbar, you will see the download button - you ca
 
 
 ## **Data & Configuration**
-In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
+In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/"> <strong>Data Section</strong></a>.  
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
