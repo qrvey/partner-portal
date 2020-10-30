@@ -8,9 +8,7 @@ Release Date: 2020-10-30
 
 ## New Features and Enhancementes 
 
-Click here to access demo videos on some released features.
-
-## Data Preparation
+### Data Preparation
 
 * <a href="docs/ui-docs/datasets/transformations/"><strong>QV-10897 - Transformations - Trim Text</strong></a>: With this transformation, you can now remove the specified characters at the start or at the end of the text in a column.
 
@@ -24,7 +22,7 @@ Click here to access demo videos on some released features.
 
 <br>
 
-## Data Analysis & Automation
+### Data Analysis & Automation
 
 * <a href="docs/ui-docs/dataviews/chart-builder/"><strong>AN-10272 - Table Calculations on Heatmap</strong></a>: You can now use the Table Calculations - Difference and Percent Difference in Heatmap Charts. You can get the difference and percent difference between the aggregated value in one row and the same value in another row.
 
@@ -46,7 +44,7 @@ Click here to access demo videos on some released features.
  
 <br>
  
-## Admin Center
+### Admin Center
 
 * <a href="docs/admin/admin-sections-platform/"><strong>ADMIN-3178 - Security Setup in Admin Center</strong></a>: You can now load your data in a single dataset, regardless of the “owner” of each record. By having the data automatically filtered, users get the information you authorized for them to see.
 
