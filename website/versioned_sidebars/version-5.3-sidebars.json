@@ -108,17 +108,21 @@
     ],
     "Embedding": [
       "version-5.3-embedding/embedding-intro",
-      "version-5.3-embedding/widgets/widget-intro",
-      "version-5.3-embedding/api/api-intro",
-      "version-5.3-embedding/widgets/widget-embedding-using-cookies",
       {
         "type": "subcategory",
-        "label": "Data Collection Widgets",
+        "label": "Widgets",
         "ids": [
-          "version-5.3-embedding/widgets/data-sources/widget-dataconnectors",
-          "version-5.3-embedding/widgets/data-sources/datasets-widget",
-          "version-5.3-embedding/widgets/data-sources/widget-datalinks",
-          "version-5.3-embedding/widgets/data-sources/widget-webforms"
+          "version-5.3-embedding/widgets/widget-intro",
+          "version-5.3-embedding/widgets/widget-embedding-using-cookies"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "App Building Widgets",
+        "ids": [
+          "version-5.3-embedding/widgets/app-building/widget-page-view",
+          "version-5.3-embedding/widgets/app-building/widget-page-builder",
+          "version-5.3-embedding/widgets/app-building/widget-report-builder"
         ]
       },
       {
@@ -132,11 +136,12 @@
       },
       {
         "type": "subcategory",
-        "label": "App Building Widgets",
+        "label": "Data Collection and Forms",
         "ids": [
-          "version-5.3-embedding/widgets/app-building/widget-report-builder",
-          "version-5.3-embedding/widgets/app-building/widget-page-builder",
-          "version-5.3-embedding/widgets/app-building/widget-end-user"
+          "version-5.3-embedding/widgets/data-sources/widget-webforms",
+          "version-5.3-embedding/widgets/data-sources/widget-dataconnectors",
+          "version-5.3-embedding/widgets/data-sources/datasets-widget",
+          "version-5.3-embedding/widgets/data-sources/widget-datalinks"
         ]
       },
       {
@@ -150,6 +155,7 @@
         "type": "subcategory",
         "label": "API References",
         "ids": [
+          "version-5.3-embedding/api/api-intro",
           "version-5.3-embedding/api/api-tutorial"
         ]
       }

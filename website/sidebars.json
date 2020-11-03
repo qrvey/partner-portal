@@ -109,17 +109,21 @@
     ],
     "Embedding": [
       "embedding/embedding-intro",
-      "embedding/widgets/widget-intro",
-      "embedding/api/api-intro",
-      "embedding/widgets/widget-embedding-using-cookies",
       {
         "type": "subcategory",
-        "label": "Data Collection Widgets",
+        "label": "Widgets",
         "ids": [
-          "embedding/widgets/data-sources/widget-dataconnectors",
-          "embedding/widgets/data-sources/datasets-widget",
-          "embedding/widgets/data-sources/widget-datalinks",
-          "embedding/widgets/data-sources/widget-webforms"
+          "embedding/widgets/widget-intro",
+          "embedding/widgets/widget-embedding-using-cookies"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "App Building Widgets",
+        "ids": [
+          "embedding/widgets/app-building/widget-page-view",
+          "embedding/widgets/app-building/widget-page-builder",
+          "embedding/widgets/app-building/widget-report-builder"
         ]
       },
       {
@@ -133,11 +137,12 @@
       },
       {
         "type": "subcategory",
-        "label": "App Building Widgets",
+        "label": "Data Collection and Forms",
         "ids": [
-          "embedding/widgets/app-building/widget-report-builder",
-          "embedding/widgets/app-building/widget-page-builder",
-          "embedding/widgets/app-building/widget-end-user"
+          "embedding/widgets/data-sources/widget-webforms",
+          "embedding/widgets/data-sources/widget-dataconnectors",
+          "embedding/widgets/data-sources/datasets-widget",
+          "embedding/widgets/data-sources/widget-datalinks"
         ]
       },
       {
@@ -151,6 +156,7 @@
         "type": "subcategory",
         "label": "API References",
         "ids": [
+          "embedding/api/api-intro",
           "embedding/api/api-tutorial"
         ]
       }

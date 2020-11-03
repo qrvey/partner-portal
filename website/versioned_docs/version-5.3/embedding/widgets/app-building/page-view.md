@@ -1,7 +1,8 @@
 ---
-id: widget-end-user
-title: End User
-sidebar_label: End User
+id: version-5.3-widget-page-view
+title: Page View
+sidebar_label: Page View
+original_id: widget-page-view
 ---
 
 <div style="text-align: justify">
