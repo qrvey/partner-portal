@@ -128,7 +128,7 @@ The “Go to URL” action in maps has an additional setting called “Multi-Lev
 #### Filter By
 The Filter By action on a bar chart allows users to filter the data by clicking on a data-point (Bar). For example, you may choose one of the 3 categories, and that action filters the chart according to the selected value.
 
-![16_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/16.png#thumbnail)
+![16_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/16.png#thumbnail-40)
 
 
 Based on the creator's configuration, the filter by action could apply to just the chart where you clicked or the full page filtering others charts on the same page. If there is more than one action specified in the chart, a contextual menu will appear when users click on a bar showing all the available page actions.
@@ -136,7 +136,7 @@ Based on the creator's configuration, the filter by action could apply to just t
 #### Go to URL
 The Go-to URL action on a bar chart redirects users to an external page when clicking on a data-point (bar).
 
-![17_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/17.png#thumbnail)
+![17_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/17.png#thumbnail-40)
 
 
 If there is more than one action specified in the chart, a contextual menu will appear when users click on a bar showing all the available page actions.
@@ -144,28 +144,28 @@ If there is more than one action specified in the chart, a contextual menu will 
 #### Page Drill
 The Page Drill action on a bar chart allows users to interact with the chart’s data-point (bars) by clicking on it, and then the action will redirect them to the targeted page defined by the creator. If there is more than one action specified in the chart, a contextual menu will appear when users click on a bar showing all the available page actions.
 
-![18_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/18.png#thumbnail)
+![18_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/18.png#thumbnail-40)
 
 
 ### Line Chart
 #### Filter By
 The Filter By action on a line chart allows users to filter the data by clicking on a data-point (dots). For example, you may choose one of the values, and that action filters the chart according to the selected value.
 
-![19_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/19.png#thumbnail)
+![19_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/19.png#thumbnail-40)
 
 Based on creator’s configuration, the filter by action could apply to just the chart where you clicked or the full page filtering others charts on the same page. If there is more than one action specified in the chart, a contextual menu will appear when users click on a dot showing all the available page actions.
 
 #### Page Drill
 The Page Drill action on a line chart allows users to interact with the chart’s data point (dots) by clicking on it, and then the action will redirect them to the targeted page defined by the creator. If there is more than one action specified in the chart, a contextual menu will appear when users click on the dots showing all the available page actions.
 
-![20_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/20.png#thumbnail)
+![20_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/20.png#thumbnail-40)
 
 
 ### Symbol Chart
 #### Page Drill
 The Page Drill action on a symbol chart allows users to interact with the chart’s data point (symbol) by clicking on it, and then the action will redirect them to the targeted page defined by the creator. If there is more than one action specified in the chart, a contextual menu will appear when users click on the symbols showing all the available page actions.
 
-![21_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/21.png#thumbnail) 
+![21_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/21.png#thumbnail-40) 
 
 
 
