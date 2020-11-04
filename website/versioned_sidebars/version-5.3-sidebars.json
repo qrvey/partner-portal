@@ -225,6 +225,9 @@
       "version-5.3-release-notes/release-mar-2019",
       "version-5.3-release-notes/release-feb-2019",
       "version-5.3-release-notes/release-jan-2019"
+    ],
+    "Known Issues": [
+      "version-5.3-release-notes/known-issues"
     ]
   },
   "version-5.3-tutorials": {

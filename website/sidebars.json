@@ -226,6 +226,9 @@
       "release-notes/release-mar-2019",
       "release-notes/release-feb-2019",
       "release-notes/release-jan-2019"
+    ],
+    "Known Issues": [
+      "release-notes/known-issues"
     ]
   },
   "tutorials":{
