@@ -8,7 +8,7 @@ original_id: widget-page-view
 <div style="text-align: justify">
 
 
-The End-User widget allows users to access one or more pages of an application created from the Page Builder Widget. Pages may contain embedded reports and webforms, as well as other static content.
+The Page View widget (previously known as “End User widget”) allows users to access one or more pages of an application created from the Page Builder Widget. Pages may contain embedded reports and webforms, as well as other static content.
 
 ## HTML Tag And Launcher
 
