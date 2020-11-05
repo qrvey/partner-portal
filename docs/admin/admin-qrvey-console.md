@@ -8,13 +8,13 @@ sidebar_label: Administering Qrvey Composer
 
 Inside the Admin Center Application, there are some sections related to the administration of an instance of Qrvey Composer. These sections are: 
 
-* <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.7an39u628y8o">User Management </a>
-  * <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.9ngxyrywwhmc">Users</a>
-  * <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.jxwvy98fgxow"> Authentication </a>
-  * <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.gqm3sktpkpxg"> Data Security </a>
-* <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.58b8yziloyjv"> Customization </a>
-  * <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.ozc4br7pcf75"> General Settings </a>
-  * <a href="https://docs.google.com/document/d/1joqWiV-_MERfQEovCOl3XYGleIGBXvSFSXGhdL80raM/edit#heading=h.mt74rbmyej7m"> Features </a>
+* <a href="#user-management">User Management </a>
+  * <a href="#users">Users</a>
+  * <a href="#authentication"> Authentication </a>
+  * <a href="#data-security"> Data Security </a>
+* <a href="#customization"> Customization </a>
+  * <a href="#general-settings"> General Settings </a>
+  * <a href="#features"> Features </a>
 
 
 ##  User Management
