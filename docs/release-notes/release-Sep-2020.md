@@ -4,8 +4,6 @@ title: Qrvey Version 5.5
 sidebar_label: September 2020
 ---
 <div style="text-align: justify">
-Release Date: 2020-09-30
-
 
 ## New Features & Enhancements
 
