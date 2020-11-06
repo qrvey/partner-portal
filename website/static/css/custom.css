@@ -230,6 +230,11 @@ img[src*="#thumbnail-20"] {
     text-decoration-color: var(--primary-color);
 }
 
+.docsContainer a{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
