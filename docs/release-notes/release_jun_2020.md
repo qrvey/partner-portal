@@ -4,18 +4,11 @@ title: Qrvey Version 5.2
 sidebar_label: June 2020
 ---
 <div style="text-align: justify">
-Release Date: 2020-07-03
-
  
-
+## New Features and Enhancements
 <a href="/docs/next/video-training/release/version-5.2"> <strong>Click here</strong></a> for demo videos on some of the released features.
 
 ## New Features
-
-### Admin
-
-* <a href="/docs/admin/admin-sections-platform/#admin-sections-platform"> <strong>ADMIN-2601 - OpenID Authentication: </strong></a>
-We added a feature to give the customers a way to use their own authentication methods like Oauth, OpenID, or SAML, when using the Qrvey platform.
 
 ### Data Preparation 
 *  <a href="/docs/ui-docs/datasets/datasets"> <strong>QV-10499 - Data Syncs for Joined Data Sources:</strong></a> 
@@ -25,9 +18,15 @@ We added a feature to give the customers a way to use their own authentication m
 
 * <strong> QV-10713 - Reusable Indexes:</strong></a> Developers can now create an index or data repository using an API call. These indexes will be available for all users in the Qrvey Composer in an Index Repository. Adding or updating records can be done after creating the indexes. Users can also define transformations so when posting data these transformations are applied.
 
+* <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-10495 - Auto-Save in Datasets:</strong></a> Once data has been loaded to a dataset, the creator can come back to make changes to their dataset configuration or data. We improved this by adding an auto-saved feature so that the creator won’t lose the progress made each time he leaves the section before applying the changes or reloading the data. 
 
 
-### Analytics
+* <strong>QV-10526 - Data Syncs Improved Scheduling Options:</strong></a> We improved the capabilities available when setting up scheduling options to sync data. Now it’s possible to sync the data by minutes, hours, days, weeks, and months. 
+
+
+
+
+### Data Analysis & Automation
 
 * <a href="/docs/ui-docs/dataviews/chart-builder/#chart-builder"> <strong> AN-9526 - Running Aggregate Table Calculations:</strong></a>  We are adding a series of table calculations and we started with Running Aggregates for grouped tables. This includes Running Average and Running Sum. Running Min/Max will be included in our next version.
 
@@ -37,8 +36,6 @@ We added a feature to give the customers a way to use their own authentication m
 
 * <strong>AN-9832 - Symbol Chart Unaggregated Values:</strong></a> We Added the “No Aggregate” option in the Value column aggregates dropdown menu of Symbol Charts so that Creators will be able to select this option to not aggregate their value column and create a Dot Plot visualization. 
 
-
-### Automation
 
 * <a href="/docs/ui-docs/automation/tokens/#tokens"> <strong> AT-6187 - System Tokens - “Last Period” Tokens:</strong></a> We enhanced our system tokens available in Flows by adding more options to cover previous time periods such as Last Year/Quarter/Month/Week. 
 
@@ -52,24 +49,24 @@ We added a feature to give the customers a way to use their own authentication m
 
 * <a href="/docs/ui-docs/automation/triggers/#triggers"> <strong>AT-6344 - Update Data Trigger for Datasets:</strong></a> We added the option to show the creator a single list of Datasets and Web Forms to execute a flow every time a Dataset or Web Form is updated with new records or data sources.
 
-## Other Enhancements
-
-* <a href="/docs/ui-docs/datasets/datasets/"> <strong>QV-10495 - Auto-Save in Datasets:</strong></a> Once data has been loaded to a dataset, the creator can come back to make changes to their dataset configuration or data. We improved this by adding an auto-saved feature so that the creator won’t lose the progress made each time he leaves the section before applying the changes or reloading the data. 
-
-
-* <strong>QV-10526 - Data Syncs Improved Scheduling Options:</strong></a> We improved the capabilities available when setting up scheduling options to sync data. Now it’s possible to sync the data by minutes, hours, days, weeks, and months. 
-
-
-*  <strong>ADMIN-2253 - Content Deployment Deploying to Existing Applications:</strong></a> After improving our Content Deployment public APIs, we integrated with the UI and users are now able to deploy to existing applications. 
-
-
-* <strong>ADMIN-2254 - Content Deployment Deploying to Selected Users:</strong></a> We implemented an option for administrators to be able to select specific users when deploying to existing applications.
  
 * <strong>AT-5791 - Builders - Select Multiple Charts to Add to Canvas:</strong></a> We implemented the option to let creators add multiple charts by selecting them from the side panel and dragging them to the canvas all at once. 
 
 *  <strong>AT-5776 - User Groups - Send Email Action:</strong></a> User groups created in User Management can now be added in Flows in the Send Email action, in the recipient’s field. 
 
 * <strong>AT-6437 - Page Builder - Responsive Tabs:</strong></a> We improved the web component of Page Tabs in End-user in order to give a better user experience, mainly for the responsive view.
+
+### Admin Center
+
+* <a href="/docs/admin/admin-sections-platform/#admin-sections-platform"> <strong>ADMIN-2601 - OpenID Authentication: </strong></a>
+We added a feature to give the customers a way to use their own authentication methods like Oauth, OpenID, or SAML, when using the Qrvey platform.
+
+
+*  <strong>ADMIN-2253 - Content Deployment Deploying to Existing Applications:</strong></a> After improving our Content Deployment public APIs, we integrated with the UI and users are now able to deploy to existing applications. 
+
+
+* <strong>ADMIN-2254 - Content Deployment Deploying to Selected Users:</strong></a> We implemented an option for administrators to be able to select specific users when deploying to existing applications.
+
 
 ## General Tweaks and Bug Fixes
 
@@ -94,7 +91,10 @@ We added a feature to give the customers a way to use their own authentication m
 
 
 
-## Known Issues
+
+
+
+### Known Issues
 
 
 * **QV-10089 - Dataset Loading in Safari:** Data page isn't loading immediately in Safari. The site’s frame loads but the content appears with a 10-second delay.
