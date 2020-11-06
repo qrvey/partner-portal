@@ -10,7 +10,7 @@ Release Date: 2020-08-31
 Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</strong></a> for demo videos of some released features.
 
 
-## Data Preparation
+### Data Preparation
 * **QV-10991 - Cascading Syncs**: For a Dataset that uses other Datasets as a Data source, we added the option to trigger the sync process when the source Dataset is updated.  This is an alternative to using time-scheduled sync or clicking the “Sync Now” button. The Dataset will be automatically updated when the source is updated.
 
 * **QV-11248 - Create a Push Dataset from an API Call**: We added the option to let Developers be able to create datasets from API Calls. These Datasets will be available and editable from the UI enabling the following: Renaming dataset, hiding columns, changing aliases. These Datasets are going to be populated by pushing data through API calls.
@@ -23,7 +23,7 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 
 
 
-## Data Analysis and Automation
+### Data Analysis and Automation
 
 * **AN-9845 - Table Calculations - Percent Difference**: We added Percent Difference to Tables so that creators can get the percent difference between the aggregated value in one partition and the same value in another partition.
 
@@ -40,7 +40,7 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 * <a href="docs/ui-docs/builders/pages/"> <strong>AT-6601 - Page Tabs Resizing</strong></a>: We added three ways to resize the width of page tabs; creators and end-users can now visualize the complete name of a tab or adjust its width according to their needs.
 
 
- ## Admin Center
+### Admin Center
 
 
 * <a href=""> <strong> ADMIN-2700 - Sharing Applications</strong></a>: Creators are now able to share applications and collaborate on content creation with other creators. Applications can be made public  for all the users in the system or shared with specific people. 
