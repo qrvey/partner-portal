@@ -4,7 +4,6 @@ title: Qrvey Version 5.4
 sidebar_label: August 2020
 ---
 <div style="text-align: justify">
-Release Date: 2020-08-31
 
 ## New Features & Enhancements
 Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</strong></a> for demo videos of some released features.
