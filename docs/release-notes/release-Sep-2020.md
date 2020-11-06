@@ -11,7 +11,7 @@ Release Date: 2020-09-30
 
 Click <a href="/docs/next/video-training/release/version-5.5"> <strong>here</strong></a> to access demo videos of some released features.
 
-## Data Preparation
+### Data Preparation
 
 * <a href="docs/ui-docs/datasets/transformations"> <strong> QV-10808 - Transformations UI</strong></a>: We added a feature to let users create, manage, and apply transformations to a Dataset. This first transformation UI version allows JavaScript statements to run, has a formula editor, a list of columns, a list of functions and the output section. Creators can transform the data while it’s getting loaded to Elasticsearch. We are also allowing users to test transformations without having to load all of the data.
 
@@ -30,7 +30,7 @@ Click <a href="/docs/next/video-training/release/version-5.5"> <strong>here</str
 
 
  
-## Data Analysis & Automation
+### Data Analysis & Automation
 * <a href="/docs/ui-docs/dataviews/chart-builder/"> <strong>AN-10432 - Table Calculations - Difference</strong></a>:
  We added a feature to let creators use “Difference” as Table Calculations on Bar and Line Charts. Creators can get the difference between the aggregated value in one partition and the same value in another partition. 
 
@@ -50,7 +50,7 @@ Click <a href="/docs/next/video-training/release/version-5.5"> <strong>here</str
 * <a href="docs/ui-docs/automation/send-actions/"> <strong>AT-6854 - Flows - Signature in Send Email</strong></a>: We added an option in the email action to include or exclude a signature, so creators should be able to decide if they want to include the company’s email signature as part of the email.
 
 
-## Admin Center
+### Admin Center
 * <a href="/docs/admin/elasticsearch-management/"> <strong> ADMIN-2766 - ES Management - Automatic Adjustments</strong></a>: Automatic Adjustment settings are also available in the Infrastructure section. Admins are now able to select if they want to perform automatic adjustments with Qrvey automatically adding more Elasticsearch servers in case space is running out.
 
 * <a href="/docs/admin/elasticsearch-management/"> <strong> ADMIN-2767 - ES Management - Email Notifications</strong></a>: We enabled email options for different events that can happen as a result of ES Adjustments. Admins are able to choose which event-related email they want to receive for which a valid email address must be provided.
