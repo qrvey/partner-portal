@@ -4,7 +4,7 @@ title: Qrvey Version 5.0
 sidebar_label: March 2020
 ---
 <div style="text-align: justify">
-Release Date: 2020-03-31
+Qrvey 5.0 - 2020-03-31
 
 ## New Features & Enhancements
 
