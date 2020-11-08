@@ -5,41 +5,14 @@ sidebar_label: March 2019
 ---
 <div style="text-align: justify">
 
-Release Date: 2019-03-30
-## New Features
+Qrvey 3.12   2019-03-30
+## New Features and Enhancements
 
-### Admin Portal
-
-*   **Sharing Applications - Reports.** Admins can now share reports and it's content from one server to another.
-
-*   **Section Customization.** Admins can enable or disable all the general sections in the maker platform.
-
-
-### Analytics 
-
-*   **Bucketed Columns.** Buckets can be referred to as categories that users create to group values. They can be created using any date, text or numeric values. When a bucket is created it generates a new column that is added to the dataset as a "Bucketed Column"
-
-*   **Data Links - Box and Whiskers Chart.** The use of data links is enabled for Box and Whiskers chart.
-
-*   **Quiz Analytics - New and improved Summary View for Quiz Analytics**. Users can see the answer breakdown by score, results, and correct/incorrect answers. They can also visualize the aggregates for correct answers for each field.
-
-*   **End User Filters.** Filtering for End Users is available. They can now apply global, tab and panel filters.
-
-
-### Automation
-
-*   **Workflows Widget.** The new Workflows V2 widget was released 12/14/2018. Workflows V1 is now deprecated. The new version contains New Data, Update Data, Scheduling and Webhook Triggers, If Field Conditions, Quiz Conditions, Send Email/SMS Action,  Send to Webhook Actions, Search/Insert/Update/Delete Record Actions, Submit/Post/Get/Reload Data Actions, User Defined/System/Data Tokens.
-
-*   **Tokens - User Defined Tokens.** User Defined Tokens are variables that can be created and defined by users and are available in the context of Workflows.
-
-*   **Tokens - Add/Manage Tokens.** Tokens can be added and managed through this tokens widget available in the context of Workflows.
-
-
-### Data Router 
+### Data Preparation 
 
 *   **Metadata Creator (UI): Text Transformations.** TemplateText, splitText, replaceText, trimText transformations were added to Metadata Creator
 
-*   **Metadata - Draft Mode**. You can  now publish and unpublish metadata, and can fully modify any unpublished metadata. This provides a convenient way to test data, as users don't have to create and delete metadata entries for each test.
+*   **Metadata - Draft Mode**: You can  now publish and unpublish metadata, and can fully modify any unpublished metadata. This provides a convenient way to test data, as users don't have to create and delete metadata entries for each test.
 
 *   **Metadata - New Custom Javascript Functions.** New Javascript custom functions were added by request from SCC.
 *   **Metadata - Storing Custom Function's Returning Value.**	 We couldn't use custom functions value for destinations. Now we can use this value and store it as a new column in flat data transformations
@@ -51,9 +24,33 @@ Release Date: 2019-03-30
 *   **Metadata - ToFixed transformation.** We created a new transformation to set a limit for decimal numbers.
 
 
-### Web Forms
-
 *   **Web Forms - Rich Text Formatting.** RTF option was added to field descriptions and headlines
+
+
+### Data Analysis & Automation 
+
+*   **Bucketed Columns.** Buckets can be referred to as categories that users create to group values. They can be created using any date, text or numeric values. When a bucket is created it generates a new column that is added to the dataset as a "Bucketed Column"
+
+*   **Data Links - Box and Whiskers Chart.** The use of data links is enabled for Box and Whiskers chart.
+
+*   **Quiz Analytics - New and improved Summary View for Quiz Analytics**. Users can see the answer breakdown by score, results, and correct/incorrect answers. They can also visualize the aggregates for correct answers for each field.
+
+*   **End User Filters.** Filtering for End Users is available. They can now apply global, tab and panel filters.
+
+*   **Workflows Widget.** The new Workflows V2 widget was released 12/14/2018. Workflows V1 is now deprecated. The new version contains New Data, Update Data, Scheduling and Webhook Triggers, If Field Conditions, Quiz Conditions, Send Email/SMS Action,  Send to Webhook Actions, Search/Insert/Update/Delete Record Actions, Submit/Post/Get/Reload Data Actions, User Defined/System/Data Tokens.
+
+*   **Tokens - User Defined Tokens.** User Defined Tokens are variables that can be created and defined by users and are available in the context of Workflows.
+
+*   **Tokens - Add/Manage Tokens.** Tokens can be added and managed through this tokens widget available in the context of Workflows.
+
+
+
+
+### Admin Center
+
+*   **Sharing Applications - Reports.** Admins can now share reports and it's content from one server to another.
+
+*   **Section Customization.** Admins can enable or disable all the general sections in the maker platform.
 
 
 ### **General Tweaks and Bug Fixes**
@@ -96,41 +93,3 @@ Release Date: 2019-03-30
 
 *   **Database Connections - MS SQL Editing.** When these types of datasets were loaded, and then edited, once the changes were saved the datasets did not work properly. 
 
-
-### **Known Issues**
-
-*   **Lookup Field - SQL Connection.** When the SQL connection is deleted, and it's being used in a lookup, there is no error shown but the lookup field stops working. 
-
-*   **Datasets - Database Connection -  Oracle Tables.** When setting up the connection for Oracle the Tables/View is not showing in the connection modal. 
-
-*   **Datasets - MS SQL Preparing Data.** Preparing data stage has performance issues when there are more than 1M records. 
-
-*   **Web Forms - Survey - Pausing Surveys.** When a maker pauses a survey that has existing answers the button remains in "Pausing..." state but the web form is not paused. 
-
-*   **Web Forms - Deleting Answers**. When a user executes a query trying to delete all answers from a web form, the application takes some time to completely delete all of the answers. The response time depends on the size of the web form dataset and the amount of records. 
-
-*   **Custom View - Pie Chart - Labels.** When the values of a wedge are very low the labels from different wedges that are too close together and very thing might overlap.  
-
-*   **Crosstab - Totals.** Columns are showing only 25 rows of "Grand Totals" the rest does not show. 
-
-*   **Custom View - Chart Editor - Numeric Settings.** When the user changes chart numeric setting, the labels overlap the axis. 
-
-*   **Data Links - Filters Panel.** When setting a filter using linked columns, the Total Record count shows the overall total for the entire dataset, not the filtered total of records. 
-
-*   **Data Links - Filters.** Filter record counter is not showing total filtered records, but total records in the dataset. 
-
-*   **Chart Builder - Numeric Columns.** When makers change the numeric settings the vertical axis overlaps the labels 
-
-*   **Datasets - Elasticsearch Filtering.** Filter by Value option is case sensitive when the user performs a search  
-
-*   **Workflows - New Data Trigger.** New Data trigger is not working with ES Live Connection 
-
-*   **Web Forms - Branching.** Branch questions are not shown for "Other" answers in Multiple Choice field. 
-
-*   **Tokens - Alias**. Alias set by users is not showing in the tokens suggestion box. 
-
-*   **Quiz Analytics - Exports.** The new panels for score, results and correct/incorrect answers are not included in the export. 
-
-*   **Web Form Analytics - Archived Fields.** Archived fields are showing in tabular view  
-
-*   **Web Forms Analytics - Branching.** Branch fields for Lookup are not showing in Tabular View
