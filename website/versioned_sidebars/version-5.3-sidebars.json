@@ -241,6 +241,7 @@
     "FAQs": [
       "version-5.3-faqs/faqs-intro",
       "version-5.3-faqs/aws-faqs",
+      "version-5.3-faqs/data-security-faqs",
       "version-5.3-faqs/publishing-faqs",
       "version-5.3-faqs/ask-us"
     ]

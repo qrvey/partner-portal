@@ -15,7 +15,7 @@ Data load can be done sequentially by using batches of folders, in a particular 
 
 Before you can start, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-  * Dataload Endpoint
+  * Postdata Url
   * API Key 
 * A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
 
@@ -82,7 +82,7 @@ Manifest file will let the Data Load know which files need to be processed insid
 
 ## Batch Manager API
 
-* Url: {{dataloadendpoint}}/dataload/batchManager/start
+* Url: {{PostdataURL}}/batchManager/start
 * Method: POST
 * Params:
 	
@@ -91,7 +91,7 @@ Manifest file will let the Data Load know which files need to be processed insid
 	<thead>
 	<tr>
 		<th>Required</th> 
-		<th>Name</th>
+		<th>Property</th>
         <th>Type</th>
         <th>Description</th>
 	</tr>
@@ -123,7 +123,7 @@ Manifest file will let the Data Load know which files need to be processed insid
 
 cURL example:
 ```
-curl --location --request POST '{{dataloadendpoint}}/dataload/batchManager/start?resetAllBatches=true' \
+curl --location --request POST '{{PostdataURL}}/dataload/batchManager/start?resetAllBatches=true' \
 --header 'x-api-key: {{apikey}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -131,8 +131,3 @@ curl --location --request POST '{{dataloadendpoint}}/dataload/batchManager/start
     "S3_PATH_NEXT": "{{nextBatch}}"
 }'
 ```
-
-
-## API Reference
-
-https://documenter.getpostman.com/view/3547969/T1LHJVyE

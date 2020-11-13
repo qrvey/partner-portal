@@ -24,7 +24,9 @@ original_id: faqs-intro
 
 **Q: Where can I find my API key?**
 
-**A:** You received an email when your environment was first set up. That email has all the information about your domain and it also contains your unique API key to access Qrvey’s widgets and APIs.
+**A:** You received a welcome email when your environment was first set up. That email has all the information about your domain and it also contains your unique API key to access Qrvey’s widgets and APIs.
+
+![1_faq](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/General/general_faq1.png)
 
 Please contact us at: help@qrvey.com if you cannot locate the email. 
 
@@ -34,7 +36,7 @@ Please contact us at: help@qrvey.com if you cannot locate the email.
 
 **A:** App id, or application id, is the unique identifier of the Qrvey “application” that houses your webforms, datasets, visualizations, etc. If you go to your Qrvey Composer and enter any application, you can get that application’s id from the url, following the “application” key:
 
-![1_faq](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/faq-appID.png#thumbnail)
+![2_faq](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/faq-appID.png#thumbnail)
 
 Alternatively, if an API is used to create an application programmatically, the app id is returned as part of the response.
 

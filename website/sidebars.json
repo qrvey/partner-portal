@@ -242,6 +242,7 @@
     "FAQs": [
       "faqs/faqs-intro",
       "faqs/aws-faqs",
+      "faqs/data-security-faqs",
       "faqs/publishing-faqs",
       "faqs/ask-us"
     ]
