@@ -221,19 +221,29 @@ img[src*="#thumbnail-20"] {
 }
 
 .qrvey-link {
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .qrvey-link:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .docsContainer a{
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    color: var(--primary-color);
 }
+
+.docsContainer a:hover{
+    color: var(--primary-color);
+}
+
+.docsContainer .docs-prevnext a {
+    color: #000000;
+}
+
+.docsContainer .docs-prevnext a:hover {
+    color: #FFFFFF;
+}
+
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
