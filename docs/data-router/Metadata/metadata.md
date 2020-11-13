@@ -1,7 +1,7 @@
 ---
 id: metadata-API
-title: Metadata
-sidebar_label: Metadata
+title: Understanding Metadata
+sidebar_label: Understanding Metadata
 ---
 
 <div style="text-align: justify">
@@ -13,20 +13,20 @@ Before you can start uploading data into DataRouter, you have to construct a new
 
 ## Pre-requisites
 Before you can start following these steps, please make sure you have the following:
-* URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-  * Metadata Endpoint
-  * API Key 
-* A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
+* URLs and API Keys for your Qrvey Platform. You can find these in the Welcome email you received after your environment was set up. For this example you would need the following values:
+  * Metadata URL for your environment
+  * Data Router API Key 
+* A tool or software that you can use to make REST APIs calls. We recommend Postman or cURL commands but you can use any tool or programming language.
 
 ## Create Metadata
-The first step before loading your data into Qrvey is to create a metadata definition. In this definition you will define a name for your index (where data is stored), column names with data types, and any transformations you want to run before saving the data. This step needs to be done once for each data set that you want to expose in Composer or widgets. Each Index (or dataset) will be identified by MetadataId and Indexname. so use a unique name for each dataset that you will load. 
+The first step before loading your data into Qrvey is to create a metadata definition. In this definition you will define a name for your index (where data is stored), column names with their data types, and any transformations you want to run before saving the data. This step needs to be done once for each data set that you want to expose in Qrvey Composer or inside any widget. Each Index will be identified by MetadataId and Indexname. You have to use a unique name for each index. 
 
-**publicConnection** is an optional parameter used for enabling the use of the index inside the Composer.  Replace *MetadataEndpoint* and *api-key* before running this sample. 
+**publicConnection** is an optional parameter used for enabling the use of the index inside Qrvey Composer. Setting this property to true will expose the index to all Creators in the data preparation step in Qrvey Composer. Replace *MetadataURL* and *api-key* before running this sample. 
 
 cURL example:
 
 ```
-curl --location --request POST '{{MetadataEndpoint}}/v5/metadata?publicConnection=true' \
+curl --location --request POST '{{MetadataURL}}/v5/metadata?publicConnection=true' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -49,22 +49,24 @@ curl --location --request POST '{{MetadataEndpoint}}/v5/metadata?publicConnectio
         }
     ]
 }'
+
 ```
 
 This API should return a status:200 Ok with the MetadataId in the response body.
 
-> **Note**: **MetaDataId** and **indexName** must be identical and in lowercase.
+> **Note**: **MetaDataId** is not required, but if provided, it has to be identical to **indexName**.
 
 ## Update Metadata
-To update metadata, you have to use the PUT request with the next structure: <br>
-{{MetadataEndpoint}}/v5/metadata/{{metadataId}}. <br>
-Replace *MetadataEndpoint* and *api-key* before running the request. 
+To update metadata, you have to use a PUT verb with the following structure: {{MetadataURL}}/v5/metadata/{{metadataId}}. <br>
 
-In the next example, we are adding a new column called Country.
+MetadataId is the value returned from the Create call. Replace *MetadataURL* and *api-key* with your own values, before running the request. 
+
+In the following example, we are adding a new column called **Country**.
 
 cURL example:
 ```
-curl --location --request PUT '{{MetadataEndpoint}}/v5/metadata/quick_start_index_name' \
+
+curl --location --request PUT '{{MetadataURL}}/v5/metadata/quick_start_index_name' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -94,22 +96,25 @@ curl --location --request PUT '{{MetadataEndpoint}}/v5/metadata/quick_start_inde
 ```
 
 ## Delete Metadata
-To delete metadata you have to use the DELETE request with the next structure:<br> {{MetadataEndpoint}}/v5/metadata/{{metadataId}}?publicConnection=true&removedata=true.<br> The parameters **publicConnection** and **removedata** are optional but you should add them if you are creating the index with a public connection or to clean the data from elasticsearch. 
-Replace *MetadataEndpoint* and *api-key* before running the request.
+To delete metadata you have to use the **DELETE** verb with the following structure: <br> {{MetadataURL}}/v5/metadata/{{metadataId}}?publicConnection=true&removedata=true. <br>
+
+The parameters **publicConnection** and **removedata** are optional. The first creates the index as a public index and the second removes any data that was previously loaded into the index. Replace *MetadataURL* and *api-key* with your own values before running the request.
 
 
 ```
-curl --location --request DELETE '{{MetadataEndpoint}}/v5/metadata/quick_start_index_name?publicConnection=true&removedata=true' \
+curl --location --request DELETE '{{MetadataURL}}/v5/metadata/quick_start_index_name?publicConnection=true&removedata=true' \
 --header 'x-api-key: {{api-key}}'
 ```
 
 ## Get Metadata
-To get metadata definition, you have to use the GET request with the next structure: <br>
-{{MetadataEndpoint}}/v5/metadata/{{metadataId}}. <br> Replace “MetadataEndpoint” and “api-key” before running the request.
+To get metadata definition, you have to use the **GET** verb with the following structure: <br>{{MetadataURL}}/v5/metadata/{{metadataId}}. <br>
+
+Replace *MetadataURL* and *api-key* with your own values before running the request.
+
 
 cURL example:
 ```
-curl --location --request GET '{{MetadataEndpoint}}/v5/metadata/quick_start_index_name' \
+curl --location --request GET '{{MetadataURL}}/v5/metadata/quick_start_index_name' \
 --header 'x-api-key: {{api-key}}'
 ```
 
@@ -149,9 +154,11 @@ Response example:
 ```
 
 ## Generate Metadata Structure
-You can use the generated metadata structure based on a data row sample using the POST request with the next structure: <br>
-{{MetadataEndpoint}}/v5/metadata/generate. <br>
-Replace *MetadataEndpoint* and *api-key* before running the request.
+There may be cases where you need to create a large metadata structure with many columns. You can use this API for those cases, if you have the JSON structure for which you want to generate the metadata. The JSON structure has to be passed in the body: <br> 
+{{MetadataURL}}/v5/metadata/generate. <br>
+
+Replace *MetadataURL* and *api-key* with your own values before running the request.
+
 
 cURL example:
 ```
@@ -187,11 +194,4 @@ Response example:
     ]
 }
 ```
-
-## API Reference
-
-https://documenter.getpostman.com/view/6666071/S1a4Wm6C?version=latest
-
-
-
 
