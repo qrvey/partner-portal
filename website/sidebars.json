@@ -190,7 +190,8 @@
           "data-router/DataRules/data-router-flatArray",
           "data-router/DataRules/data-router-switch",
           "data-router/DataRules/conditionals-intro",
-          "data-router/DataRules/destinations-intro"
+          "data-router/DataRules/destinations-intro",
+          "data-router/Metadata/transformations/DataRules/java-custom-functions"
         ]
       },
       {

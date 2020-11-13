@@ -14,7 +14,7 @@ The user can see the loading status to verify the percentage and the status of l
 ## Pre-requisites
 Before you can start, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-  * Dataload Endpoint
+  * Postdata Url
   * API Key 
 * A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
 * Call any data loading and get the jobId.
@@ -22,12 +22,12 @@ Before you can start, please make sure you have the following:
 
 
 ## Get Job Status
-Replace “dataloadendpoint” and “api-key” with values for your Qrvey instance.
+Replace “PostdataURL” and “api-key” with values for your Qrvey instance:
 
 curl example:
 
 ```
-curl --location --request GET '{{dataloadendpoint}}/dataload/{{jobId}}/status' \
+curl --location --request GET '{{PostdataURL}}/{{jobId}}/status' \
 --header 'x-api-key: {{api-key}}'
 ```
 

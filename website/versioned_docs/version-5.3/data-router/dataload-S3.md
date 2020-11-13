@@ -1,7 +1,7 @@
 ---
 id: version-5.3-dataload-S3
-title: Data Loading - S3 Files
-sidebar_label: S3 Files
+title: Loading Data From S3 Files
+sidebar_label: Loading Data From S3 Files
 original_id: dataload-S3
 ---
 
@@ -15,11 +15,11 @@ The user can load data to the Qrvey platform using an API that receives a body w
 ## Pre-requisites
 Before you can start following these steps, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-  * Dataload Endpoint
+  * Postdata URL
   * API Key 
 * A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
 * Load the files inside a S3 bucket.
-* Create a metadata using the metadata API.
+* Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/"> Metadata API </a>.
 
 ## Dataload Structure
 
@@ -27,7 +27,7 @@ Before you can start following these steps, please make sure you have the follow
 	<thead>
 	<tr>
 		<th>Required</th> 
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
         <th>Description</th>
         <th>Value</th>
@@ -43,11 +43,20 @@ Before you can start following these steps, please make sure you have the follow
 </td> 
 	</tr>
 	<tr>
+		<td>No</td>
+		<td>documentUpdateMethod</td>
+        <td>String</td> 
+        <td>Upsert or replace (default) the data on elasticsearch if the row(s) already exists.
+        <td>upsert, replace
+
+</td> 
+	</tr>
+	<tr>
 		<td>Yes</td>
 		<td>metadataId</td>
         <td>String</td>
 		<td>Reference to metadata</td>
-        <td> </td>
+        <td></td>
 	</tr>
     <tr>
 		<td>Yes</td>
@@ -71,7 +80,7 @@ Before you can start following these steps, please make sure you have the follow
 	<thead>
 	<tr>
 		<th>Required</th> 
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
         <th>Description</th>
         <th>Value</th>
@@ -111,7 +120,7 @@ Before you can start following these steps, please make sure you have the follow
 	<thead>
 	<tr>
 		<th>Required</th> 
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
         <th>Description</th>
         <th>Value</th>
@@ -207,7 +216,7 @@ Date in UTC format
 
 cURL example:
 ```json
-curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
+curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -244,10 +253,10 @@ This API will add the records into the DataRouter queue and it returns the JobID
 
 This API call will verify the progress of the data load job from the previous step.
 
-Replace “dataloadendpoint” and “api-key” with values for your Qrvey instance.
+Replace PostdataURL and “api-key” with values for your Qrvey instance.
 
 ```json
-curl --location --request GET '{{dataloadendpoint}}/dataload/{{jobId}}/status' \
+curl --location --request GET '{{PostdataURL}}/{{jobId}}/status' \
 --header 'x-api-key: {{api-key}}'
 ```
 
@@ -266,9 +275,3 @@ Response example:
     }
 }
 ```
-
-## API Reference
-
-https://documenter.getpostman.com/view/6666071/S1a4Wm6D
-
-
