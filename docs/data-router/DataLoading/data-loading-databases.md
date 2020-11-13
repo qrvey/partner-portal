@@ -1,7 +1,7 @@
 ---
 id: loading-status-databases
-title: Loading Status Databases
-sidebar_label: Loading Status Databases
+title: Loading Data From Databases
+sidebar_label: Loading Data From Databases
 ---
 
 <div style="text-align: justify">
@@ -12,10 +12,10 @@ The user can load data to the Qrvey platform using an API that receives a body w
 ## Pre-requisites
 Before you can start, please make sure you have the following:
 * URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-  * Dataload Endpoint
+  * Postdata Url
   * API Key 
 * A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
-* Create a metadata using the metadata API.
+* Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/">Metadata API</a>.
 
 ## Dataload Structure
 
@@ -23,7 +23,7 @@ Before you can start, please make sure you have the following:
 	<thead>
 	<tr>
 		<th>Required</th>
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
 		<th>Description</th>
         <th>Values</th>
@@ -36,6 +36,12 @@ Before you can start, please make sure you have the following:
         <td>String</td>
         <td>Reference to the dataset</td>
         <td>Random value</td>
+	</tr>
+    	<td>No</td>
+        <td>documentUpdateMethod</td>
+        <td>String</td>
+        <td>Upsert or replace (default) the data on Elasticsearch if the row(s) already exists.</td>
+        <td>upsert, replace</td>
 	</tr>
 	<tr>
 		<td>Yes</td>
@@ -62,7 +68,7 @@ Before you can start, please make sure you have the following:
 	<thead>
 	<tr>
 		<th>Required</th>
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
 		<th>Description</th>
         <th>Values</th>
@@ -100,7 +106,7 @@ Before you can start, please make sure you have the following:
 	<thead>
 	<tr>
 		<th>Required</th>
-		<th>Field</th>
+		<th>Property</th>
         <th>Data Type</th>
 		<th>Description</th>
         <th>Values</th>
@@ -177,7 +183,7 @@ Before you can start, please make sure you have the following:
 ## MYSQL cURL Example
 
 ```JSON
-curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
+curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -206,7 +212,7 @@ curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
 ## MS_SQL cURL Example
 
 ```JSON
-curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
+curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -235,7 +241,7 @@ curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
 ## ORACLE cURL Example
 
 ```JSON
-curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
+curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -259,13 +265,12 @@ curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
         }
     ]
 }'
-
 ```
 
 ## POSTGRES cURL Example
 
 ```JSON
-curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
+curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -289,6 +294,5 @@ curl --location --request POST '{{dataloadendpoint}}/dataload/init' \
         }
     ]
 }'
-
 ```
 
