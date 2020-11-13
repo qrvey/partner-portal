@@ -5,10 +5,81 @@ sidebar_label: July 2019
 ---
 <div style="text-align: justify">
 
-Release Date: 2019-07-12
-## New Features
+Qrvey 3.13   2019-07-12
+## New Features amd Enhancements
 
-### Admin Portal
+### Data Preparation
+
+* **Metadata - Standardize "on" and "condition" statements on merge rule**: ""on"" and ""condition"" were expressed differently. One example is that ""on"" uses ""<>"" and ""condition"" ""!="" to express difference. We introduced a grammar for Javascript like syntax so ""on"" statement could behave the same as ""condition"".
+
+
+* **Metadata - Allow custom Javascript functions on Merge rule**: We made custom Javascript functions available when doing a Merge. In this case, the parameters for the function can be a column from the merged arrays or an outside value e.g the result of a previous rule/transformation.
+
+* **Postdata - Allow calling functions with other functions as parameters**: When referencing a custom Javascript function inside a metadata we are now able to pass other custom Javascript functions as parameters: function.nvl({{column.value}}, someOtherFunction({{parameter.value}}))
+
+
+* **Error handling - Improve error visualization from duplicate IDs**: When duplicating Data Rules IDs, a new error message will show which ID was duplicated and the corresponding Data Rule.
+
+
+* **Reusable Groups - Add fields from input parameters**: We added the ability to use the input parameters as destination fields in reusable groups. These references are going to be defined the same way we use them on the main metadata with the JSON data (without the dollar sign $)
+
+
+* **Error handling - Visualize Postadata errors for Data Rules**: When an error is thrown on Postdata we should indicate in the JSON response which Data Rule failed.
+
+
+* **Test Utility - Delete previous test leftovers at the start of each test**: We are now deleting the leftovers at the start of each run.
+
+
+* **Metadata - New flattener data rule**: This is a new Data Rule that will flatten an array. The resulting array can be used in subsequent Data Rules.
+
+
+* **Metadata - Allow the execution of Data Rules (Flat Data Transforms) without a flattener**: Data rules can now be applied even if we don't need to flatten an array. Especifically, the ""flattenOnField"" and ""idFlat"" attributes won't be mandatory but we will still be able to execute all data rules.
+
+
+### Data Analysis & Automation
+
+* **Tabular View Widget**: Tabular view widget with new multi-level grouping and sorting options is available in datasets.
+
+
+* **Table Chart**: New chart visualization for a simple table chart.
+
+
+* **Data Links - Crosstab**: Ability to use linked columns for rows, values or columns when building a Crosstab chart. 
+
+
+* **Small Multiples**: New chart visualization used for easy comparison that shows a series of similar charts. 
+
+
+* **Formulas Widget**: New widget to create calculated fields available in datasets.
+
+* **On Click Actions - Filter By**: Creators can define quick filters on a chart or a full page.
+ 
+* **Alerts**: Creators can monitor data added to a page or dashboard and send/receive alerts. 
+
+
+* **Creating Charts - Widget Configuration**: Chart creation action was added as a parameter to the Page Builder widget so it can be turned on/off.
+
+
+* **User Management Widget**: Authentication, Users and Group permissions are now available as an embeddable widget, used inside Page Builder. 
+Data Permissions/Filters. In User Management, Creators are able to set filters on datasets being used in pages.
+
+
+* **Page/Tab/Chart Permissions**: Creators can assign group-based show/hide permissions on any page, tab or chart created in page builder.  
+
+
+* **Authentication**: Creators can have private pages where authentication is required to gain access.
+
+
+* **Page Filtering**: Our filtering system in Page Builder now supports page-level filtering in addition to global, tab and individual panel filtering. 
+
+
+* **Complex Conditions Groups**: Option to add multiple conditions and groups in If Conditions to create more advanced conditional logic. 
+
+
+* **Tokens Manager**: Variables which act as containers for data. Tokens can be categorized into Global or Local and can be used and managed across different contexts in the application.
+
+
+### Admin Center
 
 *   **Connectors.** Admins can create Elasticsearch Indexes from external connections to MS SQL, MySQL, Aurora, Postgres and Oracle.
 
@@ -21,64 +92,6 @@ Release Date: 2019-07-12
 *   **Deployments - Creating Replacements.** When setting up servers, admins can set replacements for MS SQL and Elasticsearch connections used in the server. If a dataset is created from a MS SQL connection in one server a replacement needs to be set for the MS SQL connection on the receiving server.
 
 
-### Application Building
-
-*   **On Click Actions - Filter By.** Creators can define quick filters on a chart or a full page.
- 
-*   **Alerts.** Creators can monitor data added to a page or dashboard, and can send or receive alerts.
-
-*   **Creating Charts - Widget Configuration.** Chart creation action was added as a parameter to the Page Builder widget so it can be turned on/off.
-
-*   **User Management Widget.** Authentication, Users and Group permissions are now available as an embeddable widget, used inside Page Builder. 
-
-*   **Data Permissions/Filters.** In User Management, Creators are able to set filters on datasets being used in pages. 
-
-*   **Page/Tab/Chart Permissions.** Creators can assign group-based show/hide permissions on any page, tab or chart created in page builder.  
-
-*   **Authentication.** Creators can have private pages where authentication is required to gain access. 
-
-*   **Page Filtering.** Our filtering system in Page Builder now supports page-level filtering in addition to global, tab and individual panel filtering. 
-
-
-### Analytics
-
-*   **Tabular View Widget.** A Tabular View widget, with new multi-level grouping and sorting options, is available in datasets. 
-
-*   **Table Chart.** We added a new chart visualization for a simple table chart. 
-
-*   **Data Links - Crosstab.** You can now use linked columns for rows, values or columns when building a Crosstab chart.  
-
-*   **Small Multiples.** We added a new chart visualization used for easy comparison that shows a series of similar charts. 
-
-*   **Formulas Widget.** We added a new widget to create calculated fields for datasets.
-
-
-### Automation 
-
-*   **Complex Conditions Groups:** You can now add multiple conditions and groups in If Conditions, to create more advanced conditional logic.  
-
-*   **Tokens Manager.** We added Variables which act as containers for data. Tokens can be categorized into Global or Local, and can be used and managed across different contexts in the application.
-
-
-### Data Router 
-
-*   **Metadata - Standardize "on" and "condition" statements on merge rule.** Previously "on" and "condition" behaved differently. One example is that "on" used "<>" and "condition" used "!=" to express inequality. We introduced a grammar for Javascript like syntax so the "on" statement will behave the same as "condition". 
-
-*   **Metadata - Allow custom Javascript functions on Merge rule.** We made custom Javascript functions available when doing a Merge. In this case, the parameters for the function can be a column from the merged arrays or an outside value e.g the result of a previous rule/transformation.
-
-*   **Postdata - Allow calling functions with other functions as parameters**. When referencing a custom Javascript function inside a metadata you are now able to pass other custom Javascript functions as parameters: function.nvl({{column.value}}, someOtherFunction({{parameter.value}})) 
-
-*   **Error handling - Improve error visualization from duplicate IDs.** When duplicating Data Rules IDs, a new error message shows which ID was duplicated and the corresponding Data Rule. 
-
-*   **Reusable Groups - Add fields from input parameters.** We added the ability to use the input parameters as destination fields in reusable groups. These references are now defined the same way as on the main metadata with the JSON data (without the dollar sign $) 
-
-*   **Error handling - Visualize Postadata errors for Data Rules.** When an error is thrown on Postdata, the message indicates which Data Rule failed. 
-
-*   **Test Utility - Delete previous test leftovers at the start of each test.** We are now deleting the leftovers at the start of each run. 
-
-*   **Metadata - New flattener data rule.** This is a new Data Rule that will flatten an array. The resulting array can be used in subsequent Data Rules. 
-
-*   **Metadata - Allow the execution of Data Rules (Flat Data Transforms) without a flattener**. Data rules can now be applied even if we don't need to flatten an array. Especifically, the "flattenOnField" and "idFlat" attributes won't be mandatory but we will still be able to execute all data rules.
 
 
 ### **General Tweaks and Bug Fixes** 
@@ -119,35 +132,3 @@ Release Date: 2019-07-12
 
 *   **Data Router - idColumn: if specified in child and no related columns are sent, the post fails.** There was an issue if a child metadata was created to store data from flat data rules, and more than one column were specified as idColumns. If the data generated by the parent metadata did not contain the columns related to the child's idColumns, an error was raised when posting the data.
 
-
-### **Known Issues** 
-
-*   **Web Forms - Deleting Answers.** When executing a query to delete all answers from a web form, the application takes some time to completely delete all of the answers. The response time depends on the size of the web form dataset and the amount of records. 
-
-*   **Lookup Field - SQL Connection.** When the SQL connection is deleted and it's being used in a lookup there is no error shown but the lookup field stops working. 
-
-*   **Custom View - Chart Editor - Value Settings.** When the user changes the label direction for chart value, the value labels overlap the axis label. 
-
-*   **Datasets - Elasticsearch Filtering**. Filter by Value option is case sensitive when the user performs a search.  
-
-*   **Web Forms Analytics - Branching.** Branch fields for Lookup are not showing in Tabular View 
-
-*   **Answering Forms.** Issue with Grammarly plugin when answering text fields.  
-
-*   **Builders - Page Builder.** Elements added to a page are lost if the user navigates away from the page while the elements are still loading. 
-
-*   **Bar Chart - Multi-series.** Bars for multiseries option with negative values are misplaced. 
-
-*   **Bucketed Columns.** Charts that use bucketed columns with the multi-series option show “No data found” when a bucket is used as a category and there is data available to show.  
-
-*   **Webforms - Survey - Save Answer.** Answers for Phone Number fields are not saved.  
-
-*   **Data Links - Heatmap.** Sorting values with max data points doesn't show the correct data. 
-
-*   **Data links - Combo Chart.** This feature isn't working correctly, and doesn’t provide the expected results.  
-
-*   **Data Link - Multiseries.** An error is shown when filtering a chart using the multi-series option and when the filter is set on a linked column.   
-
-*   **Sharing Applications - Append Data.** All the applications sent from different releases are updated when updates are made. 
-
-*   **Sharing Applications - Append Data.** If a version of the application that was shared is deleted and an updated version of this application is shared again, then the application cannot be installed. 
