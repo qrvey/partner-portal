@@ -5,18 +5,11 @@ sidebar_label: September 2019
 ---
 <div style="text-align: justify">
 
-Release Date: 2019-09-12
-## New Features
+Qrvey 3.2 2019-09-12
+## New Features and Enhancements
 
-### Admin Portal
+### Data Preparation
 
-*   **Sharing Applications - Releases Activity Log:** An activity log was added to the Releases section so users can monitor the sharing process and see the events and errors.
-*   **Sharing Workflows:** The option to add Workflows to the content package to be shared in applications when creating a new application or appending is now available. 
-*   **Sharing Applications - Share/Append Workflows:** An Admin can share or append Workflows to multiple users on different servers. This allows the Makers who own the app to use this Workflow as part of the existing app for their own requirements.
-*   **Sharing - Activity Log:** The events “Start Restoring”, “Restore Successfully”, “Restore Failed” are recorded in the Activity Log so Makers can review these events.
-*   **Sharing Applications - Share/Append - Summary Panels in Pages:** An Admin can share or append a Page with Summary Panels to multiple users on different servers. The Makers who own the app can use it as part of their existing app for their own requirements.
-
-### Data Sources
 
 *   **Applications - Activity Log:** An activity log was added to the Applications section so users can monitor the installation process and see the events and errors when an application is shared.
 *   **Applications - Append Updates Label:** We added an Updated Label for applications that have received updates as append when sharing from Admin App. 
@@ -25,8 +18,28 @@ Release Date: 2019-09-12
 *   **Tabular View - Add Data via Web Forms:** An Add action is available in the tabular view for web form datasets. This action will call up a modal that shows the web form so the user can add data to the dataset via the web form, which could be a Form or Survey.
 *   **Tabular View - Deleting Records:** A Delete action is available in the tabular view, for web form - Form and Survey. This action allows the Maker to delete rows of data.
 
-### Application Building
+* **Postdata - Optimize Elasticsearch Bulk Insert**: We optimized the way we were inserting data into Elasticsearch. This will benefit from parallelism. We also optimized the way we are processing transformations and Data Rules including a local caching mechanism for ES Query Lookups.
+* **Profiling - Performance Logs**: By setting a parameter, we can enable a performance log for each post data execution call. This log file will include total execution times and Data Rules and transformation times among others.
+* **Metadata - Change Error Message When a Metadata Does Not Exist**: When using the metadata endpoint, if the metadata doesn’t exist the following error was thrown: Please try again, something has happened. That message was changed to “The metadata does not exist”. We also fixed some error display issues.
+* **Array Lookup - Optimize Searching Mechanism**: We optimized the searching mechanism of an Array Lookup when there’s no sorting. In this case we are returning the first match.
+* **Postdata - Retryable Errors**: We added more retryable Elasticsearch errors to the list, mostly due to high concurrency: socket disconnected, null pointer exception, authorization exceptions, among others
+* **Documentation - API Enhancements**: The endpoint documentation includes JSON schema details.
 
+*   **Documentation - API Enhancements:** The endpoint documentation includes JSON schema details.
+*   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
+*   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
+*   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
+
+
+
+
+
+### Data Analysis & Automation
+
+*   **Table Chart - Grouping (Multi-level):** Table Chart that allows multi-level and single level grouping.
+*   **Data Links for Table Charts:** Data Links are enabled for single-level grouped tables.
+*   **Calculated Columns in Pie, Heatmap and Word Cloud Charts:** Calculated columns created through the Formula Builder are enabled to be used in Pie, Heatmap and Word Cloud creation.
+*   **Median Aggregate:** The Median calculation was added as an aggregate option.
 *   **Page Builder Widget - White Labelling:** The Page Builder widget can be modified to change main colors like the Qrvey orange.
 *   **Exports - Individual Components:** Metrics and Chart panels can now be exported to CSV, PDF and JPG individually from Page/Report Builders and End User Interface.
 *   **Exports - Full Page CSV:** Ability for creators and end users to export data used in pages as CSV. The CSV file contains all columns belonging to the dataset used in the different charts, metrics and panels from the Page or Report.
@@ -34,29 +47,19 @@ Release Date: 2019-09-12
 *   **Page Builder Link Button & Page URL as Widget Parameter:** Creators can hide or show Application Link button from Page builder topbar using widget parameters, and can hide or show Page URL field from Page info side panel using widget parameters.
 *   **User Management Widget - Show/Hide Parameters:** The User Management Widget now uses a parameter to hide or show Users Tab, Delete Groups & Add New Group buttons, and Groups Menu icon in Groups tab, as well as User section inside a Group, when the widget is embedded.
 
-### Analytics
+* **Performance Improvement - Automation**: The Automation Widget load time has been reduced.
+* **Documentation - Workflows Widget**: New examples have been created to help understand the Workflows Widget and how to embed it.
+* **Documentation - Page Builder Widget**: New examples have been created to help understand the Page Builder Widget and how to embed it.
 
-*   **Table Chart - Grouping (Multi-level):** Table Chart that allows multi-level and single level grouping.
-*   **Data Links for Table Charts:** Data Links are enabled for single-level grouped tables.
-*   **Calculated Columns in Pie, Heatmap and Word Cloud Charts:** Calculated columns created through the Formula Builder are enabled to be used in Pie, Heatmap and Word Cloud creation.
-*   **Median Aggregate:** The Median calculation was added as an aggregate option.
+### Admin Center
+*   **Sharing Applications - Releases Activity Log:** An activity log was added to the Releases section so users can monitor the sharing process and see the events and errors.
+*   **Sharing Workflows:** The option to add Workflows to the content package to be shared in applications when creating a new application or appending is now available. 
+*   **Sharing Applications - Share/Append Workflows:** An Admin can share or append Workflows to multiple users on different servers. This allows the Makers who own the app to use this Workflow as part of the existing app for their own requirements.
+*   **Sharing - Activity Log:** The events “Start Restoring”, “Restore Successfully”, “Restore Failed” are recorded in the Activity Log so Makers can review these events.
+*   **Sharing Applications - Share/Append - Summary Panels in Pages:** An Admin can share or append a Page with Summary Panels to multiple users on different servers. The Makers who own the app can use it as part of their existing app for their own requirements.
 
-### Data Router
 
-*   **Postdata - Optimize Elasticsearch Bulk Insert.** We optimized the way we were inserting data into Elasticsearch. This will benefit from parallelism. We also optimized the way we are processing transformations and Data Rules including a local caching mechanism for ES Query Lookups. 
-*   **Profiling - Performance Logs.** By setting a parameter, we can enable a performance log for each post data execution call. This log file will include total execution times and Data Rules and transformation times among others. 
-*   **Metadata - Change Error Message When a Metadata Does Not Exist.** When using the metadata endpoint, if the metadata doesn’t exist the following error was thrown: Please try again, something has happened. That message was changed to "The metadata does not exist". We also fixed some error display issues. 
-*   **Array Lookup - Optimize Searching Mechanism.** We optimized the searching mechanism of an Array Lookup when there's no sorting. In this case we are returning the first match. 
-*   **Postdata - Retryable Errors.** We added more retryable Elasticsearch errors to the list, mostly due to high concurrency: socket disconnected, null pointer exception, authorization exceptions, among others
-
-### **Other Enhancements**
-
-*   **Documentation - API Enhancements:** The endpoint documentation includes JSON schema details.
-*   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
-*   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
-*   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
-
-### **General Tweaks and Bug Fixes** 
+## **General Tweaks and Bug Fixes** 
 
 *   **Admin - Platforms Emails:** The RTF Editor used for the Emails used for the activation of new User Accounts creation and the Password restoring has been refactored.
 *   **Admin - Sharing - Deploy Connectors Between Servers:** An Admin can send a new connector to the recipient as a “shared” connector to use this one on the required Datasets. Connectors handle substitution in the connection string if necessary.
@@ -78,24 +81,3 @@ Release Date: 2019-09-12
 *   **Data Router - Reusable transformation does not pass input to fields directly.** We fixed an error when trying to pass input to fields. This was not working.
 *   **Data Router - Unhandled error on missing JS custom function on flat data condition.** There was an error as we weren't handling missing JS Custom functions on a condition on flat data. Postdata was timing out.
 *   **Tabular view - Edit records with a Password question:** Previously a Password question field was shown as empty, rather than as a masked out password. This has been corrected and a Password question field is now shown as a masked value.
-
-### **Known Issues** 
-
-*   **Formulas - Date Add/Date Subtract:** There are some inconsistencies 
-*   **Crosstab - Data Links:** Inconsistencies in the displayed records.
-*   **Crosstab - Sorting:** Sorting by columns is not applied properly, there are values missing.
-*   **Buckets - Column Headers:** Buckets cannot be created with for column if the name includes a period (.).
-*   **Metrics - Bullet Gauge:** NaN is visible, when using 'Between' threshold.
-*   **Chart Builder - Crosstab Preview:** When there are filters applied to a chart and the chart is edited the filters don't remain applied in the preview.
-*   **Chart Builder - Box and Whiskers - Max Data Points:** This option in "Visualization" "Global Settings" is not showing the set data points.
-*   **Chart Builder - Small Multiples:** Values of the selected multiple columns are not correct in the preview.
-*   **Web Forms - Save answers:** Web Forms with branches using a phone number field are not loading all the answers when the “Save Answers” option is used.  
-*   **Forms - Archive Option for Branches**: Web Forms can't be activated when there are incomplete branches archived.
-*   **Survey - Branches - Dropdown question:** When the user answers the branch if the branch doesn't fulfill the condition, the correct question (outside the branch) isn't shown.
-*   **Survey - Branches - Numeric question:** Currency/percentage options aren't displayed properly.
-*   **Spreadsheets - Data Load:**  The number of records in a spreadsheet does not load completely.
-*   **Content Deployment - Releases:** When a user performs a search in content, the result of the search is done only in one page, and when you click the “next” arrow, the same page is shown with the same result.
-*   **Content Deployment - Sharing Workflows:**  When a workflow has more than two levels of dependencies after the 2nd level dependencies are not marked. When dependencies are not marked sharing could fail. 
-*   **Page Builder / End User CSV Downloads:** When the data is downloaded to CSV the column headers are showing a column number. 
-*   **Activity Log - Exporting Service:** Details about Failed Process are not being exported.
-*   **Manifest: Managing partial files does not update dynamo file status:** When ES does a partial insertion from a file, it rejects the rest, and a partial file is created, The manifest process does not handle those partial files, in the DynamoDB table (fileproccesedstatus) if a file generate partial, is marked as failed, with status code 206, once the related partial file is processed, the status of the parent file is not updated, causing the rupture of the manifest upload process.
