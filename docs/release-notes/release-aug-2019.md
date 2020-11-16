@@ -4,7 +4,7 @@ title: Qrvey Version 3.14
 sidebar_label: August 2019
 ---
 <div style="text-align: justify">
-Qrvey 3.14   2019-08-09
+Release date: 2019-08-09
 
 ## New Features and Enhancements
 
