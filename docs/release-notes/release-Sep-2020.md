@@ -50,7 +50,6 @@ Click <a href="/docs/next/video-training/release/version-5.5" target="_blank"> <
 
 * **AT-6797 - Builders - Canvas Auto-Scroll**: We added the feature of auto-scroll on pages and reports. When creators drag a widget, the vertical scroll should automatically follow the creator mouse movement. 
 
-
 ### Admin Center
 * <a href="/docs/admin/elasticsearch-management/" target="_blank"> <strong> ADMIN-2766 - ES Management - Automatic Adjustments</strong></a>: Automatic Adjustment settings are also available in the Infrastructure section. Admins are now able to select if they want to perform automatic adjustments with Qrvey automatically adding more Elasticsearch servers in case space is running out.
 
