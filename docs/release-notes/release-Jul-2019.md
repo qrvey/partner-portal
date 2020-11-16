@@ -94,7 +94,7 @@ Data Permissions/Filters. In User Management, Creators are able to set filters o
 
 
 
-## **General Tweaks and Bug Fixes** 
+## General Tweaks and Bug Fixes
 
 *   **Bar Chart - Responsive State.** Fixed bar chart with horizontal bars responsive state. 
 
