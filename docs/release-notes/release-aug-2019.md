@@ -66,7 +66,7 @@ Release date: 2019-08-09
 
 *   **Custom Styles for Creator Platform.** Admin users have the option to white-label the Qrvey creator platform. 
 
-## **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **Page Builder - Multiseries**. Category label was not visible even when resizing and making a chart bigger. This was fixed. 
 
