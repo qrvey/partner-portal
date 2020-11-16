@@ -57,7 +57,7 @@ Release date: 2019-09-12
 *   **Sharing Applications - Share/Append - Summary Panels in Pages:** An Admin can share or append a Page with Summary Panels to multiple users on different servers. The Makers who own the app can use it as part of their existing app for their own requirements.
 
 
-## **General Tweaks and Bug Fixes** 
+## General Tweaks and Bug Fixes
 
 *   **Admin - Platforms Emails:** The RTF Editor used for the Emails used for the activation of new User Accounts creation and the Password restoring has been refactored.
 *   **Admin - Sharing - Deploy Connectors Between Servers:** An Admin can send a new connector to the recipient as a “shared” connector to use this one on the required Datasets. Connectors handle substitution in the connection string if necessary.
