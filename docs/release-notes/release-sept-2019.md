@@ -4,8 +4,8 @@ title: Qrvey Version 3.2
 sidebar_label: September 2019
 ---
 <div style="text-align: justify">
+Release date: 2019-09-12
 
-Qrvey 3.2 2019-09-12
 ## New Features and Enhancements
 
 ### Data Preparation
@@ -29,8 +29,6 @@ Qrvey 3.2 2019-09-12
 *   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
 *   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
 *   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
-
-
 
 
 
