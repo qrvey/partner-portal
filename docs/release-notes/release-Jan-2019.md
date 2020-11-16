@@ -4,8 +4,8 @@ title: Qrvey Version 3.10
 sidebar_label: January 2019
 ---
 <div style="text-align: justify">
+Release date: 2019-01-30
 
-Qrvey 3.10   2019-01-30
 ## New Features and Enhancements
 
 
@@ -59,7 +59,7 @@ Qrvey 3.10   2019-01-30
 ### Admin Center
 *   **Sharing Model - Deploy Application.** Allows adding servers so they can be used to pull content from a specific application to be shared across servers and to multiple accounts. Admin users can create a content package and decide to share an entire application, or individual ES Live Connection Datasets, or Web Forms, then they can select the destination server and account to share and install the application.
 
-### **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **BigInt column in SQL Server.** Loading Data with primary key. 
 
