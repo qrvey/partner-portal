@@ -40,7 +40,7 @@ Release date: 2019-11-13
 *   **ADMIN-1662 - Usage Statistics:** We added a section in Account information to show statistics for the Qrvey Composer and Data Router usage. The statistics shown are “Current Plan Status”, “Server Name” for the server that is registered in AWS, “Data Storage” to show how much space has been used by the application on AWS server, “Current Average Storage”, “AWS Server Type”, “Number of Servers”, “Creator Accounts”, “End User Accounts”, and “Created Applications”. 
 *   **ADMIN-1669 - Sharing Data Links:** The option to select and add datalinks to the content package to be shared in applications when creating a new application or appending content is now available.
 
-## **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **CSV Exports:** We fixed and removed from exported CSVs the numbers assigned to columns and displayed in headers. 
 *   **Date Sorting:** Sorting applied on charts using date columns was being sorted in alphabetical order and not by Month, this was fixed.  
