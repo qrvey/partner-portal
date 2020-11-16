@@ -48,7 +48,7 @@ Release Date: 2020-04-30
 
 * <a href="/docs/ui-docs/builders/user-management/" target="_blank"> <strong>ADMIN- 2140 - Feature Customization for Page Builder:</strong></a> Admins are now able to control displaying sections and features like User Management, adding users and creating groups. 
 
-## **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 * **ADMIN-1928 - Content Deployment - Share Spreadsheets**: We weren't supporting the sharing of CSVs data in application sharing, this is now supported. 
  
