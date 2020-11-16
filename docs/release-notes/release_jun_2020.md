@@ -4,7 +4,8 @@ title: Qrvey Version 5.2
 sidebar_label: June 2020
 ---
 <div style="text-align: justify">
- 
+Qrvey 5.2 - 2020-07-03
+
 ## New Features and Enhancements
 <a href="/docs/next/video-training/release/version-5.2"> <strong>Click here</strong></a> for demo videos on some of the released features.
 
@@ -89,36 +90,3 @@ We added a feature to give the customers a way to use their own authentication m
 
 * **QV-10543 - Reloading Process is Showing Zero Records:** If the Main Dataset is in “active” state and with a reload its data is updated and a dataset created from the first one is reloaded too, the Analyze Summary shows zero rows. This has been fixed.
 
-
-
-
-
-
-### Known Issues
-
-
-* **QV-10089 - Dataset Loading in Safari:** Data page isn't loading immediately in Safari. The site’s frame loads but the content appears with a 10-second delay.
-
-
-* **AN-8189 - Crosstab - Null Values Displayed:** When crosstab charts are created using multiple levels of columns and values and these columns are expanded, cells are shown empty instead of displaying the values that exist in the data.
-
-
-* **AN-7999 - Calculated Columns in Heatmap - Sorting by Label Issue:** When using 'dateDiff' to create a calculated column and sorting by “label” is applied, the values are sorted by “label” and not by “date” due to an Elasticsearch limitation. 
-
-
-* **AN-8809 - Crosstab Values Using Data Links:** Crosstab with 2 levels of rows and one column is showing values in a field that should not be displaying any values.
-
-
-* **AN-8296 - Crosstab Grouped Total:** When there are more than 25 max data points shown, the grouped totals are calculated only for the top 25 max data points. 
-
-
-* **AN-9130 - Chart Dependencies:** Filters applied to deleted charts are not removed from the filter panel component. 
-
-
-* **AN-6668 - Metrics Time Period - Quarter:** Count and Distinct Count are not working correctly for some field types used in Web Forms such as Signature, Word Expression Multiselection, and Address.
-
-* **AT-6385 - Some Token Filters do not Apply:** Charts filtered by specific tokens do not apply and show the following message "Chart not available at the moment".
-
-* **AT-6182 - Page Builder - Global Filters on Blocked Pages:** When a page is deployed through content deployment in Admin Center, on the recipient’s side any global filter applied to other pages will also be applied on the blocked page. It shouldn’t be applied since this page is blocked to be edited by recipients.
-
-* **ADMIN-2421 - Content Deployment - Data Loading Process Fails:** When a user deploys an application that contains Datasets that use other Datasets as data sources, the multiple layers of connections can make the installation fail because of an interruption of the loading process by the external database service.
