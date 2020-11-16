@@ -53,7 +53,7 @@ Clicking on the “Enable Record Level Security” option will open a new window
 ![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail)
 
 
-Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
+Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#step-3-define-users-security-token(s)"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
 
 ![4_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/4rls.png#thumbnail)
 
@@ -95,7 +95,7 @@ The following is an example of a JSON object containing a user’s security perm
 }
 ```
 
-Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API Generate Token passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519">JWT</a> adding all of the user’s permissions to it and return the token as part of the Http response. The generated token will be encrypted to avoid tampering.
+Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API Generate Token passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519"  target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the Http response. The generated token will be encrypted to avoid tampering.
 
 ```json
 {
@@ -114,9 +114,9 @@ var config = {
 Once the token is part of the widget’s configuration object, it will contain the security token in every request’s header.
 
 ### Generate a Security Token With OpenId Authentication
-Please review the <a href="/docs/admin/admin-sections-platform/">Administering Qrvey Composer</a> documentation for information on how to enable OpenId authentication.
+Please review the <a href="/docs/admin/admin-sections-platform/" target="_blank">Administering Qrvey Composer</a> documentation for information on how to enable OpenId authentication.
 
-Qrvey RLS is supported when using <a href="https://auth0.com/">Auth0 </a> as an OpenId provider. You define the security permissions by each user under Auth0 by adding the JSON object to the user_metadata section.
+Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">Auth0 </a> as an OpenId provider. You define the security permissions by each user under Auth0 by adding the JSON object to the user_metadata section.
 
 ![6_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/6rls.png#thumbnail)
 
