@@ -12,10 +12,10 @@ Click <a href="/docs/next/video-training/release/version-5.5" target="_blank"> <
 
 ### Data Preparation
 
-* <a href="docs/ui-docs/datasets/transformations" target="_blank"> <strong> QV-10808 - Transformations UI</strong></a>: We added a feature to let users create, manage, and apply transformations to a Dataset. This first transformation UI version allows JavaScript statements to run, has a formula editor, a list of columns, a list of functions and the output section. Creators can transform the data while it’s getting loaded to Elasticsearch. We are also allowing users to test transformations without having to load all of the data.
+* <a href="/docs/ui-docs/datasets/transformations" target="_blank"> <strong> QV-10808 - Transformations UI</strong></a>: We added a feature to let users create, manage, and apply transformations to a Dataset. This first transformation UI version allows JavaScript statements to run, has a formula editor, a list of columns, a list of functions and the output section. Creators can transform the data while it’s getting loaded to Elasticsearch. We are also allowing users to test transformations without having to load all of the data.
 
 
-* <a href="docs/ui-docs/datasets/data-sync" target="_blank"> <strong>QV-11456 - Cascade Sync for Index View Datasets</strong></a>: We added the feature to let creators enable Cascade Sync for Datasets using Index View Datasets as Data Sources.
+* <a href="/docs/ui-docs/datasets/data-sync" target="_blank"> <strong>QV-11456 - Cascade Sync for Index View Datasets</strong></a>: We added the feature to let creators enable Cascade Sync for Datasets using Index View Datasets as Data Sources.
 
 * **DR-1875 - New Data Transformation API**: This is a new API for clients that want to test their transformations before creating a Dataset or without loading all of their Data.
 
@@ -46,7 +46,7 @@ Click <a href="/docs/next/video-training/release/version-5.5" target="_blank"> <
 
 * <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"> <strong>AT-6797 - Page Builder - Go To URL in Maps</strong></a>: We added a feature to allow a creator to set up a “Go to URL” on-click action for Dot Map and Bubble Map charts. So that end-users can now interact with them by clicking on a data point, and the widget redirects end-users to the URL configured by the Creator.
 
-* <a href="docs/ui-docs/automation/send-actions/" target="_blank"> <strong>AT-6854 - Flows - Signature in Send Email</strong></a>: We added an option in the email action to include or exclude a signature, so creators should be able to decide if they want to include the company’s email signature as part of the email.
+* <a href="/docs/ui-docs/automation/send-actions/" target="_blank"> <strong>AT-6854 - Flows - Signature in Send Email</strong></a>: We added an option in the email action to include or exclude a signature, so creators should be able to decide if they want to include the company’s email signature as part of the email.
 
 * **AT-6797 - Builders - Canvas Auto-Scroll**: We added the feature of auto-scroll on pages and reports. When creators drag a widget, the vertical scroll should automatically follow the creator mouse movement. 
 
