@@ -45,7 +45,14 @@ Metadata object can have the following properties:
 | object | array 
 | array | values/object 
 
-## Metadata Sample
+
+## Restrictions In Naming Columns and Indexes
+There is no restriction in characters which can be used for naming indexes and columns, but the following keywords cannot be used in naming these objects, neither in lower nor uppercase. For instance both “boolean” and “BOOLEAN” are not permitted. 
+
+ `"_id", "abstract", "else", "instanceof", "super", "boolean", "enzum", "int", "switch", "break", "export", "interface", "synchronized", "byte", "extends", "let", "this", "case", "false", "long", "throw", "catch", "final", "native", "throws", "char", "finally", "new", "transient", "class", "float", "null", "true", "const", "for", "package", "try", "continue", "function", "private", "typeof", "debugger", "goto", "protected", "var", "default", "if", "public", "void", "delete", "implements", "return", "volatile", "do", "import", "short", "while", "double", "in", "static", "with"`
+
+
+### Metadata Sample
 
 ~~~ JSON
 
