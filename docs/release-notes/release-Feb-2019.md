@@ -64,7 +64,7 @@ Qrvey 3.11   2019-02-28
 *   **Sharing Applications - Metrics and Pages.** Metrics and Pages can be included when sharing applications to different servers/accounts.
 
 
-### **General Tweaks and Bug Fixes**
+### General Tweaks and Bug Fixes
 
 *   **Metadata - Reserved Words.** At creation time, the use of reserved words for column names is prohibited, but using an uppercase letter or the whole word, allows the use of these words as names. 
 

@@ -4,7 +4,7 @@ title: Qrvey Version 4.1
 sidebar_label: February 2020
 ---
 <div style="text-align: justify">
-Qrvey 4.1 - 2020-02-18
+Release Date: 2020-02-18
 
 ## New Features & Enhancements
 
@@ -33,7 +33,7 @@ Qrvey 4.1 - 2020-02-18
 * **ADMIN- 1937 New Layout:** We changed the layout for the Admin Center, this new layout responds to the needs of the Admin user to navigate through it and to get all the information they need.
 
 
-### **General Tweaks and Bug Fixes**
+## **General Tweaks and Bug Fixes**
 
 * **AT-5492 - Builders - Safari Performance:** When the user adds 10 or more charts on a page, the performance went down progressively in the Safari Browser. We fixed this by implementing lazy loading behaviors on analytic elements. 
 
