@@ -1,7 +1,7 @@
 ---
 id: reusable-transforms
-title: Transformation Groups - Reusable Transforms
-sidebar_label: Transformation Groups - Reusable Transforms
+title: Transformation Groups 
+sidebar_label: Transformation Groups
 ---
 <div style="text-align: justify">
 
