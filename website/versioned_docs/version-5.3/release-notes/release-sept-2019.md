@@ -5,8 +5,8 @@ sidebar_label: September 2019
 original_id: release-sep-2019
 ---
 <div style="text-align: justify">
+Release date: 2019-09-12
 
-Qrvey 3.2 2019-09-12
 ## New Features and Enhancements
 
 ### Data Preparation
@@ -30,8 +30,6 @@ Qrvey 3.2 2019-09-12
 *   **Performance Improvement - Automation:** The Automation Widget load time has been reduced.
 *   **Documentation - Workflows Widget:** New examples have been created to help understand the Workflows Widget and how to embed it.
 *   **Documentation - Page Builder Widget:** New examples have been created to help understand the Page Builder Widget and how to embed it.
-
-
 
 
 
@@ -60,7 +58,7 @@ Qrvey 3.2 2019-09-12
 *   **Sharing Applications - Share/Append - Summary Panels in Pages:** An Admin can share or append a Page with Summary Panels to multiple users on different servers. The Makers who own the app can use it as part of their existing app for their own requirements.
 
 
-## **General Tweaks and Bug Fixes** 
+## General Tweaks and Bug Fixes
 
 *   **Admin - Platforms Emails:** The RTF Editor used for the Emails used for the activation of new User Accounts creation and the Password restoring has been refactored.
 *   **Admin - Sharing - Deploy Connectors Between Servers:** An Admin can send a new connector to the recipient as a “shared” connector to use this one on the required Datasets. Connectors handle substitution in the connection string if necessary.

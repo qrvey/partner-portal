@@ -100,7 +100,8 @@
       "admin/elasticsearch-management",
       "admin/admin-managing-users",
       "admin/admin-sections-platform",
-      "admin/admin-sections-deployments"
+      "admin/admin-sections-deployments",
+      "admin/record-level-security"
     ]
   },
   "embedding": {

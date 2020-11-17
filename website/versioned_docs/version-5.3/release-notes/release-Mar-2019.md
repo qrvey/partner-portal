@@ -5,8 +5,8 @@ sidebar_label: March 2019
 original_id: release-mar-2019
 ---
 <div style="text-align: justify">
+Release date: 2019-03-30
 
-Qrvey 3.12   2019-03-30
 ## New Features and Enhancements
 
 ### Data Preparation 
@@ -46,7 +46,6 @@ Qrvey 3.12   2019-03-30
 
 
 
-
 ### Admin Center
 
 *   **Sharing Applications - Reports.** Admins can now share reports and it's content from one server to another.
@@ -54,7 +53,7 @@ Qrvey 3.12   2019-03-30
 *   **Section Customization.** Admins can enable or disable all the general sections in the maker platform.
 
 
-### **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **Workflow V2 - New Data.** Data tokens were not being replaced with elastic search. A notification error was fixed when uploading data into Elasticsearch. Two messages were being sent: one empty and one with the required information. 
 

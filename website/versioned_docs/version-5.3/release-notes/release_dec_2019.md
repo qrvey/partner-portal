@@ -5,8 +5,8 @@ sidebar_label: December 2019
 original_id: release-dec-2019
 ---
 <div style="text-align: justify">
+Release Date: 2019-12-18
 
-Qrvey 4.0 - 2019-12-18
 ## New Features & Enhancements
 
 ### Data Preparation
@@ -32,7 +32,7 @@ Qrvey 4.0 - 2019-12-18
 
 *   **ADMIN - 1677 Machine Learning Model Definition:** We added a new feature where a data scientist user will be able to create models to later be used on the Qrvey platform for “Predictions and Categorization”, based on the machine learning technology “AWS Sage Maker”.
 
-### **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **QV-9351 - Column Data Types Changes:** On the Admin Center, after using the SQL View from a database connection, all column data types were set as text-label by default. We fixed this setting the column data types based on the content.
 *   **QV-8963 - Spreadsheets - Data Load:** The displayed number of records in a spreadsheet was not always accurate - it is now accurate.

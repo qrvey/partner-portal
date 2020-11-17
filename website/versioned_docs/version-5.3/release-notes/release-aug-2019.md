@@ -5,7 +5,7 @@ sidebar_label: August 2019
 original_id: release-aug-2019
 ---
 <div style="text-align: justify">
-Qrvey 3.14   2019-08-09
+Release date: 2019-08-09
 
 ## New Features and Enhancements
 
@@ -67,7 +67,7 @@ Qrvey 3.14   2019-08-09
 
 *   **Custom Styles for Creator Platform.** Admin users have the option to white-label the Qrvey creator platform. 
 
-## **General Tweaks and Bug Fixes**
+## General Tweaks and Bug Fixes
 
 *   **Page Builder - Multiseries**. Category label was not visible even when resizing and making a chart bigger. This was fixed. 
 

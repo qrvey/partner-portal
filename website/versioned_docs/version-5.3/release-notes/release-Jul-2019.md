@@ -6,8 +6,8 @@ original_id: release-jul-2019
 ---
 <div style="text-align: justify">
 
-Qrvey 3.13   2019-07-12
-## New Features amd Enhancements
+Release date: 2019-07-12
+## New Features and Enhancements
 
 ### Data Preparation
 
@@ -95,7 +95,7 @@ Data Permissions/Filters. In User Management, Creators are able to set filters o
 
 
 
-### **General Tweaks and Bug Fixes** 
+## General Tweaks and Bug Fixes
 
 *   **Bar Chart - Responsive State.** Fixed bar chart with horizontal bars responsive state. 
 

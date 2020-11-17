@@ -99,7 +99,8 @@
       "version-5.3-admin/elasticsearch-management",
       "version-5.3-admin/admin-managing-users",
       "version-5.3-admin/admin-sections-platform",
-      "version-5.3-admin/admin-sections-deployments"
+      "version-5.3-admin/admin-sections-deployments",
+      "version-5.3-admin/record-level-security"
     ]
   },
   "version-5.3-embedding": {
