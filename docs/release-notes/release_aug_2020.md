@@ -4,6 +4,7 @@ title: Qrvey Version 5.4
 sidebar_label: August 2020
 ---
 <div style="text-align: justify">
+Release Date: 2020-08-31
 
 ## New Features & Enhancements
 Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</strong></a> for demo videos of some released features.
@@ -32,17 +33,17 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 
 * **AN-9996 - Continuous vs Discrete Numeric Values**: We added an option to let creators include the missing numeric values in charts between the min and max value shown in the category axis, even if there is no data within the numeric columns used for categories by selecting to show “Continuous” values instead of “Discrete” values.
 
-* <a href="/docs/ui-docs/builders/pages_actions/"> <strong>AT-6829 - Page Builder - Filter By in Tables </strong></a>: We added the feature to allow creators to set up a “Filter By” on-click action for Grouped Tables. End-users can now interact with them by clicking on a data point and filter the data by the value selected.
+* <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"> <strong>AT-6829 - Page Builder - Filter By in Tables </strong></a>: We added the feature to allow creators to set up a “Filter By” on-click action for Grouped Tables. End-users can now interact with them by clicking on a data point and filter the data by the value selected.
 
-* <a href="/docs/ui-docs/builders/pages_actions/"> <strong>AT-6828 - Page Builder - Page Drill in Tables</strong></a>: We added the feature to allow creators to set up a “Page Drill” on-click action for Tables. End-users can now interact with them by clicking on a data point to redirect them to the page configured by the creator.
+* <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"> <strong>AT-6828 - Page Builder - Page Drill in Tables</strong></a>: We added the feature to allow creators to set up a “Page Drill” on-click action for Tables. End-users can now interact with them by clicking on a data point to redirect them to the page configured by the creator.
 
-* <a href="docs/ui-docs/builders/pages/"> <strong>AT-6601 - Page Tabs Resizing</strong></a>: We added three ways to resize the width of page tabs; creators and end-users can now visualize the complete name of a tab or adjust its width according to their needs.
+* <a href="/docs/ui-docs/builders/pages/" target="_blank"> <strong>AT-6601 - Page Tabs Resizing</strong></a>: We added three ways to resize the width of page tabs; creators and end-users can now visualize the complete name of a tab or adjust its width according to their needs.
 
 
 ### Admin Center
 
 
-* <a href=""> <strong> ADMIN-2700 - Sharing Applications</strong></a>: Creators are now able to share applications and collaborate on content creation with other creators. Applications can be made public  for all the users in the system or shared with specific people. 
+* <a href="/docs/ui-docs/others/sharing-editing/#sharing-editing" target="_blank"> <strong> ADMIN-2700 - Sharing Applications</strong></a>: Creators are now able to share applications and collaborate on content creation with other creators. Applications can be made public  for all the users in the system or shared with specific people. 
 
 
 * **ADMIN-2684 - ES Management - Manual Adjustments**: Administrators can now visualize their current Elasticsearch Server Settings and Usage Storage in the new Infrastructure section inside Admin Center. They can perform manual adjustments to these settings, like selecting an Elasticsearch Server, and adjust the number of servers and storage. 
