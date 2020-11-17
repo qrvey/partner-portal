@@ -78,7 +78,7 @@ First, make sure that _null_ values of shippedDate are replaced with a data valu
 | Symbol | Operation |
 |---|---|
 |**.**|_Apply_ the function following the dot to the string/text value before the dot.|
-|**\***|_Product_ of two numbers.|
+|**\***|_Multiplication_ of two numbers.|
 |**/**|_Division_ of two numbers.|
 |**+**|_Addition_ of two numbers.|
 |**-**|_Subtraction_ of two numbers, or negation of a number.|
@@ -87,12 +87,55 @@ First, make sure that _null_ values of shippedDate are replaced with a data valu
 |**<**|Test if the first value is _less than_ the second value.|
 |**>=**|Test if the first value is _greater than or equal to_ the second value.|
 |**<=**|Test if the first value is _less than or equal to_ the second value.|
-|**<>**|Test _inequality_ of two values.|
-|**^**|Bitwise _exclusive or_ of two values.|
+|**!=**|Test _inequality_ of two values.|
+|**^**|Bitwise _exclusive or_ (XOR) of two values.|
 |**AND**|Logical _and_ of two values.|
 |**OR**|Logical _or_ of two values.|
 |**NOT**|Logical _not_ of a value.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
+
+
+
+## Date And Time Patterns
+dateFormat function accepts a format argument that determines how the formatted date (and time) is going to be displayed. A quick reference exists in the Formula Builder, when the function is selected, but here is a full reference of all possible values for format and an example of how it affects the date string.
+
+>**Note 1**: You may use single, or double quotes around the format string. <br>
+**Note 2**: All dates are treated as GMT in Qrvey. Because of that, the three formats: z, Z, X return values for GMT.
+
+
+
+
+| Letter | Date or Time Component | Presentation | Examples 
+|---|---|---|---|
+|G|Era designator|Text|AD|
+|y, Y|Year|Year|1996; 96|
+|M|Month in year|Month|July; Jul; 07|
+|w|Week in year| Number|27|
+|W|Week in month|Number|2|
+|D|Day in year|Number|189|
+|d|Day in month|Number|10|
+|F|Day of week in month|Number|2|
+|E|Day name in week|Text|Tuesday; Tue|
+|u|Day number of week (1 = Monday, ..., 7 = Sunday)|Number|1|
+|a|AM/PM marker|Text|PM|
+|H|Hour in day (0-23)|Number|0|
+|k|Hour in day (1-24)|Number|24|
+|K|Hour in AM/PM (0-11)|Number|0|
+|h|Hour in AM/PM (1-12)|Number|12|
+|m|Minute in hour|Number|30|
+|s|Second in minute|Number|55|
+|S|Millisecond|Number|978|
+|z|Time zone|General time zone|PST; GMT-08:00|
+|Z|Time zone|RFC 822 time zone|-0800|
+|x|Time zone|iso 8601 time zone|-08; -0800; -08:00|
+
+
+
+Format strings can be combined to give you the format that you want. For example:
+dateFormat(“07/04/2001”, "EEE, MMM d, ‘’yy") results in: *Wed, Jul 4, ‘01*
+
+##### * dateFormat reference: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+
 
 
 ## Supported Functions
