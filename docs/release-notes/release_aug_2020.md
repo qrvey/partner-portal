@@ -37,7 +37,7 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 
 * <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"> <strong>AT-6828 - Page Builder - Page Drill in Tables</strong></a>: We added the feature to allow creators to set up a “Page Drill” on-click action for Tables. End-users can now interact with them by clicking on a data point to redirect them to the page configured by the creator.
 
-* <a href="docs/ui-docs/builders/pages/" target="_blank"> <strong>AT-6601 - Page Tabs Resizing</strong></a>: We added three ways to resize the width of page tabs; creators and end-users can now visualize the complete name of a tab or adjust its width according to their needs.
+* <a href="/docs/ui-docs/builders/pages/" target="_blank"> <strong>AT-6601 - Page Tabs Resizing</strong></a>: We added three ways to resize the width of page tabs; creators and end-users can now visualize the complete name of a tab or adjust its width according to their needs.
 
 
 ### Admin Center
