@@ -8,6 +8,9 @@ Release Date: 2020-10-30
 
 ## New Features and Enhancementes 
 
+Click <a href="/docs/next/video-training/release/version-5.6" target="_blank"> <strong>here</strong></a> to access demo videos of some released features.
+
+
 ### Data Preparation
 
 * <a href="/docs/ui-docs/datasets/transformations/"><strong>QV-10897 - Transformations - Trim Text</strong></a>: With this transformation, you can now remove the specified characters at the start or at the end of the text in a column.
