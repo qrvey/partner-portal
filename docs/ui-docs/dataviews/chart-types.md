@@ -34,14 +34,14 @@ On the right of the window, there is the properties panel. The first section is 
 After selecting the Bar Chart, the center of the chart builder window will update to reflect the actions required.
 
 
-At the top of the chart builder, there are 2 fields: Category and Values. You can drag and drop columns from your data panel located on the left side to these fields. In the middle section, you can set a title and a description for the chart. Finally, there is a canvas where the Bar Chart will be displayed once at least one column is dropped as category or value.
+At the top of the chart builder, there are 2 fields: Category and Values. You can drag and drop columns from your data panel located on the left side of these fields. In the middle section, you can set a title and a description for the chart. Finally, there is a canvas where the Bar Chart will be displayed once at least one column is dropped as a category or value.
 
 
 ![3_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/3_ct.png#thumbnail)
 
 Users can create two types of Bar Charts:
 
-* **Horizontal Bar Chart**: A user can create a Horizontal Bar chart by dragging and dropping columns from the data panel into the shelves on top of the chart builder. Another way to create a horizontal bar chart is by dragging and dropping columns to the top-table guideline of the canvas that shows a label *Drop column as column* when hovered by the cursor. Horizontal type will always be the default chart. The orientation can be modified from the **Style Configuration** panel on the right side.
+* **Horizontal Bar Chart**: A user can create a Horizontal Bar chart by dragging and dropping columns from the data panel into the shelves on top of the chart builder. Another way to create a horizontal bar chart is by dragging and dropping columns to the top-table guideline of the canvas that shows a label *Drop column as column* when hovered by the cursor. The horizontal type will always be the default chart. The orientation can be modified from the **Style Configuration** panel on the right side.
 
 
 ![4_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/4_ct.png#thumbnail)
@@ -49,7 +49,7 @@ Users can create two types of Bar Charts:
 * **Vertical Bar Chart**: Once the Bar Chart is created, the user can change its orientation to Vertical in the Style Configuration panel, in order to create the visualization seen in image 4.
 
 ### Properties
-Charts have a set of properties that allow a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allow a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you can find a guide through the settings specific for the Bar Chart. 
 
@@ -80,7 +80,7 @@ This chart is used to show the shape of the distribution, its central value, and
 Box & Whiskers are commonly used in exploratory data analysis. Works to make comparisons between records of different time periods.
 
 ### Use Cases
-* To compare distributions because the centre, spread and overall range are immediately apparent.
+* To compare distributions because the center, spread and overall range are immediately apparent.
 * To summarize a set of data measured on an interval scale. 
 
 ### How to Use It
@@ -110,7 +110,7 @@ In a Box & Whisker chart:
 
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you can find a guide through the settings specific for the Box & Whiskers chart.
 
@@ -134,7 +134,7 @@ A crosstab is a data summarization tool that allows structuring, summarizing, an
 
 ### When to Use Crosstab Charts
 Crosstabs are commonly used when there are a limited number of categories. The row and column variables in a crosstab can be used interchangeably. The choice of row/column variable is usually dictated by space requirements or interpretation of the results.
-Crosstabs are commonly used when you want to create quick reports in an efficient way, allowing you to analyze the data and arrive at quick decisions. They are also helpful when you want to run online analysis by expanding and collapsing levels of data to focus your results, and drilling down to details from the summary data for areas that interest you.
+Crosstabs are commonly used when you want to create quick reports efficiently, allowing you to analyze the data and arrive at quick decisions. They are also helpful when you want to run online analysis by expanding and collapsing levels of data to focus your results, and drilling down to details from the summary data for areas that interest you.
 
 ### Use Cases
 * To represent and analyze many categorical variables or nominal measurement scale data.
@@ -171,7 +171,7 @@ By adding a second dataset column on the Column or Row shelf, groups will be cre
 ![11_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/11_ct.png#thumbnail)
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Crosstab chart. 
 
@@ -193,7 +193,7 @@ Position Set the totals for columns, rows or both.
 Heatmaps visualize data through variations in color, providing an easy-to-understand overview of data. Applied to a tabular format, Heatmaps are good at showing relationships between two variables or revealing patterns. Each cell of the matrix created represents the value of a measure for the intersection of the selected category. The colors represent where the value falls in the range of the measure with darker colors indicating higher values and lighter colors indicating lower ones.
 
 ### When to Use It
-Heatmap charts are commonly used to display a more generalized view of numeric values. Especially in cases when the user is dealing with large volumes of data,as colors are easier to distinguish and make more sense than raw numbers.
+Heatmap charts are commonly used to display a more generalized view of numeric values. Especially in cases when the user is dealing with large volumes of data, as colors are easier to distinguish and make more sense than raw numbers.
 
 #### Use Cases
 * To showcase “hot and cold” zones or data in a table.
@@ -222,7 +222,7 @@ At the top of the chart builder, there are 3 fields for *Categories, Values*, an
 Users need to add a third dataset column to the pivot shelf in order to complete the creation of the chart. The pivot column will work as a second category on the horizontal axis.
 
 ### Properties
-Charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Heatmap chart. 
 
@@ -262,7 +262,7 @@ On the right side of the window, we can find the properties panel. The first sec
 
 After selecting the Line chart, the center of the chart builder window will update to reflect the actions required.
 
-At the top of the chart builder, there are 2 fields for Category and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Line chart will be displayed on the canvas once at least one column is dropped as category or value.
+At the top of the chart builder, there are 2 fields for Category and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Line chart will be displayed on the canvas once at least one column is dropped as a category or value.
 
 
 ![17_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/17_ct.png#thumbnail)
@@ -278,7 +278,7 @@ Users can create five types of Line charts depending on the visualization they n
 
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Line chart.
 
@@ -344,12 +344,12 @@ By default, dot-maps have clustering enabled allowing you to see a large amount 
 ![22_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/22_ct.png#thumbnail) 
 
 ### Properties
-Charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, behavior, and other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, behavior, and other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Bubble and Dot Map charts.
 
 #### General
-* **Legends**: Turn On/Off legends in the map. (Bubble maps only)
+* **Legends**: Turn On/Off legends on the map. (Bubble maps only)
 * **Tooltips**: Turn on/off tooltips of each data point.
 * **Max Data Point**: Set the maximum number of data points in the chart.
 
@@ -388,14 +388,14 @@ On the right side of the window, we can find the properties panel. The first sec
 After selecting the Pie chart, the center of the chart builder window will update to reflect the actions required.
 
 
-At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Pie will be displayed on the canvas once at least one column is dropped as category or value.
+At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Pie will be displayed on the canvas once at least one column is dropped as a category or value.
 
 
 ![26_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/26_ct.png#thumbnail) 
 
 Users can create two types of Pie charts:
 
-* **Default Pie**: A user creates a default Pie chart by dragging and dropping columns from the data panel into the shelfs on top of the chart builder, as seen in the image above (image 3). Another way to create a simple Pie chart is by dragging and dropping columns into the top-table guideline of the canvas labeled as “Drop column as column” when the cursor is over the table. Pie type will always be the default chart but this can be modified in the Style configuration panel on the right side.
+* **Default Pie**: A user creates a default Pie chart by dragging and dropping columns from the data panel into the shelves on top of the chart builder, as seen in the image above (image 3). Another way to create a simple Pie chart is by dragging and dropping columns into the top-table guideline of the canvas labeled as “Drop column as column” when the cursor is over the table. Pie type will always be the default chart but this can be modified in the Style configuration panel on the right side.
 
 
 
@@ -405,7 +405,7 @@ Users can create two types of Pie charts:
 * **Donut**: Once the Pie chart is created, the user can change the Type to Donut in the Style configuration panel to have the visualization presented in image 4.
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Pie chart.
 
@@ -447,7 +447,7 @@ On the right side of the window, we can find the properties panel. The first sec
 
 After selecting the Symbol chart, the center of the chart builder window will update to reflect the actions required.
 
-At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Symbol chart will be displayed on the canvas once at least one column is dropped as category or value.
+At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Symbol chart will be displayed on the canvas once at least one column is dropped as a category or value.
 
 ![30_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/30_ct.png#thumbnail) 
 
@@ -462,7 +462,7 @@ Users can create 7 types of symbol charts depending on the visualization they ne
 
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Symbol chart.
 
@@ -513,7 +513,7 @@ After selecting the Word cloud chart, the center of the chart builder window wil
 
 
 
-At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Word cloud will be displayed on the canvas once at least one column is dropped as category or value.
+At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Word cloud will be displayed on the canvas once at least one column is dropped as a category or value.
 
 
 ![33_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/33_ct.png#thumbnail) 
@@ -588,13 +588,13 @@ as duplicate values. In the examples below, the value USA appears twice in the c
 
 ![40_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/40_ct.gif#thumbnail) 
 
-Another way to create a grouped table is by using the vertical and horizontal guidelines that appear over the chart when the mouse is hovering it.
+Another way to create a grouped table is by using the vertical and horizontal guidelines that appear over the chart when the mouse is hovering over it.
 
 
 ![41_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/41_ct.gif#thumbnail) 
 
 ### Properties
-Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Table chart.
 
@@ -616,6 +616,11 @@ In this section, you will find *Menu Actions* and *Max Groups*.
 The following image shows how **Menu Action** settings work.
 
 ![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.gif#thumbnail) 
+
+### Resizing Columns 
+You can  manually modify the Column Sizes of Table Charts by simply dragging  hovering over the header of the column and dragging the column header’s width to the left or right using the marquee tool. 
+
+![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.gif#thumbnail)  
 
 ## Metrics
 
@@ -650,7 +655,7 @@ To build your first metric, you can access the Chart Builder from the Analyze ta
 
 ![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.png#thumbnail) 
 
-As soon as you add the field, the value will be shown and you can continue to style your metric from the Comparison and Styles section on the right side panel. 
+As soon as you add the field, the value will be shown and you can continue to style your metric from the Comparison and Styles section on the right side of the panel. 
 
 You can add time comparison options by dragging a date field to the right-side panel in the Date Column area and selecting a time period to compare with from a series of options such as *Last Hour, Today, This month, Last quarter,* and *This year* amongst others.
 
@@ -658,7 +663,7 @@ In the Comparison section, you can also define the styles for fonts and the chan
 
 ![44_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/44_ct.png#thumbnail) 
 
-There are other options to control visual aspects and behavior of the metric like the automatic resizing of the content which will re-adjust itself to the size of the panel when it’s enabled. When it’s turned off, it will take the defined font size. Another available option is to turn on/off the animation used to display the indicator metric while the data is loading. 
+There are other options to control visual aspects and behavior of the metric like the automatic resizing of the content which will readjust itself to the size of the panel when it’s enabled. When it’s turned off, it will take the defined font size. Another available option is to turn on/off the animation used to display the indicator metric while the data is loading. 
 
 ![45_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/45_ct.png#thumbnail-40) 
 
@@ -668,7 +673,7 @@ For Dial and Bullet Gauge style metrics Thresholds can be set. You can choose to
 
 
 ### Bullet Gauge
-The bullet metric is used to compare one or more measures to enrich its meaning, and displays it in the context of qualitative ranges of performance, such as poor, satisfactory, or good. The qualitative ranges are displayed as different colors that can be customized.
+The bullet metric is used to compare one or more measures to enrich its meaning and displays it in the context of qualitative ranges of performance, such as poor, satisfactory, or good. The qualitative ranges are displayed as different colors that can be customized.
 
 ![47_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/47_ct.png#thumbnail) 
 
@@ -683,7 +688,7 @@ In this section, you will find a guide through the settings specific for Metrics
 * **Fixed Scale**: Turn on/off tooltips of each data point. (Dial, Bullet)
 
 ### Comparison
-* **Date Column**: Add the date column to visualize comparison value.
+* **Date Column**: Add the date column to visualize the comparison value.
 
 #### Styles
 * **Color**: Change the colors of the metric.
