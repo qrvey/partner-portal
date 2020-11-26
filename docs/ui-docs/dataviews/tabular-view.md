@@ -58,7 +58,7 @@ You can reorder and resize columns as well as create aggregates to analyze data 
 To reorder columns, click on a column header you want to move, then drag and drop it to a new location.
 
 ### Column Size
-Hover over the right side of the column heading until the <span style="font-size:x-large">**⇹**</span> appears. Next, click and drag left or right to adjust the column size.
+Hover over the right side of the column heading until the <span style="font-size:x-large">**⇹**</span> cursor appears. Next, click and drag left or right to adjust the column size.
 
 
 ### Aggregates
