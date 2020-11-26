@@ -6,7 +6,7 @@ sidebar_label: Tabular View
 
 <div style="text-align: justify">
 
-Tabular View offers a traditional, spreadsheet-style view of your data. This is organized into familiar rows and columns. You can add, edit, and delete data as needed. Tabular view also allows for analysis such as filtering, bucketing, and aggregate functions.
+Tabular View offers a traditional, spreadsheet-style view of your data. This is organized into familiar rows and columns. You can add, edit, and delete data as needed. Tabular View also allows for analysis such as filtering, bucketing, and aggregate functions.
 
 ![1_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/1_tabular-view.png#thumbnail)
 
@@ -19,14 +19,14 @@ In the upper-right corner, you’ll find icon buttons to add **Formulas**, defin
 Use the **Formulas** button to define new columns which will be calculated from existing columns.
 
 ### Bucketing
-Use the **Bucketing** button to define new columns which map individual values to named ranges, also known as buckets. For example, you could map city population to buckets such as "0 - 1,000", "1,001 - 5,000", etc. Or you could map USA states to buckets such as "Northeast", "Midwest", etc.
+Use the **Bucketing** button to define new columns that map individual values to named ranges, also known as buckets. For example, you could map city population to buckets such as "0 - 1,000", "1,001 - 5,000", etc. Or you could map USA states to buckets such as "Northeast", "Midwest", etc.
 
 ### Export
 Use the **Export** button to export the data in CSV format.
 
 ### Filters
 
-Use the **Filters** button to show or hide the **Filters** panel, which lists all of the defined filters. Some or all of your filters can be quickly enabled, revised, or disabled. Use the **Reset All** link to remove all filters from tabular view.
+Use the **Filters** button to show or hide the **Filters** panel, which lists all of the defined filters. Some or all of your filters can be quickly enabled, revised, or disabled. Use the **Reset All** link to remove all filters from the Tabular View.
 
 ![5_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/5_tabular-view.png#thumbnail-40)
 
@@ -52,13 +52,13 @@ Click the **Select Columns** button and then check or uncheck the column names t
 
 ## Column Operations
 
-You can reorder and resize columns as well as create aggregates to analyse data in the table.
+You can reorder and resize columns as well as create aggregates to analyze data in the table.
 
 ### Column Order
 To reorder columns, click on a column header you want to move, then drag and drop it to a new location.
 
 ### Column Size
-Hover over the right side of the column heading until the <span style="font-size:x-large">**⇹**</span> 
+Hover over the right side of the column heading until the <span style="font-size:x-large">**⇹**</span> appears. Next, click and drag left or right to adjust the column size.
 
 
 ### Aggregates
