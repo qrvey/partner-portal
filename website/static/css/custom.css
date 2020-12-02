@@ -244,6 +244,11 @@ img[src*="#thumbnail-20"] {
     color: #FFFFFF;
 }
 
+.video-icon-png {
+    width: 2% !important;
+    margin-left: 0;
+    display: inline-block;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
