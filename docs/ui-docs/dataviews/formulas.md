@@ -64,14 +64,14 @@ First, make sure that _null_ values of shippedDate are replaced with a data valu
 1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added within parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
 
 2. Even if a Painless function is not listed in the **Functions** list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value. 
-> **Note**: This example also illustrates the use of the _**Apply** operator (.) as an alternative way to invoke a function_. 
+Note that this example also illustrates the use of the _**Apply** operator (.) as an alternative way to invoke a function_. 
 
 
 
 ## **Syntax**
 **Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].  
 **Functions** - function names are case sensitive and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).  
-**Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression **32 + 5 * [Temperature] / 9**, 32 is added to five ninths of [Temperature].
+**Operators** - the following table shows the available operators. Note that normal operator precedence applies. For example, in the expression **32 + 5 * [Temperature] / 9**, 32 is added to five ninths of [Temperature].
 
 
 
@@ -169,7 +169,7 @@ dateFormat(“07/04/2001”, "EEE, MMM d, ‘’yy") results in: *Wed, Jul 4, �
 
 
 
-6. Use your new formula. Note, that newly added columns are hidden by default and have to be made visible from the **Select Columns** command.
+6. Use your new formula. Note that newly added columns are hidden by default and have to be made visible from the **Select Columns** command.
 
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/select_formula.gif" style="margin:auto; display:block;" width="500" >
 
