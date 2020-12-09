@@ -49,7 +49,7 @@ Users can create two types of Bar Charts:
 * **Vertical Bar Chart**: Once the Bar Chart is created, the user can change its orientation to Vertical in the Style Configuration panel, in order to create the visualization seen in image 4.
 
 ### Properties
-These charts have a set of properties that allow a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you can find a guide through the settings specific for the Bar Chart. 
 
@@ -110,7 +110,7 @@ In a Box & Whisker chart:
 
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you can find a guide through the settings specific for the Box & Whiskers chart.
 
@@ -171,7 +171,7 @@ By adding a second dataset column on the Column or Row shelf, groups will be cre
 ![11_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/11_ct.png#thumbnail)
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Crosstab chart. 
 
@@ -222,7 +222,7 @@ At the top of the chart builder, there are 3 fields for *Categories, Values*, an
 Users need to add a third dataset column to the pivot shelf in order to complete the creation of the chart. The pivot column will work as a second category on the horizontal axis.
 
 ### Properties
-These charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, and behavior along with some other options The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Heatmap chart. 
 
@@ -278,7 +278,7 @@ Users can create five types of Line charts depending on the visualization they n
 
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Line chart.
 
@@ -344,7 +344,7 @@ By default, dot-maps have clustering enabled allowing you to see a large amount 
 ![22_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/22_ct.png#thumbnail) 
 
 ### Properties
-These charts have a set of properties that allows a user to customize the aspect of the chart, modifying its look, format, behavior, and other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Bubble and Dot Map charts.
 
@@ -405,7 +405,7 @@ Users can create two types of Pie charts:
 * **Donut**: Once the Pie chart is created, the user can change the Type to Donut in the Style configuration panel to have the visualization presented in image 4.
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Pie chart.
 
@@ -462,7 +462,7 @@ Users can create 7 types of symbol charts depending on the visualization they ne
 
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Symbol chart.
 
@@ -519,7 +519,7 @@ At the top of the chart builder, there are 2 fields for *Category* and *Values*.
 ![33_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/33_ct.png#thumbnail) 
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Word Cloud chart.
 
@@ -594,7 +594,7 @@ Another way to create a grouped table is by using the vertical and horizontal gu
 ![41_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/41_ct.gif#thumbnail) 
 
 ### Properties
-These charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 In this section, you will find a guide through the settings specific for the Table chart.
 
