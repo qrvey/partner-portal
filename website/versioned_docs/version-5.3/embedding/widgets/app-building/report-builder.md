@@ -31,7 +31,7 @@ The table below provides general information about each property of this widget�
 | **reports_dashboard** | `Boolean`, Shows the report builder (has to be set to true for reports. Otherwise Page Builder will be exposed). | Yes |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features)<br> <br>* CREATE_CHART: Hide Create Chart button. | No |
 
-> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 
 ## Sample

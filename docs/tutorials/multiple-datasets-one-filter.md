@@ -5,7 +5,7 @@ sidebar_label: How to Make Filters From Multiple Datasets Work With One Filter P
 
 ---
 Embedding visualization panels inside your application is a straightforward task (see 
-<a href="docs/embedding/widgets/analytics/single-panel/">Single Panel Widget</a>). Enabling filtering on those individual panels is also easy and a matter of setting the **panel.header.filter** property in the widget config. 
+<a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel Widget</a>). Enabling filtering on those individual panels is also easy and a matter of setting the **panel.header.filter** property in the widget config. 
 But what if you have multiple panels, based on different datasets, and you wish all of the filters use a single filter panel and filter modal? 
 
 1. First, embed the different panels/charts you want on your view. 
@@ -52,7 +52,7 @@ var configObject = {
 ```
 
 That’s it!
-Don’t forget to add your Analytic Suite launchers in case you haven’t done that yet (see <a href="docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite Documentation</a>). 
+Don’t forget to add your Analytic Suite launchers in case you haven’t done that yet (see <a href="/docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite Documentation</a>). 
 
 >**Note**: The same launchers used to embed single panels will work for filter panel and filter modal widgets.
 

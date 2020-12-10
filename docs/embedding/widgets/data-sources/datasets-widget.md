@@ -27,7 +27,7 @@ The table below provides general information about each property of this widget�
 | **domain** | `String`, Qrvey Core URL | Yes | 
 | **dataset_id** | `String`, For displaying a specific dataset | No |
 
-> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 ## Sample
 The following sample shows the way this widget is used in an HTML page. Please note, that the example may not include the non-required properties of the configuration object. 

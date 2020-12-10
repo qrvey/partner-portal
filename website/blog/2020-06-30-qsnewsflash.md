@@ -28,14 +28,14 @@ Don’t forget to check the site when you look for information and let us know i
 </h3>
 
 
- <a href="/docs/aws/manage-aws-elasticsearch//"> <strong> AWS </strong> </a> — This entire section and its content have been added to the site along with articles that are specific to Qrvey implementation on AWS.
+ <a href="/docs/aws/manage-aws-elasticsearch/"> <strong> AWS </strong> </a> — This entire section and its content have been added to the site along with articles that are specific to Qrvey implementation on AWS.
 
 
 <h3 style="color:#FF8143"> New Videos </h3>
 
-* Building Qrvey Sample ><a href="docs/video-training/building-qrvey-sample/chart_builder_overview"><strong> Chart Builder Overview</strong> </a>
+* Building Qrvey Sample ><a href="/docs/video-training/building-qrvey-sample/chart_builder_overview"><strong> Chart Builder Overview</strong> </a>
 
-* Building Qrvey Sample > <a href="docs/video-training/building-qrvey-sample/custom_metric_views/"> <strong>
+* Building Qrvey Sample > <a href="/docs/video-training/building-qrvey-sample/custom_metric_views/"> <strong>
 Custom and Metric Views</strong></a>
 
 * Release Demos > <a href="/docs/next/video-training/release/version-5.2/"> <strong>

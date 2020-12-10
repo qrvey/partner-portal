@@ -29,9 +29,9 @@ We deploy directly into your own Amazon Web Services (AWS) account which gives y
 Qrvey Platform is deployed using a combination of Cloudformation templates and Code Pipelines. This makes the deployment fully automated with zero downtime during upgrades. An upgrade is as simple as copying a few Zip files into an S3 bucket which will trigger the pipelines and deploy the new version including any updates to the infrastructure.
 
 
-<a href="docs/get-started/aws_marketplace/">Go to AWS Marketplace Deployment.</a>
+<a href="/docs/get-started/aws_marketplace/">Go to AWS Marketplace Deployment.</a>
 
-<a href="docs/setup-deployments/setup-initial-deployment/">Go to Enterprise Deployment.</a>
+<a href="/docs/setup-deployments/setup-initial-deployment/">Go to Enterprise Deployment.</a>
 
 
 ## Qrvey Platform Components

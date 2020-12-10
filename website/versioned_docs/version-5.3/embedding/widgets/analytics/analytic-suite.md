@@ -39,7 +39,7 @@ The table below provides general information about each property of this widget�
 | **settings.mode** | `String`, determines displaying the complete layout or the views only. It depends on set view and it accepts: <br>* COMPLETE <br>* SIMPLE<br>* Default: COMPLETE | No |
 | **settings.displayMode** | `String`, changes the style and extends the layout onto the entire container. <br>* FULL <br>* NORMAL <br>* Default: NORMAL| No |
 
-> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 ## Sample
 The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 

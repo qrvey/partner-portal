@@ -20,7 +20,7 @@ Bar charts are best suited to compare data between different groups or categorie
 
 ### How to Use Bar Charts
 Inside Qrvey, there are different sections where you can create a Bar Chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check 
-<a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+<a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
@@ -143,7 +143,7 @@ Crosstabs are commonly used when you want to create quick reports in an efficien
 * When the data needs to be aggregated, and sliced for analysis. 
 
 ### How to Use Crosstab Charts
-In Qrvey Composer, there are different places where you can create a Crosstab Chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+In Qrvey Composer, there are different places where you can create a Crosstab Chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
@@ -250,7 +250,7 @@ Similar to Bar charts, Line charts are best suited to track changes over periods
 * To show the amount/percentage of change in the population of people who attend one or more events over a period of time.
 
 ### How to Use It
-Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -312,7 +312,7 @@ Bubble Maps are best suited for showing values based on locations in order to co
 * To show the amount of sales clustered on different locations based on demographics.
 
 ### How to Use It
-Inside Qrvey Composer, there are different places where you can create a map chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+Inside Qrvey Composer, there are different places where you can create a map chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 Before getting to the Chart Builder, the data needs to be prepared for the correct use of maps.
 
@@ -432,7 +432,7 @@ The use is similar to Bar and Line charts, however, Symbol charts are best used 
 * To show the registered heart rates over a specific period of time.
 
 ### How to Use It
-Inside Qrvey Composer, there are different places where you can create a Symbol chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+Inside Qrvey Composer, there are different places where you can create a Symbol chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 

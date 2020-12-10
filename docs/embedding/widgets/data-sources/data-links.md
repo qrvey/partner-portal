@@ -27,7 +27,7 @@ The table below provides general information about each property of this widget�
 | **app_id** | `String`, Qrvey App ID | Yes |
 | **datalink_id** | `String`, set to display specific data link | No |
 
-> **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 
 ## Sample
