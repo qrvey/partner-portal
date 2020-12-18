@@ -6,7 +6,7 @@ sidebar_label: December 2020
 <div style="text-align: justify">
 Release Date: 2020-12-18
 
-## New Features and Enhancementes 
+## New Features and Enhancements 
 
 Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <strong>here</strong></a> to access demo videos of some released features.
 
@@ -25,18 +25,17 @@ Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <
 
 * <a href="/docs/ui-docs/datasets/datasets/#datasets" target="_blank"> <strong>QV-11016 - Cancel Loading Process</strong></a>: You can now cancel the data loading process in case you want to review or change the dataset design.
 
-<br>
-
 ### Data Analysis & Automation
 
-* <a href="/docs/video-training/release/version-5.7/#filters-v20" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/data_overview/#data_overview" target="_blank"><strong>Filters Creation 2.0</strong></a>: Filter creation has been revamped to provide a better and more consistent experience. As a result of this change you get: 
-  * Improved and more consistent UI across different data types.
-  * More complete and consistent list of operands for all data types. <br>
-It is important to note that the **logic between scopes has been changed from OR to AND**. This change is in response to multiple customer requests and is more in accordance with advanced filtering behavior.  
+* <a href="/docs/video-training/release/version-5.7/#filters-v20" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/data_overview/#data_overview" target="_blank"><strong>AN-11308 - Filters Creation 2.0</strong></a>: Filter creation has been revamped to provide a better and more consistent experience. As a result of this change you get: 
+    * Improved and more consistent UI across different data types.
+    * More complete and consistent list of operands for all data types.
 
-* MISSING LINK <a href="" target="_blank"> <strong>AN-11309 - Filter on Aggregate Values</strong></a>: This new feature adds the ability to filter aggregated values in any chart where grouping has been applied.
+    It is important to note that the **logic between scopes has been changed from OR to AND**. This change is in response to multiple customer requests and is more in accordance with advanced filtering behavior.  
 
-* <a href="/docs/video-training/release/version-5.7/#date-picker-filter-component" target="_blank" class="tooltip"><img alt="Date Picker Filter Component" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><strong>AT-7523 - Date Picker Filter Component</strong>: As part of a new initiative to allow adding individual filter controls to the Report and Page Builder, the Date Picker component has been introduced in this release. The component can be added in creation mode to be used in end-user interaction mode. 
+* <a href="/docs/ui-docs/filters/working-with-filters" target="_blank"> <strong>AN-11309 - Filter on Aggregate Values</strong></a>: Added ability to filter aggregated values in any chart where grouping has been applied.
+
+* <a href="/docs/video-training/release/version-5.7/#date-picker-filter-component" target="_blank" class="tooltip"><img alt="Date Picker Filter Component" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filters/working-with-filters" target="_blank"><strong>AT-7523 - Date Picker Filter Component</strong></a>: As part of a new initiative to allow adding individual filter controls to the Report and Page Builder, we added the Date Picker component. The component can be added in creation mode for the use in end-user interaction mode. 
 
 * <a href="/docs/video-training/release/version-5.7/#nested-formulas" target="_blank" class="tooltip"><img alt="Nested Formulas" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/dataviews/formulas/" target="_blank"><strong>AN-8299 - Nested Formulas</strong></a>: Formulas have been improved to allow nesting (using one formula in another).
 
@@ -57,7 +56,6 @@ It is important to note that the **logic between scopes has been changed from OR
 * <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"><strong>AT-6794 - Page Actions on Geo Maps</strong></a>: You can now use page actions like Filter By and Drilldowns on Geo Maps, in order to let End-users interact with them by clicking on a data point.
 
 * <a href="/docs/video-training/release/version-5.7/#text-labels-on-page-header" target="_blank" class="tooltip"><img alt="Text Labels on Page Header" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/builders/pages/" target="_blank"><strong>AT-7531 - Text Label on Page Header</strong></a>: Text labels can now be added to page headers.
-
 
 
 ## General Tweaks & Bug Fixes
@@ -106,4 +104,4 @@ It is important to note that the **logic between scopes has been changed from OR
 
 * **AT-7615 - Color Does Not Change**: When the creator chose a custom color by typing the desired value for font and background colors, the color did not change until the transparency had been modified. This has been fixed.
 
-* **CR-69 - Filter Value List to Display More Options**: When a user created a filter, the system only displayed the top 50 values for that field. This has been fixed by increasing the limit to 1000.
+* **CR-69 - Filter Value List to Display More Options**: When a user created a filter, the system only displayed the top 50 values for that field. This has been fixed by increasing the limit to 1,000.
