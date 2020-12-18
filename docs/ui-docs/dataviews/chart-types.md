@@ -304,17 +304,18 @@ In this section, you will find a guide through the settings specific for the Lin
 
 ## Maps
 ### Overview
-The Geomap chart is a map of a country, continent, or a region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots or colors with the option of hover text for data points. 
+The Geomap chart is a map of a country, continent, or a region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots, or colors with the option of hover text for data points. 
 
 ### When to Use It
-Bubble Maps show aggregated values in locations with each bubble area  proportional to the value being represented. These are best suited for comparing proportions over geographic regions. 
+Bubble Maps show aggregated values in locations with each bubble area proportional to the value being represented. These are best suited for comparing proportions over geographic regions. 
 
 Dot Maps show no aggregated values and just data locations. These are best for detecting spatial patterns or the distribution of data over a geographical region, by placing equally sized points over a geographical region.
 
-Choropleth maps are used to display geographical divide geographical areas or regions that are coloured, shaded or patterned in relation to the aggregated values.
-¡
+Choropleth maps are used to visualize geographical divides of areas or regions, colored, shaded or patterned in relation to the aggregated values.
+aggregated values. These are best for visualizing how a measurement varies across a geographic area or to show the level of variability within a region.  
+
 #### Use Cases
-* Bubble and Choropleth maps: To show the amount of sales clustered on different locations based on demographics.
+* Bubble and Choropleth maps: To show the number of sales clustered on different locations based on demographics.
 * Dot maps: To show the distribution of data per location.
 
 ### How to Use It
@@ -328,14 +329,17 @@ When preparing data, the user needs to create a geolocation group to identify pa
 
 After setting the geolocation group and loading data, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-![19_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/19_ct.png#thumbnail)
+![19_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/19ct.png#thumbnail)
 
 
-On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose either the bubble or the dot map chart.
+On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose either the Bubble, Dot, or Choropleth map chart.
 
-![20_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20_ct.png#thumbnail)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20_ct.png#thumbnail)
 
-After selecting a bubble or dot map chart, the center of the chart builder window will update to reflect the actions required.
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20a_ct.png#thumbnail-40)
+
+After selecting a Bubble, Dot, or Choropleth map chart, the center of the chart builder window will update to reflect the actions required.
+
 
 #### Bubble Map
 At the top of the chart builder, there are 2 fields for Geolocation and Values. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Bubble Map chart will be displayed on the canvas once at least one column is dropped as Geolocation.
@@ -345,14 +349,18 @@ At the top of the chart builder, there are 2 fields for Geolocation and Values. 
 #### Dot Map
 At the top of the chart builder, there is 1 field for Geolocation. In this field, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Dot Map chart will be displayed on the canvas once at least one column is dropped as Geolocation. 
 
-By default, dot-maps have clustering enabled allowing you to see a large amount of points clustered based on the position proximity of each point. As you zoom in and out of your clustered map, Qrvey re-calibrates the number of points we can display. If you click a cluster, we automatically zoom in and show individual points (if possible) or sub-clusters.
+By default, Dot maps are clustering-enabled, allowing you to see a large number of points clustered based on the position proximity of each point. As you zoom in and out of your clustered map, Qrvey re-calibrates the number of points we can display. If you click a cluster, we automatically zoom in and show individual points (if possible) or sub-clusters.
 
-![22_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/22_ct.png#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/dot_1.png#thumbnail) 
+
+At the top of the chart builder, there are 2 fields for *Geolocation* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Choropleth Map chart will be displayed on the canvas once at least one column is dropped as Geolocation.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/dot_2.png#thumbnail) 
 
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Bubble and Dot Map charts.
+In this section, you will find a guide through the settings specific for the Bubble, Dot, and Choropleth Map charts.
 
 #### General
 * **Legends**: Turn On/Off legends on the map. (Bubble maps only)
@@ -360,14 +368,18 @@ In this section, you will find a guide through the settings specific for the Bub
 * **Max Data Point**: Set the maximum number of data points in the chart.
 
 #### Styles
-* **Color**: Change the Color of bubbles or dots of the chart.
+* **Color**:  Change the Color or theme of bubbles, dots, or regions shown in maps.
 * **Base Map**: Change the terrain visualization of the map.
 * **Map Region**: Change the region to visualize.
 * **Symbol**: Change the type of symbol. (Dot Maps only)
-* **Fill**: Change to filled symbol or not. (Dot Maps only)
+* **Fill**: Change to a filled symbol or not. (Dot Maps only)
 * **Symbol Opacity**: Change the degree of symbol´s opacity.
 * **Map Borders**: Turn On/Off map borders.
+* **Custom Scale**: Create a custom scale by changing the min and max value ranges and color steps. (Choropleth Map only)
+* **Reversed Colors**:  to reverse the order of colors from the theme. (Choropleth Map only)
 * **Allow Clustering**: Turn On/Off clustering. (Dot Maps only)
+* **Data Labels**: Turn On/Off value labels. 
+
 
 ## Pie Chart
 ### Overview
@@ -723,3 +735,65 @@ The value for each needle is read against the colored data range or chart axis. 
 An indicator is a qualitative or quantitative variable that provides a simple and reliable means to express achievement, the attainment of a goal, or the results stemming from a specific change. It often aggregates or combines a comparison based on different dates.
 
  ![51_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/51_ct.png#thumbnail-40) 
+
+
+
+## Min/Max  
+### Overview
+A Min/Max chart shows the Minimum, Maximum, and even the Average values of a selected measure. It is especially useful for indicating the distribution of data.
+
+### When to Use It
+Min/Max charts are best used for comparing 2 measures and showing the magnitude of change between the two.
+
+#### Use cases
+* The most common use cases are for healthcare measurements (temperature, heart rate, oxygen levels, etc), or for “sensor” use-case for IoT devices where you’re capturing measurements at date/time intervals. Here chart Creators' main interest is to show the Min/Avg/Max each minute or hour, for example.
+
+### How to Use It
+In Qrvey Composer, there are different places where you can create a Min/Max chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts.
+
+To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/minmax_1.png#thumbnail) 
+
+On the right side of the window, there is the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Min/Max chart.
+
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/minmax_2.png#thumbnail-40) 
+
+After selecting the Min/Max chart, the center of the chart builder window will update to reflect the actions required.
+
+
+At the top of the chart builder, there are 2 fields: *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, Min/Max will be displayed on the canvas once at least one dataset column is dropped on the *Value* field.
+
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/minmax_3.png#thumbnail) 
+
+### Properties
+Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
+
+
+In this section, you can find a guide through the settings specific to  the Min/Max chart.
+
+#### General
+* **Sort by**: Enabled only when a column is placed on the  “Category” shelf, users can sort the category values of the column.
+* **Tooltips**: Turn on/off tooltips of each data point.
+* **Display Averages**: Turn on/off to display the average data point in the chart.
+* **Max Data Points**: Set the maximum number of data points in the chart.
+
+#### Styles
+* **Color**: Change the Color of the chart.
+Axis Labels**: Turn on/off axis labels of the chart.
+* **Chart Orientation**: Choose the chart orientation between vertical and horizontal.
+* **Line Thickness**: Change the thickness of the lines in the chart.
+* **Line Style**: Change the line style choosing between solid, dashed and dotted lines.
+* **Symbol**: Change the type of symbol.
+* **Line Opacity**: Change the degree of the line’s opacity.
+* **Data Labels**: Turn on/off data labels of the charts.
+* **Borders**: Turn on/off borders of labels.
+
+#### Layers
+* To add reference lines to the min/max chart.
+
+#### Format
+* To change the format of the chart visualization to small multiples.
+
