@@ -304,12 +304,18 @@ In this section, you will find a guide through the settings specific for the Lin
 
 ## Maps
 ### Overview
-The Geomap chart is a map of a country, continent, or a region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles or dots with the option of hover text for data points. 
+The Geomap chart is a map of a country, continent, or a region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots or colors with the option of hover text for data points. 
 
 ### When to Use It
-Bubble Maps are best suited for showing values based on locations in order to compare data of different categories depending on each location. Dot maps are used just to show locations.
+Bubble Maps show aggregated values in locations with each bubble area  proportional to the value being represented. These are best suited for comparing proportions over geographic regions. 
+
+Dot Maps show no aggregated values and just data locations. These are best for detecting spatial patterns or the distribution of data over a geographical region, by placing equally sized points over a geographical region.
+
+Choropleth maps are used to display geographical divide geographical areas or regions that are coloured, shaded or patterned in relation to the aggregated values.
+¡
 #### Use Cases
-* To show the amount of sales clustered on different locations based on demographics.
+* Bubble and Choropleth maps: To show the amount of sales clustered on different locations based on demographics.
+* Dot maps: To show the distribution of data per location.
 
 ### How to Use It
 Inside Qrvey Composer, there are different places where you can create a map chart. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
