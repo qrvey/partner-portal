@@ -57,7 +57,6 @@
       "version-5.3-ui-docs/datasets/transformations"
     ],
     "Analysis Views": [
-      "version-5.3-ui-docs/dataviews/filters",
       "version-5.3-ui-docs/dataviews/formulas",
       "version-5.3-ui-docs/dataviews/buckets",
       "version-5.3-ui-docs/dataviews/exporting",
