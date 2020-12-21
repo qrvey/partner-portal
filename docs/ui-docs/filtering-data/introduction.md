@@ -13,7 +13,7 @@ There are many different ways you can filter your data to focus on the things th
 ## Hierarchy And Scope
 Various filters apply in a hierarchical model: First, the data gets filtered by the security filters, then data filters for the user group refine it further, and so on. The full hierarchical model is shown in the image and the purpose of each layer is described below.
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/1_intro.png#thumbnail-60)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/1intro.png#thumbnail-60)
 
 
 ### Hidden Filters
@@ -77,5 +77,5 @@ Example: Select all records where [Branch is EQUAL to [A] **OR** [B]].
 
 The following image sums up the filter logic used in Qrvey:
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7_intro.png#thumbnail)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail)
 
