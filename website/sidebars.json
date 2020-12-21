@@ -207,7 +207,8 @@
           "data-router/DataLoading/loading-status",
           "data-router/DataLoading/loading-status-databases",
           "data-router/dataload-S3",
-          "data-router/batch-manager"
+          "data-router/batch-manager",
+          "data-router/DataLoading/notifications"
         ]
       }
     ]
