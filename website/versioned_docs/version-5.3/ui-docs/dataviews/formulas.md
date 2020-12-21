@@ -7,7 +7,7 @@ original_id: formulas
 
 <div style="text-align: justify">
 
-You can find Formulas in the **Analyze** and **Chart Builder** sections of Qrvey Composer to create calculated columns that can be used like any other column of data.
+You can find Formulas in the **Analyze** section of Qrvey Composer, as well as the Chart Builder,  to create *calculated columns* that can be used like any other column of data.
 
 ## Use Cases
 Formulas can be used to segment data, to convert the data type of a field (such as converting a string to a date), to aggregate data, to filter results, to calculate ratios, and much more.
@@ -47,14 +47,14 @@ We can create a new formula as: <span style="color:#4491F9">[quantityInStock]</s
 
 * **Concatenating Text Columns**  
 
-Thw simple **+** sign can be used to stitch strings of text together. An example would be creating full name from first and last name columns.  
+The simple **+** sign can be used to stitch strings of text together. An example would be creating full name from first and last name columns.  
 **Syntax**: value1 + value2 + value3...  
 **Example**: contactFirstName and contactLastName are text type columns and we want to concatenate these together for searches with the last name at the beginning to facilitate sorting. 
 We can create a new formula as: <span style="color:#4491F9">[contactLastName]</span>+' , '+<span style="color:#4491F9">[contactFirstName]</span> and call it **contactName**. The returned result for a contact with first name ‘John’ and last name ‘Doe’ will be ‘Doe, John’.
 
 * **Using Other Scripting Functions**
 
-Other scripting functions can be used to create calculated columns. An example of this use case would be to use the **if** function to return a value based on a condition.   
+Painless scripting functions can be used to create calculated columns. An example of this use case would be to use the **if** function to return a value based on a condition.   
 **Syntax**: if (condition) {return result1;} else {return result2;}  
 **Example**: orderDate and shippedDate are date type columns that contain order and shipping dates in an ERP system. We want to decide in which cases our shipping department did a good job and for which orders it reacted too slow.  
 **The Function:**                     
@@ -64,15 +64,15 @@ First, make sure that _null_ values of shippedDate are replaced with a data valu
 **Notes**  
 1. When using the action commands to add functions and columns to the formula dialog (rather than typing it in) pay attention to the position of your cursor. Functions are added within parentheses and unless you move your cursor inside the parentheses before adding columns or typing, you may create a syntax error in your formula. Make sure you test your formula before saving it!  
 
-2. Even if a function is not listed in the **Functions** list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value. _Note, this also illustrates the use of the **Apply** operator as an alternative way to invoke a function._
-
+2. Even if a Painless function is not listed in the **Functions** list, it may still be supported. Don't hesitate to try. For example [orderDate].dayOfWeek is a perfectly acceptable formula, although it's not listed. It returns the number of weekdays of the date value. 
+Note that this example also illustrates the use of the _**Apply** operator (.) as an alternative way to invoke a function_. 
 
 
 
 ## **Syntax**
 **Fields/Columns** - use [ ] around the field or column name, e.g. [Sales].  
 **Functions** - function names are case sensitive and must be followed by a bracketed argument list, e.g. sum([Items]) or avg([Temp]).  
-**Operators** - the following table shows the available operators. Note, that normal operator precedence applies. For example, in the expression **32 + 5 * [Temperature] / 9**, 32 is added to five ninths of [Temperature].
+**Operators** - the following table shows the available operators. Note that normal operator precedence applies. For example, in the expression **32 + 5 * [Temperature] / 9**, 32 is added to five ninths of [Temperature].
 
 
 
@@ -98,7 +98,7 @@ First, make sure that _null_ values of shippedDate are replaced with a data valu
 
 
 ## Date And Time Patterns
-dateFormat function accepts a format argument that determines how the formatted date (and time) is going to be displayed. A quick reference exists in the Formula Builder, when the function is selected, but here is a full reference of all possible values for format and an example of how it affects the date string.
+dateFormat function accepts a format argument that determines how the formatted date (and time) is going to be displayed. A quick reference exists in the Formula Builder when the function is selected, but here is a full reference of all possible values for format and an example of how it affects the date string.
 
 >**Note 1**: You may use single, or double quotes around the format string. <br>
 **Note 2**: All dates are treated as GMT in Qrvey. Because of that, the three formats: z, Z, X return values for GMT.
@@ -161,7 +161,7 @@ dateFormat(“07/04/2001”, "EEE, MMM d, ‘’yy") results in: *Wed, Jul 4, �
 
 
 
-4. Look for the column you want to Insert and add it to the parentheses. Add any additional parameters that are needed for the function (e.g. dateFormat function needs a _format_ parameter that can be set to 'MM' if the date is to be formatted as month - or 'yyyy' if it has to be formatted as a 4-digit year)
+4. Look for the column you want to Insert and add it to the parentheses. Add any additional parameters that are needed for the function (e.g. dateFormat function needs a _format_ parameter that can be set to 'MM' if the date is to be formatted as a month - or 'yyyy' if it has to be formatted as a 4-digit year)
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/date_format_gif.gif" style="margin:auto; display:block;" width="500" >
 
 
@@ -170,10 +170,20 @@ dateFormat(“07/04/2001”, "EEE, MMM d, ‘’yy") results in: *Wed, Jul 4, �
 
 
 
-6. Use your new formula. Note, that newly added columns are hidden by default and have to be made visible from the **Select Columns** command.
+6. Use your new formula. Note that newly added columns are hidden by default and have to be made visible from the **Select Columns** command.
 
 <img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/select_formula.gif" style="margin:auto; display:block;" width="500" >
 
 
 
+<br>
 
+## Adding a Nested Formula 
+You can create nested formulas (formulas inserted within formulas) by copying and pasting the syntax of one formula into another one or by selecting one of the formula columns the same way you do to insert a regular dataset column into a formula’s syntax. 
+
+1. Just look for the formula column you want to insert and add it in the parentheses like you would with any other data column. 
+2. Add any additional parameters that are needed for the function. 
+3. Test the formula. Don’t forget to name and save your formula.
+
+
+<img src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.2_formulas/nested_formula.gif" style="margin:auto; display:block;" width="500" >

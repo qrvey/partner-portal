@@ -117,9 +117,9 @@ While building your chart, you are able to apply default filters. These filters 
 
 ![15_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/15_CB.png#thumbnail-40)
 
-Then select the column you would like to apply a filter on, select the values and click on **Apply Filter**.
+Then select the column you would like to apply a filter on, select the values and click on **Apply**.
 
-![16_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/16_CB.png#thumbnail)
+![16_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/16a_CB.png#thumbnail-40) 
 
 You will see the selected values in the filter panel. This is a hidden filter that is not shown and cannot be edited outside of the chart. To edit or remove this filter, you will need to click on the option to edit the chart first and then edit the filter. 
 

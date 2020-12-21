@@ -75,6 +75,10 @@
       "version-5.3-ui-docs/builders/navigation",
       "version-5.3-ui-docs/builders/user-management"
     ],
+    "Filtering Data": [
+      "version-5.3-ui-docs/filtering-data/introduction-to-filters",
+      "version-5.3-ui-docs/filtering-data/working-with-filters"
+    ],
     "Automation": [
       "version-5.3-ui-docs/automation/flows",
       "version-5.3-ui-docs/automation/triggers",
@@ -100,7 +104,8 @@
       "version-5.3-admin/admin-managing-users",
       "version-5.3-admin/admin-sections-platform",
       "version-5.3-admin/admin-sections-deployments",
-      "version-5.3-admin/record-level-security"
+      "version-5.3-admin/record-level-security",
+      "version-5.3-admin/metadata-builder"
     ]
   },
   "version-5.3-embedding": {
@@ -210,6 +215,7 @@
   "version-5.3-release-notes": {
     "Release Notes 2020": [
       "version-5.3-release-notes/release-last",
+      "version-5.3-release-notes/release-oct-2020",
       "version-5.3-release-notes/release-sep-2020",
       "version-5.3-release-notes/release-aug-2020",
       "version-5.3-release-notes/release-jul-2020",
@@ -275,6 +281,7 @@
       "version-5.3-video-training/admin-center/intro-admin-center"
     ],
     "Release Demos": [
+      "version-5.3-video-training/release/version-5.7",
       "version-5.3-video-training/release/version-5.6",
       "version-5.3-video-training/release/version-5.5",
       "version-5.3-video-training/release/version-5.4",

@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-oct-2020
 title: Qrvey Version 5.6
 sidebar_label: October 2020
 ---
