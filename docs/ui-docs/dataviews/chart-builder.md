@@ -132,12 +132,12 @@ You can edit your chart at any time by clicking on the three-dot menu in the low
 
 Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
 
-Qrvey supports the following table calculations in Table Charts, Bar Charts, Line Charts, and Heatmap.
+Qrvey supports the following table calculations in Table, Bar, Line Charts, and Heatmap.
 
 ## 1. Running Calculations
 These calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data. 
 
-Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* in grouped Table, Bar, and Line charts. 
+Currently, Qrvey supports quick table calculations (QTC) like *Running Sum, Running Average, Running Minimum,* and *Running Maximum* in grouped Table, Bar, and Line, and Heatmap charts. 
 
 How Qrvey generally describes these running calculations:
 
@@ -360,14 +360,14 @@ Right to the left of the three dots icon, you will see a summary of aggregate fu
 
 ![24_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6cb.png#thumbnail)
 
-The following image is an example of Running Calculations in Bar and Line charts.
+The following image is an example of Running Calculations in Bar, Line and Heatmap charts.
 
 
 ![1gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1gif.gif#thumbnail)
 
 ![2gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/2gif.gif#thumbnail)
 
-
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chartbuild2.gif#thumbnail)
 
 ## 2. Difference Calculations
 ### 2.1 Difference
@@ -442,6 +442,8 @@ The following images show an example of *Difference* applied in Line charts.
 The following images show an example of *Difference* applied in Heatmap.
 
 ![4a_gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/3cgif.gif#thumbnail) 
+
+
 
 ### 2.2 Percent Difference 
 *Percent Difference* is a row-by-row type of calculation that is calculated based on the following formula:
@@ -526,7 +528,7 @@ The following images show an example of *% Difference* applied in Heatmap.
 
 ![4bgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4cgif.gif#thumbnail)
 
-## 3. Partitions 
+### 3. Partitions 
 Users can define partitions in order to have table calculations performed at each group level or the entire table.
 
 To define partitions in Table Calculations, you need to add a Table Calculation and then go to the “Level” dropdown to define the partition as Table or a selected column that will be used to define the group.  
@@ -538,6 +540,17 @@ Partitioning fields break the view up into multiple sub-views (or sub-tables), a
 The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
  
 ![4dgif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4dgif.gif#thumbnail)
+
+
+
+### 4. Direction
+Users can define direction for addressing in order to have table calculations performed Down or Across  the Table or Partition.
+
+To define Direction in Table Calculations, you need to add a Table Calculation and then go to the Direction option to select which type to use for the calculation - Down or Across.
+
+This feature is currently supported in Heatmaps.  
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chartbuild1.gif#thumbnail)
+
 
 ## Discrete vs. Continuous Values
 
