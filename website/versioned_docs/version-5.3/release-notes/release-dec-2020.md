@@ -34,7 +34,7 @@ Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <
 
     It is important to note that the **logic between scopes has been changed from OR to AND**. This change is in response to multiple customer requests and is more in accordance with advanced filtering behavior.  
 
-* <a href="/docs/ui-docs/filters/working-with-filters" target="_blank"> <strong>AN-11309 - Filter on Aggregate Values</strong></a>: Added ability to filter aggregated values in any chart where grouping has been applied.
+* <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank"> <strong>AN-11309 - Filter on Aggregate Values</strong></a>: Added ability to filter aggregated values in any chart where grouping has been applied.
 
 * <a href="/docs/video-training/release/version-5.7/#date-picker-filter-component" target="_blank" class="tooltip"><img alt="Date Picker Filter Component" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filters/working-with-filters" target="_blank"><strong>AT-7523 - Date Picker Filter Component</strong></a>: As part of a new initiative to allow adding individual filter controls to the Report and Page Builder, we added the Date Picker component. The component can be added in creation mode for the use in end-user interaction mode. 
 
