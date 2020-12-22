@@ -20,7 +20,7 @@ sidebar_label: Known Issues
 
 * **QV-12360 - Filters - Size Values Do Not Appear in Image Upload**: When a user applies text or object analysis to an image upload question, and uses “equal” as operator for size filters, the values do not appear.
 
-* **QV-12267 - The Lookup Question Shows Only 100 Records**: When a user creates a webform with a lookup question and the source used has more than 100 records, the end-user side shows only 100 of them. Also, the search only returns results from those 100 records, and not from the entire data.
+* **QV-12267 - The Lookup Question Shows Only 100 Records**: When a user creates a webform with a lookup question and the source used has more than 100 records, the end user side shows only 100 of them. Also, the search only returns results from those 100 records, and not from the entire data.
 
 * **AN-11999 - Filters - Date Time Unchecked Values**: Users cannot create date filters by Weeks, Hours, Min, Sec properties when editing date filters created with "Filter by" or "See Data".
 
