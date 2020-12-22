@@ -52,6 +52,9 @@ sidebar_label: Known Issues
 
 * **AN-10896 - Table Totals - Totals Disappear**: When the user changes the grouped table to a simple table in a grouped table with totals applied and the table option is unchecked, the totals disappear.
 
+* **AN-12034 - Chart Panel Filters on Aggregates**: 
+It is not possible to apply Filters to aggregated columns from the filters modal accessed outside the Chart Builder or by clicking filter actions applied across the analytic panel.
+
 * **AT-7042 - Sharing - Deleting Dataset Conflict**: When a creator deletes a dataset being used by other creators that are creating charts, the chart builder fails to load.
 
 * **AT-7064 - Sharing - Builders - Page Load Removes Charts**: When several creators are working on the same application and the page with tabs is updated, the charts disappear unless the page has been published.
