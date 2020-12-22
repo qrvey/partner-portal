@@ -20,7 +20,7 @@ sidebar_label: Known Issues
 
 * **QV-12360 - Filters - Size Values Do Not Appear in Image Upload**: When a user applies text or object analysis to an image upload question, and uses “equal” as operator for size filters, the values do not appear.
 
-* **QV-12267 - The Lookup Question Shows Only 100 Records**: When a user creates a webform with a lookup question and the source used has more than 100 records, the end-user side shows only 100 of them. Also, the search only returns results from those 100 records, and not from the entire data.
+* **QV-12267 - The Lookup Question Shows Only 100 Records**: When a user creates a webform with a lookup question and the source used has more than 100 records, the end user side shows only 100 of them. Also, the search only returns results from those 100 records, and not from the entire data.
 
 * **AN-11999 - Filters - Date Time Unchecked Values**: Users cannot create date filters by Weeks, Hours, Min, Sec properties when editing date filters created with "Filter by" or "See Data".
 
@@ -51,6 +51,9 @@ sidebar_label: Known Issues
 * **AN-10845 - Sorting Preferences Issues**: When a creator applies a sorting by value and then applies a table calculation in a bar or line chart, the preference of sorting by the value that was applied manually before the table calculation is not kept. 
 
 * **AN-10896 - Table Totals - Totals Disappear**: When the user changes the grouped table to a simple table in a grouped table with totals applied and the table option is unchecked, the totals disappear.
+
+* **AN-12034 - Chart Panel Filters on Aggregates**: 
+It is not possible to apply Filters to aggregated columns from the filters modal accessed outside the Chart Builder or by clicking filter actions applied across the analytic panel.
 
 * **AT-7042 - Sharing - Deleting Dataset Conflict**: When a creator deletes a dataset being used by other creators that are creating charts, the chart builder fails to load.
 
