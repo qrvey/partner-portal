@@ -48,6 +48,9 @@ Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <
 
 * **AN-11037 - Running Aggregates on Heatmaps**: You can now use Running Aggregates calculations on Heatmaps.
 
+* **AN-3665 - Conditional Formatting on Geo Maps**: You can now use conditional formatting to highlight values in Bubble and Dot Maps based on a data threshold.
+
+
 * **AN-11038 - Tables Calculations Direction**: You can now apply Table-Across or Table-Down calculations in charts such as Heatmap, Crosstab, and Tables.
 
 * <a href="/docs/video-training/release/version-5.7/#select-multiple-objects-and-autoalign" target="_blank" class="tooltip"><img alt="Select Multiple Objects and Autoalign" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/builders/pages/" target="_blank"><strong>AT-7521 - Selecting Multiple Objects in Page/Report Builder</strong></a>: You can now select multiple objects on the canvas to drag and drop or change their properties - like arrangement or alignment - simultaneously.

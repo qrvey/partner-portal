@@ -18,12 +18,12 @@ The filter modal is the central component when defining filters. It allows you t
 The following image shows the initial state of the filter modal when it’s opened. Add data columns of the selected dataset are shown in the area in the center and they can be found using the search box. The filter’s scope may be defined front the dropdown list in the bottom left corner.
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail-60)
 
 Once a column is selected the center part of the modal changes to allow you to define your desired criteria.
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/2working-filters.png#thumbnail)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/2working-filters.png#thumbnail-60)
 
 1. **Selected column to filter** - You can change your selection by clicking on the arrow on the right side to open the dropdown list of columns.
 
@@ -38,7 +38,7 @@ Once you have defined your filter’s criteria, the apply button at the bottom o
 The filter panel on the right side of the screen is the main area where you can see, control, and interact with all filters that have been set for the visuals on your workspace. The same panel can be found in the <a href="/docs/ui-docs/builders/pages/#filter-panel" target="_blank"> Page Builder</a>, <a href="/docs/ui-docs/builders/reports/#filters" target="_blank">Report Builder</a>, <a href="/docs/ui-docs/dataviews/custom-view/#filters" target="_blank">Custom View</a>, <a href="/docs/ui-docs/dataviews/summary-view/#filtering" target="_blank"> Summary View</a>, or <a href="/docs/ui-docs/dataviews/tabular-view/#filters" target="_blank">Tabular View</a>.
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/3working-filters.png#thumbnail)![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/4working-filters.png#thumbnail)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/3working-filters.png#thumbnail-40)![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/4working-filters.png#thumbnail-40)
 
 Filters are listed in groups based on their scope. You can disable/enable all filters within a given scope in one shot, by changing the state of the slider button next to the scope. You can also remove all of the filters for that scope from the **x** icon on the right side of the scope. 
 You can further exclude/include individual filters from the checkbox next to their name and deselect/select each value from the checkboxes next to the values. Individual values can also be removed from the filter using the **x** icon next to each value. However, adding them back will require editing the filter.
@@ -50,7 +50,7 @@ In Qrvey, we provide a set of filter controls that you can drag and drop to the 
 #### Date Picker
 One of these controls is a date picker filter that acts as a calendar inside the end-user site. To add a date picker filter control drag it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/5working-filters.png#thumbnail-40)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/5working-filters.png#thumbnail-60)
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/6working-filters.png#thumbnail-40)  
 
@@ -80,7 +80,7 @@ Depending on your analysis needs you can decide what to use as the subject for f
 ### Filters On Dataset Columns
 The default way of filtering is by the raw value of a dataset column. This method is employed when you choose one of the columns of the dataset from the filter modal. 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/8working-filters.png#thumbnail)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/8working-filters.png#thumbnail-60)  
 
 ### Filters On Aggregates
 To set the filter on the aggregate value of the data, you need to create a chart that uses one or more aggregated pieces of data. As soon as such aggregates exist, they appear in the filter modal, alongside the other columns, and can be selected to be filtered. 
@@ -89,5 +89,5 @@ To set the filter on the aggregate value of the data, you need to create a chart
 
 You can identify an aggregated column on the filter’s modal by its column name with an aggregation operation in parentheses. In the following example, the count aggregate of the column “Branch” has been selected to be filtered on. 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/10working-filters.png#thumbnail)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/10working-filters.png#thumbnail-60)  
 
