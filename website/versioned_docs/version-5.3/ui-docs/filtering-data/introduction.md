@@ -7,30 +7,30 @@ original_id: introduction-to-filters
 
 <div style="text-align: justify">
 
-Qrvey provides a filtering system to focus on the portion of the data relevant for your analysis, affecting the data displayed in the widgets. You can change these filters to focus on more specific data.
+Qrvey provides a filtering system to focus on the portion of the data relevant to your analysis, affecting the data displayed in the widgets. You can change these filters to focus on more specific data.
 
-There are many different ways you can filter your data to focus on the things that matter. The essential aspects of the filtering system are described in this article for your reference.
+There are many different ways you can filter your data to focus on the things that matter. The essential aspects of the filtering system are described for your reference in this article.
 
-## Hierarchy And Scope
-Various filters apply in a hierarchical model: First, the data gets filtered by the security filters, then data filters for the user group refine it further, and so on. The full hierarchical model is shown in the image and the purpose of each layer is described below.
+## Hierarchy and Scope
+Various filters apply in a hierarchical model: First, the data gets filtered by the security filters, and then the data filters for the user group refine it even further. The full hierarchical model is shown in the image and the purpose of each layer is described below.
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/1intro.png#thumbnail-60)
 
 
 ### Hidden Filters
-The filters in this category are mainly for security purposes and are therefore hidden from the view of the end-users. That means that they have no visible component and cannot be interacted with.
+The filters in this category are mainly for security purposes and are therefore hidden from the end-user view. This means that they have no visible component and cannot be interacted with.
 
-* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The <a href="/docs/admin/record-level-security/" target="_blank"> Record Level Security </a> feature uses this type of filter to restrict users’ access to data they cannot see. Security filters are applied to datasets and rely on identifier columns in data. 
-The scope of Security Filters is the entire application. I.e. they govern data used in workflows, pages, reports, etc.
+* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The <a href="/docs/admin/record-level-security/" target="_blank"> Record Level Security </a> feature uses this type of filter to restrict user's access to any data they don't have the permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
+The scope of Security Filters is the entire application, i.e. they govern data used in workflows, pages, reports, and so on.
 
-* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the <a href="/docs/ui-docs/builders/user-management/" target="_blank">User Management </a> section of the page builder to restrict access to the data based on the end-users’ user group. 
+* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the <a href="/docs/ui-docs/builders/user-management/" target="_blank">User Management </a> section of the page builder to restrict access to the data based on the end-user's user group. 
 The scope of this type of filter is the end-user site.
 
 * **Default Filters**: These are the filters that Creators may apply to an individual chart, inside the Chart Builder. Their scope is limited to the chart to which they have been applied.
 
 ### Interactive Filters
-The filters in this category are defined by a Creator when building a report or a page, for analysis purposes and they can be interacted with. That means that the end-users can see and interact with these types of filters on the Filter Panel, turning them on or off, or adding new filters or conditions based on the permissions defined by Creators.
-Given that Panels reside on Tabs which are in on a Page, and there may be multiple pages defined, the scope of these filters four layers grow and contain other layers, as you travel up the hierarchy.
+The filters in this category are defined by a Creator when building a report or a page for analysis purposes and they can be interacted with. That means that the end-users can see and interact with these types of filters on the Filter Panel, turning them on or off, or adding new filters or conditions based on the permissions defined by Creators.
+Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; and the scope of Tab filters includes all Panels on the Tab.
 
 * **Global Filters**: These are at the top of the hierarchy of interactive filters. A global filter applies to all the panels on all tabs on all pages.
 
