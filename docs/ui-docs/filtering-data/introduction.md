@@ -29,7 +29,7 @@ The scope of this type of filter is the end-user site.
 
 ### Interactive Filters
 The filters in this category are defined by a Creator when building a report or a page for analysis purposes and they can be interacted with. That means that the end-users can see and interact with these types of filters on the Filter Panel, turning them on or off, or adding new filters or conditions based on the permissions defined by Creators.
-Given that Panels reside on Tabs which are on a Page and there may be multiple pages defined, the scope of these filters four layers grow and contain other layers, as you travel up the hierarchy.
+Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; and the scope of Tab filters includes all Panels on the Tab.
 
 * **Global Filters**: These are at the top of the hierarchy of interactive filters. A global filter applies to all the panels on all tabs on all pages.
 
