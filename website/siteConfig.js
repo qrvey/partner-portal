@@ -42,7 +42,7 @@ const siteConfig = {
       label: 'DOCS',
     },
     {
-      doc: 'video-training/analytics/intro-analytics-apps',
+      doc: 'video-training/release/version-5.7',
       label: 'VIDEOS',
     },
     {
