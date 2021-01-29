@@ -31,7 +31,7 @@ class Index extends React.Component {
       ], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
       {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', topLinks: [
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', name: 'Building Qrvey Sample' },
-        { link: siteConfig.baseUrl+'docs/video-training/analytics/intro-analytics-apps', name: 'Training Session' },
+        { link: siteConfig.baseUrl+'docs/video-training//release/version-5.7', name: 'Training Session' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Datasets' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
       {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
