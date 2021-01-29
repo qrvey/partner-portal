@@ -264,26 +264,22 @@
       "video-training/release/version-5.3",
       "video-training/release/version-5.2"
     ],
+    "Short Training Videos": [
+      "video-training/building-qrvey-sample/connections",
+      "video-training/building-qrvey-sample/datasets",
+      "video-training/building-qrvey-sample/complex-datasets",
+      "video-training/building-qrvey-sample/datalinks",
+      "video-training/building-qrvey-sample/analysis-views",
+      "video-training/building-qrvey-sample/formulas",
+      "video-training/building-qrvey-sample/bucketing",
+      "video-training/building-qrvey-sample/summary-view",
+      "video-training/building-qrvey-sample/tabular-view",
+      "video-training/building-qrvey-sample/chart_builder_overview",
+      "video-training/building-qrvey-sample/custom_metric_views",
+      "video-training/building-qrvey-sample/webforms-overview",
+      "video-training/building-qrvey-sample/automation-overview"
+    ],
     "Prior Versions":[
-      {
-        "type": "subcategory",
-        "label":"Short Training Videos",
-        "ids": [
-          "video-training/building-qrvey-sample/connections",
-          "video-training/building-qrvey-sample/datasets",
-          "video-training/building-qrvey-sample/complex-datasets",
-          "video-training/building-qrvey-sample/datalinks",
-          "video-training/building-qrvey-sample/analysis-views",
-          "video-training/building-qrvey-sample/formulas",
-          "video-training/building-qrvey-sample/bucketing",
-          "video-training/building-qrvey-sample/summary-view",
-          "video-training/building-qrvey-sample/tabular-view",
-          "video-training/building-qrvey-sample/chart_builder_overview",
-          "video-training/building-qrvey-sample/custom_metric_views",
-          "video-training/building-qrvey-sample/webforms-overview",
-          "video-training/building-qrvey-sample/automation-overview"
-        ]
-      },
       {
         "type": "subcategory",
         "label": "Training Sessions",
