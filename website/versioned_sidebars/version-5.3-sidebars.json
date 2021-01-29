@@ -255,31 +255,6 @@
     ]
   },
   "version-5.3-video-training": {
-    "Short Training Videos": [
-      "version-5.3-video-training/building-qrvey-sample/connections",
-      "version-5.3-video-training/building-qrvey-sample/datasets",
-      "version-5.3-video-training/building-qrvey-sample/complex-datasets",
-      "version-5.3-video-training/building-qrvey-sample/datalinks",
-      "version-5.3-video-training/building-qrvey-sample/analysis-views",
-      "version-5.3-video-training/building-qrvey-sample/formulas",
-      "version-5.3-video-training/building-qrvey-sample/bucketing",
-      "version-5.3-video-training/building-qrvey-sample/summary-view",
-      "version-5.3-video-training/building-qrvey-sample/tabular-view",
-      "version-5.3-video-training/building-qrvey-sample/chart_builder_overview",
-      "version-5.3-video-training/building-qrvey-sample/custom_metric_views",
-      "version-5.3-video-training/building-qrvey-sample/webforms-overview",
-      "version-5.3-video-training/building-qrvey-sample/automation-overview"
-    ],
-    "Training Sessions": [
-      "version-5.3-video-training/analytics/intro-analytics-apps",
-      "version-5.3-video-training/analytics/datasets",
-      "version-5.3-video-training/analytics/analytic-views",
-      "version-5.3-video-training/analytics/reports-pages",
-      "version-5.3-video-training/analytics/web-forms",
-      "version-5.3-video-training/analytics/metrics",
-      "version-5.3-video-training/analytics/automation",
-      "version-5.3-video-training/admin-center/intro-admin-center"
-    ],
     "Release Demos": [
       "version-5.3-video-training/release/version-5.7",
       "version-5.3-video-training/release/version-5.6",
@@ -287,6 +262,41 @@
       "version-5.3-video-training/release/version-5.4",
       "version-5.3-video-training/release/version-5.3",
       "version-5.3-video-training/release/version-5.2"
+    ],
+    "Prior Versions": [
+      {
+        "type": "subcategory",
+        "label": "Short Training Videos",
+        "ids": [
+          "version-5.3-video-training/building-qrvey-sample/connections",
+          "version-5.3-video-training/building-qrvey-sample/datasets",
+          "version-5.3-video-training/building-qrvey-sample/complex-datasets",
+          "version-5.3-video-training/building-qrvey-sample/datalinks",
+          "version-5.3-video-training/building-qrvey-sample/analysis-views",
+          "version-5.3-video-training/building-qrvey-sample/formulas",
+          "version-5.3-video-training/building-qrvey-sample/bucketing",
+          "version-5.3-video-training/building-qrvey-sample/summary-view",
+          "version-5.3-video-training/building-qrvey-sample/tabular-view",
+          "version-5.3-video-training/building-qrvey-sample/chart_builder_overview",
+          "version-5.3-video-training/building-qrvey-sample/custom_metric_views",
+          "version-5.3-video-training/building-qrvey-sample/webforms-overview",
+          "version-5.3-video-training/building-qrvey-sample/automation-overview"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Training Sessions",
+        "ids": [
+          "version-5.3-video-training/analytics/intro-analytics-apps",
+          "version-5.3-video-training/analytics/datasets",
+          "version-5.3-video-training/analytics/analytic-views",
+          "version-5.3-video-training/analytics/reports-pages",
+          "version-5.3-video-training/analytics/web-forms",
+          "version-5.3-video-training/analytics/metrics",
+          "version-5.3-video-training/analytics/automation",
+          "version-5.3-video-training/admin-center/intro-admin-center"
+        ]
+      }
     ]
   }
 }

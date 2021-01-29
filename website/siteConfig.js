@@ -42,20 +42,12 @@ const siteConfig = {
       label: 'DOCS',
     },
     {
-      doc: 'tutorials/first-analytic-app',
-      label: 'TUTORIALS',
-    },
-    {
-      doc: 'video-training/analytics/intro-analytics-apps',
+      doc: 'video-training/release/version-5.7',
       label: 'VIDEOS',
     },
     {
       doc: 'faqs/ask-us',
       label: 'FAQS',
-    },
-    {
-      blog: true,
-      label: 'NEWSLETTERS'
     },
   ],
 
