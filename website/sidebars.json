@@ -14,7 +14,7 @@
     "Managing Qrvey In AWS": [
       "get-started/aws-services",
       "get-started/managing-aws-cluster",
-      "aws/connect-to-RDS-instance"
+      "aws/connect-to-instance"
     ],
     "Qrvey Platform Overview": [
       "get-started/system-components",

@@ -14,7 +14,7 @@
     "Managing Qrvey In AWS": [
       "version-5.4-get-started/aws-services",
       "version-5.4-get-started/managing-aws-cluster",
-      "version-5.4-aws/connect-to-RDS-instance"
+      "version-5.4-aws/connect-to-instance"
     ],
     "Qrvey Platform Overview": [
       "version-5.4-get-started/system-components",
