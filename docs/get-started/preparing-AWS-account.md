@@ -153,7 +153,7 @@ To move SES out of sandbox mode, you must create a support ticket with AWS. AWS 
 
 ![22_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep22.png#thumbnail-60)
 
-Once you have submitted this request, it usually takes AWS 1 day to approve this but they may follow up for additional information. Feel free to contact Qrvey support if you have any questions or need help.
+Once you have submitted this request, it usually takes AWS 1 day to approve this but they may follow up for additional information. Feel free to contact <a href="help@qrvey.com"> Qrvey support </a> if you have any questions or need help.
 
 ## Final Step
 Once the deployment is done and Verified, Qrvey’s deployment team will email the following information to you:
