@@ -64,7 +64,7 @@ In the North American geo, the following regions do not have complete support fo
 		<td>All services available, but the region has not been certified yet.</td>
 	</tr>    
 	</tbody>
-</table> (edited) 
+</table> 
 
 
 
