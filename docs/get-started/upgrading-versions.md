@@ -1,7 +1,7 @@
 ---
 id: upgrading-new-version
-title: Upgrading To A New Version
-sidebar_label: Upgrading To A New Version
+title: Upgrading to a New Version
+sidebar_label: Upgrading to a New Version
 ---
 
 <div style="text-align: justify">
