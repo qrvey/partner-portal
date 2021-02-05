@@ -17,7 +17,7 @@ Qrvey’s application UI (AKA Qrvey Composer) is a web-based application that is
 
 ### Log into the Qrvey Analytics Portal
 To be able to use this application, a Creator user needs a username and password. At least one of these methods needs to be enabled.
-See <a href="/docs/admin/admin-sections-platform/">set up details here </a>.
+See <a href="/docs/admin/admin-sections-platform/">set up details here</a>.
 
 * Qrvey Login: Sign up and login functionality can be customized by a system administrator using the <a href="/docs/admin/admin-sections-platform/">Admin module</a>. 
   * By default, anyone can sign up using the Qrvey application UI login screen. 
@@ -45,5 +45,4 @@ Qrvey Widgets are reusable UI components that can be embedded in any Web applica
 See <a href="/docs/embedding/widgets/widget-embedding-using-cookies/">steps for cookies/token setup</a>.
 
 ## API
-Qrvey API is a set of API methods that work with Widgets and they can be called from an external application. These APIs are secured by using a shared API Key that should not be exposed in any way, and all APIs are secured by SSL. Please <a href="help@qrvey.com"> contact Qrvey Support </a> if you would like to change or add a new API Key.
-
+Qrvey API is a set of API methods that work with Widgets and they can be called from an external application. These APIs are secured by using a shared API Key that should not be exposed in any way, and all APIs are secured by SSL. Please contact Qrvey Support team through <a href="/docs/faqs/ask-us/">this form </a> or at help@qrvey.com if you would like to change or add a new API Key.
