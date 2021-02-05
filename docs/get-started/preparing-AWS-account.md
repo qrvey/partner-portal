@@ -125,12 +125,13 @@ Please send the following information to Qrvey’s deployment team:
 
 * Sample Email Body (to be sent to Qrvey at help@qrvey.com)
 
-<code>Email Address: hello+qrveytrial@qrvey.com <br>
+```
+Email Address: hello+qrveytrial@qrvey.com 
 Application URL:    qrveytrial.qrvey.com
             qrveytrial-datarouter.qrvey.com
-            qrveytrial-admin.qrvey.com <br>
+            qrveytrial-admin.qrvey.com 
 IAM Crossaccount role URL: https://signin.aws.amazon.com/switchrole?roleName=QrveyxxxxxRole&account=9653xxxxxxxx
-</code>
+```
 
 ## Step 6: Move SES out of Sandbox (Offline)
 *AWS enables SES in sandbox mode by default. While you can move SES out of sandbox mode at any time, this step is required to send emails from the Qrvey system.*
