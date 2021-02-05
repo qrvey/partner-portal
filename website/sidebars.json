@@ -1,23 +1,26 @@
 {
   "get-started": {
     "Getting Started": [
-      "get-started/get-started-intro",
-      "business-analytics/business-users",
-      "get-started/aws_marketplace",
-      "setup-deployments/setup-overview",
-      "setup-deployments/setup-initial-deployment",
-      "setup-deployments/manage-aws-elasticsearch",
-      "setup-deployments/setup-cost",
-      "setup-deployments/setup-security",
+      "get-started/get-started-intro"
+    ],
+    "Deploying to AWS": [
+      "get-started/prerequisites-for-installation",
+      "get-started/preparing-AWS-account",
+      "get-started/deploying-aws/initial-installation",
+      "get-started/upgrading-new-version",
+      "get-started/deleting-installation",
+      "get-started/troubleshooting"
+    ],
+    "Managing Qrvey In AWS": [
+      "get-started/aws-services",
+      "get-started/managing-aws-cluster",
+      "aws/connect-to-RDS-instance"
+    ],
+    "Qrvey Platform Overview": [
+      "get-started/system-components",
+      "get-started/security",
+      "get-started/user-roles",
       "get-started/glossary"
-    ]
-  },
-  "aws": {
-    "AWS": [
-      "aws/manage-aws-elasticsearch",
-      "aws/setup-cost",
-      "aws/connect-to-RDS-instance",
-      "aws/deploying-enterprise-edition-aws"
     ]
   },
   "ui-docs": {

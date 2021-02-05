@@ -1,23 +1,26 @@
 {
   "version-5.4-get-started": {
     "Getting Started": [
-      "version-5.4-get-started/get-started-intro",
-      "version-5.4-business-analytics/business-users",
-      "version-5.4-get-started/aws_marketplace",
-      "version-5.4-setup-deployments/setup-overview",
-      "version-5.4-setup-deployments/setup-initial-deployment",
-      "version-5.4-setup-deployments/manage-aws-elasticsearch",
-      "version-5.4-setup-deployments/setup-cost",
-      "version-5.4-setup-deployments/setup-security",
+      "version-5.4-get-started/get-started-intro"
+    ],
+    "Deploying to AWS": [
+      "version-5.4-get-started/prerequisites-for-installation",
+      "version-5.4-get-started/preparing-AWS-account",
+      "version-5.4-get-started/deploying-aws/initial-installation",
+      "version-5.4-get-started/upgrading-new-version",
+      "version-5.4-get-started/deleting-installation",
+      "version-5.4-get-started/troubleshooting"
+    ],
+    "Managing Qrvey In AWS": [
+      "version-5.4-get-started/aws-services",
+      "version-5.4-get-started/managing-aws-cluster",
+      "version-5.4-aws/connect-to-RDS-instance"
+    ],
+    "Qrvey Platform Overview": [
+      "version-5.4-get-started/system-components",
+      "version-5.4-get-started/security",
+      "version-5.4-get-started/user-roles",
       "version-5.4-get-started/glossary"
-    ]
-  },
-  "version-5.4-aws": {
-    "AWS": [
-      "version-5.4-aws/manage-aws-elasticsearch",
-      "version-5.4-aws/setup-cost",
-      "version-5.4-aws/connect-to-RDS-instance",
-      "version-5.4-aws/deploying-enterprise-edition-aws"
     ]
   },
   "version-5.4-ui-docs": {
