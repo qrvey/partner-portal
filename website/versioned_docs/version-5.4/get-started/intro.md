@@ -1,7 +1,7 @@
 ---
 id: version-5.4-get-started-intro
-title: Getting Started
-sidebar_label: Getting Started
+title: Overview
+sidebar_label: Overview
 original_id: get-started-intro
 ---
 

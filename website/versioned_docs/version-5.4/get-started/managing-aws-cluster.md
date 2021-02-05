@@ -1,7 +1,7 @@
 ---
 id: version-5.4-managing-aws-cluster
-title: Managing Your AWS Elasticsearch Cluster
-sidebar_label: Managing Your AWS Elasticsearch Cluster
+title: Cluster Management
+sidebar_label: Cluster Management
 original_id: managing-aws-cluster
 ---
 

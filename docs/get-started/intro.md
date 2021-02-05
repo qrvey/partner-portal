@@ -1,7 +1,7 @@
 ---
 id: get-started-intro
-title: Getting Started
-sidebar_label: Getting Started
+title: Overview
+sidebar_label: Overview
 ---
 
 <div style="text-align: justify">

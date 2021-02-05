@@ -1,7 +1,7 @@
 ---
 id: managing-aws-cluster
-title: Managing Your AWS Elasticsearch Cluster
-sidebar_label: Managing Your AWS Elasticsearch Cluster
+title: Cluster Management
+sidebar_label: Cluster Management
 ---
 
 This document explains how to monitor and resize an AWS Elasticsearch Service cluster based on your needs and requirements.

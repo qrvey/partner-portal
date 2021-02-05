@@ -1,7 +1,7 @@
 ---
 id: version-5.4-glossary
-title: Glossary
-sidebar_label: Glossary
+title: Glossary of Common Terms
+sidebar_label: Glossary of Common Terms
 original_id: glossary
 ---
 
