@@ -16,14 +16,15 @@ This document explains the steps you need to take if you want to securely access
 ## Steps
 1. Navigate to the <a href="https://console.aws.amazon.com/lambda">Lambda console</a>. In this step, you will move the Lambda function inside your VPC (same as RDS for this example). Find a Lambda function called *“<prefix>_dataload_drDBDatasourcePump”*. Click on the function name to open the details. 
 
-a. From the Permissions tab, note the IAM Execution role.  
-
-<ul style="list-style: none; margin-left:20px;">
-<li>  i. From the IAM console, Add the IAM named policy called “AWSLambdaVPCAccessExecutionRole” to the Lambda execution role.</li>
+<ul style="list-style: none;">
+<li>a. From the Permissions tab, note the IAM Execution role.</li>
 </ul>
-
-b. From the configuration tab of Lambda function, find the VPC section. Click on **Edit** for VPC Settings. The default is “No VPC”.
-
+<ul style="list-style: none; margin-left:20px;">
+<li>  i. From the IAM console, Add the IAM named policy called “AWSLambdaVPCAccessExecutionRole” to the Lambda execution role.<br></li>
+</ul>
+<ul style="list-style: none;">
+<li>b. From the configuration tab of Lambda function, find the VPC section. Click on <strong>Edit</strong> for VPC Settings. The default is “No VPC”.<br></li>
+</ul>
 <ul style="list-style: none; margin-left:20px;">
  <li>  i. Select Custom VPC </li> 
  <li>  ii. Pick the VPC you would like to use. For this example, it will be the same VPC as your RDS. </li> 
