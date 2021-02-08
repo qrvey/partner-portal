@@ -18,15 +18,19 @@ This document explains the steps you need to take if you want to securely access
 
 a. From the Permissions tab, note the IAM Execution role.  
 
-*  i. From the IAM console, Add the IAM named policy called “AWSLambdaVPCAccessExecutionRole” to the Lambda execution role.
+<ul style="list-style: none; margin-left:20px;">
+<li>  i. From the IAM console, Add the IAM named policy called “AWSLambdaVPCAccessExecutionRole” to the Lambda execution role.</li>
+</ul>
 
 b. From the configuration tab of Lambda function, find the VPC section. Click on **Edit** for VPC Settings. The default is “No VPC”.
 
- * i. Select Custom VPC
- * ii. Pick the VPC you would like to use. For this example, it will be the same VPC as your RDS.
- * iii. Select Applicable subnets. If you are not sure, pick all subnets.
- * iv. Select the security group from Step 6 above.
- * v. Click on **Save**. It takes about 1-2 mins for these settings to apply.
+<ul style="list-style: none; margin-left:20px;">
+ <li>  i. Select Custom VPC </li> 
+ <li>  ii. Pick the VPC you would like to use. For this example, it will be the same VPC as your RDS. </li> 
+ <li>  iii. Select Applicable subnets. If you are not sure, pick all subnets. </li> 
+ <li>  iv. Select the security group from Step 6 above. </li> 
+ <li>  v. Click on **Save**. It takes about 1-2 mins for these settings to apply. </li> 
+ </ul>
 
 2. Navigate to <a href="https://console.aws.amazon.com/vpc"> VPC Console </a>. Select the menu option for Endpoints. In this step, you will be creating 3 endpoints that will allow the Lambda function inside the VPC to access other AWS Services.
 a. Create a new Endpoint and pick S3. Save.
@@ -49,18 +53,29 @@ c. For VPC (Accepter), select the default VPC that Qrvey is installed in.
 d. Confirm by clicking Create Peering Connection
 3. Modify the routing table(s) for your database VPC:
 a. Select each routing table with the same VPC ID and follow these steps for each:
-  * i. Select Routes
-  * ii. Select **Edit** routes
-  * iii. Select **Add** route
-  * iv. Add **Destination** *172.31.0.0/16* and as **Target** select the Peering Connection that you had created in step 2.
-  * v. **Save** routes
+
+<ul style="list-style: none; margin-left:20px;">
+  <li>i. Select Routes</li>
+  <li>ii. Select <strong>Edit</strong> routes</li>
+  <li>iii. Select <strong>Add</strong> route</li>
+  <li>iv. Add <strong>Destination</strong> *172.31.0.0/16* and as <strong>Target</strong> select the Peering Connection that you had created in step 2.</li>
+  <li>v. <strong>Save</strong> routes</li>
+</ul>
+
 4. Modify the routing table(s) for the default VPC that Qrvey is installed in.
 a. Select each routing table with the same VPC ID and follow these steps for each:
-  * i. Select Routes
-  * ii. Select **Edit** routes
-  * iii. Select **Add** route
+
+<ul style="list-style: none; margin-left:20px;">
+   <li>i. Select Routes</li>
+   <li>ii. Select <strong>Edit</strong> routes</li>
+   <li>iii. Select <strong>Add</strong> route</li>
+</ul>
+
 For **Destination**, enter the IPv4 CIDR range that you have found in step 1, and for Target select the Peering Connection that you had created in step 2.
-  * iv. Save routes
+
+<ul style="list-style: none; margin-left:20px;">
+  <li> iv. Save routes </li>
+</ul>
 
 Now you will be able to follow the Steps above and connect Qrvey to your RDS instance.
 

@@ -28,11 +28,13 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/manageAWS1.png#thumbnail-60)
 
 2. AWS Elasticsearch service console: AWS console shows a lot of information about the cluster under “Cluster Health” and “Instance health” tabs. A few important metrics to monitor here are: <br>
-    i. Cluster Status: This should be green.<br>
-    ii. Total Nodes and Total Free space.<br>
-    iii. Maximum CPU and Memory utilization - This should be around or below 50-80%.<br>
-    iv. JVMPressure - This should stay below 80%.<br>
-    v. Minimum free storage space - This is the minimum free storage space across all nodes, depending on the size it should have enough space (at least 20% free).
+<ul style="list-style: none; margin-left:20px;">
+    <li>i. Cluster Status: This should be green.<br></li>
+    <li>ii. Total Nodes and Total Free space.<br></li>
+    <li>iii. Maximum CPU and Memory utilization - This should be around or below 50-80%.<br></li>
+    <li>iv. JVMPressure - This should stay below 80%.<br></li>
+    <li>v. Minimum free storage space - This is the minimum free storage space across all nodes, depending on the size it should have enough space (at least 20% free).</li>
+</ul>
 
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/manageAWS2.png#thumbnail-60)
 ## Resizing a cluster
@@ -42,13 +44,15 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 3. Select the elasticsearch domain you would like to monitor or change.
 4. Click on the **Configure Cluster** button.
 5. From the “Configure domain” page you can change any settings by picking appropriate values. <br>
-i. **Availability Zones** - For dev/test scenarios, 1-AZ is enough; for production, it can be 2-AZ or 3-AZ.<br>
-ii. **Instance Type** - Pick the server type that would best fit your use-case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.<br>
-iii. **Number of Instances** - We recommend at least 2 (preferably 3 or more) depending on your workload or use-case.<br>
-iv. **Dedicated Master Instances** - We recommend using master instances for high availability and heavy workloads in Production systems.<br>
-v. **Storage Configuration** - Pick a size per node based on your data. This size is per node, so if you have 3 servers at 10GB per node then the total storage for your cluster will be 30GB).<br>
-vi. **Encryption** - if needed based on use-case<br>
-vii. **Snapshot configuration** - AWS Elasticsearch service takes automatic snapshots of the domain once every day (now they do every hour as well as a new feature). Pick a time when the cluster is not going to have a lot of load. Something like midnight or early mornings.
+<ul style="list-style: none; margin-left:20px;">
+<li> i. <strong> Availability Zones</strong> - For dev/test scenarios, 1-AZ is enough; for production, it can be 2-AZ or 3-AZ. </li><br>
+<li> ii. <strong>Instance Type</strong> - Pick the server type that would best fit your use-case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.</li><br>
+<li> iii. <strong>Number of Instances</strong> - We recommend at least 2 (preferably 3 or more) depending on your workload or use-case.</li><br>
+<li> iv. <strong>Dedicated Master Instances</strong> - We recommend using master instances for high availability and heavy workloads in Production systems.</li><br>
+<li> v. <strong>Storage Configuration</strong> - Pick a size per node based on your data. This size is per node, so if you have 3 servers at 10GB per node then the total storage for your cluster will be 30GB).</li><br>
+<li> vi. <strong>Encryption</strong> - if needed based on use-case</li><br>
+<li> vii. <strong>Snapshot configuration</strong> - AWS Elasticsearch service takes automatic snapshots of the domain once every day (now they do every hour as well as a new feature). Pick a time when the cluster is not going to have a lot of load. Something like midnight or early mornings.</li>
+</ul>
 
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/manageAWS3.png#thumbnail-60)
 

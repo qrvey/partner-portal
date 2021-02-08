@@ -8,9 +8,6 @@ original_id: aws-services
 <div style="text-align: justify">
 
 
-AWS Services Used by Qrvey
-
-
 Qrvey is built with multiple AWS services. Here is a list of the main components to give you an idea of what you can expect in your AWS bill. Many have a free tier or upfront pricing depending on your account.
 <table class="aws">
 	<thead>
