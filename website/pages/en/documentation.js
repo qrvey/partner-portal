@@ -25,7 +25,6 @@ class Documentation extends React.Component {
         {name:'Getting Started',path: siteConfig.baseUrl+'docs/get-started/get-started-intro'},
         {name:'Qrvey Composer',path: siteConfig.baseUrl+'docs/ui-docs/basics/logging-in'},
         {name:'Developer Documentation', path: siteConfig.baseUrl+'docs/get-started/get-started-architecture'},
-        {name:'AWS', path: siteConfig.baseUrl+'docs/aws/manage-aws-elasticsearch'},
         {name:'Administrator Documentation', path: siteConfig.baseUrl+'docs/admin/admin-intro'},
       ];
       const categoriesElem = categories.map((elem,id) => <Category key={id} value={elem}/>);

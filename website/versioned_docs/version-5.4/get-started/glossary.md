@@ -1,7 +1,8 @@
 ---
-id: glossary
+id: version-5.4-glossary
 title: Glossary of Common Terms
 sidebar_label: Glossary of Common Terms
+original_id: glossary
 ---
 
 <div style="text-align: justify">

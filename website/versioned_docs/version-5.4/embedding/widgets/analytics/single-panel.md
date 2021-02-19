@@ -1,7 +1,8 @@
 ---
-id: single-panel
+id: version-5.4-single-panel
 title: Single Panel Widget
 sidebar_label: Single Panel Widget
+original_id: single-panel
 ---
 <div style="text-align: justify">
 

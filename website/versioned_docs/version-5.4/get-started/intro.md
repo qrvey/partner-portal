@@ -1,7 +1,8 @@
 ---
-id: get-started-intro
+id: version-5.4-get-started-intro
 title: Overview
 sidebar_label: Overview
+original_id: get-started-intro
 ---
 
 <div style="text-align: justify">
