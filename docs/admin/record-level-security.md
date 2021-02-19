@@ -79,6 +79,7 @@ The following is an example of a JSON object containing a user’s security perm
 ```JSON
 {
  "version": "1.0.0",
+  "appid": "8_u_BlPDt",
  "userid": "T_E_iJWOk",
  "expiresIn": "1y",
  "permissions": [
@@ -95,7 +96,7 @@ The following is an example of a JSON object containing a user’s security perm
 }
 ```
 
-Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API Generate Token passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519"  target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the Http response. The generated token will be encrypted to avoid tampering.
+Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API Generate Token passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519"  target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
 
 ```json
 {
@@ -123,7 +124,7 @@ Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">A
 
 When users log in into the  OpenID Provider, the security permissions previously stored in the user_metadata will be added as part of the user information. They will be redirected to Qrvey, where the permissions will be used to filter the data in all charts if RLS is enabled.
 
-This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage all the process by itself.
+This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage the whole process by itself.
 
 
 ## Security Token Schema
@@ -137,6 +138,7 @@ In this section, we will describe the structure of the security token schema.
 | --- | --- | --- |--- |
 | version | _Number_| Yes |The version of the token structure. The current version is 1.0.0.
 | user_id | _String_| Yes | User ID
+| appid | String | Yes | The ID of the application you want to embed.
 | permissions| _Array_| Yes | Each item in the collection contains a _Permission Object_  
 
 
@@ -153,5 +155,5 @@ Record Filter Object
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
 | security_name| _String_| Yes |Name of the security column used to filter the data
-| values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3 corresponding to the Company Ids where the user has access. <br> If you do not want to apply security filters to the users, a wildcard (*) must be used.
+| values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3, corresponding to the Company IDs where the user has access. <br> If you do not want to apply security filters to the users, a wildcard (*) must be used.
  
