@@ -35,10 +35,16 @@ Join Output Transformations are applied after joining the Data. In this workspac
 ## Transformation Testing
 You will have the chance to test transformations before loading the actual data. This will let you verify that all of your transformations are working as expected.
 
-You just have to select your Data Source, fill in the input parameters and press **Test** to get the results.
+You just have to select your Data Source, fill in the input parameters and click **Test** to get the results.
 
 ![6_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/6_transformation.png#thumbnail)
 
+
+Also, any transformation has its own **Test Shortcut** on the transformation panel so it can be tested easily. By clicking the link, Testing Tab will be available and JSON columns will be populated with real data for a better experience.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/6a_transformation.png#thumbnail)
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/6b_transformation.png#thumbnail)
 
 ## Applying Transformations to the Data
 In order to apply the transformations to your data, you will need to apply the changes to your Dataset first. If you want to see those transformations in existing data, a reload is required.
@@ -57,6 +63,18 @@ This transformation will let you calculate values by writing a custom formula to
 
 ![8_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/8_transformation.png#thumbnail)
 
+
+## Handling Errors in Transformations
+This feature in the transformations UI will help users to handle errors better if they occur. The user will have three options to decide how to handle the error.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/8a_transformation.png#thumbnail)
+
+* Reject Record: The whole record will not be available when the error occurs.
+* Ignore Error: The record remains as-is.
+* Replace Value: Give a configured value when error occurs.
+>**Note**: This feature will not be available for transformations that can’t have an error such as Trim, Uppercase, Lowercase, Concatenate, Replace Text.
+
+
 ## Text Transformations
 ### Trim Text
 This transformation will allow you to remove the specified characters at the start or the end of a text in a column.
@@ -74,9 +92,33 @@ This transformation will allow you to make the text in one or more columns lower
 
 ![11_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/11_transformation.png#thumbnail)
 
+### Replace Text
+This transformation will allow you to replace any text found in a specific column with a given text.  To find a text, Case Sensitive functionality is also available.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/11a_transformation.png#thumbnail)
+
+### Concatenate
+This transformation will allow you two or more columns, specifying the separator is an option. The order of the concatenated text is given from top to bottom.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/11b_transformation.png#thumbnail)
+
 ## Numeric Transformations
 ### Round
 This transformation will allow you to round one or more numeric columns to the nearest integer.
 
 ![12_transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/12_transformation.png#thumbnail)
 
+### Addition
+This transformation will allow you to perform Sum in numeric columns given in a dataset.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/13_transformation.png#thumbnail)
+
+### Subtraction
+This transformation  will allow you to perform Subtraction in numeric columns given in a dataset.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/14_transformation.png#thumbnail)
+
+### Multiplication
+This transformation  will allow you to perform Multiplication with numeric columns given in a dataset.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/15_transformation.png#thumbnail)
