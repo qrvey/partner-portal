@@ -8,6 +8,7 @@ sidebar_label: Preparing Your AWS Account
 
 Qrvey will deploy to your AWS account using a CloudFormation template. CloudFormation templates enable you to automate the deployment process of the AWS services required to run the Qrvey system. The following steps will walk you through the deployment process.
 
+
 ## Step 1: Create an AWS Account
 
 If you are deploying Qrvey to a new AWS account, please follow these steps. Otherwise, you can jump to Step 2. 
