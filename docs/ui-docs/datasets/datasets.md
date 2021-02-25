@@ -41,7 +41,7 @@ You can also perform different actions with the data before loading it. You can 
 
 You can also change the formatting of the date and numeric columns. This format will be visible in the rest of the application when the column is used. For example a numeric column is assigned a _Currency_ format, meaning that if this column is used to build a chart, the values should be displayed as currency with the $ sign. 
 
-Now, Dataset can be marked as favorites just by clicking on the star icon. This will be useful for Dataset sorting purposes.
+Datasets can be marked as favorites by clicking on the star icon. This will be useful for Dataset sorting purposes.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_3a.png#thumbnail-40)
 
