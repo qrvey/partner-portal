@@ -9,15 +9,21 @@ original_id: preparing-AWS-account
 
 Qrvey will deploy to your AWS account using a CloudFormation template. CloudFormation templates enable you to automate the deployment process of the AWS services required to run the Qrvey system. The following steps will walk you through the deployment process.
 
+
 ## Step 1: Create an AWS Account
-If you are deploying Qrvey to a new AWS account, please follow these steps. Otherwise you can jump to Step 2.
+
+If you are deploying Qrvey to a new AWS account, please follow these steps. Otherwise, you can jump to Step 2. 
+
+If you already have an AWS Account then you can use AWS Organizations service to create a child AWS Account. 
+
+To create a new account using <a href="https://aws.amazon.com/organizations/">AWS Organizations</a>, follow the steps mentioned <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html"> here </a> and then jump to Step 2 in this document.
 Navigate to “https://aws.amazon.com” and click on the **Create an AWS Account** button:
 
 ![1_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep1.png#thumbnail)
 
 More information about creating an AWS account can be found <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/?icmpid=support_rt_kc_articles">here</a>.
 
-Fill out the form with appropriate information:
+Fill out the form with the appropriate information:
 * Root account Email
 * Password
 * Alias to easily reference this account
@@ -49,7 +55,7 @@ This is a required step that will create a new IAM role in your AWS account used
 ![7_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep7.png#thumbnail)
 
 
-2. Select your region from top-left region dropdown:
+2. Select your region from the top-left region dropdown:
 
 ![8_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep8.png#thumbnail-60)
 
@@ -83,58 +89,19 @@ This is a required step that will create a new IAM role in your AWS account used
 
 ![15_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep15.png#thumbnail)
 
-## Step 3: Identify an Email Address
-Qrvey will send emails from its system. This step allows you to provide a custom email address using your company domain. In case you do not wish to provide a custom email with your company domain, our default email address “hello+[yourAccount]@qrvey.com” will be used. 
 
-If you decide to use “hello+[yourAccount]@qrvey.com” email address, you can skip to Step 4.
 
-If you provide your own email address, please verify the email in AWS SES Console by following these steps.
-
-1. Log into AWS console and navigate to <a href="https://aws.amazon.com/ses/">AWS SES </a>. Make sure you are in the Northern Virginia region.
-
-![16_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep16.png#thumbnail-60)
-
-2. Click on the **Email Addresses** option in the left menu bar and then click on **Verify a New Email Address**.
-
-![17_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep17.png#thumbnail-60)
-
-3. Enter the email address and click on the button to verify. This will send an email to the given address with a link to verify the ownership. Once it’s verified, the email address will have a “verified” status.
-
-![18_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep18.png#thumbnail-60)
-
-## Step 4: Identify a URL
-The system deploys three components and therefore deploys three URLs (one for each component) to launch the application UI. You can use the default “qrvey.com” domain in which case you don’t have to do anything else. 
-
-Here’s a sample of the URLs that we’ll use by default:
-* Application URL: .qrvey.com
-* DataRouter URL: -datarouter.qrvey.com
-* Admin URL: -admin.qrvey.com
-
-If you are using the “qrvey.com” URL, you can skip to 
-Step 5.
-
-If you would prefer to use your own custom domain (instead of qrvey.com), we would need the full Application URLs. During deployment, Qrvey will create a free SSL certificate for you using AWS Certificate Manager. 
-
-When the certificate process is complete, you will be sent details for a CNAME record. When we create the certificate we’ll send you some CNAME records to be added with your DNS provider. You can find more information about this at:
-
-* <a href="https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html">AWS Certification Manager</a> <br>
-* <a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-dns.html">DNS Validation</a>
-
-## Step 5: Send Info to Qrvey
+## Step 3: Send Info to Qrvey
 Please send the following information to Qrvey’s deployment team:
-* Email Address (Step 3) Application URL (Step 4) AWS IAM Role URL (Step 2)
+* AWS IAM Role URL (Step 2)
 
 * Sample Email Body (to be sent to Qrvey at help@qrvey.com)
 
 ```
-Email Address: hello+qrveytrial@qrvey.com 
-Application URL:    qrveytrial.qrvey.com
-            qrveytrial-datarouter.qrvey.com
-            qrveytrial-admin.qrvey.com 
 IAM Crossaccount role URL: https://signin.aws.amazon.com/switchrole?roleName=QrveyxxxxxRole&account=9653xxxxxxxx
 ```
 
-## Step 6: Move SES out of Sandbox (Offline)
+## Step 4: Move SES out of Sandbox (Offline)
 *AWS enables SES in sandbox mode by default. While you can move SES out of sandbox mode at any time, this step is required to send emails from the Qrvey system.*
 
 To move SES out of sandbox mode, you must create a support ticket with AWS. AWS usually takes about 1 day to approve this request so we suggest doing this as soon as possible. Here are the steps to open this support ticket: 

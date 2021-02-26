@@ -54,6 +54,7 @@
         ]
       },
       "ui-docs/datasets/datasets",
+      "ui-docs/datasets/column-links",
       "ui-docs/datasets/data-sync",
       "ui-docs/datasets/joins",
       "ui-docs/datasets/datalinks",
