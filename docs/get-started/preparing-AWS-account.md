@@ -14,8 +14,8 @@ Qrvey will deploy to your AWS account using a CloudFormation template. CloudForm
 If you are deploying Qrvey to a new AWS account, please follow these steps. Otherwise, you can jump to Step 2. 
 
 If you already have an AWS Account then you can use AWS Organizations service to create a child AWS Account. 
-
 To create a new account using <a href="https://aws.amazon.com/organizations/">AWS Organizations</a>, follow the steps mentioned <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html"> here </a> and then jump to Step 2 in this document.
+
 Navigate to “https://aws.amazon.com” and click on the **Create an AWS Account** button:
 
 ![1_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep1.png#thumbnail)
