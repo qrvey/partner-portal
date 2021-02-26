@@ -101,3 +101,21 @@ function auth() {
 </script>
 ```
 
+Once that cookie has been created, the widget needs to be reloaded or re-injected in order for the new configuration to take effect.
+
+To reload the widget, use this snippet:
+```
+//1- Remove the current widget
+document.querySelector("widget-html-tag").remove();
+
+//2- Create the new widget html element
+var widgetNewHtmlElement = document.createElement("widget-html-tag");
+
+//3- Add widget configuration object reference
+widgetNewHtmlElement.setAttribute('config','myConfig');
+
+//4- Append new widget HTML object 
+document.getElementById("widget-container-id").appendChild(widgetNewHtmlElement);
+```
+
+
