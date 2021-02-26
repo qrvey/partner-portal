@@ -44,3 +44,11 @@ There are cases where the underlying data that is being exported is very large a
 ![6_exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/6_exporting.png#thumbnail)
 
 ![7_exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/7_exporting.png#thumbnail)
+
+## CSV Summary Exports
+You can download CSVs with aggregated data versus your raw data. To download CSVs with aggregated data, just go to the three-dot menu located in your custom visualizations and find the Download menu option and select the CSV-Summary. 
+
+The feature is currently supported for most simple Bar, Line, Symbol, Pie, Word Cloud, and Tables. 
+
+![8_exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/8_exporting.gif#thumbnail)
+
