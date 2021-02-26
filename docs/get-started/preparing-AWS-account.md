@@ -92,16 +92,13 @@ This is a required step that will create a new IAM role in your AWS account used
 
 ## Step 3: Send Info to Qrvey
 Please send the following information to Qrvey’s deployment team:
-* Email Address (Step 3) Application URL (Step 4) AWS IAM Role URL (Step 2)
+* AWS IAM Role URL (Step 2)
 
 * Sample Email Body (to be sent to Qrvey at help@qrvey.com)
 
-Email Address: hello+qrveytrial@qrvey.com <br>
-Application URL:    qrveytrial.qrvey.com
-            qrveytrial-datarouter.qrvey.com
-            qrveytrial-admin.qrvey.com 
+```
 IAM Crossaccount role URL: https://signin.aws.amazon.com/switchrole?roleName=QrveyxxxxxRole&account=9653xxxxxxxx
-
+```
 
 ## Step 4: Move SES out of Sandbox (Offline)
 *AWS enables SES in sandbox mode by default. While you can move SES out of sandbox mode at any time, this step is required to send emails from the Qrvey system.*
