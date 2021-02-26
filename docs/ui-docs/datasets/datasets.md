@@ -41,6 +41,11 @@ You can also perform different actions with the data before loading it. You can 
 
 You can also change the formatting of the date and numeric columns. This format will be visible in the rest of the application when the column is used. For example a numeric column is assigned a _Currency_ format, meaning that if this column is used to build a chart, the values should be displayed as currency with the $ sign. 
 
+Datasets can be marked as favorites by clicking on the star icon. This will be useful for Dataset sorting purposes.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_3a.png#thumbnail-40)
+
+
 ![5b_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/datasets_3.png#thumbnail-40)
 
 
@@ -87,9 +92,31 @@ To edit your dataset, you can click on the three-dot menu in the right corner of
 Most of the changes that you make to your dataset will require the data to be reloaded. The only changes that do not require a data reload are those that don’t make a fundamental change in the dataset, like changing the name of the dataset or the name of any of the data source columns. If a change requires you to reload data, you will be notified when you apply your changes. Once you are finished editing the dataset, click on **Apply Changes** and then reload the data, if you are prompted or otherwise want to. 
 
 If you would like to go back to the last loaded version of the dataset you can use the **Discard Changes** option.
+You can reload your data at any time without having to edit the dataset. If you need to update the dataset, just click on **Reload Data** and your data will begin loading again. 
 
-You can reload your data at any time, without having to edit the dataset. If you need to update the dataset, just click on **Reload Data** and your data will begin loading again. 
+Even if you have just started a loading process, you can decide to cancel it. That can be useful for any last-minute validations as the changes will not be applied.
 
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/13a_Datasets.png#thumbnail)
+
+Once you decide to cancel the process, the data returns to its original configuration and is ready to be loaded again. 
+
+
+## Datasets View and Sorting
+Once the Datasets have been created or edited, they can be displayed in Card View and List/Tabular View.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dvs_1.png#thumbnail-60)
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dvs_2.png#thumbnail-60)
+
+
+Datasets are sorted by default according to the last edited dataset and the ones marked as favorites by the User. In Card View, the datasets are arranged from top to bottom and left to right, while in List/Tabular View, the datasets are arranged only from top to bottom.
+Users can easily manage their favorite Datasets in Card View.
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dvs_3.png#thumbnail-40)
+
+
+In List/Tabular View, sorting Datasets can be arranged by clicking on the preferred column (see sorting icon functionality) or by clicking on the star icon and marking the column as a favorite.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dvs_4.png#thumbnail-60)
 
 
 ## Data Syncs
