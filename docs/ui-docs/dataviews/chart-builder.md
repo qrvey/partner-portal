@@ -650,21 +650,34 @@ Date formatting only works on dates used as “Groups” in grouped tables, and 
 
 Using conditions can create the criteria to apply specific color formatting to data in charts to highlight, differentiate, emphasize values that meet the set conditions. Conditional formatting calls attention to important data points such as deadlines, at-risk items, or budget items. It can also make large datasets more digestible by breaking up the data with a visual organizational component.
 
-There are 3 basic components required to create a condition: 
+There are 3 basic components are required to create a condition: 
 * **Data column** to use for a condition
 * **Operator** for a condition (these vary depending on the data type of the column chosen)
 * **Value** to look for with a condition (input components vary on the data type of the column chosen)
 
 To apply Conditional Formatting, you have to:
 1. Go to the “Format” section located inside the Chart Builder’s configuration pane.  
-2. Click on the “Conditional Formatting” subsection and then select “+Add Condition”.
-3. A condition tab where you can set up your condition will appear. 
-4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart, as long as the condition criteria are met. 
+2. Click on the “Conditional Formatting” subsection and click on “+Add Condition”.
+3. A condition tab will appear where you can set up your condition. 
+4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
 
 
-Currently, the Conditional Formatting is supported by *Table Charts* with more chart options coming soon. 
+Currently, the Conditional Formatting is supported by Table Charts with more charts coming soon. 
+
 
 ![12gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12gif.gif#thumbnail)
+
+
+### Conditional Formatting on Tables
+When you use conditional formatting on tables, you have different options to highlight the value that matches the condition defined.
+
+* **Text Color**: It changes the font color of the cell’s value that matches the condition.
+* **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells whose values match the condition.
+* **Style**: It works together with the cell color option to fill the cell’s background color or outline its border. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond_form.png#thumbnail-60)
+
+
 
 
 ## Chart Themes 
