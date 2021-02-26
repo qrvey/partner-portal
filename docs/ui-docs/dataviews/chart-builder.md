@@ -75,16 +75,16 @@ To define max data points, set the desired number in the box which will immediat
 
 In the styles section, you will be able to change the color of the chart, turn on/off-axis labels, and find other options that vary from chart to chart. For this bar chart example, you can change the bar orientation from vertical to horizontal, turn bar shading on/off. and add data labels that will show the value for each bar presented in the chart. 
 
-You will also find the x and y axis options.
+You will also find the x and y-axis options.
 
 ![7_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7_CB.png#thumbnail-20)
 
-For both axes you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and you can define the format of the values for the y-axis. 
+For both axes, you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and you can define the format of the values for the y-axis. 
 
 ![8_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8_CB.png#thumbnail-20)
 
 ## Layers
-In this section you will be able to set trend and reference lines. 
+In this section, you will be able to set trend and reference lines. 
 
 If you choose to add a trend line, you can select the type of trend you’d like from the drop-down menu. The preview chart on the left will automatically be updated with your selection.
 
@@ -544,7 +544,7 @@ The following images show an example of partitioning in Table charts using the �
 
 
 ### 4. Direction
-Users can define direction for addressing in order to have table calculations performed Down or Across  the Table or Partition.
+Users can define a direction for addressing in order to have table calculations performed Down or Across the Table or Partition.
 
 To define Direction in Table Calculations, you need to add a Table Calculation and then go to the Direction option to select which type to use for the calculation - Down or Across.
 
@@ -567,7 +567,7 @@ When switching to the continuous mode, the product fills in the gaps in data to 
 
 To apply Discrete or Continuous values, your chart must use a date or numeric column in a category position. Open the column options where you will see Discrete Values preselected. If you select Continuous Values, you will see continuous date categories in the chart even if the data does not contain them.
 
-The *Discrete*  and *Continuous*  features are options only available for the date and numeric columns used in Chart Builder. 
+The *Discrete* and *Continuous* features are options only available for the date and numeric columns used in Chart Builder. 
 
 * Discrete Dates
 
@@ -603,7 +603,7 @@ For Multiseries, you can switch by “Category” or “Value” and at the same
 
 ![6gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
 
-For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of   aggregated “Columns” and the innermost “Group” column. 
+For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of aggregated “Columns” and the innermost “Group” column. 
 
 ![7gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
 
