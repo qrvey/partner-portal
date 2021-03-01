@@ -6,65 +6,32 @@ sidebar_label: Known Issues
 <div style="text-align: justify">
 
 
-* **DR-2263 - Datasource Pump Error**: When a user loads a file that does not exist on S3, the loading process finishes but does not report an error.
+* **DR-2363 - Dataset From Joined CSV Appear Blank:** When a user creates a dataset by joining a few CSVs as the data source and these data sources have dots in their headers, those columns with dots show the data in blank when it is loaded.
 
-* **DR-2240 - Transformations Results With Nulls Do Not Match**: When a user creates *Math Transformations* and selects columns with NULL records, the result in the testing tab appears as 0 but when the Dataset is loaded, it appears as NULL.
+* **QV-12639 - Dates Swapped in Dataset Cards**: When an old dataset is reloaded, the dates of Created and Last Loaded appear swapped.
 
-* **QV-12381 - Transformations - Column Is Not Removed With ‘Update Existing’**: When a user changes the ‘new column’ output to the ‘Update Existing’ output, the previously generated column does not disappear. 
+* **QV-12645 - Dataset Sync Is Executed in Off**: The Sync is turned off in the "Data Sync" tab, however, the sync is still being executed in the frequency configured the first time in the "Full Reload".
 
-* **QV-12389 - Dataset - List View Responsiveness**: The sorting icons overlap using the List View. 
+* **QV-12765 - The Data Source Pill Do Not Update**: When a dataset is created from another Dataset, an Index View, or a CSV connection, the child dataset pill name is not updated if the parent is changed. 
 
-* **QV-12376 - Dataset - Data Page Remains ‘Loading’**: When a user goes to a dataset and the backend shows a time-out error, the data page remains ‘Loading’ and the red toast with the error message does not appear.
+* **QV-12800 - The Transformation Cards Do Not Reorder**: When the user creates some Transformations and then drags and drops the cards to rearrange them, the transformation cards do not stay in that order after reloading the page.
 
-* **QV-12361 - Dataset - The Discard Changes Process Is Not Working**: When a user cancels a loading process and clicks the *Discard Changes* button, the data page does not return to the previous version.
+* **QV-12817 - Favorite Question Added From a Branch Does Not Remain in Other Surveys**:  When the user creates a Survey and adds a question from "Favorites" that belong to a branch of another survey, the question is displayed in the view, but when the user activates the Survey and goes to the End-User URL, the question is not being displayed and it also disappears in Survey Design.
 
-* **QV-12360 - Filters - Size Values Do Not Appear in Image Upload**: When a user applies text or object analysis to an image upload question, and uses “equal” as operator for size filters, the values do not appear.
+* **AN-12115 - Abbreviated States Do Not Appear On The Map**: If a column with abbreviated states is configured as geolocation and is used in maps like Bubble, Dot, or Choropleth, it shows as an error.
 
-* **QV-12267 - The Lookup Question Shows Only 100 Records**: When a user creates a webform with a lookup question and the source used has more than 100 records, the end user side shows only 100 of them. Also, the search only returns results from those 100 records, and not from the entire data.
+* **AN-12234 - “Is null” Filter Has a Wrong Message**: The user has a grouped table with a date column and when a filter by a date that does not exist is applied, a "No data found" message appears in the panel. Even when that filter is turned off, the same message appears. 
 
-* **AN-11999 - Filters - Date Time Unchecked Values**: Users cannot create date filters by Weeks, Hours, Min, Sec properties when editing date filters created with "Filter by" or "See Data".
+* **AN-12243 - The Filter Modal Shows No Data Found**: The user has a dataset that has 18,342 records and when a date column is grouped by minutes or seconds, the application shows an empty state "The combination of data used in this chart exceeds the maximum numbers of datapoint...". When filtering by Minutes or Seconds, the application shows "No data found". 
 
-* **AN-11937 - Cities, Addresses and Zip Codes on Choropleth Map**: When a user adds columns of type, city, address or zip code to a choropleth map, they do not display depending on their aggregation nor the ranges shown in the legends.
+* **AN-12279 - Themed Font Styles on Downloads**: When there are font settings applied to a theme, these are not reflected in the PDF or JPG downloads.
 
-* **AN-11932 - Min/Max - Some Data Labels Are Cut Within The Panel Container**: When the Min/Max chart is created using several categories (for example, more than 8), the data labels of the last categories get cut within the panel container, regardless of the chart orientation.
+* **AT-7974 - Date Picker Tooltip Appears Cut**: When the component has a long label at the top of the screen in the end-user widget, the tooltip appears cut at the top.
 
-* **AN-11717 - Filters - Searches With Decimal Numbers Do Not Match**: If a user creates filters with numbers such as 267.78716 or 84312.135 and then initiates a search, the results do not appear. 
+* **AT-8108 - Date Picker Dropdown Lists Are Incomplete in Safari**: When the user goes to the end-user widget and opens the date picker control from the safari browser, the Month/Year dropdowns appear incomplete.
 
-* **AN-11266 - Style Themes Tooltip Not Visible**: When a user hovers over the *Style Themes* icon located in the toolbar of the embedded AN-dashboard widget, the tooltip does not show. 
+* **AT-8116 - Filter Controls Do Not Update**: When the user adds more than one date picker and value lists using the same column and updates the filter, not all date pickers will update their calendars.
 
-* **AN-11250 - Condition Does Not Apply**: If a conditional format has been applied to date values in a table chart, and the user collapses the column drop-down and clicks the date column, the date value field won´t reset as text and numeric data types when the same flow is applied.
+* **AT-8160 - Automatic Links Do Not Update When Removing Panel**: When a user removes a chart with auto links, the last update disappears and the predefined links remain there.
 
-* **AN-11167 - Conditional Formatting - The Sequence Is Not Kept**: When the user adds layers to a table, they are listed consecutively, however, when removing any layer other than the last one, the enumeration is not as expected.
-
-* **AN-11154 - Custom Date Format - Duplicate Formats**: When a user types duplicate characters as date format, an error state message does not appear. 
-
-* **AN-10919 - Table Totals - The Minimum Total**: When a user creates a grouped table chart, sets totals at a level, and sorts, the minimum is wrong. 
-
-* **AN-10133 - Axis Labels Should Remain Fixed**: When creating a chart, the X-axis labels sometimes do not get displayed by default, needing the creator to scroll vertically to see the labels or resize the chart panel.
-
-* **AN-10852 - Table Chart - Columns Added From Shelf Overflow Are Not Selected by Default**: When a creator adds columns to the shelf overflow, they are not selected by default in the column's dropdown within the added totals layer.
-
-* **AN-10853 - Table - Columns Added Not Selected by Default**: When a user creates a table chart adding total layers and one of the columns added is removed from the shelf and another column is placed, this last column is not selected by default in the columns drop-down menu.
-
-* **AN-10737 - Clustering - Style Issue When Hovering Disabled Data Labels**: When the creator unchecks the clustering option in dot maps and hovers the mouse over the disabled data labels option, a gray icon appears above the checkbox.
-
-* **AN-10845 - Sorting Preferences Issues**: When a creator applies a sorting by value and then applies a table calculation in a bar or line chart, the preference of sorting by the value that was applied manually before the table calculation is not kept. 
-
-* **AN-10896 - Table Totals - Totals Disappear**: When the user changes the grouped table to a simple table in a grouped table with totals applied and the table option is unchecked, the totals disappear.
-
-* **AN-12034 - Chart Panel Filters on Aggregates**: 
-It is not possible to apply Filters to aggregated columns from the filters modal accessed outside the Chart Builder or by clicking filter actions applied across the analytic panel.
-
-* **AT-7042 - Sharing - Deleting Dataset Conflict**: When a creator deletes a dataset being used by other creators that are creating charts, the chart builder fails to load.
-
-* **AT-7064 - Sharing - Builders - Page Load Removes Charts**: When several creators are working on the same application and the page with tabs is updated, the charts disappear unless the page has been published.
-
-* **AT-6385 - Some Token Filters Do Not Apply**: Charts filtered by specific tokens do not apply and the message ‘Chart not available at the moment’ appears.
-
-* **AT-6182 - Page Builder - Global Filters on Blocked Pages**: When a page is deployed through content deployment in Admin Center, any global filter applied to other pages on the recipient’s side will also be applied to the blocked page. It shouldn’t be applied since this page is locked for editing by recipients.
-
-* **ADMIN-2936 - Different Sessions in the Same Browser**: The Composer does not indicate that a session has started when a creator starts another session with a different account in the same browser, causing an error to appear.
-
-* **ADMIN-3522 - Roles Table Sorted by Date**: The Roles table in Roles Tab inside User Management Widget is not sorted by date nor is it showing the recent roles on the top.
-
-* **ADMIN-3293 - Responsiveness of the Datasets Columns Width**: When an Admin changes the width size of the window, the responsiveness of the Datasets columns width does not work properly.
+* **ADMIN-3626 - Applications Cannot Be Shared After a Dataset Is Deleted**: When the Admin user tries to install an application after a dataset had been deleted from the original application that has a dependency on the page, the application can't be installed. 
