@@ -640,6 +640,38 @@ You can  manually modify the Column Sizes of Table Charts by simply dragging  ho
 
 ![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.gif#thumbnail)  
 
+## Sorting
+It’s a common action when interacting with tables, to sort the column in an ascending or descending way to have a better perspective of the analyzed data. Depending on the type of table you are using, sorting could be slightly different.
+
+### Sorting on Simple Tables
+Simple tables could be sorted in two different ways. The first one is Single Sorting, where you could sort one column at a time. The second called Multi-Sorting lets you sort multiple columns at a time.
+
+* **Single Sorting**: Every table column contains a sorting icon as by default they are not sorted. If you want to sort the column you just need to click on the icon and it will sort the column’s values in an ascending way. Clicking it again will sort the values in a descending way.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort1.gif#thumbnail-60)  
+
+Sorting on another column will remove the sort you have previously applied to a column and the table will keep the last column you had sorted.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort2.gif#thumbnail-60)  
+
+* **Multi-Column Sorting**: Simple tables have single-sorting enabled by default. If you want to use multi-column sorting, you can find that option on the three-dot menu located in every column header.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort3.png#thumbnail-60)  
+ 
+A multi-column sort option will appear at the top left-hand side of the table. Using this option will let you sort by multiple columns at the same time simply by selecting them from the dropdown list. All sorted columns will appear at the bottom where you can choose either the ascending or descending sort order for each of them individually by clicking on the orange buttons or remove the column’s sort by clicking the X icon.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort4.png#thumbnail-60)  
+
+
+Once the multi-sort column option is active, you can also click on the sort icon of each column’s header to switch the sort order (asc or desc) or to remove it. The multi-column option above the table will be in sync with whatever action you take on the table column’s header.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort5.png#thumbnail-60)  
+
+
+
+
+
+
 ## Metrics
 
 ### Overview
