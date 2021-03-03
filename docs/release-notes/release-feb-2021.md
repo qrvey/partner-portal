@@ -24,7 +24,6 @@ Click <a href="/docs/next/video-training/release/version-5.8" target="_blank"> <
 
 * <a href="/docs/ui-docs/datasets/transformations/" target="_blank"><strong>QV-12434 - Output Columns Data Types on Transformations</strong></a>: When creating a Formula Transformation, you can now decide the output data type of the column no matter if you choose to Update Existing or Create New column.
 
-* <a href="/docs/video-training/release/version-5.8/#automatic-column-links" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/" target="_blank"><strong> QV-12478 - Automatic Column Links</strong></a>: You can now pre-configure any column in your dataset to link to a specific URL wherever it’s used in a visualization. 
 
 * **QV-11801 - File Upload Size in Connections**: The 10 MB size limit for file uploads when creating a new connection has been increased to 500 MB.
 
@@ -54,8 +53,6 @@ Click <a href="/docs/next/video-training/release/version-5.8" target="_blank"> <
 * <a href="/docs/video-training/release/version-5.8/#value-list-and-display-filters" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AT-7524 - Value List Filter Component</strong></a>: Value List component has been added to the Page Builder as the latest standalone filter component. This component can be set up and configured at the creation time and allows the end users to interact with it, giving them greater control over the filtering of the published pages.
 
 * **AT-7804 - Builders - Filtering in Widget Configuration**: You can now define default filters for an embedded widget within the widget's configuration object. When your users access the widget, the data will be filtered based on the filters you defined.
-
-* <a href="/docs/video-training/release/version-5.8/#automatic-column-links" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/"> <strong> AT-7946 - Automatic Column Links in Page Actions</strong></a>: Once a Column Link has been created in the Data Design Page, you can now edit the URL linked to that column in Page Actions and have that change reflect on both sides.
 
 
 
