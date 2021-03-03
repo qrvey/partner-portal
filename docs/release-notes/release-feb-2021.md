@@ -24,26 +24,22 @@ Click <a href="/docs/next/video-training/release/version-5.8" target="_blank"> <
 
 * <a href="/docs/ui-docs/datasets/transformations/" target="_blank"><strong>QV-12434 - Output Columns Data Types on Transformations</strong></a>: When creating a Formula Transformation, you can now decide the output data type of the column no matter if you choose to Update Existing or Create New column.
 
-* <a href="/docs/video-training/release/version-5.7/#filters-v20" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/" target="_blank"><strong> QV-12478 - Automatic Column Links</strong></a>: You can now pre-configure any column in your dataset to link to a specific URL wherever it’s used in a visualization. 
+* <a href="/docs/video-training/release/version-5.8/#automatic-column-links" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/" target="_blank"><strong> QV-12478 - Automatic Column Links</strong></a>: You can now pre-configure any column in your dataset to link to a specific URL wherever it’s used in a visualization. 
 
 * **QV-11801 - File Upload Size in Connections**: The 10 MB size limit for file uploads when creating a new connection has been increased to 500 MB.
 
 * <a href="/docs/ui-docs/datasets/datasets/" target="_blank"><strong>QV-12358 - Mark Favorite Dataset</strong></a>: You can now mark a dataset as a favorite when creating a new one on the Data Page. Favorite datasets show up on top, making them easier to access.
 
-* <a href="" target="_blank"><strong>QV-12368 - Web Form - End User Widget</strong></a>: The new Web Form End User Widget is an updated/modernized version of a similar widget and it allows for any web form to be embedded in your products. The new widget has been improved with properties that allow for configuration of the Web Forms styles and setting default answers.
-
-
-
-
+* <a href="/docs/embedding/widgets/data-sources/web-form-end-user/" target="_blank"><strong>QV-12368 - Web Form - End User Widget</strong></a>: The new Web Form End User Widget is an updated/modernized version of a similar widget and it allows for any web form to be embedded in your products. The new widget has been improved with properties that allow for configuration of the Web Forms styles and setting default answers.
 
 
 ## Data Analysis & Automation
 
 * <a href="/docs/ui-docs/dataviews/chart-builder/"><strong>AN-11715 - Conditional Formatting - Text And Background Color</strong></a>: On Tables, you can now create conditions to affect the cell’s foreground and background colors.
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/dataviews/chart-types/"><strong>AN-11948 - Single and Multiple Column Sorting Enhancement</strong></a>: You can now configure a custom sorting order when using multiple columns to sort a table.
+* <a href="/docs/video-training/release/version-5.8/#simple-and-multiple-column-sorting-enhancements" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/dataviews/chart-types/"><strong>AN-11948 - Single and Multiple Column Sorting Enhancement</strong></a>: You can now configure a custom sorting order when using multiple columns to sort a table.
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> **AN-10200 - Axis Breakdown Control**: In Chart Builder, you can now control the intervals of value labels shown in the value axis of Bar, Line, Symbol, Multi-Series, and Min&Max charts.
+* <a href="/docs/video-training/release/version-5.8/#chart-axis-breakdown-control" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> **AN-10200 - Axis Breakdown Control**: In Chart Builder, you can now control the intervals of value labels shown in the value axis of Bar, Line, Symbol, Multi-Series, and Min&Max charts.
 
 * **AN-11231 - Chart Themes - Text Styles in Metrics**: You can customize the default global Qrvey text styles used in Metrics.
 
@@ -53,13 +49,13 @@ Click <a href="/docs/next/video-training/release/version-5.8" target="_blank"> <
 
 
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AT-7819 - Display Filters Affecting Analytics in Filter Pane</strong></a>: With this new feature, the filters in the filter pane are updated to only show those that are applied to the chart, each time a different chart panel is selected.
+* <a href="/docs/video-training/release/version-5.8/#value-list-and-display-filters" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AT-7819 - Display Filters Affecting Analytics in Filter Pane</strong></a>: With this new feature, the filters in the filter pane are updated to only show those that are applied to the chart, each time a different chart panel is selected.
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AT-7524 - Value List Filter Component</strong></a>: Value List component has been added to the Page Builder as the latest standalone filter component. This component can be set up and configured at the creation time and allows the end users to interact with it, giving them greater control over the filtering of the published pages.
+* <a href="/docs/video-training/release/version-5.8/#value-list-and-display-filters" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AT-7524 - Value List Filter Component</strong></a>: Value List component has been added to the Page Builder as the latest standalone filter component. This component can be set up and configured at the creation time and allows the end users to interact with it, giving them greater control over the filtering of the published pages.
 
 * **AT-7804 - Builders - Filtering in Widget Configuration**: You can now define default filters for an embedded widget within the widget's configuration object. When your users access the widget, the data will be filtered based on the filters you defined.
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/"> <strong> AT-7946 - Automatic Column Links in Page Actions</strong></a>: Once a Column Link has been created in the Data Design Page, you can now edit the URL linked to that column in Page Actions and have that change reflect on both sides.
+* <a href="/docs/video-training/release/version-5.8/#automatic-column-links" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/column-links/"> <strong> AT-7946 - Automatic Column Links in Page Actions</strong></a>: Once a Column Link has been created in the Data Design Page, you can now edit the URL linked to that column in Page Actions and have that change reflect on both sides.
 
 
 
