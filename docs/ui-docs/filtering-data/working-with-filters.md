@@ -42,6 +42,23 @@ The filter panel on the right side of the screen is the main area where you can 
 Filters are listed in groups based on their scope. You can disable/enable all filters within a given scope in one shot, by changing the state of the slider button next to the scope. You can also remove all of the filters for that scope from the **x** icon on the right side of the scope. 
 You can further exclude/include individual filters from the checkbox next to their name and deselect/select each value from the checkboxes next to the values. Individual values can also be removed from the filter using the **x** icon next to each value. However, adding them back will require editing the filter.
 
+
+### Displaying  Filters Affecting Analytics in Filter Panel
+The Filters Panels located inside Report and Page Builders are interactive, showing only the filters that are affecting the analytics on the select page, tab, or visualization panel. 
+
+When you click on Page the filters panel will show any Global or Page filters affecting the analytics on the selected page. 
+
+When you on a Tab the filters panel will show any Global,Page, Tab filters affecting that analytics on that selected tab. 
+
+When you do a specific visualization the filters panel will show any Global, Page, or Panel filters affecting that selected analytic. 
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inter_filter.gif#thumbnail-60)
+
+
+
+
+
+
 ### Free-Standing Filter Controls
 Another option to add interactive filters to a page is to add them as free-standing controls that can be placed anywhere on a page and use to filter any chart that is placed on the page and uses the selected data column. 
 In Qrvey, we provide a set of filter controls that you can drag and drop to the canvas inside the page builder to make them available to end-users when the page is published or embedded in a web application.
@@ -50,7 +67,7 @@ In Qrvey, we provide a set of filter controls that you can drag and drop to the 
 One of these controls is a date picker filter that acts as a calendar inside the end-user site. To add a date picker filter control drag it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately.
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/5working-filters.png#thumbnail-60)
-
+ 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/6working-filters.png#thumbnail-40)  
 
 
@@ -72,6 +89,33 @@ Selecting the date picker component will enable the configuration panel, where y
 * **Font Color**: You can change the control’s font color. The default label and the selected values will have this color.
 
 * **Icon / Selectors**: With this setting, you can define the default color for the component’s icon. 
+
+
+### Value List
+Another of these controls is a value list filter that acts as a simple list of values that can be selected. To add a value list filter control select it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately.
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/value1.png#thumbnail-40)  
+ 
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/value2.png#thumbnail-40)   
+
+Selecting the value list component will enable the configuration panel, where you can configure the default settings.
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/value3.png#thumbnail-40)  
+
+
+* **Column**: The dataset column that will be used to filter the data. End Users will not be able to change this setting so every time they select a value, charts will be refined by the dataset’s column defined by the creator.
+
+* **Label**: This is the placeholder shown inside the value list component when there is no value selected.
+
+* **Type**: Select between showing the value list as a list or a dropdown. The default option is list type.
+
+* **Font Type**: You can change the control’s default font type by selecting from a predefined font list.
+
+* **Font Color**: You can change the control’s font color. The default label and the selected values will have this color.
+
+* **Icon / Selectors**: With this setting, you can define the default color of the component’s icon. 
+
+
 
 ## Deciding What To Filter
 Depending on your analysis needs you can decide what to use as the subject for filtering: The underlying data, or the aggregated data. For example, are you looking for the sales numbers for all products that are priced under $100 or are you interested in states where your total sales number exceeded $50,000? This section describes how to achieve each of these goals.
