@@ -29,10 +29,10 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', name: 'Your First Analytic App' },
         { link: siteConfig.baseUrl+'docs/tutorials/create-charts', name: 'Create Charts' },
       ], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
-      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', topLinks: [
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', name: 'Building Qrvey Sample' },
-        { link: siteConfig.baseUrl+'docs/video-training//release/version-5.7', name: 'Training Session' },
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Datasets' }
+      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
+        { link: siteConfig.baseUrl+'docs/video-training/analytics/web-forms', name: 'Web Forms' },
+        { link: siteConfig.baseUrl+'docs/video-training/analytics/automation', name: 'Workflows' },
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Data Links' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
       {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
         { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
