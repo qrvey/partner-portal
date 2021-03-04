@@ -75,16 +75,16 @@ To define max data points, set the desired number in the box which will immediat
 
 In the styles section, you will be able to change the color of the chart, turn on/off-axis labels, and find other options that vary from chart to chart. For this bar chart example, you can change the bar orientation from vertical to horizontal, turn bar shading on/off. and add data labels that will show the value for each bar presented in the chart. 
 
-You will also find the x and y axis options.
+You will also find the x and y-axis options.
 
 ![7_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7_CB.png#thumbnail-20)
 
-For both axes you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and you can define the format of the values for the y-axis. 
+For both axes, you will be able to edit the *Axis Label* as well as turn on/off the *Values Label*. You can modify the Value Labels rotation, and you can define the format of the values for the y-axis. 
 
 ![8_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8_CB.png#thumbnail-20)
 
 ## Layers
-In this section you will be able to set trend and reference lines. 
+In this section, you will be able to set trend and reference lines. 
 
 If you choose to add a trend line, you can select the type of trend you’d like from the drop-down menu. The preview chart on the left will automatically be updated with your selection.
 
@@ -544,7 +544,7 @@ The following images show an example of partitioning in Table charts using the �
 
 
 ### 4. Direction
-Users can define direction for addressing in order to have table calculations performed Down or Across  the Table or Partition.
+Users can define a direction for addressing in order to have table calculations performed Down or Across the Table or Partition.
 
 To define Direction in Table Calculations, you need to add a Table Calculation and then go to the Direction option to select which type to use for the calculation - Down or Across.
 
@@ -567,7 +567,7 @@ When switching to the continuous mode, the product fills in the gaps in data to 
 
 To apply Discrete or Continuous values, your chart must use a date or numeric column in a category position. Open the column options where you will see Discrete Values preselected. If you select Continuous Values, you will see continuous date categories in the chart even if the data does not contain them.
 
-The *Discrete*  and *Continuous*  features are options only available for the date and numeric columns used in Chart Builder. 
+The *Discrete* and *Continuous* features are options only available for the date and numeric columns used in Chart Builder. 
 
 * Discrete Dates
 
@@ -603,7 +603,7 @@ For Multiseries, you can switch by “Category” or “Value” and at the same
 
 ![6gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
 
-For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of   aggregated “Columns” and the innermost “Group” column. 
+For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of aggregated “Columns” and the innermost “Group” column. 
 
 ![7gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
 
@@ -650,21 +650,34 @@ Date formatting only works on dates used as “Groups” in grouped tables, and 
 
 Using conditions can create the criteria to apply specific color formatting to data in charts to highlight, differentiate, emphasize values that meet the set conditions. Conditional formatting calls attention to important data points such as deadlines, at-risk items, or budget items. It can also make large datasets more digestible by breaking up the data with a visual organizational component.
 
-There are 3 basic components required to create a condition: 
+There are 3 basic components are required to create a condition: 
 * **Data column** to use for a condition
 * **Operator** for a condition (these vary depending on the data type of the column chosen)
 * **Value** to look for with a condition (input components vary on the data type of the column chosen)
 
 To apply Conditional Formatting, you have to:
 1. Go to the “Format” section located inside the Chart Builder’s configuration pane.  
-2. Click on the “Conditional Formatting” subsection and then select “+Add Condition”.
-3. A condition tab where you can set up your condition will appear. 
-4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart, as long as the condition criteria are met. 
+2. Click on the “Conditional Formatting” subsection and click on “+Add Condition”.
+3. A condition tab will appear where you can set up your condition. 
+4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
 
 
-Currently, the Conditional Formatting is supported by *Table Charts* with more chart options coming soon. 
+Currently, the Conditional Formatting is supported by Table Charts with more charts coming soon. 
+
 
 ![12gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12gif.gif#thumbnail)
+
+
+### Conditional Formatting on Tables
+When you use conditional formatting on tables, you have different options to highlight the value that matches the condition defined.
+
+* **Text Color**: It changes the font color of the cell’s value that matches the condition.
+* **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells whose values match the condition.
+* **Style**: It works together with the cell color option to fill the cell’s background color or outline its border. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond_form.png#thumbnail-60)
+
+
 
 
 ## Chart Themes 
