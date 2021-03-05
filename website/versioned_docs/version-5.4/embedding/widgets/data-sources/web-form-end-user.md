@@ -14,10 +14,7 @@ The HTML tag for this widget is: <br>
 
 This widget needs an extra script for proper support in all browsers:
 
-```
-<script type="module"   src=”https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js”></script> 
-``` 
-(For all browsers support)
+`<script type="module"   src=”https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js”></script>` (For all browsers support)
 
 
 ## Configuration Object

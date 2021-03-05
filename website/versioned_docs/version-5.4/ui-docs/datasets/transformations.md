@@ -123,3 +123,19 @@ This transformation  will allow you to perform Subtraction in numeric columns gi
 This transformation  will allow you to perform Multiplication with numeric columns given in a dataset.
 
 ![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/15_transformation.png#thumbnail)
+
+### Division
+This transformation  will allow you to perform Division with numeric columns given in a dataset.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/division.png#thumbnail)
+
+## Date Transformations
+### Date Add
+This transformation will allow you to add or subtract values from a specific date column. Value unites can be selected for the operation.
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add.png#thumbnail)
+
+### Date Difference
+This transformation will allow you to calculate the difference between dates and times. The result is a number and its units can be chosen. 
+
+![transformation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/difference.png#thumbnail) 
