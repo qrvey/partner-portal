@@ -44,7 +44,7 @@ Click <a href="/docs/video-training/release/version-5.8" target="_blank"> <stron
 
 * **AN-11269 - Filters - Date Time Week/Hrs/Secs in Dates**: You can now create filters on your data using weeks and more granular options like hours, minutes, and seconds.
 
-* <a href="" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AN-12149 - Display Filters Affecting Analytics When Hovering Over Filter Button</strong></a>: This new enhancement shows the filters that are applied to a chart inside a floating popup that shows up as a tooltip when the user hovers their cursor over the filter button.
+* <a href="/docs/video-training/release/version-5.8/#value-list-and-display-filters" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"><strong> AN-12149 - Display Filters Affecting Analytics When Hovering Over Filter Button</strong></a>: This new enhancement shows the filters that are applied to a chart inside a floating popup that shows up as a tooltip when the user hovers their cursor over the filter button.
 
 
 
