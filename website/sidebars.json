@@ -148,6 +148,7 @@
         "label": "Data Collection and Forms",
         "ids": [
           "embedding/widgets/data-sources/widget-webforms",
+          "embedding/widgets/data-sources/web-form-end-user",
           "embedding/widgets/data-sources/widget-dataconnectors",
           "embedding/widgets/data-sources/datasets-widget",
           "embedding/widgets/data-sources/widget-datalinks"

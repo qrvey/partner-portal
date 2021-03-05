@@ -147,6 +147,7 @@
         "label": "Data Collection and Forms",
         "ids": [
           "version-5.4-embedding/widgets/data-sources/widget-webforms",
+          "version-5.4-embedding/widgets/data-sources/web-form-end-user",
           "version-5.4-embedding/widgets/data-sources/widget-dataconnectors",
           "version-5.4-embedding/widgets/data-sources/datasets-widget",
           "version-5.4-embedding/widgets/data-sources/widget-datalinks"
