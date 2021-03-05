@@ -1,7 +1,8 @@
 ---
-id: release-december-2020
+id: version-5.4-release-december-2020
 title: Qrvey Version 5.7
 sidebar_label: December 2020
+original_id: release-december-2020
 ---
 <div style="text-align: justify">
 Release Date: 2020-12-18 
