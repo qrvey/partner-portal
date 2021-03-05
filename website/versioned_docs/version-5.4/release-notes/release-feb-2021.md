@@ -10,7 +10,7 @@ Release Date: 2021-02-26
 
 ## New Features and Enhancements 
 
-Click <a href="/docs/next/video-training/release/version-5.8" target="_blank"> <strong>here</strong></a> to access demo videos of some released features.
+Click <a href="/docs/video-training/release/version-5.8" target="_blank"> <strong>here</strong></a> to access demo videos of some released features.
 
 
 ## Data Preparation
