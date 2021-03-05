@@ -1,7 +1,8 @@
 ---
-id: chart-types
+id: version-5.4-chart-types
 title: Chart Types
 sidebar_label: Chart Types
+original_id: chart-types
 ---
 <div style="text-align: justify">
 

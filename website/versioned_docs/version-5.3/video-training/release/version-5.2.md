@@ -1,7 +1,8 @@
 ---
-id: version-5.2
+id: version-5.3-version-5.2
 title: Version 5.2
 sidebar_label: Version 5.2
+original_id: version-5.2
 ---
 
 ## Introduction 

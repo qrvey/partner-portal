@@ -148,6 +148,7 @@
         "label": "Data Collection and Forms",
         "ids": [
           "embedding/widgets/data-sources/widget-webforms",
+          "embedding/widgets/data-sources/web-form-end-user",
           "embedding/widgets/data-sources/widget-dataconnectors",
           "embedding/widgets/data-sources/datasets-widget",
           "embedding/widgets/data-sources/widget-datalinks"
@@ -217,8 +218,11 @@
     ]
   },
   "release-notes": {
+    "Release Notes 2021": [
+      "release-notes/release-last"
+    ],
     "Release Notes 2020": [
-      "release-notes/release-last",
+      "release-notes/release-december-2020",
       "release-notes/release-oct-2020",
       "release-notes/release-sep-2020",
       "release-notes/release-aug-2020",
@@ -260,12 +264,18 @@
   },
   "video-training":{
     "Release Demos":[
+      "video-training/release/version-5.8",
       "video-training/release/version-5.7",
       "video-training/release/version-5.6",
       "video-training/release/version-5.5",
       "video-training/release/version-5.4",
       "video-training/release/version-5.3",
       "video-training/release/version-5.2"
+    ],
+    "Short Training Videos": [
+      "video-training/building-qrvey-sample/new-webforms",
+      "video-training/building-qrvey-sample/new-workflows",
+      "video-training/building-qrvey-sample/new-datalinks"
     ],
     "Prior Versions":[
       {

@@ -1,7 +1,8 @@
 ---
-id: exporting
+id: version-5.4-exporting
 title: Exporting Data
 sidebar_label: Exporting Data
+original_id: exporting
 ---
 
 <div style="text-align: justify">

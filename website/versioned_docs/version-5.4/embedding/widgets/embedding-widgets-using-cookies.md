@@ -1,7 +1,8 @@
 ---
-id: widget-embedding-using-cookies
+id: version-5.4-widget-embedding-using-cookies
 title: Embedding Widgets Using Cookies
 sidebar_label: Embedding Widgets Using Cookies
+original_id: widget-embedding-using-cookies
 ---
 
 <div style="text-align: justify">

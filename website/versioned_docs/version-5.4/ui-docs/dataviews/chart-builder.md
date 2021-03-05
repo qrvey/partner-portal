@@ -1,7 +1,8 @@
 ---
-id: chart-builder
+id: version-5.4-chart-builder
 title: Chart Builder
 sidebar_label: Chart Builder
+original_id: chart-builder
 ---
 
 <div style="text-align: justify">

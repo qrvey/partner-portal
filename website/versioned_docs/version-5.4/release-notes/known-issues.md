@@ -1,7 +1,8 @@
 ---
-id: known-issues
+id: version-5.4-known-issues
 title: Known Issues
 sidebar_label: Known Issues
+original_id: known-issues
 ---
 <div style="text-align: justify">
 

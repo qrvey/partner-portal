@@ -25,14 +25,10 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
-      {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', topLinks: [
-        { link: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', name: 'Your First Analytic App' },
-        { link: siteConfig.baseUrl+'docs/tutorials/create-charts', name: 'Create Charts' },
-      ], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
-      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', topLinks: [
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/connections', name: 'Building Qrvey Sample' },
-        { link: siteConfig.baseUrl+'docs/video-training//release/version-5.7', name: 'Training Session' },
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Datasets' }
+      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-webforms', name: 'Web Forms' },
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-workflows', name: 'Workflows' },
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-datalinks', name: 'Data Links' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
       {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
         { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
@@ -100,7 +96,7 @@ class Index extends React.Component {
               <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
               <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
-              Version 5.7 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
+              Version 5.8 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">
