@@ -216,8 +216,10 @@
     ]
   },
   "version-5.4-release-notes": {
+    "Release Notes 2021": [
+      "version-5.4-release-notes/release-last"
+    ],
     "Release Notes 2020": [
-      "version-5.4-release-notes/release-last",
       "version-5.4-release-notes/release-december-2020",
       "version-5.4-release-notes/release-oct-2020",
       "version-5.4-release-notes/release-sep-2020",

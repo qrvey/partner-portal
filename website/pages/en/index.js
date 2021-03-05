@@ -25,10 +25,6 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
-      {name:'Tutorials',path: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', topLinks: [
-        { link: siteConfig.baseUrl+'docs/tutorials/first-analytic-app', name: 'Your First Analytic App' },
-        { link: siteConfig.baseUrl+'docs/tutorials/create-charts', name: 'Create Charts' },
-      ], iconUrl: `${siteConfig.baseUrl}img/cards/tutorials.svg`},
       {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
         { link: siteConfig.baseUrl+'docs/video-training/analytics/web-forms', name: 'Web Forms' },
         { link: siteConfig.baseUrl+'docs/video-training/analytics/automation', name: 'Workflows' },

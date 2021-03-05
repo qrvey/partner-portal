@@ -374,8 +374,8 @@ img[src*="#thumbnail-20"] {
         margin-left: 0;
     }
     .card-home{
-        width: 46%;
-        margin: 0 0 30px;
+        width: 32%;
+        margin: 10% 0 30px;
     }
     .side-right-nav{
         position: absolute;
