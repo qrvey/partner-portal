@@ -272,6 +272,11 @@
       "video-training/release/version-5.3",
       "video-training/release/version-5.2"
     ],
+    "Short Training Videos": [
+      "video-training/building-qrvey-sample/new-webforms",
+      "video-training/building-qrvey-sample/new-workflows",
+      "video-training/building-qrvey-sample/new-datalinks"
+    ],
     "Prior Versions":[
       {
         "type": "subcategory",

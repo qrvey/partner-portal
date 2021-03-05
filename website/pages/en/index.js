@@ -26,9 +26,9 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
       {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
-        { link: siteConfig.baseUrl+'docs/video-training/analytics/web-forms', name: 'Web Forms' },
-        { link: siteConfig.baseUrl+'docs/video-training/analytics/automation', name: 'Workflows' },
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/datasets', name: 'Data Links' }
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-webforms', name: 'Web Forms' },
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-workflows', name: 'Workflows' },
+        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-datalinks', name: 'Data Links' }
       ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
       {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
         { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
