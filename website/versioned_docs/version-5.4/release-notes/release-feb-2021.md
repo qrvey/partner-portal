@@ -1,7 +1,8 @@
 ---
-id: release-last
+id: version-5.4-release-last
 title: Qrvey Version 5.8
 sidebar_label: February 2021
+original_id: release-last
 ---
 <div style="text-align: justify">
 Release Date: 2021-02-26

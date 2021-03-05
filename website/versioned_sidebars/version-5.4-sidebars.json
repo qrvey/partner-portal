@@ -54,7 +54,6 @@
         ]
       },
       "version-5.4-ui-docs/datasets/datasets",
-      "version-5.4-ui-docs/datasets/column-links",
       "version-5.4-ui-docs/datasets/data-sync",
       "version-5.4-ui-docs/datasets/joins",
       "version-5.4-ui-docs/datasets/datalinks",
@@ -219,6 +218,7 @@
   "version-5.4-release-notes": {
     "Release Notes 2020": [
       "version-5.4-release-notes/release-last",
+      "version-5.4-release-notes/release-december-2020",
       "version-5.4-release-notes/release-oct-2020",
       "version-5.4-release-notes/release-sep-2020",
       "version-5.4-release-notes/release-aug-2020",

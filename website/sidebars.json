@@ -54,7 +54,6 @@
         ]
       },
       "ui-docs/datasets/datasets",
-      "ui-docs/datasets/column-links",
       "ui-docs/datasets/data-sync",
       "ui-docs/datasets/joins",
       "ui-docs/datasets/datalinks",
@@ -220,6 +219,7 @@
   "release-notes": {
     "Release Notes 2020": [
       "release-notes/release-last",
+      "release-notes/release-december-2020",
       "release-notes/release-oct-2020",
       "release-notes/release-sep-2020",
       "release-notes/release-aug-2020",
