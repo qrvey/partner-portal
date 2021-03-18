@@ -43,7 +43,7 @@ async function readFile(dir, file){
                 title = title.substring(1, title.length);
             }
             let content = data.split('---')[2].replace(`<div style="text-align: justify">`, '').replace('###', '').replace('##', '');
-            let body = content.substring(1, 2000).replace('/', '');
+            let body = content.substring(1, 8000).replace('/', '');
             if(content.length > 100) {
                 content = content.substring(1, 100).replace('/', '') + '...';
             }
@@ -69,8 +69,7 @@ async function readFile(dir, file){
                     lvl3: hierarchies[2],
                     lvl4: hierarchies[3],
                     lvl5: hierarchies[4],
-                    lvl6: hierarchies[5],
-                    lvl7: hierarchies[6]
+                    lvl6: hierarchies[5]
                 }
             });
             resolve(data);
