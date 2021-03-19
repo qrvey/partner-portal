@@ -85,10 +85,11 @@ var config = {
 See the widget in CodePen:
 
 <p class="codepen" data-height="300" data-theme-id="34531" data-default-tab="js,result" data-user="qrveysamples" data-slug-hash="0015c40055d0f252d41d44c39b6e7d27" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/0015c40055d0f252d41d44c39b6e7d27">
+  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWbNapv">
   DOC - Page View (Jan2021)</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 
