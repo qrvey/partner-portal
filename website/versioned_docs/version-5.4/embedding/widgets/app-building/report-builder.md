@@ -84,7 +84,7 @@ var config = {
 ## See It In Action
 See the widget in CodePen:
 
-<p class="codepen" data-height="300" data-theme-id="34531" data-default-tab="js,result" data-user="qrveysamples" data-slug-hash="52bb4236753fe85a433228dd11d437e2" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Report Builder">
+<p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="52bb4236753fe85a433228dd11d437e2" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Report Builder">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/52bb4236753fe85a433228dd11d437e2">
   Sample- Qrvey Report Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

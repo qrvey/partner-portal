@@ -84,7 +84,7 @@ var config = {
 ## See It In Action
 See the widget in CodePen:
 
-<p class="codepen" data-height="300" data-theme-id="34531" data-default-tab="js,result" data-user="qrveysamples" data-slug-hash="MWbNapv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
+<p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWbNapv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWbNapv">
   DOC - Page View (Jan2021)</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
