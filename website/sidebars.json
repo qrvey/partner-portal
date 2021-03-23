@@ -122,7 +122,8 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
-          "embedding/widgets/widget-embedding-using-cookies"
+          "embedding/widgets/widget-embedding-using-cookies",
+          "embedding/widgets/filters-embedded-scenarios"
         ]
       },
       {

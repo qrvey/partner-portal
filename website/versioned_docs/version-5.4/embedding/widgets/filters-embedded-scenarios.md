@@ -1,7 +1,8 @@
 ---
-id: filters-embedded-scenarios
+id: version-5.4-filters-embedded-scenarios
 title: Working With Filters in Embedded Scenarios
 sidebar_label: Working With Filters in Embedded Scenarios
+original_id: filters-embedded-scenarios
 ---
 
 <div style="text-align: justify">
