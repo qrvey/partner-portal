@@ -121,7 +121,8 @@
         "label": "Widgets",
         "ids": [
           "version-5.4-embedding/widgets/widget-intro",
-          "version-5.4-embedding/widgets/widget-embedding-using-cookies"
+          "version-5.4-embedding/widgets/widget-embedding-using-cookies",
+          "version-5.4-embedding/widgets/filters-embedded-scenarios"
         ]
       },
       {

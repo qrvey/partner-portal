@@ -1,7 +1,8 @@
 ---
-id: widget-report-builder
+id: version-5.4-widget-report-builder
 title: Report Builder
 sidebar_label: Report Builder
+original_id: widget-report-builder
 ---
 
 <div style="text-align: justify">

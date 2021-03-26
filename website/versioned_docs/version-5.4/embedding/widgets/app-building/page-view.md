@@ -1,7 +1,8 @@
 ---
-id: widget-page-view
+id: version-5.4-widget-page-view
 title: Page View
 sidebar_label: Page View
+original_id: widget-page-view
 ---
 
 <div style="text-align: justify">

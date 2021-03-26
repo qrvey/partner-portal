@@ -1,7 +1,8 @@
 ---
-id: widget-page-builder
+id: version-5.4-widget-page-builder
 title: Page Builder
 sidebar_label: Page Builder
+original_id: widget-page-builder
 ---
 <div style="text-align: justify">
 
