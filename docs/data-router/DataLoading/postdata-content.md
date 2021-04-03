@@ -2,7 +2,6 @@
 id: postdata-content
 title: Loading Data With Postdata
 sidebar_label: Loading Data With Postdata
-
 ---
 
 <div style="text-align: justify">

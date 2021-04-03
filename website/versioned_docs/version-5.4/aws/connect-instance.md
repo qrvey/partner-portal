@@ -2,7 +2,6 @@
 id: version-5.4-connect-to-instance
 title: Connecting to Secure RDS
 sidebar_label: Connecting to Secure RDS
-: 
 original_id: connect-to-instance
 ---
 

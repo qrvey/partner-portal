@@ -2,7 +2,6 @@
 id: multi-datasets-one-filter
 title: How to Make Filters From Multiple Datasets Work With One Filter Panel
 sidebar_label: How to Make Filters From Multiple Datasets Work With One Filter Panel
-
 ---
 Embedding visualization panels inside your application is a straightforward task (see 
 <a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel Widget</a>). Enabling filtering on those individual panels is also easy and a matter of setting the **panel.header.filter** property in the widget config. 

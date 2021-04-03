@@ -2,7 +2,6 @@
 id: working-with-filters
 title: Working With Interactive Filters
 sidebar_label: Working With Interactive Filters
-
 ---
 
 <div style="text-align: justify">
