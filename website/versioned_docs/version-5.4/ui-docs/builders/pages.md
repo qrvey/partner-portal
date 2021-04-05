@@ -1,7 +1,8 @@
 ---
-id: pages
+id: version-5.4-pages
 title: Page Builder
 sidebar_label: Page Builder
+original_id: pages
 ---
 
 <div style="text-align: justify">
