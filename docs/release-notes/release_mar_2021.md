@@ -61,7 +61,7 @@ Click <a href="/docs/video-training/release/version-5.9" target="_blank"> <stron
 
 ## General Tweaks & Bug Fixes
 
-* **ADMIN-4638 - The Replacement Password Is Not Encrypted**: In Content Deployment The replacement password was not being encrypted despite the isEncrypted parameter having been set.. This has been fixed.
+* **ADMIN-4638 - The Replacement Password Is Not Encrypted**: In Content Deployment The replacement password was not being encrypted despite the isEncrypted parameter having been set. This has been fixed.
 
 * **AN-12566 - Two Decimals When Setting Formats**: When a creator had set 0 decimals for a numeric column in the Data Design Page, and then he created a metric with the same column, the value appeared with 2 decimals. This has been fixed.
 
