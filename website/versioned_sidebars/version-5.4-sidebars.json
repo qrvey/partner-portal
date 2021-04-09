@@ -105,6 +105,7 @@
       "version-5.4-admin/elasticsearch-management",
       "version-5.4-admin/admin-managing-users",
       "version-5.4-admin/admin-sections-platform",
+      "version-5.4-admin/roles-and-permissions",
       "version-5.4-admin/admin-sections-deployments",
       "version-5.4-admin/record-level-security",
       "version-5.4-admin/metadata-builder"
@@ -264,6 +265,7 @@
   },
   "version-5.4-video-training": {
     "Release Demos": [
+      "version-5.4-video-training/release/version-5.9",
       "version-5.4-video-training/release/version-5.8",
       "version-5.4-video-training/release/version-5.7",
       "version-5.4-video-training/release/version-5.6",

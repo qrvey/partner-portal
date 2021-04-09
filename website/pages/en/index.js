@@ -25,7 +25,7 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
-      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
+      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.9', topLinks: [
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-webforms', name: 'Web Forms' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-workflows', name: 'Workflows' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-datalinks', name: 'Data Links' }
