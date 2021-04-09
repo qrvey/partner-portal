@@ -2,7 +2,6 @@
 id: version-5.3-metadata-intro
 title: Metadata Schema
 sidebar_label: Metadata Schema
-: 
 original_id: metadata-intro
 ---
 

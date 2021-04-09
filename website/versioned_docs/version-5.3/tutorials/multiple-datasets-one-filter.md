@@ -2,7 +2,6 @@
 id: version-5.3-multi-datasets-one-filter
 title: How to Make Filters From Multiple Datasets Work With One Filter Panel
 sidebar_label: How to Make Filters From Multiple Datasets Work With One Filter Panel
-: 
 original_id: multi-datasets-one-filter
 ---
 Embedding visualization panels inside your application is a straightforward task (see 

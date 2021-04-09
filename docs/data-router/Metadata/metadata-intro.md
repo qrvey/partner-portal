@@ -2,7 +2,6 @@
 id: metadata-intro
 title: Metadata Schema
 sidebar_label: Metadata Schema
-
 ---
 
 <div style="text-align: justify">

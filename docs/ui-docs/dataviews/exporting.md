@@ -23,9 +23,16 @@ In the upper-right corner of each panel inside Summary, Custom and Metric views,
 
 
 ## Page and Report Builder
-In the top bar you will find CSV download options in Page Builder (for each page) and in Report Builder (for the entire report). When there are multiple datasets being used in a page or report, we will export separate CSVs for each dataset which will contain only the columns that are being used in the charts (not the entire dataset).
+In the top bar you will find CSV and PDF download options in Page Builder (for each page) and in Report Builder (for the entire report).
 
-![3_exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/3_exporting.png#thumbnail)
+**CSV Exports**: when there are multiple datasets being used in a page or report, we will export separate CSVs for each dataset which will contain only the columns that are being used in the charts (<u>not</u> the entire dataset). 
+
+**PDF Exports**: you can download a page design to a PDF file directly from the Report Builder, Page Builder and Page View (End User). These exports include: Page Headers, Interactive and Panel Filters, Filter Objects with filtered values, and applied Drilldowns.
+
+
+![exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/by_country.png#thumbnail)
+
+![exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/ex_download.png#thumbnail-20)
 
 
 ## Chart Data
@@ -48,7 +55,13 @@ There are cases where the underlying data that is being exported is very large a
 ## CSV Summary Exports
 You can download CSVs with aggregated data versus your raw data. To download CSVs with aggregated data, just go to the three-dot menu located in your custom visualizations and find the Download menu option and select the CSV-Summary. 
 
-The feature is currently supported for most simple Bar, Line, Symbol, Pie, Word Cloud, and Tables. 
+The feature is currently supported for most simple Bar, Line, Symbol, Pie, Word Cloud, Tables, and Crosstab. 
 
 ![8_exporting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/8_exporting.gif#thumbnail)
 
+Note: Crosstab CSV Summary downloads are currently supported with the following restrictions:
+* 1 Row (with up to 1000 groups)
+* 1+ Columns  (with up to 1000 groups)
+* 1+ Values (with up to 1000 groups)
+* Without subtotals
+* Without  totals

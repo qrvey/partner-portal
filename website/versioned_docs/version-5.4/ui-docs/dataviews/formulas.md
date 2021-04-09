@@ -1,7 +1,8 @@
 ---
-id: formulas
+id: version-5.4-formulas
 title: Formulas
 sidebar_label: Formulas
+original_id: formulas
 ---
 
 <div style="text-align: justify">

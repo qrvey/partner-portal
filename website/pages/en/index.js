@@ -25,7 +25,7 @@ class Index extends React.Component {
         { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
         { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
       ]},
-      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.8', topLinks: [
+      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.9', topLinks: [
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-webforms', name: 'Web Forms' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-workflows', name: 'Workflows' },
         { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-datalinks', name: 'Data Links' }
@@ -96,7 +96,7 @@ class Index extends React.Component {
               <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
               <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
-              Version 5.8 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
+              Version 5.9 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">

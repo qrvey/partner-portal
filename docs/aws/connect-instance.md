@@ -2,7 +2,6 @@
 id: connect-to-instance
 title: Connecting to Secure RDS
 sidebar_label: Connecting to Secure RDS
-
 ---
 
 This document explains the steps you need to take if you want to securely access your AWS RDS instance to load data into the Qrvey Business Analytics platform.
