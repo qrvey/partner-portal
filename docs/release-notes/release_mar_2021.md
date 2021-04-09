@@ -20,18 +20,13 @@ Click <a href="/docs/video-training/release/version-5.9" target="_blank"> <stron
     * **QV-12603 - Record Copy**: You can now copy records into an alternate transformation stream to insert data to any other dataset.
     * **QV-11759 - Array Flatten Inflate**: You can now flatten the data eliminating the hierarchy of the specified arrays.
 
-
 * <strong> QV-11464 - S3 Connection</strong>: A new class of connections has been introduced in this release that supports connection to AWS S3 folders, accessing JSON, ndJSON and CSV files.
-
 
 * <strong>QV-12555 - File Uploads JSON Support</strong>: You can now upload JSON and ndJSON files to create connections.
 
 * <a href="/docs/video-training/release/version-5.9/#hierarchical-data-support" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png"><span class="tooltiptext">Watch video</span></a> <strong> QV-12660 - Dataset Page - Hierarchical Data Support</strong>: You can now create a Connection with hierarchical data or JSON structure. Indentation is used on the Dataset Page to show the hierarchy in the data structure.
 
-
-
-* **DR-2195 - New Dataset API**: We enhanced the Datasets API to make it easier to programmatically create, edit and delete Datasets with any type of data source, specifying transformations, columns, formatting options, geolocation groups, join information, and unique ID per column.
-
+* <strong>DR-2195 - New Dataset API</strong>: We enhanced the Datasets API to make it easier to programmatically create, edit and delete Datasets with any type of data source, specifying transformations, columns, formatting options, geolocation groups, join information, and unique ID per column.
 
 
 ## Data Analysis & Automation
