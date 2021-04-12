@@ -5,6 +5,9 @@ sidebar_label: Known Issues
 ---
 <div style="text-align: justify">
 
+* **The New Administrator Role Is Not Functional Yet** - The default Administrator role, added under the new Roles and Permissions feature, has not been turned on yet and users with this role will not be able to access the Admin Center product. The product remains only accessible to users added through the AWS console with proper permissions.
+
+* **QV-13102 - Datasets Stuck in Loading Status**: In certain cases when multiple large datasets are loaded simultaneously and one of them times out, this can cause the dataset status to be shown as Loading indefinitely. Contact support to have the status reset manually while the issue is being worked on. 
  
 * **QV-13102 - Datasets Stuck in Loading Status**: In certain cases when multiple large datasets are loaded simultaneously and one of them times out, this can cause the dataset status to be shown as Loading indefinitely. Contact support to have the status reset manually while the issue is being worked on. 
 
