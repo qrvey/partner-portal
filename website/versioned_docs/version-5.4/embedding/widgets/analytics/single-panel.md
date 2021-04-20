@@ -119,8 +119,8 @@ var anpanelConfig = {
 
 ### See the widget in CodePen:
 
-<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="KKzvqgV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Single Panel">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/KKzvqgV">
+<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="c395bd9162f9d675bb8d02317cc5a1e2" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Single Panel">
+  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/c395bd9162f9d675bb8d02317cc5a1e2">
   Sample- Qrvey Single Panel</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>

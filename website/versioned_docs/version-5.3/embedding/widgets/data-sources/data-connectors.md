@@ -53,8 +53,8 @@ var connectorConfig = {
 
 ## See It In Action
 See the widget in CodePen:
-      <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="LYNWKGq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Connections">
-        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/LYNWKGq">
+      <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="9b847a00506803f5a6074363456adae6" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Connections">
+        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/9b847a00506803f5a6074363456adae6">
         Sample- Qrvey Data Connections</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
         on <a href="https://codepen.io">CodePen</a>.</span>
       </p>

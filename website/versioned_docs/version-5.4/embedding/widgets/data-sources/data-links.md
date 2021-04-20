@@ -1,7 +1,8 @@
 ---
-id: widget-datalinks
+id: version-5.4-widget-datalinks
 title: Data Links
 sidebar_label: Data Links
+original_id: widget-datalinks
 ---
 <div style="text-align: justify">
 

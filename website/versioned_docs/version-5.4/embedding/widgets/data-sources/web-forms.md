@@ -1,7 +1,8 @@
 ---
-id: widget-webforms
+id: version-5.4-widget-webforms
 title: Web Form Design
 sidebar_label: Web Form Design
+original_id: widget-webforms
 ---
 
 <div style="text-align: justify">

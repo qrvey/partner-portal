@@ -1,7 +1,8 @@
 ---
-id: widget-automation
+id: version-5.4-widget-automation
 title: Automation Design
 sidebar_label: Automation Design
+original_id: widget-automation
 ---
 
 <div style="text-align: justify">
