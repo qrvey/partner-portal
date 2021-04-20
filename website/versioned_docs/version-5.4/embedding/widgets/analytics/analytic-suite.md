@@ -1,7 +1,8 @@
 ---
-id: analytic-suite
+id: version-5.4-analytic-suite
 title: Analytic Suite Widget
 sidebar_label: Analytic Suite Widget
+original_id: analytic-suite
 ---
 <div style="text-align: justify">
 

@@ -1,7 +1,8 @@
 ---
-id: datasets-widget
+id: version-5.4-datasets-widget
 title: Datasets Widget
 sidebar_label: Datasets Widget
+original_id: datasets-widget
 ---
 <div style="text-align: justify">
 
