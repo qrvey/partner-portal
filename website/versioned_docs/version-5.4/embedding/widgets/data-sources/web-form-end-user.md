@@ -52,6 +52,9 @@ style: "", //CSS Stylesheet URL
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 ```
 
+### See It In Action
+See the widget in CodePen:
+
 ## See It In Action
 See the widget in CodePen:
       <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="dd309a42f2c856e6eb73c8f047153ca3" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Connections">
@@ -60,4 +63,3 @@ See the widget in CodePen:
         on <a href="https://codepen.io">CodePen</a>.</span>
       </p>
       <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-

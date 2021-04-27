@@ -16,20 +16,20 @@ You can use the following script to launch this widget:
 
 ## Configuration Object
 The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The Required column indicates whether the property is required for the configuration object to work properly.
-
+ 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Application ID | Yes |
-| **app_id** | `String`, Qrvey App ID| Yes |
+| **api_key** | `String`, secret identification token to access the application. | Yes |
+| **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
 | **user_id** | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
-| **domain** | `String`, Qrvey Core URL | Yes | 
+| **domain** | `String`, Qrvey Core URL. | Yes | 
 | **private_pages** | `Boolean`, predefine the state of new pages. If *True*, new pages will be private, if not new pages will be public. | No |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br><br>**CREATE_CHART**: Hide Create Chart button.<br>**USERS_AUTHENTICATION**: Hide Authentication tab.<br>**USERS_LIST**: Hide Users tab.<br>**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br>**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
 | **styles** | `Object`, an JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br><br>* **main_color**: `String`<br>* **main_text_color**: `String`<br>* **secondary_color**: `String`<br>* **icon_color**: `String`<br>* **tab_bar_color**: `String`<br>* **tab_font_color**: `String`<br>* **error_color**: `String` | No |
 | userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object. | No
 
 
-
+<br>
 
 > **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
