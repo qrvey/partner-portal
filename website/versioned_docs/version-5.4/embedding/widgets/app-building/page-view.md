@@ -27,10 +27,10 @@ The table below provides general information about each property of this widgetâ
 
 | **Property** | **Value** |  **Required** |
 | --- | --- | --- |
-| api_key| `String`, Application ID. | Yes
-| app_id | `String`, Qrvey App ID | Yes
-| domain | `String`, Qrvey Core URL| Yes
-| group_list | `Array<String>`, collection of IDs/names of the groups created in User Management | No
+| api_key| `String`, secret identification token to access the application. | Yes
+| app_id | `String`, ID of the Qrvey application containing the webform.| Yes
+| domain | `String`, Qrvey Core URL.| Yes
+| group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the config. exists.|No
 | userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
 
