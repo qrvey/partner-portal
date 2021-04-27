@@ -16,7 +16,7 @@ You can use the following script to launch this widget:
 
 ## Configuration Object
 The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The Required column indicates whether the property is required for the configuration object to work properly.
-
+ 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **api_key** | `String`, secret identification token to access the application. | Yes |
@@ -29,7 +29,7 @@ The table below provides general information about each property of this widget�
 | userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object. | No
 
 
-
+<br>
 
 > **Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
