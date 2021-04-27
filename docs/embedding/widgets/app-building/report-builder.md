@@ -23,7 +23,7 @@ The table below provides general information about each property of this widgetâ
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **app_key** | `String`, Application ID | Yes |
+| **api_key** | `String`, Application ID | Yes |
 | **app_id** | `String`, Qrvey App ID| Yes |
 | **user_id** | `String`, Optional User ID: you can set up the widget without a user id if it's set in a qrvey session cookie. | Yes |
 | **domain** | `String`, Qrvey Core URL | Yes |
