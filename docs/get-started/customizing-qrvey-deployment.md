@@ -22,22 +22,33 @@ These steps will show you how to update the parameters for a single pipeline. In
 2. Navigate to the Cloudformation console.
 3. Identify the cloudformation stack for the Pipeline you want to update. You can search for “CodePipeline” and you should see the 5 stacks as shown in this screenshot.
 
+![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/cqd_1.png#thumbnail)
 
 <h3 style="color:#a9a9a9"> Step 2: Update the Cloudformation template parameters </h3>
 
 1. From the cloudformation screen, pick the Cloudformation stack matching the pipeline you want to update and click on the Update button.
 2. On the Prerequisites screen, pick “Use Current Template”. Click Next.
+
+![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/cqd_2.png#thumbnail)
+
 3. On the parameters screen, find the option you would like to change and enter in the new value. Leave the rest of the parameters as they are. You can find the specific parameter for your use-case in later sections of this document. In this example we are updating the “From” email address by changing the parameter called “VerifiedEmail” (highlighted with yellow). Click Next after changing the value.
+
+![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/cqd_3.png#thumbnail)
+
 4. Click on Next on the Configure Stack options screen.
 5. On the next screen (Review) review the changes you have made, select the Capabilities checkbox (if shown) and click on Update Stack to apply the changes.
 6. At this point, the cloudformation stack will move to “UPDATE_IN_PROGRESS” state.
 7. Wait for the Cloudformation stack to finish updating. Once it’s done the status would change to “UPDATE_COMPLETE”.
 
+![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/cqd_4.png#thumbnail)
 <h3 style="color:#a9a9a9"> Step 3: Trigger CodePipeline to deploy changes</h3>
 
 1. Once the cloudformation stack has finished with the update, navigate to the AWS CodePipeline console.
 2. Identify the matching pipeline for the cloudformation stack you updated in the last step. For the “QrveyCodePipeline” stack, the pipeline will be called “Qrvey_xxxxx_Worker”.
 3. Select the Pipeline and click on the “Release Change” button.
+
+![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/cqd_5.png#thumbnail)
+
 4. This will change the pipeline status to “In Progress” and once the pipeline is done the status will change to “Succeeded”. 
 
 At this point, the changes are deployed and you can start using the Platform.
