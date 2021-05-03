@@ -1,0 +1,15 @@
+{
+  "unversionedId": "setup-deployments/setup-security",
+  "id": "setup-deployments/setup-security",
+  "isDocsHomePage": false,
+  "title": "Security",
+  "description": "This document provides general guidance for securing the Platform. With multiple products security is applied at different levels.",
+  "source": "@site/../docs/setup-deployments/security.md",
+  "slug": "/setup-deployments/setup-security",
+  "permalink": "/docs/next/setup-deployments/setup-security",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Security"
+}

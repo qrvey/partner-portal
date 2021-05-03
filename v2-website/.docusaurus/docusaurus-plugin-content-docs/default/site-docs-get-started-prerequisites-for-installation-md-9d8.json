@@ -1,0 +1,24 @@
+{
+  "unversionedId": "get-started/prerequisites-for-installation",
+  "id": "get-started/prerequisites-for-installation",
+  "isDocsHomePage": false,
+  "title": "Prerequisites for Installation",
+  "description": "As you prepare to install Qrvey within your current AWS environment or a new AWS environment, there are a few items to be aware of prior to installation.",
+  "source": "@site/../docs/get-started/prerequisites-for-installation.md",
+  "slug": "/get-started/prerequisites-for-installation",
+  "permalink": "/docs/next/get-started/prerequisites-for-installation",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Prerequisites for Installation",
+  "sidebar": "get-started",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/next/get-started/get-started-intro"
+  },
+  "next": {
+    "title": "Preparing Your AWS Account",
+    "permalink": "/docs/next/get-started/preparing-AWS-account"
+  }
+}

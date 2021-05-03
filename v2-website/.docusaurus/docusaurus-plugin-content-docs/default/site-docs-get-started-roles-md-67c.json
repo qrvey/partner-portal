@@ -1,0 +1,15 @@
+{
+  "unversionedId": "get-started/roles",
+  "id": "get-started/roles",
+  "isDocsHomePage": false,
+  "title": "User Roles",
+  "description": "In this document we will review the four types of users that work and interact with the Qrvey platform and its embeddable components. Each of the user types primarily work with a particular aspect of the Qrvey platform. Admin users will primarily use the Admin Portal,  Creators use the Business Analytics Application (BAA) or widgets to create content for End Users while Developers work with Qrvey's  embeddable widgets and APIs.",
+  "source": "@site/../docs/get-started/roles.md",
+  "slug": "/get-started/roles",
+  "permalink": "/docs/next/get-started/roles",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "User Roles"
+}

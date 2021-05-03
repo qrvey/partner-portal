@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/others/sharing-editing",
+  "id": "version-5.3/ui-docs/others/sharing-editing",
+  "isDocsHomePage": false,
+  "title": "Sharing & Editing",
+  "description": "Sharing & Editing",
+  "source": "@site/versioned_docs/version-5.3/ui-docs/others/sharing-editing.md",
+  "slug": "/ui-docs/others/sharing-editing",
+  "permalink": "/docs/5.3/ui-docs/others/sharing-editing",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Sharing & Editing",
+  "sidebar": "version-5.3/ui-docs",
+  "previous": {
+    "title": "Sending Applications",
+    "permalink": "/docs/5.3/ui-docs/others/sending"
+  },
+  "next": {
+    "title": "Activity Log",
+    "permalink": "/docs/5.3/ui-docs/others/activity-log"
+  }
+}

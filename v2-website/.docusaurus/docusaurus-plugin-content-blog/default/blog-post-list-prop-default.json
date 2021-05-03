@@ -1,0 +1,25 @@
+{
+  "title": "Recent posts",
+  "items": [
+    {
+      "title": "September 2020",
+      "permalink": "/blog/2020/09/02/qsnewsflash"
+    },
+    {
+      "title": "July 2020",
+      "permalink": "/blog/2020/06/30/qsnewsflash"
+    },
+    {
+      "title": "April 2020",
+      "permalink": "/blog/2020/04/30/qsnewsflash"
+    },
+    {
+      "title": "March 2020",
+      "permalink": "/blog/2020/03/30/qsnewsflash"
+    },
+    {
+      "title": "February 2020",
+      "permalink": "/blog/2020/02/29/qsnewsflash"
+    }
+  ]
+}

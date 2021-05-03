@@ -1,0 +1,1062 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "isLast": false,
+  "docsSidebars": {
+    "get-started": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Introduction to Qrvey System",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/next/get-started/get-started-intro"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Deploying to AWS",
+        "items": [
+          {
+            "type": "link",
+            "label": "Prerequisites for Installation",
+            "href": "/docs/next/get-started/prerequisites-for-installation"
+          },
+          {
+            "type": "link",
+            "label": "Preparing Your AWS Account",
+            "href": "/docs/next/get-started/preparing-AWS-account"
+          },
+          {
+            "type": "link",
+            "label": "Initial Installation",
+            "href": "/docs/next/get-started/deploying-aws/initial-installation"
+          },
+          {
+            "type": "link",
+            "label": "Upgrading to a New Version",
+            "href": "/docs/next/get-started/upgrading-new-version"
+          },
+          {
+            "type": "link",
+            "label": "Deleting an Installation",
+            "href": "/docs/next/get-started/deleting-installation"
+          },
+          {
+            "type": "link",
+            "label": "Troubleshooting",
+            "href": "/docs/next/get-started/troubleshooting"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Managing Qrvey In AWS",
+        "items": [
+          {
+            "type": "link",
+            "label": "AWS Services Used by Qrvey",
+            "href": "/docs/next/get-started/aws-services"
+          },
+          {
+            "type": "link",
+            "label": "Cluster Management",
+            "href": "/docs/next/get-started/managing-aws-cluster"
+          },
+          {
+            "type": "link",
+            "label": "Connecting to Secure RDS",
+            "href": "/docs/next/aws/connect-to-instance"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Qrvey Platform Overview",
+        "items": [
+          {
+            "type": "link",
+            "label": "System Components",
+            "href": "/docs/next/get-started/system-components"
+          },
+          {
+            "type": "link",
+            "label": "Security",
+            "href": "/docs/next/get-started/security"
+          },
+          {
+            "type": "link",
+            "label": "User Roles",
+            "href": "/docs/next/get-started/user-roles"
+          },
+          {
+            "type": "link",
+            "label": "Glossary of Common Terms",
+            "href": "/docs/next/get-started/glossary"
+          }
+        ]
+      }
+    ],
+    "ui-docs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Basics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Logging In",
+            "href": "/docs/next/ui-docs/basics/logging-in"
+          },
+          {
+            "type": "link",
+            "label": "Profile/Account",
+            "href": "/docs/next/ui-docs/basics/profile"
+          },
+          {
+            "type": "link",
+            "label": "Introduction to the UI",
+            "href": "/docs/next/ui-docs/basics/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Applications",
+            "href": "/docs/next/ui-docs/basics/applications"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Web Forms",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/next/ui-docs/web-forms/web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Types of Web Forms",
+            "href": "/docs/next/ui-docs/web-forms/type-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Building a Web Form",
+            "href": "/docs/next/ui-docs/web-forms/create-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Web Form Field Guide",
+            "href": "/docs/next/ui-docs/web-forms/field-guide"
+          },
+          {
+            "type": "link",
+            "label": "Complex Data",
+            "href": "/docs/next/ui-docs/web-forms/complex-data"
+          },
+          {
+            "type": "link",
+            "label": "Branching",
+            "href": "/docs/next/ui-docs/web-forms/branching"
+          },
+          {
+            "type": "link",
+            "label": "Lookups",
+            "href": "/docs/next/ui-docs/web-forms/lookup"
+          },
+          {
+            "type": "link",
+            "label": "Customizing Web Forms",
+            "href": "/docs/next/ui-docs/web-forms/customize-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Publishing Web Forms",
+            "href": "/docs/next/ui-docs/web-forms/publishing"
+          },
+          {
+            "type": "link",
+            "label": "Embedding Web Forms",
+            "href": "/docs/next/ui-docs/web-forms/embedding"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Data",
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Section Overview",
+            "href": "/docs/next/ui-docs/datasets/data_overview"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Connections",
+            "items": [
+              {
+                "type": "link",
+                "label": "Connections Overview",
+                "href": "/docs/next/ui-docs/datasets/connectors"
+              },
+              {
+                "type": "link",
+                "label": "Database Connections",
+                "href": "/docs/next/ui-docs/datasets/databases"
+              },
+              {
+                "type": "link",
+                "label": "File Upload Connection",
+                "href": "/docs/next/ui-docs/datasets/csv"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Datasets",
+            "href": "/docs/next/ui-docs/datasets/datasets"
+          },
+          {
+            "type": "link",
+            "label": "Data sync",
+            "href": "/docs/next/ui-docs/datasets/data-sync"
+          },
+          {
+            "type": "link",
+            "label": "Data Joins",
+            "href": "/docs/next/ui-docs/datasets/joins"
+          },
+          {
+            "type": "link",
+            "label": "Data Links",
+            "href": "/docs/next/ui-docs/datasets/datalinks"
+          },
+          {
+            "type": "link",
+            "label": "Transformations",
+            "href": "/docs/next/ui-docs/datasets/transformations"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Analysis Views",
+        "items": [
+          {
+            "type": "link",
+            "label": "Formulas",
+            "href": "/docs/next/ui-docs/dataviews/formulas"
+          },
+          {
+            "type": "link",
+            "label": "Bucketing Data",
+            "href": "/docs/next/ui-docs/dataviews/buckets"
+          },
+          {
+            "type": "link",
+            "label": "Exporting Data",
+            "href": "/docs/next/ui-docs/dataviews/exporting"
+          },
+          {
+            "type": "link",
+            "label": "Summary View",
+            "href": "/docs/next/ui-docs/dataviews/summary-view"
+          },
+          {
+            "type": "link",
+            "label": "Tabular View",
+            "href": "/docs/next/ui-docs/dataviews/tabular-view"
+          },
+          {
+            "type": "link",
+            "label": "Custom View",
+            "href": "/docs/next/ui-docs/dataviews/custom-view"
+          },
+          {
+            "type": "link",
+            "label": "Chart Types",
+            "href": "/docs/next/ui-docs/dataviews/chart-types"
+          },
+          {
+            "type": "link",
+            "label": "Chart Builder",
+            "href": "/docs/next/ui-docs/dataviews/chart-builder"
+          },
+          {
+            "type": "link",
+            "label": "Metric View",
+            "href": "/docs/next/ui-docs/dataviews/metric-view"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Builders",
+        "items": [
+          {
+            "type": "link",
+            "label": "Report Builder",
+            "href": "/docs/next/ui-docs/builders/reports"
+          },
+          {
+            "type": "link",
+            "label": "Page Builder",
+            "href": "/docs/next/ui-docs/builders/pages"
+          },
+          {
+            "type": "link",
+            "label": "Page Actions",
+            "href": "/docs/next/ui-docs/builders/pages_actions"
+          },
+          {
+            "type": "link",
+            "label": "Page Navigation",
+            "href": "/docs/next/ui-docs/builders/navigation"
+          },
+          {
+            "type": "link",
+            "label": "User Management",
+            "href": "/docs/next/ui-docs/builders/user-management"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Filtering Data",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction to Filters",
+            "href": "/docs/next/ui-docs/filtering-data/introduction-to-filters"
+          },
+          {
+            "type": "link",
+            "label": "Working With Interactive Filters",
+            "href": "/docs/next/ui-docs/filtering-data/working-with-filters"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Automation",
+        "items": [
+          {
+            "type": "link",
+            "label": "Flow Overview",
+            "href": "/docs/next/ui-docs/automation/flows"
+          },
+          {
+            "type": "link",
+            "label": "Triggers",
+            "href": "/docs/next/ui-docs/automation/triggers"
+          },
+          {
+            "type": "link",
+            "label": "Conditions",
+            "href": "/docs/next/ui-docs/automation/conditions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Send",
+            "href": "/docs/next/ui-docs/automation/send-actions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Data",
+            "href": "/docs/next/ui-docs/automation/data-actions"
+          },
+          {
+            "type": "link",
+            "label": "Tokens",
+            "href": "/docs/next/ui-docs/automation/tokens"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Other",
+        "items": [
+          {
+            "type": "link",
+            "label": "Application Settings",
+            "href": "/docs/next/ui-docs/others/settings"
+          },
+          {
+            "type": "link",
+            "label": "Sending Applications",
+            "href": "/docs/next/ui-docs/others/sending"
+          },
+          {
+            "type": "link",
+            "label": "Sharing & Editing",
+            "href": "/docs/next/ui-docs/others/sharing-editing"
+          },
+          {
+            "type": "link",
+            "label": "Activity Log",
+            "href": "/docs/next/ui-docs/others/activity-log"
+          }
+        ]
+      }
+    ],
+    "business-analytics": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Business Analytics",
+        "items": []
+      }
+    ],
+    "admin": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Admin",
+        "items": [
+          {
+            "type": "link",
+            "label": "Admin Overview",
+            "href": "/docs/next/admin/admin-intro"
+          },
+          {
+            "type": "link",
+            "label": "Elasticsearch Management",
+            "href": "/docs/next/admin/elasticsearch-management"
+          },
+          {
+            "type": "link",
+            "label": "Admin User Management",
+            "href": "/docs/next/admin/admin-managing-users"
+          },
+          {
+            "type": "link",
+            "label": "Administering Qrvey Composer",
+            "href": "/docs/next/admin/admin-sections-platform"
+          },
+          {
+            "type": "link",
+            "label": "Deployments",
+            "href": "/docs/next/admin/admin-sections-deployments"
+          },
+          {
+            "type": "link",
+            "label": "Record Level Security",
+            "href": "/docs/next/admin/record-level-security"
+          },
+          {
+            "type": "link",
+            "label": "Metadata Builder",
+            "href": "/docs/next/admin/metadata-builder"
+          }
+        ]
+      }
+    ],
+    "embedding": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Architecture",
+        "items": [
+          {
+            "type": "link",
+            "label": "Architectural Overview",
+            "href": "/docs/next/get-started/get-started-architecture"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Embedding",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/next/embedding/embedding-intro"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Widgets Quick Start Guide",
+                "href": "/docs/next/embedding/widgets/widget-intro"
+              },
+              {
+                "type": "link",
+                "label": "Embedding Widgets Using Cookies",
+                "href": "/docs/next/embedding/widgets/widget-embedding-using-cookies"
+              },
+              {
+                "type": "link",
+                "label": "Working With Filters in Embedded Scenarios",
+                "href": "/docs/next/embedding/widgets/filters-embedded-scenarios"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "App Building Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Page View",
+                "href": "/docs/next/embedding/widgets/app-building/widget-page-view"
+              },
+              {
+                "type": "link",
+                "label": "Page Builder",
+                "href": "/docs/next/embedding/widgets/app-building/widget-page-builder"
+              },
+              {
+                "type": "link",
+                "label": "Report Builder",
+                "href": "/docs/next/embedding/widgets/app-building/widget-report-builder"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Analytics Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Analytic Suite Widget",
+                "href": "/docs/next/embedding/widgets/analytics/analytic-suite"
+              },
+              {
+                "type": "link",
+                "label": "Single Panel Widget",
+                "href": "/docs/next/embedding/widgets/analytics/single-panel"
+              },
+              {
+                "type": "link",
+                "label": "Chart Builder Widget",
+                "href": "/docs/next/embedding/widgets/app-building/chart-builder"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Data Collection and Forms",
+            "items": [
+              {
+                "type": "link",
+                "label": "Web Form Design",
+                "href": "/docs/next/embedding/widgets/data-sources/widget-webforms"
+              },
+              {
+                "type": "link",
+                "label": "Web Form - End User",
+                "href": "/docs/next/embedding/widgets/data-sources/web-form-end-user"
+              },
+              {
+                "type": "link",
+                "label": "Data Connections",
+                "href": "/docs/next/embedding/widgets/data-sources/widget-dataconnectors"
+              },
+              {
+                "type": "link",
+                "label": "Datasets Widget",
+                "href": "/docs/next/embedding/widgets/data-sources/datasets-widget"
+              },
+              {
+                "type": "link",
+                "label": "Data Links",
+                "href": "/docs/next/embedding/widgets/data-sources/widget-datalinks"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Automation Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Automation Design",
+                "href": "/docs/next/embedding/widgets/automation/widget-automation"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "API References",
+            "items": [
+              {
+                "type": "link",
+                "label": "API Start Guide",
+                "href": "/docs/next/embedding/api/api-intro"
+              },
+              {
+                "type": "link",
+                "label": "Tutorial",
+                "href": "/docs/next/embedding/api/api-tutorial"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "release-notes": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2021",
+        "items": [
+          {
+            "type": "link",
+            "label": "February 2021",
+            "href": "/docs/next/release-notes/release-last"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2020",
+        "items": [
+          {
+            "type": "link",
+            "label": "December 2020",
+            "href": "/docs/next/release-notes/release-december-2020"
+          },
+          {
+            "type": "link",
+            "label": "October 2020",
+            "href": "/docs/next/release-notes/release-oct-2020"
+          },
+          {
+            "type": "link",
+            "label": "September 2020",
+            "href": "/docs/next/release-notes/release-sep-2020"
+          },
+          {
+            "type": "link",
+            "label": "August 2020",
+            "href": "/docs/next/release-notes/release-aug-2020"
+          },
+          {
+            "type": "link",
+            "label": "July 2020",
+            "href": "/docs/next/release-notes/release-jul-2020"
+          },
+          {
+            "type": "link",
+            "label": "June 2020",
+            "href": "/docs/next/release-notes/release-jun-2020"
+          },
+          {
+            "type": "link",
+            "label": "April 2020",
+            "href": "/docs/next/release-notes/release-apr-2020"
+          },
+          {
+            "type": "link",
+            "label": "March 2020",
+            "href": "/docs/next/release-notes/release-mar-2020"
+          },
+          {
+            "type": "link",
+            "label": "February 2020",
+            "href": "/docs/next/release-notes/release-feb-2020"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2019",
+        "items": [
+          {
+            "type": "link",
+            "label": "December 2019",
+            "href": "/docs/next/release-notes/release-dec-2019"
+          },
+          {
+            "type": "link",
+            "label": "November 2019",
+            "href": "/docs/next/release-notes/release-nov-2019"
+          },
+          {
+            "type": "link",
+            "label": "September 2019",
+            "href": "/docs/next/release-notes/release-sep-2019"
+          },
+          {
+            "type": "link",
+            "label": "August 2019",
+            "href": "/docs/next/release-notes/release-aug-2019"
+          },
+          {
+            "type": "link",
+            "label": "July 2019",
+            "href": "/docs/next/release-notes/release-jul-2019"
+          },
+          {
+            "type": "link",
+            "label": "March 2019",
+            "href": "/docs/next/release-notes/release-mar-2019"
+          },
+          {
+            "type": "link",
+            "label": "February 2019",
+            "href": "/docs/next/release-notes/release-feb-2019"
+          },
+          {
+            "type": "link",
+            "label": "January 2019",
+            "href": "/docs/next/release-notes/release-jan-2019"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Known Issues",
+        "items": [
+          {
+            "type": "link",
+            "label": "Known Issues",
+            "href": "/docs/next/release-notes/known-issues"
+          }
+        ]
+      }
+    ],
+    "tutorials": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Tutorials",
+        "items": [
+          {
+            "type": "link",
+            "label": "Your First Analytic Application",
+            "href": "/docs/next/tutorials/first-analytic-app"
+          },
+          {
+            "type": "link",
+            "label": "Create a Chart in Qrvey",
+            "href": "/docs/next/tutorials/create-charts"
+          },
+          {
+            "type": "link",
+            "label": "How to Make Filters From Multiple Datasets Work With One Filter Panel",
+            "href": "/docs/next/tutorials/multi-datasets-one-filter"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "FAQs",
+        "items": [
+          {
+            "type": "link",
+            "label": "General",
+            "href": "/docs/next/faqs/faqs-intro"
+          },
+          {
+            "type": "link",
+            "label": "AWS FAQs",
+            "href": "/docs/next/faqs/aws-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Data Security FAQs",
+            "href": "/docs/next/faqs/data-security-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Publishing FAQs",
+            "href": "/docs/next/faqs/publishing-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Ask us a question",
+            "href": "/docs/next/faqs/ask-us"
+          }
+        ]
+      }
+    ],
+    "video-training": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Demos",
+        "items": [
+          {
+            "type": "link",
+            "label": "Version 5.8",
+            "href": "/docs/next/video-training/release/version-5.8"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.7",
+            "href": "/docs/next/video-training/release/version-5.7"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.6",
+            "href": "/docs/next/video-training/release/version-5.6"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.5",
+            "href": "/docs/next/video-training/release/version-5.5"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.4",
+            "href": "/docs/next/video-training/release/version-5.4"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.3",
+            "href": "/docs/next/video-training/release/version-5.3"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.2",
+            "href": "/docs/next/video-training/release/version-5.2"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Short Training Videos",
+        "items": [
+          {
+            "type": "link",
+            "label": "Web Forms",
+            "href": "/docs/next/video-training/building-qrvey-sample/new-webforms"
+          },
+          {
+            "type": "link",
+            "label": "Workflows",
+            "href": "/docs/next/video-training/building-qrvey-sample/new-workflows"
+          },
+          {
+            "type": "link",
+            "label": "Data Links",
+            "href": "/docs/next/video-training/building-qrvey-sample/new-datalinks"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Prior Versions",
+        "items": [
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Training Sessions",
+            "items": [
+              {
+                "type": "link",
+                "label": "Intro to Analytic Apps",
+                "href": "/docs/next/video-training/analytics/intro-analytics-apps"
+              },
+              {
+                "type": "link",
+                "label": "Datasets",
+                "href": "/docs/next/video-training/analytics/datasets"
+              },
+              {
+                "type": "link",
+                "label": "Analytic Views",
+                "href": "/docs/next/video-training/analytics/analytic-views"
+              },
+              {
+                "type": "link",
+                "label": "Reports and Pages",
+                "href": "/docs/next/video-training/analytics/reports-pages"
+              },
+              {
+                "type": "link",
+                "label": "Web Forms",
+                "href": "/docs/next/video-training/analytics/web-forms"
+              },
+              {
+                "type": "link",
+                "label": "Metrics",
+                "href": "/docs/next/video-training/analytics/metrics"
+              },
+              {
+                "type": "link",
+                "label": "Automation",
+                "href": "/docs/next/video-training/analytics/automation"
+              },
+              {
+                "type": "link",
+                "label": "Admin Center",
+                "href": "/docs/next/video-training/admin-center/intro-admin-center"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/next/admin/admin-intro": "admin",
+    "/docs/next/admin/admin-managing-users": "admin",
+    "/docs/next/admin/admin-sections-deployments": "admin",
+    "/docs/next/admin/admin-sections-platform": "admin",
+    "/docs/next/admin/elasticsearch-management": "admin",
+    "/docs/next/admin/metadata-builder": "admin",
+    "/docs/next/admin/record-level-security": "admin",
+    "/docs/next/aws/connect-to-instance": "get-started",
+    "/docs/next/embedding/api/api-intro": "embedding",
+    "/docs/next/embedding/api/api-tutorial": "embedding",
+    "/docs/next/embedding/embedding-intro": "embedding",
+    "/docs/next/embedding/widgets/analytics/analytic-suite": "embedding",
+    "/docs/next/embedding/widgets/analytics/single-panel": "embedding",
+    "/docs/next/embedding/widgets/app-building/chart-builder": "embedding",
+    "/docs/next/embedding/widgets/app-building/widget-page-builder": "embedding",
+    "/docs/next/embedding/widgets/app-building/widget-page-view": "embedding",
+    "/docs/next/embedding/widgets/app-building/widget-report-builder": "embedding",
+    "/docs/next/embedding/widgets/automation/widget-automation": "embedding",
+    "/docs/next/embedding/widgets/data-sources/datasets-widget": "embedding",
+    "/docs/next/embedding/widgets/data-sources/web-form-end-user": "embedding",
+    "/docs/next/embedding/widgets/data-sources/widget-dataconnectors": "embedding",
+    "/docs/next/embedding/widgets/data-sources/widget-datalinks": "embedding",
+    "/docs/next/embedding/widgets/data-sources/widget-webforms": "embedding",
+    "/docs/next/embedding/widgets/filters-embedded-scenarios": "embedding",
+    "/docs/next/embedding/widgets/widget-embedding-using-cookies": "embedding",
+    "/docs/next/embedding/widgets/widget-intro": "embedding",
+    "/docs/next/faqs/ask-us": "faqs",
+    "/docs/next/faqs/aws-faqs": "faqs",
+    "/docs/next/faqs/data-security-faqs": "faqs",
+    "/docs/next/faqs/faqs-intro": "faqs",
+    "/docs/next/faqs/publishing-faqs": "faqs",
+    "/docs/next/get-started/aws-services": "get-started",
+    "/docs/next/get-started/deleting-installation": "get-started",
+    "/docs/next/get-started/deploying-aws/initial-installation": "get-started",
+    "/docs/next/get-started/get-started-architecture": "embedding",
+    "/docs/next/get-started/get-started-intro": "get-started",
+    "/docs/next/get-started/glossary": "get-started",
+    "/docs/next/get-started/managing-aws-cluster": "get-started",
+    "/docs/next/get-started/preparing-AWS-account": "get-started",
+    "/docs/next/get-started/prerequisites-for-installation": "get-started",
+    "/docs/next/get-started/security": "get-started",
+    "/docs/next/get-started/system-components": "get-started",
+    "/docs/next/get-started/troubleshooting": "get-started",
+    "/docs/next/get-started/upgrading-new-version": "get-started",
+    "/docs/next/get-started/user-roles": "get-started",
+    "/docs/next/release-notes/known-issues": "release-notes",
+    "/docs/next/release-notes/release-apr-2020": "release-notes",
+    "/docs/next/release-notes/release-aug-2019": "release-notes",
+    "/docs/next/release-notes/release-aug-2020": "release-notes",
+    "/docs/next/release-notes/release-dec-2019": "release-notes",
+    "/docs/next/release-notes/release-december-2020": "release-notes",
+    "/docs/next/release-notes/release-feb-2019": "release-notes",
+    "/docs/next/release-notes/release-feb-2020": "release-notes",
+    "/docs/next/release-notes/release-jan-2019": "release-notes",
+    "/docs/next/release-notes/release-jul-2019": "release-notes",
+    "/docs/next/release-notes/release-jul-2020": "release-notes",
+    "/docs/next/release-notes/release-jun-2020": "release-notes",
+    "/docs/next/release-notes/release-last": "release-notes",
+    "/docs/next/release-notes/release-mar-2019": "release-notes",
+    "/docs/next/release-notes/release-mar-2020": "release-notes",
+    "/docs/next/release-notes/release-nov-2019": "release-notes",
+    "/docs/next/release-notes/release-oct-2020": "release-notes",
+    "/docs/next/release-notes/release-sep-2019": "release-notes",
+    "/docs/next/release-notes/release-sep-2020": "release-notes",
+    "/docs/next/tutorials/create-charts": "tutorials",
+    "/docs/next/tutorials/first-analytic-app": "tutorials",
+    "/docs/next/tutorials/multi-datasets-one-filter": "tutorials",
+    "/docs/next/ui-docs/automation/conditions": "ui-docs",
+    "/docs/next/ui-docs/automation/data-actions": "ui-docs",
+    "/docs/next/ui-docs/automation/flows": "ui-docs",
+    "/docs/next/ui-docs/automation/send-actions": "ui-docs",
+    "/docs/next/ui-docs/automation/tokens": "ui-docs",
+    "/docs/next/ui-docs/automation/triggers": "ui-docs",
+    "/docs/next/ui-docs/basics/applications": "ui-docs",
+    "/docs/next/ui-docs/basics/introduction": "ui-docs",
+    "/docs/next/ui-docs/basics/logging-in": "ui-docs",
+    "/docs/next/ui-docs/basics/profile": "ui-docs",
+    "/docs/next/ui-docs/builders/navigation": "ui-docs",
+    "/docs/next/ui-docs/builders/pages": "ui-docs",
+    "/docs/next/ui-docs/builders/pages_actions": "ui-docs",
+    "/docs/next/ui-docs/builders/reports": "ui-docs",
+    "/docs/next/ui-docs/builders/user-management": "ui-docs",
+    "/docs/next/ui-docs/datasets/connectors": "ui-docs",
+    "/docs/next/ui-docs/datasets/csv": "ui-docs",
+    "/docs/next/ui-docs/datasets/data_overview": "ui-docs",
+    "/docs/next/ui-docs/datasets/data-sync": "ui-docs",
+    "/docs/next/ui-docs/datasets/databases": "ui-docs",
+    "/docs/next/ui-docs/datasets/datalinks": "ui-docs",
+    "/docs/next/ui-docs/datasets/datasets": "ui-docs",
+    "/docs/next/ui-docs/datasets/joins": "ui-docs",
+    "/docs/next/ui-docs/datasets/transformations": "ui-docs",
+    "/docs/next/ui-docs/dataviews/buckets": "ui-docs",
+    "/docs/next/ui-docs/dataviews/chart-builder": "ui-docs",
+    "/docs/next/ui-docs/dataviews/chart-types": "ui-docs",
+    "/docs/next/ui-docs/dataviews/custom-view": "ui-docs",
+    "/docs/next/ui-docs/dataviews/exporting": "ui-docs",
+    "/docs/next/ui-docs/dataviews/formulas": "ui-docs",
+    "/docs/next/ui-docs/dataviews/metric-view": "ui-docs",
+    "/docs/next/ui-docs/dataviews/summary-view": "ui-docs",
+    "/docs/next/ui-docs/dataviews/tabular-view": "ui-docs",
+    "/docs/next/ui-docs/filtering-data/introduction-to-filters": "ui-docs",
+    "/docs/next/ui-docs/filtering-data/working-with-filters": "ui-docs",
+    "/docs/next/ui-docs/others/activity-log": "ui-docs",
+    "/docs/next/ui-docs/others/sending": "ui-docs",
+    "/docs/next/ui-docs/others/settings": "ui-docs",
+    "/docs/next/ui-docs/others/sharing-editing": "ui-docs",
+    "/docs/next/ui-docs/web-forms/branching": "ui-docs",
+    "/docs/next/ui-docs/web-forms/complex-data": "ui-docs",
+    "/docs/next/ui-docs/web-forms/create-web-forms": "ui-docs",
+    "/docs/next/ui-docs/web-forms/customize-web-forms": "ui-docs",
+    "/docs/next/ui-docs/web-forms/embedding": "ui-docs",
+    "/docs/next/ui-docs/web-forms/field-guide": "ui-docs",
+    "/docs/next/ui-docs/web-forms/lookup": "ui-docs",
+    "/docs/next/ui-docs/web-forms/publishing": "ui-docs",
+    "/docs/next/ui-docs/web-forms/type-web-forms": "ui-docs",
+    "/docs/next/ui-docs/web-forms/web-forms": "ui-docs",
+    "/docs/next/video-training/admin-center/intro-admin-center": "video-training",
+    "/docs/next/video-training/analytics/analytic-views": "video-training",
+    "/docs/next/video-training/analytics/automation": "video-training",
+    "/docs/next/video-training/analytics/datasets": "video-training",
+    "/docs/next/video-training/analytics/intro-analytics-apps": "video-training",
+    "/docs/next/video-training/analytics/metrics": "video-training",
+    "/docs/next/video-training/analytics/reports-pages": "video-training",
+    "/docs/next/video-training/analytics/web-forms": "video-training",
+    "/docs/next/video-training/building-qrvey-sample/new-datalinks": "video-training",
+    "/docs/next/video-training/building-qrvey-sample/new-webforms": "video-training",
+    "/docs/next/video-training/building-qrvey-sample/new-workflows": "video-training",
+    "/docs/next/video-training/release/version-5.2": "video-training",
+    "/docs/next/video-training/release/version-5.3": "video-training",
+    "/docs/next/video-training/release/version-5.4": "video-training",
+    "/docs/next/video-training/release/version-5.5": "video-training",
+    "/docs/next/video-training/release/version-5.6": "video-training",
+    "/docs/next/video-training/release/version-5.7": "video-training",
+    "/docs/next/video-training/release/version-5.8": "video-training"
+  }
+}

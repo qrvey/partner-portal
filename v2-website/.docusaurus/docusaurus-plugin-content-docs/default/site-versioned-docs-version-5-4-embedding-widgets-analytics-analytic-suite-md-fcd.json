@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/analytics/analytic-suite",
+  "id": "version-5.4/embedding/widgets/analytics/analytic-suite",
+  "isDocsHomePage": false,
+  "title": "Analytic Suite Widget",
+  "description": "This widget allows the user to display the distinct views available on the analyze side (i.e Summary, Custom, Metric views), through a configuration object where properties are set to define some options and behaviors.",
+  "source": "@site/versioned_docs/version-5.4/embedding/widgets/analytics/analytic-suite.md",
+  "slug": "/embedding/widgets/analytics/analytic-suite",
+  "permalink": "/docs/embedding/widgets/analytics/analytic-suite",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Analytic Suite Widget",
+  "sidebar": "version-5.4/embedding",
+  "previous": {
+    "title": "Report Builder",
+    "permalink": "/docs/embedding/widgets/app-building/widget-report-builder"
+  },
+  "next": {
+    "title": "Single Panel Widget",
+    "permalink": "/docs/embedding/widgets/analytics/single-panel"
+  }
+}

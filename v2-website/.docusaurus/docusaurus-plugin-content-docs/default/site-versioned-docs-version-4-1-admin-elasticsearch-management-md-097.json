@@ -1,0 +1,15 @@
+{
+  "unversionedId": "admin/elasticsearch-management",
+  "id": "version-4.1/admin/elasticsearch-management",
+  "isDocsHomePage": false,
+  "title": "Elasticsearch Management",
+  "description": "Infrastructure Widget",
+  "source": "@site/versioned_docs/version-4.1/admin/elasticsearch-management.md",
+  "slug": "/admin/elasticsearch-management",
+  "permalink": "/docs/4.1/admin/elasticsearch-management",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Elasticsearch Management"
+}

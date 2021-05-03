@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/automation/widget-tokens-manager",
+  "id": "embedding/widgets/automation/widget-tokens-manager",
+  "isDocsHomePage": false,
+  "title": "Tokens Manager",
+  "description": "Widget Overview",
+  "source": "@site/../docs/embedding/widgets/automation/tokens-manager.md",
+  "slug": "/embedding/widgets/automation/widget-tokens-manager",
+  "permalink": "/docs/next/embedding/widgets/automation/widget-tokens-manager",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Tokens Manager"
+}

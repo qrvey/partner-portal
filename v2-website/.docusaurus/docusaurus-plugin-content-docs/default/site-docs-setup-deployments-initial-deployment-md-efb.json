@@ -1,0 +1,15 @@
+{
+  "unversionedId": "setup-deployments/setup-initial-deployment",
+  "id": "setup-deployments/setup-initial-deployment",
+  "isDocsHomePage": false,
+  "title": "Setup Initial Deployment",
+  "description": "Step 1: Create an AWS Account",
+  "source": "@site/../docs/setup-deployments/initial-deployment.md",
+  "slug": "/setup-deployments/setup-initial-deployment",
+  "permalink": "/docs/next/setup-deployments/setup-initial-deployment",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Setup Initial Deployment"
+}

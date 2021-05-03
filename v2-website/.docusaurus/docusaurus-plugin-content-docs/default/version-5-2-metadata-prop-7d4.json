@@ -1,0 +1,1062 @@
+{
+  "pluginId": "default",
+  "version": "5.2",
+  "label": "5.2",
+  "isLast": false,
+  "docsSidebars": {
+    "version-5.2/get-started": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Introduction to Qrvey System",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/5.2/get-started/get-started-intro"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Deploying to AWS",
+        "items": [
+          {
+            "type": "link",
+            "label": "Prerequisites for Installation",
+            "href": "/docs/5.2/get-started/prerequisites-for-installation"
+          },
+          {
+            "type": "link",
+            "label": "Preparing Your AWS Account",
+            "href": "/docs/5.2/get-started/preparing-AWS-account"
+          },
+          {
+            "type": "link",
+            "label": "Initial Installation",
+            "href": "/docs/5.2/get-started/deploying-aws/initial-installation"
+          },
+          {
+            "type": "link",
+            "label": "Upgrading to a New Version",
+            "href": "/docs/5.2/get-started/upgrading-new-version"
+          },
+          {
+            "type": "link",
+            "label": "Deleting an Installation",
+            "href": "/docs/5.2/get-started/deleting-installation"
+          },
+          {
+            "type": "link",
+            "label": "Troubleshooting",
+            "href": "/docs/5.2/get-started/troubleshooting"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Managing Qrvey In AWS",
+        "items": [
+          {
+            "type": "link",
+            "label": "AWS Services Used by Qrvey",
+            "href": "/docs/5.2/get-started/aws-services"
+          },
+          {
+            "type": "link",
+            "label": "Cluster Management",
+            "href": "/docs/5.2/get-started/managing-aws-cluster"
+          },
+          {
+            "type": "link",
+            "label": "Connecting to Secure RDS",
+            "href": "/docs/5.2/aws/connect-to-instance"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Qrvey Platform Overview",
+        "items": [
+          {
+            "type": "link",
+            "label": "System Components",
+            "href": "/docs/5.2/get-started/system-components"
+          },
+          {
+            "type": "link",
+            "label": "Security",
+            "href": "/docs/5.2/get-started/security"
+          },
+          {
+            "type": "link",
+            "label": "User Roles",
+            "href": "/docs/5.2/get-started/user-roles"
+          },
+          {
+            "type": "link",
+            "label": "Glossary of Common Terms",
+            "href": "/docs/5.2/get-started/glossary"
+          }
+        ]
+      }
+    ],
+    "version-5.2/ui-docs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Basics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Logging In",
+            "href": "/docs/5.2/ui-docs/basics/logging-in"
+          },
+          {
+            "type": "link",
+            "label": "Profile/Account",
+            "href": "/docs/5.2/ui-docs/basics/profile"
+          },
+          {
+            "type": "link",
+            "label": "Introduction to the UI",
+            "href": "/docs/5.2/ui-docs/basics/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Applications",
+            "href": "/docs/5.2/ui-docs/basics/applications"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Web Forms",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/5.2/ui-docs/web-forms/web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Types of Web Forms",
+            "href": "/docs/5.2/ui-docs/web-forms/type-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Building a Web Form",
+            "href": "/docs/5.2/ui-docs/web-forms/create-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Web Form Field Guide",
+            "href": "/docs/5.2/ui-docs/web-forms/field-guide"
+          },
+          {
+            "type": "link",
+            "label": "Complex Data",
+            "href": "/docs/5.2/ui-docs/web-forms/complex-data"
+          },
+          {
+            "type": "link",
+            "label": "Branching",
+            "href": "/docs/5.2/ui-docs/web-forms/branching"
+          },
+          {
+            "type": "link",
+            "label": "Lookups",
+            "href": "/docs/5.2/ui-docs/web-forms/lookup"
+          },
+          {
+            "type": "link",
+            "label": "Customizing Web Forms",
+            "href": "/docs/5.2/ui-docs/web-forms/customize-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Publishing Web Forms",
+            "href": "/docs/5.2/ui-docs/web-forms/publishing"
+          },
+          {
+            "type": "link",
+            "label": "Embedding Web Forms",
+            "href": "/docs/5.2/ui-docs/web-forms/embedding"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Data",
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Section Overview",
+            "href": "/docs/5.2/ui-docs/datasets/data_overview"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Connections",
+            "items": [
+              {
+                "type": "link",
+                "label": "Connections Overview",
+                "href": "/docs/5.2/ui-docs/datasets/connectors"
+              },
+              {
+                "type": "link",
+                "label": "Database Connections",
+                "href": "/docs/5.2/ui-docs/datasets/databases"
+              },
+              {
+                "type": "link",
+                "label": "File Upload Connection",
+                "href": "/docs/5.2/ui-docs/datasets/csv"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Datasets",
+            "href": "/docs/5.2/ui-docs/datasets/datasets"
+          },
+          {
+            "type": "link",
+            "label": "Data sync",
+            "href": "/docs/5.2/ui-docs/datasets/data-sync"
+          },
+          {
+            "type": "link",
+            "label": "Data Joins",
+            "href": "/docs/5.2/ui-docs/datasets/joins"
+          },
+          {
+            "type": "link",
+            "label": "Data Links",
+            "href": "/docs/5.2/ui-docs/datasets/datalinks"
+          },
+          {
+            "type": "link",
+            "label": "Transformations",
+            "href": "/docs/5.2/ui-docs/datasets/transformations"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Analysis Views",
+        "items": [
+          {
+            "type": "link",
+            "label": "Formulas",
+            "href": "/docs/5.2/ui-docs/dataviews/formulas"
+          },
+          {
+            "type": "link",
+            "label": "Bucketing Data",
+            "href": "/docs/5.2/ui-docs/dataviews/buckets"
+          },
+          {
+            "type": "link",
+            "label": "Exporting Data",
+            "href": "/docs/5.2/ui-docs/dataviews/exporting"
+          },
+          {
+            "type": "link",
+            "label": "Summary View",
+            "href": "/docs/5.2/ui-docs/dataviews/summary-view"
+          },
+          {
+            "type": "link",
+            "label": "Tabular View",
+            "href": "/docs/5.2/ui-docs/dataviews/tabular-view"
+          },
+          {
+            "type": "link",
+            "label": "Custom View",
+            "href": "/docs/5.2/ui-docs/dataviews/custom-view"
+          },
+          {
+            "type": "link",
+            "label": "Chart Types",
+            "href": "/docs/5.2/ui-docs/dataviews/chart-types"
+          },
+          {
+            "type": "link",
+            "label": "Chart Builder",
+            "href": "/docs/5.2/ui-docs/dataviews/chart-builder"
+          },
+          {
+            "type": "link",
+            "label": "Metric View",
+            "href": "/docs/5.2/ui-docs/dataviews/metric-view"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Builders",
+        "items": [
+          {
+            "type": "link",
+            "label": "Report Builder",
+            "href": "/docs/5.2/ui-docs/builders/reports"
+          },
+          {
+            "type": "link",
+            "label": "Page Builder",
+            "href": "/docs/5.2/ui-docs/builders/pages"
+          },
+          {
+            "type": "link",
+            "label": "Page Actions",
+            "href": "/docs/5.2/ui-docs/builders/pages_actions"
+          },
+          {
+            "type": "link",
+            "label": "Page Navigation",
+            "href": "/docs/5.2/ui-docs/builders/navigation"
+          },
+          {
+            "type": "link",
+            "label": "User Management",
+            "href": "/docs/5.2/ui-docs/builders/user-management"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Filtering Data",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction to Filters",
+            "href": "/docs/5.2/ui-docs/filtering-data/introduction-to-filters"
+          },
+          {
+            "type": "link",
+            "label": "Working With Interactive Filters",
+            "href": "/docs/5.2/ui-docs/filtering-data/working-with-filters"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Automation",
+        "items": [
+          {
+            "type": "link",
+            "label": "Flow Overview",
+            "href": "/docs/5.2/ui-docs/automation/flows"
+          },
+          {
+            "type": "link",
+            "label": "Triggers",
+            "href": "/docs/5.2/ui-docs/automation/triggers"
+          },
+          {
+            "type": "link",
+            "label": "Conditions",
+            "href": "/docs/5.2/ui-docs/automation/conditions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Send",
+            "href": "/docs/5.2/ui-docs/automation/send-actions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Data",
+            "href": "/docs/5.2/ui-docs/automation/data-actions"
+          },
+          {
+            "type": "link",
+            "label": "Tokens",
+            "href": "/docs/5.2/ui-docs/automation/tokens"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Other",
+        "items": [
+          {
+            "type": "link",
+            "label": "Application Settings",
+            "href": "/docs/5.2/ui-docs/others/settings"
+          },
+          {
+            "type": "link",
+            "label": "Sending Applications",
+            "href": "/docs/5.2/ui-docs/others/sending"
+          },
+          {
+            "type": "link",
+            "label": "Sharing & Editing",
+            "href": "/docs/5.2/ui-docs/others/sharing-editing"
+          },
+          {
+            "type": "link",
+            "label": "Activity Log",
+            "href": "/docs/5.2/ui-docs/others/activity-log"
+          }
+        ]
+      }
+    ],
+    "version-5.2/business-analytics": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Business Analytics",
+        "items": []
+      }
+    ],
+    "version-5.2/admin": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Admin",
+        "items": [
+          {
+            "type": "link",
+            "label": "Admin Overview",
+            "href": "/docs/5.2/admin/admin-intro"
+          },
+          {
+            "type": "link",
+            "label": "Elasticsearch Management",
+            "href": "/docs/5.2/admin/elasticsearch-management"
+          },
+          {
+            "type": "link",
+            "label": "Admin User Management",
+            "href": "/docs/5.2/admin/admin-managing-users"
+          },
+          {
+            "type": "link",
+            "label": "Administering Qrvey Composer",
+            "href": "/docs/5.2/admin/admin-sections-platform"
+          },
+          {
+            "type": "link",
+            "label": "Deployments",
+            "href": "/docs/5.2/admin/admin-sections-deployments"
+          },
+          {
+            "type": "link",
+            "label": "Record Level Security",
+            "href": "/docs/5.2/admin/record-level-security"
+          },
+          {
+            "type": "link",
+            "label": "Metadata Builder",
+            "href": "/docs/5.2/admin/metadata-builder"
+          }
+        ]
+      }
+    ],
+    "version-5.2/embedding": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Architecture",
+        "items": [
+          {
+            "type": "link",
+            "label": "Architectural Overview",
+            "href": "/docs/5.2/get-started/get-started-architecture"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Embedding",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/5.2/embedding/embedding-intro"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Widgets Quick Start Guide",
+                "href": "/docs/5.2/embedding/widgets/widget-intro"
+              },
+              {
+                "type": "link",
+                "label": "Embedding Widgets Using Cookies",
+                "href": "/docs/5.2/embedding/widgets/widget-embedding-using-cookies"
+              },
+              {
+                "type": "link",
+                "label": "Working With Filters in Embedded Scenarios",
+                "href": "/docs/5.2/embedding/widgets/filters-embedded-scenarios"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "App Building Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Page View",
+                "href": "/docs/5.2/embedding/widgets/app-building/widget-page-view"
+              },
+              {
+                "type": "link",
+                "label": "Page Builder",
+                "href": "/docs/5.2/embedding/widgets/app-building/widget-page-builder"
+              },
+              {
+                "type": "link",
+                "label": "Report Builder",
+                "href": "/docs/5.2/embedding/widgets/app-building/widget-report-builder"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Analytics Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Analytic Suite Widget",
+                "href": "/docs/5.2/embedding/widgets/analytics/analytic-suite"
+              },
+              {
+                "type": "link",
+                "label": "Single Panel Widget",
+                "href": "/docs/5.2/embedding/widgets/analytics/single-panel"
+              },
+              {
+                "type": "link",
+                "label": "Chart Builder Widget",
+                "href": "/docs/5.2/embedding/widgets/app-building/chart-builder"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Data Collection and Forms",
+            "items": [
+              {
+                "type": "link",
+                "label": "Web Form Design",
+                "href": "/docs/5.2/embedding/widgets/data-sources/widget-webforms"
+              },
+              {
+                "type": "link",
+                "label": "Web Form - End User",
+                "href": "/docs/5.2/embedding/widgets/data-sources/web-form-end-user"
+              },
+              {
+                "type": "link",
+                "label": "Data Connections",
+                "href": "/docs/5.2/embedding/widgets/data-sources/widget-dataconnectors"
+              },
+              {
+                "type": "link",
+                "label": "Datasets Widget",
+                "href": "/docs/5.2/embedding/widgets/data-sources/datasets-widget"
+              },
+              {
+                "type": "link",
+                "label": "Data Links",
+                "href": "/docs/5.2/embedding/widgets/data-sources/widget-datalinks"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Automation Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Automation Design",
+                "href": "/docs/5.2/embedding/widgets/automation/widget-automation"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "API References",
+            "items": [
+              {
+                "type": "link",
+                "label": "API Start Guide",
+                "href": "/docs/5.2/embedding/api/api-intro"
+              },
+              {
+                "type": "link",
+                "label": "Tutorial",
+                "href": "/docs/5.2/embedding/api/api-tutorial"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "version-5.2/release-notes": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2021",
+        "items": [
+          {
+            "type": "link",
+            "label": "February 2021",
+            "href": "/docs/5.2/release-notes/release-last"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2020",
+        "items": [
+          {
+            "type": "link",
+            "label": "December 2020",
+            "href": "/docs/5.2/release-notes/release-december-2020"
+          },
+          {
+            "type": "link",
+            "label": "October 2020",
+            "href": "/docs/5.2/release-notes/release-oct-2020"
+          },
+          {
+            "type": "link",
+            "label": "September 2020",
+            "href": "/docs/5.2/release-notes/release-sep-2020"
+          },
+          {
+            "type": "link",
+            "label": "August 2020",
+            "href": "/docs/5.2/release-notes/release-aug-2020"
+          },
+          {
+            "type": "link",
+            "label": "July 2020",
+            "href": "/docs/5.2/release-notes/release-jul-2020"
+          },
+          {
+            "type": "link",
+            "label": "June 2020",
+            "href": "/docs/5.2/release-notes/release-jun-2020"
+          },
+          {
+            "type": "link",
+            "label": "April 2020",
+            "href": "/docs/5.2/release-notes/release-apr-2020"
+          },
+          {
+            "type": "link",
+            "label": "March 2020",
+            "href": "/docs/5.2/release-notes/release-mar-2020"
+          },
+          {
+            "type": "link",
+            "label": "February 2020",
+            "href": "/docs/5.2/release-notes/release-feb-2020"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2019",
+        "items": [
+          {
+            "type": "link",
+            "label": "December 2019",
+            "href": "/docs/5.2/release-notes/release-dec-2019"
+          },
+          {
+            "type": "link",
+            "label": "November 2019",
+            "href": "/docs/5.2/release-notes/release-nov-2019"
+          },
+          {
+            "type": "link",
+            "label": "September 2019",
+            "href": "/docs/5.2/release-notes/release-sep-2019"
+          },
+          {
+            "type": "link",
+            "label": "August 2019",
+            "href": "/docs/5.2/release-notes/release-aug-2019"
+          },
+          {
+            "type": "link",
+            "label": "July 2019",
+            "href": "/docs/5.2/release-notes/release-jul-2019"
+          },
+          {
+            "type": "link",
+            "label": "March 2019",
+            "href": "/docs/5.2/release-notes/release-mar-2019"
+          },
+          {
+            "type": "link",
+            "label": "February 2019",
+            "href": "/docs/5.2/release-notes/release-feb-2019"
+          },
+          {
+            "type": "link",
+            "label": "January 2019",
+            "href": "/docs/5.2/release-notes/release-jan-2019"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Known Issues",
+        "items": [
+          {
+            "type": "link",
+            "label": "Known Issues",
+            "href": "/docs/5.2/release-notes/known-issues"
+          }
+        ]
+      }
+    ],
+    "version-5.2/tutorials": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Tutorials",
+        "items": [
+          {
+            "type": "link",
+            "label": "Your First Analytic Application",
+            "href": "/docs/5.2/tutorials/first-analytic-app"
+          },
+          {
+            "type": "link",
+            "label": "Create a Chart in Qrvey",
+            "href": "/docs/5.2/tutorials/create-charts"
+          },
+          {
+            "type": "link",
+            "label": "How to Make Filters From Multiple Datasets Work With One Filter Panel",
+            "href": "/docs/5.2/tutorials/multi-datasets-one-filter"
+          }
+        ]
+      }
+    ],
+    "version-5.2/faqs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "FAQs",
+        "items": [
+          {
+            "type": "link",
+            "label": "General",
+            "href": "/docs/5.2/faqs/faqs-intro"
+          },
+          {
+            "type": "link",
+            "label": "AWS FAQs",
+            "href": "/docs/5.2/faqs/aws-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Data Security FAQs",
+            "href": "/docs/5.2/faqs/data-security-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Publishing FAQs",
+            "href": "/docs/5.2/faqs/publishing-faqs"
+          },
+          {
+            "type": "link",
+            "label": "Ask us a question",
+            "href": "/docs/5.2/faqs/ask-us"
+          }
+        ]
+      }
+    ],
+    "version-5.2/video-training": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Demos",
+        "items": [
+          {
+            "type": "link",
+            "label": "Version 5.8",
+            "href": "/docs/5.2/video-training/release/version-5.8"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.7",
+            "href": "/docs/5.2/video-training/release/version-5.7"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.6",
+            "href": "/docs/5.2/video-training/release/version-5.6"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.5",
+            "href": "/docs/5.2/video-training/release/version-5.5"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.4",
+            "href": "/docs/5.2/video-training/release/version-5.4"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.3",
+            "href": "/docs/5.2/video-training/release/version-5.3"
+          },
+          {
+            "type": "link",
+            "label": "Version 5.2",
+            "href": "/docs/5.2/video-training/release/version-5.2"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Short Training Videos",
+        "items": [
+          {
+            "type": "link",
+            "label": "Web Forms",
+            "href": "/docs/5.2/video-training/building-qrvey-sample/new-webforms"
+          },
+          {
+            "type": "link",
+            "label": "Workflows",
+            "href": "/docs/5.2/video-training/building-qrvey-sample/new-workflows"
+          },
+          {
+            "type": "link",
+            "label": "Data Links",
+            "href": "/docs/5.2/video-training/building-qrvey-sample/new-datalinks"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Prior Versions",
+        "items": [
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Training Sessions",
+            "items": [
+              {
+                "type": "link",
+                "label": "Intro to Analytic Apps",
+                "href": "/docs/5.2/video-training/analytics/intro-analytics-apps"
+              },
+              {
+                "type": "link",
+                "label": "Datasets",
+                "href": "/docs/5.2/video-training/analytics/datasets"
+              },
+              {
+                "type": "link",
+                "label": "Analytic Views",
+                "href": "/docs/5.2/video-training/analytics/analytic-views"
+              },
+              {
+                "type": "link",
+                "label": "Reports and Pages",
+                "href": "/docs/5.2/video-training/analytics/reports-pages"
+              },
+              {
+                "type": "link",
+                "label": "Web Forms",
+                "href": "/docs/5.2/video-training/analytics/web-forms"
+              },
+              {
+                "type": "link",
+                "label": "Metrics",
+                "href": "/docs/5.2/video-training/analytics/metrics"
+              },
+              {
+                "type": "link",
+                "label": "Automation",
+                "href": "/docs/5.2/video-training/analytics/automation"
+              },
+              {
+                "type": "link",
+                "label": "Admin Center",
+                "href": "/docs/5.2/video-training/admin-center/intro-admin-center"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/5.2/admin/admin-intro": "version-5.2/admin",
+    "/docs/5.2/admin/admin-managing-users": "version-5.2/admin",
+    "/docs/5.2/admin/admin-sections-deployments": "version-5.2/admin",
+    "/docs/5.2/admin/admin-sections-platform": "version-5.2/admin",
+    "/docs/5.2/admin/elasticsearch-management": "version-5.2/admin",
+    "/docs/5.2/admin/metadata-builder": "version-5.2/admin",
+    "/docs/5.2/admin/record-level-security": "version-5.2/admin",
+    "/docs/5.2/aws/connect-to-instance": "version-5.2/get-started",
+    "/docs/5.2/embedding/api/api-intro": "version-5.2/embedding",
+    "/docs/5.2/embedding/api/api-tutorial": "version-5.2/embedding",
+    "/docs/5.2/embedding/embedding-intro": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/analytics/analytic-suite": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/analytics/single-panel": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/app-building/chart-builder": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/app-building/widget-page-builder": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/app-building/widget-page-view": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/app-building/widget-report-builder": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/automation/widget-automation": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/data-sources/datasets-widget": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/data-sources/web-form-end-user": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/data-sources/widget-dataconnectors": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/data-sources/widget-datalinks": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/data-sources/widget-webforms": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/filters-embedded-scenarios": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/widget-embedding-using-cookies": "version-5.2/embedding",
+    "/docs/5.2/embedding/widgets/widget-intro": "version-5.2/embedding",
+    "/docs/5.2/faqs/ask-us": "version-5.2/faqs",
+    "/docs/5.2/faqs/aws-faqs": "version-5.2/faqs",
+    "/docs/5.2/faqs/data-security-faqs": "version-5.2/faqs",
+    "/docs/5.2/faqs/faqs-intro": "version-5.2/faqs",
+    "/docs/5.2/faqs/publishing-faqs": "version-5.2/faqs",
+    "/docs/5.2/get-started/aws-services": "version-5.2/get-started",
+    "/docs/5.2/get-started/deleting-installation": "version-5.2/get-started",
+    "/docs/5.2/get-started/deploying-aws/initial-installation": "version-5.2/get-started",
+    "/docs/5.2/get-started/get-started-architecture": "version-5.2/embedding",
+    "/docs/5.2/get-started/get-started-intro": "version-5.2/get-started",
+    "/docs/5.2/get-started/glossary": "version-5.2/get-started",
+    "/docs/5.2/get-started/managing-aws-cluster": "version-5.2/get-started",
+    "/docs/5.2/get-started/preparing-AWS-account": "version-5.2/get-started",
+    "/docs/5.2/get-started/prerequisites-for-installation": "version-5.2/get-started",
+    "/docs/5.2/get-started/security": "version-5.2/get-started",
+    "/docs/5.2/get-started/system-components": "version-5.2/get-started",
+    "/docs/5.2/get-started/troubleshooting": "version-5.2/get-started",
+    "/docs/5.2/get-started/upgrading-new-version": "version-5.2/get-started",
+    "/docs/5.2/get-started/user-roles": "version-5.2/get-started",
+    "/docs/5.2/release-notes/known-issues": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-apr-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-aug-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-aug-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-dec-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-december-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-feb-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-feb-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-jan-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-jul-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-jul-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-jun-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-last": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-mar-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-mar-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-nov-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-oct-2020": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-sep-2019": "version-5.2/release-notes",
+    "/docs/5.2/release-notes/release-sep-2020": "version-5.2/release-notes",
+    "/docs/5.2/tutorials/create-charts": "version-5.2/tutorials",
+    "/docs/5.2/tutorials/first-analytic-app": "version-5.2/tutorials",
+    "/docs/5.2/tutorials/multi-datasets-one-filter": "version-5.2/tutorials",
+    "/docs/5.2/ui-docs/automation/conditions": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/automation/data-actions": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/automation/flows": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/automation/send-actions": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/automation/tokens": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/automation/triggers": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/basics/applications": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/basics/introduction": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/basics/logging-in": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/basics/profile": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/builders/navigation": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/builders/pages": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/builders/pages_actions": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/builders/reports": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/builders/user-management": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/connectors": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/csv": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/data_overview": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/data-sync": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/databases": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/datalinks": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/datasets": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/joins": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/datasets/transformations": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/buckets": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/chart-builder": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/chart-types": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/custom-view": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/exporting": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/formulas": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/metric-view": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/summary-view": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/dataviews/tabular-view": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/filtering-data/introduction-to-filters": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/filtering-data/working-with-filters": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/others/activity-log": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/others/sending": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/others/settings": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/others/sharing-editing": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/branching": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/complex-data": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/create-web-forms": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/customize-web-forms": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/embedding": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/field-guide": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/lookup": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/publishing": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/type-web-forms": "version-5.2/ui-docs",
+    "/docs/5.2/ui-docs/web-forms/web-forms": "version-5.2/ui-docs",
+    "/docs/5.2/video-training/admin-center/intro-admin-center": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/analytic-views": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/automation": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/datasets": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/intro-analytics-apps": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/metrics": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/reports-pages": "version-5.2/video-training",
+    "/docs/5.2/video-training/analytics/web-forms": "version-5.2/video-training",
+    "/docs/5.2/video-training/building-qrvey-sample/new-datalinks": "version-5.2/video-training",
+    "/docs/5.2/video-training/building-qrvey-sample/new-webforms": "version-5.2/video-training",
+    "/docs/5.2/video-training/building-qrvey-sample/new-workflows": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.2": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.3": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.4": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.5": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.6": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.7": "version-5.2/video-training",
+    "/docs/5.2/video-training/release/version-5.8": "version-5.2/video-training"
+  }
+}

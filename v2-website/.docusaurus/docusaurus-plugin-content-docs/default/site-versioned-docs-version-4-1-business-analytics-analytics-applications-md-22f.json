@@ -1,0 +1,15 @@
+{
+  "unversionedId": "business-analytics/business-analytics-application",
+  "id": "version-4.1/business-analytics/business-analytics-application",
+  "isDocsHomePage": false,
+  "title": "Qrvey Business Analytics Application",
+  "description": "Creating Analytic Applications",
+  "source": "@site/versioned_docs/version-4.1/business-analytics/analytics-applications.md",
+  "slug": "/business-analytics/business-analytics-application",
+  "permalink": "/docs/4.1/business-analytics/business-analytics-application",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Analytics Application"
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/data-sources/widget-datalinks",
+  "id": "embedding/widgets/data-sources/widget-datalinks",
+  "isDocsHomePage": false,
+  "title": "Data Links",
+  "description": "Widget Overview",
+  "source": "@site/../docs/embedding/widgets/data-sources/data-links.md",
+  "slug": "/embedding/widgets/data-sources/widget-datalinks",
+  "permalink": "/docs/next/embedding/widgets/data-sources/widget-datalinks",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Links",
+  "sidebar": "embedding",
+  "previous": {
+    "title": "Datasets Widget",
+    "permalink": "/docs/next/embedding/widgets/data-sources/datasets-widget"
+  },
+  "next": {
+    "title": "Automation Design",
+    "permalink": "/docs/next/embedding/widgets/automation/widget-automation"
+  }
+}

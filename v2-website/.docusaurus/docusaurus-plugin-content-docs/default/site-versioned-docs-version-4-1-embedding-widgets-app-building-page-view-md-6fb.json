@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/app-building/widget-page-view",
+  "id": "version-4.1/embedding/widgets/app-building/widget-page-view",
+  "isDocsHomePage": false,
+  "title": "Page View",
+  "description": "The Page View widget (previously known as “End User widget”) allows users to access one or more pages of an application created from the Page Builder Widget. Pages may contain embedded reports and webforms, as well as other static content.",
+  "source": "@site/versioned_docs/version-4.1/embedding/widgets/app-building/page-view.md",
+  "slug": "/embedding/widgets/app-building/widget-page-view",
+  "permalink": "/docs/4.1/embedding/widgets/app-building/widget-page-view",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Page View"
+}

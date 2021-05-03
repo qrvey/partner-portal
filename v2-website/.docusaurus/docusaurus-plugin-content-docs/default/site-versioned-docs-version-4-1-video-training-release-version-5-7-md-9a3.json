@@ -1,0 +1,15 @@
+{
+  "unversionedId": "video-training/release/version-5.7",
+  "id": "version-4.1/video-training/release/version-5.7",
+  "isDocsHomePage": false,
+  "title": "Version 5.7",
+  "description": "Choropleth Map",
+  "source": "@site/versioned_docs/version-4.1/video-training/release/version-5.7.md",
+  "slug": "/video-training/release/version-5.7",
+  "permalink": "/docs/4.1/video-training/release/version-5.7",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Version 5.7"
+}

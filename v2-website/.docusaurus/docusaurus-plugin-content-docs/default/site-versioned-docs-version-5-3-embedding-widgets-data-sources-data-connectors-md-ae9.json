@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/data-sources/widget-dataconnectors",
+  "id": "version-5.3/embedding/widgets/data-sources/widget-dataconnectors",
+  "isDocsHomePage": false,
+  "title": "Data Connections",
+  "description": "The data connections widget is a powerful and effective tool that allows you to embed the connections dashboard and functionality in your own web application. This widget allows your users to create and edit MySQL, SQL Server, Oracle, or Postgres connections.",
+  "source": "@site/versioned_docs/version-5.3/embedding/widgets/data-sources/data-connectors.md",
+  "slug": "/embedding/widgets/data-sources/widget-dataconnectors",
+  "permalink": "/docs/5.3/embedding/widgets/data-sources/widget-dataconnectors",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Connections",
+  "sidebar": "version-5.3/embedding",
+  "previous": {
+    "title": "Web Form - End User",
+    "permalink": "/docs/5.3/embedding/widgets/data-sources/web-form-end-user"
+  },
+  "next": {
+    "title": "Datasets Widget",
+    "permalink": "/docs/5.3/embedding/widgets/data-sources/datasets-widget"
+  }
+}

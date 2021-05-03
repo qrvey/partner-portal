@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/transforms-intro",
+  "id": "version-4.1/data-router/Metadata/transforms-intro",
+  "isDocsHomePage": false,
+  "title": "Transforms Overview",
+  "description": "Transforms are the required manipulation over the user data before being analyzed by Qrvey. The user can define any number of transformations inside metadata, and the result of this manipulation is reflected in the stored data.",
+  "source": "@site/versioned_docs/version-4.1/data-router/Metadata/transforms-intro.md",
+  "slug": "/data-router/Metadata/transforms-intro",
+  "permalink": "/docs/4.1/data-router/Metadata/transforms-intro",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Transforms Overview"
+}

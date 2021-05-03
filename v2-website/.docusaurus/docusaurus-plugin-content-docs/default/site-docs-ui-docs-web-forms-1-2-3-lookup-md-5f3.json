@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/web-forms/lookup",
+  "id": "ui-docs/web-forms/lookup",
+  "isDocsHomePage": false,
+  "title": "Lookups",
+  "description": "The Lookup field type offers a number of different options for populating your answer choices. In this article, we’ll outline the available options.",
+  "source": "@site/../docs/ui-docs/web-forms/1.2.3_lookup.md",
+  "slug": "/ui-docs/web-forms/lookup",
+  "permalink": "/docs/next/ui-docs/web-forms/lookup",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Lookups",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Branching",
+    "permalink": "/docs/next/ui-docs/web-forms/branching"
+  },
+  "next": {
+    "title": "Customizing Web Forms",
+    "permalink": "/docs/next/ui-docs/web-forms/customize-web-forms"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "unversionedId": "admin/admin-sections-deployments",
+  "id": "version-4.1/admin/admin-sections-deployments",
+  "isDocsHomePage": false,
+  "title": "Deployments",
+  "description": "Servers",
+  "source": "@site/versioned_docs/version-4.1/admin/deployments.md",
+  "slug": "/admin/admin-sections-deployments",
+  "permalink": "/docs/4.1/admin/admin-sections-deployments",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Deployments",
+  "sidebar": "version-4.1/admin",
+  "previous": {
+    "title": "Data Router",
+    "permalink": "/docs/4.1/admin/admin-sections-data-router"
+  }
+}

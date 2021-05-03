@@ -1,0 +1,24 @@
+{
+  "unversionedId": "video-training/analytics/web-forms",
+  "id": "version-5.2/video-training/analytics/web-forms",
+  "isDocsHomePage": false,
+  "title": "Web Forms",
+  "description": "Analytics 05",
+  "source": "@site/versioned_docs/version-5.2/video-training/analytics/webforms.md",
+  "slug": "/video-training/analytics/web-forms",
+  "permalink": "/docs/5.2/video-training/analytics/web-forms",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Web Forms",
+  "sidebar": "version-5.2/video-training",
+  "previous": {
+    "title": "Reports and Pages",
+    "permalink": "/docs/5.2/video-training/analytics/reports-pages"
+  },
+  "next": {
+    "title": "Metrics",
+    "permalink": "/docs/5.2/video-training/analytics/metrics"
+  }
+}

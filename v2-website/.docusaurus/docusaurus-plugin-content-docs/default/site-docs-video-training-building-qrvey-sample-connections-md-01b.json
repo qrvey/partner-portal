@@ -1,0 +1,15 @@
+{
+  "unversionedId": "video-training/building-qrvey-sample/connections",
+  "id": "video-training/building-qrvey-sample/connections",
+  "isDocsHomePage": false,
+  "title": "Connections",
+  "description": "Connections act as the address to our data sources. We can create connections to files, various database servers, databases, or tables or views in those databases, as well as to a custom SQL query. This is especially helpful if we want to include predefined calculations or sort order in the data source. Connections can be modified or removed after being created, but this has to be done with special care, as this may cause problems with future data loads. Learn more about connections in our video tutorial.",
+  "source": "@site/../docs/video-training/building-qrvey-sample/connections.md",
+  "slug": "/video-training/building-qrvey-sample/connections",
+  "permalink": "/docs/next/video-training/building-qrvey-sample/connections",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Connections"
+}

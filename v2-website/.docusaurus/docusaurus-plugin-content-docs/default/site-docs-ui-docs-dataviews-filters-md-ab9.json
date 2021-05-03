@@ -1,0 +1,15 @@
+{
+  "unversionedId": "ui-docs/dataviews/filters",
+  "id": "ui-docs/dataviews/filters",
+  "isDocsHomePage": false,
+  "title": "Filtering Data",
+  "description": "Filters allow you to drill down into your data by selecting only rows that meet certain criteria. Filters can be applied from a number of different places within the analysis areas of Qrvey.  You will find the Filter icon in every analytic view.",
+  "source": "@site/../docs/ui-docs/dataviews/filters.md",
+  "slug": "/ui-docs/dataviews/filters",
+  "permalink": "/docs/next/ui-docs/dataviews/filters",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Filtering Data"
+}

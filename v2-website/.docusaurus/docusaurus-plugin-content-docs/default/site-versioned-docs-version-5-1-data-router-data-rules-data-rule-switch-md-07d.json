@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/DataRules/data-router-switch",
+  "id": "version-5.1/data-router/DataRules/data-router-switch",
+  "isDocsHomePage": false,
+  "title": "Case",
+  "description": "The Case Data Rule allows different actions to be performed depending on the variable or the option passed to the operation. This condition can be evaluated to any data type [boolean, string, number].",
+  "source": "@site/versioned_docs/version-5.1/data-router/DataRules/data-rule-switch.md",
+  "slug": "/data-router/DataRules/data-router-switch",
+  "permalink": "/docs/5.1/data-router/DataRules/data-router-switch",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Case"
+}

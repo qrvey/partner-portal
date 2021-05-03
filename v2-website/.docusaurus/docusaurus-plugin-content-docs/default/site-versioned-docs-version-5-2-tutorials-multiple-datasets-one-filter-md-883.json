@@ -1,0 +1,20 @@
+{
+  "unversionedId": "tutorials/multi-datasets-one-filter",
+  "id": "version-5.2/tutorials/multi-datasets-one-filter",
+  "isDocsHomePage": false,
+  "title": "How to Make Filters From Multiple Datasets Work With One Filter Panel",
+  "description": "Embedding visualization panels inside your application is a straightforward task (see",
+  "source": "@site/versioned_docs/version-5.2/tutorials/multiple-datasets-one-filter.md",
+  "slug": "/tutorials/multi-datasets-one-filter",
+  "permalink": "/docs/5.2/tutorials/multi-datasets-one-filter",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "How to Make Filters From Multiple Datasets Work With One Filter Panel",
+  "sidebar": "version-5.2/tutorials",
+  "previous": {
+    "title": "How to Create a Chart in Qrvey Composer",
+    "permalink": "/docs/5.2/tutorials/create-charts"
+  }
+}

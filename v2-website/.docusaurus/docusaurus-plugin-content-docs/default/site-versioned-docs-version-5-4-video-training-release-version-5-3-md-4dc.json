@@ -1,0 +1,24 @@
+{
+  "unversionedId": "video-training/release/version-5.3",
+  "id": "version-5.4/video-training/release/version-5.3",
+  "isDocsHomePage": false,
+  "title": "Version 5.3",
+  "description": "Date and Numeric Formatting",
+  "source": "@site/versioned_docs/version-5.4/video-training/release/version-5.3.md",
+  "slug": "/video-training/release/version-5.3",
+  "permalink": "/docs/video-training/release/version-5.3",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Version 5.3",
+  "sidebar": "version-5.4/video-training",
+  "previous": {
+    "title": "Version 5.4",
+    "permalink": "/docs/video-training/release/version-5.4"
+  },
+  "next": {
+    "title": "Version 5.2",
+    "permalink": "/docs/video-training/release/version-5.2"
+  }
+}

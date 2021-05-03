@@ -1,0 +1,20 @@
+{
+  "unversionedId": "release-notes/known-issues",
+  "id": "version-5.0/release-notes/known-issues",
+  "isDocsHomePage": false,
+  "title": "Known Issues",
+  "description": "-   QV-12639 - Dates Swapped in Dataset Cards: When an old dataset is reloaded, the dates of Created and Last Loaded appear swapped.",
+  "source": "@site/versioned_docs/version-5.0/release-notes/known-issues.md",
+  "slug": "/release-notes/known-issues",
+  "permalink": "/docs/5.0/release-notes/known-issues",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Known Issues",
+  "sidebar": "version-5.0/release-notes",
+  "previous": {
+    "title": "Qrvey Version 3.10",
+    "permalink": "/docs/5.0/release-notes/release-jan-2019"
+  }
+}

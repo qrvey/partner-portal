@@ -1,0 +1,20 @@
+{
+  "unversionedId": "ui-docs/others/activity-log",
+  "id": "ui-docs/others/activity-log",
+  "isDocsHomePage": false,
+  "title": "Activity Log",
+  "description": "The Activity Log records all major activity in your user account across all of your applications. It logs events such as application, creation, deletion, and major changes, as well as sending or receiving applications. Click on the Activity Log tab in the top toolbar to access this feature.",
+  "source": "@site/../docs/ui-docs/others/activity-log.md",
+  "slug": "/ui-docs/others/activity-log",
+  "permalink": "/docs/next/ui-docs/others/activity-log",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Activity Log",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Sharing & Editing",
+    "permalink": "/docs/next/ui-docs/others/sharing-editing"
+  }
+}

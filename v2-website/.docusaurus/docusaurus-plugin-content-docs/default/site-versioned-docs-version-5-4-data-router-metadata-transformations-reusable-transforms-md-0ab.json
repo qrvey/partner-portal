@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/transformations/reusable-transforms",
+  "id": "version-5.4/data-router/Metadata/transformations/reusable-transforms",
+  "isDocsHomePage": false,
+  "title": "Transformation Groups",
+  "description": "Introduction",
+  "source": "@site/versioned_docs/version-5.4/data-router/Metadata/transformations/reusable-transforms.md",
+  "slug": "/data-router/Metadata/transformations/reusable-transforms",
+  "permalink": "/docs/data-router/Metadata/transformations/reusable-transforms",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Transformation Groups"
+}

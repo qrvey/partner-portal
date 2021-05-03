@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/DataLoading/loading-status",
+  "id": "version-5.3/data-router/DataLoading/loading-status",
+  "isDocsHomePage": false,
+  "title": "Loading Status",
+  "description": "Introduction",
+  "source": "@site/versioned_docs/version-5.3/data-router/DataLoading/loading-status.md",
+  "slug": "/data-router/DataLoading/loading-status",
+  "permalink": "/docs/5.3/data-router/DataLoading/loading-status",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Loading Status"
+}

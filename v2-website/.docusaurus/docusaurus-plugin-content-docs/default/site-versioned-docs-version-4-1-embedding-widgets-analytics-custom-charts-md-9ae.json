@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-custom-charts-core",
+  "id": "version-4.1/embedding/widgets/analytics/widget-custom-charts-core",
+  "isDocsHomePage": false,
+  "title": "Panels",
+  "description": "This document shows how to implement the custom chart panel.",
+  "source": "@site/versioned_docs/version-4.1/embedding/widgets/analytics/custom-charts.md",
+  "slug": "/embedding/widgets/analytics/widget-custom-charts-core",
+  "permalink": "/docs/4.1/embedding/widgets/analytics/widget-custom-charts-core",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Panels",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "Custom View",
+    "permalink": "/docs/4.1/embedding/widgets/analytics/widget-custom-view"
+  },
+  "next": {
+    "title": "Panel Builder",
+    "permalink": "/docs/4.1/embedding/widgets/analytics/widget-panel-builder"
+  }
+}

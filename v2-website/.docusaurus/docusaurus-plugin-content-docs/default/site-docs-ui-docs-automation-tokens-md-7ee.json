@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/automation/tokens",
+  "id": "ui-docs/automation/tokens",
+  "isDocsHomePage": false,
+  "title": "Tokens",
+  "description": "Tokens are parameters or variables that act as containers for data. There are three categories of Tokens available: System, Data, and User Defined. Tokens can be used across different contexts in the application.",
+  "source": "@site/../docs/ui-docs/automation/tokens.md",
+  "slug": "/ui-docs/automation/tokens",
+  "permalink": "/docs/next/ui-docs/automation/tokens",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Tokens",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Actions - Data",
+    "permalink": "/docs/next/ui-docs/automation/data-actions"
+  },
+  "next": {
+    "title": "Application Settings",
+    "permalink": "/docs/next/ui-docs/others/settings"
+  }
+}

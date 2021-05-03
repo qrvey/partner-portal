@@ -1,0 +1,24 @@
+{
+  "unversionedId": "release-notes/release-feb-2019",
+  "id": "release-notes/release-feb-2019",
+  "isDocsHomePage": false,
+  "title": "Qrvey Version 3.11",
+  "description": "Release date: 2019-02-28",
+  "source": "@site/../docs/release-notes/release-Feb-2019.md",
+  "slug": "/release-notes/release-feb-2019",
+  "permalink": "/docs/next/release-notes/release-feb-2019",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "February 2019",
+  "sidebar": "release-notes",
+  "previous": {
+    "title": "Qrvey Version 3.12",
+    "permalink": "/docs/next/release-notes/release-mar-2019"
+  },
+  "next": {
+    "title": "Qrvey Version 3.10",
+    "permalink": "/docs/next/release-notes/release-jan-2019"
+  }
+}

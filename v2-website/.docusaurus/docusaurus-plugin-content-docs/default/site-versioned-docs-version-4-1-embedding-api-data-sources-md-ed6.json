@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/api/api-data-sources",
+  "id": "version-4.1/embedding/api/api-data-sources",
+  "isDocsHomePage": false,
+  "title": "Data Sources API Reference",
+  "description": "Data Sources API references imply all the actions that can be made by developers to use all the data collections features available in the list below",
+  "source": "@site/versioned_docs/version-4.1/embedding/api/data-sources.md",
+  "slug": "/embedding/api/api-data-sources",
+  "permalink": "/docs/4.1/embedding/api/api-data-sources",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Sources API Reference",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "API Tutorial",
+    "permalink": "/docs/4.1/embedding/api/api-tutorial"
+  },
+  "next": {
+    "title": "Analytics API Reference",
+    "permalink": "/docs/4.1/embedding/api/api-analytics"
+  }
+}

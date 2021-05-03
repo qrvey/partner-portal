@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/automation/triggers",
+  "id": "ui-docs/automation/triggers",
+  "isDocsHomePage": false,
+  "title": "Triggers",
+  "description": "Triggers are the components that begin, i.e. initiate, a Flow. In this article, we will detail all of the trigger types in Qrvey and how to use them in your Flows. If you’re not yet familiar with the mechanics of a Flow, consult our Flow Overview article article.",
+  "source": "@site/../docs/ui-docs/automation/triggers.md",
+  "slug": "/ui-docs/automation/triggers",
+  "permalink": "/docs/next/ui-docs/automation/triggers",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Triggers",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Flow Overview",
+    "permalink": "/docs/next/ui-docs/automation/flows"
+  },
+  "next": {
+    "title": "Conditions",
+    "permalink": "/docs/next/ui-docs/automation/conditions"
+  }
+}

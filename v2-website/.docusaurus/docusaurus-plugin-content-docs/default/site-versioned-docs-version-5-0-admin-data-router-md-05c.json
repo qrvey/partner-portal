@@ -1,0 +1,15 @@
+{
+  "unversionedId": "admin/admin-sections-data-router",
+  "id": "version-5.0/admin/admin-sections-data-router",
+  "isDocsHomePage": false,
+  "title": "Data Router",
+  "description": "Data Router Console:",
+  "source": "@site/versioned_docs/version-5.0/admin/data-router.md",
+  "slug": "/admin/admin-sections-data-router",
+  "permalink": "/docs/5.0/admin/admin-sections-data-router",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Router"
+}

@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-filter-modal-page-builder",
+  "id": "version-5.1/embedding/widgets/analytics/widget-filter-modal-page-builder",
+  "isDocsHomePage": false,
+  "title": "Filter Modal - PB",
+  "description": "No Public Doc",
+  "source": "@site/versioned_docs/version-5.1/embedding/widgets/analytics/filter-modal-page-builder.md",
+  "slug": "/embedding/widgets/analytics/widget-filter-modal-page-builder",
+  "permalink": "/docs/5.1/embedding/widgets/analytics/widget-filter-modal-page-builder",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Filter Modal - PB"
+}

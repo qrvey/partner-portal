@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-panels",
+  "id": "version-5.3/embedding/widgets/analytics/widget-panels",
+  "isDocsHomePage": false,
+  "title": "Panels",
+  "description": "This document shows how to implement the custom chart panel widget inside Page Builder.",
+  "source": "@site/versioned_docs/version-5.3/embedding/widgets/analytics/hide-panels.md",
+  "slug": "/embedding/widgets/analytics/widget-panels",
+  "permalink": "/docs/5.3/embedding/widgets/analytics/widget-panels",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Panels"
+}

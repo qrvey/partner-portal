@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/basics/introduction",
+  "id": "ui-docs/basics/introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction to the UI",
+  "description": "In this document we’ll show you the basic features of the Qrvey Composer interface and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout:",
+  "source": "@site/../docs/ui-docs/basics/introduction.md",
+  "slug": "/ui-docs/basics/introduction",
+  "permalink": "/docs/next/ui-docs/basics/introduction",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Introduction to the UI",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Managing Your Profile",
+    "permalink": "/docs/next/ui-docs/basics/profile"
+  },
+  "next": {
+    "title": "What Is a Qrvey Application?",
+    "permalink": "/docs/next/ui-docs/basics/applications"
+  }
+}

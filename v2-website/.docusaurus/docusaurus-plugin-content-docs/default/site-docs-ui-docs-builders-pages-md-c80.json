@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/builders/pages",
+  "id": "ui-docs/builders/pages",
+  "isDocsHomePage": false,
+  "title": "Page Builder",
+  "description": "Page Builder makes it easy to combine multiple Qrvey Composer components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple pages into a complete information application by using navigation, which is discussed  in another article.",
+  "source": "@site/../docs/ui-docs/builders/pages.md",
+  "slug": "/ui-docs/builders/pages",
+  "permalink": "/docs/next/ui-docs/builders/pages",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Page Builder",
+  "sidebar": "ui-docs",
+  "previous": {
+    "title": "Report Builder",
+    "permalink": "/docs/next/ui-docs/builders/reports"
+  },
+  "next": {
+    "title": "Page Actions",
+    "permalink": "/docs/next/ui-docs/builders/pages_actions"
+  }
+}

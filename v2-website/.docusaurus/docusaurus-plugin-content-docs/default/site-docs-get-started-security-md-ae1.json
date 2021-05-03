@@ -1,0 +1,24 @@
+{
+  "unversionedId": "get-started/security",
+  "id": "get-started/security",
+  "isDocsHomePage": false,
+  "title": "Security",
+  "description": "AWS Account",
+  "source": "@site/../docs/get-started/security.md",
+  "slug": "/get-started/security",
+  "permalink": "/docs/next/get-started/security",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Security",
+  "sidebar": "get-started",
+  "previous": {
+    "title": "System Components",
+    "permalink": "/docs/next/get-started/system-components"
+  },
+  "next": {
+    "title": "User Roles",
+    "permalink": "/docs/next/get-started/user-roles"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/api/api-intro",
+  "id": "version-4.1/embedding/api/api-intro",
+  "isDocsHomePage": false,
+  "title": "Qrvey API Quick Start Guide",
+  "description": "Qrvey provides a comprehensive REST API that can be accessed via standard HTTP requests and responses (GET, POST, etc.). Developers may use a variety of programming languages and platforms, as most have built-in libraries for HTTP communication. You may use the Qrvey API in order to programmatically work with any of the core Qrvey application features for data collection, automation and analytics or when integrating Qrvey into your own applications.",
+  "source": "@site/versioned_docs/version-4.1/embedding/api/intro.md",
+  "slug": "/embedding/api/api-intro",
+  "permalink": "/docs/4.1/embedding/api/api-intro",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "API Start Guide",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "Widgets Quick Start Guide",
+    "permalink": "/docs/4.1/embedding/widgets/widget-intro"
+  },
+  "next": {
+    "title": "Web Forms",
+    "permalink": "/docs/4.1/embedding/widgets/data-sources/widget-webforms"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "unversionedId": "aws/connect-to-instance",
+  "id": "version-4.1/aws/connect-to-instance",
+  "isDocsHomePage": false,
+  "title": "Connecting to Secure RDS",
+  "description": "This document explains the steps you need to take if you want to securely access your AWS RDS instance to load data into the Qrvey Business Analytics platform.",
+  "source": "@site/versioned_docs/version-4.1/aws/connect-instance.md",
+  "slug": "/aws/connect-to-instance",
+  "permalink": "/docs/4.1/aws/connect-to-instance",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Connecting to Secure RDS"
+}

@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-filter-panel",
+  "id": "version-5.2/embedding/widgets/analytics/widget-filter-panel",
+  "isDocsHomePage": false,
+  "title": "Filter Panel",
+  "description": "This document explains how to implement the filter panel widget inside Qrvey Core platform.",
+  "source": "@site/versioned_docs/version-5.2/embedding/widgets/analytics/filter-panel.md",
+  "slug": "/embedding/widgets/analytics/widget-filter-panel",
+  "permalink": "/docs/5.2/embedding/widgets/analytics/widget-filter-panel",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Filter Panel"
+}

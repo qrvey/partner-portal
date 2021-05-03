@@ -1,0 +1,24 @@
+{
+  "unversionedId": "get-started/managing-aws-cluster",
+  "id": "get-started/managing-aws-cluster",
+  "isDocsHomePage": false,
+  "title": "Cluster Management",
+  "description": "This document explains how to monitor and resize an AWS Elasticsearch Service cluster based on your needs and requirements.",
+  "source": "@site/../docs/get-started/managing-aws-cluster.md",
+  "slug": "/get-started/managing-aws-cluster",
+  "permalink": "/docs/next/get-started/managing-aws-cluster",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Cluster Management",
+  "sidebar": "get-started",
+  "previous": {
+    "title": "AWS Services Used by Qrvey",
+    "permalink": "/docs/next/get-started/aws-services"
+  },
+  "next": {
+    "title": "Connecting to Secure RDS",
+    "permalink": "/docs/next/aws/connect-to-instance"
+  }
+}

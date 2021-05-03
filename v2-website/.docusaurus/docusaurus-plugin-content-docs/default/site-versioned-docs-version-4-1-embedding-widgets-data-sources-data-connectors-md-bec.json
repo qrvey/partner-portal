@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/data-sources/widget-dataconnectors",
+  "id": "version-4.1/embedding/widgets/data-sources/widget-dataconnectors",
+  "isDocsHomePage": false,
+  "title": "Data Connectors",
+  "description": "The connector widget is a powerful and effective tool to allow you embed the connectors on your own web application. This widget allows your users to create and edit MySQL, MS SQL, Oracle, Aurora and Postgres connectors.",
+  "source": "@site/versioned_docs/version-4.1/embedding/widgets/data-sources/data-connectors.md",
+  "slug": "/embedding/widgets/data-sources/widget-dataconnectors",
+  "permalink": "/docs/4.1/embedding/widgets/data-sources/widget-dataconnectors",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Connectors",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "Web Forms",
+    "permalink": "/docs/4.1/embedding/widgets/data-sources/widget-webforms"
+  },
+  "next": {
+    "title": "Data Links",
+    "permalink": "/docs/4.1/embedding/widgets/data-sources/widget-datalinks"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/automation/conditions",
+  "id": "version-4.1/ui-docs/automation/conditions",
+  "isDocsHomePage": false,
+  "title": "Conditions",
+  "description": "Conditions are components that can be added to Triggers to test if certain filter criteria are met. Depending on the test results some of the following actions may or may not be executed. This allows for refining trigger conditions, as well as for branching within Flows. In this article, we’ll review what conditions are and how you can deploy them in your Flows to control actions.",
+  "source": "@site/versioned_docs/version-4.1/ui-docs/automation/conditions.md",
+  "slug": "/ui-docs/automation/conditions",
+  "permalink": "/docs/4.1/ui-docs/automation/conditions",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Conditions",
+  "sidebar": "version-4.1/ui-docs",
+  "previous": {
+    "title": "Triggers",
+    "permalink": "/docs/4.1/ui-docs/automation/triggers"
+  },
+  "next": {
+    "title": "Actions - Send",
+    "permalink": "/docs/4.1/ui-docs/automation/send-actions"
+  }
+}

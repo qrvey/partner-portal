@@ -1,0 +1,20 @@
+{
+  "unversionedId": "get-started/get-started-intro",
+  "id": "version-4.1/get-started/get-started-intro",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "Qrvey is an all-in-one, self-service data platform that combines analytics, data collection, and automation  technologies.",
+  "source": "@site/versioned_docs/version-4.1/get-started/intro.md",
+  "slug": "/get-started/get-started-intro",
+  "permalink": "/docs/4.1/get-started/get-started-intro",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "sidebar": "version-4.1/get-started",
+  "next": {
+    "title": "Users Roles",
+    "permalink": "/docs/4.1/business-analytics/business-users"
+  }
+}

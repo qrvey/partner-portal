@@ -1,0 +1,20 @@
+{
+  "unversionedId": "video-training/admin-center/intro-admin-center",
+  "id": "version-4.1/video-training/admin-center/intro-admin-center",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "Admin Center 01",
+  "source": "@site/versioned_docs/version-4.1/video-training/admin-center/intro.md",
+  "slug": "/video-training/admin-center/intro-admin-center",
+  "permalink": "/docs/4.1/video-training/admin-center/intro-admin-center",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "sidebar": "version-4.1/video-training",
+  "previous": {
+    "title": "Automation",
+    "permalink": "/docs/4.1/video-training/analytics/automation"
+  }
+}

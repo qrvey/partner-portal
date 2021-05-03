@@ -1,0 +1,15 @@
+{
+  "unversionedId": "video-training/datarouter/data",
+  "id": "version-5.0/video-training/datarouter/data",
+  "isDocsHomePage": false,
+  "title": "Data",
+  "description": "Dat Router 04",
+  "source": "@site/versioned_docs/version-5.0/video-training/datarouter/data.md",
+  "slug": "/video-training/datarouter/data",
+  "permalink": "/docs/5.0/video-training/datarouter/data",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data"
+}

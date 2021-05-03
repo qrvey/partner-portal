@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/DataLoading/connectors-intro",
+  "id": "version-5.0/data-router/DataLoading/connectors-intro",
+  "isDocsHomePage": false,
+  "title": "Connectors Overview",
+  "description": "lorem ipsum",
+  "source": "@site/versioned_docs/version-5.0/data-router/DataLoading/connectors-intro.md",
+  "slug": "/data-router/DataLoading/connectors-intro",
+  "permalink": "/docs/5.0/data-router/DataLoading/connectors-intro",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Connectors"
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "get-started/system-components",
+  "id": "version-5.0/get-started/system-components",
+  "isDocsHomePage": false,
+  "title": "System Components",
+  "description": "Qrvey’s analytics platform comprises 4 major components:",
+  "source": "@site/versioned_docs/version-5.0/get-started/system-components.md",
+  "slug": "/get-started/system-components",
+  "permalink": "/docs/5.0/get-started/system-components",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "System Components",
+  "sidebar": "version-5.0/get-started",
+  "previous": {
+    "title": "Connecting to Secure RDS",
+    "permalink": "/docs/5.0/aws/connect-to-instance"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/docs/5.0/get-started/security"
+  }
+}

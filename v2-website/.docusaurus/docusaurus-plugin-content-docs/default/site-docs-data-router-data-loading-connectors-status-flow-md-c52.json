@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/DataLoading/connectors-status-flow",
+  "id": "data-router/DataLoading/connectors-status-flow",
+  "isDocsHomePage": false,
+  "title": "Connectors Overview",
+  "description": "When using connectors, they will go through various states. These will indicate the progress of the whole process.",
+  "source": "@site/../docs/data-router/DataLoading/connectors-status-flow.md",
+  "slug": "/data-router/DataLoading/connectors-status-flow",
+  "permalink": "/docs/next/data-router/DataLoading/connectors-status-flow",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Connectors"
+}

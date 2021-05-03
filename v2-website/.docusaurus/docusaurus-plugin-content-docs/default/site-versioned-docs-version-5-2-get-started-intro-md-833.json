@@ -1,0 +1,20 @@
+{
+  "unversionedId": "get-started/get-started-intro",
+  "id": "version-5.2/get-started/get-started-intro",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "Welcome to Qrvey",
+  "source": "@site/versioned_docs/version-5.2/get-started/intro.md",
+  "slug": "/get-started/get-started-intro",
+  "permalink": "/docs/5.2/get-started/get-started-intro",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "sidebar": "version-5.2/get-started",
+  "next": {
+    "title": "Prerequisites for Installation",
+    "permalink": "/docs/5.2/get-started/prerequisites-for-installation"
+  }
+}

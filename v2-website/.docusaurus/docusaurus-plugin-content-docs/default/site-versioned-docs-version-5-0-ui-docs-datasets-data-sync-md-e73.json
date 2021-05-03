@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/datasets/data-sync",
+  "id": "version-5.0/ui-docs/datasets/data-sync",
+  "isDocsHomePage": false,
+  "title": "Data Sync",
+  "description": "Data Sync helps you keep your data up-to-date and synchronized with your Data Sources. This can be done on a schedule or automatically triggered when Datasets that are used as the data sources are reloaded (cascade synchronization). You can access this feature by going to the Data Sync tab on the Dataset Page.",
+  "source": "@site/versioned_docs/version-5.0/ui-docs/datasets/data-sync.md",
+  "slug": "/ui-docs/datasets/data-sync",
+  "permalink": "/docs/5.0/ui-docs/datasets/data-sync",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data sync",
+  "sidebar": "version-5.0/ui-docs",
+  "previous": {
+    "title": "Datasets",
+    "permalink": "/docs/5.0/ui-docs/datasets/datasets"
+  },
+  "next": {
+    "title": "Data Joins",
+    "permalink": "/docs/5.0/ui-docs/datasets/joins"
+  }
+}

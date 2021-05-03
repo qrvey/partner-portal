@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/data-sources/widget-webforms",
+  "id": "version-5.3/embedding/widgets/data-sources/widget-webforms",
+  "isDocsHomePage": false,
+  "title": "Web Form Design",
+  "description": "The Web Form Design widget is a powerful and effective tool that allows you to embed the Web Form design in your own web application. We provide three different types of Web Forms, Survey, Form and Quiz.",
+  "source": "@site/versioned_docs/version-5.3/embedding/widgets/data-sources/web-forms.md",
+  "slug": "/embedding/widgets/data-sources/widget-webforms",
+  "permalink": "/docs/5.3/embedding/widgets/data-sources/widget-webforms",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Web Form Design",
+  "sidebar": "version-5.3/embedding",
+  "previous": {
+    "title": "Chart Builder Widget",
+    "permalink": "/docs/5.3/embedding/widgets/app-building/chart-builder"
+  },
+  "next": {
+    "title": "Web Form - End User",
+    "permalink": "/docs/5.3/embedding/widgets/data-sources/web-form-end-user"
+  }
+}

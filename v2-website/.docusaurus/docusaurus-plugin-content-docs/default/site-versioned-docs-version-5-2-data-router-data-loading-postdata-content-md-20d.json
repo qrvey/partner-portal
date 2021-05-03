@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/DataLoading/postdata-content",
+  "id": "version-5.2/data-router/DataLoading/postdata-content",
+  "isDocsHomePage": false,
+  "title": "Loading Data With Postdata",
+  "description": "Introduction",
+  "source": "@site/versioned_docs/version-5.2/data-router/DataLoading/postdata-content.md",
+  "slug": "/data-router/DataLoading/postdata-content",
+  "permalink": "/docs/5.2/data-router/DataLoading/postdata-content",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Loading Data With Postdata"
+}

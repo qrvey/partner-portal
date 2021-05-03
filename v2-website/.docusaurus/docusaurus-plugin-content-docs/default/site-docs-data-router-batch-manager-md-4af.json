@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/batch-manager",
+  "id": "data-router/batch-manager",
+  "isDocsHomePage": false,
+  "title": "Batch Manager",
+  "description": "Introduction",
+  "source": "@site/../docs/data-router/batch-manager.md",
+  "slug": "/data-router/batch-manager",
+  "permalink": "/docs/next/data-router/batch-manager",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Batch Manager"
+}

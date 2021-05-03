@@ -1,0 +1,24 @@
+{
+  "unversionedId": "admin/record-level-security",
+  "id": "admin/record-level-security",
+  "isDocsHomePage": false,
+  "title": "Record Level Security",
+  "description": "Overview",
+  "source": "@site/../docs/admin/record-level-security.md",
+  "slug": "/admin/record-level-security",
+  "permalink": "/docs/next/admin/record-level-security",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Record Level Security",
+  "sidebar": "admin",
+  "previous": {
+    "title": "Deployments",
+    "permalink": "/docs/next/admin/admin-sections-deployments"
+  },
+  "next": {
+    "title": "Metadata Builder",
+    "permalink": "/docs/next/admin/metadata-builder"
+  }
+}

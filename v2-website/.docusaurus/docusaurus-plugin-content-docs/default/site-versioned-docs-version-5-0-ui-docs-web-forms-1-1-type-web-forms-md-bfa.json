@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/web-forms/type-web-forms",
+  "id": "version-5.0/ui-docs/web-forms/type-web-forms",
+  "isDocsHomePage": false,
+  "title": "Types of Web Forms",
+  "description": "Qrvey has three different types of web forms available for collecting and updating information. In this article, we’ll briefly look at each type to provide a brief overview and outline when best to use them.",
+  "source": "@site/versioned_docs/version-5.0/ui-docs/web-forms/1.1_type-web-forms.md",
+  "slug": "/ui-docs/web-forms/type-web-forms",
+  "permalink": "/docs/5.0/ui-docs/web-forms/type-web-forms",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Types of Web Forms",
+  "sidebar": "version-5.0/ui-docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/5.0/ui-docs/web-forms/web-forms"
+  },
+  "next": {
+    "title": "Building a Web Form",
+    "permalink": "/docs/5.0/ui-docs/web-forms/create-web-forms"
+  }
+}

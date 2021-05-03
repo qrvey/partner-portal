@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/api/api-analytics",
+  "id": "version-5.1/embedding/api/api-analytics",
+  "isDocsHomePage": false,
+  "title": "Analytics API Reference",
+  "description": "Analytics API references imply all the actions that can be made by developers to use all the Analytics features available in the list below",
+  "source": "@site/versioned_docs/version-5.1/embedding/api/analytics.md",
+  "slug": "/embedding/api/api-analytics",
+  "permalink": "/docs/5.1/embedding/api/api-analytics",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Analytics API Reference"
+}

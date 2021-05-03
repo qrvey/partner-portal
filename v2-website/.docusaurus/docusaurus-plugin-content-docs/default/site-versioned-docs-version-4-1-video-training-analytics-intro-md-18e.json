@@ -1,0 +1,20 @@
+{
+  "unversionedId": "video-training/analytics/intro-analytics-apps",
+  "id": "version-4.1/video-training/analytics/intro-analytics-apps",
+  "isDocsHomePage": false,
+  "title": "Intro to Analytic Apps",
+  "description": "Analytics 01",
+  "source": "@site/versioned_docs/version-4.1/video-training/analytics/intro.md",
+  "slug": "/video-training/analytics/intro-analytics-apps",
+  "permalink": "/docs/4.1/video-training/analytics/intro-analytics-apps",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Intro to Analytic Apps",
+  "sidebar": "version-4.1/video-training",
+  "next": {
+    "title": "Datasets",
+    "permalink": "/docs/4.1/video-training/analytics/datasets"
+  }
+}

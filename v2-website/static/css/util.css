@@ -1,0 +1,129 @@
+:root{
+    --primary-font:'Montserrat', sans-serif;
+    --primary-color: #FF5400;
+}
+.center {
+    text-align: center !important;
+    justify-content: center;
+}
+.just-xs {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.pointer {
+    cursor: pointer;
+}
+.just-xl {
+    display: none;
+}
+.hidden-xl {
+    display: block;
+}
+.just-tablet {
+    display: none;
+}
+.just-tablet-xl {
+    display: none !important;
+}
+.form-control {
+    box-shadow: none !important;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    -webkit-appearance: none;
+}
+input {
+    -webkit-appearance: none;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+.full-width {
+    width: 100%;
+}
+.section-first {
+    padding-top: 60px;
+}
+.primary-button {
+    height: 40px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: auto;
+    max-width: 300px;
+    padding: 5px 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+}
+.primary-button:hover{
+    text-decoration: none;
+    color: white !important;
+    background: var(--primary-color) !important;
+}
+.primary-button:focus{
+    outline:0;
+}
+.primary-color {
+    color: var(--primary-color) !important;
+}
+.gray-background{
+    background-color: #FBFBFB;
+}
+@media screen and (min-width: 768px) {
+    .section-first {
+        padding-top: 80px;
+   }
+}
+.flex-container {
+    padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   }
+}
+.flex-container .full-row {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .just-xs {
+        display: none;
+   }
+    .just-tablet {
+        display: block;
+   }
+}
+/* Desktop version */
+@media screen and (min-width: 1160px) {
+    .hide-xl {
+        display: none !important;
+   }
+    .just-tablet-xl {
+        display: none !important;
+   }
+    .just-tablet {
+        display: none;
+   }
+    .just-xl {
+        display: block;
+   }
+    .hidden-xl {
+        display: none;
+   }
+}
+@media screen and (min-width: 1160px) {
+    .align-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   }
+}

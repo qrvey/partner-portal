@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/app-building/widget-report-builder",
+  "id": "version-5.4/embedding/widgets/app-building/widget-report-builder",
+  "isDocsHomePage": false,
+  "title": "Report Builder",
+  "description": "The Report Builder widget allows users to create, edit, and delete report definitions for an application.",
+  "source": "@site/versioned_docs/version-5.4/embedding/widgets/app-building/report-builder.md",
+  "slug": "/embedding/widgets/app-building/widget-report-builder",
+  "permalink": "/docs/embedding/widgets/app-building/widget-report-builder",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Report Builder",
+  "sidebar": "version-5.4/embedding",
+  "previous": {
+    "title": "Page Builder",
+    "permalink": "/docs/embedding/widgets/app-building/widget-page-builder"
+  },
+  "next": {
+    "title": "Analytic Suite Widget",
+    "permalink": "/docs/embedding/widgets/analytics/analytic-suite"
+  }
+}

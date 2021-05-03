@@ -1,0 +1,24 @@
+{
+  "unversionedId": "faqs/aws-faqs",
+  "id": "version-5.1/faqs/aws-faqs",
+  "isDocsHomePage": false,
+  "title": "AWS FAQs",
+  "description": "Q: What are the options and correct process of connecting to an AWS RDS?",
+  "source": "@site/versioned_docs/version-5.1/faqs/AWS-faqs.md",
+  "slug": "/faqs/aws-faqs",
+  "permalink": "/docs/5.1/faqs/aws-faqs",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "AWS FAQs",
+  "sidebar": "version-5.1/faqs",
+  "previous": {
+    "title": "General",
+    "permalink": "/docs/5.1/faqs/faqs-intro"
+  },
+  "next": {
+    "title": "Data Security FAQs",
+    "permalink": "/docs/5.1/faqs/data-security-faqs"
+  }
+}

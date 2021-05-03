@@ -1,0 +1,15 @@
+{
+  "unversionedId": "admin/metadata-builder",
+  "id": "version-4.1/admin/metadata-builder",
+  "isDocsHomePage": false,
+  "title": "Metadata Builder",
+  "description": "This is the place where Admins can create and manage everything related to Metadata, all from data mapping to complex transformations.",
+  "source": "@site/versioned_docs/version-4.1/admin/metadata-builder.md",
+  "slug": "/admin/metadata-builder",
+  "permalink": "/docs/4.1/admin/metadata-builder",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Metadata Builder"
+}
