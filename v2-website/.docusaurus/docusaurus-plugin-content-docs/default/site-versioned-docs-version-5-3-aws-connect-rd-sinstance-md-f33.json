@@ -8,8 +8,5 @@
   "slug": "/aws/connect-to-RDS-instance",
   "permalink": "/docs/5.3/aws/connect-to-RDS-instance",
   "version": "5.3",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "Connecting Qrvey Platform to Your Secure RDS Instance"
 }

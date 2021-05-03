@@ -8,9 +8,6 @@
   "slug": "/aws/connect-to-instance",
   "permalink": "/docs/5.3/aws/connect-to-instance",
   "version": "5.3",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "Connecting to Secure RDS",
   "sidebar": "version-5.3/get-started",
   "previous": {

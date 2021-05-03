@@ -8,9 +8,6 @@
   "slug": "/data-router/DataRules/data-router-es-lookup",
   "permalink": "/docs/4.1/data-router/DataRules/data-router-es-lookup",
   "version": "4.1",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "ES Query Lookup",
   "sidebar": "version-4.1/embedding",
   "previous": {

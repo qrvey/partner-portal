@@ -8,9 +8,6 @@
   "slug": "/get-started/managing-aws-cluster",
   "permalink": "/docs/5.2/get-started/managing-aws-cluster",
   "version": "5.2",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "Cluster Management",
   "sidebar": "version-5.2/get-started",
   "previous": {

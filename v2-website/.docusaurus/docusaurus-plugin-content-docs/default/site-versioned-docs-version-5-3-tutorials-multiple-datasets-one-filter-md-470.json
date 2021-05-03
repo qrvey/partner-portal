@@ -8,9 +8,6 @@
   "slug": "/tutorials/multi-datasets-one-filter",
   "permalink": "/docs/5.3/tutorials/multi-datasets-one-filter",
   "version": "5.3",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "How to Make Filters From Multiple Datasets Work With One Filter Panel",
   "sidebar": "version-5.3/tutorials",
   "previous": {

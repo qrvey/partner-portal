@@ -8,9 +8,6 @@
   "slug": "/embedding/api/api-data-sources",
   "permalink": "/docs/4.1/embedding/api/api-data-sources",
   "version": "4.1",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "Data Sources API Reference",
   "sidebar": "version-4.1/embedding",
   "previous": {

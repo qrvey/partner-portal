@@ -8,9 +8,6 @@
   "slug": "/admin/admin-sections-platform",
   "permalink": "/docs/5.2/admin/admin-sections-platform",
   "version": "5.2",
-  "lastUpdatedBy": "Author",
-  "lastUpdatedAt": 1539502055,
-  "formattedLastUpdatedAt": "10/14/2018",
   "sidebar_label": "Administering Qrvey Composer",
   "sidebar": "version-5.2/admin",
   "previous": {
