@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/app-building/chart-builder",
+  "id": "version-5.4/embedding/widgets/app-building/chart-builder",
+  "isDocsHomePage": false,
+  "title": "Chart Builder Widget",
+  "description": "This widget allows the user to display the tool for building charts, through a configuration object where properties are set to define some options and behaviors for the panel.",
+  "source": "@site/versioned_docs/version-5.4/embedding/widgets/app-building/chart-builder-widget.md",
+  "slug": "/embedding/widgets/app-building/chart-builder",
+  "permalink": "/docs/embedding/widgets/app-building/chart-builder",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Chart Builder Widget",
+  "sidebar": "version-5.4/embedding",
+  "previous": {
+    "title": "Single Panel Widget",
+    "permalink": "/docs/embedding/widgets/analytics/single-panel"
+  },
+  "next": {
+    "title": "Web Form Design",
+    "permalink": "/docs/embedding/widgets/data-sources/widget-webforms"
+  }
+}

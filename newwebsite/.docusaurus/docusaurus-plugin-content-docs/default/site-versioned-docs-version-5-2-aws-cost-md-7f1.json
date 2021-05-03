@@ -1,0 +1,15 @@
+{
+  "unversionedId": "aws/setup-cost",
+  "id": "version-5.2/aws/setup-cost",
+  "isDocsHomePage": false,
+  "title": "Cost",
+  "description": "Qrvey Platform is 100% cloud native built with multiple AWS services. Each of these services have their own pricing model. Here is a list of the main components to give you an idea of what you can expect in your AWS bill. Most of these services have a free tier",
+  "source": "@site/versioned_docs/version-5.2/aws/cost.md",
+  "slug": "/aws/setup-cost",
+  "permalink": "/docs/5.2/aws/setup-cost",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Cost"
+}

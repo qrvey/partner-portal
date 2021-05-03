@@ -1,0 +1,15 @@
+{
+  "unversionedId": "ui-docs/web-forms/complex-data",
+  "id": "version-4.1/ui-docs/web-forms/complex-data",
+  "isDocsHomePage": false,
+  "title": "Complex Data",
+  "description": "For data analysis, we have different options that allow users to work with more complex data types, such as images, long texts or files, by making additional metadata available as column values which can be used in chart creation.",
+  "source": "@site/versioned_docs/version-4.1/ui-docs/web-forms/1.2.2_complex-data.md",
+  "slug": "/ui-docs/web-forms/complex-data",
+  "permalink": "/docs/4.1/ui-docs/web-forms/complex-data",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Complex Data"
+}

@@ -1,0 +1,15 @@
+{
+  "unversionedId": "release-notes/release-mar-2020",
+  "id": "version-4.1/release-notes/release-mar-2020",
+  "isDocsHomePage": false,
+  "title": "Qrvey Version 5.0",
+  "description": "Qrvey 5.0 - 2020-03-31",
+  "source": "@site/versioned_docs/version-4.1/release-notes/release_mar_2020.md",
+  "slug": "/release-notes/release-mar-2020",
+  "permalink": "/docs/4.1/release-notes/release-mar-2020",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "March 2020"
+}

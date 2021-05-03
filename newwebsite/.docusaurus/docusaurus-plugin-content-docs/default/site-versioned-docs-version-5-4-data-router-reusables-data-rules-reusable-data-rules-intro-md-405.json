@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/ReusablesDataRules/reusable-data-rules-intro",
+  "id": "version-5.4/data-router/ReusablesDataRules/reusable-data-rules-intro",
+  "isDocsHomePage": false,
+  "title": "Overview",
+  "description": "This document is under construction.",
+  "source": "@site/versioned_docs/version-5.4/data-router/ReusablesDataRules/reusable-data-rules-intro.md",
+  "slug": "/data-router/ReusablesDataRules/reusable-data-rules-intro",
+  "permalink": "/docs/data-router/ReusablesDataRules/reusable-data-rules-intro",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Reusable Data Rules Overview"
+}

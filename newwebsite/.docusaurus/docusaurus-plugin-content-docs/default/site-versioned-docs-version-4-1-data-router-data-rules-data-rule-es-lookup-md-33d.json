@@ -1,0 +1,24 @@
+{
+  "unversionedId": "data-router/DataRules/data-router-es-lookup",
+  "id": "version-4.1/data-router/DataRules/data-router-es-lookup",
+  "isDocsHomePage": false,
+  "title": "Elasticsearch Query Lookup",
+  "description": "The ES Query Lookup Data Rule, is a special feature that will let you perform a query on a different Elasticsearch index while uploading data. You could add sorting or aggregates to the result of the query.",
+  "source": "@site/versioned_docs/version-4.1/data-router/DataRules/data-rule-es-lookup.md",
+  "slug": "/data-router/DataRules/data-router-es-lookup",
+  "permalink": "/docs/4.1/data-router/DataRules/data-router-es-lookup",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "ES Query Lookup",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "Array Lookup",
+    "permalink": "/docs/4.1/data-router/DataRules/data-router-array-lookup"
+  },
+  "next": {
+    "title": "Flat Array",
+    "permalink": "/docs/4.1/data-router/DataRules/data-router-flatArray"
+  }
+}

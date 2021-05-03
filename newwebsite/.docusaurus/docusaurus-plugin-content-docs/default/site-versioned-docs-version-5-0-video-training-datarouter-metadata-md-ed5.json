@@ -1,0 +1,15 @@
+{
+  "unversionedId": "video-training/datarouter/metadata",
+  "id": "version-5.0/video-training/datarouter/metadata",
+  "isDocsHomePage": false,
+  "title": "Metadata",
+  "description": "Dat Router 03",
+  "source": "@site/versioned_docs/version-5.0/video-training/datarouter/metadata.md",
+  "slug": "/video-training/datarouter/metadata",
+  "permalink": "/docs/5.0/video-training/datarouter/metadata",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Metadata"
+}

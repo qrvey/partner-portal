@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/metadata-intro",
+  "id": "data-router/Metadata/metadata-intro",
+  "isDocsHomePage": false,
+  "title": "Metadata Schema",
+  "description": "Introduction",
+  "source": "@site/../docs/data-router/Metadata/metadata-intro.md",
+  "slug": "/data-router/Metadata/metadata-intro",
+  "permalink": "/docs/next/data-router/Metadata/metadata-intro",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Metadata Schema"
+}

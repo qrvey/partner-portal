@@ -1,0 +1,24 @@
+{
+  "unversionedId": "admin/admin-sections-platform",
+  "id": "admin/admin-sections-platform",
+  "isDocsHomePage": false,
+  "title": "Administering Qrvey Composer",
+  "description": "Inside the Admin Center Application, there are some sections related to the administration of an instance of Qrvey Composer. These sections are:",
+  "source": "@site/../docs/admin/admin-qrvey-console.md",
+  "slug": "/admin/admin-sections-platform",
+  "permalink": "/docs/next/admin/admin-sections-platform",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Administering Qrvey Composer",
+  "sidebar": "admin",
+  "previous": {
+    "title": "Admin User Management",
+    "permalink": "/docs/next/admin/admin-managing-users"
+  },
+  "next": {
+    "title": "Deployments",
+    "permalink": "/docs/next/admin/admin-sections-deployments"
+  }
+}

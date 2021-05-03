@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/automation/data-actions",
+  "id": "version-5.4/ui-docs/automation/data-actions",
+  "isDocsHomePage": false,
+  "title": "Actions - Data",
+  "description": "In this article, we’ll review all of the Flow actions available under Data Actions. In general, “Record” functions are used for web forms and uploaded CSV  datasets, while “Data” functions work with connected datasources such as Elasticsearch, SQL and Oracle databases.",
+  "source": "@site/versioned_docs/version-5.4/ui-docs/automation/data-actions.md",
+  "slug": "/ui-docs/automation/data-actions",
+  "permalink": "/docs/ui-docs/automation/data-actions",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Actions - Data",
+  "sidebar": "version-5.4/ui-docs",
+  "previous": {
+    "title": "Actions - Send",
+    "permalink": "/docs/ui-docs/automation/send-actions"
+  },
+  "next": {
+    "title": "Tokens",
+    "permalink": "/docs/ui-docs/automation/tokens"
+  }
+}

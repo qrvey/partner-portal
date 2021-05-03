@@ -1,0 +1,24 @@
+{
+  "unversionedId": "video-training/analytics/analytic-views",
+  "id": "version-5.2/video-training/analytics/analytic-views",
+  "isDocsHomePage": false,
+  "title": "Analytic Views",
+  "description": "Analytics 03",
+  "source": "@site/versioned_docs/version-5.2/video-training/analytics/analytics-views.md",
+  "slug": "/video-training/analytics/analytic-views",
+  "permalink": "/docs/5.2/video-training/analytics/analytic-views",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Analytic Views",
+  "sidebar": "version-5.2/video-training",
+  "previous": {
+    "title": "Datasets",
+    "permalink": "/docs/5.2/video-training/analytics/datasets"
+  },
+  "next": {
+    "title": "Reports and Pages",
+    "permalink": "/docs/5.2/video-training/analytics/reports-pages"
+  }
+}

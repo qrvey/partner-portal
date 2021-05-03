@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/datasets/elasticsearch",
+  "id": "version-4.1/ui-docs/datasets/elasticsearch",
+  "isDocsHomePage": false,
+  "title": "Elasticsearch Connections",
+  "description": "Elasticsearch is a highly-scalable cloud database provided by Amazon Web Services. In this article, we’ll outline the steps for connecting to Elasticsearch and how to use it within Qrvey Composer.",
+  "source": "@site/versioned_docs/version-4.1/ui-docs/datasets/elasticsearch.md",
+  "slug": "/ui-docs/datasets/elasticsearch",
+  "permalink": "/docs/4.1/ui-docs/datasets/elasticsearch",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Elasticsearch Connections",
+  "sidebar": "version-4.1/ui-docs",
+  "previous": {
+    "title": "Database Connections",
+    "permalink": "/docs/4.1/ui-docs/datasets/databases"
+  },
+  "next": {
+    "title": "CSV Uploads",
+    "permalink": "/docs/4.1/ui-docs/datasets/csv"
+  }
+}

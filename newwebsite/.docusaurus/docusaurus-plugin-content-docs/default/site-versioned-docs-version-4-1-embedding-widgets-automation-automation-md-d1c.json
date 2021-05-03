@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/widgets/automation/widget-automation",
+  "id": "version-4.1/embedding/widgets/automation/widget-automation",
+  "isDocsHomePage": false,
+  "title": "Automation",
+  "description": "The Workflows widget allows users to create, edit and delete workflow definitions.",
+  "source": "@site/versioned_docs/version-4.1/embedding/widgets/automation/automation.md",
+  "slug": "/embedding/widgets/automation/widget-automation",
+  "permalink": "/docs/4.1/embedding/widgets/automation/widget-automation",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Automation",
+  "sidebar": "version-4.1/embedding",
+  "previous": {
+    "title": "User Management",
+    "permalink": "/docs/4.1/embedding/widgets/app-building/widget-user-management"
+  },
+  "next": {
+    "title": "Tokens Manager",
+    "permalink": "/docs/4.1/embedding/widgets/automation/widget-tokens-manager"
+  }
+}

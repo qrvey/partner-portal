@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/web-forms/branching",
+  "id": "version-5.3/ui-docs/web-forms/branching",
+  "isDocsHomePage": false,
+  "title": "Branching",
+  "description": "Branching is a powerful feature that allows you to ask follow-up questions based on the respondent's answer to the previous question.",
+  "source": "@site/versioned_docs/version-5.3/ui-docs/web-forms/1.2.2_branching.md",
+  "slug": "/ui-docs/web-forms/branching",
+  "permalink": "/docs/5.3/ui-docs/web-forms/branching",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Branching",
+  "sidebar": "version-5.3/ui-docs",
+  "previous": {
+    "title": "Complex Data",
+    "permalink": "/docs/5.3/ui-docs/web-forms/complex-data"
+  },
+  "next": {
+    "title": "Lookups",
+    "permalink": "/docs/5.3/ui-docs/web-forms/lookup"
+  }
+}

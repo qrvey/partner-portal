@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/others/sending",
+  "id": "version-5.1/ui-docs/others/sending",
+  "isDocsHomePage": false,
+  "title": "Sending Applications",
+  "description": "You can package up your entire application, including any data you’ve added or collected, and send it to another Qrvey user so that they can either use the app themselves or build upon it.",
+  "source": "@site/versioned_docs/version-5.1/ui-docs/others/sending.md",
+  "slug": "/ui-docs/others/sending",
+  "permalink": "/docs/5.1/ui-docs/others/sending",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Sending Applications",
+  "sidebar": "version-5.1/ui-docs",
+  "previous": {
+    "title": "Application Settings",
+    "permalink": "/docs/5.1/ui-docs/others/settings"
+  },
+  "next": {
+    "title": "Sharing & Editing",
+    "permalink": "/docs/5.1/ui-docs/others/sharing-editing"
+  }
+}

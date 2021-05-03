@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/app-building/widget-user-management",
+  "id": "version-5.3/embedding/widgets/app-building/widget-user-management",
+  "isDocsHomePage": false,
+  "title": "User Management",
+  "description": "The User Management widget allows authorised admins to create and modify user accounts for a deployment.",
+  "source": "@site/versioned_docs/version-5.3/embedding/widgets/app-building/user-management.md",
+  "slug": "/embedding/widgets/app-building/widget-user-management",
+  "permalink": "/docs/5.3/embedding/widgets/app-building/widget-user-management",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "User Management"
+}

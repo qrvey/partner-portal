@@ -1,0 +1,15 @@
+{
+  "unversionedId": "admin/admin-data",
+  "id": "version-5.3/admin/admin-data",
+  "isDocsHomePage": false,
+  "title": "Data",
+  "description": "Connectors",
+  "source": "@site/versioned_docs/version-5.3/admin/data-console.md",
+  "slug": "/admin/admin-data",
+  "permalink": "/docs/5.3/admin/admin-data",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data"
+}

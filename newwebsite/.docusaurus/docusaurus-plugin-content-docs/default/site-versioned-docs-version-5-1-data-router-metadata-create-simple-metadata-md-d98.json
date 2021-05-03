@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/simple-metadata",
+  "id": "version-5.1/data-router/Metadata/simple-metadata",
+  "isDocsHomePage": false,
+  "title": "Metadata Quick Start Guide",
+  "description": "Metadata Structure",
+  "source": "@site/versioned_docs/version-5.1/data-router/Metadata/create-simple-metadata.md",
+  "slug": "/data-router/Metadata/simple-metadata",
+  "permalink": "/docs/5.1/data-router/Metadata/simple-metadata",
+  "version": "5.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Quick Start Guide"
+}

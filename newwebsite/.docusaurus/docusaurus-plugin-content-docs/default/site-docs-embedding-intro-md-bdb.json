@@ -1,0 +1,24 @@
+{
+  "unversionedId": "embedding/embedding-intro",
+  "id": "embedding/embedding-intro",
+  "isDocsHomePage": false,
+  "title": "Embedding Overview",
+  "description": "The Qrvey Platform provides a suite of widgets to allow the various features to be seamlessly embedded into web or mobile applications. These Widgets include self-service data collection, workflow automation, and business analytics to supercharge your applications. The Qrvey Platform also provides a comprehensive REST API that can be accessed via standard HTTP/HTTPS requests and responses (GET, POST, etc.).",
+  "source": "@site/../docs/embedding/intro.md",
+  "slug": "/embedding/embedding-intro",
+  "permalink": "/docs/next/embedding/embedding-intro",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Overview",
+  "sidebar": "embedding",
+  "previous": {
+    "title": "Architectural Overview",
+    "permalink": "/docs/next/get-started/get-started-architecture"
+  },
+  "next": {
+    "title": "Widgets Quick Start Guide",
+    "permalink": "/docs/next/embedding/widgets/widget-intro"
+  }
+}

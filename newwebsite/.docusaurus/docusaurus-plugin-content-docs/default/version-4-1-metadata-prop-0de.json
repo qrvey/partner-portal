@@ -1,0 +1,908 @@
+{
+  "pluginId": "default",
+  "version": "4.1",
+  "label": "4.1",
+  "isLast": false,
+  "docsSidebars": {
+    "version-4.1/get-started": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/4.1/get-started/get-started-intro"
+          },
+          {
+            "type": "link",
+            "label": "Users Roles",
+            "href": "/docs/4.1/business-analytics/business-users"
+          },
+          {
+            "type": "link",
+            "label": "Setup Overview",
+            "href": "/docs/4.1/setup-deployments/setup-overview"
+          },
+          {
+            "type": "link",
+            "label": "Setup Initial Deployment",
+            "href": "/docs/4.1/setup-deployments/setup-initial-deployment"
+          },
+          {
+            "type": "link",
+            "label": "Security",
+            "href": "/docs/4.1/setup-deployments/setup-security"
+          },
+          {
+            "type": "link",
+            "label": "Glossary",
+            "href": "/docs/4.1/get-started/glossary"
+          }
+        ]
+      }
+    ],
+    "version-4.1/ui-docs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Basics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Logging In",
+            "href": "/docs/4.1/ui-docs/basics/logging-in"
+          },
+          {
+            "type": "link",
+            "label": "Profile/Account",
+            "href": "/docs/4.1/ui-docs/basics/profile"
+          },
+          {
+            "type": "link",
+            "label": "Introduction to the UI",
+            "href": "/docs/4.1/ui-docs/basics/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Applications",
+            "href": "/docs/4.1/ui-docs/basics/applications"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Web Forms",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/4.1/ui-docs/web-forms/web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Types of Web Forms",
+            "href": "/docs/4.1/ui-docs/web-forms/type-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Building a Web Form",
+            "href": "/docs/4.1/ui-docs/web-forms/create-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Web Form Field Guide",
+            "href": "/docs/4.1/ui-docs/web-forms/field-guide"
+          },
+          {
+            "type": "link",
+            "label": "Branching",
+            "href": "/docs/4.1/ui-docs/web-forms/branching"
+          },
+          {
+            "type": "link",
+            "label": "Lookups",
+            "href": "/docs/4.1/ui-docs/web-forms/lookup"
+          },
+          {
+            "type": "link",
+            "label": "Customizing Web Forms",
+            "href": "/docs/4.1/ui-docs/web-forms/customize-web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Publishing Web Forms",
+            "href": "/docs/4.1/ui-docs/web-forms/publishing"
+          },
+          {
+            "type": "link",
+            "label": "Embedding Web Forms",
+            "href": "/docs/4.1/ui-docs/web-forms/embedding"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Datasets",
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Section Overview",
+            "href": "/docs/4.1/ui-docs/datasets/datasets"
+          },
+          {
+            "type": "link",
+            "label": "Database Connections",
+            "href": "/docs/4.1/ui-docs/datasets/databases"
+          },
+          {
+            "type": "link",
+            "label": "Elasticsearch Connections",
+            "href": "/docs/4.1/ui-docs/datasets/elasticsearch"
+          },
+          {
+            "type": "link",
+            "label": "CSV Uploads",
+            "href": "/docs/4.1/ui-docs/datasets/csv"
+          },
+          {
+            "type": "link",
+            "label": "Data Links",
+            "href": "/docs/4.1/ui-docs/datasets/datalinks"
+          },
+          {
+            "type": "link",
+            "label": "Data Connectors",
+            "href": "/docs/4.1/ui-docs/datasets/connectors"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Data Views",
+        "items": [
+          {
+            "type": "link",
+            "label": "Filtering Data",
+            "href": "/docs/4.1/ui-docs/dataviews/filters"
+          },
+          {
+            "type": "link",
+            "label": "Formulas",
+            "href": "/docs/4.1/ui-docs/dataviews/formulas"
+          },
+          {
+            "type": "link",
+            "label": "Bucketing Data",
+            "href": "/docs/4.1/ui-docs/dataviews/buckets"
+          },
+          {
+            "type": "link",
+            "label": "Exporting Data",
+            "href": "/docs/4.1/ui-docs/dataviews/exporting"
+          },
+          {
+            "type": "link",
+            "label": "Summary View",
+            "href": "/docs/4.1/ui-docs/dataviews/summary-view"
+          },
+          {
+            "type": "link",
+            "label": "Tabular View",
+            "href": "/docs/4.1/ui-docs/dataviews/tabular-view"
+          },
+          {
+            "type": "link",
+            "label": "Custom View",
+            "href": "/docs/4.1/ui-docs/dataviews/custom-view"
+          },
+          {
+            "type": "link",
+            "label": "Chart Builder",
+            "href": "/docs/4.1/ui-docs/dataviews/chart-builder"
+          },
+          {
+            "type": "link",
+            "label": "Metric View",
+            "href": "/docs/4.1/ui-docs/dataviews/metric-view"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Builders",
+        "items": [
+          {
+            "type": "link",
+            "label": "Report Builder",
+            "href": "/docs/4.1/ui-docs/builders/reports"
+          },
+          {
+            "type": "link",
+            "label": "Page Builder",
+            "href": "/docs/4.1/ui-docs/builders/pages"
+          },
+          {
+            "type": "link",
+            "label": "Page Navigation",
+            "href": "/docs/4.1/ui-docs/builders/navigation"
+          },
+          {
+            "type": "link",
+            "label": "User Management",
+            "href": "/docs/4.1/ui-docs/builders/user-management"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Automation",
+        "items": [
+          {
+            "type": "link",
+            "label": "Flow Overview",
+            "href": "/docs/4.1/ui-docs/automation/flows"
+          },
+          {
+            "type": "link",
+            "label": "Triggers",
+            "href": "/docs/4.1/ui-docs/automation/triggers"
+          },
+          {
+            "type": "link",
+            "label": "Conditions",
+            "href": "/docs/4.1/ui-docs/automation/conditions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Send",
+            "href": "/docs/4.1/ui-docs/automation/send-actions"
+          },
+          {
+            "type": "link",
+            "label": "Actions - Data",
+            "href": "/docs/4.1/ui-docs/automation/data-actions"
+          },
+          {
+            "type": "link",
+            "label": "Tokens",
+            "href": "/docs/4.1/ui-docs/automation/tokens"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Other",
+        "items": [
+          {
+            "type": "link",
+            "label": "Application Settings",
+            "href": "/docs/4.1/ui-docs/others/settings"
+          },
+          {
+            "type": "link",
+            "label": "Sending Applications",
+            "href": "/docs/4.1/ui-docs/others/sending"
+          },
+          {
+            "type": "link",
+            "label": "Activity Log",
+            "href": "/docs/4.1/ui-docs/others/activity-log"
+          }
+        ]
+      }
+    ],
+    "version-4.1/business-analytics": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Business Analytics",
+        "items": []
+      }
+    ],
+    "version-4.1/admin": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Admin",
+        "items": [
+          {
+            "type": "link",
+            "label": "Admin Overview",
+            "href": "/docs/4.1/admin/admin-intro"
+          },
+          {
+            "type": "link",
+            "label": "Admin User Management",
+            "href": "/docs/4.1/admin/admin-managing-users"
+          },
+          {
+            "type": "link",
+            "label": "Administering Qrvey Composer",
+            "href": "/docs/4.1/admin/admin-sections-platform"
+          },
+          {
+            "type": "link",
+            "label": "Data",
+            "href": "/docs/4.1/admin/admin-data"
+          },
+          {
+            "type": "link",
+            "label": "Data Router",
+            "href": "/docs/4.1/admin/admin-sections-data-router"
+          },
+          {
+            "type": "link",
+            "label": "Deployments",
+            "href": "/docs/4.1/admin/admin-sections-deployments"
+          }
+        ]
+      }
+    ],
+    "version-4.1/embedding": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Architecture",
+        "items": [
+          {
+            "type": "link",
+            "label": "Architectural Overview",
+            "href": "/docs/4.1/get-started/get-started-architecture"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Embedding",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/4.1/embedding/embedding-intro"
+          },
+          {
+            "type": "link",
+            "label": "Widgets Start Guide",
+            "href": "/docs/4.1/embedding/widgets/widget-intro"
+          },
+          {
+            "type": "link",
+            "label": "API Start Guide",
+            "href": "/docs/4.1/embedding/api/api-intro"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Data Collection Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Web Forms",
+                "href": "/docs/4.1/embedding/widgets/data-sources/widget-webforms"
+              },
+              {
+                "type": "link",
+                "label": "Data Connectors",
+                "href": "/docs/4.1/embedding/widgets/data-sources/widget-dataconnectors"
+              },
+              {
+                "type": "link",
+                "label": "Data Links",
+                "href": "/docs/4.1/embedding/widgets/data-sources/widget-datalinks"
+              },
+              {
+                "type": "link",
+                "label": "Activity Log",
+                "href": "/docs/4.1/embedding/widgets/data-sources/activity-log"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Analytics Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Summary View",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-summary-view"
+              },
+              {
+                "type": "link",
+                "label": "Custom View",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-custom-view"
+              },
+              {
+                "type": "link",
+                "label": "Panels",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-custom-charts-core"
+              },
+              {
+                "type": "link",
+                "label": "Panel Builder",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-panel-builder"
+              },
+              {
+                "type": "link",
+                "label": "Summary Panel",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-summary-panel"
+              },
+              {
+                "type": "link",
+                "label": "Filter Panel",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-filter-panel"
+              },
+              {
+                "type": "link",
+                "label": "Filter Modal",
+                "href": "/docs/4.1/embedding/widgets/analytics/widget-filter-modal"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "App Building Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Report Builder",
+                "href": "/docs/4.1/embedding/widgets/app-building/widget-report-builder"
+              },
+              {
+                "type": "link",
+                "label": "Page Builder",
+                "href": "/docs/4.1/embedding/widgets/app-building/widget-page-builder"
+              },
+              {
+                "type": "link",
+                "label": "End User",
+                "href": "/docs/4.1/embedding/widgets/app-building/widget-end-user"
+              },
+              {
+                "type": "link",
+                "label": "User Management",
+                "href": "/docs/4.1/embedding/widgets/app-building/widget-user-management"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Automation Widgets",
+            "items": [
+              {
+                "type": "link",
+                "label": "Automation",
+                "href": "/docs/4.1/embedding/widgets/automation/widget-automation"
+              },
+              {
+                "type": "link",
+                "label": "Tokens Manager",
+                "href": "/docs/4.1/embedding/widgets/automation/widget-tokens-manager"
+              },
+              {
+                "type": "link",
+                "label": "Tokens Suggestion Box",
+                "href": "/docs/4.1/embedding/widgets/automation/widget-tokens-suggestion-box"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "API References",
+            "items": [
+              {
+                "type": "link",
+                "label": "Tutorial",
+                "href": "/docs/4.1/embedding/api/api-tutorial"
+              },
+              {
+                "type": "link",
+                "label": "Data Sources API Reference",
+                "href": "/docs/4.1/embedding/api/api-data-sources"
+              },
+              {
+                "type": "link",
+                "label": "Analytics API Reference",
+                "href": "/docs/4.1/embedding/api/api-analytics"
+              },
+              {
+                "type": "link",
+                "label": "Automation API Reference",
+                "href": "/docs/4.1/embedding/api/api-automation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Data Router",
+        "items": [
+          {
+            "type": "link",
+            "label": "Data Router Overview",
+            "href": "/docs/4.1/data-router/data-router-intro"
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Metadata",
+            "items": [
+              {
+                "type": "link",
+                "label": "Metadata Overview",
+                "href": "/docs/4.1/data-router/Metadata/metadata-intro"
+              },
+              {
+                "type": "link",
+                "label": "Quick Start Guide",
+                "href": "/docs/4.1/data-router/Metadata/simple-metadata"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Transformations",
+            "items": [
+              {
+                "type": "link",
+                "label": "Transforms Overview",
+                "href": "/docs/4.1/data-router/Transforms/transforms-intro"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Data Rules",
+            "items": [
+              {
+                "type": "link",
+                "label": "Data Rules Overview",
+                "href": "/docs/4.1/data-router/DataRules/data-rules-intro"
+              },
+              {
+                "type": "link",
+                "label": "Array Lookup",
+                "href": "/docs/4.1/data-router/DataRules/data-router-array-lookup"
+              },
+              {
+                "type": "link",
+                "label": "ES Query Lookup",
+                "href": "/docs/4.1/data-router/DataRules/data-router-es-lookup"
+              },
+              {
+                "type": "link",
+                "label": "Flat Array",
+                "href": "/docs/4.1/data-router/DataRules/data-router-flatArray"
+              },
+              {
+                "type": "link",
+                "label": "Case",
+                "href": "/docs/4.1/data-router/DataRules/data-router-switch"
+              },
+              {
+                "type": "link",
+                "label": "Conditionals",
+                "href": "/docs/4.1/data-router/DataRules/conditionals-intro"
+              },
+              {
+                "type": "link",
+                "label": "Destinations",
+                "href": "/docs/4.1/data-router/DataRules/destinations-intro"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Postdata",
+            "items": [
+              {
+                "type": "link",
+                "label": "Postdata",
+                "href": "/docs/4.1/data-router/postdata-content"
+              }
+            ]
+          },
+          {
+            "collapsed": true,
+            "type": "category",
+            "label": "Data Router API",
+            "items": [
+              {
+                "type": "link",
+                "label": "API Reference",
+                "href": "/docs/4.1/data-router/apireference/api-reference-intro"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "version-4.1/release-notes": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2020",
+        "items": [
+          {
+            "type": "link",
+            "label": "February 2020",
+            "href": "/docs/4.1/release-notes/release-last"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Release Notes 2019",
+        "items": [
+          {
+            "type": "link",
+            "label": "December 2019",
+            "href": "/docs/4.1/release-notes/release-dec-2019"
+          },
+          {
+            "type": "link",
+            "label": "November 2019",
+            "href": "/docs/4.1/release-notes/release-nov-2019"
+          },
+          {
+            "type": "link",
+            "label": "September 2019",
+            "href": "/docs/4.1/release-notes/release-sep-2019"
+          },
+          {
+            "type": "link",
+            "label": "August 2019",
+            "href": "/docs/4.1/release-notes/release-aug-2019"
+          },
+          {
+            "type": "link",
+            "label": "July 2019",
+            "href": "/docs/4.1/release-notes/release-jul-2019"
+          },
+          {
+            "type": "link",
+            "label": "March 2019",
+            "href": "/docs/4.1/release-notes/release-mar-2019"
+          },
+          {
+            "type": "link",
+            "label": "February 2019",
+            "href": "/docs/4.1/release-notes/release-feb-2019"
+          },
+          {
+            "type": "link",
+            "label": "January 2019",
+            "href": "/docs/4.1/release-notes/release-jan-2019"
+          }
+        ]
+      }
+    ],
+    "version-4.1/tutorials": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Tutorials",
+        "items": [
+          {
+            "type": "link",
+            "label": "Your First Analytic Application",
+            "href": "/docs/4.1/tutorials/first-analytic-app"
+          },
+          {
+            "type": "link",
+            "label": "Create a Chart in Qrvey",
+            "href": "/docs/4.1/tutorials/create-charts"
+          }
+        ]
+      }
+    ],
+    "version-4.1/faqs": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "FAQs",
+        "items": [
+          {
+            "type": "link",
+            "label": "General",
+            "href": "/docs/4.1/faqs/faqs-intro"
+          },
+          {
+            "type": "link",
+            "label": "Ask us a question",
+            "href": "/docs/4.1/faqs/ask-us"
+          }
+        ]
+      }
+    ],
+    "version-4.1/video-training": [
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Analytics",
+        "items": [
+          {
+            "type": "link",
+            "label": "Intro to Analytic Apps",
+            "href": "/docs/4.1/video-training/analytics/intro-analytics-apps"
+          },
+          {
+            "type": "link",
+            "label": "Datasets",
+            "href": "/docs/4.1/video-training/analytics/datasets"
+          },
+          {
+            "type": "link",
+            "label": "Analytic Views",
+            "href": "/docs/4.1/video-training/analytics/analytic-views"
+          },
+          {
+            "type": "link",
+            "label": "Reports and Pages",
+            "href": "/docs/4.1/video-training/analytics/reports-pages"
+          },
+          {
+            "type": "link",
+            "label": "Web Forms",
+            "href": "/docs/4.1/video-training/analytics/web-forms"
+          },
+          {
+            "type": "link",
+            "label": "Metrics",
+            "href": "/docs/4.1/video-training/analytics/metrics"
+          },
+          {
+            "type": "link",
+            "label": "Automation",
+            "href": "/docs/4.1/video-training/analytics/automation"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Admin Center",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/4.1/video-training/admin-center/intro-admin-center"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/4.1/admin/admin-data": "version-4.1/admin",
+    "/docs/4.1/admin/admin-intro": "version-4.1/admin",
+    "/docs/4.1/admin/admin-managing-users": "version-4.1/admin",
+    "/docs/4.1/admin/admin-sections-data-router": "version-4.1/admin",
+    "/docs/4.1/admin/admin-sections-deployments": "version-4.1/admin",
+    "/docs/4.1/admin/admin-sections-platform": "version-4.1/admin",
+    "/docs/4.1/business-analytics/business-users": "version-4.1/get-started",
+    "/docs/4.1/data-router/apireference/api-reference-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/data-router-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/conditionals-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/data-router-array-lookup": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/data-router-es-lookup": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/data-router-flatArray": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/data-router-switch": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/data-rules-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/DataRules/destinations-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/Metadata/metadata-intro": "version-4.1/embedding",
+    "/docs/4.1/data-router/Metadata/simple-metadata": "version-4.1/embedding",
+    "/docs/4.1/data-router/postdata-content": "version-4.1/embedding",
+    "/docs/4.1/data-router/Transforms/transforms-intro": "version-4.1/embedding",
+    "/docs/4.1/embedding/api/api-analytics": "version-4.1/embedding",
+    "/docs/4.1/embedding/api/api-automation": "version-4.1/embedding",
+    "/docs/4.1/embedding/api/api-data-sources": "version-4.1/embedding",
+    "/docs/4.1/embedding/api/api-intro": "version-4.1/embedding",
+    "/docs/4.1/embedding/api/api-tutorial": "version-4.1/embedding",
+    "/docs/4.1/embedding/embedding-intro": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-custom-charts-core": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-custom-view": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-filter-modal": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-filter-panel": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-panel-builder": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-summary-panel": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/analytics/widget-summary-view": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/app-building/widget-end-user": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/app-building/widget-page-builder": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/app-building/widget-report-builder": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/app-building/widget-user-management": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/automation/widget-automation": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/automation/widget-tokens-manager": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/automation/widget-tokens-suggestion-box": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/data-sources/activity-log": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/data-sources/widget-dataconnectors": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/data-sources/widget-datalinks": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/data-sources/widget-webforms": "version-4.1/embedding",
+    "/docs/4.1/embedding/widgets/widget-intro": "version-4.1/embedding",
+    "/docs/4.1/faqs/ask-us": "version-4.1/faqs",
+    "/docs/4.1/faqs/faqs-intro": "version-4.1/faqs",
+    "/docs/4.1/get-started/get-started-architecture": "version-4.1/embedding",
+    "/docs/4.1/get-started/get-started-intro": "version-4.1/get-started",
+    "/docs/4.1/get-started/glossary": "version-4.1/get-started",
+    "/docs/4.1/release-notes/release-aug-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-dec-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-feb-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-jan-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-jul-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-last": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-mar-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-nov-2019": "version-4.1/release-notes",
+    "/docs/4.1/release-notes/release-sep-2019": "version-4.1/release-notes",
+    "/docs/4.1/setup-deployments/setup-initial-deployment": "version-4.1/get-started",
+    "/docs/4.1/setup-deployments/setup-overview": "version-4.1/get-started",
+    "/docs/4.1/setup-deployments/setup-security": "version-4.1/get-started",
+    "/docs/4.1/tutorials/create-charts": "version-4.1/tutorials",
+    "/docs/4.1/tutorials/first-analytic-app": "version-4.1/tutorials",
+    "/docs/4.1/ui-docs/automation/conditions": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/automation/data-actions": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/automation/flows": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/automation/send-actions": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/automation/tokens": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/automation/triggers": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/basics/applications": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/basics/introduction": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/basics/logging-in": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/basics/profile": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/builders/navigation": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/builders/pages": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/builders/reports": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/builders/user-management": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/connectors": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/csv": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/databases": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/datalinks": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/datasets": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/datasets/elasticsearch": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/buckets": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/chart-builder": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/custom-view": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/exporting": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/filters": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/formulas": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/metric-view": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/summary-view": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/dataviews/tabular-view": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/others/activity-log": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/others/sending": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/others/settings": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/branching": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/create-web-forms": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/customize-web-forms": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/embedding": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/field-guide": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/lookup": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/publishing": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/type-web-forms": "version-4.1/ui-docs",
+    "/docs/4.1/ui-docs/web-forms/web-forms": "version-4.1/ui-docs",
+    "/docs/4.1/video-training/admin-center/intro-admin-center": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/analytic-views": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/automation": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/datasets": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/intro-analytics-apps": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/metrics": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/reports-pages": "version-4.1/video-training",
+    "/docs/4.1/video-training/analytics/web-forms": "version-4.1/video-training"
+  }
+}

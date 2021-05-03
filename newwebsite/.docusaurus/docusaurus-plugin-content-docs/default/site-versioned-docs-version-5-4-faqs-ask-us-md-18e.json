@@ -1,0 +1,20 @@
+{
+  "unversionedId": "faqs/ask-us",
+  "id": "version-5.4/faqs/ask-us",
+  "isDocsHomePage": false,
+  "title": "Ask us a question",
+  "description": "Haven’t found what you were looking for?",
+  "source": "@site/versioned_docs/version-5.4/faqs/ask-us.md",
+  "slug": "/faqs/ask-us",
+  "permalink": "/docs/faqs/ask-us",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Ask us a question",
+  "sidebar": "version-5.4/faqs",
+  "previous": {
+    "title": "Publishing FAQs",
+    "permalink": "/docs/faqs/publishing-faqs"
+  }
+}

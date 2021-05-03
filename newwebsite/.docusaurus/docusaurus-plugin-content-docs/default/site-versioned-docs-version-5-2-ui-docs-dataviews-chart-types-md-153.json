@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/dataviews/chart-types",
+  "id": "version-5.2/ui-docs/dataviews/chart-types",
+  "isDocsHomePage": false,
+  "title": "Chart Types",
+  "description": "The following chart types are currently supported by Qrvey. The list is sorted in alphabetical order of the chart type and provides use cases and details about each type.",
+  "source": "@site/versioned_docs/version-5.2/ui-docs/dataviews/chart-types.md",
+  "slug": "/ui-docs/dataviews/chart-types",
+  "permalink": "/docs/5.2/ui-docs/dataviews/chart-types",
+  "version": "5.2",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Chart Types",
+  "sidebar": "version-5.2/ui-docs",
+  "previous": {
+    "title": "Custom View",
+    "permalink": "/docs/5.2/ui-docs/dataviews/custom-view"
+  },
+  "next": {
+    "title": "Chart Builder",
+    "permalink": "/docs/5.2/ui-docs/dataviews/chart-builder"
+  }
+}

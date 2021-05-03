@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/dataviews/buckets",
+  "id": "version-4.1/ui-docs/dataviews/buckets",
+  "isDocsHomePage": false,
+  "title": "Bucketing Data",
+  "description": "Bucketing is a powerful feature that allows for the grouping of multiple data points into a single item, called a bucket, to make analysis easier.",
+  "source": "@site/versioned_docs/version-4.1/ui-docs/dataviews/buckets.md",
+  "slug": "/ui-docs/dataviews/buckets",
+  "permalink": "/docs/4.1/ui-docs/dataviews/buckets",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Bucketing Data",
+  "sidebar": "version-4.1/ui-docs",
+  "previous": {
+    "title": "Formulas",
+    "permalink": "/docs/4.1/ui-docs/dataviews/formulas"
+  },
+  "next": {
+    "title": "Exporting Data",
+    "permalink": "/docs/4.1/ui-docs/dataviews/exporting"
+  }
+}

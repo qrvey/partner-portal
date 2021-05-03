@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-filter-modal",
+  "id": "embedding/widgets/analytics/widget-filter-modal",
+  "isDocsHomePage": false,
+  "title": "Filter Modal",
+  "description": "This document explains how to implement the filter modal widget outside of Qrvey.",
+  "source": "@site/../docs/embedding/widgets/analytics/filter-modal.md",
+  "slug": "/embedding/widgets/analytics/widget-filter-modal",
+  "permalink": "/docs/next/embedding/widgets/analytics/widget-filter-modal",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Filter Modal"
+}

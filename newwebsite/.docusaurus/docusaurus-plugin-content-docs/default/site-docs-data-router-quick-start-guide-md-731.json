@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/data-router-loading-data",
+  "id": "data-router/data-router-loading-data",
+  "isDocsHomePage": false,
+  "title": "Quick Start Guide - Loading Data",
+  "description": "This document will walk you through the steps to create a metadata definition for an index, load data into your index, and then use that data for analysis with the Qrvey Composer.",
+  "source": "@site/../docs/data-router/quick-start-guide.md",
+  "slug": "/data-router/data-router-loading-data",
+  "permalink": "/docs/next/data-router/data-router-loading-data",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Quick Start Guide - Loading Data"
+}

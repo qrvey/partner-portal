@@ -1,0 +1,20 @@
+{
+  "unversionedId": "video-training/release/version-5.8",
+  "id": "version-5.4/video-training/release/version-5.8",
+  "isDocsHomePage": false,
+  "title": "Version 5.8",
+  "description": "Automatic Column Links",
+  "source": "@site/versioned_docs/version-5.4/video-training/release/version-5.8.md",
+  "slug": "/video-training/release/version-5.8",
+  "permalink": "/docs/video-training/release/version-5.8",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Version 5.8",
+  "sidebar": "version-5.4/video-training",
+  "next": {
+    "title": "Version 5.7",
+    "permalink": "/docs/video-training/release/version-5.7"
+  }
+}

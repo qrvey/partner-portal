@@ -1,0 +1,24 @@
+{
+  "unversionedId": "video-training/analytics/reports-pages",
+  "id": "version-4.1/video-training/analytics/reports-pages",
+  "isDocsHomePage": false,
+  "title": "Reports and Pages",
+  "description": "Analytics 04",
+  "source": "@site/versioned_docs/version-4.1/video-training/analytics/reports-pages.md",
+  "slug": "/video-training/analytics/reports-pages",
+  "permalink": "/docs/4.1/video-training/analytics/reports-pages",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Reports and Pages",
+  "sidebar": "version-4.1/video-training",
+  "previous": {
+    "title": "Analytic Views",
+    "permalink": "/docs/4.1/video-training/analytics/analytic-views"
+  },
+  "next": {
+    "title": "Web Forms",
+    "permalink": "/docs/4.1/video-training/analytics/web-forms"
+  }
+}

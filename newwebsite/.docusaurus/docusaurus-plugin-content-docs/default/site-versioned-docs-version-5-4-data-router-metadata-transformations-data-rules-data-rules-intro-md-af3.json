@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/transformations/DataRules/data-rules-intro",
+  "id": "version-5.4/data-router/Metadata/transformations/DataRules/data-rules-intro",
+  "isDocsHomePage": false,
+  "title": "Data Rules Overview",
+  "description": "The Data Rules object specifies a set of operations and rules that are applied over hierarchical data to put your data into a new Elasticsearch index through a 'child' Metadata.",
+  "source": "@site/versioned_docs/version-5.4/data-router/Metadata/transformations/DataRules/data-rules-intro.md",
+  "slug": "/data-router/Metadata/transformations/DataRules/data-rules-intro",
+  "permalink": "/docs/data-router/Metadata/transformations/DataRules/data-rules-intro",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Rules Overview"
+}

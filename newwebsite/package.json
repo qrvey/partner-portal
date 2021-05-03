@@ -1,0 +1,26 @@
+{
+  "license": "Unlicense",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.72",
+    "@docusaurus/preset-classic": "2.0.0-alpha.72",
+    "@docusaurus/theme-search-algolia": "^2.0.0-alpha.72",
+    "algoliasearch": "^4.8.6",
+    "clsx": "^1.1.1",
+    "instantsearch.js": "^4.20.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "remark-iframes": "^4.0.5"
+  }
+}

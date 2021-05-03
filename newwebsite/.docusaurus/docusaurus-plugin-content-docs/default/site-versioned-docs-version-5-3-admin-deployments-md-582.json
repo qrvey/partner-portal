@@ -1,0 +1,24 @@
+{
+  "unversionedId": "admin/admin-sections-deployments",
+  "id": "version-5.3/admin/admin-sections-deployments",
+  "isDocsHomePage": false,
+  "title": "Deployments",
+  "description": "Servers",
+  "source": "@site/versioned_docs/version-5.3/admin/deployments.md",
+  "slug": "/admin/admin-sections-deployments",
+  "permalink": "/docs/5.3/admin/admin-sections-deployments",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Deployments",
+  "sidebar": "version-5.3/admin",
+  "previous": {
+    "title": "Administering Qrvey Composer",
+    "permalink": "/docs/5.3/admin/admin-sections-platform"
+  },
+  "next": {
+    "title": "Record Level Security",
+    "permalink": "/docs/5.3/admin/record-level-security"
+  }
+}

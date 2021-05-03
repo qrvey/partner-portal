@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/web-forms/create-web-forms",
+  "id": "version-5.4/ui-docs/web-forms/create-web-forms",
+  "isDocsHomePage": false,
+  "title": "Building a Web Form",
+  "description": "In this document, we’ll discuss the basics of building a web form and working with our various field and question types.",
+  "source": "@site/versioned_docs/version-5.4/ui-docs/web-forms/1.2_create-web-forms.md",
+  "slug": "/ui-docs/web-forms/create-web-forms",
+  "permalink": "/docs/ui-docs/web-forms/create-web-forms",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Building a Web Form",
+  "sidebar": "version-5.4/ui-docs",
+  "previous": {
+    "title": "Types of Web Forms",
+    "permalink": "/docs/ui-docs/web-forms/type-web-forms"
+  },
+  "next": {
+    "title": "Web Form Field Guide",
+    "permalink": "/docs/ui-docs/web-forms/field-guide"
+  }
+}

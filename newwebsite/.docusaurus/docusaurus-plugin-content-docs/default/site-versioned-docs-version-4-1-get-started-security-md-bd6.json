@@ -1,0 +1,15 @@
+{
+  "unversionedId": "get-started/security",
+  "id": "version-4.1/get-started/security",
+  "isDocsHomePage": false,
+  "title": "Security",
+  "description": "AWS Account",
+  "source": "@site/versioned_docs/version-4.1/get-started/security.md",
+  "slug": "/get-started/security",
+  "permalink": "/docs/4.1/get-started/security",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Security"
+}

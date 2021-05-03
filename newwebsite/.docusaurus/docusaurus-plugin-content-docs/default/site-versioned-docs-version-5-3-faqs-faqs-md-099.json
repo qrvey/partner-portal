@@ -1,0 +1,20 @@
+{
+  "unversionedId": "faqs/faqs-intro",
+  "id": "version-5.3/faqs/faqs-intro",
+  "isDocsHomePage": false,
+  "title": "General",
+  "description": "Q: How do I know if my Elasticsearch cluster is short on space?",
+  "source": "@site/versioned_docs/version-5.3/faqs/faqs.md",
+  "slug": "/faqs/faqs-intro",
+  "permalink": "/docs/5.3/faqs/faqs-intro",
+  "version": "5.3",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "General",
+  "sidebar": "version-5.3/faqs",
+  "next": {
+    "title": "AWS FAQs",
+    "permalink": "/docs/5.3/faqs/aws-faqs"
+  }
+}

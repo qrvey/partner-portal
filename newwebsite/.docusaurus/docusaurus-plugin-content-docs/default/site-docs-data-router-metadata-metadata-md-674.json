@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/metadata-API",
+  "id": "data-router/Metadata/metadata-API",
+  "isDocsHomePage": false,
+  "title": "Understanding Metadata",
+  "description": "Introduction",
+  "source": "@site/../docs/data-router/Metadata/metadata.md",
+  "slug": "/data-router/Metadata/metadata-API",
+  "permalink": "/docs/next/data-router/Metadata/metadata-API",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Understanding Metadata"
+}

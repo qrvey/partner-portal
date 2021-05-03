@@ -1,0 +1,20 @@
+{
+  "unversionedId": "get-started/glossary",
+  "id": "version-4.1/get-started/glossary",
+  "isDocsHomePage": false,
+  "title": "Glossary",
+  "description": "The Qrvey glossary serves as a tool to help take the mystery out of some of our most commonly used data, analytics and automation lingo. See something confusing that's not mentioned here? Please let us know.",
+  "source": "@site/versioned_docs/version-4.1/get-started/glossary.md",
+  "slug": "/get-started/glossary",
+  "permalink": "/docs/4.1/get-started/glossary",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Glossary",
+  "sidebar": "version-4.1/get-started",
+  "previous": {
+    "title": "Security",
+    "permalink": "/docs/4.1/setup-deployments/setup-security"
+  }
+}

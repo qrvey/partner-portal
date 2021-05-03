@@ -1,0 +1,24 @@
+{
+  "unversionedId": "faqs/data-security-faqs",
+  "id": "faqs/data-security-faqs",
+  "isDocsHomePage": false,
+  "title": "Data Security FAQs",
+  "description": "Q: I had previously created users. Will they be able to see the chart’s data if record level security is enabled?",
+  "source": "@site/../docs/faqs/data-security-faqs.md",
+  "slug": "/faqs/data-security-faqs",
+  "permalink": "/docs/next/faqs/data-security-faqs",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Data Security FAQs",
+  "sidebar": "faqs",
+  "previous": {
+    "title": "AWS FAQs",
+    "permalink": "/docs/next/faqs/aws-faqs"
+  },
+  "next": {
+    "title": "Publishing FAQs",
+    "permalink": "/docs/next/faqs/publishing-faqs"
+  }
+}

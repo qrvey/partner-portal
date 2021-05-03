@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-filter-panel-external",
+  "id": "embedding/widgets/analytics/widget-filter-panel-external",
+  "isDocsHomePage": false,
+  "title": "Filter Panel - Outside Qrvey",
+  "description": "No Public Doc",
+  "source": "@site/../docs/embedding/widgets/analytics/filter-panel-external.md",
+  "slug": "/embedding/widgets/analytics/widget-filter-panel-external",
+  "permalink": "/docs/next/embedding/widgets/analytics/widget-filter-panel-external",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Filter Panel - Outside Qrvey"
+}

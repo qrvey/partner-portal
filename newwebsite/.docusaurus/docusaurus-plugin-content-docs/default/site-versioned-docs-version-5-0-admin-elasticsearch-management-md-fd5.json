@@ -1,0 +1,24 @@
+{
+  "unversionedId": "admin/elasticsearch-management",
+  "id": "version-5.0/admin/elasticsearch-management",
+  "isDocsHomePage": false,
+  "title": "Elasticsearch Management",
+  "description": "Infrastructure Widget",
+  "source": "@site/versioned_docs/version-5.0/admin/elasticsearch-management.md",
+  "slug": "/admin/elasticsearch-management",
+  "permalink": "/docs/5.0/admin/elasticsearch-management",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Elasticsearch Management",
+  "sidebar": "version-5.0/admin",
+  "previous": {
+    "title": "Admin Overview",
+    "permalink": "/docs/5.0/admin/admin-intro"
+  },
+  "next": {
+    "title": "Admin User Management",
+    "permalink": "/docs/5.0/admin/admin-managing-users"
+  }
+}

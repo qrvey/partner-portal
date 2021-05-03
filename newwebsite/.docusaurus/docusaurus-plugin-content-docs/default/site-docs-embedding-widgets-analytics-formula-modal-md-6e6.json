@@ -1,0 +1,15 @@
+{
+  "unversionedId": "embedding/widgets/analytics/widget-formula-modal",
+  "id": "embedding/widgets/analytics/widget-formula-modal",
+  "isDocsHomePage": false,
+  "title": "Formulas Modal",
+  "description": "No Public Doc",
+  "source": "@site/../docs/embedding/widgets/analytics/formula-modal.md",
+  "slug": "/embedding/widgets/analytics/widget-formula-modal",
+  "permalink": "/docs/next/embedding/widgets/analytics/widget-formula-modal",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Formulas Modal"
+}

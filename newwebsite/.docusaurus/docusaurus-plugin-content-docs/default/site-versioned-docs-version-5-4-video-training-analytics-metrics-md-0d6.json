@@ -1,0 +1,24 @@
+{
+  "unversionedId": "video-training/analytics/metrics",
+  "id": "version-5.4/video-training/analytics/metrics",
+  "isDocsHomePage": false,
+  "title": "Metrics",
+  "description": "Analytics 06",
+  "source": "@site/versioned_docs/version-5.4/video-training/analytics/metrics.md",
+  "slug": "/video-training/analytics/metrics",
+  "permalink": "/docs/video-training/analytics/metrics",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Metrics",
+  "sidebar": "version-5.4/video-training",
+  "previous": {
+    "title": "Web Forms",
+    "permalink": "/docs/video-training/analytics/web-forms"
+  },
+  "next": {
+    "title": "Automation",
+    "permalink": "/docs/video-training/analytics/automation"
+  }
+}

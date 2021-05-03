@@ -1,0 +1,24 @@
+{
+  "unversionedId": "ui-docs/dataviews/chart-builder",
+  "id": "version-4.1/ui-docs/dataviews/chart-builder",
+  "isDocsHomePage": false,
+  "title": "Chart Builder",
+  "description": "The Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.",
+  "source": "@site/versioned_docs/version-4.1/ui-docs/dataviews/chart-builder.md",
+  "slug": "/ui-docs/dataviews/chart-builder",
+  "permalink": "/docs/4.1/ui-docs/dataviews/chart-builder",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Chart Builder",
+  "sidebar": "version-4.1/ui-docs",
+  "previous": {
+    "title": "Custom View",
+    "permalink": "/docs/4.1/ui-docs/dataviews/custom-view"
+  },
+  "next": {
+    "title": "Metric View",
+    "permalink": "/docs/4.1/ui-docs/dataviews/metric-view"
+  }
+}

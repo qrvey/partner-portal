@@ -1,0 +1,15 @@
+{
+  "unversionedId": "data-router/Metadata/transformations/DataRules/destinations-intro",
+  "id": "version-4.1/data-router/Metadata/transformations/DataRules/destinations-intro",
+  "isDocsHomePage": false,
+  "title": "Destinations",
+  "description": "Destinations is the set of columns that will hold/store all values resulting mainly from the data rules.",
+  "source": "@site/versioned_docs/version-4.1/data-router/Metadata/transformations/DataRules/data-rules-destinations.md",
+  "slug": "/data-router/Metadata/transformations/DataRules/destinations-intro",
+  "permalink": "/docs/4.1/data-router/Metadata/transformations/DataRules/destinations-intro",
+  "version": "4.1",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Destinations"
+}

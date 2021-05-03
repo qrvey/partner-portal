@@ -1,0 +1,15 @@
+{
+  "unversionedId": "video-training/datarouter/intro-datarouter",
+  "id": "video-training/datarouter/intro-datarouter",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "Dat Router 01",
+  "source": "@site/../docs/video-training/datarouter/intro.md",
+  "slug": "/video-training/datarouter/intro-datarouter",
+  "permalink": "/docs/next/video-training/datarouter/intro-datarouter",
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Introduction"
+}

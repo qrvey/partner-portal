@@ -1,0 +1,24 @@
+{
+  "unversionedId": "get-started/troubleshooting",
+  "id": "version-5.0/get-started/troubleshooting",
+  "isDocsHomePage": false,
+  "title": "Troubleshooting",
+  "description": "Here are some common scenarios where a deployment could result in failure.",
+  "source": "@site/versioned_docs/version-5.0/get-started/troubleshooting.md",
+  "slug": "/get-started/troubleshooting",
+  "permalink": "/docs/5.0/get-started/troubleshooting",
+  "version": "5.0",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "Troubleshooting",
+  "sidebar": "version-5.0/get-started",
+  "previous": {
+    "title": "Deleting an Installation",
+    "permalink": "/docs/5.0/get-started/deleting-installation"
+  },
+  "next": {
+    "title": "AWS Services Used by Qrvey",
+    "permalink": "/docs/5.0/get-started/aws-services"
+  }
+}

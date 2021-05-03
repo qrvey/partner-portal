@@ -1,0 +1,24 @@
+{
+  "unversionedId": "release-notes/release-jun-2020",
+  "id": "version-5.4/release-notes/release-jun-2020",
+  "isDocsHomePage": false,
+  "title": "Qrvey Version 5.2",
+  "description": "Qrvey 5.2 - 2020-07-03",
+  "source": "@site/versioned_docs/version-5.4/release-notes/release_jun_2020.md",
+  "slug": "/release-notes/release-jun-2020",
+  "permalink": "/docs/release-notes/release-jun-2020",
+  "version": "5.4",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebar_label": "June 2020",
+  "sidebar": "version-5.4/release-notes",
+  "previous": {
+    "title": "Qrvey Version 5.3",
+    "permalink": "/docs/release-notes/release-jul-2020"
+  },
+  "next": {
+    "title": "Qrvey Version 5.1",
+    "permalink": "/docs/release-notes/release-apr-2020"
+  }
+}
