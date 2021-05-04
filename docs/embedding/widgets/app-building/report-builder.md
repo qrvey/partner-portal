@@ -1,12 +1,20 @@
 ---
 id: widget-report-builder
-title: Report Builder
-sidebar_label: Report Builder
+title: Report Builder Widget
+sidebar_label: Report Builder Widget
 ---
 
 <div style="text-align: justify">
 
-The Report Builder widget allows users to create, edit, and delete report definitions for an application.
+The Report Builder widget is used to embed the feature that allows the users of your application to create and manage static Qrvey reports. 
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Report Builder section of Qrvey Composer and clicking on the “Embed Report Builder” button in the top right corner of the page.
+
+![report-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/report-build-wi.png#thumbnail-20)
+
+
+This will open a dialog with the necessary code, including the “domain”, “app_id”, “user_id”, and “report_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value and adjust other properties according to your needs.
+
+The building blocks of the code are explained below.
 
 
 ## HTML Tag And Launcher
@@ -83,12 +91,13 @@ var config = {
 ## See It In Action
 See the widget in CodePen:
 
-<p class="codepen" data-height="300" data-theme-id="34531" data-default-tab="js,result" data-user="qrveysamples" data-slug-hash="deb614642b633fcaab2f72fd85b8a19e" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Report Builder">
+ <p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="52bb4236753fe85a433228dd11d437e2" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Report Builder">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/52bb4236753fe85a433228dd11d437e2">
   Sample- Qrvey Report Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 
 
