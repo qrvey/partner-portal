@@ -6,39 +6,54 @@ sidebar_label: Database Connections
 
 <div style="text-align: justify">
 
-You can create connections to various RDBMS by using the Database Connection feature under the **Connections** tab.
+You can create connections to various RDBMS by using the Database Connection feature under the *Connections* tab.
 
-![1_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/1_databasesV2.png#thumbnail)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database1.png#thumbnail-60)
 
 To begin, choose the type of database you’d like to connect to. We currently support MySQL, SQL Server, PostgreSQL and Oracle databases. MySQL and PostgreSQL are Aurora compatible. 
-Next, enter your connection information, including Host URL and Port, along with your Username and Password. Click **Test Connection** to verify the information provided.
 
-![2_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/2_databasesV2.png#thumbnail)
+The dialog that is displayed may be slightly different for each database type, depending on their required configuration attributes, but all of the fields are descriptive and familiar to those who have worked with databases. 
 
-The connection will be tested when you click on **Get Databases**, **Test Connection**, or simply by saving the connection information.
-When clicking on Test Connection and if a successful connection is established, a confirmation message will be shown. 
+Enter your connection information, including *Host URL, Username* and *Password*. *Port* is optional. 
 
-![3_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/3_databasesV2.png#thumbnail)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database2.png#thumbnail-60) 
 
-If the connection fails, an error message will be shown and the Host URL, Username and Password need to be checked.  
+The system will attempt to connect to the database server as soon as all of the required information has been provided. A message is displayed to indicate if the connection was successful or it failed. You can also manually enforce a test by clicking on **Test Connection** to verify the provided  information.
 
-![4_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/4_databasesV2.png#thumbnail-60)
+Once the connection to the database server is established, the information can be saved as a new connection. However, it is important to note that this connection is to the database server itself, and more information needs to be provided at the time that the connection is used, in order to get to a specific database on that server, and a specific table or view in that database, to load data.
 
-A connection can either be saved without setting a database, or including a database and table. In order to select a database and table, or create a custom SQL query, click on **Get Databases**. You will be redirected to the Database selector and once a database is defined, you will be able to select the SQL objects. 
+If you want to make your connection more specific, you can select the database from the *Database* dropdown list, and optionally continue to further refine your choice by clicking on the **Include a Query with this Connection** button, to pick a table or view from the database.
 
-![5_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/5_databasesV2.png#thumbnail-60)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database3.png#thumbnail-60)
 
-You may also enter an SQL query by clicking the **SQL Query** button. You can use the **Test** link in the bottom-right corner to test your query.
+You may also enter a custom SQL query as your connection by clicking the **SQL Query** radio button. You can use the **Test** link in the bottom-right corner to test your query. 
 
-![6_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/6_databasesV2.png#thumbnail)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database4.png#thumbnail-60)
 
-Once all of your objects are selected and verified, you can click the **Save** button in the lower-right corner to add the new connection.
+Once you are done with configuring your connection, you can click the **Save** button in the lower-right corner to add the new connection.
 The connection will be added to the Connection list, displaying the owner of the connection, the type and an option to **View Data**, which will allow users to see a partial view of the data, showing the first 100 rows. 
 
-![7_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/7_databasesV2.png#thumbnail)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database5.png#thumbnail-60)
 
-![8_databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/8_databasesV2.png#thumbnail-40)
 
-At this point, you can proceed to the Dataset tab and begin creating datasets from the connections you have established. 
+>**Note**: The **View Data** option is only available for connections that are specific and point to a single table, view, or custom query.
 
-In addition to Database Connections, you can create File Upload connections. [Click Here](ui-docs/datasets/csv.md) to see the steps to connections from file uploads using comma-delimited, or CSV, files.
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/7_databasesV2.png#thumbnail-40)
+
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/8_databasesV2.png#thumbnail-40)
+
+At this point, you can proceed to the *Dataset* tab and begin creating datasets from the connections you have established. 
+
+In addition to Database Connections, you can create File Upload connections. <a href="/docs/ui-docs/datasets/csv/">Click here</a> to learn more.
+
+
+
+
+
+
+
+
+
+
+
+
