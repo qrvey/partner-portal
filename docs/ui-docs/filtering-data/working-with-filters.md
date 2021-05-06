@@ -8,7 +8,7 @@ sidebar_label: Working With Interactive Filters
 <div style="text-align: justify">
 
 
-Filters refine data based on some selected criteria – you can choose particular fields or values and view only the information related to them. To start working with filters, you need to be familiar with the various filter components that are used to create and later interact with the filter inside the Qrvey platform.
+Filters refine data based on some selected criteria. That is, you can choose particular fields or values and view only the information related to them. To start working with filters, you need to be familiar with the various filter components that are used to create and later interact with the filter inside the Qrvey platform.
 
 ## Displaying All Values
 Users need to be able to see all existing values when creating the filter and not just a limited number of them. 
@@ -17,8 +17,8 @@ When a user chooses an operator (Equals or Does not equal) to display the value 
 
 Lazy loading shows the number of values that are selected out of the total records loaded as a reference (for example, 1 of 1276 selected).
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail-60)
-
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/int-fil.png#thumbnail-40)
+ 
 
 ## Filter Components
 ### Filter Modal
@@ -143,4 +143,25 @@ To set the filter on the aggregate value of the data, you need to create a chart
 You can identify an aggregated column on the filter’s modal by its column name with an aggregation operation in parentheses. In the following example, the count aggregate of the column “Branch” has been selected to be filtered on. 
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/10working-filters.png#thumbnail-60)  
+
+
+## See/Edit Filters Directly from Charts 
+Creators and End Users can see which filters have been applied to the chart by hovering on  the chart’s filter icon and this way seeing all the filters that have been applied to that chart without having to open the side panel. Access to editing a filter can also be found in the three-dot menu in the right-hand corner of every filter card.
+
+### Adding a New Filter
+You can add a filter by clicking the Add Filter button in the side panel or directly from the chart. To add a new filter, hover on the filter icon and click the **Add Filter** button. 
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/int-fil2.png#thumbnail-60)  
+
+When the Filter Builder modal appears, you can create a new filter, which will immediately, when applied, appear in the filter panel and the filter list in the charts.
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/int-fil3.png#thumbnail-40)  
+
+After adding a filter from the floating component, this filter has the Panel scope within the builders and page view widgets - it’s what we call a <a href="/docs/get-started/glossary/#g">global filter</a>. 
+
+### Editing / Deleting a Filter
+Filters can be edited or deleted directly from the applied filters modal. Go to the three-dot menu and click the **Edit** or **Delete** option. 
+
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/int-fil4.png#thumbnail)  
 
