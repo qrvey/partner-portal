@@ -10,6 +10,16 @@ sidebar_label: Working With Interactive Filters
 
 Filters refine data based on some selected criteria – you can choose particular fields or values and view only the information related to them. To start working with filters, you need to be familiar with the various filter components that are used to create and later interact with the filter inside the Qrvey platform.
 
+## Displaying All Values
+Users need to be able to see all existing values when creating the filter and not just a limited number of them. 
+
+When a user chooses an operator (Equals or Does not equal) to display the value list, and then scrolls to the end of the list, the filter builder loads 1,000 more values. 
+
+Lazy loading shows the number of values that are selected out of the total records loaded as a reference (for example, 1 of 1276 selected).
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail-60)
+
+
 ## Filter Components
 ### Filter Modal
 The filter modal is the central component when defining filters. It allows you to define the scope, column, conditions, and values to use when filtering your data.
