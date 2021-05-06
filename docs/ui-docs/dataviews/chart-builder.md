@@ -107,6 +107,14 @@ Depending on how wide the axis range is, the default configuration could display
 
 It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,000,000), setting the “Steps” option to 1 will create 10 million tick marks, causing performance issues on the chart and probably blocking the browser. To avoid this situation, the chart will ignore the defined value and fall back to automatic mode.
 
+### Scale Type
+#### Logarithmic
+Use the logarithmic scale in Chart Builder to display numerical data over a wide range of values in a compact way. 
+
+The default scale type for a X/Y chart is Linear. In order to change the scale type to Logarithmic you can find the setting in the *Type* dropdown under Y-Axis in the configuration panel.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/logar.png#thumbnail-40)
+
 
 ## Layers
 In this section, you will be able to set trend and reference lines. 
