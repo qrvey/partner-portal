@@ -47,14 +47,12 @@ export default {
       "/js/homepage.js"
     ]
   },
-  "onBrokenLinks": "log",
-  "onBrokenMarkdownLinks": "log",
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "../release-notes/release-last",
+          "homePageId": "index.js",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "path": "../docs",
@@ -165,6 +163,8 @@ export default {
     ],
     "localeConfigs": {}
   },
+  "onBrokenLinks": "throw",
+  "onBrokenMarkdownLinks": "warn",
   "onDuplicateRoutes": "warn",
   "themes": [],
   "titleDelimiter": "|",
