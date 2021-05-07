@@ -51,7 +51,7 @@ Users can create two types of Bar Charts:
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you can find a guide through the settings specific for the Bar Chart. 
+In this section, you can find a guide through the settings specific to the Bar Chart. 
 
 #### General
 * **Sort by**: When enabled, users can sort the values of the column.
@@ -70,6 +70,31 @@ In this section, you can find a guide through the settings specific for the Bar 
 
 #### Format
 * Change the format of the chart visualization to small multiples.
+
+
+#### Modifying Bar Width and Spacing
+Users can adjust the width of the bars in the Bar Chart to customize the look and feel of their chart.
+When a bar chart is created, the width of the bars is automatically in proportion to the available space in the chart. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth1.png#thumbnail-60)
+
+
+Creators can adjust the “Bar Width” percentage to customize the size of the bars.
+When the chart panel increases or decreases, the bars automatically resize in width to grow with the panel and fill up the space.
+From the automatic mode, clicking the up arrow should change the value to 100%, and clicking the down arrow should change the value to 1%.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth2.png#thumbnail-20)
+
+When the Bar Width is set at 100%, the bars appear with no space in between. With any other % number for Bar Width, the percentage is shown in relation to the available space in the panel.
+
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth3.png#thumbnail-40)![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth4.png#thumbnail-40)
+ 
+
+
+> **Note**: The feature allows only integer values. When the fit to panel option is enabled, modifying manually the bar’s width is not available.
+
+
 
 ## Box & Whiskers Chart
 ### Overview
@@ -112,7 +137,7 @@ In a Box & Whisker chart:
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you can find a guide through the settings specific for the Box & Whiskers chart.
+In this section, you can find a guide through the settings specific to the Box & Whiskers chart.
 
 #### General
 * **Tooltips**: Turn on/off tooltips of each data point.
@@ -126,7 +151,7 @@ In this section, you can find a guide through the settings specific for the Box 
 * **Display Outliers**: Turn On/Off the outliers in the chart.
 * **Symbol**: Change the type of symbol.
 * **Fill**: Change to have the symbol filled or not.
-* **Symbol Opacity**: Change the degree of symbol´s opacity.
+* **Symbol Opacity**: Change the degree of a symbol´s opacity.
 
 ## Crosstab Chart
 ### Overview
@@ -173,7 +198,7 @@ By adding a second dataset column on the Column or Row shelf, groups will be cre
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Crosstab chart. 
+In this section, you will find a guide through the settings specific to the Crosstab chart. 
 
 #### General
 * **Labels**: Turn on/off labels for columns and rows.
@@ -187,6 +212,65 @@ Position Set the totals for columns, rows or both.
 
 * **Color**: Change the color of Rows and Columns headers of the chart.
 * **Format**: Change the format of the values visualized in the chart.
+
+#### Change Headers Colors 
+The Crosstab headers font color can be changed directly from the Chart Builder. 
+Simply go to the Styles section and pick a color for the header and/or header font to change the look of your crosstab.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor1.png#thumbnail-20)
+
+Colors can be chosen directly from the color picker or by using a color code.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor2.png#thumbnail-40)
+
+Creators can change the Header Font Color and Main Color options inside a Theme (Chart Themes). 
+
+The existing Crosstabs appear in the color defined by the user, while the new ones use colors of a selected theme. 
+
+If a user changes the color inside the chart builder, that configuration will remain in place regardless of the theme that has been applied.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor3.png#thumbnail-60)
+
+### Conditional Formatting in Crosstab
+You can use conditional formatting in Crosstab to highlight cells in your chart with colors so that it can be easily distinguished which cells in the crosstab have met the set conditions.
+
+The user can add as many conditions as necessary with each of them being added to the bottom of the list. Conditions can be dragged and dropped to organize the logic. In case there’s an overlap between conditions, the uppermost condition takes precedence when logic is applied. Determining conditions includes: 
+* **Text Color**: It changes the font color of the cell’s value that matches the condition.
+* **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells with values matching the condition.
+* **Style**: It works together with the cell color option to fill the cell’s background color or outline its border.
+* **Label**: Used for reference purposes in legends and tooltips to input a custom name for a condition.
+* **Column**: A quantitative (value) that will be compared to the values in the Value option using the selected operator.
+* **Operator**: The operator can be set as:
+  * Equals
+  * Does not equal
+  * Less than
+  * Greater than
+  * Less than or equal to
+  * Greater than or equal to
+  * Between, Inclusive
+  * Between, Exclusive
+  * Is null
+  * Is not null
+* **Value**: The value of the condition used to compare the value from the column to. 
+* **Remove**: An orange action link to delete the condition. 
+
+1. To apply conditional formatting to your cross tab, you first need to go to Chart Builder and create a Crosstab Chart. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross1.png#thumbnail-60)
+
+2. Go to *Format* tab in Chart Configurations Panel and click on **Add Conditions** option.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross2.png#thumbnail-20)
+
+3. Create conditions that will apply to chart values.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross3.png#thumbnail-20)
+
+
+See cells meeting condition criteria highlighted in color.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross4.png#thumbnail-60)
+
 
 ## Heatmap
 ### Overview
@@ -224,7 +308,7 @@ Users need to add a third dataset column to the pivot shelf in order to complete
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Heatmap chart. 
+In this section, you will find a guide through the settings specific to the Heatmap chart. 
 
 #### General
 * **Legends**: Turn On/Off legends in the chart.
@@ -280,7 +364,7 @@ Users can create five types of Line charts depending on the visualization they n
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Line chart.
+In this section, you will find a guide through the settings specific to the Line chart.
 
 #### General
 * **Sort by**: When enabled, users can sort the values of the column.
@@ -304,7 +388,7 @@ In this section, you will find a guide through the settings specific for the Lin
 
 ## Maps
 ### Overview
-The Geomap chart is a map of a country, continent, or a region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots, or colors with the option of hover text for data points. 
+The Geomap chart is a map of a country, continent, or region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots, or colors with the option of hover text for data points. 
 
 ### When to Use It
 Bubble Maps show aggregated values in locations with each bubble area proportional to the value being represented. These are best suited for comparing proportions over geographic regions. 
@@ -360,7 +444,7 @@ At the top of the chart builder, there are 2 fields for *Geolocation* and *Value
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Bubble, Dot, and Choropleth Map charts.
+In this section, you will find a guide through the settings specific to the Bubble, Dot, and Choropleth Map charts.
 
 #### General
 * **Legends**: Turn On/Off legends on the map. (Bubble maps only)
@@ -368,15 +452,15 @@ In this section, you will find a guide through the settings specific for the Bub
 * **Max Data Point**: Set the maximum number of data points in the chart.
 
 #### Styles
-* **Color**:  Change the Color or theme of bubbles, dots, or regions shown in maps.
+* **Color**: Change the Color or theme of bubbles, dots, or regions shown in maps.
 * **Base Map**: Change the terrain visualization of the map.
 * **Map Region**: Change the region to visualize.
 * **Symbol**: Change the type of symbol. (Dot Maps only)
 * **Fill**: Change to a filled symbol or not. (Dot Maps only)
-* **Symbol Opacity**: Change the degree of symbol´s opacity.
+* **Symbol Opacity**: Change the degree of a symbol´s opacity.
 * **Map Borders**: Turn On/Off map borders.
 * **Custom Scale**: Create a custom scale by changing the min and max value ranges and color steps. (Choropleth Map only)
-* **Reversed Colors**:  to reverse the order of colors from the theme. (Choropleth Map only)
+* **Reversed Colors**: To reverse the order of colors from the theme. (Choropleth Map only)
 * **Allow Clustering**: Turn On/Off clustering. (Dot Maps only)
 * **Data Labels**: Turn On/Off value labels. 
 
@@ -425,7 +509,7 @@ Users can create two types of Pie charts:
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Pie chart.
+In this section, you will find a guide through the settings specific to the Pie chart.
 
 #### General
 * **Legends**: Turn on/off legends of the charts.
@@ -482,7 +566,7 @@ Users can create 7 types of symbol charts depending on the visualization they ne
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Symbol chart.
+In this section, you will find a guide through the settings specific to the Symbol chart.
 
 #### General
 * **Sort by**: When enabled, users can sort the values of the column.
@@ -539,7 +623,7 @@ At the top of the chart builder, there are 2 fields for *Category* and *Values*.
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Word Cloud chart.
+In this section, you will find a guide through the settings specific to the Word Cloud chart.
 
 #### General
 * **Sort by**: When enabled, users can sort the values of the column.
@@ -614,7 +698,7 @@ Another way to create a grouped table is by using the vertical and horizontal gu
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you will find a guide through the settings specific for the Table chart.
+In this section, you will find a guide through the settings specific to the Table chart.
 
 #### General
 In this section, you will find *Menu Actions* and *Max Groups*.
@@ -636,7 +720,7 @@ The following image shows how **Menu Action** settings work.
 ![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.gif#thumbnail) 
 
 ### Resizing Columns 
-You can  manually modify the Column Sizes of Table Charts by simply dragging  hovering over the header of the column and dragging the column header’s width to the left or right using the marquee tool. 
+You can manually modify the Column Sizes of Table Charts by simply hovering over the header of the column and dragging the column header’s width to the left or right using the marquee tool. 
 
 ![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.gif#thumbnail)  
 
@@ -669,6 +753,130 @@ Once the multi-sort column option is active, you can also click on the sort icon
 
 
 
+## Charts in Tables
+Table Creators can add Charts inside table cells and this way create more robust table visualizations that allow them to essentially create reports within the table where they can at a glance see trends in their data without leaving the table visualization. Note, that buckets are not supported to create trend charts.
+
+When adding a trend chart to the cells, you need to define:
+* **Column** - the value(s) you would like to show in the chart.
+* **Trend by Column** - Date or Numeric data types.
+  * If **Trend by Column** is a Date data type, you can apply:
+    * Date Grouping- to group your dates by year, quarter, months, weeks, days. 
+    * Time Period - to choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).
+  * If **Trend by Column**  is a Numeric data type, you can apply: 
+    * Max Data Points - to limit the number of data points shown WHEN a numeric or string column is used for the “Trend by Column.” (For Sparklines - Bar/Line + Min/Loss charts). This does not apply to dates. The default value is set to 50.
+* **Trend Sort** - to sort the trend visualization in an ascending or descending manner. Applies to all datatypes.
+* **Color** - to select the color of the trend chart.
+* **Type** - type of chart you want to show (Sparkline Line or Bar chart)
+* **Fill** - when using reference lines you can fill the area above/below the line.
+* **Tooltips** - to show/hide tooltips on the trend chart within the table.
+* **Show Value** - to show/hide the aggregated values alongside the trend visualization in each cell.
+
+### Sparkline - Line Chart Type
+
+To add a Sparkline - Line chart to a table cell, follow these steps:
+1. Open Chart Builder
+2. Build a grouped Table Chart 
+3. There are two ways of adding a chart to a table cell:
+  a) from the <a href="">Grouped Table Chart’s configuration Pane</a>
+  b) from the <a href="">Aggregated Column Pills</a>
+
+#### Creating a Sparkline - Line Chart from the Grouped Table Chart’s configuration Pane
+
+1. Go to the configuration pane and click on the *Trend Charts* tab.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark1.png#thumbnail-60) 
+
+2. Click on **+ Add Trend Chart**.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark2.png#thumbnail-20) 
+
+See the new trend chart panel appear. The chart type selected by default is the line chart.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark3.png#thumbnail-40) 
+
+3. Pick a column of values you’d like to show in the line graph.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark4.png#thumbnail-40) 
+
+
+4. Add a Date or Numeric column to show the trend of the selected column.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark5.png#thumbnail-40) 
+
+
+If you select Date in your “Trend by Column”, you can now group these dates by year, quarter, months, weeks, days. You can also select the Time Period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark6.png#thumbnail-40) 
+
+
+#### Creating a Sparkline - Line Chart from the Aggregated Column Pills
+1. Go to the Column shelf and click on the three dots next to the value you’d like to show in a graph.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark7.png#thumbnail-60) 
+
+
+2. In the menu that appears, choose Trend Chart > Sparkline, and select which trend you’d like to show in the graph. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark8.png#thumbnail-60) 
+
+Once the chart has been added to the cell, hovering over it will show more details about it (Start, End, Min, and Max). In the tooltips, you can further customize the color of the graph, its shape (straight, curvy, square), and whether you want to show the values alongside the graph in the cell.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark9.png#thumbnail-60) 
+
+
+>**Note**: The trend chart is visible only in the “Value” visualization type. If you change to the “Bar” visualization, the trend chart won’t be visible, but the configuration should remain in place.
+
+
+### Sparkline - Bar Chart Type
+To add a Bar chart to a table cell, follow these steps:
+1. Open Chart Builder
+2. Build a grouped Table Chart  
+There are two ways of adding a chart to a table cell:
+  a) from the <a href="">Grouped Table Chart’s configuration Pane</a>
+  b) from the <a href="">Aggregated Column Pills</a>
+
+#### Creating a Sparkline - Bar Chart from the Grouped Table Chart’s configuration Pane
+1. Go to the configuration pane and click on the “Trend Charts” tab.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark10.png#thumbnail-20) 
+
+2. Click on “+ Add Trend Chart.” 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark11.png#thumbnail-20) 
+
+See the new trend chart panel appear. The default chart type is the line chart so make sure to click on the Bar Chart icon to change it.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark12.png#thumbnail-20) 
+
+3. Pick a column of values you’d like to show in the bar graph.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark13.png#thumbnail-60) 
+
+4. Add a Date or Numeric column to show the trend of the selected column.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark14.png#thumbnail-40) 
+
+
+#### Creating a Sparkline - Bar Chart from the Aggregated Column Pills
+1. Go to the Column shelf and click on the three dots next to the value you’d like to show in a graph.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark15.png#thumbnail-60) 
+
+
+2. In the menu that appears, choose Trend Chart > Sparkline - Bar, and select which trend you’d like to show in the graph. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark16.png#thumbnail-60) 
+
+Once the chart has been added to the cell, hovering over it will show more details about it (Start, End, Min, and Max). In the tooltips, you can further customize the color of the graph, its shape (straight, curvy, square), and whether you want to show the values alongside the graph in the cell.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark17.png#thumbnail-60) 
+
+
+>Note, that if users reduce the column’s width and there is not enough space to show the value and the trend chart simultaneously, the system will remove the trend chart and display only the value. Also, if users configure the trend chart column without showing the value and reduce the column’s width, the system will adapt the trend chart’s size to its minimum width. 
+
+>If users keep reducing the column’s width, the trend chart won’t be visible until the column’s size is appropriate to show the trend chart.
+
+>If you change the trend chart configuration while using the “Bar” visualization type, the new changes applied to the trend chart will be visible when you return to the “Value” visualization type.
 
 
 
@@ -730,7 +938,7 @@ The bullet metric is used to compare one or more measures to enrich its meaning 
 #### Properties
 Metrics have a set of properties that allows users to customize the aspect and modify the look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for metric settings.
 
-In this section, you will find a guide through the settings specific for Metrics.
+In this section, you will find a guide through the settings specific to Metrics.
 
 #### General
 * **Legends**: Turn on/off legends. (Dial, Bullet)
@@ -804,10 +1012,10 @@ At the top of the chart builder, there are 2 fields: *Category* and *Values*. In
 Charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
 
-In this section, you can find a guide through the settings specific to  the Min/Max chart.
+In this section, you can find a guide through the settings specific to the Min/Max chart.
 
 #### General
-* **Sort by**: Enabled only when a column is placed on the  “Category” shelf, users can sort the category values of the column.
+* **Sort by**: Enabled only when a column is placed on the “Category” shelf, users can sort the category values of the column.
 * **Tooltips**: Turn on/off tooltips of each data point.
 * **Display Averages**: Turn on/off to display the average data point in the chart.
 * **Max Data Points**: Set the maximum number of data points in the chart.
