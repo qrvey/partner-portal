@@ -55,6 +55,7 @@
         ]
       },
       "ui-docs/datasets/datasets",
+      "ui-docs/datasets/column-links",
       "ui-docs/datasets/data-sync",
       "ui-docs/datasets/joins",
       "ui-docs/datasets/datalinks",
@@ -76,7 +77,6 @@
       "ui-docs/builders/reports",
       "ui-docs/builders/pages",
       "ui-docs/builders/pages_actions",
-      "ui-docs/datasets/column-links",
       "ui-docs/builders/navigation",
       "ui-docs/builders/user-management"
     ],

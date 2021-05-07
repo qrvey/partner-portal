@@ -55,6 +55,7 @@
         ]
       },
       "version-5.4-ui-docs/datasets/datasets",
+      "version-5.4-ui-docs/datasets/column-links",
       "version-5.4-ui-docs/datasets/data-sync",
       "version-5.4-ui-docs/datasets/joins",
       "version-5.4-ui-docs/datasets/datalinks",
@@ -76,7 +77,6 @@
       "version-5.4-ui-docs/builders/reports",
       "version-5.4-ui-docs/builders/pages",
       "version-5.4-ui-docs/builders/pages_actions",
-      "version-5.4-ui-docs/datasets/column-links",
       "version-5.4-ui-docs/builders/navigation",
       "version-5.4-ui-docs/builders/user-management"
     ],
