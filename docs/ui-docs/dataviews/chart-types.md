@@ -763,7 +763,7 @@ Table **Creators** and **End Users** are able to organize columns by reordering 
 Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place.
 After dropping the column in its new place, the column pills in the shelf appear in that same new order. 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab1.png#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab1.png#thumbnail)  
 
 
 >**Note**: While End Users can reorder column headers directly in the table, their action does not modify the columns' order inside the chart builder shelf.
@@ -786,8 +786,18 @@ Aggregate columns can be reordered in two ways:
 left or right and then “dropping” it in the desired place.
 After dropping the column in its new place, the column pills in the shelf appear in that same new order. 
 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab1.png#thumbnail)  
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab2.png#thumbnail)  
+
 2. From the Chart Builder Shelf 
 Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the shelf. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab3.png#thumbnail)  
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab4.png#thumbnail)  
+
+
 
 >**Note**: Grouped columns cannot be reordered
 
