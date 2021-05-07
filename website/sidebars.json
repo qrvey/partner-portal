@@ -270,6 +270,7 @@
   },
   "video-training":{
     "Release Demos":[
+      "video-training/release/version-5.10",
       "video-training/release/version-5.9",
       "video-training/release/version-5.8",
       "video-training/release/version-5.7",
