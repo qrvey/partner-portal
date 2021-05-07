@@ -753,6 +753,45 @@ Once the multi-sort column option is active, you can also click on the sort icon
 
 
 
+### Reordering Columns 
+Table **Creators** and **End Users** are able to organize columns by reordering them in a preferred way. This action is the same as seen in Excel spreadsheets and our Tabular View.
+
+#### Simple Table
+**Creators** can reorder columns in two different ways:
+1. Directly in Table Headers 
+
+Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place.
+After dropping the column in its new place, the column pills in the shelf appear in that same new order. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab1.png#thumbnail-60)  
+
+
+>**Note**: While End Users can reorder column headers directly in the table, their action does not modify the columns' order inside the chart builder shelf.
+
+2. From the Chart Builder Shelf 
+
+Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the shelf. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab2.png#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab3.png#thumbnail)  
+
+
+#### Aggregate Table
+In Aggregate columns, we can find two types of columns:
+* **Aggregate** - the ones that are dropped in the Columns shelf
+* **Grouped** - the ones that are dropped in the Group shelf
+
+Aggregate columns can be reordered in two ways:
+1. Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the 
+left or right and then “dropping” it in the desired place.
+After dropping the column in its new place, the column pills in the shelf appear in that same new order. 
+
+2. From the Chart Builder Shelf 
+Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the shelf. 
+
+>**Note**: Grouped columns cannot be reordered
+
+
 ## Charts in Tables
 Table Creators can add Charts inside table cells and this way create more robust table visualizations that allow them to essentially create reports within the table where they can at a glance see trends in their data without leaving the table visualization. Note, that buckets are not supported to create trend charts.
 
@@ -777,8 +816,8 @@ To add a Sparkline - Line chart to a table cell, follow these steps:
 1. Open Chart Builder
 2. Build a grouped Table Chart 
 3. There are two ways of adding a chart to a table cell:
-  a) from the <a href="">Grouped Table Chart’s configuration Pane</a>
-  b) from the <a href="">Aggregated Column Pills</a>
+  a) from the Grouped Table Chart’s configuration Pane
+  b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Line Chart from the Grouped Table Chart’s configuration Pane
 
@@ -832,8 +871,8 @@ To add a Bar chart to a table cell, follow these steps:
 1. Open Chart Builder
 2. Build a grouped Table Chart  
 There are two ways of adding a chart to a table cell:
-  a) from the <a href="">Grouped Table Chart’s configuration Pane</a>
-  b) from the <a href="">Aggregated Column Pills</a>
+  a) from the Grouped Table Chart’s configuration Pane
+  b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Bar Chart from the Grouped Table Chart’s configuration Pane
 1. Go to the configuration pane and click on the “Trend Charts” tab.
@@ -877,7 +916,6 @@ Once the chart has been added to the cell, hovering over it will show more detai
 >If users keep reducing the column’s width, the trend chart won’t be visible until the column’s size is appropriate to show the trend chart.
 
 >If you change the trend chart configuration while using the “Bar” visualization type, the new changes applied to the trend chart will be visible when you return to the “Value” visualization type.
-
 
 
 ## Metrics
