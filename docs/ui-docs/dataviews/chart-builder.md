@@ -9,7 +9,7 @@ sidebar_label: Chart Builder
 Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.
 
 ## Creating a Chart
-Inside your application, select the form or dataset you’d like to analyze, and choose the Analyze tab, followed by the Custom View.
+Inside your application, select the form or dataset you’d like to analyze and choose the Analyze tab, followed by the Custom View.
 
 ![1_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_chart-builder.png#thumbnail-40)
 
@@ -23,7 +23,7 @@ All the available columns will be listed in the data panel on the left side of t
 
 ![1_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_CB.png#thumbnail-40)
 
-If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below.  Just click on the linked dataset pill to see the linked columns.
+If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below. Just click on the linked dataset pill to see the linked columns.
 
 ![1a_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_1_CB.png#thumbnail-20)
 
@@ -39,7 +39,7 @@ Shelf:
 
 Once the first column is dropped, a chart will be drawn showing a count of the selected values. You will need to add a second column, depending on the chart. 
 
-When a column is dropped on the canvas, it will automatically reflect on the corresponding  shelf. To change the aggregate of the column, click on the **dot menu** to the right of the column name and select an option from the list of aggregates. These options may vary depending on the data type. 
+When a column is dropped on the canvas, it will automatically reflect on the corresponding shelf. To change the aggregate of the column, click on the **dot menu** to the right of the column name and select an option from the list of aggregates. These options may vary depending on the data type. 
 
 ![4_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4_CB.png#thumbnail-80)
 
@@ -48,7 +48,7 @@ To remove a column from the shelf, you can click on the **Remove** option in the
 Below the shelf, you will find the chart title and an optional field to add a description for the chart. These can be added/edited by clicking on top of the text to enable typing. 
 
 ## Chart Types
-There are different types of charts or visualizations you can work with. A bar chart will be selected by default but you can choose to start with a different type. After dropping columns on the canvas, you can easily change to other visualization. 
+There are different types of charts or visualizations you can work with. A bar chart will be selected by default but you can choose to start with a different type. After dropping columns on the canvas, you can easily change to another visualization. 
 
 For this example, we’re going to select a simple bar chart, but some of the other available visualizations are line, pie and symbol charts, as well as word clouds, heat maps, geo maps, box and whisker style charts, crosstab, metrics and more. 
 
@@ -95,9 +95,22 @@ For both axes, you will be able to edit the *Axis Label* as well as turn on/off 
 
 ![8_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8_CB.png#thumbnail-20)
 
+### Adjusting Chart to Fit the Size of Panel
+Creators and Users can choose the option of **Fit to panel** for the contents of the analytics panel in Builders. When a chart contains so much data that it’s necessary to scroll in order to see it all, **Fit to panel** enables users to see the entire chart without having to scroll. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/adjust1.png#thumbnail-20)
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/adjust2.png#thumbnail-60)
+
+If the **Fit to panel** option is not selected, the size of the visualization is determined by its content size (e.g. bar width, gap width, cluster distance).
+
+
+When **Fit to panel** has been selected, tick marks and axis labels may automatically be reduced to optimize space in order to fit everything into the panel. Instead of, for example, showing every year label on the X-axis, it shows labels for every 4th year, while the data (in the case above, bars) is shown in full. 
+
+If there is not enough space between the data points to show the data labels, the data labels will be hidden even if the show data labels option is enabled.
 
 ### Axis Intervals
-You can control the tick marks' intervals to display in the value axis, normally the Y-axis (depends on the chart’s orientation), by changing the “Steps” option located inside the value axis style panel. By default, the option will be set as Auto, meaning the chart will calculate the appropriate intervals based on the axis scale range and the dataset values.
+You can control the tick marks' intervals to display in the value axis, normally the Y-axis (depends on the chart’s orientation), by changing the **Steps** option located inside the value axis style panel. By default, the option will be set as Auto, meaning the chart will calculate the appropriate intervals based on the axis scale range and the dataset values.
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/axis_1.png#thumbnail)
 
@@ -106,6 +119,28 @@ Depending on how wide the axis range is, the default configuration could display
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/axis_2.png#thumbnail)
 
 It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,000,000), setting the “Steps” option to 1 will create 10 million tick marks, causing performance issues on the chart and probably blocking the browser. To avoid this situation, the chart will ignore the defined value and fall back to automatic mode.
+
+### Scale Type
+#### Logarithmic
+Use the logarithmic scale in Chart Builder to display numerical data over a wide range of values in a compact way. 
+
+The default scale type for an X/Y chart is Linear. To change the scale type to Logarithmic, you can find the setting in the *Scale Type* dropdown under Y-Axis in the configuration panel.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/logar.png#thumbnail-40)
+
+
+### Fixed Range Configurations 
+
+Chart creators can override the automatic range of their charts to fit their analysis needs so that a chart doesn’t result in too much whitespace giving it a much cleaner look.
+
+#### Setting The Range
+By default, the automatic <a href="/docs/get-started/glossary/#r">range</a> for the value axis starts at 0 and goes up to the maximum value that is plotted on the chart. 
+In order to change that range, go to the **Styles** section of the configuration panel in the Chart Builder and expand the Y-axis subsection (or X-axis, if that happens to be the value axis). Set the values for Min Range and Max Range to what works for the chart.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/range.png#thumbnail-40)
+ 
+
+>**Note**: If a chart orientation is inverted to show the **Value** on the X- axis, then the **Min Range/Max Range** options will be located in the X-axis configuration settings.
 
 
 ## Layers
@@ -149,13 +184,26 @@ You will see the selected values in the filter panel. This is a hidden filter th
 
 ![17_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/17_CB.png#thumbnail-20)
 
-You can edit your chart at any time by clicking on the three-dot menu in the lower-right corner of the panel and selecting **Edit**. Your custom view charts can quickly be filtered to meet your needs. You can also remove a panel from this location as well.
+You can edit your chart at any time by clicking on the three-dot menu in the lower-right corner of the panel and selecting **Edit**. Your custom view charts can quickly be filtered to meet your needs. You can remove a panel from this location as well.
 
 ![18_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/18_CB.png#thumbnail-40)
 
+## Data Page Shortcut 
+Creators can use a shortcut for an even easier access to the data pages directly from the Chart Builder following these steps:
+1. Access Chart Builder
+2. Go to the data panel and click on the dataset shortcut
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/short1.png#thumbnail-20) 
+
+3. Click **Save** to save the chart and get redirected to dataset view or **Cancel** to stay in the Chart Builder. Note, that Chart Builder does not save changes automatically.
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/short2.png#thumbnail-40) 
+
+>**Note**: These shortcuts are available only in the composer application in **Creator** mode.
+
 ## Table Calculations
 
-Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analysis such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
+Table calculations are a category of functions that enhance the analytic capabilities of Qrvey and enable users to perform business analyses such as comparative analysis and benchmarking. A table calculation function operates on the data that shows the relationship between different fields and how categories (dimensions) affect values (measures).
 
 Qrvey supports the following table calculations in Table, Bar, Line Charts, and Heatmap.
 
@@ -558,7 +606,7 @@ Users can define partitions in order to have table calculations performed at eac
 
 To define partitions in Table Calculations, you need to add a Table Calculation and then go to the “Level” dropdown to define the partition as Table or a selected column that will be used to define the group.  
 
-“Level”  defines how to group the calculation (the scope of data it is performed on). The table calculation is performed separately within each partition.
+“Level” defines how to group the calculation (the scope of data it is performed on). The table calculation is performed separately within each partition.
 
 Partitioning fields break the view up into multiple sub-views (or sub-tables), and then the table calculation is applied to the marks within each such partition. 
  
@@ -574,6 +622,7 @@ Users can define a direction for addressing in order to have table calculations 
 To define Direction in Table Calculations, you need to add a Table Calculation and then go to the Direction option to select which type to use for the calculation - Down or Across.
 
 This feature is currently supported in Heatmaps.  
+
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chartbuild1.gif#thumbnail)
 
 
@@ -582,7 +631,8 @@ This feature is currently supported in Heatmaps.
 When using xy charts to plot data, the expectations for how categories have to be plotted may differ when the category has a continuous nature. This happens because continuous categories, such as dates and numbers, have the potential of being treated in a discrete manner.
 
 For example, if our chart is depicting the number of sales per month in one year, we want to see it plot every single month of the year, even if there were no sales in some months. In fact, the lack of sales in those months is an important piece of information that should not be ignored. <br>
-However, if the visualization is about the number of casualties in each major flu outbreak in recent history, we are only interested in the years 1918, 1957, 1968, 1997, and 2009. In this case, the years between those don’t matter and while we are still working with “dates”, the nature of our analysis requires us to treat those dates in a discrete manner.<br>
+However, if the visualization is about the number of casualties in each major flu outbreak in recent history, we are only interested in the years 1918, 1957, 1968, 1997, and 2009. In this case, the years between those don’t matter and while we are still working with “dates”, the nature of our analysis requires us to treat those dates in a discrete manner.
+
 With the Chart Builder, you get to choose between these two methods depending on your use case.
 
 
@@ -618,13 +668,13 @@ Charts that currently support this method:
 * Table 
 * Crosstab
 
-By default, the column pills will show the default sorting. To change the  sorting by using the pill method, all you have to do is go to a column pill located in a shelf such as Category, Value, or Series, and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu. Sorting options are Ascending and Descending.
+By default, the column pills will show the default sorting. To change the sorting by using the pill method, all you have to do is go to a column pill located in a shelf such as Category, Value, or Series, and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu. Sorting options are Ascending and Descending.
 
 For charts such as Bar, Line, Symbol you can only sort by one dimension such as Category or Value, but not both at the same time. Some special exceptions and additional functions for sorting apply to certain charts. 
 
 ![5gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail)
 
-For Multiseries, you can switch by “Category” or “Value” and at the same time sort  “Series” independently. 
+For Multiseries, you can switch by “Category” or “Value” and at the same time sort “Series” independently. 
 
 ![6gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
 
@@ -632,7 +682,7 @@ For Table, you can apply multiple sorting in “Groups” and  “Columns”  in
 
 ![7gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
 
-For Crosstab, you can do multi sorting on both the Rows and Columns at the same time.  Sorting on the Value columns is not possible. 
+For Crosstab, you can do multi sorting on both the Rows and Columns at the same time. Sorting on the Value columns is not possible. 
 
 ![8gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8gif.gif#thumbnail)
 
@@ -641,13 +691,13 @@ For both Table and Crosstab you can remove the sorting that was applied to a col
 ![38_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build38.png#thumbnail)
 
 ## Table Subtotal + Grand Totals
-Table Users are currently able to add *Totals* to aggregated columns to the entire table, essentially showing what would be a *Grand Total* of values for the selected column. With the new UI for adding *Totals*, Table Creators will be able to apply totals by a selected group  in the Table so that they can get *Subtotals* per group category for the selected aggregated column. With this new method for adding totals, Creators can:
+Table Users are currently able to add *Totals* to aggregated columns to the entire table, essentially showing what would be a *Grand Total* of values for the selected column. With the new UI for adding *Totals*, Table Creators will be able to apply totals by a selected group in the Table so that they can get *Subtotals* per group category for the selected aggregated column. With this new method for adding totals, Creators can:
 * Add totals to multiple columns all at once 
 * Add multiple totals to the selected column(s)
 * Add both Grand Totals and Subtotals to the same aggregated columns at once
 * Have different total calculations for Grand Totals and Subtotals using the same aggregated column 
 
-To add totals to a Table, you need to go to Chart Builder’s “Configuration Pane” and find the “Totals” option located in the “General” section. Once a "Totals" layer is added, you can set up which aggregated columns will be used for the selected totals, and  at which level (partition) the total will be performed - for the Table or a selected Group.
+To add totals to a Table, you need to go to Chart Builder’s “Configuration Pane” and find the “Totals” option located in the “General” section. Once a "Totals" layer is added, you can set up which aggregated columns will be used for the selected totals, and at which level (partition) the total will be performed - for the Table or a selected Group.
 
  ![9gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/9gif.gif#thumbnail)
 
@@ -664,7 +714,7 @@ To add Numeric formatting, just click on the “3 dotted” menu located inside 
 
 ### 2. Date Formatting
 
-To add Date formatting, just click on the “3 dotted” menu located inside the column pill located in the “Date” pills,  select “ Date Format” and select the desired format from the available predefined options or create a custom format. 
+To add Date formatting, just click on the “3 dotted” menu located inside the column pill located in the “Date” pills, select “ Date Format” and select the desired format from the available predefined options or create a custom format. 
 
 Date formatting only works on dates used as “Groups” in grouped tables, and “Columns” in simple tables. 
 
@@ -681,7 +731,7 @@ There are 3 basic components are required to create a condition:
 * **Value** to look for with a condition (input components vary on the data type of the column chosen)
 
 To apply Conditional Formatting, you have to:
-1. Go to the “Format” section located inside the Chart Builder’s configuration pane.  
+1. Go to the “Format” section located inside the Chart Builder’s configuration pane.
 2. Click on the “Conditional Formatting” subsection and click on “+Add Condition”.
 3. A condition tab will appear where you can set up your condition. 
 4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
