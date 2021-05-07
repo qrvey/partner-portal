@@ -13,6 +13,7 @@
     ],
     "Managing Qrvey In AWS": [
       "version-5.4-get-started/aws-services",
+      "version-5.4-get-started/customizing-qrvey-deployment",
       "version-5.4-get-started/managing-aws-cluster",
       "version-5.4-aws/connect-to-instance"
     ],
@@ -57,6 +58,7 @@
       "version-5.4-ui-docs/datasets/data-sync",
       "version-5.4-ui-docs/datasets/joins",
       "version-5.4-ui-docs/datasets/datalinks",
+      "version-5.4-ui-docs/datasets/hierarchical-data",
       "version-5.4-ui-docs/datasets/transformations"
     ],
     "Analysis Views": [

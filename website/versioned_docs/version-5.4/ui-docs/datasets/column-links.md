@@ -34,6 +34,7 @@ Once the column link has been saved, a blue link icon will appear on the selecte
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.png#thumbnail)
 
+> **Note**: Hierarchical data on columns from JSON connections currently have a Known Issue with tokens. These tokens are not being received in Page Actions from Page Builder. 
 
 
 Every time you add a new visualization to Page Builder, any visualization containing columns with links will have a Page Action automatically predefined with your set URL.
