@@ -9,7 +9,7 @@ sidebar_label: Report Builder Widget
 The Report Builder widget is used to embed the feature that allows the users of your application to create and manage static Qrvey reports. 
 Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Report Builder section of Qrvey Composer and clicking on the “Embed Report Builder” button in the top right corner of the page.
 
-![report-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/report-build-wi.png#thumbnail-20)
+![report-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/report-build-wi.png#thumbnail)
 
 
 This will open a dialog with the necessary code, including the “domain”, “app_id”, “user_id”, and “report_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value and adjust other properties according to your needs.
