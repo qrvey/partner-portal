@@ -76,6 +76,7 @@
       "ui-docs/builders/reports",
       "ui-docs/builders/pages",
       "ui-docs/builders/pages_actions",
+      "ui-docs/datasets/column-links",
       "ui-docs/builders/navigation",
       "ui-docs/builders/user-management"
     ],
