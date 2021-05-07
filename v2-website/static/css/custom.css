@@ -194,10 +194,6 @@
     display: flex;
 }
 
-.main-wrapper {
-    background: #FBFBFB !important;
-}
-
 .toc .toggleNav ul li.navListItemActive a {
     color: var(--primary-color) !important;
 }

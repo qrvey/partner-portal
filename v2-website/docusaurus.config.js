@@ -45,6 +45,12 @@ module.exports={
     ],
     "homepagescripts": [
       "/js/homepage.js"
+    ],
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      }
     ]
   },
   "presets": [
@@ -52,7 +58,7 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "index.js",
+          "homePageId": "index",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "path": "../docs",
