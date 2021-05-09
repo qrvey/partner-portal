@@ -73,13 +73,13 @@ Changing a column’s data type will require a reload of the data, if it has alr
 ### Adjusting The Input Format
 This feature is mostly useful for date-type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail)
 
 Changing a column’s input format will require a reload of the data, if it has already been loaded. 
 
 ### Choosing A Visualization Format
 You can also change the formatting of the date and numeric columns. This format will be used in the rest of the application whenever the column is used. For example, when a numeric column is assigned a Currency format, it will be displayed as currency with the $ sign, when it is used in a chart.
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8datasets.png#thumbnail-40)
 
 You can also decide the number of decimal places for numeric values. Changing visualization formats will *not* require a data reload.
 
@@ -87,7 +87,7 @@ You can also decide the number of decimal places for numeric values. Changing vi
 If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column, or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
 To learn about data synchronization and the role of unique IDs in it, please see the <a herf="/docs/ui-docs/datasets/data-sync/">Data Sync article</a>.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
 Changing the unique identifier for a dataset will require a reload of the data, if it has already been loaded.
 
@@ -103,7 +103,7 @@ Defining the security name for a column will *not* require a data reload.
 Any column of the dataset can be set up so that it presents an automatic link to a selected URL, when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map.
 The automatic link can be set up from the Column Link command in the dot menu of the intended column.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
 For detailed information about Column Links see the article dedicated to the subject. 
 Setting up automatic links for a column will not require a data reload. 
@@ -112,7 +112,7 @@ Setting up automatic links for a column will not require a data reload.
 If your data contains address information, you can choose to create a Geolocation Group out of any number of address fields. A Geolocation can be used to create various map charts.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/11datasets.png#thumbnail-20)
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/12datasets.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/12datasets.png#thumbnail-60)
 
 
 Geolocation groups require a column to be identified as country or zip code, as these allow for a point to be uniquely marked on a map.
@@ -138,7 +138,7 @@ There are plenty of other features available in the dataset design step. Some of
 
 * **General information about the dataset** - Once a dataset is loaded with data, certain pieces of information are displayed about it at the top of the screen. These include its creation date, status, and more.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail)
 
 
 * **Search Box** - You can look for columns by their names from the search box above the list of columns. 
@@ -163,7 +163,7 @@ Data Synchronization has been described in detail in a <a href="/docs/ui-docs/da
 Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.
 The progress bar at the top-right of the screen will indicate the current progress of the data load. You may navigate away and continue working in other parts of the product while the data loads in the background. 
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/17datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/17datasets.png#thumbnail-40)
 
 
 However, if you decide to wait for the data load to finish, you will be redirected to the *Summary View* where you’ll have access to your data profile, once your data has been successfully loaded. 
@@ -198,7 +198,7 @@ Once you finish editing the dataset, click on **Apply Changes**. Changes to the 
 
 If you change your mind after you have started a load, you can always cancel the process by clicking on the **Cancel** link that appears next to the progress bar. This will return the data to its original state.
 
- ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/24datasets.png#thumbnail-20)
+ ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/24datasets.png#thumbnail-60)
 
  
 ## Activity Log
