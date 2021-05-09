@@ -59,11 +59,19 @@ In this section, you can find a guide through the settings specific to the Bar C
 * **Max Data Point**: Set the maximum number of data points in the chart.
 
 #### Styles
-* **Color**: Change the color of the chart.
-* **Type**: Change the type of the chart (donut and pie).
-* **Data Labels**: Turn on/off legends for the chart.
-* **Borders**: Turn on/off borders of labels.
+* **Color Type**: Add colors to your chart by either choosing: 
+  * Single Color - one color is used for all bars.
+  * By Category - a different color is applied to each of the categories.
+* **Axis Label**: Show/hide labels of the axes.
+* **Chart Orientation**: Horizontal / Vertical
+* **X-Axis**: Provide a custom label for the X-Axis.
+* **Y-Axis**:Provide a custom label for the Y-Axis.
+* **Bar Width %**: Set the width of the bars.
+* **Data Labels**: Add labels to the top of the bars and choose whether to turn on/off borders of labels.
 * **Shading**: Turn on/off shading of bars.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/bar_style.png#thumbnail-40)
+ 
 
 #### Layers
 * Add trend lines or reference lines to the bar chart.
