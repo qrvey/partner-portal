@@ -62,7 +62,7 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## F
 
-**Filter** - A condition applied during the analysis that excludes data that does not meet the specified conditions.
+**Filter** - A condition applied during the analysis to exclude data that does not meet the specified conditions.
 
 **Form** - A specific type of web form that is typically used to collect information and interact with applications.
 
