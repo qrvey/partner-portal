@@ -213,7 +213,7 @@ Position Set the totals for columns, rows or both.
 * **Color**: Change the color of Rows and Columns headers of the chart.
 * **Format**: Change the format of the values visualized in the chart.
 
-#### Change Headers Colors 
+#### Changing Header Colors 
 The Crosstab headers font color can be changed directly from the Chart Builder. 
 Simply go to the Styles section and pick a color for the header and/or header font to change the look of your crosstab.
 
@@ -234,7 +234,7 @@ If a user changes the color inside the chart builder, that configuration will re
 ### Conditional Formatting in Crosstab
 You can use conditional formatting in Crosstab to highlight cells in your chart with colors so that it can be easily distinguished which cells in the crosstab have met the set conditions.
 
-The user can add as many conditions as necessary with each of them being added to the bottom of the list. Conditions can be dragged and dropped to organize the logic. In case there’s an overlap between conditions, the uppermost condition takes precedence when logic is applied. Determining conditions includes: 
+You can add as many conditions as necessary with each of them being added to the bottom of the list. Conditions can be dragged and dropped to organize the logic. In case there’s an overlap between conditions, the uppermost condition takes precedence when logic is applied. Determining conditions includes: 
 * **Text Color**: It changes the font color of the cell’s value that matches the condition.
 * **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells with values matching the condition.
 * **Style**: It works together with the cell color option to fill the cell’s background color or outline its border.
@@ -758,10 +758,11 @@ Table **Creators** and **End Users** are able to organize columns by reordering 
 
 #### Simple Table
 **Creators** can reorder columns in two different ways:
-1. Directly in Table Headers 
+1. Directly from the  table headers 
 
-Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place.
-After dropping the column in its new place, the column pills in the shelf appear in that same new order. 
+Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved.
+After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order. 
+
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab1.png#thumbnail)  
 
@@ -770,16 +771,24 @@ After dropping the column in its new place, the column pills in the shelf appear
 
 2. From the Chart Builder Shelf 
 
-Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the shelf. 
+Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position in the shelf. 
+This method only applies to the edit mode of charts and can be performed inside Chart Builder.
+
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab2.png#thumbnail) 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/simp_tab3.png#thumbnail)  
 
 
-#### Aggregate Table
-In Aggregate columns, we can find two types of columns:
-* **Aggregate** - the ones that are dropped in the Columns shelf
-* **Grouped** - the ones that are dropped in the Group shelf
+#### Grouped Table
+In Grouped Tables, we can find two types of columns:
+* **Aggregate** - the ones that are dropped in the Columns shelf and their values are somehow aggregated into a number.
+* **Grouped** - the ones that are dropped in the Group shelf and the Aggregated Columns are grouped by.
+
+Aggregate columns can be reordered in the exact same ways as columns in a simple table: 
+1. Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
+
+After dropping the column in its new place, the column pills in the shelf appear in that same new order. <br>
+**Important Note**: Aggregate columns cannot be dragged between, or before the grouped columns.
 
 Aggregate columns can be reordered in two ways:
 1. Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the 
@@ -791,7 +800,9 @@ After dropping the column in its new place, the column pills in the shelf appear
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab2.png#thumbnail)  
 
 2. From the Chart Builder Shelf 
-Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the shelf. 
+Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position shelf. 
+This method only applies to the edit mode of charts and can be performed inside Chart Builder.
+
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/agg_tab3.png#thumbnail)  
 
@@ -799,7 +810,7 @@ Columns can also be reordered in the analytic panel by dragging and dropping the
 
 
 
->**Note**: Grouped columns cannot be reordered
+Grouped columns can only be ordered in design mode, i.e. inside Chart Builder, and only from the columns shelf. For this very same reason, they cannot be reordered by end users, who only work with the saved chart. 
 
 
 ## Charts in Tables
@@ -808,11 +819,11 @@ Table Creators can add Charts inside table cells and this way create more robust
 When adding a trend chart to the cells, you need to define:
 * **Column** - the value(s) you would like to show in the chart.
 * **Trend by Column** - Date or Numeric data types.
-  * If **Trend by Column** is a Date data type, you can apply:
+  * If **Trend by Column** is a date data type, you can apply:
     * Date Grouping- to group your dates by year, quarter, months, weeks, days. 
     * Time Period - to choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).
-  * If **Trend by Column**  is a Numeric data type, you can apply: 
-    * Max Data Points - to limit the number of data points shown WHEN a numeric or string column is used for the “Trend by Column.” (For Sparklines - Bar/Line + Min/Loss charts). This does not apply to dates. The default value is set to 50.
+  * If **Trend by Column**  is a numeric data type, you can apply: 
+    * Max Data Points - to limit the number of data points shown WHEN a numeric or string column is used for the “Trend by Column.” (For Sparklines - Bar/Line + Min/Max charts). This does not apply to dates. The default value is set to 50.
 * **Trend Sort** - to sort the trend visualization in an ascending or descending manner. Applies to all datatypes.
 * **Color** - to select the color of the trend chart.
 * **Type** - type of chart you want to show (Sparkline Line or Bar chart)
@@ -829,7 +840,7 @@ To add a Sparkline - Line chart to a table cell, follow these steps:
   a) from the Grouped Table Chart’s configuration Pane
   b) from the Aggregated Column Pills
 
-#### Creating a Sparkline - Line Chart from the Grouped Table Chart’s configuration Pane
+#### Creating a Sparkline - Line Chart from the Grouped Table Chart’s Configuration Pane
 
 1. Go to the configuration pane and click on the *Trend Charts* tab.
 
@@ -839,7 +850,7 @@ To add a Sparkline - Line chart to a table cell, follow these steps:
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark2.png#thumbnail-20) 
 
-See the new trend chart panel appear. The chart type selected by default is the line chart.
+See the trend chart panel appear. The chart type selected by default is the line chart.
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark3.png#thumbnail-40) 
 
@@ -873,7 +884,7 @@ Once the chart has been added to the cell, hovering over it will show more detai
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark9.png#thumbnail-60) 
 
 
->**Note**: The trend chart is visible only in the “Value” visualization type. If you change to the “Bar” visualization, the trend chart won’t be visible, but the configuration should remain in place.
+>**Note**: The trend chart can be shown only when the visualization is set to "Value". If you change visualization to “Bar”, the trend chart won’t be visible, however, the configuration should remain in place.
 
 
 ### Sparkline - Bar Chart Type
