@@ -844,9 +844,9 @@ When adding a trend chart to the cells, you need to define:
 
 To add a Sparkline - Line chart to a table cell, follow these steps:
 1. Open Chart Builder
-2. Build a grouped Table Chart 
-3. There are two ways of adding a chart to a table cell:
-  a) from the Grouped Table Chart’s configuration Pane
+2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a> 
+3. There are two ways of adding a chart to a table cell:<br>
+  a) from the Grouped Table Chart’s configuration Pane<br>
   b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Line Chart from the Grouped Table Chart’s Configuration Pane
@@ -899,9 +899,10 @@ Once the chart has been added to the cell, hovering over it will show more detai
 ### Sparkline - Bar Chart Type
 To add a Bar chart to a table cell, follow these steps:
 1. Open Chart Builder
-2. Build a grouped Table Chart  
-There are two ways of adding a chart to a table cell:
-  a) from the Grouped Table Chart’s configuration Pane
+2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a>
+
+There are two ways of adding a chart to a table cell:<br>
+  a) from the Grouped Table Chart’s configuration Pane<br>
   b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Bar Chart from the Grouped Table Chart’s configuration Pane
