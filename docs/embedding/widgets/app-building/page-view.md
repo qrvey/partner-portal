@@ -1,13 +1,28 @@
 ---
 id: widget-page-view
-title: Page View
-sidebar_label: Page View
+title: Page View Widget
+sidebar_label: Page View Widget
 ---
 
 <div style="text-align: justify">
 
 
-The Page View widget (previously known as “End User widget”) allows users to access one or more pages of an application created from the Page Builder Widget. Pages may contain embedded reports and webforms, as well as other static content.
+The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and webforms, as well as other static content.
+
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. 
+
+Depending on whether a single, specific published page needs to be embedded or all of the published pages, the code can be found in two different places:
+* In order to embed all of the published pages, you can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page View” option.
+ 
+ ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail)
+
+This will open a dialog with the necessary code, including the “domain” and property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
+
+* To embed an individual page, you will also need the page_id value. For this use case you can navigate to the desired page and click on the three-dot menu of the page at the bottom of the screen and select the “Embed Page” option. The code will be very similar to the previous case but include the page_id property of the selected page.
+
+ ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-view1.png#thumbnail)
+
+The building blocks of the code are explained below.
 
 ## HTML Tag And Launcher
 
@@ -86,10 +101,9 @@ See the widget in CodePen:
 
 <p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWbNapv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWbNapv">
-  DOC - Page View (Jan2021)</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
+  Sample- Qrvey End-user</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
 
 

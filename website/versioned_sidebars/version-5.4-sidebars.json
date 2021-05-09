@@ -13,6 +13,7 @@
     ],
     "Managing Qrvey In AWS": [
       "version-5.4-get-started/aws-services",
+      "version-5.4-get-started/customizing-qrvey-deployment",
       "version-5.4-get-started/managing-aws-cluster",
       "version-5.4-aws/connect-to-instance"
     ],
@@ -54,9 +55,11 @@
         ]
       },
       "version-5.4-ui-docs/datasets/datasets",
+      "version-5.4-ui-docs/datasets/column-links",
       "version-5.4-ui-docs/datasets/data-sync",
       "version-5.4-ui-docs/datasets/joins",
       "version-5.4-ui-docs/datasets/datalinks",
+      "version-5.4-ui-docs/datasets/hierarchical-data",
       "version-5.4-ui-docs/datasets/transformations"
     ],
     "Analysis Views": [
@@ -221,6 +224,7 @@
   "version-5.4-release-notes": {
     "Release Notes 2021": [
       "version-5.4-release-notes/release-last",
+      "version-5.4-release-notes/release-apr-2021",
       "version-5.4-release-notes/release-feb-2021"
     ],
     "Release Notes 2020": [
@@ -266,6 +270,7 @@
   },
   "version-5.4-video-training": {
     "Release Demos": [
+      "version-5.4-video-training/release/version-5.10",
       "version-5.4-video-training/release/version-5.9",
       "version-5.4-video-training/release/version-5.8",
       "version-5.4-video-training/release/version-5.7",

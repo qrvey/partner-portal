@@ -1,11 +1,18 @@
 ---
 id: widget-page-builder
-title: Page Builder
-sidebar_label: Page Builder
+title: Page Builder Widget
+sidebar_label: Page Builder Widget
 ---
 <div style="text-align: justify">
 
-The Page Builder widget allows users to manage pages for an application (create, edit, publish and delete). Pages may contain embedded reports and webforms, as well as other static content.
+The Page Builder widget is used to add the ability to create new pages or modify existing ones in a product that embeds this widget.  Pages may contain embedded reports and webforms, as well as other static content.
+
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page Builder” option.
+
+![page-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail)
+
+This will open a dialog with the necessary code, including the “domain”, “app_id” and “user_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
+The building blocks of the code are explained below.
 
 ## HTML Tag And Launcher
 The HTML tag for this widget is:
@@ -93,7 +100,7 @@ See the widget in CodePen:
 
 <p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="5bd38e7cb821debf789eea5fda042145" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Page Builder">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/5bd38e7cb821debf789eea5fda042145">
-  DOC - Page Builder (Jan2021)</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
+  Sample- Qrvey Page Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

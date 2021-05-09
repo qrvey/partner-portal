@@ -1,7 +1,8 @@
 ---
-id: reports
+id: version-5.4-reports
 title: Report Builder
 sidebar_label: Report Builder
+original_id: reports
 ---
 
 <div style="text-align: justify">
