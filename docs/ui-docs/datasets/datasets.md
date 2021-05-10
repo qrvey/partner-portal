@@ -104,7 +104,7 @@ The automatic link can be set up from the Column Link command in the dot menu of
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
-For detailed information about Column Links see the article dedicated to the subject. 
+For detailed information about <a href="/docs/ui-docs/datasets/column-links/">Column Links</a> see the article dedicated to the subject. 
 Setting up automatic links for a column will not require a data reload. 
 
 ### Setting Up Geolocation Groups
