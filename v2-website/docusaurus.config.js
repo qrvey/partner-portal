@@ -5,6 +5,7 @@ module.exports={
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
+  "onBrokenLinks":'ignore',
   "scripts": [
     "/js/user.js"
   ],
@@ -136,5 +137,5 @@ module.exports={
       exhaustiveNbHits: true},
 
     }
-  }
+  },
 }

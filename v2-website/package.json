@@ -34,22 +34,36 @@
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.72",
+    "@docusaurus/plugin-client-redirects": "^2.0.0-beta.0",
     "@docusaurus/preset-classic": "2.0.0-alpha.72",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.0",
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.72",
     "algoliasearch": "^4.8.6",
-    "clsx": "^1.1.1",
-    "instantsearch.js": "^4.20.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "remark-iframes": "^4.0.5",
     "classnames": "2.3.1",
+    "clsx": "^1.1.1",
     "file-loader": "6.2.0",
+    "instantsearch.js": "^4.20.0",
     "mermaid": "8.9.2",
     "node-fetch": "2.6.1",
     "parser-front-matter": "1.6.4",
     "prism-react-renderer": "1.2.0",
     "prismjs": "1.23.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "remark-iframes": "^4.0.5",
     "sync-request": "6.1.0",
     "url-loader": "4.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

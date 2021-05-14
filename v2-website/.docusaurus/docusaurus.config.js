@@ -5,6 +5,7 @@ export default {
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
+  "onBrokenLinks": "ignore",
   "scripts": [
     "/js/user.js"
   ],
@@ -45,6 +46,16 @@ export default {
     ],
     "homepagescripts": [
       "/js/homepage.js"
+    ],
+    "rules": [
+      {
+        "test": {},
+        "use": [
+          "style-loader",
+          "css-loader",
+          "postcss-loader"
+        ]
+      }
     ]
   },
   "presets": [
@@ -52,7 +63,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "index.js",
+          "homePageId": "index",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "path": "../docs",
@@ -163,7 +174,6 @@ export default {
     ],
     "localeConfigs": {}
   },
-  "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "onDuplicateRoutes": "warn",
   "themes": [],
