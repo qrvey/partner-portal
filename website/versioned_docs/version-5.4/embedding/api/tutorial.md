@@ -1,7 +1,8 @@
 ---
-id: api-tutorial
+id: version-5.4-api-tutorial
 title: API Tutorial
 sidebar_label: Tutorial
+original_id: api-tutorial
 ---
 
 <div style="text-align: justify">
