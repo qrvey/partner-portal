@@ -8,6 +8,41 @@ export default [
   exact: true,
 },
 {
+  path: '/__docusaurus/debug',
+  component: ComponentCreator('/__docusaurus/debug','3d6'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/config',
+  component: ComponentCreator('/__docusaurus/debug/config','914'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/content',
+  component: ComponentCreator('/__docusaurus/debug/content','c28'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/globalData',
+  component: ComponentCreator('/__docusaurus/debug/globalData','3cf'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/metadata',
+  component: ComponentCreator('/__docusaurus/debug/metadata','31b'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/registry',
+  component: ComponentCreator('/__docusaurus/debug/registry','0da'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/routes',
+  component: ComponentCreator('/__docusaurus/debug/routes','244'),
+  exact: true,
+},
+{
   path: '/blog',
   component: ComponentCreator('/blog','b2a'),
   exact: true,
@@ -84,7 +119,7 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','238'),
+  component: ComponentCreator('/docs','552'),
   
   routes: [
 {
@@ -130,6 +165,11 @@ export default [
 {
   path: '/docs/admin/record-level-security',
   component: ComponentCreator('/docs/admin/record-level-security','a98'),
+  exact: true,
+},
+{
+  path: '/docs/admin/roles-and-permissions',
+  component: ComponentCreator('/docs/admin/roles-and-permissions','e8d'),
   exact: true,
 },
 {
@@ -563,6 +603,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/get-started/customizing-qrvey-deployment',
+  component: ComponentCreator('/docs/get-started/customizing-qrvey-deployment','8a3'),
+  exact: true,
+},
+{
   path: '/docs/get-started/deleting-installation',
   component: ComponentCreator('/docs/get-started/deleting-installation','30b'),
   exact: true,
@@ -640,6 +685,16 @@ export default [
 {
   path: '/docs/release-notes/known-issues',
   component: ComponentCreator('/docs/release-notes/known-issues','7ee'),
+  exact: true,
+},
+{
+  path: '/docs/release-notes/release_apr_2021',
+  component: ComponentCreator('/docs/release-notes/release_apr_2021','143'),
+  exact: true,
+},
+{
+  path: '/docs/release-notes/release_may_2021',
+  component: ComponentCreator('/docs/release-notes/release_may_2021','4de'),
   exact: true,
 },
 {
@@ -883,6 +938,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/ui-docs/datasets/hierarchical-data',
+  component: ComponentCreator('/docs/ui-docs/datasets/hierarchical-data','7c2'),
+  exact: true,
+},
+{
   path: '/docs/ui-docs/datasets/joins',
   component: ComponentCreator('/docs/ui-docs/datasets/joins','32b'),
   exact: true,
@@ -1063,6 +1123,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/video-training/building-qrvey-sample/analysis-views',
+  component: ComponentCreator('/docs/video-training/building-qrvey-sample/analysis-views','b8d'),
+  exact: true,
+},
+{
   path: '/docs/video-training/building-qrvey-sample/analyzing-data',
   component: ComponentCreator('/docs/video-training/building-qrvey-sample/analyzing-data','741'),
   exact: true,
@@ -1178,6 +1243,11 @@ export default [
   exact: true,
 },
 {
+  path: '/docs/video-training/release/version-5.10',
+  component: ComponentCreator('/docs/video-training/release/version-5.10','8a3'),
+  exact: true,
+},
+{
   path: '/docs/video-training/release/version-5.2',
   component: ComponentCreator('/docs/video-training/release/version-5.2','648'),
   exact: true,
@@ -1210,6 +1280,11 @@ export default [
 {
   path: '/docs/video-training/release/version-5.8',
   component: ComponentCreator('/docs/video-training/release/version-5.8','49a'),
+  exact: true,
+},
+{
+  path: '/docs/video-training/release/version-5.9',
+  component: ComponentCreator('/docs/video-training/release/version-5.9','d06'),
   exact: true,
 },
 ]

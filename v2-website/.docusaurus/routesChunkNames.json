@@ -1,1004 +1,1058 @@
 {
   "/-deb": {
-    "component": "c4f5d8e4",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  },
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
   },
   "/blog-b2a": {
-    "component": "a6aa9e1f",
-    "sidebar": "0bad3e1b",
+    "component": "component---theme-blog-list-pagea-6-a-7ba",
+    "sidebar": "sidebar---blog-0-ba-2b5",
     "items": [
       {
-        "content": "58b49143"
+        "content": "content---blog-58-b-01b"
       },
       {
-        "content": "8e9ca6ef"
+        "content": "content---blog-8-e-9-35c"
       },
       {
-        "content": "bbe1842d"
+        "content": "content---blogbbe-e21"
       },
       {
-        "content": "00755950"
+        "content": "content---blog-007-91a"
       },
       {
-        "content": "28bf9f5e"
+        "content": "content---blog-28-b-25a"
       },
       {
-        "content": "ad5c3252"
+        "content": "content---blogad-5-706"
       },
       {
-        "content": "603a6c1b"
+        "content": "content---blog-603-746"
       },
       {
-        "content": "179776e0"
+        "content": "content---blog-179-30f"
       }
     ],
-    "metadata": "b2b675dd"
+    "metadata": "metadata---blogb-2-b-df1"
   },
   "/blog/2019/11/29/qsnewsflash-017": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "a6f8e22b"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2019-11-29-qsnewsflasha-6-f-331"
   },
   "/blog/2019/12/20/qsnewsflash-707": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "fb852ec5"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2019-12-20-qsnewsflashfb-8-b8a"
   },
   "/blog/2020/01/31/qsnewsflash-9a9": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "c07b0166"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-01-31-qsnewsflashc-07-435"
   },
   "/blog/2020/02/29/qsnewsflash-0c9": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "cfa8e6b2"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-02-29-qsnewsflashcfa-252"
   },
   "/blog/2020/03/30/qsnewsflash-454": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "69790854"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-03-30-qsnewsflash-697-5ae"
   },
   "/blog/2020/04/30/qsnewsflash-9d5": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "55ae6dad"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-04-30-qsnewsflash-55-a-b68"
   },
   "/blog/2020/06/30/qsnewsflash-981": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "96117278"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-06-30-qsnewsflash-961-77e"
   },
   "/blog/2020/09/02/qsnewsflash-3b9": {
-    "component": "ccc49370",
-    "sidebar": "0bad3e1b",
-    "content": "e091fba7"
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-0-ba-2b5",
+    "content": "content---blog-2020-09-02-qsnewsflashe-09-41c"
   },
   "/documentation-335": {
-    "component": "b7f4ab1b",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-documentation-jsb-7-f-210",
+    "config": "config---5-e-9-4f3"
   },
   "/forgot-password-439": {
-    "component": "eb04cf61",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-forgot-password-jseb-0-e84",
+    "config": "config---5-e-9-4f3"
   },
   "/get-started-478": {
-    "component": "46d3008f",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-get-started-js-46-d-8d2",
+    "config": "config---5-e-9-4f3"
   },
   "/login-61b": {
-    "component": "380abe66",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-login-js-380-710",
+    "config": "config---5-e-9-4f3"
   },
   "/search-1e1": {
-    "component": "fa0133f5"
+    "component": "component---users-qrvey-documentation-v-2-website-node-modules-docusaurus-theme-search-algolia-src-theme-search-page-index-jsfa-0-779"
   },
   "/support-6cd": {
-    "component": "ab9bdc8a",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-support-jsab-9-40d",
+    "config": "config---5-e-9-4f3"
   },
-  "/docs-238": {
-    "component": "1be78505",
-    "versionMetadata": "935f2afb"
+  "/docs-552": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
   },
   "/docs/admin/admin-data-5e3": {
-    "component": "17896441",
-    "content": "78bda3d4"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-data-78-b-757"
   },
   "/docs/admin/admin-intro-8f7": {
-    "component": "17896441",
-    "content": "07dd8154"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-intro-07-d-cbc"
   },
   "/docs/admin/admin-managing-users-d41": {
-    "component": "17896441",
-    "content": "1a1de511"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-managing-users-1-a-1-e3b"
   },
   "/docs/admin/admin-sections-data-router-716": {
-    "component": "17896441",
-    "content": "8aac485d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-sections-data-router-8-aa-ca5"
   },
   "/docs/admin/admin-sections-deployments-8d7": {
-    "component": "17896441",
-    "content": "5158ec70"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-sections-deployments-515-967"
   },
   "/docs/admin/admin-sections-platform-e00": {
-    "component": "17896441",
-    "content": "d9b56533"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-admin-sections-platformd-9-b-827"
   },
   "/docs/admin/elasticsearch-management-8f8": {
-    "component": "17896441",
-    "content": "7a5615a3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-elasticsearch-management-7-a-5-42e"
   },
   "/docs/admin/metadata-builder-f97": {
-    "component": "17896441",
-    "content": "47ed56f7"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-metadata-builder-47-e-e57"
   },
   "/docs/admin/record-level-security-a98": {
-    "component": "17896441",
-    "content": "8011d4cf"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-record-level-security-801-417"
+  },
+  "/docs/admin/roles-and-permissions-e8d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-admin-roles-and-permissions-0-e-7-be5"
   },
   "/docs/aws/connect-to-instance-de2": {
-    "component": "17896441",
-    "content": "72a2e206"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-aws-connect-to-instance-72-a-952"
   },
   "/docs/aws/deploying-enterprise-edition-aws-386": {
-    "component": "17896441",
-    "content": "bd8f819b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-aws-deploying-enterprise-edition-awsbd-8-e56"
   },
   "/docs/aws/manage-aws-elasticsearch-1d9": {
-    "component": "17896441",
-    "content": "4368578c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-aws-manage-aws-elasticsearch-436-040"
   },
   "/docs/aws/setup-cost-ff9": {
-    "component": "17896441",
-    "content": "ae58a297"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-aws-setup-costae-5-fa8"
   },
   "/docs/business-analytics/business-analytics-application-46c": {
-    "component": "17896441",
-    "content": "8a6f1678"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-business-analytics-business-analytics-application-8-a-6-261"
   },
   "/docs/business-analytics/business-users-a63": {
-    "component": "17896441",
-    "content": "3eca51a4"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-business-analytics-business-users-3-ec-10d"
   },
   "/docs/data-router/apireference/api-reference-intro-447": {
-    "component": "17896441",
-    "content": "8f12e37b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-apireference-api-reference-intro-8-f-1-d11"
   },
   "/docs/data-router/batch-manager-000": {
-    "component": "17896441",
-    "content": "4af01d3e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-batch-manager-4-af-6fa"
   },
   "/docs/data-router/data-router-intro-2c7": {
-    "component": "17896441",
-    "content": "8d28145e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-router-intro-8-d-2-b5d"
   },
   "/docs/data-router/data-router-loading-data-11d": {
-    "component": "17896441",
-    "content": "863a63df"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-router-loading-data-863-ff0"
   },
   "/docs/data-router/data-router-loading-data-348": {
-    "component": "17896441",
-    "content": "731b7e6d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-router-loading-data-731-f4b"
   },
   "/docs/data-router/dataload-S3-08d": {
-    "component": "17896441",
-    "content": "7cefc27a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-dataload-s-37-ce-66c"
   },
   "/docs/data-router/DataLoading/connectors-intro-6ca": {
-    "component": "17896441",
-    "content": "5dda7b1f"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-connectors-intro-5-dd-219"
   },
   "/docs/data-router/DataLoading/connectors-status-flow-9a4": {
-    "component": "17896441",
-    "content": "c5277790"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-connectors-status-flowc-52-444"
   },
   "/docs/data-router/DataLoading/loading-status-79b": {
-    "component": "17896441",
-    "content": "5f02ec76"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-loading-status-5-f-0-f6b"
   },
   "/docs/data-router/DataLoading/loading-status-databases-a77": {
-    "component": "17896441",
-    "content": "ec732440"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-loading-status-databasesec-7-b0f"
   },
   "/docs/data-router/DataLoading/notifications-32b": {
-    "component": "17896441",
-    "content": "be8049ad"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-notificationsbe-8-ebb"
   },
   "/docs/data-router/DataLoading/postdata-content-30e": {
-    "component": "17896441",
-    "content": "aba62244"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-data-loading-postdata-contentaba-db2"
   },
   "/docs/data-router/introduction/data-router-intro-3b8": {
-    "component": "17896441",
-    "content": "8a95ceb8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-introduction-data-router-intro-8-a-9-080"
   },
   "/docs/data-router/introduction/data-router-loading-data-384": {
-    "component": "17896441",
-    "content": "3bf2db10"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-introduction-data-router-loading-data-3-bf-08c"
   },
   "/docs/data-router/Metadata/metadata-API-b99": {
-    "component": "17896441",
-    "content": "6749afcc"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-metadata-api-674-cdf"
   },
   "/docs/data-router/Metadata/metadata-intro-14c": {
-    "component": "17896441",
-    "content": "2962e507"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-metadata-intro-296-108"
   },
   "/docs/data-router/Metadata/metadata-overview-b77": {
-    "component": "17896441",
-    "content": "a20257b7"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-metadata-overviewa-20-1f3"
   },
   "/docs/data-router/Metadata/transformations/DataRules/conditionals-intro-8ac": {
-    "component": "17896441",
-    "content": "c8cfce36"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-conditionals-introc-8-c-4ff"
   },
   "/docs/data-router/Metadata/transformations/DataRules/data-router-array-lookup-5d4": {
-    "component": "17896441",
-    "content": "1777a0a2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-data-router-array-lookup-177-816"
   },
   "/docs/data-router/Metadata/transformations/DataRules/data-router-es-lookup-8d8": {
-    "component": "17896441",
-    "content": "9302d4e6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-data-router-es-lookup-930-72c"
   },
   "/docs/data-router/Metadata/transformations/DataRules/data-router-flatArray-23b": {
-    "component": "17896441",
-    "content": "9f3f5bca"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-data-router-flat-array-9-f-3-c70"
   },
   "/docs/data-router/Metadata/transformations/DataRules/data-router-switch-2b9": {
-    "component": "17896441",
-    "content": "f57fb8fa"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-data-router-switchf-57-d95"
   },
   "/docs/data-router/Metadata/transformations/DataRules/data-rules-intro-dc8": {
-    "component": "17896441",
-    "content": "2cf7cfa5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-data-rules-intro-2-cf-545"
   },
   "/docs/data-router/Metadata/transformations/DataRules/destinations-intro-9b5": {
-    "component": "17896441",
-    "content": "b040e853"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-destinations-introb-04-0dc"
   },
   "/docs/data-router/Metadata/transformations/DataRules/java-custom-functions-e42": {
-    "component": "17896441",
-    "content": "fcf7b513"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-java-custom-functionsfcf-2ae"
   },
   "/docs/data-router/Metadata/transformations/DataRules/reusable-data-rules-intro-d10": {
-    "component": "17896441",
-    "content": "b7c7b346"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-data-rules-reusable-data-rules-introb-7-c-bd6"
   },
   "/docs/data-router/Metadata/transformations/reusable-transforms-07a": {
-    "component": "17896441",
-    "content": "886dc3ae"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-reusable-transforms-886-a0b"
   },
   "/docs/data-router/Metadata/transformations/transformations-intro-1f8": {
-    "component": "17896441",
-    "content": "2575b1d2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transformations-transformations-intro-257-ad8"
   },
   "/docs/data-router/Metadata/transforms-intro-70a": {
-    "component": "17896441",
-    "content": "d95a42e7"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-data-router-metadata-transforms-introd-95-321"
   },
   "/docs/embedding/api/api-analytics-95c": {
-    "component": "17896441",
-    "content": "4df28ece"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-api-api-analytics-4-df-1f8"
   },
   "/docs/embedding/api/api-automation-402": {
-    "component": "17896441",
-    "content": "746a4808"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-api-api-automation-746-9f9"
   },
   "/docs/embedding/api/api-data-sources-ae5": {
-    "component": "17896441",
-    "content": "9d481297"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-api-api-data-sources-9-d-4-25a"
   },
   "/docs/embedding/api/api-intro-7dc": {
-    "component": "17896441",
-    "content": "f73bc3be"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-api-api-introf-73-84f"
   },
   "/docs/embedding/api/api-tutorial-817": {
-    "component": "17896441",
-    "content": "2b29cf5a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-api-api-tutorial-2-b-2-d32"
   },
   "/docs/embedding/embedding-intro-5bb": {
-    "component": "17896441",
-    "content": "bdbdc442"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-embedding-introbdb-bd0"
   },
   "/docs/embedding/widgets/analytics/analytic-suite-9ce": {
-    "component": "17896441",
-    "content": "d782f0bd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-analytic-suited-78-91a"
   },
   "/docs/embedding/widgets/analytics/single-panel-651": {
-    "component": "17896441",
-    "content": "fe248a7c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-single-panelfe-2-acf"
   },
   "/docs/embedding/widgets/analytics/widget-buckets-modal-dbb": {
-    "component": "17896441",
-    "content": "a6d5e02a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-buckets-modala-6-d-8a6"
   },
   "/docs/embedding/widgets/analytics/widget-custom-charts-core-6e3": {
-    "component": "17896441",
-    "content": "738b2fec"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-custom-charts-core-738-cfa"
   },
   "/docs/embedding/widgets/analytics/widget-custom-view-b2f": {
-    "component": "17896441",
-    "content": "87b0dd41"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-custom-view-87-b-ab1"
   },
   "/docs/embedding/widgets/analytics/widget-filter-modal-804": {
-    "component": "17896441",
-    "content": "a70e588a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-modala-70-d73"
   },
   "/docs/embedding/widgets/analytics/widget-filter-modal-core-1d0": {
-    "component": "17896441",
-    "content": "951c56e5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-modal-core-951-ca4"
   },
   "/docs/embedding/widgets/analytics/widget-filter-modal-page-builder-258": {
-    "component": "17896441",
-    "content": "ca5bfee2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-modal-page-builderca-5-367"
   },
   "/docs/embedding/widgets/analytics/widget-filter-modal-report-builder-ed4": {
-    "component": "17896441",
-    "content": "6cb54450"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-modal-report-builder-6-cb-cd3"
   },
   "/docs/embedding/widgets/analytics/widget-filter-panel-1a0": {
-    "component": "17896441",
-    "content": "85562e07"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-panel-855-aa5"
   },
   "/docs/embedding/widgets/analytics/widget-filter-panel-external-4f9": {
-    "component": "17896441",
-    "content": "63f2f746"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-panel-external-63-f-cbf"
   },
   "/docs/embedding/widgets/analytics/widget-filter-panel-page-builder-53c": {
-    "component": "17896441",
-    "content": "2207248e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-panel-page-builder-220-304"
   },
   "/docs/embedding/widgets/analytics/widget-filter-panel-report-builder-d60": {
-    "component": "17896441",
-    "content": "645b6cc7"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-filter-panel-report-builder-645-fec"
   },
   "/docs/embedding/widgets/analytics/widget-formula-modal-134": {
-    "component": "17896441",
-    "content": "6e6eb29f"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-formula-modal-6-e-6-b2e"
   },
   "/docs/embedding/widgets/analytics/widget-panel-builder-a85": {
-    "component": "17896441",
-    "content": "1becb359"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-panel-builder-1-be-79f"
   },
   "/docs/embedding/widgets/analytics/widget-panels-d4b": {
-    "component": "17896441",
-    "content": "b6afbe95"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-panelsb-6-a-2b1"
   },
   "/docs/embedding/widgets/analytics/widget-summary-panel-5d1": {
-    "component": "17896441",
-    "content": "a428556c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-summary-panela-42-de4"
   },
   "/docs/embedding/widgets/analytics/widget-summary-view-31a": {
-    "component": "17896441",
-    "content": "c7ae4491"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-summary-viewc-7-a-6f3"
   },
   "/docs/embedding/widgets/analytics/widget-tabular-view-11e": {
-    "component": "17896441",
-    "content": "98d15e5e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-analytics-widget-tabular-view-98-d-e90"
   },
   "/docs/embedding/widgets/app-building/chart-builder-9ef": {
-    "component": "17896441",
-    "content": "e503cf0c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-app-building-chart-buildere-50-b59"
   },
   "/docs/embedding/widgets/app-building/widget-page-builder-fd3": {
-    "component": "17896441",
-    "content": "22bc9fcb"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-app-building-widget-page-builder-22-b-c6e"
   },
   "/docs/embedding/widgets/app-building/widget-page-view-ab0": {
-    "component": "17896441",
-    "content": "251f3edd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-app-building-widget-page-view-251-c4d"
   },
   "/docs/embedding/widgets/app-building/widget-report-builder-320": {
-    "component": "17896441",
-    "content": "4a524d9d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-app-building-widget-report-builder-4-a-5-a61"
   },
   "/docs/embedding/widgets/app-building/widget-user-management-539": {
-    "component": "17896441",
-    "content": "0a8781e5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-app-building-widget-user-management-0-a-8-d93"
   },
   "/docs/embedding/widgets/automation/widget-automation-f38": {
-    "component": "17896441",
-    "content": "c97ffcfd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-automation-widget-automationc-97-105"
   },
   "/docs/embedding/widgets/automation/widget-tokens-manager-8c7": {
-    "component": "17896441",
-    "content": "d405d89e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-automation-widget-tokens-managerd-40-21a"
   },
   "/docs/embedding/widgets/automation/widget-tokens-suggestion-box-b25": {
-    "component": "17896441",
-    "content": "bc8d6289"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-automation-widget-tokens-suggestion-boxbc-8-96d"
   },
   "/docs/embedding/widgets/data-sources/activity-log-682": {
-    "component": "17896441",
-    "content": "4af31590"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-activity-log-4-af-324"
   },
   "/docs/embedding/widgets/data-sources/datasets-widget-922": {
-    "component": "17896441",
-    "content": "e8aedbb3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-datasets-widgete-8-a-6b2"
   },
   "/docs/embedding/widgets/data-sources/web-form-end-user-4ce": {
-    "component": "17896441",
-    "content": "0c349d31"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-web-form-end-user-0-c-3-c8a"
   },
   "/docs/embedding/widgets/data-sources/widget-dataconnectors-6fc": {
-    "component": "17896441",
-    "content": "8587d001"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-widget-dataconnectors-858-84b"
   },
   "/docs/embedding/widgets/data-sources/widget-datalinks-16a": {
-    "component": "17896441",
-    "content": "6998ed48"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-widget-datalinks-699-1b3"
   },
   "/docs/embedding/widgets/data-sources/widget-datasets-be8": {
-    "component": "17896441",
-    "content": "f5e3bec1"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-widget-datasetsf-5-e-607"
   },
   "/docs/embedding/widgets/data-sources/widget-metadata-b4b": {
-    "component": "17896441",
-    "content": "2335f9ba"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-widget-metadata-233-fa7"
   },
   "/docs/embedding/widgets/data-sources/widget-webforms-ed0": {
-    "component": "17896441",
-    "content": "35bdca10"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-data-sources-widget-webforms-35-b-6bf"
   },
   "/docs/embedding/widgets/filters-embedded-scenarios-e60": {
-    "component": "17896441",
-    "content": "0baa5237"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-filters-embedded-scenarios-0-ba-139"
   },
   "/docs/embedding/widgets/widget-embedding-using-cookies-a6c": {
-    "component": "17896441",
-    "content": "94a3f2c6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-widget-embedding-using-cookies-94-a-adb"
   },
   "/docs/embedding/widgets/widget-intro-430": {
-    "component": "17896441",
-    "content": "bd08c98b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-embedding-widgets-widget-introbd-0-b45"
   },
   "/docs/faqs/ask-us-e73": {
-    "component": "17896441",
-    "content": "9e758ba2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-ask-us-9-e-7-71e"
   },
   "/docs/faqs/aws-faqs-690": {
-    "component": "17896441",
-    "content": "6ae2984b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-aws-faqs-6-ae-a54"
   },
   "/docs/faqs/data-security-faqs-889": {
-    "component": "17896441",
-    "content": "1a5fcba2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-data-security-faqs-1-a-5-202"
   },
   "/docs/faqs/faqs-intro-997": {
-    "component": "17896441",
-    "content": "ecfeb084"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-faqs-introecf-f96"
   },
   "/docs/faqs/publishing-faqs-330": {
-    "component": "17896441",
-    "content": "dda803b6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-faqs-publishing-faqsdda-b4a"
   },
   "/docs/get-started/aws_marketplace-904": {
-    "component": "17896441",
-    "content": "180fddc6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-aws-marketplace-180-856"
   },
   "/docs/get-started/aws-services-08f": {
-    "component": "17896441",
-    "content": "38ae1141"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-aws-services-38-a-b96"
+  },
+  "/docs/get-started/customizing-qrvey-deployment-8a3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-customizing-qrvey-deployment-688-1ce"
   },
   "/docs/get-started/deleting-installation-30b": {
-    "component": "17896441",
-    "content": "899641f4"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-deleting-installation-899-cdd"
   },
   "/docs/get-started/deploying-aws/initial-installation-183": {
-    "component": "17896441",
-    "content": "bab981f1"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-deploying-aws-initial-installationbab-62b"
   },
   "/docs/get-started/get-started-architecture-eba": {
-    "component": "17896441",
-    "content": "2e89b84d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-get-started-architecture-2-e-8-81b"
   },
   "/docs/get-started/get-started-intro-074": {
-    "component": "17896441",
-    "content": "8e5c964f"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-get-started-intro-8-e-5-60b"
   },
   "/docs/get-started/glossary-a65": {
-    "component": "17896441",
-    "content": "8777d21d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-glossary-877-8f1"
   },
   "/docs/get-started/managing-aws-cluster-d21": {
-    "component": "17896441",
-    "content": "9fb1c56c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-managing-aws-cluster-9-fb-205"
   },
   "/docs/get-started/modules-1e5": {
-    "component": "17896441",
-    "content": "df7dc571"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-modulesdf-7-0bb"
   },
   "/docs/get-started/preparing-AWS-account-c97": {
-    "component": "17896441",
-    "content": "0c80e3fc"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-preparing-aws-account-0-c-8-74a"
   },
   "/docs/get-started/prerequisites-for-installation-082": {
-    "component": "17896441",
-    "content": "9d880a46"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-prerequisites-for-installation-9-d-8-4fa"
   },
   "/docs/get-started/roles-f95": {
-    "component": "17896441",
-    "content": "67cb0e4c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-roles-67-c-c94"
   },
   "/docs/get-started/security-a8a": {
-    "component": "17896441",
-    "content": "ae1b1351"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-securityae-1-2c3"
   },
   "/docs/get-started/system-components-58d": {
-    "component": "17896441",
-    "content": "01e847d8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-system-components-01-e-726"
   },
   "/docs/get-started/troubleshooting-05a": {
-    "component": "17896441",
-    "content": "214a0ff5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-troubleshooting-214-342"
   },
   "/docs/get-started/upgrading-new-version-706": {
-    "component": "17896441",
-    "content": "89bd429b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-upgrading-new-version-89-b-4ca"
   },
   "/docs/get-started/user-roles-177": {
-    "component": "17896441",
-    "content": "223d46e1"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-get-started-user-roles-223-3af"
   },
   "/docs/release-notes/known-issues-7ee": {
-    "component": "17896441",
-    "content": "53e5f23c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-known-issues-53-e-0bc"
+  },
+  "/docs/release-notes/release_apr_2021-143": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-apr-2021174-db0"
+  },
+  "/docs/release-notes/release_may_2021-4de": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-lastc-20-2d5"
   },
   "/docs/release-notes/release-apr-2020-f51": {
-    "component": "17896441",
-    "content": "da2fb11e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-apr-2020-da-2-d59"
   },
   "/docs/release-notes/release-aug-2019-21c": {
-    "component": "17896441",
-    "content": "444034e5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-aug-2019444-62e"
   },
   "/docs/release-notes/release-aug-2020-1f0": {
-    "component": "17896441",
-    "content": "7de64528"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-aug-20207-de-c68"
   },
   "/docs/release-notes/release-dec-2019-921": {
-    "component": "17896441",
-    "content": "f58f477c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-dec-2019-f-58-986"
   },
   "/docs/release-notes/release-december-2020-5c4": {
-    "component": "17896441",
-    "content": "021eed01"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-december-2020021-a02"
   },
   "/docs/release-notes/release-feb-2019-08b": {
-    "component": "17896441",
-    "content": "a1d2f966"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-feb-2019-a-1-d-341"
   },
   "/docs/release-notes/release-feb-2020-3b3": {
-    "component": "17896441",
-    "content": "3cff0977"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-feb-20203-cf-3f5"
   },
   "/docs/release-notes/release-jan-2019-f71": {
-    "component": "17896441",
-    "content": "e9289f62"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-jan-2019-e-92-541"
   },
   "/docs/release-notes/release-jul-2019-8f4": {
-    "component": "17896441",
-    "content": "95436f13"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-jul-2019954-931"
   },
   "/docs/release-notes/release-jul-2020-d7f": {
-    "component": "17896441",
-    "content": "00d2d8eb"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-jul-202000-d-6be"
   },
   "/docs/release-notes/release-jun-2020-49d": {
-    "component": "17896441",
-    "content": "943071b3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-jun-2020943-75a"
   },
   "/docs/release-notes/release-last-754": {
-    "component": "17896441",
-    "content": "88994a05"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-feb-2021889-d04"
   },
   "/docs/release-notes/release-mar-2019-0ad": {
-    "component": "17896441",
-    "content": "6ccda787"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-mar-20196-cc-2b0"
   },
   "/docs/release-notes/release-mar-2020-5e6": {
-    "component": "17896441",
-    "content": "5f8e0288"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-mar-20205-f-8-3a2"
   },
   "/docs/release-notes/release-nov-2019-d98": {
-    "component": "17896441",
-    "content": "2cdd36a5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-nov-20192-cd-88e"
   },
   "/docs/release-notes/release-oct-2020-92c": {
-    "component": "17896441",
-    "content": "e76c8ce2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-oct-2020-e-76-d67"
   },
   "/docs/release-notes/release-sep-2019-ec6": {
-    "component": "17896441",
-    "content": "5ebac2dd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-sep-20195-eb-8a6"
   },
   "/docs/release-notes/release-sep-2020-565": {
-    "component": "17896441",
-    "content": "2e3896bd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-release-notes-release-sep-20202-e-3-abd"
   },
   "/docs/setup-deployments/setup-initial-deployment-15d": {
-    "component": "17896441",
-    "content": "efbd7d2f"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-setup-deployments-setup-initial-deploymentefb-6cd"
   },
   "/docs/setup-deployments/setup-overview-7e6": {
-    "component": "17896441",
-    "content": "839f3188"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-setup-deployments-setup-overview-839-d03"
   },
   "/docs/setup-deployments/setup-security-025": {
-    "component": "17896441",
-    "content": "a47e77d8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-setup-deployments-setup-securitya-47-e5c"
   },
   "/docs/tutorials/create-charts-62b": {
-    "component": "17896441",
-    "content": "00037fb8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tutorials-create-charts-000-440"
   },
   "/docs/tutorials/first-analytic-app-a87": {
-    "component": "17896441",
-    "content": "57d6e3a1"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tutorials-first-analytic-app-57-d-e57"
   },
   "/docs/tutorials/multi-datasets-one-filter-029": {
-    "component": "17896441",
-    "content": "c63206b8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-tutorials-multi-datasets-one-filterc-63-b1b"
   },
   "/docs/ui-docs/automation/conditions-f32": {
-    "component": "17896441",
-    "content": "a3825221"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-conditionsa-38-0e8"
   },
   "/docs/ui-docs/automation/data-actions-353": {
-    "component": "17896441",
-    "content": "c85ea9da"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-data-actionsc-85-0f0"
   },
   "/docs/ui-docs/automation/flows-e94": {
-    "component": "17896441",
-    "content": "8e081cc2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-flows-8-e-0-af0"
   },
   "/docs/ui-docs/automation/send-actions-973": {
-    "component": "17896441",
-    "content": "f2de2704"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-send-actionsf-2-d-481"
   },
   "/docs/ui-docs/automation/tokens-a5b": {
-    "component": "17896441",
-    "content": "7eec3a72"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-tokens-7-ee-22c"
   },
   "/docs/ui-docs/automation/triggers-b49": {
-    "component": "17896441",
-    "content": "1dc3d53b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-automation-triggers-1-dc-29a"
   },
   "/docs/ui-docs/basics/applications-859": {
-    "component": "17896441",
-    "content": "a57bd9bf"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-basics-applicationsa-57-3b3"
   },
   "/docs/ui-docs/basics/introduction-61f": {
-    "component": "17896441",
-    "content": "04dec140"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-basics-introduction-04-d-513"
   },
   "/docs/ui-docs/basics/logging-in-758": {
-    "component": "17896441",
-    "content": "66aed620"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-basics-logging-in-66-a-324"
   },
   "/docs/ui-docs/basics/profile-28f": {
-    "component": "17896441",
-    "content": "56f01a79"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-basics-profile-56-f-ad2"
   },
   "/docs/ui-docs/builders/navigation-da1": {
-    "component": "17896441",
-    "content": "d6895b2a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-builders-navigationd-68-1b7"
   },
   "/docs/ui-docs/builders/pages-989": {
-    "component": "17896441",
-    "content": "c80a714c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-builders-pagesc-80-d58"
   },
   "/docs/ui-docs/builders/pages_actions-588": {
-    "component": "17896441",
-    "content": "b47f57c6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-builders-pages-actionsb-47-b91"
   },
   "/docs/ui-docs/builders/reports-f23": {
-    "component": "17896441",
-    "content": "193af606"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-builders-reports-193-03e"
   },
   "/docs/ui-docs/builders/user-management-e32": {
-    "component": "17896441",
-    "content": "b07df85e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-builders-user-managementb-07-1f1"
   },
   "/docs/ui-docs/datasets/column-links-090": {
-    "component": "17896441",
-    "content": "50563480"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-column-links-505-905"
   },
   "/docs/ui-docs/datasets/connectors-7f4": {
-    "component": "17896441",
-    "content": "0a4ebf3d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-connectors-0-a-4-9ff"
   },
   "/docs/ui-docs/datasets/csv-476": {
-    "component": "17896441",
-    "content": "cbd9d140"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-csvcbd-4f5"
   },
   "/docs/ui-docs/datasets/data_overview-7c9": {
-    "component": "17896441",
-    "content": "e450ed88"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-data-overviewe-45-9a6"
   },
   "/docs/ui-docs/datasets/data-sync-e6d": {
-    "component": "17896441",
-    "content": "39818664"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-data-sync-398-d41"
   },
   "/docs/ui-docs/datasets/databases-5e3": {
-    "component": "17896441",
-    "content": "334451ff"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-databases-334-e4e"
   },
   "/docs/ui-docs/datasets/datalinks-fab": {
-    "component": "17896441",
-    "content": "81302445"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-datalinks-813-ca5"
   },
   "/docs/ui-docs/datasets/datasets-547": {
-    "component": "17896441",
-    "content": "16250285"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-datasets-162-aaf"
   },
   "/docs/ui-docs/datasets/elasticsearch-28d": {
-    "component": "17896441",
-    "content": "eb444dce"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-elasticsearcheb-4-63d"
+  },
+  "/docs/ui-docs/datasets/hierarchical-data-7c2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-hierarchical-data-1-b-2-345"
   },
   "/docs/ui-docs/datasets/joins-32b": {
-    "component": "17896441",
-    "content": "e872bbd5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-joinse-87-859"
   },
   "/docs/ui-docs/datasets/transformations-203": {
-    "component": "17896441",
-    "content": "dc74abfc"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-datasets-transformationsdc-7-3b9"
   },
   "/docs/ui-docs/dataviews/buckets-41d": {
-    "component": "17896441",
-    "content": "b9a24749"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-bucketsb-9-a-c00"
   },
   "/docs/ui-docs/dataviews/chart-builder-3f2": {
-    "component": "17896441",
-    "content": "7832b4a3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-chart-builder-783-1d3"
   },
   "/docs/ui-docs/dataviews/chart-types-4c2": {
-    "component": "17896441",
-    "content": "d401cd5c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-chart-typesd-40-903"
   },
   "/docs/ui-docs/dataviews/custom-view-8bc": {
-    "component": "17896441",
-    "content": "b932d13c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-custom-viewb-93-4f4"
   },
   "/docs/ui-docs/dataviews/exporting-797": {
-    "component": "17896441",
-    "content": "fe552142"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-exportingfe-5-097"
   },
   "/docs/ui-docs/dataviews/filters-89f": {
-    "component": "17896441",
-    "content": "ab908638"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-filtersab-9-5f7"
   },
   "/docs/ui-docs/dataviews/formulas-55f": {
-    "component": "17896441",
-    "content": "fc4c90bc"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-formulasfc-4-a40"
   },
   "/docs/ui-docs/dataviews/metric-view-ab8": {
-    "component": "17896441",
-    "content": "9f9e32f0"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-metric-view-9-f-9-7e6"
   },
   "/docs/ui-docs/dataviews/summary-view-5a2": {
-    "component": "17896441",
-    "content": "5112b19f"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-summary-view-511-457"
   },
   "/docs/ui-docs/dataviews/tabular-view-df9": {
-    "component": "17896441",
-    "content": "568d42e2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-dataviews-tabular-view-568-73a"
   },
   "/docs/ui-docs/filtering-data/introduction-to-filters-8c0": {
-    "component": "17896441",
-    "content": "a86335c8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-filtering-data-introduction-to-filtersa-86-f06"
   },
   "/docs/ui-docs/filtering-data/working-with-filters-687": {
-    "component": "17896441",
-    "content": "4f9b4533"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-filtering-data-working-with-filters-4-f-9-6ae"
   },
   "/docs/ui-docs/others/activity-log-bd6": {
-    "component": "17896441",
-    "content": "e083101d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-others-activity-loge-08-fd5"
   },
   "/docs/ui-docs/others/sending-a6b": {
-    "component": "17896441",
-    "content": "9ff3c425"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-others-sending-9-ff-4bf"
   },
   "/docs/ui-docs/others/settings-889": {
-    "component": "17896441",
-    "content": "1b35d6ab"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-others-settings-1-b-3-5c3"
   },
   "/docs/ui-docs/others/sharing-editing-a78": {
-    "component": "17896441",
-    "content": "83acf296"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-others-sharing-editing-83-a-9b1"
   },
   "/docs/ui-docs/web-forms/branching-aa6": {
-    "component": "17896441",
-    "content": "b456cc46"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-branchingb-45-e6f"
   },
   "/docs/ui-docs/web-forms/complex-data-6e5": {
-    "component": "17896441",
-    "content": "2ae7ae88"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-complex-data-2-ae-a72"
   },
   "/docs/ui-docs/web-forms/create-web-forms-e42": {
-    "component": "17896441",
-    "content": "db04364d"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-create-web-formsdb-0-cee"
   },
   "/docs/ui-docs/web-forms/customize-web-forms-5e8": {
-    "component": "17896441",
-    "content": "44001002"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-customize-web-forms-440-be4"
   },
   "/docs/ui-docs/web-forms/embedding-986": {
-    "component": "17896441",
-    "content": "25077481"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-embedding-250-f37"
   },
   "/docs/ui-docs/web-forms/field-guide-a1c": {
-    "component": "17896441",
-    "content": "88ceccd0"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-field-guide-88-c-8f3"
   },
   "/docs/ui-docs/web-forms/lookup-1eb": {
-    "component": "17896441",
-    "content": "5f309518"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-lookup-5-f-3-463"
   },
   "/docs/ui-docs/web-forms/publishing-2b0": {
-    "component": "17896441",
-    "content": "8272820e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-publishing-827-002"
   },
   "/docs/ui-docs/web-forms/type-web-forms-0b3": {
-    "component": "17896441",
-    "content": "cb82441b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-type-web-formscb-8-dc2"
   },
   "/docs/ui-docs/web-forms/web-forms-03e": {
-    "component": "17896441",
-    "content": "cc6297a8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-ui-docs-web-forms-web-formscc-6-ca6"
   },
   "/docs/video-training/admin-center/intro-admin-center-c8a": {
-    "component": "17896441",
-    "content": "9d35d29c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-admin-center-intro-admin-center-9-d-3-56a"
   },
   "/docs/video-training/analytics/analytic-views-537": {
-    "component": "17896441",
-    "content": "b7b2f961"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-analytic-viewsb-7-b-ff8"
   },
   "/docs/video-training/analytics/automation-fb5": {
-    "component": "17896441",
-    "content": "1d1e88ac"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-automation-1-d-1-bfd"
   },
   "/docs/video-training/analytics/datasets-5ec": {
-    "component": "17896441",
-    "content": "e88a2a11"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-datasetse-88-ea9"
   },
   "/docs/video-training/analytics/intro-analytics-apps-ad6": {
-    "component": "17896441",
-    "content": "891b43e1"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-intro-analytics-apps-891-3e5"
   },
   "/docs/video-training/analytics/metrics-9fb": {
-    "component": "17896441",
-    "content": "69ad08b8"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-metrics-69-a-152"
   },
   "/docs/video-training/analytics/reports-pages-688": {
-    "component": "17896441",
-    "content": "d44cc422"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-reports-pagesd-44-6ce"
   },
   "/docs/video-training/analytics/web-forms-622": {
-    "component": "17896441",
-    "content": "bc9c0321"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-analytics-web-formsbc-9-adc"
+  },
+  "/docs/video-training/building-qrvey-sample/analysis-views-b8d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-analysis-views-0-ff-c85"
   },
   "/docs/video-training/building-qrvey-sample/analyzing-data-741": {
-    "component": "17896441",
-    "content": "8ab64d0a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-analyzing-data-8-ab-d3d"
   },
   "/docs/video-training/building-qrvey-sample/automation-overview-f52": {
-    "component": "17896441",
-    "content": "96868f71"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-automation-overview-968-dbe"
   },
   "/docs/video-training/building-qrvey-sample/bucketing-01e": {
-    "component": "17896441",
-    "content": "fac4fe35"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-bucketingfac-ecc"
   },
   "/docs/video-training/building-qrvey-sample/chart_builder_overview-2ac": {
-    "component": "17896441",
-    "content": "73b9d69a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-chart-builder-overview-73-b-e82"
   },
   "/docs/video-training/building-qrvey-sample/complex-datasets-c0e": {
-    "component": "17896441",
-    "content": "22e59f1b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-complex-datasets-22-e-f6c"
   },
   "/docs/video-training/building-qrvey-sample/connections-297": {
-    "component": "17896441",
-    "content": "01bc9416"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-connections-01-b-ca8"
   },
   "/docs/video-training/building-qrvey-sample/custom_metric_views-1ea": {
-    "component": "17896441",
-    "content": "85e90173"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-custom-metric-views-85-e-8c6"
   },
   "/docs/video-training/building-qrvey-sample/datalinks-c12": {
-    "component": "17896441",
-    "content": "cc950de2"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-datalinkscc-9-1e1"
   },
   "/docs/video-training/building-qrvey-sample/datasets-3ec": {
-    "component": "17896441",
-    "content": "28e59812"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-datasets-28-e-856"
   },
   "/docs/video-training/building-qrvey-sample/formulas-d1c": {
-    "component": "17896441",
-    "content": "a9c598c6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-formulasa-9-c-060"
   },
   "/docs/video-training/building-qrvey-sample/new-datalinks-379": {
-    "component": "17896441",
-    "content": "c116e45a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-new-datalinksc-11-89e"
   },
   "/docs/video-training/building-qrvey-sample/new-webforms-480": {
-    "component": "17896441",
-    "content": "5845676c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-new-webforms-584-6c2"
   },
   "/docs/video-training/building-qrvey-sample/new-workflows-e6a": {
-    "component": "17896441",
-    "content": "8c56fac6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-new-workflows-8-c-5-cc9"
   },
   "/docs/video-training/building-qrvey-sample/summary-view-f0c": {
-    "component": "17896441",
-    "content": "567b4ace"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-summary-view-567-d63"
   },
   "/docs/video-training/building-qrvey-sample/tabular-view-1d8": {
-    "component": "17896441",
-    "content": "cff16423"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-tabular-viewcff-643"
   },
   "/docs/video-training/building-qrvey-sample/webforms-overview-2cc": {
-    "component": "17896441",
-    "content": "4cb915f9"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-building-qrvey-sample-webforms-overview-4-cb-090"
   },
   "/docs/video-training/datarouter/advanced-functions-cc6": {
-    "component": "17896441",
-    "content": "fa46760c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-advanced-functionsfa-4-6f6"
   },
   "/docs/video-training/datarouter/data-b65": {
-    "component": "17896441",
-    "content": "6cc11952"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-data-6-cc-960"
   },
   "/docs/video-training/datarouter/demo-bfe": {
-    "component": "17896441",
-    "content": "8ad34c74"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-demo-8-ad-210"
   },
   "/docs/video-training/datarouter/intro-datarouter-04d": {
-    "component": "17896441",
-    "content": "27cd5840"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-intro-datarouter-27-c-025"
   },
   "/docs/video-training/datarouter/metadata-667": {
-    "component": "17896441",
-    "content": "9d136298"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-metadata-9-d-1-114"
   },
   "/docs/video-training/datarouter/tools-api-26f": {
-    "component": "17896441",
-    "content": "00fb673b"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-tools-api-00-f-5e0"
   },
   "/docs/video-training/datarouter/transformations-c6b": {
-    "component": "17896441",
-    "content": "5125cf83"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-datarouter-transformations-512-f5c"
+  },
+  "/docs/video-training/release/version-5.10-8a3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-103-a-7-d35"
   },
   "/docs/video-training/release/version-5.2-648": {
-    "component": "17896441",
-    "content": "78f3aedd"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-278-f-78a"
   },
   "/docs/video-training/release/version-5.3-dde": {
-    "component": "17896441",
-    "content": "34266701"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-3342-e82"
   },
   "/docs/video-training/release/version-5.4-edb": {
-    "component": "17896441",
-    "content": "4b29d5ef"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-44-b-2-388"
   },
   "/docs/video-training/release/version-5.5-52c": {
-    "component": "17896441",
-    "content": "6d4dc022"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-56-d-4-449"
   },
   "/docs/video-training/release/version-5.6-b4d": {
-    "component": "17896441",
-    "content": "0234bd4e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-6023-100"
   },
   "/docs/video-training/release/version-5.7-b28": {
-    "component": "17896441",
-    "content": "6b543089"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-76-b-5-9e8"
   },
   "/docs/video-training/release/version-5.8-49a": {
-    "component": "17896441",
-    "content": "5d4eb56c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-85-d-4-3c5"
+  },
+  "/docs/video-training/release/version-5.9-d06": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-video-training-release-version-5-9650-28e"
   }
 }

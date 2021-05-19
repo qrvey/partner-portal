@@ -54,6 +54,10 @@
               "sidebar": "admin"
             },
             {
+              "id": "admin/roles-and-permissions",
+              "path": "/docs/admin/roles-and-permissions"
+            },
+            {
               "id": "aws/connect-to-instance",
               "path": "/docs/aws/connect-to-instance",
               "sidebar": "get-started"
@@ -423,6 +427,10 @@
               "sidebar": "get-started"
             },
             {
+              "id": "get-started/customizing-qrvey-deployment",
+              "path": "/docs/get-started/customizing-qrvey-deployment"
+            },
+            {
               "id": "get-started/deleting-installation",
               "path": "/docs/get-started/deleting-installation",
               "sidebar": "get-started"
@@ -499,6 +507,14 @@
               "id": "release-notes/known-issues",
               "path": "/docs/release-notes/known-issues",
               "sidebar": "release-notes"
+            },
+            {
+              "id": "release-notes/release_apr_2021",
+              "path": "/docs/release-notes/release_apr_2021"
+            },
+            {
+              "id": "release-notes/release_may_2021",
+              "path": "/docs/release-notes/release_may_2021"
             },
             {
               "id": "release-notes/release-apr-2020",
@@ -736,6 +752,10 @@
               "path": "/docs/ui-docs/datasets/elasticsearch"
             },
             {
+              "id": "ui-docs/datasets/hierarchical-data",
+              "path": "/docs/ui-docs/datasets/hierarchical-data"
+            },
+            {
               "id": "ui-docs/datasets/joins",
               "path": "/docs/ui-docs/datasets/joins",
               "sidebar": "ui-docs"
@@ -915,6 +935,10 @@
               "sidebar": "video-training"
             },
             {
+              "id": "video-training/building-qrvey-sample/analysis-views",
+              "path": "/docs/video-training/building-qrvey-sample/analysis-views"
+            },
+            {
               "id": "video-training/building-qrvey-sample/analyzing-data",
               "path": "/docs/video-training/building-qrvey-sample/analyzing-data"
             },
@@ -1010,6 +1034,10 @@
               "path": "/docs/video-training/datarouter/transformations"
             },
             {
+              "id": "video-training/release/version-5.10",
+              "path": "/docs/video-training/release/version-5.10"
+            },
+            {
               "id": "video-training/release/version-5.2",
               "path": "/docs/video-training/release/version-5.2",
               "sidebar": "video-training"
@@ -1043,6 +1071,10 @@
               "id": "video-training/release/version-5.8",
               "path": "/docs/video-training/release/version-5.8",
               "sidebar": "video-training"
+            },
+            {
+              "id": "video-training/release/version-5.9",
+              "path": "/docs/video-training/release/version-5.9"
             }
           ]
         }

@@ -1,65 +1,59 @@
 ---
-id: version-5.2
-title: Version 5.2
-sidebar_label: Version 5.2
+id: version-5.10
+title: Version 5.10
+sidebar_label: Version 5.10
 ---
 
-## Introduction 
-<iframe src="//fast.wistia.net/embed/iframe/5h9790yr6l?videoFoam=true"
+
+## New Menu for Data Source Pills and New Connections Screens
+<iframe src="//fast.wistia.net/embed/iframe/em71bulaat?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 <br />
-<br />
+<br /> 
 
-## Complex Data Page Actions and Flows
-<iframe src="//fast.wistia.net/embed/iframe/y1e8yocwu2?videoFoam=true"
+
+
+## Relative Date - New Date Ranges
+<iframe src="//fast.wistia.net/embed/iframe/pislf9pz0e?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 <br />
-<br />
+<br /> 
 
-## Date Group and Unaggregated
-<iframe src="//fast.wistia.net/embed/iframe/efs8pmprnm?videoFoam=true"
+## Trend Charts - Sparkline
+<iframe src="//fast.wistia.net/embed/iframe/dgqdeamcnw?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 <br />
-<br />
+<br /> 
 
-## OpenID Authentication
-<iframe src="//fast.wistia.net/embed/iframe/grwr3vfpvy?videoFoam=true"
+## Automatic Column Links
+<iframe src="//fast.wistia.net/embed/iframe/2qxop8c6ij?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 <br />
-<br />
+<br /> 
 
-## Running Agregate
-<iframe src="//fast.wistia.net/embed/iframe/u2lhu63imf?videoFoam=true"
+
+## Get Widget Configuration
+<iframe src="//fast.wistia.net/embed/iframe/a2h8oismk9?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 <br />
-<br />
-
-## Update Data and Slack
-<iframe src="//fast.wistia.net/embed/iframe/cczcjb4d14?videoFoam=true"
-allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
-name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
-oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
-<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
-
-<br />
-<br />
+<br /> 

@@ -1,14 +1,12 @@
 ---
-id: reports-pages
-title: Reports and Pages
-sidebar_label: Reports and Pages
+id: analysis-views
+title: Analysis Views
+sidebar_label: Analysis Views
 ---
 
-### Analytics 04
-<iframe src="//fast.wistia.net/embed/iframe/o46ixhayu5?videoFoam=true"
+<iframe src="//fast.wistia.net/embed/iframe/bb0k89mw5r?videoFoam=true"
 allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
 name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen
 oallowfullscreen msallowfullscreen width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 <br/>
-Learn how to create reports and pages to distribute analytics and insights to users.
