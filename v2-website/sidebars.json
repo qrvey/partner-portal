@@ -50,6 +50,10 @@
         },
         {
           "type": "doc",
+          "id": "get-started/customizing-qrvey-deployment"
+        },
+        {
+          "type": "doc",
           "id": "get-started/managing-aws-cluster"
         },
         {
@@ -191,6 +195,10 @@
         {
           "type": "doc",
           "id": "ui-docs/datasets/datalinks"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/hierarchical-data"
         },
         {
           "type": "doc",
@@ -360,6 +368,10 @@
         {
           "type": "doc",
           "id": "admin/admin-sections-platform"
+        },
+        {
+          "type": "doc",
+          "id": "admin/roles-and-permissions"
         },
         {
           "type": "doc",
