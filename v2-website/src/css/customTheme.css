@@ -8,6 +8,8 @@
   --ifm-color-primary-darkest: #080C12;
   --ifm-navbar-link-color: #FFFFFF;
   --ifm-navbar-link-hover-color:#ff5400;
+  --primary-font:'Montserrat', sans-serif;
+  --primary-color: #FF5400;
 }
 
 /* your custom css */
@@ -1177,3 +1179,7 @@ a.nav-item-dropdown.active{
       margin-right: 30px;
     }
   }
+
+  article a, article a:hover, .qrvey-link, .qrvey-link:hover {
+    color: var(--primary-color);
+}

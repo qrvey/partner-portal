@@ -43,6 +43,7 @@ function getUserOnLocalStorage(){
 }
 
 function isAllowedPath(path) {
+    console.log("blacklist fucntion");
     let version = '';
     if (!isNaN(path[6]) && path[7] === '.') {
         if (path[9] === '.') {

@@ -78,6 +78,7 @@ function listenLoginSubmit(){
 
 function listenForgotPasswordSubmit(){
     errorDisplayText = document.getElementById('forgot-error-display');
+    console.log("login fucntion");
     document.getElementById('forgot-password-form').onsubmit = (e) => {
         const email = document.getElementById('user-email').value;
         e.preventDefault();
