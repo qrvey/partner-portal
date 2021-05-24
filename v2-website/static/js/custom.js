@@ -148,7 +148,7 @@ function postActivy(newActivity) {
 
 
 function insertLogButtonToNav() {
-    const navBar = document.querySelector('ul.nav-site.nav-site-internal');
+    const navBar = document.querySelector('.navbar__items--right');
     if (currentUser) {
         navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
     } else {
