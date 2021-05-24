@@ -7,10 +7,20 @@ export default {
   "projectName": "docs-site",
   "onBrokenLinks": "ignore",
   "scripts": [
-    "/js/user.js"
+    "/js/user.js",
+    "https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js",
+    "https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js",
+    "/js/firebase.js",
+    "/js/login.js",
+    "/js/homepage.js"
   ],
   "stylesheets": [
-    "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
+    "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap",
+    "../static/css/custom.css",
+    "../static/css/login.css",
+    "../static/css/navbar.css",
+    "../static/css/support.css",
+    "../static/css/util.css"
   ],
   "favicon": "img/Qrvey.png",
   "customFields": {
@@ -114,7 +124,7 @@ export default {
           ]
         },
         {
-          "href": "/docs/video-training/release/version-5.8",
+          "href": "/docs/video-training/release/version-5.10",
           "label": "VIDEOS",
           "position": "right"
         },
@@ -135,7 +145,7 @@ export default {
     "algolia": {
       "apiKey": "7799174e3198189be19d4bcfa852f9f6",
       "appId": "FKFO2CGR6S",
-      "indexName": "staging_qrvey",
+      "indexName": "dev_qrvey",
       "algoliaOptions": {
         "page": 0,
         "nbHits": 40,
