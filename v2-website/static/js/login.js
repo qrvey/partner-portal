@@ -11,21 +11,24 @@ const loginList = [
     '/support/'
 ];
 
-firebase.auth().onAuthStateChanged((user) => {
-    console.log(user);
-    updateUser(user);
-});
 
-
-if(loginList.find(path => path === pathname)){
-    // removeSearchBar();
-    if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
-        listenForgotPasswordSubmit();
+document.onreadystatechange = () => {
+    if (document.readyState === 'complete') {
+        if(loginList.find(path => path === pathname)){
+            // removeSearchBar();
+            if (pathname === '/forgot-password'  || pathname === '/forgot-password/' ){
+                listenForgotPasswordSubmit();
+            }
+            if (pathname === '/login' || pathname === '/login/'){
+                listenLoginSubmit();
+            }
+        }
+        firebase.auth().onAuthStateChanged((user) => {
+            console.log(user);
+            updateUser(user);
+        });
     }
-    if (pathname === '/login' || pathname === '/login/'){
-        listenLoginSubmit();
-    }
-}
+  };
 
 function loginAttempt(email, password){
     firebase.auth().signInWithEmailAndPassword(email, password)

@@ -35,37 +35,41 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userAgent = USER_AGENT;
 }
 
-//////////
-/// INIT APP
+let stateCheck = setInterval(() => {
+    if (document.readyState === 'complete') {
+        clearInterval(stateCheck);
+        //////////
+        /// INIT APP
+        // Add partner name to logo and log button
+        insertParternsLogo();
+        insertLogButtonToNav();
+        // ADD DROPDOWN ITEM
+        addDropdownItem();
+        //Dropdown To Change Doc Version
+        changeVersion();
+        // Check title document to save it 
+        TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+        // Check if this page contains a video
+        const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+        if (videoContanier) {
+            checkVideoIsPlayed(videoContanier);
+        }
+        // CHECK IS THE USER IS LOGGED IN
+        console.log('user', currentUser);
 
-// Add partner name to logo and log button
-insertParternsLogo();
-insertLogButtonToNav();
-// ADD DROPDOWN ITEM
-addDropdownItem();
-//Dropdown To Change Doc Version
-changeVersion();
-// Check title document to save it 
-TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-// Check if this page contains a video
-const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-if (videoContanier) {
-    checkVideoIsPlayed(videoContanier);
-}
-// CHECK IS THE USER IS LOGGED IN
-console.log('user', currentUser);
+        setTimeout(() => {
+            if (!getCookie(PAGE + CURRENT_PAGE)) {
+                console.log('activity send', CURRENT_PAGE);
+                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+            } else {
+                console.log('Activity already sent it');
+            }
+        }, 5000);
 
-setTimeout(() => {
-    if (!getCookie(PAGE + CURRENT_PAGE)) {
-        console.log('activity send', CURRENT_PAGE);
-        postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
-    } else {
-        console.log('Activity already sent it');
+        ///FIN INIT
+        /////
     }
-}, 5000);
-
-///FIN INIT
-/////
+}, 100);
 
 function checkVideoIsPlayed(videoContanier) {
     const CONTENT_TYPE = 'videos'
@@ -148,7 +152,7 @@ function postActivy(newActivity) {
 
 
 function insertLogButtonToNav() {
-    const navBar = document.querySelector('ul.nav-site.nav-site-internal');
+    const navBar = document.querySelector('.navbar__items.navbar__items--right');
     if (currentUser) {
         navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
     } else {
@@ -157,11 +161,14 @@ function insertLogButtonToNav() {
 }
 
 function insertParternsLogo() {
+    return;
+    //TODO FIX THIS
     let navbar = document.querySelector('.headerTitleWithLogo');
     navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span>';
 }
 
 async function changeVersion() {
+    return;
 	let navbar = document.querySelector('.fixedHeaderContainer a h3');
 	const newelem = navbar.parentElement;
 	newelem.removeAttribute("href");

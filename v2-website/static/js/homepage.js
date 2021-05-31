@@ -48,28 +48,34 @@ const myHeaders = new Headers({
     body: raw,
     redirect: 'follow'
   };
-  
-  fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/uuiHm0u3O/analytiq/uchart/results", requestOptions)
-    .then(response => response.json())
-    .then(result => {
-        const popularPages = result[0].data.filter((value) => 
-        !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1)  || (value.key.search('/training/') === 0) ))
-        .map(value => {
-            return {
-                link: value.key,
-                title: value.items[0].key,
-                visited: value.summary[0]
-            }
-        });
-        let popularPagesHTMl = ``;
-        popularPages.splice(0, 9).forEach(
-            value => {
-                popularPagesHTMl+= `<a class="side-right-nav-container-popular-item" href=${value.link.replace('/docs/docs', '/docs')}>
-                                        ${value.title} (${value.visited})
-                                    </a>`;
-            }
-        );
-        const sidenavHTML = document.querySelector(`.side-right-nav-container-popular`);
-        sidenavHTML.insertAdjacentHTML(`beforeend`, popularPagesHTMl);
-    })
-    .catch(error => console.log('error', error));
+
+  if(window.location.pathname === '/'){
+    document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/uuiHm0u3O/analytiq/uchart/results", requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                const popularPages = result[0].data.filter((value) => 
+                !(value.key === '/' || value.key === '/docs/' || (value.key.search('/blog') > -1)  || (value.key.search('/training/') === 0) ))
+                .map(value => {
+                    return {
+                        link: value.key,
+                        title: value.items[0].key,
+                        visited: value.summary[0]
+                    }
+                });
+                let popularPagesHTMl = ``;
+                popularPages.splice(0, 9).forEach(
+                    value => {
+                        popularPagesHTMl+= `<a class="side-right-nav-container-popular-item" href=${value.link.replace('/docs/docs', '/docs')}>
+                                                ${value.title} (${value.visited})
+                                            </a>`;
+                    }
+                );
+                const sidenavHTML = document.querySelector(`.side-right-nav-container-popular`);
+                sidenavHTML.insertAdjacentHTML(`beforeend`, popularPagesHTMl);
+            })
+            .catch(error => console.log('error', error));
+        }
+      };
+  }
