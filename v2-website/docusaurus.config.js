@@ -7,12 +7,12 @@ module.exports={
   "projectName": "docs-site",
   "onBrokenLinks":'ignore',
   "scripts": [
+    "/js/custom.js",
     "/js/user.js",
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
     '/js/login.js',
-    "/js/homepage.js",
   ],
   "stylesheets": [
     "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap",
@@ -47,13 +47,6 @@ module.exports={
         "system-ui"
       ]
     },
-    footerscripts: [
-      '/js/custom.js',
-      'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
-      'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
-      '/js/firebase.js',
-      '/js/login.js',
-    ],
     homepagescripts: [
       "/js/homepage.js"
     ],
