@@ -2,6 +2,9 @@
     --primary-font:'Montserrat', sans-serif;
     --primary-color: #FF5400;
 }
+body {
+    background-color: rgb(251 251 251);
+}
 .center {
     text-align: center !important;
     justify-content: center;

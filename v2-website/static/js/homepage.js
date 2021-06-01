@@ -48,8 +48,7 @@ const myHeaders = new Headers({
     body: raw,
     redirect: 'follow'
   };
-
-  if(window.location.pathname === '/'){
+  if(window.location.pathname === '/' || window.location.pathname === ''){
     document.onreadystatechange = () => {
         if (document.readyState === 'complete') {
             fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/uuiHm0u3O/analytiq/uchart/results", requestOptions)

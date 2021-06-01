@@ -8,8 +8,28 @@ const LOG_OUT_EVENT = 'logout';
 let currentUser = null;
 let logOutEvent = false;
 
-currentUser = getUserOnLocalStorage();
-updateUser(currentUser);
+
+function initUser () {
+    currentUser = getUserOnLocalStorage();
+    updateUser(currentUser);
+
+}
+
+// store url on load
+let currentPage = location.href;
+initUser();
+// listen for changes
+setInterval(function()
+{
+    if (currentPage != location.href)
+    {
+        initUser();
+        // page has changed, set new page as 'current'
+        currentPage = location.href;
+        // do your thing..
+    }
+}, 200);
+
 
 function updateUser(user) {
     if (user) {
