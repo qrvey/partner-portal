@@ -45,30 +45,8 @@ input {
 .section-first {
     padding-top: 60px;
 }
-.primary-button {
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 4px;
-    display: block;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 1px;
-    margin: auto;
-    max-width: 300px;
-    padding: 5px 12px;
-    width: 100%;
-    text-align: center;
-    margin-top: 5px;
-    border: none;
-    cursor: pointer;
-}
-.primary-button:hover{
-    text-decoration: none;
-    color: white !important;
-    background: var(--primary-color) !important;
-}
-.primary-button:focus{
-    outline:0;
+.react-toggle {
+    display:none;
 }
 .primary-color {
     color: var(--primary-color) !important;

@@ -516,10 +516,10 @@ input {
     font-weight: 600;
     color: #fff;
     letter-spacing: 1px;
-    margin: auto;
-    max-width: 300px;
+    max-width: 100px;
     padding: 5px 12px;
-    width: 100%;
+    width: 40%;
+    margin: 0 10px;
     text-align: center;
     margin-top: 5px;
     border: none;

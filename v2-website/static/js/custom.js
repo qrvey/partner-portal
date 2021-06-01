@@ -154,9 +154,9 @@ function postActivy(newActivity) {
 function insertLogButtonToNav() {
     const navBar = document.querySelector('.navbar__items.navbar__items--right');
     if (currentUser) {
-        navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" onclick="logOut()">Log Out</a></li>`);
+        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" onclick="logOut()">Log Out</a>`);
     } else {
-        navBar.insertAdjacentHTML('beforeend', `<li><a class="primary-button" href="/login">Log In</a></li>`);
+        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" href="/login">Log In</a>`);
     }
 }
 
