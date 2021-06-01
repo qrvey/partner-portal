@@ -12,6 +12,31 @@
   padding-top: 10px;
   line-height: 1;
 }
+.primary-button {
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  display: block;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  max-width: 100px;
+  padding: 5px 12px;
+  width: 40%;
+  margin: 0 10px;
+  text-align: center;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+.primary-button:hover{
+  text-decoration: none;
+  color: white !important;
+  background: var(--primary-color) !important;
+}
+.primary-button:focus{
+  outline:0;
+}
 @media screen and (min-width: 768px) {
   .support-page .main-title {
     font-size: 32px;
