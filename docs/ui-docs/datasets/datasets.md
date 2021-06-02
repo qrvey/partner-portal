@@ -13,7 +13,7 @@ In this section, we’ll explain how datasets are created using a single data so
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**. 
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-60)
 
 Next, you will see a list of available connections to your data sources, if any have been created already. You could also select existing datasets as sources on the *Datasets* tab. 
 
@@ -51,7 +51,7 @@ Note that this option is available only for database data sources.
 
 * **Delete** - This option is only available for the data sources that have been joined with another, and can be used to remove the selected data source from the join.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-60)
 
 Replacing the data source by using any of these options may result in a change in the metadata and will require a reload of the data if it had been loaded before.
 
@@ -62,7 +62,7 @@ Adding or removing columns to/from a dataset will require a reload of the data i
 ### Giving Columns Friendly Names
 Columns can be aliased to a friendlier name if needed. Simply click in the box where the column name is shown and change it to anything else.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/6datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/6datasets.png#thumbnail-60)
 
 Changing column names will *not* require a data reload.
 
@@ -74,7 +74,7 @@ Changing a column’s data type affects the underlying index’s structure and t
 ### Adjusting The Input Format
 This feature is mostly useful for date-type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance, if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail-60)
 
 Changing a column’s input format will require a reload of the data if it has already been loaded. 
 
@@ -139,7 +139,7 @@ There are plenty of other features available in the dataset design step. Some of
 
 * **General information about the dataset** - Once a dataset is loaded with data, certain pieces of information are displayed about it at the top of the screen. These include its creation date, status, and more.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail-60)
 
 
 * **Search Box** - You can look for columns by their names from the search box above the list of columns. 
