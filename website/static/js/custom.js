@@ -158,7 +158,7 @@ function insertLogButtonToNav() {
 
 function insertParternsLogo() {
     let navbar = document.querySelector('.headerTitleWithLogo');
-    navbar.innerHTML = '<strong>Partner</strong><br><span>Portal</span>';
+
 }
 
 async function changeVersion() {
