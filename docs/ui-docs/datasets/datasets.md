@@ -13,9 +13,9 @@ In this section, we’ll explain how datasets are created using a single data so
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**. 
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-60)
 
-Next, you will see a list of available connections to your data sources. You could also select existing datasets as sources on the *Datasets* tab. 
+Next, you will see a list of available connections to your data sources, if any have been created already. You could also select existing datasets as sources on the *Datasets* tab. 
 
 Select the desired connection and click on **Create**. 
 
@@ -29,52 +29,54 @@ If the selected connection is to a database, you get to choose a table or view f
 
 Once the data source is selected you will land in the *Design* section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data. 
 
-All new datasets are given the default name of *Untitled Dataset*. Click on the name to change it and give your dataset a new name.
+All new datasets are given the default name of *Untitled Dataset*. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail)
 
 At this point, you can load the data and begin using it to create charts, pages or reports, or modify and shape the dataset based on your needs, before loading it with data.
 
 ## Options To Modify The Dataset
-Other than the basic and obvious options, such as changing the name of the dataset, there are various powerful options that enable you to shape the dataset according to your needs. These options are explained in this section.
+Other than the options presented in the UI, such as changing the name of the dataset, there are various powerful options that enable you to shape the dataset according to your needs. These options are explained in this section.
 
 ### Changing The Data Source
 If the selected data source needs to be swapped out with another, either from the same connection or a different one, the following options are available from the dot menu on the data source pill:
+* **Edit Connection Settings** - This option - available for all types of data sources - is mostly a shortcut and can be used to modify the properties of the connection for the data source, without the need to go to the Connections screen.
+
 * **Edit Data Source Query** - Use this option if you want to either select a different table or view from the same Connection, or change the SQL query of a custom query data source.
 Note that this option is available only for database data sources.
-
-* **Edit Connection** - This option - available for all types of data sources - is mostly a shortcut and can be used to modify the properties of the connection for the data source, without the need to go to the Connections screen.
 
 * **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on <a href="/docs/ui-docs/datasets/joins/"> Data Joins </a> to read more about joining data sources.
 
 * **Select a Different Connection** - This option can be used to choose a data source from a connection other than the one currently in use.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-20)
+* **Delete** - This option is only available for the data sources that have been joined with another, and can be used to remove the selected data source from the join.
 
-Replacing the data source by using any of these options will require a reload of the data if it has already been loaded.
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-60)
+
+Replacing the data source by using any of these options may result in a change in the metadata and will require a reload of the data if it had been loaded before.
 
 ### Choosing The Dataset Columns
 You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the dataset.
-Adding or removing columns to/from a dataset will require a reload of the data, if it has already been loaded.  
+Adding or removing columns to/from a dataset will require a reload of the data if it had already been loaded.  
 
 ### Giving Columns Friendly Names
-Columns can be aliased to a more friendly name, if needed. Simply click in the box where the column name is shown and change it to anything else.
+Columns can be aliased to a friendlier name if needed. Simply click in the box where the column name is shown and change it to anything else.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/6datasets.png#thumbnail-20)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/6datasets.png#thumbnail-60)
 
 Changing column names will *not* require a data reload.
 
 ### Changing The Data Type
-The system automatically determines the data type of each column by sampling the data source. However you can refine or change the data type from the Column Type field. 
+The system automatically determines the data type of each column by sampling the data source. You can, however, refine or change the data type from the Column Type field. 
 
-Changing a column’s data type will require a reload of the data, if it has already been loaded.
+Changing a column’s data type affects the underlying index’s structure and types, and will require a reload of the data if it has already been loaded.
 
 ### Adjusting The Input Format
-This feature is mostly useful for date-type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
+This feature is mostly useful for date-type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance, if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail-60)
 
-Changing a column’s input format will require a reload of the data, if it has already been loaded. 
+Changing a column’s input format will require a reload of the data if it has already been loaded. 
 
 ### Choosing A Visualization Format
 You can also change the formatting of the date and numeric columns. This format will be used in the rest of the application whenever the column is used. For example, when a numeric column is assigned a Currency format, it will be displayed as currency with the $ sign, when it is used in a chart.
@@ -83,12 +85,12 @@ You can also change the formatting of the date and numeric columns. This format 
 You can also decide the number of decimal places for numeric values. Changing visualization formats will *not* require a data reload.
 
 ### Selecting A Unique Identifier Column
-If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column, or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
+If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
 To learn about data synchronization and the role of unique IDs in it, please see the <a herf="/docs/ui-docs/datasets/data-sync/">Data Sync article</a>.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
-Changing the unique identifier for a dataset will require a reload of the data, if it has already been loaded.
+Changing the unique identifier for a dataset will require a reload of the data if it has already been loaded.
 
 ### Defining The Security Name For A Column
 If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. 
@@ -99,12 +101,12 @@ For more information about RLS and how to set it up see the <a href="/docs/admin
 Defining the security name for a column will *not* require a data reload. 
 
 ### Setting Up Automatic Column Links
-Any column of the dataset can be set up so that it presents an automatic link to a selected URL, when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map.
+Any column of the dataset can be set up so that it presents an automatic link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map.
 The automatic link can be set up from the Column Link command in the dot menu of the intended column.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
-For detailed information about Column Links see the article dedicated to the subject. 
+For detailed information about <a href="/docs/ui-docs/datasets/column-links/">Column Links</a> see the article dedicated to the subject. 
 Setting up automatic links for a column will not require a data reload. 
 
 ### Setting Up Geolocation Groups
@@ -116,7 +118,7 @@ If your data contains address information, you can choose to create a Geolocatio
 
 Geolocation groups require a column to be identified as country or zip code, as these allow for a point to be uniquely marked on a map.
 
-Assign a name to your group and select either a country or zip code column to begin. At this point you have the option to choose additional columns as Street Line, City, State, Zip Code or Country. 
+Assign a name to your group and select either a country or zip code column to begin. At this point, you have the option to choose additional columns as Street Line, City, State, Zip Code or Country. 
 Defining, or changing Geolocation Groups will *not* require a data reload. 
 
 ### Transformations
@@ -128,16 +130,16 @@ A *Transformation provides the means to change any piece of data __before__ load
 To access the Transformations screen click on the Transformation button on the top right corner of the columns list.
 
 Transformations are discussed in detail in a <a href="/docs/ui-docs/datasets/transformations/">dedicated article</a>.
-Adding or changing Transformations will require a reload of the data, if it has already been loaded.
+Adding or changing Transformations will require a reload of the data if it has already been loaded.
 
 ### Other Available Features
 There are plenty of other features available in the dataset design step. Some of these features are listed below.
 
-* **Marking a dataset as favorite** - A dataset can be marked as favorite by clicking on the star icon at the top of the screen. Favorite datasets appear on the top of the dataset list screen.
+* **Marking a dataset as favorite** - A dataset can be marked as a favorite by clicking on the star icon at the top of the screen. Favorite datasets appear on the top of the dataset list screen.
 
 * **General information about the dataset** - Once a dataset is loaded with data, certain pieces of information are displayed about it at the top of the screen. These include its creation date, status, and more.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail-60)
 
 
 * **Search Box** - You can look for columns by their names from the search box above the list of columns. 
@@ -154,7 +156,7 @@ On the *Data Syncs* tab, you will be able to set up a schedule to automatically 
 * **Full Reload loads all of the data again whenever a reload process begins** — It works as an overwrite of the existing data.
 
 * **Append and Update Records** - It loads only the new and updated records whenever a scheduled process begins.
-You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop, if ever.
+You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop if ever.
 Data Syncing is available for single-source datasets as well as datasets using joins. 
 Data Synchronization has been described in detail in a <a href="/docs/ui-docs/datasets/data-sync/">dedicated article</a>.   
 
@@ -172,8 +174,8 @@ However, if you decide to wait for the data load to finish, you will be redirect
 ## Datasets Section
 Once you have at least one dataset, it will be listed as a card in the Datasets section of the product. 
 
-The green indicator to the left of the card means that data was loaded successfully and that the dataset is now active and ready to be used. A gray indicator means the dataset is in a draft state; i.e. it has not been loaded yet, and a red indicator means that loading the data has failed. Check the Activity Logs of the dataset to learn more about the issue, if any error or warning is shown. 
-Card view is the default view of this section, but it can be changed to a list view, if preferred.
+The green indicator to the left of the card means that data was loaded successfully and that the dataset is now active and ready to be used. A gray indicator means the dataset is in a draft state; i.e. it has not been loaded yet, and a red indicator means that loading the data has failed. Check the Activity Logs of the dataset to learn more about the issue if any error or warning is shown. 
+Card view is the default view of this section, but it can be changed to a list view if preferred.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/19datasets.png#thumbnail)
 
