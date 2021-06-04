@@ -9,7 +9,7 @@ original_id: connectors
 
 The **Connections** tab is where you can create and manage your connections to various data sources.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/1_Connections.png#thumbnail) 
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/1_Connections.png#thumbnail)
 
 
 When you enter the **Connections** section for the first time, you will see all of the connection types that we support, including SQL Server, MySQL, Oracle, PostgreSQL, Amazon Redshift, Amazon S3, and File Upload. The first five of these are database connections and the latter two are file connection types.

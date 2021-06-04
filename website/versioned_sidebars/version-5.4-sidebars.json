@@ -84,6 +84,10 @@
       "version-5.4-ui-docs/filtering-data/introduction-to-filters",
       "version-5.4-ui-docs/filtering-data/working-with-filters"
     ],
+    "End User Personalization": [
+      "version-5.4-ui-docs/end-user-personalization/overview",
+      "version-5.4-ui-docs/eup-dashboards"
+    ],
     "Automation": [
       "version-5.4-ui-docs/automation/flows",
       "version-5.4-ui-docs/automation/triggers",
