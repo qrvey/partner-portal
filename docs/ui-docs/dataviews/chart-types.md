@@ -727,6 +727,26 @@ The following image shows how **Menu Action** settings work.
 
 ![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.gif#thumbnail) 
 
+
+### Resizing Rows 
+Rows in Table Charts can be resized for the User to see the full information in rows when building by increasing or decreasing the row height. To do so:
+
+* Go to the *Configuration Pane - Styles* section and choose **Resize Columns and Rows**.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows1.png#thumbnail-60) 
+
+
+* The Row Height size is set to *Auto*; you can adjust it by typing in a number or by clicking the arrows to increase/decrease the height with the value between 2px-2000px.
+
+If the input component is left blank, the system displays a placeholder with the text “Auto“ and the rows would resize accordingly.
+
+* By default all text is displayed in a single line. If it doesn’t fit in the cell, an ellipsis is added at the end. Checking the  **Word Wrap** checkbox shows all of the text in the cell, breaking the line where needed. If word wrap is off, a tooltip is shown for long text that does not fit fully in the column.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows2.png#thumbnail-60)  
+
+>**Note**: With word wrap, the additional line of text might not be visible if the rows have a fixed height that is less than necessary to show the complete text or the max height of 2000px has been reached.
+
+
 ### Resizing Columns 
 You can manually modify the Column Sizes of Table Charts by simply hovering over the header of the column and dragging the column header’s width to the left or right using the marquee tool. 
 
