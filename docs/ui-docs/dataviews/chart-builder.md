@@ -694,26 +694,66 @@ To add totals to a Table, you need to go to Chart Builder’s “Configuration P
  
 ## Data Formatting 
 
-**Table charts** support Numeric and Date Formatting in Grouped and Simple Tables.
+By default, all charts show the data formatted based on the selected Visualization Format in the data prep step. However, the default format can be changed or refined for most charts.   
+ 
 
-### 1. Numeric Formatting
-To add Numeric formatting, just click on the “3 dotted” menu located inside the column pill located in the “Columns” shelf, select “ Value Format” and select the desired format. 
+### Numeric Formatting
+
+Numeric formatting is supported for the value columns in Bar, Line, Symbol, Min/Max, and Crosstab charts, as well as all aggregated, and numeric columns in Table charts. 
+The following formats are available for numeric columns:
+* Decimal: shows a value of up to 10 decimal places
+* Abbreviated: shows the numeric value abbreviations. For example, 1000 is formatted as 1K
+* Currency: shows the value with a currency sign. For example, 3456.789 is formatted as $3,456.79. Several currency symbols are available for selection.
+* Percentage: shows the value as a percentage. For example, 30.4 turns into 30.4%
+* Scientific - show the values in scientific format. For example, 3456.789 = 3.46E+03
+* Numeric Values can be formatted from the column pill in the **Values** shelf of the supported charts or **Columns** shelf of Table charts. In order to access the feature:
+* Click on the 3-dot menu of the column pill
+* See the “Values Format” option in the dropdown menu and click on the item.
+* See the secondary dropdown menu showing formatting options
+* “Default” option is preselected. Select another formatting option (Default/Abbreviated/Decimal/Currency/Percentage/Scientific)
+* Provide any additional information that may be needed; e.g. number of decimal places for decimal format.
 
 ![10gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/10gif.gif#thumbnail)
 
+The same feature is also available from the *Styles* section in the chart configuration pane of charts other than Table and Crosstab. To access the feature in this way:
+* Go to the *Styles* section and go to **Value Formatting** located in the Y-Axis (or X-Axis, if the chart is horizontal).
+* The *Default* option is preselected. Select another formatting option (Default/Abbreviated/Decimal/Currency/Percentage/Scientific)
+* Provide any additional information that may be needed; e.g. number of decimal places for decimal format.
 
-### 2. Date Formatting
+### Date Formatting
 
-To add Date formatting, just click on the “3 dotted” menu located inside the column pill located in the “Date” pills, select “ Date Format” and select the desired format from the available predefined options or create a custom format. 
+When date columns are used as categories and the date grouping is set to **Day**, the **Date Format** appears on the menu off of the 3-dot menu of the column pill. Other date groups (Month, Year, Week, Quarter) do not support date formatting.
+Users can choose from the available date formats below or choose the “Custom Format” option that lets them define other formats.
+ 
+| **Format** | **Display** | 
+| --- | --- | 
+| MM/DD/YYYY | 12/31/2020 | 
+| MM/DD/YYYY HH24:MI:SS | 12/31/2020 23:59:59 | 
+| DD/MM/YYYY | 31/12/2020 | 
+| DD/MM/YYYY HH24:MI:SS | 31/12/2020 23:59:59 | 
+| YYYY-MM-DD | 2020-12-31 | 
+| YYYY-MM-DD HH24:MI:SS | 2020-12-31 23:59:59 | 
 
-Date formatting only works on dates used as “Groups” in grouped tables, and “Columns” in simple tables. 
+
+In order to access the feature:
+* Click on the 3-dot menu of a date type column pill.
+* See the **Date Format** option in the dropdown menu and click on the item.
+* See dropdown menu with available date formatting options and select or write the desired date format, if the **Custom Format** is selected.
 
 ![11gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/11gif.gif#thumbnail)
+
+For charts other than Table and Crosstab, the same feature is also available from the *Styles* section in the chart configuration pane. To access the feature in this way:
+* Go to the *Styles* section and expand the axis section that is used to present the category column.
+* See the ***Label Format** option available
+* See dropdown menu with available date formatting options and select or write the desired date format, if Custom Format is selected
+
+>**Note**: Date formatting applies to date columns that are used as dates. If the column is aggregated it turns into a numeric value and cannot be formatted as date.
+
 
 
 ## Conditional Formatting 
 
-Using conditions can create the criteria to apply specific color formatting to data in charts to highlight, differentiate, emphasize values that meet the set conditions. Conditional formatting calls attention to important data points such as deadlines, at-risk items, or budget items. It can also make large datasets more digestible by breaking up the data with a visual organizational component.
+Using conditions can create the criteria to apply specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet the set conditions. Conditional formatting calls attention to important data points such as deadlines, at-risk items, or budget items. It can also make large datasets more digestible by breaking up the data with a visual organizational component.
 
 There are 3 basic components are required to create a condition: 
 * **Data column** to use for a condition
