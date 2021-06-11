@@ -5,9 +5,13 @@ sidebar_label: Known Issues
 ---
 <div style="text-align: justify">
 
+* **DR-2587 - Data Sync Fails With Epoch Date Time Column**: When a user creates a Dataset and sets the "Append and Update" Sync using a date-time column in epoch format, the Sync fails and displays an error.
+
+* **AN-13210 - Filter Editor Does Not Appear From the Floating Component**: When a user wants to edit a filter from the floating component, the filter modal does not appear.
+
+* **AN-13133 - Bars Visualization Fails in Tables**: When an End-User edits a table setting a column with bars visualization, the bars do not appear. 
+
 * **The New Administrator Role Is Not Functional Yet** - The default Administrator role, added under the new Roles and Permissions feature, has not been turned on yet and users with this role will not be able to access the Admin Center product. The product remains only accessible to users added through the AWS console with proper permissions.
- 
-* **QV-13102 - Datasets Stuck in Loading Status**: In certain cases when multiple large datasets are loaded simultaneously and one of them times out, this can cause the dataset status to be shown as Loading indefinitely. Contact support to have the status reset manually while the issue is being worked on. 
 
 * **QV-13021 - 600+ Columns Indexes Cannot Be Created**: When a user tries to create a dataset from an index that has more than 600 columns, the dataset cannot be successfully created.
 
@@ -17,6 +21,7 @@ sidebar_label: Known Issues
 
 * **ADMIN-3507 - Applications Cannot Be Sent If a Snapshot is Running**: An admin user cannot re-deploy to an existing application while a data snapshot is running. The attempt will cause a “connection not found” error.
 
-* **ADMIN-2842 - Two different Logs Appear in the Activity Log**: After a failed installation two different logs appear in the 'Activity Log' tab, one says it failed and the other says it was successful. 
+* **ADMIN-2842 - Two Different Logs Appear in the Activity Log**: After a failed installation two different logs appear in the 'Activity Log' tab, one says it failed and the other says it was successful. 
 
 * **ADMIN-2841 - Received Apps Counter Badge Does Not Appear**: The counter badge in the 'Received Apps' tab is hidden before the user clicks on the tab.
+ 
