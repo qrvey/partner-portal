@@ -26,7 +26,7 @@ All the available columns will be listed in the data panel on the left side of t
 
 If you’ve created a linked dataset using Data Links, you will see columns for both, your source dataset and the additional datasets you’ve linked to as shown below. Just click on the linked dataset pill to see the linked columns.
 
-![1a_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_1_CB.png#thumbnail-20)
+![1a_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/1_1_CB.png#thumbnail-40)
 
 To get started, simply drag and drop a column onto the canvas in the *Category* or *Value* drop zone or in the Category or Value fields on the top shelf. 
 
@@ -117,7 +117,7 @@ The default scale type for a X/Y chart is Linear. However, linear scale is not a
 In order to change the scale type to Logarithmic you can find the setting in the Type dropdown under Y-Axis in the configuration panel.
 
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/logar.png#thumbnail-20)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/logar.png#thumbnail-40)
 
 
 ### Fixed Range Configurations 
@@ -147,7 +147,7 @@ If you choose to add a trend line, you can select the type of trend you’d like
 
 If you choose to add a reference line, you can choose from a number of options, including which axis you’d like the reference to appear on or whether that line should be fixed or dynamic in nature. You can also provide a label for the line itself. 
 
-![11_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/11_CB.png#thumbnail-20)
+![11_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/11_CB.png#thumbnail-40)
 
 <br/>
 
@@ -707,7 +707,8 @@ The following formats are available for numeric columns:
 * Currency: shows the value with a currency sign. For example, 3456.789 is formatted as $3,456.79. Several currency symbols are available for selection.
 * Percentage: shows the value as a percentage. For example, 30.4 turns into 30.4%
 * Scientific - show the values in scientific format. For example, 3456.789 = 3.46E+03
-* Numeric Values can be formatted from the column pill in the **Values** shelf of the supported charts or **Columns** shelf of Table charts. In order to access the feature:
+
+Numeric Values can be formatted from the column pill in the **Values** shelf of the supported charts or **Columns** shelf of Table charts. In order to access the feature:
 * Click on the 3-dot menu of the column pill
 * See the “Values Format” option in the dropdown menu and click on the item.
 * See the secondary dropdown menu showing formatting options

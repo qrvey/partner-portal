@@ -85,19 +85,20 @@ In this section, you can find a guide through the settings specific to the Bar C
 Users can adjust the width of the bars in the Bar Chart to customize the look and feel of their chart.
 When a bar chart is created, the width of the bars is automatically in proportion to the available space in the chart. 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth1.png#thumbnail-60)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth1.png#thumbnail)
 
 
 Creators can adjust the “Bar Width” percentage to customize the size of the bars.
 When the chart panel increases or decreases, the bars automatically resize in width to grow with the panel and fill up the space.
 From the automatic mode, clicking the up arrow should change the value to 100%, and clicking the down arrow should change the value to 1%.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth2.png#thumbnail-20)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth2.png#thumbnail-40)
 
 When the Bar Width is set at 100%, the bars appear with no space in between. With any other % number for Bar Width, the percentage is shown in relation to the available space in the panel.
 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth3.png#thumbnail-40)![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth4.png#thumbnail-40)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth3.png#thumbnail)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/barwidth4.png#thumbnail)
  
 
 
@@ -226,7 +227,7 @@ Position Set the totals for columns, rows or both.
 The Crosstab headers font color can be changed directly from the Chart Builder. 
 Simply go to the Styles section and pick a color for the header and/or header font to change the look of your crosstab.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor1.png#thumbnail-20)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor1.png#thumbnail-40)
 
 Colors can be chosen directly from the color picker or by using a color code.
 
@@ -238,7 +239,7 @@ The existing Crosstabs appear in the color defined by the user, while the new on
 
 If a user changes the color inside the chart builder, that configuration will remain in place regardless of the theme that has been applied.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor3.png#thumbnail-60)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/crosscolor3.png#thumbnail)
 
 ### Conditional Formatting in Crosstab
 You can use conditional formatting in Crosstab to highlight cells in your chart with colors so that it can be easily distinguished which cells in the crosstab have met the set conditions.
@@ -265,20 +266,20 @@ You can add as many conditions as necessary with each of them being added to the
 
 1. To apply conditional formatting to your cross tab, you first need to go to Chart Builder and create a Crosstab Chart. 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross1.png#thumbnail-60)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross1.png#thumbnail)
 
 2. Go to *Format* tab in Chart Configurations Panel and click on **Add Conditions** option.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross2.png#thumbnail-20)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross2.png#thumbnail-40)
 
 3. Create conditions that will apply to chart values.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross3.png#thumbnail-20)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross3.png#thumbnail-40)
 
 
 See cells meeting condition criteria highlighted in color.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross4.png#thumbnail-60)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/cross4.png#thumbnail)
 
 
 ## Heatmap
@@ -416,14 +417,14 @@ Inside Qrvey Composer, there are different places where you can create a map cha
 
 Before getting to the Chart Builder, the data needs to be prepared for the correct use of maps.
 
-![18_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/18_ct.png#thumbnail-40)
+![18_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/18_ct.png#thumbnail-60)
 
 When preparing data, the user needs to create a geolocation group to identify parts of an address that will be used for geolocation on a map. It's important to define these groups correctly for accurate map locations.
 
 After setting the geolocation group and loading data, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
-![19_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/19ct.png#thumbnail)
-
+![19_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/19_ct.png#thumbnail)
+ 
 
 On the right side of the window, we can find the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose either the Bubble, Dot, or Choropleth map chart.
 
@@ -734,7 +735,7 @@ Rows in Table Charts can be resized for the User to see the full information in 
 
 * Go to the *Configuration Pane - Styles* section and choose **Resize Columns and Rows**.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows1.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows1.png#thumbnail-40) 
 
 
 * The Row Height size is set to *Auto*; you can adjust it by typing in a number or by clicking the arrows to increase/decrease the height with the value between 2px-2000px.
@@ -743,7 +744,7 @@ If the input component is left blank, the system displays a placeholder with the
 
 * By default all text is displayed in a single line. If it doesn’t fit in the cell, an ellipsis is added at the end. Checking the  **Word Wrap** checkbox shows all of the text in the cell, breaking the line where needed. If word wrap is off, a tooltip is shown for long text that does not fit fully in the column.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows2.png#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/rows2.png#thumbnail-40)  
 
 >**Note**: With word wrap, the additional line of text might not be visible if the rows have a fixed height that is less than necessary to show the complete text or the max height of 2000px has been reached.
 
@@ -761,24 +762,24 @@ Simple tables could be sorted in two different ways. The first one is Single Sor
 
 * **Single Sorting**: Every table column contains a sorting icon as by default they are not sorted. If you want to sort the column you just need to click on the icon and it will sort the column’s values in an ascending way. Clicking it again will sort the values in a descending way.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort1.gif#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort1.gif#thumbnail)  
 
 Sorting on another column will remove the sort you have previously applied to a column and the table will keep the last column you had sorted.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort2.gif#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort2.gif#thumbnail)  
 
 * **Multi-Column Sorting**: Simple tables have single-sorting enabled by default. If you want to use multi-column sorting, you can find that option on the three-dot menu located in every column header.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort3.png#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort3.png#thumbnail)  
  
 A multi-column sort option will appear at the top left-hand side of the table. Using this option will let you sort by multiple columns at the same time simply by selecting them from the dropdown list. All sorted columns will appear at the bottom where you can choose either the ascending or descending sort order for each of them individually by clicking on the orange buttons or remove the column’s sort by clicking the X icon.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort4.png#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort4.png#thumbnail)  
 
 
 Once the multi-sort column option is active, you can also click on the sort icon of each column’s header to switch the sort order (asc or desc) or to remove it. The multi-column option above the table will be in sync with whatever action you take on the table column’s header.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort5.png#thumbnail-60)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/ct_sort5.png#thumbnail)  
 
 
 
@@ -873,11 +874,11 @@ To add a Sparkline - Line chart to a table cell, follow these steps:
 
 1. Go to the configuration pane and click on the *Trend Charts* tab.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark1.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark1.png#thumbnail) 
 
 2. Click on **+ Add Trend Chart**.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark2.png#thumbnail-20) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark2.png#thumbnail-40) 
 
 See the trend chart panel appear. The chart type selected by default is the line chart.
 
@@ -901,16 +902,16 @@ If you select Date in your “Trend by Column”, you can now group these dates 
 #### Creating a Sparkline - Line Chart from the Aggregated Column Pills
 1. Go to the Column shelf and click on the three dots next to the value you’d like to show in a graph.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark7.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark7.png#thumbnail) 
 
 
 2. In the menu that appears, choose Trend Chart > Sparkline, and select which trend you’d like to show in the graph. 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark8.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark8.png#thumbnail) 
 
 Once the chart has been added to the cell, hovering over it will show more details about it (Start, End, Min, and Max). In the tooltips, you can further customize the color of the graph, its shape (straight, curvy, square), and whether you want to show the values alongside the graph in the cell.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark9.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark9.png#thumbnail) 
 
 
 >**Note**: The trend chart can be shown only when the visualization is set to "Value". If you change visualization to “Bar”, the trend chart won’t be visible, however, the configuration should remain in place.
@@ -928,19 +929,19 @@ There are two ways of adding a chart to a table cell:<br>
 #### Creating a Sparkline - Bar Chart from the Grouped Table Chart’s configuration Pane
 1. Go to the configuration pane and click on the “Trend Charts” tab.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark10.png#thumbnail-20) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark10.png#thumbnail-40) 
 
 2. Click on “+ Add Trend Chart.” 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark11.png#thumbnail-20) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark11.png#thumbnail-40) 
 
 See the new trend chart panel appear. The default chart type is the line chart so make sure to click on the Bar Chart icon to change it.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark12.png#thumbnail-20) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark12.png#thumbnail-40) 
 
 3. Pick a column of values you’d like to show in the bar graph.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark13.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark13.png#thumbnail) 
 
 4. Add a Date or Numeric column to show the trend of the selected column.
 
@@ -950,16 +951,16 @@ See the new trend chart panel appear. The default chart type is the line chart s
 #### Creating a Sparkline - Bar Chart from the Aggregated Column Pills
 1. Go to the Column shelf and click on the three dots next to the value you’d like to show in a graph.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark15.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark15.png#thumbnail) 
 
 
 2. In the menu that appears, choose Trend Chart > Sparkline - Bar, and select which trend you’d like to show in the graph. 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark16.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark16.png#thumbnail) 
 
 Once the chart has been added to the cell, hovering over it will show more details about it (Start, End, Min, and Max). In the tooltips, you can further customize the color of the graph, its shape (straight, curvy, square), and whether you want to show the values alongside the graph in the cell.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark17.png#thumbnail-60) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark17.png#thumbnail) 
 
 
 >Note, that if users reduce the column’s width and there is not enough space to show the value and the trend chart simultaneously, the system will remove the trend chart and display only the value. Also, if users configure the trend chart column without showing the value and reduce the column’s width, the system will adapt the trend chart’s size to its minimum width. 
@@ -1022,7 +1023,7 @@ For Dial and Bullet Gauge style metrics Thresholds can be set. You can choose to
 ### Bullet Gauge
 The bullet metric is used to compare one or more measures to enrich its meaning and displays it in the context of qualitative ranges of performance, such as poor, satisfactory, or good. The qualitative ranges are displayed as different colors that can be customized.
 
-![47_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/47_ct.png#thumbnail) 
+![47_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/47_ct.png#thumbnail-60) 
 
 #### Properties
 Metrics have a set of properties that allows users to customize the aspect and modify the look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for metric settings.
@@ -1058,7 +1059,7 @@ Show Animations:  Turn On/Off the metric animations.
 Dial Gauge Metrics use needles to show information as a reading on a dial.
 The value for each needle is read against the colored data range or chart axis. This chart type is commonly used in dashboard reports to show key business indicators.
  
- ![50_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/50_ct.png#thumbnail) 
+ ![50_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/50_ct.png#thumbnail-60) 
 
 ## Indicator
 An indicator is a qualitative or quantitative variable that provides a simple and reliable means to express achievement, the attainment of a goal, or the results stemming from a specific change. It often aggregates or combines a comparison based on different dates.
