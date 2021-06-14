@@ -14,13 +14,13 @@ Like all widgets, this widget has an HTML tag, a launcher script, and a configur
 Depending on whether a single, specific published page needs to be embedded or all of the published pages, the code can be found in two different places:
 * In order to embed all of the published pages, you can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page View” option.
  
- ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail)
+ ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail-40)
 
 This will open a dialog with the necessary code, including the “domain” and property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
 
 * To embed an individual page, you will also need the page_id value. For this use case you can navigate to the desired page and click on the three-dot menu of the page at the bottom of the screen and select the “Embed Page” option. The code will be very similar to the previous case but include the page_id property of the selected page.
 
- ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-view1.png#thumbnail)
+ ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-view1.png#thumbnail-40)
 
 The building blocks of the code are explained below.
 
