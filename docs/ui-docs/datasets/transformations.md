@@ -91,22 +91,23 @@ We add more predefined transformations with every release. The predefined set is
 
 | **Transformation** | **Group** | **Function** |
 | --- | --- | --- |
-| Addition | Numeric | Adds the values of multiple columns together |
-| Array Flatten | Logic | Inflates array objects in hierarchical data |
-| Concatenate | Text | Concatenates multiple textual column values  |
-| Dataset Write | External | Writes data to a different dataset |
-| Date Add/Subtract | Date | Adds or subtracts given units to date column values |
-| Date Difference  | Date | Calculates the date/time interval |
-| Division | Numeric | Divides one column’s value by another |
-| Formula | Logic  | Allows Javascript functions to be created and applied |
-| Lowercase | Text | Turns textual column values to lowercase |
-| Multiplication | Numeric | Multiplies the values of multiple columns |
-| Record Copy | Logic | Copies records into an alternate transformation stream |
-| Round | Numeric | Rounds the value of one or more numeric columns |
-| Subtraction | Numeric | Subtracts the value of a numeric column from another |
-| Text Replace | Text | Replaces all or part of a textual column with a string |
-| Trim | Text | Removes selected characters from around textual column values |
-| Uppercase | Text | Turns textual column values to uppercase |
+| <a href="#addition">Addition</a>| Numeric | Adds the values of multiple columns together |
+|<a href="#array-flatten"> Array Flatten</a>| Logic | Inflates array objects in hierarchical data |
+| <a href="#concatenate">Concatenate</a>| Text | Concatenates multiple textual column values  |
+| <a href="#dataset-write">Dataset Write</a>| External | Writes data to a different dataset |
+| <a href="#date-add">Date Add/Subtract </a>| Date | Adds or subtracts given units to date column values |
+| <a href="#date-difference">Date Difference </a>| Date | Calculates the date/time interval |
+| <a href="#division">Division</a>| Numeric | Divides one column’s value by another |
+| <a href="#formula">Formula </a> | Logic  | Allows Javascript functions to be created and applied |
+| <a href="#ifelse">If/Else</a> | Logic | Lets a condition decide the next transformations |
+| <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
+| <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
+| <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
+| <a href="#">Round | Numeric | Rounds the value of one or more numeric columns |
+| <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
+| <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |
+| <a href="#trim">Trim</a> | Text | Removes selected characters from around textual column values |
+| <a href="#uppercase">Uppercase</a>| Text | Turns textual column values to uppercase |
 
 
 ## Numeric Transformations
@@ -209,6 +210,11 @@ Like all transformations, the results can update an existing column or create a 
 > **Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
 
+
+## If/Else
+If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. In the following example an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in an order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
 
 
 ## Array Flatten

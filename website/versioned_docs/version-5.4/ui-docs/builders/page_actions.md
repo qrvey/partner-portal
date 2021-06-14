@@ -1,7 +1,8 @@
 ---
-id: pages_actions
+id: version-5.4-pages_actions
 title: Page Actions
 sidebar_label: Page Actions
+original_id: pages_actions
 ---
 
 <div style="text-align: justify">

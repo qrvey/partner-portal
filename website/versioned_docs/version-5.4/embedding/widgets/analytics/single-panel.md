@@ -43,6 +43,7 @@ The table below provides general information about each property of this widgetâ
 | **panel.header.draggable** | `Boolean`, determines if the panel header has an icon to drag and drop the panel. Used by Custom View and Metric View.| No |
 | **panel.header.filter** | `Boolean`, determines if the panel header has a filter button to open the Filter Modal widget.| No |
 | **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br>Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br>(Note: SIZE is used only by the Custom View)| No |
+|**panel.header.fit_panel**| `Boolean`, set if fit to panel button is enabled. False by default. | No
 | **panel.header.title_prefix** | `String`, prefix for the title of the panel.| No |
 | **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br>Accepted values: CSV| No |
 | **panel.body** | `Object`, panel body options object.| No | 
@@ -67,7 +68,18 @@ The table below provides general information about each property of this widgetâ
 | **drilldowns**| `Object`, drilldowns object previously defined. Used by Custom View and Page Builder.| No |
 | **customdrills**| `Array`, set of customdrill objects previously defined. Used by End-User.| No |
 | **clickable**| `Boolean`, determines if the panel has click events. Used by End User.| No |
-
+| **themeid**| `String`, theme ID to use in the component| No
+| **panel.styles**| `Object`, styles options object. These properties will extend from the current theme| No
+| **panel.styles.chartsTitle**| `String`, set the charts title color| No
+| **panel.styles.chartsFontFamily**| `String`, set the charts font family| No
+| **panel.styles.axisDataLabels**| `String`, set axis labels color in charts| No
+| **panel.styles.dataLabels**| `String`, color for data labels in charts| No
+| **panel.styles.valuesMain**| `String`, set color for axis ticks values in charts| No
+| **panel.styles.chartsLegends**| `String`, color for charts legends labels| No
+| **panel.styles.chartsTooltips**| `String`, color for charts tooltips| No
+| **panel.styles.tableHeaderFont**| `String`, set color for table header texts| No
+| **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| No
+| **panel.styles.themePalette**| `Array`, contains a maximum 20 colour for char data points like bars, symbols and lines.| No
 
 
 > **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you donâ€™t know where to find any of the required configuration properties. 

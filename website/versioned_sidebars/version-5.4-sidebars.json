@@ -84,6 +84,10 @@
       "version-5.4-ui-docs/filtering-data/introduction-to-filters",
       "version-5.4-ui-docs/filtering-data/working-with-filters"
     ],
+    "End User Personalization": [
+      "version-5.4-ui-docs/end-user-personalization/overview",
+      "version-5.4-ui-docs/eup-dashboards"
+    ],
     "Automation": [
       "version-5.4-ui-docs/automation/flows",
       "version-5.4-ui-docs/automation/triggers",
@@ -224,6 +228,7 @@
   "version-5.4-release-notes": {
     "Release Notes 2021": [
       "version-5.4-release-notes/release-last",
+      "version-5.4-release-notes/release-may-2021",
       "version-5.4-release-notes/release-apr-2021",
       "version-5.4-release-notes/release-feb-2021"
     ],
@@ -270,6 +275,7 @@
   },
   "version-5.4-video-training": {
     "Release Demos": [
+      "version-5.4-video-training/release/version-6.0",
       "version-5.4-video-training/release/version-5.10",
       "version-5.4-video-training/release/version-5.9",
       "version-5.4-video-training/release/version-5.8",
