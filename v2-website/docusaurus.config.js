@@ -1,7 +1,7 @@
 module.exports={
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
-  "url": "http://partners-staging.qrvey.com.s3-website-us-east-1.amazonaws.com",
+  "url": "http://http://partners-staging.qrvey.com/",
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
@@ -133,7 +133,7 @@ module.exports={
     "algolia": {
       "apiKey": "7799174e3198189be19d4bcfa852f9f6",
       "appId": "FKFO2CGR6S",
-      "indexName": "dev_qrvey",
+      "indexName": "staging_qrvey",
       "algoliaOptions": {page: 0,
       nbHits: 40,
       nbPages: 2,

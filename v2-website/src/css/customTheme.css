@@ -116,6 +116,9 @@ display: none !important;
   display: none !important;
 }
 
+.react-toggle {
+  display: none;
+  }
 
 .card-categories{
   background-color: #FFFFFF;
@@ -427,6 +430,7 @@ img[src*="#thumbnail-20"] {
  }
  .side-right-nav .side-right-nav-container-popular ,.side-right-nav-container-popular .side-right-nav-container-popular-item, .side-right-nav-container-announcements{
       text-align: start;
+      overflow: scroll;
   }
  .top-fold-background .main-title{
       text-align: start;
@@ -453,7 +457,7 @@ img[src*="#thumbnail-20"] {
       top: 0;
       width: 280px;
       display: block;
-      overflow-x: hidden;
+      overflow: hidden;
       z-index: 2;
       border-radius: 0px;
   }
