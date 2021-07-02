@@ -17,11 +17,6 @@ module.exports={
   ],
   "stylesheets": [
     "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap",
-    "../static/css/custom.css",
-    "../static/css/login.css",
-    "../static/css/navbar.css",
-    "../static/css/support.css",
-    "../static/css/util.css"
   ],
   "favicon": "img/Qrvey.png",
   "customFields": {
