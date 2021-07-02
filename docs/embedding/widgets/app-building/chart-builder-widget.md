@@ -115,8 +115,8 @@ function openChart() {
 
 See the widget in CodePen:
 
-<p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWyvvWr" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Qrvey Chart Builder">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWyvvWr">
+<p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="ce2037232ed6b7924920fd0e19ec5bb9" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Qrvey Chart Builder">
+  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/ce2037232ed6b7924920fd0e19ec5bb9">
   Sample- Qrvey Chart Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>

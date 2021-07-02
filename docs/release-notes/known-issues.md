@@ -3,24 +3,26 @@ id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
 ---
-<div style={{textAlign: "justify"}} />
+<div style={{textAlign: "justify"}}>
 
--   **QV-12639 - Dates Swapped in Dataset Cards**: When an old dataset is reloaded, the dates of Created and Last Loaded appear swapped.
+-   **DR-2587 - Data Sync Fails With Epoch Date Time Column**: When a user creates a Dataset and sets the "Append and Update" Sync using a date-time column in epoch format, the Sync fails and displays an error.
 
--   **QV-12645 - Dataset Sync Is Executed in Off**: The Sync is turned off in the "Data Sync" tab, however, the sync is still being executed in the frequency configured the first time in the "Full Reload".
+-   **AN-13210 - Filter Editor Does Not Appear From the Floating Component**: When a user wants to edit a filter from the floating component, the filter modal does not appear.
 
--   **QV-12765 - The Data Source Pill Do Not Update**: When a dataset is created from another Dataset, an Index View, or a CSV connection, the child dataset pill name is not updated if the parent is changed. 
+-   **AN-13133 - Bars Visualization Fails in Tables**: When an End-User edits a table setting a column with bars visualization, the bars do not appear. 
 
+-   **The New Administrator Role Is Not Functional Yet** - The default Administrator role, added under the new Roles and Permissions feature, has not been turned on yet and users with this role will not be able to access the Admin Center product. The product remains only accessible to users added through the AWS console with proper permissions.
 
--   **AN-12115 - Abbreviated States Do Not Appear On The Map**: If a column with abbreviated states is configured as geolocation and is used in maps like Bubble, Dot, or Choropleth, it shows as an error.
+-   **QV-13021 - 600+ Columns Indexes Cannot Be Created**: When a user tries to create a dataset from an index that has more than 600 columns, the dataset cannot be successfully created.
 
+-   **QV-12765 - Datasource Pill Does Not Update**: If a dataset is created from another Dataset, an Index View, or a CSV connection, the child dataset pill name does not update when the parent dataset name is changed. 
 
--   **AN-12279 - Themed Font Styles on Downloads**: When there are font settings applied to a theme, these are not reflected in the PDF or JPG downloads.
+-   **ADMIN-3626 - Application Cannot Be Sent If a Dataset Is Deleted**: An admin user cannot install an application after a dataset is deleted from the original application that has a dependency on the deleted dataset.
 
--   **AT-7974 - Date Picker Tooltip Appears Cut**: When the component has a long label at the top of the screen in the end-user widget, the tooltip appears cut at the top.
+-   **ADMIN-3507 - Applications Cannot Be Sent If a Snapshot is Running**: An admin user cannot re-deploy to an existing application while a data snapshot is running. The attempt will cause a “connection not found” error.
 
--   **AT-8108 - Date Picker Dropdown Lists Are Incomplete in Safari**: When the user goes to the end-user widget and opens the date picker control from the safari browser, the Month/Year dropdowns appear incomplete.
+-   **ADMIN-2842 - Two Different Logs Appear in the Activity Log**: After a failed installation two different logs appear in the 'Activity Log' tab, one says it failed and the other says it was successful. 
 
--   **AT-8116 - Filter Controls Do Not Update**: When the user adds more than one date picker and value lists using the same column and updates the filter, not all date pickers will update their calendars.
+-   **ADMIN-2841 - Received Apps Counter Badge Does Not Appear**: The counter badge in the 'Received Apps' tab is hidden before the user clicks on the tab.
 
--   **ADMIN-3626 - Applications Cannot Be Shared After a Dataset Is Deleted**: When the Admin user tries to install an application after a dataset had been deleted from the original application that has a dependency on the page, the application can't be installed. 
+</div>

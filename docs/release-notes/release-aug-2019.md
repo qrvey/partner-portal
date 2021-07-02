@@ -3,7 +3,7 @@ id: release-aug-2019
 title: Qrvey Version 3.14
 sidebar_label: August 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release date: 2019-08-09
 
 ## New Features and Enhancements
@@ -81,3 +81,5 @@ Release date: 2019-08-09
 -   **Sharing Applications - Chart Filters**. When sharing applications filters were not being shared for charts. This has been fixed. 
 
 -   **Survey - Branches - Dropdown Question.** Changing the answer when the "Jump to" option is enabled was not working properly. This has been fixed.
+
+</div>

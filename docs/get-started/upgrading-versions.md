@@ -3,7 +3,7 @@ id: upgrading-new-version
 title: Upgrading to a New Version
 sidebar_label: Upgrading to a New Version
 ---
-
+<div style={{textAlign: "justify"}}>
 
 To install a new version of Qrvey to update your deployment, follow these steps:
 
@@ -38,3 +38,5 @@ To install a new version of Qrvey to update your deployment, follow these steps:
     b. There is no downtime for the application UI, but we would recommend doing this during off-hours to avoid any issues.
 
 11. Once the upgrade is complete, your new version will be automatically launched for use when your users access the Qrvey UI.
+
+</div>

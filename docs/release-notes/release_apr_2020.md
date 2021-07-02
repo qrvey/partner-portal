@@ -3,7 +3,7 @@ id: release-apr-2020
 title: Qrvey Version 5.1
 sidebar_label: April 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-04-30
 
 ## New Features & Enhancements
@@ -60,3 +60,5 @@ Release Date: 2020-04-30
 -   **AT - 5803 - Page Builder - Filters not Duplicated when Duplicating Pages**: When a page is duplicated, the filters of Tabs, Pages, and Panels were not duplicated. Filters are now included when duplicating a page. 
 
 -   **AT-5767 - Conditions with Timeframes**: In Flows, conditions by quarter, month, and days did not execute correctly. This was fixed and now any creator can execute this timeframe condition in Flows effectively.
+
+</div>

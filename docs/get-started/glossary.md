@@ -21,11 +21,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## B
 
-**Branch** - A term used in webforms when creating forms, surveys or quizzes. A “Branch” of a webform is a question(s) a user will answer as a result of their answer to a previous question. For example, if a user answers question 1 with “Yes”, then they get question 2. If that same user answers “No”, then they skip to question 3.
+**Branch** - A term used in webforms when creating forms, surveys or quizzes. A “Branch” of a webform is a question(s) a user will answer as a result of their answer to a previous question. For example, if a user answers question 1 with “Yes”, then they get to question 2. If that same user answers “No”, then they skip to question 3.
 
 ## C
 
-**Categories** - Also, referred to as dimensions, these are items within each dataset that have a metadata type of string, date, yes/no.
+**Categories** - Also referred to as _dimensions_, these are items within each dataset that have a metadata type of string, date, yes/no.
 
 **Chart Builder** - A tool that allows users to build custom charts to visualize their data.
 
@@ -56,6 +56,8 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 **Form** - A specific type of web form that is typically used to collect information and interact with applications.
 
 ## G
+
+**Global Filter** - A filter that applies to all of the pages.
 
 ## H
 
@@ -103,11 +105,15 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## R
 
+**Range** - the difference between the min and max values in a chart.
+
 **Recipient** - Someone who received an automated email from a workflow action. If the recipient clicks on a link in an email they may be shown a web form to complete. If they complete the form they become a respondent. See our entry below for _respondent_.
 
 **Respondent** - Someone who completes a web form. For example, a respondent could be someone you ask to answer via email or text, or someone who responds to a Qrvey link on a website, blog or social media post.
 
 ## S
+
+**Scale** - the difference between the units of values in a chart.
 
 **Survey** - A type of web form that collects data from individuals using a collection of questions.
 
@@ -117,7 +123,7 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Token** - A placeholder used inside formulas and workflows. For instance, it may correspond to a field or system variable.
 
-**Trend Analysis** - A chart of a Time Series used to visually explore time related patterns and correlations.
+**Trend Analysis** - A chart of a Time Series used to visually explore time-related patterns and correlations.
 
 **Trigger** - A workflow element used to initiate a process.
 
@@ -127,7 +133,7 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## V
 
-**Values** - The type of data item that contains a numerical value, often referred to as a metric.
+**Values** - The type of data item that contains a numerical value, often referred to as a _measure_.
 
 **Variable** - A system variable - eg the current user name, the system date/time, etc. See also - _Token_.
 
@@ -135,13 +141,13 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Web Form** - A data collection tool that can be used inside Qrvey as a part of pages and workflows, or shared externally via email, social media or embedded in a website.
 
-**Widget** - A pre-built web control, eg chart, form, etc, that used to allow easi=y embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed, with little to no associated coding or development.
+**Widget** - A pre-built web control, e.g. chart, form, etc., used to allow easy embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed, with little to no associated coding or development.
 
 **Workflow** - An automation workflow is a series of triggers, conditions and actions that work together to perform a specific function.
 
 ## Y
 
-**Yes/No** - A simple binary question type that only has two responses, such as "yes" or "no", "true' or false" or similar alternatives.
+**Yes/No** - A simple binary question type that only has two responses, such as "yes" or "no", "true" or "false" or similar alternatives.
 
 ## Z
 

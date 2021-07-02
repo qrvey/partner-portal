@@ -3,7 +3,7 @@ id: release-nov-2019
 title: Qrvey Version 3.3
 sidebar_label: November 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release date: 2019-11-13
 
 ## New Features and Enhancements
@@ -50,3 +50,5 @@ Release date: 2019-11-13
 -   **QV-8830 - Survey - Branches - Numeric question:** Currency/percentage options weren’t displayed properly - this was fixed.
 -   **ADMIN-989 - Content Deployment - Releases:** When a user performed a search in content, the result of the search was done only in one page, and when you click the “next” arrow, the same page was shown with the same result - this was fixed.
 -   **AT-4922 - Activity Log - Exporting Service:** Details about Failed Process were not being exported - this was fixed.
+
+</div>

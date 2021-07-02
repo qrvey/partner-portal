@@ -71,8 +71,8 @@ See the widget in CodePen:
 
 ```
 
-  <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="qBZrwGj"  style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Datasets">
-    <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/qBZrwGj">
+  <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="e2af64022d03276dea717530cbd2aafd"  style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Datasets">
+    <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/e2af64022d03276dea717530cbd2aafd">
     Sample- Qrvey Datasets</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
     on <a href="https://codepen.io">CodePen</a>.</span>
   </p>

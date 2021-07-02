@@ -116,6 +116,10 @@ display: none !important;
   display: none !important;
 }
 
+.col .text--right {
+  display: none;
+}
+
 .react-toggle {
   display: none;
   }

@@ -16,7 +16,7 @@ Ensure your AWS account is secured by following the best practices and recommend
 
 Qrvey’s application UI (AKA Qrvey Composer) is a web-based application that is accessible via a Web browser. Communication with the server is secured by SSL. Users who log in are called Creators as they can create applications and share these apps with other users. Each creator can share their applications with any number of end users, the consumers of the application outputs.
 
-### Log into the Qrvey Analytics Portal
+### Log Into The Qrvey Analytics Portal
 
 To be able to use this application, a Creator user needs a username and password. At least one of these methods needs to be enabled.
 See <a href="/docs/admin/admin-sections-platform/">set up details here</a>.
@@ -45,9 +45,11 @@ An AWS Administrator can control who can access the Admin module by managing the
 
 Qrvey Widgets are reusable UI components that can be embedded in any Web application. Widgets themselves are accessible via a public URL (using SSL). Widgets would then call the platform API to show and update data. This communication between widgets and API can be secured in 2 ways:
 
--   <a href="/docs/embedding/widgets/widget-embedding-using-cookies/">Cookies with a temporary token </a> (Recommended) - With this option, an application server (backend app) would first call the login API using a private API key. This API would return a temporary token to the application server which should then be passed to the widget. The widget would then access the server using this temporary token and generate an authentication cookie (using SSL). After this handshake, all API calls are secured using this encrypted cookie.
+-   <a href="/docs/embedding/widgets/widget-embedding-using-cookies/">Cookies with a temporary token </a>  - With this option, an application server (backend app) would first call the generateToken API using a private API key. This API would return a temporary token to the application server and then the application server would call the loginToken API and this will generate an authentication cookie (using SSL). After this handshake, all API calls are secured using this encrypted cookie.
 
--   <a href="/docs/embedding/widgets/widget-intro/#api-key"> API Key </a> - This is an easy option where a developer can define the API key directly in the Widget config object. With this, the widget directly accesses the API but thisAPI key would be visible in the HTML/JS code. This option is ok to use for quick debugging or in a dev environment but not recommended for production or any public deployment as the private API key could be exposed in HTML Source.
+-   <a href="/docs/embedding/widgets/widget-intro/#api-key"> API Key </a> - This is an easy option where a developer can define the API key directly in the Widget config object. With this, the widget directly accesses the API but this API key would be visible in the HTML/JS code. This option is ok to use for quick debugging or in a dev environment but not recommended for production or any public deployment as the private API key could be exposed in HTML Source.
+
+-   Security Token (Recommended) - This is the most simple and secure way to embed widgets. First, an application server would call the login/token API with all the widget configuration values using a private API key. This API would return a secure JWT token and this will be used together with the domain as the final UI configuration object that the widget needs to work properly. 
 
 See <a href="/docs/embedding/widgets/widget-embedding-using-cookies/">steps for cookies/token setup</a>.
 

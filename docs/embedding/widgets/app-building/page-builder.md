@@ -1,11 +1,18 @@
 ---
 id: widget-page-builder
-title: Page Builder
-sidebar_label: Page Builder
+title: Page Builder Widget
+sidebar_label: Page Builder Widget
 ---
 <div style={{textAlign: "justify"}}>
 
-The Page Builder widget allows users to manage pages for an application (create, edit, publish and delete). Pages may contain embedded reports and webforms, as well as other static content.
+The Page Builder widget is used to add the ability to create new pages or modify existing ones in a product that embeds this widget.  Pages may contain embedded reports and webforms, as well as other static content.
+
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page Builder” option.
+
+![page-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail)
+
+This will open a dialog with the necessary code, including the “domain”, “app_id” and “user_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
+The building blocks of the code are explained below.
 
 ## HTML Tag And Launcher
 
@@ -21,14 +28,16 @@ The table below provides general information about each property of this widget�
 
 | **Property**      | **Value**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | **Required** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| **api_key**       | `String`, Application ID                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Yes          |
-| **app_id**        | `String`, Qrvey App ID                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Yes          |
+| **api_key**       | `String`, secret identification token to access the application.                                                                                                                                                                                                                                                                                                                                                                                                                    | Yes          |
+| **app_id**        | `String`, ID of the Qrvey application containing the webform.                                                                                                                                                                                                                                                                                                                                                                                                                       | Yes          |
 | **user_id**       | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie.                                                                                                                                                                                                                                                                                                                                                                      | Yes          |
-| **domain**        | `String`, Qrvey Core URL                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Yes          |
+| **domain**        | `String`, Qrvey Core URL.                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Yes          |
 | **private_pages** | `Boolean`, predefine the state of new pages. If _True_, new pages will be private, if not new pages will be public.                                                                                                                                                                                                                                                                                                                                                                 | No           |
 | **do_not_allow**  | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view.                                                                           | No           |
 | **styles**        | `Object`, an JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />_ **main_color**: `String`<br />_ **main_text_color**: `String`<br />_ **secondary_color**: `String`<br />_ **icon_color**: `String`<br />_ **tab_bar_color**: `String`<br />_ **tab_font_color**: `String`<br />\* **error_color**: `String` | No           |
-| userFilters       | Array&lt;object&gt;, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object.                                                                                                                                                                                                                  | No           |
+| userFilters       | Array`<object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object.                                                                                                                                                                                                                  | No           |
+
+<br />
 
 &gt; **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
@@ -103,10 +112,8 @@ See the widget in CodePen:
 
 <p className="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="5bd38e7cb821debf789eea5fda042145" style={{height: "300px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Qrvey Page Builder">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/5bd38e7cb821debf789eea5fda042145">
-  DOC - Page Builder (Jan2021)</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
+  Sample- Qrvey Page Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async={true} src="https://cpwebassets.codepen.io/assets/embed/ei.js" />
-
-&lt;object&gt;
 </div>

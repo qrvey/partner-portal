@@ -62,8 +62,8 @@ As we mentioned earlier, this widget allows us to collect three types of webform
 
 See the widget in CodePen:
 
-   <p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="KKzWYXE" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Webform Design">
-      <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/KKzWYXE">
+   <p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="17ca2ace17e54cd26353f638666f91be" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Webform Design">
+      <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/17ca2ace17e54cd26353f638666f91be">
       Sample- Webform Design</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
       on <a href="https://codepen.io">CodePen</a>.</span>
     </p>

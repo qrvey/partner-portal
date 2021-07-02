@@ -3,7 +3,7 @@ id: release-jan-2019
 title: Qrvey Version 3.10
 sidebar_label: January 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release date: 2019-01-30
 
 ## New Features and Enhancements
@@ -75,3 +75,5 @@ Release date: 2019-01-30
 -   **Tabular View - Editing Lookup Field With Branching.** Questions in branches that are generated from a lookup field using a Dataset as a source were failing when a user tried to edit the branch questions from Tabular View.
 
 -   **Datasets - Database Connection - Loading Unsaved Data.** When a connection was edited, and the changes were saved users could continue to upload data again. However if the changes were not saved they shouldn't have been able to upload data. The "Load" button was active, which allowed users to "Load" at any time with or without saved changes.
+
+</div>

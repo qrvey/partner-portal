@@ -3,7 +3,7 @@ id: release-december-2020
 title: Qrvey Version 5.7
 sidebar_label: December 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-12-18 
 
 ## New Features and Enhancements
@@ -107,3 +107,5 @@ Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <
 -   **AT-7615 - Color Does Not Change**: When the creator chose a custom color by typing the desired value for font and background colors, the color did not change until the transparency had been modified. This has been fixed.
 
 -   **CR-69 - Filter Value List to Display More Options**: When a user created a filter, the system only displayed the top 50 values for that field. This has been fixed by increasing the limit to 1,000.
+
+</div>

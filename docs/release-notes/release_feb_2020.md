@@ -3,7 +3,7 @@ id: release-feb-2020
 title: Qrvey Version 4.1
 sidebar_label: February 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-02-18
 
 ## New Features & Enhancements
@@ -39,3 +39,5 @@ Release Date: 2020-02-18
 -   **AN-8745 - Date/Formula - Differents records for the same category:** The user created a formula DateAdd adding 2 days to the field CreatedOn that have a format dd/mm/yyyy, then the result for this formula is with another format as 2017-06-04T19:47:42.000Z. The application groups the dates taking into account the hour/minutes and seconds but when the user applies See data and Filter by, the records have different seconds for the same category. We have fixed this.
 
 -   **AN-8499 - Multiseries - Data Link - Data is not correct:** When the series of multi-series come from a source dataset, the data displayed did not correspond to the exact match between the linked columns. This was fixed.
+
+</div>

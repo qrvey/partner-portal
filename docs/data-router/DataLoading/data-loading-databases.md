@@ -3,6 +3,7 @@ id: loading-status-databases
 title: Loading Data From Databases
 sidebar_label: Loading Data From Databases
 ---
+<div style={{textAlign: "justify"}}>
 
 ## Introduction
 
@@ -31,13 +32,15 @@ Before you can start, please make sure you have the following:
 	</tr>
 	</thead>
 	<tbody>
-		<tr><td>Yes</td>
+	<tr>
+        <td>Yes</td>
         <td>datasetId</td>
         <td>String</td>
         <td>Reference to the dataset</td>
         <td>Random value</td>
 	</tr>
-    	<tr><td>No</td>
+    	<tr>
+        <td>No</td>
         <td>documentUpdateMethod</td>
         <td>String</td>
         <td>Upsert or replace (default) the data on Elasticsearch if the row(s) already exists.</td>
@@ -58,7 +61,9 @@ Before you can start, please make sure you have the following:
         <td><a href="https://docs.google.com/document/d/18r1MBDUP9k7ws81ZjKr0z8ct3hPTZt1w5WiYvynHbeE/edit#heading=h.1m16imwrw2yi">Datasources Structure</a></td>
     </tr>
 	</tbody>
+
 </table> 
+
 
 ## Datasources Structure
 
@@ -297,3 +302,4 @@ curl --location --request POST '{{PostdataURL}}/init' \
 }'
 
 ```
+</div>

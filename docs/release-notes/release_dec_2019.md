@@ -3,7 +3,7 @@ id: release-dec-2019
 title: Qrvey Version 4.0
 sidebar_label: December 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2019-12-18
 
 ## New Features & Enhancements
@@ -41,3 +41,5 @@ Release Date: 2019-12-18
 -   **AN-8249 - Date Drill Downs - Changing Date Columns:** If a user applied a drill down using a date column and then changed the drill down to use a different date column, the drill down had to be restored before the correct dates were displayed.  This has been fixed.
 -   **AN-7914 - Crosstab - Sorting by Columns:** When applying sorting option on a column in a crosstab chart with multiple levels the sorting is only reflected on the second column and not the rest.   This has been fixed.
 -   **DR-1213 - Manifest: Managing partial files do not update DynamoDB file status:** Managing partial files did not update the DynamoDB file status: When ES did a partial insertion from a file, it rejected the rest, and a partial file was created. The manifest process does not handle partial files - in the DynamoDB table (fileproccesedstatus) if a file is partially generated, it is marked as failed, with status code 206. Once the related partial file is processed, the status of the parent file is not updated, causing the rupture of the manifest upload process. This bug is no longer happening as we removed the use of partial files.
+
+</div>

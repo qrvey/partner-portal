@@ -3,7 +3,7 @@ id: aws_marketplace
 title: Getting Qrvey From AWS Marketplace
 sidebar_label: Getting Qrvey From AWS Marketplace
 ---
-
+<div style={{textAlign: "justify"}}>
 
 This document explains the steps to download and install Qrvey Business Analytics platform from AWS marketplace. The listing on Marketplace can be found 
 <a href="https://aws.amazon.com/marketplace/pp/B0863DDPQG"> <strong> here</strong> </a>.
@@ -100,3 +100,5 @@ In the meantime, you can enable some emails by verifying them in SES. To verify 
 1.  Navigate to  <a href="https://console.aws.amazon.com/ses/home?region=us-east-1# "> <strong>AWS SES console</strong></a>.
 2.  Click on the **Email Addresses** menu option on the left.
 3.  Click on the **Verify a New Email Address** button.
+
+</div>

@@ -1,11 +1,18 @@
 ---
 id: widget-report-builder
-title: Report Builder
-sidebar_label: Report Builder
+title: Report Builder Widget
+sidebar_label: Report Builder Widget
 ---
 <div style={{textAlign: "justify"}}>
 
-The Report Builder widget allows users to create, edit, and delete report definitions for an application.
+The Report Builder widget is used to embed the feature that allows the users of your application to create and manage static Qrvey reports. 
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Report Builder section of Qrvey Composer and clicking on the “Embed Report Builder” button in the top right corner of the page.
+
+![report-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/report-build-wi.png#thumbnail)
+
+This will open a dialog with the necessary code, including the “domain”, “app_id”, “user_id”, and “report_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value and adjust other properties according to your needs.
+
+The building blocks of the code are explained below.
 
 ## HTML Tag And Launcher
 
@@ -21,13 +28,13 @@ The table below provides general information about each property of this widget�
 
 | **Property**          | **Value**                                                                                                                                                                                                                                                                   | **Required** |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| **app_key**           | `String`, Application ID                                                                                                                                                                                                                                             | Yes          |
-| **app_id**            | `String`, Qrvey App ID                                                                                                                                                                                                                                               | Yes          |
+| **api_key**           | `String`, secret identification token to access the application.                                                                                                                                                                                                     | Yes          |
+| **app_id**            | `String`,  ID of the qrvey application containing the webform.                                                                                                                                                                                                       | Yes          |
 | **user_id**           | `String`, Optional User ID: you can set up the widget without a user id if it's set in a qrvey session cookie.                                                                                                                                                       | Yes          |
-| **domain**            | `String`, Qrvey Core URL                                                                                                                                                                                                                                             | Yes          |
+| **domain**            | `String`, Qrvey Core URL.                                                                                                                                                                                                                                            | Yes          |
 | **reports_dashboard** | `Boolean`, Shows the report builder (has to be set to true for reports. Otherwise Page Builder will be exposed).                                                                                                                                                     | Yes          |
-| **do_not_allow**      | `Array<String>`, Collection of strings to define permissions (will hide or block some features)<br /> <br />\* CREATE_CHART: Hide Create Chart button.                                                                                                                   | No           |
-| userFilters           | Array&lt;object&gt;, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/"> Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No           |
+| **do_not_allow**      | `Array<String>`, Collection of strings to define permissions (will hide or block some features).<br /> <br />\* CREATE_CHART: Hide Create Chart button.                                                                                                                  | No           |
+| userFilters           | Array`<object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/"> Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No           |
 
 &gt; **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
@@ -98,6 +105,4 @@ See the widget in CodePen:
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async={true} src="https://cpwebassets.codepen.io/assets/embed/ei.js" />
-
-&lt;object&gt;
 </div>

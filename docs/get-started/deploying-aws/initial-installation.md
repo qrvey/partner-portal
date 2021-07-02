@@ -3,7 +3,7 @@ id: initial-installation
 title: Initial Installation
 sidebar_label: Initial Installation
 ---
-
+<div style={{textAlign: "justify"}}>
 
 ## Installation Steps
 
@@ -38,3 +38,5 @@ The following steps will walk you through installing the Qrvey platform in your 
     e. A link to the documentation portal.
 
 6.  Open the URL in a browser window and sign up for an account to start using the application. You can share the same URL with your users, who can sign up for their own accounts.
+
+</div>

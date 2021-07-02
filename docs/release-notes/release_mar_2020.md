@@ -3,7 +3,7 @@ id: release-mar-2020
 title: Qrvey Version 5.0
 sidebar_label: March 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Qrvey 5.0 - 2020-03-31
 
 ## New Features & Enhancements
@@ -32,3 +32,5 @@ Qrvey 5.0 - 2020-03-31
 -   **AT - 5863 - Builders - Datasets not Listed**: Datasets for filters are not listed when a chart, which is on the same page tab, is deleted.
 
 -   **AT - 5803 - Page Builder - Filters not Duplicated when Duplicating Pages**: When a page is duplicated, the filters of  Tabs, Pages, and Panels are not duplicated.
+
+</div>

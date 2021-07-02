@@ -3,7 +3,7 @@ id: release-sep-2020
 title: Qrvey Version 5.5
 sidebar_label: September 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-09-30
 
 ## New Features & Enhancements
@@ -54,3 +54,5 @@ Click <a href="/docs/next/video-training/release/version-5.5" target="_blank"> <
 -   <a href="/docs/admin/elasticsearch-management/" target="_blank"> <strong> ADMIN-2766 - ES Management - Automatic Adjustments</strong></a>: Automatic Adjustment settings are also available in the Infrastructure section. Admins are now able to select if they want to perform automatic adjustments with Qrvey automatically adding more Elasticsearch servers in case space is running out.
 
 -   <a href="/docs/admin/elasticsearch-management/" target="_blank"> <strong> ADMIN-2767 - ES Management - Email Notifications</strong></a>: We enabled email options for different events that can happen as a result of ES Adjustments. Admins are able to choose which event-related email they want to receive for which a valid email address must be provided.
+
+</div>

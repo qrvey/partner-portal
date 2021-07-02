@@ -64,8 +64,8 @@ var config = {
 
 See the widget in CodePen:
 
-<p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="yLOopqq" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Qrvey Automation Design">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/yLOopqq">
+<p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="4f4030cdea91163a3b9583234335e360" style={{height: "265px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Sample- Qrvey Automation Design">
+  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/4f4030cdea91163a3b9583234335e360">
   Sample- Qrvey Automation Design</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>

@@ -3,7 +3,7 @@ id: release-feb-2019
 title: Qrvey Version 3.11
 sidebar_label: February 2019
 ---
-<div style={{textAlign: "justify"}} />
+<div style={{textAlign: "justify"}}>
 Release date: 2019-02-28
 
 ## New Features and Enhancements
@@ -88,3 +88,5 @@ Release date: 2019-02-28
 -   **Web Forms - Short Text Field.** On the respondents' side the Short Text Field was showing as a large text box which was too big for texts such as labels  or one-word answers. The text was reduced to show the height for one line of text. 
 
 -   **Metadata Creator - DataRouter URL.** The URL was hardcoded in the app and whereas it should have been dynamic based on installation.
+
+</div>

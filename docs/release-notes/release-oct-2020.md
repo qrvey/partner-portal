@@ -3,7 +3,7 @@ id: release-oct-2020
 title: Qrvey Version 5.6
 sidebar_label: October 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-10-30
 
 ## New Features and Enhancementes
@@ -77,3 +77,5 @@ Click <a href="/docs/next/video-training/release/version-5.6" target="_blank"> <
 -   <strong>AT-7436 - Mouse/Trackpad Scrolling</strong>: When the mouse wheel was used on a page with scrolling enabled and charts added with scroll, it did not work correctly. This has been fixed.
 
 -   <strong>AT-7261 - Filters for End-Users</strong>: When a single page was embedded on the end-user side, and the user tried to apply a Panel filter, the modal remained _loading_. If the user tried applying a global Filter, datasets were not listed and Filters couldn’t be applied. This has been fixed.
+
+</div>

@@ -3,7 +3,7 @@ id: release-mar-2019
 title: Qrvey Version 3.12
 sidebar_label: March 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release date: 2019-03-30
 
 ## New Features and Enhancements
@@ -88,3 +88,5 @@ Release date: 2019-03-30
 -   **Data Links - Web Forms.** When establishing a link between 2 web forms through an Address column the city + city combination didn't work and showed "No Data Found".
 
 -   **Database Connections - MS SQL Editing.** When these types of datasets were loaded, and then edited, once the changes were saved the datasets did not work properly. 
+
+</div>

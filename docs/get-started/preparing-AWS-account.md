@@ -3,7 +3,7 @@ id: preparing-AWS-account
 title: Preparing Your AWS Account
 sidebar_label: Preparing Your AWS Account
 ---
-
+<div style={{textAlign: "justify"}}>
 
 Qrvey will deploy to your AWS account using a CloudFormation template. CloudFormation templates enable you to automate the deployment process of the AWS services required to run the Qrvey system. The following steps will walk you through the deployment process.
 
@@ -139,3 +139,5 @@ Once the deployment is done and Verified, Qrvey’s deployment team will email t
 -   Useful Links:
     -   Developer Docs
     -    API reference, Data Router and Widgets Samples.
+    
+</div>

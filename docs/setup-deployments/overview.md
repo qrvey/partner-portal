@@ -3,7 +3,7 @@ id: setup-overview
 title: Setup Overview
 sidebar_label: Setup Overview
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 
 Qrvey is a 100% Cloud native product built with dozens of AWS services like Elastic Container Service (ECS), DynamoDB, S3, Load Balancers, Auto scaling, SES, SQS, etc. We deploy directly into your own Amazon Web Services (AWS) account. This gives you full control over your installation and data. You can decide how big a deployment you need and have full control to scale up or down as needed to balance cost with performance.
 Qrvey Platform is deployed using a combination of Cloudformation templates and Code Pipelines. This makes the deployment fully automated and there is no downtime during upgrades. An upgrade is as simple as copying a few Zip files into an S3 bucket which will trigger the pipelines and deploy the new version including any updates to the infrastructure.
@@ -43,3 +43,4 @@ All Platform upgrades are rolling upgrades so they do not require a downtime but
 ## Removing a Deployment
 
 Removing a deployment can be done by deleting the cloudformation stacks from AWS Cloudformation console. Cloudformation would not delete some resources that have data in them (like S3 buckets) so it would be better to clean or remove these resources manually before removing the stack. 
+</div>

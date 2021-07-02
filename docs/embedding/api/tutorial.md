@@ -62,7 +62,7 @@ Make sure to set you Header values:
 
 ```
 
-![api_tutorial_1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_1.png#thumbnail-40)
+![api_tutorial_1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_1.png#thumbnail)
 
 In order to create a new user, we will also be entering our JSON values into the Body, select the Body tab, and choose “raw” to enter your JSON.    The JSON structure for creating a new user takes email and password values looks like this:
 
@@ -72,7 +72,7 @@ In order to create a new user, we will also be entering our JSON values into the
 
 ```
 
-![api_tutorial_2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_2.png#thumbnail-40)
+![api_tutorial_2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_2.png#thumbnail)
 
 Hit **Send** to complete the POST and your response will return a valid “userid”.   Keep this userID for later use. 
 
@@ -90,7 +90,7 @@ To obtain a previously created “userid”, you can also call the API to get th
 
 In Postman, Set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit **Send** to complete the request.
 
-![api_tutorial_3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_3.png#thumbnail-40)
+![api_tutorial_3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_3.png#thumbnail)
 
 This will return a response with a list of users in your app, each one with a unique “userid”. The response will look something like this for each user:
 
@@ -110,7 +110,7 @@ If you are looking for a particular user, you can search by email address. To fi
 
 ```
 
-![api_tutorial_3a](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tut.png#thumbnail-40)
+![api_tutorial_3a](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tut.png#thumbnail)
 
 ## Get the Application
 
@@ -235,7 +235,7 @@ In Postman, the POST endpoint for activating our quiz looks like this:
 
 Remember to set your Headers properly, and hit **Send** to get the response, which will be the valid URL for users to take your quiz.
 
-![api_tutorial_11](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_11.png#thumbnail-40)
+![api_tutorial_11](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_11.png#thumbnail)
 
 You can now use that response to send the URL to your users so they can take the Quiz that was created using the API.
 

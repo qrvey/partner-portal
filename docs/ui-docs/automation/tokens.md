@@ -3,7 +3,7 @@ id: tokens
 title: Tokens
 sidebar_label: Tokens
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 
 Tokens are parameters or variables that act as containers for data. There are three categories of Tokens available: _System_, _Data_, and _User Defined_. Tokens can be used across different contexts in the application. 
 
@@ -68,3 +68,5 @@ System tokens cannot be edited and are available throughout your application wit
 -   {"{"}{"{"}SYSTEM.DAYOFYEAR{"}"}{"}"}
 -   {"{"}{"{"}SYSTEM.YESTERDAY{"}"}{"}"}
 -   {"{"}{"{"}SYSTEM.TOMORROW{"}"}{"}"}
+
+</div>

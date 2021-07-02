@@ -3,7 +3,7 @@ id: aws-faqs
 title: AWS FAQs
 sidebar_label: AWS FAQs
 ---
-
+<div style={{textAlign: "justify"}}>
 
 **Q: What are the options and correct process of connecting to an AWS RDS?**
 
@@ -36,12 +36,14 @@ Both of these components should be able to connect to your data source. For exam
 
 **A:** There are 2 ways to monitor the Elasticsearch cluster.
 
-1. Using Admin Center:<br />
+1.  Using Admin Center:<br />
     i. Login to Admin center using your AWS IAM credentials.<br />
     ii. Click on the DataRouter section.<br />
     iii. Review the node usage in the Elasticsearch section at the bottom. It shows the total vs used space and then per node.
 
-2. AWS Elasticsearch console <br />
+2.  AWS Elasticsearch console <br />
     i. Login to your AWS account with a user that has permissions to access Elasticsearch domains.<br />
     ii. Select “Dashboard” tab from the top-left menu. <br />
     iii. You can review the free storage space in the table for your Elasticsearch cluster.
+    
+</div>

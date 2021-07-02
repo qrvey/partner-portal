@@ -3,7 +3,7 @@ id: release-jul-2020
 title: Qrvey Version 5.3
 sidebar_label: July 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-08-03
 
 ## New Features & Enhancements
@@ -34,3 +34,5 @@ Click <a href="/docs/next/video-training/release/version-5.3" target="_blank"> <
 
 -   <a href="/docs/admin/admin-sections-platform/" target="_blank"> <strong> ADMIN-2608 - OpenID Authentication for End-Users</strong></a>: 
     We added the option that allows Admins to enable and set up OpenID parameters for End User login options.  This will give End Users the possibility of using their own authentication methods like OAuth, OpenID, or SAML when logging in the Qrvey Application.
+    
+</div>

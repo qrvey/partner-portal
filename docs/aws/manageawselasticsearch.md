@@ -3,9 +3,7 @@ id: manage-aws-elasticsearch
 title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
 ---
-<head><style dangerouslySetInnerHTML={{__html: "\nimg[src*=\"#thumbnail\"] {\n   width:100%;\n   border: 1px solid whitesmoke;\n}\n" }} />
-
-</head>
+<div style={{textAlign: "justify"}}>
 
 The Qrvey platform uses AWS Elasticsearch service to store all Analytics data and runs queries on this cluster to show Charts and Metrics in UI. This document explains how to monitor and Resize an AWS Elasticsearch cluster based on your needs and requirements.
 
@@ -65,3 +63,5 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 ![alt_text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/manageawselasticsearch/Managing-AWS2.png#thumbnail "image_tooltip")
 
 Once you click on submit all changes are applied without any downtime and you can monitor the progress by looking that the “Total Nodes” chart in “Cluster Health” tab.
+
+</div>

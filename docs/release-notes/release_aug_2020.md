@@ -3,7 +3,7 @@ id: release-aug-2020
 title: Qrvey Version 5.4
 sidebar_label: August 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2020-08-31
 
 ## New Features & Enhancements
@@ -44,3 +44,5 @@ Click <a href="/docs/next/video-training/release/version-5.4"> <strong>here</str
 
 
 -   **ADMIN-2684 - ES Management - Manual Adjustments**: Administrators can now visualize their current Elasticsearch Server Settings and Usage Storage in the new Infrastructure section inside Admin Center. They can perform manual adjustments to these settings, like selecting an Elasticsearch Server, and adjust the number of servers and storage. 
+
+</div>

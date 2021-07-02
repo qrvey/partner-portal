@@ -3,7 +3,7 @@ id: release-sep-2019
 title: Qrvey Version 3.2
 sidebar_label: September 2019
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release date: 2019-09-12
 
 ## New Features and Enhancements
@@ -100,3 +100,5 @@ Release date: 2019-09-12
 -   **Data Router - Reusable transformation does not pass input to fields directly.** We fixed an error when trying to pass input to fields. This was not working.
 -   **Data Router - Unhandled error on missing JS custom function on flat data condition.** There was an error as we weren't handling missing JS Custom functions on a condition on flat data. Postdata was timing out.
 -   **Tabular view - Edit records with a Password question:** Previously a Password question field was shown as empty, rather than as a masked out password. This has been corrected and a Password question field is now shown as a masked value.
+
+</div>

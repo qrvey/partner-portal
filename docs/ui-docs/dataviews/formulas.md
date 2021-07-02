@@ -103,7 +103,7 @@ dateFormat function accepts a format argument that determines how the formatted 
 | d      | Day in month                                     | Number             | 10                 |
 | F      | Day of week in month                             | Number             | 2                  |
 | E      | Day name in week                                 | Text               | Tuesday; Tue       |
-| u      | Day number of week (1 = Monday, ..., 7 = Sunday) | Number             | 1                  |
+| e      | Day number of week (1 = Monday, ..., 7 = Sunday) | Number             | 1                  |
 | a      | AM/PM marker                                     | Text               | PM                 |
 | H      | Hour in day (0-23)                               | Number             | 0                  |
 | k      | Hour in day (1-24)                               | Number             | 24                 |

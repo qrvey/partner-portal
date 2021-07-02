@@ -3,7 +3,7 @@ id: release-jun-2020
 title: Qrvey Version 5.2
 sidebar_label: June 2020
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Qrvey 5.2 - 2020-07-03
 
 ## New Features and Enhancements
@@ -86,3 +86,5 @@ Qrvey 5.2 - 2020-07-03
 -   **AT-6406 - Component Library Font Size Error:** In builders, when the user changes the font size, the text remains in the old configuration. This has been fixed.
 
 -   **QV-10543 - Reloading Process is Showing Zero Records:** If the Main Dataset is in “active” state and with a reload its data is updated and a dataset created from the first one is reloaded too, the Analyze Summary shows zero rows. This has been fixed.
+
+</div>

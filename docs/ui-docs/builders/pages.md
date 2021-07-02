@@ -93,6 +93,10 @@ If you have a long list of datasets, you can also select favorites by clicking o
 
 ![1.7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.7_pages.png#thumbnail-60)
 
+If you need to access one of the datasets you are working with from Report Builder you can look for the Dataset shortcut beside the Dataset name, clicking on it will redirect you to the dataset’s data page in a quicker way.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/shortcut.png#thumbnail-20)
+
 ### Object Configuration
 
 As you are building your pages, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a page. 

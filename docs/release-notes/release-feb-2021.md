@@ -3,7 +3,7 @@ id: release-feb-2021
 title: Qrvey Version 5.8
 sidebar_label: February 2021
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 Release Date: 2021-02-26
 
 ## New Features and Enhancements
@@ -78,3 +78,5 @@ Click <a href="/docs/video-training/release/version-5.8" target="_blank"> <stron
 
 
 -   <a href="/docs/ui-docs/dataviews/exporting/" target="_blank"><strong>AT-7960 - Export Chart Panels With Aggregated Data</strong></a>: You can now download chart panel CSV files with aggregated data.
+
+</div>

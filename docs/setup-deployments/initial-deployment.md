@@ -3,7 +3,7 @@ id: setup-initial-deployment
 title: Setup Initial Deployment
 sidebar_label: Setup Initial Deployment
 ---
-<div style={{textAlign: "justify"}}/>
+<div style={{textAlign: "justify"}}>
 
 ## Step 1: Create an AWS Account
 
@@ -173,3 +173,5 @@ Once deployment is done and Verified, Qrvey’s deployment team will email the f
 -   **Useful Links:**
     -   Developer Docs
     -   API reference for Business Analytics, Data Router and Widgets Samples.
+    
+</div>
