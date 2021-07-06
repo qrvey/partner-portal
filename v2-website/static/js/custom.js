@@ -25,6 +25,20 @@ const headers = {
     'x-api-key': datarouter['x-api-key']
 }
 
+  // Store the current page URL on load
+  var currentPageInfo = location.href;
+  // listen for changes
+  setInterval(function()
+  {
+      if (currentPageInfo != location.href)
+      {
+          // page has changed, set new page as 'current'
+          currentPageInfo = location.href;
+          setCurrentPageInfo();
+          console.log("custom code here");
+      }
+  }, 100);
+
 function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userName = userName;
     this.contentUrl = contentUrl;
@@ -37,8 +51,25 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
 
 let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {
+        console.log("inside set interval")
         clearInterval(stateCheck);
-        //////////
+        setCurrentPageInfo();
+        setTimeout(() => {
+            if (!getCookie(PAGE + CURRENT_PAGE)) {
+                console.log('activity send', CURRENT_PAGE);
+                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+            } else {
+                console.log('Activity already sent it');
+            }
+        }, 5000);
+
+        ///FIN INIT
+        /////
+    }
+}, 100);
+
+function setCurrentPageInfo() {
+       //////////
         /// INIT APP
         // Add partner name to logo and log button
         insertParternsLogo();
@@ -56,20 +87,7 @@ let stateCheck = setInterval(() => {
         }
         // CHECK IS THE USER IS LOGGED IN
         console.log('user', currentUser);
-
-        setTimeout(() => {
-            if (!getCookie(PAGE + CURRENT_PAGE)) {
-                console.log('activity send', CURRENT_PAGE);
-                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
-            } else {
-                console.log('Activity already sent it');
-            }
-        }, 5000);
-
-        ///FIN INIT
-        /////
-    }
-}, 100);
+}
 
 function checkVideoIsPlayed(videoContanier) {
     const CONTENT_TYPE = 'videos'
