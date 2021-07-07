@@ -69,7 +69,21 @@ Default sorting depends on the data type used for Category:
 
 To define max data points, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times. 
 
-![6_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6_CB.png#thumbnail-40)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/gen_style.png#thumbnail-40)
+
+## Tooltips
+Users can enable tooltips that appear as pop-ups on mouse-over events for chart data points.  By default, the tooltip pop-up displays the same data that was used to generate each data point in the chart.  For example, if the data point value for a specific bar in a bar chart is “100”, then the tooltip will display “100” as well. Users can customize the data values displayed in the tooltip by adding one or more tooltip columns that map to other fields in the selected dataset.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tooltip.png#thumbnail-60)
+
+Click on the chevron icon adjacent to the **Tooltips** checkbox to expand the UI.  Click **Add Column** to map a new field from the dataset to the tooltip.  Select the desired field from the Column drop-down and then choose one of the supported aggregations from the **Display Values As** drop-down.  Choose an optional display format for the values.  Users can add as many custom tooltip columns as needed.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_tool.png#thumbnail-60)
+
+
+Users can also set an optional tooltip header by entering the desired text into the **Header** textbox.
+
+>**Note**:  Custom tooltips are only available for bar, line, symbol and pie charts.
 
 
 ## Style Settings
