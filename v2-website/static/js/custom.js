@@ -25,17 +25,18 @@ const headers = {
     'x-api-key': datarouter['x-api-key']
 }
 
+currentPageInfoBoolNew = "false";
   // Store the current page URL on load
   var currentPageInfo = location.href;
   // listen for changes
   setInterval(function()
   {
-      if (currentPageInfo != location.href)
+      if (currentPageInfo != location.href && currentPageInfoBoolNew === "false")
       {
           // page has changed, set new page as 'current'
           currentPageInfo = location.href;
           setCurrentPageInfo();
-          console.log("custom code here");
+          currentPageInfoBoolNew = "true";
       }
   }, 100);
 
@@ -49,11 +50,16 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userAgent = USER_AGENT;
 }
 
+currentPageInfoBool = "false";
+
 let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {
         console.log("inside set interval")
         clearInterval(stateCheck);
-        setCurrentPageInfo();
+        if (currentPageInfo === "false") {
+            currentPageInfo = "true";
+        }
+        
         setTimeout(() => {
             if (!getCookie(PAGE + CURRENT_PAGE)) {
                 console.log('activity send', CURRENT_PAGE);
