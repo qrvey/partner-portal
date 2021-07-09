@@ -1,5 +1,12 @@
 
 /* your custom css */
+
+.aa-DetachedSearchButton {
+    height: 30px !important;
+    border-radius: 50px !important;
+    width: 200px !important;
+  }
+
 .navbar--fixed-top {
     background-color: #0b111a;
 }
@@ -367,7 +374,6 @@ img[src*="#thumbnail-20"] {
    }
    .side-right-nav .side-right-nav-container-popular ,.side-right-nav-container-popular .side-right-nav-container-popular-item, .side-right-nav-container-announcements{
         text-align: start;
-        overflow: scroll;
     }
    .top-fold-background .main-title{
         text-align: start;

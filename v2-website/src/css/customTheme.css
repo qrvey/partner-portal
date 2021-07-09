@@ -124,6 +124,12 @@ display: none !important;
   display: none;
   }
 
+  .aa-DetachedSearchButton {
+    height: 30px !important;
+    border-radius: 50px !important;
+    width: 200px !important;
+  }
+
 .card-categories{
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -434,7 +440,6 @@ img[src*="#thumbnail-20"] {
  }
  .side-right-nav .side-right-nav-container-popular ,.side-right-nav-container-popular .side-right-nav-container-popular-item, .side-right-nav-container-announcements{
       text-align: start;
-      overflow: scroll;
   }
  .top-fold-background .main-title{
       text-align: start;

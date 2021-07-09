@@ -73,21 +73,34 @@ module.exports={
       }
     ]
   ],
-  "plugins": [[
-    require.resolve("@easyops-cn/docusaurus-search-local"),
-    {
-      // ... Your options.
-      // `hashed` is recommended as long-term-cache of index file is possible.
-      hashed: true,
-      // For Docs using Chinese, The `language` is recommended to set to:
-      // ```
-      // language: ["en", "zh"],
-      // ```
-      // When applying `zh` in language, please install `nodejieba` in your project.
-      docsDir:"../docs",
-      blogDir:"../blog"
-    },
-  ],],
+  "plugins": [
+    [require.resolve('@cmfcmf/docusaurus-search-local'), {
+      indexDocs: true,
+      docsRouteBasePath: '/docs',
+
+  // Whether to also index the titles of the parent categories in the sidebar of a doc page.
+  // 0 disables this feature.
+  // 1 indexes the direct parent category in the sidebar of a doc page
+  // 2 indexes up to two nested parent categories of a doc page
+  // 3...
+  //
+  // Do _not_ use Infinity, the value must be a JSON-serializable integer.
+  indexDocSidebarParentCategories: 10,
+
+  // whether to index blog pages
+  indexBlog: true,
+  // must start with "/" and correspond to the routeBasePath configured for the blog plugin
+  // use "/" if you use blog-only-mode
+  // (see https://v2.docusaurus.io/docs/2.0.0-alpha.70/blog#blog-only-mode)
+  blogRouteBasePath: '/blog',
+
+  // whether to index static pages
+  // /404.html is never indexed
+  indexPages: false,
+
+  // language of your documentation, see next section
+    }],
+  ],
   "themeConfig": {
     "navbar": {
       "title": "",
