@@ -6,6 +6,7 @@ module.exports={
   "organizationName": "qrvey",
   "projectName": "docs-site",
   "onBrokenLinks":'ignore',
+  "onBrokenMarkdownLinks":'ignore',
   "scripts": [
     "/js/custom.js",
     "/js/user.js",
@@ -136,7 +137,7 @@ module.exports={
           ]
         },
         {
-          "href": "/docs/video-training/release/version-6.0",
+          "href": "/docs/video-training/release/version-6.1",
           "label": "VIDEOS",
           "position": "right"
         },
