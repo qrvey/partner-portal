@@ -1,8 +1,8 @@
 ---
-id: version-5.4-release-last
+id: version-5.4-release-jun-2021
 title: Qrvey Version 6.0
 sidebar_label: June 2021
-original_id: release-last
+original_id: release-jun-2021
 ---
 <div style="text-align: justi6fy">
 Release Date: 2021-06-10

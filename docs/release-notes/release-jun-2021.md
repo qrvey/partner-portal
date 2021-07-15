@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-jun-2021
 title: Qrvey Version 6.0
 sidebar_label: June 2021
 ---

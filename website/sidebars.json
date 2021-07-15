@@ -115,13 +115,16 @@
       "admin/admin-sections-platform",
       "admin/roles-and-permissions",
       "admin/admin-sections-deployments",
-      "admin/record-level-security",
       "admin/metadata-builder"
     ]
   },
   "embedding": {
     "Architecture": [
       "get-started/get-started-architecture"
+    ],
+    "Security": [
+      "admin/column-level-security",
+      "admin/record-level-security"
     ],
     "Embedding": [
       "embedding/embedding-intro",
@@ -130,6 +133,7 @@
         "label": "Widgets",
         "ids": [
           "embedding/widgets/widget-intro",
+          "embedding/widgets/embedding-widgets-security-token",
           "embedding/widgets/widget-embedding-using-cookies",
           "embedding/widgets/filters-embedded-scenarios"
         ]
@@ -229,6 +233,7 @@
   "release-notes": {
     "Release Notes 2021": [
       "release-notes/release-last",
+      "release-notes/release-jun-2021",
       "release-notes/release-may-2021",
       "release-notes/release-apr-2021",
       "release-notes/release-feb-2021"
