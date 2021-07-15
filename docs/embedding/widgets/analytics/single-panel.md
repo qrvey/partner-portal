@@ -7,12 +7,16 @@ sidebar_label: Single Panel Widget
 
 This widget allows the user to display a chart, metric or summary panel that has been created previously, through a configuration object where properties are set to define some options and behaviors for the panel.
 
+To obtain the specific configuration object for your environment, go to the *Analyze* tab for the desired dataset and choose the *Summary, Metric,* or *Custom* view option from the menu. You can find the Embed Chart command under the three-dot menu of any panel that you wish to embed. Find and copy the necessary widget configuration code from the dialog that opens upon clicking the option. The code includes all of the necessary properties, including the “domain”, “app_id” and “user_id” property values. You have to provide the unique API key value before including the code in your application. 
+
+The building blocks of the code are explained below:
+
 ## HTML Tag And Launcher
 The HTML tag for this widget is: 
 
 `<an-panel config=...>`
 
-> **Note**: The configuration property for this widget is called “config”, unlike in most of the other widgets where the same property is called “settings”. The inconsistency is due to some legacy issues and will be addressed in the near future. 
+> **Note**: The configuration property for this widget is called “config”, unlike in most of the other widgets where the same property is called “settings”. 
 
 This widget needs an extra script for proper support in all browsers:
 
@@ -78,7 +82,7 @@ The table below provides general information about each property of this widget�
 | **panel.styles.chartsTooltips**| `String`, color for charts tooltips| No
 | **panel.styles.tableHeaderFont**| `String`, set color for table header texts| No
 | **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| No
-| **panel.styles.themePalette**| `Array`, contains a maximum 20 colour for char data points like bars, symbols and lines.| No
+| **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| No
 
 
 > **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
