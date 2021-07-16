@@ -38,6 +38,10 @@
   outline:0;
 }
 
+.navbar--fixed-top {
+  padding: 0 10% !important;
+}
+
 /* your custom css */
 .navbar--fixed-top {
   background-color: #0b111a;
@@ -478,7 +482,7 @@ img[src*="#thumbnail-20"] {
       text-align: start;
   }
   #home-page .main-title{
-      padding: 20px 20px;
+      padding: 0 10%;
   }
   #home-page .top-fold-background{
       background-position-x: -200px;
