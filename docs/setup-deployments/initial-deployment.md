@@ -3,23 +3,23 @@ id: setup-initial-deployment
 title: Setup Initial Deployment
 sidebar_label: Setup Initial Deployment
 ---
+
 <div style={{textAlign: "justify"}}>
 
 ## Step 1: Create an AWS Account
-
-Navigate to “https:” and click on the “Create an AWS Account” button
+Navigate to “<https://aws.amazon.com>” and click on the “Create an AWS Account” button
 
 ![img1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/1.1.CreateAWSAccount.png#thumbnail-80)
 
 More information about creating an AWS account can be found here:
 
-
+<https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/?icmpid=support_rt_kc_articles>
 
 Fill out the form with appropriate information 
 
--   Root account Email
--   password 
--   Alias to easily reference this account
+* Root account Email
+* password 
+* Alias to easily reference this account
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/1.2.CreateAWSAccount.png#thumbnail-80)
 Fill out Contact Information
@@ -37,11 +37,9 @@ Verify Account using Email or Phone number verification. Once done you should se
 Pick desired Support plan (if needed)
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/1.6.CreateAWSAccount.png#thumbnail-80)
-
 ## Step 2: Create a cross account IAM role
-
 This step will create a new IAM role in your AWS account that Qrvey will use to deploy the Platform.
-
+ 
 Login to AWS Console (using the email and password created in last step)
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/2.1.CreateIAMUser.png#thumbnail-80)
@@ -59,7 +57,7 @@ Click on "Roles" Menu group
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/2.4.CreateIAMRole.png#thumbnail-80)
 
 Click on "Create Role" and select "Another AWS Account" in step 1
-Enter AWS AccountID that you received from Qrvey (_6381xxxxxxxx_)
+Enter AWS AccountID that you received from Qrvey (*6381xxxxxxxx*)
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/2.5.CreateIAMRole.png#thumbnail-80)
 
@@ -75,15 +73,14 @@ In the next step enter a name for this new role and review all the information a
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/2.8.CreateIAMRole.png#thumbnail-80)
 
-New role should have been created now. From the Roles list page click on the name of the role you just created to see its details. From the role details page copy the URL for _Give this link to users who can switch roles in the console_. Save this url somewhere as you’ll be sending this to Qrvey’s deployment team in the last step.
+New role should have been created now. From the Roles list page click on the name of the role you just created to see its details. From the role details page copy the URL for *Give this link to users who can switch roles in the console*. Save this url somewhere as you’ll be sending this to Qrvey’s deployment team in the last step.
 
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/2.9.CreateIAMRole.png#thumbnail-80)
 
-## Step 3: Identify an Email Address
+## Step 3: Identify an Email Address 
+This email address will be used as “From” field for all emails that will be sent from Qrvey Platform. You can use any valid email address for this. If you don’t have one we’ll use “hello+< companyname >@qrvey.com”
 
-This email address will be used as “From” field for all emails that will be sent from Qrvey Platform. You can use any valid email address for this. If you don’t have one we’ll use “hello+@qrvey.com”
-
-If you decide to use “hello+@qrvey.com” email address then go ahead and skip to Step 4. 
+If you decide to use “hello+< companyname >@qrvey.com” email address then go ahead and skip to Step 4. 
 
 Otherwise for your own email address, please verify the email in AWS SES Console by following the steps below
 
@@ -100,12 +97,11 @@ Enter the email address and click on the button to verify. This will send an ema
 ![alt text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/initial-deployment/3.3.IdentifyEmailAddress.png#thumbnail-80)
 
 ## Step 4: Identify a URL
-
 We’ll be using 3 URLs (one for each product) to launch the application once it’s deployed. You can use the default “qrvey.com” domain and in that case you don’t have to do anything else. Here’s a sample of the URLs that we’ll use by default
 
--   Application URL: .qrvey.com
--   DataRouter URL: -datarouter.qrvey.com
--   Admin URL: -admin.qrvey.com
+* Application URL: < companyName >.qrvey.com
+* DataRouter URL: < companyName >-datarouter.qrvey.com
+* Admin URL: < companyName >-admin.qrvey.com
 
 If you are using “qrvey.com” URL then you can skip to Step 5.
 
@@ -116,23 +112,24 @@ If you would prefer to use your own custom domain (instead of qrvey.com) we woul
 [DNS Validation](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-validate-dns.html)
 
 ## Step 5: Send Info to Qrvey
-
 Please send the following information to Qrvey’s deployment team
 
 Email Address (Step 3)
 Application URL (Step 4)
 AWS IAM Role URL (Step 2)
 
-Sample Email Body (to be sent to Qrvey at [help@qrvey.com](mailto:help@qrvey.com))
-
+Sample Email Body (to be sent to Qrvey at help@qrvey.com)
 ```
+Email Address: hello+qrveytrial@qrvey.com
 
+Application URL: 	qrveytrial.qrvey.com
+			qrveytrial-datarouter.qrvey.com
+			qrveytrial-admin.qrvey.com
 
-
+IAM Crossaccount role URL: https://signin.aws.amazon.com/switchrole?roleName=QrveyxxxxxRole&account=9653xxxxxxxx
 ```
 
 ## Step 6: Move SES out of Sandbox (Offline)
-
 _If you prefer, this step can be done later as it does not stop the deployment process. Note however that until this is done your instance of the Qrvey Platform will not be able to send out any emails._ 
 
 This step requires creating a support ticket with AWS to move SES in your account out of Sandbox mode. AWS usually takes about 1 day to approve this request so its advised to do this as soon as possible. Here are the steps to open this support ticket
@@ -154,24 +151,25 @@ In the case description please fully describe your email sending scenarios. For 
 Once you submit this request, it usually takes AWS 1 day to approve this but they may ask more questions. Feel free to contact us if you have any questions or need help.
 
 ## Final Step
-
 Once deployment is done and Verified, Qrvey’s deployment team will email the following information to you
 
--   **Account Credentials:**
-    -   **Business Analytics:**
-        -   API-Key.
-    -   **Admin Portal:**
-        -   Username.
-        -   Access Key.
-    -   **Data Router:**
-        -   API Key.
-        -   S3 Bucket.
-    -   **Widgets:**
-        -   Launcher URL.
-        -   ANView URL.
-    -   **Elasticsearch URL.**
--   **Useful Links:**
-    -   Developer Docs
-    -   API reference for Business Analytics, Data Router and Widgets Samples.
-    
+* **Account Credentials:**
+	* **Business Analytics:**
+		* API-Key.
+	* **Admin Portal:**
+		* Username.
+		* Access Key.
+	* **Data Router:**
+		* API Key.
+		* S3 Bucket.
+	* **Widgets:**
+		* Launcher URL.
+		* ANView URL.
+	* **Elasticsearch URL.**
+* **Useful Links:**
+	* Developer Docs
+	* API reference for Business Analytics, Data Router and Widgets Samples.
+
+
+
 </div>

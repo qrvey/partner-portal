@@ -3,6 +3,7 @@ id: datalinks
 title: Data Links
 sidebar_label: Data Links
 ---
+
 <div style={{textAlign: "justify"}}>
 
 Data Links allow you to combine multiple datasets into a new single dataset for analysis and automation. This article shows the steps for linking a dataset to a web form dataset. The same process can be used to link any combination of datasets within the Composer.
@@ -41,14 +42,13 @@ Once completed, your data link should look similar to the example below. If youâ
 ![8_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/8_datalinks.png#thumbnail)
 
 ## Using Data Links
-
 Once your data link has been added, youâ€™ll see linked data columns appear in your custom charts and automations. In the example below, the linked dataset, Purchase Feedback, appears next to the source dataset Purchase Data. Columns from both datasets can be used inside this custom chart.
 
 ![9_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/9_datalinks.png#thumbnail-60)
 
 ## Removing Data Links
-
 To remove a data link just return to the Data Links tab and choose Delete from the menu on the right side of the data link.
 
 ![10_datalinks](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.3_datalinks/10_datalinks.png#thumbnail-40)
+
 </div>

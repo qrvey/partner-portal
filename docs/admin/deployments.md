@@ -3,6 +3,7 @@ id: admin-sections-deployments
 title: Deployments
 sidebar_label: Deployments
 ---
+
 <div style={{textAlign: "justify"}}>
 
 ## Servers
@@ -18,4 +19,5 @@ Here, admins can create a content package that can be shared to one or multiple 
 To share applications, admins can create multiple recipient blocks where they select the destination server, the creator account they will pull content from, and set the replacements in multiple ways, depending on the datasets they are going to share. 
 
 Admins can easily choose to use “Default” replacements when adding a server, which will automatically assign the replacements to each client account, or they can select which replacement to use for a specific account. 
+
 </div>

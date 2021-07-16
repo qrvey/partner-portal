@@ -3,6 +3,7 @@ id: navigation
 title: Page Navigation
 sidebar_label: Page Navigation
 ---
+
 <div style={{textAlign: "justify"}}>
 
 You can combine multiple pages together into a complete information application by using the **Navigation** tab to add a simple menu that will appear on all of your pages.
@@ -19,9 +20,10 @@ You can use the link icon to launch your application and see what your users wi
 
 ![3_navigation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.2_navigation/3_navigation.png#thumbnail-20)
 
-&gt; **Note**_: In order to publish your application, you will need to add at least one page to the navigation menu, even if it will not be visible to users._
+>**Note**_: In order to publish your application, you will need to add at least one page to the navigation menu, even if it will not be visible to users._
 
 After your application is published, your users will see a drop-down menu atop all of your pages so that they can easily navigate between the pages you’ve selected. Only published pages will appear to users.
 
 ![4_navigation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.2_navigation/4_navigation.png#thumbnail-40)
+
 </div>

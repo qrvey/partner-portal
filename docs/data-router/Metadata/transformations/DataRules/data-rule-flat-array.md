@@ -3,6 +3,7 @@ id: data-router-flatArray
 title: Flat Array
 sidebar_label: Flat Array
 ---
+
 <div style={{textAlign: "justify"}}>
 
 This is a transform in the flatten data family. With this data rule you can flatten data inside the fields of an array of objects.
@@ -12,7 +13,6 @@ This is a transform in the flatten data family. With this data rule you can flat
 Consider the following JSON data to be posted to Data Router:
 
 ```
-
 [
     {
         "metadataId": "flattener_array1",
@@ -43,7 +43,6 @@ Consider the following JSON data to be posted to Data Router:
         ]
     }
 ]
-
 ```
 
 And you want to flatten the array 'countries', for this case you can use the data transform function _flatArray_ to do it.
@@ -52,7 +51,6 @@ To do this you need to create a child metadata index to hold the child data item
 For example:
 
 ```
-
 // child metadata
 
 {
@@ -73,11 +71,9 @@ For example:
     ]
 }
 
-
 ```
 
 ```
-
 // parent metadata
 
 {
@@ -150,14 +146,12 @@ For example:
     ]
 }
 
-
 ```
 
 In the metadata parent, we specify where to save the data resulting in the transformation data. In this case, we specified the metadata child "flatarraychild_1".
 The metadata parent transform "flatData" is applied to field "data.visas" and the transform "flatArray" is applied to the field "data.visas.countries". The result for this flatten transform will be:
 
 ```
-
 {
     "took": 1,
     "timed_out": false,
@@ -211,10 +205,9 @@ The metadata parent transform "flatData" is applied to field "data.visas" and th
     }
 }
 
-
 ```
 
-Note we used a filter condition "{"{"}{"{"}$flatArray.id{"}"}{"}"} == 3" to filter the data to only return the records where "data.visas.countries.id" == 3. The data saved at \_source for destination named "flatArray" is the result of the filter applied in the data rule 'flatArray' and the data saved at
+Note we used a filter condition "{{$flatArray.id}} == 3" to filter the data to only return the records where "data.visas.countries.id" == 3. The data saved at \_source for destination named "flatArray" is the result of the filter applied in the data rule 'flatArray' and the data saved at
 \_source for destination named "labResult" is the result the 'flatData' transform.
 
 </div>

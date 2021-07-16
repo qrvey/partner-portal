@@ -3,6 +3,7 @@ id: elasticsearch
 title: Elasticsearch Connections
 sidebar_label: Elasticsearch Connections
 ---
+
 <div style={{textAlign: "justify"}}>
 
 Elasticsearch is a highly-scalable cloud database provided by Amazon Web Services. In this article, we’ll outline the steps for connecting to Elasticsearch and how to use it within Qrvey Composer.
@@ -34,4 +35,5 @@ If your data contains address information, you can choose to create a **Geoloca
 ![6_elasticsearch](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_elasticsearch/6_elasticsearch.png#thumbnail)
 
 When you are happy with your selections, click **Save** in the upper-right corner and your new dataset will be imported. Please note, that it may take some time for all of your data to be loaded, depending on the size of your data. 
+
 </div>

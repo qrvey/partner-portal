@@ -45,7 +45,7 @@ module.exports={
       ]
     },
     homepagescripts: [
-      "/js/homepage.js"
+      "/js/homepage.js",
     ],
     rules: [
       {

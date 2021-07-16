@@ -3,18 +3,17 @@ id: data-router-array-lookup
 title: Array Lookup
 sidebar_label: Array Lookup
 ---
+
 <div style={{textAlign: "justify"}}>
 
 The **Array Lookup Data Rule**, is a feature that will let you perform a search (lookup) on an array from a JSON object.
 
 This Lookup must have conditions to match the objects. Sorting is optional.
-
-&gt; It is important to note that this Data Rule will return the first match after sorting.
+> It is important to note that this Data Rule will return the first match after sorting.
 
 This rule follows the standard **Data Rules** structure:
 
-```json
-
+```jsx
 {
     "id": "arrayLookupID",
     "function": {
@@ -31,26 +30,23 @@ This rule follows the standard **Data Rules** structure:
             }
         }
 }
-
 ```
-
 The `id` field is the identifier to access the result of the Data Rule, and `function` defines the object type of Data Rule to apply: `arrayLookup` in this case. This object contains the following properties:
 
-| Property                   | description                                                                                                             |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `sourceArray`       | This is the array where the lookup is going to take place.                                                              |
-| `condition`         | An _optional_ set of conditions that will be matched when doing the lookup.                                             |
-| `orderby`           | An _optional_ ordering or sorting method to be applied.                                                                 |
-| `orderby.field`     | The sorting will be applied over the specified field.                                                                   |
-| `orderby.direction` | This will indicate the direction of sorting: `asc` or `desc`.                                             |
-| `orderby.nulls`     | This will indicate if null results, of the sorting `field`, are going to appear `first` or `last`. |
+|Property|description|
+|--------|-----------|
+|`sourceArray`| This is the array where the lookup is going to take place.|
+|`condition`| An _optional_ set of conditions that will be matched when doing the lookup.|
+|`orderby`| An _optional_ ordering or sorting method to be applied.|
+|`orderby.field`| The sorting will be applied over the specified field.|
+|`orderby.direction`| This will indicate the direction of sorting: `asc` or `desc`.|
+|`orderby.nulls`| This will indicate if null results, of the sorting `field`, are going to appear `first` or `last`.|
 
 **Example**:
 
 The following data shows two departments. Each department contains a list of employees:
 
-```json
-
+```jsx
 [
    {
       "departmentName": "marketing",
@@ -113,13 +109,11 @@ The following data shows two departments. Each department contains a list of emp
       ]
    }
 ]
-
 ```
 
 If we want to get the highest paid employee under 30 -for each department- we could define the Data Rule as follows:
 
-```json
-
+```jsx
 {
     "id": "arrayLookupID",
     "function": {
@@ -136,13 +130,10 @@ If we want to get the highest paid employee under 30 -for each department- we co
             }
         }
 }
-
 ```
-
 This will give us these two employees:
 
-```json
-
+```jsx
 [
     {
         "index": 0,
@@ -165,8 +156,8 @@ This will give us these two employees:
         }
     }
 ]
-
 ```
 
-&gt; _Note: To reference the `income` and the `age` we had to use the function id: `arrayLookupID`_.
+> _Note: To reference the `income` and the `age` we had to use the function id: `arrayLookupID`_.
+
 </div>

@@ -3,7 +3,6 @@ id: analytic-suite
 title: Analytic Suite Widget
 sidebar_label: Analytic Suite Widget
 ---
-
 <div style={{textAlign: "justify"}}>
 
 This widget allows the user to display the distinct views available on the analyze side (i.e Summary, Custom, Metric views), through a configuration object where properties are set to define some options and behaviors.
@@ -69,17 +68,11 @@ The table below provides general information about each property of this widgetâ
 The following sample shows the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
 
 You can copy and paste this code to your application after replacing the red values with your own valid values in order to see the embedded widget in action.
-sample code:
-
-```jsx title="/src/components/anscript1.js"
-
-<an-dashboard config="configDashBoard"></an-dashboard>
-
-
+[sample code:
 ```
-
-
-```jsx title="/src/components/anscript2.js"
+<an-dashboard config="configDashBoard"></an-dashboard>
+```
+```
 <script>
 var configDashBoard = {
     "api_key": "<API_KEY>",
@@ -92,29 +85,30 @@ var configDashBoard = {
     }
 }
 </script>
-
 ```
-
-
-```jsx title="/src/components/anscript3.js"
-
+```
 <!-- your launcher js link (replace with your js link) -->
 <script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
 <script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
-
  ```
 
-
+]
 ## See It In Action
 See the widget in CodePen:
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/85b726392661f65622b22087423f23db?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=85b726392661f65622b22087423f23db&pen-title=Sample-%20Qrvey%20Analytic%20Suite&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Analytic Suite"
+  loading="lazy"
+  id="cp_embed_85b726392661f65622b22087423f23db"
+/>
 
-  <p className="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="85b726392661f65622b22087423f23db" data-pen-title="Sample- Qrvey Analytic Suite">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/85b726392661f65622b22087423f23db">
-  Sample- Qrvey Analytic Suite</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 </div>
-

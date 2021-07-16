@@ -3,6 +3,7 @@ id: glossary
 title: Glossary of Common Terms
 sidebar_label: Glossary of Common Terms
 ---
+
 <div style={{textAlign: "justify"}}>
 
 The Qrvey glossary helps clarify some of our most commonly used data, analytics and automation terms. See something confusing that's not mentioned here? Please let us know.
@@ -13,19 +14,22 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **API** - Application Programming Interface. Developers use APIs to integrate Qrvey with third-party applications and data sources.
 
+
 **Analytics** - Qrvey's analytics platform is used for analyzing collected feedback or other data sources.
 
 **API** - The application programming interface developers use to integrate Qrvey with their websites and applications.
 
 **Application** - The Qrvey analytics UI is organized by “Applications”. These are isolated objects that each consist of datasets and data sources, webforms, visualizations in the form of pages/dashboards, charts, as well as automation workflows.
 
+
 ## B
 
 **Branch** - A term used in webforms when creating forms, surveys or quizzes. A “Branch” of a webform is a question(s) a user will answer as a result of their answer to a previous question. For example, if a user answers question 1 with “Yes”, then they get to question 2. If that same user answers “No”, then they skip to question 3.
 
+
 ## C
 
-**Categories** - Also referred to as _dimensions_, these are items within each dataset that have a metadata type of string, date, yes/no.
+**Categories** - Also referred to as *dimensions*, these are items within each dataset that have a metadata type of string, date, yes/no.
 
 **Chart Builder** - A tool that allows users to build custom charts to visualize their data.
 
@@ -35,7 +39,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Conditional Question** - A question used in webforms that only appears based on the answer to a previous question. See “Branch” above.
 
+
 **Creator User Type** - A user with access rights to create datasets forms, analytics visualizations, workflows and applications in Qrvey.
+
+
+
 
 ## D
 
@@ -43,11 +51,14 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Dataset** - A collection of data sources.
 
+
+
 ## E
 
 **End User**- Users of the application that will consume visualizations for analysis. These users are often the users or subscribers of SaaS applications. These users, by default, do not have access to create visualizations or automation workflows.
 
 **Expression Question** - A question type that allows a respondent to express how they feel by selecting from a pre-chosen list of words.
+
 
 ## F
 
@@ -59,9 +70,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Global Filter** - A filter that applies to all of the pages.
 
+
 ## H
 
 **Histogram** - The first chart in the Summary view in the Analyze section of a Web Form. This chart shows when your web form responses were received.
+
 
 ## I
 
@@ -107,12 +120,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Range** - the difference between the min and max values in a chart.
 
-**Recipient** - Someone who received an automated email from a workflow action. If the recipient clicks on a link in an email they may be shown a web form to complete. If they complete the form they become a respondent. See our entry below for _respondent_.
+**Recipient** - Someone who received an automated email from a workflow action. If the recipient clicks on a link in an email they may be shown a web form to complete. If they complete the form they become a respondent. See our entry below for *respondent*.
 
 **Respondent** - Someone who completes a web form. For example, a respondent could be someone you ask to answer via email or text, or someone who responds to a Qrvey link on a website, blog or social media post.
 
 ## S
-
 **Scale** - the difference between the units of values in a chart.
 
 **Survey** - A type of web form that collects data from individuals using a collection of questions.
@@ -130,12 +142,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 ## U
 
 **User Permissions** - Users can be assigned different permissions within an application depending on their role.
-
+ 
 ## V
+**Values** - The type of data item that contains a numerical value, often referred to as a *measure*.
 
-**Values** - The type of data item that contains a numerical value, often referred to as a _measure_.
-
-**Variable** - A system variable - eg the current user name, the system date/time, etc. See also - _Token_.
+**Variable** - A system variable - eg the current user name, the system date/time, etc. See also - *Token*.
 
 ## W
 
@@ -151,5 +162,6 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## Z
 
-**Zapier** - One of Qrvey's integration partners that connects our platform to hundreds of other web-based services. _Note, it rhymes with "happier"_.
+**Zapier** - One of Qrvey's integration partners that connects our platform to hundreds of other web-based services. *Note, it rhymes with "happier"*.
+
 </div>

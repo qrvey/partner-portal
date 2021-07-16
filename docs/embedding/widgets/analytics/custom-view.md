@@ -3,16 +3,13 @@ id: widget-custom-view
 title: Custom View
 sidebar_label: Custom View
 ---
+
 <div style={{textAlign: "justify"}}>
 
 ## Configuration Object
-
 To configure Custom View, use the following JSON schema as configuration object:
-
  
-
 ```
-
 {
     "domain": "https://your_qrvey_domain",
     "api_key": "<API_KEY>",
@@ -21,25 +18,23 @@ To configure Custom View, use the following JSON schema as configuration object:
     "qrveyid": "<QRVEY_ID>",    
     ... <ANOTHER_CONFIGURATION>
 }
-
 ```
 
 ** Properties and Values: **
 
 Custom View properties are defined below:
 
-| **Property** | **Value**                                              | **Required** |
-| ------------ | ------------------------------------------------------ | ------------ |
-| **domain**   | `String`, Main url of Qrvey Core platform.      | Yes          |
-| **api_key**  | `String`, API Key of current Qrvey Environment. | Yes          |
-| **user_id**  | `String`, Id of Qrvey User.                     | Yes          |
-| **app_id**   | `String`, Id of Qrvey App.                      | Yes          |
-| **qrveyid**  | `String`, Id of current Qrvey Dataset/Webform   | Yes          |
+| **Property** | **Value** | **Required** |
+|---|---|---|
+| **domain** | `String`, Main url of Qrvey Core platform. | Yes |
+| **api_key** | `String`, API Key of current Qrvey Environment. | Yes |
+| **user_id** | `String`, Id of Qrvey User. | Yes |
+| **app_id** | `String`, Id of Qrvey App. | Yes |
+| **qrveyid** | `String`, Id of current Qrvey Dataset/Webform | Yes |
+
 
 ** Others configuration properties **
-
 ```
-
 {
     "charts_config": {
         "insidemenu": {
@@ -56,94 +51,92 @@ Custom View properties are defined below:
     "filters": <FILTERS_OBJECT>,
     "logo": <LOGO_NAME>
 }
-
 ```
-
  
 
-| **Property**             | **Value**                                                                                                                     | **Required** |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| **logo**                 | `String`, URL where the icon or logo image is located                                                                  | Yes          |
-| **filters**              | `Object`, Object to apply filters                                                                                      | Yes          |
-| **charts_config**        | `Object`, Configuration for custom panels, receives some properties to change the appearance or behavior of the panels | Yes          |
-| **insidemenu**           | `Object`, Settings within the menu                                                                                     | Yes          |
-| **insidemenu.seedata**   | `Boolean`                                                                                                              | Yes          |
-| **insidemenu.filterby**  | `Boolean`                                                                                                              | Yes          |
-| **insidemenu.drilldown** | `Boolean`                                                                                                              | Yes          |
-| **options**              | `Object`, General configuration of custom panels                                                                       | Yes          |
-| **options.dragger**      | `Boolean`                                                                                                              | Yes          |
-| **options.filter**       | `Boolean`                                                                                                              | Yes          |
-| **options.menu**         | `Boolean`                                                                                                              | Yes          |
+| **Property** | **Value** | **Required** |
+|---|---|---|
+| **logo** | `String`, URL where the icon or logo image is located | Yes |
+| **filters** | `Object`, Object to apply filters | Yes |
+| **charts_config** | `Object`, Configuration for custom panels, receives some properties to change the appearance or behavior of the panels | Yes |
+| **insidemenu** | `Object`, Settings within the menu | Yes |
+| **insidemenu.seedata** | `Boolean` | Yes |
+| **insidemenu.filterby** | `Boolean` | Yes |
+| **insidemenu.drilldown** | `Boolean` | Yes |
+| **options** | `Object`, General configuration of custom panels | Yes |
+| **options.dragger** | `Boolean` | Yes |
+| **options.filter** | `Boolean` | Yes |
+| **options.menu** | `Boolean` | Yes |
+
 
 ## Event Listeners
 
--   ### ON_CLOSE_BUCKET_MODAL
+* ### ON_CLOSE_BUCKET_MODAL
 
 Listener to refresh the Custom View component when the Buckets Modal is closed.
 
 Your event handler will receive the following object:
 
-| Property       | Value                                                             | Required |
-| -------------- | ----------------------------------------------------------------- | -------- |
-| **hasChanges** | `Boolean`, True if there were changes within Summary View. | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **hasChanges** | `Boolean`, True if there were changes within Summary View. | Yes |
 
--   ### ON_AN_CHART_BUILDER_SAVED
+
+* ### ON_AN_CHART_BUILDER_SAVED
 
 Listener when the custom chart is saved.
 
 Your event handler will receive the following object:
 
-| Property               | Value                                 | Required |
-| ---------------------- | ------------------------------------- | -------- |
-| **chartConfiguration** | `Object`, Chart Configuration. | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **chartConfiguration** | `Object`, Chart Configuration. | Yes |
 
--   ### ON_AN_DELETE_CHART
+* ### ON_AN_DELETE_CHART
 
 Listener for the implementation of panels update when a chart is removed.
-
     
 Your event handler will receive the following object:
 
-| Property               | Value                                 | Required |
-| ---------------------- | ------------------------------------- | -------- |
-| **chartConfiguration** | `Object`, Chart Configuration. | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **chartConfiguration** | `Object`, Chart Configuration. | Yes |
 
--   ### ON_AN_CHART_DUPLICATED
+* ### ON_AN_CHART_DUPLICATED
 
 Listener to refresh the component when the customized chart is duplicated.
 
 Your event handler will receive the following object:
 
-| Property               | Value                                 | Required |
-| ---------------------- | ------------------------------------- | -------- |
-| **chartConfiguration** | `Object`, Chart Configuration. | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **chartConfiguration** | `Object`, Chart Configuration. | Yes |
 
--   ### ON_AN_FILTERS_APPLIED
+* ### ON_AN_FILTERS_APPLIED
 
 Listener to apply new filters in sight.
 
 Your event handler will receive the following object:
 
-| Property              | Value                                                                           | Required |
-| --------------------- | ------------------------------------------------------------------------------- | -------- |
-| **preferenceFilters** | `Object`, Filter Preferences                                             | Yes      |
-| **requestFilters**    | `Array`, Filters by prefereces from request.                             | Yes      |
-| **tabId**             | `String`, tab identifier, if applicable (Report Builder or Page Builder) | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **preferenceFilters** | `Object`, Filter Preferences | Yes |
+| **requestFilters** | `Array`, Filters by prefereces from request. | Yes |
+| **tabId** | `String`, tab identifier, if applicable (Report Builder or Page Builder) | Yes |
+
 
 ## Methods
-
--   ### downloadView
+* ### downloadView
 
 Download the visible information within Custom View, depending on the type of file.
 
-| Property | Value                                                                                          | Required |
-| -------- | ---------------------------------------------------------------------------------------------- | -------- |
-| **type** | `String`, The type of download. This can be `csv`,` pdf` or `jpg`. | Yes      |
+| Property | Value | Required |
+|---|---|---|
+| **type** | `String`, The type of download. This can be `csv`,` pdf` or `jpg`. | Yes |
 
 ## Example
 
 ```
-
 <script src = "https://your_qrvey_domain_widget_launcher/app.js"></script>
  
 <script>
@@ -163,6 +156,6 @@ window.customConfig = {
 };
 </script>
 <an-custom-view config="customConfig"> </an-custom-view>
-
 ```
+
 </div>
