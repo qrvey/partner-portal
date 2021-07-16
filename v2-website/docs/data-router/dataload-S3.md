@@ -3,26 +3,26 @@ id: dataload-S3
 title: Loading Data From S3 Files
 sidebar_label: Loading Data From S3 Files
 ---
+
 <div style={{textAlign: "justify"}}>
+
 
 ## Introduction
 
 The user can load data to the Qrvey platform using an API that receives a body with a reference to a S3 bucket file.
 
 ## Pre-requisites
-
 Before you can start following these steps, please make sure you have the following:
-
--   URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-    -   Postdata URL
-    -   API Key 
--   A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
--   Load the files inside a S3 bucket.
--   Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/"> Metadata API </a>.
+* URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
+  * Postdata URL
+  * API Key 
+* A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
+* Load the files inside a S3 bucket.
+* Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/"> Metadata API </a>.
 
 ## Dataload Structure
 
-<table className="demo">
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th> 
@@ -37,40 +37,41 @@ Before you can start following these steps, please make sure you have the follow
 		<td>Yes</td>
 		<td>datasetId</td>
         <td>String</td> 
-        <td>Reference to the dataset
-        </td><td>It could be a random value.
-</td> 
+        <td>Reference to the dataset </td>
+        <td>It could be a random value. </td>
 	</tr>
 	<tr>
 		<td>No</td>
 		<td>documentUpdateMethod</td>
         <td>String</td> 
-        <td>Upsert or replace (default) the data on elasticsearch if the row(s) already exists.
-        </td><td>upsert, replace
-
-</td> 
+        <td>Upsert or replace (default) the data on elasticsearch if the row(s) already exists.</td>
+        <td>upsert, replace</td>
 	</tr>
 	<tr>
 		<td>Yes</td>
 		<td>metadataId</td>
         <td>String</td>
 		<td>Reference to metadata</td>
-        <td />
+        <td></td>
 	</tr>
     <tr>
 		<td>Yes</td>
 		<td>datasources</td>
         <td>Array</td>
 		<td>Datasources to load</td>
-        <td><a href="https://docs.google.com/document/d/14E9vi-vVumZmUCLSq-Z-rWihQdigPVEOeNdu879Uspw/edit#heading=h.1m16imwrw2yi"> Datasource Structure </a>
-</td>
+        <td><a href="https://docs.google.com/document/d/14E9vi-vVumZmUCLSq-Z-rWihQdigPVEOeNdu879Uspw/edit#heading=h.1m16imwrw2yi"> Datasource Structure </a></td>
 	</tr>
 	</tbody>
 </table> 
 
+
+
+
+
 ## Datasources Structure
 
-<table className="demo">
+
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th> 
@@ -85,9 +86,8 @@ Before you can start following these steps, please make sure you have the follow
 		<td>Yes</td>
 		<td>datasourceId</td>
         <td>String</td> 
-        <td>Reference to the datasourceId.
-        </td><td>It could be a random value.
-</td> 
+        <td>Reference to the datasourceId.</td>
+        <td>It could be a random value.</td>
 	</tr>
 	<tr>
 		<td>Yes</td>
@@ -109,7 +109,8 @@ Before you can start following these steps, please make sure you have the follow
 
 ### Data Connection Structure
 
-<table className="demo">
+
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th> 
@@ -124,9 +125,8 @@ Before you can start following these steps, please make sure you have the follow
 		<td>Yes</td>
 		<td>appid</td>
         <td>String</td> 
-        <td>Reference to appid
-        </td><td>It could be a random value.
-</td> 
+        <td>Reference to appid</td>
+        <td>It could be a random value.</td>
 	</tr>
 	<tr>
 		<td>Yes</td>
@@ -206,10 +206,9 @@ Date in UTC format
 	</tbody>
 </table> 
 
+
 cURL example:
-
-```json
-
+```jsx
 curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
@@ -234,19 +233,13 @@ curl --location --request POST '{{PostdataURL}}/init' \
         }
     ]
 }'
-
 ```
-
 Response example:
-
-```json
-
+```jsx
 {
     "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3"
 }
-
 ```
-
 This API will add the records into the DataRouter queue and it returns the JobID so you can track the progress of your record. This helps DataRouter manage sudden spikes and large volumes of data. 
 
 ## Get Job Status (optional)
@@ -255,17 +248,13 @@ This API call will verify the progress of the data load job from the previous st
 
 Replace PostdataURL and “api-key” with values for your Qrvey instance.
 
-```json
-
+```jsx
 curl --location --request GET '{{PostdataURL}}/{{jobId}}/status' \
 --header 'x-api-key: {{api-key}}'
-
 ```
 
 Response example:
-
-```json
-
+```jsx
 {
     "statusJob": {
         "jobId": "755e4d80-d11e-11ea-a4f7-5f41a4d85aa3",
@@ -278,6 +267,5 @@ Response example:
         "updated": 0
     }
 }
-
 ```
 </div>

@@ -9,8 +9,7 @@ The **Conditional Data Rule**, as in software development, is a feature that wil
 
 This rule, follows the standard **Data Rules** structure, as follow:
 
-```json
-
+```jsx
 "id": "conditionalFunctionId",
 "function": {
     "conditional": {
@@ -19,21 +18,18 @@ This rule, follows the standard **Data Rules** structure, as follow:
         "falseOutput": "'no'"
     }
 }
-
 ```
-
 Where the `id` field is the identifier to access the result of the condition, and `function` defines the object type of Data Rule to apply. This object contains three basic properties:
 
-| Property             | description                              |
-| -------------------- | ---------------------------------------- |
-| `statement`   | boolean condition to be evaluated        |
-| `trueOutput`  | output if the condition resolve to true  |
-| `falseOutput` | output if the condition resolve to false |
+|Property|description|
+|--------|-----------|
+|`statement`| boolean condition to be evaluated|
+|`trueOutput`| output if the condition resolve to true|
+|`falseOutput`| output if the condition resolve to false|
 
-&gt; Note: There can be many nested conditionals and complexity as the user wants.
+>Note: There can be many nested conditionals and complexity as the user wants.
 
-```json
-
+```jsx
 "id": "conditionalFunctionId",
 "function": {
     "conditional": {
@@ -58,15 +54,12 @@ Where the `id` field is the identifier to access the result of the condition, an
             }
     }
 }
-
 ```
 
 The statements that can be evaluated are: mathematical operations, field existence, data validation from the user data. Almost any value can be used.
 
 ## Sample
-
-```json
-
+```jsx
 "id": "conditionalFunctionId",
 "function": {
     "conditional": {
@@ -75,10 +68,9 @@ The statements that can be evaluated are: mathematical operations, field existen
         "falseOutput": "Value lower than the limit."
     }
 }
-
 ```
-
 In this example, `$otherDataRuleId` holds the result of another **Data Rule**, and this value is evaluated in the statement. Meanwhile, `{{$userData.field1}}` is a reference to the user data, this will be replaced during the execution time.
 
-&gt; Note, when the data comes from user input files, we use the double curly brackets. However when the data comes from another Data Rule, we do not use the double curly brackets.
+>Note, when the data comes from user input files, we use the double curly brackets. However when the data comes from another Data Rule, we do not use the double curly brackets.
+
 </div>

@@ -3,25 +3,23 @@ id: loading-status-databases
 title: Loading Data From Databases
 sidebar_label: Loading Data From Databases
 ---
+
 <div style={{textAlign: "justify"}}>
 
 ## Introduction
-
 The user can load data to the Qrvey platform using an API that receives a body with a JSON structure with the necessary parameters to get data from databases like **MYSQL, MS_SQL, ORACLE** and **POSTGRES**.
 
 ## Pre-requisites
-
 Before you can start, please make sure you have the following:
-
--   URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
-    -   Postdata Url
-    -   API Key 
--   A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
--   Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/">Metadata API</a>.
+* URLs and API Keys for your Qrvey Platform deployment. You can find these in the deployment email. For this example you would need the following values:
+  * Postdata Url
+  * API Key 
+* A tool or software that you can use to call REST APIs. We recommend Postman or cURL commands but you can use any tool or programming language.
+* Create a metadata using the <a href="/docs/data-router/Metadata/metadata-API/">Metadata API</a>.
 
 ## Dataload Structure
 
-<table className="demo">
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th>
@@ -32,15 +30,15 @@ Before you can start, please make sure you have the following:
 	</tr>
 	</thead>
 	<tbody>
-	<tr>
-        <td>Yes</td>
+    <tr>
+		<td>Yes</td>
         <td>datasetId</td>
         <td>String</td>
         <td>Reference to the dataset</td>
         <td>Random value</td>
 	</tr>
-    	<tr>
-        <td>No</td>
+    <tr>
+    	<td>No</td>
         <td>documentUpdateMethod</td>
         <td>String</td>
         <td>Upsert or replace (default) the data on Elasticsearch if the row(s) already exists.</td>
@@ -51,7 +49,7 @@ Before you can start, please make sure you have the following:
 		<td>metadataId</td>
         <td>String</td>
         <td>Reference to metadata</td>
-        <td />
+        <td></td>
     </tr>
 	<tr>   
         <td>Yes</td>
@@ -61,13 +59,13 @@ Before you can start, please make sure you have the following:
         <td><a href="https://docs.google.com/document/d/18r1MBDUP9k7ws81ZjKr0z8ct3hPTZt1w5WiYvynHbeE/edit#heading=h.1m16imwrw2yi">Datasources Structure</a></td>
     </tr>
 	</tbody>
-
 </table> 
+
 
 
 ## Datasources Structure
 
-<table className="demo">
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th>
@@ -78,7 +76,8 @@ Before you can start, please make sure you have the following:
 	</tr>
 	</thead>
 	<tbody>
-		<tr><td>Yes</td>
+    <tr>
+		<td>Yes</td>
         <td>datasetId</td>
         <td>String</td>
         <td>Reference to the datasourceId</td>
@@ -89,7 +88,7 @@ Before you can start, please make sure you have the following:
 		<td>indexName</td>
         <td>String</td>
         <td>indexName</td>
-        <td />
+        <td></td>
     </tr>
 	<tr>   
         <td>Yes</td>
@@ -101,9 +100,10 @@ Before you can start, please make sure you have the following:
 	</tbody>
 </table> 
 
+
 ## Data Connection Structure
 
-<table className="demo">
+<table class="demo">
 	<thead>
 	<tr>
 		<th>Required</th>
@@ -114,7 +114,8 @@ Before you can start, please make sure you have the following:
 	</tr>
 	</thead>
 	<tbody>
-		<tr><td>Yes</td>
+    <tr>
+		<td>Yes</td>
         <td>appid</td>
         <td>String</td>
         <td>Reference to the appid</td>
@@ -179,10 +180,11 @@ Before you can start, please make sure you have the following:
 	</tbody>
 </table> 
 
+
 ## MYSQL cURL Example
 
-```JSON
-
+```jsx
+JSON
 curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
@@ -207,13 +209,11 @@ curl --location --request POST '{{PostdataURL}}/init' \
         }
     ]
 }'
-
 ```
 
 ## MS_SQL cURL Example
 
-```JSON
-
+```jsx
 curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
@@ -238,13 +238,11 @@ curl --location --request POST '{{PostdataURL}}/init' \
         }
     ]
 }'
-
 ```
 
 ## ORACLE cURL Example
 
-```JSON
-
+```jsx
 curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
@@ -269,13 +267,11 @@ curl --location --request POST '{{PostdataURL}}/init' \
         }
     ]
 }'
-
 ```
 
 ## POSTGRES cURL Example
 
-```JSON
-
+```jsx
 curl --location --request POST '{{PostdataURL}}/init' \
 --header 'x-api-key: {{api-key}}' \
 --header 'Content-Type: application/json' \
@@ -300,6 +296,5 @@ curl --location --request POST '{{PostdataURL}}/init' \
         }
     ]
 }'
-
 ```
 </div>

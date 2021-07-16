@@ -3,11 +3,11 @@ id: roles-and-permissions
 title: Roles & Permissions
 sidebar_label: Roles & Permissions
 ---
+
 <div style={{textAlign: "justify"}}>
 
 ## Roles
-
-Roles and permissions are used to control access to sections on the Qrvey Composer. In the User Management section of Admin Center, you will find 2 roles that are system-defined roles, _Admin_ and _Composers_. 
+Roles and permissions are used to control access to sections on the Qrvey Composer. In the User Management section of Admin Center, you will find 2 roles that are system-defined roles, *Admin* and *Composers*. 
 
 ![roles-and-permissions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Roles+%26+Permissions/rp_1.png#thumbnail-80)
 
@@ -28,22 +28,22 @@ You can choose any of the roles you create as the “Default Role” this means 
 ![roles-and-permissions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Roles+%26+Permissions/rp_4.png#thumbnail)
 
 ## Permissions
-
 Admin can define the access that composers have to the different sections of the Qrvey Composer platform. This is the list of permissions we currently allow:
 
-| **Section**            | **Admin** | **Composer** |
-| ---------------------- | --------- | ------------ |
-| **Data**               |           |              |
-| Connections            | ✅         | ✅            |
-| Connections            | ✅         | ✅            |
-| Datasets               | ✅         | ✅            |
-| Web Forms              | ✅         | ✅            |
-| Data Links             | ✅         | ✅            |
-| **Applications**       |           |              |
-| Page Builder           | ✅         | ✅            |
-| Report Builder         | ✅         | ✅            |
-| Automation             | ✅         | ✅            |
-| Settings               | ✅         | ✅            |
-| **App Administration** |           |              |
-| Admin Center           | ✅         | ❌            |
+|          **Section**       |**Admin**                        |**Composer**                        |
+|----------------|-------------------------------|-----------------------------|
+|**Data**|
+| Connections| ✅ | ✅ |
+| Connections| ✅ | ✅ |
+| Datasets| ✅ | ✅ |
+| Web Forms| ✅ | ✅ |
+| Data Links| ✅ | ✅ |
+|**Applications**|
+| Page Builder| ✅ | ✅ |
+| Report Builder| ✅ | ✅ |
+| Automation| ✅ | ✅ |
+| Settings| ✅ | ✅ |
+|**App Administration**|
+| Admin Center| ✅ | ❌ |
+
 </div>

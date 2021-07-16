@@ -3,16 +3,16 @@ id: data-router-switch
 title: Case
 sidebar_label: Case
 ---
+
 <div style={{textAlign: "justify"}}>
 
 The **Case Data Rule** allows different actions to be performed depending on the variable or the option passed to the operation. This condition can be evaluated to any data type [boolean, string, number].
 
-&gt; This Data Rule, behaves like a Switch/Case, as in most programing language.
+> This Data Rule, behaves like a Switch/Case, as in most programing language.
 
 This rule, follows the standard **Data Rules** structure, as follow:
 
-```json
-
+```jsx
 "id": "caseStatement",
 "function": {
         "case": {
@@ -33,23 +33,21 @@ This rule, follows the standard **Data Rules** structure, as follow:
             "default": "The default action to take if the condition is not met"
         }
 }
-
 ```
 
 Where the `id` field is the identifier to access the result of the Data Rule, and `function` defines the object type of Data Rule to apply. This object contains three basic properties:
 
-| Property            | Description                                                                                                     |
-| ------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `key`        | Condition or option used to evaluate the cases.                                                                 |
-| `cases`      | Array of options, to implement if the condition is met. _Note, only the first matching case will be processed._ |
-| `cases.when` | Value or expression to determine if the condition is met for this case.                                         |
-| `cases.then` | Action to perform if the condition is met for this case.                                                        |
-| `default`    | Default action to take if no `case` is used.                                                             |
+| Property  | Description                                            |
+| --------- | ------------------------------------------------------ |
+| `key`     | Condition or option used to evaluate the cases.              |
+| `cases`   | Array of options, to implement if the condition is met. _Note, only the first matching case will be processed._|
+| `cases.when`   | Value or expression to determine if the condition is met for this case. |
+| `cases.then`   | Action to perform if the condition is met for this case. |
+| `default` | Default action to take if no `case` is used.            |
 
 **Example** Case Data Rule:
 
-```json
-
+```jsx
 "id": "caseStatement",
 "function": {
     "case": {
@@ -74,10 +72,10 @@ Where the `id` field is the identifier to access the result of the Data Rule, an
         "default": "'No option or invalid option in the field'"
     }
 }
-
 ```
 
 In this example, the options (`{{$data.option}}`) are ["A","B","C","D"] and for each one of those options there will be a `Case` provided. If no option is provided or another value is provided, the action will be the `Default` one.
 
-&gt; _Note: the **then** value is a string which is evaluated as an expression. In the example above the **then** values are string values, hence the use of double outer quotes and single inner quotes - ie "'value'"._
+> _Note: the **then** value is a string which is evaluated as an expression. In the example above the **then** values are string values, hence the use of double outer quotes and single inner quotes - ie "'value'"._
+
 </div>

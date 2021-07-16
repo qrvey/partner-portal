@@ -3,18 +3,18 @@ id: faqs-intro
 title: General
 sidebar_label: General
 ---
+
 <div style={{textAlign: "justify"}}>
 
 **Q: How do I know if my Elasticsearch cluster is short on space?**
 
 **A:** There are 2 ways to monitor the Elasticsearch cluster.
-
-1.  Using Admin Center: <br />
+1. Using Admin Center: <br />
     i.  Login to Admin center using your AWS IAM credentials <br />
     ii. Click on DataRouter section <br />
     iii. Review the node usage in the  Elasticsearch section at the bottom. It shows the total vs used space and then per node. 
 
-2.  AWS Elasticsearch console <br />
+2. AWS Elasticsearch console <br />
     i. Login to your AWS account with a user that has permissions to access Elasticsearch domains. <br />
     ii. Select “Dashboard” tab from the top-left menu. <br />
     iii. You can review the free storage space in the table for your Elasticsearch cluster.
@@ -27,7 +27,7 @@ sidebar_label: General
 
 ![1_faq](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/General/general_faq1.png)
 
-Please contact us at: [help@qrvey.com](mailto:help@qrvey.com) if you cannot locate the email. 
+Please contact us at: help@qrvey.com if you cannot locate the email. 
 
 <br />
 
@@ -49,5 +49,6 @@ Alternatively, if an API is used to create an application programmatically, the 
 
 Alternatively, if an API is used to create a user programmatically, the user id is returned in the response. It can also be obtained by using the “search” option in the API to get the list of users. See the API Reference for more details on the subject.
 
-&gt; **Note**: There are two types of users in Qrvey: Creators, and End Users. APIs to manage “creator” users are part of the core collection, while those to manage end users are part of the automation set.
+> **Note**: There are two types of users in Qrvey: Creators, and End Users. APIs to manage “creator” users are part of the core collection, while those to manage end users are part of the automation set.
+
 </div>

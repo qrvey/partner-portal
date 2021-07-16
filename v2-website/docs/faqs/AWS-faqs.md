@@ -3,11 +3,13 @@ id: aws-faqs
 title: AWS FAQs
 sidebar_label: AWS FAQs
 ---
+
 <div style={{textAlign: "justify"}}>
+
 
 **Q: What are the options and correct process of connecting to an AWS RDS?**
 
-**A:** There are 2 components in Qrvey that connect to a data source and download data. The first one is an ECS container running on an EC2 instance called _qrvey__\*__microservice_ECSInstance_ and the second one is a Lambda function called \*_\_dataload_drDataSourcePump_.   
+**A:** There are 2 components in Qrvey that connect to a data source and download data. The first one is an ECS container running on an EC2 instance called *qrvey*_*_*microservice_ECSInstance* and the second one is a Lambda function called **_dataload_drDataSourcePump*.   
 
 Both of these components should be able to connect to your data source. For example, if you are using an RDS with restricted access, have a look at <a href="/docs/aws/connect-to-RDS-instance/"> <strong>this document </strong></a> for more details. If your data source is outside of AWS and can only be restricted using IP addresses, then you can configure a VPC with a private subnet and Internet/NAT gateway to get a static IP for Lambda functions.
 
@@ -36,14 +38,18 @@ Both of these components should be able to connect to your data source. For exam
 
 **A:** There are 2 ways to monitor the Elasticsearch cluster.
 
-1.  Using Admin Center:<br />
-    i. Login to Admin center using your AWS IAM credentials.<br />
-    ii. Click on the DataRouter section.<br />
-    iii. Review the node usage in the Elasticsearch section at the bottom. It shows the total vs used space and then per node.
+1. Using Admin Center:<br />
+  i. Login to Admin center using your AWS IAM credentials.<br />
+  ii. Click on the DataRouter section.<br />
+  iii. Review the node usage in the Elasticsearch section at the bottom. It shows the total vs used space and then per node.
 
-2.  AWS Elasticsearch console <br />
-    i. Login to your AWS account with a user that has permissions to access Elasticsearch domains.<br />
-    ii. Select “Dashboard” tab from the top-left menu. <br />
-    iii. You can review the free storage space in the table for your Elasticsearch cluster.
-    
+2. AWS Elasticsearch console <br />
+  i. Login to your AWS account with a user that has permissions to access Elasticsearch domains.<br />
+  ii. Select “Dashboard” tab from the top-left menu. <br />
+  iii. You can review the free storage space in the table for your Elasticsearch cluster.
+
+
+
+
 </div>
+

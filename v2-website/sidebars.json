@@ -249,6 +249,10 @@
         {
           "type": "doc",
           "id": "ui-docs/dataviews/metric-view"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/table-calculations"
         }
       ]
     },

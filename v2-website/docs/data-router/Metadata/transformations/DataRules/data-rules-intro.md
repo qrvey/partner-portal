@@ -13,8 +13,8 @@ With these rules, you can transform and organize your hierarchical data before u
 
 An example of hierarchical data could be a list of documents for different companies where each document has a list of employees, and each employee could have details about their children.
 
-```json
 
+```json
 {
  "documents" : [
      {
@@ -53,12 +53,12 @@ An example of hierarchical data could be a list of documents for different compa
      }
  ]
 }
-
 ```
 
 # Data Rules
 
 Data Router provides different rules that can be applied to hierarchical data. We will describe each rule with their main properties.
+
 
 ## Merge
 
@@ -66,13 +66,13 @@ This rule is used to join or merge two or more arrays from the JSON data to crea
 
 ### Properties
 
-| **Property**              | **Details**                                                                                                                                                                                                  |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Left Array**            | This an array from the JSON data. It is defined as the left side array.                                                                                                                                      |
-| **Right Array**           | This is an array from the JSON data. It is defined as the left side array.                                                                                                                                   |
-| **Merge Type**            | This is the merge or join type between the two arrays: Inner Join, Left Join, Right Join and Full Join.                                                                                                      |
-| **Conditions**            | Object with conditions.                                                                                                                                                                                      |
-| **Conditions.On**         | This is the main condition to merge the two arrays by their identifiers                                                                                                                                      |
+| **Property** | **Details** |
+| --- | --- |
+| **Left Array** | This an array from the JSON data. It is defined as the left side array. |
+| **Right Array** | This is an array from the JSON data. It is defined as the left side array. |
+| **Merge Type** | This is the merge or join type between the two arrays: Inner Join, Left Join, Right Join and Full Join. |
+| **Conditions** |  Object with conditions.|
+| **Conditions.On** | This is the main condition to merge the two arrays by their identifiers |
 | **Conditions.Conditions** | These are other conditions that can be made over the merge to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
 
 ## ArrayLookup
@@ -81,66 +81,62 @@ This rule is used to search for a value or object inside an array.
 
 ### Properties
 
-| **Property**               | **Details**                                                                                                                                                                                                   |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Source Array**           | This an array from the JSON data.                                                                                                                                                                             |
-| **Conditions**             | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
-| **Sorting**                | The sorting that will be applied.                                                                                                                                                                             |
-| **Sorting.Field**          | The source array field used to do the sorting.                                                                                                                                                                |
-| **Sorting.Direction**      | The sorting direction: Ascending or Descending.                                                                                                                                                               |
-| **Sorting.Null treatment** | Nulls first or Nulls last.                                                                                                                                                                                    |
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Conditions** | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
+| **Sorting** | The sorting that will be applied. |
+| **Sorting.Field** | The source array field used to do the sorting. |
+| **Sorting.Direction** | The sorting direction: Ascending or Descending. |
+| **Sorting.Null treatment** | Nulls first or Nulls last. |
+
 
 ## Multi ArrayLookup
 
 This rule is used to search for values in different arrays. This is almost the same as an [ArrayLookup](##ArrayLookup) but you can add as many Lookups as needed. The process ends when a match is found.
 
-| **Property**               | **Details**                                                                                                                                                                                                   |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Source Array**           | This an array from the JSON data.                                                                                                                                                                             |
-| **Conditions**             | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
-| **Sorting**                | The sorting that will be applied.                                                                                                                                                                             |
-| **Sorting.Field**          | The source array field used to do the sorting.                                                                                                                                                                |
-| **Sorting.Direction**      | The sorting direction: Ascending or Descending.                                                                                                                                                               |
-| **Sorting.Null treatment** | Nulls first or Nulls last.                                                                                                                                                                                    |
+
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Conditions** | These are other conditions that can be made over the source to filter the information. For example: <ul><li>Selecting only North American countries</li><li>Getting employees with a minimum salary</li></ul> |
+| **Sorting** | The sorting that will be applied. |
+| **Sorting.Field** | The source array field used to do the sorting. |
+| **Sorting.Direction** | The sorting direction: Ascending or Descending. |
+| **Sorting.Null treatment** | Nulls first or Nulls last. |
+
 
 ## Modify Array
 
 This rule is used to modify an existing array by adding new columns or attributes.
-
 ### Properties
 
-| **Property**            | **Details**                                                                                                                                |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Source Array**        | This an array from the JSON data.                                                                                                          |
-| **Functions**           | Each function will add a new attribute to the array. There can be as many functions as needed. Each function has these attributes:         |
+| **Property** | **Details** |
+| --- | --- |
+| **Source Array** | This an array from the JSON data. |
+| **Functions** | Each function will add a new attribute to the array. There can be as many functions as needed. Each function has these attributes: |
 | **Functions.Statement** | The operation that will be used to add the new attribute, for example: <ul><li>An arithmetic operation</li><li>A custom function</li></ul> |
-| **Functions.Name**      | The name of the new attribute to be added to the array.                                                                                    |
+| **Functions.Name** | The name of the new attribute to be added to the array. |
 
 ## Flat Array
-
 This rule is used to transform an array by [flattening](##Flattening-Data) over a field.
-
 ### Properties
 
-| **Property**  | **Details**                                                      |
-| ------------- | ---------------------------------------------------------------- |
-| **Flat By**   | This an array from the JSON data.                                |
+| **Property** | **Details** |
+| --- | --- |
+| **Flat By** | This an array from the JSON data. |
 | **Condition** | These are condition data needs to match to apply the flattening. |
 
 # Destinations
-
-Each 'child' Metadata items can have a set of _destination_ fields. Each destination field will most likely represent the result of a Data Rule. It can also represent a column or attribute coming from the original data.
+Each 'child' Metadata items can have a set of *destination* fields. Each destination field will most likely represent the result of a Data Rule. It can also represent a column or attribute coming from the original data.
 
 ## Flattening Data
-
 Data Router allows you to flatten your data so it is easier to analyse in an Elasticsearch index using Qrvey's analytics.
 
 Flattening means creating a new array of data by 'destroying' sub-arrays and merging them with each element of the parent array:
 
 **Input Data**
-
 ```json
-
 {
   "myArray": [
     {
@@ -174,13 +170,9 @@ Flattening means creating a new array of data by 'destroying' sub-arrays and mer
     }
   ]
 }
-
 ```
-
 **Output Data**
-
 ```json
-
 [
   {
     "myArray": {
@@ -247,7 +239,5 @@ Flattening means creating a new array of data by 'destroying' sub-arrays and mer
     }
   }
 ]
-
 ```
-
 </div>
