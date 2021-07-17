@@ -385,17 +385,17 @@ Conditional Formatting is supported in Bar, Line, Symbol, Table, Crosstab, Dot a
 
 When you use conditional formatting, you can set the following: 
 
-1. Text Color: Changes the font color of the cell’s value that matches the condition.
-2. Cell Color: Changes the background or border color (depending on the style option selected) of the cells whose values match the condition.
-3. Style: Fills the cell’s background color or outlines its border. 
-4. Label: Give the condition a custom name. 
-5. Column: A list of columns available in the shelf for setting a condition.
-6. Operator: A list of operators available for formatting. 
+1. **Text Color**: Changes the font color of the cell’s value that matches the condition **- only in Tables.**
+2. **Cell Color**: Changes the background or border color (depending on the style option selected) of the cells whose values match the condition **- only in Tables.**
+3. **Style**: Fills the cell’s background color or outlines its border **- only in Tables.**
+4. **Label**: Give the condition a custom name. 
+5. **Column**: A list of columns available in the shelf for setting a condition.
+6. **Operator**: A list of operators available for formatting. 
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond1.png#thumbnail-40)
 
-7. Value: A number to define the columns with that same value that will (not) be shown based on the operator chosen.
-8. Remove: Deletes the condition. 
+7. **Value**: A number to define the columns with that same value that will (not) be shown based on the operator chosen.
+8. **Remove**: Deletes the condition. 
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond2.png#thumbnail-60)
 
@@ -409,20 +409,9 @@ First, you have to decide how you want to highlight the cells that meet your con
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond3.gif#thumbnail)
 
 
-### Conditional Formatting on Tables
-When you use conditional formatting on tables, you have different options to highlight the value that matches the condition defined.
-
-* **Text Color**: It changes the font color of the cell’s value that matches the condition.
-* **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells whose values match the condition.
-* **Style**: It works together with the cell color option to fill the cell’s background color or outline its border. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond_form.png#thumbnail)
-
-
-
-## Aggregated Formulas
-Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregated formulas do the same thing for data that has been grouped and aggregated for a chart.
-Given that distinction, aggregated formula function is only available in grouped table charts at the moment.
+## Aggregate Formulas
+Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregate formulas do the same thing for data that has been grouped and aggregate for a chart.
+Given that distinction, aggregate formula function is only available in grouped table charts at the moment.
 
 **Aggregated formulas** action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
 
