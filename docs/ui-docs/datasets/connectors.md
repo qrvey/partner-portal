@@ -34,8 +34,7 @@ For CSV data or unstructured data, such as JSON documents, the UI supports uploa
 See the articles below to get more information on database sources, file sources and API sources:
 * [Database Connections](ui-docs/datasets/databases.md)
 * [File Upload Connections](ui-docs/datasets/csv.md)
-* <a href="/docs/embedding/api/api-data-sources/#api-data-sources"> API Connections </a>
-
+* [API Connections](ui-docs/datasets/api-connections.md)
 
 Once you have created your connections, you will see them listed as shown below:
 
