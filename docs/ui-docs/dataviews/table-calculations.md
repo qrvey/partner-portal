@@ -7,21 +7,26 @@ sidebar_label: Table Calculations
 <div style="text-align: justify">
 
 Table Calculation is a feature that produces new columns of data based on predefined aggregate functions executed against existing columns of data.  Any data column added to the “Values” or “Other Values” shelves in the Chart Builder UI can be used as a source column for a table calculation.  The Table Calculations UI contains the following fields:
-1. **Column**: Lists  all columns added to the “Values” and “Other Values” shelves.
-2. **Calculation Type**: 
-- Running Calculations:
+
+1. **Column** - Lists  all columns added to the “Values” and “Other Values” shelves.
+
+2. **Calculation Type** - There are two different types of calculations: 
+* Running Calculations:
     * <a href="#running-sum">Running Sum (RSUM)</a>
     * <a href="#running-average">Running Average (RAVG)</a> 
     * <a href="#running-min">Running Min (RMIN)</a>
     * <a href="#running-max">Running Max (RMAX)</a>
-- Difference Calculations
+* Difference Calculations
     * Difference
     * %Difference 
-3. **Level**: This option appears when you have multiple groups (more than 1) to determine "at what level" you are doing your calculation. For example, if you have grouped sales by year and quarter, you can choose if you want to do your calculations for each year and restart when you get to the next year, or if you want to calculate the sales for the entire table. The default level is Table
+
+3. **Level** - This option appears when you have multiple groups (more than 1) to determine "at what level" you are doing your calculation. For example, if you have grouped sales by year and quarter, you can choose if you want to do your calculations for each year and restart when you get to the next year, or if you want to calculate the sales for the entire table. The default level is Table
+
 4. **Custom Label**: Give a custom name to the calculation for easier identification (the name is shown only in the panel).
+
 5. **Remove**: Delete the table calculation.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal1.png#thumbnail-60) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal1.png#thumbnail-40) 
 
 > **Note**: Running Calculations calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data.
 
@@ -58,7 +63,7 @@ The Running Maximum function (RMAX) references the value in the current row from
 Table calculations can be added to charts in two ways: 
 Using the chart builder configuration panel and selecting General followed by new “Table Calculations” option and finally clicking on the “+ Add Table Calculation”.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal6.png#thumbnail-60) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal6.png#thumbnail-40) 
 
 
 By dragging and dropping numeric columns to “Values” or “Other Values” shelves and selecting “Table Calculations” in the 3-dot menu. 
@@ -76,6 +81,7 @@ Any event that causes a chart’s reloading will also cause the table calculatio
 
 This is how Qrvey generally describes these running calculations:
 <code>
+
 <p style="margin-left: 40px">
 Running_[sum, avg, min, max] <br> 
  (<br>
@@ -84,6 +90,7 @@ Running_[sum, avg, min, max] <br>
      ,[ grouped field, ... ]   <br>
 )
 </p>
+
 </code> 
 
 
@@ -137,7 +144,7 @@ The following example shows how *Difference* is calculated:
 
 The difference between each total quarterly sales is calculated like this:
 
-![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail-0)
+![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail)
 
 **2018-2020 Quarterly Sales Difference**
 
@@ -167,7 +174,7 @@ The following example shows how *Percent Difference* is calculated:
 	<tbody>
 </td>
 		<td>8</td>
-        <td></td>
+        <td> </td>
 	</tr>
 	<tr>
 		<td>6</td>
@@ -197,13 +204,13 @@ The following example demonstrates how the difference  between each total quarte
 **2018-2020 Quarterly Sales Difference**
 
 2018 Q1 Difference = Blank
-
+<br>
 2018 Q2 Difference = (Q2 Sales - Q1 Sales)*100/Q1 Sales = 15.05%
-
+<br>
 2018 Q3 Difference = (Q3 Sales - Q2 Sales)*100/Q2 Sales = -65.25 %
-
+<br>
 2018 Q4 Difference = (Q4 Sales - Q3 Sales)*100/Q3 Sales = 1164.48%
-
+<br>
 Etc.
 
 The following images show an example of *% Difference* applied in Tables.
@@ -239,3 +246,5 @@ To define partitions in Table Calculations, you need to add a Table Calculation 
 Partitioning fields break the view up into multiple sub-views (or sub-tables), and then the table calculation is applied to the marks within each such partition. 
 
 The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
+
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/part.gif#thumbnail-60) 
