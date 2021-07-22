@@ -26,7 +26,7 @@ Table Calculation is a feature that produces new columns of data based on predef
 
 5. **Remove**: Delete the table calculation.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal1.png#thumbnail-40) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal1.png#thumbnail-20) 
 
 > **Note**: Running Calculations calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data.
 
@@ -38,24 +38,24 @@ Qrvey supports the following table calculations in Table, Bar, Line, Combo Chart
 Running Sum (RSUM) calculates the new sum total value of the current row by adding the value in the source column of the current row to the computed sum total from the previous row.  
 For example, if the last computed sum total was "100" and the value of the source column in the current row is "25", then the new sum total will be "125".
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal2.png#thumbnail) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal2.png#thumbnail-60) 
 
 #### Running Average
 Running Average (RAVG) calculates the new average for the current row by referencing the value in the source column of the current row and computing the new average based on the average from the previous row. For example, if the average from the first row of data was "100" and the value of the source column in the second row of data is "25", then the new computed average will be "62.5".
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal3.png#thumbnail) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal3.png#thumbnail-60) 
 
 #### Running Minimum
 The Running Minimum function (RMIN) references the value in the current row from the source data column and compares it to the previous minimum value.  If the value in the source column is less than the previously computed minimum value, then the new running minimum value is updated with the new lower value. 
 For example, if the value in one row is “27”, and the one in the second row is “20”, the new minimum is “20”; if the value in the third row is “18” then the new minimum is “18”.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal4.png#thumbnail) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal4.png#thumbnail-60) 
 
 
 #### Running Maximum
 The Running Maximum function (RMAX) references the value in the current row from the source data column and compares it to the previous maximum value.  If the value in the source column is greater than the previously computed maximum value, then the new running maximum value is updated with the new higher value. For example, if the value in one row is “27”, and the one in the second row is “20”, the maximum shown is “27”; if the value in the third row is “35” then the new maximum is “35”.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal5.png#thumbnail) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal5.png#thumbnail-60) 
 
 
 
@@ -63,7 +63,7 @@ The Running Maximum function (RMAX) references the value in the current row from
 Table calculations can be added to charts in two ways: 
 Using the chart builder configuration panel and selecting General followed by new “Table Calculations” option and finally clicking on the “+ Add Table Calculation”.
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal6.png#thumbnail-40) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/tab_cal6.png#thumbnail-20) 
 
 
 By dragging and dropping numeric columns to “Values” or “Other Values” shelves and selecting “Table Calculations” in the 3-dot menu. 
@@ -144,7 +144,7 @@ The following example shows how *Difference* is calculated:
 
 The difference between each total quarterly sales is calculated like this:
 
-![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail)
+![30_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build30.png#thumbnail-60)
 
 **2018-2020 Quarterly Sales Difference**
 
@@ -199,7 +199,7 @@ The following example shows how *Percent Difference* is calculated:
 
 The following example demonstrates how the difference  between each total quarterly sales is calculated:
 
-![34_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build34.png#thumbnail-0)
+![34_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build34.png#thumbnail-60)
 
 **2018-2020 Quarterly Sales Difference**
 
@@ -216,11 +216,11 @@ Etc.
 The following images show an example of *% Difference* applied in Tables.
 
 
-![35_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build35.png#thumbnail-0)
+![35_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build35.png#thumbnail)
 
-![36_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build36.png#thumbnail-0)
+![36_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build36.png#thumbnail)
 
-![37_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build37.png#thumbnail-0)
+![37_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build37.png#thumbnail)
 
 The following images show an example of *%Difference* applied in Bar charts.
 ![4agif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/4agif.gif#thumbnail)
@@ -247,4 +247,4 @@ Partitioning fields break the view up into multiple sub-views (or sub-tables), a
 
 The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
 
-![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/part.gif#thumbnail-60) 
+![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/part.gif#thumbnail) 
