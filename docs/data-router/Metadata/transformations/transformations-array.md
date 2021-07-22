@@ -18,7 +18,7 @@ Move the cursor over the Array Filter icon and drag the component over to the tr
 
 ![array-filter](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/array2.png#thumbnail) 
  
-Configuring the Array Filter transformation is a three step process:
+Configuring the Array Filter transformation is a three-step process:
 1. Choose the array property to filter from the Array Path drop-down menu.
 
 2. Choose “Standard” or “Advanced” for condition type:
