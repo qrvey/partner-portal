@@ -71,7 +71,8 @@
       "version-5.4-ui-docs/dataviews/custom-view",
       "version-5.4-ui-docs/dataviews/chart-types",
       "version-5.4-ui-docs/dataviews/chart-builder",
-      "version-5.4-ui-docs/dataviews/metric-view"
+      "version-5.4-ui-docs/dataviews/metric-view",
+      "version-5.4-ui-docs/dataviews/table-calculations"
     ],
     "Builders": [
       "version-5.4-ui-docs/builders/reports",

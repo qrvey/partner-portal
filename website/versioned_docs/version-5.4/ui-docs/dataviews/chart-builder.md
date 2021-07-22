@@ -374,44 +374,92 @@ For charts other than Table and Crosstab, the same feature is also available fro
 
 ## Conditional Formatting 
 
-Using conditions can create the criteria to apply specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet the set conditions. Conditional formatting calls attention to important data points such as deadlines, at-risk items, or budget items. It can also make large datasets more digestible by breaking up the data with a visual organizational component.
+Conditional Formatting creates criteria for applying specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet those set conditions. It calls attention to important data points such as deadlines, at-risk items, or budget items and can at the same also make large datasets more digestible by breaking up the data with a visual organizational component.
 
 There are 3 basic components are required to create a condition: 
-* **Data column** to use for a condition
-* **Operator** for a condition (these vary depending on the data type of the column chosen)
-* **Value** to look for with a condition (input components vary on the data type of the column chosen)
+* **Data column** - This is the column to which the condition, and the formatting are applied
+* **Operator** - The operator for the condition. These vary depending on the data type of the column chosen.
+* **Value** - The value that defines the condition. Input components vary based on the data type of the column chosen.
 
-To apply Conditional Formatting, you have to:
-1. Go to the “Format” section located inside the Chart Builder’s configuration pane.
-2. Click on the “Conditional Formatting” subsection and click on “+Add Condition”.
-3. A condition tab will appear where you can set up your condition. 
-4. Once your condition is all set up, you will see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
+Conditional Formatting is supported in Bar, Line, Symbol, Table, Crosstab, Dot and Bubble Map charts.
 
 
-Currently, the Conditional Formatting is supported by Table Charts with more charts coming soon. 
+When you use conditional formatting, you can set the following: 
+
+1. **Text Color**: Changes the font color of the cell’s value that matches the condition **- only in Tables.**
+2. **Cell Color**: Changes the background or border color (depending on the style option selected) of the cells whose values match the condition **- only in Tables.**
+3. **Style**: Fills the cell’s background color or outlines its border **- only in Tables.**
+4. **Label**: Give the condition a custom name. 
+5. **Column**: A list of columns available in the shelf for setting a condition.
+6. **Operator**: A list of operators available for formatting. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond1.png#thumbnail-40)
+
+7. **Value**: A number to define the columns with that same value that will (not) be shown based on the operator chosen.
+8. **Remove**: Deletes the condition. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond2.png#thumbnail-60)
+
+For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
+
+First, you have to decide how you want to highlight the cells that meet your condition:
+1. Go to the *Format* section located inside the chart builder’s configuration pane.  
+2. Click on the *Conditional Formatting* subsection and click on **+Add Condition**.
+3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond3.gif#thumbnail)
 
 
-![12gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12gif.gif#thumbnail)
+## Aggregate Formulas
+Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregate formulas do the same thing for data that has been grouped and aggregate for a chart.
+Given that distinction, aggregate formula function is only available in grouped table charts at the moment.
+
+**Aggregated formulas** action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
+
+To create calculations across columns on the aggregated values, you need to first create a table chart having several columns in the Columns shelf and one or more columns in the Group shelf. When you have done that: 
+
+1. Go to the *General* action panel and expand the *Aggregated Formulas* action item. Click on the **+ Add Aggregated Formula** action item.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg1.png#thumbnail-60)
+
+2. In the *Create Table Formula* modal window, enter a formula name and the desired formula using the available options, Test the formula and click Save.You can use any columns of the current context for the construction of the formula.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg2.png#thumbnail)
+
+3. The new aggregated formula can be edited or removed through the *Aggregated formulas* action item.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg3.png#thumbnail-60)
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg4.gif#thumbnail) 
 
 
-### Conditional Formatting on Tables
-When you use conditional formatting on tables, you have different options to highlight the value that matches the condition defined.
-
-* **Text Color**: It changes the font color of the cell’s value that matches the condition.
-* **Cell Color**: It changes the background or border color (depending on the style option selected) of the cells whose values match the condition.
-* **Style**: It works together with the cell color option to fill the cell’s background color or outline its border. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond_form.png#thumbnail)
-
-
-
+>**Note**: Only when the table is grouped, the *Aggregated formulas* action item is displayed in the action panel. If the table is not grouped, this action item is disabled.
 
 ## Chart Themes 
-### 1. Text Styles
-Create customized themes for your analytics that can be used to replace Qrvey’s default theme settings. With Text Styles, you can change the default global Qrvey text styles shown in charts to something that better fits your needs.
 
-To create custom themes, just click on the “Style Themes” button, that can be found in the “Analyze” section of the dataset or inside Report and Page Builders. 
+Give your charts a unified look by creating customized themes for your analytics that can be used to replace Qrvey’s default theme settings. 
 
-Next, create a new theme that will be listed in all of your applications. That newly created theme will be reflected in all charts of the origin application. If you select “Use this theme in all applications”, this same theme will be applied to all applications in your Qrvey account.
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme1.png#thumbnail-40) 
 
-![13gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13gif.gif#thumbnail)
+
+### Setting Chart Themes
+To create a new theme, go to the Style Themes button that can be found in the Analyze section of any dataset, as well as the Report Builder and Page Builder UIs.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme2.png#thumbnail-60) 
+
+
+Next, create a new theme that will be listed in all of your applications.  The following settings are available from the UI:
+
+* **Theme Name** - Give your theme a custom name.  If you select *Use this theme in all applications*, this same theme will be applied across all applications in your Qrvey account.
+* **Font Type** - Pick a font type you’d like to use for your charts’ title and other labels.
+* **Text Colors** - Assign colors to different sections of your chart (titles, labels, values, legends, tooltips, and headers)
+* **Data Styles** - Choose the colors to be used in data visualizations inside the chart (bars, lines, points, etc.)
+* **Generate New** - Get a random selection of colors to be used in visualizations.
+* **Reset to Default Settings** - Discard all changes and return to the  default settings. 
+
+
+You can click on each color box to change it using the color selector control.
+Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme3.png#thumbnail-60) 
+
