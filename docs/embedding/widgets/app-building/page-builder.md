@@ -47,10 +47,7 @@ The **personalization** object setting controls customization options for the Pa
 | fit_panel_button | Show the fit to panel button on the panels | boolean | true | No
 
 
-<<<<<<< HEAD
 > **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
-=======
->>>>>>> Page-Builder
 
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.

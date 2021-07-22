@@ -71,7 +71,8 @@
       "ui-docs/dataviews/custom-view",
       "ui-docs/dataviews/chart-types",
       "ui-docs/dataviews/chart-builder",
-      "ui-docs/dataviews/metric-view"
+      "ui-docs/dataviews/metric-view",
+      "ui-docs/dataviews/table-calculations"
     ],
     "Builders": [
       "ui-docs/builders/reports",
