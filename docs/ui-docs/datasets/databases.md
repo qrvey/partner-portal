@@ -8,7 +8,7 @@ sidebar_label: Database Connections
 
 You can create connections to various RDBMS sources by using the Database Connection feature under the *Connections* tab. Database connections can be created by entering the common connection attributes in the provided fields in the connection dialog, or by using the more advanced connection attributes using a JSON structure. While the former method is the default one, the latter can be used to configure properties that are typically not included, such as timeout and encryption preferences.
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/1connections.png#thumbnail) 
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/1connections.png#thumbnail)  
  
 To begin, choose the type of database you’d like to connect to. We currently support Amazon Redshift,MySQL, SQL Server, PostgreSQL and Oracle databases. MySQL and PostgreSQL are Aurora compatible. Amazon Athena is also available as a SQL-compatible data source.
 
@@ -17,7 +17,7 @@ The dialog that is displayed may be slightly different for each database type, d
 
 Amazon Athena connections require the AWS region to be specified, as well as the access key and secret key for authentication purposes.  You can optionally specify an Athena workspace, as well as the designated S3 bucket where the query output result files are stored.  If the Athena workspace already specifies the output S3 bucket, then this field does not need to be set.  Athena connections can be configured to connect directly to an AWS database and/or catalog if those have been configured.  Finally, if you want to use a specific SQL query for the Athena connection, you can click the **Include a Query with this Connection** button at the very bottom of the configuration popup.
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/2connections.png#thumbnail) 
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/2connections.png#thumbnail-60)  
 
 > **Note**:  If you specify the S3 bucket for query output result files, please ensure that the URL path is correct and valid.  The Qrvey platform will not have access to this S3 bucket for security reasons and cannot verify that the URL is valid.
 
