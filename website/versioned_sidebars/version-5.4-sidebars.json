@@ -51,7 +51,8 @@
         "ids": [
           "version-5.4-ui-docs/datasets/connectors",
           "version-5.4-ui-docs/datasets/databases",
-          "version-5.4-ui-docs/datasets/csv"
+          "version-5.4-ui-docs/datasets/csv",
+          "version-5.4-ui-docs/datasets/api-connections"
         ]
       },
       "version-5.4-ui-docs/datasets/datasets",
