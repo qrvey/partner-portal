@@ -199,7 +199,8 @@
         "label": "Transformations",
         "ids": [
           "version-5.4-data-router/Metadata/transformations/transformations-intro",
-          "version-5.4-data-router/Metadata/transformations/reusable-transforms"
+          "version-5.4-data-router/Metadata/transformations/reusable-transforms",
+          "version-5.4-data-router/Metadata/transformations/transformations-array"
         ]
       },
       {
