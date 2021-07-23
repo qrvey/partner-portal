@@ -209,7 +209,7 @@ Creators can use a shortcut for an even easier access to the data pages directly
 The expandable data tables are used to group data, without aggregating the values. They are especially useful when it comes to presenting large amounts of data in a compact space, as rows are collapsed and can be expanded to reveal the detail rows
 Start  by clicking on **Expandable Table** from the list of visualizations in the *Chart Builder*.
 
-![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand1.png#thumbnail-60) 
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand1.png#thumbnail-40) 
 
 Move the column to group by to the *Sections* shelf.
 
@@ -231,7 +231,7 @@ Here we find additional settings like:
 * **Max. Groups** - Limits the number of groups shown. This value is set to 10 by default and can not be lower than 10. If there are no columns in the Section shelf, the Max Groups option does not appear.
 * **Records per Group** - Limits the number of records shown for each expandable group. This value is 10 by default and can not be lower than 10.
 
-![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand5.png#thumbnail-60) 
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand5.png#thumbnail-40) 
 
 
 

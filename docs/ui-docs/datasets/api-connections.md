@@ -12,7 +12,7 @@ Qrvey Composer supports the configuration of Push API connections from the Conne
 
 Click **New Connection** and then select the Push API connection type from the modal window that appears.  Type a name for the connection and then copy/paste a sample JSON object record in the provided field below.
 
-![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api1.png#thumbnail-60)
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api1.png#thumbnail)
 
 
 Ensure that the sample JSON object record provided exactly matches the structure of the JSON data being pushed by the actual source API endpoint.  Mismatches between the sample JSON data structure and the JSON data returned by the API will cause the dataset to fail upon load.
@@ -31,7 +31,7 @@ Start by creating a new dataset and select the desired Push API connection as th
 Configure the column names and column data types, as well as any transformations, geocoding and row-level security.  Make sure to click **Apply Changes** and then click on **Push API Instructions** to see a sample cURL command that can be used to begin populating the dataset.  By default, the sample cURL command will use the exact same JSON code supplied in the source Push API connection as a reminder of what the required JSON data structure must be.
 
 
-![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api4.png#thumbnail-60)
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api4.png#thumbnail)
 
 If you do not see a sample cURL command for “Post Data” after clicking the Push API Instructions tab, click on **Apply Changes** in the top-right corner of the Design page.  This page will also show sample cURL commands for “Delete Data” and “Delete All Data” actions.  There must be at least one column configured as a unique identifier to see the “Delete Data” cURL command.  There must be at least one record of data present in the dataset to see the “Delete All Data” cURL command.
 
