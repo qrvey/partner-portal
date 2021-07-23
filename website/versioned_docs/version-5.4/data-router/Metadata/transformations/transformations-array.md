@@ -52,12 +52,12 @@ The following ArrayFilter transformation configuration will find and match all H
 
 Next, the “actors.age” property is selected from the Condition Column field and “53” is entered into the adjacent Value field.
 
-![array-filter](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/array5.png#thumbnail-40) 
+![array-filter](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/array5.png#thumbnail-60) 
 
 
 Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified.  The “Create New” radio button is selected and a name for the target object array property is entered in the adjacent field.
 
-![array-filter](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/array6.png#thumbnail-40) 
+![array-filter](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/data-router/array6.png#thumbnail-60) 
 
 Testing the transformation shows the final output that preserves the original “actors” array property, as well as the new “actors_age_53” array property.
 

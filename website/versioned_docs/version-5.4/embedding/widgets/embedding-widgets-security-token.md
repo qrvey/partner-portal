@@ -90,7 +90,7 @@ function auth() {
 ```
 
 
-## Embedding The Security Token in The Widget
+## Embedding the Security Token in the Widget
 The last step in the process of embedding a widget using a security token is to pass the token requested in the previous step to the widget’s configuration object. With this configuration in place, for every single request, the widget made by the Qrvey System will have in the request’s header the security token. As the token is encrypted, malicious users could intercept the communication but won’t be able to extract the information that is sent.
 
 The following code snippet completes the process and automatically injects the token into the widget’s configuration object.

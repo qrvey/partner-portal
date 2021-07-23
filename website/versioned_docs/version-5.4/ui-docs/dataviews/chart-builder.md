@@ -210,7 +210,7 @@ Creators can use a shortcut for an even easier access to the data pages directly
 The expandable data tables are used to group data, without aggregating the values. They are especially useful when it comes to presenting large amounts of data in a compact space, as rows are collapsed and can be expanded to reveal the detail rows
 Start  by clicking on **Expandable Table** from the list of visualizations in the *Chart Builder*.
 
-![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand1.png#thumbnail-60) 
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand1.png#thumbnail-40) 
 
 Move the column to group by to the *Sections* shelf.
 
@@ -232,7 +232,7 @@ Here we find additional settings like:
 * **Max. Groups** - Limits the number of groups shown. This value is set to 10 by default and can not be lower than 10. If there are no columns in the Section shelf, the Max Groups option does not appear.
 * **Records per Group** - Limits the number of records shown for each expandable group. This value is 10 by default and can not be lower than 10.
 
-![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand5.png#thumbnail-60) 
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand5.png#thumbnail-40) 
 
 
 
@@ -398,7 +398,7 @@ When you use conditional formatting, you can set the following:
 7. **Value**: A number to define the columns with that same value that will (not) be shown based on the operator chosen.
 8. **Remove**: Deletes the condition. 
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond2.png#thumbnail-60)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond2.png#thumbnail-40)
 
 For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
 
@@ -420,7 +420,7 @@ To create calculations across columns on the aggregated values, you need to firs
 
 1. Go to the *General* action panel and expand the *Aggregated Formulas* action item. Click on the **+ Add Aggregated Formula** action item.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg1.png#thumbnail-60)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg1.png#thumbnail-40)
 
 2. In the *Create Table Formula* modal window, enter a formula name and the desired formula using the available options, Test the formula and click Save.You can use any columns of the current context for the construction of the formula.
 
@@ -428,7 +428,7 @@ To create calculations across columns on the aggregated values, you need to firs
 
 3. The new aggregated formula can be edited or removed through the *Aggregated formulas* action item.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg3.png#thumbnail-60)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg3.png#thumbnail-40)
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg4.gif#thumbnail) 
 
