@@ -177,6 +177,10 @@
             {
               "type": "doc",
               "id": "ui-docs/datasets/csv"
+            },
+            {
+              "type": "doc",
+              "id": "ui-docs/datasets/api-connections"
             }
           ]
         },
@@ -586,6 +590,10 @@
             {
               "type": "doc",
               "id": "data-router/Metadata/transformations/reusable-transforms"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/transformations-array"
             }
           ]
         },

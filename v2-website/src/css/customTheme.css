@@ -1175,3 +1175,7 @@ a.nav-item-dropdown.active{
   article a, article a:hover, .qrvey-link, .qrvey-link:hover {
     color: var(--primary-color);
 }
+
+h1 {
+  font-size: 2em !important;
+}

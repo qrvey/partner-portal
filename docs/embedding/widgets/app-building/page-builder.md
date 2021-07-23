@@ -32,11 +32,20 @@ The table below provides general information about each property of this widget�
 | **domain** | `String`, Qrvey Core URL. | Yes | 
 | **private_pages** | `Boolean`, predefine the state of new pages. If *True*, new pages will be private, if not new pages will be public. | No |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
-| **styles** | `Object`, an JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
+| **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
 | userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object. | No
+| **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. Please, see the section about <a href="#configuring-personalization">Configuring Personalization</a> for more details. | No
+
+>**Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+
+## Configuring Personalization
+The **personalization** object setting controls customization options for the Page Builder widget and supports the following properties at this time:
 
 
-<br />
+| **Property** | **Description** | **Type** | **Default** | **Required** |
+| --- | --- | --- | --- | --- |
+| fit_panel_button | Show the fit to panel button on the panels | boolean | true | No
+
 
 > **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
@@ -98,20 +107,9 @@ var config = {
 ## See It In Action
 See the widget in CodePen:
 
-<iframe
-  allowFullScreen
-  className="cp_embed_iframe "
-  frameBorder={0}
-  height={838}
-  width="100%"
-  name="cp_embed_1"
-  scrolling="no"
-  src="https://codepen.io/qrveysamples/embed/5bd38e7cb821debf789eea5fda042145?height=838&theme-id=34531&default-tab=result&user=qrveysamples&slug-hash=5bd38e7cb821debf789eea5fda042145&pen-title=Sample-%20Qrvey%20Page%20Builder&name=cp_embed_1"
-  style={{ width: "100%", overflow: "hidden", display: "block" }}
-  title="Sample- Qrvey Page Builder"
-  loading="lazy"
-  id="cp_embed_5bd38e7cb821debf789eea5fda042145"
-/>
+<iframe allowFullScreen="true" className="cp_embed_iframe " frameBorder={0} height={838} width="100%" name="cp_embed_1" scrolling="no" src="https://codepen.io/qrveysamples/embed/5bd38e7cb821debf789eea5fda042145?height=838&theme-id=34531&default-tab=result&user=qrveysamples&slug-hash=5bd38e7cb821debf789eea5fda042145&pen-title=Sample-%20Qrvey%20Page%20Builder&name=cp_embed_1" style={{width: '100%', overflow: 'hidden', display: 'block'}} title="Sample- Qrvey Page Builder" loading="lazy" id="cp_embed_5bd38e7cb821debf789eea5fda042145" />
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 
