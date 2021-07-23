@@ -7,7 +7,7 @@ sidebar_label: Embedding Widgets Using a Security Token
 
 When you are embedding Qrvey widgets in your applications, you need to keep in mind that you have to authenticate and authorize the use of the widget to the Qrvey system. Usually, this authentication process is done directly on the widget’s configuration object. However, as you send sensitive information (API-KEY, User Security Settings, etc.), using this method to pass these parameters is not recommended as it is not a secure way to do it.
 
-A more secure way to authenticate and authorize embedded widgets is through a <a href="https://tools.ietf.org/html/rfc6749#section-1.4">Security Token</a> requested as a backend to backend communication between your backend side of the host application and the Qrvey system. Doing this will make it harder for undesired or malicious users to intercept the communication and access the sensitive information transmitted between the two applications.
+A more secure way to authenticate and authorize embedded widgets is through a <a href="https://tools.ietf.org/html/rfc6749#section-1.4">Security Token</a> requested as a backend-to-backend communication between your backend side of the host application and the Qrvey system. Doing this will make it harder for undesired or malicious users to intercept the communication and access the sensitive information transmitted between the two applications.
 
 This document explains the process and provides a sample code to generate a security token, pass it to the widget’s configuration object and use the widget in your host application.
 
@@ -37,7 +37,10 @@ var DOMAIN = 'https://sandbox.qrveyapp.com',
     API_KEY = 'DOCUMENTATION_DEMO_API_KEY',
     USER_ID = 'izfZIkc';
     APP_ID = '59VShVtjM';
+    CLIENT_ID = 'sampleuser@sampledomain.com'; //this is for end user personalization 
 ```
+> **Note**: CLIENT_ID is optional, but for end user personalization to work, it has to be set to the logged-in user’s identifier. This can be their name, id, email address, or any other means by which the user can be uniquely identified. 
+
 ## Requesting The Security Token
 As part of your Qrvey instance, you have access to a set of APIs that allow you to interact with the system in a programmatic manner. The <a href="https://documenter.getpostman.com/view/1152381/TVCb4AGN#5e893ac8-fe62-42f9-a7b8-d46a34ea5c49">Generate Token</a> endpoint receives a list of parameters and generates a security token. The security token received as a response is an encrypted string with the required information to secure the widget you want to embed. From now on, every single request makes by the widget will use this token to authenticate itself in the Qrvey system and access the required resources to visualize the dashboards and data you want to expose to your users.
 
@@ -62,6 +65,7 @@ function auth() {
         const GENERATE_BODY = {
           "userid": USER_ID,
           "appid": APP_ID,
+          "clientid": CLIENT_ID //this is for end user personalization
         };
         const GENERATE_CONFIG = {
             headers: {
@@ -81,6 +85,7 @@ function auth() {
             });
     };
 };
+
 ```
 
 
