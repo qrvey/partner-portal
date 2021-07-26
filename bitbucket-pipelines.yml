@@ -147,7 +147,7 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
                 AWS_DEFAULT_REGION: "us-east-1"
                 DISTRIBUTION_ID: $DISTRIBUTION_ID_PROD
-  v2-website:
+    v2-website:
       - step:
          script:
           - npm install
@@ -161,7 +161,7 @@ pipelines:
           - cd ../..
           - npm run build
          artifacts:
-          - v2-website/build/**/*
+          - v2-website/
       - step:
          name: Deploy
          deployment: staging 
