@@ -19,7 +19,8 @@ The HTML tag for this widget is:
 `<qrvey-builders settings=...>`
 
 You can use the following script to launch this widget:
-`<widgets-launcher/app.js>`
+
+`<[your-widget-url]/widgets-launcher/app.js>`
 
 ## Configuration Object
 The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The Required column indicates whether the property is required for the configuration object to work properly.
@@ -63,15 +64,16 @@ You can copy and paste this code to your application after replacing the red val
 ```
 <qrvey-builders settings="config"></qrvey-builders>
 ```
-```
+
+```html
 <script>
 var config = {
-    "api_key": "<API_KEY>",
+    "api_key": "<API_KEY>", // your API key
     "app_id": "<APP_ID>",
-    "user_id": "<USER_ID>",
-    "domain": "https://your_qrvey_domain",
+    "user_id": "<USER_ID>", // your user_id
+    "domain": "https://your_qrvey_domain", // your domain
     "private_pages": true,
-    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'],
+    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'], // optional properties to customize the controls
     "styles": {
         "main_color": '#3E94FF',
         "main_text_color": '#000000',
@@ -93,25 +95,16 @@ var config = {
 ]
 }          
  	   	]
- 	}
+ 	}  // your filters, if any, can be added like this.
 
 }
 </script>
 ```
+
 ```
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
-
-## See It In Action
-See the widget in CodePen:
-
-<p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="5bd38e7cb821debf789eea5fda042145" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Page Builder">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/5bd38e7cb821debf789eea5fda042145">
-  Sample- Qrvey Page Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 
