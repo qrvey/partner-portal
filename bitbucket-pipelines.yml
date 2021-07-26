@@ -169,5 +169,5 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "website/build/docs-site"
+              LOCAL_PATH: "v2-website/build/**/*"
 
