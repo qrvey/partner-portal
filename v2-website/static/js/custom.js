@@ -11,6 +11,7 @@ let version = '';
 let IP_ADDRESS = '';
 let TITLE_DOCUMENT = '';
 let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.length) : CURRENT_PAGE;
+let initializedIt = false;
 
 const PAGE = 'page_docs_';
 
@@ -50,6 +51,10 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userAgent = USER_AGENT;
 }
 
+window.onload =  () => {
+   setCurrentPageInfo();
+}
+
 currentPageInfoBool = "false";
 
 let stateCheck = setInterval(() => {
@@ -75,24 +80,27 @@ let stateCheck = setInterval(() => {
 }, 100);
 
 function setCurrentPageInfo() {
-       //////////
-        /// INIT APP
-        // Add partner name to logo and log button
-        insertParternsLogo();
-        insertLogButtonToNav();
-        // ADD DROPDOWN ITEM
-        addDropdownItem();
-        //Dropdown To Change Doc Version
-        changeVersion();
-        // Check title document to save it 
-        TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-        // Check if this page contains a video
-        const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-        if (videoContanier) {
-            checkVideoIsPlayed(videoContanier);
+        if(!initializedIt){
+            initializedIt = true;
+            //////////
+            /// INIT APP
+            // Add partner name to logo and log button
+            insertParternsLogo();
+            insertLogButtonToNav();
+            // ADD DROPDOWN ITEM
+            addDropdownItem();
+            //Dropdown To Change Doc Version
+            changeVersion();
+            // Check title document to save it 
+            TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+            // Check if this page contains a video
+            const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+            if (videoContanier) {
+                checkVideoIsPlayed(videoContanier);
+            }
+            // CHECK IS THE USER IS LOGGED IN
+            console.log('user', currentUser);
         }
-        // CHECK IS THE USER IS LOGGED IN
-        console.log('user', currentUser);
 }
 
 function checkVideoIsPlayed(videoContanier) {
