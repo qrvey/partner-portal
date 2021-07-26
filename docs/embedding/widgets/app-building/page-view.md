@@ -56,7 +56,7 @@ The table below provides general information about each property of this widgetâ
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
->**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. Please see the Embedding Widgets Using a Security Token article to learn about obtaining JWT. 
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> article to learn about obtaining JWT. 
 
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -94,9 +94,7 @@ All values are of string type and none are required.
 | --- | --- | --- | 
 | canvasButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
 canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
-| canvasDatepickerFontFamily | Groups of values: <br>'Roboto, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>
-'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>
-'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace' | datepicker
+| canvasDatepickerFontFamily | Groups of values: <br>'Roboto, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace'<br> | datepicker
 | canvasDatepickerFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
 | canvasDatepickerIconSelectorsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
 | canvasValuelistFontFamily | Groups of values:<br>'Roboto, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace' | valuelist
