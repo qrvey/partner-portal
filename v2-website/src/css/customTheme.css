@@ -1180,3 +1180,8 @@ a.nav-item-dropdown.active{
 h1 {
   font-size: 2em !important;
 }
+
+blockquote {
+  background-color: rgba(255,229,100,.3) !important;
+  border-left: 8px solid #ffe564 !important;
+}
