@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:10.15.3
+image: node:12.13.0
 
 pipelines:
   pull-requests:
@@ -147,3 +147,29 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
                 AWS_DEFAULT_REGION: "us-east-1"
                 DISTRIBUTION_ID: $DISTRIBUTION_ID_PROD
+    v2-website:
+      - step:
+         script:
+          - npm install
+          - npm run staging
+          - cd v2-website
+          - npm install
+          - npm install replace@1.0.0 -g --force
+          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
+          - cd static/js
+          - replace "MKT_METADATAID" "marketing_test" custom.js
+          - cd ../..
+          - npm run build
+         artifacts:
+          - v2-website/build/**/*
+      - step:
+         name: Deploy
+         deployment: staging 
+         script:
+          - pipe: atlassian/aws-s3-deploy:0.3.7
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "us-east-1"
+              S3_BUCKET: "partners-staging.qrvey.com"
+              LOCAL_PATH: "website/build/docs-site"
