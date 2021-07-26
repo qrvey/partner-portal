@@ -142,7 +142,7 @@ The following sample shows the way this widget is used in an HTML page. Please n
 
 You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
-```
+```html
 <qrvey-end-user settings="config"></qrvey-end-user>
 
 <script>
