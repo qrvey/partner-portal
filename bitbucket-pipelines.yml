@@ -158,7 +158,7 @@ pipelines:
           - cd ../..
           - npm run build
          artifacts:
-          - v2-website/
+          - website/
       - step:
          name: Deploy
          deployment: staging 
