@@ -56,7 +56,7 @@ The table below provides general information about each property of this widget�
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
->**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for your end-users as Qrvey will use it as the key to store any personalization made. When an end-user logged-in back, the value will be used to restore the personalized version. Using the same **clientid** value for multiple end-users will end up overriding personalized versions of each other.
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by  each other.
 Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
 
 
