@@ -3,7 +3,7 @@ id: single-panel
 title: Single Panel Widget
 sidebar_label: Single Panel Widget
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 This widget allows the user to display a chart, metric or summary panel that has been created previously, through a configuration object where properties are set to define some options and behaviors for the panel.
 
@@ -35,7 +35,7 @@ The table below provides general information about each property of this widgetâ
 | **user_id** | `String`, ID of the user that is accessing chart builder| Yes  |
 | **domain** | `String`,  domain URL in which the application is in. | Yes | 
 | **qrveyid** | `String`, ID of the dataset being used. | Yes |
-| **type** | `String`, type of the panel.<br>Accepted values: <br>* CHART <br>* METRIC <br>* SUMMARY | Yes |
+| **type** | `String`, type of the panel.<br />Accepted values: <br />* CHART <br />* METRIC <br />* SUMMARY | Yes |
 | **chart_id** | `String`, ID of the chart to display. **Required if type is CHART.**| Yes |
 | **metric_id** | `String`, ID of the metric to display. **Required if type is METRIC.** | Yes |
 | **summary_id** | `String`, ID of the summary panel to display. **Required if type is SUMMARY**.| No |
@@ -45,13 +45,13 @@ The table below provides general information about each property of this widgetâ
 | **panel.header.visible** | `Boolean`,determines if the panel header is visible. The default setting is *true*.| No |
 | **panel.header.draggable** | `Boolean`, determines if the panel header has an icon to drag and drop the panel. Used by Custom View and Metric View.| No |
 | **panel.header.filter** | `Boolean`, determines if the panel header has a filter button to open the Filter Modal widget.| No |
-| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br>Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br>(Note: SIZE is used only by the Custom View)| No |
+| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br />Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br />(Note: SIZE is used only by the Custom View)| No |
 |**panel.header.fit_panel**| `Boolean`, set if fit to panel button is enabled. False by default. | No
 | **panel.header.title_prefix** | `String`, prefix for the title of the panel.| No |
-| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br>Accepted values: CSV| No |
+| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br />Accepted values: CSV| No |
 | **panel.body** | `Object`, panel body options object.| No | 
 | **panel.body.popup** | `Object`, panel body popup options object. Used to show Filter By, See Data and Drill-Down options.|No | 
-| **panel.body.popup.items** | `Array`, set of options to show on the popup. Description of properties are below. <br> Accepted array items format: {<br>label: '<popup_item>', // Required <br>action: <customCallbackFunction()> // Optional<br>customdrills: <<br>}<br>Usage example: [<br>{ label: 'SEEDATA' },<br>{ label: 'FILTERBY' }, <br>{ label: 'DRILLDOWN' }, <br>{ label: 'CUSTOMDRILL' }<br>]|No | 
+| **panel.body.popup.items** | `Array`, set of options to show on the popup. Description of properties are below. <br /> Accepted array items format: {<br />label: '<popup_item>', // Required <br />action: <customCallbackFunction()> // Optional<br />customdrills: <<br />}<br />Usage example: [<br />{ label: 'SEEDATA' },<br />{ label: 'FILTERBY' }, <br />{ label: 'DRILLDOWN' }, <br />{ label: 'CUSTOMDRILL' }<br />]|No | 
 | **panel.body.popup.items[itemIndex]**| `Object`, popup item options object to use in panel.body.popup.items array.|No | 
 | **panel.body.popup.items[itemIndex].label**| `String`, option name. Required for this array.|No | 
 | **panel.body.popup.items[itemIndex].action**| `Function`, custom callback function.| No | 
@@ -62,9 +62,9 @@ The table below provides general information about each property of this widgetâ
 | **page_id**| `String`, ID of the page that contains the panel. Required only on Page Builder and End-User.| No |
 | **tab_id**| `String`, ID of the tab that contains the panel. Required only on Page Builder, Report Builder and End User.| No |
 | **model**| `Object`, dataset model previously defined.| No |
-| **panel_view**| `String`, name of the view that contains the panel. Required only on Analyze section. <br>Accepted values: `ANALYZE | ANYWHERE`| No |
-| **filterData**|`Object`, set of previously defined filters to be applied in the panel. <br> `{logic: <Logic Key Structure>}`| No |
-| **userFilters**| `Object`, the filters object generated by the user. These filters and filterData filters are applied together. <br>`{filters: <Filters Key Structure>}`| No |
+| **panel_view**| `String`, name of the view that contains the panel. Required only on Analyze section. <br />Accepted values: `ANALYZE | ANYWHERE`| No |
+| **filterData**|`Object`, set of previously defined filters to be applied in the panel. <br /> `{logic: <Logic Key Structure>}`| No |
+| **userFilters**| `Object`, the filters object generated by the user. These filters and filterData filters are applied together. <br />`{filters: <Filters Key Structure>}`| No |
 | **id**| `String`, custom ID for the panel element.| No |
 | **data**| `Object`, internal chart or metric data configuration previously defined. Used by Chart Builder widget to show the preview panel.| No |
 | **inBuilder**| `Boolean`, determines if the panel is the preview on Chart Builder.| No |
@@ -134,12 +134,21 @@ var anpanelConfig = {
 
 ### See the widget in CodePen:
 
-<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="c395bd9162f9d675bb8d02317cc5a1e2" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Single Panel">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/c395bd9162f9d675bb8d02317cc5a1e2">
-  Sample- Qrvey Single Panel</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/c395bd9162f9d675bb8d02317cc5a1e2?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=c395bd9162f9d675bb8d02317cc5a1e2&pen-title=Sample-%20Qrvey%20Single%20Panel&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Single Panel"
+  loading="lazy"
+  id="cp_embed_c395bd9162f9d675bb8d02317cc5a1e2"
+/>
+
 
 
 ### Sample with the filters object generated by a user:
@@ -223,15 +232,24 @@ function applyNewFilter() {
 ]
 
 #### See the widget in CodePen:
-<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="e3f93036442bf01d677a53431438b6a5" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Single Panel (AN Panel) Sample - Filters generated by user">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/e3f93036442bf01d677a53431438b6a5">
-  Single Panel (AN Panel) Sample - Filters generated by user</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_2"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/e3f93036442bf01d677a53431438b6a5?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=e3f93036442bf01d677a53431438b6a5&pen-title=Single%20Panel%20(AN%20Panel)%20Sample%20-%20Filters%20generated%20by%20user&name=cp_embed_2"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Single Panel (AN Panel) Sample - Filters generated by user"
+  loading="lazy"
+  id="cp_embed_e3f93036442bf01d677a53431438b6a5"
+/>
 
 
-
+</div>
 
 
 

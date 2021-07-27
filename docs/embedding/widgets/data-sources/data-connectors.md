@@ -3,7 +3,7 @@ id: widget-dataconnectors
 title: Data Connections
 sidebar_label: Data Connections
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 The data connections widget is a powerful and effective tool that allows you to embed the connections dashboard and functionality in your own web application. This widget allows your users to create and edit MySQL, SQL Server, Oracle, or Postgres connections.
 
@@ -52,13 +52,24 @@ var connectorConfig = {
 
 ## See It In Action
 See the widget in CodePen:
-      <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="9b847a00506803f5a6074363456adae6" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Connections">
-        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/9b847a00506803f5a6074363456adae6">
-        Sample- Qrvey Data Connections</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/9b847a00506803f5a6074363456adae6?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=9b847a00506803f5a6074363456adae6&pen-title=Sample-%20Qrvey%20Data%20Connections&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Data Connections"
+  loading="lazy"
+  id="cp_embed_9b847a00506803f5a6074363456adae6"
+/>
 
 
 
 
+
+</div>

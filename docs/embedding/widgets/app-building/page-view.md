@@ -4,7 +4,7 @@ title: Page View Widget
 sidebar_label: Page View Widget
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 
 The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and webforms, as well as other static content.
@@ -27,12 +27,12 @@ The building blocks of the code are explained below.
 ## HTML Tag And Launcher
 
 The HTML tag for this widget is: 
-<br>
+
 ```<qrvey-end-user settings=...>```
 
 You can use the following script to launch this widget: 
-<br>
-```<widgets-launcher/app.js>```
+
+```<[your-widget-url]/widgets-launcher/app.js>```
 
 ## Configuration Object
 
@@ -45,12 +45,85 @@ The table below provides general information about each property of this widget�
 | app_id | `String`, ID of the Qrvey application containing the webform.| Yes
 | domain | `String`, Qrvey Core URL.| Yes
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
-| page_id | `String`, ID of one page to visualize it: all auth process is still required if the config. exists.|No
-| userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
-
+| page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
+| userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
+| styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 
 
 > **Note**: Refer to the <a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+
+### Configuring End User Personalization
+By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
+
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by  each other.
+Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
+
+
+
+| **Property** | **Description** |  **Type** |  **Default** |  **Required** |
+| --- | --- | --- | --- | --- |
+| enabled | Turn personalization on/off for end users. When disabled, all of the properties in the personalization object, other than the **fit_panel_button** property will be omitted. | boolean | true | No
+| add_filter | When set to true, all “add filter” buttons will be visible to allow users to create new filters from the filter modal, the filter panel, and filter interactivity page components. | boolean | true | No
+| filter_panel_default_view | Decides the default state of the side filter panel, if it’s been added to the view. It can be set to ‘open’ or ‘closed’ | string | closed | No
+| edit_chart | Allow authenticated users to edit charts by clicking the “Edit” button in the panels' three-dot menu. | boolean | true | No
+| download_data | Allow users to download the page and panel data in CSV and PDF formats | boolean | true | No
+| edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu.  | boolean | true | No
+| remove_chart | Allow users to remove charts from the page, when in edit mode | boolean | true | No
+| rearrange_chart | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
+| fit_panel_button | Show the fit to panel button on the panels | boolean | true | No
+
+### Overriding the Default Styles 
+The **styles** object can be used to configure css settings of the Page View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
+All of the style properties listed in the following table have to be housed inside the **pageView** object, under **styles** like the following example:
+
+```
+        styles: {
+          pageView: {
+            canvasTextFontFamily: 'Roboto, sans-serif',
+            canvasTextFontWeight: 'normal',
+            canvasTextFontSize: '12px',
+            canvasTextFontColor: 'blue',
+            canvasTextBackgroundColor: 'white',
+            canvasTextAlign: 'left'
+          }
+        }
+```
+
+All values are of string type and none are required.
+
+| **Property** | **Values** |  **Target** |
+| --- | --- | --- | 
+| canvasButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
+canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
+| canvasDatepickerFontFamily | Groups of values: <br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace'<br /> | datepicker
+| canvasDatepickerFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
+| canvasDatepickerIconSelectorsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
+| canvasValuelistFontFamily | Groups of values:<br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | valuelist
+| canvasValuelistFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist
+| canvasValuelistIconSelectorsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist
+| canvasTextFontFamily | Groups of values:<br />, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | textbox
+| canvasTextFontWeight | All CSS supported values (names of numbers)
+'bold', 'bolder', 200, 400 | textbox
+| canvasTextFontSize | All CSS supported values <br />'10px', '10em', '10rem', '10%', 'large', 'small' | textbox
+| canvasTextFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox
+| canvasTextBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox
+| canvasTextAlign | right, 'center', 'left' | textbox
+| canvasImageAspect | ‘cover’, ‘contain’, ‘fill’ | image
+| navigationBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | navigation bar
+| navigationElementsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | navigation bar
+| tabsBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar
+| tabsFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar
+| tabsBorderColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar
+| tabSize | All CSS supported values'10px', '10em', '10rem', '10%' | tabs bar
+| selectedTabBarColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar
+| canvasBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page
+| pageViewButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
+| pageViewButtonIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
+| filterIconBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | filter icon
+| filterIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN'| filter icon
+
+
 
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
@@ -65,16 +138,16 @@ The following sample shows the way this widget is used in an HTML page. Please n
 
 You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
-```
+```html
 <qrvey-end-user settings="config"></qrvey-end-user>
 
 <script>
 var config = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://your_qrvey_domain",
-    "group_list": ["Admin", "oJn4Cr_yV", ...],
-    "page_id": "<PAGE_ID>",
+    "api_key": "<API_KEY>", // your API key
+    "app_id": "<APP_ID>", // your app_id
+    "domain": "https://your_qrvey_domain", // your domain
+    "group_list": ["Admin", "oJn4Cr_yV", ...], //your group list, if any (this is optional)
+    "page_id": "<PAGE_ID>", // the id of the page that you want in the view. All pages in navigation will be included, if this is omitted.
     "userFilters": { "filters": [
     				{
 		"operator": "AND",
@@ -86,8 +159,8 @@ var config = {
 }
 ]
 }          
- 	   	],
- 	}
+ 	   	]
+ 	} // your filters, if any, can be added like this.
 }
 </script>
 
@@ -96,14 +169,5 @@ var config = {
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
 
-## See It In Action
-See the widget in CodePen:
 
-<p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWbNapv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWbNapv">
-  Sample- Qrvey End-user</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-
+</div>

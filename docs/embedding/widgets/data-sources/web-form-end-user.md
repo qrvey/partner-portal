@@ -8,7 +8,7 @@ The Web Form End User widget is a powerful and effective tool that allows you to
 
 
 ## HTML Tag And Launcher
-The HTML tag for this widget is: <br>
+The HTML tag for this widget is: <br />
 `<qrvey-webform-enduser config=...>`
 
 This widget needs an extra script for proper support in all browsers:
@@ -56,9 +56,20 @@ See the widget in CodePen:
 
 ## See It In Action
 See the widget in CodePen:
-      <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="dd309a42f2c856e6eb73c8f047153ca3" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Connections">
-        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/dd309a42f2c856e6eb73c8f047153ca3">
-        Sample- Qrvey Data Connections</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/dd309a42f2c856e6eb73c8f047153ca3?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=dd309a42f2c856e6eb73c8f047153ca3&pen-title=Sample-%20Qrvey%20Data%20Connections&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Data Connections"
+  loading="lazy"
+  id="cp_embed_dd309a42f2c856e6eb73c8f047153ca3"
+/>
+
+     

@@ -4,7 +4,7 @@ title: Flow Overview
 sidebar_label: Flow Overview
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 A Flow is a series of components that work together to perform a task. They can be used to automate just about anything in Qrvey Composer, adding power and flexibility to your applications. In this article, we’ll discuss the main components of a workflow and explain how to create one.
 
@@ -55,3 +55,4 @@ To access the activity log, click the **Activity** link in the top blue toolbar.
 
 Use the **Refresh** button to fetch new activity log events.
 
+</div>

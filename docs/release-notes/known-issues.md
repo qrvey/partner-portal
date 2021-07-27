@@ -3,7 +3,7 @@ id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 
 * **EX-140 - Wrong Sort Order for CSV Summary**: CSV summary export does not follow the sort order for data.
@@ -28,3 +28,4 @@ sidebar_label: Known Issues
 
 * **ADMIN-2841 - Received Apps Counter Badge Does Not Appear**: The counter badge in the 'Received Apps' tab is hidden before the user clicks on the tab.
  
+</div>

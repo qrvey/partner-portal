@@ -3,7 +3,7 @@ id: transformations
 title: Transformations
 sidebar_label: Transformations
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Transformations manipulate existing columns and create new ones so that the data is analysis-ready. For example, you can standardize values by setting all values to upper or lower case, combine values together, or flatten arrays of layered data. Transformations are run during the loading process.
 
@@ -78,6 +78,7 @@ Once a transformation has been selected, the system suggests some test data as t
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation9.png#thumbnail)
 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation9.png#thumbnail)
 
 ## Applying Transformations to the Data
 If transformations are added before the data is loaded, they will take effect at the time that you load your data. However, if transformations are added or updated for an existing dataset, **a data reload is required.**
@@ -103,7 +104,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
 | <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
 | <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
-| <a href="#">Round | Numeric | Rounds the value of one or more numeric columns |
+| <a href="#">Round </a>| Numeric | Rounds the value of one or more numeric columns |
 | <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
 | <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |
 | <a href="#trim">Trim</a> | Text | Removes selected characters from around textual column values |
@@ -304,7 +305,7 @@ Because of its unique characteristics, Dataset Write cannot be tested and it doe
 
 
 
-
+</div>
 
 
 

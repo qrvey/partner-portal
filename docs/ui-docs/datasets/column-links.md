@@ -4,7 +4,7 @@ title: Automatic Column Links
 sidebar_label: Automatic Column Links
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Automatic Column Links allow you to relate a URL to a column so that when the column is used in a page visualization, a “Go to URL” Page Action is automatically created with that column containing this URL. 
 URLs can also be set with tokens for more dynamic use cases.  When in Pages, if interacting with Page Actions, you will see this URL predefined for Page Actions in all charts created after a column link was established. From Datasets or Page Builder, the URL can be edited or removed at any point to update all chart Page Actions constructed with linked columns. 
@@ -77,3 +77,5 @@ If you want to use the predefined URL, you just need to click on the “Restore 
 
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_8.gif#thumbnail)
+
+</div>

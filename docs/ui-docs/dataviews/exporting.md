@@ -4,7 +4,7 @@ title: Exporting Data
 sidebar_label: Exporting Data
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 You can export data and visualizations from the analyze tab of your dataset. 
 
@@ -65,3 +65,5 @@ Note: Crosstab CSV Summary downloads are currently supported with the following 
 * 1+ Values (with up to 1000 groups)
 * Without subtotals
 * Without  totals
+
+</div>

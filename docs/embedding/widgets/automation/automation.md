@@ -4,7 +4,7 @@ title: Automation Design
 sidebar_label: Automation Design
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 The Automation widget allows users to create, edit and delete workflow definitions.
 
@@ -34,8 +34,8 @@ The table below provides general information about each property of this widgetâ
 The following sample shows the way this widget is used in an HTML page. Please note, that the example may not include the non-required properties of the configuration object. 
 
 You can copy and paste this code to your application after replacing the red values with your own valid values in order to see the embedded widget in action.
-```
-<qrvey-workflow-design settings="config"></qrvey-workflow-design>
+``` 
+<qrvey-workflow-design settings="config" />
 ```
 
 ```
@@ -56,9 +56,20 @@ var config = {
 ## See It In Action
 See the widget in CodePen:
 
-<p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="4f4030cdea91163a3b9583234335e360" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Automation Design">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/4f4030cdea91163a3b9583234335e360">
-  Sample- Qrvey Automation Design</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/4f4030cdea91163a3b9583234335e360?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=4f4030cdea91163a3b9583234335e360&pen-title=Sample-%20Qrvey%20Automation%20Design&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Automation Design"
+  loading="lazy"
+  id="cp_embed_4f4030cdea91163a3b9583234335e360"
+/>
+
+
+</div>

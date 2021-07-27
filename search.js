@@ -42,7 +42,7 @@ async function readFile(dir, file){
             if(title.length > 0){
                 title = title.substring(1, title.length);
             }
-            let content = data.split('---')[2].replace(`<div style="text-align: justify">`, '').replace('###', '').replace('##', '');
+            let content = data.split('---')[2].replace(`<div style={{textAlign: "justify"}}>`, '').replace('###', '').replace('##', '');
             let body = content.substring(1, 8000).replace('/', '');
             if(content.length > 100) {
                 content = content.substring(1, 100).replace('/', '') + '...';

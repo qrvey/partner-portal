@@ -51,7 +51,8 @@
         "ids": [
           "ui-docs/datasets/connectors",
           "ui-docs/datasets/databases",
-          "ui-docs/datasets/csv"
+          "ui-docs/datasets/csv",
+          "ui-docs/datasets/api-connections"
         ]
       },
       "ui-docs/datasets/datasets",
@@ -71,7 +72,8 @@
       "ui-docs/dataviews/custom-view",
       "ui-docs/dataviews/chart-types",
       "ui-docs/dataviews/chart-builder",
-      "ui-docs/dataviews/metric-view"
+      "ui-docs/dataviews/metric-view",
+      "ui-docs/dataviews/table-calculations"
     ],
     "Builders": [
       "ui-docs/builders/reports",
@@ -199,7 +201,8 @@
         "label": "Transformations",
         "ids": [
           "data-router/Metadata/transformations/transformations-intro",
-          "data-router/Metadata/transformations/reusable-transforms"
+          "data-router/Metadata/transformations/reusable-transforms",
+          "data-router/Metadata/transformations/transformations-array"
         ]
       },
       {
