@@ -4,7 +4,7 @@ title: Working With Hierarchical Data
 sidebar_label: Working With Hierarchical Data
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Qrvey has the ability to work with, and analyze hierarchical data, most of the time uploaded from JSON files. This article describes the process of loading such data in datasets and the fundamentals of hierarchical analysis.
 
@@ -41,3 +41,6 @@ This transformation flattens the array and the effect can be seen in the form of
 >**Note**: To learn more about Transformations, see the <a href="/docs/ui-docs/datasets/transformations/"> dedicated article </a> on the subject.
 
 You can design your dataset as usual before loading it. (See <a href="/docs/ui-docs/datasets/datasets/">Datasets</a> for more information)
+
+
+</div>

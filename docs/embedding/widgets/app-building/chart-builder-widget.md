@@ -3,7 +3,7 @@ id: chart-builder
 title: Chart Builder Widget
 sidebar_label: Chart Builder Widget
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 This widget allows the user to display the tool for building charts, through a configuration object where properties are set to define some options and behaviors for the panel.
 
@@ -96,6 +96,7 @@ function openChart() {
 
 ## See It In Action
 See the widget in CodePen:
+<<<<<<< HEAD
 <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="ce2037232ed6b7924920fd0e19ec5bb9" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Chart Builder">
   <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/ce2037232ed6b7924920fd0e19ec5bb9">
   Sample- Qrvey Chart Builder</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
@@ -103,3 +104,22 @@ See the widget in CodePen:
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
  
+=======
+
+<iframe
+  allowFullScreen
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/ce2037232ed6b7924920fd0e19ec5bb9?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=ce2037232ed6b7924920fd0e19ec5bb9&pen-title=Sample-%20Qrvey%20Chart%20Builder&name=cp_embed_1"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+  title="Sample- Qrvey Chart Builder"
+  loading="lazy"
+  id="cp_embed_ce2037232ed6b7924920fd0e19ec5bb9"
+/>
+
+</div>
+>>>>>>> v2-docusaurus

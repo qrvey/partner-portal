@@ -4,7 +4,7 @@ title: File Upload Connection
 sidebar_label: File Upload Connection
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 In this article, we will walk you through the steps to create connections to supported file types: comma-delimited CSV, JSON, and ndJSON, or an Amazon S3 bucket where you may have multiple files with these formats.
 
@@ -65,7 +65,7 @@ For more information on creating datasets and working with your file upload data
 
 
 
-
+</div>
 
 
 

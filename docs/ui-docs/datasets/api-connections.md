@@ -4,7 +4,7 @@ title: API Connections
 sidebar_label: API Connections
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Qrvey Composer supports the configuration of Push API connections from the Connections page within the Dataset UI.  This feature provides “creator” users a low-code way to create datasets that are populated from a specified API connection.  Configuring a dataset to use a Push API connection is a two-step process.  First, a Push API connection type with a sample JSON object structure must be supplied.  Second, the dataset must be configured to refer to the Push API connection for the expected metadata schema, and then the API connection details must be configured to perform the data push.
 
@@ -37,6 +37,7 @@ If you do not see a sample cURL command for “Post Data” after clicking the P
 
 > **Note**:  Joins are not supported for datasets that use Push API source connections.
 
+</div>
 
 
 

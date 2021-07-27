@@ -4,7 +4,7 @@ title: Chart Builder
 sidebar_label: Chart Builder
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Chart Builder is used to build custom visualizations on top of your data – you can quickly see what matters most to you and spot trends you might have missed otherwise. In this article, we will walk you through the process of creating a custom chart.
 
@@ -239,7 +239,7 @@ Here we find additional settings like:
 
 When using xy charts to plot data, the expectations for how categories have to be plotted may differ when the category has a continuous nature. This happens because continuous categories, such as dates and numbers, have the potential of being treated in a discrete manner.
 
-For example, if our chart is depicting the number of sales per month in one year, we want to see it plot every single month of the year, even if there were no sales in some months. In fact, the lack of sales in those months is an important piece of information that should not be ignored. <br>
+For example, if our chart is depicting the number of sales per month in one year, we want to see it plot every single month of the year, even if there were no sales in some months. In fact, the lack of sales in those months is an important piece of information that should not be ignored. <br />
 However, if the visualization is about the number of casualties in each major flu outbreak in recent history, we are only interested in the years 1918, 1957, 1968, 1997, and 2009. In this case, the years between those don’t matter and while we are still working with “dates”, the nature of our analysis requires us to treat those dates in a discrete manner.
 
 With the Chart Builder, you get to choose between these two methods depending on your use case.
@@ -462,3 +462,4 @@ Each theme has a unique ID that can be used for accessing the theme programmatic
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme3.png#thumbnail-60) 
 
+</div>

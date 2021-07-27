@@ -4,7 +4,7 @@ title: Report Builder
 sidebar_label: Report Builder
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Report Builder is a quick and easy way to build and publish reports. To begin, enter an application and click the Report Builder icon in the left toolbar.
 
@@ -127,3 +127,4 @@ Once you’ve completed building your reports, you can return to the report dash
 
 
 
+</div>

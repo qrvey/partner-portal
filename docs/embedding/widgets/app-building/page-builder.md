@@ -3,7 +3,7 @@ id: widget-page-builder
 title: Page Builder Widget
 sidebar_label: Page Builder Widget
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 The Page Builder widget is used to add the ability to create new pages or modify existing ones in a product that embeds this widget.  Pages may contain embedded reports and webforms, as well as other static content.
 
@@ -32,9 +32,9 @@ The table below provides general information about each property of this widgetâ
 | **user_id** | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
 | **domain** | `String`, Qrvey Core URL. | Yes | 
 | **private_pages** | `Boolean`, predefine the state of new pages. If *True*, new pages will be private, if not new pages will be public. | No |
-| **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br><br>**CREATE_CHART**: Hide Create Chart button.<br>**USERS_AUTHENTICATION**: Hide Authentication tab.<br>**USERS_LIST**: Hide Users tab.<br>**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br>**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
-| **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br><br>* **main_color**: `String`<br>* **main_text_color**: `String`<br>* **secondary_color**: `String`<br>* **icon_color**: `String`<br>* **tab_bar_color**: `String`<br>* **tab_font_color**: `String`<br>* **error_color**: `String` | No |
-| userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object. | No
+| **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
+| **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
+| userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios</a> for more details on how to create a filter object. | No
 | **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. Please, see the section about <a href="#configuring-personalization">Configuring Personalization</a> for more details. | No
 
 >**Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you donâ€™t know where to find any of the required configuration properties. 
@@ -109,3 +109,4 @@ var config = {
 
 
 
+</div>

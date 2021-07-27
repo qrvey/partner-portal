@@ -1,0 +1,951 @@
+{
+  "get-started": [
+    {
+      "type": "category",
+      "label": "Introduction to Qrvey System",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/get-started-intro"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Deploying to AWS",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/prerequisites-for-installation"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/preparing-AWS-account"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/deploying-aws/initial-installation"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/upgrading-new-version"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/deleting-installation"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/troubleshooting"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Managing Qrvey In AWS",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/aws-services"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/customizing-qrvey-deployment"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/managing-aws-cluster"
+        },
+        {
+          "type": "doc",
+          "id": "aws/connect-to-instance"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Qrvey Platform Overview",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/system-components"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/security"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/user-roles"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/glossary"
+        }
+      ]
+    }
+  ],
+  "ui-docs": [
+    {
+      "type": "category",
+      "label": "Basics",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/basics/logging-in"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/basics/managing-profile"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/basics/introduction"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/basics/applications"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Web Forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/type-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/create-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/field-guide"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/complex-data"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/branching"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/lookup"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/customize-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/publishing"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/web-forms/embedding"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Data",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/data_overview"
+        },
+        {
+          "type": "category",
+          "label": "Connections",
+          "items": [
+            {
+              "type": "doc",
+              "id": "ui-docs/datasets/connectors"
+            },
+            {
+              "type": "doc",
+              "id": "ui-docs/datasets/databases"
+            },
+            {
+              "type": "doc",
+              "id": "ui-docs/datasets/csv"
+            },
+            {
+              "type": "doc",
+              "id": "ui-docs/datasets/api-connections"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/datasets"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/column-links"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/data-sync"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/joins"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/datalinks"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/hierarchical-data"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/transformations"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Analysis Views",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/formulas"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/buckets"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/exporting"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/summary-view"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/tabular-view"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/custom-view"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/chart-types"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/chart-builder"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/metric-view"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/table-calculations"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Builders",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/builders/reports"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/builders/pages"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/builders/pages_actions"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/builders/navigation"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/builders/user-management"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Filtering Data",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/filtering-data/introduction-to-filters"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/filtering-data/working-with-filters"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "End User Personalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/end-user-personalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/eup-dashboards"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Automation",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/flows"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/triggers"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/conditions"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/send-actions"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/data-actions"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/automation/tokens"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Other",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/others/settings"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/others/sending"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/others/sharing-editing"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/others/activity-log"
+        }
+      ]
+    }
+  ],
+  "business-analytics": [
+    {
+      "type": "category",
+      "label": "Business Analytics",
+      "items": []
+    }
+  ],
+  "admin": [
+    {
+      "type": "category",
+      "label": "Admin",
+      "items": [
+        {
+          "type": "doc",
+          "id": "admin/admin-intro"
+        },
+        {
+          "type": "doc",
+          "id": "admin/elasticsearch-management"
+        },
+        {
+          "type": "doc",
+          "id": "admin/admin-managing-users"
+        },
+        {
+          "type": "doc",
+          "id": "admin/admin-sections-platform"
+        },
+        {
+          "type": "doc",
+          "id": "admin/roles-and-permissions"
+        },
+        {
+          "type": "doc",
+          "id": "admin/admin-sections-deployments"
+        },
+        {
+          "type": "doc",
+          "id": "admin/metadata-builder"
+        }
+      ]
+    }
+  ],
+  "embedding": [
+    {
+      "type": "category",
+      "label": "Architecture",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/get-started-architecture"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Security",
+      "items": [
+        {
+          "type": "doc",
+          "id": "admin/column-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "admin/record-level-security"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Embedding",
+      "items": [
+        {
+          "type": "doc",
+          "id": "embedding/embedding-intro"
+        },
+        {
+          "type": "category",
+          "label": "Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/widgets/widget-intro"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/embedding-widgets-security-token"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/widget-embedding-using-cookies"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/filters-embedded-scenarios"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "App Building Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/widgets/app-building/widget-page-view"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/app-building/widget-page-builder"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/app-building/widget-report-builder"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Analytics Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/widgets/analytics/analytic-suite"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/analytics/single-panel"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/app-building/chart-builder"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Data Collection and Forms",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/widgets/data-sources/widget-webforms"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/data-sources/web-form-end-user"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/data-sources/widget-dataconnectors"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/data-sources/datasets-widget"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/data-sources/widget-datalinks"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Automation Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/widgets/automation/widget-automation"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "API References",
+          "items": [
+            {
+              "type": "doc",
+              "id": "embedding/api/api-intro"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/api/api-tutorial"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Data Router",
+      "items": [
+        {
+          "type": "doc",
+          "id": "data-router/introduction/data-router-intro"
+        },
+        {
+          "type": "doc",
+          "id": "data-router/introduction/data-router-loading-data"
+        },
+        {
+          "type": "category",
+          "label": "Metadata",
+          "items": [
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/metadata-intro"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/metadata-API"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Transformations",
+          "items": [
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/transformations-intro"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/reusable-transforms"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/transformations-array"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Data Rules",
+          "items": [
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/data-rules-intro"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/data-router-array-lookup"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/data-router-es-lookup"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/data-router-flatArray"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/data-router-switch"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/conditionals-intro"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/destinations-intro"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/Metadata/transformations/DataRules/java-custom-functions"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Data Loading",
+          "items": [
+            {
+              "type": "doc",
+              "id": "data-router/DataLoading/postdata-content"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/DataLoading/loading-status"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/DataLoading/loading-status-databases"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/dataload-S3"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/batch-manager"
+            },
+            {
+              "type": "doc",
+              "id": "data-router/DataLoading/notifications"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "release-notes": [
+    {
+      "type": "category",
+      "label": "Release Notes 2021",
+      "items": [
+        {
+          "type": "doc",
+          "id": "release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jun-2021"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-may-2021"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-apr-2021"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-feb-2021"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Release Notes 2020",
+      "items": [
+        {
+          "type": "doc",
+          "id": "release-notes/release-december-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-oct-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-sep-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-aug-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jul-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jun-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-apr-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-mar-2020"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-feb-2020"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Release Notes 2019",
+      "items": [
+        {
+          "type": "doc",
+          "id": "release-notes/release-dec-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-nov-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-sep-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-aug-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jul-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-mar-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-feb-2019"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jan-2019"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Known Issues",
+      "items": [
+        {
+          "type": "doc",
+          "id": "release-notes/known-issues"
+        }
+      ]
+    }
+  ],
+  "tutorials": [
+    {
+      "type": "category",
+      "label": "Tutorials",
+      "items": [
+        {
+          "type": "doc",
+          "id": "tutorials/first-analytic-app"
+        },
+        {
+          "type": "doc",
+          "id": "tutorials/create-charts"
+        },
+        {
+          "type": "doc",
+          "id": "tutorials/multi-datasets-one-filter"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "type": "category",
+      "label": "FAQs",
+      "items": [
+        {
+          "type": "doc",
+          "id": "faqs/faqs-intro"
+        },
+        {
+          "type": "doc",
+          "id": "faqs/aws-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "faqs/data-security-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "faqs/publishing-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "faqs/ask-us"
+        }
+      ]
+    }
+  ],
+  "video-training": [
+    {
+      "type": "category",
+      "label": "Release Demos",
+      "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.1"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.0"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.10"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.9"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.8"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.7"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.6"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.5"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.4"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.3"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-5.2"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Short Training Videos",
+      "items": [
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/new-webforms"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/new-workflows"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/new-datalinks"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Prior Versions",
+      "items": [
+        {
+          "type": "category",
+          "label": "Training Sessions",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/analytics/intro-analytics-apps"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/datasets"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/analytic-views"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/reports-pages"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/web-forms"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/metrics"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/analytics/automation"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/admin-center/intro-admin-center"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

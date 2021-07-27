@@ -4,7 +4,7 @@ title: API Tutorial
 sidebar_label: Tutorial
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 The Qrvey Platform developer API lets you access all of the functions of the Qrvey Platform programmatically. In your integrated app, this means you’ll be able to do everything from creating or editing forms and quizzes to building workflows, even accessing or creating your analytic charts, all by using API requests.
 
@@ -240,3 +240,5 @@ You can now use that response to send the URL to your users so they can take the
 You should now have a basic understanding of how to use the API to programmatically generate new content in the Qrvey Platform, and embed that content for use in your application.   
 
 For additional API details, including the full API specification, visit the [API Reference](https://bit.ly/3lUHsQg).
+
+</div>

@@ -4,7 +4,7 @@ title: Page View Widget
 sidebar_label: Page View Widget
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 
 The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and webforms, as well as other static content.
@@ -46,7 +46,7 @@ The table below provides general information about each property of this widget�
 | domain | `String`, Qrvey Core URL.| Yes
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
-| userFilters | Array<Object>, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
 | personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
 | styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 
@@ -96,16 +96,16 @@ All values are of string type and none are required.
 | --- | --- | --- | 
 | canvasButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
 canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
-| canvasDatepickerFontFamily | Groups of values: <br>'Roboto, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace'<br> | datepicker
+| canvasDatepickerFontFamily | Groups of values: <br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace'<br /> | datepicker
 | canvasDatepickerFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
 | canvasDatepickerIconSelectorsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker
-| canvasValuelistFontFamily | Groups of values:<br>'Roboto, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace' | valuelist
+| canvasValuelistFontFamily | Groups of values:<br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | valuelist
 | canvasValuelistFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist
 | canvasValuelistIconSelectorsColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist
-| canvasTextFontFamily | Groups of values:<br>, sans-serif'<br>'Georgia, serif'<br>'Palatino Linotype, Book Antiqua, Palatino, serif'<br>'Times New Roman, Times, serif'<br>'Arial, Helvetica, sans-serif'<br>'Arial Black, Gadget, sans-serif'<br>'Comic Sans MS, cursive, sans-serif'<br>'Impact, Charcoal, sans-serif'<br>'Lucida Sans Unicode, Lucida Grande, sans-serif'<br>'Tahoma, Geneva, sans-serif'<br>'Trebuchet MS, Helvetica, sans-serif'<br>'Verdana, Geneva, sans-serif'<br>'Courier New, Courier, monospace'<br>'Lucida Console, Monaco, monospace' | textbox
+| canvasTextFontFamily | Groups of values:<br />, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | textbox
 | canvasTextFontWeight | All CSS supported values (names of numbers)
 'bold', 'bolder', 200, 400 | textbox
-| canvasTextFontSize | All CSS supported values <br>'10px', '10em', '10rem', '10%', 'large', 'small' | textbox
+| canvasTextFontSize | All CSS supported values <br />'10px', '10em', '10rem', '10%', 'large', 'small' | textbox
 | canvasTextFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox
 | canvasTextBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox
 | canvasTextAlign | right, 'center', 'left' | textbox
@@ -170,3 +170,4 @@ var config = {
 ```
 
 
+</div>
