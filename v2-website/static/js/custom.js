@@ -11,7 +11,6 @@ let version = '';
 let IP_ADDRESS = '';
 let TITLE_DOCUMENT = '';
 let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.length) : CURRENT_PAGE;
-let initializedIt = false;
 
 const PAGE = 'page_docs_';
 
@@ -79,28 +78,27 @@ let stateCheck = setInterval(() => {
     }
 }, 100);
 
+/// INIT APP
 function setCurrentPageInfo() {
-        if(!initializedIt){
-            initializedIt = true;
-            //////////
-            /// INIT APP
-            // Add partner name to logo and log button
-            insertParternsLogo();
-            insertLogButtonToNav();
-            // ADD DROPDOWN ITEM
-            addDropdownItem();
-            //Dropdown To Change Doc Version
-            changeVersion();
-            // Check title document to save it 
-            TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
-            // Check if this page contains a video
-            const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-            if (videoContanier) {
-                checkVideoIsPlayed(videoContanier);
-            }
-            // CHECK IS THE USER IS LOGGED IN
-            console.log('user', currentUser);
+    const authButton = document.getElementById('auth-button');
+    if(!authButton){
+        // Add partner name to logo and log button
+        insertParternsLogo();
+        insertLogButtonToNav();
+        // ADD DROPDOWN ITEM
+        addDropdownItem();
+        //Dropdown To Change Doc Version
+        changeVersion();
+        // Check title document to save it 
+        TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+        // Check if this page contains a video
+        const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+        if (videoContanier) {
+            checkVideoIsPlayed(videoContanier);
         }
+        // CHECK IS THE USER IS LOGGED IN
+        console.log('user', currentUser);   
+    }
 }
 
 function checkVideoIsPlayed(videoContanier) {
@@ -186,9 +184,9 @@ function postActivy(newActivity) {
 function insertLogButtonToNav() {
     const navBar = document.querySelector('.navbar__items.navbar__items--right');
     if (currentUser) {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" onclick="logOut()">Log Out</a>`);
+        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" onclick="logOut()">Log Out</a>`);
     } else {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" href="/login">Log In</a>`);
+        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" href="/login">Log In</a>`);
     }
 }
 
