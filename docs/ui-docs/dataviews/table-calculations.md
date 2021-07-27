@@ -30,7 +30,7 @@ Table Calculation is a feature that produces new columns of data based on predef
 
 > **Note**: Running Calculations calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data.
 
-Qrvey supports the following table calculations in Table, Bar, Line, Combo Charts, and Heatmap.
+Qrvey supports the following table calculations in Bar, Line, Multiseries, Combo Charts and Heatmap.
 
 ## 1. Running Calculations
 ### Types Of Running Calculations
