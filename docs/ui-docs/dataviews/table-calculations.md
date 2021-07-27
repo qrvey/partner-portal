@@ -10,7 +10,7 @@ Table Calculation is a feature that produces new columns of data based on predef
 
 1. **Column** - Lists  all columns added to the “Values” and “Other Values” shelves.
 
-2. **Calculation Type** - There are two different types of calculations: 
+2. **Calculation Type** - The following classes of calculation are available in the product:
 * Running Calculations:
     * <a href="#running-sum">Running Sum (RSUM)</a>
     * <a href="#running-average">Running Average (RAVG)</a> 
