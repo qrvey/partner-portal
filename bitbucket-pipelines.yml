@@ -151,20 +151,10 @@ pipelines:
       - step:
          script:
           - npm install
-<<<<<<< HEAD
-          - npm run staging
-          - cd v2-website
-          - npm install
-          - npm install replace@1.0.0 -g --force
-          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
-          - cd static/js
-          - replace "MKT_METADATAID" "marketing_test" custom.js
-=======
           - cd v2-website
           - npm install
           - npm install replace@1.0.0 -g --force
           - cd static/js
->>>>>>> v2-docusaurus
           - cd ../..
           - npm run build
          artifacts:
@@ -179,9 +169,5 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "partners-staging.qrvey.com"
-<<<<<<< HEAD
-              LOCAL_PATH: "website/build/docs-site"
-=======
               LOCAL_PATH: "v2-website/build/"
 
->>>>>>> v2-docusaurus
