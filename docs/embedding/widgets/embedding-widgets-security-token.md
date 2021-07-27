@@ -3,11 +3,7 @@ id: embedding-widgets-security-token
 title: Embedding Widgets Using a Security Token
 sidebar_label: Embedding Widgets Using a Security Token
 ---
-<<<<<<< HEAD
-<div style="text-align: justify">
-=======
 <div style={{textAlign: "justify"}}>
->>>>>>> v2-docusaurus
 
 When you are embedding Qrvey widgets in your applications, you need to keep in mind that you have to authenticate and authorize the use of the widget to the Qrvey system. Usually, this authentication process is done directly on the widget’s configuration object. However, as you send sensitive information (API-KEY, User Security Settings, etc.), using this method to pass these parameters is not recommended as it is not a secure way to do it.
 
