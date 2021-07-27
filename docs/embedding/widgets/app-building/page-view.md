@@ -3,7 +3,9 @@ id: widget-page-view
 title: Page View Widget
 sidebar_label: Page View Widget
 ---
-<div style={{textAlign: 'justify'}}>
+
+<div style={{textAlign: "justify"}}>
+
 
 The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and webforms, as well as other static content.
 
@@ -25,18 +27,12 @@ The building blocks of the code are explained below.
 ## HTML Tag And Launcher
 
 The HTML tag for this widget is: 
-<br />
 
-```
-<qrvey-end-user settings=...>
-```
+```<qrvey-end-user settings=...>```
 
 You can use the following script to launch this widget: 
-<br />
 
-```
-<widgets-launcher/app.js>
-```
+```<[your-widget-url]/widgets-launcher/app.js>```
 
 ## Configuration Object
 
@@ -50,7 +46,7 @@ The table below provides general information about each property of this widget�
 | domain | `String`, Qrvey Core URL.| Yes
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
-| userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
 | personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
 | styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 
@@ -60,7 +56,9 @@ The table below provides general information about each property of this widget�
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
->**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> article to learn about obtaining JWT.
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by  each other.
+Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
+
 
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -79,7 +77,7 @@ By default, the Page View widget supports end user personalization for all authe
 The **styles** object can be used to configure css settings of the Page View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
 All of the style properties listed in the following table have to be housed inside the **pageView** object, under **styles** like the following example:
 
-``` jsx
+```
         styles: {
           pageView: {
             canvasTextFontFamily: 'Roboto, sans-serif',
@@ -127,8 +125,6 @@ canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000'
 
 
 
-
-
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
 
@@ -147,11 +143,11 @@ You can copy and paste this code to your application, after replacing the red va
 
 <script>
 var config = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://your_qrvey_domain",
-    "group_list": ["Admin", "oJn4Cr_yV", ...],
-    "page_id": "<PAGE_ID>",
+    "api_key": "<API_KEY>", // your API key
+    "app_id": "<APP_ID>", // your app_id
+    "domain": "https://your_qrvey_domain", // your domain
+    "group_list": ["Admin", "oJn4Cr_yV", ...], //your group list, if any (this is optional)
+    "page_id": "<PAGE_ID>", // the id of the page that you want in the view. All pages in navigation will be included, if this is omitted.
     "userFilters": { "filters": [
     				{
 		"operator": "AND",
@@ -163,8 +159,8 @@ var config = {
 }
 ]
 }          
- 	   	],
- 	}
+ 	   	]
+ 	} // your filters, if any, can be added like this.
 }
 </script>
 
@@ -172,8 +168,6 @@ var config = {
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
-
- <iframe allowFullScreen="true" className="cp_embed_iframe " frameBorder={0} height={838} width="100%" name="cp_embed_1" scrolling="no" src="https://codepen.io/qrveysamples/embed/MWbNapv?height=838&theme-id=34531&default-tab=result&user=qrveysamples&slug-hash=MWbNapv&pen-title=DOC%20-%20Page%20View%20(Jan2021)&name=cp_embed_1" style={{width: '100%', overflow: 'hidden', display: 'block'}} title="DOC - Page View (Jan2021)" loading="lazy" id="cp_embed_MWbNapv" />
 
 
 </div>

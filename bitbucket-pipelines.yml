@@ -26,7 +26,7 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "uidoc.qrvey.com"
-              LOCAL_PATH: "website/build/docs-site"
+              LOCAL_PATH: "v2-website/build/"
     'release/*':
      - step:
         script:
@@ -53,7 +53,7 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "website/build/docs-site"
+              LOCAL_PATH: "v2-website/build/"
     'hotfix/*':
      - step:
         script:
@@ -80,7 +80,7 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "website/build/docs-site"
+              LOCAL_PATH: "v2-website/build/"
   branches:
     develop:
       - step:
@@ -107,7 +107,7 @@ pipelines:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "website/build/docs-site"
+              LOCAL_PATH: "v2-website/build/"
     master:
       - step:
           name: Deploy to production
@@ -137,7 +137,7 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
                 AWS_DEFAULT_REGION: "us-east-1"
                 S3_BUCKET: "partners.qrvey.com"
-                LOCAL_PATH: "website/build/docs-site"
+                LOCAL_PATH: "v2-website/build/"
       - step:
           name: Invalidate Cloudfront Cache
           script:

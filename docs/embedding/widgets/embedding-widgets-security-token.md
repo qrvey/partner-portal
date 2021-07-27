@@ -24,19 +24,17 @@ Embedding a Qrvey widget requires at least the following two properties:
 
 * **DOMAIN URL**: This is the URL of your Qrvey instance and the location where all your Widget and API calls will be made.
 
-* **API KEY**: This is your unique key that must be a part of every API call. This key is shared in the onboarding email that you receive right after your Qrvey instance is set up.
-
-* **APP ID**: This is the Qrvey application ID you want to embed into your host application.
+* **API KEY**: This is your unique key that must be a part of every API call. This key is shared in the onboarding email that you receive right after your Qrvey instance is set up. 
 
 Go to the <a href="/docs/embedding/widgets/widget-intro/">Widgets Quick Start Guide</a> for more information on how to obtain these values.
 
 Depending on the widget you want to embed, you may need additional information. Go to the <a href="/docs/embedding/embedding-intro/">Embedding</a> section in our partner portal, where you can find all the embeddable widgets and their required properties.
 
-```
-var DOMAIN = 'https://sandbox.qrveyapp.com',
-    API_KEY = 'DOCUMENTATION_DEMO_API_KEY',
-    USER_ID = 'izfZIkc';
-    APP_ID = '59VShVtjM';
+```html 
+var DOMAIN = 'https://your_qrvey_domain', //your Qrvey domain
+    API_KEY = '<API_KEY>'; // your API key
+    USER_ID = '<USER_ID>'; // the user id that own the app
+    APP_ID = '<APP_ID>'; // the app id that you want to embed in your host application
     CLIENT_ID = 'sampleuser@sampledomain.com'; //this is for end user personalization 
 ```
 > **Note**: CLIENT_ID is optional, but for end user personalization to work, it has to be set to the logged-in user’s identifier. This can be their name, id, email address, or any other means by which the user can be uniquely identified. 
@@ -110,9 +108,10 @@ setToken();
 ```
 
 In case you are wondering how the widget’s configuration finally looks, this is an example of what is added to the widget. Every other configuration like user security permissions will be part of the encrypted security token and the Qrvey system will extract the required data to process your request and return the desired result.
-```
+
+```html
 var config = {
- domain: "https://sandbox.qrvey.com",
+ domain: "https://your_qrvey_domai", // your Qrvey domain
  qv_token: "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB...",
 };
 ```
@@ -125,9 +124,6 @@ The following is a list of Qrvey widgets that currently support authentication t
 * <a href="/docs/embedding/widgets/app-building/widget-report-builder/">Report Builder</a>
 * <a href="/docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite</a>
 * <a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel</a>
- 
-## See It in Action
 
-<iframe allowFullScreen className="cp_embed_iframe" frameBorder={0} height={265} width="100%" name="cp_embed_1" scrolling="no" src="https://codepen.io/qrveysamples/embed/NWdMJRo?height=265&theme-id=light&default-tab=js%2Cresult&user=qrveysamples&slug-hash=NWdMJRo&pen-title=Sample-Qrvey%20End-User-Security-Token&name=cp_embed_1" title="Sample-Qrvey End-User-Security-Token" loading="lazy" id="cp_embed_NWdMJRo" style={{width: '100%', overflow: 'hidden', display: 'block'}} />
 
-</div>
+ </div>
