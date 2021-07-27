@@ -27,12 +27,12 @@ The building blocks of the code are explained below.
 ## HTML Tag And Launcher
 
 The HTML tag for this widget is: 
-<br>
+
 ```<qrvey-end-user settings=...>```
 
 You can use the following script to launch this widget: 
-<br>
-```<widgets-launcher/app.js>```
+
+```<[your-widget-url]/widgets-launcher/app.js>```
 
 ## Configuration Object
 
@@ -56,7 +56,9 @@ The table below provides general information about each property of this widgetâ
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
->**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> article to learn about obtaining JWT. 
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The propertyâ€™s value should represent a unique identifier for your end-users as Qrvey will use it as the key to store any personalization made. When an end-user logged-in back, the value will be used to restore the personalized version. Using the same **clientid** value for multiple end-users will end up overriding personalized versions of each other.
+Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
+
 
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -123,8 +125,6 @@ canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000'
 
 
 
-
-
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
 
@@ -138,16 +138,16 @@ The following sample shows the way this widget is used in an HTML page. Please n
 
 You can copy and paste this code to your application, after replacing the red values with your own valid values, in order to see the embedded widget in action.
 
-```
+```html
 <qrvey-end-user settings="config"></qrvey-end-user>
 
 <script>
 var config = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://your_qrvey_domain",
-    "group_list": ["Admin", "oJn4Cr_yV", ...],
-    "page_id": "<PAGE_ID>",
+    "api_key": "<API_KEY>", // your API key
+    "app_id": "<APP_ID>", // your app_id
+    "domain": "https://your_qrvey_domain", // your domain
+    "group_list": ["Admin", "oJn4Cr_yV", ...], //your group list, if any (this is optional)
+    "page_id": "<PAGE_ID>", // the id of the page that you want in the view. All pages in navigation will be included, if this is omitted.
     "userFilters": { "filters": [
     				{
 		"operator": "AND",
@@ -159,8 +159,8 @@ var config = {
 }
 ]
 }          
- 	   	],
- 	}
+ 	   	]
+ 	} // your filters, if any, can be added like this.
 }
 </script>
 
@@ -168,15 +168,5 @@ var config = {
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
-
-## See It In Action
-See the widget in CodePen:
-
-<p class="codepen" data-height="838" data-theme-id="34531" data-default-tab="result" data-user="qrveysamples" data-slug-hash="MWbNapv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="DOC - Page View (Jan2021)">
-  <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/MWbNapv">
-  Sample- Qrvey End-user</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
