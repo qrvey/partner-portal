@@ -119,7 +119,6 @@ pipelines:
             - cd v2-website
             - npm install
             - npm install replace@1.0.0 -g --force
-            - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" siteConfig.js
             - cd static/js
             - replace "firebaseProd = false" "firebaseProd = true"  firebase.js
             - replace "MKT_METADATAID" "marketing_prod" custom.js
