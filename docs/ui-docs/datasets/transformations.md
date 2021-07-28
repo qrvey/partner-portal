@@ -25,7 +25,7 @@ When working with a single Data Source, you will have a single workspace to add 
 
 
 ## The Transformation Panel
-Each transformation function has its own set of rules and behaviors that need to be configured before it can be applied. When a function is dragged onto the workspace from the list, a panel is presented that contains these configurations. While each function may have different configuration options, most have common parts that are described in this section. Each of the available functions are discussed in more detail in the <a href="#available-transformation-functions">Available Transformation Functions</a> section.
+Each transformation function has its own set of rules and behaviors that need to be configured before it can be applied. When a function is dragged onto the workspace from the list, a panel is presented that contains these configurations. While each function may have different configuration options, most have common parts that are described in this section. Each of the available functions is discussed in more detail in the <a href="#available-transformation-functions">Available Transformation Functions</a> section.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation4.png#thumbnail)
 
@@ -59,7 +59,6 @@ Transformations are run in sequence. This is because a transformation might depe
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation7.png#thumbnail-40)
 
 
-
 ## Transformations With Multiple Data Sources
 When working with joined Data Sources you will have different workspaces. One for each Data Source and another one for the Join Output (Post-join Transformations).
 
@@ -70,7 +69,7 @@ Join Output Transformations, however, are applied after joining the data. In thi
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation8.png#thumbnail)
 
 ## Testing a Transformation
-Transformations can be tested individually, or all at once, before they are applied. This is very much recommended, as it will let you verify that all of your transformations are working as expected.
+Transformations can be tested individually, or all at once before they are applied. This is very much recommended, as it will let you verify that all of your transformations are working as expected.
 
 In order to test a transformation, you can either use the shortcut **Test Transformation** link on the top right corner of the transformation panel or go to the **Testing** tab of the Transformations dialog. Both methods take you to the **Testing** tab, with the slight difference that the shortcut method pre-selects the transformation in the panel, while you have to first select a transformation, in the other method.
 
@@ -88,10 +87,10 @@ If transformations are added before the data is loaded, they will take effect at
 We add more predefined transformations with every release. The predefined set is for ease of use and all of them, along with more ad hoc transformations, can be created using the <a href="#formula">Formula transform</a>. Here, you can find an alphabetically-sorted list of the predefined functions that are available as of date, and learn more details about each.
 
 
-
 | **Transformation** | **Group** | **Function** |
 | --- | --- | --- |
 | <a href="#addition">Addition</a>| Numeric | Adds the values of multiple columns together |
+| <a href="#array-filter">Array Filter</a>| Logic | Removes the values that do not match the condition specified |
 |<a href="#array-flatten"> Array Flatten</a>| Logic | Inflates array objects in hierarchical data |
 | <a href="#concatenate">Concatenate</a>| Text | Concatenates multiple textual column values  |
 | <a href="#dataset-write">Dataset Write</a>| External | Writes data to a different dataset |
@@ -111,19 +110,34 @@ We add more predefined transformations with every release. The predefined set is
 
 
 ## Numeric Transformations
+
+### Addition
+This transformation allows you to add the values of two or more numeric columns from the selected data source, or join the output. The result is one single value; the sum of all selected columns.
+
+Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation11.png#thumbnail)
+
+### Division
+This transformation allows you to divide the value of the column selected in the Start dropdown by the one selected in the Divisor dropdown.
+
+Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation14.png#thumbnail)
+ 
+### Multiplication
+This transformation provides a quick way to multiply the values of two or more columns that you select from the list of all numeric columns in the data source, or join output. The result is one single value; the product of all selected columns.
+
+Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation13.png#thumbnail)
+
 ### Round
 This transformation allows you to round one or more numeric columns up, down, or to the nearest integer. The number of decimal places to consider is an option that can be selected. 
 
 Like all transformations, the results can update an existing column or create a new one. If multiple columns are selected, the option of creating new columns is not available. You can also decide what to do in the case of an error.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation10.png#thumbnail)
-
-### Addition
-This transformation allows you to add the values of two or more numeric columns from the selected data source, or join output. The result is one single value; the sum of all selected columns.
-
-Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
-
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation11.png#thumbnail)
 
 ### Subtraction
 This transformation allows you to subtract the value of the column selected in the Subtract dropdown from the one selected in the Start dropdown. 
@@ -132,38 +146,16 @@ Like all transformations, the results can update an existing column or create a 
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation12.png#thumbnail)
 
-### Multiplication
-This transformation provides a quick way to multiply the values of two or more columns that you select from the list of all numeric columns in the data source, or join output. The result is one single value; the product of all selected columns.
-
-Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
-
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation13.png#thumbnail)
-
-### Division
-This transformation allows you to divide the value of the column selected in the Start dropdown by the one selected in the Divisor dropdown.
-
-Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
-
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation14.png#thumbnail)
-
-
 ## Text Transformations
-### Trim
-This transformation allows you to remove the specified characters at the start or the end of a text in a column. The transformation can be applied to any number of columns. 
 
-Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
+### Concatenate
+This transformation strings two or more textual columns together, separating them with the value entered in the *Separator* field. Columns are concatenated in the same order in which they are specified. New columns can be easily added in the middle by clicking the **+** icon next to the column before them. Likewise, you can remove columns from the string by clicking the **-** icon next to them. The result is one single value. 
+Like all transformations, the results can update an existing column or create a new one.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation15.png#thumbnail)
-
-### Uppercase
-This transformation converts the value of one or more textual columns to uppercase.  Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
-
-Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
-
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png#thumbnail)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation19.png#thumbnail)
 
 ### Lowercase
-This transformation converts the value of one or more textual columns to lowercase.  Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
+This transformation converts the value of one or more textual columns to lowercase. Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
 
 Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
 
@@ -176,13 +168,19 @@ Like all transformations, the results can update an existing column or create a 
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation18.png#thumbnail)
 
-### Concatenate
-This transformation strings two or more textual columns together, separating them with the value entered in the *Separator* field. Columns are concatenated in the same order in which they are specified. New columns can be easily added in the middle by clicking the **+** icon next to the column before them. Likewise, you can remove columns from the string by clicking the **-** icon next to them. The result is one single value. 
-Like all transformations, the results can update an existing column or create a new one.
+### Trim
+This transformation allows you to remove the specified characters at the start or the end of a text in a column. The transformation can be applied to any number of columns. 
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation19.png#thumbnail)
+Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation15.png#thumbnail)
 
+### Uppercase
+This transformation converts the value of one or more textual columns to uppercase. Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
+
+Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png#thumbnail)
 
 ## Date Transformations
 ### Date Add
@@ -200,28 +198,59 @@ Like all transformations, the results can update an existing column or create a 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation21.png#thumbnail)
 
 ## Logic Transformations
-### Formula
-Formula is by far the most versatile transformation and it enables you to manipulate data ad-hoc, by writing a script. Formulas are written in Javascript, however, there’s a list of the available functions as well as an autocomplete feature to assist you. It is important to note that all Javascript functions are valid and can be used, even if they are not listed in the *Functions* list.
+### Array Filter
+The Array Filter transformation removes one or more values from a JSON array that do not match the specified condition. The UI provides fields for configuring a simple “equals” condition, as well as a more advanced UI for tokens and custom JS functions. The default behavior of the Array Filter transformation is to remove the values that do not match the condition specified; however, it is also possible to move values that do not match the condition to a new “object array” type field.
 
-With Formula transformations, you will need to determine the data type of the results. If not explicitly chosen, all results will be considered text data type.
+Configuring the Array Filter transformation is a three-step process:
+1. Choose the array property to filter from the Array Path drop-down menu.
 
-Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
+2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition type:
+<ul style="list-style: none; margin-left:20px;">
+<li>  a. Use <strong>Standard</strong> for simple “equals” conditions. </li>
+<li>  b. Use <strong>Advanced</strong> for other types of operators and/or supply your own custom JS function. </li>
+<li>  c. If the <strong>Standard</strong> condition type was selected, choose the column to filter by using the Condition Column drop-down and enter the value to search for in the adjacent field. </li>
+<li>  d. If the <strong>Advanced</strong> condition type was selected, copy/paste your JS function into the field provided. You can reference columns from the dataset by using the Qrvey token syntax (e.g. {{name}}). Ensure that your JS function returns a boolean value for all execution code paths.</li>
+</ul>
+  
+3. Decide if you want the source array property updated directly or whether the desired result is a new array property. If the output type is “Create New”, you must specify the new array property name in the supplied field. Only array items that match the condition are written to the new array property.
 
-> **Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
+Optionally, you can specify the behavior for record errors. The options are identical here as they are for all other transformation types where this field appears.
+
+> **Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
+
+#### Example
+
+This example will demonstrate how to find a single object within an object array by filtering on a specific string property that belongs to all objects in the array. Consider the following JSON object array of Hollywood actors.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/1array.png#thumbnail-60)
 
 
-## If/Else
-If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. In the following example an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in an order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
-
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
 
 
-## Array Flatten
+The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53.First, the “actors” object array property must be selected from the Array Path field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-20)
+
+
+Next, the “actors.age” property is selected from the Condition Column field and “53” is entered into the adjacent Value field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-40)
+
+
+Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The “Create New” radio button is selected and a name for the target object array property is entered in the adjacent field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4array.png#thumbnail-40)
+
+Testing the transformation shows the final output that preserves the original “actors” array property, as well as the new “actors_age_53” array property.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/5array.png#thumbnail-60)
+
+
+### Array Flatten
 Array Flatten is an advanced transformation that has to be used with hierarchical JSON data that contains object arrays, to inflate the child objects and add those to their parent records, or remove them from the data. This will generally result in a change in the dataset structure and it resembles the results of a “join” between the parent and child records.
 Take the following data as an example:
 
-```
+```json
 [
     {
         "information": {
@@ -279,7 +308,25 @@ If you choose to inflate and load the data, the resulting dataset will have four
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation25.png#thumbnail)
 
-## Record Copy
+
+### Formula
+Formula is by far the most versatile transformation and it enables you to manipulate data ad-hoc, by writing a script. Formulas are written in Javascript, however, there’s a list of the available functions as well as an autocomplete feature to assist you. It is important to note that all Javascript functions are valid and can be used, even if they are not listed in the *Functions* list.
+
+With Formula transformations, you will need to determine the data type of the results. If not explicitly chosen, all results will be considered text data type.
+
+Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
+
+> **Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
+
+
+### If/Else
+If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. In the following example, an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in an order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
+
+
+### Record Copy
 Record Copy is an advanced transformation that allows you to make a copy of the records of the data source or join output and use them for other transformations or actions. This function is unique in the fact that it has to be combined with some other transformation - especially one that sends the record to another destination, like another dataset - in order to have an observable effect. For that very reason, Record Copy transformation starts a new transformation stream that is shown slightly indented. Any transformations that are added under Record Copy will apply to the copied record and will not affect the mainstream of transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation26.png#thumbnail)
