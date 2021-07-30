@@ -1193,3 +1193,12 @@ blockquote {
 .documentation-background-ct {
   padding: 8% 10%;
 }
+
+.searchBar_2TTC .dropdownMenu_MoYd {
+  height: 400px;
+  overflow: auto;
+}
+
+.hitFooter_1iAK {
+  display: none;
+}
