@@ -1,11 +1,10 @@
 ---
-id: version-5.4-column-level-security
+id: column-level-security
 title: Column Level Security
 sidebar_label: Column Level Security
-original_id: column-level-security
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 ## Overview
 
@@ -61,3 +60,5 @@ The final step is to declare the roles that the user is a member of when constru
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls3.png#thumbnail-60) 
 
 The sample code above is written in Javascript; however, you can make the JWT call in any back-end server-side web application development language of your choice.  For more information about securely embedding Qrvey platform widgets within external web applications, please see the <a href="/docs/embedding/widgets/widget-embedding-using-cookies/">Embedding Widgets Using Cookies</a> article.
+
+</div>

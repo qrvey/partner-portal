@@ -56,7 +56,7 @@ class Documentation extends React.Component {
     );
 
     const TopFold = () => (
-      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
+      <div className="mainContainer top-fold-background documentation-background-ct" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
         <div className="wrapper vertical-align">
           <h2 className="main-title">
           Documentation

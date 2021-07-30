@@ -1,11 +1,10 @@
 ---
-id: version-5.4-pages_actions
+id: pages_actions
 title: Page Actions
 sidebar_label: Page Actions
-original_id: pages_actions
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 
 You can configure chart interactions on the page builder by setting up actions when users click on a data point or a chart panel area in the *End User* pages.
@@ -199,3 +198,4 @@ The *Page Drill* action on a symbol chart allows users to interact with the char
 
 
 
+</div>

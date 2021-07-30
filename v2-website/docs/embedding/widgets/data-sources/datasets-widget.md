@@ -1,18 +1,9 @@
 ---
-<<<<<<< HEAD
-id: version-5.4-datasets-widget
-title: Datasets Widget
-sidebar_label: Datasets Widget
-original_id: datasets-widget
----
-<div style="text-align: justify">
-=======
 id: datasets-widget
 title: Datasets Widget
 sidebar_label: Datasets Widget
 ---
 <div style={{textAlign: "justify"}}>
->>>>>>> v2-docusaurus
 
 The Dataset widget is a powerful and effective tool to allow you embed the dataset creation widget in your own web application. This widget allows your users to create and edit Datasets generated from different connection types, and index views.
 
@@ -66,15 +57,6 @@ var datasets_settings = {
 
 ## See It In Action
 See the widget in CodePen:
-<<<<<<< HEAD
-      <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="e2af64022d03276dea717530cbd2aafd"  style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Datasets">
-        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/e2af64022d03276dea717530cbd2aafd">
-        Sample- Qrvey Datasets</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-=======
 
 <iframe
   allowFullScreen
@@ -90,14 +72,10 @@ See the widget in CodePen:
   loading="lazy"
   id="cp_embed_e2af64022d03276dea717530cbd2aafd"
 />
->>>>>>> v2-docusaurus
 
 
 
 
 
-<<<<<<< HEAD
-=======
 </div>
 
->>>>>>> v2-docusaurus

@@ -58,6 +58,20 @@ Don’t forget to add your Analytic Suite launchers in case you haven’t done t
 ## Sample Code
 https://codepen.io/qrveysamples/pen/654128586046f8141bab9bfcef703acc
 
+<iframe
+  className="cp_embed_iframe "
+  frameBorder={0}
+  height={838}
+  width="100%"
+  name="cp_embed_1"
+  scrolling="no"
+  src="https://codepen.io/qrveysamples/embed/654128586046f8141bab9bfcef703acc?height=838&theme-id=34531&default-tab=result&user=qrveysamples&slug-hash=52bb4236753fe85a433228dd11d437e2&pen-title=Sample-%20Qrvey%20Report%20Builder&name=cp_embed_1"
+  title="Sample- Qrvey Report Builder"
+  loading="lazy"
+  id="cp_embed_654128586046f8141bab9bfcef703acc"
+  style={{ width: "100%", overflow: "hidden", display: "block" }}
+/>
+
 
 
 

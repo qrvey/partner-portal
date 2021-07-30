@@ -1,18 +1,9 @@
 ---
-<<<<<<< HEAD
-id: version-5.4-widget-datalinks
-title: Data Links
-sidebar_label: Data Links
-original_id: widget-datalinks
----
-<div style="text-align: justify">
-=======
 id: widget-datalinks
 title: Data Links
 sidebar_label: Data Links
 ---
 <div style={{textAlign: "justify"}}>
->>>>>>> v2-docusaurus
 
 ## Widget Overview
 The datalinks widget is a tool used to manage all the links between your data for an application. The user can embed this widget in his web application. Once the process is complete, you can create, edit or delete different data links. These links are then used to create different charts or for analysis. 
@@ -66,14 +57,6 @@ var configWidget = {
 
 ## See It In Action
 See the widget in CodePen:
-<<<<<<< HEAD
-    <p class="codepen" data-height="838" data-theme-id="light" data-default-tab="result" data-user="qrveysamples" data-slug-hash="e702280cc28363b28e7bc10c181f3d21" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Sample- Qrvey Data Links">
-        <span>See the Pen <a href="https://codepen.io/qrveysamples/pen/e702280cc28363b28e7bc10c181f3d21">
-        Sample- Qrvey Data Links</a> by Qrvey (<a href="https://codepen.io/qrveysamples">@qrveysamples</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-=======
 
 <iframe
   allowFullScreen
@@ -92,4 +75,3 @@ See the widget in CodePen:
 
 
 </div>
->>>>>>> v2-docusaurus

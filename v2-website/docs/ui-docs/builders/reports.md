@@ -1,20 +1,10 @@
 ---
-<<<<<<< HEAD
-id: version-5.4-reports
-title: Report Builder
-sidebar_label: Report Builder
-original_id: reports
----
-
-<div style="text-align: justify">
-=======
 id: reports
 title: Report Builder
 sidebar_label: Report Builder
 ---
 
 <div style={{textAlign: "justify"}}>
->>>>>>> v2-docusaurus
 
 Report Builder is a quick and easy way to build and publish reports. To begin, enter an application and click the Report Builder icon in the left toolbar.
 
@@ -137,7 +127,4 @@ Once you’ve completed building your reports, you can return to the report dash
 
 
 
-<<<<<<< HEAD
-=======
 </div>
->>>>>>> v2-docusaurus

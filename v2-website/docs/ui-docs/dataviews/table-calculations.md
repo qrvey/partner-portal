@@ -1,17 +1,16 @@
 ---
-id: version-5.4-table-calculations
+id: table-calculations
 title: Table Calculations
 sidebar_label: Table Calculations
-original_id: table-calculations
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Table Calculation is a feature that produces new columns of data based on predefined aggregate functions executed against existing columns of data.  Any data column added to the “Values” or “Other Values” shelves in the Chart Builder UI can be used as a source column for a table calculation.  The Table Calculations UI contains the following fields:
 
 1. **Column** - Lists  all columns added to the “Values” and “Other Values” shelves.
 
-2. **Calculation Type** - There are two different types of calculations: 
+2. **Calculation Type** - The following classes of calculation are available in the product:
 * Running Calculations:
     * <a href="#running-sum">Running Sum (RSUM)</a>
     * <a href="#running-average">Running Average (RAVG)</a> 
@@ -31,7 +30,7 @@ Table Calculation is a feature that produces new columns of data based on predef
 
 > **Note**: Running Calculations calculate the running aggregate of a value that can optionally be calculated for any number of grouped categories. The calculations are affected by the sort order of the data.
 
-Qrvey supports the following table calculations in Table, Bar, Line, Combo Charts, and Heatmap.
+Qrvey supports the following table calculations in Bar, Line, Multiseries, Combo Charts and Heatmap.
 
 ## 1. Running Calculations
 ### Types Of Running Calculations
@@ -82,17 +81,14 @@ Any event that causes a chart’s reloading will also cause the table calculatio
 
 This is how Qrvey generally describes these running calculations:
 <code>
-
-<p style="margin-left: 40px">
-Running_[sum, avg, min, max] <br> 
- (<br>
-     agg_value   <br>
-     ,[ sortorder_field ASC_or_DESC, ... ]<br>  
-     ,[ grouped field, ... ]   <br>
-)
-</p>
-
-</code> 
+  <p style={{ marginLeft: 40 }}>
+    Running_[sum, avg, min, max] <br />
+    (<br />
+    agg_value <br />
+    ,[ sortorder_field ASC_or_DESC, ... ]<br />
+    ,[ grouped field, ... ] <br />)
+  </p>
+</code>
 
 
 | Argument | Description |
@@ -110,36 +106,38 @@ The calculation is recalculated every time that an event is applied to the chart
 
 The following example shows how *Difference* is calculated:
 
-<table class="demo">
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Difference</th>
-	</tr>
-	</thead>
-	<tbody>
-</td>
-		<td>8</td>
-        <td></td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>-2 (6-8)</td>
+<table className="demo">
+  <thead>
+    <tr>
+      <th>Values</th>
+      <th>Difference</th>
     </tr>
-	<tr>   
-        <td>10</td>
-        <td>4 (10-6)</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td />
     </tr>
-	<tr>
-        <td>9</td>
-        <td>-1 (9-10)</td>
-	</tr>
-        <td>5</td>
-        <td>-4 (5-9)</td>
-    	</tr>
-	<tr>
-	</tbody>
-</table> 
+    <tr>
+      <td>6</td>
+      <td>-2 (6-8)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>4 (10-6)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-1 (9-10)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-4 (5-9)</td>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>
+
 
 
 
@@ -165,36 +163,38 @@ The calculation is recalculated every time that an event is applied to the chart
 
 The following example shows how *Percent Difference* is calculated:
 
-<table class="demo">
-	<thead>
-	<tr>
-		<th>Values</th>
-		<th>Difference</th>
-	</tr>
-	</thead>
-	<tbody>
-</td>
-		<td>8</td>
-        <td> </td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>-25 (i.e.: (6-8)x100/8)</td>
+<table className="demo">
+  <thead>
+    <tr>
+      <th>Values</th>
+      <th>Difference</th>
     </tr>
-	<tr>   
-        <td>10</td>
-        <td>66.67 (i.e.: (10-6)x100/6)</td>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td> </td>
     </tr>
-	<tr>
-        <td>9</td>
-        <td>-10 (i.e.: (9-10)x100/10)</td>
-	</tr>
-        <td>5</td>
-        <td>-44.44 (i.e.: (5-9)x100/9)</td>
-    	</tr>
-	<tr>
-	</tbody>
-</table> 
+    <tr>
+      <td>6</td>
+      <td>-25 (i.e.: (6-8)x100/8)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>66.67 (i.e.: (10-6)x100/6)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>-10 (i.e.: (9-10)x100/10)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>-44.44 (i.e.: (5-9)x100/9)</td>
+    </tr>
+    <tr></tr>
+  </tbody>
+</table>
+
 
 
 
@@ -205,13 +205,13 @@ The following example demonstrates how the difference  between each total quarte
 **2018-2020 Quarterly Sales Difference**
 
 2018 Q1 Difference = Blank
-<br>
+<br />
 2018 Q2 Difference = (Q2 Sales - Q1 Sales)*100/Q1 Sales = 15.05%
-<br>
+<br />
 2018 Q3 Difference = (Q3 Sales - Q2 Sales)*100/Q2 Sales = -65.25 %
-<br>
+<br />
 2018 Q4 Difference = (Q4 Sales - Q3 Sales)*100/Q3 Sales = 1164.48%
-<br>
+<br />
 Etc.
 
 The following images show an example of *% Difference* applied in Tables.
@@ -249,3 +249,5 @@ Partitioning fields break the view up into multiple sub-views (or sub-tables), a
 The following images show an example of partitioning in Table charts using the “Level” option to select a partition. 
 
 ![table-calculations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/table-calculations/part.gif#thumbnail) 
+
+</div>

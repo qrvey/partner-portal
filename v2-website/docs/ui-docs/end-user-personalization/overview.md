@@ -1,11 +1,10 @@
 ---
-id: version-5.4-overview
+id: overview
 title: Overview
 sidebar_label: Overview
-original_id: overview
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 Everything that is created in Qrvey Composer is ultimately for the benefit of an “end user”. In some cases, the Composer persona may be the same as the End User, and in other cases they may be different people. However, in all cases, the permissions and interactions with the content are different between the two personas: **Composers create content that End users interact with**.
 
@@ -22,3 +21,4 @@ Through User Management, Composers can decide which pieces of content to show or
 Developers can refer to the <a href="/docs/embedding/widgets/app-building/widget-page-view/">Page View Widget</a> documentation for a guide to enabling individual personalization features.
 If you are a Composer, please refer to the <a href="/docs/ui-docs/builders/user-management/">User Management</a> article to learn how to create end End Users can refer to <a href="/docs/ui-docs/builders/eup-dashboards/">Personalizing Your Dashboards</a> article to learn about personalization features that are available to them.
 
+</div>

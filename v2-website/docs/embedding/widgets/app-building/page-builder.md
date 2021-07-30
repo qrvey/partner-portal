@@ -9,7 +9,7 @@ The Page Builder widget is used to add the ability to create new pages or modify
 
 Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page Builder” option.
 
-![page-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail)
+![page-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail-20)
 
 This will open a dialog with the necessary code, including the “domain”, “app_id” and “user_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
 The building blocks of the code are explained below.
@@ -19,7 +19,8 @@ The HTML tag for this widget is:
 `<qrvey-builders settings=...>`
 
 You can use the following script to launch this widget:
-`<widgets-launcher/app.js>`
+
+`<[your-widget-url]/widgets-launcher/app.js>`
 
 ## Configuration Object
 The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The Required column indicates whether the property is required for the configuration object to work properly.
@@ -64,15 +65,16 @@ You can copy and paste this code to your application after replacing the red val
 ```
 <qrvey-builders settings="config"></qrvey-builders>
 ```
-```
+
+```html
 <script>
 var config = {
-    "api_key": "<API_KEY>",
+    "api_key": "<API_KEY>", // your API key
     "app_id": "<APP_ID>",
-    "user_id": "<USER_ID>",
-    "domain": "https://your_qrvey_domain",
+    "user_id": "<USER_ID>", // your user_id
+    "domain": "https://your_qrvey_domain", // your domain
     "private_pages": true,
-    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'],
+    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'], // optional properties to customize the controls
     "styles": {
         "main_color": '#3E94FF',
         "main_text_color": '#000000',
@@ -94,22 +96,16 @@ var config = {
 ]
 }          
  	   	]
- 	}
+ 	}  // your filters, if any, can be added like this.
 
 }
 </script>
 ```
+
 ```
 <!-- your launcher js link (replace with your js link) -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
-
-## See It In Action
-See the widget in CodePen:
-
-<iframe allowFullScreen="true" className="cp_embed_iframe " frameBorder={0} height={838} width="100%" name="cp_embed_1" scrolling="no" src="https://codepen.io/qrveysamples/embed/5bd38e7cb821debf789eea5fda042145?height=838&theme-id=34531&default-tab=result&user=qrveysamples&slug-hash=5bd38e7cb821debf789eea5fda042145&pen-title=Sample-%20Qrvey%20Page%20Builder&name=cp_embed_1" style={{width: '100%', overflow: 'hidden', display: 'block'}} title="Sample- Qrvey Page Builder" loading="lazy" id="cp_embed_5bd38e7cb821debf789eea5fda042145" />
-
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 

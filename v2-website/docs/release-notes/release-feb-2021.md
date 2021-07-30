@@ -1,14 +1,7 @@
 ---
-<<<<<<< HEAD:website/versioned_docs/version-5.4/release-notes/release-feb-2021.md
-id: version-5.4-release-feb-2021
-title: Qrvey Version 5.8
-sidebar_label: February 2021
-original_id: release-feb-2021
-=======
 id: release-feb-2021
 title: Qrvey Version 5.8
 sidebar_label: February 2021
->>>>>>> v2-docusaurus:v2-website/docs/release-notes/release-feb-2021.md
 ---
 <div style={{textAlign: "justify"}}>
 Release Date: 2021-02-26

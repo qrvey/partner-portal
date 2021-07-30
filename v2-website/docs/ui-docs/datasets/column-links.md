@@ -1,14 +1,7 @@
 ---
-<<<<<<< HEAD:website/versioned_docs/version-5.4/ui-docs/datasets/column-links.md
-id: version-5.4-column-links
-title: Automatic Column Links
-sidebar_label: Automatic Column Links
-original_id: column-links
-=======
 id: column-links
 title: Automatic Column Links
 sidebar_label: Automatic Column Links
->>>>>>> v2-docusaurus:v2-website/docs/ui-docs/datasets/column-links.md
 ---
 
 <div style={{textAlign: "justify"}}>

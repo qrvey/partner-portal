@@ -1,11 +1,10 @@
 ---
-id: version-5.4-roles-and-permissions
+id: roles-and-permissions
 title: Roles & Permissions
 sidebar_label: Roles & Permissions
-original_id: roles-and-permissions
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 ## Roles
 Roles and permissions are used to control access to sections on the Qrvey Composer. In the User Management section of Admin Center, you will find 2 roles that are system-defined roles, *Admin* and *Composers*. 
@@ -46,3 +45,5 @@ Admin can define the access that composers have to the different sections of the
 | Settings| ✅ | ✅ |
 |**App Administration**|
 | Admin Center| ✅ | ❌ |
+
+</div>

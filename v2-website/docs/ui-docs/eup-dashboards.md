@@ -1,11 +1,10 @@
 ---
-id: version-5.4-eup-dashboards
+id: eup-dashboards
 title: Personalizing Your Dashboards
 sidebar_label: Personalizing Your Dashboards
-original_id: eup-dashboards
 ---
 
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 ## Overview
 
@@ -49,3 +48,4 @@ Any option that is used on the page either affects your personalized version or 
 ![eup-dashboards](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/eup/eup-dash5.gif#thumbnail)
 
 
+</div>
