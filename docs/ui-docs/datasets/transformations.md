@@ -205,13 +205,34 @@ The Array Filter transformation removes one or more values from a JSON array tha
 Configuring the Array Filter transformation is a three-step process:
 1. Choose the array property to filter from the Array Path drop-down menu.
 
-2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition type:
-<ul style="list-style: none; margin-left:20px;">
-<li>  a. Use <strong>Standard</strong> for simple “equals” conditions. </li>
-<li>  b. Use <strong>Advanced</strong> for other types of operators and/or supply your own custom JS function. </li>
-<li>  c. If the <strong>Standard</strong> condition type was selected, choose the column to filter by using the Condition Column drop-down and enter the value to search for in the adjacent field. </li>
-<li>  d. If the <strong>Advanced</strong> condition type was selected, copy/paste your JS function into the field provided. You can reference columns from the dataset by using the Qrvey token syntax (e.g. {{name}}). Ensure that your JS function returns a boolean value for all execution code paths.</li>
-</ul>
+2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition
+  type:
+  <ul style={{ listStyle: "none", marginLeft: 20 }}>
+    <li>
+      {" "}
+      a. Use <strong>Standard</strong> for simple “equals” conditions.{" "}
+    </li>
+    <li>
+      {" "}
+      b. Use <strong>Advanced</strong> for other types of operators and/or
+      supply your own custom JS function.{" "}
+    </li>
+    <li>
+      {" "}
+      c. If the <strong>Standard</strong> condition type was selected, choose
+      the column to filter by using the Condition Column drop-down and enter the
+      value to search for in the adjacent field.{" "}
+    </li>
+    <li>
+      {" "}
+      d. If the <strong>Advanced</strong> condition type was selected,
+      copy/paste your JS function into the field provided. You can reference
+      columns from the dataset by using the Qrvey token syntax (e.g. {"{"}
+      {"{"} name {"}"}
+      {"}"}). Ensure that your JS function returns a boolean value for all
+      execution code paths.
+    </li>
+  </ul>
   
 3. Decide if you want the source array property updated directly or whether the desired result is a new array property. If the output type is “Create New”, you must specify the new array property name in the supplied field. Only array items that match the condition are written to the new array property.
 
@@ -343,7 +364,6 @@ A *Target Dataset* must be selected from the pool of the existing datasets. This
 If the dataset has a unique identifier you can choose to either fully replace the existing record with the same ID or merge the values, updating the record as a result.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation27.png#thumbnail)
-
 
 
 Dataset Write can be used in conjunction with Record Copy to write the resulting record from the copy and its stream of transformations to another dataset.
