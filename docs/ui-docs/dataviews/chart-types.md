@@ -3,7 +3,7 @@ id: chart-types
 title: Chart Types
 sidebar_label: Chart Types
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 The following chart types are currently supported by Qrvey. The list is sorted in alphabetical order of the chart type and provides use cases and details about each type.
 <a href="#metrics">Metrics</a> have their own section at the end of this document.
@@ -103,7 +103,6 @@ When the Bar Width is set at 100%, the bars appear with no space in between. Wit
 > **Note**: The feature allows only integer values. When the fit to panel option is enabled, modifying manually the bar’s width is not available.
 
 
-
 ## Line Chart
 ### Overview
 The Line Chart is commonly used to display change over time as a series of data points connected by straight line segments on two axes.
@@ -114,8 +113,8 @@ Similar to Bar charts, Line charts are best suited to track changes over periods
 #### Use Cases
 * To show the amount/percentage of change in the population of people who attend one or more events over a period of time.
 
-### How to Use It
-Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+### How to Use Line Charts
+Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -233,14 +232,14 @@ In this section, you will find a guide through the settings specific to the Symb
 #### Format
 * To change the format of the chart visualization to small multiples.
 
-
-
 ## Funnel Chart
 ### Overview
-A funnel chart demonstrates the flow of data in levels that are narrowing down to help visualize a linear process with sequential connected stages. The chart takes its name from its shape, which starts from a broad head and ends in a narrow neck.. 
+A funnel chart demonstrates the flow of data in levels that are narrowing down to help visualize a linear process with sequential connected stages. The chart takes its name from its shape, which starts from a broad head and ends in a narrow neck.
+
 
 ### When to Use Funnel Charts
 Funnel charts are most often seen in business or sales contexts where we need to track how a starting set of visitors or users drop out of a process or flow. This chart shows how the starting whole breaks down into progressive parts.
+
 #### Use Cases
 For example, a sales funnel that tracks customers through stages: Lead > Qualified Lead > Prospect > Contract > Close. At a glance, the shape of the funnel conveys the health of the process you're tracking in an easy-to-understand manner
 A funnel chart can be used to display Web site visitor trends
@@ -248,13 +247,13 @@ To show how many orders are still in process and the percentage of cancelled/ret
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel1.png#thumbnail-60) 
 
-
 ### How to Use Funnel Charts
 You can create Funnel charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
+
 To get started, open the Chart Builder, and find the Funnel Chart icon in the Charts panel on the right side of the window, as shown below.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel2.png#thumbnail-40) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel2.png#thumbnail-40)
 
 Funnel Charts need one category and one value column. Drag and drop the desired columns from your data panel onto these fields and adjust the aggregation for the value column, if necessary. In our example above, Stage would be the category column and Leads would be the value field, with Count being the appropriate aggregation. The Funnel Chart is rendered as soon as one column is dropped in the Category or Value shelf. 
 
@@ -267,9 +266,9 @@ A Funnel graph is similar to a horizontal bar chart. The main difference is that
 * **Tooltips**: Turn on/off tooltips for each data point.
   * **+Add Column**: Add a column to the tooltip.
   * **Header**: Add a header to the tooltip.
-* **Max Data Points**: Set a limit of the funnel levels/stages. 
+* **Max Data Points**: Set a limit of the funnel levels/stages.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel3.png#thumbnail-40) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel3.png#thumbnail-40)
 
 #### Styles
 * **Color Type**: Choose either a single color for the whole chart of a different color for each stage.
@@ -282,8 +281,7 @@ A Funnel graph is similar to a horizontal bar chart. The main difference is that
   * **Values**: Shows the data values within the segments.
   * **Percentages**:Shows the data percentage within the segments.
  
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel4.png#thumbnail-40) 
-
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel4.png#thumbnail-40)
 
 
 ## Pie Chart
@@ -342,6 +340,7 @@ In this section, you will find a guide through the settings specific to the Pie 
 * **Theme**: Change the theme of the chart.
 * **Type**: Change the type of the chart between donut and pie.
 * **Data Labels**: Turn on/off legends of the charts.
+
 
 ## Min/Max  
 ### Overview
@@ -402,6 +401,7 @@ Axis Labels**: Turn on/off axis labels of the chart.
 #### Format
 * To change the format of the chart visualization to small multiples.
 
+
 ## Tables
 ### Overview
 Tables simultaneously show multiple fields directly from your data source in a raw format with the content of each row being logically connected. An unlimited number of grouped and aggregated columns can be accepted allowing users rapid access and relatively easy comparison of data.
@@ -416,7 +416,7 @@ Tables are best suited for running detailed analysis and precise values instead 
 * When the quantitative information to be communicated involves more than one unit of measure.
 * To include both, summary and detailed values.
 
-### How to Use It
+### How to Use Table Charts
 Inside the Qrvey Composer, there are different places where you can create a table. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
@@ -577,7 +577,7 @@ In Grouped Tables, we can find two types of columns:
 Aggregate columns can be reordered in the exact same ways as columns in a simple table: 
 1. Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
 
-After dropping the column in its new place, the column pills in the shelf appear in that same new order. <br>
+After dropping the column in its new place, the column pills in the shelf appear in that same new order. <br />
 **Important Note**: Aggregate columns cannot be dragged between, or before the grouped columns.
 
 Aggregate columns can be reordered in two ways:
@@ -626,8 +626,8 @@ When adding a trend chart to the cells, you need to define:
 To add a Sparkline - Line chart to a table cell, follow these steps:
 1. Open Chart Builder
 2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a> 
-3. There are two ways of adding a chart to a table cell:<br>
-  a) from the Grouped Table Chart’s configuration Pane<br>
+3. There are two ways of adding a chart to a table cell:<br />
+  a) from the Grouped Table Chart’s configuration Pane<br />
   b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Line Chart from the Grouped Table Chart’s Configuration Pane
@@ -682,8 +682,8 @@ To add a Bar chart to a table cell, follow these steps:
 1. Open Chart Builder
 2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a>
 
-There are two ways of adding a chart to a table cell:<br>
-  a) from the Grouped Table Chart’s configuration Pane<br>
+There are two ways of adding a chart to a table cell:<br />
+  a) from the Grouped Table Chart’s configuration Pane<br />
   b) from the Aggregated Column Pills
 
 #### Creating a Sparkline - Bar Chart from the Grouped Table Chart’s configuration Pane
@@ -730,7 +730,6 @@ Once the chart has been added to the cell, hovering over it will show more detai
 >If you change the trend chart configuration while using the “Bar” visualization type, the new changes applied to the trend chart will be visible when you return to the “Value” visualization type.
 
 
-
 ## Crosstab Chart
 ### Overview
 A crosstab is a data summarization tool that allows structuring, summarizing, and displaying large amounts of data. It is most commonly used to analyze the multiple measures in multiple dimensions at the same time. A crosstab can display totals and subtotals for columns and rows, and it allows users to rearrange the measures and dimensions to get a different view of the data.
@@ -739,14 +738,14 @@ A crosstab is a data summarization tool that allows structuring, summarizing, an
 Crosstabs are commonly used when there are a limited number of categories. The row and column variables in a crosstab can be used interchangeably. The choice of row/column variable is usually dictated by space requirements or interpretation of the results.
 Crosstabs are commonly used when you want to create quick reports efficiently, allowing you to analyze the data and arrive at quick decisions. They are also helpful when you want to run online analysis by expanding and collapsing levels of data to focus your results, and drilling down to details from the summary data for areas that interest you.
 
-### Use Cases
+#### Use Cases
 * To represent and analyze many categorical variables or nominal measurement scale data.
 * For financial reporting.
 * To segment data by different variables and calculate totals.
 * When the data needs to be aggregated, and sliced for analysis. 
 
 ### How to Use Crosstab Charts
-You can create Crosstab charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.  
+You can create Crosstab charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
@@ -863,7 +862,7 @@ Heatmap charts are commonly used to display a more generalized view of numeric v
 
 ### How to Use Heatmap Charts
 You can create Heatmap charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
-
+ 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
 ![12_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/12_ct.png#thumbnail)
@@ -900,14 +899,13 @@ In this section, you will find a guide through the settings specific to the Heat
 * **Gaps**: Change the space between squares.
 * **Data Labels**: Turn On/Off data labels in the chart.
 * **Format**: Change the format of the values visualized in the chart.
-
-
+ 
 
 ## Maps
 ### Overview
 The Geomap chart is a map of a country, continent, or region, with colors and values assigned to specific regions and addresses. Values are displayed as bubbles, dots, or colors with the option of hover text for data points. 
 
-### When to Use Bubble Maps
+### When to Use Map Charts
 Bubble Maps show aggregated values in locations with each bubble area proportional to the value being represented. These are best suited for comparing proportions over geographic regions. 
 
 Dot Maps show no aggregated values and just data locations. These are best for detecting spatial patterns or the distribution of data over a geographical region, by placing equally sized points over a geographical region.
@@ -920,7 +918,7 @@ aggregated values. These are best for visualizing how a measurement varies acros
 * Dot maps: To show the distribution of data per location.
 
 ### How to Use Map Charts
-You can create Map charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Maps charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 Before getting to the Chart Builder, the data needs to be prepared for the correct use of maps.
 
@@ -937,7 +935,7 @@ On the right side of the window, we can find the properties panel. The first sec
 
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20_ct.png#thumbnail)
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20a_ct.png#thumbnail-40) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/20a_ct.png#thumbnail-40)
 
 After selecting a Bubble, Dot, or Choropleth map chart, the center of the chart builder window will update to reflect the actions required.
 
@@ -982,26 +980,26 @@ In this section, you will find a guide through the settings specific to the Bubb
 * **Data Labels**: Turn On/Off value labels. 
 
 
-## Box & Whiskers Chart
+## Box & Whisker Chart
 ### Overview
 A Box & Whisker chart presents information from a five-number summary. It is especially useful for indicating whether a distribution is skewed and whether there are any potentially unusual observations or outliers in the data set. Box & Whisker charts are also very useful when large numbers of observations are involved and when two or more data sets are being compared.
 This chart is used to show the shape of the distribution, its central value, and its variability.
 
-### When to Use Box & Whiskers Charts
-Box & Whiskers are commonly used in exploratory data analysis. Works to make comparisons between records of different time periods.
+### When to Use Box & Whisker Charts
+Box & Whisker charts are commonly used in exploratory data analysis. Works to make comparisons between records of different time periods.
 
-### Use Cases
+#### Use Cases
 * To compare distributions because the center, spread and overall range are immediately apparent.
 * To summarize a set of data measured on an interval scale. 
 
-### How to Use Box & Whiskers Charts
-You can create Box & Whiskers charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>. 
+### How to Use Box & Whisker Charts
+You can create Box & Whisker charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
 ![5_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/5_ct.png#thumbnail)
 
-On the right side of the window, there is the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Box & Whiskers chart.
+On the right side of the window, there is the properties panel. The first section is related to chart type selection, where a user can select which type of chart they want to create. Here, we will choose the Box & Whisker chart.
 
 ![6_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/6_ct.png#thumbnail-40)
 
@@ -1009,7 +1007,7 @@ After selecting the Box & Whiskers chart, the center of the chart builder window
 
 
 
-At the top of the chart builder, there are 3 fields: *Category, Values,* and *Distribution*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, Box & Whiskers will be displayed on the canvas once at least one dataset column is dropped as a category field or value.
+At the top of the chart builder, there are 3 fields: *Category, Values,* and *Distribution*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, Box & Whisker will be displayed on the canvas once at least one dataset column is dropped as a category field or value.
 
 
 ![7_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/7_ct.png#thumbnail)
@@ -1023,7 +1021,7 @@ In a Box & Whisker chart:
 ### Properties
 All charts have a set of properties that allows users to customize the aspect of the chart, modifying its look, format, and behavior along with some other options. The properties panel located on the right side of the window shows different sections for chart settings.
 
-In this section, you can find a guide through the settings specific to the Box & Whiskers chart.
+In this section, you can find a guide through the settings specific to the Box & Whisker chart.
 
 #### General
 * **Tooltips**: Turn on/off tooltips of each data point.
@@ -1040,12 +1038,11 @@ In this section, you can find a guide through the settings specific to the Box &
 * **Symbol Opacity**: Change the degree of a symbol´s opacity.
 
 
-
 ## Word Cloud 
 ### Overview
 A Word Cloud chart is a visual representation of text data in which the importance or frequency of individual words is represented using font size. The more important or the more frequently used a word is, the larger it appears. This format allows users to spot the most important or frequently used words in a Dataset.
 
-### When to Use Word Cloud Charts
+### When to Use It
 Word Cloud charts are best suited when trying to analyze the composition of language to help identify what are the most important words or sentiments in a dataset. For business purposes, Word Clouds can be helpful to find customers' pain points.
 
 #### Use Cases
@@ -1067,7 +1064,6 @@ After selecting the Word cloud chart, the center of the chart builder window wil
 
 
 
-
 At the top of the chart builder, there are 2 fields for *Category* and *Values*. In these fields, you can drag and drop columns from your data panel located on the left side. In the middle section, you can set the title and a description for the chart. Finally, the Word cloud will be displayed on the canvas once at least one column is dropped as a category or value.
 
 
@@ -1084,20 +1080,22 @@ In this section, you will find a guide through the settings specific to the Word
 * **Max Data Point**: Set the maximum number of Words in the chart.
 
 
+
+
 ## Metrics
 
 ### Overview
 
 Metrics are a powerful feature that allows you to keep an eye on your most important data at a glance. It can be used by itself or it can be used as a part of a page, report, dashboard, or workflow.
 
-### When to Use Metric Charts
+### When to Use Metrics
 Metrics are best suited for performance, comparative, qualitative, and quantitative measurements.
 
 #### Use Cases
 * To highlight performance against one or more benchmarks.
 
-### How to Use Metric Charts
-You can create Table charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>. 
+### How to Use Metrics
+You can create Metrics anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -1105,7 +1103,8 @@ To get started, open the chart builder, and a new window will open up in the cen
 
 ![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.png#thumbnail) 
 
-To build your first metric, you can access the Chart Builder from the Analyze tab of the dataset you’d like to use, or from the Page and Report Builder. Select the type of metric you would like to build, choosing between *Indicator, Bullet* or *Gauge* and drag a value to the shelf or into the drop zone. 
+
+To build your first metric, you can access the Chart Builder from the Analyze tab of the dataset you’d like to use, or from the Page and Report Builder. Select the type of metric you would like to build choosing between *Indicator, Bullet* or *Gauge* and drag a value to the shelf or into the drop zone. 
 
 ![43_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/43_ct.png#thumbnail) 
 
@@ -1175,4 +1174,4 @@ An indicator is a qualitative or quantitative variable that provides a simple an
 
 
 
-
+</div>
