@@ -508,6 +508,37 @@ If the input component is left blank, the system displays a placeholder with the
 
 >**Note**: With word wrap, the additional line of text might not be visible if the rows have a fixed height that is less than necessary to show the complete text or the max height of 2000px has been reached.
 
+### Text Settings
+Creators can modify the default text of Headers and Body in Table Charts. 
+
+The components shown in the Styles panel that can be modified are: 
+
+* **Header section** - Properties from the Style that are applied to the Headers/Totals.
+  * **Typeface**: A list of fonts available for headers.
+  * **Weight**: Choose between normal or bold for text weight.
+  * **Size**: Set font size to anything from 8 to 96 px.
+  * **Font Color**: Change the color of the text in Header.
+  * **BG Color**: Change the color of the Header background.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/tabstyle1.png#thumbnail-40)  
+
+
+* **Body section** - Properties from the Style that are applied to the Body of the table.
+  * **Typeface**: A list of fonts available for headers.
+  * **Weight**: Choose between normal or bold for text weight.
+  * **Size**: Set font size to anything from 8 to 96 px.
+  * **BG Color**: Change the color of the Body cells background.
+  * **Font Color**: Change the color of the text in Body.
+  * **Alternate Color**: Change the color of the text in every other Body row.
+  * **Alternate BG Color**: Change the color of every other Body row background.
+  * **Text Wrapping**: Determines if the lines in cells with long text data should wrap to fit in the cell or be cut off to the width of the cell.
+
+ ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/tabstyle2.png#thumbnail-40)  
+ 
+Don’t forget to click on **Save** to apply all the changes to your Table Chart.
+
+>**Note**: Header and Body styles created here have a higher importance than those set in a Custom Theme or Default Theme. 
+
 
 ### Resizing Columns 
 You can manually modify the Column Sizes of Table Charts by simply hovering over the header of the column and dragging the column header’s width to the left or right using the marquee tool. 
