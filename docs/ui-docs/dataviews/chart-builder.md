@@ -83,7 +83,7 @@ Click on the chevron icon adjacent to the **Tooltips** checkbox to expand the UI
 
 Users can also set an optional tooltip header by entering the desired text into the **Header** textbox.
 
->**Note**:  Custom tooltips are only available for bar, line, symbol and pie charts.
+>**Note**:  Custom tooltips are only available for bar, line, map, symbol and pie charts.
 
 
 ## Style Settings
@@ -380,7 +380,7 @@ There are 3 basic components are required to create a condition:
 * **Operator** - The operator for the condition. These vary depending on the data type of the column chosen.
 * **Value** - The value that defines the condition. Input components vary based on the data type of the column chosen.
 
-Conditional Formatting is supported in Bar, Line, Symbol, Table, Crosstab, Dot and Bubble Map charts.
+Conditional Formatting is supported in Bar, Line, Symbol, Combo, Table, Expandable Table, Crosstab, Dot and Bubble Map charts.
 
 
 When you use conditional formatting, you can set the following: 
@@ -407,6 +407,16 @@ First, you have to decide how you want to highlight the cells that meet your con
 3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond3.gif#thumbnail)
+
+For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
+
+### How To Use It?
+First, you have to decide how you want to highlight the cells that meet your condition:
+1. Go to the **Format** section located inside the chart builder’s configuration pane.  
+2. Click on the **Conditional Formatting** subsection and click on **+Add Condition**.
+3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond4.gif#thumbnail) 
 
 
 ## Aggregate Formulas
