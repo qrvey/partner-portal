@@ -16,7 +16,7 @@ Predefined transformation functions are presented in a list on the right side of
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation2.png#thumbnail) 
 
-Find the function that you need and from the list of functions and drag it to the work area that we will call “the workspace” in this article.
+Find the function you need from the list of functions and drag it to the work area that we call “the workspace” in this article.
 
 
 When working with a single Data Source, you will have a single workspace to add transformations to. 
@@ -92,6 +92,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#addition">Addition</a>| Numeric | Adds the values of multiple columns together |
 | <a href="#array-filter">Array Filter</a>| Logic | Removes the values that do not match the condition specified |
 |<a href="#array-flatten"> Array Flatten</a>| Logic | Inflates array objects in hierarchical data |
+| <a href="#array-select-single-item">Array Select Single Item</a>|Logic | Replaces an existing object or value array with the first single object or value extracted from it |
 | <a href="#concatenate">Concatenate</a>| Text | Concatenates multiple textual column values  |
 | <a href="#dataset-write">Dataset Write</a>| External | Writes data to a different dataset |
 | <a href="#date-add">Date Add/Subtract </a>| Date | Adds or subtracts given units to date column values |
@@ -307,6 +308,44 @@ Upon adding this transformation the system automatically picks the array and sho
 If you choose to inflate and load the data, the resulting dataset will have four records.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation25.png#thumbnail)
+
+
+### Array Select Single Item
+The Array Select Single Item transformation extracts a single object from an object array or single value from a value array, replacing the existing array with the single extracted object or value.  The object or value to extract from the array is the first object/value that appears in the array after the sorting logic is applied.  For object arrays, the user can specify which object array properties to sort on and how the sort should be performed.  For value arrays, the user simply specifies the sort behavior for the string or numeric values in the array.
+
+Follow these steps to configure the Array Select Single Item transformation:
+
+1. Choose the array property from the **Array Column** drop-down menu.
+2. If the property selected is an object array, then choose an object column to sort by, as well as the sorting behavior.  You can sort *ascending* (“min”) or *descending* (“max”), and also specify how to treat nulls in the data.
+3. Determine if you want to perform a multi-column sort by adding additional object columns to sort by.  This option is **unavailable** for value arrays.
+4. Decide if you want to preserve or replace the existing source array.  Select **Create New** and type a name for the new property if you want to preserve the existing source array.  The single array object/value that is selected by the specified sorting logic will be written to this new property; otherwise, the source array will be replaced with this object/value.
+
+>**Note**:  The default behavior of this transformation is to replace the existing source array with the single object/value selected.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray1.png#thumbnail-60)
+
+#### Example
+The following example will demonstrate how to use the Array Select Single Item transformation. Consider the following JSON object array of Hollywood actors. This example illustrates selecting the oldest actor from the list by first sorting the array in descending order by the “age” field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray2.png#thumbnail-60)
+
+
+First, the **actors** object array property must be selected from the *Array Column* field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray3.png#thumbnail-40)
+
+Next, the **actors.age** property is selected from the *Sorting Columns* field and **Max** is selected in the adjacent radio button control.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray4.png#thumbnail-40)
+
+
+Finally, the desired output is to create a new property to place the selected object so that the original array of actors is unmodified.  The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray5.png#thumbnail-40)
+
+Testing the transformation shows the final output that preserves the original *actors* array property, as well as the new *oldest_actor* property.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray6.png#thumbnail)
 
 
 ### Formula
