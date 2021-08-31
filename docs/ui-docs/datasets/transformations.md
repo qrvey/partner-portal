@@ -311,16 +311,16 @@ If you choose to inflate and load the data, the resulting dataset will have four
 
 
 ### Array Select Single Item
-The Array Select Single Item transformation extracts a single object from an object array or single value from a value array, replacing the existing array with the single extracted object or value.  The object or value to extract from the array is the first object/value that appears in the array after the sorting logic is applied.  For object arrays, the user can specify which object array properties to sort on and how the sort should be performed.  For value arrays, the user simply specifies the sort behavior for the string or numeric values in the array.
+The Array Select Single Item transformation extracts a single object from an object array or single value from a value array, replacing the existing array with the single extracted object or value. The object or value to extract from the array is the first object/value that appears in the array after the sorting logic is applied. For object arrays, the user can specify which object array properties to sort on and how the sort should be performed. For value arrays, the user simply specifies the sort behavior for the string or numeric values in the array.
 
 Follow these steps to configure the Array Select Single Item transformation:
 
 1. Choose the array property from the **Array Column** drop-down menu.
-2. If the property selected is an object array, then choose an object column to sort by, as well as the sorting behavior.  You can sort *ascending* (“min”) or *descending* (“max”), and also specify how to treat nulls in the data.
-3. Determine if you want to perform a multi-column sort by adding additional object columns to sort by.  This option is **unavailable** for value arrays.
-4. Decide if you want to preserve or replace the existing source array.  Select **Create New** and type a name for the new property if you want to preserve the existing source array.  The single array object/value that is selected by the specified sorting logic will be written to this new property; otherwise, the source array will be replaced with this object/value.
+2. If the property selected is an object array, then choose an object column to sort by, as well as the sorting behavior. You can sort *ascending* (“min”) or *descending* (“max”), and also specify how to treat nulls in the data.
+3. Determine if you want to perform a multi-column sort by adding additional object columns to sort by. This option is **unavailable** for value arrays.
+4. Decide if you want to preserve or replace the existing source array. Select **Create New** and type a name for the new property if you want to preserve the existing source array. The single array object/value that is selected by the specified sorting logic will be written to this new property; otherwise, the source array will be replaced with this object/value.
 
->**Note**:  The default behavior of this transformation is to replace the existing source array with the single object/value selected.
+>**Note**: The default behavior of this transformation is to replace the existing source array with the single object/value selected.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray1.png#thumbnail-60)
 
@@ -339,7 +339,7 @@ Next, the **actors.age** property is selected from the *Sorting Columns* field a
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray4.png#thumbnail-40)
 
 
-Finally, the desired output is to create a new property to place the selected object so that the original array of actors is unmodified.  The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
+Finally, the desired output is to create a new property to place the selected object so that the original array of actors is unmodified. The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray5.png#thumbnail-40)
 
