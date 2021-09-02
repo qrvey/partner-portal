@@ -19,6 +19,11 @@ In order to change the size or position of the page content, or to add or remove
 
 Clicking the **Edit** icon will take you to the edit mode, where you can move panels around, resize them, remove any chart from the page, or choose other charts from under any dataset to add to the page. The options of adding and removing filters, as well as downloading each chart or the entire page, are also available in this mode. 
 
+
+While in edit mode, you can also select any of the pages as your homepage. This setting will be used every time you log into the application, in the future. The selected homepage can be reverted back to the original homepage at any given time. 
+
+![eup-dashboards](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/eup/dashboards1.png#thumbnail-40)  
+
 Once you are done with editing the page you can either save your new, personalized version by clicking on the **Save** icon on the bottom-right corner of the page or discard your changes by exiting the edit mode without saving.
 
 
