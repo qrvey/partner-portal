@@ -12,7 +12,7 @@ In this article, we will walk you through the steps to create connections to sup
 CSV files are very simple and lack a lot of the details that the system could get from a database. This makes them versatile and error-prone at the same time. Likewise, JSON files could contain invalid content that may cause errors during load, especially if they are created manually. Therefore, it is important for the files to be reviewed and shaped properly so that errors can be avoided. 
 
 For CSV files make sure that:
-* One set of data is presented in the file. I.e. the file does not contain a set of records for employees and another set for sales data.
+One set of data is presented in the file - i.e., the file does not contain a set of records for employees and another set for sales data.
 * Data is organized into columns.
 * The first row contains column headers.
 * Data starts from the second row.
@@ -42,9 +42,9 @@ Regardless of the method you use, select **File Upload**.
 
 
 
-You will then be brought to the data upload screen where you can select any CSV or JSON/ndJSON file from your desktop or simply drag it into the window. Give your connection a name that you can identify it by.
+You will then be brought to the data upload screen where you can choose the desired file type and then select any CSV or JSON/ndJSON file from your desktop or simply drag it into the window. Give your connection a name that you can identify it by.
 
-If a JSON file is used, the system will validate it and show the first record as a sample.
+You can view the first 100 rows of your data by clicking on the **View Source Data** link. If a JSON file is used, the system will validate it and show the first record as a sample.
 
 >**Important Note**: You can edit this sample to actually modify the structure of the dataset that you later upload from this connection.  
 
