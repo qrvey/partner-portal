@@ -49,7 +49,7 @@ The panel has several options that can be controlled from the icons above it.
     * Panel default view - determines if the filter panel in the end user view is going to be open or closed by default. 
     * Scope - Determines the look of the panel: whether or not to show the scope icons or colors.
 In the case that scopes are shown with color coding, the colors can be determined for each scope.
-<br>
+<br/>
 3. **Options** - disable or delete all filters from the three-dot menu. 
 4. **Collapse/Expand** - the filter panel can be collapsed or expanded using this icon.
 
