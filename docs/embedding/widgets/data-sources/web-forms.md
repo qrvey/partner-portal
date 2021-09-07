@@ -43,7 +43,7 @@ In this example, we have the design widget configuration object for a Form. This
 
 > **Note**: <APP_ID> must refer to a valid and active application defined on your Qrvey instance, and <QRVEY_ID> must refer to a draft form in that application.
 
-```
+```html
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 var configWebForm = {
     "api_key": "<API_KEY>",
@@ -64,7 +64,7 @@ As we mentioned earlier, this widget allows us to collect three types of webform
 ## See It In Action
 See the widget in CodePen:
 
-<iframe>
+<iframe
   allowFullScreen
   className="cp_embed_iframe "
   frameBorder={0}
@@ -76,9 +76,8 @@ See the widget in CodePen:
   style={{ width: "100%", overflow: "hidden", display: "block" }}
   title="Sample- Webform Design"
   loading="lazy"
-  id="cp_embed_17ca2ace17e54cd26353f638666f91be"
+  id="cp_embed_17ca2ace17e54cd26353f638666f91be">
   </iframe>
-</div>
 
 
 ## Sample With Security Token
@@ -87,7 +86,4 @@ Web Form Design widget supports the use of JWT tokens for authentication and it 
 You can find the secure implementation of the same example as above <a href="https://codepen.io/qrveysamples/pen/8ae9eb19a3464b64d293d44e102ccd4b">here</a>.
 
 
-
-
-
-
+</div>
