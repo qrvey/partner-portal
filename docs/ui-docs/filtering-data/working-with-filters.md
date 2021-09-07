@@ -171,11 +171,19 @@ A calendar-based approach calculates the date ranges, taking into account the st
 
 If **Calendar dates** checkbox is unchecked and the other controls stay at their same setting, the date range calculation will be “rolling”. That means that the last two years ]be calculated relative to the anchor date and automatically shifts forward without considering calendar periods. So if today’s date is 2/8/2021 the filter range will be 2/8/2019 through 2/8/2021 today and change to 2/9/2019 through 2/9/2021 tomorrow, and so on. 
 
+
 ### Inclusive Versus Exclusive Date Ranges
 If *The Last* or *The Next* is selected as the direction of the date filter, and the unit is set to anything but Day, the **Include starting date** checkbox is enabled and defaults to checked. This setting includes the selected date of the anchor in calculating the date range. For example, if today’s date is any day in 2021, “the last 2 years” will include 2021, resulting in 1/1/2020 through 12/31/2021.
 However, if the checkbox is unchecked - making the date range exclusive of the anchor date - the last 2 years will result in 1/1/2019 through 12/31/2020. 
 
 >**Note**: The Dates Selected label always shows the calculated date range based on the selected values for the controls. 
+
+## “Dates” Versus “Date Names”
+Sometimes there may be a need to filter based on “*date names*” and not dates. An example of this is when you want to find all data for the “*month of January*” and not “*January 2020*”. Or *“Q3”* in general, as opposed to “*Q3 2021*”. 
+This can be accomplished by choosing “*Quarter of Year*”, *“Month of Year*”, etc. options in the date filter, as opposed to *Quarter, Month*, etc. This feature is available for date filters when using the *Equals* operator.
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/datefilter.png#thumbnail-60)  
+
 
 ## See/Edit Filters Directly from Charts 
 When any filter or filters (other than hidden security filters) apply to a chart, the filter icon on the chart panel is highlighted with a dot, indicating that the chart data has been filtered. In that case, Creators and End Users can see these filters in a small popup, by hovering on the chart’s filter icon. 
