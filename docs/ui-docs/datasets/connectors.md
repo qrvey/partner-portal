@@ -18,7 +18,7 @@ From the Connections page, you can click on an existing connection to make chang
 A modal window will appear that lists all of the supported data source types that can be configured through the Qrvey Composer UI.
 
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connectionsnew.png#thumbnail) 
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connectionsnew.png#thumbnail-60) 
 
 The UI supports the following types of SQL-compatible source databases:
 
