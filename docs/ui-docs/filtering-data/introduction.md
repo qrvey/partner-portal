@@ -90,6 +90,10 @@ Example: Select all records where *orderDate Quarter is Equal to Q1 2020* **OR**
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro7.png#thumbnail) 
 
+
+>**Note**: Filter logic can **only** be edited to AND/OR within the same scope (only within Global Filters or Panel filters or Page filters). OR logic is used for multiple values within the same filter (Country: USA or Australia or Spain). AND logic is applied to filters in different scopes (Global filters and Panel filters and Page filters). 
+
+
 The following image sums up the filter logic used in Qrvey. Logic between columns can be changed, as explained more in the <a href="#edit-filter-logic">Edit Filter Logic</a> section, below:
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail)
