@@ -16,7 +16,7 @@ Use the **Send to Webhook** action to send data to an external Webhook URL. Just
 ![send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/2_send-actions.png#thumbnail-60)
 
 ![send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/3_send-actions.png#thumbnail-60)
-
+  
 
 ## Send an Email
 Use the **Send Email** action to send notifications and alerts via email. To use this action, enter a comma-delimited list of email addresses along with a subject and a message. The message body can be formatted with any of the standard options provided, including bold, italic, and underline. There are also justification and link options.
