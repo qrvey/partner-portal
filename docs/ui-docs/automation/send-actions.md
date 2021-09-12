@@ -54,7 +54,6 @@ Once done, you can also apply a filter to any datasets used in the report or pag
 ### Export Chart
 If instead of full pages or reports individual charts need to be attached to the email you can choose the Export Chart option and pick any number of charts from the list, the desired format to export the data, and save the attachment. Chart attachments can also be further filtered for the attachment.
 
->**Note**: This option only applies to table charts at this time.
 
 ![send-actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.4_send-actions/send7.png#thumbnail-60)
 
