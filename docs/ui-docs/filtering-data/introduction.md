@@ -99,6 +99,8 @@ The following image sums up the filter logic used in Qrvey. Logic between column
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail-60)
 
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail-60)
+
 
 
 
