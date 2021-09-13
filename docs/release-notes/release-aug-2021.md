@@ -97,3 +97,4 @@ Click <a href="/docs/video-training/release/version-6.2" target="_blank"> <stron
 
 * <strong>ADMIN-2841 - Received Apps Counter Badge Does not Appear</strong>: The counter badge is now visible to the user on the “Received Apps” tab before the user clicks on it.
 
+</div>

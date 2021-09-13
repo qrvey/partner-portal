@@ -190,6 +190,10 @@
         },
         {
           "type": "doc",
+          "id": "ui-docs/datasets/dataset-views"
+        },
+        {
+          "type": "doc",
           "id": "ui-docs/datasets/column-links"
         },
         {
@@ -676,6 +680,10 @@
         {
           "type": "doc",
           "id": "release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-jul-2021"
         },
         {
           "type": "doc",
