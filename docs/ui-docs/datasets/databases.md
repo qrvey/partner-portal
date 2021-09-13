@@ -20,6 +20,8 @@ Enter your connection information, including *Host URL, Username* and *Password*
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database2.png#thumbnail-60) 
 
+
+  
 &gt;**Note 1**: For an Amazon Redshift cluster or Amazon RDS instance, enter the endpoint of the cluster or instance without the port number. For example, if the endpoint value is clustername.1234abcd.us-west-2.redshift.amazonaws.com:1234, then enter clustername.1234abcd.us-west-2.redshift.amazonaws.com. You can get the endpoint value from the Endpoint field on the cluster or instance detail page in the AWS console.
 
 You may also choose to use SSL with the connection by checking the Use SSL checkbox.
