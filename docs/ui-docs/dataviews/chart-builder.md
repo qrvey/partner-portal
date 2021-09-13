@@ -255,13 +255,13 @@ The *Discrete* and *Continuous* features are options only available for the date
 
 * Discrete Dates
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build29.png#thumbnail)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build29.png#thumbnail-60)
 
 
 
 * Continuous Dates
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail-60)
 
 
 
@@ -279,7 +279,7 @@ X/Y charts such as Bar, Line, Symbol, etc., as well as all other charts that wor
 
 
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail-60)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail)
 
 Multiseries charts also can be sorted by either the Category or Value column and the Series column can be sorted independently, at the same time. 
 
@@ -348,11 +348,11 @@ Sorting of data in charts can be initiated from various places in the Chart Buil
 This method is the handiest of all and available for most column types of most charts. By default, the column pills show their sorting direction using an arrow. Column pills in field types that support various features, like date grouping, show the sorting options under a “Sorting” sub group in the menu.
 
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting.png#thumbnail-40)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting.png#thumbnail-60)
 
 Those field types that don’t support any other features, such as Series, only list the two sorting options, as seen in the next image.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting2.png#thumbnail-20)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting2.png#thumbnail-40)
 
 Columns used in Tables and Crosstabs also support removal of sorting to result in an unsorted dataset. The “Clear Sorting” option can be accessed from the same menu off the column pill of these charts.
 
