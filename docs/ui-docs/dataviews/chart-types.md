@@ -236,6 +236,9 @@ In this section, you will find a guide through the settings specific to the Symb
 ### Overview
 A funnel chart demonstrates the flow of data in levels that are narrowing down to help visualize a linear process with sequential connected stages. The chart takes its name from its shape, which starts from a broad head and ends in a narrow neck.
 
+A Funnel graph is similar to a horizontal bar chart. The main difference is that bars are center aligned and axes are not displayed. With this form of visualization, Creators can easily displays how values change through different stages.
+ 
+
 
 ### When to Use Funnel Charts
 Funnel charts are most often seen in business or sales contexts where we need to track how a starting set of visitors or users drop out of a process or flow. This chart shows how the starting whole breaks down into progressive parts.
@@ -259,11 +262,11 @@ Funnel Charts need one category and one value column. Drag and drop the desired 
 
 
 ### Properties
-A Funnel graph is similar to a horizontal bar chart. The main difference is that bars are center aligned and axes are not displayed. With these charts, Creators can easily construct a chart that displays how values change through different stages.
+Funnel charts can be customized using the following properties in the configuration panel.
 
 #### General
 * **Sort by**: Choose whether to sort by Label or Value in an Ascending or Descending order.
-* **Tooltips**: Turn on/off tooltips for each data point.
+* **Tooltips**: Funnel charts support custom tooltips. Turn tooltips on/off for each data point using the checkbox.
   * **+Add Column**: Add a column to the tooltip.
   * **Header**: Add a header to the tooltip.
 * **Max Data Points**: Set a limit of the funnel levels/stages.
@@ -273,6 +276,8 @@ A Funnel graph is similar to a horizontal bar chart. The main difference is that
 #### Styles
 * **Color Type**: Choose either a single color for the whole chart of a different color for each stage.
 * **Theme**: Pick one of the available color themes.
+* **Mode**: By default, Funnel charts present the values using the height of each band. This setting can be changed to use the width of the band for presenting the value by choosing the **Width** option instead of **Height**.
+
 * **Category Labels**: Turn on/off legends of the charts.
   * **Category name**: Shows the name of the category.
   * **Segment names**: Shows the name of the segment/level.
@@ -281,7 +286,7 @@ A Funnel graph is similar to a horizontal bar chart. The main difference is that
   * **Values**: Shows the data values within the segments.
   * **Percentages**:Shows the data percentage within the segments.
  
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel4.png#thumbnail-40)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel5.png#thumbnail-40)
 
 
 ## Pie Chart
@@ -404,16 +409,15 @@ Axis Labels**: Turn on/off axis labels of the chart.
 
 ## Tables
 ### Overview
-Tables simultaneously show multiple fields directly from your data source in a raw format with the content of each row being logically connected. An unlimited number of grouped and aggregated columns can be accepted allowing users rapid access and relatively easy comparison of data.
+Tables display data in rows of consecutive columns, in a spreadsheet-like format. This form of visualization provides an easy way to view the data in its original form and perform various analytical functions - such as grouping, sorting, and filtering - on it. 
 
 ### When to Use Table Charts
-Tables are best suited for running detailed analysis and precise values instead of visualization of values.
+Tables are best suited for running detailed analysis of the raw data rather than aggregated visualization of values. Given that they support the display of an unlimited number of columns and rows, the data can be digested and analyzed more effectively at the initial stages of discovery and visualization.
 
 #### Use Cases
-* When you need the display to look up individual values.
-* To compare individual values but not an entire series of values to one another.
+* When you need to get a comprehensive view of your raw (unaggregated) data.
 * When precise values are required.
-* When the quantitative information to be communicated involves more than one unit of measure.
+* When more pieces of data need to be analyzed than the other common charts can support.
 * To include both, summary and detailed values.
 
 ### How to Use Table Charts
@@ -471,23 +475,70 @@ All charts have a set of properties that allows users to customize the aspect of
 In this section, you will find a guide through the settings specific to the Table chart.
 
 #### General
-In this section, you will find *Menu Actions* and *Max Groups*.
+Some general properties of the Table chart can be determined from this section.
 
-**Menu Actions** allow users to enable or disable table columns options located on the right side of the column name and identified as three dots icons. The three available options are:
+##### Menu Actions 
 
-* **Sorting**: When enabled, users can sort the values of the column.
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/menu_act.png#thumbnail-40)  
+
+From this section you can control the options in the three-dot menu of each column header in the interaction mode.The available options are:
+
+* **Sorting**: When enabled, users can sort the values of the column from the header of each column.
 
 * **Visualization**: When enabled, users can change how they want to visualize the values of that column, the first option is as a value (default), and the second option is as bars. 
 
 **Note**: Visualizations are only available for numeric values.
 
-* **Totals**: When enabled, users can aggregate values of the column in two different ways:
-  * ***Count***: The table will count how many values there are in that specific column, and the number will be displayed at the bottom of the column.
-  * ***Distinct Count***: The number of unique values in the column displayed at the bottom of the column.
-	
-The following image shows how **Menu Action** settings work.
+##### Totals
 
-![42_chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/42_ct.gif#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/totals.png#thumbnail-40)  
+
+Totals and subtotals can be selected and added from this configuration section to display various aggregates of each column. By default no totals are shown for the table. Click on **+ Add Total** to get the option to choose the columns for which you want to add the totals, as well as which totals and at what level you wish to add.
+
+When a new Total row is added, all forms of totals are automatically added for all of the non-grouped columns.
+
+Unselect the totals that you don’t want to include, from the Total dropdown. If you wish to choose different totals for different columns, add another total, choosing the desired column and the total that you wish to display for it. 
+
+The **Level** dropdown lets you decide if the totals are for the entire table or at the level of a certain group. The option of levels is only enabled if the table has been grouped and results in displaying subtotals.
+
+The following image shows the “sum of Quantity” chosen at both group and table level while “minimum” has been selected as the total for the Price column at the table level.
+
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/totals2.png#thumbnail-60)
+
+
+##### Table Calculations
+With Table Calculations you can add more analytical power to the table charts, creating new columns that calculate running aggregates and other functions on the selected columns of data. <a href="/docs/ui-docs/dataviews/table-calculations">Table Calculations</a> have been discussed in detail in another article.  
+
+##### Aggregated Formulas
+Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregated formulas do the same thing for data that has been grouped and aggregated for a chart.
+Given that distinction, the aggregated formula function is only available in grouped table charts at the moment.
+
+“Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
+
+To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the **Group** shelf): 
+1. Click on the “**+ Add Aggregated Formula**” action item.
+2. In the “Create Table Formula“ modal window, enter a formula name and the desired formula using the available options, **Test** the formula and click **Save**. You can use any columns of the current context for the construction of the formula.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/formula.png#thumbnail-60) 
+
+3. The new aggregated formula can be edited or removed through the “**Aggregated formulas**“ action item.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/formula2.png#thumbnail-40) 
+
+
+
+>**Note**: Only when the table is grouped, the “Aggregated formulas“ action item is displayed in the action panel. If the table is not grouped, this action item is disabled.
+
+##### Allow Pagination and Max Rows
+This option is only available for simple (ungrouped) tables and is not selected by default. As a result the number of displayed rows has to be limited to avoid performance implications. Tables can display an unlimited number of rows by turning on the **Allow Pagination** option. With this action, the **Max Rows** option changes to **Records per page** to allow you to decide how many rows should be displayed for each page in the table.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/pagination.png#thumbnail) 
+
+
+>**Note**: If the table is grouped, the pagination option will be hidden and the **Max Rows** option is replaced with **Max Groups**, which limits the maximum number of groups fetched, for the same performance reasons.
+
+
 
 
 ### Resizing Rows 
@@ -520,18 +571,21 @@ The components shown in the Styles panel that can be modified are:
   * **Font Color**: Change the color of the text in Header.
   * **BG Color**: Change the color of the Header background.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/tabstyle1.png#thumbnail-40)  
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/tabstyle1.png#thumbnail-40)
 
 
 * **Body section** - Properties from the Style that are applied to the Body of the table.
   * **Typeface**: A list of fonts available for headers.
   * **Weight**: Choose between normal or bold for text weight.
   * **Size**: Set font size to anything from 8 to 96 px.
-  * **BG Color**: Change the color of the Body cells background.
   * **Font Color**: Change the color of the text in Body.
+  * **BG Color**: Change the color of the Body cells background.
   * **Alternate Color**: Change the color of the text in every other Body row.
   * **Alternate BG Color**: Change the color of every other Body row background.
   * **Text Wrapping**: Determines if the lines in cells with long text data should wrap to fit in the cell or be cut off to the width of the cell.
+  * **Repeatable Rows**: Then this checkbox is unchecked (default) grouped values are only listed once for each group. Check the box to have them repeat for every row of aggregated values.
+  * **Border**: Choose which borders to hide/show using the icons in this section. By default all borders are displayed. 
+
 
  ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/tabstyle2.png#thumbnail-40)  
  
@@ -579,7 +633,7 @@ Table **Creators** and **End Users** are able to organize columns by reordering 
 
 #### Simple Table
 **Creators** can reorder columns in two different ways:
-1. Directly from the  table headers 
+1. Directly from the table headers 
 
 Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved.
 After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order. 
@@ -643,7 +697,7 @@ When adding a trend chart to the cells, you need to define:
   * If **Trend by Column** is a date data type, you can apply:
     * Date Grouping- to group your dates by year, quarter, months, weeks, days. 
     * Time Period - to choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).
-  * If **Trend by Column**  is a numeric data type, you can apply: 
+  * If **Trend by Column** is a numeric data type, you can apply: 
     * Max Data Points - to limit the number of data points shown WHEN a numeric or string column is used for the “Trend by Column.” (For Sparklines - Bar/Line + Min/Max charts). This does not apply to dates. The default value is set to 50.
 * **Trend Sort** - to sort the trend visualization in an ascending or descending manner. Applies to all datatypes.
 * **Color** - to select the color of the trend chart.
@@ -818,8 +872,9 @@ Position Set the totals for columns, rows or both.
 
 #### Styles
 
-* **Color**: Change the color of Rows and Columns headers of the chart.
-* **Format**: Change the format of the values visualized in the chart.
+* **Header Color**: Change the color of chart headers.
+* **Header Font Color**: Change the color of the text in chart headers.
+* **Format**: Change the format of the values visualized in the chart (abbreviated, numeric, currency, percentage, or scientific).
 
 #### Changing Header Colors 
 The Crosstab headers font color can be changed directly from the Chart Builder. 
