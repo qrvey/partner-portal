@@ -112,6 +112,8 @@ We add more predefined transformations with every release. The predefined set is
 
 
 ## Numeric Transformations
+For all numeric transformations, you have the option to perform a numeric function on any number of numeric data columns. In addition to other numeric columns, you can also use tokens or numbers that you manually enter. For example, you can multiply the numeric column *price* by the constant number 0.08 to create a new *salesTax* column. To use a token, type in two curly brackets **{{** for the list of tokens to appear. In the case of numeric transformations, the selected token must also be numeric.
+
 
 ### Addition
 This transformation allows you to add the values of two or more numeric columns from the selected data source, or join the output. The result is one single value; the sum of all selected columns.
@@ -237,7 +239,7 @@ Configuring the Array Filter transformation is a three-step process:
   
 3. Decide if you want the source array property updated directly or whether the desired result is a new array property. If the output type is “Create New”, you must specify the new array property name in the supplied field. Only array items that match the condition are written to the new array property.
 
-Optionally, you can specify the behavior for record errors. The options are identical here as they are for all other transformation types where this field appears.
+Optionally, you can specify the behavior for recording errors. The options are identical here as they are for all other transformation types where this field appears.
 
 > **Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
 
@@ -250,7 +252,7 @@ This example will demonstrate how to find a single object within an object array
 
 
 
-The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53.First, the “actors” object array property must be selected from the Array Path field.
+The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the “actors” object array property must be selected from the Array Path field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-20)
 
@@ -333,7 +335,7 @@ If you choose to inflate and load the data, the resulting dataset will have four
 
 
 ### Array Select Single Item
-The Array Select Single Item transformation extracts a single object from an object array or single value from a value array, replacing the existing array with the single extracted object or value. The object or value to extract from the array is the first object/value that appears in the array after the sorting logic is applied. For object arrays, the user can specify which object array properties to sort on and how the sort should be performed. For value arrays, the user simply specifies the sort behavior for the string or numeric values in the array.
+The Array Select Single Item transformation extracts a single object from an object array or single value from a value array, replacing the existing array with the single extracted object or value. The object or the value to extract from the array is the first object/value that appears in the array after the sorting logic is applied. For object arrays, the user can specify which object array properties to sort on and how the sort should be performed. For value arrays, the user simply specifies the sort behavior for the string or numeric values in the array.
 
 Follow these steps to configure the Array Select Single Item transformation:
 
@@ -388,7 +390,7 @@ If/Else transform can be used when there is a need to create a branch - based on
 
 
 ### Record Copy
-Record Copy is an advanced transformation that allows you to make a copy of the records of the data source or join output and use them for other transformations or actions. This function is unique in the fact that it has to be combined with some other transformation - especially one that sends the record to another destination, like another dataset - in order to have an observable effect. For that very reason, Record Copy transformation starts a new transformation stream that is shown slightly indented. Any transformations that are added under Record Copy will apply to the copied record and will not affect the mainstream of transformations.
+Record Copy is an advanced transformation that allows you to make a copy of the records of the data source or join output and use them for other transformations or actions. This function is unique in the fact that it has to be combined with some other transformation - especially one that sends the record to another destination, like another dataset - in order to have an observable effect. For that very reason, the Record Copy transformation starts a new transformation stream that is shown slightly indented. Any transformations that are added under Record Copy will apply to the copied record and will not affect the mainstream of transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation26.png#thumbnail)
 
