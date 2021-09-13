@@ -109,6 +109,26 @@ The automatic link can be set up from the Column Link command in the dot menu of
 For detailed information about <a href="/docs/ui-docs/datasets/column-links/">Column Links</a> see the article dedicated to the subject. 
 Setting up automatic links for a column will not require a data reload. 
 
+
+### Enabling Dataset Sharing
+Datasets are always restricted to users that belong to the same application, by default.  If you want users with access to other applications to have the ability to access this dataset as a source for building charts and metrics, as well as use this dataset as a source for creating new datasets that reside in other applications, then you can choose to share this dataset.  Click on the three-dot menu in the upper-right corner of the dataset UI and then select **Share Data with Everyone**.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share.png#thumbnail-40)
+
+
+A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view.  For more information about dataset views, please refer to the <a href="/docs/ui-docs/datasets/dataset-views/">Dataset Views</a> article.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share2.png#thumbnail-40)
+
+
+Shared datasets have a visual globe icon adjacent to the **Type** indicator on the main dataset page.  You can “unshare” the dataset at any time by clicking the same three-dot menu and then selecting **Unshare Data**.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share3.png#thumbnail-40) 
+
+
+Be advised that unsharing a dataset will prevent users from other applications to use this dataset as a source for a new dataset view and/or dataset.  Any existing dataset views and/or datasets that use this dataset as a source will no longer be available to users building charts and metrics.  Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
+
+
 ### Setting Up Geolocation Groups
 If your data contains address information, you can choose to create a Geolocation Group out of any number of address fields. A Geolocation can be used to create various map charts.
 
