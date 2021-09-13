@@ -3,7 +3,7 @@ id: transformations
 title: Transformations
 sidebar_label: Transformations
 ---
-<div style="text-align: justify">
+<div style={{textAlign: 'justify'}}>
 
 Transformations manipulate existing columns and create new ones so that the data is analysis-ready. For example, you can standardize values by setting all values to upper or lower case, combine values together, or flatten arrays of layered data. Transformations are run during the loading process.
 
@@ -43,7 +43,7 @@ Other Configuration Option - This part of the panel changes from function to fun
     * Reject Record: The whole record will not be skipped if an error happens.
     * Ignore Error: The record remains as-is.
     * Replace Value: The value will be replaced with the entered value in case of an error.
-> **Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
+&gt;**Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-60)
 
@@ -80,7 +80,7 @@ Once a transformation has been selected, the system suggests some test data as t
 
 ## Applying Transformations to the Data
 If transformations are added before the data is loaded, they will take effect at the time that you load your data. However, if transformations are added or updated for an existing dataset, **a data reload is required.**
-> **Note**: If transformations are added or modified, but the data is not reloaded, the transformations will **only apply to future records or loads**. For instance, when a data sync process is initiated after the transformations have been added.
+&gt;**Note**: If transformations are added or modified, but the data is not reloaded, the transformations will **only apply to future records or loads**. For instance, when a data sync process is initiated after the transformations have been added.
 
 
 ## Available Transformation Functions
@@ -103,7 +103,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
 | <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
 | <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
-| <a href="#">Round | Numeric | Rounds the value of one or more numeric columns |
+| <a href="#">Round </a>| Numeric | Rounds the value of one or more numeric columns |
 | <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
 | <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |
 | <a href="#trim">Trim</a> | Text | Removes selected characters from around textual column values |
@@ -208,18 +208,18 @@ Configuring the Array Filter transformation is a three-step process:
 1. Choose the array property to filter from the Array Path drop-down menu.
 
 2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition type:
-<ul style="list-style: none; margin-left:20px;">
-<li>  a. Use <strong>Standard</strong> for simple “equals” conditions. </li>
-<li>  b. Use <strong>Advanced</strong> for other types of operators and/or supply your own custom JS function. </li>
-<li>  c. If the <strong>Standard</strong> condition type was selected, choose the column to filter by using the Condition Column drop-down and enter the value to search for in the adjacent field. </li>
-<li>  d. If the <strong>Advanced</strong> condition type was selected, copy/paste your JS function into the field provided. You can reference columns from the dataset by using the Qrvey token syntax (e.g. {{name}}). Ensure that your JS function returns a boolean value for all execution code paths.</li>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+  <li>  a. Use <strong>Standard</strong> for simple “equals” conditions. </li>
+  <li>  b. Use <strong>Advanced</strong> for other types of operators and/or supply your own custom JS function. </li>
+  <li>  c. If the <strong>Standard</strong> condition type was selected, choose the column to filter by using the Condition Column drop-down and enter the value to search for in the adjacent field. </li>
+  <li>  d. If the <strong>Advanced</strong> condition type was selected, copy/paste your JS function into the field provided. You can reference columns from the dataset by using the Qrvey token syntax (e.g. {'{'}{'{'}name{'}'}{'}'}). Ensure that your JS function returns a boolean value for all execution code paths.</li>
 </ul>
   
 3. Decide if you want the source array property updated directly or whether the desired result is a new array property. If the output type is “Create New”, you must specify the new array property name in the supplied field. Only array items that match the condition are written to the new array property.
 
 Optionally, you can specify the behavior for recording errors. The options are identical here as they are for all other transformation types where this field appears.
 
-> **Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
+&gt;**Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
 
 #### Example
 
@@ -357,7 +357,7 @@ With Formula transformations, you will need to determine the data type of the re
 
 Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
 
-> **Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
+&gt;**Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
 
@@ -389,4 +389,5 @@ If the dataset has a unique identifier you can choose to either fully replace th
 
 Dataset Write can be used in conjunction with Record Copy to write the resulting record from the copy and its stream of transformations to another dataset.
 Because of its unique characteristics, Dataset Write cannot be tested and it does not leave a mark in the dataset where it’s defined.
- 
+
+</div>
