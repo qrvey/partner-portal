@@ -189,7 +189,7 @@ The following options are available to configure the page header. Keep in mind a
 
 * **Logo**: This option will let you define a logo for your page header. You can add the logo by entering the URL to where the image is located, or by uploading an image using the **Upload Logo** link. Once a logo has been added, you can drag it to place it anywhere in the header area. You can also decide the aspect ratio of it within its container from the **Aspect** dropdown list. 
 
-![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/header_logo.png#thumbnail-20) 
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/header_logo.png#thumbnail-40) 
   
   Logos can be linked to any URL to redirect users to, when they are clicked, by adding the desired URL in the Add Link input box. 
 
