@@ -82,6 +82,7 @@ Note the gap between the last two bars in the image below, which is the result o
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro6.png#thumbnail)
 
+Example: Select all records where *orderDate Quarter is Equal to Q1 2020* **OR** *Q1 2019*.
 
 
 * **Values**: When selecting multiple values of the same column to filter the data, *“OR”* logic is used.  
