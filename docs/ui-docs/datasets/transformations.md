@@ -37,7 +37,7 @@ Other Configuration Option - This part of the panel changes from function to fun
 * **Output Choices** - When creating a transformation, you will be able to decide if you want the result to update existing columns or create new ones by selecting either the Update Existing or Create New option. 
 
 * **Output Column Name** - If the Create New option is selected, you need to give your new column a name. 
->**Note**: Column names have to be unique in the entire dataset.
+&gt;**Note**: Column names have to be unique in the entire dataset.
 
 * **Error Treatment Method** - This feature allows you to decide how possible errors should be handled. The three options are:
     * Reject Record: The whole record will not be skipped if an error happens.
@@ -322,7 +322,7 @@ Follow these steps to configure the Array Select Single Item transformation:
 3. Determine if you want to perform a multi-column sort by adding additional object columns to sort by. This option is **unavailable** for value arrays.
 4. Decide if you want to preserve or replace the existing source array. Select **Create New** and type a name for the new property if you want to preserve the existing source array. The single array object/value that is selected by the specified sorting logic will be written to this new property; otherwise, the source array will be replaced with this object/value.
 
->**Note**: The default behavior of this transformation is to replace the existing source array with the single object/value selected.
+&gt;**Note**: The default behavior of this transformation is to replace the existing source array with the single object/value selected.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray1.png#thumbnail-60)
 
