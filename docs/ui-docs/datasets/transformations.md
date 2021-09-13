@@ -3,7 +3,7 @@ id: transformations
 title: Transformations
 sidebar_label: Transformations
 ---
-<div style={{textAlign: "justify"}}>
+<div style="text-align: justify">
 
 Transformations manipulate existing columns and create new ones so that the data is analysis-ready. For example, you can standardize values by setting all values to upper or lower case, combine values together, or flatten arrays of layered data. Transformations are run during the loading process.
 
@@ -40,23 +40,23 @@ Other Configuration Option - This part of the panel changes from function to fun
 >**Note**: Column names have to be unique in the entire dataset.
 
 * **Error Treatment Method** - This feature allows you to decide how possible errors should be handled. The three options are:
-    - Reject Record: The whole record will not be skipped if an error happens.
-    - Ignore Error: The record remains as-is.
-    - Replace Value: The value will be replaced with the entered value in case of an error.
+    * Reject Record: The whole record will not be skipped if an error happens.
+    * Ignore Error: The record remains as-is.
+    * Replace Value: The value will be replaced with the entered value in case of an error.
 > **Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-60)
 
 * **Testing Shortcut Link** - This is a quick way to go to the Testing tab, with this transformation already selected. You can learn more about testing transformations in <a href="#testing-a-transformation"> a later section</a>.
 * **Action Menu** - Use this menu to access the Delete command for the transformation.
 
 Once work on a transformation is completed, the panel will collapse into a smaller card, displaying only a summary of the transformation’s configuration.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation6.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation6.png#thumbnail-60)
 
 Transformations are run in sequence. This is because a transformation might depend on the results of the previous ones. Transformations can be reorganized by dragging them around the workspace. They are also auto-saved and the resulting columns(s) can be identified with the Fx icon to the right of the column in the design screen. Clicking the icon opens the Transformations dialog and allows the transformations for the selected column to be edited or deleted.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation7.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation7.png#thumbnail-60)
 
 
 ## Transformations With Multiple Data Sources
@@ -77,7 +77,6 @@ Once a transformation has been selected, the system suggests some test data as t
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation9.png#thumbnail)
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation9.png#thumbnail)
 
 ## Applying Transformations to the Data
 If transformations are added before the data is loaded, they will take effect at the time that you load your data. However, if transformations are added or updated for an existing dataset, **a data reload is required.**
@@ -104,7 +103,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
 | <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
 | <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
-| <a href="#">Round </a>| Numeric | Rounds the value of one or more numeric columns |
+| <a href="#">Round | Numeric | Rounds the value of one or more numeric columns |
 | <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
 | <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |
 | <a href="#trim">Trim</a> | Text | Removes selected characters from around textual column values |
@@ -156,7 +155,7 @@ Like all transformations, the results can update an existing column or create a 
 This transformation strings two or more textual columns together, separating them with the value entered in the *Separator* field. Columns are concatenated in the same order in which they are specified. New columns can be easily added in the middle by clicking the **+** icon next to the column before them. Likewise, you can remove columns from the string by clicking the **-** icon next to them. The result is one single value. 
 Like all transformations, the results can update an existing column or create a new one.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation19.png#thumbnail)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation19.png#thumbnail-60)
 
 ### Lowercase
 This transformation converts the value of one or more textual columns to lowercase. Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
@@ -170,7 +169,7 @@ This transformation replaces the text indicated in the *Search* field with the t
 
 Like all transformations, the results can update an existing column or create a new one.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation18.png#thumbnail)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation18.png#thumbnail-60)
 
 ### Trim
 This transformation allows you to remove the specified characters at the start or the end of a text in a column. The transformation can be applied to any number of columns. 
@@ -208,34 +207,13 @@ The Array Filter transformation removes one or more values from a JSON array tha
 Configuring the Array Filter transformation is a three-step process:
 1. Choose the array property to filter from the Array Path drop-down menu.
 
-2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition
-  type:
-  <ul style={{ listStyle: "none", marginLeft: 20 }}>
-    <li>
-      {" "}
-      a. Use <strong>Standard</strong> for simple “equals” conditions.{" "}
-    </li>
-    <li>
-      {" "}
-      b. Use <strong>Advanced</strong> for other types of operators and/or
-      supply your own custom JS function.{" "}
-    </li>
-    <li>
-      {" "}
-      c. If the <strong>Standard</strong> condition type was selected, choose
-      the column to filter by using the Condition Column drop-down and enter the
-      value to search for in the adjacent field.{" "}
-    </li>
-    <li>
-      {" "}
-      d. If the <strong>Advanced</strong> condition type was selected,
-      copy/paste your JS function into the field provided. You can reference
-      columns from the dataset by using the Qrvey token syntax (e.g. {"{"}
-      {"{"} name {"}"}
-      {"}"}). Ensure that your JS function returns a boolean value for all
-      execution code paths.
-    </li>
-  </ul>
+2. Choose <strong>Standard</strong> or <strong>Advanced</strong> for condition type:
+<ul style="list-style: none; margin-left:20px;">
+<li>  a. Use <strong>Standard</strong> for simple “equals” conditions. </li>
+<li>  b. Use <strong>Advanced</strong> for other types of operators and/or supply your own custom JS function. </li>
+<li>  c. If the <strong>Standard</strong> condition type was selected, choose the column to filter by using the Condition Column drop-down and enter the value to search for in the adjacent field. </li>
+<li>  d. If the <strong>Advanced</strong> condition type was selected, copy/paste your JS function into the field provided. You can reference columns from the dataset by using the Qrvey token syntax (e.g. {{name}}). Ensure that your JS function returns a boolean value for all execution code paths.</li>
+</ul>
   
 3. Decide if you want the source array property updated directly or whether the desired result is a new array property. If the output type is “Create New”, you must specify the new array property name in the supplied field. Only array items that match the condition are written to the new array property.
 
@@ -254,17 +232,17 @@ This example will demonstrate how to find a single object within an object array
 
 The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the “actors” object array property must be selected from the Array Path field.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-20)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-40)
 
 
 Next, the “actors.age” property is selected from the Condition Column field and “53” is entered into the adjacent Value field.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-60)
 
 
 Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The “Create New” radio button is selected and a name for the target object array property is entered in the adjacent field.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4array.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4array.png#thumbnail-60)
 
 Testing the transformation shows the final output that preserves the original “actors” array property, as well as the new “actors_age_53” array property.
 
@@ -360,7 +338,7 @@ First, the **actors** object array property must be selected from the *Array Col
 
 Next, the **actors.age** property is selected from the *Sorting Columns* field and **Max** is selected in the adjacent radio button control.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray4.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray4.png#thumbnail-60)
 
 
 Finally, the desired output is to create a new property to place the selected object so that the original array of actors is unmodified. The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
@@ -380,6 +358,7 @@ With Formula transformations, you will need to determine the data type of the re
 Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
 
 > **Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
+
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
 
 
@@ -407,47 +386,7 @@ If the dataset has a unique identifier you can choose to either fully replace th
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation27.png#thumbnail)
 
 
+
 Dataset Write can be used in conjunction with Record Copy to write the resulting record from the copy and its stream of transformations to another dataset.
-Because of its unique characteristics, Dataset Write cannot be tested and it does not leave a mark in the dataset where it’s defined
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Because of its unique characteristics, Dataset Write cannot be tested and it does not leave a mark in the dataset where it’s defined.
+ 
