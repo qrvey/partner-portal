@@ -70,7 +70,7 @@ When multiple datasets are being used in a page or report, we will export separa
 
 In the following example, the page contains three charts: **MSRP** and **Order By Quarter** are based on the **Orders - Joined dataset** and **Customers** is based on the **Customers** dataset. Furthermore, **orderDate** of the **Orders - Joined dataset** has been filtered to only include the year 2018. 
 
-![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export3.png#thumbnail)
+![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/visualization.png#thumbnail)
 
 When this page is exported to CSV format there will be two files that are packaged in zip format: One file will contain the three columns of **Orders - Joined dataset** that are used in the **MSRP** (one column) and **Order By Quarter**(two columns) visualizations, filtered to only include 2018 data, and the other will contain three columns of the Customers dataset that are present in the visualization by the same name.
 
@@ -126,7 +126,7 @@ Being a design or layout export option, the exported visuals will be downloaded 
 
 The following image shows the JPG export results of the Customers dataset’s Summary view. As observed in the image, the dataset contains 122 records, but only the first 13 are shown in the Country panel.
 
-![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export15.png#thumbnail)
+![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/visualization2.png#thumbnail) 
 
 ## PDF Export
 PDF export is mainly a layout export option and produces results that look a lot like the JPG export, but are in PDF format. The feature that sets PDF export apart from other formats is its different behavior when it comes to exporting simple (ungrouped) tables: In this case, all of the data for the table is exported, much like a CSV export, but in PDF format.
@@ -138,7 +138,7 @@ PDF export is mainly a layout export option and produces results that look a lot
 >**Note 3**: PDF export is not available in the Tabular view from the Dataset Analyze tabs, but can be found in the same menu as the other exports everywhere download is possible.
 
 ## Export and Workflows
-As explained in the <a href="/docs/ui-docs/automation/send-actions#send-an-email">workflow articles</a>, pages, reports, and individual table charts on pages can be exported automatically and the results can be attached and sent to the selected recipients with the **Send Email** action. 
+As explained in the <a href="/docs/ui-docs/automation/send-actions#send-an-email">workflow article</a>, pages, reports, and individual table charts on pages can be exported automatically and the results can be attached and sent to the selected recipients with the **Send Email** action. 
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export16.png#thumbnail-40)
 
