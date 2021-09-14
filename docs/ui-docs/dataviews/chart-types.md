@@ -421,7 +421,7 @@ Tables are best suited for running detailed analysis of the raw data rather than
 * To include both, summary and detailed values.
 
 ### How to Use Table Charts
-Inside the Qrvey Composer, there are different places where you can create a table. For the purpose of this guide, we will use the Chart Builder with which users can create different types of charts.
+You can create Table charts anywhere that the Chart Builder is available. 
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -504,7 +504,7 @@ The **Level** dropdown lets you decide if the totals are for the entire table or
 The following image shows the “sum of Quantity” chosen at both group and table level while “minimum” has been selected as the total for the Price column at the table level.
 
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/totals2.png#thumbnail-60)
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/totals2.png#thumbnail)
 
 
 ##### Table Calculations
@@ -533,7 +533,7 @@ To create calculations across columns on the aggregated values while creating or
 ##### Allow Pagination and Max Rows
 This option is only available for simple (ungrouped) tables and is not selected by default. As a result the number of displayed rows has to be limited to avoid performance implications. Tables can display an unlimited number of rows by turning on the **Allow Pagination** option. With this action, the **Max Rows** option changes to **Records per page** to allow you to decide how many rows should be displayed for each page in the table.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/pagination.png#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/page_max.png#thumbnail) 
 
 
 >**Note**: If the table is grouped, the pagination option will be hidden and the **Max Rows** option is replaced with **Max Groups**, which limits the maximum number of groups fetched, for the same performance reasons.
@@ -756,7 +756,7 @@ If you select Date in your “Trend by Column”, you can now group these dates 
 
 Once the chart has been added to the cell, hovering over it will show more details about it (Start, End, Min, and Max). In the tooltips, you can further customize the color of the graph, its shape (straight, curvy, square), and whether you want to show the values alongside the graph in the cell.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/spark9.png#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/sparkline.png#thumbnail)  
 
 
 >**Note**: The trend chart can be shown only when the visualization is set to "Value". If you change visualization to “Bar”, the trend chart won’t be visible, however, the configuration should remain in place.
