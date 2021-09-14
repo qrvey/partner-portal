@@ -288,10 +288,6 @@ Multiseries charts also can be sorted by either the Category or Value column and
 
 Tables support sorting for all of their columns individually, or in  a multi-column manner. Multi-column sorting gives you the option to first sort by one column and let the next column’s sorting be applied on top of the previous sorting. For example consider the following unsorted data:
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
-
-For Crosstab, you can do multi sorting on both the Rows and Columns at the same time. Sorting on the Value columns is not possible. 
-
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables.png#thumbnail-60)
 
 If the table is sorted by “Contact Last Name” only (ascending), it will look like this:
@@ -501,31 +497,6 @@ First, you have to decide how you want to highlight the cells that meet your con
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond4.gif#thumbnail) 
 
-
-## Aggregate Formulas
-Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregate formulas do the same thing for data that has been grouped and aggregate for a chart.
-Given that distinction, aggregate formula function is only available in grouped table charts at the moment.
-
-**Aggregated formulas** action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
-
-To create calculations across columns on the aggregated values, you need to first create a table chart having several columns in the Columns shelf and one or more columns in the Group shelf. When you have done that: 
-
-1. Go to the *General* action panel and expand the *Aggregated Formulas* action item. Click on the **+ Add Aggregated Formula** action item.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg1.png#thumbnail-40)
-
-2. In the *Create Table Formula* modal window, enter a formula name and the desired formula using the available options, Test the formula and click Save.You can use any columns of the current context for the construction of the formula.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg2.png#thumbnail)
-
-3. The new aggregated formula can be edited or removed through the *Aggregated formulas* action item.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg3.png#thumbnail-40)
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg4.gif#thumbnail) 
-
-
->**Note**: Only when the table is grouped, the *Aggregated formulas* action item is displayed in the action panel. If the table is not grouped, this action item is disabled.
 
 ## Chart Themes 
 
