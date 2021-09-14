@@ -45,10 +45,10 @@ The panel has several options that can be controlled from the icons above it.
 
 1. **Add Filter** - opens filter modal to define the filters.
 2. **Filter panel settings** - opens the configuration panel to customize the following:
-    * Show panel in page view - can be checked or unchecked to show or hide the filter panel in the end user view of the page.
-    * Panel default view - determines if the filter panel in the end user view is going to be open or closed by default. 
-    * Scope - Determines the look of the panel: whether or not to show the scope icons or colors.
-In the case that scopes are shown with color coding, the colors can be determined for each scope.
+* Show panel in page view - can be checked or unchecked to show or hide the filter panel in the end user view of the page.
+* Panel default view - determines if the filter panel in the end user view is going to be open or closed by default. 
+* Scope - Determines the look of the panel: whether or not to show the scope icons or colors.
+    In the case that scopes are shown with color coding, the colors can be determined for each scope.
 <br/>
 3. **Options** - disable or delete all filters from the three-dot menu. 
 4. **Collapse/Expand** - the filter panel can be collapsed or expanded using this icon.
@@ -107,7 +107,7 @@ The Date Picker control offers the option to apply the same date filter to multi
 
 Any number of date type columns in the used datasets appear anc can be selected from the Column dropdown in the filter configuration panel. 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter6.png#thumbnail)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter6.png#thumbnail-40)  
 
 
 ### Value List
