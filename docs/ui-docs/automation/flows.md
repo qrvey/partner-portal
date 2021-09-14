@@ -32,12 +32,12 @@ For example, you can create a simple Flow so that whenever a new survey response
 
 3. You’ll now be taken to the design area where you can begin building your Flow by dragging and dropping the components from the right-side panel to the canvas. Start by clicking on your desired trigger type and dragging it onto the “Add a trigger to start” box. 
 
-![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/flows3.png#thumbnail) 
+![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/sales_alert.png#thumbnail) 
  
 
 4. After you configure the trigger, continue to drag condition and action components onto your canvas and drop them right below your trigger in a gray area that appears when you hover over it.
 
-![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/flows4.png#thumbnail)
+![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/trigger.png#thumbnail) 
 
 All changes are saved automatically as you build your flow. 
 
@@ -49,7 +49,7 @@ When you have finished building your Flow, click the **Activate** button in the 
 
 A message confirming that your flow is active appears.
 
-![triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/activate.png#thumbnail-20)
+![triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/activate.png#thumbnail-40)
 
 Once your Flow is active, the **Activate** button will be replaced with a **Pause** button, which can be used to suspend the Flow at any stage.
 
