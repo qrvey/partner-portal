@@ -19,7 +19,7 @@ To begin building a page, click the page builder icon in the left navigation bar
 
 The top of the canvas is divided into three sections: the main menu, the toolbar, and the page status with publishing options. 
 
-![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2a_pages.png#thumbnail)
+![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/canvas_top.png#thumbnail-60)
 
 The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
 
