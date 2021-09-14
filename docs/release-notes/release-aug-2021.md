@@ -19,7 +19,7 @@ Click <a href="/docs/video-training/release/version-6.2" target="_blank"> <stron
 
 * <a href="/docs/ui-docs/datasets/datasets#loading-data" target="_blank"> <strong>QV-13777 - Dataset Page - Loading Progress Bar</strong></a>: More detailed information about the loading progress are shown in the Dataset Design page during the load.
 
-* <strong>QV-13964 - Dataset Views</strong>: Datasets data can now be made available to other users and across all applications.
+* <a href="/docs/ui-docs/datasets/datasets#enabling-dataset-sharing" target="_blank"><strong>QV-13964 - Dataset Views</strong></a>: Datasets data can now be made available to other users and across all applications.
 
 * <a href="/docs/ui-docs/datasets/databases" target="_blank"> <strong>QV-12897 - MongoDB Connection</strong></a>: Support for MongoDB connections has been added in this release.
 
@@ -48,15 +48,15 @@ Click <a href="/docs/video-training/release/version-6.2" target="_blank"> <stron
 
 * <a href="/docs/video-training/release/version-6.2#sorting-xy-charts-by-any-column" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <a href="" target_blank></a> <a href="/docs/ui-docs/dataviews/chart-builder#sorting-the-data" target="_blank"><strong>AN-13745 - Sorting X/Y Charts By Any Column</strong></a>: X/Y charts are now sortable by any field in the source dataset, regardless of whether that field is used as the x-axis or y-axis data source.
 
-* <a href="/docs/ui-docs/dataviews/chart-types#properties-6" target="_blank"><strong>AN-13584 - Include/Exclude Repeating Values in Tables</strong></a>: Support for controlling the visibility of repeating values in a grouped table. By default, only the first instance of a distinct value is visible in a grouped table; subsequent rows within a group will display a blank table cell. 
+* <a href="/docs/ui-docs/dataviews/chart-types/#text-settings" target="_blank"><strong>AN-13584 - Include/Exclude Repeating Values in Tables</strong></a>: Support for controlling the visibility of repeating values in a grouped table. By default, only the first instance of a distinct value is visible in a grouped table; subsequent rows within a group will display a blank table cell. 
 
-* <a href="/docs/ui-docs/dataviews/chart-types#properties-6" target="_blank"><strong>AN-12623 - Pagination in Simple Tables</strong></a>: Support for enabling pagination in simple tables to explore all records in the Dataset in tabular form.
+* <a href="/docs/ui-docs/dataviews/chart-types/#allow-pagination-and-max-rows" target="_blank"><strong>AN-12623 - Pagination in Simple Tables</strong></a>: Support for enabling pagination in simple tables to explore all records in the Dataset in tabular form.
 
 * <a href="/docs/ui-docs/dataviews/chart-types#properties-6" target="_blank"><strong>AN-13182 - Table Styles - Borders</strong></a>: Table border styles are now fully customizable for table charts.
 
 * <strong>AN-13784 - Drill Down Action in Funnel Charts</strong>: Funnel charts now support drill-down actions.
 
-* <a href="/docs/ui-docs/dataviews/chart-types#properties-3" target="_blank"><strong>AN-13786 - Funnel - Support Width Mode</strong></a>: You can now enable an option in the configuration panel to depict values by width of the Funnel chart bands rather than their height.
+* <a href="/docs/ui-docs/dataviews/chart-types#properties-3" target="_blank"><strong>AN-13786 - Funnel - Support Width Mode</strong></a>: You can now enable an option in the configuration panel to depict values by the width of the Funnel chart bands rather than their height.
 
 * <a href="/docs/ui-docs/dataviews/chart-builder#conditional-formatting" target="_blank"><strong>AN-13875 - Conditional Formatting - Multi-Series Charts</strong></a>: Conditional formatting in multi-series charts is now supported. Data points that meet a defined threshold are rendered in the color specified.
 
@@ -72,7 +72,7 @@ Click <a href="/docs/video-training/release/version-6.2" target="_blank"> <stron
 
 * <a href="/docs/ui-docs/automation/send-actions#send-an-email" target="_blank"><strong>EX-210 - CSV Export in Workflows</strong></a>: Support for exporting CSV files of Charts and Tables through the Send Email Action in Workflows.
 
-* <a href="docs/ui-docs/automation/send-actions#send-an-email" target="_blank"><strong>EX-299 - Workflows - Chart Exports</strong></a>: Support for exporting filtered charts via workflows with multiple formats (CSV, CSV Summary, PDF) simultaneously.
+* <a href="/docs/ui-docs/automation/send-actions#export-chart" target="_blank"><strong>EX-299 - Workflows - Chart Exports</strong></a>: Support for exporting filtered charts via workflows with multiple formats (CSV, CSV Summary, PDF) simultaneously.
 
 
 ## General Tweaks & Bug Fixes
@@ -81,7 +81,7 @@ Click <a href="/docs/video-training/release/version-6.2" target="_blank"> <stron
 
 * <strong>QV-14175 - File Upload - New File Type Dropdown</strong>: When creating a File Upload connection, you get to choose the file type to be uploaded.
 
-* <strong>WF-56 - Multiple Choice Enhancements</strong>: Multiple Choice form field types now support an unlimited number of options; previous limit was 15.
+* <strong>WF-56 - Multiple Choice Enhancements</strong>: Multiple Choice form field types now support an unlimited number of options; the previous limit was 15.
 
 * <strong>AN-13581 - Fix Axis Labels Cut Off</strong>: Axis labels have more space allocated by default; labels that are too long will be truncated; all X/Y Charts are included (Bar, Line, Symbol, Min/Max, Combo, Multi-series).
 
