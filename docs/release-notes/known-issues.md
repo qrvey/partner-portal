@@ -3,7 +3,7 @@ id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
 ---
-<div style="text-align: justify">
+<div style={{textAlign: "justify"}}>
 
 * **AT-9759 - Workflow Activity Logs Not Recorded**: Some actions don’t get logged in the workflow activity logs.
 
