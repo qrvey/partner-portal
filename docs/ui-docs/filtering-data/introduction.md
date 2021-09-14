@@ -60,7 +60,7 @@ Also, we want to concentrate on the sales for the first quarter of 2020 in the �
 Since these two filters are on different layers, the logic between them is *AND*, resulting in the combined filter to show sales data for only Q1 2020 and in the US.
 
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro3.png#thumbnail-60)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/3intro.png#thumbnail)
 
 
 * **Columns**: When filtering on multiple columns within the same layer, by default “AND” logic is used among the column filters, however, that logic can be changed to “OR”.
@@ -68,12 +68,12 @@ Since these two filters are on different layers, the logic between them is *AND*
 Example: Consider the same chart from the previous example. We still have set the Global filter to “*country Equals USA*”. But in this case, we want to filter all of the charts that are based on the same Sales Data dataset so that they show data for “*orderDate Quarter Equals Q1 2020*”. So we set this second filter at the Global level, too. By default, the filter logic between the two filters will be *AND*, resulting in the exact same visualization.
 
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro4.png#thumbnail)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/4intro.png#thumbnail)
 
 
  The difference here is that this filter has been set among the columns of the same dataset and in the same scope layer and therefore the logic can be changed from And to Or, resulting in the data for either the US for any date or Q1 2020 of any country. This result set can be substantially bigger, as seen in the next image.
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro5.png#thumbnail)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/5intro.png#thumbnail) 
 
 * **Conditions**: When applying multiple conditions to the same column of data, *“OR”* logic is used between those conditions.
 
@@ -81,7 +81,7 @@ Example: Again, consider the same chart as in the previous examples. In this exa
 *orderDate Quarter Equals Q1 2020* **OR** *orderDate Quarter is Before Q1 2019*.
 Note the gap between the last two bars in the image below, which is the result of all quarters of 2019 having been filtered out.
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro6.png#thumbnail)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/6intro.png#thumbnail) 
 
 
 
@@ -89,7 +89,7 @@ Note the gap between the last two bars in the image below, which is the result o
 
 Example: Select all records where *orderDate Quarter is Equal to Q1 2020* **OR** *Q1 2019*.
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/intro7.png#thumbnail) 
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail)  
 
 
 >**Note**: Filter logic can **only** be edited to AND/OR within the same scope (only within Global Filters or Panel filters or Page filters). OR logic is used for multiple values within the same filter (Country: USA or Australia or Spain). AND logic is applied to filters in different scopes (Global filters and Panel filters and Page filters). 
@@ -97,9 +97,7 @@ Example: Select all records where *orderDate Quarter is Equal to Q1 2020* **OR**
 
 The following image sums up the filter logic used in Qrvey. Logic between columns can be changed, as explained more in the <a href="#edit-filter-logic">Edit Filter Logic</a> section below:
 
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail-60)
-
-![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/7intro.png#thumbnail-60)
+![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/8intro.png#thumbnail-60) 
 
 
 
