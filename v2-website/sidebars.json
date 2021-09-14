@@ -190,6 +190,10 @@
         },
         {
           "type": "doc",
+          "id": "ui-docs/datasets/dataset-views"
+        },
+        {
+          "type": "doc",
           "id": "ui-docs/datasets/column-links"
         },
         {
@@ -679,6 +683,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/release-jul-2021"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/release-jun-2021"
         },
         {
@@ -839,6 +847,10 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.2"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-6.1"

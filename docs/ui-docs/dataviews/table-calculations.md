@@ -20,7 +20,7 @@ Table Calculation is a feature that produces new columns of data based on predef
     * Difference
     * %Difference 
 
-3. **Level** - This option appears when you have multiple groups (more than 1) to determine "at what level" you are doing your calculation. For example, if you have grouped sales by year and quarter, you can choose if you want to do your calculations for each year and restart when you get to the next year, or if you want to calculate the sales for the entire table. The default level is Table
+3. **Level** - This option appears when you have multiple groups (more than 1) to determine "at what level" you are doing your calculation. For example, if you have grouped sales by year and quarter, you can choose if you want to do your calculations for each year and restart when you get to the next year, or if you want to calculate the sales for the entire table. The default level is Table.
 
 4. **Custom Label**: Give a custom name to the calculation for easier identification (the name is shown only in the panel).
 

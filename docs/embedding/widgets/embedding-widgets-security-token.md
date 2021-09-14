@@ -13,9 +13,9 @@ This document explains the process and provides a sample code to generate a secu
 
 The process to embed a widget using a security token follows these steps:
 
-1. Prepare the data required to use the widgets
-2. Request the security token
-3. Embed the security token inside the widget’s configuration object
+1. Prepare the data required for the widget’s configuration.
+2. Request the security token.
+3. Embed the security token inside the widget’s configuration object.
 
 >**Note**: The code snippets used in this document are written in Javascript for demo purposes. However, you can use any language to request a token and it’s recommended to code this process in a backend environment for your production applications.
 
@@ -92,12 +92,15 @@ The last step in the process of embedding a widget using a security token is to 
 
 The following code snippet completes the process and automatically injects the token into the widget’s configuration object.
 
+> **Note**: WIDGET_TAG is used as the placeholder for the widget that is being embedded.
+
+
 ```
 function setToken() {
   new auth().init().then(() => {
     setTimeout(_ => {
-      document.querySelector('qrvey-end-user').remove();
-      ancc = document.createElement('qrvey-end-user');
+      document.querySelector(WIDGET_TAG).remove();
+      ancc = document.createElement(WIDGET_TAG);
       ancc.settings = 'config';
       document.body.append(ancc);
     }, 500);
@@ -107,11 +110,11 @@ function setToken() {
 setToken();
 ```
 
-In case you are wondering how the widget’s configuration finally looks, this is an example of what is added to the widget. Every other configuration like user security permissions will be part of the encrypted security token and the Qrvey system will extract the required data to process your request and return the desired result.
+The following is an example of what is added to the widget. Every other configuration like user security permissions will be part of the encrypted security token and the Qrvey system will extract the required data to process your request and return the desired result.
 
 ```html
 var config = {
- domain: "https://your_qrvey_domai", // your Qrvey domain
+ domain: "https://your_qrvey_domain", // your Qrvey domain
  qv_token: "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB...",
 };
 ```
@@ -124,6 +127,6 @@ The following is a list of Qrvey widgets that currently support authentication t
 * <a href="/docs/embedding/widgets/app-building/widget-report-builder/">Report Builder</a>
 * <a href="/docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite</a>
 * <a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel</a>
-
-
- </div>
+* <a href="/docs/embedding/widgets/data-sources/widget-webforms">Web Form Design</a>
+ 
+</div>

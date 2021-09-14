@@ -72,18 +72,18 @@ To define max data points, set the desired number in the box which will immediat
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/gen_style.png#thumbnail-40)
 
 ## Tooltips
-Users can enable tooltips that appear as pop-ups on mouse-over events for chart data points.  By default, the tooltip pop-up displays the same data that was used to generate each data point in the chart.  For example, if the data point value for a specific bar in a bar chart is “100”, then the tooltip will display “100” as well. Users can customize the data values displayed in the tooltip by adding one or more tooltip columns that map to other fields in the selected dataset.
+Users can enable tooltips that appear as pop-ups on mouse-over events for chart data points. By default, the tooltip pop-up displays the same data that was used to generate each data point in the chart. For example, if the data point value for a specific bar in a bar chart is “100”, then the tooltip will display “100” as well. Users can customize the data values displayed in the tooltip by adding one or more tooltip columns that map to other fields in the selected dataset.
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tooltip.png#thumbnail-60)
 
-Click on the chevron icon adjacent to the **Tooltips** checkbox to expand the UI.  Click **Add Column** to map a new field from the dataset to the tooltip.  Select the desired field from the Column drop-down and then choose one of the supported aggregations from the **Display Values As** drop-down.  Choose an optional display format for the values.  Users can add as many custom tooltip columns as needed.
+Click on the chevron icon adjacent to the **Tooltips** checkbox to expand the UI. Click **Add Column** to map a new field from the dataset to the tooltip. Select the desired field from the Column drop-down and then choose one of the supported aggregations from the **Display Values As** drop-down. Choose an optional display format for the values. Users can add as many custom tooltip columns as needed.
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_tool.png#thumbnail-60)
 
 
 Users can also set an optional tooltip header by entering the desired text into the **Header** textbox.
 
->**Note**:  Custom tooltips are only available for bar, line, symbol and pie charts.
+>**Note**: Custom tooltips are supported in most chart and metric visualizations. Box & Whisker, Heatmap, Word Cloud, and all table chart types currently don’t support this feature.
 
 
 ## Style Settings
@@ -207,7 +207,7 @@ Creators can use a shortcut for an even easier access to the data pages directly
 
 ## Expandable Tables
 The expandable data tables are used to group data, without aggregating the values. They are especially useful when it comes to presenting large amounts of data in a compact space, as rows are collapsed and can be expanded to reveal the detail rows
-Start  by clicking on **Expandable Table** from the list of visualizations in the *Chart Builder*.
+Start by clicking on **Expandable Table** from the list of visualizations in the *Chart Builder*.
 
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand1.png#thumbnail-40) 
 
@@ -215,7 +215,7 @@ Move the column to group by to the *Sections* shelf.
 
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand2.png#thumbnail-60) 
 
-Each *“Group”* used to construct the table is displayed as a collapsible header.  Expanding each header row will show all of the corresponding detail rows that belong to that group. 
+Each *“Group”* used to construct the table is displayed as a collapsible header. Expanding each header row will show all of the corresponding detail rows that belong to that group. 
 
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand3.png#thumbnail) 
 
@@ -255,49 +255,128 @@ The *Discrete* and *Continuous* features are options only available for the date
 
 * Discrete Dates
 
-![29_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build29.png#thumbnail)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build29.png#thumbnail-60)
 
 
 
 * Continuous Dates
 
-![28_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build28.png#thumbnail-60)
 
 
 
 
-## Sorting From the Column Pill
-Creators can now use the column pills in the shelves inside Chart Builder to sort. 
+## Sorting the Data
 
-Charts that currently support this method:
-* Bar
-* Line
-* Symbol 
-* Multiseries
-* Table 
-* Crosstab
+For all charts, data can be sorted in various ways in the Chart Builder, at the time of creation. Each of these access points has special features that make them better suited for one or another use case. These different methods are explained later in the Access Points for Sorting section.
+It is important to note that by default data for most charts is sorted by the grouped column, in ascending order. When the data is sorted by a column an arrow icon in the column pill indicates that, as well as the sorting direction. 
 
-By default, the column pills will show the default sorting. To change the sorting by using the pill method, all you have to do is go to a column pill located in a shelf such as Category, Value, or Series, and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu. Sorting options are Ascending and Descending.
 
-For charts such as Bar, Line, Symbol you can only sort by one dimension such as Category or Value, but not both at the same time. Some special exceptions and additional functions for sorting apply to certain charts. 
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting.png#thumbnail-60) 
 
-![5gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail)
 
-For Multiseries, you can switch by “Category” or “Value” and at the same time sort “Series” independently. 
+X/Y charts such as Bar, Line, Symbol, etc., as well as all other charts that work based on one grouped Category and one aggregated Value column, can be sorted by either the Category or the Value, but not both at the same time. This is a general rule that applies to any visualization. 
 
-![6gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
 
-For Table, you can apply multiple sorting in “Groups” and  “Columns”  independently, with this condition: If any sorting by the aggregated “Columns” is applied to the table, then the innermost “Group” column cannot be sorted, a switch occurs between sorting of aggregated “Columns” and the innermost “Group” column. 
 
-![7gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/7gif.gif#thumbnail)
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/5gif.gif#thumbnail)
 
-For Crosstab, you can do multi sorting on both the Rows and Columns at the same time. Sorting on the Value columns is not possible. 
+Multiseries charts also can be sorted by either the Category or Value column and the Series column can be sorted independently, at the same time. 
 
-![8gif_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/8gif.gif#thumbnail)
 
-For both Table and Crosstab you can remove the sorting that was applied to a column used to construct the chart. To remove the sorting, just go to the column pill located in any of the shelves used to construct the chart and click on the “3 dotted” icon to see the “Sorting” option in the dropdown menu and select the “ Clear Sorting” option that is located in the sorting options. 
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/6gif.gif#thumbnail)
 
-![38_chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_build38.png#thumbnail)
+Tables support sorting for all of their columns individually, or in  a multi-column manner. Multi-column sorting gives you the option to first sort by one column and let the next column’s sorting be applied on top of the previous sorting. For example consider the following unsorted data:
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables.png#thumbnail-60)
+
+If the table is sorted by “Contact Last Name” only (ascending), it will look like this:
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables2.png#thumbnail-60)
+
+
+And if it is sorted by “Contact First Name” only, it will look like the following image:
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables3.png#thumbnail-60)
+
+
+
+Alternatively, if the same data is sorted first by the last name and then by the first name column, it will generate the following results:
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables4.png#thumbnail-60)
+
+To learn more about table charts and their sorting options please see the related section in the <a href="/docs/ui-docs/dataviews/chart-types">Chart Types</a> article. 
+
+
+Grouped tables allow any number of their grouped columns to be sorted simultaneously, however the sorting always applies from left to right. Furthermore, between the last (innermost) grouped column and all of the aggregated columns, only one can be sorted. In summary the following points apply to sorting of grouped table charts:
+
+* When the table chart has one grouped column all the other columns are aggregated and therefore follow the same rule about grouped and aggregated data that applies to all other charts: Either the grouped column or one of the aggregated columns can be sorted and not both at the same time. (See this rule mentioned in the regular XY charts)
+
+* When more than one column is grouped, each group is sorted *inside* of the group immediately above it. For example if the data is grouped by “Product Vendor” and “Product Line”, sorting of product lines happens inside of their respective product vendors and not in the entire dataset. That means that even though you can sort multiple grouped columns, you won’t be able to change the order in which they are sorted, unless you physically move the grouped columns in the table. In the “Product Vendor” and “Product Line” example, if you want to first group by “Product Line” and then by “Product Vendor”, you have to physically move the grouped “Product Line” column before the grouped “Product Vendor” column (see the next three images).
+
+* When more than one column is grouped, the same “either group or aggregated column” rule applies to the last (innermost) group and the aggregated columns that come after it: You can either sort that grouped column or one of the aggregated columns, but not both. 
+
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables5.png#thumbnail-60)
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables6.png#thumbnail-40)
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tables7.png#thumbnail-60)
+
+
+
+
+For Crosstab tables you can sort any of the Rows and/or Columns at the same time.  Like grouped tables, each sorted Row is sorted within the Row directly above it and each Column under the Column above it and their order or participation in sorting corresponds with their physical position in the layers. Sorting on the Value columns is not possible. 
+
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/crosstab.gif#thumbnail)
+
+> **Note**: Metrics, Maps, and Box & Whiskers charts don’t support sorting.
+
+
+## Access Points for Sorting
+Sorting of data in charts can be initiated from various places in the Chart Builder. These access points are:
+* The column pill
+* The *Sorting* section in the configuration panel
+* The *General* section in the configuration panel
+
+### Sorting From the Column Pill
+This method is the handiest of all and available for most column types of most charts. By default, the column pills show their sorting direction using an arrow. Column pills in field types that support various features, like date grouping, show the sorting options under a “Sorting” sub group in the menu.
+
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting.png#thumbnail-60)
+
+Those field types that don’t support any other features, such as Series, only list the two sorting options, as seen in the next image.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting2.png#thumbnail-40)
+
+Columns used in Tables and Crosstabs also support removal of sorting to result in an unsorted dataset. The “Clear Sorting” option can be accessed from the same menu off the column pill of these charts.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting3.png#thumbnail)
+
+
+
+### Sorting From the Sorting Section of Configuration Panel
+
+For the chart types that support this method, a **Sorting** section appears in the configuration panel that shows a dropdown list of all columns in the dataset, with the selected option set to the column (or aggregated column) that the data is sorted by. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting4.png#thumbnail-40)
+
+
+Using the said dropdown list, you can choose the column to sort the data by, even if the column is not used in the chart. Columns that are used in the chart are listed in a separate group in the dropdown list, along with their role in the chart. The ability to choose an unused column for sorting makes this the most comprehensive method of sorting data.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting5.png#thumbnail-40)
+
+
+### Sorting From the General Section of Configuration Panel
+Other charts that support sorting, but not through the two methods mentioned above, allow sorting from the icons in the **Sort by** sub section under the **General** section of the configuration panel. 
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/sorting6.png#thumbnail-40)
+
+
+The icon titled **ABC** sorts data by the Category column of chart while the icon titled **123** performs sorting on the Value column. The next two icons decide the direction of sorting, ascending and descending, respectively.
+
+
 
 ## Table Subtotal + Grand Totals
 Table Users are currently able to add *Totals* to aggregated columns to the entire table, essentially showing what would be a *Grand Total* of values for the selected column. With the new UI for adding *Totals*, Table Creators will be able to apply totals by a selected group in the Table so that they can get *Subtotals* per group category for the selected aggregated column. With this new method for adding totals, Creators can:
@@ -380,7 +459,7 @@ There are 3 basic components are required to create a condition:
 * **Operator** - The operator for the condition. These vary depending on the data type of the column chosen.
 * **Value** - The value that defines the condition. Input components vary based on the data type of the column chosen.
 
-Conditional Formatting is supported in Bar, Line, Symbol, Table, Crosstab, Dot and Bubble Map charts.
+Conditional Formatting is supported in Bar, Line, Symbol, Multi-series, Combo, Table, Expandable Table, Crosstab, Dot and Bubble Map charts.
 
 
 When you use conditional formatting, you can set the following: 
@@ -408,31 +487,16 @@ First, you have to decide how you want to highlight the cells that meet your con
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond3.gif#thumbnail)
 
+For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
 
-## Aggregate Formulas
-Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregate formulas do the same thing for data that has been grouped and aggregate for a chart.
-Given that distinction, aggregate formula function is only available in grouped table charts at the moment.
+### How To Use It?
+First, you have to decide how you want to highlight the cells that meet your condition:
+1. Go to the **Format** section located inside the chart builder’s configuration pane.  
+2. Click on the **Conditional Formatting** subsection and click on **+Add Condition**.
+3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
 
-**Aggregated formulas** action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond4.gif#thumbnail) 
 
-To create calculations across columns on the aggregated values, you need to first create a table chart having several columns in the Columns shelf and one or more columns in the Group shelf. When you have done that: 
-
-1. Go to the *General* action panel and expand the *Aggregated Formulas* action item. Click on the **+ Add Aggregated Formula** action item.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg1.png#thumbnail-40)
-
-2. In the *Create Table Formula* modal window, enter a formula name and the desired formula using the available options, Test the formula and click Save.You can use any columns of the current context for the construction of the formula.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg2.png#thumbnail)
-
-3. The new aggregated formula can be edited or removed through the *Aggregated formulas* action item.
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg3.png#thumbnail-40)
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/agg4.gif#thumbnail) 
-
-
->**Note**: Only when the table is grouped, the *Aggregated formulas* action item is displayed in the action panel. If the table is not grouped, this action item is disabled.
 
 ## Chart Themes 
 
@@ -447,14 +511,14 @@ To create a new theme, go to the Style Themes button that can be found in the An
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme2.png#thumbnail-60) 
 
 
-Next, create a new theme that will be listed in all of your applications.  The following settings are available from the UI:
+Next, create a new theme that will be listed in all of your applications. The following settings are available from the UI:
 
-* **Theme Name** - Give your theme a custom name.  If you select *Use this theme in all applications*, this same theme will be applied across all applications in your Qrvey account.
+* **Theme Name** - Give your theme a custom name. If you select *Use this theme in all applications*, this same theme will be applied across all applications in your Qrvey account.
 * **Font Type** - Pick a font type you’d like to use for your charts’ title and other labels.
 * **Text Colors** - Assign colors to different sections of your chart (titles, labels, values, legends, tooltips, and headers)
 * **Data Styles** - Choose the colors to be used in data visualizations inside the chart (bars, lines, points, etc.)
 * **Generate New** - Get a random selection of colors to be used in visualizations.
-* **Reset to Default Settings** - Discard all changes and return to the  default settings. 
+* **Reset to Default Settings** - Discard all changes and return to the default settings. 
 
 
 You can click on each color box to change it using the color selector control.

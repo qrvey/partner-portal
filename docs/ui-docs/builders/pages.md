@@ -19,7 +19,7 @@ To begin building a page, click the page builder icon in the left navigation bar
 
 The top of the canvas is divided into three sections: the main menu, the toolbar, and the page status with publishing options. 
 
-![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.2a_pages.png#thumbnail)
+![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/canvas_top.png#thumbnail-60)
 
 The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
 
@@ -178,32 +178,27 @@ In the second section named “Tab Size,” you can change the tab width by chan
 
 
 #### Page Header
-You can insert a page header to all your pages by clicking the Page Header item in the Insert menu. Select the page header component will open the configuration panel to add an icon and a page title.
+You can add a page header to all your pages by clicking the Page Header item in the Insert menu. The header area gets added as a container on the page and other objects, such as images, buttons, and text can be placed inside of it. Selecting the page header component will open the configuration panel for it and allows you to customize its looks and behavior..
 
-![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1page_header.png#thumbnail-40)
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/header_page.png#thumbnail-40)
  
 
 The following options are available to configure the page header. Keep in mind any changes made will apply to all pages.
 
 * **Background**: This option will let you change the background color of the page header.
 
-* **Upload logo**: This option will let you define a logo for your page header. Once a logo has been loaded, you can specify its position left, center, or right.
+* **Logo**: This option will let you define a logo for your page header. You can add the logo by entering the URL to where the image is located, or by uploading an image using the **Upload Logo** link. Once a logo has been added, you can drag it to place it anywhere in the header area. You can also decide the aspect ratio of it within its container from the **Aspect** dropdown list. 
 
-* **Navigation Menu - Background**: If you have enabled a navigation panel, you can change its background color with this setting.
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/header_logo.png#thumbnail-40) 
+  
+  Logos can be linked to any URL to redirect users to, when they are clicked, by adding the desired URL in the Add Link input box. 
 
-* **Navigation Menu - Elements**: If you have enabled a navigation panel, you can change the page names’ font color displayed in the panel.
+* **Background Image**: You can upload any image to be used as the background image of the header area from the Upload Background Image link. The aspect ratio of the background image can also be set from the **Aspect** dropdown list that appears once the image has been uploaded. 
+* **Width**: Choose between “Canvas” and “Screen” to decide if the header should go only on top of the page or across the entire width of the screen.
+* **Height**: Height of the header can be set in pixels. The default height is 100 pixels and it can be as thin as 10 and as thick as 300 pixels.
 
-* **Header Label - Label**: This option will let you specify a label for the page header. The label will work as a page title.
+You can place Images, Text labels and Buttons inside the page header container and configure those to create the header anyway you wish.
 
-* **Header Label - Typeface**: This option will let you change the label’s font type.
-
-* **Header Label - Weight**: This option will let you define the font’s weight between normal and bold.
-
-* **Header Label - Size**: This option will let you change the label’s font size.
-
-* **Header Label - Label Align**: This option will let you change the label’s position in the page header. You can align the label to the left, center, or right. If a logo is defined for the page header, the label will always be to the logo’s right.
-
-* **Header Label - Font color**: This option will let you define the label’s font color.
 
 ## Publishing an Application
 In the blue navigation bar along the top, you’ll find a button to **Publish Application** and a link button to view your application in a new browser window or tab.

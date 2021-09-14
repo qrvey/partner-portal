@@ -14,9 +14,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node clear.js --dev && node search.js --dev",
-    "staging": "node clear.js --staging && node search.js --staging",
-    "prod": "node clear.js --prod && node search.js --prod"
+    "dev": "node clear.js --dev",
+    "staging": "node clear.js --staging",
+    "prod": "node clear.js --prod"
   },
   "repository": {
     "type": "git",

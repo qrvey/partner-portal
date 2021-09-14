@@ -1,7 +1,7 @@
 ---
 id: widget-webforms
-title: Web Form Design
-sidebar_label: Web Form Design
+title: Web Form Design Widget
+sidebar_label: Web Form Design Widget
 ---
 
 <div style={{textAlign: "justify"}}>
@@ -43,7 +43,7 @@ In this example, we have the design widget configuration object for a Form. This
 
 > **Note**: <APP_ID> must refer to a valid and active application defined on your Qrvey instance, and <QRVEY_ID> must refer to a draft form in that application.
 
-```
+```html
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 var configWebForm = {
     "api_key": "<API_KEY>",
@@ -60,6 +60,7 @@ var configWebForm = {
 
 As we mentioned earlier, this widget allows us to collect three types of webforms: Survey, Form and Quiz. The ```app_type``` property allows you to switch between those types. Valid options are: ```"FORM" || "SURVEY" || "QUIZ"```
 
+
 ## See It In Action
 See the widget in CodePen:
 
@@ -75,7 +76,14 @@ See the widget in CodePen:
   style={{ width: "100%", overflow: "hidden", display: "block" }}
   title="Sample- Webform Design"
   loading="lazy"
-  id="cp_embed_17ca2ace17e54cd26353f638666f91be"
-/>
+  id="cp_embed_17ca2ace17e54cd26353f638666f91be">
+  </iframe>
+
+
+## Sample With Security Token
+Web Form Design widget supports the use of JWT tokens for authentication and it is strongly recommended that this method be used to ensure the security of your widget implementation. Please refer to the <a href="/docs/embedding/widgets/embedding-widgets-security-token">Embedding Widgets Using A Security Token </a> article for an explanation of the principles. 
+
+You can find the secure implementation of the same example as above <a href="https://codepen.io/qrveysamples/pen/8ae9eb19a3464b64d293d44e102ccd4b">here</a>.
+
 
 </div>
