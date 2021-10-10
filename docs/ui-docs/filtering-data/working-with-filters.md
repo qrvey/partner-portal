@@ -34,6 +34,11 @@ This section may look different depending on the operand and the selected column
 
 Once you have defined your filter’s criteria, the apply button at the bottom of the window will be enabled. Clicking on the apply button will create a new filter, and your data will be refined based on the selected criteria.
 
+### Using Tokens in Filters
+Tokens can be used  in place of any value that can be typed in or selected for a filter to provide additional flexibility. By typing **{{** in any input box inside the filter dialog all system tokens, as well as aggregates of data columns are presented and can be selected from. This allows for creating filters with conditions to find records where the *customer’s creditLimit is less than the average value of the creditLimit column* as shown in the following image. 
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/tokens_filters.png#thumbnail-60)
+
 ### Filter Panel
 The filter panel on the right side of the screen is the main area where you can see, control, and interact with all filters that have been set for the visuals on your workspace. The same panel can be found in the <a href="/docs/ui-docs/builders/pages/#filter-panel" target="_blank"> Page Builder</a>, <a href="/docs/ui-docs/builders/reports/#filters" target="_blank">Report Builder</a>, <a href="/docs/ui-docs/dataviews/custom-view/#filters" target="_blank">Custom View</a>, <a href="/docs/ui-docs/dataviews/summary-view/#filtering" target="_blank"> Summary View</a>, or <a href="/docs/ui-docs/dataviews/tabular-view/#filters" target="_blank">Tabular View</a>.
 
