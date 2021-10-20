@@ -205,7 +205,7 @@ Creators can enable authenticated end users to subscribe to a scheduled delivery
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/subscribe.jpg#thumbnail-40) 
 
 
-Once subscription has been enabled, authenticated end users see the option in the action menu of the embedded Page View widget and get to subscribe or manage their subscriptions. To read about the end user side of subscriptions, see the <a href="">Subscribing to Exports</a> article.
+Once subscription has been enabled, authenticated end users see the option in the action menu of the embedded Page View widget and get to subscribe or manage their subscriptions. To read about the end user side of subscriptions, see the <a href="/docs/ui-docs/subscriptions/subscribing-exports">Subscribing to Exports</a> article.
 
 
 ## Publishing an Application
