@@ -158,6 +158,7 @@ It is important to note the following points:
 * Additional filters can be applied to charts, pages and reports from the workflow.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export20.png#thumbnail-60)
 
+</div>
 
 
 

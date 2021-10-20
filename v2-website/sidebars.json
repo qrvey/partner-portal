@@ -320,6 +320,16 @@
     },
     {
       "type": "category",
+      "label": "Subscriptions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/subscriptions/subscribing-to-exports"
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "Automation",
       "items": [
         {
