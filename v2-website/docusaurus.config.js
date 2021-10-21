@@ -132,7 +132,7 @@ module.exports={
           ]
         },
         {
-          "href": "/docs/video-training/release/version-6.2",
+          "href": "/docs/video-training/release/version-6.3",
           "label": "VIDEOS",
           "position": "right"
         },
