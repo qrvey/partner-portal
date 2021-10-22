@@ -109,6 +109,10 @@ body {
   background-color: #0E1823;
 }
 
+.sidebar_15mo {
+  background-color: #35373F;
+}
+
 .card-home-content-title, .card-home-content-link{
   text-align: start;
   padding: 5px 0;
@@ -945,6 +949,7 @@ a.nav-item-dropdown.active{
     padding-top: 2rem !important;
     font-size: 14px;
     font-weight: 400;
+    padding-left: 2rem !important;
 }
 
 .col.col--3 {
