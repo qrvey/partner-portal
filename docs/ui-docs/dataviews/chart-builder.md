@@ -81,7 +81,9 @@ Click on the chevron icon adjacent to the **Tooltips** checkbox to expand the UI
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart_tool.png#thumbnail-60)
 
 
-Users can also set an optional tooltip header by entering the desired text into the **Header** textbox.
+Users can also set an optional tooltip header by entering the desired text into the **Header** textbox. System tokens can be used in the tooltip to customize it further. Type **{{** in the header input box to see the list of available tokens to choose from.
+
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/tokens.png#thumbnail-40)
 
 >**Note**: Custom tooltips are supported in most chart and metric visualizations. Box & Whisker, Heatmap, Word Cloud, and all table chart types currently don’t support this feature.
 

@@ -42,7 +42,7 @@ const siteConfig = {
       label: 'DOCS',
     },
     {
-      href: '/docs/video-training/release/version-6.2',
+      href: '/docs/video-training/release/version-6.3',
       label: 'VIDEOS',
     },
     {

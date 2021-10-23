@@ -128,5 +128,6 @@ The following is a list of Qrvey widgets that currently support authentication t
 * <a href="/docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite</a>
 * <a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel</a>
 * <a href="/docs/embedding/widgets/data-sources/widget-webforms">Web Form Design</a>
- 
+* <a href="/docs/embedding/widgets/data-sources/datasets-widget">Dataset Widget</a> 
+
 </div>

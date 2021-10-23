@@ -42,7 +42,7 @@ Regardless of the method you use, select **File Upload**.
 
 
 
-You will then be brought to the data upload screen where you can choose the desired file type and then select any CSV or JSON/ndJSON file from your desktop or simply drag it into the window. Give your connection a name that you can identify it by.
+You will then be brought to the data upload screen where you can choose the desired file type and then select any CSV, JSON/ndJSON, or gzip file from your desktop or simply drag it into the window. Give your connection a name that you can identify it by.
 
 You can view the first 100 rows of your data by clicking on the **View Source Data** link. If a JSON file is used, the system will validate it and show the first record as a sample.
 

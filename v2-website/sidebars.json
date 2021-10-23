@@ -320,6 +320,16 @@
     },
     {
       "type": "category",
+      "label": "Subscriptions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/subscriptions/subscribing-to-exports"
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "Automation",
       "items": [
         {
@@ -683,6 +693,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/release-aug-2021"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/release-jul-2021"
         },
         {
@@ -847,6 +861,10 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.3"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-6.2"

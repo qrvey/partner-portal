@@ -199,6 +199,14 @@ The following options are available to configure the page header. Keep in mind a
 
 You can place Images, Text labels and Buttons inside the page header container and configure those to create the header anyway you wish.
 
+## Enabling Subscription
+Creators can enable authenticated end users to subscribe to a scheduled delivery of exported pages or specific charts. This feature can be enabled by choosing the **Page Subscriptions** option from the **Insert** menu. This action places a subscription icon on the lower right corner of the page. This is just an indicator that subscription has been enabled on the page. The feature can be removed by clicking the **X** above the icon.
+        
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/subscribe.jpg#thumbnail-40) 
+
+
+Once subscription has been enabled, authenticated end users see the option in the action menu of the embedded Page View widget and get to subscribe or manage their subscriptions. To read about the end user side of subscriptions, see the <a href="/docs/ui-docs/subscriptions/subscribing-to-exports">Subscribing to Exports</a> article.
+
 
 ## Publishing an Application
 In the blue navigation bar along the top, you’ll find a button to **Publish Application** and a link button to view your application in a new browser window or tab.
