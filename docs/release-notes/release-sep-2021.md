@@ -40,7 +40,7 @@ Click <a href="/docs/video-training/release/version-6.3" target="_blank"> <stron
 
 * <strong>AN-13791 - Tokens in custom tooltips</strong>: You can now use tokens in the header of data tooltips in the chart builder. 
 
-* <a href=" /docs/video-training/release/version-6.3/#subscriptions" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <a href="" target_blank></a> <strong>AT-9306 - Pages and Charts Subscription</strong>: Creators can enable the option to subscribe to pages and individual visualizations in the Page View widget. With this option the end user can subscribe to receive a scheduled PDF of the pages or charts via email. 
+* <a href="/docs/video-training/release/version-6.3#subscriptions" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <a href="" target_blank></a> <strong>AT-9306 - Pages and Charts Subscription</strong>: Creators can enable the option to subscribe to pages and individual visualizations in the Page View widget. With this option the end user can subscribe to receive a scheduled PDF of the pages or charts via email. 
 
 * <strong>EX-395 - Links for all emails containing exports</strong>: All export emails now contain a link to download the file from, instead of having the file as an attachment. 
 
