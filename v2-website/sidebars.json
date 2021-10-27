@@ -938,6 +938,18 @@
         {
           "type": "doc",
           "id": "video-training/building-qrvey-sample/map-chart"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/chart-builder"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/jwt-widget"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/page-builder"
         }
       ]
     },
