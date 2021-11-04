@@ -43,7 +43,7 @@ body {
 }
 
 .navbar--fixed-top {
-  padding: 0 10% !important;
+  padding: 0 50px;
 }
 
 /* your custom css */
@@ -106,7 +106,7 @@ body {
 }
 
 .side-right-nav-container-announcements{
-  background-color: #0E1823;
+  background-color: initial;
 }
 
 .sidebar_15mo {
@@ -156,10 +156,16 @@ display: none !important;
   color: var(--primary-color);
 }
 
+.side-right-nav-container {
+  background-color: #35373F;
+  color: white !important;
+  height: 100%;
+}
+
 .side-right-nav-container-popular-title{
   font-family: var(--primary-font);
   font-size: 15px;
-  color: #222E41;
+  color: white;
   font-weight: 600;
   margin: 0;
   padding: 10px 0 10px;
@@ -177,7 +183,7 @@ display: none !important;
   font-family: var(--primary-font);
   font-size: 13px;
   font-weight: 400;
-  color: #004696;
+  color: white;
   text-align: start;
   display: block;
   padding: 10px 0;
@@ -476,7 +482,7 @@ img[src*="#thumbnail-20"] {
       position: absolute;
       right: 0;
       /* 20px from the nav */
-      height: calc( 100% + 48px);
+      height: 100%;
       top: 0;
       width: 280px;
       display: block;
@@ -486,8 +492,43 @@ img[src*="#thumbnail-20"] {
   }
   .side-right-nav-container-announcements{
       /* 198px top fold */
-      height: 200px;
   }
+
+  .howtousesite {
+    padding: 50px;
+    width: 72%;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+.howtousesite--infocont {
+  display: flex;
+  margin-top: 30px;
+}
+
+.howtousesite--infocont .howtousesite--info {
+  width: 33%;
+}
+
+.howtousesite--infonumber {
+  width: 31px;
+  background: black;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  border-radius: 50%;
+}
+
+.howtousesite--infotext {
+font-size: 12px;
+Color: #7D7D7D;
+margin-top: 20px;
+font-weight: 400;
+}
+
   .side-right-nav-title, .side-right-nav-item{
       text-align: start;
   }
