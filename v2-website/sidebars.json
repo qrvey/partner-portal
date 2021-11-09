@@ -982,6 +982,18 @@
         {
           "type": "doc",
           "id": "video-training/building-qrvey-sample/filter-design"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/column-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/row-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/building-qrvey-sample/security-groups"
         }
       ]
     },
