@@ -939,7 +939,7 @@
         },
         {
           "type": "category",
-          "label": "For Administrators",
+          "label": "For Developers",
           "items": [
             {
               "type": "doc",
