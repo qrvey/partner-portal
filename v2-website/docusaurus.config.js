@@ -132,7 +132,7 @@ module.exports={
           ]
         },
         {
-          "href": "/docs/video-training/release/version-6.3",
+          "href": "/docs/video-training/building-qrvey-sample/chart-builder",
           "label": "VIDEOS",
           "position": "right"
         },
