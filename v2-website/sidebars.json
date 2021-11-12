@@ -859,6 +859,102 @@
   "video-training": [
     {
       "type": "category",
+      "label": "Short Training Videos",
+      "items": [
+        {
+          "type": "category",
+          "label": "For Composers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/chart-builder"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/xychart"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/map-chart"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/percent-total-charts"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/multi-series"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/kpi"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/table"
+            }, 
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/page-builder"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/filter-design"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/page-actions"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/new-webforms"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/new-workflows"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "For Administrators",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/security-overview"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/security-groups"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/row-level-security"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/column-level-security"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "For Developers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/widget-overview"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/jwt-widget"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "Release Demos",
       "items": [
         {
@@ -912,88 +1008,6 @@
         {
           "type": "doc",
           "id": "video-training/release/version-5.2"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Short Training Videos",
-      "items": [
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/new-webforms"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/new-workflows"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/new-datalinks"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/xychart"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/map-chart"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/chart-builder"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/jwt-widget"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/building-qrvey-sample/page-builder"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Prior Versions",
-      "items": [
-        {
-          "type": "category",
-          "label": "Training Sessions",
-          "items": [
-            {
-              "type": "doc",
-              "id": "video-training/analytics/intro-analytics-apps"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/datasets"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/analytic-views"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/reports-pages"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/web-forms"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/metrics"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/analytics/automation"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/admin-center/intro-admin-center"
-            }
-          ]
         }
       ]
     }
