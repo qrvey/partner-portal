@@ -8,9 +8,9 @@ sidebar_label: Database Connections
 
 You can create connections to various RDBMS by using the Database Connection feature under the *Connections* tab. Database connections can be created by entering the common connection attributes in the provided fields in the connection dialog, or by using the more advanced connection attributes using a JSON structure. While the former method is the default, the latter can be used to configure properties that are typically not included, such as timeout and encryption preferences.
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database_create.png#thumbnail-60)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/connections_list.png#thumbnail-60)
 
-To begin, choose the type of database you’d like to connect to. We currently support Amazon Redshift, MongoDB, MySQL, SQL Server, PostgreSQL and Oracle databases. MySQL and PostgreSQL are Aurora compatible. 
+To begin, choose the type of database you’d like to connect to. We currently support Amazon Redshift, MongoDB, DynamoDB, MySQL, SQL Server, PostgreSQL and Oracle databases. MySQL and PostgreSQL are Aurora compatible. 
 
 The dialog that is displayed may be slightly different for each database type, depending on their required configuration attributes, but all of the fields are descriptive and familiar to those who have worked with databases. 
 
