@@ -26,14 +26,14 @@ Same as the left join, it uses rows of data from the right table and the matchin
 ## Creating Joined Datasets
 To join multiple sources access the dot-menu from the data source pill and select the **Join to Another Data Source** option. 
 
-![1_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join1.png#thumbnail)
+![1_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join1.png#thumbnail-60) 
 
 Choose the data source that you wish to join from any of the connections, existing datasets, or shared data.
 
 
 In the *Join Data*,select the join type you would like to use and then select the common column(s) from the 2 data sources you are joining together. You can select more than one column for each link. Once you are done, click on **Save** to return to the main screen where you will see another pill with the data source that has just been joined. 
 
-![2_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join2.png#thumbnail-80)
+![2_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join2.png#thumbnail-80) 
 
 Once a join has been created a new *Join Output* pill will appear on the main screen.  When clicking on this pill, you will see all the combined columns from the joined datasets. This is the view of the output columns that will be loaded to the dataset.
 
