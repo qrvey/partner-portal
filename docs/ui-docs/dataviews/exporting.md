@@ -150,7 +150,7 @@ It is important to note the following points:
 * Any number of pages can be attached by selecting them from a checkbox list. Select All is also available.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export18.png#thumbnail-40)
 
-* When selecting charts to attach to an email, only simple (ungrouped) table charts are listed in a checkbox list under each used dataset that has such a chart. Any number of these charts can be selected. Select All is also available.
+* When selecting charts to attach to an email, only table charts are listed in a checkbox list under each used dataset that has such a chart. Any number of these charts can be selected. Select All is also available.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export19.png#thumbnail-40)
 
 * All chart exports adhere to their applied filters and other configuration settings.
