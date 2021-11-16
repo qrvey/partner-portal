@@ -169,13 +169,36 @@ If you choose to add a reference line, you can choose from a number of options, 
 ![12_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12_CB.png#thumbnail)
 
 ## Format
-In the format section, you will find the option to create a *Small Multiples* view for your chart by adding a third column which will multiply the charts by the value selected and create a comparison view. 
+The available options in the **Format** section may vary, depending on the chart. Two such options are *Small Multiples* and *Conditional Formatting*.
 
+### Small Multiples
+One option that is available for X/Y charts is the option to create a Small Multiples view for your chart by adding a third column which will multiply the charts by the value selected and create a comparison view. 
 ![13_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13_CB.png#thumbnail-40)
 
 Starting in the data panel, drag the column you would like to use for the comparison and drop it in the *Small Multiple* field. In the chart preview, you will see a chart for each of the values in the selected column. In this example, a date column was used. For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day, Hour, Minute, and Second) where you can select how you’d like the dates in the column to be grouped.
 
 ![14_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/14_CB.png#thumbnail)
+
+### Conditional Formatting
+
+Conditional Formatting creates criteria for applying specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet those set conditions. It calls attention to important data points such as deadlines, at-risk items, or budget items and can at the same also make large datasets more digestible by breaking up the data with a visual organizational component.
+
+To set up a new condition expand the **Conditional Formatting** section and click on **+ Add Condition**. A new Condition section is added with an auto-assigned label (*Condition 1* for the first one) and color. Click on the section to expand it. 
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-formatting.png#thumbnail-40) 
+ 
+Note that the options in the condition section may slightly vary from chart to chart but they have a lot in common. Generally, each “condition” consists of a criteria and the outcome that you wish to have. The criteria is set  up by choosing a data *Column*, an *Operator*, and a *Value* that define the threshold past which the outcome style will be applied. For example you may want to somehow highlight the data points for the quarters when the total payments made by customers exceeded the $1M threshold. Pick *amount (SUM)* as your data **Column**, set the **Operator** to *greater than* and the **Value** to *1000000*.
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-chart.png#thumbnail)  
+
+
+Next, you have to decide how you want the data points that match your criteria to be highlighted. This is where the main difference between charts can be seen. For example you can choose a color and a style (filled or outlined) for a bar chart, but text color or cell color, as well as style (filled or outlined) for a table chart.
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-chart.gif#thumbnail)
+ 
+
+Conditions can be given a **Label** that they can be identified with and can be removed from the **Remove** label at the bottom of each condition section. You may create as many conditions as you wish. 
+
 
 ## Filters
 While building your chart, you are able to apply default filters. These filters will be retained in all instances of the chart across the entire application. To add a filter click on **Add Filters**.
