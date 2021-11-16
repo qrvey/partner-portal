@@ -6,10 +6,10 @@ sidebar_label: Data Joins
 
 <div style={{textAlign: "justify"}}>
 
-Datasets can also be created by joining multiple data sources. Different sources from multiple connection types and existing datasets that have one column in common can be joined together creating a new physical dataset. 
+Datasets can be created by joining multiple data sources. Different sources from multiple connection types and existing datasets that have at least one column in common can be joined together creating a new physical dataset. 
 
 ## Join Types
-The following join types are supported in the composer:
+The following join types are supported:
 
 **Left Join**
 Uses rows of data from the left table and the matching rows from the right table. 
@@ -24,20 +24,24 @@ Uses only the rows of data that are common in the joined data. Rows that have no
 Same as the left join, it uses rows of data from the right table and the matching rows from the left table. 
 
 ## Creating Joined Datasets
-To join multiple sources together, begin by creating a new dataset and selecting a connection from the list of data sources. Then access the dot-menu from the data source pill and select the **Add Data Source** option. 
+To join multiple sources access the dot-menu from the data source pill and select the **Join to Another Data Source** option. 
 
-![1_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/1_joins.png#thumbnail)
+![1_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join1.png#thumbnail)
 
-In the *Join Data* screen, select the join type you would like to use and then select the common columns from the 2 tables you are joining together. You are able to select more than 1 column for each link. Once you are done, click on **Save** to return to the main screen where you will see another pill with the data source that has just been joined. 
- 
-![2_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/2_joins.png#thumbnail-80)
+Choose the data source that you wish to join from any of the connections, existing datasets, or shared data.
 
-In addition to the pills that belong to each of the data sources, there will be  another pill created for the *Join Output* on the main screen.  When clicking on this pill, you will see all the combined columns from the joined datasets. This is the view of the output columns that will be loaded to the dataset.
+
+In the *Join Data*,select the join type you would like to use and then select the common column(s) from the 2 data sources you are joining together. You can select more than one column for each link. Once you are done, click on **Save** to return to the main screen where you will see another pill with the data source that has just been joined. 
+
+![2_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/Join2.png#thumbnail-80)
+
+Once a join has been created a new *Join Output* pill will appear on the main screen.  When clicking on this pill, you will see all the combined columns from the joined datasets. This is the view of the output columns that will be loaded to the dataset.
 
 ![3_joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/3_joins.png#thumbnail)
 
-Once the loading process finished, the data from both sources will be available to create charts, pages and reports.
+Click on any data source pill to filter the view to show only columns from the selected data source. 
 
-Creators can come back to edit any of the joined data sources and continue to add more if needed. When a new data source is added, the data must be reloaded. 
+You may repeat this process to join any of the data sources with additional data sources to achieve the desired structure for your dataset. Apply your changes and load (or reload) the dataset to make it available to create charts, pages and reports.
+
 
 </div>
