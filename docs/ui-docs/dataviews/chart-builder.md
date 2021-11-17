@@ -169,13 +169,36 @@ If you choose to add a reference line, you can choose from a number of options, 
 ![12_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/12_CB.png#thumbnail)
 
 ## Format
-In the format section, you will find the option to create a *Small Multiples* view for your chart by adding a third column which will multiply the charts by the value selected and create a comparison view. 
+The available options in the **Format** section may vary, depending on the chart. Two such options are *Small Multiples* and *Conditional Formatting*.
 
+### Small Multiples
+One option that is available for X/Y charts is the option to create a Small Multiples view for your chart by adding a third column which will multiply the charts by the value selected and create a comparison view. 
 ![13_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/13_CB.png#thumbnail-40)
 
 Starting in the data panel, drag the column you would like to use for the comparison and drop it in the *Small Multiple* field. In the chart preview, you will see a chart for each of the values in the selected column. In this example, a date column was used. For dates, you can access the date grouping options (Year, Quarter, Month, Week, Day, Hour, Minute, and Second) where you can select how you’d like the dates in the column to be grouped.
 
 ![14_cb](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/14_CB.png#thumbnail)
+
+### Conditional Formatting
+
+Conditional Formatting creates criteria for applying specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet those set conditions. It calls attention to important data points such as deadlines, at-risk items, or budget items and can at the same also make large datasets more digestible by breaking up the data with a visual organizational component.
+
+To set up a new condition expand the **Conditional Formatting** section and click on **+ Add Condition**. A new Condition section is added with an auto-assigned label (*Condition 1* for the first one) and color. Click on the section to expand it. 
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-formatting.png#thumbnail-40) 
+ 
+Note that the options in the condition section may slightly vary from chart to chart but they have a lot in common. Generally, each “condition” consists of a criteria and the outcome that you wish to have. The criteria is set  up by choosing a data *Column*, an *Operator*, and a *Value* that define the threshold past which the outcome style will be applied. For example you may want to somehow highlight the data points for the quarters when the total payments made by customers exceeded the $1M threshold. Pick *amount (SUM)* as your data **Column**, set the **Operator** to *greater than* and the **Value** to *1000000*.
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-chart.png#thumbnail)  
+
+
+Next, you have to decide how you want the data points that match your criteria to be highlighted. This is where the main difference between charts can be seen. For example you can choose a color and a style (filled or outlined) for a bar chart, but text color or cell color, as well as style (filled or outlined) for a table chart.
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/conditional-chart.gif#thumbnail)
+ 
+
+Conditions can be given a **Label** that they can be identified with and can be removed from the **Remove** label at the bottom of each condition section. You may create as many conditions as you wish. 
+
 
 ## Filters
 While building your chart, you are able to apply default filters. These filters will be retained in all instances of the chart across the entire application. To add a filter click on **Add Filters**.
@@ -451,55 +474,6 @@ For charts other than Table and Crosstab, the same feature is also available fro
 >**Note**: Date formatting applies to date columns that are used as dates. If the column is aggregated it turns into a numeric value and cannot be formatted as date.
 
 
-
-## Conditional Formatting 
-
-Conditional Formatting creates criteria for applying specific color formatting to data in charts to highlight, differentiate, and emphasize values that meet those set conditions. It calls attention to important data points such as deadlines, at-risk items, or budget items and can at the same also make large datasets more digestible by breaking up the data with a visual organizational component.
-
-There are 3 basic components are required to create a condition: 
-* **Data column** - This is the column to which the condition, and the formatting are applied
-* **Operator** - The operator for the condition. These vary depending on the data type of the column chosen.
-* **Value** - The value that defines the condition. Input components vary based on the data type of the column chosen.
-
-Conditional Formatting is supported in Bar, Line, Symbol, Multi-series, Combo, Table, Expandable Table, Crosstab, Dot and Bubble Map charts.
-
-
-When you use conditional formatting, you can set the following: 
-
-1. **Text Color**: Changes the font color of the cell’s value that matches the condition **- only in Tables.**
-2. **Cell Color**: Changes the background or border color (depending on the style option selected) of the cells whose values match the condition **- only in Tables.**
-3. **Style**: Fills the cell’s background color or outlines its border **- only in Tables.**
-4. **Label**: Give the condition a custom name. 
-5. **Column**: A list of columns available in the shelf for setting a condition.
-6. **Operator**: A list of operators available for formatting. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond1.png#thumbnail-40)
-
-7. **Value**: A number to define the columns with that same value that will (not) be shown based on the operator chosen.
-8. **Remove**: Deletes the condition. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond2.png#thumbnail-40)
-
-For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
-
-First, you have to decide how you want to highlight the cells that meet your condition:
-1. Go to the *Format* section located inside the chart builder’s configuration pane.  
-2. Click on the *Conditional Formatting* subsection and click on **+Add Condition**.
-3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond3.gif#thumbnail)
-
-For example, let’s say you want to highlight all cells in a table chart where the sales amount has exceeded the target value of $2,000. To set up this condition, you can pick “Sales” as your column, “Greater Than” as your operator, and “2000” as the value for your condition.
-
-### How To Use It?
-First, you have to decide how you want to highlight the cells that meet your condition:
-1. Go to the **Format** section located inside the chart builder’s configuration pane.  
-2. Click on the **Conditional Formatting** subsection and click on **+Add Condition**.
-3. A tab will appear where you can set up your condition and see the conditional formatting reflected on the data points in the chart as long as the condition criteria are met. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/cond4.gif#thumbnail) 
-
-
 ## Chart Themes 
 
 Give your charts a unified look by creating customized themes for your analytics that can be used to replace Qrvey’s default theme settings. 
@@ -512,20 +486,43 @@ To create a new theme, go to the Style Themes button that can be found in the An
 
 ![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme2.png#thumbnail-60) 
 
+Initially, the default theme is the only theme that is listed in this dialog. The default theme cannot be removed or edited, but you may create a duplicate of it from the three-dot menu. Alternatively, may create a new theme and define your desired styles from scratch. Every theme that is created will be listed in all of your applications and can be used either for that app or throughout all of the apps. The available properties on the theme dialog are mostly self-evident. However, it’s worth mentioning that the colors under the **Data Styles** section can be changed individually. Alternatively, click on **Generate New** to generate a new set of colors and continue to modify any that you prefer to change.
+The modified theme can be restored to the original set by clicking on the **Restore to Default** link, at any time.
 
-Next, create a new theme that will be listed in all of your applications. The following settings are available from the UI:
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart-theme3.png#thumbnail-60)  
 
-* **Theme Name** - Give your theme a custom name. If you select *Use this theme in all applications*, this same theme will be applied across all applications in your Qrvey account.
-* **Font Type** - Pick a font type you’d like to use for your charts’ title and other labels.
-* **Text Colors** - Assign colors to different sections of your chart (titles, labels, values, legends, tooltips, and headers)
-* **Data Styles** - Choose the colors to be used in data visualizations inside the chart (bars, lines, points, etc.)
-* **Generate New** - Get a random selection of colors to be used in visualizations.
-* **Reset to Default Settings** - Discard all changes and return to the default settings. 
-
-
-You can click on each color box to change it using the color selector control.
 Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme3.png#thumbnail-60) 
+
+## Date Grouping
+
+Records that exist within dataset columns that are configured as a **Date** column type can be grouped into common date group buckets.  Drag and drop a category field of type **Date** onto the **Category** shelf, click the three-dot menu and select **Date Group**.  Choose the desired date group bucket and the chart will be redrawn with that date grouping applied.
+
+The following date group buckets are available for **Date** fields within the Chart Builder:
+
+
+| **Type** | **Description** | **Display Format** | **Example** |
+| --- | --- | --- | --- |
+| Year| Year component of the date value.| 4-digit year.| 2021| 
+| Quarter, Year| Quarter of a specific year.| “Q” letter prefix, followed by a number between “1” and “4”, then a space and the 4-digit year.| Q4 2021| 
+| Month, Year| Month of a specific year.| 3-letter month prefix, followed by a space and then the 4-digit year.| Aug 2021| 
+| Week, Year| Week of a specific year.| “W” letter prefix, followed by a number between “1” and “52”, then a space and the 4-digit year.| W26 2021| 
+| Full Date| Actual date value.| Follows the corresponding setting for the field within the source dataset. (e.g. “MM/DD/YYYY”)| 10/01/2021| 
+| Date, Hour*| Hour of a specific date.| Follows the corresponding setting for the field within the source dataset; minutes and seconds are ignored. (e.g. “MM/DD/YYYY HH24:00:00”)| 10/01/2021 18:00:00| 
+| Date, Minute*| Minute of a specific hour and date.| Follows the corresponding setting for the field within the source dataset; seconds are ignored. (e.g. “MM/DD/YYYY HH24:MM:00”)| 10/01/2021 18:45:00| 
+| Date, Second*| Second of a specific minute, hour and date.| Follows the corresponding setting for the field within the source dataset. (e.g. “MM/DD/YYYY HH24:MM:SS”)| 10/01/2021 18:45:30| 
+| Quarter| Specific quarter of any/all years in the dataset; i.e. all data that falls within a specific quarter is grouped together for all years.| “Q” letter prefix, followed by a number between “1” and “4”.| Q3| 
+| Month| Specific month of any/all years in the dataset; i.e. all data that falls within a specific month is grouped together for all years.| 3-letter month prefix.| Feb| 
+| Day (Year)| Specific day of any/all years in the dataset; i.e. all data that falls within a specific day of the year is grouped together for all years.| 1, 2 or 3-digit day of the year. (1-365)| 330| 
+| Day (Month)| Specific day of any/all months in the dataset; i.e. all data that falls within a specific day of the month is grouped together for all months.| 1 or 2-digit day of the month. (1-31)| 15| 
+| Day (Week)| Specific day of any/all weeks in the dataset; i.e. all data that falls within a specific day of the week is grouped together for all weeks.| 3-letter day of week prefix.| Mon| 
+| Hour*| Specific hour of any/all days in the dataset; i.e. all data that falls within a specific hour of the day is grouped together for all days.| 1 or 2-digit hour of the day. (0-23)| 12| 
+| Minute*| Specific minute of any/all hours in the dataset; i.e. all data that falls within a specific minute of the hour is grouped together for all hours.| 1 or 2-digit minute of the hour. (0-59)| 45| 
+| Second*| Specific second of any/all minutes in the dataset; i.e. all data that falls within a specific second of the minute is grouped together for all minutes.| 1 or 2-digit second of the minute.|  (0-59)| 25| 
+
+
+*Not available if the date field does not contain hours, minutes and seconds.
+
+
 
 </div>
