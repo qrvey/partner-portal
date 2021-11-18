@@ -12,7 +12,7 @@ The following steps will walk you through installing the Qrvey platform in your 
 
 1. Log into your AWS account. Select your desired AWS region.
 
-2. Launch <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-6.2.json"> this URL </a> in your browser window. <br />
+2. Launch <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-6.4.json"> this URL </a> in your browser window. <br />
 a. This will take you to Cloudformation's quick create page. Enter values for the following parameters and click on **Create Stack**.<br />
 
     i. Stack name - name this Cloudformation stack. <br />
