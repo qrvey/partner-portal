@@ -491,7 +491,7 @@ The modified theme can be restored to the original set by clicking on the **Rest
 
 Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart-theme4.png#thumbnail-40)  
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart-theme4.png#thumbnail-60)  
 
 ## Date Grouping
 
