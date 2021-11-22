@@ -477,14 +477,12 @@ For charts other than Table and Crosstab, the same feature is also available fro
 ## Chart Themes 
 
 Give your charts a unified look by creating customized themes for your analytics that can be used to replace Qrvey’s default theme settings. 
-
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme1.png#thumbnail-40) 
-
+ 
 
 ### Setting Chart Themes
 To create a new theme, go to the Style Themes button that can be found in the Analyze section of any dataset, as well as the Report Builder and Page Builder UIs.
 
-![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme2.png#thumbnail-60) 
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/theme1.png#thumbnail-40)
 
 Initially, the default theme is the only theme that is listed in this dialog. The default theme cannot be removed or edited, but you may create a duplicate of it from the three-dot menu. Alternatively, may create a new theme and define your desired styles from scratch. Every theme that is created will be listed in all of your applications and can be used either for that app or throughout all of the apps. The available properties on the theme dialog are mostly self-evident. However, it’s worth mentioning that the colors under the **Data Styles** section can be changed individually. Alternatively, click on **Generate New** to generate a new set of colors and continue to modify any that you prefer to change.
 The modified theme can be restored to the original set by clicking on the **Restore to Default** link, at any time.
@@ -493,6 +491,7 @@ The modified theme can be restored to the original set by clicking on the **Rest
 
 Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code.
 
+![chart_builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/chart-theme4.png#thumbnail-40)  
 
 ## Date Grouping
 
