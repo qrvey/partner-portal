@@ -8,9 +8,9 @@ sidebar_label: October 2021
 **Note**: If you wish to upgrade to this version, please contact the CX team if you have a *Managed Infrastructure* contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-6.4.json">this upgrade link</a> and follow the directions in <a href="/docs/get-started/upgrading-new-version">Upgrading to a New Version</a> article to upgrade your instance(s).  
 
 
-## New Features & Enhancements
+<!-- ## New Features & Enhancements
 
-Click <a href="/docs/video-training/release/version-6.4" target="_blank"> <strong>here</strong></a> to access demo videos of some released features.
+Click <a href="/docs/video-training/release/version-6.4" target="_blank"> <strong>here</strong></a> to access demo videos of some released features. -->
 
 ### Data Preparation
 
