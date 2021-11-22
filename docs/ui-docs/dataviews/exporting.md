@@ -128,7 +128,7 @@ The following image shows the JPG export results of the Customers dataset’s Su
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/visualization2.png#thumbnail) 
 
 ## PDF Export
-PDF export is mainly a layout export option and produces results that look a lot like the JPG export, but are in PDF format. The feature that sets PDF export apart from other formats is its different behavior when it comes to exporting simple (ungrouped) tables: In this case, all of the data for the table is exported, much like a CSV export, but in PDF format.
+PDF export is mainly a layout export option and produces results that look a lot like the JPG export, but are in PDF format. The feature that sets PDF export apart from other formats is its different behavior when it comes to exporting tables: In this case, all of the data for the table is exported, much like a CSV export, but in PDF format.
 
 >**Note 1**: The same table, when exported as part of a page or report, is exported in the layout mode and is part of the image of the page or report. The full data mode only works when exporting the table from the chart panel.
 
@@ -144,14 +144,13 @@ As explained in the <a href="/docs/ui-docs/automation/send-actions#send-an-email
 It is important to note the following points:
 * All of these exports are in PDF format. 
 * Pages and reports are exported in PDF layout and charts in PDF data mode.
-* At this time only table charts are supported as individual chart exports.
 * Any number of reports can be attached, but they have to be selected individually.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export17.png#thumbnail-40)
 
 * Any number of pages can be attached by selecting them from a checkbox list. Select All is also available.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export18.png#thumbnail-40)
 
-* When selecting charts to attach to an email, only simple (ungrouped) table charts are listed in a checkbox list under each used dataset that has such a chart. Any number of these charts can be selected. Select All is also available.
+* When selecting charts to attach to an email, only table charts are listed in a checkbox list under each used dataset that has such a chart. Any number of these charts can be selected. Select All is also available.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export19.png#thumbnail-40)
 
 * All chart exports adhere to their applied filters and other configuration settings.

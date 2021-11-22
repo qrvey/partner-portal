@@ -47,6 +47,8 @@ The table below provides general information about each property of this widget�
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
 | userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| filter_panel_default_view | `String`, Decides the default state of the side filter panel, if it’s been added to the view. It can be set to ‘open’ or ‘closed’. The default value is closed.| No
+| fit_panel_button | `Boolean`, Show the fit to panel button on the panels. Default value is true.| No
 | personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
 | styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 
@@ -65,13 +67,11 @@ Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token
 | --- | --- | --- | --- | --- |
 | enabled | Turn personalization on/off for end users. When disabled, all of the properties in the personalization object, other than the **fit_panel_button** property will be omitted. | boolean | true | No
 | add_filter | When set to true, all “add filter” buttons will be visible to allow users to create new filters from the filter modal, the filter panel, and filter interactivity page components. | boolean | true | No
-| filter_panel_default_view | Decides the default state of the side filter panel, if it’s been added to the view. It can be set to ‘open’ or ‘closed’ | string | closed | No
 | edit_chart | Allow authenticated users to edit charts by clicking the “Edit” button in the panels' three-dot menu. | boolean | true | No
 | download_data | Allow users to download the page and panel data in CSV and PDF formats | boolean | true | No
 | edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu.  | boolean | true | No
 | remove_chart | Allow users to remove charts from the page, when in edit mode | boolean | true | No
 | rearrange_chart | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
-| fit_panel_button | Show the fit to panel button on the panels | boolean | true | No
 
 ### Overriding the Default Styles 
 The **styles** object can be used to configure css settings of the Page View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
