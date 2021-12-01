@@ -907,7 +907,15 @@
             },
             {
               "type": "doc",
+              "id": "video-training/building-qrvey-sample/formulas-buckets"
+            },
+            {
+              "type": "doc",
               "id": "video-training/building-qrvey-sample/page-actions"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/content-publishing"
             },
             {
               "type": "doc",
@@ -952,6 +960,10 @@
             {
               "type": "doc",
               "id": "video-training/building-qrvey-sample/jwt-widget"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/branding-styling"
             }
           ]
         }
