@@ -55,6 +55,29 @@ Once the connection is saved, you can click on the **View Data** option to get a
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup5.png#thumbnail)
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup6.png#thumbnail)
 
+
+## Using Amazon S3
+S3 buckets and folders can be leveraged to store CSV, JSON, or ndJSON files and used as connections in Qrvey. This method offers a lot of flexibility as it supports various unique and powerful features:
+
+* You can load data from multiple files that are in the same bucket or folder in bulk, instead of loading those one at a time.
+* Wildcards can be used to include files that their names match the pattern in the load and leave other files alone.
+* Files’ upload time will automatically be used as a timestamp to enable the <a href="/docs/ui-docs/datasets/data-sync#append-and-update" target="_blank">“append and update” </a> mode of data synchronization. 
+ 
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
+
+In the S3 connection screen you can select the file type that you wish to load from this connection and enter the name of the bucket. By default, Qrvey looks for the named bucket under the same AWS account as the instance. If you wish to connect to a bucket from a different account simply enter the access key and secret key for the desired account in the provided fields. Entering a folder or subfolder is optional and depends on where you store your files.  
+If you wish to upload all files in the bucket or folder all you need to do is enter the name of the bucket and/or folder. However, if you wish to upload a subset of files you can use a wildcard to specify the pattern of the desired filenames. Some examples are:
+* Load all files that start with “SALES_”
+    * myFolder/SALES_*
+* Load all files that end with “.csv”
+    * myFiolder/*.csv
+* Load all files that contain “data_load”
+    * myFolder/*data_load*
+
+Once a S3 connection has been established it can be used for creating datasets, like any other connection.
+
+
+
 ## Using File Data
 Once a file connection exists you can create a dataset from your file upload to use your data. Go to the *Datasets* tab, click on **New Dataset**, and select your file upload connection. 
 
