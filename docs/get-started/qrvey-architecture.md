@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: qrvey-architecture
+title: Qrvey Architecture Overview
+sidebar_label: Qrvey Architecture Overview
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

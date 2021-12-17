@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: qrvey-embedding-model
+title: Qrvey Embedding Model
+sidebar_label: Qrvey Embedding Model
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

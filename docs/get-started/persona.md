@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: persona-intro
+title: Personas
+sidebar_label: Personas
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

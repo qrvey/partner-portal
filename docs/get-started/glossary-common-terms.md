@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: glossary-common-terms
+title: Glossary of Common Terms
+sidebar_label: Glossary of Common Terms
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

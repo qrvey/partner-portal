@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: initial-setup
+title: Initial Setup
+sidebar_label: Initial Setup
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

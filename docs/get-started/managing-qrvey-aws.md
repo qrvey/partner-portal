@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: managing-qrvey-aws
+title: Managing Qrvey to AWS
+sidebar_label: Managing Qrvey to AWS
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: planning-architecture
+title: Planning the Architecture
+sidebar_label: Planning the Architecture
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

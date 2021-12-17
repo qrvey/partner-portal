@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: building-analytic-dashboards
+title: Building Analytic Dashboards
+sidebar_label: Building Analytic Dashboards
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

@@ -105,40 +105,23 @@ module.exports={
       },
       "items": [
         {
-          "label": "DOCS",
-          "href": "docs",
-          "position": "right",
-          "items": [
-            {
-              "label": "Getting Started",
-              "to": "/docs/get-started/get-started-intro",
-            },
-            {
-              "label": "Qrvey Composer",
-              "to": "/docs/ui-docs/basics/logging-in"
-            },
-            {
-              "label": "Admin Docs",
-              "to": "/docs/admin/admin-intro"
-            },
-            {
-              "label": "Developer Docs",
-              "to": "/docs/get-started/get-started-architecture"
-            },
-            {
-              "label": "Release Notes",
-              "to": "/docs/release-notes/release-last"
-            },
-          ]
+          "label": "Docs",
+          "href": "/docs/get-started/get-started-intro",
+          "position": "right"
         },
         {
           "href": "/docs/video-training/release/version-6.3",
-          "label": "VIDEOS",
+          "label": "Self Service Training",
           "position": "right"
         },
         {
           "href": "/docs/faqs/ask-us/",
-          "label": "FAQS",
+          "label": "Knowledge Base",
+          "position": "right"
+        },
+        {
+          "href": "/docs/video-training/release/version-6.3",
+          "label": "Coming up",
           "position": "right"
         },
       ]

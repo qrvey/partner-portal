@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: key-concepts
+title: Key Concepts
+sidebar_label: Key Concepts
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

@@ -1,7 +1,7 @@
 ---
-id: get-started-intro
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: administering-your-instance
+title: Administering Your Instance
+sidebar_label: Administering Your Instance
 tags: [Architects and Administrators, Developers, Composers]
 ---
 
