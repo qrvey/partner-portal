@@ -106,7 +106,7 @@ module.exports={
       "items": [
         {
           "label": "Docs",
-          "href": "/docs/get-started/get-started-intro",
+          "href": "/docs/get-started/qrvey-platform-overview",
           "position": "right"
         },
         {
