@@ -978,6 +978,9 @@ a.nav-item-dropdown.active{
   color: white;
   font-weight: 400;
   font-size: 13px;
+  padding-left: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .table-of-contents__link {
