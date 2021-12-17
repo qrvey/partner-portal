@@ -1,7 +1,7 @@
 ---
-id: deploying-qrvey-aws
-title: Deploying Qrvey to AWS
-sidebar_label: Deploying Qrvey to AWS
+id: prerequisites-for-installation
+title: Prerequisites for Installation
+sidebar_label: Prerequisites for Installation
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

@@ -2,16 +2,12 @@
   "get-started": [
     {
       "type": "category",
-      "label": "Introduction to Qrvey System",
+      "label": "Fundamentals",
       "items": [
         {
           "type": "doc",
-          "id": "get-started/get-started-intro"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/persona-intro"
-        },
+          "id": "get-started/qrvey-platform-overview"
+        }, 
         {
           "type": "doc",
           "id": "get-started/key-concepts"
@@ -28,89 +24,51 @@
     },
     {
       "type": "category",
-      "label": "Getting Started",
+      "label": "Cloud Engineer Guides",
       "items": [
         {
           "type": "doc",
-          "id": "get-started/overview"
+          "id": "get-started/overview-cloud-operations"
         },
         {
-          "type": "doc",
-          "id": "get-started/initial-setup"
+          "type": "category",
+          "label": "Deploying Qrvey to AWS",
+          "items": [
+            {
+              "type": "doc",
+              "id": "get-started/prerequisites-for-installation"
+            }
+          ]
         },
         {
-          "type": "doc",
-          "id": "get-started/planning-architecture"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/getting-data-into-qrvey"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/building-analytic-dashboards"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/qrvey-embedding-model"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/administering-your-instance"
+          "type": "category",
+          "label": "Managing Qrvey in AWS",
+          "items": [
+            {
+              "type": "doc",
+              "id": "get-started/connecting-to-secure-rds"
+            }
+          ]
         }
       ]
     },
     {
       "type": "category",
-      "label": "Clouds Ops Functions",
+      "label": "System Architecture Guides",
       "items": [
         {
           "type": "doc",
-          "id": "get-started/deploying-qrvey-aws"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/managing-qrvey-aws"
+          "id": "get-started/overview-architecture"
         }
       ]
     },
     {
       "type": "category",
-      "label": "Architcture Guides",
+      "label": "Data Management In Qrvey",
       "items": [
         {
           "type": "doc",
-          "id": "get-started/system-components"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/security"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/user-roles"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/glossary"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Data Management in Qrvey",
-      "items": [
-        {
-          "type": "doc",
-          "id": "get-started/aws-services"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/customizing-qrvey-deployment"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/managing-aws-cluster"
+          "id": "get-started/overview-qrvey-data-management"
         }
       ]
     },
@@ -120,15 +78,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "get-started/aws-services"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/customizing-qrvey-deployment"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/managing-aws-cluster"
+          "id": "get-started/overview"
         }
       ]
     },
@@ -138,15 +88,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "get-started/aws-services"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/customizing-qrvey-deployment"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/managing-aws-cluster"
+          "id": "get-started/qrvey-embedding"
         }
       ]
     },
@@ -156,15 +98,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "get-started/aws-services"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/customizing-qrvey-deployment"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/managing-aws-cluster"
+          "id": "get-started/administering-your-instance"
         }
       ]
     }

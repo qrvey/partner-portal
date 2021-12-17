@@ -1,7 +1,7 @@
 ---
-id: qrvey-platform-overview
-title: Qrvey Platform Overview
-sidebar_label: Qrvey Platform Overview
+id: overview-qrvey-data-management
+title: Overview of Qrvey Data Management
+sidebar_label: Overview of Qrvey Data Management
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

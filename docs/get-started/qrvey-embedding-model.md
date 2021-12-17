@@ -1,7 +1,7 @@
 ---
-id: qrvey-embedding-model
-title: Qrvey Embedding Model
-sidebar_label: Qrvey Embedding Model
+id: qrvey-embedding
+title: Overview of Embedding Qrvey Widgets
+sidebar_label: Overview of Embedding Qrvey Widgets
 tags: [Architects and Administrators, Developers, Composers]
 ---
 

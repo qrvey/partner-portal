@@ -1,7 +1,7 @@
 ---
-id: managing-qrvey-aws
-title: Managing Qrvey to AWS
-sidebar_label: Managing Qrvey to AWS
+id: connecting-to-secure-rds
+title: Connecting to Secure RDS
+sidebar_label: Connecting to Secure RDS
 tags: [Architects and Administrators, Developers, Composers]
 ---
 
