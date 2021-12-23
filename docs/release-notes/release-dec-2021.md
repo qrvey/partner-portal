@@ -22,7 +22,7 @@ sidebar_label: November 2021
 
 ### Data Analysis & Automation
 
-* <strong>AN-14097 - Assign a Color to a Category in Charts</strong>: We already had the feature to automatically assign a color to a category of data and keep it consistent across all charts. The feature has been enhanced to allow any color to be set by the chart creator.
+* <a href="/docs/video-training/release/version-6.5/" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"></a><strong>AN-14097 - Assign a Color to a Category in Charts</strong>: We already had the feature to automatically assign a color to a category of data and keep it consistent across all charts. The feature has been enhanced to allow any color to be set by the chart creator.
 
 * <strong>AN - 14359 - Performance Improvements - Loading Charts</strong>: We consistently work on improving the performance of the product in all areas. This version provides a noticeable improvement in the loading of charts, especially table charts. You can expect improvements in the range of 10%-50% in most cases.
 
@@ -30,14 +30,13 @@ sidebar_label: November 2021
 
 * <strong>AT-10087 - Control Over the “To” Input Box in Subscriptions</strong>: Implementers can decide whether or not to show the “To” input box as part of the subscription interface by setting a property in the configuration object of the widget.
 
-* <strong>AT-10083 - Filter Component - Input Box: A new standalone filter control has been added to the existing set</strong>: The Input Box Filter control can be used to filter the content based on the entered text. 
+* <a href="/docs/video-training/release/version-6.5/" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/"></a><strong>AT-10083 - Filter Component - Input Box: A new standalone filter control has been added to the existing set</strong>: The Input Box Filter control can be used to filter the content based on the entered text.  
 
 * <strong>EX-449 - CSV Summary Downloads on Multiseries, Min/Max, Heatmap, and Combo</strong>: You can now download CSV Summary files from Multiseries, Min/Max, Heatmap, and Combo visualizations.
 
 ### Admin Center
 
-* <strong>Content Deployment 2.0</strong>: We are introducing the new version of the Content Deployment tool in the Admin Center which will allow administrators to deploy applications and their content, such as datasets, charts and pages to multiple users across different instances. 
-
+* <strong>Content Deployment 2.0</strong>: We are introducing the new version of the Content Deployment tool in the Admin Center which will allow administrators to deploy applications and their content, such as datasets, charts and pages to multiple users across different instances.
 
 ## General Tweaks & Bug Fixes
 
