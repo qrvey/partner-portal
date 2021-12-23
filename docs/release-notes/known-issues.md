@@ -5,6 +5,7 @@ sidebar_label: Known Issues
 ---
 <div style={{textAlign: "justify"}}>
  
+
 * **QV-14238 - Datasets - Time out errors**: When a user is trying to Reload a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
 
 * **QV-13021 - 600+ Column Indexes cannot be created**: When a user tries to create a dataset from an index that has more than 600 columns, the dataset cannot be successfully created.
