@@ -18,18 +18,19 @@ From the Connections page, you can click on an existing connection to make chang
 A modal window will appear that lists all of the supported data source types that can be configured through the Qrvey Composer UI.
 
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connections_list.png#thumbnail-60)  
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/connections_list_new.png#thumbnail-60) 
 
-The UI supports the following types of SQL-compatible source databases:
-
+The UI supports the following well-known databases:
 * SQL Server
 * MySQL
 * PostgreSQL
 * Oracle
-* Redshift
-* Athena 
-* MongoDB
-* DynamoDB 
+* Amazon Redshift
+* Amazon Athena
+* MongoDB 
+* Snowflake
+* DynamoDB
+
 
 For CSV data or unstructured data, such as JSON documents, the UI supports uploading those file types directly or by pointing to an S3 bucket where those files reside.  Additionally, API connections are supported in the UI to “push” data into one or more datasets.
 
