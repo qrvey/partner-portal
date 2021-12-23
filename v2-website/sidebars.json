@@ -867,6 +867,16 @@
       "items": [
         {
           "type": "category",
+          "label": "For Data Engineers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/dataset-syncing"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "For Composers",
           "items": [
             {
@@ -973,6 +983,14 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.5"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.4"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-6.3"
