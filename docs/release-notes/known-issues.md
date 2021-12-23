@@ -20,4 +20,5 @@ sidebar_label: Known Issues
 * **ADMIN-5886 - Unable to Change Elasticsearch Cluster Size**: When a user changes the ES cluster size from Admin center shows that it is processing but the actual cluster does not change. Then, when the user tries to change the cluster again it says another change is already in progress, so it does not let the user change it again.
 
 * **The new Administrator role is not functional yet:** The default Administrator role, added under the new Roles and Permissions feature, has not been turned on yet and users with this role will not be able to access the Admin Center product. The product remains only accessible to users added through the AWS console with proper permissions.
+
 </div>
