@@ -412,14 +412,32 @@
         {
           "type": "doc",
           "id": "admin/roles-and-permissions"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Content Deployment",
+      "items": [
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/concepts"
         },
         {
           "type": "doc",
-          "id": "admin/admin-sections-deployments"
+          "id": "admin/content-deployment/servers"
         },
         {
           "type": "doc",
-          "id": "admin/metadata-builder"
+          "id": "admin/content-deployment/packages-and-versions"
+        },
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/definitions"
+        },
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/content-deployment-jobs"
         }
       ]
     }
