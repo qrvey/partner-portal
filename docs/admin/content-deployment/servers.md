@@ -9,7 +9,7 @@ sidebar_label: Servers
 ## Creating and Managing Servers
 In order to create a deployment package, a connection to the Server where the source application exists has to be established.
 
-Clicking on the **Servers** option in the top navigation bar takes you to the Servers page, where a list of all of the registered Servers is shown in a table, along with some information about them. If the Server that you are looking for is not listed, click on the <img alt="add" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/add.png#thumbnail-20"/>  button to add it.
+Clicking on the **Servers** option in the top navigation bar takes you to the Servers page, where a list of all of the registered Servers is shown in a table, along with some information about them. If the Server that you are looking for is not listed, click on the <img alt="add" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/add.png" width="8%"/>  button to add it.
 In the dialog that appears, Server Name (required) and Description (optional) are for information purposes only and intended to help you identify the target server. For example, if you have a “development”, a “staging”, and a “production” environment, you could use those terms as the names of each of the associated Servers. The URL and the API key (both required fields) have to be respectively set to the Qrvey Composer URL and API key values that have been shared with you in the Welcome Email that you received at the time that your environment was set up.
 
 >**Note**: Refer to the <a href="/docs/faqs/faqs-intro/" target="_blank">FAQs</a> if you don’t know where to find this information.
@@ -19,7 +19,7 @@ In the dialog that appears, Server Name (required) and Description (optional) ar
 Once all of the required fields have been filled, you can save the new server to the list of accessible servers for later use in Content Deployment.
 The server information can be modified by choosing the Edit option from the three-dot menu in the servers list.
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide2.png#thumbnail-20)
+![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide2.png#thumbnail-40)
 
 
 Also, the connection to the server may be removed by choosing the Delete option from the aforementioned menu. 
