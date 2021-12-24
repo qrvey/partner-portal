@@ -1,5 +1,5 @@
 ---
-id: content-deployment-concepts
+id: concepts
 title: Content Deployment Concepts
 sidebar_label: Content Deployment Concepts
 ---
@@ -19,7 +19,7 @@ The Content Deployment feature makes use of several industry-standard terms and 
 
 ### Server
 Each instance of the Qrvey platform is considered a “Server”. Servers are identified by the URL of their Qrvey Composer instance, but the term is synonymous with “environment” and it includes the entire set of products that make up the platform: Qrvey Composer, Admin Center, the ElasticSearch cluster, all of the users of the instance, the content that they have created, and the related metadata. In the process of Content Deployment, specific content from one or more applications that have been created on one “Server” are selected and copied to another application on the target server.
-Access to the Servers is restricted to the administrators that are created with the proper permissions in AWS. Therefore, access to the Servers utilizing server access keys is required to complete the deployment configuration. The process of adding a Server to the list of accessible Servers is explained in a later <a href="/docs/admin/content-deployment-guide" target="_blank">article</a>. 
+Access to the Servers is restricted to the administrators that are created with the proper permissions in AWS. Therefore, access to the Servers utilizing server access keys is required to complete the deployment configuration. The process of adding a Server to the list of accessible Servers is explained in a later <a href="/docs/admin/content-deployment/guide" target="_blank">article</a>. 
 
 ### Package And Versions
 A Package is essentially a snapshot of a selected application with all of its content and dependencies (connection(s), dataset(s), charts, workflows, etc.). 
