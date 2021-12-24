@@ -14,7 +14,7 @@ Content Deployment is the process that can be used by administrators to copy con
 * Creating an empty shell of an application under any user account in any instance of Qrvey.
 
 
-To get started with Content Deployment, log in to the Admin Center and navigate to the Content Deployment feature by clicking on the <img alt="arrow" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/arrow.png#thumbnail-20"/> icon on the left-side navigation bar. All of the steps in the Content Deployment process, as well as the Content Deployment Activity Logs, can be accessed from here.
+To get started with Content Deployment, log in to the Admin Center and navigate to the Content Deployment feature by clicking on the <img alt="arrow" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/arrow.png" width="2%"/> icon on the left-side navigation bar. All of the steps in the Content Deployment process, as well as the Content Deployment Activity Logs, can be accessed from here.
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide.png#thumbnail)
 
