@@ -18,15 +18,16 @@ To get started with Content Deployment, log in to the Admin Center and navigate 
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide.png#thumbnail)
 
-The high-level steps to deploy/copy an application from a source to a destination server or recipient are:
-1. Make sure the source and destination servers are defined. This process is described in the Creating and Managing Servers section.
-2. Create a Package and capture a Version of the source application. This has been discussed in the Creating and Managing Packages and Versions section.
-3. Define which pieces of content will be copied from the source in a Deployment Definition. Learn more about this in the Deployment Definitions section.
-4. Decide who the recipients are and to which destination server(s) the definition has to be deployed to in a Deployment Job.
-5. Run the Deployment Job and optionally examine the Activity Logs to review how the process went
+For all of these forms of deployment the following must exist, in the same order:
+1. The source and destination instances have to be known and be accessible (<a href="/docs/admin/content-deployment/servers" target="_blank">Servers</a>). 
+2. A snapshot copy of the source application has to exist (<a href="/docs/admin/content-deployment/packages-and-versions" target="_blank">Packages and Versions</a>).
+3. The content to be copied has to be selected and what has to be changed during deployment has to be marked (<a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definition and Tokens</a>)
+4. Target recipient users and the destination instances have to be identified and the value of all marked tokens have to be decided for each recipient or group of recipients (<a href="/docs/admin/content-deployment/content-deployment-jobs" target="_blank">Deployment Job</a>)
+5. The deployment process has to be started (running a Deployment Job)
 
 
 This article covers several concepts related to Content Deployment that are used in subsequent articles related to the feature.
+
 
 ## Concepts In Content Deployment
 The Content Deployment feature makes use of several industry-standard terms and concepts. This section provides a list of those terms and concepts with detailed explanations for each one.
@@ -51,7 +52,7 @@ A Deployment Definition is basically a set of instructions for a deployment job:
 Note that Deployment Definitions do not include any information about the destination. This allows the same Definition to be deployed to multiple Servers and recipient users, with different parameters.
 A Deployment Definition is always about a single Version of one Package and therefore provides deployment instructions for the contents of one source application.
 
-More on the Deployment Definitions can be found in this <a href="/docs/admin/content-deployment/deployment-definitions" target="_blank">article</a>.
+More on the Deployment Definitions can be found in this <a href="/docs/admin/content-deployment/definitions" target="_blank">article</a>.
 
 ### Deployment Job
 The Deployment Job is the execution process of what is defined in the Deployment Definition(s) selected for the Job. In addition to the Deployment Definition, blocks of Servers and recipients are selected and values are set for the variable parameters in the Definition (if they exist).
