@@ -1,5 +1,5 @@
 ---
-id: content-deployment-jobs 
+id: jobs 
 title: Deployment Jobs
 sidebar_label: Deployment Jobs
 ---
