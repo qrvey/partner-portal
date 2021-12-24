@@ -66,9 +66,10 @@ Columns can be aliased to a friendlier name if needed. Simply click in the box w
 
 Changing column names will *not* require a data reload.
 
+
 Hovering your mouse pointer over the column name box will make the original column name appear on the right side of the box. You may also hover over the original name to see additional information about the column, such as the original data source and data type.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/Dataset1.png#thumbnail-60)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset_tooltip.png#thumbnail-60)
 
 
 ### Changing The Data Type
