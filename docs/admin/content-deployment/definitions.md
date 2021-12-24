@@ -18,12 +18,12 @@ Select the option to create a new application from the **Application** dropdown 
 If using a Package for the definition, pick the Package and the desired Version from the presented dropdown lists. At this point, the application asks you if you want to use your entered name and description, or prefer to use the name and description from the selected Version. Pick the option that you like. 
 Click on the **Select Content** button to choose the content that you want to include in the Definition. You can select **Baseline** to include all the content in the application, or select individual charts, pages, datasets or other content. 
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide6.png#thumbnail)
+![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide6.png#thumbnail-40)
 
 
 Once done, click **OK** and the product will populate each of the sections under Package with your selected content, for further, optional customization. All of the dependencies of your selections will also be included to ensure the proper outcome. Each of the sections can be expanded to reveal all of their properties, which can be customized to match your needs. For example, a connection’s host, name, and credentials can be changed to that of your intended deployment location. Page name has been changed in the image below.
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide7.png#thumbnail-60)
+![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide7.png#thumbnail)
 
 
 Datasets have an additional switch that allows you to choose if you want the data to be loaded, too, or the dataset to be created and not loaded. The default value for new datasets is to load data. Definitions are auto-saved and can be used in a Deployment Job immediately, or at a later time.
@@ -47,7 +47,7 @@ You may need to update an existing application to either add new content or chan
 
 Click on the **Select Content** button to see the content of the version that you have selected. You can optionally choose any of the other versions of the same Package from the **Compare to** dropdown to find the differences between the two versions. If the destination application or applications have been created from a Version of a Package, this can help in deciding what content needs to be added or updated. 
 
- ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide10.png#thumbnail)
+ ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide10.png#thumbnail-40)
 
 
 Once you have selected the content that you want to update click the **OK** button and the product will populate each of the sections under Package with your selected content for further, optional customization. All of the dependencies of your selections will also be included to ensure proper outcome. Each of the sections can be expanded to reveal all of their properties, which can be customized to match your needs. 
