@@ -19,10 +19,10 @@ To get started with Content Deployment, log in to the Admin Center and navigate 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide.png#thumbnail)
 
 For all of these forms of deployment the following must exist, in the same order:
-1. The source and destination instances have to be known and be accessible (<a href="/docs/admin/content-deployment/servers" target="_blank">Servers</a>). 
-2. A snapshot copy of the source application has to exist (<a href="/docs/admin/content-deployment/packages-and-versions" target="_blank">Packages and Versions</a>).
-3. The content to be copied has to be selected and what has to be changed during deployment has to be marked (<a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definition and Tokens</a>)
-4. Target recipient users and the destination instances have to be identified and the value of all marked tokens have to be decided for each recipient or group of recipients (<a href="/docs/admin/content-deployment/content-deployment-jobs" target="_blank">Deployment Job</a>)
+1. The source and destination instances have to be known and be accessible (<a href="#server">Servers</a>). 
+2. A snapshot copy of the source application has to exist (<a href="#packages-and-versions">Packages and Versions</a>).
+3. The content to be copied has to be selected and what has to be changed during deployment has to be marked (<a href="#deployment-definition">Deployment Definition</a> and <a href="#parameter-tokens">Tokens</a>)
+4. Target recipient users and the destination instances have to be identified and the value of all marked tokens have to be decided for each recipient or group of recipients (<a href="#deployment-job">Deployment Job</a>)
 5. The deployment process has to be started (running a Deployment Job)
 
 
