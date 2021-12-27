@@ -412,14 +412,32 @@
         {
           "type": "doc",
           "id": "admin/roles-and-permissions"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Content Deployment",
+      "items": [
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/concepts"
         },
         {
           "type": "doc",
-          "id": "admin/admin-sections-deployments"
+          "id": "admin/content-deployment/servers"
         },
         {
           "type": "doc",
-          "id": "admin/metadata-builder"
+          "id": "admin/content-deployment/packages-and-versions"
+        },
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/definitions"
+        },
+        {
+          "type": "doc",
+          "id": "admin/content-deployment/jobs"
         }
       ]
     }
@@ -693,6 +711,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/release-oct-2021"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/release-sep-2021"
         },
         {
@@ -867,6 +889,16 @@
       "items": [
         {
           "type": "category",
+          "label": "For Data Engineers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/dataset-syncing"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "For Composers",
           "items": [
             {
@@ -907,7 +939,15 @@
             },
             {
               "type": "doc",
+              "id": "video-training/building-qrvey-sample/formulas-buckets"
+            },
+            {
+              "type": "doc",
               "id": "video-training/building-qrvey-sample/page-actions"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/content-publishing"
             },
             {
               "type": "doc",
@@ -952,6 +992,10 @@
             {
               "type": "doc",
               "id": "video-training/building-qrvey-sample/jwt-widget"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/branding-styling"
             }
           ]
         }
@@ -961,6 +1005,14 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.5"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/release/version-6.4"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-6.3"

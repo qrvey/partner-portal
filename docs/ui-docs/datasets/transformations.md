@@ -14,7 +14,7 @@ Click on the Transformations button on the top right corner of the columns list 
 
 Predefined transformation functions are presented in a list on the right side of the Transformations dialog. The functions are grouped by their type/category for easy access.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation2.png#thumbnail) 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_1.png#thumbnail) 
 
 Find the function you need from the list of functions and drag it to the work area that we call “the workspace” in this article.
 
@@ -105,6 +105,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
 | <a href="#">Round </a>| Numeric | Rounds the value of one or more numeric columns |
 | <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
+| <a href="#text-analysis">Text Analysis</a> | Text | Leverages the power of AWS Comprehend to perform various text analysis functions on a column |
 | <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |
 | <a href="#trim">Trim</a> | Text | Removes selected characters from around textual column values |
 | <a href="#uppercase">Uppercase</a>| Text | Turns textual column values to uppercase |
@@ -164,6 +165,19 @@ Like all transformations, the results can update an existing column or create a 
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation17.png#thumbnail)
 
+### Text Analysis
+You can choose to apply various forms of analysis to any text type data column by using this transformation. As expected, only text type columns can be picked for this transformation. Current options for analysis are Language, Sentiment, and Key Phrases and you can choose one or all of these options.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_2.png#thumbnail) 
+
+
+This transformation is fairly unique in that the only output option is to create a new object type column to contain the resulting analysis values for each record. The new column contains all of the pieces that are needed for the selected analytic selections. An example of such a column is shown in the test results of the sample transformation and the dataset design screen. 
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_3.png#thumbnail)
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_4.png#thumbnail)
+
+
 ### Text Replace
 This transformation replaces the text indicated in the *Search* field with the text in *Replace With *field, within the selected column. The search can be limited to the same case by checking the *Case Sensitive* checkbox.
 
@@ -186,6 +200,8 @@ Like all transformations, the results can update an existing column or create a 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png#thumbnail)
 
 ## Date Transformations
+For all date transformations, you have the option to perform a date function on any number of date type data columns. In addition to other date columns, you can also use tokens or numbers that you manually enter. For example, you can create a new date column *deliveryDate* by adding 3 days to the date column *orderDate*. To use a token, type in two curly brackets {{ for the list of tokens to appear. 
+
 ### Date Add
 This transformation allows you to add or subtract values from a specific date column. Value units can be selected for the operation.
 

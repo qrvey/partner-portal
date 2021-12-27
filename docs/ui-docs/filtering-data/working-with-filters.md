@@ -139,7 +139,18 @@ Selecting the value list component will enable the configuration panel where you
 
 * **Icon / Selectors**: With this setting, you can define the default color of the component’s icon. 
 
+### Input Box
+Input Box allows users to enter a free form text and search for it in any of the selected columns. To add an Input Box control select it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately. The control consists of a label, an input text box, a drop-down list of operators, and a button to apply the changes and start the search. 
 
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox.png#thumbnail-40)
+
+
+Selecting the Input Box component will enable the configuration panel where you can configure the default settings. Any number of columns can be selected to participate in search, as long as they are of the same data type. Selecting the first column will set the data type and limit the list of columns to those with a similar data type.
+
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox1.png#thumbnail-60)  
+
+
+>**Note**: The default operator can only be set to “Equals” for numeric and date type columns and cannot be changed.
 
 ## Deciding What To Filter
 Depending on your analysis needs you can decide what to use as the subject for filtering: The underlying data, or the aggregated data. For example, are you looking for the sales numbers for all products that are priced under $100 or are you interested in states where your total sales number exceeded $50,000? This section describes how to achieve each of these goals.

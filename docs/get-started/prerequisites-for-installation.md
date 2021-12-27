@@ -16,10 +16,14 @@ Qrvey has architected a system that combines roughly two dozen AWS services crea
 * Oregon (us-west-2)
 * Canada - Central (ca-central-1)
 * Ireland (eu-west-1)
+* Frankfurt (eu-central-1)
 * Sydney (ap-southeast-2)
 * Singapore (ap-southeast-1)
+* Mumbai (ap-south-1)
 
-There are additional regions that support every service utilized by Qrvey that may not have been certified. If you have any questions about additional regions, please contact Qrvey support to verify the status of a particular region.
+
+As AWS region support continues to evolve and expand, Qrvey may also be deployed in regions not listed above, provided all the core services are supported. If you have questions about regions that the Qrvey team has not yet certified, please contact Qrvey support at help@qrvey.com.
+
 
 In the North American geo, the following regions do not have complete support for every service used by Qrvey, but you can still use Qrvey within these regions with the following limitations:
 

@@ -132,7 +132,7 @@ module.exports={
           ]
         },
         {
-          "href": "/docs/video-training/building-qrvey-sample/chart-builder",
+          "href": "/docs/video-training/building-qrvey-sample/dataset-syncing",
           "label": "VIDEOS",
           "position": "right"
         },
