@@ -102,7 +102,7 @@ class Index extends React.Component {
               <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
               <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
-              Version 6.4 has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
+              Version 6.5 (LTS) has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">
