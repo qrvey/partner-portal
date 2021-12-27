@@ -10,7 +10,7 @@ sidebar_label: Packages and Versions
 Packages consist of one or more snapshots of any application that have been taken at any given time. Each snapshot is called a “Version”.
 Click on the **Packages** link on the navigation bar to see a list of the existing Deployment Packages, their creation and update dates, and their status. A Package remains in Draft status while the provided information is incomplete.
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide3.png#thumbnail)
+![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide3.png#thumbnail-60)
 
 
 An existing Package can be selected and modified by clicking on its name or from the **Edit** command in the three-dot menu. It can also be deleted from the **Delete** command on the same menu. If the package has been used in a Deployment Definition, it can no longer be deleted, unless the Deployment Definition is deleted first.
@@ -25,6 +25,6 @@ You can give your Package any name and description that helps you find it later.
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide4.png#thumbnail)
 
-Once a Version has been created, the next step in deploying content is to create a <a href="/docs/admin/content-deployment/definition">Deployment Definition</a>.
+Once a Version has been created, the next step in deploying content is to create a <a href="/docs/admin/content-deployment/definitions">Deployment Definition</a>.
 
 </div>
