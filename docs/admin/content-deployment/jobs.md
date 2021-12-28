@@ -29,11 +29,11 @@ If any tokens have been used in the Definition - whether Parameter or Content - 
 To configure the Content Tokens, which are automatically assigned to any object that has been selected to be updated, click on the **Configure** link to the right of each token to choose the matching object on the target instance. The product will offer the appropriate configuration dialog depending on the object that has to be picked. Also, if an object is required before the other objects can be configured, the **Configure** links for the later objects are disabled. If the job is only for deploying new content there will be no Content Tokens to configure.
 In the example used for this article (see the images), we are updating an application for two users. First, we have to decide which target application of each user is going to be updated. All of the other objects, such as the connections, datasets, etc. depend on the selected target application and have to be configured after the application token has been configured.
 
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job3.png#thumbnail)
+![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job3.png#thumbnail-60)
 
 Configuring Parameter Tokens, which are user-defined parameters to replace the values of any selected properties, is quite similar to configuring the Content Tokens, except these values can be set in bulk for any number of users, if needed. To configure any Parameter Token click on the **Configure** link to the right of the token to open the configuration dialog. You may type the value of the parameter for each user next to their username. If you want to set it to the same value for multiple users, simply select those users, click on the **Bulk Edition** link on top, and enter the common value in the input box and apply your changes. You may repeat this process until the value of the parameter has been set for all of the users. 
 
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job4.png#thumbnail)
+![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job4.png#thumbnail-60)
 
 
 Finally, you can review the values of all tokens that are set for each user by clicking the **Details** link to the right of each username, in the Users section of the page.
