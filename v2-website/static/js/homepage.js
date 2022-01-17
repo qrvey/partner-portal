@@ -1,5 +1,5 @@
 const myHeaders = new Headers({
-    "x-api-key": "TlyeWkQ5tH4m05r3WXUqc9ILayESPlhd6hJaCut0",
+    "x-api-key": "MARKETING_DEMO_API_KEY",
     "Content-Type": "application/json"
   });
   
@@ -51,7 +51,7 @@ const myHeaders = new Headers({
   if(window.location.pathname === '/' || window.location.pathname === ''){
     document.onreadystatechange = () => {
         if (document.readyState === 'complete') {
-            fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/uuiHm0u3O/analytiq/uchart/results", requestOptions)
+            fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/summary/d5BK7KQX4/results", requestOptions)
             .then(response => response.json())
             .then(result => {
                 const popularPages = result[0].data.filter((value) => 
