@@ -526,7 +526,7 @@ img[src*="#thumbnail-20"] {
 .howtousesite--infotext {
 font-size: 12px;
 Color: #7D7D7D;
-margin-top: 20px;
+margin: 20px 20px 20px 0;
 font-weight: 400;
 }
 
