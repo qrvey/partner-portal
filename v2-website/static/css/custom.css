@@ -385,6 +385,7 @@ img[src*="#thumbnail-20"] {
     #home-page .flex-categories-container{
         justify-content: space-between;
         max-width: calc( 100% - 240px);
+        opacity: 0;
     }
     #home-page .flex-categories-container .card-home{
         margin-left: 0;
