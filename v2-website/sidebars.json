@@ -889,8 +889,26 @@
       "items": [
         {
           "type": "category",
+          "label": "For Platform Architects",
+          "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/multi-tenancy-architecture"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "label": "For Data Engineers",
           "items": [
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/dataset-design"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/dataset-transformations"
+            },
             {
               "type": "doc",
               "id": "video-training/building-qrvey-sample/dataset-syncing"
@@ -978,6 +996,10 @@
             {
               "type": "doc",
               "id": "video-training/building-qrvey-sample/column-level-security"
+            },
+            {
+              "type": "doc",
+              "id": "video-training/building-qrvey-sample/content-deployment"
             }
           ]
         },

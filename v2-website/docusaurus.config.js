@@ -132,7 +132,7 @@ module.exports={
           ]
         },
         {
-          "href": "/docs/video-training/building-qrvey-sample/dataset-syncing",
+          "href": "/docs/video-training/building-qrvey-sample/multi-tenancy-architecture",
           "label": "VIDEOS",
           "position": "right"
         },
