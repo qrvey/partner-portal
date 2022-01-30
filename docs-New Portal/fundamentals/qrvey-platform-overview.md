@@ -21,7 +21,8 @@ Qrvey is the only all-in-one, low-code analytics platform built exclusively on A
 
 Most importantly, all of Qrvey components can be deployed as a stand-alone application or be embedded into other host applications through the use of Widgets and APIs. 
 
-https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/fundamentals/overview/fundamentals_1.png
+![fundamentals](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/fundamentals/overview/fundamentals_1.png#thumbnail)
+
 
 You can learn more about Qrvey architecture and underlying AWS services in the Qrvey Architecture Overview article.
 
@@ -37,6 +38,8 @@ Qrvey Composer is the product that is used by primary users to create datasets, 
 As suggested by its name, the Admin Center can be used to perform administrative tasks such as user and role creation, infrastructure management, the configuration of linked Qrvey Composer, content deployment, and more.
 
 The welcome email that is sent out after installation of an instance contains links and access credentials to both of these products, and a comprehensive user guide for each can be found on this site.
+
+![fundamentals](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/fundamentals/overview/fundamentals_2.png#thumbnail)
 
 ## User Personas
 Several personas are involved when working with Qrvey. While some individuals may assume multiple roles, the function of each of the following personas is distinct:
