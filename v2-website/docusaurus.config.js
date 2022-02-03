@@ -88,7 +88,7 @@ module.exports={
       // When applying `zh` in language, please install `nodejieba` in your project.
       indexDocs: true,
       indexBlog: false,
-      docsRouteBasePath: '/docs',
+      docsRouteBasePath: '/docs-new-portal',
       blogRouteBasePath: '/blogs',
       docsDir: 'docs',
       blogDir: 'blogs',
