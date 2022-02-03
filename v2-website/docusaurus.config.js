@@ -13,7 +13,6 @@ module.exports={
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
-    '/js/login.js',
     '/js/homepage.js'
   ],
   "stylesheets": [

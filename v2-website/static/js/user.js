@@ -73,14 +73,14 @@ function isAllowedPath(path) {
         } 
     }
     const blackList = [
-        {path:'/docs'+version+'/get-started/get-started-architecture', exact: true},
-        {path:'/docs'+version+'/get-started/get-started-architecture/', exact: true},
-        {path:'/docs'+version+'/embedding/', exact: false},
-        {path:'/docs'+version+'/data-router/', exact: false},
-        {path:'/docs'+version+'/release-notes/', exact: false},
-        {path:'/docs'+version+'/video-training/', exact: false},
-        {path:'/docs'+version+'/tutorials/', exact: false},
-        {path:'/blog/', exact: false},
+        // {path:'/docs'+version+'/get-started/get-started-architecture', exact: true},
+        // {path:'/docs'+version+'/get-started/get-started-architecture/', exact: true},
+        // {path:'/docs'+version+'/embedding/', exact: false},
+        // {path:'/docs'+version+'/data-router/', exact: false},
+        // {path:'/docs'+version+'/release-notes/', exact: false},
+        // {path:'/docs'+version+'/video-training/', exact: false},
+        // {path:'/docs'+version+'/tutorials/', exact: false},
+        // {path:'/blog/', exact: false},
     ];
     let allowed = true;
     blackList.forEach((route) => {
