@@ -87,7 +87,7 @@ module.exports={
       // When applying `zh` in language, please install `nodejieba` in your project.
       indexDocs: true,
       indexBlog: false,
-      docsRouteBasePath: '/docs-new-portal',
+      docsRouteBasePath: '/docs',
       blogRouteBasePath: '/blogs',
       docsDir: 'docs',
       blogDir: 'blogs',
@@ -105,7 +105,7 @@ module.exports={
       "items": [
         {
           "label": "Docs",
-          "href": "/docs/get-started/qrvey-platform-overview",
+          "href": "/docs/fundamentals/glossary-of-common-terms",
           "position": "right"
         },
         {
