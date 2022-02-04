@@ -93,6 +93,9 @@ module.exports={
       docsDir: 'docs',
       blogDir: 'blogs',
       searchResultLimits: 100,
+      highlightSearchTermsOnTargetPage: true,
+      searchResultContextMaxLength: 200,
+  
 
       },
     ],
