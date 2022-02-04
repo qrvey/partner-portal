@@ -109,7 +109,7 @@ module.exports={
           "position": "right"
         },
         {
-          "href": "/docs/video-training/release/version-6.3",
+          "href": "/docs/self-training",
           "label": "Self Service Training",
           "position": "right"
         },
@@ -119,7 +119,7 @@ module.exports={
           "position": "right"
         },
         {
-          "href": "/docs/video-training/release/version-6.3",
+          "href": "/docs/coming-up",
           "label": "Coming up",
           "position": "right"
         },
