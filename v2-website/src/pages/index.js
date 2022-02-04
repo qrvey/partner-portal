@@ -80,11 +80,25 @@ class Index extends React.Component {
     );
 
     const TopFold = () => (
-      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
+      <div className="mainContainer">
         <div className="wrapper vertical-align">
-          <h1 className="main-title">
-            Welcome to Partner Portal
-          </h1>
+          {/* <div className="howtousesite">
+          <h2><b>How to Use This Site</b></h2>
+          <div className="howtousesite--infocont">
+          <div className="howtousesite--info">
+          <div className="howtousesite--infonumber">1</div>
+          <p className="howtousesite--infotext">Whether your are an Architect or Administrator, Developer, Composer, User, You can find specific information based on your interests.</p>
+          </div>
+          <div className="howtousesite--info">
+          <div className="howtousesite--infonumber">2</div>
+          <p className="howtousesite--infotext">Learn how to use the documentation ,portal with our getting started process, FAQs and video tutorials.</p>
+          </div>
+          <div className="howtousesite--info">
+          <div className="howtousesite--infonumber">3</div>
+          <p className="howtousesite--infotext">Navigate through all the information carefully organized for the behalf of your researchs. </p>
+          </div>
+          </div>
+          </div> */}
         </div>
       </div>
     );
@@ -99,14 +113,16 @@ class Index extends React.Component {
           <div className="side-right-nav-container">
           <div className="side-right-nav-container-announcements">
               {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
-              <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
+              {/* <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/> */}
               <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
               <h3 className="side-right-nav-container-announcements-item"> 
               Version 6.5 (LTS) has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
                </h3>
           </div>
           <div className="side-right-nav-container-popular">
-          <h3 className="side-right-nav-container-popular-title"> <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/> POPULAR ARTICLES</h3>
+          <h3 className="side-right-nav-container-popular-title"> 
+          {/* <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/>  */}
+          POPULAR ARTICLES</h3>
           </div>
           </div>
         </div>

@@ -10,6 +10,13 @@
   --ifm-navbar-link-hover-color:#ff5400;
   --primary-font:'Montserrat', sans-serif;
   --primary-color: #FF5400;
+  --ifm-transition-fast: 200ms;
+--ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+
+}
+
+body {
+  font-family: var(--primary-font);
 }
 
 .primary-button {
@@ -25,7 +32,6 @@
   width: 40%;
   margin: 0 10px;
   text-align: center;
-  margin-top: 5px;
   border: none;
   cursor: pointer;
 }
@@ -40,12 +46,13 @@
 }
 
 .navbar--fixed-top {
-  padding: 0 10% !important;
+  padding: 0 50px;
 }
 
 /* your custom css */
 .navbar--fixed-top {
-  background-color: #0b111a;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 0px 5px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
 }
 .top-fold-background{
   height: auto;
@@ -59,7 +66,6 @@
   padding: 60px 80px;
 }
 #home-page{
-  position: relative;
 }
 .card-home{
   background: #FFFFFF;
@@ -102,7 +108,11 @@
 }
 
 .side-right-nav-container-announcements{
-  background-color: #0E1823;
+  background-color: initial;
+}
+
+.sidebar_15mo {
+  background-color: #35373F;
 }
 
 .card-home-content-title, .card-home-content-link{
@@ -148,10 +158,16 @@ display: none !important;
   color: var(--primary-color);
 }
 
+.side-right-nav-container {
+  background-color: #35373F;
+  color: white !important;
+  height: 100%;
+}
+
 .side-right-nav-container-popular-title{
   font-family: var(--primary-font);
   font-size: 15px;
-  color: #222E41;
+  color: white;
   font-weight: 600;
   margin: 0;
   padding: 10px 0 10px;
@@ -169,7 +185,7 @@ display: none !important;
   font-family: var(--primary-font);
   font-size: 13px;
   font-weight: 400;
-  color: #004696;
+  color: white;
   text-align: start;
   display: block;
   padding: 10px 0;
@@ -243,8 +259,10 @@ display: none !important;
 }
 
 .footer{
-  background: #FBFBFB;
+  background: #FFFFFF;
   padding-top: 10px;
+  border-top: 1px solid var(--ifm-toc-border-color) !important;
+  z-index: 20;
 }
 .footer p{
   text-align: center;
@@ -467,7 +485,7 @@ img[src*="#thumbnail-20"] {
       position: absolute;
       right: 0;
       /* 20px from the nav */
-      height: calc( 100% + 48px);
+      height: 100%;
       top: 0;
       width: 280px;
       display: block;
@@ -477,8 +495,43 @@ img[src*="#thumbnail-20"] {
   }
   .side-right-nav-container-announcements{
       /* 198px top fold */
-      height: 200px;
   }
+
+  .howtousesite {
+    padding: 50px;
+    width: 72%;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+.howtousesite--infocont {
+  display: flex;
+  margin-top: 30px;
+}
+
+.howtousesite--infocont .howtousesite--info {
+  width: 33%;
+}
+
+.howtousesite--infonumber {
+  width: 31px;
+  background: black;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  border-radius: 50%;
+}
+
+.howtousesite--infotext {
+font-size: 12px;
+Color: #7D7D7D;
+margin: 20px 20px 20px 0;
+font-weight: 400;
+}
+
   .side-right-nav-title, .side-right-nav-item{
       text-align: start;
   }
@@ -591,7 +644,7 @@ input {
   color: var(--primary-color) !important;
 }
 .gray-background{
-  background-color: #FBFBFB;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
   .section-first {
@@ -916,6 +969,86 @@ a.nav-item-dropdown.active{
   transform: scaleY(1) !important;
 }
 
+.menu.menu--responsive.thin-scrollbar.menu_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
+  background-color: #35373F;
+}
+
+.menu__link--active {
+  color: #FF3F00 !important;
+}
+
+.menu__link {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.table-of-contents__link {
+  color: #7D7D7D;
+  font-size: 12px;
+}
+
+.docItemCol_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem- {
+  padding-bottom: 2rem !important;
+    padding-top: 2rem !important;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 2rem !important;
+}
+
+.docItemContainer_33ec {
+  margin: 0 auto;
+  padding: 0 .5rem;
+  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 2rem !important;
+}
+
+.col.col--3 {
+  border-left: 1px solid var(--ifm-toc-border-color);
+}
+
+.table-of-contents__left-border {
+  border: none;
+}
+
+.padding-vert--lg {
+  padding: 0 !important;
+}
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
+  width: 250px !important;
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
+  border: none !important;
+  width: 250px !important;
+}
+
+.menu__link:hover {
+  color: #FF3F00 !important;
+}
+
+.navbar__link {
+  color: #7D7D7D;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar__search-input {
+  background: white var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+    border: 1px solid var(--ifm-toc-border-color) !important;
+}
+
+.navbar-sidebar__items .menu__link {
+  color: #7D7D7D;
+}
+
 @media only screen and (min-width:768px){
   ul.nav-site.nav-site-internal li .primary-button{
       width: 100px;
@@ -1181,6 +1314,11 @@ h1 {
   font-size: 2em !important;
 }
 
+h1, h2, h3 {
+  font-weight: 400 !important;
+  color: #35373F;
+}
+
 blockquote {
   background-color: rgba(255,229,100,.3) !important;
   border-left: 8px solid #ffe564 !important;
@@ -1197,4 +1335,31 @@ blockquote {
 .searchBar_2TTC .dropdownMenu_MoYd {
   height: 400px;
   overflow: auto;
+}
+
+
+@media (max-width: 996px) {
+  .navbar--fixed-top {
+    padding: 0 !important;
+  }
+  .docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage- {
+    width: 0 !important;
+  }
+
+  .navbar__brand {
+    width: 150px;
+  }
+}
+
+
+.menu__link--sublist:after {
+  background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(255,255,255,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  background-size: 2rem 2rem;
+  background-position: center;
+  content: ' ';
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: transform var(--ifm-transition-fast) linear;
+  transform: rotate(180deg);
 }

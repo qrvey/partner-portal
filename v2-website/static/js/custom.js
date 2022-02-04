@@ -15,14 +15,13 @@ let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.le
 const PAGE = 'page_docs_';
 
 const datarouter = {
-    url: 'https://zbxl4n8sk5.execute-api.us-east-1.amazonaws.com/DataRouter/data?saveUserLog=false&returnAllLog=true',
-    'x-api-key': '359cc29538554a',
+    url: 'https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qollect/dataset/YwJoqX0Av/pushapi/data/post',
     metadataId: metadataid
 };
 
 const headers = {
     'Content-Type': 'application/json',
-    'x-api-key': datarouter['x-api-key']
+    'x-api-key': 'MARKETING_DEMO_API_KEY'
 }
 
 currentPageInfoBoolNew = "false";
@@ -156,10 +155,10 @@ function postActivy(newActivity) {
     fetch(datarouter.url, {
             headers: headers,
             method: 'POST',
-            body: JSON.stringify([{
+            body: JSON.stringify({
                 metadataId: datarouter.metadataId,
                 data: data
-            }])
+            })
         })
         .then(response => response.json())
         .then(
@@ -184,9 +183,9 @@ function postActivy(newActivity) {
 function insertLogButtonToNav() {
     const navBar = document.querySelector('.navbar__items.navbar__items--right');
     if (currentUser) {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" onclick="logOut()">Log Out</a>`);
+        // navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" onclick="logOut()">Log Out</a>`);
     } else {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" href="/login">Log In</a>`);
+        // navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" href="/login">Log In</a>`);
     }
 }
 
