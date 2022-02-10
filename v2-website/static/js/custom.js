@@ -89,7 +89,7 @@ function setCurrentPageInfo() {
         //Dropdown To Change Doc Version
         changeVersion();
         // Check title document to save it 
-        TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+        TITLE_DOCUMENT = document.querySelector('h1') ? document.querySelector('h1').innerHTML : 'Docs homepage';
         // Check if this page contains a video
         const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
         if (videoContanier) {
