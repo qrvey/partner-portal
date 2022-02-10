@@ -24,20 +24,23 @@ const headers = {
     'x-api-key': 'MARKETING_DEMO_API_KEY'
 }
 
-currentPageInfoBoolNew = "false";
-  // Store the current page URL on load
-  var currentPageInfo = location.href;
-  // listen for changes
+// Store the current page URL on load
+let currentPageInfo = window.location.href;
+// listen for changes
+
   setInterval(function()
   {
-      if (currentPageInfo != location.href && currentPageInfoBoolNew === "false")
+      if (currentPageInfo !== window.location.href)
       {
           // page has changed, set new page as 'current'
-          currentPageInfo = location.href;
+          currentPageInfo = window.location.href;
           setCurrentPageInfo();
-          currentPageInfoBoolNew = "true";
+          if(currentPageInfo === '' || currentPageInfo === '/'){
+            fetchPopularArticles();
+          }
+          // enviar el post para guardar la info
       }
-  }, 100);
+  }, 1000);
 
 function Activity(userName, contentUrl, title, elementId, contentType) {
     this.userName = userName;
@@ -53,7 +56,6 @@ window.onload =  () => {
    setCurrentPageInfo();
 }
 
-currentPageInfoBool = "false";
 
 let stateCheck = setInterval(() => {
     if (document.readyState === 'complete') {

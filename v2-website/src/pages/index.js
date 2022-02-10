@@ -87,15 +87,15 @@ class Index extends React.Component {
           <div className="howtousesite--infocont">
           <div className="howtousesite--info">
           <div className="howtousesite--infonumber">1</div>
-          <p className="howtousesite--infotext">Whether your are an Architect or Administrator, Developer, Composer, User, You can find specific information based on your interests.</p>
+          <p className="howtousesite--infotext">Find your target persona.  Qrvey provides tailored learning tracks for Platform Administrators, Software Developers, Data Analysts and CloudOps professionals.  Quickly find the resources that are most relevant to your job function. </p>
           </div>
           <div className="howtousesite--info">
           <div className="howtousesite--infonumber">2</div>
-          <p className="howtousesite--infotext">Learn how to use the documentation ,portal with our getting started process, FAQs and video tutorials.</p>
+          <p className="howtousesite--infotext">Explore the list of curated articles and training videos for your target persona.  Accelerate your implementation with sample integrations and code snippets.  Quickly find answers to your specific questions and challenges with the portal search engine.</p>
           </div>
           <div className="howtousesite--info">
           <div className="howtousesite--infonumber">3</div>
-          <p className="howtousesite--infotext">Navigate through all the information carefully organized for the behalf of your researchs. </p>
+          <p className="howtousesite--infotext">Be an active member of the Qrvey community.  Ask questions.  Share your feedback.  Check back often for updates and new content.</p>
           </div>
           </div>
           </div>
