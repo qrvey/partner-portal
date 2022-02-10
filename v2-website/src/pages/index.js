@@ -82,7 +82,7 @@ class Index extends React.Component {
     const TopFold = () => (
       <div className="mainContainer">
         <div className="wrapper vertical-align">
-          {/* <div className="howtousesite">
+          <div className="howtousesite">
           <h2><b>How to Use This Site</b></h2>
           <div className="howtousesite--infocont">
           <div className="howtousesite--info">
@@ -98,7 +98,7 @@ class Index extends React.Component {
           <p className="howtousesite--infotext">Navigate through all the information carefully organized for the behalf of your researchs. </p>
           </div>
           </div>
-          </div> */}
+          </div>
         </div>
       </div>
     );

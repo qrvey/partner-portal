@@ -4,36 +4,52 @@ const myHeaders = new Headers({
 });
 
 var raw = JSON.stringify({
-    qrveyid: "uuiHm0u3O",
-    charts: [{
-        category: {
-            questionid: "w-ghZtZJ8",
-            qrveyid: "uuiHm0u3O",
-            type: "TEXT_LABEL",
-            sortOption: {
-                sortBy: "VALUE",
-                sortDirection: "DESC"
-            },
-            maxDataPoints: 2000
-        },
-        summaries: [{
-            aggregate: "COUNT",
-            qrveyid: "uuiHm0u3O",
-            questionid: "3XgFH9Z0y",
-            type: "TEXT_LABEL"
-        }],
-        pivot: {
-            questionid: "3XgFH9Z0y",
-            qrveyid: "uuiHm0u3O",
-            type: "TEXT_LABEL",
-            groupType: "TEXT_LABEL",
-            sortOption: {
-                sortBy: "CATEGORY",
-                sortDirection: "ASC"
-            },
-            maxDataPoints: 2000
+    qrveyid: "YwJoqX0Av",
+    charts: [
+        {
+            dimensions: [
+                {
+                    questionid: "5wRDtJW1W",
+                    property: null,
+                    qrveyid: "YwJoqX0Av",
+                    type: "TEXT_LABEL",
+                    sortOption: {
+                        sortBy: "CATEGORY",
+                        sortDirection: "ASC"
+                    },
+                    maxDataPoints: 50
+                },
+                {
+                    questionid: "cqdy1xb1u",
+                    property: null,
+                    qrveyid: "YwJoqX0Av",
+                    type: "TEXT_LABEL",
+                    sortOption: {
+                        sortBy: "VALUE",
+                        sortDirection: "ASC",
+                        order: [
+                            {
+                                sortDirection: "desc",
+                                summaryIndex: 0
+                            }
+                        ]
+                    },
+                    maxDataPoints: 50
+                }
+            ],
+            summaries: [
+                {
+                    aggregate: "COUNT",
+                    qrveyid: "YwJoqX0Av",
+                    questionid: "cqdy1xb1u",
+                    property: null,
+                    type: "TEXT_LABEL",
+                    pointer: "cqdy1xb1uCOUNTDEFAULT"
+                }
+            ]
         }
-    }],
+    ],
+    logic: [],
     filters: []
 });
 
@@ -47,17 +63,16 @@ var requestOptions = {
 if (window.location.pathname === '/' || window.location.pathname === '') {
     document.onreadystatechange = () => {
         if (document.readyState === 'complete') {
-            fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/summary/d5BK7KQX4/results", requestOptions)
+            fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/uchart/results", requestOptions)
                 .then(response => response.json())
                 .then(result => {
-                    console.log(result.answercounts.data[0].anscount);
-                    const popularPages = result.answercounts.data[0].anscount.filters((value) =>
-                            !(value === '/' || value === '/docs/' || (value.search('/blog') > -1) || (value.search('/training/') === 0)))
-                        .map(value => {
+                    console.log(result);
+                    const popularPages = result[0].data.filter((value) =>
+                            !(value.items[0].key === '/' || value.items[0].key === '/docs/' || (value.items[0].key.search('/blog') > -1) || (value.items[0].key.search('/training/') === 0))).map(value => {
                             return {
-                                link: value.key,
-                                title: value.items[0].key,
-                                visited: value.summary[0]
+                                link: value.items[0].key,
+                                title: value.key,
+                                visited: value.items[0].summary[0] 
                             }
                         });
                     let popularPagesHTMl = ``;
