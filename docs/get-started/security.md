@@ -43,8 +43,6 @@ Qrvey Widgets are reusable UI components that can be embedded in any Web applica
 
 * <a href="/docs/embedding/widgets/embedding-widgets-security-token" target="_blank"> Security Token </a>.(Recommended) - This is the most simple and secure way to embed widgets. First, an application server would call the login/token API with all the widget configuration values using a private API key. This API would return a secure JWT token and this will be used together with the domain as the final UI configuration object that the widget needs to work properly. 
 
-See <a href="/docs/embedding/widgets/widget-embedding-using-cookies/" target="_blank">steps for cookies/token setup</a>.
-
 ## API
 Qrvey API is a set of API methods that work with Widgets and they can be called from an external application. These APIs are secured by using a shared API Key that should not be exposed in any way, and all APIs are secured by SSL. Please contact Qrvey Support team through <a href="/docs/faqs/ask-us/">this form </a> or at help@qrvey.com if you would like to change or add a new API Key.
 
