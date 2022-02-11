@@ -500,7 +500,7 @@ img[src*="#thumbnail-20"] {
 
   .howtousesite {
     padding: 50px;
-    width: 72%;
+    width: calc(100% - 400px);
     position: relative;
     top: 50px;
     left: 80px;
@@ -531,6 +531,40 @@ font-size: 12px;
 Color: #7D7D7D;
 margin: 20px 20px 20px 0;
 font-weight: 400;
+}
+
+.select-role {
+  margin-top: 60px;
+  position: relative;
+  top: 50px;
+  left: 80px;
+  width: calc(100% - 400px);
+  border-radius: 10px;
+}
+
+.select-role--links {
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  width: 25%;
+  padding: 20px;
+  border-bottom: #E4E4E4 0.5px solid;
+}
+
+.select-role--links.active {
+  color: #FF5400 !important;
+  padding-bottom: 21px;
+  border-bottom: 2px solid #FF5400 !important;
+}
+
+.select-role h2 {
+  padding-left: 50px;
+}
+
+.select-role--linkscont {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #E4E4E4 0.5px solid;
 }
 
   .side-right-nav-title, .side-right-nav-item{
@@ -1020,6 +1054,7 @@ a.nav-item-dropdown.active{
 
 .padding-vert--lg {
   padding: 0 !important;
+  margin: 0 auto;
 }
 
 .sidebar_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {

@@ -20,7 +20,7 @@ You can use Qrvey RLS if you are using the page or report builder widget. This f
 
 If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see 
 <a href="#generate-a-security-token-with-backend-authentication">Generate a security token with backend authentication</a> for more details).
-<br>
+<br/>
 
 ## How to Use Record-Level Security
 It’s essential to understand four critical elements of record-level security (RLS) in Qrvey if you want to start using it:

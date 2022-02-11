@@ -13,7 +13,6 @@ module.exports={
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
-    '/js/login.js',
     '/js/homepage.js'
   ],
   "stylesheets": [
@@ -107,7 +106,7 @@ module.exports={
       },
       "items": [
         {
-          "label": "DOCS",
+          "label": "Docs",
           "href": "docs",
           "position": "right",
           "items": [
@@ -135,7 +134,7 @@ module.exports={
         },
         {
           "href": "/docs/video-training/building-qrvey-sample/multi-tenancy-architecture",
-          "label": "VIDEOS",
+          "label": "Videos",
           "position": "right"
         },
         {
