@@ -18,8 +18,7 @@ You can use Qrvey RLS if you are using the end-user widget. Your users may be au
 * **Builders widget with Backend authentication**:
 You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have  your custom login/authentication mechanism, at this time
 
-If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see 
-<a href="#generate-a-security-token-with-backend-authentication">Generate a security token with backend authentication</a> for more details).
+If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see <a href="#generate-a-security-token-with-backend-authentication">Generate a security token with backend authentication</a> for more details).
 <br/>
 
 ## How to Use Record-Level Security

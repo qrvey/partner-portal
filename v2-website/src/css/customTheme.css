@@ -168,7 +168,7 @@ display: none !important;
   font-family: var(--primary-font);
   font-size: 15px;
   color: white;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin: 0;
   padding: 10px 0 10px;
 }
@@ -201,7 +201,7 @@ display: none !important;
 
 .side-right-nav-container-announcements-title{
   font-family: var(--primary-font);
-  font-weight: 600;
+  font-weight: 600 !important;
   font-size: 18px;
   color: #FFFFFF;
   margin: 0;

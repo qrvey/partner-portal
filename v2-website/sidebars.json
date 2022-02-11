@@ -58,6 +58,10 @@
         },
         {
           "type": "doc",
+          "id": "aws/manage-aws-elasticsearch"
+        },
+        {
+          "type": "doc",
           "id": "aws/connect-to-instance"
         }
       ]
