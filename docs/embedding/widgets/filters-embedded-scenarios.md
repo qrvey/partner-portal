@@ -137,7 +137,7 @@ Sample filter: COLUMN_ID BETWEEN 10 AND 15.
 ### Filtering Multiple Columns
 The following example shows the filter structure for three filters with different columns and conditions.
 
-Sample filter = <br />
+Sample filter: <br />
 COLUMN_ID_1 BETWEEN 05/15/2014<br /> AND<br /> 11/30/2016<br />
 AND<br />
 		COLUMN_ID_2 EQUAL ‘United States’
