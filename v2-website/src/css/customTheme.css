@@ -486,8 +486,8 @@ img[src*="#thumbnail-20"] {
       position: absolute;
       right: 0;
       /* 20px from the nav */
-      height: 100%;
-      top: 0;
+      height: 100vh;
+      top: 60px;
       width: 280px;
       display: block;
       overflow: hidden;
@@ -533,28 +533,55 @@ margin: 20px 20px 20px 0;
 font-weight: 400;
 }
 
+.howtouserol {
+  padding: 20px 50px;
+  background-color: #F1F1F1;
+  border-radius: 10px;
+}
+
+.howtouserol b {
+  color:#000000;
+}
+
+.howtouserol--infocont {
+margin-top: 30px;
+}
+
+
+.howtouserol--infotext {
+font-size: 14px;
+Color: #7D7D7D;
+margin: 20px 20px 20px 0;
+font-weight: 400;
+}
+
 .select-role {
-  margin-top: 60px;
-  position: relative;
+  margin-left: 82px;
+  margin-top: 100px;
   top: 50px;
   left: 80px;
   width: calc(100% - 400px);
   border-radius: 10px;
+  height: 100%;
 }
 
 .select-role--links {
+  display: inline-block;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   width: 25%;
-  padding: 20px;
+  padding: 10px;
   border-bottom: #E4E4E4 0.5px solid;
 }
 
-.select-role--links.active {
+.react-tabs__tab--selected {
   color: #FF5400 !important;
-  padding-bottom: 21px;
   border-bottom: 2px solid #FF5400 !important;
+}
+
+.react-tabs__tab-list {
+  border: none !important;
 }
 
 .select-role h2 {
@@ -562,9 +589,21 @@ font-weight: 400;
 }
 
 .select-role--linkscont {
-  display: flex;
-  justify-content: space-between;
+  display: inline;
   border-bottom: #E4E4E4 0.5px solid;
+}
+
+.listrole-links {
+  display: grid;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.listrole-links a{
+  padding: 10px 0;
+}
+
+.setsidebar {
 }
 
   .side-right-nav-title, .side-right-nav-item{
