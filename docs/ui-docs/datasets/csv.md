@@ -46,7 +46,7 @@ You will then be brought to the data upload screen where you can choose the desi
 
 You can view the first 100 rows of your data by clicking on the **View Source Data** link. If a JSON file is used, the system will validate it and show the first record as a sample.
 
->**Important Note**: You can edit this sample to actually modify the structure of the dataset that you later upload from this connection.  
+>**Important Note**: You can edit this sample to actually modify the structure of the dataset that you later upload from this connection. 
 
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup4.png#thumbnail)
 
@@ -65,7 +65,7 @@ S3 buckets and folders can be leveraged to store CSV, JSON, or ndJSON files and 
  
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 
-In the S3 connection screen you can select the file type that you wish to load from this connection and enter the name of the bucket. By default, Qrvey looks for the named bucket under the same AWS account as the instance. If you wish to connect to a bucket from a different account simply enter the access key and secret key for the desired account in the provided fields. Entering a folder or subfolder is optional and depends on where you store your files.  
+In the S3 connection screen you can select the file type that you wish to load from this connection and enter the name of the bucket. By default, Qrvey looks for the named bucket under the same AWS account as the instance. If you wish to connect to a bucket from a different account simply enter the access key and secret key for the desired account in the provided fields. Entering a folder or subfolder is optional and depends on where you store your files. 
 If you wish to upload all files in the bucket or folder all you need to do is enter the name of the bucket and/or folder. However, if you wish to upload a subset of files you can use a wildcard to specify the pattern of the desired filenames. Some examples are:
 * Load all files that start with “SALES_”
     * myFolder/SALES_*
