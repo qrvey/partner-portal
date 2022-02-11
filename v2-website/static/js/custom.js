@@ -35,10 +35,9 @@ let currentPageInfo = window.location.href;
           // page has changed, set new page as 'current'
           currentPageInfo = window.location.href;
           setCurrentPageInfo();
-          if(currentPageInfo === '' || currentPageInfo === '/'){
-            fetchPopularArticles();
-          }
-          // enviar el post para guardar la info
+      }
+      if(currentPageInfo === '' || currentPageInfo === '/'){
+        fetchPopularArticles();
       }
   }, 1000);
 
