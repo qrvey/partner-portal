@@ -7,7 +7,7 @@ sidebar_label: Upgrading to a New Version
 <div style={{textAlign: "justify"}}>
 
 To install a new version of Qrvey to update your deployment, follow these steps:
-1. Get the URL for Cloudformation template for the latest version (<a href="/docs/release-notes/release-last" target="_blank">see release notes</a>).
+1. Get the URL for the latest version of the Cloudformation template (<a href="/docs/release-notes/release-last" target="_blank">see release notes</a>).
 2. Navigate to the CloudFormation section of your AWS account.
 3. From the list of “Stacks” click on the first “Stack” for your Qrvey instance (should be at the very bottom of your “Stacks” list). 
 
