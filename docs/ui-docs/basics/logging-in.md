@@ -28,7 +28,7 @@ Enter your username and a password, and then click **Create Account** to log int
 
 To log out of the Qrvey application, click on the arrow menu adjacent to your display name or email address in the upper right-hand corner of the application. Then choose **Logout** from the drop-down menu.
 
-![3_logging-in](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.1_logging-in/logout.png#thumbnail-60)
+![3_logging-in](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.1_logging-in/logout.png#thumbnail-40)
 
 
 
