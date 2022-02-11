@@ -14,7 +14,7 @@ Qrvey’s analytics platform comprises 4 major components:
 
 All of Qrvey components can deploy as a stand-alone application or be embedded into other software applications and platforms through the use of widgets and APIs. 
 
-Below are links to the component sections to help get you started using the Qrvey application. Additional <a href="/docs/video-training/building-qrvey-sample/connections/">training videos can be found here</a>.
+Below are links to the component sections to help get you started using the Qrvey application. Additional <a href="/docs/video-training/">training videos can be found here</a>.
 
 ## Admin Portal
 The Admin Portal is an application to manage and monitor your:
