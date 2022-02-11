@@ -16,7 +16,7 @@ Once you enter your profile, you’ll find fields to update your name, email add
 
 ![2_profile](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.2_profile/2_profile.png#thumbnail)
 
-Profile images are provided by gravatar.com and cannot be edited within Qrvey. 
+Profile images are provided by Gravatar and cannot be edited within Qrvey.  In order to ensure that your Gravatar image appears in your profile, make certain that the email you used to register for your Gravatar matches the email in your Qrvey profile.  Click<a href="http://gravatar.com" target="_blank"> here</a> to create your Gravatar image.
 
 ## Updating Your Password
 To update your existing password, click **Change Password** to reveal additional fields. You will need to reenter your existing password before adding a new one. 
