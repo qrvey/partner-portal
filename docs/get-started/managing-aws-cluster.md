@@ -40,15 +40,15 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 Changing the cluster in AWS Elasticsearch service requires zero downtime as it uses blue/green deployment. AWS will make the changes by adding new servers to the domain, then it will transfer all the data to the new servers and remove the old servers once the new servers are ready. To make any changes to the Elasticsearch cluster:
 1. Log into the console for your AWS Account.
 2. Select AWS Elasticsearch service from the list of services.
-3. Select the elasticsearch domain you would like to monitor or change.
+3. Select the Elasticsearch domain you would like to monitor or change.
 4. Click on the **Configure Cluster** button.
 5. From the “Configure domain” page you can change any settings by picking appropriate values. <br />
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> i. <strong> Availability Zones</strong> - For dev/test scenarios, 1-AZ is enough; for production, it can be 2-AZ or 3-AZ. </li><br />
-<li> ii. <strong>Instance Type</strong> - Pick the server type that would best fit your use-case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.</li><br />
-<li> iii. <strong>Number of Instances</strong> - We recommend at least 2 (preferably 3 or more) depending on your workload or use-case.</li><br />
-<li> iv. <strong>Dedicated Master Instances</strong> - We recommend using master instances for high availability and heavy workloads in Production systems.</li><br />
-<li> v. <strong>Storage Configuration</strong> - Pick a size per node based on your data. This size is per node, so if you have 3 servers at 10GB per node then the total storage for your cluster will be 30GB).</li><br />
+<li> ii. <strong>Instance type</strong> - Pick the server type that would best fit your use-case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.</li><br />
+<li> iii. <strong>Number of instances</strong> - We recommend at least 2 (preferably 3 or more) depending on your workload or use-case.</li><br />
+<li> iv. <strong>Dedicated master instances</strong> - We recommend using master instances for high availability and heavy workloads in Production systems.</li><br />
+<li> v. <strong>Storage configuration</strong> - Pick a size per node based on your data. This size is per node, so if you have 3 servers at 10GB per node then the total storage for your cluster will be 30GB).</li><br />
 <li> vi. <strong>Encryption</strong> - if needed based on use-case</li><br />
 <li> vii. <strong>Snapshot configuration</strong> - AWS Elasticsearch service takes automatic snapshots of the domain once every day (now they do every hour as well as a new feature). Pick a time when the cluster is not going to have a lot of load. Something like midnight or early mornings.</li>
 </ul>
