@@ -6,34 +6,25 @@ sidebar_label: Applications
 
 <div style={{textAlign: "justify"}}>
 
-A Qrvey application, or a Qrvey app in short, is a self-contained analytics project that can be used  directly, shared, distributed or embedded into other software applications.  Qrvey apps begin with data but can grow to include any number of analytic components —   charts, reports, web pages, and workflows which work behind the scenes. As an application owner, you can assign users, roles and permissions to your application.
+A Qrvey application is a self-contained analytics project that can be used directly, shared, distributed or embedded into other software applications. Qrvey apps begin with data but can grow to include any number of analytics components, such as charts, reports, pages, and automated workflows. As an application owner, you can assign users, roles and permissions to your application.
 
-All of the application’s functionalities can be accessed using Qrvey’s web interface. They're also available to developers via API and prebuilt widgets. Hence, any portion of the Qrvey platform can be integrated into other applications.
+There are several ways to create analytics components within a Qrvey application.  You can leverage the UIs within Qrvey Composer, programmatically create content using the Qrvey APIs, or you can embed multiple widget interfaces within your own application.  Every UI that you use within Qrvey Composer to create analytics content within an application is a fully embeddable, customizable widget.
+
 
 ## Components
-At a high level, Qrvey offers the following functionalities:
+At a high level, Qrvey offers the following application components:
 
-* **Data Collection** – Qrvey has a series of different Web Forms for collecting new information. Currently, you can choose between generic forms, surveys, and quizzes.
+* **Web Forms** – Collect data from your users by creating web forms, surveys and quizzes.
 
-* **Data Connections** – Qrvey connects to existing databases and repositories, including ElasticSearch, SQL-based systems and simple CSV uploads.
+* **Data Connections** – Qrvey connects to a wide range of existing RDBMS cloud and on-prem data stores, document databases (MongoDB), columnar databases (Snowflake), REST APIs, and custom JSON and CSV data files.
 
-* **Analytics** – All of the data in the forms and datasets listed above can be analyzed using Qrvey’s powerful analytics engine. There are pre-built visualizations that are automatically applied to your data; however, you can also build your own with our Chart Builder.
+* **Analytics** – Data can be analyzed using  pre-built visualizations that are automatically applied to your data, as well as the ability to create custom charts and metrics.
 
-* **Page Builder** – Creators like yourself can combine all of Qrvey’s components onto web pages to build entire information applications. Individual pages can include any combination of forms, charts, metrics and analytics, as well as standard web components like text, images, headers and footers. These pages can then be combined with navigation and user authentication to make complete, self-contained applications that can be distributed as needed.
+* **Page Builder** – Pages allow composer users to create highly interactive dashboards and mashups of visualizations created across multiple datasets. Individual pages can include any combination of forms, charts, metrics and analytics, as well as standard web components like text, images, headers and footers. These pages can then be combined with navigation and user authentication to make complete, self-contained applications that can be distributed as needed.
 
-* **Report Builder** – Similar to Page Builder you can combine analytic components to create customizable reports that can be exported on a scheduled basis.
+* **Report Builder** – Reports allow composer users to create export friendly layouts of visualizations, including custom text, logos and header/footer content.  As such, many of the interactive components available in the Page Builder are not provided in the Report Builder.
 
-* **Automation Workflows** – Qrvey has a built-in automation engine that is constantly monitoring your data for changes and updating your charts, metrics and analytics in real-time. These automation services can be used to build workflows for alerts, notifications, data write-backs and countless other data-related tasks.
+* **AutomatedWorkflows** – Create data-driven  workflows to generate alerts, send notifications, perform data write-backs and send data payloads to external applications.  Workflows can be manually triggered by users within an interactive dashboard, run continuously as a background service, or execute programmatically via an API call.
 
-## Creating Analytic Applications
-When creating a Qrvey application, the first thing you will need to do is define the data your application will work with. This can be accomplished by connecting an existing dataset or by creating a web form that will collect new data.  
-
-In the screenshot below, you can see the **Data** section of a Qrvey application with options for connecting an existing dataset, creating a web form, linking multiple datasets together (**Data Links**) and connectors for legacy data sources. 
-
-![1_applications](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.4_applications/1.png#thumbnail-60)
-
-![2_applications](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.4_applications/2.png#thumbnail-60)
-
-Once you have created or connected at least one data source, you can begin accessing other sections of your application such as page builder, report builder, and workflows.
 
 </div>
