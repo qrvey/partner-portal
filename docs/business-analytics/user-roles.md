@@ -11,7 +11,7 @@ In this document we will review the types of users that work and interact with t
 
 ## Admins 
 
-Every Qrvey Platform deployment will need one or more administrators (admins for short), who will monitor and manage the application infrastructure and user accounts. Admins have complete control over the Business Analytic application for Creators and can manage Creator accounts. Admins also monitor Data Router and manage its configuration, create Elasticsearch Indexes Datasets for Creators and deploy Creator content and applications across servers or installations. 
+Every Qrvey Platform deployment will need one or more administrators (admins for short), who will monitor and manage the application infrastructure and user accounts. Admins have complete control over the Business Analytics Application for Creators and can manage Creator accounts. Admins also monitor Data Router and manage its configuration, create Elasticsearch Indexes and Datasets for Creators, and deploy Creator content and applications across servers or installations.
 
 Admins manage the application Creators will be using. However they do not manage the content and the way content is made available to End Users. This is explained in the next section.
 
@@ -20,7 +20,7 @@ Admins manage the application Creators will be using. However they do not manage
 
 Creators will work on the Business Analytics Application, either for themselves or for others to utilise. Creator accounts are provided by Admins and these users may log into the Business Analytics Application itself, or simply use creation widgets that have been embedded into other systems by Developers. Creators and Developers may be the same individuals, or they may be entirely different.
 
-Creators can create different types of datasets on their own (Elasticsearch, Database Connections, Spreadsheet etc.) or use the indexes created by Admins. They can also get data into the system through the available Web Forms. Once they have data they can create charts, full reports, automated flows and applications or dashboards for End Users. In the Page Builder section creators can build interactive dashboard or applications and through the User Management option they can create groups of End Users and assign specific permissions and security on the content and pages created. This is not controlled by Admin users.
+Creators can create different types of datasets on their own (Elasticsearch, Database Connections, CSV upload etc.) or use the indexes created by admins. They can also get data into the system through the available Web Forms. Once they have data they can create charts, reports, automated flows and applications, or dashboards for End Users. In the Page Builder section, creators can build interactive dashboards or applications, create groups of End Users through the User Management option,and assign specific permissions and security on the content and pages created. This is not controlled by Admin users.
 
 
 ## End Users
