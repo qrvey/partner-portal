@@ -15,15 +15,15 @@ To minimize any compatibility issues, the Qrvey API is versioned, so the API you
 All Qrvey API requests will require an API key. If you would like to obtain an API key, please contact your Qrvey account representative or send an email to help@qrvey.com.
 
 ## Getting Started
-It is a good idea to familiarize yourself with the Qrvey application front-end before starting to use the API as all of the items you create or access from the Qrvey front-end are also accessible via the API.   As in the Qrvey application, you can use the API to create, modify and share new web forms such as surveys and quizzes, to access data results, or to create and modify workflows.
+It is a good idea to familiarize yourself with the Qrvey application front-end before starting to use the API as all of the items you create or access from the Qrvey front-end are also accessible via the API.  As in the Qrvey application, you can use the API to create, modify and share new web forms such as surveys and quizzes, to access data results, or to create and modify workflows.
 
 In order to make Qrvey API requests, you will need your:
 
 * Base URL - where all your API calls will be made
 * API-key - your unique key that must be a part of every API call
 
-> Note: Be sure to keep this information private and do not post it publicly in your code.
+> **Note**: Be sure to keep this information private and do not post it publicly in your code.
 
-Qrvey APIs are documented in Postman so they can be easily accessed and tried out. The full collection can be found <a href="https://bit.ly/3lUHsQg">here</a>.
+Qrvey APIs are documented in Stoplight so they can be easily accessed and tried out. The full collection can be found <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/">here</a>.
 
 </div>
