@@ -44,7 +44,7 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 3. Select the Elasticsearch domain you would like to monitor or change.
 4. Click on the **Configure Cluster** button.
 5. From the “Configure domain” page you can change any settings by picking appropriate values.
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>i. <strong> Availability Zones</strong> - For dev/test scenarios, 1-AZ is enough; for production, it can be 2-AZ or 3-AZ. </li>
 <li>ii. <strong>Instance type</strong> - Pick the server type that would best fit your use-case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.</li>
 <li>iii. <strong>Number of instances</strong> - We recommend at least 2 (preferably 3 or more) depending on your workload or use-case.</li>
