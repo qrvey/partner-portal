@@ -1,7 +1,7 @@
 ---
 id: data-sync
 title: Data Sync
-sidebar_label: Data sync
+sidebar_label: Data Sync
 ---
 
 <div style={{textAlign: "justify"}}>
