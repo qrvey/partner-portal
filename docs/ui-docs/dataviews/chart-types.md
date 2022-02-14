@@ -19,7 +19,7 @@ Bar charts are best suited to compare data between different groups or categorie
 * To show the amount/percentage of a population that attends different types of events during a period of time.
 
 ### How to Use Bar Charts
-You can create Bar charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Bar charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
@@ -114,7 +114,7 @@ Similar to Bar charts, Line charts are best suited to track changes over periods
 * To show the amount/percentage of change in the population of people who attend one or more events over a period of time.
 
 ### How to Use Line Charts
-Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+Inside Qrvey Composer, there are different places where you can create a Line chart. For the purpose of this guide, we will use the Chart Builder where a user can create different types of charts. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder" target="_blank"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -179,7 +179,7 @@ The use is similar to Bar and Line charts, however, Symbol charts are best used 
 * To show the registered heart rates over a specific period of time.
 
 ### How to Use Symbol Charts
-You can create Symbol charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Symbol charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank">this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -251,7 +251,7 @@ To show how many orders are still in process and the percentage of cancelled/ret
 ![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel1.png#thumbnail-60) 
 
 ### How to Use Funnel Charts
-You can create Funnel charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Funnel charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank">this section</a>.
 
 
 To get started, open the Chart Builder, and find the Funnel Chart icon in the Charts panel on the right side of the window, as shown below.
@@ -301,7 +301,7 @@ Pie charts are best suited when trying to analyze the composition of something. 
 * For displaying the promotional distribution of data or to draw an audience of media and business industries.
 
 ### How to Use Pie Charts
-You can create Pie charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Pie charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank">this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -358,7 +358,7 @@ Min/Max charts are best used for comparing 2 measures and showing the magnitude 
 * The most common use cases are for healthcare measurements (temperature, heart rate, oxygen levels, etc), or for “sensor” use-case for IoT devices where you’re capturing measurements at date/time intervals. Here chart Creators' main interest is to show the Min/Avg/Max each minute or hour, for example.
 
 ### How to Use Min/Max Charts
-You can create Min/Max charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Min/Max charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -508,7 +508,7 @@ The following image shows the “sum of Quantity” chosen at both group and tab
 
 
 ##### Table Calculations
-With Table Calculations you can add more analytical power to the table charts, creating new columns that calculate running aggregates and other functions on the selected columns of data. <a href="/docs/ui-docs/dataviews/table-calculations">Table Calculations</a> have been discussed in detail in another article.  
+With Table Calculations you can add more analytical power to the table charts, creating new columns that calculate running aggregates and other functions on the selected columns of data. <a href="/docs/ui-docs/dataviews/table-calculations" target="_blank">Table Calculations</a> have been discussed in detail in another article.  
 
 ##### Aggregated Formulas
 Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregated formulas do the same thing for data that has been grouped and aggregated for a chart.
@@ -710,7 +710,7 @@ When adding a trend chart to the cells, you need to define:
 
 To add a Sparkline - Line chart to a table cell, follow these steps:
 1. Open Chart Builder
-2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a> 
+2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables" target="_blank">grouped Table Chart</a> 
 3. There are two ways of adding a chart to a table cell:<br />
   a) from the Grouped Table Chart’s configuration Pane<br />
   b) from the Aggregated Column Pills
@@ -765,7 +765,7 @@ Once the chart has been added to the cell, hovering over it will show more detai
 ### Sparkline - Bar Chart Type
 To add a Bar chart to a table cell, follow these steps:
 1. Open Chart Builder
-2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables">grouped Table Chart</a>
+2. Build a <a href="/docs/ui-docs/dataviews/chart-types/#tables" target="_blank">grouped Table Chart</a>
 
 There are two ways of adding a chart to a table cell:<br />
   a) from the Grouped Table Chart’s configuration Pane<br />
@@ -830,7 +830,7 @@ Crosstabs are commonly used when you want to create quick reports efficiently, a
 * When the data needs to be aggregated, and sliced for analysis. 
 
 ### How to Use Crosstab Charts
-You can create Crosstab charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Crosstab charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank"> this section</a>.
 
 To get started, open the chart builder, and a new window will pop up in the center of the screen, as shown below.
 
@@ -947,7 +947,7 @@ Heatmap charts are commonly used to display a more generalized view of numeric v
 * To draw attention to trends.
 
 ### How to Use Heatmap Charts
-You can create Heatmap charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Heatmap charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank">this section</a>.
  
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -1004,7 +1004,7 @@ aggregated values. These are best for visualizing how a measurement varies acros
 * Dot maps: To show the distribution of data per location.
 
 ### How to Use Map Charts
-You can create Maps charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Maps charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank"> this section</a>.
 
 Before getting to the Chart Builder, the data needs to be prepared for the correct use of maps.
 
@@ -1079,7 +1079,7 @@ Box & Whisker charts are commonly used in exploratory data analysis. Works to ma
 * To summarize a set of data measured on an interval scale. 
 
 ### How to Use Box & Whisker Charts
-You can create Box & Whisker charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Box & Whisker charts anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank"> this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
@@ -1181,7 +1181,7 @@ Metrics are best suited for performance, comparative, qualitative, and quantitat
 * To highlight performance against one or more benchmarks.
 
 ### How to Use Metrics
-You can create Metrics anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="docs/ui-docs/dataviews/chart-builder/"> this section</a>.
+You can create Metrics anywhere that the Chart Builder is available. For a general overview of the Chart Builder, please check <a href="/docs/ui-docs/dataviews/chart-builder/" target="_blank">this section</a>.
 
 To get started, open the chart builder, and a new window will open up in the center of the screen, as shown below.
 
