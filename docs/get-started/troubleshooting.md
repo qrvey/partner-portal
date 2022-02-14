@@ -14,10 +14,11 @@ This error usually happens when the deployment runs into an AWS Service quota li
 3. Find the pipeline _“Qrvey__*” with the failed state. 
 4. Click on the pipeline name to open the details.
 5. Find a step with an error state. 
+<ul style="list-style: none; margin-left:20px;">
+<li>  a. If the failed step is of the “AWS Code Build” type, then you can click on details and follow the link to find the actual error message. </li>
+<br>
+<li>  b. If the step is of the “AWS Cloudformation” type, you can find the error message by navigating to the AWS Cloudformation console and looking at the *“Events”* tab for the template that is in *“FAILED”* or _“ROLLBACK__*” state. </li> </ul>
 
-a. If the failed step is of the “AWS Code Build” type, then you can click on details and follow the link to find the actual error message. 
-
-b. If the step is of the “AWS Cloudformation” type, you can find the error message by navigating to the AWS Cloudformation console and looking at the *“Events”* tab for the template that is in *“FAILED”* or _“ROLLBACK__*” state.
 
 Common service quota limits are:
 * Elastic IP Address: The deployment will create 3 Elastic IP Addresses, however, the default limit in AWS is 5.
