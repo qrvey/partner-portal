@@ -76,5 +76,4 @@ System tokens cannot be edited and are available throughout your application wit
 - {{YESTERDAY}}
 - {{TOMORROW}}
 
-
-</div>
+</div> 
