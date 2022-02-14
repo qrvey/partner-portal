@@ -74,7 +74,7 @@ Depending on how many items you have selected, the behavior of the aligned objec
 * **Align bottom**: The object is aligned to the bottom side of the canvas. When multiple objects are selected, they will be bottom-aligned based on the lowermost item of that group.
 
 ## Data & Configuration
-In order to begin creating charts and filters for your reports, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/"> <strong>Data section </strong></a>. 
+In order to begin creating charts and filters for your reports, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/" target="_blank"> <strong>Data section </strong></a>. 
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a tab. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for Shift + Click to add multiple charts at the same time. 
 
@@ -114,14 +114,14 @@ To enable or disable all filters for a group, click on the toggle button or chec
 
 ![10_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/10_reports.png#thumbnail-40)
 
-To create a new global filter, click the **Add Filter** button and when the filter modal appears, select the column in the list, the condition, and values to refine the data. Finally, select the scope of the filter, i.e. All pages or Current Tab. See the <a href="/docs/ui-docs/builders/dataviews/filters"> <strong>Filtering Data</strong></a> page for further details.
+To create a new global filter, click the **Add Filter** button and when the filter modal appears, select the column in the list, the condition, and values to refine the data. Finally, select the scope of the filter, i.e. All pages or Current Tab. See the <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank"> <strong>Filtering Data</strong></a> page for further details.
 
 ![12_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/12a_reports.png#thumbnail-40)
 
 
 ## Report Dashboard
 
-Once you’ve completed building your reports, you can return to the report dashboard  where you can view, delete or duplicate reports as needed. 
+Once you’ve completed building your reports, you can return to the report dashboard where you can view, delete or duplicate reports as needed. 
 
 ![11_reports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/11_reports.png#thumbnail-0)
 
