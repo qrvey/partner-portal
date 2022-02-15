@@ -493,10 +493,6 @@
             },
             {
               "type": "doc",
-              "id": "embedding/widgets/widget-embedding-using-cookies"
-            },
-            {
-              "type": "doc",
               "id": "embedding/widgets/filters-embedded-scenarios"
             }
           ]
@@ -530,10 +526,6 @@
             {
               "type": "doc",
               "id": "embedding/widgets/analytics/single-panel"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/app-building/chart-builder"
             }
           ]
         },
@@ -548,28 +540,6 @@
             {
               "type": "doc",
               "id": "embedding/widgets/data-sources/web-form-end-user"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/widget-dataconnectors"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/datasets-widget"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/widget-datalinks"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Automation Widgets",
-          "items": [
-            {
-              "type": "doc",
-              "id": "embedding/widgets/automation/widget-automation"
             }
           ]
         },
