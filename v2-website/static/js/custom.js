@@ -59,6 +59,7 @@ function Activity(userName, contentUrl, title, elementId, contentType) {
     this.contentType = contentType;
     this.ipAddress = IP_ADDRESS;
     this.userAgent = USER_AGENT;
+    this.date = new Date();
 }
 
 window.onload =  () => {
