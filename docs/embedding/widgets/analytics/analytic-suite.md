@@ -60,7 +60,7 @@ The table below provides general information about each property of this widget�
 | **settings.styles.tableHeaderFont** | `String`, set color for table header texts | No | 
 | **settings.styles.chartsMain** | `String`, set color for chart data points like bars, symbols and lines. | No | 
 | **settings.styles.themePalette** | `Array`, contains a maximum of 20 colors that will be used for chart data points. | No | 
-| **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br><br>{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
+| **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br /><br />{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
 
 
 
@@ -170,3 +170,5 @@ function applyNewFilter() {
 
 #### See the widget in CodePen:
 https://codepen.io/qrveysamples/pen/b7a8bb2fb15047434a5798a3041796f4
+
+</div>

@@ -39,7 +39,7 @@ let currentPageInfo = window.location.href;
           setCurrentPageInfo();
             if (!getCookie(PAGE + CURRENT_PAGE)) {
                 console.log('activity send', CURRENT_PAGE);
-                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, CONTENT_TYPE));
             } else {
                 console.log('Activity already sent it');
             }
@@ -51,11 +51,11 @@ let currentPageInfo = window.location.href;
       }
   }, 1000);
 
-function Activity(userName, contentUrl, title, elementId, contentType) {
+function Activity(userName, contentUrl, title, contentType) {
     this.userName = userName;
     this.contentUrl = contentUrl;
     this.title = title;
-    this.elementId = elementId;
+    this.elementId = contentUrl;
     this.contentType = contentType;
     this.ipAddress = IP_ADDRESS;
     this.userAgent = USER_AGENT;

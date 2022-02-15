@@ -89,6 +89,7 @@ function fetchPopularArticles() {
     fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/uchart/results", requestOptions)
     .then(response => response.json())
     .then(result => {
+        console.log(result);
         const popularPages = result[0].data.filter((value) =>
                 !(value.items[0].key === '/' || value.items[0].key === '/docs/' || (value.items[0].key.search('/blog') > -1) || (value.items[0].key.search('/training/') === 0))).map(value => {
                 return {

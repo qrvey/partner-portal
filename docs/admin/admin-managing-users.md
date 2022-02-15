@@ -19,7 +19,7 @@ The Qrvey Platform Administrator Portal is used to manage and monitor other aspe
 Admin users are defined using AWS IAM. To provide access to the Administrator Portal, you’ll have to create a new User in the AWS IAM service. Here are the steps:
 
 ### Step 1: Login to AWS Console#
-Log into the <a href="https://aws.amazon.com/" target="_blank"> AWS Console using an account that has permissions to create new IAM users.
+Log into the <a href="https://aws.amazon.com/" target="_blank"/> AWS Console using an account that has permissions to create new IAM users.
 
 ### Step 2: Navigate to AWS IAM service page#
 Once you locate the <a href="https://console.aws.amazon.com/iam/home?#/home" target="_blank">AWS IAM</a> service page, click on Users sub-menu option in the left menu.

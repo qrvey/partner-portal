@@ -112,15 +112,16 @@ Before changing ES settings, the “Discard Changes” and **Apply Changes** but
 5. Click on the **Cancel** button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
 
 6. Click on the **OK** button, the widget will show a toast message about one of two possible situations:
-<ul style="list-style: none; margin-left:20px;">
-<li> a. “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. </li>
 
-![6_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic6.png#thumbnail) </ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. </li></ul>
 
-<ul style="list-style: none; margin-left:20px;">
-<li>b. “Adjustment Process is about to start. Please check the results in the Health Dashboard or in Account Info.” In this case, the Adjustment Process will start. </li> 
+![6_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic6.png#thumbnail)
 
-![7_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic7.png#thumbnail) </ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>b. “Adjustment Process is about to start. Please check the results in the Health Dashboard or in Account Info.” In this case, the Adjustment Process will start. </li></ul>
+
+![7_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic7.png#thumbnail)
 
 ## Automatic Adjustments
 
@@ -165,14 +166,16 @@ Before changing Automatic Adjustments settings, the **Discard Changes** and **Ap
 5. Click on the **Cancel** button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
 
 6. Click on the **OK** button, the widget will show a toast message about one of two possible situations:
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>  a. “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. Even though applying automatic adjustments is a configuration saving process, if an Adjustment Process (manually or automatically initiated) is currently running, no changes are allowed to be applied in either section. </li> 
+</ul>
 
-![10_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic10.png#thumbnail) </ul>
-<ul style="list-style: none; margin-left:20px;">
-<li> b. “Changes applied successfully”. In this case, the settings will be saved. Keep in mind that in the case of Automatic Adjustments settings, this action will save the configuration, but in general, it will not affect ES Cluster settings immediately, but only at the scheduling time and if all the rules and conditions are met. </li>
+![10_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic10.png#thumbnail)
 
-![11_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic11.png#thumbnail) </ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> b. “Changes applied successfully”. In this case, the settings will be saved. Keep in mind that in the case of Automatic Adjustments settings, this action will save the configuration, but in general, it will not affect ES Cluster settings immediately, but only at the scheduling time and if all the rules and conditions are met. </li></ul>
+
+![11_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic11.png#thumbnail) 
 
 
 ## Notes
@@ -198,82 +201,71 @@ In this section, Administrators can enable email notifications for events relate
 The following are the available email notifications: 
 
 1. A change in Manual Adjustments is performed. 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+  <li> a. If enabled, this email will be sent each time the ES Cluster settings are modified and changes have been applied. Note: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified.</li>
+  <li> b. Email notification example:</li></ul>
 
-<li> a. If enabled, this email will be sent each time the ES Cluster settings are modified and changes have been applied. Note: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified.</li>
-
-<li> b. Email notification example:</li> 
-
-![13_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic13.png#thumbnail) </ul>
-
+![13_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic13.png#thumbnail) 
 
 2. A change in Automatic Adjustments is performed.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. If enabled, this email will be sent each time automatic changes are modified and applied. </li></ul>
 
 >**Note**: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified. <br />
  
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> b. Email notification example: </li></ul>
 
-<li> b. Email notification example: </li>
-
-![14_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic14.png#thumbnail) </ul>
+![14_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic14.png#thumbnail) 
 
 3. An adjustment process has started. 
-<ul style="list-style: none; margin-left:20px;">
-
-<li> a. If enabled, this email will be sent each time a manual or automatic adjustment process starts.</li></ul> 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. If enabled, this email will be sent each time a manual or automatic adjustment process starts.</li></ul>
 
 >**Note**: This notification does not mean the ES cluster has been successfully modified.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li> b. Email notification example (Manual Adjustment Process): </li></ul>
 
 ![15_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic15.png#thumbnail) <br />
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> c. Email notification example (Automatic Adjustment Process): </li></ul>
 
 ![16_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic16.png#thumbnail)
 
 4. An adjustment process has finished indicating whether it was successful or not.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. If enabled, this email notification will be sent each time a manual or automatic adjustment process has been completed indicating if it was successful or failed.</li>
-<li> b. Email notification example (Manual / Successful): </li>
+<li> b. Email notification example (Manual / Successful): </li></ul>
 
-![17_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic17.png#thumbnail) </ul>
+![17_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic17.png#thumbnail)
 
- <ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>c. Email notification example (Automatic / Successful): </li></ul>
 
-<li>c. Email notification example (Automatic / Successful): </li>
+![18_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic18.png#thumbnail) 
 
-![18_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic18.png#thumbnail) </ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> d. Email notification example (Failed): </li></ul>
 
-<ul style="list-style: none; margin-left:20px;">
-<li> d. Email notification example (Failed): </li>
-
-![19_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic19.png#thumbnail) </ul>
-
+![19_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic19.png#thumbnail) 
 
 
 5. The free storage threshold has been reached and automatic adjustments are not enabled or not allowed.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. If enabled, this email will be sent each time the cron-job is triggered by the daily schedule and the free storage threshold has been reached, but Automatic Adjustments are not enabled or the number of servers automatically added has reached the max number of servers allowed to be automatically added. This notification is sent to advise the user that the ES cluster is running out of storage but automatic adjustments are not enabled or are no longer allowed to be performed. </li>
 
 <li> b. Email notification example (not enabled): </li>
 
   ![20_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic20.png#thumbnail)
 
-<li> c. Email notification example (no longer allowed): </li>
+<li> c. Email notification example (no longer allowed): </li></ul> 
 
-  ![21_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic21.png#thumbnail) </ul> 
+  ![21_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic21.png#thumbnail)
 
 </div>
-
-
-
-
