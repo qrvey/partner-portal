@@ -102,7 +102,8 @@ module.exports={
     "navbar": {
       "title": "",
       "logo": {
-        "src": "img/qrvey_footer_logo.svg"
+        "src": "img/qrvey_footer_logo.svg",
+        "href": "/"
       },
       "items": [
         {

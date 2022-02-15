@@ -1,5 +1,5 @@
 const IP_ADDRES_URL = 'https://api.ipify.org/?format=json';
-const CURRENT_PAGE = window.location.pathname;
+let CURRENT_PAGE = window.location.pathname;
 const USER_AGENT = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
@@ -30,14 +30,24 @@ let currentPageInfo = window.location.href;
 
   setInterval(function()
   {
+
       if (currentPageInfo !== window.location.href)
       {
           // page has changed, set new page as 'current'
           currentPageInfo = window.location.href;
+          CURRENT_PAGE = window.location.pathname;
           setCurrentPageInfo();
-      }
-      if(currentPageInfo === '' || currentPageInfo === '/'){
-        fetchPopularArticles();
+            if (!getCookie(PAGE + CURRENT_PAGE)) {
+                console.log('activity send', CURRENT_PAGE);
+                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
+            } else {
+                console.log('Activity already sent it');
+            }
+            console.log(CURRENT_PAGE);
+          if (CURRENT_PAGE === '/'){
+            console.log("here");
+            fetchPopularArticles();
+          }
       }
   }, 1000);
 
@@ -56,49 +66,36 @@ window.onload =  () => {
 }
 
 
-let stateCheck = setInterval(() => {
-    if (document.readyState === 'complete') {
-        console.log("inside set interval")
-        clearInterval(stateCheck);
-        if (currentPageInfo === "false") {
-            currentPageInfo = "true";
-        }
-        
-        setTimeout(() => {
-            if (!getCookie(PAGE + CURRENT_PAGE)) {
-                console.log('activity send', CURRENT_PAGE);
-                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
-            } else {
-                console.log('Activity already sent it');
-            }
-        }, 5000);
+// let stateCheck = setInterval(() => {
+//     if (document.readyState === 'complete') {
+//         clearInterval(stateCheck);
+//         if (currentPageInfo === "false") {
+//             currentPageInfo = "true";
+//         }
 
-        ///FIN INIT
-        /////
-    }
-}, 100);
+//         ///FIN INIT
+//         /////
+//     }
+// }, 100);
+
+
 
 /// INIT APP
 function setCurrentPageInfo() {
-    const authButton = document.getElementById('auth-button');
-    if(!authButton){
         // Add partner name to logo and log button
         insertParternsLogo();
         insertLogButtonToNav();
         // ADD DROPDOWN ITEM
         addDropdownItem();
         //Dropdown To Change Doc Version
-        changeVersion();
+        // changeVersion();
         // Check title document to save it 
         TITLE_DOCUMENT = document.querySelector('h1') ? document.querySelector('h1').innerHTML : 'Docs homepage';
         // Check if this page contains a video
-        const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-        if (videoContanier) {
-            checkVideoIsPlayed(videoContanier);
-        }
-        // CHECK IS THE USER IS LOGGED IN
-        console.log('user', currentUser);   
-    }
+        // const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+        // if (videoContanier) {
+        //     checkVideoIsPlayed(videoContanier);
+        // }  
 }
 
 function checkVideoIsPlayed(videoContanier) {
