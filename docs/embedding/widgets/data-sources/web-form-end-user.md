@@ -51,9 +51,6 @@ style: "", //CSS Stylesheet URL
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 ```
 
-### See It In Action
-See the widget in CodePen:
-
 ## See It In Action
 See the widget in CodePen:
 
