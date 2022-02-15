@@ -34,7 +34,6 @@ Admin can define the access that composers have to the different sections of the
 |----------------|-------------------------------|-----------------------------|
 |**Data**|
 | Connections| ✅ | ✅ |
-| Connections| ✅ | ✅ |
 | Datasets| ✅ | ✅ |
 | Web Forms| ✅ | ✅ |
 | Data Links| ✅ | ✅ |
