@@ -156,7 +156,8 @@ Google API Console</strong></a>:
 ![22admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/22admin.png#thumbnail-80)
 
 
-6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. In the case of Google, the Real URL is https://accounts.google.com. Once all parameters have been entered, click the **Test and Save** button. 
+6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. In the case of Google, the Realm URL is: https://accounts.google.com . <br>
+Once all parameters have been entered, click the **Test and Save** button. 
 
 ![23admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/23admin.png#thumbnail)
 
