@@ -47,7 +47,7 @@ Pick desired Support plan (if needed):
 
 
 ## Step 2: Create a Cross-Account IAM Role
-This is a required step that will create a new IAM role in your AWS account used to deploy the Platform.
+This is a required step if the Qrvey team is going to do the deployment. You can skip this step if you are deploying on your own. This step will create a new IAM role in your AWS account used to deploy the Platform.
 
 1. Log into AWS Console (using the email and password created in the last step):
 
@@ -68,7 +68,8 @@ This is a required step that will create a new IAM role in your AWS account used
 
 ![10_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep10.png#thumbnail)
 
-5. Click on **Create Role** and select **Another AWS Account**. In step 1, enter AWS AccountID that you had received from Qrvey (6381xxxxxxxx):
+5.Click on **Create Role** and select **Another AWS Account** in step 1. Enter the AWS AccountID that you received from Qrvey (6381xxxxxxxx). We recommend checking the *Require MFA* option for this role. This will ensure that anyone accessing your AWS account from Qrvey’s environment would use MFA for login.
+
 
 ![11_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep11.png#thumbnail)
 
