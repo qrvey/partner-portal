@@ -30,7 +30,7 @@ The general structure of every widget includes:
 
 3. The script tag for the **widget launcher**
 
-This entire code can be copied from the Qrvey Composer UI where the widget is sourced. You can find the information on where to find this code for each widget in the respective article, but generally it can be copied either from a command in the three-dot menu or a **** button in the widget UI in the Qrvey Composer.
+This entire code can be copied from the Qrvey Composer UI where the widget is sourced. You can find the information on where to find this code for each widget in the respective article, but generally it can be copied either from a command in the three-dot menu or a <strong></></strong> button in the widget UI in the Qrvey Composer.
 
 ![widget-guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/widget-intro.png#thumbnail-60)
 
