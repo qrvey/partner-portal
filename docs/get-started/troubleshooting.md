@@ -21,9 +21,9 @@ This error usually happens when the deployment runs into an AWS Service quota li
 
 
 Common service quota limits are:
-* Elastic IP Address: The deployment will create 3 Elastic IP Addresses, however, the default limit in AWS is 5.
-* S3 buckets: The deployment will create about 30 S3 buckets, whereas the default limit in AWS is 100.
-* EC2 instances: You should have 6 t2.micro EC2 instances available, however, the default limit in AWS is 20 (in some cases the limit could be 5).
+* S3 buckets: The deployment will create about 24 S3 buckets, whereas the default limit in AWS is 100.
+* EC2 instances: You should have 2 t2.micro EC2 instances available in the AZ used for deployment, however, the default limit in AWS is 20 (in some cases the limit could be 5).
+
 
 Once you have resolved the issue, you can restart the deployment by clicking on the **Retry** button in the Installation app. Alternatively, you can restart the pipeline directly from AWS Codepipeline to make sure it reaches the *Successful* state and then click on the **Retry** button in the installation app.
 
