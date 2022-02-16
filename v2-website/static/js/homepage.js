@@ -9,21 +9,9 @@ var raw = JSON.stringify({
         {
             dimensions: [
                 {
-                    questionid: "5wRDtJW1W",
-                    property: null,
-                    qrveyid: "YwJoqX0Av",
-                    type: "TEXT_LABEL",
-                    sortOption: {
-                        sortBy: "CATEGORY",
-                        sortDirection: "ASC"
-                    },
-                    maxDataPoints: 50
-                },
-                {
-                    questionid: "cqdy1xb1u",
-                    property: null,
-                    qrveyid: "YwJoqX0Av",
-                    type: "TEXT_LABEL",
+                    questionid: "aVYJfmbOJ",
+                    type: "FORMULA",
+                    formulaType: "string",
                     sortOption: {
                         sortBy: "VALUE",
                         sortDirection: "ASC",
@@ -40,11 +28,8 @@ var raw = JSON.stringify({
             summaries: [
                 {
                     aggregate: "COUNT",
-                    qrveyid: "YwJoqX0Av",
-                    questionid: "cqdy1xb1u",
-                    property: null,
-                    type: "TEXT_LABEL",
-                    pointer: "cqdy1xb1uCOUNTDEFAULT"
+                    questionid: "aVYJfmbOJ",
+                    type: "FORMULA"
                 }
             ]
         }
@@ -89,13 +74,13 @@ function fetchPopularArticles() {
     fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/uchart/results", requestOptions)
     .then(response => response.json())
     .then(result => {
-        console.log(result);
-        const popularPages = result[0].data.filter((value) =>
-                !(value.items[0].key === '/' || value.items[0].key === '/docs/' || (value.items[0].key.search('/blog') > -1) || (value.items[0].key.search('/training/') === 0))).map(value => {
+        const popularParse = parseSummaryResult(result);
+        const popularPages = popularParse.filter((value) =>
+                !(value.url === '/' || value.url === '/docs/' || (value.url.search('/blog') > -1) || (value.url.search('/training/') === 0))).map(value => {
                 return {
-                    link: value.items[0].key,
-                    title: value.key,
-                    visited: value.items[0].summary[0] 
+                    link: value.url,
+                    title: value.title,
+                    visited: value.summary 
                 }
             });
         let popularPagesHTMl = ``;
@@ -111,3 +96,17 @@ function fetchPopularArticles() {
     })
     .catch(error => console.log('error', error));
 }
+
+function parseSummaryResult(array){
+
+    const newArray = array[0].data.map(el => {
+      const splitter = el.key.split('@@');
+      const title = splitter[0] || '';
+      const url = splitter[1] || '';
+      const summary = el.summary[0];
+      return {title, url, summary} 
+    }).filter(el => {
+      return el.url && el.title !== 'Docs homepage';
+    });
+    return newArray;
+  }
