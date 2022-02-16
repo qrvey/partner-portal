@@ -7,29 +7,28 @@ sidebar_label: Upgrading to a New Version
 <div style={{textAlign: "justify"}}>
 
 To install a new version of Qrvey to update your deployment, follow these steps:
-1. Get the URL for the latest version of the Cloudformation template (<a href="/docs/release-notes/release-last" target="_blank">see release notes</a>).
+1. Get the URL for the latest version of the CloudFormation template (see <a href="/docs/release-notes/release-last" target="_blank">release notes</a>).
 2. Navigate to the CloudFormation section of your AWS account.
-3. From the list of “Stacks” click on the first “Stack” for your Qrvey instance (should be at the very bottom of your “Stacks” list). 
+<ul style="list-style: none; margin-left:20px;">
+<li>  a. From the list of “Stacks” find the cloudformation stack for Qrvey’s Deployment manager. To identify if the stack exists go to “Exports” tab in CloudFormation console and look for Export Name = AutoDeployAppURL. If you have removed this template for any reason, then create a new stack with the Quick Create URL from step 2 of <a href="/docs/get-started/deploying-aws/initial-installation" target="_blank">Initial Installation</a>.</li></ul>
 
-    a. When you open this “Stack”, click on the “Output” tab. This will have a URL with Export name that starts with “AutoDeploy”. 
+3. If the stack exists then:
+<ul style="list-style: none; margin-left:20px;">
+<li>a. Click on the <strong>Update</strong> button in the top right.</li>
+<li>b. Select <strong>Replace current template</strong>. </li>
+<li>c. Paste the CloudFormation template URL from Step 1 in the “Amazon S3 URL” field.</li></ul>
 
-    b. If you have removed this template for any reason, then create a new stack with the Quick Create URL from step 2 of Initial Installation.
+4. Please select the same subnets in the parameters dropdown that were used in the initial deployment. Click **Next** for the following steps through the end as we do not require any other settings changed.
 
-4. Click on the **Update** button top right.
-5. Select **Replace current template**. 
+5. Click **Submit** at the end to launch the update.
 
-    a. Paste the CloudFormation template URL from Step 1 in the “Amazon S3 URL” field.
+6. When the initial CodePipeline deployment is complete, launch the URL from the “Output” tab in a new window.
 
-6. Important: Please select **ALL** subnets in the parameters dropdown. In versions 5.3 and earlier, we required up to 3 subnets. However, from version 5.4 onwards, we require all subnets (with 1 subnet per AZ).
-7. Click **Next** for the following steps through the end as we do not require any other settings changed for updates.
-8. Click **Submit** at the end to launch the update.
-9. When the initial CodePipeline deployment is complete, launch the URL from the “Output” tab in a new window.
-10. In the UI, you will see an upgrade button. Click on the **Upgrade** button to start the deployment process. 
+7. In the UI, you will see a button for upgrade. Click on the **Upgrade** button to start the deployment process. 
+<ul style="list-style: none; margin-left:20px;">
+<li> a. This may take about 3-4 hours to complete.</li> 
+<li> b. There is no downtime for the application UI, but we would recommend doing this during off-hours to avoid any issues.</li> </ul>
 
-    a. This may take about 3-4 hours to complete. 
-
-    b. There is no downtime for the application UI, but we would recommend doing this during off-hours to avoid any issues.
-
-11. Once the upgrade is complete, your new version will be automatically launched for use when your users access the Qrvey UI.
+8. Once the upgrade is complete, your new version will be automatically launched for use when your users access the Qrvey UI. After the upgrade is done you can delete the Qrvey Deployment Manager CloudFormation stack.
 
 </div>
