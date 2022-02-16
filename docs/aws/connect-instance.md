@@ -14,17 +14,17 @@ This document explains the steps you need to take if you want to securely access
 ## Steps
 1. Navigate to the <a href="https://console.aws.amazon.com/lambda" target="_blank">Lambda console</a>. In this step, you will move the Lambda function inside your VPC (same as RDS for this example). Find a Lambda function called *“< prefix >_dataload_drDBDatasourcePump”*. Click on the function name to open the details. 
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. From the Permissions tab, note the IAM Execution role.</li></ul>
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>  i. From the IAM console, Add the IAM named policy called “AWSLambdaVPCAccessExecutionRole” to the Lambda execution role.</li></ul>
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>b. From the configuration tab of Lambda function, find the VPC section. Click on <strong>Edit</strong> for VPC Settings. The default is “No VPC”.</li>
 </ul>
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>  i. Select Custom VPC </li> 
 <li>  ii. Pick the VPC you would like to use. For this example, it will be the same VPC as your RDS. </li> 
  <li>  iii. Select Applicable subnets. If you are not sure, pick all subnets. </li> 
@@ -34,7 +34,7 @@ This document explains the steps you need to take if you want to securely access
 
 2. Navigate to the <a href="https://console.aws.amazon.com/vpc" target="_blank"> VPC Console </a>. Select the menu option for Endpoints. In this step, you will be creating 3 endpoints that will allow the Lambda function inside the VPC to access other AWS Services.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Create a new Endpoint and pick S3. <strong>Save</strong>.</li>  
 <li>b. Create a new Endpoint and pick DynamoDB. <strong>Save</strong>.</li>
 <li>c. Create a new Endpoint and pick SQS. Since SQS uses an interface you would need to pick the VPC, subnets and Security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols. </li> </ul>
@@ -56,7 +56,7 @@ d. Confirm by clicking Create Peering Connection
 3. Modify the routing table(s) for your database VPC:
 a. Select each routing table with the same VPC ID and follow these steps for each:
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Select Routes</li>
 <li>ii. Select <strong>Edit</strong> routes</li>
 <li>iii. Select <strong>Add</strong> route</li>
@@ -66,7 +66,7 @@ a. Select each routing table with the same VPC ID and follow these steps for eac
 4. Modify the routing table(s) for the default VPC that Qrvey is installed in.
 a. Select each routing table with the same VPC ID and follow these steps for each:
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Select Routes</li>
 <li>ii. Select <strong>Edit</strong> routes</li>
 <li>iii. Select <strong>Add</strong> route</li>
@@ -74,7 +74,7 @@ a. Select each routing table with the same VPC ID and follow these steps for eac
 
 For **Destination**, enter the IPv4 CIDR range that you have found in step 1, and for Target select the Peering Connection that you had created in step 2.
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li> iv. <strong>Save</strong> routes </li>
 </ul>
 

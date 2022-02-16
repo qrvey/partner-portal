@@ -16,10 +16,9 @@ The following steps will walk you through installing the Qrvey platform in your 
 
 3. Navigate to AWS Cloudformation console in your AWS Account and click on **Create Stack**. Enter the CloudFormation template URL and click on **Next** 
 
-<ul style="list-style: none; margin-left:20px;">
-<li>a. This will take you to CloudFormation's quick create page. Enter values for the following parameters and click on <strong>Create Stack</strong>. </ul>
-
-<ul style="list-style: none; margin-left:35px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>a. This will take you to CloudFormation's quick create page. Enter values for the following parameters and click on <strong>Create Stack</strong>.</li></ul>
+<ul style={{listStyle: 'none', marginLeft: '35px'}}>
 <li>  i. Stack name - name this CloudFormation stack. </li>
 <li>  ii. SubnetID - pick subnets in your VPC. We recommend using at least 2 public subnets in different AZs for load balancing. Please make sure the EC2 instance type “t3.micro” is available in your selected AZ. You can use <a href="https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-supported-az-error/" target="_blank">this link</a> to verify the instance availability.  </li>
 <li>  iii. VPC ID - pick the VpcID that matches the subnets. </li>
@@ -27,7 +26,7 @@ The following steps will walk you through installing the Qrvey platform in your 
 </ul>
 
 3. Once the template is ready (it takes about 7 minutes), you can navigate to the *Output* tab and copy the URL. 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. This URL can be used to launch the deployment app.</li>
 <li>b. Open a new browser window to launch this URL.</li></ul>
 
@@ -35,7 +34,7 @@ The following steps will walk you through installing the Qrvey platform in your 
 
 5. You will see a progress bar and deployment will continue even if you close the browser window. At this point, it will be deploying 5 sets of Code Pipelines in your AWS account using a set of CloudFormation templates.
 Once the deployment is finished, you will receive a confirmation email with the following details:
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. A URL to access the analytics application</li> 
 <li> b. A URL to access the admin portal</li> 
 <li> c. An API key for embedding and API calls</li> 

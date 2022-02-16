@@ -17,17 +17,17 @@ Most of the UI components in Qrvey are “widgets" that can be used to jumpstart
 Please contact help@qrvey.com if you would like to embed any other Qrvey widget in your custom application.
 
 * <a href="/docs/embedding/widgets/analytics/analytic-suite/" target="_blank"> <strong>Analytic Suite</strong></a>
-(tag: ```< an-dashboard >```) - This widget is a one-stop-shop that gives you the functionality of all Analysis Views: Summary, Tabular, and Custom Views. This is the newer version of Custom and Summary View widgets that we recommended using over those. 
+(tag: <code>&lt;an-dashboard&gt;</code>) - This widget is a one-stop-shop that gives you the functionality of all Analysis Views: Summary, Tabular, and Custom Views. This is the newer version of Custom and Summary View widgets that we recommended using over those. 
 
-* **Builders** (tag: ```< qrvey-builders >```) - This is the second most popular widget used to embed the entire <a href="/docs/embedding/widgets/app-building/widget-report-builder/"> Report Builder </a> or <a href="/docs/embedding/widgets/app-building/widget-page-builder/">Page Builder </a>
+* **Builders** (tag: <code>&lt;qrvey-builders&gt;</code>) - This is the second most popular widget used to embed the entire <a href="/docs/embedding/widgets/app-building/widget-report-builder/"> Report Builder </a> or <a href="/docs/embedding/widgets/app-building/widget-page-builder/">Page Builder </a>
  in your custom application. The default mode embeds the Page Builder widget and adding and setting the reports_dahboard property to true, embeds the Report Builder.
 
-* <a href="/docs/embedding/widgets/app-building/widget-page-view" target="_blank"><strong>Page View</strong></a> (tag: ```<qrvey-end-user>```) - Page View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Page Builder to be embedded in your custom applications.
-* <a href="/docs/embedding/widgets/analytics/single-panel/"><strong>Single Panel </strong></a> (tag: ```< an-panel >```) - This widget can be used to embed a single visualization panel.
+* <a href="/docs/embedding/widgets/app-building/widget-page-view" target="_blank"><strong>Page View</strong></a> (tag: <code>&lt;qrvey-end-user&gt;</code>) - Page View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Page Builder to be embedded in your custom applications.
+* <a href="/docs/embedding/widgets/analytics/single-panel/"><strong>Single Panel </strong></a> (tag: <code>&lt;an-panel&gt;</code>) - This widget can be used to embed a single visualization panel.
 
-* <a href="/docs/embedding/widgets/data-sources/widget-webforms/"><strong>Web Form Design</strong></a> (tag: ```<qrvey-design-widgets>```) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
+* <a href="/docs/embedding/widgets/data-sources/widget-webforms/"><strong>Web Form Design</strong></a> (tag: <code>&lt;qrvey-design-widgets&gt;</code>) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
 
-* **<a href="/docs/embedding/widgets/automation/widget-automation/"><strong>Web Form - End User</strong></a>** (tag: ``` <qrvey-webform-enduser>```) - Designed web forms can be embedded, too. The widget will allow the end users to work in the web form without leaving the parent application. I.e. They can take a quiz or respond to a survey inside your application.
+* **<a href="/docs/embedding/widgets/automation/widget-automation/"><strong>Web Form - End User</strong></a>** (tag: <code> &lt;qrvey-webform-enduser&gt;</code>) - Designed web forms can be embedded, too. The widget will allow the end users to work in the web form without leaving the parent application. I.e. They can take a quiz or respond to a survey inside your application.
 
 
 ## APIs
