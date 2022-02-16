@@ -23,7 +23,7 @@ The Admin Center is an application to manage and monitor your:
 * Application deployments
 * User Management with Feature Customization
 
-<a href="/docs/admin/admin-intro/">Details for using Admin Portal can be found here</a>.
+<a href="/docs/admin/admin-intro/" target="_blank">Details for using Admin Portal can be found here</a>.
 
 ## Data Router
 The Data Router module is responsible for handling data ingestion through API connections or database connectors. Additionally, all transformation rules are configured through the Data Router. Accessing Data Router functionality is done through the use of the APIs.
@@ -33,13 +33,13 @@ The Data Router module is responsible for handling data ingestion through API co
 ## Qrvey Composer
 Qrvey Composer is the main interface used by primary users.The product serves as the UI that users can login to in order to create dashboards, configure datasets, set up automation rules and build reports. 
 
-<a href="/docs/ui-docs/basics/logging-in/">Details for using the Analytics Portal can be found here</a>.
+<a href="/docs/ui-docs/basics/logging-in/" target="_blank">Details for using the Analytics Portal can be found here</a>.
 
 ## Embedding and API Services
 This module of the application contains the javascript-based embedded widgets and API services used by the Qrvey application. These can be used by application developers to embed the desired pieces of the platform’s functionality into a host web application.
 
-<a href="/docs/embedding/embedding-intro/">Embedded widgets documentation is here</a>.
+<a href="/docs/embedding/embedding-intro/" target="_blank">Embedded widgets documentation is here</a>.
 
-The API documentation <a href="/docs/embedding/api/api-intro/">overview is here</a> and <a href="https://documenter.getpostman.com/view/1152381/TVCb4AGN#intro">API docs are here</a>.
+The API documentation <a href="/docs/embedding/api/api-intro/" target="_blank">overview is here</a> and <a href="https://documenter.getpostman.com/view/1152381/TVCb4AGN#intro" target="_blank">API docs are here</a>.
 
 </div>
