@@ -633,3 +633,43 @@ input {
     transition: transform var(--ifm-transition-fast) linear;
     transform: rotate(180deg);
   }
+
+
+
+  @media (max-width: 996px) {
+
+    .howtousesite {
+      padding: 50px;
+      width: calc(100% - 400px);
+      position: relative;
+      top: 50px;
+      left: 80px;
+      background-color: #F1F1F1;
+      border-radius: 10px;
+  }
+  
+  .howtousesite--infocont {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .howtousesite--infocont .howtousesite--info {
+    width: 33%;
+  }
+  
+  .howtousesite--infonumber {
+    width: 31px;
+    background: black;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .howtousesite--infotext {
+  font-size: 12px;
+  Color: #7D7D7D;
+  margin: 20px 20px 20px 0;
+  font-weight: 400;
+  }
+  }
