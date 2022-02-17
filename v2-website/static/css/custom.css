@@ -1,5 +1,10 @@
 
 /* your custom css */
+:root {
+--ifm-transition-fast: 200ms;
+--ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+}
+
 
 .aa-DetachedSearchButton {
     height: 30px !important;
@@ -21,7 +26,6 @@
     flex-wrap: wrap;
 }
 #home-page{
-    position: relative;
 }
 
 .card-home{
@@ -65,7 +69,7 @@
 }
 
 .side-right-nav-container-announcements{
-    background-color: #0E1823;
+    background-color: initial;
 }
 
 .card-home-content-title, .card-home-content-link{
@@ -141,6 +145,7 @@
     margin: 0;
     font-size: 16px;
     color: #E1E1E1;
+    margin-top: 30px;
 }
 
 .side-right-nav-container-popular{
@@ -615,3 +620,16 @@ input {
         max-width: 1400px !important;
     }
 }
+
+
+.menu__link--sublist:after {
+    background-image: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(255,255,255,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+    background-size: 2rem 2rem;
+    background-position: center;
+    content: ' ';
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+    transition: transform var(--ifm-transition-fast) linear;
+    transform: rotate(180deg);
+  }

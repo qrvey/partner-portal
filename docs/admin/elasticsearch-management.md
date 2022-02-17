@@ -13,20 +13,20 @@ sidebar_label: Elasticsearch Management
 Infrastructure is a Widget inside Qrvey’s Admin Center where Administrators are able to view, monitor and manage the configuration of their Elasticsearch Cluster. Keep in mind, that changing Elasticsearch Configuration can affect the data and most importantly, increase the cost of your license and AWS services. Please, read and carefully review the following articles, documents and tools before performing any changes in this section: 
 
 
-* <a href="https://aws.amazon.com/elasticsearch-service/"> <strong>Amazon Elasticsearch Service</strong></a> <br />
-* <a href="https://aws.amazon.com/elasticsearch-service/pricing/"> <strong>Amazon Elasticsearch Service Pricing</strong></a> <br />
-* <a href="https://calculator.aws/#/"> <strong>AWS Pricing Calculator</strong></a> <br />
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html"> <strong>Amazon Elasticsearch Service Developer Guide</strong></a> <br />
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/sizing-domains.html"> <strong>Sizing Amazon ES Domains</strong></a>
+* <a href="https://aws.amazon.com/elasticsearch-service/" target="_blank"> <strong>Amazon Elasticsearch Service</strong></a> <br />
+* <a href="https://aws.amazon.com/elasticsearch-service/pricing/" target="_blank"> <strong>Amazon Elasticsearch Service Pricing</strong></a> <br />
+* <a href="https://calculator.aws/#/" target="_blank"> <strong>AWS Pricing Calculator</strong></a> <br />
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html" target="_blank"> <strong>Amazon Elasticsearch Service Developer Guide</strong></a> <br />
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/sizing-domains.html" target="_blank"> <strong>Sizing Amazon ES Domains</strong></a>
 
 ## Overview
 
 This widget contains the following sections or blocks: 
 
-* <a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.l69j3w4u03kl">Elasticsearch Servers</a>
-* <a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.cvr3lxikt15">Manual Adjustments</a>
-* <a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.xqcqgg8fir8d">Automatic Adjustments</a>
-* <a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.401e2o75zk9t">Email Notifications</a>
+* <a href="#elasticsearch-servers">Elasticsearch Servers</a>
+* <a href="#manual-adjustments">Manual Adjustments</a>
+* <a href="#automatic-adjustments">Automatic Adjustments</a>
+* <a href="#email-notifications">Email Notifications</a>
 
 For Manual Adjustments Processes, Administrators will be able to see and change the following Elasticsearch (ES) Cluster settings: 
 *  Elasticsearch Server Type (Instance Type)
@@ -49,13 +49,13 @@ On the top of the widget, users can see the date and time of the “Latest Succe
 
 ## Elasticsearch Servers 
 
-In this block, Administrators can view, list and change the Elasticsearch Server Type (AWS ES Instance Type). See Amazon Elasticsearch Service Pricing to review the list of Instances, their purpose, CPU, Memory, Storage Capacity, and pricing model. 
+In this block, Administrators can view, list and change the Elasticsearch Server Type (AWS ES Instance Type). See <a href="https://aws.amazon.com/elasticsearch-service/pricing/" target="_blank">Amazon Elasticsearch Service Pricing</a> to review the list of Instances, their purpose, CPU, Memory, Storage Capacity, and pricing model. 
 
 To change the instance type, click on the dropdown menu and select the available instance types. You can also search by keywords.
 
 ![3_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic3.png#thumbnail)
 
-Keep in mind, that changing the dropdown selection doesn’t immediately affect ES Cluster Configuration. You have to apply the changes. Please, see section<a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.q95rq8a4cyai">Apply / Discard Changes</a>.
+Keep in mind, that changing the dropdown selection doesn’t immediately affect ES Cluster Configuration. You have to apply the changes. Please, see section <a href="#apply--discard-changes">Apply / Discard Changes</a>.
 
 
 ## Manual Adjustments
@@ -67,9 +67,9 @@ In this block, Administrators will be able to view and change the following ES C
 * Storage (GB): Whole number, minimum 1. It can be increased or decreased from its current value. 
 
 > **Note**: Before changing the number of servers or storage capacity, please review this AWS documentation about sizing, instance types and limits of ES: 
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/sizing-domains.html">Sizing Amazon ES Domains</a>
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/sizing-domains.html#aes-bp-instances">Choosing Instance Types and Testing</a>
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-limits.html">Amazon Elasticsearch Service Limits</a>
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/sizing-domains.html" target="_blank">Sizing Amazon ES Domains</a>
+* <a href="https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html#bp-instances" target="_blank">Choosing Instance Types and Testing</a>
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-limits.html" target="_blank">Amazon Elasticsearch Service Limits</a>
 
 
 
@@ -85,23 +85,23 @@ Additionally, the following calculations are available to view and monitor them:
 > **Note**: These values, calculations and indicators won’t be updated until the adjustment process is performed. 
 
 
-Keep in mind, that changing the Number of Servers or Storage doesn’t immediately affect ES Cluster Configuration. You have to apply the changes first. Please, see <a href="https://docs.google.com/document/d/1MvFfPAdyOFjziw0YhGch9XqRw-_juw0RzBUMNxwfsew/edit#heading=h.q95rq8a4cyai">Apply / Discard Changes</a>.
+Keep in mind, that changing the Number of Servers or Storage doesn’t immediately affect ES Cluster Configuration. You have to apply the changes first. Please, see <a href="#apply--discard-changes">Apply / Discard Changes</a>.
 
 
-### Apply / Discard Changes
+### Apply / Discard Changes for Manual Adjustments
 
-The “Apply Changes” and “Discard Changes” control both Manual and Automatic Adjustments sections.
+The **Apply Changes** and **Discard Changes** control both Manual and Automatic Adjustments sections.
 
-Before changing ES settings, the “Discard Changes” and “Apply Changes” buttons are disabled. After changing any of the ES settings, both of them will be enabled. In order to effectively perform the Adjustment Process, follow these steps: 
+Before changing ES settings, the “Discard Changes” and **Apply Changes** buttons are disabled. After changing any of the ES settings, both of them will be enabled. In order to effectively perform the Adjustment Process, follow these steps: 
 
 
 1. If you’re sure about continuing with the process, go to step 3. If not, go to step 2. 
 
 
-2. Click on the “Discard Changes” button. All modified settings will restore to their previously stored ones. Both buttons (“Discard Changes” and “Apply Changes”) will be disabled. If you exit the widget, all changes will be lost and no adjustment process will be performed. At this time you can exit the widget or you can modify ES settings again and proceed to the next step if you’re sure about it.   
+2. Click on the **Discard Changes** button. All modified settings will restore to their previously stored ones. Both buttons (“Discard Changes” and “Apply Changes”) will be disabled. If you exit the widget, all changes will be lost and no adjustment process will be performed. At this time you can exit the widget or you can modify ES settings again and proceed to the next step if you’re sure about it.   
 
 
-3. Click on the “Apply Changes” button. A confirmation modal will appear. 
+3. Click on the **Apply Changes** button. A confirmation modal will appear. 
 
 
 ![5_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic5.png#thumbnail)
@@ -109,14 +109,18 @@ Before changing ES settings, the “Discard Changes” and “Apply Changes” b
 4. If you’re sure about continuing with the process, go to step 6. If not, continue to step 5.
 
 
-5. Click on the “Cancel” button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
+5. Click on the **Cancel** button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
 
-6. Click on the “OK” button, the widget will show a toast message about one of two possible situations:
+6. Click on the **OK** button, the widget will show a toast message about one of two possible situations:
 
-    **a.** “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. </li></ul>
+
 ![6_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic6.png#thumbnail)
 
-    **b.** “Adjustment Process is about to start. Please check the results in the Health Dashboard or in Account Info.” In this case, the Adjustment Process will start. 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>b. “Adjustment Process is about to start. Please check the results in the Health Dashboard or in Account Info.” In this case, the Adjustment Process will start. </li></ul>
+
 ![7_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic7.png#thumbnail)
 
 ## Automatic Adjustments
@@ -133,23 +137,23 @@ This are the parameters that need to be configured for automatic adjustments:
 * **Scheduling daily at (Time Picker)**: at the time defined by this control, the system will automatically check free storage percentage against the threshold and will decide to perform the adjustment based on the set rules. Note that this time is in GMT. It’s recommended that this time is fixed not at 12:00 AM (00:00 GMT) and a different time than automatic dataset syncing. 
 * **Free Storage Threshold**: the range of this selection is between 10% and 30%. If the free storage is less or equal than this parameter and the rules are met, a new server of the same instance type and storage capacity will be added. 
 * **Max. Number of servers allowed to be automatically added**: based on data and costs budget and Administrator can decide the total amount of servers that they allow to be automatically added. The minimum value for this parameter is one (1) and it doesn’t have a maximum.
-  * **Note 1**: Depending on the instance type, AWS has defined the limits for the quantity of instances and storage capacity for each one. Please review the following document: <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-limits.html">Amazon Elasticsearch Service Limits</a>.
+  * **Note 1**: Depending on the instance type, AWS has defined the limits for the quantity of instances and storage capacity for each one. Please review the following document: <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-limits.html" target="_blank">Amazon Elasticsearch Service Limits</a>.
   * **Note 2**: the cronjob that is configured by the scheduling time, will always run at the defined time, even if the automatic adjustments are not enabled or max number of servers has been reached and will check the free storage threshold, but it will not perform any adjustment. By doing so, it can notify the administrator by email (if email notification for this event is enabled) in case the ES cluster is running out of storage but automatic adjustments are not enabled or are no longer allowed.
 * **The Number of servers automatically added**: this value will indicate the number of servers that have been automatically added, so the Administrators can check how many times the system has performed an automatic adjustment and figure how many are left to be automatically added, comparing this value with the previous parameter.
 
-### Apply / Discard Changes
+### Apply / Discard Changes for Automatic Adjustments
 
-The “Apply Changes” and “Discard Changes” control both Manual and Automatic Adjustments sections.
+The **Apply Changes** and **Discard Changes** control both Manual and Automatic Adjustments sections.
 
-Before changing Automatic Adjustments settings, the “Discard Changes” and “Apply Changes” buttons are disabled. After changing any of the settings (in the Manual or Automatic section), both of these buttons will be enabled. In order to effectively save and apply the settings, follow these steps: 
+Before changing Automatic Adjustments settings, the **Discard Changes** and **Apply Changes** buttons are disabled. After changing any of the settings (in the Manual or Automatic section), both of these buttons will be enabled. In order to effectively save and apply the settings, follow these steps: 
 
 1. If you’re sure about continuing with the process, go to step 3. If not, go to step 2. 
 
 
-2. Click on the “Discard Changes” button. All modified settings will restore to their previously stored ones. Both buttons (“Discard Changes” and “Apply Changes”) will be disabled. At this time you can exit the widget or you can modify automatic adjustments settings again and proceed to the next step if you’re sure about it.   
+2. Click on the **Discard Changes** button. All modified settings will restore to their previously stored ones. Both buttons (“Discard Changes” and “Apply Changes”) will be disabled. At this time you can exit the widget or you can modify automatic adjustments settings again and proceed to the next step if you’re sure about it.  
 
 
-3. Click on the “Apply Changes” button. A confirmation modal will appear.
+3. Click on the **Apply Changes** button. A confirmation modal will appear.
 
 ![9_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic9.png#thumbnail)
 
@@ -159,13 +163,19 @@ Before changing Automatic Adjustments settings, the “Discard Changes” and �
 4. If you’re sure about continuing with the process, go to step 6. If not, continue to step 5.
 
 
-5. Click on the “Cancel” button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
+5. Click on the **Cancel** button. The modal will close, but the modified settings will remain in the widget. Go to step 1. 
 
-6. Click on the “OK” button, the widget will show a toast message about one of two possible situations:
-<br /> **a.** “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. Even though applying automatic adjustments is a configuration saving process, if an Adjustment Process (manually or automatically initiated) is currently running, no changes are allowed to be applied in either section. <br />
-![10_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic10.png#thumbnail) <br />
-**b.** “Changes applied successfully”. In this case, the settings will be saved. Keep in mind that in the case of Automatic Adjustments settings, this action will save the configuration, but in general, it will not affect ES Cluster settings immediately, but only at the scheduling time and if all the rules and conditions are met. 
-![11_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic11.png#thumbnail)
+6. Click on the **OK** button, the widget will show a toast message about one of two possible situations:
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>  a. “Another Adjustment Process is already running, please check again later”. In this case, all changes will be discarded and no new processes will start. Even though applying automatic adjustments is a configuration saving process, if an Adjustment Process (manually or automatically initiated) is currently running, no changes are allowed to be applied in either section. </li> 
+</ul>
+
+![10_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic10.png#thumbnail)
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> b. “Changes applied successfully”. In this case, the settings will be saved. Keep in mind that in the case of Automatic Adjustments settings, this action will save the configuration, but in general, it will not affect ES Cluster settings immediately, but only at the scheduling time and if all the rules and conditions are met. </li></ul>
+
+![11_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic11.png#thumbnail) 
 
 
 ## Notes
@@ -176,8 +186,8 @@ Keep in mind that changes in the Manual Adjustments section will imply, if no ot
 
 During the Adjustment Process, every time you enter the Infrastructure Widget the values, calculations and indicators will show the current ES cluster settings. These values can vary during the process. You can even see that the number of nodes (servers) in the cluster temporarily increases—often doubling—while the domain (cluster) update occurs. Review the following documents for more information: 
 
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-configuration-changes.html">Configuration Changes</a>
-* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-configuration-changes.html#es-managedomains-config-charges">Charges for Configuration Changes</a>
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-configuration-changes.html" target="_blank">Configuration Changes</a>
+* <a href="https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-configuration-changes.html#es-managedomains-config-charges" target="_blank">Charges for Configuration Changes</a>
 
 
 
@@ -190,42 +200,72 @@ In this section, Administrators can enable email notifications for events relate
 
 The following are the available email notifications: 
 
-1. A change in Manual Adjustments is performed. <br />
-  a. If enabled, this email will be sent each time the ES Cluster settings are modified and changes have been applied. Note: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified. <br />
-  b. Email notification example:
-![13_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic13.png#thumbnail)
+1. A change in Manual Adjustments is performed. 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+  <li> a. If enabled, this email will be sent each time the ES Cluster settings are modified and changes have been applied. Note: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified.</li>
+  <li> b. Email notification example:</li></ul>
 
+![13_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic13.png#thumbnail) 
 
-2. A change in Automatic Adjustments is performed. <br />
-  a. If enabled, this email will be sent each time automatic changes are modified and applied. Note: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified. <br />
-  b. Email notification example:
-![14_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic14.png#thumbnail)
+2. A change in Automatic Adjustments is performed.
 
-3. An adjustment process has started. <br />
-   a. If enabled,  this email will be sent each time a manual or automatic adjustment process starts. Note: This notification does not mean the ES cluster has been successfully modified. <br />
-   b. Email notification example (Manual Adjustment Process):
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. If enabled, this email will be sent each time automatic changes are modified and applied. </li></ul>
+
+>**Note**: This notification does not mean the Adjustment Process has already begun nor that the ES cluster has been successfully modified. <br />
+ 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> b. Email notification example: </li></ul>
+
+![14_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic14.png#thumbnail) 
+
+3. An adjustment process has started. 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. If enabled, this email will be sent each time a manual or automatic adjustment process starts.</li></ul>
+
+>**Note**: This notification does not mean the ES cluster has been successfully modified.
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+
+<li> b. Email notification example (Manual Adjustment Process): </li></ul>
+
 ![15_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic15.png#thumbnail) <br />
-   c. Email notification example (Automatic Adjustment Process):
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> c. Email notification example (Automatic Adjustment Process): </li></ul>
+
 ![16_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic16.png#thumbnail)
 
 4. An adjustment process has finished indicating whether it was successful or not.
-  a. If enabled, this email notification will be sent each time a manual or automatic adjustment process has been completed indicating if it was successful or failed.
-  b. Email notification example (Manual / Successful): ![17_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic17.png#thumbnail)
-  c. Email notification example (Automatic / Successful): ![18_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic18.png#thumbnail)
-  d. Email notification example (Failed): ![19_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic19.png#thumbnail)
 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. If enabled, this email notification will be sent each time a manual or automatic adjustment process has been completed indicating if it was successful or failed.</li>
+<li> b. Email notification example (Manual / Successful): </li></ul>
+
+![17_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic17.png#thumbnail)
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>c. Email notification example (Automatic / Successful): </li></ul>
+
+![18_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic18.png#thumbnail) 
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> d. Email notification example (Failed): </li></ul>
+
+![19_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic19.png#thumbnail) 
 
 
 5. The free storage threshold has been reached and automatic adjustments are not enabled or not allowed.
-  a. If enabled, this email will be sent each time the cron-job is triggered by the daily schedule and the free storage threshold has been reached, but Automatic Adjustments are not enabled or the number of servers automatically added has reached the max number of servers allowed to be automatically added. This notification is sent to advise the user that the ES cluster is running out of storage but automatic adjustments are not enabled or are no longer allowed to be performed.
-  b. Email notification example (not enabled): 
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. If enabled, this email will be sent each time the cron-job is triggered by the daily schedule and the free storage threshold has been reached, but Automatic Adjustments are not enabled or the number of servers automatically added has reached the max number of servers allowed to be automatically added. This notification is sent to advise the user that the ES cluster is running out of storage but automatic adjustments are not enabled or are no longer allowed to be performed. </li>
+
+<li> b. Email notification example (not enabled): </li>
+
   ![20_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic20.png#thumbnail)
-<br />
-  c. Email notification example (no longer allowed):
-  ![21_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic21.png#thumbnail) 
+
+<li> c. Email notification example (no longer allowed): </li></ul> 
+
+  ![21_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic21.png#thumbnail)
 
 </div>
-
-
-
-

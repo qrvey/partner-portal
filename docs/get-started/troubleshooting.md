@@ -10,21 +10,22 @@ Here are some common scenarios where a deployment could result in failure.
 
 This error usually happens when the deployment runs into an AWS Service quota limit. To find the underlying error:
 1. Open a new browser window or tab, navigate or log in to your AWS account.
-2. Navigate to <a href="https://console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-east-1">AWS CodePipeline</a>.
+2. Navigate to <a href="https://console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-east-1" target="_blank">AWS CodePipeline</a>.
 3. Find the pipeline _“Qrvey__*” with the failed state. 
 4. Click on the pipeline name to open the details.
 5. Find a step with an error state. 
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>  a. If the failed step is of the “AWS Code Build” type, then you can click on details and follow the link to find the actual error message. </li>
+<br/>
+<li>  b. If the step is of the “AWS Cloudformation” type, you can find the error message by navigating to the AWS Cloudformation console and looking at the *“Events”* tab for the template that is in *“FAILED”* or _“ROLLBACK__*” state. </li> </ul>
 
-a. If the failed step is of the “AWS Code Build” type, then you can click on details and follow the link to find the actual error message. 
-
-b. If the step is of the “AWS Cloudformation” type, you can find the error message by navigating to the AWS Cloudformation console and looking at the *“Events”* tab for the template that is in *“FAILED”* or _“ROLLBACK__*” state.
 
 Common service quota limits are:
-* Elastic IP Address: The deployment will create 3 Elastic IP Addresses, however, the default limit in AWS is 5.
-* S3 buckets: The deployment will create about 30 S3 buckets, whereas the default limit in AWS is 100.
-* EC2 instances: You should have 6 t2.micro EC2 instances available, however, the default limit in AWS is 20 (in some cases the limit could be 5).
+* S3 buckets: The deployment will create about 24 S3 buckets, whereas the default limit in AWS is 100.
+* EC2 instances: You should have 2 t2.micro EC2 instances available in the AZ used for deployment, however, the default limit in AWS is 20 (in some cases the limit could be 5).
 
-Once you have resolved the issue, you can restart the deployment by clicking on the **Restart** button in the Installation app. Alternatively, you can restart the pipeline directly from AWS Codepipeline to make sure it reaches the *Successful* state and then click on the **Restart** button in the installation app.
+
+Once you have resolved the issue, you can restart the deployment by clicking on the **Retry** button in the Installation app. Alternatively, you can restart the pipeline directly from AWS Codepipeline to make sure it reaches the *Successful* state and then click on the **Retry** button in the installation app.
 
 
 

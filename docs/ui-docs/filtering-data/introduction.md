@@ -33,7 +33,7 @@ The filters in this category are defined by a Creator when building a report or 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/interactive.png#thumbnail-40)
 
 
-Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; The scope of Tab filters includes all Panels on the Tab. For more on how to apply Interactive Filters please see the <a href="/docs/ui-docs/filtering-data/working-with-filters">Working With Interactive Filters</a> article.
+Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; The scope of Tab filters includes all Panels on the Tab. For more on how to apply Interactive Filters please see the <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters</a> article.
 
 * **Global Filters**: These are at the top of the hierarchy of interactive filters. A global filter applies to all the panels on all tabs on all pages.
 
@@ -95,7 +95,7 @@ Example: Select all records where *orderDate Quarter is Equal to Q1 2020* **OR**
 >**Note**: Filter logic can **only** be edited to AND/OR within the same scope (only within Global Filters or Panel filters or Page filters). OR logic is used for multiple values within the same filter (Country: USA or Australia or Spain). AND logic is applied to filters in different scopes (Global filters and Panel filters and Page filters). 
   
 
-The following image sums up the filter logic used in Qrvey. Logic between columns can be changed, as explained more in the <a href="#edit-filter-logic">Edit Filter Logic</a> section below:
+The following image sums up the filter logic used in Qrvey:
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/8intro.png#thumbnail-60) 
 

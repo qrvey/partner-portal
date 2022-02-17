@@ -57,6 +57,7 @@
     "prismjs": "1.23.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-tabs": "^3.2.3",
     "remark-iframes": "^4.0.5",
     "sync-request": "6.1.0",
     "url-loader": "4.1.1"

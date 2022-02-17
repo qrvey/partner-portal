@@ -58,6 +58,10 @@
         },
         {
           "type": "doc",
+          "id": "aws/manage-aws-elasticsearch"
+        },
+        {
+          "type": "doc",
           "id": "aws/connect-to-instance"
         }
       ]
@@ -69,10 +73,6 @@
         {
           "type": "doc",
           "id": "get-started/system-components"
-        },
-        {
-          "type": "doc",
-          "id": "get-started/security"
         },
         {
           "type": "doc",
@@ -489,10 +489,6 @@
             },
             {
               "type": "doc",
-              "id": "embedding/widgets/widget-embedding-using-cookies"
-            },
-            {
-              "type": "doc",
               "id": "embedding/widgets/filters-embedded-scenarios"
             }
           ]
@@ -526,10 +522,6 @@
             {
               "type": "doc",
               "id": "embedding/widgets/analytics/single-panel"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/app-building/chart-builder"
             }
           ]
         },
@@ -544,28 +536,6 @@
             {
               "type": "doc",
               "id": "embedding/widgets/data-sources/web-form-end-user"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/widget-dataconnectors"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/datasets-widget"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/data-sources/widget-datalinks"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Automation Widgets",
-          "items": [
-            {
-              "type": "doc",
-              "id": "embedding/widgets/automation/widget-automation"
             }
           ]
         },
@@ -580,120 +550,6 @@
             {
               "type": "doc",
               "id": "embedding/api/api-tutorial"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Data Router",
-      "items": [
-        {
-          "type": "doc",
-          "id": "data-router/introduction/data-router-intro"
-        },
-        {
-          "type": "doc",
-          "id": "data-router/introduction/data-router-loading-data"
-        },
-        {
-          "type": "category",
-          "label": "Metadata",
-          "items": [
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/metadata-intro"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/metadata-API"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Transformations",
-          "items": [
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/transformations-intro"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/reusable-transforms"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/transformations-array"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Data Rules",
-          "items": [
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/data-rules-intro"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/data-router-array-lookup"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/data-router-es-lookup"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/data-router-flatArray"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/data-router-switch"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/conditionals-intro"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/destinations-intro"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/Metadata/transformations/DataRules/java-custom-functions"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Data Loading",
-          "items": [
-            {
-              "type": "doc",
-              "id": "data-router/DataLoading/postdata-content"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/DataLoading/loading-status"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/DataLoading/loading-status-databases"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/dataload-S3"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/batch-manager"
-            },
-            {
-              "type": "doc",
-              "id": "data-router/DataLoading/notifications"
             }
           ]
         }

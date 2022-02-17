@@ -184,53 +184,6 @@
           "embedding/api/api-tutorial"
         ]
       }
-    ],
-    "Data Router": [
-      "data-router/introduction/data-router-intro",
-      "data-router/introduction/data-router-loading-data",
-      {
-        "type": "subcategory",
-        "label": "Metadata",
-        "ids": [
-          "data-router/Metadata/metadata-intro",
-          "data-router/Metadata/metadata-API"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Transformations",
-        "ids": [
-          "data-router/Metadata/transformations/transformations-intro",
-          "data-router/Metadata/transformations/reusable-transforms",
-          "data-router/Metadata/transformations/transformations-array"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Data Rules",
-        "ids": [
-          "data-router/DataRules/data-rules-intro",
-          "data-router/DataRules/data-router-array-lookup",
-          "data-router/DataRules/data-router-es-lookup",
-          "data-router/DataRules/data-router-flatArray",
-          "data-router/DataRules/data-router-switch",
-          "data-router/DataRules/conditionals-intro",
-          "data-router/DataRules/destinations-intro",
-          "data-router/Metadata/transformations/DataRules/java-custom-functions"
-        ]
-      },
-      {
-        "type": "subcategory",
-        "label": "Data Loading",
-        "ids": [
-          "data-router/DataLoading/postdata-content",
-          "data-router/DataLoading/loading-status",
-          "data-router/DataLoading/loading-status-databases",
-          "data-router/dataload-S3",
-          "data-router/batch-manager",
-          "data-router/DataLoading/notifications"
-        ]
-      }
     ]
   },
   "release-notes": {

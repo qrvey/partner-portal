@@ -5,139 +5,319 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const React = require('react');
-
-const CompLibrary = {
-  Container: props => <div {...props}></div>,
-  GridBlock: props => <div {...props}></div>,
-  MarkdownBlock: props => <div {...props}></div>
-};
-
-import Layout from "@theme/Layout";
-
-const MarkdownBlock = CompLibrary.MarkdownBlock;/* Used to read markdown */
-const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
-
-class Index extends React.Component {
-
-  constructor(props){
-    const {config: siteConfig} = props;
-    super(props);
-    this.categories = [
-      {name:'Documentation',path: siteConfig.baseUrl+'documentation', iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`, 
-      topLinks: [
-        { link: siteConfig.baseUrl+'docs/release-notes/release-last', name: 'Release Notes' },
-        { link: siteConfig.baseUrl+'docs/get-started/get-started-intro', name: 'Getting Started' },
-        { link: siteConfig.baseUrl+'docs/get-started/get-started-architecture', name: 'Architecture' }
-      ]},
-      {name:'Videos', path: siteConfig.baseUrl+'docs/video-training/release/version-5.9', topLinks: [
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-webforms', name: 'Web Forms' },
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-workflows', name: 'Workflows' },
-        { link: siteConfig.baseUrl+'docs/video-training/building-qrvey-sample/new-datalinks', name: 'Data Links' }
-      ], iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`},
-      {name:'FAQs', path: siteConfig.baseUrl+'docs/faqs/faqs-intro', topLinks: [
-        { link: siteConfig.baseUrl+'docs/faqs/ask-us/', name: 'Ask Us a Question' }
-      ], iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`},
-    ];
-  }
-
-  render() {
-    const {config: siteConfig, language = ''} = this.props;
-    //const background_title = "url('" + siteConfig.baseUrl + "img/top-fold-background.jpg')";
-
-    const Categories = () => {
-      const categoriesElem = this.categories.map((elem,id) => <Category key={id} value={elem}/>);
-      return  (<div className="flex-categories-container">
-        {categoriesElem}
-      </div>)
-    };
-
-    const Category = (props) => {
-      return(
-        <div className="card-home">
-          <a className="card-home-img" href={props.value.path}>
-            <img src={props.value.iconUrl} alt="icon"/>
-          </a>
-          <div className="card-home-content">
-            <a className="card-home-content-title" href={props.value.path}>{props.value.name}</a>
-            {
-              props.value.topLinks.map((item, idx) => (<a key={idx} href={item.link} className="card-home-content-link">{item.name}</a>))
-            }
-          </div>
-        </div>
-      );
-    }
-
-
-    const SplashContainer = props => (
-      <div className="homeContainer">
-        <div className="homeSplashFade">
-          <div className="wrapper homeWrapper" id="home-wrapper">
-          </div>
-        </div>
-      </div>
-    );
-
-    const TopFold = () => (
-      <div className="mainContainer top-fold-background" style={{ backgroundImage: `url('${siteConfig.baseUrl}img/top_fold_background.jpg')` }}>
-        <div className="wrapper vertical-align">
-          <h1 className="main-title">
-            Welcome to Partner Portal
-          </h1>
-        </div>
-      </div>
-    );
-
-    const SidRightNav = () => {
-      const announcements = [
-        {name:'Release Notes February',path: siteConfig.baseUrl+'docs/release-notes/release-last/'},
-        {name:'February Newsletter',path: siteConfig.baseUrl+'blog/2020/02/29/qsnewsflash/'}
-      ];
-      return(
-        <div className="side-right-nav">
-          <div className="side-right-nav-container">
-          <div className="side-right-nav-container-announcements">
-              {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
-              <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/>
-              <h3 className="side-right-nav-container-announcements-title"> Announcements</h3>
-              <h3 className="side-right-nav-container-announcements-item"> 
-              Version 6.5 (LTS) has been released, <a className="primary-color" href="docs/release-notes/release-last/">learn more.</a>
+ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+ import "react-tabs/style/react-tabs.css";
+ 
+ const React = require("react");
+ 
+ const CompLibrary = {
+   Container: (props) => <div {...props}></div>,
+   GridBlock: (props) => <div {...props}></div>,
+   MarkdownBlock: (props) => <div {...props}></div>,
+ };
+ 
+ import Layout from "@theme/Layout";
+ 
+ const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+ const Container = CompLibrary.Container;
+ const GridBlock = CompLibrary.GridBlock;
+ 
+ class Index extends React.Component {
+   constructor(props) {
+     const { config: siteConfig } = props;
+     super(props);
+     this.categories = [
+       {
+         name: "Documentation",
+         path: siteConfig.baseUrl + "docs/release-notes/release-last",
+         iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`,
+         topLinks: [
+           {
+             link: siteConfig.baseUrl + "docs/release-notes/release-last",
+             name: "Release Notes",
+           },
+           {
+             link: siteConfig.baseUrl + "docs/get-started/get-started-intro",
+             name: "Getting Started",
+           },
+           {
+             link:
+               siteConfig.baseUrl + "docs/get-started/get-started-architecture",
+             name: "Architecture",
+           },
+         ],
+       },
+       {
+         name: "Videos",
+         path: siteConfig.baseUrl + "docs/video-training/release/version-6.5",
+         topLinks: [
+           {
+             link:
+               siteConfig.baseUrl +
+               "docs/video-training/building-qrvey-sample/new-webforms",
+             name: "Web Forms",
+           },
+           {
+             link:
+               siteConfig.baseUrl +
+               "docs/video-training/building-qrvey-sample/new-workflows",
+             name: "Workflows",
+           },
+           {
+             link:
+               siteConfig.baseUrl +
+               "docs/video-training/building-qrvey-sample/new-datalinks",
+             name: "Data Links",
+           },
+         ],
+         iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`,
+       },
+       {
+         name: "FAQs",
+         path: siteConfig.baseUrl + "docs/faqs/faqs-intro",
+         topLinks: [
+           {
+             link: siteConfig.baseUrl + "docs/faqs/ask-us/",
+             name: "Ask Us a Question",
+           },
+         ],
+         iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`,
+       },
+     ];
+   }
+ 
+   render() {
+     const { config: siteConfig, language = "" } = this.props;
+     //const background_title = "url('" + siteConfig.baseUrl + "img/top-fold-background.jpg')";
+ 
+     const Categories = () => {
+       const categoriesElem = this.categories.map((elem, id) => (
+         <Category key={id} value={elem} />
+       ));
+       return <div className="flex-categories-container">{categoriesElem}</div>;
+     };
+ 
+     const Category = () => {
+       return (
+         <div className="mainContainer">
+           <div className="wrapper vertical-align">
+             <div className="select-role">
+               <h2>
+                 <b>Select your role</b>
+               </h2>
+               <Tabs className="select-role--linkscont">
+                 <TabList>
+                   <Tab className="select-role--links">
+                     Platform Administrators
+                   </Tab>
+                   <Tab className="select-role--links">CloudOps Engineers</Tab>
+                   <Tab className="select-role--links">Data Analysts</Tab>
+                   <Tab className="select-role--links">Software Developers</Tab>
+                 </TabList>
+                 <TabPanel>
+                 <div className="howtouserol">
+                   <div className="howtouserol--infocont">
+                     <div className="howtouserol--info">
+                       <p className="howtouserol--infotext">
+                       <b>Platform Administrators</b> use Admin Center to manage the infrastructure, users, and content, as well as  configure Qrvey Composer.
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="listrole-links">
+                    <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
+                    <a href="docs/admin/admin-sections-platform">Administering Qrvey Composer</a>
+                    <a href="docs/admin/roles-and-permissions">Roles & Permissions</a>
+                    <a href="docs/get-started/security">Security</a>
+                    <a href="docs/admin/content-deployment/concepts">Content Deployment Concepts</a>
+                 </div>
+                 </TabPanel>
+                 <TabPanel>
+                 <div className="howtouserol">
+                   <div className="howtouserol--infocont">
+                     <div className="howtouserol--info">
+                       <p className="howtouserol--infotext">
+                       <b>CloudOps Engineers</b> are in charge of setting up, upgrading, and monitoring instances of the Qrvey platform.
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="listrole-links">
+                    <a href="docs/get-started/prerequisites-for-installation">Prerequisites for Installation</a>
+                    <a href="docs/get-started/preparing-AWS-account">Preparing Your AWS Account</a>
+                    <a href="docs/get-started/deploying-aws/initial-installation">Initial Installation</a>
+                    <a href="docs/get-started/customizing-qrvey-deployment">Customizing Qrvey Deployment</a>
+                    <a href="docs/get-started/managing-aws-cluster">Cluster Management</a>
+                 </div>
+                 </TabPanel>
+                 <TabPanel>
+                 <div className="howtouserol">
+                   <div className="howtouserol--infocont">
+                     <div className="howtouserol--info">
+                       <p className="howtouserol--infotext">
+                       <b>Data Analysts</b> Work in Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="listrole-links">
+                    <a href="docs/ui-docs/basics/introduction">Introduction to the UI</a>
+                    <a href="docs/ui-docs/basics/applications">What is a Qrvey Application?</a>
+                    <a href="docs/ui-docs/datasets/datasets">Creating Datasets</a>
+                    <a href="docs/ui-docs/builders/pages">Page Builder</a>
+                    <a href="docs/ui-docs/dataviews/chart-builder">Chart Builder</a>
+                 </div>
+                 </TabPanel>
+                 <TabPanel>
+                 <div className="howtouserol">
+                   <div className="howtouserol--infocont">
+                     <div className="howtouserol--info">
+                       <p className="howtouserol--infotext">
+                       <b>Software Developers</b> embed the needed Qrvey widgets in their host applications and may use Qrvey APIs to achieve desired goals.
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="listrole-links">
+                    <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
+                    <a href="docs/get-started/system-components">System Components</a>
+                    <a href="docs/get-started/security">Security</a>
+                    <a href="docs/data-router/introduction/data-router-loading-data">Data Router Quick Start</a>
+                    <a href="docs/embedding/widgets/widget-intro">Embedding Widgets Quick Start</a>
+                 </div>
+                 </TabPanel>
+               </Tabs>
+             </div>
+           </div>
+         </div>
+       );
+     };
+ 
+     const SplashContainer = (props) => (
+       <div className="homeContainer">
+         <div className="homeSplashFade">
+           <div className="wrapper homeWrapper" id="home-wrapper"></div>
+         </div>
+       </div>
+     );
+ 
+     const TopFold = () => (
+       <div className="mainContainer">
+         <div className="wrapper vertical-align">
+           <div className="howtousesite">
+             <h2>
+               <b>How to Use This Site</b>
+             </h2>
+             <div className="howtousesite--infocont">
+               <div className="howtousesite--info">
+                 <div className="howtousesite--infonumber">1</div>
+                 <p className="howtousesite--infotext">
+                   Find your target persona. Qrvey provides tailored learning
+                   tracks for Platform Administrators, Software Developers, Data
+                   Analysts and CloudOps professionals. Quickly find the
+                   resources that are most relevant to your job function.{" "}
+                 </p>
+               </div>
+               <div className="howtousesite--info">
+                 <div className="howtousesite--infonumber">2</div>
+                 <p className="howtousesite--infotext">
+                   Explore the list of curated articles and training videos for
+                   your target persona. Accelerate your implementation with
+                   sample integrations and code snippets. Quickly find answers to
+                   your specific questions and challenges with the portal search
+                   engine.
+                 </p>
+               </div>
+               <div className="howtousesite--info">
+                 <div className="howtousesite--infonumber">3</div>
+                 <p className="howtousesite--infotext">
+                   Be an active member of the Qrvey community. Ask questions.
+                   Share your feedback. Check back often for updates and new
+                   content.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     );
+ 
+     const SidRightNav = () => {
+       const announcements = [
+         {
+           name: "Release Notes February",
+           path: siteConfig.baseUrl + "docs/release-notes/release-last/",
+         },
+         {
+           name: "February Newsletter",
+           path: siteConfig.baseUrl + "blog/2020/02/29/qsnewsflash/",
+         },
+       ];
+       return (
+         <div className="side-right-nav">
+           <div className="side-right-nav-container">
+             <div className="side-right-nav-container-announcements">
+               {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
+               {/* <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/> */}
+               <h3 className="side-right-nav-container-announcements-title">
+                 {" "}
+                 Announcements
                </h3>
-          </div>
-          <div className="side-right-nav-container-popular">
-          <h3 className="side-right-nav-container-popular-title"> <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/> POPULAR ARTICLES</h3>
-          </div>
-          </div>
-        </div>
-      );
-    }
-  
-    return (
-      <div className="gray-background" id="home-page">
-        <TopFold/>
-        {
-          //<SplashContainer siteConfig={siteConfig} language={language} />
-        }
-        <div className="mainContainer" id="main-container">
-        <div className="wrapper">
-          <Categories/>
-          <SidRightNav/>
-        </div>
-        </div>
-        {this.props.config.homepagescripts &&
-          this.props.config.homepagescripts.map((source, idx) => {
-            return (
-              <script
-                type="text/javascript"
-                key={'script' + idx}
-                src={source}
-              />
-            );
-        })}
-      </div>
-    );
-  }
-}
-
-export default props => <Layout><Index {...props} /></Layout>;
+               <h3 className="side-right-nav-container-announcements-item">
+                 Version 6.5 (LTS) has been released,{" "}
+                 <a
+                   className="primary-color"
+                   href="docs/release-notes/release-last/"
+                 >
+                   learn more.
+                 </a>
+               </h3>
+             </div>
+             <div className="side-right-nav-container-popular">
+               <h3 className="side-right-nav-container-popular-title">
+                 {/* <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/>  */}
+                 POPULAR ARTICLES
+               </h3>
+             </div>
+           </div>
+         </div>
+       );
+     };
+ 
+     return (
+       <div className="gray-background" id="home-page">
+         <TopFold />
+         {
+           //<SplashContainer siteConfig={siteConfig} language={language} />
+         }
+         <div className="mainContainer" id="main-container">
+           <div className="wrapper">
+             <Category />
+           </div>
+         </div>
+         <div className="mainContainer" id="main-container">
+           <div className="wrapper setsidebar">
+             <SidRightNav />
+           </div>
+         </div>
+         {this.props.config.homepagescripts &&
+           this.props.config.homepagescripts.map((source, idx) => {
+             return (
+               <script
+                 type="text/javascript"
+                 key={"script" + idx}
+                 src={source}
+               />
+             );
+           })}
+       </div>
+     );
+   }
+ }
+ 
+ export default (props) => (
+   <Layout>
+     <Index {...props} />
+   </Layout>
+ );
+ 

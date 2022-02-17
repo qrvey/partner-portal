@@ -10,7 +10,7 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## A
 
-**Action** -  The automation workflow element that performs the work you designate.
+**Action** -The automation workflow element that performs the work you designate.
 
 **API** - Application Programming Interface. Developers use APIs to integrate Qrvey with third-party applications and data sources.
 
@@ -94,11 +94,11 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 ## M
 
-**Metric** -  A quantifiable measure that is used to track and assess the status of a specific business process. In Qrvey’s chart builder, metrics are labeled as “Values”. 
+**Metric** - A quantifiable measure that is used to track and assess the status of a specific business process. In Qrvey’s chart builder, metrics are labeled as “Values”. 
 
 ## N
 
-**Net Promoter Score (NPS)** -  A one-question survey that allows businesses to track their customer satisfaction over time. NPS uses a simple 1-10 scale and divides customers into three groups: promoters, passives and detractors. The actual NPS score is calculated by subtracting the percentage of detractors from the percentage of promoters, yielding a number between -100 and +100.
+**Net Promoter Score (NPS)** - A one-question survey that allows businesses to track their customer satisfaction over time. NPS uses a simple 1-10 scale and divides customers into three groups: promoters, passives and detractors. The actual NPS score is calculated by subtracting the percentage of detractors from the percentage of promoters, yielding a number between -100 and +100.
 
 ## O
 
@@ -152,13 +152,13 @@ The Qrvey glossary helps clarify some of our most commonly used data, analytics 
 
 **Web Form** - A data collection tool that can be used inside Qrvey as a part of pages and workflows, or shared externally via email, social media or embedded in a website.
 
-**Widget** - A pre-built web control, e.g. chart, form, etc., used to allow easy embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed, with little to no associated coding or development.
+**Widget** - A pre-built web control, e.g. chart, form, etc, used to allow easy embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed, with little to no associated coding or development.
 
 **Workflow** - An automation workflow is a series of triggers, conditions and actions that work together to perform a specific function.
 
 ## Y
 
-**Yes/No** - A simple binary question type that only has two responses, such as "yes" or "no", "true" or "false" or similar alternatives.
+**Yes/No** - A simple binary question type that only has two responses, such as "yes" or "no", "true” or “false" or similar alternatives.
 
 ## Z
 

@@ -8,7 +8,7 @@ sidebar_label: Datasets
 
 In this section, we’ll explain how datasets are created using a single data source; how columns and data types are modified; how data is loaded; and how a dataset can be edited and reloaded. 
 
->**Note**: To see how datasets are created from multiple data sources, please go to the <a href="/docs/ui-docs/datasets/joins/"> Data Joins article</a>. 
+>**Note**: To see how datasets are created from multiple data sources, please go to the <a href="/docs/ui-docs/datasets/joins/" target="_blank"> Data Joins article</a>. 
 
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**. 
@@ -45,7 +45,7 @@ If the selected data source needs to be swapped out with another, either from th
 * **Edit Data Source Query** - Use this option if you want to either select a different table or view from the same Connection, or change the SQL query of a custom query data source.
 Note that this option is available only for database data sources.
 
-* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on <a href="/docs/ui-docs/datasets/joins/"> Data Joins </a> to read more about joining data sources.
+* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on <a href="/docs/ui-docs/datasets/joins/" target="_blank"> Data Joins </a> to read more about joining data sources.
 
 * **Select a Different Connection** - This option can be used to choose a data source from a connection other than the one currently in use.
 
@@ -86,13 +86,14 @@ Changing a column’s input format will require a reload of the data if it has a
 
 ### Choosing A Visualization Format
 You can also change the formatting of the date and numeric columns. This format will be used in the rest of the application whenever the column is used. For example, when a numeric column is assigned a Currency format, it will be displayed as currency with the $ sign, when it is used in a chart.
+
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8datasets.png#thumbnail-40)
 
 You can also decide the number of decimal places for numeric values. Changing visualization formats will *not* require a data reload.
 
 ### Selecting A Unique Identifier Column
 If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
-To learn about data synchronization and the role of unique IDs in it, please see the <a herf="/docs/ui-docs/datasets/data-sync/">Data Sync article</a>.
+To learn about data synchronization and the role of unique IDs in it, please see the <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync</a> article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
@@ -103,7 +104,7 @@ If the data in a dataset has to be controlled by Record Level Security or RLS, t
 
 The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Admin Center. 
 
-For more information about RLS and how to set it up see the <a href="/docs/admin/record-level-security/">Record Level Security article</a>.
+For more information about RLS and how to set it up see the <a href="/docs/admin/record-level-security/" target="_blank">Record Level Security article</a>.
 Defining the security name for a column will *not* require a data reload. 
 
 ### Setting Up Automatic Column Links
@@ -112,27 +113,27 @@ The automatic link can be set up from the Column Link command in the dot menu of
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
-For detailed information about <a href="/docs/ui-docs/datasets/column-links/">Column Links</a> see the article dedicated to the subject. 
+For detailed information about <a href="/docs/ui-docs/datasets/column-links/" target="_blank">Column Links</a> see the article dedicated to the subject. 
 Setting up automatic links for a column will not require a data reload. 
 
 
 ### Enabling Dataset Sharing
-Datasets are always restricted to users that belong to the same application, by default.  If you want users with access to other applications to have the ability to access this dataset as a source for building charts and metrics, as well as use this dataset as a source for creating new datasets that reside in other applications, then you can choose to share this dataset.  Click on the three-dot menu in the upper-right corner of the dataset UI and then select **Share Data with Everyone**.
+Datasets are always restricted to users that belong to the same application, by default. If you want users with access to other applications to have the ability to access this dataset as a source for building charts and metrics, as well as use this dataset as a source for creating new datasets that reside in other applications, then you can choose to share this dataset. Click on the three-dot menu in the upper-right corner of the dataset UI and then select **Share Data with Everyone**.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share.png#thumbnail-40)
 
 
-A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view.  For more information about dataset views, please refer to the <a href="/docs/ui-docs/datasets/dataset-views/">Dataset Views</a> article.
+A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view. For more information about dataset views, please refer to the <a href="/docs/ui-docs/datasets/dataset-views/" target="_blank">Dataset Views</a> article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share2.png#thumbnail-40)
 
 
-Shared datasets have a visual globe icon adjacent to the **Type** indicator on the main dataset page.  You can “unshare” the dataset at any time by clicking the same three-dot menu and then selecting **Unshare Data**.
+Shared datasets have a visual globe icon adjacent to the **Type** indicator on the main dataset page. You can “unshare” the dataset at any time by clicking the same three-dot menu and then selecting **Unshare Data**.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share3.png#thumbnail-40) 
 
 
-Be advised that unsharing a dataset will prevent users from other applications to use this dataset as a source for a new dataset view and/or dataset.  Any existing dataset views and/or datasets that use this dataset as a source will no longer be available to users building charts and metrics.  Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
+Be advised that unsharing a dataset will prevent users from other applications to use this dataset as a source for a new dataset view and/or dataset. Any existing dataset views and/or datasets that use this dataset as a source will no longer be available to users building charts and metrics. Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
 
 
 ### Setting Up Geolocation Groups
@@ -155,7 +156,7 @@ A *Transformation provides the means to change any piece of data __before__ load
 
 To access the Transformations screen click on the Transformation button on the top right corner of the columns list.
 
-Transformations are discussed in detail in a <a href="/docs/ui-docs/datasets/transformations/">dedicated article</a>.
+Transformations are discussed in detail in a <a href="/docs/ui-docs/datasets/transformations/" target="_blank">dedicated article</a>.
 Adding or changing Transformations will require a reload of the data if it has already been loaded.
 
 ### Other Available Features
@@ -184,7 +185,7 @@ On the *Data Syncs* tab, you will be able to set up a schedule to automatically 
 * **Append and Update Records** - It loads only the new and updated records whenever a scheduled process begins.
 You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop if ever.
 Data Syncing is available for single-source datasets as well as datasets using joins. 
-Data Synchronization has been described in detail in a <a href="/docs/ui-docs/datasets/data-sync/">dedicated article</a>.   
+Data Synchronization has been described in detail in a <a href="/docs/ui-docs/datasets/data-sync/" target="_blank">dedicated article</a>.   
 
 ## Loading Data
 Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.

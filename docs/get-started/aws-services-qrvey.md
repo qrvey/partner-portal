@@ -25,6 +25,10 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td>Used for joining data sources/datasets</td>
 	</tr>
 	<tr>
+		<td><a href="https://aws.amazon.com/cloudfront/">Amazon Cloudfront</a></td>
+		<td>CDN for Widgets</td>
+	</tr>
+	<tr>
 		<td><a href="https://aws.amazon.com/cloudwatch">Amazon CloudWatch</a></td>
 		<td>All logs</td>
 	</tr>
@@ -43,10 +47,6 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 	<tr>
 		<td><a href="https://aws.amazon.com/ecs/">Amazon Elastic Container Service (ECS)</a></td>
 		<td>Host for all Microservice containers</td>
-	</tr>
- 	<tr>
-		<td><a href="https://aws.amazon.com/elasticache">Amazon ElastiCache</a></td>
-		<td>Used by DataRouter for caching metadata</td>
 	</tr>
 	<tr>
 		<td><a href="https://aws.amazon.com/elasticsearch-service">Amazon Elasticsearch Service</a></td>

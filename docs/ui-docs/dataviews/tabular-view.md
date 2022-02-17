@@ -35,9 +35,8 @@ Use the **Filters** button to show or hide the **Filters** panel, which lists al
 The three buttons above the table column headings allow you to filter and sort the rows as well as select columns to display. 
 
 ### Filter
-You can apply filters to the table by clicking the **Filter** button. This will bring up a filter dialog box. The exact filter options will vary depending on the column selected to filter on. See the [Filtering Data](/docs/ui-docs/dataviews/tabular-view/filters) page for more details.
+You can apply filters to the table by clicking the **Filter** button. This will bring up a filter dialog box. The exact filter options will vary depending on the column selected to filter on. See the <a href="/docs/ui-docs/dataviews/tabular-view/filters" target="_blank">Filtering Data</a> page for more details.
 
-![4_tabular-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.6_tabular-view/4_tabular-view.png#thumbnail)
 
 ### Sort
 You can manage the sorting configuration by clicking the **Sort** button. This will show and hide the list of sort columns. Use the drop-down to add new columns to the list. As you add sort columns, you can sort in ascending or descending order by choosing the associated **A-Z** or **Z-A** option. Click the **╳** button to remove a sort column and use the drag handle to reorder sort columns. 

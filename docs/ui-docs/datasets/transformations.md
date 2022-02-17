@@ -103,7 +103,7 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
 | <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
 | <a href="#record-copy">Record Copy</a>| Logic | Copies records into an alternate transformation stream |
-| <a href="#">Round </a>| Numeric | Rounds the value of one or more numeric columns |
+| <a href="#round">Round </a>| Numeric | Rounds the value of one or more numeric columns |
 | <a href="#subtraction">Subtraction</a> | Numeric | Subtracts the value of a numeric column from another |
 | <a href="#text-analysis">Text Analysis</a> | Text | Leverages the power of AWS Comprehend to perform various text analysis functions on a column |
 | <a href="#text-replace">Text Replace</a> | Text | Replaces all or part of a textual column with a string |

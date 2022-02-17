@@ -1,5 +1,5 @@
 const IP_ADDRES_URL = 'https://api.ipify.org/?format=json';
-const CURRENT_PAGE = window.location.pathname;
+let CURRENT_PAGE = window.location.pathname;
 const USER_AGENT = navigator.userAgent;
 const CONTENT_TYPE = 'docs';
 const metadataid = 'MKT_METADATAID';
@@ -15,90 +15,88 @@ let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.le
 const PAGE = 'page_docs_';
 
 const datarouter = {
-    url: 'https://zbxl4n8sk5.execute-api.us-east-1.amazonaws.com/DataRouter/data?saveUserLog=false&returnAllLog=true',
-    'x-api-key': '359cc29538554a',
+    url: 'https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qollect/dataset/YwJoqX0Av/pushapi/data/post',
     metadataId: metadataid
 };
 
 const headers = {
     'Content-Type': 'application/json',
-    'x-api-key': datarouter['x-api-key']
+    'x-api-key': 'MARKETING_DEMO_API_KEY'
 }
 
-currentPageInfoBoolNew = "false";
-  // Store the current page URL on load
-  var currentPageInfo = location.href;
-  // listen for changes
+// Store the current page URL on load
+let currentPageInfo = window.location.href;
+// listen for changes
+
   setInterval(function()
   {
-      if (currentPageInfo != location.href && currentPageInfoBoolNew === "false")
+
+      if (currentPageInfo !== window.location.href)
       {
           // page has changed, set new page as 'current'
-          currentPageInfo = location.href;
+          currentPageInfo = window.location.href;
+          CURRENT_PAGE = window.location.pathname;
           setCurrentPageInfo();
-          currentPageInfoBoolNew = "true";
+            if (!getCookie(PAGE + CURRENT_PAGE)) {
+                console.log('activity send', CURRENT_PAGE);
+                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, CONTENT_TYPE));
+            } else {
+                console.log('Activity already sent it');
+            }
+            console.log(CURRENT_PAGE);
+          if (CURRENT_PAGE === '/'){
+            console.log("here");
+            fetchPopularArticles();
+          }
       }
-  }, 100);
+  }, 1000);
 
-function Activity(userName, contentUrl, title, elementId, contentType) {
+function Activity(userName, contentUrl, title, contentType) {
     this.userName = userName;
     this.contentUrl = contentUrl;
     this.title = title;
-    this.elementId = elementId;
+    this.elementId = contentUrl;
     this.contentType = contentType;
     this.ipAddress = IP_ADDRESS;
     this.userAgent = USER_AGENT;
+    this.date = new Date();
 }
 
 window.onload =  () => {
    setCurrentPageInfo();
 }
 
-currentPageInfoBool = "false";
 
-let stateCheck = setInterval(() => {
-    if (document.readyState === 'complete') {
-        console.log("inside set interval")
-        clearInterval(stateCheck);
-        if (currentPageInfo === "false") {
-            currentPageInfo = "true";
-        }
-        
-        setTimeout(() => {
-            if (!getCookie(PAGE + CURRENT_PAGE)) {
-                console.log('activity send', CURRENT_PAGE);
-                postActivy(new Activity(currentUser ? currentUser.userName : '', CURRENT_PAGE, TITLE_DOCUMENT, DOC_ID, CONTENT_TYPE));
-            } else {
-                console.log('Activity already sent it');
-            }
-        }, 5000);
+// let stateCheck = setInterval(() => {
+//     if (document.readyState === 'complete') {
+//         clearInterval(stateCheck);
+//         if (currentPageInfo === "false") {
+//             currentPageInfo = "true";
+//         }
 
-        ///FIN INIT
-        /////
-    }
-}, 100);
+//         ///FIN INIT
+//         /////
+//     }
+// }, 100);
+
+
 
 /// INIT APP
 function setCurrentPageInfo() {
-    const authButton = document.getElementById('auth-button');
-    if(!authButton){
         // Add partner name to logo and log button
         insertParternsLogo();
         insertLogButtonToNav();
         // ADD DROPDOWN ITEM
         addDropdownItem();
         //Dropdown To Change Doc Version
-        changeVersion();
+        // changeVersion();
         // Check title document to save it 
-        TITLE_DOCUMENT = document.querySelector('.postHeaderTitle') ? document.querySelector('.postHeaderTitle').innerHTML : 'Docs homepage';
+        TITLE_DOCUMENT = document.querySelector('h1') ? document.querySelector('h1').innerHTML : 'Docs homepage';
         // Check if this page contains a video
-        const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
-        if (videoContanier) {
-            checkVideoIsPlayed(videoContanier);
-        }
-        // CHECK IS THE USER IS LOGGED IN
-        console.log('user', currentUser);   
-    }
+        // const videoContanier = document.querySelector('.wistia_responsive_wrapper .wistia_embed');
+        // if (videoContanier) {
+        //     checkVideoIsPlayed(videoContanier);
+        // }  
 }
 
 function checkVideoIsPlayed(videoContanier) {
@@ -156,10 +154,10 @@ function postActivy(newActivity) {
     fetch(datarouter.url, {
             headers: headers,
             method: 'POST',
-            body: JSON.stringify([{
+            body: JSON.stringify({
                 metadataId: datarouter.metadataId,
                 data: data
-            }])
+            })
         })
         .then(response => response.json())
         .then(
@@ -184,9 +182,9 @@ function postActivy(newActivity) {
 function insertLogButtonToNav() {
     const navBar = document.querySelector('.navbar__items.navbar__items--right');
     if (currentUser) {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" onclick="logOut()">Log Out</a>`);
+        // navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" onclick="logOut()">Log Out</a>`);
     } else {
-        navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" href="/login">Log In</a>`);
+        // navBar.insertAdjacentHTML('beforeend', `<a class="primary-button" id="auth-button" href="/login">Log In</a>`);
     }
 }
 

@@ -14,8 +14,8 @@ Table Calculation is a feature that produces new columns of data based on predef
 * Running Calculations:
     * <a href="#running-sum">Running Sum (RSUM)</a>
     * <a href="#running-average">Running Average (RAVG)</a> 
-    * <a href="#running-min">Running Min (RMIN)</a>
-    * <a href="#running-max">Running Max (RMAX)</a>
+    * <a href="#running-minimum">Running Min (RMIN)</a>
+    * <a href="#running-maximum">Running Max (RMAX)</a>
 * Difference Calculations
     * Difference
     * %Difference 

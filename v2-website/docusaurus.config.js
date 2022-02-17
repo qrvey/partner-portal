@@ -13,7 +13,6 @@ module.exports={
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
     'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
     '/js/firebase.js',
-    '/js/login.js',
     '/js/homepage.js'
   ],
   "stylesheets": [
@@ -59,7 +58,6 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "index",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "path": "../docs",
@@ -93,6 +91,9 @@ module.exports={
       docsDir: 'docs',
       blogDir: 'blogs',
       searchResultLimits: 100,
+      highlightSearchTermsOnTargetPage: true,
+      searchResultContextMaxLength: 200,
+  
 
       },
     ],
@@ -101,11 +102,12 @@ module.exports={
     "navbar": {
       "title": "",
       "logo": {
-        "src": "img/qrvey_footer_logo.svg"
+        "src": "img/qrvey_footer_logo.svg",
+        "href": "/"
       },
       "items": [
         {
-          "label": "DOCS",
+          "label": "Docs",
           "href": "docs",
           "position": "right",
           "items": [
@@ -133,7 +135,7 @@ module.exports={
         },
         {
           "href": "/docs/video-training/building-qrvey-sample/multi-tenancy-architecture",
-          "label": "VIDEOS",
+          "label": "Videos",
           "position": "right"
         },
         {
@@ -146,7 +148,7 @@ module.exports={
     "image": "img/Qrvey.png",
     "footer": {
       "links": [],
-      "copyright": "Copyright © 2021 Qrvey",
+      "copyright": "Copyright © 2022 Qrvey",
     },
   },
 }
