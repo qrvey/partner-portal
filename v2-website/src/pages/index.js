@@ -128,7 +128,7 @@
                     <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
                     <a href="docs/admin/admin-sections-platform">Administering Qrvey Composer</a>
                     <a href="docs/admin/roles-and-permissions">Roles & Permissions</a>
-                    <a href="docs/get-started/security">Security</a>
+                    <a href="docs/get-started/authentication">Authentication</a>
                     <a href="docs/admin/content-deployment/concepts">Content Deployment Concepts</a>
                  </div>
                  </TabPanel>
