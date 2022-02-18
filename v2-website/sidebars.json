@@ -76,6 +76,10 @@
         },
         {
           "type": "doc",
+          "id": "get-started/authentication"
+        },
+        {
+          "type": "doc",
           "id": "get-started/user-roles"
         },
         {
