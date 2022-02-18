@@ -182,7 +182,7 @@
                     <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
                     <a href="docs/get-started/system-components">System Components</a>
                     <a href="docs/get-started/authentication">Authentication</a>
-                    <a href="docs/data-router/introduction/data-router-loading-data">Data Router Quick Start</a>
+                    <a href="docs/embedding/api/api-intro">API Start Guide</a>
                     <a href="docs/embedding/widgets/widget-intro">Embedding Widgets Quick Start</a>
                  </div>
                  </TabPanel>
