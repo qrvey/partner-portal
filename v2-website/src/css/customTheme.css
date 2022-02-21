@@ -66,6 +66,8 @@ body {
   padding: 60px 80px;
 }
 #home-page{
+  display: flex;
+  height: 100%;
 }
 .card-home{
   background: #FFFFFF;
@@ -204,7 +206,6 @@ display: none !important;
   font-weight: 600 !important;
   font-size: 18px;
   color: #FFFFFF;
-  margin: 0;
   padding: 10px 0 20px;
 }
 
@@ -483,16 +484,12 @@ img[src*="#thumbnail-20"] {
       margin: 10% 0 30px;
   }
   .side-right-nav{
-      position: absolute;
-      right: 0;
-      /* 20px from the nav */
-      height: 100vh;
-      top: 60px;
       width: 280px;
       display: block;
       overflow: hidden;
       z-index: 2;
       border-radius: 0px;
+      height: 100%;
   }
   .side-right-nav-container-announcements{
       /* 198px top fold */
@@ -500,7 +497,7 @@ img[src*="#thumbnail-20"] {
 
   .howtousesite {
     padding: 50px;
-    width: calc(100% - 400px);
+    width: calc(100% - 150px);
     position: relative;
     top: 50px;
     left: 80px;
@@ -527,8 +524,8 @@ img[src*="#thumbnail-20"] {
 }
 
 .howtousesite--infotext {
-font-size: 12px;
-Color: #7D7D7D;
+font-size: 13px;
+Color: #000000;
 margin: 20px 20px 20px 0;
 font-weight: 400;
 }
@@ -560,7 +557,7 @@ font-weight: 400;
   margin-top: 100px;
   top: 50px;
   left: 80px;
-  width: calc(100% - 400px);
+  width: calc(100% - 150px);
   border-radius: 10px;
   height: 100%;
 }
@@ -604,6 +601,7 @@ font-weight: 400;
 }
 
 .setsidebar {
+  height: 100%;
 }
 
   .side-right-nav-title, .side-right-nav-item{
@@ -1439,6 +1437,9 @@ blockquote {
 
 @media (max-width: 1159px) {
 
+
+  #home-page{display: initial;}
+
   .howtousesite {
     margin: 30px 0;
     padding: 50px;
@@ -1465,8 +1466,6 @@ blockquote {
 }
 
 .howtousesite--infotext {
-font-size: 12px;
-Color: #7D7D7D;
 margin: 20px 20px 20px 0;
 font-weight: 400;
 }
