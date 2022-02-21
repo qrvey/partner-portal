@@ -1064,15 +1064,17 @@ a.nav-item-dropdown.active{
 }
 
 .docItemCol_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocItem- {
+  margin: 0 auto;
+  padding: 0 40px;
   padding-bottom: 2rem !important;
-    padding-top: 2rem !important;
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 2rem !important;
+  padding-top: 2rem !important;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .docItemContainer_33ec {
   margin: 0 auto;
+  padding: 0 40px;
   padding-bottom: 2rem !important;
   padding-top: 2rem !important;
   font-size: 14px;
