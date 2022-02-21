@@ -286,6 +286,7 @@
  
      return (
        <div className="gray-background" id="home-page">
+         <div>
          <TopFold />
          {
            //<SplashContainer siteConfig={siteConfig} language={language} />
@@ -295,7 +296,8 @@
              <Category />
            </div>
          </div>
-         <div className="mainContainer" id="main-container">
+         </div>
+         <div className="mainContainer" id="sidebar">
            <div className="wrapper setsidebar">
              <SidRightNav />
            </div>
