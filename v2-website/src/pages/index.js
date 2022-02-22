@@ -210,7 +210,10 @@
              </h2>
              <div className="howtousesite--infocont">
                <div className="howtousesite--info">
+                 <div className="howtousesite--infonumbercont">
                  <div className="howtousesite--infonumber">1</div>
+                 <b>Choose your role</b>
+                 </div>
                  <p className="howtousesite--infotext">
                    Find your target persona. Qrvey provides tailored learning
                    tracks for Platform Administrators, Software Developers, Data
@@ -219,7 +222,10 @@
                  </p>
                </div>
                <div className="howtousesite--info">
+               <div className="howtousesite--infonumbercont">
                  <div className="howtousesite--infonumber">2</div>
+                 <b>Explore the content</b>
+                 </div>
                  <p className="howtousesite--infotext">
                    Explore the list of curated articles and training videos for
                    your target persona. Accelerate your implementation with
@@ -229,7 +235,10 @@
                  </p>
                </div>
                <div className="howtousesite--info">
+               <div className="howtousesite--infonumbercont">
                  <div className="howtousesite--infonumber">3</div>
+                 <b>Participate & interact</b>
+                 </div>
                  <p className="howtousesite--infotext">
                    Be an active member of the Qrvey community. Ask questions.
                    Share your feedback. Check back often for updates and new
