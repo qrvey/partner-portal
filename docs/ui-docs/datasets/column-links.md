@@ -16,7 +16,7 @@ Alternatively, should you want to customize a specific chart page action with a 
 
 To set up a Column Link, go to the Data section in Composer and select a Dataset. 
 
-![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/create-column-link.png#thumbnail-60)
+![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/create-column-link.png#thumbnail-60) 
 
 On the Design page, go to the three-dot menu located at the right end of the column and find the “Column Link” option to set the auto-link. 
 In the modal, you can add the desired URL and title of this column link. 
