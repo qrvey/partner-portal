@@ -13,8 +13,8 @@ In this section, we’ll explain how datasets are created using a single data so
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**. 
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-60)
- 
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/new-dataset1.png#thumbnail-60)
+  
 Next, you will see a list of available connections to your data sources, if any have been created already. You could also select existing datasets as sources on the *Datasets* tab. 
 
 Select the desired connection and click on **Create**. 
