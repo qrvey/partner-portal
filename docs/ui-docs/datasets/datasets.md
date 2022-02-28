@@ -14,7 +14,7 @@ In this section, we’ll explain how datasets are created using a single data so
 To create a dataset, go to the Datasets tab and click on **New Dataset**. 
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/1_Datasets.png#thumbnail-60)
-
+ 
 Next, you will see a list of available connections to your data sources, if any have been created already. You could also select existing datasets as sources on the *Datasets* tab. 
 
 Select the desired connection and click on **Create**. 
@@ -204,9 +204,9 @@ Once you have at least one dataset, it will be listed as a card in the Datasets 
 The green indicator to the left of the card means that data was loaded successfully and that the dataset is now active and ready to be used. A gray indicator means the dataset is in a draft state; i.e. it has not been loaded yet, and a red indicator means that loading the data has failed. Check the Activity Logs of the dataset to learn more about the issue if any error or warning is shown. 
 Card view is the default view of this section, but it can be changed to a list view if preferred.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/19datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-board.png#thumbnail)
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/20datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-list.png#thumbnail)
 
 
 By default, datasets are sorted by their last edit time, with the most recently edited and the favorites showing up first. Users can easily manage their favorite Datasets in Card View by selecting and deselecting the star icon.
@@ -216,7 +216,7 @@ By default, datasets are sorted by their last edit time, with the most recently 
 
 The same can be achieved from the stars in the leftmost column in the List/Tabular View. Additionally, Datasets can be sorted by any of their properties from the header of each column in the table.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/22datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-list2.png#thumbnail)
 
 Select any Dataset to edit by clicking its name in either view. This takes you back to the Dataset Design page. As soon as any change is made to the dataset the **Apply Changes** and **Discard Changes** buttons will appear. 
 
