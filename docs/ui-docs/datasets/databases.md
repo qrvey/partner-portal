@@ -7,7 +7,7 @@ sidebar_label: Database Connections
 <div style={{textAlign: 'justify'}}>
 
 You can create connections to various RDBMS by using the Database Connection feature under the *Connections* tab. Database connections can be created by entering the common connection attributes in the provided fields in the connection dialog, or by using the more advanced connection attributes using a JSON structure. While the former method is the default, the latter can be used to configure properties that are typically not included, such as timeout and encryption preferences.
-
+ 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/connections_list_new.png#thumbnail-60)
 
 To begin, choose the type of database you’d like to connect to. We currently support SQL Server, MySQL, PostgreSQL, Oracle, Amazon Redshift, Amazon Athena, MongoDB, Snowflake, and DynamoDB. MySQL and PostgreSQL are Aurora compatible. Amazon Athena is a SQL-compatible data source.
@@ -55,10 +55,10 @@ Once you are done with configuring your connection, you can click the **Save** b
 
 The connection will be added to the Connection list, displaying the owner of the connection, the type and an option to View Data, which will allow users to see a partial view of the data, showing the first 100 rows. 
 
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database-created.png#thumbnail) 
 
 >**Note**: The **View Data** option is only available for connections that are specific and point to a single table, view, or custom query
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/7_databasesV2.png#thumbnail)
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/8_databasesV2.png#thumbnail-60)
 
