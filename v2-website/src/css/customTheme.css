@@ -658,9 +658,9 @@ font-weight: 400;
   height: 100%;
 }
 
-.navbar__item:first-child li:first-child{
+/* .navbar__item:first-child li:first-child{
   display: none
-}
+} */
 
   .side-right-nav-title, .side-right-nav-item{
       text-align: start;
