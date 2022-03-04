@@ -381,7 +381,8 @@ Like all transformations, the results can update an existing column or create a 
 ### If/Else
 If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. 
 
-The condition supports a single column for the left operand, the desired operator and a single value for the right operand.  The value for the right operand can be a static value or a dynamic value based on the token type you select.  Data tokens will resolve to the value of the specified field for each row of the dataset.  System tokens will resolve to a single value computed at transform runtime.
+The condition supports a single column for the left operand, the desired operator and a single value for the right operand. 
+The value for the right operand can be a static value or a dynamic value based on the token type you select. Data tokens will resolve to the value of the specified field for each row of the dataset. System tokens will resolve to a single value computed at transform runtime.
 
 The following operators are supported for the If/Else transform:
 * Equals
@@ -391,13 +392,12 @@ The following operators are supported for the If/Else transform:
 * Is Empty
 * Is Not Empty
 
-**Note**:  The “Is Empty” and “Is Not Empty” operators do not accept a right operand because it is not needed.
-
+**Note**: The “Is Empty” and “Is Not Empty” operators do not accept a right operand because it is not needed.
 
 
 In the following example, an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/ifelse-trans.png#thumbnail-60)
 
 
 ### Record Copy
