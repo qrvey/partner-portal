@@ -639,7 +639,7 @@ font-weight: 400;
   padding: 20px;
 }
 
-.seeall-link {
+.seeall-link b a{
   color: #FF3F00;
   text-decoration: none;
   cursor: pointer;

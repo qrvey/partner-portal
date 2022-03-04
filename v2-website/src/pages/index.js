@@ -253,8 +253,8 @@
              <h3>
                <b>New Articles</b>
              </h3>
-             <div className="seeall-link" href="#">
-                  <b>See All</b>
+             <div className="seeall-link" href="docs/release-notes/new-articles">
+             <b><a href="docs/release-notes/new-articles">See All</a></b>
              </div>
              </div>
              <div className="articles--infocont">
@@ -269,8 +269,8 @@
            <h3>
                <b>Updated Articles</b>
              </h3>
-             <div className="seeall-link" href="#">
-                  <b>See All</b>
+             <div className="seeall-link">
+                  <b><a href="docs/release-notes/updated-articles">See All</a></b>
              </div>
              </div>
              <div className="articles--infocont">

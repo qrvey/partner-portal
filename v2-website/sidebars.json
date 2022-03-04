@@ -590,88 +590,102 @@
           "id": "release-notes/release-jun-2021"
         },
         {
-          "type": "doc",
-          "id": "release-notes/release-may-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-apr-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-feb-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-december-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-oct-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-sep-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-aug-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-jul-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-jun-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-apr-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-mar-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-feb-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-dec-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-nov-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-sep-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-aug-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-jul-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-mar-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-feb-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/release-jan-2019"
+          "type": "category",
+          "label": "Release Notes Archive",
+          "items": [
+            {
+              "type": "doc",
+              "id": "release-notes/release-may-2021"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-apr-2021"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-feb-2021"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-december-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-oct-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-sep-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-aug-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-jul-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-jun-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-apr-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-mar-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-feb-2020"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-dec-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-nov-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-sep-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-aug-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-jul-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-mar-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-feb-2019"
+            },
+            {
+              "type": "doc",
+              "id": "release-notes/release-jan-2019"
+            }
+          ]
         },
         {
           "type": "doc",
           "id": "release-notes/known-issues"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/new-articles"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/updated-articles"
         }
       ]
     }
