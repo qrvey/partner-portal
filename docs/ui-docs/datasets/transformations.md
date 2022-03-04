@@ -93,12 +93,12 @@ We add more predefined transformations with every release. The predefined set is
 | <a href="#array-filter">Array Filter</a>| Logic | Removes the values that do not match the condition specified |
 |<a href="#array-flatten"> Array Flatten</a>| Logic | Inflates array objects in hierarchical data |
 | <a href="#array-select-single-item">Array Select Single Item</a>|Logic | Replaces an existing object or value array with the first single object or value extracted from it |
-| <a href="#concatenate">Concatenate</a>| Text | Concatenates multiple textual column values  |
+| <a href="#concatenate">Concatenate</a>| Text | Concatenates multiple textual column values |
 | <a href="#dataset-write">Dataset Write</a>| External | Writes data to a different dataset |
 | <a href="#date-add">Date Add/Subtract </a>| Date | Adds or subtracts given units to date column values |
 | <a href="#date-difference">Date Difference </a>| Date | Calculates the date/time interval |
 | <a href="#division">Division</a>| Numeric | Divides one column’s value by another |
-| <a href="#formula">Formula </a> | Logic  | Allows Javascript functions to be created and applied |
+| <a href="#formula">Formula </a> | Logic | Allows Javascript functions to be created and applied |
 | <a href="#ifelse">If/Else</a> | Logic | Lets a condition decide the next transformations |
 | <a href="#lowercase">Lowercase</a>| Text | Turns textual column values to lowercase |
 | <a href="#multiplication">Multiplication</a>| Numeric | Multiplies the values of multiple columns |
@@ -159,7 +159,7 @@ Like all transformations, the results can update an existing column or create a 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation19.png#thumbnail-60)
 
 ### Lowercase
-This transformation converts the value of one or more textual columns to lowercase. Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
+This transformation converts the value of one or more textual columns to lowercase. Standardizing the case can help when analyzing data, filtering, grouping, and creating charts.
 
 Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
 
@@ -200,7 +200,7 @@ Like all transformations, the results can update an existing column or create a 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png#thumbnail)
 
 ## Date Transformations
-For all date transformations, you have the option to perform a date function on any number of date type data columns. In addition to other date columns, you can also use tokens or numbers that you manually enter. For example, you can create a new date column *deliveryDate* by adding 3 days to the date column *orderDate*. To use a token, type in two curly brackets {{ for the list of tokens to appear. 
+For all date transformations, you have the option to perform a date function on any number of date-type data columns. In addition to other date columns, you can also use tokens or numbers that you manually enter. For example, you can create a new date column *deliveryDate* by adding 3 days to the date column *orderDate*. To use a token, type in two curly brackets {{ for the list of tokens to appear. 
 
 ### Date Add
 This transformation allows you to add or subtract values from a specific date column. Value units can be selected for the operation.
@@ -367,7 +367,7 @@ Testing the transformation shows the final output that preserves the original *a
 
 
 ### Formula
-Formula is by far the most versatile transformation and it enables you to manipulate data ad-hoc, by writing a script. Formulas are written in Javascript, however, there’s a list of the available functions as well as an autocomplete feature to assist you. It is important to note that all Javascript functions are valid and can be used, even if they are not listed in the *Functions* list.
+A Formula is by far the most versatile transformation and it enables you to manipulate data ad-hoc, by writing a script. Formulas are written in Javascript, however, there’s a list of the available functions as well as an autocomplete feature to assist you. It is important to note that all Javascript functions are valid and can be used, even if they are not listed in the *Functions* list.
 
 With Formula transformations, you will need to determine the data type of the results. If not explicitly chosen, all results will be considered text data type.
 
@@ -379,9 +379,25 @@ Like all transformations, the results can update an existing column or create a 
 
 
 ### If/Else
-If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. In the following example, an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in an order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
+If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. 
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
+The condition supports a single column for the left operand, the desired operator and a single value for the right operand. 
+The value for the right operand can be a static value or a dynamic value based on the token type you select. Data tokens will resolve to the value of the specified field for each row of the dataset. System tokens will resolve to a single value computed at transform runtime.
+
+The following operators are supported for the If/Else transform:
+* Equals
+* Does Not Equal
+* Greater Than
+* Less Than
+* Is Empty
+* Is Not Empty
+
+**Note**: The “Is Empty” and “Is Not Empty” operators do not accept a right operand because it is not needed.
+
+
+In the following example, an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
+
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/ifelse-trans.png#thumbnail-60)
 
 
 ### Record Copy
