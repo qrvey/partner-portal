@@ -563,7 +563,7 @@
   "release-notes": [
     {
       "type": "category",
-      "label": "Release Notes 2021",
+      "label": "Release Notes",
       "items": [
         {
           "type": "doc",
@@ -600,13 +600,7 @@
         {
           "type": "doc",
           "id": "release-notes/release-feb-2021"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Release Notes 2020",
-      "items": [
+        },
         {
           "type": "doc",
           "id": "release-notes/release-december-2020"
@@ -642,13 +636,7 @@
         {
           "type": "doc",
           "id": "release-notes/release-feb-2020"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Release Notes 2019",
-      "items": [
+        },
         {
           "type": "doc",
           "id": "release-notes/release-dec-2019"
@@ -680,13 +668,7 @@
         {
           "type": "doc",
           "id": "release-notes/release-jan-2019"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Known Issues",
-      "items": [
+        },
         {
           "type": "doc",
           "id": "release-notes/known-issues"

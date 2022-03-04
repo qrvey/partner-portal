@@ -247,6 +247,39 @@
                </div>
              </div>
            </div>
+           <div className="newandupdate-cont">
+           <div className="newarticles-cont">
+             <div className="newarticle-header">
+             <h3>
+               <b>New Articles</b>
+             </h3>
+             <div className="seeall-link" href="#">
+                  <b>See All</b>
+             </div>
+             </div>
+             <div className="articles--infocont">
+             <div className="listarticles-links">
+                    <a href="docs/ui-docs/datasets/data_overview">Data Overview</a>
+                    <a href="docs/ui-docs/datasets/transformations">Transformations</a>
+                 </div>
+             </div>
+           </div>
+           <div className="updatearticles-cont">
+           <div className="updatearticle-header">
+           <h3>
+               <b>Updated Articles</b>
+             </h3>
+             <div className="seeall-link" href="#">
+                  <b>See All</b>
+             </div>
+             </div>
+             <div className="articles--infocont">
+             <div className="listarticles-links">
+                    <a href="docs/get-started/glossary">Glossary of Common Terms</a>
+                 </div>
+             </div>
+           </div>
+           </div>
          </div>
        </div>
      );

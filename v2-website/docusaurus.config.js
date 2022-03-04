@@ -1,12 +1,12 @@
-module.exports={
+module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
   "url": "http://http://partners-staging.qrvey.com/",
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
-  "onBrokenLinks":'ignore',
-  "onBrokenMarkdownLinks":'ignore',
+  "onBrokenLinks": 'ignore',
+  "onBrokenMarkdownLinks": 'ignore',
   "scripts": [
     "/js/custom.js",
     "/js/user.js",
@@ -25,14 +25,12 @@ module.exports={
       "default": "Newsletters",
       "all": "Newsletters"
     },
-    "users": [
-      {
-        "caption": "User1",
-        "image": "/img/qrvey-logo.png",
-        "infoLink": "https://www.qrvey.com",
-        "pinned": true
-      }
-    ],
+    "users": [{
+      "caption": "User1",
+      "image": "/img/qrvey-logo.png",
+      "infoLink": "https://www.qrvey.com",
+      "pinned": true
+    }],
     "fonts": {
       "myFont": [
         "Roboto-Regular",
@@ -46,12 +44,10 @@ module.exports={
     homepagescripts: [
       "/js/homepage.js",
     ],
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"]
-      }
-    ]
+    rules: [{
+      test: /\.css$/,
+      use: ["style-loader", "css-loader", "postcss-loader"]
+    }]
   },
   "presets": [
     [
@@ -61,7 +57,7 @@ module.exports={
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "path": "../docs",
-          sidebarPath:require.resolve('../v2-website/sidebars.json'), 
+          sidebarPath: require.resolve('../v2-website/sidebars.json'),
         },
         "blog": {
           "path": "blog"
@@ -72,28 +68,28 @@ module.exports={
       }
     ]
   ],
-  "plugins":   [
+  "plugins": [
     [
-    require.resolve("@easyops-cn/docusaurus-search-local"),
-    {
-      // ... Your options.
-      // `hashed` is recommended as long-term-cache of index file is possible.
-      hashed: true,
-      // For Docs using Chinese, The `language` is recommended to set to:
-      // ```
-      // language: ["en", "zh"],
-      // ```
-      // When applying `zh` in language, please install `nodejieba` in your project.
-      indexDocs: true,
-      indexBlog: false,
-      docsRouteBasePath: '/docs',
-      blogRouteBasePath: '/blogs',
-      docsDir: 'docs',
-      blogDir: 'blogs',
-      searchResultLimits: 100,
-      highlightSearchTermsOnTargetPage: true,
-      searchResultContextMaxLength: 200,
-  
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+        // When applying `zh` in language, please install `nodejieba` in your project.
+        indexDocs: true,
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/blogs',
+        docsDir: 'docs',
+        blogDir: 'blogs',
+        searchResultLimits: 100,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultContextMaxLength: 200,
+
 
       },
     ],
@@ -110,8 +106,7 @@ module.exports={
           "label": "Docs",
           "href": "docs",
           "position": "right",
-          "items": [
-            {
+          "items": [{
               "label": "Getting Started",
               "to": "/docs/get-started/get-started-intro",
             },

@@ -1,7 +1,7 @@
 ---
 id: release-may-2021
 title: Qrvey Version 5.10
-sidebar_label: May 2021
+sidebar_label: Qrvey Version 5.10
 ---
 <div style={{textAlign: "justify"}}>
 Release Date: 2021-05-05

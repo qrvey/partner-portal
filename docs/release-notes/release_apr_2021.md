@@ -1,7 +1,7 @@
 ---
 id: release-apr-2021
 title: Qrvey Version 5.9
-sidebar_label: April 2021
+sidebar_label: Qrvey Version 5.9
 ---
 <div style={{textAlign: "justify"}}>
 Release Date: 2021-04-09

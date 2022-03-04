@@ -57,7 +57,7 @@ A Crosstab Chart groups variables to show the correlation between different vari
 * **Position** - decide whether you want the total of the column, row, or both.
 * **Subtotals** - when you expand the grouping level, it shows the total within that data point (for example, you see total sales for all reps and all years).
 * **Max Rows*** - set a limit on the number of rows with the maximum number you want to show.
-* **Max Columns*** - set a limit on the number of columns you want to display. <br>
+* **Max Columns*** - set a limit on the number of columns you want to display. <br/>
 *The maximum number of data points is 10,000 in total - this includes both, rows and columns. In the image below that counts as rows.
  
  
@@ -87,7 +87,7 @@ Trend Charts can be added in one of two ways:
  b. From the Configuration Panel, by clicking the +Add Trend Chart button, where you give your Trend Chart a name and define:
  
 * **Column** - the value(s) you would like to show in the chart.
-* **Trend by Column** - Date or Numeric data types.<br>
+* **Trend by Column** - Date or Numeric data types.<br/>
 If Trend by Column is a date data type, you can apply:
   * Date Grouping- to group your dates by year, quarter, months, weeks, days.
   * Time Period - to choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).
@@ -108,7 +108,7 @@ If Trend by Column is a date data type, you can apply:
 You can apply <a href="/docs/qrvey-composer/chart-builder/formatting" target="_blank">Conditional Formatting</a> to your Table Charts.
  
 ## Filters
-You can also add Filters to your metrics by expanding the Filters section in the configuration panel or by clicking on the **Filters** button in the Toolbar above the canvas. Read more about filters and their purpose in this article <a href="/docs/qrvey-composer/filters/introduction-to-filters">here.
+You can also add Filters to your metrics by expanding the Filters section in the configuration panel or by clicking on the **Filters** button in the Toolbar above the canvas. Read more about filters and their purpose in this article <a href="/docs/qrvey-composer/filters/introduction-to-filters">here</a>.
  
  
  
