@@ -8,12 +8,12 @@ sidebar_label: Connections Overview
 
 The *Connections* tab is where you can create and manage your connections to various data sources.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connections-tab.png#thumbnail) 
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connections1.png#thumbnail) 
 
 
 From the Connections page, you can click on an existing connection to make changes to the configuration settings. If this is the first time you are accessing the Connections page, you must first create a new connection. Create a new connection by clicking on the **New Connection** button.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/new-connect-button.png#thumbnail)
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connections2.png#thumbnail)
 
 A modal window will appear that lists all of the supported data source types that can be configured through the Qrvey Composer UI.
 
@@ -44,7 +44,7 @@ See the articles below to get more information on database sources, file sources
 
 Once you have created your connections, you will see them listed as shown below:
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/new-connections.png#thumbnail)
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/2_Connections.png#thumbnail)
 
 To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Editing connections can potentially lead to errors with any data syncs configured for datasets that rely on those connections. Please, verify that the connection is successful after making any changes
 If you click on **View Data**, a partial view of the data available for file upload connections and database connections that have a database and table selected will appear. 
