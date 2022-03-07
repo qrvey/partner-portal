@@ -259,8 +259,6 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="docs/ui-docs/datasets/data_overview">Data Overview</a>
-                    <a href="docs/ui-docs/datasets/transformations">Transformations</a>
                  </div>
              </div>
            </div>
