@@ -273,6 +273,7 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+                    <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
                     <a href="docs/get-started/glossary">Glossary of Common Terms</a>
                  </div>
              </div>
