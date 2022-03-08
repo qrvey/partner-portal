@@ -168,8 +168,7 @@ Select the “appid” that you want to use for your next steps.
 
 
 ## Creating a Web Form
->**Note 1**: Webform API endpoints are under the
-<a href="https://bit.ly/3jlyhXj">Data Sources</a> group.
+>**Note 1**: Webform API endpoints are under the <a href="https://bit.ly/3jlyhXj">Data Sources</a> group.
 
 
 >**Note 2**: Webforms, in general, are referred to as “*qrvey*”s.
