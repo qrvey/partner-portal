@@ -16,7 +16,7 @@ The following are the supported scenarios where you can use Qrvey Record-Level S
 You can use Qrvey RLS if you are using the end-user widget. Your users may be authenticated against an OpenId provider (e.g., Auth0) or you may have your own login/authentication mechanism.
 
 * **Builders widget with Backend authentication**:
-You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have  your custom login/authentication mechanism, at this time
+You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have your custom login/authentication mechanism, at this time
 
 If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see 
 <a href="#generate-a-security-token-with-backend-authentication">generate a security token with backend authentication</a> for more details).
@@ -48,7 +48,7 @@ To define security columns, you need to go to the data-prep option, and under th
 ![2_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/2rls.png#thumbnail)
 
 
-Clicking on the “Enable Record Level Security” option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3-define-users-security-token(s)"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
+Clicking on the **Enable Record Level Security** option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3-define-users-security-token(s)"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
 
 ![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail)
 
@@ -58,7 +58,7 @@ Once you have saved the security name, you will see a security icon identifying 
 ![4_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/4rls.png#thumbnail)
 
 
-To remove security from the dataset, you need to click the three-dot menu again, select the “Record Level Security” option, and then “Remove” to reset the dataset configuration. Datasets without security columns will not restrict access to the data. All users will have full access.
+To remove security from the dataset, you need to click the three-dot menu again, select the **Record Level Security** option, and then **Remove** to reset the dataset configuration. Datasets without security columns will not restrict access to the data. All users will have full access.
 
 ![5_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/5rls.png#thumbnail)
 
@@ -96,7 +96,7 @@ The following is an example of a JSON object containing a user’s security perm
 }
 ```
 
-Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API Generate Token passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519"  target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
+Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjcyMTQxMDg-generate-token-for-creators" target="_blank"> Generate Token</a> passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519" target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
 
 ```json
 {
@@ -122,7 +122,7 @@ Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">A
 ![6_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/6rls.png#thumbnail)
 
 
-When users log in into the  OpenID Provider, the security permissions previously stored in the user_metadata will be added as part of the user information. They will be redirected to Qrvey, where the permissions will be used to filter the data in all charts if RLS is enabled.
+When users log in into the OpenID Provider, the security permissions previously stored in the user_metadata will be added as part of the user information. They will be redirected to Qrvey, where the permissions will be used to filter the data in all charts if RLS is enabled.
 
 This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage the whole process by itself.
 
