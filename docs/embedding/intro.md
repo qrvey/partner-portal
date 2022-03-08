@@ -31,6 +31,7 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 
 
 ## APIs
-Our API references provide a complete list of the API calls needed to interact with the Qrvey platform. Qrvey APIs are documented in Postman so they can be easily accessed and tried out. The full collection can be accessed <a href="https://bit.ly/3lUHsQg">here</a>.
+
+Our API references provide a list of the most commonly-used APIs needed to interact with the Qrvey platform. Qrvey APIs are documented in Stoplight so they can be easily accessed and tried out. The full collection can be accessed <a href="https://tinyurl.com/atuznk6u">here</a>.
 
 </div>
