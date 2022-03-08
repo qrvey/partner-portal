@@ -49,7 +49,7 @@ This is an example of the endpoint’s response with the security token in it.
   "token": "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB..."
 }
 ```
-The code snippet below shows how to call the <a href="https://documenter.getpostman.com/view/1152381/TVCb4AGN#5e893ac8-fe62-42f9-a7b8-d46a34ea5c49">Generate Token</a> endpoint and retrieve the security token. In the next step, you will use this token to configure the widget’s settings.
+The code snippet below shows how to call the <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjcyMTQxMDg-generate-token-for-creators">Generate Token</a> endpoint and retrieve the security token. In the next step, you will use this token to configure the widget’s settings.
 
 ```
 var config = {
