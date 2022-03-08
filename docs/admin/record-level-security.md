@@ -48,12 +48,12 @@ To define security columns, you need to go to the data-prep option, and under th
 ![2_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/2rls.png#thumbnail)
 
 
-Clicking on the **Enable Record Level Security** option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3-define-users-security-token(s)"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
+Clicking on the **Enable Record Level Security** option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3---define-users-security-tokens"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
 
 ![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail)
 
 
-Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#step-3-define-users-security-token(s)"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
+Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#step-3---define-users-security-tokens"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
 
 ![4_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/4rls.png#thumbnail)
 
