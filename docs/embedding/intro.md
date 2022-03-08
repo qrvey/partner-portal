@@ -23,6 +23,7 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
  in your custom application. The default mode embeds the Page Builder widget and adding and setting the reports_dahboard property to true, embeds the Report Builder.
 
 * <a href="/docs/embedding/widgets/app-building/widget-page-view" target="_blank"><strong>Page View</strong></a> (tag: <code>&lt;qrvey-end-user&gt;</code>) - Page View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Page Builder to be embedded in your custom applications.
+
 * <a href="/docs/embedding/widgets/analytics/single-panel/"><strong>Single Panel </strong></a> (tag: <code>&lt;an-panel&gt;</code>) - This widget can be used to embed a single visualization panel.
 
 * <a href="/docs/embedding/widgets/data-sources/widget-webforms/"><strong>Web Form Design</strong></a> (tag: <code>&lt;qrvey-design-widgets&gt;</code>) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
