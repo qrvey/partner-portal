@@ -10,49 +10,46 @@ The Qrvey Platform developer API lets you access all of the functions of the Qrv
 
 In this tutorial, we will go through a typical end-to-end process for building and accessing web forms programmatically. We will show you how to call the developer API to create a new Quiz web form and how to use the Quiz widget UI to insert the web form into any application page for end-users. We will also show you how to activate the Quiz, so that end users can begin to answer given questions using the Quiz URL.
 
->**Note**: The full list of Qrvey APIs and examples can be accessed <a href="https://bit.ly/3lUHsQg">here</a>.
+>**Note**: The full list of Qrvey APIs and examples can be accessed <a href="https://tinyurl.com/atuznk6u" target="_blank">here</a>.
 
 
 ## Prerequisites
-For this tutorial, we will assume that you have a basic understanding of REST APIs, as well as how to make various web requests, and how to work with API responses in JSON format. We also recommend using an API dev environment such as Postman.
-
-* You can download Postman from the following URL: 
-
-<https://www.getpostman.com>
+For this tutorial, we will assume that you have a basic understanding of REST APIs, as well as how to make various web requests, and how to work with API responses in JSON format. We also recommend using an API dev environment such as Stoplight or Postman.
 
 You will also need to have the following tokens:
 
-* API Key (for calling the API - if you need to obtain an API key, contact help@qrvey.com)
-* API URL (current version is your Qrvey Composer URL + /devapi/v4)
+* API Key (This has been sent to you in the welcome email that you received when your instance was created)
+* API URL (The current version is your Qrvey Composer URL + /devapi/v4)
 
 
-It is also a good idea to familiarize yourself with the Qrvey Platform. In this tutorial, we’ll be illustrating how to do things programmatically, that you can also do via the user interface directly. As an exercise, log in to the Qrvey Platform, create a new Application, create a new Quiz web form, activate it, and then get the URL to take the quiz and start filling in the answers.
+It is also a good idea to familiarize yourself with the Qrvey Platform. In this tutorial, we’ll be illustrating how to do things programmatically, that you can also do via the user interface directly. As an exercise, we suggest that you log in to the Qrvey Composer, create a new Application, create a new Quiz web form, activate it, and then get the URL to take the quiz and start filling in the answers.
 
 ## Understanding the Qrvey Platform Structure
 The Qrvey Platform has two main concepts that control how all content is saved and managed:
 
-* ### Users
-Users are what we call “creators”. They create the content that is distributed, embedded, or managed within the Qrvey Platform for end-users to consume. In the context of API integration, you might have one creator that is the owner of all of your content, or you might decide to add several creators to control different aspects of your integration. In any case, each User can own one or more Applications.
+### Primary Users
+Primary users typically have a Creator role. They create the content that is distributed, embedded, or managed within the Qrvey platform for end-users to consume. In the context of API integration, you might have one creator that is the owner of all of your content, or you might decide to add several creators to control different aspects of your integration. In any case, each primary user can own one or more Applications.
 
-* ### Applications
-Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, pages, etc. In the context of an API integration, each creator User might have many Applications they’re working with, or you may choose to manage everything within a single Application.
-
+### Applications
+Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, pages, etc. In the context of an API integration, each creator user might have many applications they’re working with, or you may choose to manage everything within a single application.
 The first step for working with the developer API is to establish a user and an application where your new content will be saved.
 
+## Steps
+The following steps need to be taken to accomplish the task of creating and publishing a web form programmatically:
+1. Get the user that will own the application. You may need to create a new user with Creator role, or get an existing user
+2. Get the application for the said user that will contain the web form. You may create a new Qrvey application for that user, or get an existing application of theirs.
 
-## Get the User
 
->**Note**: User and Application API endpoints are under the <a href="https://bit.ly/2IX7Z12">Core group</a>.
-
+## Step 1 - Get the Owner User
 
 ### Option 1: Create a new user
 
-To create a new user programmatically, open Postman and make a call to the /user endpoint.
+To create a new user programmatically, you have to make a call to the user endpoint, documented <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6Mjc1MTMwNTU-create-user" target="_blank">here</a>.
 
-In Postman, set your request type as “POST”, and enter the URL to create a new user:
+ If using Postman, set your request type as “POST”, and enter the URL to create a new user:
 
 ```
-POST https://{{url}}/devapi/v4/core/user
+POST https://{{your-domain-url}}/devapi/v4/core/user
 ```
 
 Make sure to set you Header values:
@@ -86,7 +83,7 @@ To obtain a previously created “userid”, you can also call the API to get th
 POST https://{{url}}/devapi/v4/core/user/all
 ```
 
-In Postman, Set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit **Send** to complete the request.
+If using Postman, set your request type as “GET”, enter the API endpoint /user, and make sure to add a Header key for “x-api-key” and specify your API value.  Hit **Send** to complete the request.
 
 ![api_tutorial_3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_3.png#thumbnail)
 
@@ -113,12 +110,12 @@ If you are looking for a particular user, you can search by email address. To fi
 ![api_tutorial_3a](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tut.png#thumbnail)
 
 
-## Get the Application
+## Step 2 - Get the Application
 To create our application, we will follow the same steps as with creating user API calls. Since Applications belong to Users, you will need to create a new Application if you have just created your new User. If you have selected a user and that user has already created applications, you can skip to option 2.
 
 ### Option 1: Create a new application
 
-To create a new application, you have to make a POST request to the /app endpoint in Postman. This endpoint requires the userid value from the previous steps.
+To create a new application, you have to make a POST request to the /app endpoint. This endpoint requires the userid value from the previous steps.
 
 ```
 POST to https://{{url}}/devapi/v4/user/{{userid}}/app
