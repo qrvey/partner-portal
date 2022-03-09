@@ -1,7 +1,7 @@
 ---
 id: release-jul-2021
 title: Qrvey Version 6.1
-sidebar_label: July 2021
+sidebar_label: Qrvey Version 6.1
 ---
 <div style={{textAlign: "justify"}}>
 Release Date: 2021-07-13

@@ -1,7 +1,7 @@
 ---
 id: release-dec-2019
 title: Qrvey Version 4.0
-sidebar_label: December 2019
+sidebar_label: Qrvey Version 4.0
 ---
 <div style={{textAlign: "justify"}}>
 Release Date: 2019-12-18

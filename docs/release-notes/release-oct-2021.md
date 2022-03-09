@@ -1,7 +1,7 @@
 ---
 id: release-oct-2021
 title: Qrvey Version 6.4
-sidebar_label: October 2021
+sidebar_label: Qrvey Version 6.4
 ---
 <div style={{textAlign: "justify"}}>
 

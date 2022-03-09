@@ -1,7 +1,7 @@
 ---
 id: release-jul-2019
 title: Qrvey Version 3.13
-sidebar_label: July 2019
+sidebar_label: Qrvey Version 3.13
 ---
 <div style={{textAlign: "justify"}}>
 

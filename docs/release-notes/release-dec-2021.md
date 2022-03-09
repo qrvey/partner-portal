@@ -1,7 +1,7 @@
 ---
 id: release-last
 title: Qrvey 6.5 (LTS)
-sidebar_label: November 2021
+sidebar_label: Qrvey 6.5 (LTS)
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -247,6 +247,38 @@
                </div>
              </div>
            </div>
+           <div className="newandupdate-cont">
+           <div className="newarticles-cont">
+             <div className="newarticle-header">
+             <h3>
+               <b>New Articles</b>
+             </h3>
+             <div className="seeall-link" href="docs/release-notes/new-articles">
+             <b><a href="docs/release-notes/new-articles">See All</a></b>
+             </div>
+             </div>
+             <div className="articles--infocont">
+             <div className="listarticles-links">
+                 </div>
+             </div>
+           </div>
+           <div className="updatearticles-cont">
+           <div className="updatearticle-header">
+           <h3>
+               <b>Updated Articles</b>
+             </h3>
+             <div className="seeall-link">
+                  <b><a href="docs/release-notes/updated-articles">See All</a></b>
+             </div>
+             </div>
+             <div className="articles--infocont">
+             <div className="listarticles-links">
+                    <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
+                    <a href="docs/get-started/glossary">Glossary of Common Terms</a>
+                 </div>
+             </div>
+           </div>
+           </div>
          </div>
        </div>
      );

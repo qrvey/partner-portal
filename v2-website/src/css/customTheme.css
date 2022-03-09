@@ -608,9 +608,59 @@ font-weight: 400;
   padding: 10px 0;
 }
 
+.newandupdate-cont {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 150px);
+  position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+.newarticles-cont, .updatearticles-cont {
+    background-color: #F1F1F1;
+    width: 100%;
+}
+
+.newarticles-cont{
+  margin-right: 30px;
+}
+
+.newarticles-cont h3, .updatearticles-cont h3{
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.newarticle-header, .updatearticle-header {
+  border-bottom: 1px solid #E4E4E4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.seeall-link b a{
+  color: #FF3F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.listarticles-links {
+  display: grid;
+  padding: 20px;
+}
+
+.listarticles-links a{
+  padding: 10px 0;
+}
+
 .setsidebar {
   height: 100%;
 }
+
+/* .navbar__item:first-child li:first-child{
+  display: none
+} */
 
   .side-right-nav-title, .side-right-nav-item{
       text-align: start;
