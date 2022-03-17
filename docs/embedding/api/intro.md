@@ -24,6 +24,6 @@ In order to make Qrvey API requests, you will need your:
 
 > **Note**: Be sure to keep this information private and do not post it publicly in your code.
 
-Qrvey APIs are documented in Postman so they can be easily accessed and tried out. The full collection can be found <a href="https://tinyurl.com/atuznk6u">here</a>.
+Qrvey APIs are documented in Spotlight so they can be easily accessed and tried out. The full collection can be found <a href="https://tinyurl.com/atuznk6u">here</a>.
 
 </div>
