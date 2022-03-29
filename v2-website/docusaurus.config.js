@@ -58,6 +58,12 @@ module.exports = {
           "showLastUpdateTime": true,
           "path": "../docs",
           sidebarPath: require.resolve('../v2-website/sidebars.json'),
+          "versions": {
+            "current": {
+              "label": '7.0',
+              "path": '7.0',
+            },
+          }
         },
         "blog": {
           "path": "blog"
@@ -95,6 +101,11 @@ module.exports = {
     ],
   ],
   "themeConfig": {
+    "colorMode": {
+      "defaultMode": 'light',
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false,
+    },
     "navbar": {
       "title": "",
       "logo": {
@@ -102,6 +113,11 @@ module.exports = {
         "href": "/"
       },
       "items": [
+        {
+          "type": 'docsVersionDropdown',
+          "position": 'right',
+          "dropdownActiveClassDisabled": true,
+        },
         {
           "label": "Docs",
           "href": "docs",
