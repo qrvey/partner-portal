@@ -24,20 +24,23 @@ For example, you can create a simple Flow so that whenever a new survey response
 ## Creating a Flow
 1. To create a Flow, choose **Automation** from the left-hand menu and then click the **Create Flow** button.
 
+
 ![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/flows1.png#thumbnail)
 
-2. Give your new Flow a name and a description, then click **Create**.
+2. Give your flow a name and start by dragging one of the triggers onto the **Add a trigger to start** area. 
 
-![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/flows2.png#thumbnail-60)
+![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/create2.png#thumbnail)
 
-3. You’ll now be taken to the design area where you can begin building your Flow by dragging and dropping the components from the right-side panel to the canvas. Start by clicking on your desired trigger type and dragging it onto the “Add a trigger to start” box. 
+3. After adding the trigger, drag and drop a condition or an action under the new trigger area.
 
-![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/sales_alert.png#thumbnail) 
+
+![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/create3.png#thumbnail) 
  
 
-4. After you configure the trigger, continue to drag condition and action components onto your canvas and drop them right below your trigger in a gray area that appears when you hover over it.
+4. Configure the **Triggers** and **Conditions** dragged onto the workflow workspace.
 
-![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/trigger.png#thumbnail) 
+
+![flow](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.1_flows/create4.png#thumbnail) 
 
 All changes are saved automatically as you build your flow. 
 
