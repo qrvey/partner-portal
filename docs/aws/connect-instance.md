@@ -85,5 +85,10 @@ Now you will be able to follow the steps above, for connecting Qrvey to your RDS
 ## Additional considerations
 * By moving the Lambda function inside a VPC, it does not have internet access. So if you would like to connect to external data sources (outside the VPC) then you would need to add an Internet Gateway or NAT Gateway depending on your use-case. For internal data sources or services inside AWS you can repeat the steps to create a VPC Endpoint for that service or use security groups to access.
 * There may be additional charges for VPC endpoints.
+* Follow the next steps to avoid losing the vpc configuration in future updates and deployments:
+    * Go to cloudformation service on AWS console , find the Qrvey<prefix> DataRouterCodePipeline cloudformation template. Click on “Update” button , select “Use current template” and click on “Next”.
+    * Put in the right values for SAMsecurityGroupIds (step 1.b.iv) and SAMvpcSubnetsId (step 1.b.iii) and deploy this change.
+    * Once the cloduformation template is updated, go to CodePipeline and click on release change button for DataRouter pipeline. This will deploy this change to the Lambda function.
+
 
 
