@@ -20,11 +20,14 @@ The option is only available if you are authenticated. If you don’t see the ic
 ## Configuring Subscription
 Choosing the **Subscribe to Pages** option from the menu opens up the dialog box to configure the subscription.
 
-![subscribe-exports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/subscription/subscription-exports/subscription_2.png#thumbnail-60)
+![subscribe-exports](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/subscription/subscription-exports/subscription-nv.png#thumbnail) 
 
 Each subscription configuration must be given a name. This name is used to identify the configuration if it needs to be modified or managed later. Choose a name that is meaningful to you and you can remember later.
 
 You can choose any number (or all) of the pages and/or any number (or all) of the charts to be included in your scheduled export. 
+Choose the format(s) for your export. The default format is PDF. If exporting charts and not only entire pages, you may also choose CSV summary or CSV raw formats. You have to have at least one format selected for subscriptions to work. Note that not all charts support CSV summary or CSV raw format and they won’t be exported if those are your only selected export formats.
+
+
 The next step is to configure the schedule of the exports:
 * Select the date to start exporting and sending the objects. 
 * Choose the time for the export. The time zone is the same as yours.
