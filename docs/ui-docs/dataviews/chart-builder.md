@@ -271,8 +271,10 @@ Here we find additional settings like:
 	* OFF: When performing a horizontal scroll, all columns and groups will scroll together.
 * **Max. Groups** - Limits the number of groups shown. This value is set to 10 by default and can not be lower than 10. If there are no columns in the Section shelf, the Max Groups option does not appear.
 * **Records per Group** - Limits the number of records shown for each expandable group. This value is 10 by default and can not be lower than 10.
+* **Totals** - display the grand total for a selected column or the whole table to get a summary of the number of records for a group or the complete table by clicking **+Add Total**. Choose the column you want to show the Total for, and the type of the Total aggregation (*Select All, Sum, Average, Median, Count, Distinct Count, Minimum, Maximum*). Last but not least, in **Level** you can select if you want to show the total for the whole table or just a selected column. 
 
-![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/expand5.png#thumbnail-40) 
+
+![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.7_chart-builder/totals.png#thumbnail)  
 
 
 
