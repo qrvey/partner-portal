@@ -120,8 +120,6 @@ canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000'
 | canvasBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page
 | pageViewButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
 | pageViewButtonIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
-| filterIconBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | filter icon
-| filterIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN'| filter icon
 
 
 
