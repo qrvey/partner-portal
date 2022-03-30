@@ -32,8 +32,13 @@ Web Forms are a simple way of collecting new data or updating existing data that
 
 
 ## Connections
-The Connections tab is where you can add new connectors and manage your existing data connections, including MySQL, SQL Server, PostgreSQL, and Oracle. You can also create File Upload connections to use data in CSV files.
+The Connections tab is where you can add new connectors and manage your existing data connections - see the list of supported connections in <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>. You can also create File Upload connections to use data in CSV files.
+
+Once you have created Connections, these will appear on cards with details about when they were created and who owns them, the type of the connection, and the name of the file on them.
+
 
 ![5_datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/connect.png#thumbnail) 
+
+Read more about creating and editing Connections <a href="/docs/ui-docs/datasets/connectors">here</a>.
 
 </div>
