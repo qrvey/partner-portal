@@ -58,7 +58,7 @@ The connection will be added to the Connection list, displaying the owner of the
 
 >**Note**: The **View Data** option is only available for connections that are specific and point to a single table, view, or custom query
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/7_databasesV2.png#thumbnail)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/databasesV7.png#thumbnail) 
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/8_databasesV2.png#thumbnail-60)
 
