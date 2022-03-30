@@ -14,7 +14,7 @@ Datasets can be created by joining multiple data sources. Different sources from
 1. <b>Name and dataset status</b> - Here you can change the name of the dataset by clicking on it and typing in a new one. You can also favorite the dataset by clicking on the star next to its name, and get information on the last time the dataset was loaded, how many columns and records it has.
 
 2. <b>Load Dataset</b> button - before a dataset can be used after being created or modified, it must be loaded. 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a. When modifying a dataset that has already been loaded, instead of the <b>Load Dataset</b> button, you will see <b>Discard Changes, Apply Changes</b>, and <b>Reload Dataset</b>.</li></ul>
 
 ![data-joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/data-joins-nv2.png#thumbnail-40) 
