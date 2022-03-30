@@ -281,6 +281,10 @@ Funnel charts can be customized using the following properties in the configurat
 * **Category Labels**: Turn on/off legends of the charts.
   * **Category name**: Shows the name of the category.
   * **Segment names**: Shows the name of the segment/level.
+  If the label for the category overlaps with the previous one it’s hidden from the funnel, but can be seen in the tooltip when you mouse-over the segment.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel-label.png#thumbnail-60) 
+
   * **Names Rotation**: Changes the direction of segment names.
   * **Data Labels**: Shows the data labels within the segments.
   * **Values**: Shows the data values within the segments.
@@ -539,7 +543,16 @@ This option is only available for simple (ungrouped) tables and is not selected 
 >**Note**: If the table is grouped, the pagination option will be hidden and the **Max Rows** option is replaced with **Max Groups**, which limits the maximum number of groups fetched, for the same performance reasons.
 
 
+### Formatting in Tables
+Click on **+Add Condition** to start. Pick the color of the text and the color of the cell you’d like to show when your condition is met. Decide if you want to outline the cell or highlight it in the chosen color. Select the column you want to use the condition on, set the operator and decide if it applies to a column of your choice or the entire row. 
 
+Click on **Remove** to remove the conditional formatting. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/table-format1.png#thumbnail-40) 
+
+In the example below, we wanted to highlight all orders where the quantity is 1,000 units or more. 
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/table-format2.gif#thumbnail) 
 
 ### Resizing Rows 
 Rows in Table Charts can be resized for the User to see the full information in rows when building by increasing or decreasing the row height. To do so:
