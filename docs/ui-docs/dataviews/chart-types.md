@@ -281,6 +281,10 @@ Funnel charts can be customized using the following properties in the configurat
 * **Category Labels**: Turn on/off legends of the charts.
   * **Category name**: Shows the name of the category.
   * **Segment names**: Shows the name of the segment/level.
+  If the label for the category overlaps with the previous one it’s hidden from the funnel, but can be seen in the tooltip when you mouse-over the segment.
+
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/funnel-label.png#thumbnail-60) 
+
   * **Names Rotation**: Changes the direction of segment names.
   * **Data Labels**: Shows the data labels within the segments.
   * **Values**: Shows the data values within the segments.
