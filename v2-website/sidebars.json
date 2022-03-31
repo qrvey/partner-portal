@@ -210,10 +210,6 @@
         },
         {
           "type": "doc",
-          "id": "ui-docs/datasets/datalinks"
-        },
-        {
-          "type": "doc",
           "id": "ui-docs/datasets/hierarchical-data"
         },
         {

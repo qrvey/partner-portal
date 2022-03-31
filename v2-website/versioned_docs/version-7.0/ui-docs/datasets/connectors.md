@@ -8,7 +8,7 @@ sidebar_label: Connections Overview
 
 You can create and manage your connections to various data sources in the *Connections* tab.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect1.png#thumbnail)  
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect1.png#thumbnail-40)  
 
 
 From the Connections page, you can click on an existing connection to make changes to the configuration settings. If this is the first time you are accessing the Connections page, you must first create a new connection by choosing the connection type and filling in the required information to establish the connection.
@@ -34,11 +34,11 @@ For CSV data or unstructured data, such as JSON documents, the UI supports uploa
 See the articles below to get more information on database sources, file sources, and API sources:
 
 
-* [Database Connections](ui-docs/datasets/databases.md)
+* <a href="docs/ui-docs/datasets/databases" target="_blank">Database Connections</a>
 
-* [File Upload Connections](ui-docs/datasets/csv.md)
+* <a href="/docs/ui-docs/datasets/csv" target="_blank">File Upload Connections</a> 
 
-* [API Connections](ui-docs/datasets/api-connections.md)
+* <a href="/docs/ui-docs/datasets/api-connections" target="_blank">API Connections</a>
 
 If you have already created connections, then you will see them listed here, along with a **New Connection** button to create new ones, which will again prompt you with the available data source types modal window.
 
