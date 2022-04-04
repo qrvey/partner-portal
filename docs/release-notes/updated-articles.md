@@ -7,7 +7,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
-|<a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>|7.0|Composer| |
+|<a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>|7.0|Composer| April 4, 2022||
 |<a href="/docs/ui-docs/datasets/data_overview" target="_blank">Data Section overview</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections</a>|7.0|Composer| April 4, 2022|
