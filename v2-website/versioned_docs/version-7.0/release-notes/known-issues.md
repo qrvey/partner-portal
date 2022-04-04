@@ -3,8 +3,10 @@ id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
 ---
+
 <div style={{textAlign: "justify"}}>
  
+
 * **QV-14238 - Datasets - Time out errors**: When a user is trying to **Reload** a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
 
 * **QV-13881 - Deleted Datasets remain visible**: When a user deletes an index on a previously created dataset and tries to create a new dataset from that dataset, the application shows the dataset that was deleted.
