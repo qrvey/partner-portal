@@ -1,5 +1,5 @@
 ---
-id: updated-articles
+id: new-articles
 title: Updated Articles
 sidebar_label: Updated Articles
 ---

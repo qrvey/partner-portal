@@ -52,7 +52,8 @@ You can view the first 100 rows of your data by clicking on the **View Source Da
 
 Once the connection is saved, you can click on the **View Data** option to get a partial view of the data. 
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup5.png#thumbnail)
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/navi-bar-new.png#thumbnail) 
+
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup6.png#thumbnail)
 
 
