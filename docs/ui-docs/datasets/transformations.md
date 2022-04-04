@@ -92,6 +92,9 @@ Once a transformation has been selected, the system suggests some test data as t
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation9.png#thumbnail)
 
+>**Note**: Join Output Transformations cannot be tested at the moment. 
+
+
 
 ## Applying Transformations to the Data
 If transformations are added before the data is loaded, they will take effect at the time that you load your data. However, if transformations are added or updated for an existing dataset, **a data reload is required.**
