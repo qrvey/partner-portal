@@ -35,7 +35,7 @@ Tokens are suggested for each name based on the name itself. For example a colum
 Tokens appear in the UI like: <code>{{i18n.myTokenKey}}</code>
 Click in each field to change the “key” part of any token. If a similar token already exists, the system will suggest it and you can select any of the suggested tokens to reuse.
  
-One the **Label Internationalization** has been turned on, and keys have optionally been modified, remember to run (or re-run) the steps in sections 3-6 as described in the <a href="/docs/special-features/internationalization/step-by-step">Internationalization, Step By Step</a> article, to add the new keys to the Translation Spreadsheet, translate their value, and publish them for use at runtime. 
+Once the **Label Internationalization** has been turned on, and keys have optionally been modified, remember to run (or re-run) the steps in sections 3-6 as described in the <a href="/docs/special-features/internationalization/step-by-step">Internationalization, Step By Step</a> article, to add the new keys to the Translation Spreadsheet, translate their value, and publish them for use at runtime. 
  
  
  
