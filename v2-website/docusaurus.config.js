@@ -139,6 +139,10 @@ module.exports = {
               "to": "/docs/get-started/get-started-architecture"
             },
             {
+              "label": "Special Features",
+              "to": "/docs/special-features/internationalization/overview"
+            },
+            {
               "label": "Release Notes",
               "to": "/docs/release-notes/release-last"
             },

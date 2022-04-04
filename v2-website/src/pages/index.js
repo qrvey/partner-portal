@@ -259,6 +259,9 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="docs/special-features/internationalization/overview">Internationalization Overview</a>
+                    <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step</a>
+                    <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets</a>
                  </div>
              </div>
            </div>
