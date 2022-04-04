@@ -58,7 +58,7 @@ The table below provides general information about each property of this widget�
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
->**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by  each other.
+>**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by each other.
 Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
 
 
@@ -69,7 +69,7 @@ Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token
 | add_filter | When set to true, all “add filter” buttons will be visible to allow users to create new filters from the filter modal, the filter panel, and filter interactivity page components. | boolean | true | No
 | edit_chart | Allow authenticated users to edit charts by clicking the “Edit” button in the panels' three-dot menu. | boolean | true | No
 | download_data | Allow users to download the page and panel data in CSV and PDF formats | boolean | true | No
-| edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu.  | boolean | true | No
+| edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu. | boolean | true | No
 | remove_chart | Allow users to remove charts from the page, when in edit mode | boolean | true | No
 | rearrange_chart | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
 
@@ -92,7 +92,7 @@ All of the style properties listed in the following table have to be housed insi
 
 All values are of string type and none are required.
 
-| **Property** | **Values** |  **Target** |
+| **Property** | **Values** | **Target** |
 | --- | --- | --- | 
 | canvasButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
 canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button
@@ -120,8 +120,6 @@ canvasButtonFontColor | All CSS supported values (color names or Hex), '#000000'
 | canvasBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page
 | pageViewButtonBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
 | pageViewButtonIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
-| filterIconBackgroundColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | filter icon
-| filterIconColor | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN'| filter icon
 
 
 
