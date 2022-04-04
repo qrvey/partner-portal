@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-dec-2021
 title: Qrvey 6.5 (LTS)
 sidebar_label: Qrvey 6.5 (LTS)
 ---

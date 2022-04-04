@@ -318,7 +318,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 6.5 (LTS) has been released,{" "}
+                 Version 7.0 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"
