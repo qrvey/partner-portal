@@ -27,7 +27,7 @@ Other Configuration Option - This part of the panel changes from function to fun
     * Reject Record: The whole record will not be skipped if an error happens.
     * Ignore Error: The record remains as-is.
     * Replace Value: The value will be replaced with the entered value in case of an error.
-&gt;**Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
+>**Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-60)
 
@@ -78,7 +78,8 @@ When working with joined Data Sources you will have different workspaces. One fo
 
 Data Source transformations can be used to cleanse, augment, or improve the data and are applied <u>*before*</u> joining the data sources. This results in improved performance, as the changes run on smaller, individual data sources, rather than the larger, joined data.
 
-Join Output Transformations, however, are applied after joining the data. In this workspace, you are able to choose columns from all the Data Sources involved in the join, and either update them or create new columns to be added to the dataset.
+Join Output Transformations, however, are applied after joining the data. In this workspace, you are able to choose columns from all the Data Sources involved in the join, and either update them or create new columns to be added to the dataset. When working on a transformation for the join output, data columns are grouped by their respective data sources to make them easier to identify.
+
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation8.png#thumbnail)
 
@@ -94,7 +95,7 @@ Once a transformation has been selected, the system suggests some test data as t
 
 ## Applying Transformations to the Data
 If transformations are added before the data is loaded, they will take effect at the time that you load your data. However, if transformations are added or updated for an existing dataset, **a data reload is required.**
-&gt;**Note**: If transformations are added or modified, but the data is not reloaded, the transformations will **only apply to future records or loads**. For instance, when a data sync process is initiated after the transformations have been added.
+>**Note**: If transformations are added or modified, but the data is not reloaded, the transformations will **only apply to future records or loads**. For instance, when a data sync process is initiated after the transformations have been added.
 
 
 ## Available Transformation Functions
@@ -249,7 +250,7 @@ Configuring the Array Filter transformation is a three-step process:
 
 Optionally, you can specify the behavior for recording errors. The options are identical here as they are for all other transformation types where this field appears.
 
-&gt;**Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
+>**Note**: The Array Filter transformation only works with arrays of objects. Properties that contain arrays of values will not appear in the Array Path drop-down menu.
 
 #### Example
 
@@ -352,7 +353,7 @@ Follow these steps to configure the Array Select Single Item transformation:
 3. Determine if you want to perform a multi-column sort by adding additional object columns to sort by. This option is **unavailable** for value arrays.
 4. Decide if you want to preserve or replace the existing source array. Select **Create New** and type a name for the new property if you want to preserve the existing source array. The single array object/value that is selected by the specified sorting logic will be written to this new property; otherwise, the source array will be replaced with this object/value.
 
-&gt;**Note**: The default behavior of this transformation is to replace the existing source array with the single object/value selected.
+>**Note**: The default behavior of this transformation is to replace the existing source array with the single object/value selected.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/singlearray1.png#thumbnail-60)
 
@@ -387,7 +388,7 @@ With Formula transformations, you will need to determine the data type of the re
 
 Like all transformations, the results can update an existing column or create a new one. You can also decide what to do in the case of an error.
 
-&gt;**Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
+>**Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation22.png#thumbnail)
 
@@ -396,6 +397,8 @@ Like all transformations, the results can update an existing column or create a 
 If/Else transform can be used when there is a need to create a branch - based on a condition - in the series of transformations. In the following example, an If/Else transform has been used along with two Date Add transforms to calculate the potential delivery date based on the location of the customer who put in an order: Orders shipped to NYC are delivered the next day, while it takes three days from the order date to ship to everywhere else.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation_if.png#thumbnail-60)
+
+>**Note**: When you disable the parent transformation, all of the children transformations appear disabled as well; when the parent transformation is enabled, the children transformations appear enabled too. If a child transformation has been disabled, and then the parent transformation is disabled, the child transformation will remain disabled even when/if you enable the parent transformation again.
 
 
 ### Record Copy
