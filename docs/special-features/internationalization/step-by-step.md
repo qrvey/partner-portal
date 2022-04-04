@@ -127,7 +127,7 @@ The Translation Spreadsheet has two tabs by default. The staticText tab is for w
 * **Key** is the unique identifier that the product uses for the term or phrase. Many times it further helps with locating the phrase. **The key values should not be changed**.
 * **Original source** is the default English term or phrase that is used in the product. This value is also used as the fallback when no translation exists for the selected language.
 
-Additional columns can be added for each language that has to be supported by the product. Each translation column is named “translation_<language-code>”. For example you can add a translation_es column and translate each term that is entered in the original source column, to Spanish. See <a href="https://en.wikipedia.org/wiki/Language_localisation" target="_blank">language sub-code and optional national sub-code</a> to learn more about language codes.
+Additional columns can be added for each language that has to be supported by the product. Each translation column is named "translation_&lt; language-code &gt;". For example you can add a translation_es column and translate each term that is entered in the original source column, to Spanish. See <a href="https://en.wikipedia.org/wiki/Language_localisation" target="_blank">language sub-code and optional national sub-code</a> to learn more about language codes.
 
 A sample row on the static text tab of the spreadsheet may look something like this:
 
@@ -146,7 +146,7 @@ Once the keys have been added to the spreadsheet by following the import process
 <li>2. Open each of the tabs. See that the tabs are loaded with keys.</li> 
 <li>3. If they don’t already exist, create a column for each language desired.</li></ul>
 <ul style="list-style: none; margin-left:20px;">
-<li>a. Each translation column is named “translation_<language-code>”.</li>
+<li>a. Each translation column is named "translation_&lt; language-code &gt;".</li>
 <li>b. See <a href="https://en.wikipedia.org/wiki/Language_localisation" target="_blank">language sub-code and optional national sub-code</a> to learn more about language codes.</li></ul>
 <ul style="list-style: none; margin-left:none;">
 <li>4. Enter a translation value for blank cells under the language columns.</li></ul>
