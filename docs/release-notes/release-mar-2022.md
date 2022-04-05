@@ -7,7 +7,7 @@ sidebar_label: Qrvey 7.0
 
 
 >**Note:** If you wish to upgrade to this version, please contact the CX team if you have a *Managed Infrastructure* contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.0.json" target="_blank">this upgrade link</a> and follow the directions in the <a href="/docs/get-started/upgrading-new-version" target="_blank">Upgrading to a New Version</a> article to upgrade your instance(s).  
-<br>
+<br/>
 
 ## New Features & Enhancements
 
@@ -18,13 +18,13 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 
 ### Data Preparation
 
-* <strong><a href="/docs/ui-docs/datasets/transformations#ifelse" target="_blank">QV-13279 - Transformations - If/Else More Comparison Operators</strong></a>: Various new comparison operators have been added for the If/Else transformation. 
+* <strong><a href="/docs/ui-docs/datasets/transformations#ifelse" target="_blank">QV-13279 - Transformations - If/Else More Comparison Operators</a></strong>: Various new comparison operators have been added for the If/Else transformation. 
 
 * <strong>QV-14647 - Transformations - Token/Column list filtered by Data Type</strong>: Tokens and Columns listed in the different input dropdowns are now filtered depending on each transformation for better guidance when adding new transformations. 
 
  * <a href="/docs/video-training/release/version-7.0#disabling-transformations-without-deleting" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/datasets/transformations#adding-transformations" target="_blank">QV-13067 - Disable Transformations without Deleting them</a></strong>: You can now disable a transformation, without deleting it, so that it can be enabled when needed later.
 
-* <strong><a href="/docs/ui-docs/datasets/datasets#choosing-the-dataset-columns" target="_blank">QV-13133 - Hiding Columns from Analysis</strong></a>: You can now include a column in a dataset, but hide it from the analytic areas of the product.
+* <strong><a href="/docs/ui-docs/datasets/datasets#choosing-the-dataset-columns" target="_blank">QV-13133 - Hiding Columns from Analysis</a></strong>: You can now include a column in a dataset, but hide it from the analytic areas of the product.
 
 * <strong><a href="/docs/ui-docs/datasets/connectors" target="_blank">QV-14969 - Connections - Query Record Count</a></strong>: You can see how many records a data source has before using it for a dataset. 
 
@@ -39,13 +39,13 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 * <strong><a href="/docs/ui-docs/dataviews/chart-types#formatting-in-tables" target="_blank">AN-14151 - Conditional Formatting For Row Or Column</a></strong>: Conditional formatting for table charts has been expanded so it can be applied to the entire row or one cell. 
 Also, you can apply conditional formatting to a column other than the one that the condition was set on.
 
- * <a href="/docs/video-training/release/version-7.0#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/filtering-data/working-with-filters#cascading-filters" target="_blank">AT-9096 - Cascading Filters</strong></a>: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
+ * <a href="/docs/video-training/release/version-7.0#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/filtering-data/working-with-filters#cascading-filters" target="_blank">AT-9096 - Cascading Filters</a></strong>: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
 
 * <strong>AT-10562 - Additional Date and Numeric Operators in Input Box</strong>: The list of operators for the Input Box filter has been expanded for Date or Numeric data.
 
 * <strong>AT-10733 - Web Form Data Types Support for Input Box</strong>: You can now use complex data types in web forms with the Input Box filter component.
 
-* <strong><a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">AT-10013 - Subscriptions - CSV Summary for Charts Support</strong></a>: You can now select CSV summary format when subscribing for chart downloads. 
+* <strong><a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">AT-10013 - Subscriptions - CSV Summary for Charts Support</a></strong>: You can now select CSV summary format when subscribing for chart downloads. 
 
 * <strong>AT-9486 - Subscriptions - CSV Raw for Pages and Charts Support</strong>: You can now select CSV Raw format when subscribing for pages and charts downloads.
 
