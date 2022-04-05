@@ -124,9 +124,9 @@ If your data contains address information, you can choose to create a Geolocatio
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/12datasets.png#thumbnail-60)
 
-Geolocation groups require a column to be identified as country or zip code, as these allow for a point to be uniquely marked on a map.
-Assign a name to your group and select either a country or zip code column to begin. At this point, you have the option to choose additional columns as Street Line, City, State, Zip Code or Country.
-Defining, or changing Geolocation Groups will *not* require a data reload.
+Geolocation groups require a column to be identified as *country* or *zip code*, as these allow for a point to be uniquely marked on a map.
+Assign a name to your group and select either a *country* or *zip code* column to begin. At this point, you have the option to choose additional columns such as *Street Line, City, State, Zip Code* or *Country*.
+Defining, or changing Geolocation Groups will **not** require a data reload.
 
 ### Transformations
 Applying Transformations to the dataset is probably the most powerful feature in the dataset design.
@@ -134,7 +134,7 @@ A *Transformation provides the means to change any piece of data __before__ load
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/13datasets.png#thumbnail-20)
 
-To access the Transformations screen click on the Transformation button on the top right corner of the columns list.
+To access the Transformations screen click on the Transformation button in the top right corner of the columns list.
 Transformations are discussed in detail in a <a href="/docs/ui-docs/datasets/transformations/" target="_blank">dedicated article</a>.
 Adding or changing Transformations will require a reload of the data if it has already been loaded.
 
