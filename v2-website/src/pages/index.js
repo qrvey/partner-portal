@@ -276,8 +276,6 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
-                    <a href="docs/get-started/glossary">Glossary of Common Terms</a>
                     <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>
                     <a href="/docs/ui-docs/datasets/data_overview" target="_blank">Data Section overview</a>
                     <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>
@@ -288,6 +286,8 @@
                     <a href="/docs/ui-docs/dataviews/chart-types" target="_blank">Chart Types</a>
                     <a href="/docs/ui-docs/dataviews/chart-builder" target="_blank">Chart Builder</a>
                     <a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS</a>
+                    <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
+                    <a href="docs/get-started/glossary">Glossary of Common Terms</a>
                  </div>
              </div>
            </div>
