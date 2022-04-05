@@ -66,15 +66,15 @@ There are two checkboxes next to each column and by default they’re all checke
 * The first one on the left reads the column and stores it in the dataset
 * The second one on the right allows the column to be used for visualizations.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose1.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose1.png#thumbnail)
 
 When both boxes are checked, the column can be used for visualizations, Transformations, and Geolocation.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose2.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose2.png#thumbnail)
 
 When unchecking the second checkbox, the *orderNumber* can’t be seen in Charts, Filters, Formulas, Buckets or Summary/Tabular Views. The visualization format can’t be changed. However, even if the column is not visible in visualization, you can still turn on/off the *Unique ID* and enable/disable *Record Level Security* settings; also you can use them for Transformations. Click on **Apply Changes**, but there’s no need to Reload the dataset.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose3.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose3.png#thumbnail)
 
 When unchecking the first checkbox, the second one is automatically unchecked as well. The columns created by transformations don’t get deleted, but you can’t turn on/off a Unique ID or enable/disable Record Level Security. 
 If a chart has already been created using the column before it got unchecked, there will be a message in the chart notifying you that a column is missing. You need to **Apply Changes** and **Reload** the dataset for the change to be effective.
