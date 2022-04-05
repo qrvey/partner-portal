@@ -25,7 +25,7 @@ If the selected connection is to a database, you get to choose a table or view f
   
 Once the data source is selected you will land in the *Design* section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-panel.png#thumbnail)
 
 
 1. All new datasets are given the name of the connection + {table/view} or Custom Query. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
