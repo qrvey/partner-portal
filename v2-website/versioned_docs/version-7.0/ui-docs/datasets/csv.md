@@ -32,15 +32,12 @@ To begin, select **Data** from the menu on the left.
 
 Connections can be created by clicking the **Create New Connection** link from the *New Dataset* dialog, or from the *Connections* section. 
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup2.png#thumbnail)
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup2.png#thumbnail-60)
 
 
 Regardless of the method you use, select **File Upload**.
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup3.png#thumbnail)
-
-
-
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/csv-connect.png#thumbnail-60)
 
 You will then be brought to the data upload screen where you can choose the desired file type and then select any CSV, JSON/ndJSON, or gzip file from your desktop or simply drag it into the window. Give your connection a name that you can identify it by.
 
@@ -48,13 +45,13 @@ You can view the first 100 rows of your data by clicking on the **View Source Da
 
 >**Important Note**: You can edit this sample to actually modify the structure of the dataset that you later upload from this connection. 
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup4.png#thumbnail)
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup4.png#thumbnail-60)
 
 Once the connection is saved, you can click on the **View Data** option to get a partial view of the data. 
 
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/navi-bar-new.png#thumbnail) 
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup6.png#thumbnail)
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup6.png#thumbnail-60)
 
 
 ## Using Amazon S3
@@ -82,9 +79,9 @@ Once a S3 connection has been established it can be used for creating datasets, 
 ## Using File Data
 Once a file connection exists you can create a dataset from your file upload to use your data. Go to the *Datasets* tab, click on **New Dataset**, and select your file upload connection. 
 
-![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup7.png#thumbnail)
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup7.png#thumbnail-60)
 
-For more information on creating datasets and working with your file upload data, see the article on <a href="/docs/ui-docs/datasets/datasets/">Datasets</a>. You can also read more about working with hierarchical data from a JSON upload in the <a href="/docs/ui-docs/datasets/hierarchical-data/">dedicated article</a>. 
+For more information on creating datasets and working with your file upload data, see the article on <a href="/docs/ui-docs/datasets/datasets/" target="_blank">Datasets</a>. You can also read more about working with hierarchical data from a JSON upload in the <a href="/docs/ui-docs/datasets/hierarchical-data/">dedicated article</a>. 
 
 
 

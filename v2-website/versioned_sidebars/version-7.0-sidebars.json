@@ -907,6 +907,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-7.0/video-training/release/version-7.0"
+        },
+        {
+          "type": "doc",
           "id": "version-7.0/video-training/release/version-6.5"
         },
         {

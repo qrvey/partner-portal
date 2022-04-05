@@ -5,6 +5,7 @@ sidebar_label: Overview
 ---
 
 <div style={{textAlign: "justify"}}>
+ 
 
 Qrvey platform supports internationalization and localization for end users in a comprehensive manner. Multi-lingual support is offered for both “static” and “dynamic” text, as well as formatting of numbers and dates based on regions and cultures.
  
