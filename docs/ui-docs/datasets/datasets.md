@@ -24,9 +24,23 @@ If the selected connection is to a database, you get to choose a table or view f
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/table-query.png#thumbnail-60)
   
 Once the data source is selected you will land in the *Design* section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data.
-All new datasets are given the default name of *Untitled Dataset*. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/.png#thumbnail)
+
+
+1. All new datasets are given the name of the connection + {table/view} or Custom Query. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
+2. Here is where you can see the Data Sources of your Dataset, also you can see, add and edit <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>.
+3. Read the column from the source and store it in the Dataset.
+4. Allow the column to be used in building visualizations.
+5. <strong>Column Type</strong> - view and change the type of the data in the column (Text/Label, Numeric, Date)
+6. <strong>Input Format</strong> - if you change your data type to Date, you can choose its input (from the source) format here.
+7. <strong>Visualization Format</strong> - set the visualization format for Date and Numeric data.
+8. <strong>Transformations</strong>- add and edit <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>.
+9. <strong>Geolocation</strong> - add and edit <a href="/docs/ui-docs/datasets/datasets#setting-up-geolocation-groups" target="_blank">Geolocation</a>. 
+10. *Load Dataset/Reload Dataset/Apply Changes/Discard Changes*
+11. Three-dot menu where you can <a href="/docs/next/ui-docs/datasets/datasets#enabling-dataset-sharing" target="_blank">Share Data with Everyone</a> (or Unshare Data), mark the dataset as favorite, or delete it.  
+
+
 
 At this point, you can load the data and begin using it to create charts, pages or reports, or modify and shape the dataset based on your needs, before loading it with data.
 
@@ -47,8 +61,27 @@ Note that this option is available only for database data sources.
 Replacing the data source by using any of these options may result in a change in the metadata and will require a reload of the data if it had been loaded before.
 
 ### Choosing The Dataset Columns
-You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the dataset.
-Adding or removing columns to/from a dataset will require a reload of the data if it had already been loaded.
+You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the dataset or the visualizations.
+There are two checkboxes next to each column and by default they’re all checked:
+* The first one on the left reads the column and stores it in the dataset
+* The second one on the right allows the column to be used for visualizations.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose1.png#thumbnail-40)
+
+When both boxes are checked, the column can be used for visualizations, Transformations, and Geolocation.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose2.png#thumbnail-40)
+
+When unchecking the second checkbox, the *orderNumber* can’t be seen in Charts, Filters, Formulas, Buckets or Summary/Tabular Views. The visualization format can’t be changed. However, even if the column is not visible in visualization, you can still turn on/off the *Unique ID* and enable/disable *Record Level Security* settings; also you can use them for Transformations. Click on **Apply Changes**, but there’s no need to Reload the dataset.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose3.png#thumbnail-40)
+
+When unchecking the first checkbox, the second one is automatically unchecked as well. The columns created by transformations don’t get deleted, but you can’t turn on/off a Unique ID or enable/disable Record Level Security. 
+If a chart has already been created using the column before it got unchecked, there will be a message in the chart notifying you that a column is missing. You need to **Apply Changes** and **Reload** the dataset for the change to be effective.
+
+
+>**Note**: If a Geolocation has already been applied to columns, the columns are blocked and unchecking the boxes next to them is disabled. 
+
 
 ### Giving Columns Friendly Names
 Columns can be aliased to a friendlier name if needed. Simply click in the box where the column name is shown and change it to anything else.
