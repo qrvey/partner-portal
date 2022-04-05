@@ -46,7 +46,7 @@ If you have already created connections, then you will see them listed here, alo
 
 To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Note, that editing connections can potentially lead to errors with any data syncs configured for datasets that rely on those connections. Please verify that the connection is successful after making any changes.
 
-When you click on **View Source Data** in the connection card, a preview of the data that’s available for loading will appear. You can see the first 100 records and the number of total records displayed above the table. 
+An option to preview data appears on cards for which the connection is established directly to a data source, such as a file, table/view, or query. When you click on **View Source Data** in the connection card, a preview of the data that’s available for loading will appear. You can see the first 100 records and the number of total records for custom queries displayed above the table. 
 
 
 ![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect4.png#thumbnail-80)
