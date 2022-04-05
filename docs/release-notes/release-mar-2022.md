@@ -12,7 +12,6 @@ sidebar_label: Qrvey 7.0
 ## New Features & Enhancements
 
 ### Internationalization
-<a href="VIDEO" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /> <br></a>
 
 Qrvey introduces Internationalization in this version. This is a major feature that spans across all areas of the product. Qrvey supports the internationalization of static text (UI elements like labels), as well as some dynamic text (dataset and column names) in its first official release of the feature. Additionally, date and number formatting can be localized. You can learn more about the new internationalization feature and how to configure it <a href="/docs/special-features/internationalization/overview" target="_blank">here</a>. 
 
@@ -23,7 +22,7 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 
 * <strong>QV-14647 - Transformations - Token/Column list filtered by Data Type</strong>: Tokens and Columns listed in the different input dropdowns are now filtered depending on each transformation for better guidance when adding new transformations. 
 
- * <a href="VIDEO" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/datasets/transformations#adding-transformations" target="_blank">QV-13067 - Disable Transformations without Deleting them</a></strong>: You can now disable a transformation, without deleting it, so that it can be enabled when needed later.
+ * <a href="/docs/video-training/release/version-7.0#disabling-transformations-without-deleting" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/datasets/transformations#adding-transformations" target="_blank">QV-13067 - Disable Transformations without Deleting them</a></strong>: You can now disable a transformation, without deleting it, so that it can be enabled when needed later.
 
 * <strong><a href="/docs/ui-docs/datasets/datasets#choosing-the-dataset-columns" target="_blank">QV-13133 - Hiding Columns from Analysis</strong></a>: You can now include a column in a dataset, but hide it from the analytic areas of the product.
 
@@ -40,7 +39,7 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 * <strong><a href="/docs/ui-docs/dataviews/chart-types#formatting-in-tables" target="_blank">AN-14151 - Conditional Formatting For Row Or Column</a></strong>: Conditional formatting for table charts has been expanded so it can be applied to the entire row or one cell. 
 Also, you can apply conditional formatting to a column other than the one that the condition was set on.
 
- * <a href="VIDEO" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/filtering-data/working-with-filters#cascading-filters" target="_blank">AT-9096 - Cascading Filters</strong></a>: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
+ * <a href="/docs/video-training/release/version-7.0#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/filtering-data/working-with-filters/" /><strong><a href="/docs/ui-docs/filtering-data/working-with-filters#cascading-filters" target="_blank">AT-9096 - Cascading Filters</strong></a>: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
 
 * <strong>AT-10562 - Additional Date and Numeric Operators in Input Box</strong>: The list of operators for the Input Box filter has been expanded for Date or Numeric data.
 
