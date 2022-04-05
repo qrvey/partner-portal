@@ -1,7 +1,7 @@
 ---
 id: new-articles
-title: Updated Articles
-sidebar_label: Updated Articles
+title: New Articles
+sidebar_label: New Articles
 ---
 <div style={{textAlign: "justify"}}>
  
