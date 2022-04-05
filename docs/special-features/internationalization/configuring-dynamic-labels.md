@@ -5,9 +5,7 @@ sidebar_label: Configuring Dynamic Labels For Datasets
 ---
 <div style={{textAlign: "justify"}}>
  
-
-# Introduction
-
+## Introduction
 Qrvey supports a process for displaying text in any number of languages.
  
 There are two types of text:
@@ -32,26 +30,12 @@ On the dataset design screen select the 3-dot popup menu from the top-right side
  
  
  
-Tokens are suggested for each name based on the name itself. For example a column named “age” will be assigned the token 
-
-```
-
-{{i18n.age}}
-
-```
-. In order to view and optionally modify the assigned token, click the toggle button on the top-right corner of the screen to the <b>{ }</b> position. This changes the displayed value to show the assigned tokens.
+Tokens are suggested for each name based on the name itself. For example a column named “age” will be assigned the token {{i18n.age}}. In order to view and optionally modify the assigned token, click the toggle button on the top-right corner of the screen to the <b>{ }</b> position. This changes the displayed value to show the assigned tokens.
  
-Tokens appear in the UI like: 
-
-```
-
-{{i18n.myTokenKey}}
-
-```
-
+Tokens appear in the UI like: {{i18n.myTokenKey}}
 Click in each field to change the “key” part of any token. If a similar token already exists, the system will suggest it and you can select any of the suggested tokens to reuse.
  
-Once the **Label Internationalization** has been turned on, and keys have optionally been modified, remember to run (or re-run) the steps in sections 3-6 as described in the <a href="/docs/special-features/internationalization/step-by-step">Internationalization, Step By Step</a> article, to add the new keys to the Translation Spreadsheet, translate their value, and publish them for use at runtime. 
+Once the **Label Internationalization** has been turned on, keys have optionally been modified, and changes to the dataset have been applied, remember to run (or re-run) the steps in sections 3-6 as described in the <a href="/docs/special-features/internationalization/step-by-step">Internationalization, Step By Step</a> article, to add the new keys to the Translation Spreadsheet, translate their value, and publish them for use at runtime. 
  
  
  
