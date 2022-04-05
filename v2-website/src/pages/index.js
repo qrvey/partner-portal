@@ -180,9 +180,9 @@
                  </div>
                  <div className="listrole-links">
                     <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
-                    <a href="docs/get-started/system-components">System Components</a>
                     <a href="docs/get-started/authentication">Authentication</a>
                     <a href="docs/embedding/api/api-intro">API Start Guide</a>
+                    <a href="https://tinyurl.com/atuznk6u">API Reference</a>
                     <a href="docs/embedding/widgets/widget-intro">Embedding Widgets Quick Start</a>
                  </div>
                  </TabPanel>
@@ -259,9 +259,9 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="docs/special-features/internationalization/overview">Internationalization Overview</a>
-                    <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step</a>
-                    <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets</a>
+             <a href="docs/special-features/internationalization/overview">Internationalization Overview <span>April 4, 2022</span></a>
+                    <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step <span>April 4, 2022</span></a>
+                    <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets <span>April 4, 2022</span></a>
                  </div>
              </div>
            </div>
@@ -276,18 +276,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>
-                    <a href="/docs/ui-docs/datasets/data_overview" target="_blank">Data Section overview</a>
-                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>
-                    <a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections</a>
-                    <a href="/docs/ui-docs/datasets/column-links" target="_blank">Automatic Column Links</a>
-                    <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports</a>
-                    <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>
-                    <a href="/docs/ui-docs/dataviews/chart-types" target="_blank">Chart Types</a>
-                    <a href="/docs/ui-docs/dataviews/chart-builder" target="_blank">Chart Builder</a>
-                    <a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS</a>
-                    <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
-                    <a href="docs/get-started/glossary">Glossary of Common Terms</a>
+                    <a href="/docs/aws/connect-to-instance" target="_blank">Working With Interactive Filters <span>April 4, 2022</span></a>
+                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets <span>April 4, 2022</span></a>
+                    <a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS <span>April 4, 2022</span></a>
+                    <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports <span>April 4, 2022</span></a>
+                    <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins <span>April 4, 2022</span></a>
                  </div>
              </div>
            </div>
