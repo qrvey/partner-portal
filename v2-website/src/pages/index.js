@@ -259,6 +259,9 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="docs/special-features/internationalization/overview">Internationalization Overview</a>
+                    <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step</a>
+                    <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets</a>
                  </div>
              </div>
            </div>
@@ -273,6 +276,16 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>
+                    <a href="/docs/ui-docs/datasets/data_overview" target="_blank">Data Section overview</a>
+                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>
+                    <a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections</a>
+                    <a href="/docs/ui-docs/datasets/column-links" target="_blank">Automatic Column Links</a>
+                    <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports</a>
+                    <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>
+                    <a href="/docs/ui-docs/dataviews/chart-types" target="_blank">Chart Types</a>
+                    <a href="/docs/ui-docs/dataviews/chart-builder" target="_blank">Chart Builder</a>
+                    <a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS</a>
                     <a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>
                     <a href="docs/get-started/glossary">Glossary of Common Terms</a>
                  </div>
@@ -305,7 +318,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 6.5 (LTS) has been released,{" "}
+                 Version 7.0 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"

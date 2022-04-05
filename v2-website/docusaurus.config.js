@@ -58,6 +58,12 @@ module.exports = {
           "showLastUpdateTime": true,
           "path": "../docs",
           sidebarPath: require.resolve('../v2-website/sidebars.json'),
+          "versions": {
+            '6.5': {
+              "label": '6.5 and earlier',
+              "path": 'version-6.5',
+            },
+          },
         },
         "blog": {
           "path": "blog"
@@ -95,6 +101,11 @@ module.exports = {
     ],
   ],
   "themeConfig": {
+    "colorMode": {
+      "defaultMode": 'light',
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false,
+    },
     "navbar": {
       "title": "",
       "logo": {
@@ -102,6 +113,11 @@ module.exports = {
         "href": "/"
       },
       "items": [
+        {
+          "type": 'docsVersionDropdown',
+          "position": 'right',
+          "dropdownActiveClassDisabled": true,
+        },
         {
           "label": "Docs",
           "href": "docs",
@@ -121,6 +137,10 @@ module.exports = {
             {
               "label": "Developer Docs",
               "to": "/docs/get-started/get-started-architecture"
+            },
+            {
+              "label": "Special Features",
+              "to": "/docs/special-features/internationalization/overview"
             },
             {
               "label": "Release Notes",

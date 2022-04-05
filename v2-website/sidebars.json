@@ -210,10 +210,6 @@
         },
         {
           "type": "doc",
-          "id": "ui-docs/datasets/datalinks"
-        },
-        {
-          "type": "doc",
           "id": "ui-docs/datasets/hierarchical-data"
         },
         {
@@ -305,20 +301,6 @@
         {
           "type": "doc",
           "id": "ui-docs/filtering-data/working-with-filters"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "End User Personalization",
-      "items": [
-        {
-          "type": "doc",
-          "id": "ui-docs/end-user-personalization/overview"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/eup-dashboards"
         }
       ]
     },
@@ -568,6 +550,10 @@
         {
           "type": "doc",
           "id": "release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-dec-2021"
         },
         {
           "type": "doc",
@@ -885,6 +871,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "video-training/release/version-7.0"
+        },
+        {
+          "type": "doc",
           "id": "video-training/release/version-6.5"
         },
         {
@@ -942,6 +932,40 @@
         {
           "type": "doc",
           "id": "video-training/release/version-5.2"
+        }
+      ]
+    }
+  ],
+  "special-features": [
+    {
+      "type": "category",
+      "label": "Internationalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "special-features/internationalization/overview"
+        },
+        {
+          "type": "doc",
+          "id":  "special-features/internationalization/step-by-step"
+        },
+        {
+          "type": "doc",
+          "id": "special-features/internationalization/configure-dynamic-labels"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "End User Personalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/end-user-personalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/eup-dashboards"
         }
       ]
     }
