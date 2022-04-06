@@ -322,21 +322,6 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "End User Personalization",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-6.5/ui-docs/end-user-personalization/overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.5/ui-docs/eup-dashboards"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
       "label": "Subscriptions",
       "items": [
         {
@@ -979,6 +964,23 @@
         {
           "type": "doc",
           "id": "version-6.5/video-training/release/version-5.2"
+        }
+      ]
+    }
+  ],
+  "version-6.5/special-features": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "End User Personalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/end-user-personalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/eup-dashboards"
         }
       ]
     }
