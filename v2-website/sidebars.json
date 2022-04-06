@@ -939,6 +939,20 @@
   "special-features": [
     {
       "type": "category",
+      "label": "End User Personalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/end-user-personalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/eup-dashboards"
+        }
+      ]
+    },
+    {
+      "type": "category",
       "label": "Internationalization",
       "items": [
         {
@@ -952,20 +966,6 @@
         {
           "type": "doc",
           "id": "special-features/internationalization/configure-dynamic-labels"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "End User Personalization",
-      "items": [
-        {
-          "type": "doc",
-          "id": "ui-docs/end-user-personalization/overview"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/eup-dashboards"
         }
       ]
     }

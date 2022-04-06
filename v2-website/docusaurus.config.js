@@ -140,7 +140,7 @@ module.exports = {
             },
             {
               "label": "Special Features",
-              "to": "/docs/special-features/internationalization/overview"
+              "to": "/docs/ui-docs/end-user-personalization/overview"
             },
             {
               "label": "Release Notes",
