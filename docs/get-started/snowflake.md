@@ -129,8 +129,13 @@ DESC INTEGRATION QrveyExportToS3_QRVEY_DEPLOYMENT;
 ```
 </li></ul>
 <ul style="list-style: none; margin-left:20px;">
-<li>f. From the query response note the values for <br><b>STORAGE_AWS_IAM_USER_ARN<br>
-STORAGE_AWS_EXTERNAL_ID</b></li>
+<li>f. From the query response note the values for 
+
+```
+STORAGE_AWS_IAM_USER_ARN
+STORAGE_AWS_EXTERNAL_ID
+```
+</li>
 <li>g. Return to the IAM console, and open the role created above.</li>
 <li>h. Click the <b>Trust Relationship</b> tab.</li>
 <li>i. Click <b>Edit</b>.</li>
@@ -157,7 +162,11 @@ STORAGE_AWS_EXTERNAL_ID</b></li>
 }
 ```
 <li>k. Update the Snowflake user account to include the KMS key created above. <br>
-ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'</li></ul>
+
+```
+ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
+```
+</li></ul>
 
 5. Create a new Secret that points to the Snowflake cluster.
 <ul style="list-style: none; margin-left:20px;">
@@ -165,8 +174,7 @@ ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'</li></ul>
 <li>b. Create a new Secret.</li>
 <li>c. Select <b>Other type of secret</b>.</li>
 <li>d. Select the <b>Plaintext</b> tab.</li>
-<li>e. Set the key/value pairs with the following example.</li>
-<li>f. Specify the Snowflake user, password, account, the KMS ARN, and the storageIntegration.</li>
+<li>e. Set the key/value pairs with the following example. Specify the Snowflake user, password, account, the KMS ARN, and the storageIntegration.</li>
 
 ```
 {
