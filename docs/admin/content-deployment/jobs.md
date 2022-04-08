@@ -42,7 +42,17 @@ Finally, you can review the values of all tokens that are set for each user by c
 
 You can add more blocks and repeat this process if you want to deploy multiple definitions or choose different destination servers for the deployment. 
 
-Once you are satisfied with your Job definition, you can choose to run it right away, by clicking on the **Deploy** button on the top right corner of the page or do that at a later time. Note that a Deployment Job cannot be modified once it’s been deployed. 
+Once you are satisfied with your Job definition, you can choose to run it right away, by clicking on the **Deploy** button on the top right corner of the page or do that at a later time. When the Deploy button is clicked, the product suggests two options to handle failures:
+* You can choose to skip the installation for the user that the error happened to and continue the process for other users, if any. Or,
+* You can continue with the deployment, keeping the broken or faulty assets that were deployed.
+
+An example for when this might happen would be a case where the credentials provided for a database connection are wrong. The connection cannot be established and an internal error happens. If you keep the broken connection and keep installing all of the its dependencies, aka the datasets that rely on it, you can later go to the deployed app and correct the credentials and load the datasets, thereby easily fixing the error manually.  
+
+![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/deploy.png#thumbnail-60)
+
+
+Note that a Deployment Job cannot be modified once it’s been deployed. 
+
 
 >**Note**: You may continue your work in other parts of the product while a Job is running.
 
