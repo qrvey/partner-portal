@@ -259,8 +259,8 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             |<a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections <span>April 8, 2022</span></a>
-|<a href="/docs/get-started/snowflake-connections" target="_blank">Configuring AWS and Qrvey for Snowflake Connections <span>April 8, 2022</span></a>
+             <a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections <span>April 8, 2022</span></a>
+             <a href="/docs/get-started/snowflake-connections" target="_blank">Configuring AWS and Qrvey for Snowflake Connections <span>April 8, 2022</span></a>
              <a href="docs/special-features/internationalization/overview">Internationalization Overview <span>April 4, 2022</span></a>
                     <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step <span>April 4, 2022</span></a>
                     <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets <span>April 4, 2022</span></a>
@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="/docs/aws/connect-to-instance" target="_blank">Working With Interactive Filters <span>April 4, 2022</span></a>
+                    <a href="/docs/admin/admin-managing-users" target="_blank">Admin User Management <span>April 8, 2022</span></a>
+                    <a href="/docs/admin/content-deployment/jobs" target="_blank">Deployment Jobs <span>April 8, 2022</span></a>
                     <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets <span>April 4, 2022</span></a>
-                    <a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS <span>April 4, 2022</span></a>
+                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview <span>April 4, 2022</span></a>
                     <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports <span>April 4, 2022</span></a>
-                    <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins <span>April 4, 2022</span></a>
                  </div>
              </div>
            </div>
