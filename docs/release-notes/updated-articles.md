@@ -7,6 +7,8 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|<a href="/docs/admin/admin-managing-users" target="_blank">Admin User Management</a>|7.0|Admin|April 8, 2022|
+|<a href="/docs/admin/content-deployment/jobs" target="_blank">Deployment Jobs</a>|7.0|Admin| April 8, 2022|
 |<a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets</a>|7.0|Composer| April 4, 2022||
 |<a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports</a>|7.0|Composer| April 4, 2022|
