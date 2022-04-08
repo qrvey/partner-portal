@@ -19,39 +19,27 @@ Inside the Admin Center Application, there are some sections related to the admi
 
 ##  User Management
 
-![1admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/1admin.png#thumbnail) 
+![admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/manage-user.png#thumbnail) 
 
-In this Widget, the Administrators can manage their “Creator” users by granting them access to the Qrvey Composer and setting up authentication methods for them. By default, Qrvey Authentication is available; the Administrator can manually add new users or choose to allow Creators to sign up through the composer signup page. This, along with other options for the login page, can be customized by Administrators in the Onboarding Tab of General Settings in the Customization section. 
+In this section, the administrators can create and manage the platform’s  user accounts,  assign their roles and permissions to various areas of the product,  and set up authentication methods for them. By default, Qrvey Authentication is available; the administrator can manually add new users or choose to allow Creators to sign up through the Qrvey Composer’s signup page. This, along with other options for the login page, can be customized by administrators in the Onboarding Tab of General Settings in the Customization section. 
 
 Alternatively, SSO methods can be enabled in the Authentication Tab. Currently, OpenID (OpenID Connect based on OAuth 2.0 protocol) is supported. More SSO compliant protocols will be added later.
 
-In the Data Security Tab, Administrators can enable or disable global controls to filter data in Analytic Applications based on user-defined permissions, and at what level of security.
+In the Data Security Tab, Administrators can enable or disable global controls to filter data in the analytic widgets of Qrvey based on the logged-in user’s assigned security permissions.
 
 
 ## Users
 
-![2admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/2admin.png#thumbnail-60)
+![admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/new-user.png#thumbnail-60) 
 
-When adding a Creator user, Administrators are required to enter the user's First Name, Last Name, Email and to assign them a Password. Administrators will need to inform each Creators user about their credentials, so they can use these credentials to access Qrvey Composer. Creator accounts can be edited or deleted at any time.
-
-![3admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/3admin.png#thumbnail)
-
-When editing a Creator user, the Administrator can change the user’s First Name, Last Name and Email. They can also reset the user's password. Again, they will need to inform the Creator user about their new credentials to access Qrvey Composer.
-
-![4admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/4admin.png#thumbnail-60) 
-  
-![5admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/5admin.png#thumbnail-60) 
-
-When deleting a Creator a user or a bunch of users, the system will show a confirmation modal. If the Administrator is sure about deleting those users, they can click the Delete or the Cancel button if they have changed their mind.
-
-![6admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/6admin.png#thumbnail) 
+When adding a new user, administrators are required to enter the user's first and last name, email address, and password. They can also assign any number of roles to the user at this time, or later. Created users will receive an email with their credentials to access Qrvey Composer. User accounts can be edited or deleted at any time.
 
 
 ## Authentication
 
-![7admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/7admin.png#thumbnail)
+![admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/7admin.png#thumbnail)
 
-In this Tab, Administrators can enable and set up authentication methods for: 
+In this tab, administrators can enable and set up authentication methods for: 
 
 1. Creators to log in and even sign up to Qrvey Composer 
 2. End-users to log in and even sign up to End-User App (Web Page Applications)
