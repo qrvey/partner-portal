@@ -537,7 +537,7 @@ To create calculations across columns on the aggregated values while creating or
 ##### Allow Pagination and Max Rows
 This option is only available for simple (ungrouped) tables and is not selected by default. As a result the number of displayed rows has to be limited to avoid performance implications. Tables can display an unlimited number of rows by turning on the **Allow Pagination** option. With this action, the **Max Rows** option changes to **Records per page** to allow you to decide how many rows should be displayed for each page in the table.
 
-![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/page_max.png#thumbnail) 
+![chart_types](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/Chart+Types/pagination.png#thumbnail) 
 
 
 >**Note**: If the table is grouped, the pagination option will be hidden and the **Max Rows** option is replaced with **Max Groups**, which limits the maximum number of groups fetched, for the same performance reasons.

@@ -66,6 +66,14 @@
         {
           "type": "doc",
           "id": "version-6.5/aws/connect-to-instance"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/get-started/redshift-connections"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/get-started/snowflake-connections"
         }
       ]
     },
