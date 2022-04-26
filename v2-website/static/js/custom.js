@@ -34,6 +34,7 @@ let currentPageInfo = window.location.href;
       if (currentPageInfo !== window.location.href)
       {
           // page has changed, set new page as 'current'
+          setTimeout(() => {
           currentPageInfo = window.location.href;
           CURRENT_PAGE = window.location.pathname;
           setCurrentPageInfo();
@@ -48,8 +49,9 @@ let currentPageInfo = window.location.href;
             console.log("here");
             fetchPopularArticles();
           }
-      }
-  }, 1000);
+        }, 5000);
+    }
+    }, 1000);
 
 function Activity(userName, contentUrl, title, contentType) {
     this.userName = userName;
