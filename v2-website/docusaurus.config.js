@@ -59,6 +59,10 @@ module.exports = {
           "path": "../docs",
           sidebarPath: require.resolve('../v2-website/sidebars.json'),
           "versions": {
+            "current": {
+              "label": '7.0',
+              "path": '7.0',
+            },
             '6.5': {
               "label": '6.5 and earlier',
               "path": 'version-6.5',

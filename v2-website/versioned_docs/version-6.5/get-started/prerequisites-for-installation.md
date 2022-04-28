@@ -17,6 +17,7 @@ Qrvey has architected a system that combines roughly two dozen AWS services crea
 * Canada - Central (ca-central-1)
 * Ireland (eu-west-1)
 * Frankfurt (eu-central-1)
+* London (eu-west-2)
 * Sydney (ap-southeast-2)
 * Singapore (ap-southeast-1)
 * Mumbai (ap-south-1)
