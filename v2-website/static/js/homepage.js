@@ -76,7 +76,12 @@ function fetchPopularArticles() {
     .then(result => {
         const popularParse = parseSummaryResult(result);
         const popularPages = popularParse.filter((value) =>
-                !(value.url === '/' || value.url === '/docs/' || (value.url.search('/blog') > -1) || (value.url.search('/training/') === 0))).map(value => {
+                !(value.url === '/' || value.url === '/docs/' || value.url === '/docs/get-started/get-started-intro'
+                || value.url === '/docs/release-notes/release-last' || value.url === '/docs/ui-docs/basics/logging-in'
+                || value.url === '/docs/admin/admin-intro' || value.url === '/docs/get-started/get-started-architecture'
+                || value.url === '/docs/ui-docs/end-user-personalization/overview'
+                || (value.url.search('/blog') > -1)
+                || (value.url.search('/training/') === 0))).map(value => {
                 return {
                     link: value.url,
                     title: value.title,

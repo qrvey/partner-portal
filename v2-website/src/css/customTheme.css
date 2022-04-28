@@ -1533,6 +1533,7 @@ blockquote {
   padding: 2px;
   color: white;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .howtousesite--infotext {
@@ -1585,4 +1586,51 @@ font-weight: 400;
 .listrole-links a{
   padding: 10px 0;
 }
+
+
+.newandupdate-cont {
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.newarticles-cont, .updatearticles-cont {
+    background-color: #F1F1F1;
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.newarticles-cont{
+  margin-right: 30px;
+}
+
+.newarticles-cont h3, .updatearticles-cont h3{
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.newarticle-header, .updatearticle-header {
+  border-bottom: 1px solid #E4E4E4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.seeall-link b a{
+  color: #FF3F00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.listarticles-links {
+  display: grid;
+  padding: 20px;
+}
+
+.listarticles-links a{
+  padding: 3px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 }

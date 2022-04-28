@@ -95,7 +95,7 @@ The following is an example of a JSON object containing a user’s security perm
 }
 ```
 
-Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjcyMTQxMDg-generate-token-for-creators" target="_blank"> Generate Token</a> passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519" target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
+Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6NDY5NTUxNjg-generate-token-for-creators" target="_blank"> Generate Token</a> passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519" target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
 
 ```json
 {
