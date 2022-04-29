@@ -391,6 +391,36 @@
           "id": "version-6.5/ui-docs/others/activity-log"
         }
       ]
+    },
+    {
+      "type": "category",
+      "label": "Chart Builder",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/chart-builder/chart-builder-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/styles"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/creating-a-chart"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
+        }
+      ]
     }
   ],
   "version-6.5/business-analytics": [
