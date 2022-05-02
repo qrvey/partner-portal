@@ -94,7 +94,6 @@ module.exports = {
         indexBlog: false,
         docsRouteBasePath: '/docs',
         blogRouteBasePath: '/blogs',
-        docsDir: 'docs',
         blogDir: 'blogs',
         searchResultLimits: 100,
         highlightSearchTermsOnTargetPage: true,
