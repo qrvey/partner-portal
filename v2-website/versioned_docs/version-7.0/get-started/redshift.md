@@ -93,7 +93,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 </ul>
 
 4. Create a new Policy.
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Switch the Redshift AWS account.</li>
 <li>b. Open AWS Identity and Access Management (IAM)</li>
 <li>c. Click <b>Policies</b>.</li>
@@ -102,7 +102,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>f. Paste the policy below below, replacing the appropriate ARNs.</li>
 </ul>
 
-<ul style={{listStyle: 'none', marginLeft: '50px'}}>
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Set the Secret ARN generated above, replacing SECRET_ARN.</li>
 <li>ii. Set the Role ARN for the DbDatasourceExportToS3Role, noted above, replacing EXPORT_TO_S3_ARN.</li>
 </ul>
@@ -149,7 +149,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 </ul>
 
 5. Create a new Role
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Continue in the Redshift AWS account, IAM.</li>
 <li>b. Click <b>Roles</b>.</li>
 <li>c. Click <b>Create Role</b>.</li>
@@ -166,7 +166,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 </ul>
 
 6. If Qrvey is running under a different account then the Redshift cluster, add a Trust Relation to the new Role.  Otherwise, skip this step.
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Click <b>Roles</b>.</li>
 <li>b. Locate the newly created Role.</li>
 <li>c. Click the Trust Relations tab.</li>
@@ -197,12 +197,12 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 }
 ```
 
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>g. Click <b>Update Trust Policy</b>.</li>
 </ul>
 
 7. Associate the Redshift cluster with the new Role.
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Go to AWS Redshift.</li>
 <li>b. Click the desired cluster.</li>
 <li>c. Click the <b>Properties</b> tab.</li>
@@ -214,7 +214,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 </ul>
 
 8. Open the Qrvey application.
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Click <b>Datasets</b>.</li>
 <li>b. Click <b>Connections</b>.</li>
 <li>c. Create a new Connection for Redshift.</li>
