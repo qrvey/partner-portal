@@ -402,7 +402,15 @@
         },
         {
           "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/general"
+        },
+        {
+          "type": "doc",
           "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
         },
         {
           "type": "doc",
@@ -419,6 +427,10 @@
         {
           "type": "doc",
           "id": "version-6.5/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bar-charts"
         }
       ]
     }
