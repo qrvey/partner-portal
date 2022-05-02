@@ -1,7 +1,7 @@
 ---
-id: styles
-title: Styles
-sidebar_label: Styles
+id: general
+title: General
+sidebar_label: General
 ---
  
 <div style={{textAlign: "justify"}}>
