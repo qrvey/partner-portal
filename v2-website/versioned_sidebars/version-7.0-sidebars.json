@@ -284,6 +284,63 @@
     {
       "collapsed": true,
       "type": "category",
+      "label": "Chart Builder",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.0/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.0/ui-docs/chart-builder/chart-builder-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.0/ui-docs/dataviews/chart-builder/creating-a-chart"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Chart Configuration",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration-overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/general"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/styles"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Chart Types",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.0/ui-docs/dataviews/chart-types/bar-charts"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
       "label": "Builders",
       "items": [
         {
@@ -385,49 +442,6 @@
         {
           "type": "doc",
           "id": "version-7.0/ui-docs/others/activity-log"
-        }
-      ]
-    },
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Chart Builder",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/chart-builder/chart-builder-overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/general"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration-overview"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/styles"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/creating-a-chart"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.0/ui-docs/dataviews/chart-types/bar-charts"
         }
       ]
     }
