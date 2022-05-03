@@ -1,7 +1,7 @@
 ---
 id: bar-charts
-title: Bar Charts
-sidebar_label: Bar Charts
+title: Bar Chart
+sidebar_label: Bar Chart
 ---
 
 <div style={{textAlign: "justify"}}>

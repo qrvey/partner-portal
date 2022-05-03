@@ -326,6 +326,18 @@
             {
               "type": "doc",
               "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/format"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/trend-chart"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters"
             }
           ]
         }
@@ -339,6 +351,90 @@
         {
           "type": "doc",
           "id": "version-6.5/ui-docs/dataviews/chart-types/bar-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/line-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/symbol-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-bar"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-line"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-symbol"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/combo-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/funnel-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/pie-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/min-max-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/indicator-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/dial-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bullet-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/table"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/expandable-table"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/crosstab"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/heatmap"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/dot-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bubble-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/choropleth-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/box-whisker"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/word-cloud"
         }
       ]
     },
