@@ -325,6 +325,10 @@
             },
             {
               "type": "doc",
+              "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/layers"
+            },
+            {
+              "type": "doc",
               "id": "version-7.0/ui-docs/dataviews/chart-builder/chart-configuration/format"
             },
             {
