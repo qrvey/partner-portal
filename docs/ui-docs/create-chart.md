@@ -53,3 +53,15 @@ You may change the chart type at any point. The product will do its best to keep
 5. **Axis Labels** - labels that show what is displayed on an axis and can be turned on or off, displayed or hidden, and further stylized. Read more about managing chart axes here.
 6. **Axes** - X and Y axes of a chart.
 
+## Chart Panel
+Once a chart is saved the Chart Builder is closed and the chart is displayed inside a panel. All charts are created as “children” of their dataset and can always be accessed from the Analyze view of the dataset or by clicking on the dataset inside the **Data Panel** of the <a href="/docs/ui-docs/builders/pages" target="_blank"><strong>Page Builder</strong></a>.  
+
+You can edit your chart at any time by clicking on the three-dot menu in the upper-right corner of the panel and selecting Edit.
+
+![chart-builder-overview](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/creating-charts/create4.png#thumbnail-60)
+
+
+Other possible actions from the three-dot menu of the panel include various download options, duplicating the chart, and deleting it. If the chart panel is accessed from the *Custom View* of the **Analyze** section, it can also be sized to small, medium, and large. Panels can be sized freely inside **Page Builder** by grabbing and dragging any corner of the panel.
+Panel filters can be set up and edited from the filter icon on the panel.
+
+</div>
