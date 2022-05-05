@@ -1033,6 +1033,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "video-training/release/version7.1"
+        },
+        {
+          "type": "doc",
           "id": "video-training/release/version7"
         },
         {
