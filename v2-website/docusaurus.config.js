@@ -93,6 +93,7 @@ module.exports = {
         indexDocs: true,
         indexBlog: false,
         docsRouteBasePath: '/docs',
+        docsDir: '../docs',
         blogRouteBasePath: '/blogs',
         blogDir: 'blogs',
         searchResultLimits: 100,
