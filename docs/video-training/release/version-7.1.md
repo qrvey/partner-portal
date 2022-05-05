@@ -1,5 +1,5 @@
 ---
-id: version7.1
+id: version-7.1
 title: Version 7.1
 sidebar_label: Version 7.1
 ---
