@@ -58,10 +58,10 @@ module.exports = {
           "showLastUpdateTime": true,
           "path": "../docs",
           sidebarPath: require.resolve('../v2-website/sidebars.json'),
+          "lastVersion": "current",
           "versions": {
             "current": {
-              "label": '7.0',
-              "path": '7.0',
+              "label": '7.1',
             },
             '6.5': {
               "label": '6.5 and earlier',

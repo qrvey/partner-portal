@@ -661,7 +661,6 @@ font-weight: 400;
 }
 
 .navbar__item:first-child li:first-child{
-  display: none
 }
 
 .alert--warning {
