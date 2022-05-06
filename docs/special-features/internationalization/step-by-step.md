@@ -84,7 +84,7 @@ In this section you will create a blank translation spreadsheet and configure th
 <li>d. From the spreadsheet’s URL, save the document ID. This is the long string wrapped in / characters.</li></ul>
 
 <ul style={{listStyle: 'none', marginLeft: '30px'}}>
-<li>i. For example, if we have this URL “https://docs.google.com/spreadsheets/d/1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws/edit#gid=0”, the document id would be “1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws”</li></ul><br>
+<li>i. For example, if we have this URL “https://docs.google.com/spreadsheets/d/1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws/edit#gid=0”, the document id would be “1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws”</li></ul><br/>
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> e. Share this spreadsheet, as “Editor”, with user accounts of people who will enter or review translations. </li>

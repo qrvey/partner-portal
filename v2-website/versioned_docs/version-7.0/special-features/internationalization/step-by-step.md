@@ -17,8 +17,10 @@ Translated values are entered and stored in a Google spreadsheet. The spreadshee
  
 The following platforms and tools are used in the process:
 * **The Translation Spreadsheet** - This Google spreadsheet is used to facilitate the translation process by housing the keys and translations for all of the static and dynamic phrases.
-Qrvey Translation Service Utility - This utility is used to import and export “keys” into and out of the Translation Spreadsheet. This spreadsheet is accessed through an API that requires a Google Cloud Platform account.
-The Google Cloud Platform account - This free GCP account is used to facilitate access to the Translation Spreadsheet
+
+* **Qrvey Translation Service Utility** - This utility is used to import “keys” into the Translation Spreadsheet, and then export translated values back into Qrvey. This spreadsheet is accessed through an API that requires a Google Cloud Platform account.
+
+* **The Google Cloud Platform account** - This free GCP account is used to facilitate access to the Translation Spreadsheet
  
 The full process can be broken down into six high-level steps that each may be best performed by a specific persona and are explained in this article.
  
@@ -80,8 +82,10 @@ In this section you will create a blank translation spreadsheet and configure th
 <li>b. From the <u>File</u> menu, select <b>Make a copy</b>. This copy will be used to enter translated text for your deployment.</li>
 <li>c. Rename this spreadsheet as desired.</li>
 <li>d. From the spreadsheet’s URL, save the document ID. This is the long string wrapped in / characters.</li></ul>
+
 <ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. For example, if we have this URL “https://docs.google.com/spreadsheets/d/1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws/edit#gid=0”, the document id would be “1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws”</li></ul><br/>
+
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> e. Share this spreadsheet, as “Editor”, with user accounts of people who will enter or review translations. </li>
 <li> f. Share this spreadsheet as “Editor” with the email account saved above, the one ending in “iam.gserviceaccount.com”.</li></ul>
@@ -185,7 +189,7 @@ curl --location --request POST '{{DOMAIN}}/devapi/v5/globalization/translation/d
 **Recommended Persona**: Software engineer<br/>
 **Prerequisites**: Language codes of the translated values
  
-The last step in the process of internationalization is adding the necessary setting to the widgets’ configuration object. The **++** object can be added alongside other configuration attributes of the widget and contains **lang** and an optional locale property:
+The last step in the process of internationalization is adding the necessary setting to the widgets’ configuration object. The **i18n** object can be added alongside other configuration attributes of the widget and contains **lang** and an optional locale property:
  
 ```json
 <script>
