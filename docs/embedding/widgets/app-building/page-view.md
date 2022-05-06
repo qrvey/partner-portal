@@ -72,6 +72,9 @@ Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token
 | edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu. | boolean | true | No
 | remove_chart | Allow users to remove charts from the page, when in edit mode | boolean | true | No
 | rearrange_chart | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
+| featurePermission.pagesAndApplication.hidePagesBar| Allow Creators to hide the pages bar located at the bottom of the page builder so that users can’t see it in edit mode.| boolean| false| No
+
+
 
 ### Overriding the Default Styles 
 The **styles** object can be used to configure css settings of the Page View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
