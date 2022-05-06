@@ -72,11 +72,10 @@ a. Select each routing table with the same VPC ID and follow these steps for eac
 <li>i. Select Routes</li>
 <li>ii. Select <strong>Edit</strong> routes</li>
 <li>iii. Select <strong>Add</strong> route</li>
-</ul>
+<br/>
 
 For **Destination**, enter the IPv4 CIDR range that you have found in step 1, and for Target select the Peering Connection that you had created in step 2.
 
-<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li> iv. <strong>Save</strong> routes </li>
 </ul>
 
