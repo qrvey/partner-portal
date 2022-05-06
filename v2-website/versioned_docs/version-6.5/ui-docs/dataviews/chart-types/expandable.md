@@ -77,7 +77,7 @@ You can manually modify the Column Sizes of Table Charts by simply hovering over
 
 There are three ways you can sort your columns in Expandable tables:
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li>a) From the sorting icon in the column pill - each click changes the sorting: ascending, descending, unsorted.</li>
 
