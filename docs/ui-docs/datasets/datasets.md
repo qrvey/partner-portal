@@ -32,9 +32,9 @@ Once the data source is selected you will land in the *Design* section of your n
 2. Here is where you can see the Data Sources of your Dataset, also you can see, add and edit <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>.
 3. Read the column from the source and store it in the Dataset.
 4. Allow the column to be used in building visualizations.
-5. <strong>Column Type</strong> - view and change the type of the data in the column (Text/Label, Numeric, Date)
-6. <strong>Input Format</strong> - if you change your data type to Date, you can choose its input (from the source) format here.
-7. <strong>Visualization Format</strong> - set the visualization format for Date and Numeric data.
+5. <strong>Column Type</strong> - view and change the type of the data in the column (*Text/Label, Numeric, DateTime*)
+6. <strong>Input Format</strong> - if you change your data type to *DateTime*, you can choose its input (from the source) format here.
+7. <strong>Visualization Format</strong> - set the visualization format for *DateTime* and *Numeric* data.
 8. <strong>Transformations</strong>- add and edit <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>.
 9. <strong>Geolocation</strong> - add and edit <a href="/docs/ui-docs/datasets/datasets#setting-up-geolocation-groups" target="_blank">Geolocation</a>. 
 10. *Load Dataset/Reload Dataset/Apply Changes/Discard Changes*
@@ -59,6 +59,23 @@ Note that this option is available only for database data sources.
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-60)
 
 Replacing the data source by using any of these options may result in a change in the metadata and will require a reload of the data if it had been loaded before.
+
+### Automatically Adding New Dataset Columns
+If there are new columns discovered in an existing dataset during the data-load process from any Data Source, they will be automatically added to the dataset where they can be prepped for analysis. These columns are referred to as *New Columns* because they are not listed in the Dataset configuration or Data Source configuration, but are added later when posting new records. We don’t know they exist when creating or editing a Dataset.
+
+The option to *Automatically add new columns discovered* during data loads is disabled by default. There are two ways to enable discovering new columns.
+
+<ul style="list-style: none; margin-left:20px;">
+<li> a) It can be enabled by checking the box under Source Data Column or both, Source Data and the Visualization Column.</li>
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/discover1.png#thumbnail) 
+
+
+<li>b) It can be done from the three-dot menu by choosing <strong>Discovered Columns</strong>.</li>
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/discover2.png#thumbnail-60)
+</ul>
+
 
 ### Choosing The Dataset Columns
 You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the dataset or the visualizations.
