@@ -256,17 +256,13 @@ Creators can reorder columns in two different ways:
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
-<li>a) Directly from the table headers
-
-Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved. After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order.</li>
+<li>a) Directly from the table headers: <br/> Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved. After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order.</li>
 
 
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/23reorder.png#thumbnail-40)
 
 
-<li>b) From the Columns Shelf
-
-Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position in the shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
+<li>b) From the Columns Shelf: <br/> Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position in the shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
 
 
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/24reorder.png#thumbnail-40)
@@ -288,9 +284,7 @@ Aggregate columns can be reordered in the exact same ways as columns in a simple
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
-<li>a) Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
-
-After dropping the column in its new place, the column pills in the shelf appear in that same new order.</li>
+<li>a) Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder) <br/> After dropping the column in its new place, the column pills in the shelf appear in that same new order.</li>
 
 
 >**Note**: Aggregate columns cannot be dragged between, or before the grouped columns.
@@ -305,9 +299,7 @@ Aggregate columns can be reordered in two ways:
 
 
 
-<li>b) From the Columns Shelf 
-
-Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
+<li>b) From the Columns Shelf: <br/> Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
 
 
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/27agg2.png#thumbnail-40)

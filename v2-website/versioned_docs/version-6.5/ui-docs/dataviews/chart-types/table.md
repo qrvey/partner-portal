@@ -3,21 +3,21 @@ id: table
 title: Table
 sidebar_label: Table
 ---
- 
+
 <div style={{textAlign: "justify"}}>
- 
+
 Tables display data in rows of consecutive columns, in a spreadsheet-like format. This form of visualization provides an easy way to view the data and perform various analytical functions - such as grouping, sorting, and filtering. Tables are best suited either for viewing the raw data in a dataset or for analyzing multiple aggregations of data grouped by one or more categories. Tables support the display of an unlimited number of columns and rows, which allows users to see the raw unaggregated data before additional analysis is performed.
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/1create.gif#thumbnail)
- 
- 
+
+
 ## Creating a Table
 A user creates a table dragging and dropping fields from the Data Panel onto the Column shelf. Another way to create a table is by dragging and dropping fields into the top table guideline with the label *Drop column as column* when the mouse hovers over the table, as described in the image below.
- 
- 
+
+
 In the end, the user can review which fields from the Data Panel are part of the table by looking at the top of the window in the columns - the **Group** shelf.
- 
- 
+
+
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/2data-panel.png#thumbnail-40)
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/3datapanel.png#thumbnail-40)
@@ -30,7 +30,7 @@ Table charts support multi-column sorting, both at design and interaction time. 
 The header of each column defaults to the name of the data column that is selected for that column, but it can be modified by choosing the Edit option from the three-dot menu on the table column header.
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/4datapanel.png#thumbnail-40)
- 
+
 ### Grouped Tables
 A user can create this type of table by dragging and dropping columns from the Data Panel onto the **Columns** and **Groups** shelves. In this scenario, the table treats fields in the **Group** shelf as a group, while the fields in the **Column** shelf are aggregated within the selected groups.
  
@@ -40,10 +40,10 @@ Another way to create a grouped table is by using the vertical and horizontal gu
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/6gt.gif#thumbnail)
  
- 
+
 ## Styling the Table
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
- 
+
 ### General
 * **Menu Actions**
    * **Sorting** - add the sorting button () to the header. This option will be available in both edit and interactive mode. Head to the Sorting in Tables section to read more about it.
@@ -51,7 +51,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/7visualization.png#thumbnail-40)
    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/8visualization.png#thumbnail)
  
- 
+
 * **Totals** - display the total and/or subtotal of chosen values in the last row of the table or the group.
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/9totals.png#thumbnail-40)
@@ -59,10 +59,10 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 <li><strong>Columns</strong> - choose the columns you want to perform this on. All columns are selected by default, but you can choose to remove any that you don’t wish to participate in. If you want to apply different totals to different columns, simply repeat these steps and choose the other column(s) and the desired aggregation(s).</li>
 <li><strong>Total</strong>- choose the type of aggregation you want to display (S*elect All, Average, Median, Count, Distinct Count, Minimum, Maximum*).</li>
 <li><strong>Level</strong> - determines where the aggregation happens - whether it’s on table level or group level. This feature is enabled if you have groups present.</li>
- 
+
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/10level.png#thumbnail-60)
 </ul>
- 
+
 * **Table Calculations** - add a calculation to your table - read more about this <a href="/docs/ui-docs/dataviews/table-calculations" target="_blank">here</a>.
  
 * **Aggregated Formulas** - when you group the table, the option to add a table formula to your data appears. This feature has been explained in detail in the <a href="#aggregated-formulas">Aggregated Formulas</a> section of this article.
@@ -135,55 +135,55 @@ Trend Charts can be added in one of two ways:
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/21trend5.png#thumbnail-40)
  
- 
+
 Filters
  
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
- 
+
 ### Resizing Columns
 You can manually modify the Column Sizes of Table Charts by simply hovering over the column's header and dragging the column header’s width to the left or right using the marquee tool.
- 
- 
+
+
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/22resize.gif#thumbnail)
- 
- 
+
+
 ### Reordering Columns
 Table Creators and End Users are able to organize columns by reordering them in a preferred way. This action is the same as seen in Excel spreadsheets and our Tabular View.
- 
+
 #### Simple Table
 Creators can reorder columns in two different ways:
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) Directly from the table headers
 Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved. After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order.</li>
- 
+
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/23reorder.png#thumbnail-40)
- 
+
 <li>b) From the Columns Shelf
 Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position in the shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
- 
+
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/24reorder.png#thumbnail-40)
  
 </ul>
- 
+
 #### Grouped Table
 In Grouped Tables, we can find two types of columns:
 * Aggregate - the ones that are dropped in the Columns shelf and their values are aggregated.
 * Grouped - the ones that are dropped in the Group shelf and the Aggregated Columns are grouped by.
 Aggregate columns can be reordered in the exact same ways as columns in a simple table:
- 
+
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
 After dropping the column in its new place, the column pills in the shelf appear in that same new order.</li>
- 
+
 >**Note**: Aggregate columns cannot be dragged between, or before the grouped columns.
 Aggregate columns can be reordered in two ways:
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/25aggregate.png#thumbnail)
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/26aggregate2.png#thumbnail)
- 
- 
+
+
 <li>b) From the Columns Shelf
 Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
  
@@ -192,10 +192,10 @@ Columns can also be reordered in the analytic panel by dragging and dropping the
 Grouped columns can only be ordered in design mode, i.e. inside Chart Builder, and only from the columns shelf. For this very same reason, they cannot be reordered by end users, who only work with the saved chart.
 </ul>
  
- 
+
 ### Aggregated Formulas
 Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregated formulas do the same thing for data that has been grouped and aggregated for a chart. Given that distinction, the aggregated formula function is only available in grouped table charts at the moment.
- 
+
 “Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
 Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the <a href="/docs/ui-docs/dataviews/formulas" target="_blank">Formulas</a> article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart.
 To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the Group shelf):
