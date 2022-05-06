@@ -65,7 +65,7 @@ If there are new columns discovered in an existing dataset during the data-load 
 
 The option to *Automatically add new columns discovered* during data loads is disabled by default. There are two ways to enable discovering new columns.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a) It can be enabled by checking the box under Source Data Column or both, Source Data and the Visualization Column.</li>
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/discover1.png#thumbnail) 

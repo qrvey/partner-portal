@@ -72,7 +72,7 @@ To edit a Database Connection, click on the Connection card at which you’ll be
 
 ### Relational Database Connection
 When editing a relational database, you can choose between two editing options:
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) Typical Configuration</li>
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/typical.png#thumbnail-60)
