@@ -82,7 +82,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/9totals.png#thumbnail-40)
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li><strong>Columns</strong> - choose the columns you want to perform this on. All columns are selected by default, but you can choose to remove any that you don’t wish to participate in. If you want to apply different totals to different columns, simply repeat these steps and choose the other column(s) and the desired aggregation(s).</li>
 
@@ -191,17 +191,17 @@ Trend Charts can be added in one of two ways:
 
 * **Trend by Column** - Date or Numeric data types.
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li>a) If Trend by Column is a <u>date</u> data type, you can apply:</li></ul>
 
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 
 <li> - <strong>Date Grouping</strong> - group your dates by year, quarter, months, weeks, and days.</li>
 
 <li>- <strong>Time Period</strong> - choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).</li></ul>
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li>b) If Trend by Column is a <u>numeric</u> data type, data points have to be limited by setting the Max Data Points. The default value is 50.</li></ul>
 
@@ -254,7 +254,7 @@ Table Creators and End Users are able to organize columns by reordering them in 
 
 Creators can reorder columns in two different ways:
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li>a) Directly from the table headers
 
@@ -286,7 +286,7 @@ In Grouped Tables, we can find two types of columns:
 Aggregate columns can be reordered in the exact same ways as columns in a simple table:
 
 
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
 <li>a) Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
 

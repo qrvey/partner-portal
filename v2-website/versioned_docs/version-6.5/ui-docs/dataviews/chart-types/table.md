@@ -55,7 +55,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Totals** - display the total and/or subtotal of chosen values in the last row of the table or the group.
  
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/9totals.png#thumbnail-40)
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li><strong>Columns</strong> - choose the columns you want to perform this on. All columns are selected by default, but you can choose to remove any that you don’t wish to participate in. If you want to apply different totals to different columns, simply repeat these steps and choose the other column(s) and the desired aggregation(s).</li>
 <li><strong>Total</strong>- choose the type of aggregation you want to display (S*elect All, Average, Median, Count, Distinct Count, Minimum, Maximum*).</li>
 <li><strong>Level</strong> - determines where the aggregation happens - whether it’s on table level or group level. This feature is enabled if you have groups present.</li>
@@ -115,12 +115,12 @@ Trend Charts can be added in one of two ways:
 * **Chart Type** - Choose the bar or line option from the respective icons. The default is a line.
 * **Column** - the value(s) you would like to show in the chart.
 * **Trend by Column** - Date or Numeric data types.
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) If Trend by Column is a <u>date</u> data type, you can apply:</li></ul>
-<ul style="list-style: none; margin-left:30px;">
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li> - <strong>Date Grouping</strong> - group your dates by year, quarter, months, weeks, and days.</li>
 <li>- <strong>Time Period</strong> - choose a period you wish to show in the trend analysis (this year, last year, this quarter, last quarter, this month, last 6 months, etc.).</li></ul>
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>b) If Trend by Column is a <u>numeric</u> data type, data points have to be limited by setting the Max Data Points. The default value is 50.</li></ul>
  
 * **Trend Sort** - to sort the trend visualization in an ascending or descending manner. Applies to all datatypes.
@@ -153,7 +153,7 @@ Table Creators and End Users are able to organize columns by reordering them in 
  
 #### Simple Table
 Creators can reorder columns in two different ways:
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) Directly from the table headers
 Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved. After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order.</li>
  
@@ -172,7 +172,7 @@ In Grouped Tables, we can find two types of columns:
 * Grouped - the ones that are dropped in the Group shelf and the Aggregated Columns are grouped by.
 Aggregate columns can be reordered in the exact same ways as columns in a simple table:
  
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a) Directly in Table Headers by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place - either in edit mode (in Chart Builder) or after saving (in Page or Report Builder)
 After dropping the column in its new place, the column pills in the shelf appear in that same new order.</li>
  
