@@ -4,8 +4,6 @@ title: Connections Overview
 sidebar_label: Connections Overview
 ---
 
-
-
 You can create and manage your connections to various data sources in the *Connections* tab.
 
 ![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect1.png#thumbnail-40)  
@@ -45,6 +43,16 @@ If you have already created connections, then you will see them listed here, alo
 ![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect3.png#thumbnail) 
 
 To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Note, that editing connections can potentially lead to errors with any data syncs configured for datasets that rely on those connections. Please verify that the connection is successful after making any changes.
+
+Check how many Datasets are using a specific Connection by hovering over the **In use** button. If there are no Datasets tied to that Connection, there is a gray **Not used** button.
+
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect-number.png#thumbnail) 
+
+
+By clicking the **In use** button, you can get more details about the Datasets that are using this connection, like the *Dataset Name* along with the creation date and the person who created it. 
+
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect-details.png#thumbnail-60)  
+
 
 An option to preview data appears on cards for which the connection is established directly to a data source, such as a file, table/view, or query. When you click on **View Source Data** in the connection card, a preview of the data that’s available for loading will appear. You can see the first 100 records and the number of total records for custom queries displayed above the table. 
 
