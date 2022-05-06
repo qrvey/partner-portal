@@ -10,7 +10,7 @@ The expandable data table is a type of group banded report. Each row presents a 
 
 Each “Group” used to construct the table is displayed as a collapsible header. Expanding each header row will show all of the corresponding detail rows that belong to that group.
 
-![expandable](#thumbnail)
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable.png#thumbnail-60)
 
 
 ## Creating an Expandable Table 
@@ -19,7 +19,7 @@ A user creates an Expandable Table by dragging and dropping fields from the data
 In the example below, we wanted to show which products and how many of them have been shipped to particular cities and when. We dragged and dropped the *quantityOrdered* and *productName* columns as **Columns**, and *city* and *shippedDate* as **Sections**.
 
 
-![expandable](#thumbnail)
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable2.gif#thumbnail)
 
 
 ## Styling the Expandable Table 
@@ -33,7 +33,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Records per Group** - Records per Group - Limits the number of detail records shown for each expandable group header row. This value is 10 by default and cannot be lower than 10, with no upper limit.
 * **Totals** - display the grand total for a selected column or the whole table to get a summary of the number of records for a group or the complete table by clicking **+Add Total**. Choose the column you want to show the Total for, and the type of the Total aggregation (*Select All, Sum, Average, Median, Count, Distinct Count, Minimum, Maximum*). Last but not least, in **Level** you can select if you want to show the total for the whole table or just a selected column. 
 
-![expandable](#thumbnail)
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail) 
 
 
 
@@ -47,13 +47,12 @@ You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration
 Click on **+Add Condition** to start. Pick the color of the text and the color of the cell you’d like to show when your condition is met. Decide if you want to outline the cell or highlight it in the chosen color. Select the column you want to use the condition on, set the operator and decide if it applies to a column of your choice or the entire row. 
 Click on **Remove** to remove the conditional formatting.
 
-![expandable](#thumbnail)
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable4.gif#thumbnail)
 
 
 You can also include a column that hasn’t been included in the table. In the dropdown menu, you can see Chart Columns and Other Columns.
 
-![expandable](#thumbnail)
-
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable5.png#thumbnail-40)
 
 ### Filters
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the Toolbar above. Read more about filters and their purpose in this article <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">here</a>.
@@ -62,7 +61,7 @@ You can also add Filters to your table by expanding the Filters section in the c
 ### Resizing Columns
 You can manually modify the Column Sizes of Table Charts by simply hovering over the column's header and dragging the column header’s width to the left or right using the marquee tool.
 
-![expandable](#thumbnail)
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable6.gif#thumbnail)
 
 ### Sorting in Expandable Tables
 There are three ways you can sort your columns in Expandable tables: 
@@ -71,8 +70,7 @@ From the three-dot menu in the column pill - choosing Sort Ascending, Sort Desce
 Directly from the column header in the table - each click changes the sorting: ascending, descending, unsorted.
 
 
-![expandable](#thumbnail)
-
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable7.png#thumbnail)
 
 
 
