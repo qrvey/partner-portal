@@ -189,6 +189,20 @@ As a way of example, the configuration of Auth0 as OpenID provider will be expla
 ![30admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/30admin.png#thumbnail)
 
 
+## User Sessions
+
+![admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/user.png#thumbnail-40)
+
+Administrators can set a timeout for user sessions: 
+<ul style="list-style: none; margin-left:20px;">
+<li>a) Maximum Session - the session will timeout after the time set by Admin in this section regardless of the user’s interaction with the platform which is set to 168 hours (7 days) by default.</li><br>
+<li>b) Idle Session - the session will timeout if there’s no user interaction detected in the platform (navigating through the platform’s sections, changing configurations, creating assets, etc.) after the time configured in this section.</li></ul>
+
+Administrators can also enable or disable the option of allowing multiple sessions per username for both the Admin Center and Qrvey Composer. 
+By default multiple sessions are enabled, however, they can be disabled by unchecking the **Allow Multiple Sessions** checkbox.
+ 
+When this option is disabled and a user is logged in, if another user logs in using the same credentials, as soon as the first user tries to interact with the platform, they will get redirected to the login screen and receive a notification that their session has expired or they may have logged into another device.  
+
 
 
 ## Data Security
