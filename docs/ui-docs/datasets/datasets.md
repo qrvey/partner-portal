@@ -32,11 +32,11 @@ Once the data source is selected you will land in the *Design* section of your n
 2. Here is where you can see the Data Sources of your Dataset, also you can see, add and edit <a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>.
 3. Read the column from the source and store it in the Dataset.
 4. Allow the column to be used in building visualizations.
-5. <strong>Column Type</strong> - view and change the type of the data in the column (*Text/Label, Numeric, DateTime*)
-6. <strong>Input Format</strong> - if you change your data type to *DateTime*, you can choose its input (from the source) format here.
-7. <strong>Visualization Format</strong> - set the visualization format for *DateTime* and *Numeric* data.
-8. <strong>Transformations</strong>- add and edit <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>.
-9. <strong>Geolocation</strong> - add and edit <a href="/docs/ui-docs/datasets/datasets#setting-up-geolocation-groups" target="_blank">Geolocation</a>. 
+5. **Column Type** - view and change the type of the data in the column (*Text/Label, Numeric, DateTime*)
+6. **Input Format** - if you change your data type to *DateTime*, you can choose its input (from the source) format here.
+7. **Visualization Format** - set the visualization format for *DateTime* and *Numeric* data.
+8. **Transformations**- add and edit <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>.
+9. **Geolocation** - add and edit <a href="/docs/ui-docs/datasets/datasets#setting-up-geolocation-groups" target="_blank">Geolocation</a>. 
 10. *Load Dataset/Reload Dataset/Apply Changes/Discard Changes*
 11. Three-dot menu where you can <a href="/docs/next/ui-docs/datasets/datasets#enabling-dataset-sharing" target="_blank">Share Data with Everyone</a> (or Unshare Data), mark the dataset as favorite, or delete it.  
 

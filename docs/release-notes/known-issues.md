@@ -4,7 +4,7 @@ title: Known Issues
 sidebar_label: Known Issues
 ---
 <div style={{textAlign: "justify"}}>
- 
+
 * <strong>DR-3389 - Parsing from quoted column name with numeric datatype fails</strong>: Uploading a CSV file that contains quoted text in a column name, and setting the column to numeric causes an error in the loading process.
 
 * <strong>QV-14238 - Datasets - Timeout errors</strong>: When a user tries to reload a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
