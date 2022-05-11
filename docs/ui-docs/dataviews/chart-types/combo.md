@@ -56,13 +56,13 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
     * **Borders** - display the data labels values within a frame.
 * ***Data Field*** - this section takes the name of the data field in the **Values** and **Other Values** shelves; if for example, your Values is *Price*, then the section will say *Price*. Each section corresponds to one of the selected Value fields and allows the respective chart for that field to be configured.    
 ![combo](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Combo/combo4.png#thumbnail)
-    * **Color Type** - show your chart component in a single color or color each category differently. For example, if your **Value** is *Quantity* and you choose a single color, all *Quantity* values in the chart will be the same color; if you choose one of the predetermined themes, *Quantity* data points will be colored differently for each **Category**.
-    * **Color** - choose a color from the color picker. 
-    * **Type** - pick bar, line or symbol to represent data from the Values shelf.
-    * **Axis Label** - give your Y-axis a custom label.
-    * **Axis Format** - set the format of the values choosing between *Default*, *Abbreviated*, *Decimal* (set a number of decimals), *Currency* (choose the currency from the drop-down menu and set a number of decimals), *Percentage* (set a number of decimals), *Scientific*.
-    * **Scale Type** - choose the linear scale type if you want to use an equal value to provide equal distance between the data points; use a logarithmic scale (used for displaying numerical data over a very wide range of values in a compact way) for computing data points based on the exponents. 
-    * **Min/Max Range** - set the range of values displayed on the Y-axis. This determines the starting and ending values shown on the axis.
+  * **Color Type** - show your chart component in a single color or color each category differently. For example, if your **Value** is *Quantity* and you choose a single color, all *Quantity* values in the chart will be the same color; if you choose one of the predetermined themes, *Quantity* data points will be colored differently for each **Category**.
+  * **Color** - choose a color from the color picker. 
+  * **Type** - pick bar, line or symbol to represent data from the Values shelf.
+  * **Axis Label** - give your Y-axis a custom label.
+  * **Axis Format** - set the format of the values choosing between *Default*, *Abbreviated*, *Decimal* (set a number of decimals), *Currency* (choose the currency from the drop-down menu and set a number of decimals), *Percentage* (set a number of decimals), *Scientific*.
+  * **Scale Type** - choose the linear scale type if you want to use an equal value to provide equal distance between the data points; use a logarithmic scale (used for displaying numerical data over a very wide range of values in a compact way) for computing data points based on the exponents. 
+  * **Min/Max Range** - set the range of values displayed on the Y-axis. This determines the starting and ending values shown on the axis.
 
 ### Sorting
 Combo Charts can be sorted by their selected category column, or either of the value columns used in them. Choose the column that you wish to sort your chart by, from the dropdown list and select the sorting direction (ascending or descending) from the icons under the dropdown.
