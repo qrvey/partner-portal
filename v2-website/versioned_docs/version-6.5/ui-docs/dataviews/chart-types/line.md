@@ -36,7 +36,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
        * **Remove** - remove the tooltip column.
    * **Header** - add a header to the tooltip.
 ![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/header.png#thumbnail-60)
-<ul style="list-style: none; margin-left:40px;">
+<ul style={{listStyle: 'none', marginLeft: '40px'}}>
 <li>  1. Header</li>
 <li>  2. Value column field</li>
 <li>  3. Tooltip column field </li></ul>
