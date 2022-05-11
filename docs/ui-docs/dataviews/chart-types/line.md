@@ -10,7 +10,6 @@ Line charts show changes of an aggregated value over a continuous dimension (**C
 
 ![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/line.png#thumbnail)
 
-
 ## Creating a Line Chart
 Line Charts are used when you want to present a single value and a single category. 
 To create a Line Chart, drag and drop a data field from the Data Panel onto either the corresponding shelf or the canvas. 
