@@ -51,6 +51,9 @@ The table below provides general information about each property of this widget�
 | fit_panel_button | `Boolean`, Show the fit to panel button on the panels. Default value is true.| No
 | personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
 | styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
+| featurePermission | `Object`, JSON object to configure which features are or are not available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
+
+
 
 
 > **Note**: Refer to the <a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
@@ -72,7 +75,6 @@ Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token
 | edit_page | Allow authenticated users to go into edit mode, where the page builder widget will be displayed. Users will see an “edit page” icon in the floating three-dot menu. | boolean | true | No
 | remove_chart | Allow users to remove charts from the page, when in edit mode | boolean | true | No
 | rearrange_chart | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
-| featurePermission.pagesAndApplication.hidePagesBar| Allow Creators to hide the pages bar located at the bottom of the page builder so that users can’t see it in edit mode.| boolean| false| No
 
 
 
