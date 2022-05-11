@@ -1,7 +1,7 @@
 ---
 id: ms-bar
-title: Multi-Series Bar Chart
-sidebar_label: Multi-Series Bar Chart
+title: Multiseries Bar Chart
+sidebar_label: Multiseries Bar Chart
 ---
 
 <div style={{textAlign: "justify"}}>
