@@ -3,9 +3,9 @@ id: bar-charts
 title: Bar Charts
 sidebar_label: Bar Charts
 ---
- 
+
 <div style={{textAlign: "justify"}}>
- 
+
 Use a Bar Chart to compare categorical aggregate values. For example, a bar chart can be used to compare the amount/percentage of a population that attends various categorical events. In Qrvey, users can create Horizontal or Vertical Bar Charts.
  
 ![bar-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Bar/bar.png#thumbnail)
@@ -57,7 +57,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
    * **Max Range** - set the maximum value for the axis.
    * **Steps** - Depending on how wide the axis range is, the default configuration could display a lot of tick marks, making it hard to read or analyze the chart. Intervals are set to Auto by default, meaning the chart will calculate the appropriate intervals based on the axis scale range and the dataset values. In the example below, we set the step to 100 units, so the chart will display a tick mark every 100 units starting from 0, resulting in only 3 tick marks.
    ![bar-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Bar/steps-bar.gif#thumbnail)
-   It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,000,000), setting the “Steps” option to 1 will create 10 million tick marks, causing performance issues on the chart and probably blocking the browser. To avoid this situation, the chart will ignore the defined value and fall back to automatic mode.<br>
+   It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,000,000), setting the “Steps” option to 1 will create 10 million tick marks, causing performance issues on the chart and probably blocking the browser. To avoid this situation, the chart will ignore the defined value and fall back to automatic mode.<br/>
  
 * **Category axis**  *(normally the X-axis)*   
    * **Label** - give the axis a custom label.
