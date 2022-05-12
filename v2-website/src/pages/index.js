@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="/docs/admin/admin-managing-users" target="_blank">Admin User Management <span>April 8, 2022</span></a>
-                    <a href="/docs/admin/content-deployment/jobs" target="_blank">Deployment Jobs <span>April 8, 2022</span></a>
-                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets <span>April 4, 2022</span></a>
-                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview <span>April 4, 2022</span></a>
-                    <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports <span>April 4, 2022</span></a>
+                    <a href="/docs/admin/admin-sections-platform" target="_blank">Administrating Qrvey Composer<span>May 12, 2022</span></a>
+                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview<span>May 12, 2022</span></a>
+                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets<span>May 12, 2022</span></a>
+                    <a href="/docs/get-started/glossary" target="_blank">Glossary of Common Terms<span>May 12, 2022</span></a>
+                    <a href="/docs/admin/admin-managing-users" target="_blank">Admin User Management<span>April 8, 2022</span></a>
                  </div>
              </div>
            </div>
