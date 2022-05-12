@@ -76,5 +76,3 @@ For more on the Bullet Gauge and other KPI Charts, we recommend watching <a href
 
 
 </div>
-
-</div>

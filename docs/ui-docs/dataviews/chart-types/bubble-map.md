@@ -6,7 +6,6 @@ sidebar_label: Bubble Map
 
 <div style={{textAlign: "justify"}}>
 
- 
 Bubble Maps show aggregated values in precise locations with each bubble area being proportional to the value being represented - the higher the value, the bigger the bubble. These are best suited for comparing proportions of values over geographic regions, like for example the sales amount in different locations.
  
 ![bubble-map](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Bubble-Map/bubble.png#thumbnail)
@@ -69,9 +68,4 @@ For more on Bubble Maps and other Map charts, we recommend watching <a href="/do
  
  
  
-</div>
-
-
-
-
 </div>
