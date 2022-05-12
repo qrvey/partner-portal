@@ -282,7 +282,7 @@
                     <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview<span>May 12, 2022</span></a>
                     <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets<span>May 12, 2022</span></a>
                     <a href="/docs/get-started/glossary" target="_blank">Glossary of Common Terms<span>May 12, 2022</span></a>
-                    <a href="/docs/admin/admin-managing-users" target="_blank">Admin User Management<span>April 8, 2022</span></a>
+                    <a href="/docs/embedding/widgets/app-building/widget-page-view" target="_blank">Page View<span>May 12, 2022</span></a>
                  </div>
              </div>
            </div>
