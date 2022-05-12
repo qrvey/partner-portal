@@ -138,20 +138,17 @@ DESC INTEGRATION QrveyExportToS3_QRVEY_DEPLOYMENT;
 ```
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>f. From the query response note the values for </li>
-</ul>
+<li>f. From the query response note the values for 
 
 ```js
 STORAGE_AWS_IAM_USER_ARN
 STORAGE_AWS_EXTERNAL_ID
 ```
-
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+</li>
 <li>g. Return to the IAM console, and open the role created above.</li>
 <li>h. Click the <b>Trust Relationship</b> tab.</li>
 <li>i. Click <b>Edit</b>.</li>
 <li>j. Set the trust relationship following this example, replacing the values from the query above.</li>
-</ul>
 
 ```json
 {
@@ -173,15 +170,12 @@ STORAGE_AWS_EXTERNAL_ID
   ]
 }
 ```
-
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>k. Update the Snowflake user account to include the KMS key created above.</li> <br/>
-</ul>
+<li>k. Update the Snowflake user account to include the KMS key created above. <br/>
 
 ```js
 ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
 ```
-
+</li></ul>
 
 5. Create a new Secret that points to the Snowflake cluster.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
@@ -256,7 +250,7 @@ ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
 </ul>
 
 7. Open the Qrvey application.
-<ul style={{listStyle: 'none'}}>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Click <b>Datasets</b>.</li>
 <li>b. Click<b>New Connections</b>.</li>
 <li>c. Create a new Connection for Snowflake.</li>

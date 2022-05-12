@@ -43,7 +43,13 @@ Workflow > Email attachment | no | no | no | yes |
 
 **CSV Summary is available for most charts and it exports the aggregated data, as it appears in the chart. See the <a href="#csv-summary-export">CSV Summary Export</a> section for more on this. 
 
-> **Note**: All exports take some time to complete. This time depends on the size of the data and the complexity of the exported content. The product notifies the user of this and gives them the option to continue work while the download completes in the background.
+
+>**Note 1**: It is recommended that you wait for all visuals to fully render before attempting to export them. This is required in order to get a reliable export.  
+
+> **Note 2**: All exports take some time to complete. This time depends on the size of the data and the complexity of the exported content. The product notifies the user of this and gives them the option to continue work while the download completes in the background.
+
+>**Note 3**: If any “Max” limits (Max Data Points, Max records, Max columns, Max rows, Max slices and Max groups) have been applied to the chart, those limits apply to the exported data, also.
+
 
 ## CSV Export
 CSV is a data export option. The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”. CSV export is not available as email attachment in workflows, at this time.

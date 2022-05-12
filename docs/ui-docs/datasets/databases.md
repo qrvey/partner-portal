@@ -66,4 +66,29 @@ At this point, you can proceed to the *Dataset* tab and begin creating datasets 
 
 In addition to Database Connections, you can create File Upload connections. <a href="/docs/ui-docs/datasets/csv/">Click here</a> to learn more.
 
+
+## Editing a Database Connection
+To edit a Database Connection, click on the Connection card at which you’ll be asked if you want to continue as editing the connections affects any datasets that are using it. 
+
+### Relational Database Connection
+When editing a relational database, you can choose between two editing options:
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>a) Typical Configuration</li>
+
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/typical.png#thumbnail-60)
+
+<li>b) Advanced JSON Configuration</li>
+
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/advanced.png#thumbnail-60)
+</ul>
+
+### Non-relational Database Connections
+When editing a non-relational database, click on the Connection card and the following modal appears where you can make your changes:
+
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/nonrelational.png#thumbnail-60)
+
+In case you decide to edit the Connection Query as well, click on the **Include a Query with this Connection** button and select the Connection Query from the drop-down menu.
+
+>**Note**: The UI validates the JSON in a way that there are no empty attributes in the Sample Record. 
+
 </div>

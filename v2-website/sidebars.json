@@ -228,52 +228,6 @@
     },
     {
       "type": "category",
-      "label": "Analysis Views",
-      "items": [
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/formulas"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/buckets"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/exporting"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/summary-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/tabular-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/custom-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/chart-types"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/chart-builder"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/metric-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/table-calculations"
-        }
-      ]
-    },
-    {
-      "type": "category",
       "label": "Builders",
       "items": [
         {
@@ -558,6 +512,10 @@
         {
           "type": "doc",
           "id": "release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-mar-2022"
         },
         {
           "type": "doc",
@@ -877,6 +835,10 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version71"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version7"
