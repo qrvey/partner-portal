@@ -10,8 +10,7 @@ A Pie Chart is essentially a circle divided into slices. The full circle, or “
 
 ![pie](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Pie/pie.png#thumbnail)
 
-
-## Creating a Pie Chart
+## Creating a Pie Chart
 To create a Pie Chart, we need one column as a **Category** and one as **Values**.
 In the case below, we want to see the composition of each product line in the entire orders. 
 We drag and drop *productLine* as **Category** and *quantityOrdered* as **Values**. We continue styling the chart in the Configuration Panel and changed the shape to donut.

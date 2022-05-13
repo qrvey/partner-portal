@@ -3,9 +3,9 @@ id: indicator-gauge
 title: Indicator Gauge
 sidebar_label: Indicator Gauge
 ---
- 
+
 <div style={{textAlign: "justify"}}>
- 
+
 The indicator Gauge displays a single aggregated metric with the option to compare against the same metric from a different time period. This form of visualization is best suited to display KPIs.
  
 ![indicator](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Indicator/indicator.png#thumbnail-60)

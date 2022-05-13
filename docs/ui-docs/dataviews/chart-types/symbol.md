@@ -6,7 +6,7 @@ sidebar_label: Symbol Chart
 
 <div style={{textAlign: "justify"}}>
 Symbol Charts show aggregated values (unlike scatter plot which is based on non-aggregated data) with the purpose of seeing which data points stand out as the highest and lowest of the bunch - this makes sense when you have many data points. Symbol Charts are considered very close to Bar Charts in their use case and therefore everything that applies to a Bar Chart also applies to a Symbol Chart in the analytical sense.
- 
+
 ![symbol-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Symbol/symbol.png#thumbnail)
  
  
