@@ -288,6 +288,163 @@
     {
       "collapsed": true,
       "type": "category",
+      "label": "Chart Builder",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/chart-builder/chart-builder-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-builder/creating-a-chart"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Chart Configuration",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration-overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/general"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/styles"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/layers"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/format"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/trend-chart"
+            },
+            {
+              "type": "doc",
+              "id": "version-6.5/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Chart Types",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bar-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/line-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/symbol-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-bar"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-line"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/ms-symbol"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/combo-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/funnel-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/pie-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/min-max-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/indicator-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/dial-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bullet-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/table"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/expandable-table"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/crosstab"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/heatmap"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/dot-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/bubble-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/choropleth-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/box-whisker"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/dataviews/chart-types/word-cloud"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
       "label": "Builders",
       "items": [
         {
