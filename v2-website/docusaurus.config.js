@@ -1,7 +1,7 @@
 module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
-  "url": "http://http://partners-staging.qrvey.com/",
+  "url": "http://partners-staging.qrvey.com/",
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
