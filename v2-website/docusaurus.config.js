@@ -96,6 +96,7 @@ module.exports = {
         docsDir: '../docs',
         blogRouteBasePath: '/blogs',
         blogDir: 'blogs',
+        removeDefaultStopWordFilter: true,
         searchResultLimits: 100,
         highlightSearchTermsOnTargetPage: true,
         searchResultContextMaxLength: 200,
