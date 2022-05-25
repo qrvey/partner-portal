@@ -47,7 +47,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Position** - decide whether you want the total of the column, row, or both.
 Subtotals - If you have more than one level in Columns, this option shows the totals of each parent group alongside the child layer values, as you drill down into the child layers. 
 * **Max Rows*** - set a limit on the number of data points in the Rows dimension. 
-* **Max Columns*** - set a limit on the number of data points in the Columns dimension.</br>
+* **Max Columns*** - set a limit on the number of data points in the Columns dimension.<br />
 *The maximum number of data points within both dimensions is 10,000 in total.
 
 ### Styles
