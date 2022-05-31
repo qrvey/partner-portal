@@ -43,6 +43,8 @@ Workflow > Email attachment | no | no | no | yes |
 
 **CSV Summary is available for most charts and it exports the aggregated data, as it appears in the chart. See the <a href="#csv-summary-export">CSV Summary Export</a> section for more on this. 
 
+When exporting charts, if for example you add a filter and there isn’t any data found meeting the parameters you had set, you’ll see a message in your PDF and CSV exports informing you that there weren’t any records to export.
+
 
 >**Note 1**: It is recommended that you wait for all visuals to fully render before attempting to export them. This is required in order to get a reliable export.  
 
