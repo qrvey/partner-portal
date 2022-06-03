@@ -17,9 +17,9 @@ The modal dialog to enter the connection information may be slightly different f
 
 ## Creating a Connection Using the Default Method
 
-Enter your connection information, including *Host URL, Username* and *Password*. *Port* is optional. 
+Enter your connection information, including *Host URL, Username* and *Password*. *Port* is optional. The fields that are mandatory are highlighted when information is missing. 
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database2.png#thumbnail-60) 
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/highlight.png#thumbnail-60) 
 
 
   
