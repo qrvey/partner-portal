@@ -35,7 +35,7 @@ The following steps walk you through setting up record-level security with Qrvey
 ### Step 1 - Enable Record-Level Security
 The first thing you need to do is enable record-level security from the Admin Center. RLS settings are located under *User Management - Security options*.
 
-![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png#thumbnail)
+![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png)
 
 Data security is the main configuration to enable record-level security. If it is turned off, Qrvey will not restrict access in any dataset created by the Composer, regardless of the security configuration. The same applies to the users’ security tokens; they will be ignored if this feature is not enabled.
 
