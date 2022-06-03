@@ -25,7 +25,7 @@ If the selected connection is to a database, you get to choose a table or view f
   
 Once the data source is selected you will land in the *Design* section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-panel.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-intro.png#thumbnail)
 
 
 1. All new datasets are given the name of the connection + {table/view} or Custom Query. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
@@ -68,7 +68,7 @@ The option to *Automatically add new columns discovered* during data loads is di
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li> a) It can be enabled by checking the box under Source Data Column or both, Source Data and the Visualization Column.</li>
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/discover1.png#thumbnail) 
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/discover-column.png#thumbnail) 
 
 
 <li>b) It can be done from the three-dot menu by choosing <strong>Discovered Columns</strong>.</li>
@@ -83,15 +83,15 @@ There are two checkboxes next to each column and by default they’re all checke
 * The first one on the left reads the column and stores it in the dataset
 * The second one on the right allows the column to be used for visualizations.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose1.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/both.png#thumbnail)
 
 When both boxes are checked, the column can be used for visualizations, Transformations, and Geolocation.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose2.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/right.png#thumbnail) 
 
 When unchecking the second checkbox, the *orderNumber* can’t be seen in Charts, Filters, Formulas, Buckets or Summary/Tabular Views. The visualization format can’t be changed. However, even if the column is not visible in visualization, you can still turn on/off the *Unique ID* and enable/disable *Record Level Security* settings; also you can use them for Transformations. Click on **Apply Changes**, but there’s no need to Reload the dataset.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/choose3.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/none.png#thumbnail) 
 
 When unchecking the first checkbox, the second one is automatically unchecked as well. The columns created by transformations don’t get deleted, but you can’t turn on/off a Unique ID or enable/disable Record Level Security. 
 If a chart has already been created using the column before it got unchecked, there will be a message in the chart notifying you that a column is missing. You need to **Apply Changes** and **Reload** the dataset for the change to be effective.
@@ -191,14 +191,14 @@ Adding or changing Transformations will require a reload of the data if it has a
 ### Other Available Features
 There are plenty of other features available in the dataset design step. Some of these features are listed below.
 * **Marking a dataset as favorite** - A dataset can be marked as a favorite by clicking on the star icon at the top of the screen. Favorite datasets appear on the top of the dataset list screen.
-* **General information about the dataset** - Once a dataset is loaded with data, certain pieces of information are displayed about it at the top of the screen. These include its creation date, status, and more.
+* **General information about the dataset** - Once a dataset is loaded with data, certain pieces of information are displayed about it at the top of the screen. These include its last load date, status, and more.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/14datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-info.png#thumbnail) 
 
 * **Search Box** - You can look for columns by their names from the search box above the list of columns.
 * **Viewing source data** - If you would like to see a partial view of the source data, click on **View Source Data**. This displays the first 100 rows of data, as it stands in each data source.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/15datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/design-data.png#thumbnail)
 
 * **Refreshing (Synchronizing) data** - Data can be partially, or fully, reloaded based on a schedule to keep the dataset in sync with the data source(s) that may get new data as time goes by.
 
@@ -251,7 +251,7 @@ If you change your mind after you have started a load, you can always cancel the
 In the *Activity Log* section, you can find the actions taken on the dataset logged for your information. A *success* message will be shown when the event is completed successfully, and an *error* message will appear when the event failed. Error messages have the option of seeing the details of why the error occurred.
 With the* Download Log File* option, you can download the event in the activity log and get the error details in text format as well.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/25datasets.png#thumbnail)
-
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/act-log1.png#thumbnail)
+ 
 </div>
 
