@@ -33,9 +33,9 @@ It’s essential to understand four critical elements of record-level security (
 The following steps walk you through setting up record-level security with Qrvey.
 
 ### Step 1 - Enable Record-Level Security
-The first thing you need to do is enabling record-level security from the Admin Center. RLS settings are located under *User Management - Security options*.
+The first thing you need to do is enable record-level security from the Admin Center. RLS settings are located under *User Management - Security options*.
 
-![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png#thumbnail)
+![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png)
 
 Data security is the main configuration to enable record-level security. If it is turned off, Qrvey will not restrict access in any dataset created by the Composer, regardless of the security configuration. The same applies to the users’ security tokens; they will be ignored if this feature is not enabled.
 
@@ -77,22 +77,50 @@ The following is an example of a JSON object containing a user’s security perm
 
 ```JSON
 {
- "version": "1.0.0",
-  "appid": "8_u_BlPDt",
- "userid": "T_E_iJWOk",
- "expiresIn": "1y",
- "permissions": [
-   {
-     "dataset_id": "3Vo1yo6L-H",
-     "record_permissions": [
-       {
-         "security_name": "country_security_column",
-         "values": ["United States"]
-       }
-     ]
-   }
- ]
-}
+ "version": "2.0.0",
+   "userid": "userId",
+   "appid": "appId",
+   "permissions": [
+      {
+         "dataset_id": "datasetId",
+         "operator": "AND",
+         "record_permissions": [
+            {
+               "security_name": "MyDateSecurityName",
+               "validation_type": "RANGE",
+               "group_value": "month",
+               "values": [
+                  {
+                     "gte": "Jun 2020",
+                     "lte": "Dec 2020"
+                  }
+               ]
+            },
+            {
+               "operator": "OR",
+               "record_permissions": [
+                  {
+                     "security_name": "MyCountrySecurityName",
+                     "validation_type": "CONTAIN",
+                     "values": [
+                        "ina",
+                        "col"
+                     ]
+                  },
+                  {
+                     "security_name": "MyNumericSecurityName",
+                     "validation_type": "RANGE",
+                     "values": [
+                        {
+                           "gte": 1e6
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 ```
 
 Once you have the JSON object with the permissions to grant access to the users, you need to request an access token by calling the Qrvey API <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6NDY5NTUxNjg-generate-token-for-creators" target="_blank"> Generate Token</a> passing the JSON object in the body. The endpoint will generate a new <a href="https://tools.ietf.org/html/rfc7519" target="_blank">JWT</a> adding all of the user’s permissions to it and return the token as part of the *http* response. The generated token will be encrypted to avoid tampering.
@@ -111,6 +139,10 @@ var config = {
  qv_token: "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB...",
 };
 ```
+
+>**Note**: While version 1.0.0 is supported for backward compatibility, it is strongly recommended that the version attribute be set to 2.0.0, starting with the 7.2 release. This setting provides support for large JWT, as well as complex logic in the creation of the token. The example above shows the configuration for a token that matches rows with the following pseudo code, as criteria: <br/>
+`(Month(datasetId.MyDateSecurityName) between (June 2020 and December 2020)) OR (datasetId.MyCountrySecurityName Contains (“ina” or “col”)) OR (datasetId.MyNumericSecurityName > 1,000,000)`
+
 Once the token is part of the widget’s configuration object, it will contain the security token in every request’s header.
 
 ### Generate a Security Token With OpenId Authentication
@@ -118,34 +150,80 @@ Please review the <a href="/docs/admin/admin-sections-platform/" target="_blank"
 
 Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">Auth0 </a> as an OpenId provider. You define the security permissions by each user under Auth0 by adding the JSON object to the user_metadata section.
 
-![6_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/6rls.png#thumbnail)
-
+```json
+{
+   "version": "2.0.0",
+   "userid": "userId",
+   "appid": "appId",
+   "permissions": [
+      {
+         "dataset_id": "datasetId",
+         "operator": "AND",
+         "record_permissions": [
+            {
+               "security_name": "MyDateSecurityName",
+               "validation_type": "RANGE",
+               "group_value": "month",
+               "values": [
+                  {
+                     "gte": "Jun 2020",
+                     "lte": "Dec 2020"
+                  }
+               ]
+            },
+            {
+               "operator": "OR",
+               "record_permissions": [
+                  {
+                     "security_name": "MyCountrySecurityName",
+                     "validation_type": "CONTAIN",
+                     "values": [
+                        "ina",
+                        "col"
+                     ]
+                  },
+                  {
+                     "security_name": "MyNumericSecurityName",
+                     "validation_type": "RANGE",
+                     "values": [
+                        {
+                           "gte": 1e6
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+}
+```
 
 When users log in into the OpenID Provider, the security permissions previously stored in the user_metadata will be added as part of the user information. They will be redirected to Qrvey, where the permissions will be used to filter the data in all charts if RLS is enabled.
 
-This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage the whole process by itself.
+This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage all the processes by itself.
 
 
 ## Security Token Schema
 The security token schema is one of the critical pieces in the entire architecture of Qrvey’s row-level security. The schema defines a communication protocol where all users’ information, including the security info, is transmitted and then extracted internally to apply the security filters defined for each user to only expose the data that they are authorized to see.
 
-In this section, we will describe the structure of the security token schema.
+In this section, the structure of the security token schema has been described.
 
 
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
-| version | _Number_| Yes |The version of the token structure. The current version is 1.0.0.
-| user_id | _String_| Yes | User ID
-| appid | String | Yes | The ID of the application you want to embed.
-| permissions| _Array_| Yes | Each item in the collection contains a _Permission Object_  
+| version | _Number_| Yes |The version of the token structure. The current version is 2.0.0.| 
+| user_id | _String_| Yes | User ID| 
+| appid | _String_ | Yes | The ID of the application you want to embed.| 
+| permissions| _Array_| Yes | Each item in the collection contains a _Permission Object_ | 
 
 
-Permission Object
+Permissions Object
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
 | dataset_id| _String_| No |The ID of the dataset (from any type of data source: Database, Index View, or CSV files) where the row-level security will apply. **If _dataset_id_ is set to * (wildcard), the column and the values defined in the** _Record Filter Object_ **will be used to filter the data in all datasets available.**
+| operator| _String_| No| Type of the logical operation on *record_permissions*. The available options are **AND, OR**.<br/><br/> Default: **AND**| 
 | record_permissions | _Array_| Yes | Each item in the collection contains a _Record Filter Object_.
 
 
@@ -154,6 +232,8 @@ Record Filter Object
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
 | security_name| _String_| Yes |Name of the security column used to filter the data
-| values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3, corresponding to the Company IDs where the user has access. <br /> If you do not want to apply security filters to the users, a wildcard (*) must be used.
+| validation_type| _String_| No| Type of validation for each security object. The possible values are *EQUAL, NOT_EQUAL, CONTAIN, NOT_CONTAIN, RANGE, NOT_RANGE, BETWEEN, DATE, GREATER_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN, LESS_THAN_OR_EQUAL, START_WITH, NOT_START_WITH, END_WITH, NOT_END_WITH, IS_EMPTY, IS_NOT_EMPTY*.<br/><br/>Default: **EQUAL**| 
+| group_value| _String_| No| This field is only valid for DATE columns. The possible values are *SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, SECOND_ONLY, MINUTE_ONLY, HOUR_ONLY, DAY_ONLY, WEEK_ONLY, MONTH_ONLY AND QUARTER_ONLY*. <br/><br/> Default: **day**| 
+| values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3, corresponding to the Company IDs where the user has access. <br /> If you do not want to apply security filters to the users, a wildcard (*) must be used.<br/><br/>**Important Note:** The *validation_type* attribute must be set to *EQUAL* in order to use a wildcard, or otherwise the * character will be treated literally.
  
 </div>
