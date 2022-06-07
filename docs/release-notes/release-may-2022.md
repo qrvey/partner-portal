@@ -59,8 +59,8 @@ sidebar_label: Qrvey 7.2
 
 
 * **CD-1467 - Content Deployment - Support for Unknown Connections for Deployment**: Content Deployment has been improved to recognize types of connections that are not yet supported as “Unknown” and allow users to deploy applications that use these connections (E.g. MongoDB, DynamoDB, Snowflake).
- 
-## General Tweaks & Bug Fixes
+
+## General Tweaks & Bug Fixes
 
 * **ADMIN-4495 - Login/Signup Emails Using Capital Letters Cause Error (bug fix)**: An issue that prevented users from signing up with emails containing uppercase letters has been fixed. 
 
