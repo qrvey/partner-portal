@@ -1,15 +1,8 @@
 {
   "version-6.5/get-started": [
     {
-      "collapsed": true,
-      "type": "category",
-      "label": "Introduction to Qrvey System",
-      "items": [
-        {
           "type": "doc",
           "id": "version-6.5/get-started/get-started-intro"
-        }
-      ]
     },
     {
       "collapsed": true,
