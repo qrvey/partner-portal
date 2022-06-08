@@ -102,6 +102,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-6.5/ui-docs/qrvey-composer-overview"
+        },
+        {
+          "type": "doc",
           "id": "version-6.5/ui-docs/basics/logging-in"
         },
         {
@@ -608,6 +612,10 @@
     }
   ],
   "version-6.5/embedding": [
+    {
+      "type": "doc",
+      "id": "version-6.5/dev-docs/dev-docs-overview"
+    },
     {
       "collapsed": true,
       "type": "category",

@@ -102,6 +102,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-7.0/ui-docs/qrvey-composer-overview"
+        },
+        {
+          "type": "doc",
           "id": "version-7.0/ui-docs/basics/logging-in"
         },
         {
@@ -604,6 +608,10 @@
     }
   ],
   "version-7.0/embedding": [
+    {
+      "type": "doc",
+      "id": "version-7.0/dev-docs/dev-docs-overview"
+    },
     {
       "collapsed": true,
       "type": "category",
@@ -1131,6 +1139,10 @@
     }
   ],
   "version-7.0/special-features": [
+    {
+      "type": "doc",
+      "id": "version-7.0/special-features/special-features-overview"
+    },
     {
       "collapsed": true,
       "type": "category",

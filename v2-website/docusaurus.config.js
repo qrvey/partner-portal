@@ -133,7 +133,7 @@ module.exports = {
             },
             {
               "label": "Qrvey Composer",
-              "to": "/docs/ui-docs/basics/logging-in"
+              "to": "/docs/ui-docs/qrvey-composer-overview"
             },
             {
               "label": "Admin Docs",
@@ -141,11 +141,11 @@ module.exports = {
             },
             {
               "label": "Developer Docs",
-              "to": "/docs/get-started/get-started-architecture"
+              "to": "/docs/dev-docs/dev-docs-overview"
             },
             {
               "label": "Special Features",
-              "to": "/docs/ui-docs/end-user-personalization/overview"
+              "to": "/docs/special-features/special-features-overview"
             },
             {
               "label": "Release Notes",
