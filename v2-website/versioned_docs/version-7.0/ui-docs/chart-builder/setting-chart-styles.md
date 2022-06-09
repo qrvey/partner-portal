@@ -58,38 +58,6 @@ Initially, the default theme is the only theme that is listed in this dialog. Th
 
 Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code, if they need to handle the theme programmatically.
 
-When you click on the **+Create New Theme** button, you see the following modal: 
- 
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/modal-steps.png) 
-
-1. Give your theme a name to identify it. 
-2. Check this box if you’d like to use the theme across all of your Qrvey applications. 
-3. Choose the default typeface for the text in your visualizations. 
-4. Configure the Panel Style settings:
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>a) You can show or hide the background of the Chart.</li>
-</ul>
-
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/background.png#thumbnail-60) 
-
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>b) You can show or hide the Chart title.</li>
-</ul>
-
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/title.png#thumbnail-60) 
-
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>c) You can change the color of the Chart title.</li>
-</ul>
-
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/color-title.png#thumbnail-60)  
-
-5. In the **Text Styles** section, you can customize the color for *Axis and Data Labels, Values, Legends*, and *Tooltips*.
-
-6. In **Data Styles**, you can change the colors for the *Main Color*, and you can pick the colors you’d like to have in your theme in *Data Visualization* or *Generate New Theme* colors.
-7. **Table Header Styles** lets you set the color you want your *Header Font Color* to be like – this can be also done in the Styles section of the Configuration Panel in Table Charts. 
-8. Here you can restore the style settings to default, **Cancel** the changes you made or **Save** the theme.
-
 Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
 
 

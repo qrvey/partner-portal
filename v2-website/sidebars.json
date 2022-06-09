@@ -287,6 +287,14 @@
           "id": "ui-docs/dataviews/chart-builder/creating-a-chart"
         },
         {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/sorting-data"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/setting-chart-styles"
+        },
+        {
           "type": "category",
           "label": "Chart Configuration",
           "items": [

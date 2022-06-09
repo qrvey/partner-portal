@@ -296,6 +296,14 @@
           "id": "version-7.1/ui-docs/dataviews/chart-builder/creating-a-chart"
         },
         {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/sorting-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/setting-chart-styles"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Chart Configuration",
