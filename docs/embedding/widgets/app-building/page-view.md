@@ -61,7 +61,7 @@ The table below provides general information about each property of this widget�
 ### Hiding Features
 Show or hide any feature you don’t require for your embedded use cases by setting a property to true or false which creates a customized version of the page builder widget.
 
-You can hide all the features mentioned in the table below If you set the *Liteversion* property to true.
+You can hide all the features mentioned in the table below If you set the *Liteversion* property to **true**.
 
 ```json
 widgetConfig = {
@@ -74,7 +74,7 @@ widgetConfig = {
 }
 ```
 
-If you only want to hide a specific property, set the liteVersion feature to true and the property you want to hide to false. This will hide only the specific property/properties.
+If you want to hide all properties except a specific one, set the *liteVersion* feature to **true** and the exception you want to show to **false**. This will show only that specified property. 
 
 ```json
 widgetConfig = {
@@ -104,7 +104,7 @@ widgetConfig = {
 | hideLaunchButton| Hide the button to access the page view| `Boolean`| false| No| 
 | hideCreateManagePages| Hide all options to create pages| `Boolean`| false| No| 
 | hidePageStatus| Hide Text “status”| `Boolean`| False| No| 
-| hidePagesBar| Hide bottom bar pages in edit mode| `Boolean`| False| No| 
+| hidePagesBar| Hide bottom bar pages| `Boolean`| False| No| 
 | LiteVersion| Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
 | canvas| Define canvas related features that can be hidden| `Object`| N/A| No| 
 | hideManageCanvas| Hide the following options: Grid, Responsive View, Discard Changes.| `Boolean`| false | No| 
