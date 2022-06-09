@@ -93,13 +93,13 @@
   ],
   "ui-docs": [
     {
+      "type": "doc",
+      "id": "ui-docs/qrvey-composer-overview"
+    },
+    {
       "type": "category",
       "label": "Basics",
       "items": [
-        {
-          "type": "doc",
-          "id": "ui-docs/qrvey-composer-overview"
-        },
         {
           "type": "doc",
           "id": "ui-docs/basics/logging-in"
@@ -536,13 +536,13 @@
   ],
   "admin": [
     {
+      "type": "doc",
+      "id": "admin/admin-intro"
+    },
+    {
       "type": "category",
       "label": "Admin",
       "items": [
-        {
-          "type": "doc",
-          "id": "admin/admin-intro"
-        },
         {
           "type": "doc",
           "id": "admin/elasticsearch-management"
