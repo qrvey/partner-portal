@@ -44,9 +44,6 @@ sidebar_label: Qrvey 7.2
     * **AT-10602/AT-10621/AT-10732 - Create, Manage, Publishing Pages**: You can now control the visibility of the actions related to creating, managing and publishing pages and applications in the Page Builder embedded widget.
 
 
-* **AT-11027 - Assets Visibility - Summary Panels**: You can now control the visibility of the summary panels without chart or dataset permissions in the Page Builder embedded widget.
-
-
 * **AT-11091 - Feature Visibility - Page Builder “Lite Version”**: With this option widget implementers can control the visibility of multiple features in the Page Builder embedded widget by using a single property called “LiteVersion”, all at once.
 
 
