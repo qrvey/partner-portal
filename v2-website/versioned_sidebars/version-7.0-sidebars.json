@@ -304,6 +304,10 @@
           "id": "version-7.0/ui-docs/chart-builder/setting-chart-styles"
         },
         {
+          "type": "doc",
+          "id": "version-7.0/ui-docs/chart-builder/tooltips"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Chart Configuration",
