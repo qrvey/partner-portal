@@ -16,12 +16,12 @@ The filter modal is the central component when defining filters. It allows you t
 The following image shows the initial state of the filter modal when it’s opened. All data columns of the selected dataset are shown in the area in the center and they can be found using the search box. The filter’s scope may be defined from the dropdown list in the bottom left corner.
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail-0)
 
-Once a column is selected the center part of the modal changes to allow you to define your desired criteria.
+Once a column is selected the center part of the modal changes to allow you to define your desired criteria. 
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-comp.png) 
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-comp.png#thumbnail-0) 
 
 1. **Selected column to filter** - You can change your selection by clicking on the arrow on the right side to open the dropdown list of columns.
 
@@ -71,9 +71,9 @@ The panel has several options that can be controlled from the icons above it.
 3. **Options** - disable or delete all filters from the three-dot menu. 
 4. **Collapse/Expand** - the filter panel can be collapsed or expanded using this icon.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter2.png) 
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter2.png#thumbnail-0) 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter3.png)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter3.png#thumbnail-0)
 
 
 Filters are listed in groups based on their scope. See <a href="/docs/ui-docs/filtering-data/introduction-to-filters">Introduction to Filters</a> to learn more about scopes and their effect on filters.
@@ -98,14 +98,14 @@ In Qrvey, we provide a set of filter controls that you can drag and drop to the 
 #### Date Picker
 One of these controls is a date picker filter that acts as a calendar inside the end-user site. To add a date picker filter control, drag it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-controls-nv.png#)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-controls-nv.png#thumbnail-0)
  
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/6working-filters.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/6working-filters.png#thumbnail-0)  
 
 
 Selecting the date picker component will enable the configuration panel where you can configure the default settings.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/7working-filters.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/7working-filters.png#thumbnail-0)  
 
 
 * **Column**: The dataset column (or columns) that will be used to filter the data. End-users will not change this setting so every time they select a value, charts will be refined by the dataset’s column defined by the creator.
@@ -125,7 +125,7 @@ The Date Picker control offers the option to apply the same date filter to multi
 
 Any number of date type columns in the used datasets appear anc can be selected from the Column dropdown in the filter configuration panel. 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter6.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter6.png#thumbnail-0)  
 
 
 #### Value List
@@ -137,7 +137,7 @@ Another of these controls is a value list filter that acts as a simple list of v
 
 Selecting the value list component will enable the configuration panel where you can configure the default settings.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/value3.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/value3.png#thumbnail-0)  
 
 
 * **Column**: The dataset column that will be used to filter the data. End Users will not be able to change this setting so every time they select a value, charts will be refined by the dataset’s column defined by the creator.
@@ -159,16 +159,16 @@ In order to create the cascading behavior follow these steps:
 1. Add at least two Value List filters to a dashboard page and set those up based on two columns of the **same dataset**. Make sure that there is a logical hierarchy between the two selected columns. For example *Country > State, School > Students*, or similar. In the example below the first filter is set on a list of product vendors and the second list is of the product lines supplied by those vendors. Both lists are tied to the *Products* dataset.
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade1.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade1.png#thumbnail-0)  
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade2.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade2.png#thumbnail-0)  
 
 
 2. In the configuration panel for the second filter check the **Cascade filter** checkbox. This indicates that the values presented in this list will be filtered as soon as the user picks one or more values from another filter. 
 
 3. Define which filter and what data column will initiate the cascading by selecting the desired data column from the **React to cascading column** list. The dropdown automatically offers a list of columns that belong to the same dataset and have been set as the selected column in another Value List filter on the page. You will be prompted if such a filter/column cannot be found.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade3.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/cascade3.png#thumbnail-0)  
 
 
 4. Publish the page to test the filters in action. Note that the free-standing filters don’t work in edit mode and can only be interacted with when in page view mode. You can see the effect of cascading filters in the following screen capture. 
@@ -184,7 +184,7 @@ Input Box allows users to enter a free form text and search for it in any of the
 
 Selecting the Input Box component will enable the configuration panel where you can configure the default settings. Any number of columns can be selected to participate in search, as long as they are of the same data type. Selecting the first column will set the data type and limit the list of columns to those with a similar data type.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox1.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox1.png#thumbnail-0)  
 
 The appearance of the filter control, as well as the available operators may be affected by the data columns that are selected for filtering. For example, selecting a complex data type, such as a *Name* field that is used on a web form, adds an option to select which part of the name has to be searched in. Or choosing a web form field with a Yes/No data type limits the available operators to **Equals** and **Does not equal**, while a more comprehensive list of operators is available for a numeric data type.
 
@@ -248,7 +248,7 @@ When any filter or filters (other than hidden security filters) apply to a chart
 ### Adding a New Filter
 You can add a filter by clicking the **Add Filter** button in the side panel or you can add it directly from the chart. 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter8.png)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter8.png#thumbnail-0)  
 
 
 To add a new filter, hover on the filter icon and click the Add Filter link. 
