@@ -12,17 +12,17 @@ Other interactive filters, within various scopes, can be applied to data from ot
 
 To add a filter click on **Add Filters.**
 
-![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter1.png#thumbnail-40)
+![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter1.png#thumbnail-20)
 
 
 Select the column you would like to apply a filter on from the list of dataset columns that is presented. The options that appear depend on the data type of the selected column. Choose the operator and desired values and click on **Apply**. 
 
-![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter2.png#thumbnail)
+![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter2.png#thumbnail-40)
 
 
 The filter and its selected values will be displayed under the **Filters** section. 
 
-![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter3.png#thumbnail-60)
+![chart-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/filters/filter3.png#thumbnail-40)
 
 
 Any number of filters can be added to the chart. An *AND* logic will be applied between the filters on various columns, but filters set up on the same column will be set to *OR*.
