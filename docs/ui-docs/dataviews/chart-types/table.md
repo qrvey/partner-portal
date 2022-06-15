@@ -80,7 +80,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Totals** - display the total and/or subtotal of chosen values in the last row of the table or the group.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/9totals.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/9totals.png#thumbnail-0)
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 
@@ -105,7 +105,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Allow Pagination** - in ungrouped tables the data can be spread through pages by checking the pagination option. The number of records per single page can be set manually in **Records per page** (the limit is 1,000). This feature displays information about total records in the table, the number of records per page, and the current page out of all the pages.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/11pagination.png) 
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/11pagination.png#thumbnail-0) 
 
 
 
@@ -117,13 +117,13 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Header** - Choose the font, weight, size, and color of the text, as well as cell color and borders for your headers.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/12header.png) 
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/12header.png#thumbnail-0) 
 
 
 * **Body** - Choose the font, weight, size, and color of the text, as well as cell color and borders for the rest of the cells in your table. You can also opt for **alternating colors** of the foreground and background of the table rows, enable text wrapping, decide on the type of border you want and modify the border color. 
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/13body.png) 
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/13body.png#thumbnail-0) 
 
 
 
@@ -139,7 +139,7 @@ Click on **+Add Condition** to start. Pick the color of the text and the color o
 Click on **Remove** to remove the conditional formatting. 
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/14format.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/14format.png#thumbnail-0)
 
 
 
@@ -153,7 +153,7 @@ In the example below, we wanted to highlight all orders where the quantity is 1,
 In ungrouped Tables, you can include a column that hasn’t been included in the table. In the dropdown menu, you can see *Chart Columns* and *Other Columns*.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/16ungrouped.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/16ungrouped.png#thumbnail-0)
 
 
 
@@ -230,7 +230,7 @@ Trend Charts can be added in one of two ways:
 * **Show Value** - to show/hide the aggregated values alongside the trend visualization in each cell. Note that the column may not be wide enough to allow for both the label and the chart to be displayed. In this case, only the label is shown, unless the column is widened enough to have room for both.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/21trend5.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/21trend5.png#thumbnail-0)
 
 
 
@@ -266,13 +266,13 @@ Creators can reorder columns in two different ways:
 <li>a) Directly from the Table Headers: <br/> Columns in Simple Tables can be reordered by clicking on a selected header, “grabbing” it to slide the column to the left or right and then “dropping” it in the desired place. This method works both inside Chart Builder and in Page or Report Builder, once the table has been saved. After dropping the column in its new place, the column pills in the shelf inside Chart Builder appear in that same new order.</li>
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/23reorder.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/23reorder.png#thumbnail-0)
 
 
 <li>b) From the Columns Shelf: <br/> Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position in the shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/24reorder.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/24reorder.png#thumbnail-0)
 
 
 </ul>
@@ -309,7 +309,7 @@ Aggregate columns can be reordered in two ways:
 <li>b) From the Columns Shelf: <br/> Columns can also be reordered in the analytic panel by dragging and dropping the column pills in the desired position shelf. This method only applies to the edit mode of charts and can be performed inside Chart Builder.</li>
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/27agg2.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/27agg2.png#thumbnail-0)
 
 
 Grouped columns can only be ordered in design mode, i.e. inside Chart Builder, and only from the columns shelf. For this very same reason, they cannot be reordered by end users, who only work with the saved chart.
@@ -338,7 +338,7 @@ To create calculations across columns on the aggregated values while creating or
 3. The new aggregated formula can be edited or removed by clicking on the **Aggregated formulas** action item.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/29formula-action.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/29formula-action.png#thumbnail-0)
 
 
 > **Note**: Only when the table is grouped, the “Aggregated formulas“ action item is displayed in the action panel. If the table is not grouped, this action item is disabled.
