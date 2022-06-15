@@ -15,7 +15,7 @@ Click on the Transformations button on the top right corner of the columns list 
 
 Predefined transformation functions are presented in a list on the right side of the Transformations dialog. The functions are grouped by their type/category for easy access. Find the function you need from the list of functions and drag it to the work area that we will refer to as “the workspace”. When working with a single Data Source, you will have a single workspace to add transformations to. 
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf1.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf1.png#)
 
 In the example below, we wanted to use **Multiplication** transformation on columns *quantityOrdered* and *priceEach* to create a new column called *Total Price*.
 
@@ -52,9 +52,9 @@ Other Configuration Option - This part of the panel changes from function to fun
 >**Note**: Column names have to be unique in the entire dataset.
 
 * **Error Treatment Method** - This feature allows you to decide how possible errors should be handled. The three options are:
-    * Reject Record: The whole record will not be skipped if an error happens.
-    * Ignore Error: The record remains as-is.
-    * Replace Value: The value will be replaced with the entered value in case of an error.
+  * Reject Record: The whole record will not be skipped if an error happens.
+  * Ignore Error: The record remains as-is.
+  * Replace Value: The value will be replaced with the entered value in case of an error.
 >**Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-60)
@@ -262,17 +262,17 @@ This example will demonstrate how to find a single object within an object array
 
 
 
-The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the “actors” object array property must be selected from the Array Path field.
+The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the **actors** object array property must be selected from the *Array Path* field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-40)
 
 
-Next, the “actors.age” property is selected from the Condition Column field and “53” is entered into the adjacent Value field.
+Next, the **actors.age** property is selected from the *Condition Column* field and **53** is entered into the adjacent **Value** field.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-60)
 
 
-Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The “Create New” radio button is selected and a name for the target object array property is entered in the adjacent field.
+Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4array.png#thumbnail-60)
 
