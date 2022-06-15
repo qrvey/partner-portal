@@ -48,7 +48,7 @@ Sets the map mode and layers.
 ### Body
 This is an entire section that applies to Table charts and allows for the body (main rows) to be styled, from the used font’s properties to the cell foreground and background colors.  
 
-![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/body.png#thumbnail-60)
+![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/body.png#thumbnail-40)
 
 * Default: N/A
 * Applies to: <a href="" target="_blank">Table</a>
@@ -69,7 +69,7 @@ Color of the bullet in a bullet gauge.
 ### Category Labels
 This is a section that is accessible for funnel charts and allows the labels for the category column to be controlled. 
 
-![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/cat-labels.png#thumbnail-60)
+![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/cat-labels.png#thumbnail-40)
 
 * Default: N/A
 * Applies to: <a href="" target="_blank">Funnel</a>
@@ -164,7 +164,7 @@ Set the gap distance between columns and rows of a heatmap chart.
 ### Header
 This is an entire section that applies to Table charts and allows for the header row of the table to be styled, from the used font’s properties to the foreground and background colors and borders.
 
-![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/header.png#thumbnail-60)
+![styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/styles/header.png#thumbnail-40)
  
 
 * Default: N/A

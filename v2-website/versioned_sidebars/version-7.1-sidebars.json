@@ -262,14 +262,6 @@
         },
         {
           "type": "doc",
-          "id": "version-7.1/ui-docs/dataviews/chart-types"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.1/ui-docs/dataviews/chart-builder"
-        },
-        {
-          "type": "doc",
           "id": "version-7.1/ui-docs/dataviews/metric-view"
         },
         {
@@ -436,10 +428,6 @@
         {
           "type": "doc",
           "id": "version-7.1/ui-docs/dataviews/chart-types/choropleth-map"
-        },
-        {
-          "type": "doc",
-          "id": "version-7.1/ui-docs/dataviews/chart-types/box-whisker"
         },
         {
           "type": "doc",

@@ -15,7 +15,7 @@ If you decide to add a reference line, you can choose from a number of style opt
 
 To add a reference line click on the **+Add Reference Line** command. A new reference line section will be added and given a default name *Reference Line n*, where n is a sequentially-generated number. The line will get assigned a color based on the selected theme of the chart, starting with the second color in the sequence (the chart is assumed to take the first color).
 
-![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer1.png#thumbnail-60)
+![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer1.png#thumbnail-40)
 
 
 
@@ -34,11 +34,11 @@ A trend line reveals the overall direction of the data in a chart and can help y
  
 To add a trend line, you first need to select the type of trend you’d like to use from the drop-down menu. While you’re deciding on the line thickness and style, the preview chart on the left will automatically be updated with your selection.
  
-![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer3.png#thumbnail-40)
+![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer3.png#thumbnail-20)
 
->**Note**: The only type of trend line we support right now is Standard Linear Regression, with more types to be supported in the future.
+>**Note**: The only type of trend line we support right now is *Standard Linear Regression*, with more types to be supported in the future.
 
-![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer4.png#thumbnail-40)
+![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer4.png#thumbnail-20)
 
 ![layers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/layers/layer5.png#thumbnail)
 
