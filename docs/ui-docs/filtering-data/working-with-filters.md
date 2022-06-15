@@ -18,7 +18,7 @@ The following image shows the initial state of the filter modal when it’s open
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/1working-filters.png#thumbnail-0)
 
-Once a column is selected the center part of the modal changes to allow you to define your desired criteria.
+Once a column is selected the center part of the modal changes to allow you to define your desired criteria. 
 
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-comp.png#thumbnail-0) 
