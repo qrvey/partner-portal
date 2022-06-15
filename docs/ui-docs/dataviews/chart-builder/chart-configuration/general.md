@@ -62,7 +62,7 @@ Legends can be turned off or on from the icons shown in the following image. By 
 ### Max Data Points / Max Slices
 Here you can set the maximum number of data points you’d like to display in your chart. By default, the Max Data Points limit is set to 50 for performance reasons, but it can be set to a lower or higher number. To define the max number of data points in your chart, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times.
 
-![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/max.png#thumbnail-40)
+![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/max.png#thumbnail-0)
 
 
 >**Note**: If it appears that your chart is missing data, check the Max Data Points section and increase the limit to show more data on your chart. 
@@ -92,7 +92,7 @@ This field lets you increase or decrease a limit on the series you want to show 
 
 ### Menu Actions 
 <a href="" target="_blank">Table Charts</a> offer some options in interaction mode (when the chart is saved and placed on the dashboard). The *Edit* and *Multi-column Sort* options are always available from the three-dot menu in the header of each column. The availability of the two other options, Sorting and Visualization, can be controlled from this section. 
-When **Sorting** is checked, it adds the sorting button (<img alt="add" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sort.png" width="8%"/>) to the column header for all columns. When **Visualization** is checked, the command is added in the three-dot menu of numeric columns and allows users to decide whether they want values to be displayed as numeric or as bars.
+When **Sorting** is checked, it adds the sorting button (<img alt="add" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sort.png" width="2%"/>) to the column header for all columns. When **Visualization** is checked, the command is added in the three-dot menu of numeric columns and allows users to decide whether they want values to be displayed as numeric or as bars.
 
 
 ![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/menu.png#thumbnail)
@@ -111,7 +111,7 @@ This value controls the maximum number of rows that are retrieved for each group
 All charts offer sorting capability on their various data columns, however the access point to the sorting options may vary. The **Sort by** option in the General configuration is available for a handful of charts - like the pie chart - that have a simple sorting use case by either the selected category or values column. 
 Default sorting depends on the selected chart and the data types of the selected columns. However, you can switch between sorting by the category column and value column by clicking on the **ABC** and **123** icons, respectively. You can also change the direction of sorting from ascending to descending and back, by clicking on the sort direction icons on the right.
 
-![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sorting.png#thumbnail-40)
+![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sorting.png#thumbnail-20)
 
 	
 A comprehensive article on sorting data can be found <a href="" target="_blank">here</a>.
