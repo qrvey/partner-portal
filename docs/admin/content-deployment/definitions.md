@@ -25,8 +25,12 @@ Once done, click **OK** and the product will populate each of the sections under
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide7.png#thumbnail)
 
+Occasionally, when support for new types of connections is added to the product, it may take a few additional weeks for the Content Deployment process to catch up and fully support those new connection types. In such a case the connections will show an “unknown” label next to their names in the content dialog and the options to customize their configuration will be somewhat limited. However, they will still be deployed, set up and used properly. 
+
+![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/select-content.png#thumbnail-40)
 
 Datasets have an additional switch that allows you to choose if you want the data to be loaded, too, or the dataset to be created and not loaded. The default value for new datasets is to load data. Definitions are auto-saved and can be used in a Deployment Job immediately, or at a later time.
+
 
 >**Note**: The checkbox to **Show Content ID** is there to help developers who may want to use APIs to create Deployment Jobs, find those items easily.
 

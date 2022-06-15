@@ -1,0 +1,1189 @@
+{
+  "version-7.1/get-started": [
+    {
+          "type": "doc",
+          "id": "version-7.1/get-started/get-started-intro"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Deploying to AWS",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/prerequisites-for-installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/preparing-AWS-account"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/deploying-aws/initial-installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/upgrading-new-version"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/deleting-installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/troubleshooting"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Managing Qrvey In AWS",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/aws-services"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/customizing-qrvey-deployment"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/managing-aws-cluster"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/aws/manage-aws-elasticsearch"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/aws/connect-to-instance"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/redshift-connections"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/snowflake-connections"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Qrvey Platform Overview",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/system-components"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/authentication"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/user-roles"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/glossary"
+        }
+      ]
+    }
+  ],
+  "version-7.1/ui-docs": [
+    {
+      "type": "doc",
+      "id": "version-7.1/ui-docs/qrvey-composer-overview"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Basics",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/basics/logging-in"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/basics/managing-profile"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/basics/introduction"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/basics/applications"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Web Forms",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/type-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/create-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/field-guide"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/complex-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/branching"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/lookup"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/customize-web-forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/publishing"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/web-forms/embedding"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Data",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/data_overview"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Connections",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/datasets/connectors"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/datasets/databases"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/datasets/csv"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/datasets/api-connections"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/datasets"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/dataset-views"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/column-links"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/data-sync"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/joins"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/hierarchical-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/datasets/transformations"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Analysis Views",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/formulas"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/buckets"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/exporting"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/summary-view"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/tabular-view"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/custom-view"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/metric-view"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/table-calculations"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Chart Builder",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/chart-builder-overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-builder/creating-a-chart"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/sorting-data"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/setting-chart-styles"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/chart-builder/tooltips"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Chart Configuration",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration-overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/general"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/styles"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/sorting"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/layers"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/format"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/trend-chart"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Chart Types",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/bar-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/line-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/symbol-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/ms-bar"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/ms-line"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/ms-symbol"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/combo-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/funnel-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/pie-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/min-max-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/indicator-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/dial-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/bullet-gauge"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/table"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/expandable-table"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/crosstab"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/heatmap"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/dot-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/bubble-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/choropleth-map"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/dataviews/chart-types/word-cloud"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Builders",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/builders/reports"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/builders/pages"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/builders/pages_actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/builders/navigation"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/builders/user-management"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Filtering Data",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/filtering-data/introduction-to-filters"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/filtering-data/working-with-filters"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Subscriptions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/subscriptions/subscribing-to-exports"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Automation",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/flows"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/triggers"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/conditions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/send-actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/data-actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/automation/tokens"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Other",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/others/settings"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/others/sending"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/others/sharing-editing"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/others/activity-log"
+        }
+      ]
+    }
+  ],
+  "version-7.1/business-analytics": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Business Analytics",
+      "items": []
+    }
+  ],
+  "version-7.1/admin": [
+    {
+      "type": "doc",
+      "id": "version-7.1/admin/admin-intro"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Admin",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/elasticsearch-management"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/admin-managing-users"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/admin-sections-platform"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/roles-and-permissions"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Content Deployment",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/content-deployment/concepts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/content-deployment/servers"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/content-deployment/packages-and-versions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/content-deployment/definitions"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/content-deployment/jobs"
+        }
+      ]
+    }
+  ],
+  "version-7.1/embedding": [
+    {
+      "type": "doc",
+      "id": "version-7.1/dev-docs/dev-docs-overview"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Architecture",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/get-started/get-started-architecture"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Security",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/column-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/admin/record-level-security"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Embedding",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/embedding/embedding-intro"
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/widget-intro"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/embedding-widgets-security-token"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/filters-embedded-scenarios"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "App Building Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/app-building/widget-page-view"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/app-building/widget-page-builder"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/app-building/widget-report-builder"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Analytics Widgets",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/analytics/analytic-suite"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/analytics/single-panel"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "Data Collection and Forms",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/data-sources/widget-webforms"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/widgets/data-sources/web-form-end-user"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "API References",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/api/api-intro"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/embedding/api/api-tutorial"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version-7.1/release-notes": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Release Notes",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-mar-2022"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-dec-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-oct-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-sep-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-aug-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jul-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jun-2021"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Release Notes Archive",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-may-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-apr-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-feb-2021"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-december-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-oct-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-sep-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-aug-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jul-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jun-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-apr-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-mar-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-feb-2020"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-dec-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-nov-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-sep-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-aug-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jul-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-mar-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-feb-2019"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/release-notes/release-jan-2019"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "version-7.1/release-notes/known-issues"
+    },
+    {
+      "type": "doc",
+      "id": "version-7.1/release-notes/new-articles"
+    },
+    {
+      "type": "doc",
+      "id": "version-7.1/release-notes/updated-articles"
+    }
+  ],
+  "version-7.1/tutorials": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Tutorials",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/tutorials/first-analytic-app"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/tutorials/create-charts"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/tutorials/multi-datasets-one-filter"
+        }
+      ]
+    }
+  ],
+  "version-7.1/faqs": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "FAQs",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/faqs/faqs-intro"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/faqs/aws-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/faqs/data-security-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/faqs/publishing-faqs"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/faqs/ask-us"
+        }
+      ]
+    }
+  ],
+  "version-7.1/video-training": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Short Training Videos",
+      "items": [
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "For Platform Architects",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/multi-tenancy-architecture"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "For Data Engineers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/dataset-design"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/dataset-transformations"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/dataset-syncing"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "For Composers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/chart-builder"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/xychart"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/map-chart"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/percent-total-charts"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/multi-series"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/kpi"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/table"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/page-builder"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/filter-design"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/formulas-buckets"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/page-actions"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/content-publishing"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/new-webforms"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/new-workflows"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "For Administrators",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/security-overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/security-groups"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/row-level-security"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/column-level-security"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/content-deployment"
+            }
+          ]
+        },
+        {
+          "collapsed": true,
+          "type": "category",
+          "label": "For Developers",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/widget-overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/jwt-widget"
+            },
+            {
+              "type": "doc",
+              "id": "version-7.1/video-training/building-qrvey-sample/branding-styling"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Release Demos",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version71"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version7"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.5"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.4"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.3"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.2"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.1"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-6.0"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.10"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.9"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.8"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.7"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.6"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.5"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.4"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.3"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/video-training/release/version-5.2"
+        }
+      ]
+    }
+  ],
+  "version-7.1/special-features": [
+    {
+      "type": "doc",
+      "id": "version-7.1/special-features/special-features-overview"
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "End User Personalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/end-user-personalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/ui-docs/eup-dashboards"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Internationalization",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-7.1/special-features/internationalization/overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/special-features/internationalization/step-by-step"
+        },
+        {
+          "type": "doc",
+          "id": "version-7.1/special-features/internationalization/configure-dynamic-labels"
+        }
+      ]
+    }
+  ]
+}

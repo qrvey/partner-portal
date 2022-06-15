@@ -259,11 +259,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section <span>June 15, 2022</span></a>
+             <a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Chart Types section <span>June 15, 2022</span></a>
              <a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections <span>April 8, 2022</span></a>
              <a href="/docs/get-started/snowflake-connections" target="_blank">Configuring AWS and Qrvey for Snowflake Connections <span>April 8, 2022</span></a>
              <a href="docs/special-features/internationalization/overview">Internationalization Overview <span>April 4, 2022</span></a>
-                    <a href="docs/special-features/internationalization/step-by-step">Internationalization, Step-by-step <span>April 4, 2022</span></a>
-                    <a href="docs/special-features/internationalization/configure-dynamic-labels">Configuring Dynamic Labels For Datasets <span>April 4, 2022</span></a>
                  </div>
              </div>
            </div>
@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-                    <a href="/docs/admin/admin-sections-platform" target="_blank">Administrating Qrvey Composer<span>May 12, 2022</span></a>
-                    <a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview<span>May 12, 2022</span></a>
-                    <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets<span>May 12, 2022</span></a>
-                    <a href="/docs/get-started/glossary" target="_blank">Glossary of Common Terms<span>May 12, 2022</span></a>
-                    <a href="/docs/embedding/widgets/app-building/widget-page-view" target="_blank">Page View<span>May 12, 2022</span></a>
+             <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations <span>Jun 15, 2022</span> </a> 
+             <a href="/docs/admin/record-level-security" target="_blank">Record Level Security <span>Jun 15, 2022</span> </a> 
+             <a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions <span>Jun 15, 2022</span> </a>
+             <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets <span>Jun 15, 2022</span> </a> 
+             <a href="/docs/ui-docs/dataviews/chart-types/table" target="_blank">Table <span>Jun 15, 2022</span> </a> 
                  </div>
              </div>
            </div>
@@ -313,7 +313,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 7.1 has been released,{" "}
+                 Version 7.2 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"

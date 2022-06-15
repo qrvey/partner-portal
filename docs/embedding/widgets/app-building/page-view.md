@@ -7,7 +7,7 @@ sidebar_label: Page View Widget
 <div style={{textAlign: "justify"}}>
 
 
-The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and webforms, as well as other static content.
+The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and web forms, as well as other static content.
 
 Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. 
 
@@ -42,7 +42,7 @@ The table below provides general information about each property of this widget�
 | **Property** | **Value** |  **Required** |
 | --- | --- | --- |
 | api_key| `String`, secret identification token to access the application. | Yes
-| app_id | `String`, ID of the Qrvey application containing the webform.| Yes
+| app_id | `String`, ID of the Qrvey application containing the web form.| Yes
 | domain | `String`, Qrvey Core URL.| Yes
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
@@ -57,6 +57,59 @@ The table below provides general information about each property of this widget�
 
 
 > **Note**: Refer to the <a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+
+### Hiding Features
+Show or hide any feature you don’t require for your embedded use cases by setting a property to true or false which creates a customized version of the page builder widget.
+
+You can hide all the features mentioned in the table below If you set the *Liteversion* property to **true**.
+
+```json
+widgetConfig = {
+   domain: "DOMAIN",
+   appid: "APP_ID",
+   userid: "USER_ID",
+   featurePermission: {
+     liteVersion: true,
+   },
+}
+```
+
+If you want to hide all properties except a specific one, set the *liteVersion* feature to **true** and the exception you want to show to **false**. This will show only that specified property. 
+
+```json
+widgetConfig = {
+   domain: "DOMAIN",
+   appid: "APP_ID",
+   userid: "USER_ID",
+   featurePermission: {
+     liteVersion: true,
+     userManagement:{
+       hideUserManagementTab: false
+     }
+   },
+}
+```
+
+| **Property** | **Description** |  **Type** | **Default** | **Required** |
+| --- | --- | --- | --- | --- |
+| featurePermission| Main property of this feature.| `Object`| N/A| No| 
+| navigation| Define navigation-related features that can be hidden| `Object`| N/A| No| 
+| hideNavigationTab| Hide the entry method to the navigation tab in the top bar of the widget| `Boolean`| false| No| 
+| userManagement| Define user management related features that can be hidden| `Object`| N/A| No| 
+| hideUserManagementTab| Hide the entry method to the user management tab in the top bar of the widget| `Boolean`| false| No| 
+| pagesAndApplication| Define pages and application-related features that can be hidden| `Object`| N/A| No| 
+| hidePublishAppButton| Hide button “Unpublish”/”publish application”| `Boolean`| false| No| 
+| hidePublishPageButton| Hide button “publish page”| `Boolean`| false| No| 
+| hideCopyPageLink| Hide the UI interfaces where the user can get the link of a page| `Boolean`| false| No| 
+| hideLaunchButton| Hide the button to access the page view| `Boolean`| false| No| 
+| hideCreateManagePages| Hide all options to create pages| `Boolean`| false| No| 
+| hidePageStatus| Hide Text “status”| `Boolean`| False| No| 
+| hidePagesBar| Hide bottom bar pages| `Boolean`| False| No| 
+| LiteVersion| Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
+| canvas| Define canvas related features that can be hidden| `Object`| N/A| No| 
+| hideManageCanvas| Hide the following options: Grid, Responsive View, Discard Changes.| `Boolean`| false | No| 
+
+
 
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.

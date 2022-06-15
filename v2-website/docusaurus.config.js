@@ -1,7 +1,7 @@
 module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
-  "url": "http://http://partners-staging.qrvey.com/",
+  "url": "http://partners-staging.qrvey.com/",
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
@@ -61,7 +61,7 @@ module.exports = {
           "lastVersion": "current",
           "versions": {
             "current": {
-              "label": '7.1',
+              "label": '7.2',
             },
             '6.5': {
               "label": '6.5 and earlier',
@@ -96,6 +96,7 @@ module.exports = {
         docsDir: '../docs',
         blogRouteBasePath: '/blogs',
         blogDir: 'blogs',
+        removeDefaultStopWordFilter: true,
         searchResultLimits: 100,
         highlightSearchTermsOnTargetPage: true,
         searchResultContextMaxLength: 200,
@@ -132,7 +133,7 @@ module.exports = {
             },
             {
               "label": "Qrvey Composer",
-              "to": "/docs/ui-docs/basics/logging-in"
+              "to": "/docs/ui-docs/qrvey-composer-overview"
             },
             {
               "label": "Admin Docs",
@@ -140,11 +141,11 @@ module.exports = {
             },
             {
               "label": "Developer Docs",
-              "to": "/docs/get-started/get-started-architecture"
+              "to": "/docs/dev-docs/dev-docs-overview"
             },
             {
               "label": "Special Features",
-              "to": "/docs/ui-docs/end-user-personalization/overview"
+              "to": "/docs/special-features/special-features-overview"
             },
             {
               "label": "Release Notes",
