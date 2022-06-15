@@ -254,14 +254,6 @@
         },
         {
           "type": "doc",
-          "id": "ui-docs/dataviews/chart-types"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/chart-builder"
-        },
-        {
-          "type": "doc",
           "id": "ui-docs/dataviews/metric-view"
         },
         {
