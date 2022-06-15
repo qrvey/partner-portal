@@ -15,7 +15,7 @@ Click on the Transformations button on the top right corner of the columns list 
 
 Predefined transformation functions are presented in a list on the right side of the Transformations dialog. The functions are grouped by their type/category for easy access. Find the function you need from the list of functions and drag it to the work area that we will refer to as “the workspace”. When working with a single Data Source, you will have a single workspace to add transformations to. 
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf1.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf1.png#)
 
 In the example below, we wanted to use **Multiplication** transformation on columns *quantityOrdered* and *priceEach* to create a new column called *Total Price*.
 
@@ -30,7 +30,7 @@ After a successful test, we now have a new column *Total Price* to use in our da
 
 If you don’t want the column created by the transformation to show in your dataset, you can disable it by unchecking the box next to the Transformation. You can come back to **Transformations** and enable it anytime you want.  
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf3.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/add-transf3.png#thumbnail-0)
 
 
 In <a href="#ifelse">If/Else</a> transformations and the case of children transformation, keep in mind that when the parent transformation is disabled, all of the children transformations appear disabled as well; when the parent transformation is enabled, the children transformations appear enabled too. 
@@ -52,9 +52,9 @@ Other Configuration Option - This part of the panel changes from function to fun
 >**Note**: Column names have to be unique in the entire dataset.
 
 * **Error Treatment Method** - This feature allows you to decide how possible errors should be handled. The three options are:
-    * Reject Record: The whole record will not be skipped if an error happens.
-    * Ignore Error: The record remains as-is.
-    * Replace Value: The value will be replaced with the entered value in case of an error.
+  * Reject Record: The whole record will not be skipped if an error happens.
+  * Ignore Error: The record remains as-is.
+  * Replace Value: The value will be replaced with the entered value in case of an error.
 >**Note**: This feature is not available for transformations that don’t lead to an error, such as text type transformations.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation5.png#thumbnail-60)
@@ -68,7 +68,7 @@ Once work on a transformation is completed, the panel will collapse into a small
 
 Transformations are run in sequence. This is because a transformation might depend on the results of the previous ones. Transformations can be reorganized by dragging them around the workspace. They are also auto-saved and the resulting columns(s) can be identified with the Fx icon to the right of the column in the design screen. Clicking the icon opens the Transformations dialog and allows the transformations for the selected column to be edited or deleted.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation7.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation7.png#thumbnail-0)
 
 
 ## Transformations With Multiple Data Sources
@@ -206,14 +206,14 @@ This transformation allows you to remove the specified characters at the start o
 
 Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation15.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation15.png#thumbnail-0)
 
 ### Uppercase
 This transformation converts the value of one or more textual columns to uppercase. Standardizing the case can help when analyzing data, filtering, grouping and creating charts.
 
 Like all transformations, the results can update an existing column or create a new one. However, if multiple columns have been selected, the option of creating new columns is not going to be available.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transformation16.png#thumbnail-0)
 
 ## Date Transformations
 For all date transformations, you have the option to perform a date function on any number of date type data columns. In addition to other date columns, you can also use tokens or numbers that you manually enter. For example, you can create a new date column *deliveryDate* by adding 3 days to the date column *orderDate*. To use a token, type in two curly brackets {{ for the list of tokens to appear. 
@@ -262,17 +262,17 @@ This example will demonstrate how to find a single object within an object array
 
 
 
-The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the “actors” object array property must be selected from the Array Path field.
+The following ArrayFilter transformation configuration will find and match all Hollywood actors who are age 53. First, the **actors** object array property must be selected from the *Array Path* field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/2array.png#thumbnail-40)
 
 
-Next, the “actors.age” property is selected from the Condition Column field and “53” is entered into the adjacent Value field.
+Next, the **actors.age** property is selected from the *Condition Column* field and **53** is entered into the adjacent **Value** field.
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-40)
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/3array.png#thumbnail-60)
 
 
-Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The “Create New” radio button is selected and a name for the target object array property is entered in the adjacent field.
+Finally, the desired output is to place all actors who meet the age criteria into a new object array property so that the original array of actors is unmodified. The **Create New** radio button is selected and a name for the target object array property is entered in the adjacent field.
 
 ![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/4array.png#thumbnail-60)
 
@@ -395,13 +395,13 @@ Like all transformations, the results can update an existing column or create a 
 A special use case where a formula transformation comes in handy, is the case of updating an object column. If the column contains an object, both the root object and all of its individual properties can be accessed and transformed. If, however, the column contains an object array, only the root object itself can be transformed. 
 In the example below, a JSON file is used as the data source and the address column is an object with the following schema:
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transform1.png) 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transform1.png#thumbnail-0) 
 
 We expect all states to be in abbreviated format and consist of no more than 2 characters. With the following transform we remove the value of any state property that is longer than 2 characters.
 
 Note that both the root object address and all of its children are available as columns to be used in the formula, as well as options for the column to be updated. 
 
-![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transform2.png) 
+![transformations](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Transformations/transform2.png#thumbnail-0) 
 
 
 >**Note**: When working with Formula transformations, you have to be careful with syntax, using the correct functions with the appropriate data types, and other general rules that apply to scripting. 
