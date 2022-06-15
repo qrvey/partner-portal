@@ -140,7 +140,7 @@ Click on **+Add Condition** to start. Pick the color of the text and the color o
 Click on **Remove** to remove the conditional formatting. 
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/14format.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/14format.png#thumbnail-40)
 
 
 
@@ -154,7 +154,7 @@ In the example below, we wanted to highlight all orders where the quantity is 1,
 You can include a column that hasn’t been included in the table. In the dropdown menu, you can see *Chart Columns* and *Other Columns*.
 
 
-![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/16ungrouped.png)
+![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/16ungrouped.png#thumbnail-40)
 
 
 
