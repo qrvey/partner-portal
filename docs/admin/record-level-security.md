@@ -35,7 +35,7 @@ The following steps walk you through setting up record-level security with Qrvey
 ### Step 1 - Enable Record-Level Security
 The first thing you need to do is enable record-level security from the Admin Center. RLS settings are located under *User Management - Security options*.
 
-![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png)
+![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png#thumbnail-0)
 
 Data security is the main configuration to enable record-level security. If it is turned off, Qrvey will not restrict access in any dataset created by the Composer, regardless of the security configuration. The same applies to the users’ security tokens; they will be ignored if this feature is not enabled.
 
@@ -49,7 +49,7 @@ To define security columns, you need to go to the data-prep option, and under th
 
 Clicking on the **Enable Record Level Security** option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3---define-users-security-tokens"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
 
-![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png)
+![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail-40)
 
 
 Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#step-3---define-users-security-tokens"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
