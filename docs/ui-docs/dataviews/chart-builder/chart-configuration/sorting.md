@@ -16,7 +16,7 @@ The **Sorting** section of the Configuration panel is available for charts that 
 If the chart data has already been sorted by any of its columns, that column will be selected by default and all other options will be listed in an organized manner.
 
 
-![sorting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/sorting/sorting2.png#thumbnail-60)
+![sorting](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/sorting/sorting2.png#thumbnail-40)
 
 
 All selected numeric data columns must be aggregated using the **Aggregation** dropdown list.
