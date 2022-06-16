@@ -264,44 +264,6 @@
     },
     {
       "type": "category",
-      "label": "Analysis Views",
-      "items": [
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/formulas"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/buckets"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/exporting"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/summary-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/tabular-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/custom-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/metric-view"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/dataviews/table-calculations"
-        }
-      ]
-    },
-    {
-      "type": "category",
       "label": "Chart Builder",
       "items": [
         {
