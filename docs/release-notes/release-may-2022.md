@@ -37,13 +37,14 @@ sidebar_label: Qrvey 7.2
  
  
 * <a href="/docs/admin/record-level-security" target="_blank"> <strong>AN-15678 - Complex Logic for RLS in the Configuration Object</strong></a>: Implementers can now have more options to define complex logic when setting RLS permissions through the configuration object.
- 
+
 * <a href="/docs/embedding/widgets/app-building/widget-page-builder" target="_blank"><strong>Feature Visibility in the Page Builder Widget</strong></a>
-* <strong>AT-10581/AT-10594 - Navigation and User Mgmt.:</strong> You can now control the visibility of the Navigation and User Mgmt sections in the embedded Page Builder widget.
-* <strong>AT-10731 - Exporting General Data</strong>: You can now control the visibility of all actions related to exporting general data (CSV, PDF, JPG) in the Page Builder embedded widget.
-* <strong>AT-10602/AT-10621/AT-10732 - Create, Manage, Publishing Pages</strong>: You can now control the visibility of the actions related to creating, managing and publishing pages and applications in the Page Builder embedded widget.
+
+  * <strong>AT-10581/AT-10594 - Navigation and User Mgmt.:</strong> You can now control the visibility of the Navigation and User Mgmt sections in the embedded Page Builder widget.
+  * <strong>AT-10731 - Exporting General Data</strong>: You can now control the visibility of all actions related to exporting general data (CSV, PDF, JPG) in the Page Builder embedded widget.
+  * <strong>AT-10602/AT-10621/AT-10732 - Create, Manage, Publishing Pages</strong>: You can now control the visibility of the actions related to creating, managing and publishing pages and applications in the Page Builder embedded widget.
  
- 
+
 * <a href="/docs/embedding/widgets/app-building/widget-page-builder" target="_blank"><strong>AT-11091 - Feature Visibility - Page Builder “Lite Version”</strong></a>: With this option widget implementers can control the visibility of multiple features in the Page Builder embedded widget by using a single property called “LiteVersion”, all at once.
  
  
