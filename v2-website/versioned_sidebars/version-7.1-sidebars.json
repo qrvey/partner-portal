@@ -543,14 +543,6 @@
       ]
     }
   ],
-  "version-7.1/business-analytics": [
-    {
-      "collapsed": true,
-      "type": "category",
-      "label": "Business Analytics",
-      "items": []
-    }
-  ],
   "version-7.1/admin": [
     {
       "type": "doc",

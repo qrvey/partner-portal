@@ -73,7 +73,7 @@ module.exports = {
           "path": "blog"
         },
         "theme": {
-          "customCss": "../src/css/customTheme.css"
+          "customCss": require.resolve('./src/css/customTheme.css')
         }
       }
     ]
@@ -115,7 +115,7 @@ module.exports = {
       "title": "",
       "logo": {
         "src": "img/qrvey_footer_logo.svg",
-        "href": "/"
+        "alt": ''
       },
       "items": [
         {
@@ -124,42 +124,51 @@ module.exports = {
           "dropdownActiveClassDisabled": true,
         },
         {
+          "type": 'dropdown',
           "label": "Docs",
-          "href": "docs",
           "position": "right",
-          "items": [{
+          "items": [
+            {
+              "type": 'doc',
+              "docId": "get-started/get-started-intro",
               "label": "Getting Started",
-              "to": "/docs/get-started/get-started-intro",
             },
             {
+              "type": 'doc',
+              "docId": "ui-docs/qrvey-composer-overview",
               "label": "Qrvey Composer",
-              "to": "/docs/ui-docs/qrvey-composer-overview"
             },
             {
               "label": "Admin Docs",
-              "to": "/docs/admin/admin-intro"
+              "type": 'doc',
+              "docId": "admin/admin-intro"
             },
             {
               "label": "Developer Docs",
-              "to": "/docs/dev-docs/dev-docs-overview"
+              "type": 'doc',
+              "docId": "dev-docs/dev-docs-overview"
             },
             {
               "label": "Special Features",
-              "to": "/docs/special-features/special-features-overview"
+              "type": 'doc',
+              "docId": "special-features/special-features-overview"
             },
             {
               "label": "Release Notes",
-              "to": "/docs/release-notes/release-last"
+              "type": 'doc',
+              "docId": "release-notes/release-last"
             },
           ]
         },
         {
-          "href": "/docs/video-training/building-qrvey-sample/multi-tenancy-architecture",
-          "label": "Videos",
-          "position": "right"
+          "type": 'doc',
+          "position": 'right',
+          "docId": "video-training/building-qrvey-sample/multi-tenancy-architecture",
+          "label": "Videos"
         },
         {
-          "href": "/docs/faqs/ask-us/",
+          "type": 'doc',
+          "docId": "faqs/ask-us",
           "label": "FAQS",
           "position": "right"
         },

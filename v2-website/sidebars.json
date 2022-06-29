@@ -527,13 +527,6 @@
       ]
     }
   ],
-  "business-analytics": [
-    {
-      "type": "category",
-      "label": "Business Analytics",
-      "items": []
-    }
-  ],
   "admin": [
     {
       "type": "doc",
