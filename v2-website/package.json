@@ -14,7 +14,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "format": "prettier --write ${npm_package_config_prettierTarget}",
-    "format:check": "prettier --check ${npm_package_config_prettierTarget}"
+    "format:check": "prettier --check ${npm_package_config_prettierTarget}",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
@@ -73,5 +74,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "@types/eslint": "8.4.3"
   }
 }
