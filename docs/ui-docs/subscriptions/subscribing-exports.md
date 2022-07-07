@@ -39,6 +39,9 @@ Next, enter any email addresses that you want the exports to be delivered to in 
 Once done with entering all of the needed information click on the **Apply** button to finalize the configuration of your subscription.
 At the chosen time all of the selected pages will be exported to one file in PDF format. Each selected chart will be exported to an individual file, also in PDF format, and all of the files are packaged in a zip file and the link to download the file is added to the email that you set up. The download link is valid for 7 days from the date of creation.
 
+The orange **Apply** button becomes activated only when all the required information has been filled in. The required fields are highlighted to notify you there’s information missing. 
+
+
 ## Managing Subscriptions
 
 Click **Manage Subscriptions** from the menu to open the following dialog.
