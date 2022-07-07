@@ -44,6 +44,13 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 * **Data Labels** - enable or disable showing Data Labels, which represent data values from the dataset column assigned to the Value shelf.
 
+* **Values** - when checked, it shows the value of the corresponding segment. 
+
+* **Percentages** - when checked, it shows the percentage of the corresponding segment.
+
+![pie](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Pie/values.png#thumbnail) 
+
+
 ### Format
 You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> to your Pie Chart.
 
