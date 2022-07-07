@@ -30,9 +30,23 @@ You can arrange every tab’s width by clicking on the resize button located to 
 
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
 
-![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4a_pages.png#thumbnail-80) 
+![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4a_pages.png#thumbnail-80)  
 
-<br />
+When a Dataset has been created, it appears listed in the Data Panel. 
+Expanding the dataset, shows all the charts and summary panels that have been created using that dataset. These can be dragged directly from the panel onto the canvas as some sort of a shortcut that saves you time adding already created charts to different pages.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/list.png#thumbnail-40) 
+
+
+Hovering over an item shows the name of the chart, chart type and the chart description if it has been provided by the creator. 
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/hover.png#thumbnail)
+
+
+You can click on the arrow icon next to the dataset name to get redirected to the Dataset **Design** page where you can apply changed to that Dataset. Read more about this in the <a href="/docs/ui-docs/datasets/" target="_blank">Dataset</a> article.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/expand.png#thumbnail-40)
+
 
 ### Toolbar
 In the toolbar, you will find the options to configure your page and options to add content.
@@ -108,7 +122,6 @@ If you need to access one of the datasets you are working with from Report Build
 As you are building your pages, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a page. 
 
 
-
 ![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail-80)
 
 For Text, Images and Buttons, you will find options to style fonts, colors, text alignment, image aspect, and an option to add a URL to create links from the objects. 
@@ -121,6 +134,59 @@ To reposition each object, you can click anywhere on the object and drag it to t
 
 
 ![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-20)
+
+#### Image  
+Insert an image that redirects your End Users to a target page of your choice. Supported formats of images are: 
+* .jpeg 
+* .png
+* .gif
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/page-image.png#thumbnail-40)
+
+
+
+Upload an image you want to insert into your page or paste the image URL if it’s already online.
+
+Set the *Aspect* keeping in mind that the image in *Contain* mode resizes to fully fit in the container; in *Cover* mode, it keeps its size and aspect ratio as is; in *Fill* mode, it resizes the image and changes its proportions, to fill the container. For example, you can either choose to resize an image with a custom resolution or choose to reduce the size but keep a 4:3 aspect ratio.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/image1.png#thumbnail)
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/image2.png#thumbnail)
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/image3.png#thumbnail)
+
+
+
+#### Button
+You can add buttons for your End Users to interact with, redirecting them to another site when clicked on.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/button1.png#thumbnail-40)
+
+
+Enter the text caption visible to users in the Label box, and then choose the color of the text and button background. 
+
+In the **Add Link** box, paste the URL you want the button to redirect to.
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/button2.png#thumbnail-60)
+
+
+ 
+#### Text Box
+For Text, you can change the font type, size and color, choose between different text styles, change the background color, and align the text or create paragraphs. Text can be added by typing it in or using the shortcuts for copy/paste/cut.
+
+You can add a link to the text by highligthing a part of the whole text and clicking the **Add Link** icon. If you want to remove the link, click the **Remove Link** icon. 
+
+![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/text.png#thumbnail)
+
+
+
+You can choose your text or a part of it to appear subscript or superscript.
+
+By clicking on the eraser icon, you can remove all the formatting applied to your text. 
+If you want your text to appear within a frame enable the border that is by default turned off. Here you can also choose the color of your border and its width. 
+
+You can also customize text padding - *left, right, top*, and *bottom*. 
+
+
+
 
 #### Filters
 The Filters menu item lets you easily manage global, page, and tab filters defined in your pages, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.

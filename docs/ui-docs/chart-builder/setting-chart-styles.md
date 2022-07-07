@@ -54,13 +54,13 @@ To create a new theme, go to the **Style Themes** button that can be found in th
 
 Initially, the default theme is the only theme that is listed in this dialog. The default theme cannot be removed or edited, but you may duplicate it from the three-dot menu. Alternatively, you may create a new theme and define your desired styles from scratch. Every theme that is created can be given a name and will be listed in all of your applications and can be used either for that app or throughout all of the apps. The colors under the Data Styles section can be changed individually but you can also click on **Generate New** to generate a new set of colors and continue to modify any that you prefer to change. The modified theme can be restored to the original set by clicking on the **Restore to Default** link, at any time.
 
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/theme-modal.png) 
+![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/ctheme1.gif) 
 
 Each theme has a unique ID that can be used for accessing the theme programmatically. The Theme ID is always displayed in the UI from the list of themes. Developers can copy and paste the ID of the desired theme into the embedded widget JSON configuration code, if they need to handle the theme programmatically.
 
 When you click on the **+Create New Theme** button, you see the following modal: 
  
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/modal-steps.png) 
+![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/ctheme2.png-60) 
 
 1. Give your theme a name to identify it. 
 2. Check this box if you’d like to use the theme across all of your Qrvey applications. 
@@ -73,16 +73,17 @@ When you click on the **+Create New Theme** button, you see the following modal:
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/background.png#thumbnail-60) 
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>b) You can show or hide the Chart title.</li>
-</ul>
+<li>b) You can show or hide the Chart header.</li></ul>
+
+<ul style={{listStyle: 'none', marginLeft: '40px'}}>
+<li>i. You can show or hide the Chart title.
 
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/title.png#thumbnail-60) 
-
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>c) You can change the color of the Chart title.</li>
-</ul>
+</li> 
+<li>ii. You can change the color of the Chart title.
 
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/color-title.png#thumbnail-60)  
+</li></ul>
 
 5. In the **Text Styles** section, you can customize the color for *Axis and Data Labels, Values, Legends*, and *Tooltips*.
 

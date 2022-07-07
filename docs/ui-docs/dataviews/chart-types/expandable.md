@@ -33,14 +33,26 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Records per Group** - Records per Group - Limits the number of detail records shown for each expandable group header row. This value is 10 by default and cannot be lower than 10, with no upper limit.
 * **Totals** - display the grand total for a selected column or the whole table to get a summary of the number of records for a group or the complete table by clicking **+Add Total**. Choose the column you want to show the Total for, and the type of the Total aggregation (*Select All, Sum, Average, Median, Count, Distinct Count, Minimum, Maximum*). Last but not least, in **Level** you can select if you want to show the total for the whole table or just a selected column. 
 
-![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail) 
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail-40) 
 
 
 
 ### Styles
-* **Header Color** - set a color for your header using the color picker. 
-* **Header Font Color** - set a color for the text in your header using the color picker.
+* **Header**
+  * **Align** - set the alignment of the text for all columns or for a specific one.
+  * **Font Color** - set a color for the text in your header using the color picker. 
+  * **Background Color** - set a color for the background of your header using the color picker.
+
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/body.png#thumbnail-40)  
+
+
+* **Body**
+  * **Align** - set the alignment of the text for all columns or for a specific one.</br> </br>
+
 * **Resize Rows** - set a height for your rows. 
+
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail) 
+
 
 ### Format
 You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format" target="_blank">Conditional Formatting</a> to your Expandable Table.

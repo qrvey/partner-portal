@@ -89,8 +89,11 @@ The filter panel is interactive and dynamically shows only the filters that appl
 
 
 ### Free-Standing Filter Controls
-Another option to add interactive filters to a page is to add them as free-standing controls that can be placed anywhere on a page and used to filter any chart that is placed on the page and uses the selected data column. 
+Another option to add interactive filters to a page is to add them as free-standing controls that can be placed anywhere on a page and used to filter any chart that is placed on the page and uses the selected data column. Just like the filter modal, the filter components list formulas in the column selection dropdown as well. 
+
 In Qrvey, we provide a set of filter controls that you can drag and drop to the canvas inside the page builder to make them available to end-users when the page is published or embedded in a web application.
+
+
 
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/intfilter5.png#thumbnail)
 
