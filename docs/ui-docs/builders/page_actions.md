@@ -67,9 +67,16 @@ To activate this action, you need to set how the filter will apply in terms of t
 ![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_4.png#thumbnail-40)
 
 ### Go to URL
-To activate this action, you need to set an external URL where you want the users to be redirected. The URL should be valid for the action to work. As part of the URL, you can use data or system tokens.
+To activate this action, you need to set an external URL where you want the users to be redirected. 
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_5.png#thumbnail-60)
+In case of Table Charts, choose a column the Page Action applies to from the **Column Link** dropdown.
+
+
+![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/go-url.png#thumbnail-60)
+ 
+The URL mustshould be a valid one for the action to work. As part of the URL, you can use data or system tokens.
+You can set the URL to open on the same page the user is currently on, a new tab or a new window. 
+
 
 
 ### Chart Drill Down
