@@ -447,6 +447,18 @@
         {
           "type": "doc",
           "id": "ui-docs/builders/user-management"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/table-calculations"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/chart-axes"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/discrete-continuous-values"
         }
       ]
     },
