@@ -19,8 +19,8 @@ The **Discrete** and **Continuous** features are options only available for the 
 
 ### Discrete Dates
 ![disc-cont](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/disc-cont-values/discrete.png#thumbnail)
- 
 
+ 
 
 ### Continuous Dates
 
@@ -28,6 +28,24 @@ The **Discrete** and **Continuous** features are options only available for the 
 
 
 
+In the **Styles** section of XY Charts, we can set the start and end values for <u>date</u> and <u>numeric</u> columns.
+The range is set to *Auto* by default, but it can be changed to a date/number of your choice.
+
+
+![disc-cont](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/disc-cont-values/date-num1.png#thumbnail) 
+
+
+![disc-cont](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/disc-cont-values/date-num2.png#thumbnail) 
+
+
+
+* **Start Date** - set the date or period you want to start showing the data at.
+
+* **Calendar Dates** - dates that are not tied to the calendar year (for example, if we are in July 2022, “the 3 last years” would be from August 2019 to now).
+
+* **Include starting date** - includes the current date (for example, if we’re in July 2022, “the 3 last years” including starting date would be from July 2019 to now).
+
+* **End Date** - set the date or period you want to end showing the data at. 
 
 
 </div>
