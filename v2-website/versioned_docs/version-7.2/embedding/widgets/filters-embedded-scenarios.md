@@ -112,13 +112,14 @@ The following example shows the filter structure for a simple range filter on a 
 Sample filter: COLUMN_ID BETWEEN 10 AND 15.
 
 ```
-... 
- "userFilters": {
+...
+"userFilters": {
       "filters": [
        {
          "operator": "AND",
          "expressions": [
            {
+		  "qrveyid": "QRVEY_ID",
              "questionid": "COLUMN_ID",
              "validationType": "RANGE",
              "value": [
@@ -151,6 +152,7 @@ AND<br />
          "operator": "AND",
          "expressions": [
            {
+		  "qrveyid": "QRVEY_ID",
              "groupValue": "day",
              "questionid": "COLUMN_ID_1",
              "validationType": "RANGE",
@@ -162,11 +164,13 @@ AND<br />
              ]
            },
            {
+		  "qrveyid": "QRVEY_ID",
              "questionid": "COLUMN_ID_2",
              "validationType": "EQUAL",
              "value": ["United States"]
            },
            {
+		  "qrveyid": "QRVEY_ID",
              "questionid": "COLUMN_ID_3",
              "validationType": "RANGE",
              "value": [
