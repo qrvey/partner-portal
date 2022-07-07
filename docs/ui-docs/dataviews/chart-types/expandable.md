@@ -47,11 +47,10 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 * **Body**
-  * **Align** - set the alignment of the text for all columns or for a specific one.</br> </br>
-
+  * **Align** - set the alignment of the text for all columns or for a specific one.<br /> <br />
 * **Resize Rows** - set a height for your rows. 
 
-![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail) 
+![expandable](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Expandable/expandable3.png#thumbnail)
 
 
 ### Format

@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-may-2022
 title: Qrvey 7.2
 sidebar_label: Qrvey 7.2
 ---
