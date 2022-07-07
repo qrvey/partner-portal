@@ -115,7 +115,8 @@ var configDashBoard = {
            "operator": "AND",
            "expressions": [
                 {
-                    "enabled": true,
+                  "qrveyid": "<QRVEY_ID>",  
+"enabled": true,
                     "questionid": "<QUESTION_ID>",
                     "validationType": "<VALIDATION_TYPE>",
                     "value": [
@@ -139,7 +140,8 @@ function applyNewFilter() {
            "operator": "AND",
            "expressions": [
                 {
-                    "enabled": true,
+                  "qrveyid": "<QRVEY_ID>"  
+"enabled": true,
                     "questionid": "<QUESTION_ID>",
                     "validationType": "<VALIDATION_TYPE>",
                     "value": [
