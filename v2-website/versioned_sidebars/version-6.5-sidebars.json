@@ -304,6 +304,18 @@
           "id": "version-6.5/ui-docs/chart-builder/tooltips"
         },
         {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/chart-builder/table-calculations"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/chart-builder/chart-axes"
+        },
+        {
+          "type": "doc",
+          "id": "version-6.5/ui-docs/chart-builder/discrete-continuous-values"
+        },
+        {
           "collapsed": true,
           "type": "category",
           "label": "Chart Configuration",
@@ -463,18 +475,6 @@
         {
           "type": "doc",
           "id": "version-6.5/ui-docs/builders/user-management"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.5/ui-docs/chart-builder/table-calculations"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.5/ui-docs/chart-builder/chart-axes"
-        },
-        {
-          "type": "doc",
-          "id": "version-6.5/ui-docs/chart-builder/discrete-continuous-values"
         }
       ]
     },
