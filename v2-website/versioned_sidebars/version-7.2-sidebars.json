@@ -303,6 +303,10 @@
           "id": "ui-docs/chart-builder/discrete-continuous-values"
         },
         {
+          "type": "doc",
+          "id": "ui-docs/chart-builder/date-grouping"
+        },
+        {
           "type": "category",
           "label": "Chart Configuration",
           "items": [
