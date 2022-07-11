@@ -34,7 +34,8 @@ This feature is available with <a href="/docs/embedding/widgets/app-building/wid
 ### Expressions Object
 | **Property** | **Type** | **Required** | **Description** 
 | --- | --- | --- | --- |
-| **questionid** | `String` | No |Represent the dataset’s column ID used to refine the data.|
+| **qrveyid** | `String` | No |Represent the dataset ID used to refine the data.|
+| **questionid** | `String` | No |Represent the dataset’s column ID used to refine the data, should belong to the qrvey defined above.|
 | **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a <a href="/docs/ui-docs/dataviews/formulas">FORMULA</a> or a <a href="/docs/ui-docs/dataviews/buckets/">BUCKET</a>; otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
 | **validationType** | `String` | Yes | The field represents the operand for filtering. Allowed values: <br />* EQUAL <br /> * NOT_EQUAL <br /> * CONTAIN <br /> * NOT_CONTAIN <br /> * END_WITH<br />* NOT_END_WITH <br />* START_WITH<br /> * NOT_START_WITH <br />* RANGE <br />* IS_EMPTY <br />* IS_NOT_EMPTY |
 | **property** | `String` | No | When using complex data types like the ones defined inside Webforms, Quizzes, or Surveys, it’s required. Please refer to <a href="#complex-properties">Complex Properties</a> for a complete list of supported values. |
