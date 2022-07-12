@@ -5,7 +5,7 @@ sidebar_label: Known Issues
 ---
 <div style={{textAlign: "justify"}}>
 
-* **DR-3583 - TransformChunk lambda is consuming all lambda concurrency:** Currently the transformChunk lambda does not have reserved concurrency, so it is consuming all the lambdas instance available in big loading with a lot of rows and this causes the rest of the API calls or lambda calls throws throttling errors. 
+* **DR-3583 - TransformChunk lambda is consuming all lambda concurrency:** Currently, the transformChunk lambda does not have reserved concurrency, so it is consuming all of the lambda instances available during a big data load job with a lot of rows and this may cause the rest of the API or lambda calls to throw throttling errors. 
 
 * **QV-14238 - Datasets - Timeout errors**: When a user tries to reload a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
 
