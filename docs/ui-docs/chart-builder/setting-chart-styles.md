@@ -60,7 +60,7 @@ Each theme has a unique ID that can be used for accessing the theme programmatic
 
 When you click on the **+Create New Theme** button, you see the following modal: 
  
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/ctheme2.png-60) 
+![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/ctheme2.png#thumbnail-60) 
 
 1. Give your theme a name to identify it. 
 2. Check this box if you’d like to use the theme across all of your Qrvey applications. 
