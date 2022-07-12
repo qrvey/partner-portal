@@ -59,7 +59,7 @@ Release Date: 2022-06-30
 
 * **QV-15943 - Support numeric and string array data types for Athena Connections (improvement)**: Users can now view and use string and numeric arrays for Datasets that use Athena Connections.
 
-* **AN-15707 - Allow Pie Charts to show the percentage of values (improvement)**: With this version pie charts have the option to display their values in percentages, as well as raw numbers.
+* <strong><a href="/docs/ui-docs/dataviews/chart-types/pie-charts#styles" target="_blank">AN-15707 - Allow Pie Charts to show the percentage of values (improvement)</strong></a>: With this version pie charts have the option to display their values in percentages, as well as raw numbers.
 
 * **AN-16272 - Geolocation by Country affects States that have the same name (bug fix)**: When filtering out a country like Georgia, US state Georgia was getting filtered out as well. This issue has been fixed.
 
