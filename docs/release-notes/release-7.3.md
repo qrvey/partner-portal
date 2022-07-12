@@ -12,7 +12,7 @@ Release Date: 2022-06-30
 ## New Features & Enhancements
  
 ### Data Preparation
-* **QV-14476 - Union Data From Multiple Sources**: “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset.
+* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>**QV-14476 - Union Data From Multiple Sources**: “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset.
 
 * **QV-15587 - PostgreSQL - S3 method to support larger data loads**: A new way of extracting data (the S3 method) when creating RDS PostgreSQL connections in the same region as the instance allows support of larger data loads.
 
@@ -21,26 +21,26 @@ Release Date: 2022-06-30
 
 ### Data Analysis & Automation
 
-* **AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories**: You can now control the X-axis range of your continuous charts by setting start and end category values. 
+* <strong><a href="/docs/ui-docs/chart-builder/discrete-continuous-values#continuous-dates" target="_blank">AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories</strong></a>: You can now control the X-axis range of your continuous charts by setting start and end category values. 
 
-* **AN-16110 - Text Alignment in Expandable Tables:** You can now modify the columns´ text alignment inside expandable tables.
+* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/dataviews/chart-types/expandable-table#styles" target="_blank">AN-16110 - Text Alignment in Expandable Tables</strong></a>: You can now modify the columns´ text alignment inside expandable tables.
 
-* **AN-15963 - Show/Hide Panel Headers**: Visibility of charts’ panel headers can be controlled from the themes dialog.
+* <strong><a href="/docs/ui-docs/chart-builder/setting-chart-styles#managing-themes" target="_blank">AN-15963 - Show/Hide Panel Headers</strong></a>: Visibility of charts’ panel headers can be controlled from the themes dialog.
 
-* **AN-15956 - Geolocation Groups - Counties Support**: Geolocation groups now support US counties. 
+* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/datasets/#setting-up-geolocation-groups" target="_blank">AN-15956 - Geolocation Groups - Counties Support</strong></a>: Geolocation groups now support US counties. 
 
 * **AT-9438 - Multi-Tenancy - Assets Visibility in Page Builder and Page View**: with this version, implementers can control the visibility of content and assets (charts, pages, datasets, etc.) from the widget configuration object for Page Builder and Page View widgets.
 
 
 * **AT-11070 - Customization of AN Panels Menu Action**: As an implementer, you can now control the available menu options for chart panels by the chart category (metrics or other charts).
 
-* **AT-9500 - Go To URL to load in Self/Tab/Window**: The target for the “Go to URL” page action can now be set to the same tab, a new tab, or a new window.
+* <strong><a href="/docs/ui-docs/builders/pages_actions" target="_blank">AT-9500 - Go To URL to load in Self/Tab/Window</strong></a>: The target for the “Go to URL” page action can now be set to the same tab, a new tab, or a new window.
 
-* **AT-10288 - Data Panel - Chart Information Preview**: An icon and the chart description help analysts better identify the charts under each dataset in the data panel before adding them to the canvas.
+* <strong><a href="/docs/ui-docs/builders/pages#canvas-layout" target="_blank">AT-10288 - Data Panel - Chart Information Preview</strong></a>: An icon and the chart description help analysts better identify the charts under each dataset in the data panel before adding them to the canvas.
 
-* **AT-10885 - Page Builder - Text Editor Formatting Enhancements**: We implemented additional options for formatting the text control in a page for improved customization.
+* <strong><a href="/docs/ui-docs/builders/pages#text-box" target="_blank">AT-10885 - Page Builder - Text Editor Formatting Enhancements</strong></a>: We implemented additional options for formatting the text control in a page for improved customization.
 
-* **AT-10764 - Filter Interactivity - Formulas in Filter Components**: You can now use formulas in Input Box and Date Picker components.
+* <strong><a href="/docs/ui-docs/filtering-data/working-with-filters#free-standing-filter-controls" target="_blank">AT-10764 - Filter Interactivity - Formulas in Filter Components</strong></a>: You can now use formulas in Input Box and Date Picker components.
 
 * **EX-1067 - Secure Location for Exported Files**: Download links can now be customized to use a secure location for exported files.
 
