@@ -21,7 +21,7 @@ The following image shows the initial state of the filter modal when it’s open
 Once a column is selected the center part of the modal changes to allow you to define your desired criteria. 
 
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-comp.png#thumbnail-0) 
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-comp.png#thumbnail-60) 
 
 1. **Selected column to filter** - You can change your selection by clicking on the arrow on the right side to open the dropdown list of columns.
 
@@ -101,7 +101,7 @@ In Qrvey, we provide a set of filter controls that you can drag and drop to the 
 #### Date Picker
 One of these controls is a date picker filter that acts as a calendar inside the end-user site. To add a date picker filter control, drag it from the list of filter controls located in the toolbar and drop it anywhere on the page and size it appropriately.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-controls-nv.png#thumbnail-0)
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/filter-controls-nv.png#thumbnail-60)
  
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/6working-filters.png#thumbnail-0)  
 
@@ -187,7 +187,7 @@ Input Box allows users to enter a free form text and search for it in any of the
 
 Selecting the Input Box component will enable the configuration panel where you can configure the default settings. Any number of columns can be selected to participate in search, as long as they are of the same data type. Selecting the first column will set the data type and limit the list of columns to those with a similar data type.
 
-![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox1.png#thumbnail-0)  
+![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/inputbox1.png#thumbnail-40)  
 
 The appearance of the filter control, as well as the available operators may be affected by the data columns that are selected for filtering. For example, selecting a complex data type, such as a *Name* field that is used on a web form, adds an option to select which part of the name has to be searched in. Or choosing a web form field with a Yes/No data type limits the available operators to **Equals** and **Does not equal**, while a more comprehensive list of operators is available for a numeric data type.
 
