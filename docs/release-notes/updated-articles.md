@@ -7,6 +7,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|<a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values</a>|7.3|Data Analyst| Jul 8, 2022
 |<a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>|7.2|Data Analyst| Jun 15, 2022
 |<a href="/docs/admin/record-level-security" target="_blank">Record Level Security</a>|7.2|Developer| Jun 15, 2022|
 |<a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions</a>|7.2|Admin| Jun 15, 2022|
