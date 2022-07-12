@@ -6,8 +6,12 @@ sidebar_label: Datasets
 <div style={{textAlign: "justify"}}>
 In this section, we’ll explain how datasets are created using a single data source; how columns and data types are modified; how data is loaded; and how a dataset can be edited and reloaded.
 
+<br/>
+<br/>
+
 >**Note**: To see how datasets are created from multiple data sources, please go to the <a href="/docs/ui-docs/datasets/joins/" target="_blank"> Data Joins article</a>.
-</br>
+
+<br/>
 
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**.
