@@ -13,11 +13,11 @@ To configure these actions, Creators need to:
 1. Go to Page Builder and click anywhere on the chart panel you wish to apply an action to.
 2. Under Page Actions choose **On Click**
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/pg_act1.png#thumbnail-40) 
+![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/pg_act1.png#thumbnail-0) 
 
 3. Choose the action to be configured.
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/pg_act2.png#thumbnail-40) 
+![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/pg_act2.png#thumbnail-0) 
 
 
 There are three main sections in the actions configuration page. 
@@ -74,7 +74,7 @@ In case of Table Charts, choose a column the Page Action applies to from the **C
 
 ![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/go-url.png#thumbnail-60)
  
-The URL mustshould be a valid one for the action to work. As part of the URL, you can use data or system tokens.
+The URL must be a valid one for the action to work. As part of the URL, you can use data or system tokens.
 You can set the URL to open on the same page the user is currently on, a new tab or a new window. 
 
 
@@ -151,14 +151,14 @@ The “Go to URL” action in maps has an additional setting called “Multi-Lev
 #### Filter By
 The *Filter By* action on a map allows users to filter the data by clicking on a data-point (a dot in a dot-map and a bubble in a bubble map) and see only the value selected. Depending on the configuration, this action could filter only the current chart or all the charts on the same page.
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/maps_filter.png#thumbnail)
+![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/maps_filter.png#thumbnail-0)
 
 If there is more than one action specified in the map, a contextual menu will appear when users click on a data-point showing all the available page actions.
 
 #### Page Drill
 The *Page Drill* action on maps allows users to interact with the chart’s data point (dot or bubble depending on the map’s type) by clicking on it, and then the action will then redirect them to the targeted page defined by the creator. If there is more than one action specified in the chart, a contextual menu will appear when users click on the symbols showing all the available page actions.
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/maps_filter.png#thumbnail)
+![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/go-to.png#thumbnail)
 
 ### Bar Chart
 #### Filter By
