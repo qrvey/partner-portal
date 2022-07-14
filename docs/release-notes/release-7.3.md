@@ -12,7 +12,7 @@ Release Date: 2022-06-30
 ## New Features & Enhancements
  
 ### Data Preparation
-* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>**QV-14476 - Union Data From Multiple Sources**: “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset.
+* <a href="/docs/video-training/release/version-7.3#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>**QV-14476 - Union Data From Multiple Sources**: “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset.
 
 * **QV-15587 - PostgreSQL - S3 method to support larger data loads**: A new way of extracting data (the S3 method) when creating RDS PostgreSQL connections in the same region as the instance allows support of larger data loads.
 
@@ -23,11 +23,11 @@ Release Date: 2022-06-30
 
 * <strong><a href="/docs/ui-docs/chart-builder/discrete-continuous-values#continuous-dates" target="_blank">AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories</strong></a>: You can now control the X-axis range of your continuous charts by setting start and end category values. 
 
-* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/dataviews/chart-types/expandable-table#styles" target="_blank">AN-16110 - Text Alignment in Expandable Tables</strong></a>: You can now modify the columns´ text alignment inside expandable tables.
+* <a href="/docs/video-training/release/version-7.3#expandable-table-alignment" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/dataviews/chart-types/expandable-table#styles" target="_blank">AN-16110 - Text Alignment in Expandable Tables</strong></a>: You can now modify the columns´ text alignment inside expandable tables.
 
 * <strong><a href="/docs/ui-docs/chart-builder/setting-chart-styles#managing-themes" target="_blank">AN-15963 - Show/Hide Panel Headers</strong></a>: Visibility of charts’ panel headers can be controlled from the themes dialog.
 
-* <a href="" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/datasets/#setting-up-geolocation-groups" target="_blank">AN-15956 - Geolocation Groups - Counties Support</strong></a>: Geolocation groups now support US counties. 
+* <a href="/docs/video-training/release/version-7.3#counties-support-in-geolocation-groups" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/datasets/#setting-up-geolocation-groups" target="_blank">AN-15956 - Geolocation Groups - Counties Support</strong></a>: Geolocation groups now support US counties. 
 
 * **AT-9438 - Multi-Tenancy - Assets Visibility in Page Builder and Page View**: with this version, implementers can control the visibility of content and assets (charts, pages, datasets, etc.) from the widget configuration object for Page Builder and Page View widgets.
 
