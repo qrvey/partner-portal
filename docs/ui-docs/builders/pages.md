@@ -172,7 +172,10 @@ In the **Add Link** box, paste the URL you want the button to redirect to.
 #### Text Box
 For Text, you can change the font type, size and color, choose between different text styles, change the background color, and align the text or create paragraphs. Text can be added by typing it in or using the shortcuts for copy/paste/cut.
 
-You can add a link to the text by highligthing a part of the whole text and clicking the **Add Link** icon. If you want to remove the link, click the **Remove Link** icon. 
+You can add a link to the text by highligthing a part of the whole text and clicking the **Add Link** icon or you can simply place the cursor in an empty spot of the the text box to add a raw hyperlink. If you want to remove the link, click the **Remove Link** icon. 
+
+
+
 
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/text.png#thumbnail)
 
