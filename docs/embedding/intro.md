@@ -23,9 +23,7 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 
 * <strong>Builders</strong> (tag: <code>&lt; qrvey-builders &gt;</code>) - This is the second most popular widget used to embed the entire <a href="/docs/embedding/widgets/app-building/widget-report-builder/" target="_blank"> Report Builder </a> or <a href="/docs/embedding/widgets/app-building/widget-page-builder/" target="_blank">Page Builder </a> in your custom application. The default mode embeds the Page Builder widget and adding and setting the reports_dahboard property to true, embeds the Report Builder.
  
-* <a href="/docs/embedding/widgets/data-sources/widget-datalinks/" target="_blank"><strong>Data Links </strong></a>(tag: <code>&lt; qrvey-datalinks &gt;</code>) - Data Links can be created by users of your application when you embed this widget in your product.
- 
-* <a href="/docs/embedding/widgets/data-sources/datasets-widget/" target="_blank"><strong>Datasets </strong></a> (tag: <code>&lt; qrvey-data-sets &gt;</code>) - Give your users access to the powerful dataset widget with all of its capabilities (tie to creating connections, creating complex datasets with joins, data synchronization, etc.). Access to this widget has to be enabled with care, as it enables users to access any connections that have been created for the application.
+* <a href="/docs/ui-docs/datasets/" target="_blank"><strong>Datasets </strong></a> (tag: <code>&lt; qrvey-data-sets &gt;</code>) - Give your users access to the powerful dataset widget with all of its capabilities (tie to creating connections, creating complex datasets with joins, data synchronization, etc.). Access to this widget has to be enabled with care, as it enables users to access any connections that have been created for the application.
 
 * <a href="/docs/embedding/widgets/app-building/widget-page-view/" target="_blank"><strong>Page View </strong></a>(tag: <code>&lt; qrvey-end-user &gt;</code>) - Page View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Page Builder to be embedded in your custom applications.
 
