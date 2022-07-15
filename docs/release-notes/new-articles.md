@@ -7,6 +7,7 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|<a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes</a>|All|Composer| June 29, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section</a>|All|Composer| June 15, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Chart Types section</a>|All|Composer| June 15, 2022|
 |<a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections</a>|All|CloudOps| April 8, 2022|
