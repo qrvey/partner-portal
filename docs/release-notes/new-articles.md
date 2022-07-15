@@ -7,6 +7,9 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|<a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank"><a>Discrete and Continuous Values</a>|All|Composer| July 7th, 2022|
+|<a href="/docs/ui-docs/chart-builder/table-calculations" target="_blank"><a>Table Calcuations</a>|All|Composer| July 7th, 2022|
+|<a href="/docs/ui-docs/chart-builder/date-grouping" target="_blank"><a>Date Grouping</a>|All|Composer| July 7th, 2022|
 |<a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes</a>|All|Composer| June 29, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section</a>|All|Composer| June 15, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Chart Types section</a>|All|Composer| June 15, 2022|
