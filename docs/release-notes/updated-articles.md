@@ -7,13 +7,13 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
-|<a href="/docs/ui-docs/datasets/" target="_blank"><a>Datasets</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/embedding/widgets/filters-embedded-scenarios" target="_blank"><a>Working With Filters in Embedded Scenarios</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/embedding/widgets/analytics/analytic-suite" target="_blank"><a>Analytic Suite Widget</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/ui-docs/builders/pages_actions" target="_blank"><a>Page Actions</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank"><a>Working With Interactive Filters</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/ui-docs/builders/pages" target="_blank"><a>Page Builder</a>|7.3|Data Analyst| Jul 7, 2022|
-|<a href="/docs/ui-docs/chart-builder/setting-chart-styles" target="_blank"><a>Setting Chart Styles and Themes</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/ui-docs/datasets/" target="_blank">Datasets</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/embedding/widgets/filters-embedded-scenarios" target="_blank">Working With Filters in Embedded Scenarios</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/embedding/widgets/analytics/analytic-suite" target="_blank">Analytic Suite Widget</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/ui-docs/builders/pages_actions" target="_blank">Page Actions</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/ui-docs/builders/pages" target="_blank">Page Builder</a>|7.3|Data Analyst| Jul 7, 2022|
+|<a href="/docs/ui-docs/chart-builder/setting-chart-styles" target="_blank">Setting Chart Styles and Themes</a>|7.3|Data Analyst| Jul 7, 2022|
 <a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values</a>|7.3|Data Analyst| Jul 7, 2022
 |<a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations</a>|7.2|Data Analyst| Jun 15, 2022
 |<a href="/docs/admin/record-level-security" target="_blank">Record Level Security</a>|7.2|Developer| Jun 15, 2022|

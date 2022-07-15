@@ -259,11 +259,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a>
+             <a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values<span>July 7th, 2022</span></a> 
+             <a href="/docs/ui-docs/chart-builder/table-calculations" target="_blank">Table Calcuations<span>July 7th, 2022</span></a> 
+             <a href="/docs/ui-docs/chart-builder/date-grouping" target="_blank">Date Grouping<span>July 7th, 2022</span></a> 
              <a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section <span>June 15, 2022</span></a>
-             <a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Chart Types section <span>June 15, 2022</span></a>
-             <a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections <span>April 8, 2022</span></a>
-             <a href="/docs/get-started/snowflake-connections" target="_blank">Configuring AWS and Qrvey for Snowflake Connections <span>April 8, 2022</span></a>
-             <a href="docs/special-features/internationalization/overview">Internationalization Overview <span>April 4, 2022</span></a>
                  </div>
              </div>
            </div>
@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/transformations" target="_blank">Transformations <span>Jun 15, 2022</span> </a> 
-             <a href="/docs/admin/record-level-security" target="_blank">Record Level Security <span>Jun 15, 2022</span> </a> 
-             <a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions <span>Jun 15, 2022</span> </a>
-             <a href="/docs/ui-docs/datasets/datasets" target="_blank">Datasets <span>Jun 15, 2022</span> </a> 
-             <a href="/docs/ui-docs/dataviews/chart-types/table" target="_blank">Table <span>Jun 15, 2022</span> </a> 
+              <a href="/docs/ui-docs/datasets/" target="_blank">Datasets<span>Jul 7, 2022</span></a> 
+              <a href="/docs/embedding/widgets/filters-embedded-scenarios" target="_blank">Working With Filters in Embedded Scenarios<span>Jul 7, 2022</span></a> 
+              <a href="/docs/embedding/widgets/analytics/analytic-suite" target="_blank">Analytic Suite Widget<span>Jul 7, 2022</span></a> 
+              <a href="/docs/ui-docs/builders/pages_actions" target="_blank">Page Actions<span>Jul 7, 2022</span></a> 
+              <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters<span>Jul 7, 2022</span></a> 
                  </div>
              </div>
            </div>
