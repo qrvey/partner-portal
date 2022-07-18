@@ -140,7 +140,7 @@ Once the deployment is done and Verified, Qrvey’s deployment team will email t
      * ANView URL
   * Elasticsearch URL
 * Useful Links:
-    * <a href="/docs/docs/get-started/get-started-architecture/">Developer Docs</a>
-    * <a href="/docs/embedding/api/api-intro/"> API reference</a>, <a href="/docs/data-router/introduction/data-router-intro/">Data Router</a> and <a href="/docs/embedding/widgets/widget-intro/">Widgets Samples</a>.
+    * [Developer Docs](../get-started/architecture.md)
+    * [API reference](../embedding/api/intro.md) and [Widgets Samples](../embedding/widgets/intro.md).
 
 </div>
