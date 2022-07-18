@@ -19,7 +19,7 @@ Release Date: 2022-06-30
 
 ### Data Analysis & Automation
 
-* <strong><a href="/docs/ui-docs/chart-builder/discrete-continuous-values#continuous-dates" target="_blank">AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories</a></strong>: You can now control the X-axis range of your continuous charts by setting start and end category values. 
+* **[AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories](../ui-docs/chart-builder/disc-cont.md#continuous-dates)**: You can now control the X-axis range of your continuous charts by setting start and end category values. 
 
 * <a href="/docs/video-training/release/version-7.3#expandable-table-alignment" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/dataviews/chart-types/expandable-table#styles" target="_blank">AN-16110 - Text Alignment in Expandable Tables</a></strong>: You can now modify the columns´ text alignment inside expandable tables.
 

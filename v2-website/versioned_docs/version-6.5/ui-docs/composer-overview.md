@@ -8,7 +8,7 @@ sidebar_label: Introduction to Qrvey Composer
 
 In this section, you can get to know more about Qrvey Composer, the UI where you can gather data through web forms, upload or connect to existing data sources, build visualizations and dashboards, create workflows, and more.
 
-* <a href="/docs/ui-docs/basics/logging-in"><b>Basics</b></a> - Read how to sign up, log into and manage your account, get introduced to the Qrvey Composer UI and familiarize yourself with the basics of your Application.
+* **[Basics](../ui-docs/basics/logging-in.md)** - Read how to sign up, log into and manage your account, get introduced to the Qrvey Composer UI and familiarize yourself with the basics of your Application.
 
 
 * <a href="/docs/ui-docs/web-forms/web-forms"><b>Web Forms</b></a> - Read more about building, customizing, publishing and embedding different types of Web Forms.
