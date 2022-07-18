@@ -64,6 +64,6 @@ The connection will be added to the Connection list, displaying the owner of the
 
 At this point, you can proceed to the *Dataset* tab and begin creating datasets from the connections you have established. 
 
-In addition to Database Connections, you can create File Upload connections. <a href="/docs/ui-docs/datasets/csv/">Click here</a> to learn more.
+In addition to Database Connections, you can create File Upload connections. [Click here](../datasets/csv.md) to learn more.
 
 </div>

@@ -9,7 +9,7 @@ sidebar_label: Working With Hierarchical Data
 Qrvey has the ability to work with, and analyze hierarchical data, most of the time uploaded from JSON files. This article describes the process of loading such data in datasets and the fundamentals of hierarchical analysis.
 
 ## Loading Hierarchical Data
-It is most common for the hierarchical data to exist in the form of a JSON file. A connection to the JSON file may be created from the **Connections** tab or when creating a new Dataset (see <a href="/docs/ui-docs/datasets/csv/"> File Upload Connection</a>). 
+It is most common for the hierarchical data to exist in the form of a JSON file. A connection to the JSON file may be created from the **Connections** tab or when creating a new Dataset (see [File Upload Connection](../datasets/csv.md)). 
 
 To create a dataset out of your data begin with clicking on the **New Dataset** button on the *Datasets* tab, selecting the connection to the JSON file from the list of connections and clicking on **Create**.
  
@@ -38,9 +38,9 @@ This transformation flattens the array and the effect can be seen in the form of
  ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon5.png#thumbnail)
 
 
->**Note**: To learn more about Transformations, see the <a href="/docs/ui-docs/datasets/transformations/"> dedicated article </a> on the subject.
+>**Note**: To learn more about Transformations, see the [dedicated article](../datasets/transformations.md) on the subject.
 
-You can design your dataset as usual before loading it. (See <a href="/docs/ui-docs/datasets/datasets/">Datasets</a> for more information)
+You can design your dataset as usual before loading it. (See [Datasets](../datasets/datasets.md) for more information)
 
 
 </div>
