@@ -23,7 +23,7 @@ In the case below, we want to show how the number of total orders changes throug
 
 
 
-If you have only one category you’d like to visualize, you can use a <a href="/docs/ui-docs/dataviews/chart-types/line-charts" target="_blank">Line Chart</a>.
+If you have only one category you’d like to visualize, you can use a [Line Chart](../chart-types/line.md).
 
 
 ## Styling the Multiseries Line Chart
@@ -31,14 +31,14 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### General
 * **Legends** - show or hide the legend that helps distinguish between the Series.
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>.
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
   * To show more than one value on mouseover, click on **+Add Column**:
       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
       * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
       * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
       * **Remove** - remove the tooltip column.
   * **Header** - add a header to the tooltip.
-* **Table Calculations** - add calculations to your table. Read more on this <a href="/docs/ui-docs/dataviews/table-calculations" target="_blank">here</a>.
+* **Table Calculations** - add calculations to your table. Read more on this [here](../../dataviews/table-calculations.md).
 * **Max Data Points** - set the upper limit of the data points you’d like to show in your Multiseries Bar Chart. Controlling the number of data points helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 * **Max Series** - increase/decrease a limit on the series you want to show in a single category in the chart, which is by default set to 50.
 
@@ -73,18 +73,18 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ### Sorting
 Like all Multiseries Charts, you can sort by either the category or aggregated values from the column pills. If the column is not included in the chart, go to the **Sorting** section of the Configuration Panel and pick your desired column from the dropdown, and select the sorting direction.
  
-Read more about Sorting in this <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/sorting" target="_blank">article</a>.
+Read more about Sorting in [this article](../../chart-builder/sorting.md).
  
 ### Layers
-Add a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers#trend-line" target="_blank">Trend Line</a> or a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers#reference-line" target="_blank">Reference Line</a> to your chart to allow users to visually compare the data against some set trend or reference value.
+Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
  
 ### Format
-The <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature is available in all Multiseries Charts.
-You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> to your Multiseries Chart.
+The [Small Multiples](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples) feature is available in all Multiseries Charts.
+You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Multiseries Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
  
  
 For more on Multiseries Charts and other XY charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/multi-series" target="_blank">this video</a>.

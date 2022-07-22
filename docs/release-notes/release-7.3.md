@@ -27,7 +27,7 @@ Release Date: 2022-06-30
 * **[AN-15963 - Show/Hide Panel Headers](../ui-docs/chart-builder/setting-chart-styles.md#managing-themes)**: Visibility of charts’ panel headers can be controlled from the themes dialog.
 
 * <a href="/docs/video-training/release/version-7.3#counties-support-in-geolocation-groups" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
-**[AN-15956 - Geolocation Groups - Counties Support](../ui-docs/datasets/datasets.md#setting-up-geolocation-groups)**</a></strong>**: Geolocation groups now support US counties. 
+**[AN-15956 - Geolocation Groups - Counties Support](../ui-docs/datasets/datasets.md#setting-up-geolocation-groups)**: Geolocation groups now support US counties. 
 
 * **AT-9438 - Multi-Tenancy - Assets Visibility in Page Builder and Page View**: with this version, implementers can control the visibility of content and assets (charts, pages, datasets, etc.) from the widget configuration object for Page Builder and Page View widgets.
 

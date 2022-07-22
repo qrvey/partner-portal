@@ -20,7 +20,7 @@ We set the **Date Group** as *Quarter, Year* in the Category column pill and con
 ![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/create-line.gif#thumbnail)
 
 
-If you have more than one category you’d like to visualize, you can use a <a href="/docs/ui-docs/dataviews/chart-types/ms-line" target="_blank">Multiseries Line Chart</a>.
+If you have more than one category you’d like to visualize, you can use a [Multiseries Line Chart](../chart-types/ms-line.md)
 
 
 ## Styling the Line Chart
@@ -28,7 +28,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### General
 
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>.
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
    * To show more than one value on mouseover, click on **+Add Column**:
        * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
        * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -77,18 +77,18 @@ It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,
 ### Sorting
 Like all XY Charts, you can sort by either the category or aggregated values from the column pills. If the column is not included in the chart, go to the **Sorting** section of the Configuration Panel and pick your desired column from the dropdown, and select the sorting direction.
 
-Read more about Sorting in this <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/sorting" target="_blank">article</a>. 
+Read more about Sorting in [this article](../../chart-builder/sorting.md). 
 
 ### Layers
-Add a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers#trend-line" target="_blank">Trend Line</a> or a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers#reference-line" target="_blank">Reference Line</a> to your chart to allow users to visually compare the data against some set trend or reference value.
+Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
 ### Format 
-The <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature is available in all XY Charts.
-You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> to your Line Chart.
+The [Small Multiples](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples) feature is available in all XY Charts.
+You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Line Chart.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article. 
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article. 
 
 
 For more on Line Charts and other XY charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/xychart" target="_blank">this video</a>.
