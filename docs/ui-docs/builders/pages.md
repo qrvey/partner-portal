@@ -199,7 +199,7 @@ To enable or disable all filters for a group, click on the toggle button or chec
 ![4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/4.0_pages.png#thumbnail-20)
 
 
-To create a new global filter, click the Add Filter button and the filter modal appears, select the column in the list, the condition, and values to refine the data. Finally, select the scope of the filter, i.e. All pages or Current Tab. See the <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank"> <strong>Filtering Data</strong></a> page for further details.
+To create a new global filter, click the Add Filter button and the filter modal appears, select the column in the list, the condition, and values to refine the data. Finally, select the scope of the filter, i.e. All pages or Current Tab. See the **[Filtering Data](../filtering-data/working-with-filters.md)** page for further details.
 
 
  

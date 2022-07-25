@@ -28,7 +28,7 @@ We drag and drop the *Total Sales* column as **Values**, changed the **format** 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your metrics.
  
 ### General
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>. With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric.
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md). With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric.
  * To show more than one value on mouseover, click on **+Add Column**:
      * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
      * **Display Values As** - The indicator chart only displays one value so you need to choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -66,7 +66,7 @@ The **Time Period** and **Comparison** date periods can be picked from predefine
  
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
  
 For more on the Indicator Gauge and other KPI Charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/kpi" target="_blank">this video</a>..
  

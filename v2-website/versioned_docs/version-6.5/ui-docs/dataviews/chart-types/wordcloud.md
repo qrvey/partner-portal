@@ -26,12 +26,12 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### General
 * **Sort by** - sort the data by label or numerical value in ascending/descending order.
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>. 
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md). 
 * **Max Data Points**- set the upper limit of the words you’d like to show in your Word Cloud. Controlling the number of these data points helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
 
 
 </div>

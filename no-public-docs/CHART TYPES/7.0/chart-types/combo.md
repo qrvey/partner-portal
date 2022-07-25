@@ -136,7 +136,7 @@ Add a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers"
 
 ### Format
 
-Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature and <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> options are available in Combo Charts.
+Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature and [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) options are available in Combo Charts.
 
  
 

@@ -82,7 +82,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### Format
 
-You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format" target="_blank">Conditional Formatting</a> to your Expandable Table.
+You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Expandable Table.
 
 Click on **+Add Condition** to start. Pick the color of the text and the color of the cell you’d like to show when your condition is met. Decide if you want to outline the cell or highlight it in the chosen color. Select the column you want to use the condition on, set the operator and decide if it applies to a column of your choice or the entire row.
 
@@ -100,7 +100,7 @@ Click on **Remove** to remove the conditional formatting.
 
 ### Filters
 
-You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the Toolbar above. Read more about filters and their purpose in this article <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">here</a>.
+You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the Toolbar above. Read more about filters and their purpose in this article [here](../../dataviews/chart-builder/chart-configuration/chart-filters.md).
 
  
 
