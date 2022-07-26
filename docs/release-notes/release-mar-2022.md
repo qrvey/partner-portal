@@ -28,7 +28,7 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 
 * **[QV-13133 - Hiding Columns from Analysis](../ui-docs/datasets/datasets.md#choosing-the-dataset-columns)**: You can now include a column in a dataset, but hide it from the analytic areas of the product.
 
-* **[](..)**<strong><a href="/docs/ui-docs/datasets/connectors" target="_blank">QV-14969 - Connections - Query Record Count</a></strong>: You can see how many records a data source has before using it for a dataset. 
+* **[QV-14969 - Connections - Query Record Count](../ui-docs/datasets/connectors.md)**: You can see how many records a data source has before using it for a dataset. 
 
 * <strong>DR-2881 - Support Large Number of Flattened Records</strong>: Support for flattening object arrays of any size for Custom Routing has been added. This will work when flattening multiple object arrays on the same transformation.
 
