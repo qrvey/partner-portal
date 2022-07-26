@@ -26,9 +26,9 @@ Embedding a Qrvey widget requires at least the following two properties:
 
 * **API KEY**: This is your unique key that must be a part of every API call. This key is shared in the onboarding email that you receive right after your Qrvey instance is set up. 
 
-Go to the <a href="/docs/embedding/widgets/widget-intro/" target="_blank">Widgets Quick Start Guide</a> for more information on how to obtain these values.
+Go to the [Widgets Quick Start Guide](../widgets/intro.md) for more information on how to obtain these values.
 
-Depending on the widget you want to embed, you may need additional information. Go to the <a href="/docs/embedding/embedding-intro/" target="_blank">Embedding</a> section in our partner portal, where you can find all the embeddable widgets and their required properties.
+Depending on the widget you want to embed, you may need additional information. Go to the [Embedding](../intro.md) section in our partner portal, where you can find all the embeddable widgets and their required properties.
 
 ```html 
 var DOMAIN = 'https://your_qrvey_domain', //your Qrvey domain
@@ -122,12 +122,12 @@ var config = {
 ## Supported Widgets
 The following is a list of Qrvey widgets that currently support authentication through a security token.
 
-* <a href="/docs/embedding/widgets/app-building/widget-page-view/" target="_blank">Page View</a>
-* <a href="/docs/embedding/widgets/app-building/widget-page-builder/" target="_blank"> Page Builder</a>
-* <a href="/docs/embedding/widgets/app-building/widget-report-builder/" target="_blank">Report Builder</a>
-* <a href="/docs/embedding/widgets/analytics/analytic-suite/" target="_blank">Analytic Suite</a>
-* <a href="/docs/embedding/widgets/analytics/single-panel/" target="_blank">Single Panel</a>
-* <a href="/docs/embedding/widgets/data-sources/widget-webforms">Web Form Design</a>
+* [Page View](../widgets/app-building/page-view.md)
+* [Page Builder](../widgets/app-building/page-builder.md)
+* [Report Builder](../widgets/app-building/report-builder.md)
+* [Analytic Suite](../widgets/analytics/analytic-suite.md)
+* [Single Panel](../widgets/analytics/single-panel.md)
+* [Web Form Design](../widgets/data-sources/web-forms.md)
 
 
 </div>

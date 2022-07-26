@@ -81,7 +81,7 @@ See the widget in CodePen:
 
 
 ## Sample With Security Token
-Web Form Design widget supports the use of JWT tokens for authentication and it is strongly recommended that this method be used to ensure the security of your widget implementation. Please refer to the <a href="/docs/embedding/widgets/embedding-widgets-security-token">Embedding Widgets Using A Security Token </a> article for an explanation of the principles. 
+Web Form Design widget supports the use of JWT tokens for authentication and it is strongly recommended that this method be used to ensure the security of your widget implementation. Please refer to the [Embedding Widgets Using A Security Token](../embedding-widgets-security-token.md) article for an explanation of the principles. 
 
 You can find the secure implementation of the same example as above <a href="https://codepen.io/qrveysamples/pen/8ae9eb19a3464b64d293d44e102ccd4b">here</a>.
 

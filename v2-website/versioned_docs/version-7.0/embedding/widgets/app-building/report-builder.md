@@ -37,7 +37,7 @@ The table below provides general information about each property of this widgetâ
 | **domain** | `String`, Qrvey Core URL. | Yes |
 | **reports_dashboard** | `Boolean`, Shows the report builder (has to be set to true for reports. Otherwise Page Builder will be exposed). | Yes |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features).<br /> <br />* CREATE_CHART: Hide Create Chart button. | No |
-| userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/"> Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md) for more details on how to create a filter object. | No
 
 
 

@@ -16,7 +16,7 @@ All of the widgets can be embedded using two distinct ways to handle authenticat
 
 **It is important to note that the first method of using API keys is solely for trial purposes and should not be used in production, as it exposes security risks.**
 
-All CodePen samples use the first method and can be copied and edited to use your own API key and other case-specific attributes, such as IDs, in order to experiment with the widget and see its behavior. Please see the article on <a href="/docs/embedding/widgets/embedding-widgets-security-token" target="_blank"> Embedding Widgets Using Security Tokens </a>for the proper production implementation. 
+All CodePen samples use the first method and can be copied and edited to use your own API key and other case-specific attributes, such as IDs, in order to experiment with the widget and see its behavior. Please see the article on [Embedding Widgets Using Security Tokens](../widgets/embedding-widgets-security-token.md) for the proper production implementation. 
 
 ## Getting Started
 

@@ -6,7 +6,7 @@ sidebar_label: Working With Filters in Embedded Scenarios
 
 <div style={{textAlign: "justify"}}>
 
-Qrvey provides a set of controls to create and interact with filters across the application to refine the data based on your needs. You can find more details about these controls in the portal section <a href="/docs/ui-docs/filtering-data/working-with-filters/">Working with Interactive Filters</a>. When embedding Qrvey’s widgets into your system, you may run into situations where you need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps that are needed for passing the values of your own filters to embedded Qrvey widgets.
+Qrvey provides a set of controls to create and interact with filters across the application to refine the data based on your needs. You can find more details about these controls in the portal section [Working with Interactive Filters](../../ui-docs/filtering-data/working-with-filters.md). When embedding Qrvey’s widgets into your system, you may run into situations where you need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps that are needed for passing the values of your own filters to embedded Qrvey widgets.
 
 You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the <a href="#filter-object-structure">Filter Object Structure</a>, as described below. The structure is passed as part of the supported widget’s configuration object as “userFilters” and it can contain an array of filters with the default scope of global.
 
@@ -20,7 +20,7 @@ var config = {
 }          
 }
 
-This feature is available with <a href="/docs/embedding/widgets/app-building/widget-page-view/">Page View </a>, <a href="/docs/embedding/widgets/app-building/widget-page-builder/">Page Builder</a>, <a href="/docs/embedding/widgets/analytics/single-panel/">Single Panel</a>, and <a href="/docs/embedding/widgets/analytics/analytic-suite/">Analytic Suite</a> widgets and you can find sample code in each of the mentioned articles.
+This feature is available with [Page View](../widgets/app-building/page-view.md), [Page Builder](../widgets/app-building/page-builder.md), [Single Panel](../widgets/analytics/single-panel.md), and [Analytic Suite](../widgets/analytics/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
 
 ## Filter Object Structure
 ### Filters Object
@@ -36,7 +36,7 @@ This feature is available with <a href="/docs/embedding/widgets/app-building/wid
 | --- | --- | --- | --- |
 | **qrveyid** | `String` | No |Represent the dataset ID used to refine the data.|
 | **questionid** | `String` | No |Represent the dataset’s column ID used to refine the data, should belong to the qrvey defined above.|
-| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a <a href="/docs/ui-docs/dataviews/formulas">FORMULA</a> or a <a href="/docs/ui-docs/dataviews/buckets/">BUCKET</a>; otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
+| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a [FORMULA](../../ui-docs/dataviews/formulas.md) or a [BUCKET](../../ui-docs/dataviews/buckets.md); otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
 | **validationType** | `String` | Yes | The field represents the operand for filtering. Allowed values: <br />* EQUAL <br /> * NOT_EQUAL <br /> * CONTAIN <br /> * NOT_CONTAIN <br /> * END_WITH<br />* NOT_END_WITH <br />* START_WITH<br /> * NOT_START_WITH <br />* RANGE <br />* IS_EMPTY <br />* IS_NOT_EMPTY |
 | **property** | `String` | No | When using complex data types like the ones defined inside Webforms, Quizzes, or Surveys, it’s required. Please refer to <a href="#complex-properties">Complex Properties</a> for a complete list of supported values. |
 | **groupValue** | `String` | No | Default ‘day’. Only applies when you want to group date values. Allowed values:<br />* year<br />* month<br />* quarter<br />* week<br />* day<br />* hour<br />* minute<br />* second |

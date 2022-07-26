@@ -46,7 +46,7 @@ The table below provides general information about each property of this widget�
 | domain | `String`, Qrvey Core URL.| Yes
 | group_list | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | page_id | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
-| userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see <a href="/docs/embedding/widgets/filters-embedded-scenarios/">Working With Filters in Embedded Scenarios </a> for more details on how to create a filter object. | No
+| userFilters | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md) for more details on how to create a filter object. | No
 | filter_panel_default_view | `String`, Decides the default state of the side filter panel, if it’s been added to the view. It can be set to ‘open’ or ‘closed’. The default value is closed.| No
 | fit_panel_button | `Boolean`, Show the fit to panel button on the panels. Default value is true.| No
 | personalization | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
@@ -59,7 +59,7 @@ The table below provides general information about each property of this widget�
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
 >**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by each other.
-Please see the <a href="/docs/embedding/widgets/embedding-widgets-security-token/">Embedding Widgets Using a Security Token </a> property set for the logged-in user.
+Please see the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
 
 
 
