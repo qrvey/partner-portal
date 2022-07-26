@@ -88,7 +88,7 @@ Align center: The object is aligned to the center of the canvas. When multiple o
 * **Align bottom**: The object is aligned to the bottom side of the canvas. When multiple objects are selected, they will be bottom-aligned based on the lowermost item of that group.
 
 ### Data & Configuration
-In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the <a href="/docs/ui-docs/datasets/data_overview/" target="_blank"> <strong>Data Section</strong></a>.  
+In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the [Data Section](../datasets/data_overview.md).  
 
 Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
@@ -205,7 +205,7 @@ Creators can enable authenticated end users to subscribe to a scheduled delivery
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/subscribe.jpg#thumbnail-40) 
 
 
-Once subscription has been enabled, authenticated end users see the option in the action menu of the embedded Page View widget and get to subscribe or manage their subscriptions. To read about the end user side of subscriptions, see the <a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports</a> article.
+Once subscription has been enabled, authenticated end users see the option in the action menu of the embedded Page View widget and get to subscribe or manage their subscriptions. To read about the end user side of subscriptions, see the [Subscribing to Exports](../subscriptions/subscribing-exports.md) article.
 
 
 ## Publishing an Application

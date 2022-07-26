@@ -19,10 +19,10 @@ Various filters apply in a hierarchical model: First, the data gets filtered by 
 ### Hidden Filters
 The filters in this category are mainly for security purposes and are therefore hidden from the end-user view. This means that they have no visible component and cannot be interacted with.
 
-* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The <a href="/docs/admin/record-level-security/" target="_blank"> Record Level Security </a> feature uses this type of filter to restrict user's access to any data they don't have permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
+* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The [Record Level Security](../../admin/record-level-security.md) feature uses this type of filter to restrict user's access to any data they don't have permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
 The scope of Security Filters is the entire application, i.e. they govern data used in workflows, pages, reports, and so on.
 
-* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the <a href="/docs/ui-docs/builders/user-management/" target="_blank">User Management </a> section of the page builder to restrict access to the data based on the end-user's user group. 
+* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the [User Management](../builders/user-management.md) section of the page builder to restrict access to the data based on the end-user's user group. 
 The scope of this type of filter is the end-user site.
 
 * **Default Filters**: These are the filters that Creators may apply to an individual chart, inside the Chart Builder. Their scope is limited to the chart to which they have been applied.
@@ -33,7 +33,7 @@ The filters in this category are defined by a Creator when building a report or 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/interactive.png#thumbnail-40)
 
 
-Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; The scope of Tab filters includes all Panels on the Tab. For more on how to apply Interactive Filters please see the <a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters</a> article.
+Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, the scope of their filters also corresponds to the same hierarchy: A Global filter scope spans across all Pages; The scope of Page filters includes all Tabs; The scope of Tab filters includes all Panels on the Tab. For more on how to apply Interactive Filters please see the [Working With Interactive Filters](../filtering-data/working-with-filters.md) article.
 
 * **Global Filters**: These are at the top of the hierarchy of interactive filters. A global filter applies to all the panels on all tabs on all pages.
 
@@ -43,7 +43,7 @@ Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, t
 
 * **Panel Filters**: These are the filters applied directly to the charts. Their scope is local, meaning they only apply to the chart where they were defined.
 
-* **Action Filters**: These are the filters applied when using <a href="/docs/ui-docs/builders/pages_actions/" target="_blank"> actions </a> like *See Data, Filter by*, or *Drill-down*.
+* **Action Filters**: These are the filters applied when using [actions](../builders/page_actions.md) like *See Data, Filter by*, or *Drill-down*.
 Action filters are special because their scope may be broader than one panel and may apply to the entire page, as decided by the choice made in the configuration panel (see the image below).
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/2_intro.png#thumbnail-40)

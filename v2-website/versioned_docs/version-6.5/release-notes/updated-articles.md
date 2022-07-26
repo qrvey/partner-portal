@@ -14,7 +14,7 @@ sidebar_label: Updated Articles
 |<a href="/docs/ui-docs/dataviews/chart-types/table" target="_blank">Table</a>|7.2|Data Analyst| Jun 15, 2022|
 |<a href="/docs/ui-docs/dataviews/exporting" target="_blank">Exporting Data</a>|7.2|Data Analyst| Jun 15, 2022|
 |<a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections</a>|7.2|Data Analyst| Jun 15, 2022|
-|<a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters</a>|7.2|Data Analyst| Jun 15, 2022|
+|[Working With Interactive Filters](../filtering-data/working-with-filters.md)|7.2|Data Analyst| Jun 15, 2022|
 |<a href="/docs/ui-docs/builders/pages" target="_blank">Page Builder Widget</a>|7.2|Developer| Jun 15, 2022|
 |<a href="/docs/admin/admin-sections-platform" target="_blank">Administrating Qrvey Composer</a>|7.1|Admin| May 12, 2022|
 |<a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>|7.1|Composer| May 12, 2022|
@@ -25,12 +25,12 @@ sidebar_label: Updated Articles
 |<a href="/docs/admin/content-deployment/jobs" target="_blank">Deployment Jobs</a>|7.0|Admin| April 8, 2022|
 |[Datasets](../../datasets/datasets.md)|7.0|Composer| April 4, 2022||
 |<a href="/docs/ui-docs/datasets/connectors" target="_blank">Connections Overview</a>|7.0|Composer| April 4, 2022|
-|<a href="/docs/ui-docs/subscriptions/subscribing-to-exports" target="_blank">Subscribing to Exports</a>|7.0|Composer| April 4, 2022|
+|[Subscribing to Exports](../subscriptions/subscribing-exports.md)|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/datasets/joins" target="_blank">Data Joins</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-types" target="_blank">Chart Types</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/ui-docs/dataviews/chart-builder" target="_blank">Chart Builder</a>|7.0|Composer| April 4, 2022|
 |<a href="/docs/aws/connect-to-instance" target="_blank">Connecting to Secure RDS</a>|All| CloudOps| April 4, 2022|
-|<a href="/docs/ui-docs/filtering-data/working-with-filters" target="_blank">Working With Interactive Filters</a>|7.0| Composer| April 4, 2022|
+|[Working With Interactive Filters](../filtering-data/working-with-filters.md)|7.0| Composer| April 4, 2022|
 |<a href="https://tinyurl.com/atuznk6u" target="_blank">API Reference</a>|All|Developers|Mar 8, 2022|
 |<a href="/docs/get-started/glossary" target="_blank">Glossary of Common Terms</a>|All|All|Mar 4, 2022|
 

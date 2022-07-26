@@ -42,7 +42,7 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 Also, you can apply conditional formatting to a column other than the one that the condition was set on.
 
  * <a href="/docs/video-training/release/version7#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
- **[AT-9096 - Cascading Filters](../ui-docs/filtering-data/working-with-filters.md#cascading-filters)**</a></strong>: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
+ **[AT-9096 - Cascading Filters](../ui-docs/filtering-data/working-with-filters.md#cascading-filters)**: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
 
 * <strong>AT-10562 - Additional Date and Numeric Operators in Input Box</strong>: The list of operators for the Input Box filter has been expanded for Date or Numeric data.
 
