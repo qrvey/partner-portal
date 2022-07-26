@@ -30,7 +30,7 @@ Once you are done with editing the page you can either save your new, personaliz
 ![eup-dashboards](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/eup/eup-dash1.gif#thumbnail)
 
 ## Personalizing The Charts
-If you want to personalize any of the charts, simply click on the dotted menu at the corner of the chart panel to find and click on the **Edit** option. This action opens the Chart Builder/Editor where you can change your chart’s configuration or even its type. To learn more about the <a href="/docs/ui-docs/dataviews/chart-builder/#chart-builder">Chart Builder</a> please see the dedicated article.
+If you want to personalize any of the charts, simply click on the dotted menu at the corner of the chart panel to find and click on the **Edit** option. This action opens the Chart Builder/Editor where you can change your chart’s configuration or even its type. To learn more about the [Chart Builder](../ui-docs/chart-builder/overview.md) please see the dedicated article.
 
 ![eup-dashboards](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/eup/eup-dash2.gif#thumbnail)
 

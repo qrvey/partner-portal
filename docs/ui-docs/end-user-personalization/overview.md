@@ -18,7 +18,7 @@ End users have to be authenticated in order for the personalization feature to w
 
 Through User Management, Composers can decide which pieces of content to show or hide to which group of users and if you embed the Page View widget in your product, developers can enable or disable the options that are going to be available in the widget for the authenticated end users to enjoy. All available options and personalization features inside the Page View and the Page Builder widget can be turned on or off in any combination desired.
 
-Developers can refer to the <a href="/docs/embedding/widgets/app-building/widget-page-view/" target="_blank">Page View Widget</a> documentation for a guide to enabling individual personalization features.
-If you are a Composer, please refer to the <a href="/docs/ui-docs/builders/user-management/" target="_blank">User Management</a> article to learn how to create end End Users can refer to <a href="/docs/ui-docs/eup-dashboards">Personalizing Your Dashboards</a> article to learn about personalization features that are available to them.
+Developers can refer to the [Page View Widget](../../embedding/widgets/app-building/page-view.md) documentation for a guide to enabling individual personalization features.
+If you are a Composer, please refer to the [User Management](../builders/user-management.md) article to learn how to create end End Users can refer to [Personalizing Your Dashboards](../eup-dashboards.md) article to learn about personalization features that are available to them.
 
 </div>
