@@ -6,7 +6,7 @@ sidebar_label: Combo Chart
 
 <div style={{textAlign: "justify"}}>
 
-Combo Charts allow users to layer multiple XY Charts (<a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Bar</a>, <a href="/docs/ui-docs/dataviews/chart-types/line-charts" target="_blank">Line</a>, and <a href="/docs/ui-docs/dataviews/chart-types/symbol-charts" target="_blank">Symbol</a>) over each other, in a single chart area. The charts can be of the same, or different types. Combo Charts consist of one shared dimension or **Category**, and multiple measures or **Values** and are used to compare different metrics grouped by the same category - for example, showing the total sales amount of each product layered over the same product quantities.
+Combo Charts allow users to layer multiple XY Charts ([Bar Chart](../chart-types/bar.md), [Line Chart](../chart-types/line.md), and [Symbol Chart](../chart-types/symbol.md)) over each other, in a single chart area. The charts can be of the same, or different types. Combo Charts consist of one shared dimension or **Category**, and multiple measures or **Values** and are used to compare different metrics grouped by the same category - for example, showing the total sales amount of each product layered over the same product quantities.
 
  
 
@@ -18,7 +18,7 @@ Combo Charts allow users to layer multiple XY Charts (<a href="/docs/ui-docs/dat
 
  
 
-When multiple values are added to the Values shelf, each value field can be visualized as a different X/Y Chart and each chart’s visual representation can be customized in <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/styles" target="_blank">Styles</a> where each added Value appears with further configuration options.
+When multiple values are added to the Values shelf, each value field can be visualized as a different X/Y Chart and each chart’s visual representation can be customized in [Styles](../chart-builder/chart-configuration/styles.md) where each added Value appears with further configuration options.
 
   
 
@@ -64,7 +64,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
    * **Header** - add a header to the tooltip.
 
-* **Table Calculations** - add calculations to your Combo Chart. Read more on this <a href="/docs/7.0/ui-docs/dataviews/table-calculations" target="_blank">here</a>.
+* **Table Calculations** - add calculations to your Combo Chart. Read more on this [here](../../dataviews/table-calculations.md).
 
 * **Max Data Points** - set the upper limit for the categories that are shown on the x-axis of the combo chart. Controlling the number of symbols helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 
@@ -124,19 +124,19 @@ Combo Charts can be sorted by their selected category column, or either of the v
 
  
 
-Read more about Sorting in this <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/sorting" target="_blank">article</a>. 
+Read more about Sorting in [this article](../../chart-builder/sorting.md). 
 
  
 
 ### Layers
 
-Add a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers" target="_blank">Trend Line</a> or a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers" target="_blank">Reference Line</a> to your Combo Charts.
+Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your Combo Charts.
 
  
 
 ### Format
 
-Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature and <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> options are available in Combo Charts.
+Both [Small Multiples](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples) feature and [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) options are available in Combo Charts.
 
  
 
@@ -144,14 +144,6 @@ Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#s
 
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs//ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters article</a>.
-
-Combo Charts allow users to layer multiple XY Charts (<a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Bar</a>, <a href="/docs/ui-docs/dataviews/chart-types/line-charts" target="_blank">Line</a>, and <a href="/docs/ui-docs/dataviews/chart-types/symbol-charts" target="_blank">Symbol</a>) over each other, in a single chart area. The charts can be of the same, or different types. Combo Charts consist of one shared dimension or **Category**, and multiple measures or **Values** and are used to compare different metrics grouped by the same category - for example, showing the total sales amount of each product layered over the same product quantities. 
-
-
-![combo](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Combo/combo1.png#thumbnail) 
-@@ -80,4 +155,6 @@ You can also add Filters to your data by expanding the Filters section in the co
-
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs//ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters article</a>. 
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
 
 </div>

@@ -73,7 +73,7 @@ Read more about Sorting in this <a href="/docs/ui-docs/dataviews/chart-builder/c
 Add a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers" target="_blank">Trend Line</a> or a <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/layers" target="_blank">Reference Line</a> to your Combo Charts.
 
 ### Format
-Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature and <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> options are available in Combo Charts.
+Both <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#small-multiples" target="_blank">Small Multiples</a> feature and [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) options are available in Combo Charts.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 

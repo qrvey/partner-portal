@@ -18,7 +18,7 @@ Before you can create a Map Chart, your data needs to be prepared for the correc
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of Datasets. It's important to define these groups correctly for accurate map locations.
 
 
-Read more about setting geolocation <a href="/docs/ui-docs/datasets/datasets#setting-up-geolocation-groups" target="_blank">here</a>.
+Read more about setting geolocation [here](../../../ui-docs/datasets/datasets.md#setting-up-geolocation-groups).
 
 ## When to Use It
 Dot Maps are used to visualize the distribution of locations in the data and can highlight the density of data points, especially in large sets of data. For example, the location of individual traffic accidents can draw attention to the areas where the dots are dense, as problem areas. The question that leads to choosing a dot map for visualization always starts with “where”; “Where are my customers concentrated?” or “Where are the households below the poverty line?”
@@ -36,7 +36,7 @@ One glance at the resulting map shows a heavier concentration of customers in Eu
 
 Qrvey dot maps support clustering of locations based on the zoom factor of the map; when zoomed out, the dots that are very close to each other are clumped together as a single dot, and the number of items in the cluster shown on each dot. Subsequently, the cluster “explodes” into smaller and smaller clusters as you zoom in. This is the default behavior and can be changed by turning off the *Allow Clustering* configuration option under the **Styles** section.
 
-If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a <a href="/docs/ui-docs/dataviews/chart-types/bubble-map" target="_blank">Bubble Map</a>.
+If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a [Bubble Map](../../dataviews/chart-types/bubble-map).
 
 ## Styling the Dot Map 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your map.
@@ -44,7 +44,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ### General
 
 
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>.
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
   * To show more than one value on mouseover, click on **+Add Column**:
       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
       * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -68,11 +68,11 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### Format
-You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format#conditional-formatting" target="_blank">Conditional Formatting</a> to Dot Map Charts.
+You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to Dot Map Charts.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article. 
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article. 
 
 
 For more on Dot Maps and other Map charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample//docs/video-training/building-qrvey-sample/map-chart" target="_blank">this video</a>.

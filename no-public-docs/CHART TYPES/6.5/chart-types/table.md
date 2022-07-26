@@ -63,7 +63,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/10level.png#thumbnail-60)
 </ul>
 
-* **Table Calculations** - add a calculation to your table - read more about this <a href="/docs/ui-docs/dataviews/table-calculations" target="_blank">here</a>.
+* **Table Calculations** - add a calculation to your table - read more about this [here](../../dataviews/table-calculations.md).
  
 * **Aggregated Formulas** - when you group the table, the option to add a table formula to your data appears. This feature has been explained in detail in the <a href="#aggregated-formulas">Aggregated Formulas</a> section of this article.
  
@@ -139,7 +139,7 @@ Trend Charts can be added in one of two ways:
 Filters
  
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
 
 ### Resizing Columns
 You can manually modify the Column Sizes of Table Charts by simply hovering over the column's header and dragging the column header’s width to the left or right using the marquee tool.
@@ -197,7 +197,7 @@ Grouped columns can only be ordered in design mode, i.e. inside Chart Builder, a
 Formulas apply to the values of one row of data and their results are presented as new columns for the same row. Standard formulas can be used on the raw data while aggregated formulas do the same thing for data that has been grouped and aggregated for a chart. Given that distinction, the aggregated formula function is only available in grouped table charts at the moment.
 
 “Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
-Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the <a href="/docs/ui-docs/dataviews/formulas" target="_blank">Formulas</a> article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart.
+Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../dataviews/formulas.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart.
 To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the Group shelf):
 1. Click on the **+ Add Aggregated Formula**.
 2. In the *Create Table Formula* modal window, enter a formula name and the desired formula using the available options, **Test** the formula, and click **Save**. You can use any columns of the current context for the construction of the formula.
