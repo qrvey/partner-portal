@@ -16,7 +16,7 @@ Admin Center is used to manage and monitor many aspects of the Qrvey Platform. S
 
 ## Creating a New Admin User
 
-The first Admin user is defined using AWS IAM. Once one administrator user exists, they can create other admin users from the <a href="/docs/admin/roles-and-permissions" target="_blank">User Management</a> section or continue to create additional admin users in the AWS IAM service, if needed. Here are the steps for creating the an admin user through the AWS IAM service:
+The first Admin user is defined using AWS IAM. Once one administrator user exists, they can create other admin users from the [User Management](../admin/roles-and-permissions.md) section or continue to create additional admin users in the AWS IAM service, if needed. Here are the steps for creating the an admin user through the AWS IAM service:
 
 ### Step 1: Login to AWS Console#
 Log into the <a href="https://aws.amazon.com/" target="_blank"> AWS Console</a> using an account that has permissions to create new IAM users.

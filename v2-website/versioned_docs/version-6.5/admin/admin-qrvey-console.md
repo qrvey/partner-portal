@@ -209,7 +209,7 @@ Keep in mind that this is a global control to enable or disable Data Security an
 2. Security Columns must be configured in each dataset. 
 
 For more information about how to set User Security Permissions, please read the following document: 
-<a href="/docs/admin/record-level-security/">Record Level Security</a>.
+[Record Level Security](../admin/record-level-security.md).
 
 >**Note**: By default, Data Security settings are turned off, so they need to be turned on **manually** after setting the User Security Permissions. 
 

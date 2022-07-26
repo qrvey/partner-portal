@@ -25,6 +25,6 @@ You can give your Package any name and description that helps you find it later.
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide4.png#thumbnail)
 
-Once a Version has been created, the next step in deploying content is to create a <a href="/docs/admin/content-deployment/definitions">Deployment Definition</a>.
+Once a Version has been created, the next step in deploying content is to create a [Deployment Definition](../content-deployment/definitions.md).
 
 </div>
