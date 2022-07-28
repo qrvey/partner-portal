@@ -23,8 +23,8 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 
 * <strong>QV-14647 - Transformations - Token/Column list filtered by Data Type</strong>: Tokens and Columns listed in the different input dropdowns are now filtered depending on each transformation for better guidance when adding new transformations. 
 
- * <a href="/docs/video-training/release/version7#disabling-transformations-without-deleting" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
- **[QV-13067 - Disable Transformations without Deleting them](../ui-docs/datasets/transformations.md#adding-transformations)**: You can now disable a transformation, without deleting it, so that it can be enabled when needed later.
+ * **[QV-13067 - Disable Transformations without Deleting them](../ui-docs/datasets/transformations.md#adding-transformations)**: You can now disable a transformation, without deleting it, so that it can be enabled when needed later. <a href="/docs/video-training/release/version7#disabling-transformations-without-deleting" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+ 
 
 * **[QV-13133 - Hiding Columns from Analysis](../ui-docs/datasets/datasets.md#choosing-the-dataset-columns)**: You can now include a column in a dataset, but hide it from the analytic areas of the product.
 
@@ -41,8 +41,8 @@ Qrvey introduces Internationalization in this version. This is a major feature t
 * **[](..)**<strong><a href="/docs/ui-docs/dataviews/chart-types#formatting-in-tables" target="_blank">AN-14151 - Conditional Formatting For Row Or Column</a></strong>: Conditional formatting for table charts has been expanded so it can be applied to the entire row or one cell. 
 Also, you can apply conditional formatting to a column other than the one that the condition was set on.
 
- * <a href="/docs/video-training/release/version7#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
- **[AT-9096 - Cascading Filters](../ui-docs/filtering-data/working-with-filters.md#cascading-filters)**: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain.
+ * **[AT-9096 - Cascading Filters](../ui-docs/filtering-data/working-with-filters.md#cascading-filters)**: You can now create a cascading effect on Value List controls so that one control filters the values in the next one in the chain. <a href="/docs/video-training/release/version7#cascading-filters" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
+ 
 
 * <strong>AT-10562 - Additional Date and Numeric Operators in Input Box</strong>: The list of operators for the Input Box filter has been expanded for Date or Numeric data.
 

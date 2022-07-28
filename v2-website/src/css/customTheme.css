@@ -19,6 +19,9 @@ body, h1, h2, h3, h4, h5 {
   font-family: var(--primary-font) !important;
 }
 
+.docusaurus-mt-lg {
+  display: none;
+}
 
 
 .primary-button {

@@ -20,15 +20,14 @@ sidebar_label: Qrvey 6.5 (LTS)
 
 ### Data Analysis & Automation
 
- * <a href="/docs/video-training/release/version-6.5/" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
- **[AN-14097 - Assign a Color to a Category in Charts](../ui-docs/chart-builder/setting-chart-styles.md#controlling-the-colors-of-the-chart)**: We already had the feature to automatically assign a color to a category of data and keep it consistent across all charts. The feature has been enhanced to allow any color to be set by the chart creator.
+ * **[AN-14097 - Assign a Color to a Category in Charts](../ui-docs/chart-builder/setting-chart-styles.md#controlling-the-colors-of-the-chart)**: We already had the feature to automatically assign a color to a category of data and keep it consistent across all charts. The feature has been enhanced to allow any color to be set by the chart creator. <a href="/docs/video-training/release/version-6.5/" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
  * <strong>AN - 14359 - Performance Improvements - Loading Charts</strong>: We consistently work on improving the performance of the product in all areas. This version provides a noticeable improvement in the loading of charts, especially table charts. You can expect improvements in the range of 10%-50% in most cases.
 
  * <strong>AT-10087 - Control Over the “To” Input Box in Subscriptions</strong>: Implementers can decide whether or not to show the “To” input box as part of the subscription interface by setting a property in the configuration object of the widget.
 
- * <a href="/docs/video-training/release/version-6.5/" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
- **[AT-10083 - Filter Component - Input Box](../ui-docs/filtering-data/working-with-filters.md#input-box): A new standalone filter control has been added to the existing set**: The Input Box Filter control can be used to filter the content based on the entered text.  
+ * **[AT-10083 - Filter Component - Input Box](../ui-docs/filtering-data/working-with-filters.md#input-box): A new standalone filter control has been added to the existing set**: The Input Box Filter control can be used to filter the content based on the entered text. <a href="/docs/video-training/release/version-6.5/" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+ 
 
 * <strong>EX-449 - CSV Summary Downloads on Multiseries, Min/Max, Heatmap, and Combo</strong>: You can now download CSV Summary files from Multiseries, Min/Max, Heatmap, and Combo visualizations.
 
