@@ -15,7 +15,7 @@ let DOC_ID = CURRENT_PAGE.length > 1 ? CURRENT_PAGE.substring(1, CURRENT_PAGE.le
 const PAGE = 'page_docs_';
 
 const datarouter = {
-    url: 'https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qollect/dataset/YwJoqX0Av/pushapi/data/post',
+    url: 'https://demo.qrvey.com/devapi/v4/user/VkRfd5iis/app/9b21hQU3D/qollect/dataset/YwJoqX0Av/pushapi/data/post',
     metadataId: metadataid
 };
 

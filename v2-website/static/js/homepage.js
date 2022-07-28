@@ -71,7 +71,7 @@ function setPopularArticlesInfo() {
 }
 
 function fetchPopularArticles() {
-    fetch("https://demo.qrvey.com/devapi/v4/user/2k8VlmD/app/EurD9cY5F/qrvey/YwJoqX0Av/analytiq/uchart/results", requestOptions)
+    fetch("https://demo.qrvey.com/devapi/v4/user/VkRfd5iis/app/9b21hQU3D/qrvey/YwJoqX0Av/analytiq/uchart/results", requestOptions)
     .then(response => response.json())
     .then(result => {
         const popularParse = parseSummaryResult(result);
