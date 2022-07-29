@@ -216,6 +216,10 @@
         },
         {
           "type": "doc",
+          "id": "ui-docs/datasets/union"
+        },
+        {
+          "type": "doc",
           "id": "ui-docs/datasets/hierarchical-data"
         },
         {

@@ -26,7 +26,7 @@ AWS has recommendations about [sizing an Elasticsearch cluster](https://docs.aws
 
 For a dev/staging environment (light use case) we recommend a 2 node cluster with ‘t2.medium’ server types and this configuration is good enough to handle 100 indexes with a total of 5-10M rows of standard data size. 
 
-For production environments we recommend having the cluster with at least 2-3 nodes of m4 server type. Also it is recommended to have Master instances in at least 2 Availability zones.
+For production environments we recommend having the cluster with at least 2-3 nodes of m4 or r6g server typeserver type. Also it is recommended to have Master instances in at least 2 Availability zones.
 
 To save on cost, Elasticsearch instances can be reserved by paying in advance for 1-3 years. We highly recommend using the reserved pricing once you know the type and number of instances you would need for the long term.
 
@@ -39,7 +39,7 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 
 1. You can use Qrvey’s Admin app under DataRouter >> Health Dashboard. This dashboard shows you information about the number of records added and basic information about the Elasticsearch cluster index like space used, server type and overall health of the cluster.
 
-![alt_text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/manageawselasticsearch/Managing-AWS0.png#thumbnail "image_tooltip")
+![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-es_1.png#thumbnail-60)
 
 2. AWS Elasticsearch service console: AWS console shows a lot of information about the cluster under “Cluster Health” and “Instance health” tabs. A few important metrics to monitor here are
     1. Cluster Status : This should be green.
@@ -50,7 +50,7 @@ There are 2 ways of monitoring your Elasticsearch cluster.
 
         
 
-![alt_text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/manageawselasticsearch/Managing-AWS1.png#thumbnail "image_tooltip")
+![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-es_2.png#thumbnail-60)
 
 
 
@@ -76,7 +76,7 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 
         
 
-![alt_text](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/setup-deployments/manageawselasticsearch/Managing-AWS2.png#thumbnail "image_tooltip")
+![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-cluster3.png#thumbnail-60)
 
 
 
