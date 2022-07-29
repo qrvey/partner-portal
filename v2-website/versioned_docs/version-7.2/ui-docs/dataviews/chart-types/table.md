@@ -96,7 +96,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 </ul>
 
 
-* **Table Calculations** - add a calculation to your table - read more about this <a href="/docs/ui-docs/dataviews/table-calculations" target="_blank">here</a>.
+* **Table Calculations** - add a calculation to your table - read more about this [here](../../dataviews/table-calculations.md).
 
 
 * **Aggregated Formulas** - when you group the table, the option to add a table formula to your data appears. This feature has been explained in detail in the <a href="#aggregated-formulas">Aggregated Formulas</a> section of this article. 
@@ -132,7 +132,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### Format
 
-You can apply <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/format" target="_blank">Conditional Formatting</a> to your Table Charts.
+You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Table Charts.
 
 Click on **+Add Condition** to start. Pick the color of the text and the color of the cell you’d like to show when your condition is met. Decide if you want to outline the cell or highlight it in the chosen color. Select the column you want to use the condition on, set the operator and decide if it applies to a column of your choice or the entire row. 
 
@@ -239,7 +239,7 @@ Trend Charts can be added in one of two ways:
 
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
 
 
 ### Resizing Columns
@@ -325,7 +325,7 @@ Formulas apply to the values of one row of data and their results are presented 
 
 “Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
 
-Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the <a href="/docs/ui-docs/dataviews/formulas" target="_blank">Formulas</a> article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
+Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../dataviews/formulas.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
 
 To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the Group shelf):
 

@@ -85,7 +85,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## K
 
-**KPI Charts** - A Key Performance Indicator. A measurable value that demonstrates how effectively something (e.g. a company, or business unit) is achieving key business objectives. KPIs are typically visualized using simple charts and “gauges” such as the Qrvey <a href="/docs/ui-docs/dataviews/chart-types/indicator-gauge" target="_blank">Indicator</a>, <a href="/docs/ui-docs/dataviews/chart-types/bullet-gauge" target="_blank">Bullet</a>, and <a href="/docs/ui-docs/dataviews/chart-types/dial-gauge" target="_blank">Dial</a> Gauges. 
+**KPI Charts** - A Key Performance Indicator. A measurable value that demonstrates how effectively something (e.g. a company, or business unit) is achieving key business objectives. KPIs are typically visualized using simple charts and “gauges” such as the Qrvey [Indicator](../ui-docs/dataviews/chart-types/indicator.md), [Bullet](../ui-docs/dataviews/chart-types/bullet.md), and [Dial](../ui-docs/dataviews/chart-types/dial.md) Gauges. 
 
 ## L
 
@@ -159,7 +159,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## X
 
-**XY Charts** - charts that are used to compare data between different groups or categories. They are also used to track changes over time. Look also <a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Bar</a>, <a href="/docs/ui-docs/dataviews/chart-types/line-charts" target="_blank">Line</a>, <a href="/docs/ui-docs/dataviews/chart-types/symbol-charts" target="_blank">Symbol</a>, <a href="/docs/ui-docs/dataviews/chart-types/min-max-charts" target="_blank">Min/Max</a> charts.
+**XY Charts** - charts that are used to compare data between different groups or categories. They are also used to track changes over time. Look also [Bar](../ui-docs/dataviews/chart-types/bar.md), [Line](../ui-docs/dataviews/chart-types/line.md), [Symbol](../ui-docs/dataviews/chart-types/symbol.md), [Min/Max](../ui-docs/dataviews/chart-types/min-max.md) charts.
 
 
 ## Y

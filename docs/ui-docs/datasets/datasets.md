@@ -9,7 +9,7 @@ In this section, we’ll explain how datasets are created using a single data so
 <br/>
 <br/>
 
->**Note**: To see how datasets are created from multiple data sources, please go to the <a href="/docs/ui-docs/datasets/joins/" target="_blank"> Data Joins article</a>.
+>**Note**: To see how datasets are created from multiple data sources, please go to the [Data Joins article](ui-docs/datasets/joins.md).
 
 <br/>
 
@@ -45,7 +45,7 @@ If the selected data source needs to be swapped out with another, either from th
 * **Edit Data Source Query** - Use this option if you want to either select a different table or view from the same Connection, or change the SQL query of a custom query data source.
 Note that this option is available only for database data sources.
 
-* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on <a href="/docs/ui-docs/datasets/joins/" target="_blank"> Data Joins </a> to read more about joining data sources.
+* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on [Data Joins](../datasets/joins.md) to read more about joining data sources.
 
 * **Select a Different Connection** - This option can be used to choose a data source from a connection other than the one currently in use.
 
@@ -87,14 +87,14 @@ You can also decide the number of decimal places for numeric values. Changing vi
 
 ### Selecting A Unique Identifier Column
 If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
-To learn about data synchronization and the role of unique IDs in it, please see the <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync</a> article.
+To learn about data synchronization and the role of unique IDs in it, please see the [Data Sync](../datasets/data-sync.md) article.
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 Changing the unique identifier for a dataset will require a reload of the data if it has already been loaded.
 
 ### Defining The Security Name For A Column
 If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user.
 The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Admin Center.
-For more information about RLS and how to set it up see the <a href="/docs/admin/record-level-security/" target="_blank">Record Level Security article</a>.
+For more information about RLS and how to set it up see the [Record Level Security article](../../admin/record-level-security.md).
 Defining the security name for a column will ***not*** require a data reload.
 
 ### Setting Up Automatic Column Links
@@ -103,7 +103,7 @@ The automatic link can be set up from the Column Link command in the dot menu of
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
-For detailed information about <a href="/docs/ui-docs/datasets/column-links/" target="_blank">Column Links</a> see the article dedicated to the subject.
+For detailed information about [Column Links](../datasets/column-links.md) see the article dedicated to the subject.
 Setting up automatic links for a column will not require a data reload. 
 
 ### Enabling Dataset Sharing
@@ -111,7 +111,7 @@ Datasets are always restricted to users that belong to the same application, by 
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share.png#thumbnail-40)
 
-A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view. For more information about dataset views, please refer to the <a href="/docs/ui-docs/datasets/dataset-views/" target="_blank">Dataset Views</a> article.
+A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view. For more information about dataset views, please refer to the [Dataset Views](../datasets/dataset-views.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share2.png#thumbnail-40)
 
@@ -143,7 +143,7 @@ A *Transformation provides the means to change any piece of data __before__ load
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/13datasets.png#thumbnail-20)
 
 To access the Transformations screen click on the Transformation button on the top right corner of the columns list.
-Transformations are discussed in detail in a <a href="/docs/ui-docs/datasets/transformations/" target="_blank">dedicated article</a>.
+Transformations are discussed in detail in a [dedicated article](../datasets/transformations.md).
 Adding or changing Transformations will require a reload of the data if it has already been loaded.
 
 ### Other Available Features
@@ -172,7 +172,7 @@ On the *Data Syncs* tab, you will be able to set up a schedule to automatically 
 * **Append and Update Records** - It loads only the new and updated records whenever a scheduled process begins.
 You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop if ever.
 Data Syncing is available for single-source datasets as well as datasets using joins.
-Data Synchronization has been described in detail in a <a href="/docs/ui-docs/datasets/data-sync/" target="_blank">dedicated article</a>. 
+Data Synchronization has been described in detail in a [dedicated article](../datasets/data-sync.md). 
 
 ## Loading Data
 Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.

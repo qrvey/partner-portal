@@ -234,7 +234,7 @@ Now we have all the parts we need to embed using our widget: the “userid”, t
 
 ## Step 4 - Embed the Quiz Widget
 
-Once you’ve created a web form Quiz, you’re ready to embed it into your product using the <a href="/docs/embedding/widgets/data-sources/widget-webforms" target="_blank">Web form Design</a> widget. The widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form, in this case, a quiz.
+Once you’ve created a web form Quiz, you’re ready to embed it into your product using the [Web form Design](../widgets/data-sources/web-forms.md) widget. The widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form, in this case, a quiz.
 
 To learn more about embedding and working with Widgets, visit our [Widget Quick Start Guide](embedding/widgets/intro.md).
 

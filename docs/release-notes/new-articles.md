@@ -7,16 +7,16 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
-|<a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes</a>|All|Composer| June 29, 2022|
-|<a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values</a>|All|Composer| July 7th, 2022|
-|<a href="/docs/ui-docs/chart-builder/table-calculations" target="_blank">Table Calcuations</a>|All|Composer| July 7th, 2022|
-|<a href="/docs/ui-docs/chart-builder/date-grouping" target="_blank">Date Grouping</a>|All|Composer| July 7th, 2022|
-|<a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section</a>|All|Composer| June 15, 2022|
-|<a href="/docs/ui-docs/dataviews/chart-types/bar-charts" target="_blank">Chart Types section</a>|All|Composer| June 15, 2022|
-|<a href="/docs/get-started/redshift-connections" target="_blank">Configuring AWS and Qrvey for Redshift Connections</a>|All|CloudOps| April 8, 2022|
-|<a href="/docs/get-started/snowflake-connections" target="_blank">Configuring AWS and Qrvey for Snowflake Connections</a>|All|CloudOps| April 8, 2022|
-|<a href="/docs/special-features/internationalization/overview" target="_blank">Internationalization Overview</a>|7.0|All| April 4, 2022|
-|<a href="/docs/special-features/internationalization/step-by-step" target="_blank">Internationalization, Step-by-step</a>|7.0|All| April 4, 2022|
-|<a href="/docs/special-features/internationalization/configure-dynamic-labels" target="_blank">Configuring Dynamic Labels For Datasets</a>|7.0|All| April 4, 2022|
+|[Managing Chart Axes](../ui-docs/chart-builder/chart-axes.md)|All|Composer| June 29, 2022|
+|[Discrete and Continuous Values](../ui-docs/chart-builder/disc-cont.md)|All|Composer| July 7th, 2022|
+|[Table Calcuations](../ui-docs/chart-builder/table-calculations.md)|All|Composer| July 7th, 2022|
+|[Date Grouping](../ui-docs/chart-builder/date-group.md)|All|Composer| July 7th, 2022|
+|[Chart Builder section](../ui-docs/dataviews/chart-builder/how-to-cb.md)|All|Composer| June 15, 2022|
+|[Chart Types section](../ui-docs/dataviews/chart-types/bar.md)|All|Composer| June 15, 2022|
+|[Configuring AWS and Qrvey for Redshift Connections](../get-started/redshift.md)|All|CloudOps| April 8, 2022|
+|[Configuring AWS and Qrvey for Snowflake Connections](../get-started/snowflake.md)|All|CloudOps| April 8, 2022|
+|[Internationalization Overview](../special-features/internationalization/overview.md)|7.0|All| April 4, 2022|
+|[Internationalization, Step-by-step](../special-features/internationalization/step-by-step.md)|7.0|All| April 4, 2022|
+|[Configuring Dynamic Labels For Datasets](../special-features/internationalization/configuring-dynamic-labels.md)|7.0|All| April 4, 2022|
 
 </div>

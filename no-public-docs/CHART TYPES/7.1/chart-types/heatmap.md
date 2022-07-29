@@ -48,7 +48,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ### General
 * **Legends**  - show or hide the legend describing each color by category.
 * **Sort by** - sort your data either by labels or numeric values in ascending/descending order.
-* **Tooltips** - enable or disable <a href="/docs/ui-docs/dataviews/chart-builder/tooltips" target="_blank">Tooltips</a>.
+* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
   * To show more than one value on mouseover, click on **+Add Column**:
       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
       * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (*Sum, Average, Median, Count, Distinct Count, Minimum, Maximum*).
@@ -58,7 +58,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Max Data Points** - set the upper limit of the symbols you’d like to show in your Heatmap. Controlling the number of symbols helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 
 ### Styles
-* **Theme** - Set one of the predetermined themes for shading your regions. In most cases, it makes sense to use a gradient spectrum for a heatmap, so the range matches the range of change in the values. You may use one of such themes that exist by default, or create your own, as discussed in the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/styles" target="_blank">Setting Chart Styles</a> article.
+* **Theme** - Set one of the predetermined themes for shading your regions. In most cases, it makes sense to use a gradient spectrum for a heatmap, so the range matches the range of change in the values. You may use one of such themes that exist by default, or create your own, as discussed in the [Setting Chart Styles](../../dataviews/chart-builder/chart-configuration/styles.md) article.
 ![heatmap](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Heatmap/style.png#thumbnail-40)
 * **X-axis** (pivot)
   * **Label** - give the axis a custom label.
@@ -79,7 +79,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the <a href="/docs/ui-docs/dataviews/chart-builder/chart-configuration/chart-filters" target="_blank">Filters</a> article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
 
 
 

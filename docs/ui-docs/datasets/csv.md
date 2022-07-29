@@ -59,7 +59,7 @@ S3 buckets and folders can be leveraged to store CSV, JSON, or ndJSON files and 
 
 * You can load data from multiple files that are in the same bucket or folder in bulk, instead of loading those one at a time.
 * Wildcards can be used to include files that their names match the pattern in the load and leave other files alone.
-* Files’ upload time will automatically be used as a timestamp to enable the <a href="/docs/ui-docs/datasets/data-sync#append-and-update" target="_blank">“append and update” </a> mode of data synchronization. 
+* Files’ upload time will automatically be used as a timestamp to enable the [“append and update”](ui-docs/datasets/data-sync.md#append-and-update) mode of data synchronization. 
  
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 
@@ -81,7 +81,7 @@ Once a file connection exists you can create a dataset from your file upload to 
 
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup7.png#thumbnail-60)
 
-For more information on creating datasets and working with your file upload data, see the article on <a href="/docs/ui-docs/datasets/datasets/" target="_blank">Datasets</a>. You can also read more about working with hierarchical data from a JSON upload in the <a href="/docs/ui-docs/datasets/hierarchical-data/">dedicated article</a>. 
+For more information on creating datasets and working with your file upload data, see the article on [Datasets](ui-docs/datasets/datasets.md). You can also read more about working with hierarchical data from a JSON upload in the [dedicated article](ui-docs/datasets/hierarchical-data.md). 
 
 
 

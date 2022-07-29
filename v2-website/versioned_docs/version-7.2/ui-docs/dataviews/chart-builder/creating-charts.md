@@ -56,7 +56,7 @@ You may change the chart type at any point. The product will do its best to keep
 6. **Axes** - X and Y axes of a chart.
 
 ## Chart Panel
-Once a chart is saved the Chart Builder is closed and the chart is displayed inside a panel. All charts are created as “children” of their dataset and can always be accessed from the Analyze view of the dataset or by clicking on the dataset inside the **Data Panel** of the <a href="/docs/ui-docs/builders/pages" target="_blank"><strong>Page Builder</strong></a>.  
+Once a chart is saved the Chart Builder is closed and the chart is displayed inside a panel. All charts are created as “children” of their dataset and can always be accessed from the Analyze view of the dataset or by clicking on the dataset inside the **Data Panel** of the **Data Panel** of the **[Page Builder](../../builders/pages.md)**.  
 
 You can edit your chart at any time by clicking on the three-dot menu in the upper-right corner of the panel and selecting Edit.
 

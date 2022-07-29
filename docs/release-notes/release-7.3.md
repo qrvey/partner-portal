@@ -10,7 +10,7 @@ Release Date: 2022-06-30
 ## New Features & Enhancements
  
 ### Data Preparation
-* <a href="/docs/video-training/release/version-7.3#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <strong>QV-14476 - Union Data From Multiple Sources</strong> : “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset.
+* <strong>QV-14476 - Union Data From Multiple Sources</strong> : “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset. <a href="/docs/video-training/release/version-7.3#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
 * **QV-15587 - PostgreSQL - S3 method to support larger data loads**: A new way of extracting data (the S3 method) when creating RDS PostgreSQL connections in the same region as the instance allows support of larger data loads.
 
@@ -19,26 +19,27 @@ Release Date: 2022-06-30
 
 ### Data Analysis & Automation
 
-* <strong><a href="/docs/ui-docs/chart-builder/discrete-continuous-values#continuous-dates" target="_blank">AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories</a></strong>: You can now control the X-axis range of your continuous charts by setting start and end category values. 
+* **[AN-15983 - X-Axis Control in Continuous Charts With Date and Numeric Categories](../ui-docs/chart-builder/disc-cont.md#continuous-dates)**: You can now control the X-axis range of your continuous charts by setting start and end category values. 
 
-* <a href="/docs/video-training/release/version-7.3#expandable-table-alignment" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/dataviews/chart-types/expandable-table#styles" target="_blank">AN-16110 - Text Alignment in Expandable Tables</a></strong>: You can now modify the columns´ text alignment inside expandable tables.
+* **[AN-16110 - Text Alignment in Expandable Tables](../ui-docs/dataviews/chart-types/expandable.md#styles)**: You can now modify the columns´ text alignment inside expandable tables. <a href="/docs/video-training/release/version-7.3#expandable-table-alignment" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
-* <strong><a href="/docs/ui-docs/chart-builder/setting-chart-styles#managing-themes" target="_blank">AN-15963 - Show/Hide Panel Headers</a></strong>: Visibility of charts’ panel headers can be controlled from the themes dialog.
+* **[AN-15963 - Show/Hide Panel Headers](../ui-docs/chart-builder/setting-chart-styles.md#managing-themes)**: Visibility of charts’ panel headers can be controlled from the themes dialog.
 
-* <a href="/docs/video-training/release/version-7.3#counties-support-in-geolocation-groups" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a><strong><a href="/docs/ui-docs/datasets/#setting-up-geolocation-groups" target="_blank">AN-15956 - Geolocation Groups - Counties Support</a></strong>: Geolocation groups now support US counties. 
+* **[AN-15956 - Geolocation Groups - Counties Support](../ui-docs/datasets/datasets.md#setting-up-geolocation-groups)**: Geolocation groups now support US counties. <a href="/docs/video-training/release/version-7.3#counties-support-in-geolocation-groups" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+
 
 * **AT-9438 - Multi-Tenancy - Assets Visibility in Page Builder and Page View**: with this version, implementers can control the visibility of content and assets (charts, pages, datasets, etc.) from the widget configuration object for Page Builder and Page View widgets.
 
 
 * **AT-11070 - Customization of AN Panels Menu Action**: As an implementer, you can now control the available menu options for chart panels by the chart category (metrics or other charts).
 
-* <strong><a href="/docs/ui-docs/builders/pages_actions" target="_blank">AT-9500 - Go To URL to load in Self/Tab/Window</a></strong>: The target for the “Go to URL” page action can now be set to the same tab, a new tab, or a new window.
+* **[AT-9500 - Go To URL to load in Self/Tab/Window](../ui-docs/builders/page_actions.md#go-to-url)**: The target for the “Go to URL” page action can now be set to the same tab, a new tab, or a new window.
 
-* <strong><a href="/docs/ui-docs/builders/pages#canvas-layout" target="_blank">AT-10288 - Data Panel - Chart Information Preview</a></strong>: An icon and the chart description help analysts better identify the charts under each dataset in the data panel before adding them to the canvas.
+* **[AT-10288 - Data Panel - Chart Information Preview](../ui-docs/builders/pages.md#canvas-layout)**: An icon and the chart description help analysts better identify the charts under each dataset in the data panel before adding them to the canvas.
 
-* <strong><a href="/docs/ui-docs/builders/pages#text-box" target="_blank">AT-10885 - Page Builder - Text Editor Formatting Enhancements</a></strong>: We implemented additional options for formatting the text control in a page for improved customization.
+* **[AT-10885 - Page Builder - Text Editor Formatting Enhancements](../ui-docs/builders/pages.md#object-configuration)**: We implemented additional options for formatting the text control in a page for improved customization.
 
-* <strong><a href="/docs/ui-docs/filtering-data/working-with-filters#free-standing-filter-controls" target="_blank">AT-10764 - Filter Interactivity - Formulas in Filter Components</a></strong>: You can now use formulas in Input Box and Date Picker components.
+* **[AT-10764 - Filter Interactivity - Formulas in Filter Components](../ui-docs/filtering-data/working-with-filters.md#free-standing-filter-controls)**: You can now use formulas in Input Box and Date Picker components.
 
 * **EX-1067 - Secure Location for Exported Files**: Download links can now be customized to use a secure location for exported files.
 
@@ -57,7 +58,7 @@ Release Date: 2022-06-30
 
 * **QV-15943 - Support numeric and string array data types for Athena Connections (improvement)**: Users can now view and use string and numeric arrays for Datasets that use Athena Connections.
 
-* <strong><a href="/docs/ui-docs/dataviews/chart-types/pie-charts#styles" target="_blank">AN-15707 - Allow Pie Charts to show the percentage of values (improvement)</a></strong>: With this version pie charts have the option to display their values in percentages, as well as raw numbers.
+* **[AN-15707 - Allow Pie Charts to show the percentage of values (improvement)](../ui-docs/dataviews/chart-types/pie.md#styles)**: With this version pie charts have the option to display their values in percentages, as well as raw numbers.
 
 * **AN-16272 - Geolocation by Country affects States that have the same name (bug fix)**: When filtering out a country like Georgia, US state Georgia was getting filtered out as well. This issue has been fixed.
 
