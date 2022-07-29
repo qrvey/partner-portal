@@ -5,7 +5,8 @@ sidebar_label: Known Issues
 ---
 <div style={{textAlign: "justify"}}>
 
-* **DR-3583 - TransformChunk lambda is consuming all lambda concurrency:** Currently, the transformChunk lambda does not have reserved concurrency, so it is consuming all of the lambda instances available during a big data load job with a lot of rows and this may cause the rest of the API or lambda calls to throw throttling errors. 
+
+* **DR-3583 - TransformChunk lambda is consuming all lambda concurrency**: Currently, the transformChunk lambda does not have reserved concurrency, so it is consuming all of the lambda instances available during a big data load job with a lot of rows and this may cause the rest of the API or lambda calls to throw throttling errors.
 
 * **QV-14238 - Datasets - Timeout errors**: When a user tries to reload a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
 
@@ -13,7 +14,7 @@ sidebar_label: Known Issues
 
 * **QV-15609 - Duplicate Dataset With Same IDs**: When a user duplicates a dataset with API using the same ID, the original is deleted and the new one has issues.
 
-* **AN-16151 - Aggregate Formula Values in Charts Cannot Be Filtered**: When using aggregate formulas, charts cannot be filtered. It seems like the order of applying filters and aggregating is wrong. Filters should be applied to the dataset first, then the value in Formula should be aggregated to be used in a Gauge.
+* **AN-16151 - Aggregate Formula Values in Charts Cannot Be Filtered**: When using aggregate formulas, charts cannot be filtered. It seems like the order of applying filters and aggregating is wrong. Filters should be applied to the dataset first, and then the value in Formula should be aggregated to be used in a Gauge.
 
 * **QV-15746 - LTS - API - Delete Connections, Datasets & Web forms of Deleted Applications**: When an admin user wants to delete an application with its dependencies using an API, the associated connections and datasets will not be deleted.
 
