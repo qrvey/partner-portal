@@ -15,8 +15,8 @@ Release Date: 2022-07-30
 ### Data Preparation
 
 * **DR-3566 - Enhanced Logic For Data Sync**: The logic to determine new and updated records has changed to use the previous data load’s time, instead of the time of the newest value stored in Elasticsearch. The new method is more reliable in the majority of the cases. 
-<br>
-**Important Note:** If your timestamps don’t match the actual time that the records were added/updated, and you prefer to continue using the old method, please see this article to learn about the environment variable that keeps the old logic in place. 
+</br>
+**Important Note:** If your timestamps don’t match the actual time that the records were added/updated, and you prefer to continue using the old method, please see [this article](../ui-docs/datasets/data-sync.md) to learn about the environment variable that keeps the old logic in place. 
 
 ### Data Analysis & Automation
 
