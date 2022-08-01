@@ -69,7 +69,7 @@ Prior to 7.2, Qrvey obtained the sync query window's start time from the newest 
 
 **Important Note**: If in your use case, the timestamp columns don't match the actual data insert time and you wish to continue using the old logic present in versions prior to 7.2, you can set the deployment-wide AWS Lambda environment variable DATASYNC_START_TIME_MODE to “FromIndex”:
  
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>Lambda: <strong><i>deploymentId</i>_dataload_drInit</strong></li>
 <li>Environment Variable: <strong>DATASYNC_START_TIME_MODE</strong></li>
 <li>Value: <strong>FromIndex</strong></li> </ul>
