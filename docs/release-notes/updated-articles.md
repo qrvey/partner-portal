@@ -7,6 +7,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Data Sync](../ui-docs/datasets/data-sync.md)|7.4|Data Analyst| Jul 29, 2022|
 |[Datasets](../ui-docs/datasets/datasets.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Working With Filters in Embedded Scenarios](../embedding/widgets/filters-embedded-scenarios.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Analytic Suite Widget](../embedding/widgets/analytics/analytic-suite.md)|7.3|Data Analyst| Jul 7, 2022|
