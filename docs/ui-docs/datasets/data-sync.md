@@ -62,4 +62,16 @@ Identifying the most recent records depends on the time columns. You will need t
 
 ![7_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/7_data_sync.png#thumbnail)
 
+
+## Deciding the Sync Logic
+Starting with version 7.2, Qrvey uses the previous data load’s time and compares that to the timestamp of the records to determine which records of data need to be added or updated. This method works in all cases where the timestamp column values are close to the actual time when records get inserted into the data source (within one minute). 
+Prior to 7.2, Qrvey obtained the sync query window's start time from the newest value stored. 
+
+**Important Note**: If in your use case, the timestamp columns don't match the actual data insert time and you wish to continue using the old logic present in versions prior to 7.2, you can set the deployment-wide AWS Lambda environment variable DATASYNC_START_TIME_MODE to “FromIndex”:
+ 
+<ul style="list-style: none; margin-left:20px;">
+<li>Lambda: <strong><i>deploymentId</i>_dataload_drInit</strong></li>
+<li>Environment Variable: <strong>DATASYNC_START_TIME_MODE</strong></li>
+<li>Value: <strong>FromIndex</strong></li> </ul>
+
 </div>
