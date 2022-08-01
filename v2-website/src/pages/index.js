@@ -259,11 +259,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="/docs/ui-docs/datasets/union" target="_blank">Appending Data (Union) <span>Jul 29, 2022</span></a>
              <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a>
              <a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values<span>July 7th, 2022</span></a> 
              <a href="/docs/ui-docs/chart-builder/table-calculations" target="_blank">Table Calcuations<span>July 7th, 2022</span></a> 
              <a href="/docs/ui-docs/chart-builder/date-grouping" target="_blank">Date Grouping<span>July 7th, 2022</span></a> 
-             <a href="/docs/ui-docs/dataviews/chart-builder/how-to-use-chart-builder-documentation" target="_blank">Chart Builder section <span>June 15, 2022</span></a>
                  </div>
              </div>
            </div>
