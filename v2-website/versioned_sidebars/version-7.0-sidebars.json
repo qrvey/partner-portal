@@ -50,10 +50,6 @@
         },
         {
           "type": "doc",
-          "id": "version-7.0/get-started/managing-aws-cluster"
-        },
-        {
-          "type": "doc",
           "id": "version-7.0/aws/manage-aws-elasticsearch"
         },
         {
