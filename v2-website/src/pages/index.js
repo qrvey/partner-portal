@@ -278,7 +278,7 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Analyst<span>Jul 29, 2022</span></a> 
+             <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync<span>Jul 29, 2022</span></a> 
               <a href="/docs/ui-docs/datasets/" target="_blank">Datasets<span>Jul 7, 2022</span></a> 
               <a href="/docs/embedding/widgets/filters-embedded-scenarios" target="_blank">Working With Filters in Embedded Scenarios<span>Jul 7, 2022</span></a> 
               <a href="/docs/embedding/widgets/analytics/analytic-suite" target="_blank">Analytic Suite Widget<span>Jul 7, 2022</span></a> 
