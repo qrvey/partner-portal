@@ -101,7 +101,6 @@ module.exports = {
         highlightSearchTermsOnTargetPage: true,
         searchResultContextMaxLength: 200,
 
-
       },
     ],
   ],

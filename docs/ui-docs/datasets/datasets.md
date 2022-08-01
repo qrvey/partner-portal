@@ -8,7 +8,7 @@ In this section, we’ll explain how datasets are created using a single data so
 
 >**Note**: To see how datasets are created from multiple data sources, please go to the 
 [Data Joins article](../ui-docs/datasets/joins.md).
-</br>
+<br/>
 
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**.
@@ -91,7 +91,7 @@ Changing the unique identifier for a dataset will require a reload of the data i
 If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user.
 The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Admin Center.
 
-For more information about RLS and how to set it up see the [Record Level Security](../admin/record-level-security.md) article</a>.
+For more information about RLS and how to set it up see the [Record Level Security](../admin/record-level-security.md) article.
 
 
 Defining the security name for a column will *not* require a data reload.
