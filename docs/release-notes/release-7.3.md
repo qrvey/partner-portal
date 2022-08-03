@@ -10,7 +10,7 @@ Release Date: 2022-06-30
 ## New Features & Enhancements
  
 ### Data Preparation
-* <strong>QV-14476 - Union Data From Multiple Sources</strong> : “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset. <a href="/docs/video-training/release/version-7.3#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **[QV-14476 - Union Data From Multiple Sources](../ui-docs/datasets/union.md)**: “Union” feature has been added to datasets to enable users to combine and append data from multiple data sources into a single Dataset. <a href="/docs/video-training/release/version-7.3#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
 * **QV-15587 - PostgreSQL - S3 method to support larger data loads**: A new way of extracting data (the S3 method) when creating RDS PostgreSQL connections in the same region as the instance allows support of larger data loads.
 
