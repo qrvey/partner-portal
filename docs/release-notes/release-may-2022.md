@@ -5,10 +5,12 @@ sidebar_label: Qrvey 7.2
 ---
 <div style={{textAlign: "justify"}}>
 
-## New Features & Enhancements
- 
+Release Date: 2022-06-02
+
 >**Note:** If you wish to upgrade to this version, please contact the CX team if you have a *Managed Infrastructure* contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.2.json" target="_blank">this upgrade link</a> and follow the directions in the <a href="/docs/get-started/upgrading-new-version" target="_blank">Upgrading to a New Version</a> article to upgrade your instance(s). 
 <br/>
+
+## New Features & Enhancements
  
 ### Data Preparation
  
