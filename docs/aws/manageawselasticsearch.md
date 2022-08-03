@@ -32,7 +32,7 @@ There are 2 ways of monitoring your Elasticsearch cluster:
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-es_1.png#thumbnail-60)
 
 2. AWS Elasticsearch service console: AWS console shows a lot of information about the cluster under Cluster Health and Instance health tabs. A few important metrics to monitor here are:
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>i. Cluster Status: This should be green.</li>
 <li>ii. Total Nodes and Total Free space.<li>
 <li>iii. Maximum CPU and Memory utilization - This should be around or below 50-80%.<li>
@@ -50,7 +50,7 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 3. Select the Elasticsearch domain you would like to monitor or change.
 4. Click on the Configure Cluster button.
 5. From the Configure domain page you can change any settings by picking appropriate values.
-<ul style="list-style: none; margin-left:20px;">
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>i. Availability zones - For dev/test scenarios, 1-AZ is enough; for production, it can be 2-AZ or 3-AZ</li>
 <li>ii. Instance type - Pick the server type that would best fit your use case. We recommend t2.medium for dev/test workloads and m4 or i3 server type family for production or high workloads.</li>
 <li>iii. Number of instances - We recommend at least 2 (preferably 3 or more) depending on your workload or use case.</li>
