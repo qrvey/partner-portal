@@ -4,7 +4,6 @@ title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
 ---
 
-
 <div style={{textAlign: "justify"}}>
 
 The Qrvey platform uses AWS Elasticsearch service to store all Analytics data and runs queries on this cluster to show Charts and Metrics in UI. This document explains how to monitor and Resize an AWS Elasticsearch cluster based on your needs and requirements.
@@ -35,10 +34,11 @@ There are 2 ways of monitoring your Elasticsearch cluster:
 2. AWS Elasticsearch service console: AWS console shows a lot of information about the cluster under Cluster Health and Instance health tabs. A few important metrics to monitor here are:
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>i. Cluster Status: This should be green.</li>
-<li>ii. Total Nodes and Total Free space.<li>
-<li>iii. Maximum CPU and Memory utilization - This should be around or below 50-80%.<li>
-<li>iv. JVMPressure - This should stay below 80%.<li>
-<li>v. Minimum free storage space - This is the minimum free storage space across all nodes, depending on the size it should have enough space (at least 20% free).<li>
+<li>ii. Total Nodes and Total Free space.</li>
+<li>iii. Maximum CPU and Memory utilization - This should be around or below 50-80%.</li>
+<li>iv. JVMPressure - This should stay below 80%.</li>
+<li>v. Minimum free storage space - This is the minimum free storage space across all nodes, depending on the size it should have enough space (at least 20% free).</li>
+</ul>
 
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-es_2.png#thumbnail-60)
 
@@ -58,7 +58,8 @@ Changing the cluster in AWS Elasticsearch service requires zero downtime as it u
 <li>iv. Dedicated master instances - We recommend using master instances for high availability and heavy workloads in Production systems.</li>
 <li>v. Storage configuration - Pick a size per node based on your data. This size is per node, so if you have 3 servers at 10GB per node then the total storage for your cluster will be 30GB).</li>
 <li>vi. Encryption: if needed based on use case.</li>
-<li>vii. Snapshot configuration: AWS </li>Elasticsearch service takes automatic snapshots of the domain once every day (now they do every hour as well as a new feature). Pick a time when the cluster is not going to have a lot of loading to be done. Something like midnight or early mornings.</li></ul>
+<li>vii. Snapshot configuration: AWS Elasticsearch service takes automatic snapshots of the domain once every day (now they do every hour as well as a new feature). Pick a time when the cluster is not going to have a lot of loading to be done. Something like midnight or early mornings.</li>
+</ul>
 
 ![managing-aws-cluster](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/aws-cluster3.png#thumbnail-60)
 
