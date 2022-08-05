@@ -37,7 +37,8 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>a. Use the Qrvey AWS account.</li>
 <li>b. Open AWS Identity and Access Management (IAM).</li>
 <li>c. Click <b>Roles</b>.</li>
-<li>d. Search for the DB lambda role.  It contains this string: “DBDatasourcePumpFunction”. There is one Role for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
+<li>d. Search for the DB lambda role. It contains the string <i>DBDatasourcePumpFunction</i>. There is one <b>Role</b> for each Qrvey deployment. Select the role applying to the current Qrvey deployment. Note down the ARN to be used later as <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i>.
+.</li>
 <li>e. Click <b>Add inline policy</b>.</li>
 <li>f. Click the <b>JSON</b> tab.</li>
 <li>g. Paste the policy, replacing AWS_ACCOUNT_REDSHIFT with the AWS account number for the Redshift cluster.</li>
@@ -160,20 +161,21 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>h. Check its box.</li>
 <li>i. Click <b>Next: Tags</b>.</li>
 <li>j. Click <b>Next: Review</b>.</li>
-<li>k. Enter the Role name.  Example: “RedshiftDataAccessRole”</li>
+<li>k. Enter the Role name.  For example: <i>RedshiftDataAccessRole</i>.</li>
 <li>l. Click <b>Create Role</b>.</li>
 <li>m. Note this Role’s ARN string for later use.</li>
 </ul>
 
-6. If Qrvey is running under a different account then the Redshift cluster, add a Trust Relation to the new Role.  Otherwise, skip this step.
+
+6. Add a Trust Relation to the new Role.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>a. Click <b>Roles</b>.</li>
-<li>b. Locate the newly created Role.</li>
-<li>c. Click the Trust Relations tab.</li>
-<li>d. Click <b>Edit trust relationship</b>.</li>
-<li>e. Click the tab <b>Trust relationships</b>, then <b>Edit trust relationship</b>.</li>
-<li>f. Paste the trust relationship shown below, replacing AWS_ACCOUNT_QRVEY with the AWS account number for the Qrvey deployment.</li>
-</ul>
+<li>a. Search for the DB lambda role. It contains the string <i>DBDatasourcePumpFunction</i>. There is one Role for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
+<li>b. Click <b>Roles</b>.</li>
+<li>c. Locate the newly created Role.</li>
+<li>d. Click the <b>Trust Relations</b> tab.</li>
+<li>e. Click <b>Edit trust relationship</b>.</li>
+<li>f. Click the tab <b>Trust relationships</b>, then <b>Edit trust relationship</b>.</li>
+<li>g. Paste the trust relationship shown below, replacing <i>AWS_ACCOUNT_QRVEY</i> with the AWS account number for the Qrvey deployment, and <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i> with the Role noted in Step 2.</li></ul>
 
 ```json
 {
@@ -182,7 +184,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "arn:aws:iam::AWS_ACCOUNT_QRVEY:root"
+        "AWS": "ROLE_DB_DATASOURCE_PUMP_FUNCTION"
       },
       "Action": "sts:AssumeRole"
     },
@@ -198,8 +200,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 ```
 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>g. Click <b>Update Trust Policy</b>.</li>
-</ul>
+<li>h. Click <b>Update Trust Policy</b>.</li></ul>
 
 7. Associate the Redshift cluster with the new Role.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
