@@ -27,7 +27,7 @@ The table below provides general information about each property of this widget�
  |**workflow_id** | `String`, workflow ID: if the parameter is not defined, the widget will show the complete list of workflows.| No  |   
 
 
-> **Note**: Refer to the<a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the[ FAQs](../../../faqs/faqs.md) if you don’t know where to find any of the required configuration properties. 
 
 
 ## Sample

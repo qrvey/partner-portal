@@ -90,16 +90,6 @@ module.exports = {
         // language: ["en", "zh"],
         // ```
         // When applying `zh` in language, please install `nodejieba` in your project.
-        indexDocs: true,
-        indexBlog: false,
-        docsRouteBasePath: '/docs',
-        docsDir: '../docs',
-        blogRouteBasePath: '/blogs',
-        blogDir: 'blogs',
-        removeDefaultStopWordFilter: true,
-        searchResultLimits: 100,
-        highlightSearchTermsOnTargetPage: true,
-        searchResultContextMaxLength: 200,
 
       },
     ],

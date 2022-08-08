@@ -41,7 +41,7 @@
     "@docusaurus/preset-classic": "^2.0.0-beta.21",
     "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.21",
     "@docusaurus/theme-search-algolia": "^2.0.0-beta.21",
-    "@easyops-cn/docusaurus-search-local": "^0.18.1",
+    "@easyops-cn/docusaurus-search-local": "^0.31.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "algoliasearch": "^4.8.6",

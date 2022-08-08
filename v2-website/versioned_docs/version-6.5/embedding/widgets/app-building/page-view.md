@@ -53,7 +53,7 @@ The table below provides general information about each property of this widget�
 | styles | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 
 
-> **Note**: Refer to the <a href="/docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the [ FAQs](../../../faqs/faqs.md) if you don’t know where to find any of the required configuration properties. 
 
 ### Configuring End User Personalization
 By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
