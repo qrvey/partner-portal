@@ -8,7 +8,7 @@ sidebar_label: Admin Center Overview
 
 
 Admin Center is one of the two products that are installed with every instance of Qrvey (the other one is [Qrvey Composer](../../ui-docs/composer-overview.md)). It is mainly used to manage and monitor many aspects of the Qrvey Platform. Specifically, it allows Admins to:
-<ul style="list-style-type: square;">
+<ul style={{listStyleType: 'square'}}>
 <li>Create and manage other user accounts</li>
 <li>Manage authentication and security</li>
 <li>Customize Qrvey Composer options</li>
@@ -43,6 +43,6 @@ Click on the **Next** button to set permissions. On the permissions tab, make su
 ### Step 5: Download the AccessKeys
 Make a note of username and Access Key ID for this user as these values will be used to log into the Admin Center.
 
-</br>
+<br/>
 <sup>*</sup> The concept of Content Deployment is one of the unique features of Qrvey and goes far beyond a simple backup and restore, enabling replication of selected assets with configurations that can be parameterized for different users and instances. To learn about this feature see the Content Deployment section of this user manual. 
 </div>
