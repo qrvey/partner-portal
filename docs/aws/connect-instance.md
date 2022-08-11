@@ -39,7 +39,10 @@ This document explains the steps you need to take if you want to securely access
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Create a new Endpoint and pick S3 (gateway type) and pick all route tables associated. Click <strong>Save</strong>.</li> 
 <li>b. Create a new Endpoint and pick DynamoDB (gateway type) and pick the all route tables associated. Click <strong>Save</strong>.</li>
-<li>c. Create a new Endpoint and pick SQS. Since SQS uses an interface you would need to pick the VPC, subnets and Security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols.</li> </ul>
+<li>c. Create a new Endpoint and pick SQS. Since SQS uses an interface you would need to pick the VPC, subnets and Security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols.</li>
+<li>d. (Only follow this step if your database is <strong>Redshift or Redshift Serverless</strong>). Create a new Endpoint and pick <strong>STS</strong>. Since STS uses an interface, you would need to pick the VPC, subnets and security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols.</li>
+<li>e. (Only follow this step if your database is <strong>Redshift or Redshift Serverless</strong>) Create a new Endpoint and pick SecretsManager. Since SecretsManager uses an interface, you would need to pick the VPC, subnets and security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols.</li>
+<li>f. (Only follow this step if your database is <strong>Redshift or Redshift Serverless</strong>) Create a new Endpoint and pick Redshift-data. Since Redshift-data uses an interface, you would need to pick the VPC, subnets and security groups. Pick the same values as the Lambda function in step 1.b.ii, 1.b.iii and 1.b.iv. Add security groups with access to HTTP and HTTPS protocols.</li></ul>
 
 At this point, you should be able to connect to your RDS instance using the Qrvey Composer application by creating a connection and then creating a dataset using that connection.
 
