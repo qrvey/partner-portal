@@ -163,9 +163,9 @@
                  <div className="listrole-links">
                     <a href="docs/ui-docs/basics/introduction">Introduction to the UI</a>
                     <a href="docs/ui-docs/basics/applications">What is a Qrvey Application?</a>
-                    <a href="docs/ui-docs/datasets/datasets">Creating Datasets</a>
+                    <a href="docs/ui-docs/datasets">Creating Datasets</a>
                     <a href="docs/ui-docs/builders/pages">Page Builder</a>
-                    <a href="docs/ui-docs/dataviews/chart-builder">Chart Builder</a>
+                    <a href="docs/ui-docs/chart-builder/chart-builder-overview">Chart Builder</a>
                  </div>
                  </TabPanel>
                  <TabPanel>
