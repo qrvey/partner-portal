@@ -1,13 +1,13 @@
 ---
-id: release-last
-title: Qrvey 7.4 (LTS)
+id: release-7.4
+title: Qrvey 7.4.2 (LTS with the latest patch)
 sidebar_label: Qrvey 7.4 (LTS)
  
 ---
 <div style={{textAlign: "justify"}}>
 
-Release Date: 2022-07-30
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.4.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
+Release Date: 2022-09-02
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.4.2.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
  
 ## New Features & Enhancements
  
@@ -24,11 +24,22 @@ Release Date: 2022-07-30
  
 ## General Tweaks & Bug Fixes
  
-* **QV-15609 - Duplicate Dataset With Same IDs (bug fix)**: When a user duplicates a dataset with API using the same ID, the original is deleted and the new one has issues. This has been fixed.
+* **QV-15609 (bug fix) - Duplicate Dataset With Same IDs**: When a user duplicates a dataset with API using the same ID, the original is deleted and the new one has issues. This has been fixed.
  
-* **AN-16765 - XY Charts - Datapoint is left-justified (bug fix)**: When a user creates a Bar Chart that has a Date column as the category and the ‘Continuous’ option selected, a single bar is displayed, it is shown left-justified instead of centered in the middle of the chart.
+* **AN-16765 (bug fix) - XY Charts - Datapoint is left-justified**: When a user creates a Bar Chart that has a Date column as the category and the ‘Continuous’ option selected, a single bar is displayed, it is shown left-justified instead of centered in the middle of the chart.
  
-* **AT-11870 - Infrastructure changes in SAM templates to improve the performance (enhancement)**: We made infrastructures changes on SAM templates in order to preserve the changes on upgrades and updates to the deployments.
+* **AT-11870 (enhancement) - Infrastructure changes in SAM templates to improve the performance**: We made infrastructures changes on SAM templates in order to preserve the changes on upgrades and updates to the deployments.
+
+* **DR-3611 (bug fix)**: Discardng a date field from the join, when using datasets as data sources, causes an error to be thrown during data load. This issue has been fixed.
+
+* **AN-17103 (bug fix)**: In rare cases, charts with filters included internationalization properties that caused the size of the chart object to exceed maximum allowed size and prevented users from saving the chart. This issue has been fixed.
+
+* **AN-16151 (bug fix)**: An issue with filtering of formulas that use aggregate functions has been fixed in this version. 
+
+* **QV-16229 (security enhancement)**: Updated joi library and validation schemas
+
+* **Various tickets (security enhancement)**: Upgraded all libraries used in various Qrvey components to their latest version
+
  
 </div>
 
