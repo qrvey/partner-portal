@@ -1,5 +1,5 @@
 ---
-id: release-7.4
+id: release-last
 title: Qrvey 7.4.2 (LTS with the latest patch)
 sidebar_label: Qrvey 7.4 (LTS)
  

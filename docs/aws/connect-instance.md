@@ -62,26 +62,25 @@ VPC Peering is necessary if the user’s RDS is in a different VPC, account or r
 </ul>
 3. Modify the routing table(s) for your database VPC:
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>a. Select each routing table with the same VPC ID and follow these steps for each:
+<li>a. Select each routing table with the same VPC ID and follow these steps for each:</li>
+</ul>
 <ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Select Routes</li>
 <li>ii. Select <strong>Edit</strong> routes</li>
 <li>iii. Select <strong>Add</strong> route</li>
 <li>iv. Add <strong>Destination</strong> *172.31.0.0/16* and for <strong>Target</strong> select the Peering Connection that you created in step 2.</li>
-<li>v. <strong>Save</strong> routes</li></ul>
-</li>
+<li>v. <strong>Save</strong> routes</li>
 </ul>
 4. Modify the routing table(s) for the default VPC that Qrvey is installed in.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>a. Select each routing table with the same VPC ID and follow these steps for each:
-
+<li>a. Select each routing table with the same VPC ID and follow these steps for each:</li>
+</ul>
 <ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Select Routes</li>
 <li>ii. Select <strong>Edit</strong> routes</li>
 <li>iii. Select <strong>Add</strong> route</li>
 <li>iv. For <strong>Destination</strong>, enter the IPv4 CIDR range that you found in step 1, and for <b>Target</b> select the Peering Connection that you created in step 2.</li>
-<li> iv. <strong>Save</strong> routes </li></ul>
-</li>
+<li> iv. <strong>Save</strong> routes </li>
 </ul>
 
 Now, you will be able to follow the <a href="#steps">steps</a> above, for connecting Qrvey to your RDS instance.

@@ -7,7 +7,7 @@ sidebar_label: Configuring AWS and Qrvey for Redshift Connections
 
 ---
 
-<div style={{textAlign: "justify"}}>
+<div>
 
 The steps below detail how to configure Qrvey to access Redshift clusters for the purpose of loading data into Qrvey for data analysis.
 
@@ -30,6 +30,33 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li> l. Click <b>Next</b>.</li>
 <li> m. Click <b>Store</b>.</li>
 <li> n. Note this Secret’s ARN string for later use.</li>
+</ul> 
+
+<p>Alternatively, if using Redshift in serverless mode, then:</p>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> a. Open the AWS console.</li>
+<li> b. Use the Redshift AWS account.</li>
+<li> c. Open AWS Secrets Manager.</li>
+<li> d. Create a new Secret.</li>
+<li> e. Select <b>Other type of secret</b>.</li>
+<li> f. Specify Key/value pairs.  This is more easily done using the Plaintext feature.  Here is an example:</li>
+</ul> 
+
+```json
+{
+"username":"MY_USERNAME",
+"password":"MY_PASSWORD",
+"engine":"redshift",
+"host":"default.MY_ACCOUNT.us-east-1.redshift-serverless.amazonaws.com",
+"port":5439,
+"workgroupName":"default"
+}
+```
+
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> g. Click <b>Next</b>.</li>
+<li> h. Click <b>Store</b>.</li>
+<li> i. Note this Secret’s ARN string for later use.</li>
 </ul> 
 
 2. Set permissions for the Qrvey Database lambda.
@@ -89,6 +116,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
   ]
 }
 ```
+
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>g. Save the trust relationship.</li>
 </ul>
@@ -143,7 +171,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 }
 ```
 
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>g. Click <b>Next: Tags</b>.</li>
 <li>h. Click <b>Next: Review</b>.</li>
 <li>i. Name the new Policy.  For example: “RedshiftDataAccessPolicy”.</li>
@@ -175,7 +203,8 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>d. Click the <b>Trust Relations</b> tab.</li>
 <li>e. Click <b>Edit trust relationship</b>.</li>
 <li>f. Click the tab <b>Trust relationships</b>, then <b>Edit trust relationship</b>.</li>
-<li>g. Paste the trust relationship shown below, replacing <i>AWS_ACCOUNT_QRVEY</i> with the AWS account number for the Qrvey deployment, and <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i> with the Role noted in Step 2.</li></ul>
+<li>g. Paste the trust relationship shown below, replacing <i>AWS_ACCOUNT_QRVEY</i> with the AWS account number for the Qrvey deployment, and <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i> with the Role noted in Step 2.</li>
+</ul>
 
 ```json
 {
@@ -198,7 +227,6 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
   ]
 }
 ```
-
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>h. Click <b>Update Trust Policy</b>.</li></ul>
 
