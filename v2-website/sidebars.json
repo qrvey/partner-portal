@@ -1060,6 +1060,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "video-training/release/version-7.5"
+        },
+        {
+          "type": "doc",
           "id": "video-training/release/version-7.3"
         },
         {
