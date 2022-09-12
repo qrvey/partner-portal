@@ -37,11 +37,13 @@ Once the connection to the database server is established, the information can b
 
 If you want to make your connection more specific, you can select the database from the *Database* dropdown list, and optionally continue to further refine your choice by clicking on the **Include a Query with this Connection** button, to pick a table or view from the database.
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/edit_connection.png#thumbnail-60)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dbs4.png#thumbnail-60)
 
 You may also enter a custom SQL query as your connection by clicking the **SQL Query** radio button. You can use the **Test** link in the bottom-right corner to test your query. 
 
-![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/database5.png#thumbnail-60)
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dbs5.png#thumbnail-60)
+
+In both of these cases a checkbox lets you choose whether to apply pagination to the query or not. This option is on by default and wraps the query in a paging statement to prevent lengthy queries from causing a timeout in the function that fetches the data from the data source. The feature however causes some slowness in load, due to fetching data one page at a time, and moving the paging cursor further and further into the data. You can choose to disable pagination if you believe that your data is not large enough to cause a timeout.
 
 ## Creating a Connection Using the Advanced Method
 
