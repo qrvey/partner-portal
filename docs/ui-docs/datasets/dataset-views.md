@@ -4,7 +4,7 @@ title: Dataset Views
 sidebar_label: Dataset Views
 ---
 
-<div style={{textAlign: "justify"}}>
+<div>
 
 
 A dataset view is a type of reference dataset that points to another dataset as its source.  Dataset views allow you to create a customized view of a dataset for users with access to the application where the dataset view resides.  Dataset views only belong to a single application; however, the source dataset can belong to a different application.  Dataset views are recommended whenever you want to share data amongst users with access to different applications and avoid replicating and copying large datasets.
@@ -13,9 +13,10 @@ A dataset view is a type of reference dataset that points to another dataset as 
 Create a new dataset view by clicking **New Dataset** from the *Datasets* page.  Click on the *Shared Data* tab, select a shared dataset as the source, and then click **New Dataset View**.  Dataset views can only be created if at least one shared dataset exists in at least one application.
 
 
-![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/dataviews1.png#thumbnail-60) 
+![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/datasetviews4.png#thumbnail-60) 
 
 
+Note that the name of the owner and the app in which the original dataset was created are shown for all shared datasets. </br>
 From the Design page you can perform the following actions on a dataset view:
 
 * Activate or deactivate individual columns

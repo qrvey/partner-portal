@@ -49,7 +49,11 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td>Host for all Microservice containers</td>
 	</tr>
 	<tr>
-		<td><a href="https://aws.amazon.com/elasticsearch-service">Amazon Elasticsearch Service</a></td>
+		<td><a href="https://aws.amazon.com/location/">Amazon Location Service</a></td>
+		<td>Used for mapping</td>
+	</tr>
+	<tr>
+		<td><a href="https://aws.amazon.com/opensearch-service/">Amazon OpenSearch Service</a></td>
 		<td>Used for storing all customer-uploaded file data and data used for charting analytics</td>
 	</tr>
 	<tr>

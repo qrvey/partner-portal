@@ -6,7 +6,7 @@ sidebar_label: Prerequisites for Installation
 
 <div style={{textAlign: "justify"}}>
 
-As you prepare to install Qrvey within your current AWS environment or a new AWS environment, there are a few items to be aware of prior to installation.
+As you prepare to install Qrvey within your current or a new AWS environment, there are a few items to be aware of prior to installation.
 
 ## AWS Region Support
 Qrvey has architected a system that combines roughly two dozen AWS services creating a scalable and cost-effective solution. As a result, we recommend deploying Qrvey into regions that have full support for these services. The regions that have been certified by our internal testing teams and have full support for every AWS service include:
@@ -14,13 +14,10 @@ Qrvey has architected a system that combines roughly two dozen AWS services crea
 * N. Virginia (us-east-1)
 * Ohio (us-east-2)
 * Oregon (us-west-2)
-* Canada - Central (ca-central-1)
 * Ireland (eu-west-1)
 * Frankfurt (eu-central-1)
-* London (eu-west-2)
 * Sydney (ap-southeast-2)
 * Singapore (ap-southeast-1)
-* Mumbai (ap-south-1)
 
 
 As AWS region support continues to evolve and expand, Qrvey may also be deployed in regions not listed above, provided all the core services are supported. If you have questions about regions that the Qrvey team has not yet certified, please contact Qrvey support at help@qrvey.com.
@@ -39,34 +36,46 @@ In the North American geo, the following regions do not have complete support fo
 	</thead>
 	<tbody>
 	<tr>
-		<td>N. California (us-west-1)</td>
+		<td rowspan="2">N. California (us-west-1)</td>
 		<td>Comprehend</td>
         <td>Text analysis - Used in Data Profiling and Transformations.</td>
 	</tr>
 	<tr>
-		<td>&nbsp;</td>
 		<td>Simple Email Service (SES) - Automated Deployment</td>
 		<td>Requires manual setup - Cloudformation is not able to configure SES.</td>
 	</tr>
 	<tr>
-		<td>Canada (Central) (ca-central-1)</td>
+		<td rowspan="2">Canada (Central) (ca-central-1)</td>
 		<td>Rekognition</td>
 		<td>Image and Video analysis</td>
 	</tr>
+    <tr>
+      <td>Amazon Location Service</td>
+      <td>Mapping</td>
+    </tr>
 	<tr>
-		<td>S. America (Sao Paulo) (sa-east-1)</td>
+		<td rowspan="2">S. America (Sao Paulo) (sa-east-1)</td>
 		<td>Comprehend</td>
 		<td>Text analysis - Used in Data Profiling and Transformations.</td>
 	</tr>
     <tr>
-		<td></td>
 		<td>Rekognition</td>
 		<td>Image and Video analysis</td>
 	</tr>
     <tr>
+		<td>London (eu-west-2)</td>
+		<td>Amazon Location Service</td>
+		<td>Mapping</td>
+	</tr>    
+    <tr>
+		<td>Mumbai (ap-south-1)</td>
+		<td>Amazon Location Service</td>
+		<td>Mapping</td>
+	</tr>    
+    <tr>
 		<td>GovCloud (US) (us-gov-west-1)</td>
-		<td>None</td>
-		<td>All services available, but the region has not been certified yet.</td>
+		<td>Amazon Location Service</td>
+		<td>Mapping</td>
 	</tr>    
 	</tbody>
 </table> 
@@ -86,22 +95,23 @@ The following regions are missing services that Qrvey relies upon and are **NOT*
 	</thead>
 	<tbody>
 	<tr>
-		<td>GovCloud (US-East) (us-gov-east-1)</td>
+		<td rowspan="5">GovCloud (US-East) (us-gov-east-1)</td>
 		<td>Comprehend</td>
         <td>Text analysis - Used in Data Profiling and Transformations.</td>
 	</tr>
 	<tr>
-		<td></td>
 		<td>Rekognition</td>
         <td>Image and Video analysis</td>
 	</tr>
 	<tr>
-		<td></td>
 		<td>Simple Email Service (SES) - Automated Deployment</td>
         <td>Requires manual setup - Cloudformation is not able to configure SES.</td>
 	</tr>    
     <tr>
-		<td></td>
+		<td>Amazon Location Service</td>
+        <td>Mapping</td>
+    </tr>
+    <tr>
 		<td>CodePipeline</td>
         <td>Deployment of software version updates</td>
     </tr>
