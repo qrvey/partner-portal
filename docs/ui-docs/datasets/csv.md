@@ -6,7 +6,7 @@ sidebar_label: File Upload Connection
 
 <div style={{textAlign: "justify"}}>
 
-In this article, we will walk you through the steps to create connections to supported file types: comma-delimited CSV, JSON, and ndJSON, or an Amazon S3 bucket where you may have multiple files with these formats.
+In this article, we will walk you through the steps to create connections to supported file types: comma-delimited<sup>*</sup> CSV, JSON, and ndJSON, or an Amazon S3 bucket where you may have multiple files with these formats.
 
 ## Preparing Your Data
 CSV files are very simple and lack a lot of the details that the system could get from a database. This makes them versatile and error-prone at the same time. Likewise, JSON files could contain invalid content that may cause errors during load, especially if they are created manually. Therefore, it is important for the files to be reviewed and shaped properly so that errors can be avoided. 
@@ -24,6 +24,8 @@ One set of data is presented in the file - i.e., the file does not contain a set
 For JSON files the main requirement is to make sure that it is a well-formed JSON: all brackets and quotes come in pairs, hierarchies are correct and consistent, etc. 
 
 The same rules of data cleanliness that apply to CSV also apply to JSON.
+
+>**Note**: <sup>*</sup>CSV files may use any of the following delimiters: comma, semicolon, tab character, and pipe symbol (|). 
 
 ## Creating a File Upload Connection 
 To begin, select **Data** from the menu on the left.
@@ -87,22 +89,3 @@ For more information on creating datasets and working with your file upload data
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
