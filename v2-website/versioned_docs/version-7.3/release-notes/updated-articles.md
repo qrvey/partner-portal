@@ -7,6 +7,16 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Data Sync](../ui-docs/datasets/data-sync.md)|7.5|Data Analyst| Sep 13, 2022|
+|[AWS Services Used by Qrvey](../get-started/aws-services-qrvey.md)|7.5|CloudOps| Sep 13, 2022|
+|[Prerequisites For Installation](../get-started/prerequisites-for-installation.md)|7.5|CloudOps| Sep 13, 2022|
+|[Database Connections](../ui-docs/datasets/databases.md)|7.5|Data Analyst| Sep 13, 2022|
+|[Dataset Views](../ui-docs/datasets/dataset-views.md)|7.5|Data Analyst| Sep 13, 2022|
+|[Dataset Views](../ui-docs/datasets/dataset-views.md)|7.5|Data Analyst| Sep 13, 2022|
+|[File Upload Connection](../ui-docs/datasets/csv.md)|7.5|Data Analyst| Sep 13, 2022|
+|[Connecting to Secure RDS](../aws/connect-instance.md)|All|CloudOps| Sep 7, 2022|
+|[Configuring AWS and Qrvey for Redshift Connections](../get-started/redshift.md)|All|CloudOps| Sep 7, 2022|
+|[Data Sync](../ui-docs/datasets/data-sync.md)|7.4|Data Analyst| Jul 29, 2022|
 |[Datasets](../ui-docs/datasets/datasets.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Working With Filters in Embedded Scenarios](../embedding/widgets/filters-embedded-scenarios.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Analytic Suite Widget](../embedding/widgets/analytics/analytic-suite.md)|7.3|Data Analyst| Jul 7, 2022|

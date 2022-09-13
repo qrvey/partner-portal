@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync<span>Jul 29, 2022</span></a> 
-              <a href="/docs/ui-docs/datasets/" target="_blank">Datasets<span>Jul 7, 2022</span></a> 
-              <a href="/docs/embedding/widgets/filters-embedded-scenarios" target="_blank">Working With Filters in Embedded Scenarios<span>Jul 7, 2022</span></a> 
-              <a href="/docs/embedding/widgets/analytics/analytic-suite" target="_blank">Analytic Suite Widget<span>Jul 7, 2022</span></a> 
-              <a href="/docs/ui-docs/builders/pages_actions" target="_blank">Page Actions<span>Jul 7, 2022</span></a> 
+             <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync<span>Sep 13, 2022</span></a> 
+              <a href="/docs/get-started/aws-services" target="_blank">AWS Services Used by Qrvey<span>Sep 13, 2022</span></a> 
+              <a href="/docs/get-started/prerequisites-for-installation" target="_blank">Prerequisites For Installation<span>Sep 13, 2022</span></a> 
+              <a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections<span>Sep 13, 2022</span></a> 
+              <a href="/docs/ui-docs/datasets/dataset-views" target="_blank">Dataset Views<span>Sep 13, 2022</span></a> 
                  </div>
              </div>
            </div>
@@ -313,7 +313,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 7.4 has been released,{" "}
+                 Version 7.5 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"

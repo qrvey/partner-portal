@@ -16,7 +16,7 @@ Create a new dataset view by clicking **New Dataset** from the *Datasets* page. 
 ![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/datasetviews4.png#thumbnail-60) 
 
 
-Note that the name of the owner and the app in which the original dataset was created are shown for all shared datasets. </br>
+Note that the name of the owner and the app in which the original dataset was created are shown for all shared datasets. <br/>
 From the Design page you can perform the following actions on a dataset view:
 
 * Activate or deactivate individual columns
