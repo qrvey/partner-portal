@@ -18,7 +18,7 @@ Release Date: 2022-08-30
 ### Data Preparation
 * **[CSV Files - Support for Different Delimiters](../ui-docs/datasets/csv.md)**: We now support semicolon, tab character, and pipe symbol, in addition to commas, in CSV files.
 
-* **[RDBMS Connections - Pagination for Tables and Views](../ui-docs/datasets/datasets/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
+* **[RDBMS Connections - Pagination for Tables and Views](../ui-docs/datasets/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
 
 * **[Data Sync - Allow users to determine the start of the sync range](../ui-docs/datasets/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
 
