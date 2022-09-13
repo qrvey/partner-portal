@@ -24,7 +24,7 @@ Release Date: 2022-08-30
 
 * **[Shared Data List Improvement](../ui-docs/datasets/dataset-views.md)**: Users can now see the owner and the source application of shared datasets.
 
-* **Numeric Data Type - Duration Values Visualization Format**: With this version numeric values can have their default visualization format set as Duration, allowing types such as days, hours, minutes, etc. <a href="/docs/video-training/release/version-7.5#union-data-from-multiple-sources" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Numeric Data Type - Duration Values Visualization Format**: With this version numeric values can have their default visualization format set as Duration, allowing types such as days, hours, minutes, etc. <a href="/docs/video-training/release/version-7.5#duration-visualization-format" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
 * **Unification of the Abbreviated visualization format**: We added support for Abbreviated visualization format in the data preparation step. 
 
@@ -36,9 +36,9 @@ Release Date: 2022-08-30
 
 * **Maps Migration to Amazon Location Service**: We have migrated the maps feature to the new AWS Location Service. Please make sure that this service is available [in the region](../get-started/prerequisites-for-installation.md#aws-region-support) of your choice, before deploying Qrvey in a new region. 
 
-* **Workflows - Tokens in the “Submit Data” fields**: We added support for tokens when creating a flow using Submit Data so that the system can use dynamic values in this action. 
+* **Workflows - Tokens in the “Submit Data” fields**: We added support for tokens when creating a flow using Submit Data so that the system can use dynamic values in this action. <a href="/docs/video-training/release/version-7.5#submit-data-action-improvements" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
-* **Workflows - Submit Data action with Basic Authentication**: We implemented the option to let users define how the Submit Data action can authenticate against any external systems their workflow may be connected to. 
+* **Workflows - Submit Data action with Basic Authentication**: We implemented the option to let users define how the Submit Data action can authenticate against any external systems their workflow may be connected to.  <a href="/docs/video-training/release/version-7.5#submit-data-action-improvements" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
 * **New Page Actions for Funnel Charts- Filter by in Funnel and Expandable Tables**: We have added support for the Filter By and Go to URL Page Actions support in the Funnel charts. 
 
