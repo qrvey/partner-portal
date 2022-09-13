@@ -5,7 +5,7 @@ sidebar_label: Version 7.5
 ---
 
 
-## Submit Data Action Improvement
+## Submit Data Action Improvements
 
 <iframe src="//fast.wistia.net/embed/iframe/ys196p2bjh?videoFoam=true"
 allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
