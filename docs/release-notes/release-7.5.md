@@ -7,11 +7,11 @@ sidebar_label: Qrvey 7.5
 <div>
 
 Release Date: 2022-08-30
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.5.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
+> :warning: **Warning:** Admin Center is fully serverless as of version 7.5. This change does not affect any of its functionality, however the link to the application has changed to:  *[ComposerURL]/admin/app/#/*. **This is an important change for partners that utilize Qrvey APIs**, as any reference to *https://[id]-admin.qrveyapp.com* or *https://[id]-admin-backend.qrveyapp.com* has to be changed to *https://[id].qrveyapp.com/admin/app/#/*. 
  
- >**Important Note 1**: With this version Qrvey has started leveraging Amazon Location Service for all of its mapping needs for accuracy and consistency reasons. The service is currently not available in all AWS regions. If setting up a new environment, and intend to use maps in your product, please note the supported regions in [this document](../get-started/prerequisites-for-installation.md#aws-region-support).
+ >**Important Note**: With this version Qrvey has started leveraging Amazon Location Service for all of its mapping needs for accuracy and consistency reasons. The service is currently not available in all AWS regions. If setting up a new environment, and intend to use maps in your product, please note the supported regions in [this document](../get-started/prerequisites-for-installation.md#aws-region-support).
 
->**Important Note 2**: The link to the Admin Center will change with version 7.5. This change is due to the serverless architecture of the product and does not affect any other functionality. The new link follows this pattern:  <i>[ComposerURL]/admin/app/#/</i>.
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.5.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
 
 ## New Features & Enhancements
  
