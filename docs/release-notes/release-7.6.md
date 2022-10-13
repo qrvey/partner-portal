@@ -7,10 +7,13 @@ sidebar_label: Qrvey 7.6
 <div>
 
 Release Date: 2022-10-10
-> :warning: **Warning:** 
+:::danger :warning: **Warning:**
+
 Admin Center is fully serverless as of version 7.5. 
  **You can ignore this warning if you have already perfromed this task as part of your upgrade to 7.5**  
 This change does not affect any of the Admin Center functionality, however the link to the application has changed to:  *[ComposerURL]/admin/app/#/*. **This is an important change for partners that utilize Qrvey APIs**, as any reference to *https://[id]-admin.qrveyapp.com* or *https://[id]-admin-backend.qrveyapp.com* has to be changed to *https://[id].qrveyapp.com/admin/app/#/*. 
+
+:::
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/autodeployappCloudformation-enterprise-7.6.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../get-started/upgrading-versions.md) article to upgrade your instance(s). 
 
