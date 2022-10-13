@@ -3,12 +3,13 @@ id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
 ---
-<div style={{textAlign: "justify"}}>
+<div>
 
 
 * **DR-3583 - TransformChunk lambda is consuming all lambda concurrency**: Currently, the transformChunk lambda does not have reserved concurrency, so it is consuming all of the lambda instances available during a big data load job with a lot of rows and this may cause the rest of the API or lambda calls to throw throttling errors.
 
-* **QV-16309 - Error In Running Append and Update Sync of Unioned Data Every Minute**: The application shows an error message and stops running the sync when a user adds Union and configures Sync with append and updates every minute.
+* **DR-3772 - Duplicate Columns When Using Datasets as a Source**: When a Union is created, using Datasets as its data sources (from the “My Data“ section), and both Datasets have similarly named columns, the product duplicates the columns.
+
 
 * **QV-16259 - Too Many Unions or Joins - Error: "exceeded the maximum allowed size"**: The endpoint draft is throwing a dynamoDB error when a dataset has a lot of unions.
 
@@ -29,6 +30,12 @@ sidebar_label: Known Issues
 * **AN-15919 - Tokens in Filters Controls are not Resolved**: Filters created with tokens appear not resolved when hovering over the filter controls.
 
 * **AAN-16780 - Safari: Charts show two tooltips**: Two tooltips are displayed in Safari when hovering over a chart with long, truncated tooltips.
+
+* **AN-17275 - Box and Whisker Chart - Allow rotation of labels for both axes**: Currently labels for one of the axes can be rotated. 
+
+* **AT-12531 - Automatic Column Links don't work if added after the chart was created**: The chart needs to be created after the Automatic Column Link has been created in order for the links to work.
+
+* **AT-12530 - Only the first column is clickable in Table Chart**: Automatic links are only clickable in the first column of the Table Chart.
 
 * **AAT-12290 - Pages are not shown in the subscriptions dropdowns if not added in the end user navigation bar**: When a user creates and publishes a page without adding the page to the navigation panel, the page and its chart panels don’t appear in the subscription dropdown list.
 

@@ -3,83 +3,120 @@ id: datasets
 title: Datasets
 sidebar_label: Datasets
 ---
-<div style={{textAlign: "justify"}}>
-In this section, we’ll explain how datasets are created using a single data source; how columns and data types are modified; how data is loaded; and how a dataset can be edited and reloaded.
+<div>
+Qrvey Datasets are the data constructs that support all visualizations and dashboards created within the product. Datasets can be based on one or more Data Sources. 
 
->**Note**: To see how datasets are created from multiple data sources, please go to the 
-[Data Joins article](../ui-docs/datasets/joins.md).
-<br/>
+This article is focused on single source Datasets and the options to design it in the best way to enable easy analysis of the data.  All topics discussed in this article also apply to multi-source Datasets. 
+
+
+>**Note**: Please see 
+[Data Joins](../ui-docs/datasets/joins.md) and [Union](../ui-docs/datasets/union.md) articles for more information on creating multi-source Datasets.
+
 
 ## Creating Datasets
 To create a dataset, go to the Datasets tab and click on **New Dataset**.
+
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/new-dataset1.png#thumbnail-40)
  
-Next, you will see a list of available connections to your data sources, if any have been created already. You could also select existing datasets as sources on the *Datasets* tab.
-Select the desired connection and click on **Create**.
+The first step to creating a Dataset is to choose its data source, aka where its data has to be fetched from. The data source can be based on a Connection, another Dataset you created earlier, or some other data construct that was created by someone else, or by you inside another app, and shared. If none of these exist, you can always create a new Connection from this screen by clicking the **Create New Connection** link and following the same steps that were described in the [Connections](../ui-docs/datasets/databased.md) article.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/2_Datasets.png#thumbnail-60)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 
-If the selected connection is to a database, you get to choose a table or view from that database, or define a custom SQL query as your data source.
+Choose the data source by checking the radio button next to it and click on **Next**. If you select a database connection, you get to choose a table or view from that database, or define a custom SQL query as your data source. In both of these cases a checkbox lets you choose whether to apply pagination to the query or not. This option is on by default and wraps the query in a paging statement to prevent lengthy queries from causing a timeout in the function that fetches the data from the data source. The feature, however, causes some slowness in load, due to fetching data one page at a time, and moving the paging cursor further and further into the data. You can choose to disable pagination if you believe that your data is not large enough to cause a timeout.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/3_Datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds3.7.6.png#thumbnail)
 
-Once the data source is selected you will land in the *Design* section of your newly created dataset. This is where you can configure your columns and dataset options before loading the data.
-All new datasets are given the default name of *Untitled Dataset*. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later.
+Click on **Save** button once the data source is selected or the custom query is written and tested. This will take you the next step, which is the main design interface for the newly created dataset. This is where you can configure your columns and dataset options before loading the data. All new datasets are given the default name of *{the connection name} - {table/view name}*. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later. Note that at this point the dataset is not actually created or hydrated with data, but if you stop here and return to the Datasets screen you will see a new, draft Dataset, with its default name and a gray bar next to it that indicates its being in draft mode.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/4_Datasets.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds4.7.6.png#thumbnail-40)
 
-At this point, you can load the data and begin using it to create charts, pages or reports, or modify and shape the dataset based on your needs, before loading it with data.
+This means that some meta data, containing your selections, has been saved in the product’s database and you can pick up your work from where you left it by clicking on it and continuing with the design step. Note that all design steps are optional and can be used to fully customize your Dataset. If you want to keep it similar to its data source you can proceed to loading it by clicking the **Load Dataset** button and begin using it to create charts or dashboards.
 
 ## Options To Modify The Dataset
-Other than the options presented in the UI, such as changing the name of the dataset, there are various powerful options that enable you to shape the dataset according to your needs. These options are explained in this section.
+Other than the options readily presented in the UI, such as changing the name of the Dataset, there are various powerful options that enable you to shape the dataset according to your needs. These options are explained in this section.
 
 ### Changing The Data Source
-If the selected data source needs to be swapped out with another, either from the same connection or a different one, the following options are available from the dot menu on the data source pill:
-* **Edit Connection Settings** - This option - available for all types of data sources - is mostly a shortcut and can be used to modify the properties of the connection for the data source, without the need to go to the Connections screen.
-* **Edit Data Source Query** - Use this option if you want to either select a different table or view from the same Connection, or change the SQL query of a custom query data source.
-Note that this option is available only for database data sources.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds6.7.6.png#thumbnail-60)
+
+If the selected data source needs to be changed in any way, including being swapped out, joined, or unioned with, the following options are available from the three-dot menu on the data source pill:
+* **Edit Connection Settings** - This option - available for all types of data sources - is primarily a shortcut and can be used to modify the properties of the connection for the data source, without the need to go to the Connections screen.
+* **Edit Query** - Use this option if you want to either select a different table or view from the same Connection or change the SQL query of a custom query data source.
+Note that this option is only available for database data sources.
+
 * **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on [Data Joins](../ui-docs/datasets/joins.md) to read more about joining data sources.
-* **Select a Different Connection** - This option can be used to choose a data source from a connection other than the one currently in use.
+* **Union with Another Data Source** - This option can be used to append or union the data from another data source to the existing ones. Please see the article on [Appending Data](../ui-docs/datasets/union.md) to read more about the union option. 
+* **Switch for Another Data Source** - This option can be used to choose a data source from a connection other than the one currently in use.
+* **Rename** - You can give your data sources an alias or a friendly name that is more meaningful to you.
 * **Delete** - This option is only available for the data sources that have been joined with another, and can be used to remove the selected data source from the join.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/5datasets.png#thumbnail-60)
+>**Note**: Replacing the data source by using some of these options may result in a change in the metadata and require a reload of the data, if it had been loaded before. This may break visualizations that have been built based on this Dataset, if the used columns are removed, renamed, or change data type.
 
-Replacing the data source by using any of these options may result in a change in the metadata and will require a reload of the data if it had been loaded before.
+### Automatically Adding New Dataset Columns
+You can choose to allow the product to add any new columns that it finds during the data reload process. This feature is especially useful if the data source is a query or view that may change over time and include new data columns. 
 
-### Choosing The Dataset Columns
-You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the dataset.
-Adding or removing columns to/from a dataset will require a reload of the data if it had already been loaded.
+The option to *Automatically add new columns discovered during data loads* is disabled by default. There are two ways to enable discovering new columns.
+
+1. It can be enabled by checking the box under Source Data Column or both, Source Data and the Visualization Column.
+
+![discover1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds10.7.6.png)
+
+2. It can be done from the three-dot menu by choosing **Discovered Columns** and picking the desired option. 
+
+![discover2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds11.7.6.png#thumbnail-60)
+
+### Choosing The Dataset Columns​
+You may not need all of the columns from the data source to be included in the dataset. Simply uncheck the columns that are not needed to exclude those from the Dataset or the visualizations. There are two checkboxes next to each column and by default they are both checked:
+* The one on the left determines if the data column has to be included in the Dataset
+* The one on the right allows the column to be used for visualizations
+
+Note that by unchecking the first box the data column is physically excluded from the Dataset. That means that you should not remove any columns that are going to be needed for synchronizing the data or joining one data source with another. 
+
+You may include the data column in the Dataset, but hide it from view by unchecking the second box. An example of such a case might be for the ID or a “key” column. Such a column may be used for joining the data, but has little, or no analysis value. 
+
+In the image below, Customer Number is the ID column and will be hidden from Charts, Filters, Formulas, Buckets or Summary/Tabular Views., but will still exist in the Dataset.
+
+
+
+![choosecolumns](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds7.7.6.png#thumbnail-60)
+
+Removing a column from the Dataset inevitably removes it from the list of the columns that are available for analysis. I.e. the checkbox to the right will automatically be unchecked, too.
+
+> *Note:* If a Geolocation has already been applied to columns, the columns are blocked and unchecking the boxes next to them is disabled.
+
 
 ### Giving Columns Friendly Names
-Columns can be aliased to a friendlier name if needed. Simply click in the box where the column name is shown and change it to anything else.
-
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/6datasets.png#thumbnail-60)
+You can give each data column a friendly name by changing its default name. The actual/original column name is displayed in the field when you hover over the field. Other helpful information is also displayed in a tooltip.
 
 Changing column names will *not* require a data reload.
-Hovering your mouse pointer over the column name box will make the original column name appear on the right side of the box. You may also hover over the original name to see additional information about the column, such as the original data source and data type.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset_tooltip.png#thumbnail-60)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds5.7.6.png#thumbnail-60)
 
 ### Changing The Data Type
-The system automatically determines the data type of each column by sampling the data source. You can, however, refine or change the data type from the Column Type field.
+The system automatically determines the data type of each column by sampling the data source. However, you can refine or change the data type from the Column Type field.  
 Changing a column’s data type affects the underlying index’s structure and types, and will require a reload of the data if it has already been loaded.
 
-### Adjusting The Input Format
-This feature is mostly useful for date-type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance, if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/7datasets.png#thumbnail-60)
+### Adjusting The Input Format
+This feature is mostly useful for date type columns of file uploads, where the system may not be able to determine the input format of the date with certainty. For instance, if all dates are in a range like 01/01 to 12/12, where the input date format could be mm/dd or dd/mm. In order to remove the ambiguity, it is recommended that input formats, if listed, be carefully reviewed and adjusted to match the input data format.
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds12.7.6.png#thumbnail-60)
 
 Changing a column’s input format will require a reload of the data if it has already been loaded.
 
-### Choosing A Visualization Format
-You can also change the formatting of the date and numeric columns. This format will be used in the rest of the application whenever the column is used. For example, when a numeric column is assigned a Currency format, it will be displayed as currency with the $ sign, when it is used in a chart.
+### Choosing the Visualization Format
+The system will pick a format for displaying date and numeric data in visualizations based on a smart algorithm. While this default format can be changed every time that a chart is created based on this data, you can also choose a different format for it at design time. For example, if a numeric data column contains currency data it may make sense to choose a Currency format for it, which will add the currency symbol before it and format it with two decimal places.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/8datasets.png#thumbnail-40)
+![viz1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds8.7.6.png#thumbnail-60)
 
-You can also decide the number of decimal places for numeric values. Changing visualization formats will *not* require a data reload.
+> **Note:** For date type columns you can choose from the pre-defined formats or enter a custom format directly in the field.
+
+![viz2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds9.7.6.png#thumbnail-60)
+
+Changing visualization formats will *not* require a data reload.
 
 ### Selecting A Unique Identifier Column
-If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.
+If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.  
 To learn about data synchronization and the role of unique IDs in it, please see the 
 [Data Sync](../ui-docs/datasets/data-sync.md) article.
 
@@ -122,18 +159,16 @@ Shared datasets have a visual globe icon adjacent to the **Type** indicator on t
 Be advised that unsharing a dataset will prevent users from other applications to use this dataset as a source for a new dataset view and/or dataset. Any existing dataset views and/or datasets that use this dataset as a source will no longer be available to users building charts and metrics. Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
 
 ### Setting Up Geolocation Groups
-If your data contains address information, you can choose to create a Geolocation Group out of any number of address fields. A Geolocation can be used to create various map charts.
-To start, click on the **Geolocation** button in the *Design* part of your *Dataset* section.
+If your data contains address information that you wish to display on any type of map chart, you need to create a Geolocation Group out of your desired address fields. 
  
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/geolocation.png#thumbnail)
  
-Geolocation groups require a column to be identified as a *country* or *zip code*, as these allow for a point to be uniquely marked on a map.
- 
-Assign a name to your Geolocation and start selecting columns in your dataset that correspond to a category from the modal.
-We recommend you fill out all the fields to make sure the mapping is as accurate as possible.
  
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/modal.png#thumbnail-60)
  
+To create a Geolocation Group you have to map your address data column or columns to the address type fields in the dialog. For example you may map the data column zip  to the Postal/Zip Code field. While any portion of address is enough to create a Geolocation Group, mapping more columns, especially unique columns such as the country, help create more accurate points on your map charts.  
+You can give your geolocation group a name to identify it with.  
+
 Defining, or changing Geolocation Groups will ***not*** require a data reload.
  
 ### Transformations
@@ -157,16 +192,20 @@ There are plenty of other features available in the dataset design step. Some of
 * **Viewing source data** - If you would like to see a partial view of the source data, click on **View Source Data**. This displays the first 100 rows of data, as it stands in each data source.
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/15datasets.png#thumbnail)
 * **Refreshing (Synchronizing) data** - Data can be partially, or fully, reloaded based on a schedule to keep the dataset in sync with the data source(s) that may get new data as time goes by.
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/16datasets.png#thumbnail)
+
+![1_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/ds1.png)
+
 On the *Data Syncs* tab, you will be able to set up a schedule to automatically synchronize the Dataset with the source data, replace all records or pull in just the ones updated since the last load.
 * **Full Reload loads all of the data again whenever a reload process begins** — It works as an overwrite of the existing data.
-* **Append and Update Records** - It loads only the new and updated records whenever a scheduled process begins.
-You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop if ever.
+* **Append and Update Records** - It loads only the new and updated records whenever a scheduled process begins.  
+You can determine when you want this to happen by configuring the scheduling options: when the refresh should begin (date and time), how often it should happen, and when it should stop if ever. 
+
 Data Syncing is available for single-source datasets as well as datasets using joins.
+
 Data Synchronization has been described in detail in a [dedicated article](../ui-docs/datasets/data-sync.md).
 
 ## Loading Data
-Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.
+Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.  
 The progress bar at the top-right of the screen will indicate the current progress of the data load. You may navigate away and continue working in other parts of the product while the data loads in the background.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/17datasets.png#thumbnail-40)
