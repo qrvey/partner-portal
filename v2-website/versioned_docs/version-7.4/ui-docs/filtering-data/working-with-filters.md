@@ -219,10 +219,10 @@ To initiate a relative date filter select a date type column from your filter mo
 ![interactive-filters](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/interactive-filters/rel-dat.png#thumbnail-40) 
 
 
-You can pick your needed unit (Day, Week, Month, Quarter, Year) and the direction (This, Next, Last). The other controls on the dialog may be removed or disabled based on these selections.
+You can pick your needed unit (Hour, Day, Week, Month, Quarter, Year) and the direction (This, Next, Last). The other controls on the dialog may be removed or disabled based on these selections.  Filters based on hours are only enabled if the date field contains time data.
 
 ### Calendar Versus Rolling Date Ranges
-If *The Last* or *The Next* is selected as the direction of the date filter, and the unit is set to anything but *Day*, the **Calendar dates** checkbox is enabled and defaults to checked, which takes a calendar-based approach to calculating filter date ranges. 
+If *The Last* or *The Next* is selected as the direction of the date filter, and the unit is set to anything but *Hour* or *Day*, the **Calendar dates** checkbox is enabled and defaults to checked, which takes a calendar-based approach to calculating filter date ranges. 
 
 A calendar-based approach calculates the date ranges, taking into account the start and end date of a calendar's period (week, month, year, etc.). For example, if today’s date is any day in 2021, “the last 2 years” will be calculated as “the last 2 calendar years”, aka 1/1/2020 through 12/31/2021 (assuming that the **Include starting date** checkbox and **Starting From** anchor are left at their default checked and *Current Date* values).
 
@@ -230,7 +230,7 @@ If **Calendar dates** checkbox is unchecked and the other controls stay at their
 
 
 ### Inclusive Versus Exclusive Date Ranges
-If *The Last* or *The Next* is selected as the direction of the date filter, and the unit is set to anything but Day, the **Include starting date** checkbox is enabled and defaults to checked. This setting includes the selected date of the anchor in calculating the date range. For example, if today’s date is any day in 2021, “the last 2 years” will include 2021, resulting in 1/1/2020 through 12/31/2021.
+If *The Last* or *The Next* is selected as the direction of the date filter, and the unit is set to anything but *Hour* or *Day*, the **Include starting date** checkbox is enabled and defaults to checked. This setting includes the selected date of the anchor in calculating the date range. For example, if today’s date is any day in 2021, “the last 2 years” will include 2021, resulting in 1/1/2020 through 12/31/2021.
 However, if the checkbox is unchecked - making the date range exclusive of the anchor date - the last 2 years will result in 1/1/2019 through 12/31/2020. 
 
 >**Note**: The Dates Selected label always shows the calculated date range based on the selected values for the controls. 
