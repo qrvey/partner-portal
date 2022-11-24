@@ -72,7 +72,7 @@ body, h1, h2, h3, h4, h5 {
 }
 #home-page{
   display: flex;
-  height: 100%;
+  height: 100vh;
 
 }
 .card-home{
@@ -125,12 +125,10 @@ body, h1, h2, h3, h4, h5 {
 
 .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
   background-color: #35373F;
-  height: 100vh;
 }
 
 .sidebar_njMd {
   background-color: #35373F;
-  height: 100vh;
 }
 
 .card-home-content-title, .card-home-content-link{
@@ -179,7 +177,7 @@ display: none !important;
 .side-right-nav-container {
   background-color: #35373F;
   color: white !important;
-  height: 100vh;
+  height: 100%;
 }
 
 .side-right-nav-container-popular-title{
@@ -1129,8 +1127,7 @@ a.nav-item-dropdown.active{
 }
 
 .menu.menu--responsive.thin-scrollbar.menu_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
-  background-color: #35373F; 
-  height: 100vh;
+  background-color: #35373F;
 }
 
 .menu__link--active {
