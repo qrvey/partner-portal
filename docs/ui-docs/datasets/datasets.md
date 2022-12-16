@@ -28,7 +28,7 @@ Choose the data source by checking the radio button next to it and click on **Ne
 
 Click on **Save** button once the data source is selected or the custom query is written and tested. This will take you the next step, which is the main design interface for the newly created dataset. This is where you can configure your columns and dataset options before loading the data. All new datasets are given the default name of *{the connection name} - {table/view name}*. Click on the name to change it and give your dataset a new name. This is just a friendly name and can be anything that helps you identify it later. Note that at this point the dataset is not actually created or hydrated with data, but if you stop here and return to the Datasets screen you will see a new, draft Dataset, with its default name and a gray bar next to it that indicates its being in draft mode.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds4.7.6.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset2.7.7.png#thumbnail-40)
 
 This means that some meta data, containing your selections, has been saved in the product’s database and you can pick up your work from where you left it by clicking on it and continuing with the design step. Note that all design steps are optional and can be used to fully customize your Dataset. If you want to keep it similar to its data source you can proceed to loading it by clicking the **Load Dataset** button and begin using it to create charts or dashboards.
 
@@ -78,7 +78,7 @@ In the image below, Customer Number is the ID column and will be hidden from Cha
 
 
 
-![choosecolumns](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds7.7.6.png#thumbnail-60)
+![choosecolumns](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds7.7.6.png#thumbnail-40)
 
 Removing a column from the Dataset inevitably removes it from the list of the columns that are available for analysis. I.e. the checkbox to the right will automatically be unchecked, too.
 
@@ -220,21 +220,15 @@ The green indicator to the left of the card means that data was loaded successfu
  
 When changes have been made to the dataset, the *Status* changes to **Active (Pending Changes)** to inform the user that those changes need to be applied before they become visible in the Chart Builder.
  
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/pending.png#thumbnail-40)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset3.7.7.png#thumbnail-40)
  
  
 Card view is the default view of this section, but it can be changed to a list view if preferred.
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-board.png#thumbnail)
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-list.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset4.7.7.png#thumbnail)
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset5.7.7.png#thumbnail)
 
-By default, datasets are sorted by their last edit time, with the most recently edited and the favorites showing up first. Users can easily manage their favorite Datasets in Card View by selecting and deselecting the star icon.
-
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/21datasets.png#thumbnail-60)
-
-The same can be achieved from the stars in the leftmost column in the List/Tabular View. Additionally, Datasets can be sorted by any of their properties from the header of each column in the table.
-
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-list2.png#thumbnail)
+By default, datasets are sorted by their last edit time, with the favorites and  the most recently edited showing up first. Users can easily manage their favorite Datasets in Card View by selecting and deselecting the star icon. The same can be achieved from the stars in the leftmost column in the List/Tabular View. Additionally, Datasets can be sorted by any of their properties from the header of each column in the table.
 
 Select any Dataset to edit by clicking its name in either view. This takes you back to the Dataset Design page. As soon as any change is made to the dataset the **Apply Changes** and **Discard Changes** buttons will appear.
 
@@ -247,9 +241,10 @@ If you change your mind after you have started a load, you can always cancel the
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/24datasets.png#thumbnail-40)
 
 ## Activity Log
-In the *Activity Log* section, you can find the actions taken on the dataset logged for your information. A *success* message will be shown when the event is completed successfully, and an *error* message will appear when the event failed. Error messages have the option of seeing the details of why the error occurred.
-With the* Download Log File* option, you can download the event in the activity log and get the error details in text format as well.
+In the *Activity Log* section, you can find the actions taken on the dataset that you are working on. These include dataset creation and updates [of its structure], initial and subsequent loads, and data synchronization jobs. A success message will be shown when the event is completed successfully, and an error message will appear if the event fails. All load and reload logs have a *Details* link where you can see who, or what - in the case of syncs - has started the process, how many records were loaded, how long the process took, and more. In case of an error in loading the records a link appears that allows you to get access to the list of the failed records stored in your AWS account. AWS account permissions are needed to access the list. 
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/25datasets.png#thumbnail-60)
+With the *Download Log File* option, you can download the event in the activity log and get the error details in text format as well. 
+
+![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset1.7.7.png)
 </div>
 
