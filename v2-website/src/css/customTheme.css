@@ -120,7 +120,7 @@ body, h1, h2, h3, h4, h5 {
 
 #__docusaurus {
 height: 100%;
-display: grid;
+display: grid !important;
 }
 
 .docMainContainer_gTbr {
