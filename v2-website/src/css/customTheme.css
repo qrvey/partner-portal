@@ -51,7 +51,7 @@ body, h1, h2, h3, h4, h5 {
 }
 
 .navbar--fixed-top {
-  padding: 0 50px;
+  padding: 10px 50px;
 }
 
 /* your custom css */
@@ -120,6 +120,7 @@ body, h1, h2, h3, h4, h5 {
 
 #__docusaurus {
 height: 100%;
+display: grid;
 }
 
 .docMainContainer_gTbr {
@@ -707,6 +708,10 @@ font-weight: 400;
   }
   #home-page .top-fold-background{
       height: 200px;
+  }
+
+  #home-page, .card-home-img {
+    height: auto;
   }
   #home-page .top-fold-background .vertical-align{
       display: flex;
