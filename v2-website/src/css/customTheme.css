@@ -114,6 +114,18 @@ body, h1, h2, h3, h4, h5 {
   background-color: white;
 }
 
+.mainWrapper_z2l0 {
+  height: 100%;
+}
+
+#__docusaurus {
+height: 100%;
+}
+
+.docMainContainer_gTbr {
+  overflow: auto;
+}
+
 .side-right-nav-container-announcements{
   background-color: initial;
 }
