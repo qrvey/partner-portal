@@ -1072,6 +1072,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "video-training/release/version-7.8"
+        },
+        {
+          "type": "doc",
           "id": "video-training/release/version-7.7"
         },
         {
