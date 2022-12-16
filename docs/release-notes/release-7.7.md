@@ -1,5 +1,5 @@
 ---
-id: release-7.7
+id: release-last
 title: Qrvey 7.7
 sidebar_label: Qrvey 7.7
  
