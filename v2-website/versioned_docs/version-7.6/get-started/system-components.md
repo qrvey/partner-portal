@@ -12,26 +12,26 @@ Qrvey’s analytics platform is comprised of four major components:
 3. **Qrvey Composer** - The product that is used by primary users to create and manage datasets, visualizations and dashboards to share with end users. or use for analytics purposes, and more
 4. **Embedding and APIs** - Widgets and APIs to be used for embedding Qrvey components into a host application.
 
-All of the created Qrvey contents can be deployed as a standalone application or be embedded into other software applications and platforms through the use of widgets and APIs. 
+All of the created Qrvey contents that are created in Qrvey Composer can be deployed as a standalone application or be embedded into other software applications and platforms through the use of widgets and APIs. 
 A short description of each of these components, and links to get you started with each can be found below. Additional training videos can be found [here](../video-training/building-qrvey-sample/multi-tenancy-architecture.md).
 
 ## Admin Center
 The Admin Center is an application to manage and monitor your:
 * Qrvey Instance 
-* Data Router Settings 
 * Amazon AWS Infrastructure Options 
-* Application deployments
-* User Management with Feature Customization
+* Content Deployment
+* User Management
+* Feature Customization
 
-[Details for using Admin Portal can be found here](../admin/admin-overview.md).
+[Details for using Admin Center can be found here](../admin/admin-overview.md).
 
 ## Data Router
-The Data Router module is responsible for handling data ingestion through API connections or database connectors. Additionally, all transformation rules are configured through the Data Router. Accessing Data Router functionality is done through the use of the APIs.
+The Data Router module is responsible for handling data ingestion and synchronization. Additionally, all transformation rules are configured through the Data Router. The engine is behind all data functionality of Qrvey and all interaction with APIs that manage connections and datasets are handled by the Data Router Engine. We don’t recommend interacting with the Data Router engine, as all interactions are going to be very low level and require deep understanding of the inner workings of the product. Please contact the Qrvey support team if you think that you need to work with any of these low level functions.
 
 <a href="https://www.google.com/url?q=https://documenter.getpostman.com/view/1152381/TVCb4AGN%23f5d31d51-13e7-4983-af72-0a414de50756&sa=D&source=docs&ust=1645016920099460&usg=AOvVaw2Li2lUlzOEWCnnix6j05Zk" target="_blank">Details for using Data Router can be found here</a>.
 
 ## Qrvey Composer
-Qrvey Composer is the main interface used by primary users.The product serves as the UI that users can login to in order to create dashboards, configure datasets, set up automation rules and build reports. 
+Qrvey Composer is the main interface used by Tier 1 Users.The product serves as the UI that users can login to in order to configure datasets, create dashboards, set up automation rules and build reports. 
 
 [Details for using the Analytics Portal can be found here](../ui-docs/basics/logging-in.md).
 
@@ -40,6 +40,6 @@ This module of the application contains the javascript-based embedded widgets an
 
 [Embedded widgets documentation is here](../embedding/intro.md).
 
-The API documentation [overview is here](../embedding/api/intro.md) and <a href="https://documenter.getpostman.com/view/1152381/TVCb4AGN#intro" target="_blank">API docs are here</a>.
+The API documentation [overview is here](../embedding/api/intro.md) and the [API docs are here](https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration).
 
 </div>

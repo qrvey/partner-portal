@@ -38,4 +38,5 @@ This article is a step-by-step guide to subscribing to these notifications.
 <br/>
 You are now subscribed to receive email notifications when any data load job succeeds/fails. You can always return to the AWS console to stop or make changes to your subscription.
 
+
 </div>

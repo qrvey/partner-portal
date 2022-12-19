@@ -54,6 +54,10 @@
         },
         {
           "type": "doc",
+          "id": "version-7.0/aws/data-load-notifications"
+        },
+        {
+          "type": "doc",
           "id": "version-7.0/aws/connect-to-instance"
         },
         {
