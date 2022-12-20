@@ -138,15 +138,15 @@ GRANT USAGE ON integration QrveyExportToS3_QRVEY_DEPLOYMENT to role SNOWFLAKE_US
 DESC INTEGRATION QrveyExportToS3_QRVEY_DEPLOYMENT;
 ```
 
-![snowflake1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/snowflake.1.all.png#thumbnail-40)
+![snowflake1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/snowflake.1.all.png)
 
 <ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
 <li>From the query response note the values for
 
-```js
-STORAGE_AWS_IAM_USER_ARN
+<strong>STORAGE_AWS_IAM_USER_ARN  
 STORAGE_AWS_EXTERNAL_ID
-```
+</strong>
+
 </li>
 <li>Return to the IAM console, and open the role created above.</li>
 <li>Click the <b>Trust Relationship</b> tab.</li>
