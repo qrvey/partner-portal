@@ -49,8 +49,11 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td>Host for all Microservice containers</td>
 	</tr>
 	<tr>
+		<td><a href="https://aws.amazon.com/eventbridge/">Amazon EventBridge</a></td>
+		<td>Used for internal events and scheduled tasks</td>
+	</tr>	<tr>
 		<td><a href="https://aws.amazon.com/location/">Amazon Location Service</a></td>
-		<td>Used for mapping</td>
+		<td>Used for map-based charts</td>
 	</tr>
 	<tr>
 		<td><a href="https://aws.amazon.com/opensearch-service/">Amazon OpenSearch Service</a></td>
@@ -109,9 +112,17 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td>Used for permissions and roles in the deployment</td>
 	</tr>
 	<tr>
+		<td><a href="https://aws.amazon.com/kms/">AWS Key Management Service</a></td>
+		<td>Encryption at rest (optional)</td>
+	</tr>
+	<tr>
 		<td><a href="https://aws.amazon.com/lambda/">AWS Lambda</a></td>
 		<td>Serverless Lambda functions</td>
 	</tr>
+	<tr>
+		<td><a href="https://aws.amazon.com/secrets-manager/">AWS Secrets Manager</a></td>
+		<td>Can be used to store database credentials (optional)</td>
+	</tr>	
 	<tr>
 		<td><a href="https://aws.amazon.com/elasticloadbalancing">Elastic Load Balancing</a></td>
 		<td>Used for load balancing between containers and API gateway</td>

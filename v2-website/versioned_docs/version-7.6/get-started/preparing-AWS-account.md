@@ -56,7 +56,7 @@ This is a required step if the Qrvey team is going to do the deployment. You can
 
 2. Select your region from the top-left region dropdown:
 
-![8_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep8.png#thumbnail-60)
+![8_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep8.png#thumbnail-40)
 
 
 3. Navigate to AWS IAM (Identity and Access Management):
@@ -73,7 +73,8 @@ This is a required step if the Qrvey team is going to do the deployment. You can
 
 ![11_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep11.png#thumbnail)
 
-6. Select “AdministratorAccess” in step 2 (this is a high permission but we only need it to be able to deploy all the services we use in Qrvey Platform). You can remove this permission once we have deployed the platform (about 1-2 days).
+6. Select “AdministratorAccess” in step 2 (this is a high permission but we only need it to be able to deploy all the services we use in Qrvey Platform). You can remove this permission once we have deployed the platform (about 1-2 days). If you prefer to provide limited access for deployment you can use the permissions listed in the [policy document here](https://qrvey-autodeployapp.s3.amazonaws.com/QrveySupportPolicy/deploymentIAMPermissions.json).
+
 
 ![12_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep12.png#thumbnail)
 
@@ -108,7 +109,7 @@ To move SES out of sandbox mode, you must create a support ticket with AWS. AWS 
 
 1. Log into AWS console and navigate to <a href="http://aws.amazon.com/ses"> AWS SES </a>:
 
-![19_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep19.png#thumbnail-60)
+![19_preparing_AWS](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/preparing-aws/aws_prep19.png#thumbnail)
 
 2. Click on the **Request a Sending Limit Increase** button and fill out the form:
 
@@ -127,7 +128,7 @@ Once the deployment is done and Verified, Qrvey’s deployment team will email t
 
 * Account Credentials:
 
-  * Business Analytics:
+  * Composer:
     * API-Key
   * Admin Portal:
     * Username
