@@ -16,7 +16,7 @@ All configuration changes typically require some setup outside of the Qrvey plat
 ## Update a Single Pipeline
 These steps will show you how to update the parameters for a single pipeline. In this example, we’ll be updating the QrveyCodePipeline but the same steps can be replicated for any of the other pipelines.
 
-<h3 style={{color: '#a9a9a9'}}> Step 1: Identify the CloudFormation Stack </h3>
+### Step 1: Identify the CloudFormation Stack
 
 1. Log into your AWS Account and select the region where your Qrvey instance is located.
 2. Navigate to the CloudFormation console.
@@ -24,7 +24,7 @@ These steps will show you how to update the parameters for a single pipeline. In
 
 ![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/custom-deploy_1.png#thumbnail)
 
-<h3 style={{color: '#a9a9a9'}}> Step 2: Update the CloudFormation template parameters </h3>
+### Step 2: Update the CloudFormation template parameters
 
 1. From the CloudFormation screen, pick the CloudFormation stack matching the pipeline you want to update and click on the **Update** button.
 2. On the Prerequisites screen, pick “Use Current Template”. Click **Next**.
@@ -44,7 +44,7 @@ These steps will show you how to update the parameters for a single pipeline. In
 ![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/custom-deploy_4.png#thumbnail)
 
 
-<h3 style={{color: '#a9a9a9'}}> Step 3: Trigger CodePipeline to deploy changes</h3>
+### Step 3: Trigger CodePipeline to deploy changes
 
 1. Once the CloudFormation stack has finished with the update, navigate to the AWS CodePipeline console.
 2. Identify the matching pipeline for the CloudFormation stack you updated in the last step. For the “QrveyCodePipeline” stack, the pipeline will be called “Qrvey_xxxxx_Worker”.
@@ -59,7 +59,7 @@ At this point, the changes are deployed and you can start using the Platform.
 ## Updating Deployment Settings
 This section will show you the steps needed to update a particular setting in a Qrvey Platform’s deployment.
 
-<h3 style={{color: '#a9a9a9'}}> Change “From” Email Address </h3>
+### Change “From” Email Address 
 Qrvey platform uses AWS SES to send out all emails. These emails come from Automation or Page flows and also transactional emails like the “forgot password” feature. 
 
 To change the email address that is used under the “From” section you’ll need to add and verify the email address in AWS SES and then update the Qrvey deployment to use it. Here are the steps:
@@ -96,7 +96,7 @@ Parameters:</li></ul>
 
 6. Once all Pipelines have finished updating you will start receiving emails using the specified “From” email address.
 
-<h3 style={{color: '#a9a9a9'}}>Change Composer URL</h3>
+### Change Composer URL
 You can change the Composer URL to match your own domain. You would need access to DNS settings for that domain (Route 53 or similar) to be able to create a new CNAME record and SSL Certificate.
 
 1. Identify the URL you would like to use for Qrvey Composer. It would be something like “https://qrveysample.yourdomain.com”.
@@ -121,7 +121,19 @@ You can change the Composer URL to match your own domain. You would need access 
 </ul>
 
 <ul style={{listStyle: 'none'}}>
-<li>b. Qrvey Worker<br /></li>
+<li>b. Widgets</li>
+</ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>  CloudFormation Stack: “xxxxxWidgetsCodePipeline”. Parameters:</li></ul>
+<ul style={{listStyle: 'none', marginLeft: '40px'}}><li>
+1. ComposerURL - enter the new Composer URL
+</li></ul>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li> ii. CodePipeline: “Qrvey_xxxxx_Widgets”</li>
+</ul>
+
+<ul style={{listStyle: 'none'}}>
+<li>c. Qrvey Worker<br /></li>
 </ul>
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>  i. CloudFormation Stack: “xxxxxQrveyCodePipeline”. Parameters:
@@ -135,7 +147,7 @@ You can change the Composer URL to match your own domain. You would need access 
 
 
 <ul style={{listStyle: 'none'}}>
-<li>c. Microservices<br /></li>
+<li>d. Microservices<br /></li>
 </ul>
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>  i. CloudFormation Stack: “xxxxxMicroservicesCodePipeline”. 
@@ -148,7 +160,7 @@ Parameters:</li></ul>
 </ul>
 
 <ul style={{listStyle: 'none'}}>
-<li>d. Admin Center<br /></li>
+<li>e. Admin Center<br /></li>
 </ul>
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>  i. CloudFormation Stack: “xxxxxAdminAppCodePipeline”. Parameters:</li></ul>
@@ -160,7 +172,7 @@ Parameters:</li></ul>
 </ul>
 
 6. The next step is to find the value for the CNAME record to be added to your DNS.
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<ul style={{listStyle: 'none'}}>
 <li>  a) Navigate to the AWS EC2 console</li>
 <li>  b) Open the “Load Balancers” section</li>
 <li>  c) Find the load balancer called “xxxxx-qrvey-elb”</li>
