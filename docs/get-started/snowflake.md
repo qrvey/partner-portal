@@ -16,7 +16,7 @@ The changes allow Qrvey to access the cluster and also enable it to export data 
 
 ## Steps 
 1. Create a KMS Key
-<ul style={{listStyleType: 'lower-alpha', marginLeft: '20px'}}>
+<ol style={{listStyleType: 'lower-alpha'}}>
 <li>Open the AWS console. </li>
 <li>Use the Qrvey deployment’s AWS account.</li>
 <li>Create a new key.</li>
@@ -25,11 +25,9 @@ The changes allow Qrvey to access the cluster and also enable it to export data 
 <li>Select Key spec <b>RSA_2048</b>.</li>
 <li>Click <b>Next</b>.</li>
 <li>Set Alias to “QRVEY_DEPLOYMENT-snowflake-kms”.</li>
-</ul>
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
+<ol style={{listStyle: 'lower-roman'}}>
 <li>Change QRVEY_DEPLOYMENT to the Qrvey deployment name.</li>
-</ul>
-<ul style={{listStyleType: 'lower-alpha', marginLeft: '20px'}}>
+</ol>
 <li>Click <b>Next</b>.</li>
 <li>For “Key administrators”, select one or more AWS users to be the administrators.</li>
 <li>Click <b>Finish</b>.</li>
@@ -37,15 +35,15 @@ The changes allow Qrvey to access the cluster and also enable it to export data 
 <li>Select the <b>Public key</b> tab.</li>
 <li>Copy the KMS public key, it will be used later. Copy without the opening and closing lines, or newlines.</li>
 <li>Note the new KMS key’s ARN.</li>
-</ul>
+</ol>
 
 2. Create a Policy to give Qrvey permissions to the Snowflake cluster.
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
-<li>Continue in the Qrvey AWS account.</li>
-<li>Open AWS Identity and Access Management (IAM).</li>
-<li>Go to Policies, and <b>Create Policy</b>.</li>
+<ul style={{listStyle: 'none'}}>
+<li>a. Continue in the Qrvey AWS account.</li>
+<li>b. Open AWS Identity and Access Management (IAM).</li>
+<li>c. Go to Policies, and <b>Create Policy</b>.</li>
 </ul>
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
+<ul style={{listStyle: 'lower-roman', marginLeft: '40px'}}>
 <li>Set the following permissions for the Policy in the JSON tab:</li>
 </ul>
 
@@ -83,34 +81,34 @@ The changes allow Qrvey to access the cluster and also enable it to export data 
 }
 ```
 
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
-<li>Click <b>Next: Tags</b>.</li>
-<li>Click <b>Next: Review</b>.</li>
-<li>Name the new Policy. For example: “SnowflakeDataAccessPolicy”</li>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>d. Click <b>Next: Tags</b>.</li>
+<li>e. Click <b>Next: Review</b>.</li>
+<li>f. Name the new Policy. For example: “SnowflakeDataAccessPolicy”</li>
 </ul>
 
 3. Create a new Role for the Policy, enabling access from Snowflake to S3.
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
+<ul style={{listStyle: 'lower-alpha'}}>
 <li>Open AWS Identity and Access Management (IAM). </li>
 <li>Go to Roles, then <b>Create Role</b>.</li>
-</ul>
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
+<ul style={{listStyle: 'lower-roman'}}>
 <li>Choose the option <b>Another AWS account</b>.</li>
 <li>Set the Account ID (same AWS account ID) and choose the option <b>Require external ID</b>. For the External ID set 0000. Click on <b>Next</b>.</li>
 <li>In the Filter lookup for the previous Policy created (step 3):</li>
 <li>Set Role Name and Description to finally create the Role.</li>
 <li>Get the new role’s ARN in the Summary View.</li>
 </ul>
+</ul>
 
 4. Configure Snowflake.
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
-<li>Open the Snowflake console.</li>
-</ul>
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
+<ul style={{listStyle: 'none'}}>
+<li>a. Open the Snowflake console.
+<ul style={{listStyle: 'lower-roman'}}>
 <li>Create a Snowflake user.</li>
 <li>Assign the user a ROLE that allows the user to read data.</li>
-<li>Create a Storage Integration in the Snowflake cluster.</li>
-<li>From Snowflake, run the <i>CREATE STORAGE INTEGRATION</i> command, replacing <i>QRVEY_DEPLOYMENT and EXPORT_TO_S3_ARN.</i></li>
+</ul></li>
+<li>b. Create a Storage Integration in the Snowflake cluster.</li>
+<li>c. From Snowflake, run the <i>CREATE STORAGE INTEGRATION</i> command, replacing <i>QRVEY_DEPLOYMENT and EXPORT_TO_S3_ARN.</i></li>
 </ul>
 
 ```js
@@ -122,16 +120,18 @@ CREATE STORAGE INTEGRATION QrveyExportToS3_QRVEY_DEPLOYMENT
   STORAGE_ALLOWED_LOCATIONS = ('s3://QRVEY_DEPLOYMENT-dataload-drdatacommons/sql_export/')
 ```
 
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
-<li>Grant permission to Snowflake user role, as follows:</li>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>d. Grant permission to Snowflake user role, as follows:</li>
 </ul>
 
 ```js
 GRANT USAGE ON integration QrveyExportToS3_QRVEY_DEPLOYMENT to role SNOWFLAKE_USER_ROLE;
 ```
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
-<li>Set the Trust Relationship between the Snowflake and the AWS account.</li>
-<li>Run this query:</li>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>e. Set the Trust Relationship between the Snowflake and the AWS account.
+  <ul style={{listStyle: 'lower-roman'}}>
+  <li>Run this query:</li>
+  </ul></li>
 </ul>
 
 ```js
@@ -140,18 +140,18 @@ DESC INTEGRATION QrveyExportToS3_QRVEY_DEPLOYMENT;
 
 ![snowflake1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/managing-aws-cluster/snowflake.1.all.png)
 
-<ul style={{listStyle: 'lower-roman', marginLeft: '30px'}}>
-<li>From the query response note the values for
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>f. From the query response note the values for
 
-<strong>STORAGE_AWS_IAM_USER_ARN  
+<b>STORAGE_AWS_IAM_USER_ARN  
 STORAGE_AWS_EXTERNAL_ID
-</strong>
-
+</b>
 </li>
-<li>Return to the IAM console, and open the role created above.</li>
-<li>Click the <b>Trust Relationship</b> tab.</li>
-<li>Click <b>Edit</b>.</li>
-<li>Set the trust relationship following this example, replacing the values from the query above.</li>
+
+<li>g. Return to the IAM console, and open the role created above.</li>
+<li>h. Click the <b>Trust Relationship</b> tab.</li>
+<li>i. Click <b>Edit</b>.</li>
+<li>j. Set the trust relationship following this example, replacing the values from the query above.</li>
 
 ```json
 {
@@ -173,7 +173,7 @@ STORAGE_AWS_EXTERNAL_ID
   ]
 }
 ```
-<li>Update the Snowflake user account to include the KMS key created above. <br/>
+<li>k. Update the Snowflake user account to include the KMS key created above. <br/>
 
 ```js
 ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
@@ -182,7 +182,7 @@ ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
 </ul>
 
 5. Create a new Secret that points to the Snowflake cluster.
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
+<ul style={{listStyle: 'lower-alpha'}}>
 <li>Open AWS Secrets Manager.</li>
 <li>Create a new Secret.</li>
 <li>Select <b>Other type of secret</b>.</li>
@@ -199,12 +199,12 @@ ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
   "storageIntegration": "QrveyExportToS3_QRVEY_DEPLOYMENT"
 }
 ```
-<ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
-<li>Click <b>Next</b>.</li>
-<li>Enter a Secret name. For example SnowflakeClusterSecret.</li>
-<li>Click <b>Next</b>.</li>
-<li>Click <b>Store</b>.</li>
-<li>Note this Secret’s ARN string for later use.</li>
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>f. Click <b>Next</b>.</li>
+<li>g. Enter a Secret name. For example SnowflakeClusterSecret.</li>
+<li>h. Click <b>Next</b>.</li>
+<li>i. Click <b>Store</b>.</li>
+<li>j. Note this Secret’s ARN string for later use.</li>
 </ul>
 
 6. Set permissions for the Qrvey Database lambda.
