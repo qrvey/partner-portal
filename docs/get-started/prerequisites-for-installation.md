@@ -122,8 +122,7 @@ The following regions are missing services that Qrvey relies upon and are **NOT*
 ## AWS Account Settings
 Before deploying Qrvey Platform, please check the following in your AWS account to make sure the following are available:
 
-* We recommend for our default trial configuration to use the Default VPC with a public subnet for each availability zone of that region. If you require the use of a non-default VPC or other private subnet configurations, let us know and we can help you with this configuration.
-* Deployment creates about 2 t2.micro EC2 instances. The default service quota limit for AWS accounts is 20 but in some cases, it might be 5.
+* We recommend for our default trial configuration to use the Default VPC with at least 2 public subnets for each availability zone of that region. If you require the use of a non-default VPC or other private subnet configurations, let us know and we can help you with this configuration.
 * Ensure there are at least 24 S3 buckets available. (AWS sets a default limit of 100, you may need to increase the limit in your account.)
 
 ## AWS Role Access
