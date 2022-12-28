@@ -2,6 +2,7 @@
 id: prerequisites-for-installation
 title: Prerequisites for Installation
 sidebar_label: Prerequisites for Installation
+
 ---
 
 <div style={{textAlign: "justify"}}>
@@ -16,8 +17,10 @@ Qrvey has architected a system that combines roughly two dozen AWS services crea
 * Oregon (us-west-2)
 * Ireland (eu-west-1)
 * Frankfurt (eu-central-1)
+* London (eu-west-2)
 * Sydney (ap-southeast-2)
 * Singapore (ap-southeast-1)
+* Mumbai (ap-south-1)
 
 
 As AWS region support continues to evolve and expand, Qrvey may also be deployed in regions not listed above, provided all the core services are supported. If you have questions about regions that the Qrvey team has not yet certified, please contact Qrvey support at help@qrvey.com.
@@ -41,18 +44,14 @@ In the North American geo, the following regions do not have complete support fo
         <td>Text analysis - Used in Data Profiling and Transformations.</td>
 	</tr>
 	<tr>
-		<td>Simple Email Service (SES) - Automated Deployment</td>
-		<td>Requires manual setup - Cloudformation is not able to configure SES.</td>
+		<td>Amazon Location Service</td>
+		<td>Mapping (Resources will be created in another AWS region</td>
 	</tr>
 	<tr>
-		<td rowspan="2">Canada (Central) (ca-central-1)</td>
+		<td>Canada (Central) (ca-central-1)</td>
 		<td>Rekognition</td>
 		<td>Image and Video analysis</td>
 	</tr>
-    <tr>
-      <td>Amazon Location Service</td>
-      <td>Mapping</td>
-    </tr>
 	<tr>
 		<td rowspan="2">S. America (Sao Paulo) (sa-east-1)</td>
 		<td>Comprehend</td>
@@ -62,16 +61,6 @@ In the North American geo, the following regions do not have complete support fo
 		<td>Rekognition</td>
 		<td>Image and Video analysis</td>
 	</tr>
-    <tr>
-		<td>London (eu-west-2)</td>
-		<td>Amazon Location Service</td>
-		<td>Mapping</td>
-	</tr>    
-    <tr>
-		<td>Mumbai (ap-south-1)</td>
-		<td>Amazon Location Service</td>
-		<td>Mapping</td>
-	</tr>    
     <tr>
 		<td>GovCloud (US) (us-gov-west-1)</td>
 		<td>Amazon Location Service</td>

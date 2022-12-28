@@ -87,6 +87,10 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td><a href="https://aws.amazon.com/vpc/">Amazon Virtual Private Cloud (VPC)</a></td>
 		<td>We deploy to default VPC but based on data source connections might use a different VPC</td>
 	</tr>	
+	<tr>
+		<td><a href="https://aws.amazon.com/batch/">AWS Batch</a></td>
+		<td>Used for long running data loading jobs</td>
+	</tr>
     <tr>
 		<td><a href="https://aws.amazon.com/certificate-manager/">AWS Certificate Manager</a></td>
 		<td>Used for SSL Certificate of Qrvey composer and Admin URL</td>

@@ -7,6 +7,8 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Upgrade Notes](../release-notes/upgrade-notes.md)|By Version|CloudOps| Dec 29, 2022|
+|[Setting Up Data Load Notifications](../aws/data-load-notifications.md)|All|Administrator| Dec 16, 2022|
 |[Appending Data (Union)](../ui-docs/datasets/union.md)|7.3|Data Analyst| Jul 29, 2022|
 |[Managing Chart Axes](../ui-docs/chart-builder/chart-axes.md)|All|Data Analyst| June 29, 2022|
 |[Discrete and Continuous Values](../ui-docs/chart-builder/disc-cont.md)|All|Composer| July 7th, 2022|
@@ -18,6 +20,6 @@ sidebar_label: New Articles
 |[Configuring AWS and Qrvey for Snowflake Connections](../get-started/snowflake.md)|All|CloudOps| April 8, 2022|
 |[Internationalization Overview](../special-features/internationalization/overview.md)|7.0|All| April 4, 2022|
 |[Internationalization, Step-by-step](../special-features/internationalization/step-by-step.md)|7.0|All| April 4, 2022|
-|[Configuring Dynamic Labels For Datasets](../special-features/internationalization/configuring-dynamic-labels.md)|7.0|All| April 4, 2022|
+|[Configuring Dynamic Labels For Datasets](../special-features/internationalization/configuring-dynamic-labels.md)|7.0|Data Analyst| April 4, 2022|
 
 </div>
