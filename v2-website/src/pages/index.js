@@ -259,11 +259,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/union" target="_blank">Appending Data (Union) <span>Jul 29, 2022</span></a>
-             <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a>
+             <a href="/docs/release-notes/upgrade-notes" target="_blank">Upgrade Notes<span>Dec 29, 2022</span></a> 
+             <a href="/docs/aws/data-load-notifications" target="_blank">Setting Up Data Load Notifications <span>Dec 16, 2022</span></a>
+             <a href="/docs/ui-docs/datasets/union" target="_blank">Appending Data (Union)<span>Jul 29, 2022</span></a>
+             <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a> 
              <a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values<span>July 7th, 2022</span></a> 
-             <a href="/docs/ui-docs/chart-builder/table-calculations" target="_blank">Table Calcuations<span>July 7th, 2022</span></a> 
-             <a href="/docs/ui-docs/chart-builder/date-grouping" target="_blank">Date Grouping<span>July 7th, 2022</span></a> 
                  </div>
              </div>
            </div>
@@ -278,11 +278,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/databases" target="_blank">Database Connections<span>Oct 13, 2022</span></a> 
-              <a href="/docs/ui-docs/datasets" target="_blank">Datasets<span>Oct 13, 2022</span></a> 
-             <a href="/docs/ui-docs/datasets/data-sync" target="_blank">Data Sync<span>Sep 13, 2022</span></a> 
-              <a href="/docs/get-started/aws-services" target="_blank">AWS Services Used by Qrvey<span>Sep 13, 2022</span></a> 
-              <a href="/docs/get-started/prerequisites-for-installation" target="_blank">Prerequisites For Installation<span>Sep 13, 2022</span></a> 
+             <a href="/docs/get-started/aws-services" target="_blank">AWS Services Used by Qrvey<span>Dec 29, 2022</span></a> 
+              <a href="/docs/get-started/upgrading-new-version" target="_blank">Upgrading To A New Version<span>Dec 29, 2022</span></a> 
+             <a href="/docs/get-started/deploying-aws/initial-installation" target="_blank">Initial Installation<span>Dec 29, 2022</span></a> 
+              <a href="/docs/get-started/deleting-installation" target="_blank">Deleting an Installation<span>Dec 29, 2022</span></a> 
+              <a href="/docs/get-started/prerequisites-for-installation" target="_blank">Prerequisites For Installation<span>Dec 29, 2022</span></a> 
                  </div>
              </div>
            </div>
@@ -313,7 +313,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 7.6 has been released,{" "}
+                 Version 7.8.1 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"

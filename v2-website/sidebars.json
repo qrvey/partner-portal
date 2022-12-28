@@ -730,6 +730,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/release-7.7"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/release-7.6"
         },
         {
@@ -879,6 +883,10 @@
       {
         "type": "doc",
         "id": "release-notes/updated-articles"
+      },
+      {
+        "type": "doc",
+        "id": "release-notes/upgrade-notes"
       }
   ],
   "tutorials": [

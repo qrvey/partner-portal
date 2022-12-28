@@ -8,7 +8,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
-|[AWS Services Used by Qrvey](../../docs/7.8/get-started/aws-services-qrvey.md)|7.8|CloudOps| Dec 29, 2022|
+|[AWS Services Used by Qrvey](../../docs/get-started/aws-services-qrvey.md)|7.8|CloudOps| Dec 29, 2022|
 |[Upgrading To A New Version](../get-started/upgrading-versions.md)|7.8|CloudOps| Dec 29, 2022|
 |[Initial Installation](../get-started/deploying-aws/initial-installation.md)|7.8|CloudOps| Dec 29, 2022|
 |[Deleting an Installation](../get-started/deleting-installation.md)|7.8|CloudOps| Dec 29, 2022|
