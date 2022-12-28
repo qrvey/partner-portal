@@ -2,15 +2,10 @@
 id: known-issues
 title: Known Issues
 sidebar_label: Known Issues
+
 ---
 <div>
 
-
-* **DR-3583 - TransformChunk lambda is consuming all lambda concurrency**: Currently, the transformChunk lambda does not have reserved concurrency, so it is consuming all of the lambda instances available during a big data load job with a lot of rows and this may cause the rest of the API or lambda calls to throw throttling errors.
-
-* **QV-16618 - Data Source pills show inaccurate error message when the user cannot access a database**
-
-* **QV-16548 - Data columns with special characters in their names don’t show values in Tabular View**
 
 * **QV-16259 - Too Many Unions or Joins - Error: "exceeded the maximum allowed size"**: The endpoint draft is throwing a dynamoDB error when a dataset has a lot of unions.
 
@@ -19,10 +14,6 @@ sidebar_label: Known Issues
 * **QV-14238 - Datasets - Timeout errors**: When a user tries to reload a list of Datasets from different applications using a script with many requests (around 100), it returns many "time out exceptions".
 
 * **QV-13881 - Deleted Datasets remain visible**: When a user deletes an index on a dataset created previously and tries to create a new dataset from that dataset, the application shows the dataset that was deleted.
-
-* **AN-17641 - On Click Go to URL on Table charts has a slow response**
-
-* **AN-17626 - Metrics - Font type is not Applied**: With embedded Metrics, some style settings like the font type do not apply if changed.
 
 * **AN-17619 - Multiseries/Maps - Theme Palette Colors are not Applied**: With embedded Multiseries bar, Maps, and Box & Whiskers charts, some style settings like the theme palette colors do not apply if changed.
 

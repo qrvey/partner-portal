@@ -1,5 +1,5 @@
 ---
-id: release-last
+id: release-7.7
 title: Qrvey 7.7
 sidebar_label: Qrvey 7.7
  
@@ -7,6 +7,7 @@ sidebar_label: Qrvey 7.7
 <div>
 
 Release Date: 2022-11-10
+
 :::danger :warning: **Warning:**
 
 Admin Center is fully serverless as of version 7.5. 
