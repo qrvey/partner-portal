@@ -8,7 +8,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
-|[AWS Services Used by Qrvey](../../docs/get-started/aws-services-qrvey.md)|7.8|CloudOps| Dec 29, 2022|
+|[AWS Services Used by Qrvey](../get-started/aws-services-qrvey.md)|7.8|CloudOps| Dec 29, 2022|
 |[Upgrading To A New Version](../get-started/upgrading-versions.md)|7.8|CloudOps| Dec 29, 2022|
 |[Initial Installation](../get-started/deploying-aws/initial-installation.md)|7.8|CloudOps| Dec 29, 2022|
 |[Deleting an Installation](../get-started/deleting-installation.md)|7.8|CloudOps| Dec 29, 2022|
@@ -18,7 +18,7 @@ sidebar_label: Updated Articles
 |[Preparing Your AWS Account](../get-started/preparing-AWS-account.md)|7.6|CloudOps| Nov 23, 2022|
 |[Initial Installation](../get-started/deploying-aws/initial-installation.md)|7.6|CloudOps| Nov 23, 2022|
 |[Prerequisites for Installation](../get-started/prerequisites-for-installation.md)|7.6|CloudOps| Nov 23, 2022|
-|[AWS Services Used by Qrvey](../../docs/7.6/get-started/aws-services-qrvey.md)|7.6|CloudOps| Nov 23, 2022|
+|[AWS Services Used by Qrvey](../get-started/aws-services-qrvey.md)|7.6|CloudOps| Nov 23, 2022|
 |[Customizing Qrvey Deployment](../get-started/customizing-qrvey-deployment.md)|7.6|CloudOps| Nov 23, 2022|
 |[Database Connections](../ui-docs/datasets/databases.md)|7.6|Data Analyst| Oct 13, 2022|
 |[Datasets](../ui-docs/datasets/datasets.md)|7.6|Data Analyst| Oct 13, 2022|
