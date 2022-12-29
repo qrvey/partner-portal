@@ -878,15 +878,15 @@
       },
       {
         "type": "doc",
+        "id": "release-notes/upgrade-notes"
+      },
+      {
+        "type": "doc",
         "id": "release-notes/new-articles"
       },
       {
         "type": "doc",
         "id": "release-notes/updated-articles"
-      },
-      {
-        "type": "doc",
-        "id": "release-notes/upgrade-notes"
       }
   ],
   "tutorials": [
