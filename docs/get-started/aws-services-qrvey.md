@@ -128,6 +128,9 @@ Qrvey is built with multiple AWS services. Here is a list of the main components
 		<td>Can be used to store database credentials (optional)</td>
 	</tr>	
 	<tr>
+		<td><a href="https://aws.amazon.com/step-functions/details/">AWS Step Functions</a></td>
+		<td>Used for running Automation Workflows</td>
+	</tr>		<tr>
 		<td><a href="https://aws.amazon.com/elasticloadbalancing">Elastic Load Balancing</a></td>
 		<td>Used for load balancing between containers and API gateway</td>
 	</tr>
