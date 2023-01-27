@@ -10,7 +10,7 @@ This article is focused on single source Datasets and the options to design it i
 
 
 >**Note**: Please see 
-[Data Joins](../ui-docs/datasets/joins.md) and [Union](../ui-docs/datasets/union.md) articles for more information on creating multi-source Datasets.
+[Data Joins](../../ui-docs/datasets/joins.md) and [Union](../../ui-docs/datasets/union.md) articles for more information on creating multi-source Datasets.
 
 
 ## Creating Datasets
@@ -18,7 +18,7 @@ To create a dataset, go to the Datasets tab and click on **New Dataset**.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/new-dataset1.png#thumbnail-40)
  
-The first step to creating a Dataset is to choose its data source, aka where its data has to be fetched from. The data source can be based on a Connection, another Dataset you created earlier, or some other data construct that was created by someone else, or by you inside another app, and shared. If none of these exist, you can always create a new Connection from this screen by clicking the **Create New Connection** link and following the same steps that were described in the [Connections](../ui-docs/datasets/databased.md) article.
+The first step to creating a Dataset is to choose its data source, aka where its data has to be fetched from. The data source can be based on a Connection, another Dataset you created earlier, or some other data construct that was created by someone else, or by you inside another app, and shared. If none of these exist, you can always create a new Connection from this screen by clicking the **Create New Connection** link and following the same steps that were described in the [Connections](../../ui-docs/datasets/databased.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 
@@ -44,8 +44,8 @@ If the selected data source needs to be changed in any way, including being swap
 * **Edit Query** - Use this option if you want to either select a different table or view from the same Connection or change the SQL query of a custom query data source.
 Note that this option is only available for database data sources.
 
-* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on [Data Joins](../ui-docs/datasets/joins.md) to read more about joining data sources.
-* **Union with Another Data Source** - This option can be used to append or union the data from another data source to the existing ones. Please see the article on [Appending Data](../ui-docs/datasets/union.md) to read more about the union option. 
+* **Join to Another Data Source** - This option can be used to add another data source to the existing ones. Please see the article on [Data Joins](../../ui-docs/datasets/joins.md) to read more about joining data sources.
+* **Union with Another Data Source** - This option can be used to append or union the data from another data source to the existing ones. Please see the article on [Appending Data](../../ui-docs/datasets/union.md) to read more about the union option. 
 * **Switch for Another Data Source** - This option can be used to choose a data source from a connection other than the one currently in use.
 * **Rename** - You can give your data sources an alias or a friendly name that is more meaningful to you.
 * **Delete** - This option is only available for the data sources that have been joined with another, and can be used to remove the selected data source from the join.
@@ -118,7 +118,7 @@ Changing visualization formats will *not* require a data reload.
 ### Selecting A Unique Identifier Column
 If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.  
 To learn about data synchronization and the role of unique IDs in it, please see the 
-[Data Sync](../ui-docs/datasets/data-sync.md) article.
+[Data Sync](../../ui-docs/datasets/data-sync.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
@@ -128,7 +128,7 @@ Changing the unique identifier for a dataset will require a reload of the data i
 If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user.
 The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Admin Center.
 
-For more information about RLS and how to set it up see the [Record Level Security](../admin/record-level-security.md) article.
+For more information about RLS and how to set it up see the [Record Level Security](../../admin/record-level-security.md) article.
 
 
 Defining the security name for a column will *not* require a data reload.
@@ -139,7 +139,7 @@ The automatic link can be set up from the Column Link command in the dot menu of
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/10datasets.png#thumbnail-40)
 
-For detailed information about [Column Links](../ui-docs/datasets/column-links.md) see the article dedicated to the subject.
+For detailed information about [Column Links](../../ui-docs/datasets/column-links.md) see the article dedicated to the subject.
 
 Setting up automatic links for a column will not require a data reload.
 
@@ -148,7 +148,7 @@ Datasets are always restricted to users that belong to the same application, by 
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share.png#thumbnail-40)
 
-A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view. For more information about dataset views, please refer to the [Dataset Views](../ui-docs/datasets/dataset-views.md) article.
+A modal dialog box will appear to prompt you for confirmation, and then users from other applications will be able to select this dataset as a source for creating a new dataset or a dataset view. For more information about dataset views, please refer to the [Dataset Views](../../ui-docs/datasets/dataset-views.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset-share2.png#thumbnail-40)
 
@@ -179,7 +179,7 @@ A *Transformation provides the means to change any piece of data __before__ load
 
 To access the Transformations screen click on the Transformation button on the top right corner of the columns list.
 
-Transformations are discussed in detail in a [dedicated article](../ui-docs/datasets/transformations.md).
+Transformations are discussed in detail in a [dedicated article](../../ui-docs/datasets/transformations.md).
 
 Adding or changing Transformations will require a reload of the data if it has already been loaded.
 
@@ -202,7 +202,7 @@ You can determine when you want this to happen by configuring the scheduling opt
 
 Data Syncing is available for single-source datasets as well as datasets using joins.
 
-Data Synchronization has been described in detail in a [dedicated article](../ui-docs/datasets/data-sync.md).
+Data Synchronization has been described in detail in a [dedicated article](../../ui-docs/datasets/data-sync.md).
 
 ## Loading Data
 Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.  
