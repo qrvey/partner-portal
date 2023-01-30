@@ -61,7 +61,7 @@ module.exports = {
           "lastVersion": "current",
           "versions": {
             "current": {
-              "label": '7.8',
+              "label": '8.0',
             },
             '6.5': {
               "label": '6.5 and earlier',
@@ -171,7 +171,7 @@ module.exports = {
     "image": "img/Qrvey.png",
     "footer": {
       "links": [],
-      "copyright": "Copyright © 2022 Qrvey",
+      "copyright": "Copyright © 2023 Qrvey",
     },
   },
 }

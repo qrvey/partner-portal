@@ -1,7 +1,7 @@
 ---
 id: navigation
-title: Page Navigation
-sidebar_label: Page Navigation
+title: Navigation
+sidebar_label: Navigation
 ---
 
 <div style={{textAlign: "justify"}}>

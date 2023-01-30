@@ -166,7 +166,7 @@
     },
     {
       "type": "category",
-      "label": "Data",
+      "label": "Data in Qrvey",
       "items": [
         {
           "type": "doc",
@@ -196,7 +196,11 @@
         },
         {
           "type": "doc",
-          "id": "ui-docs/datasets/datasets"
+          "id": "ui-docs/datasets/datasets-managed"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/datasets/dslive"
         },
         {
           "type": "doc",
@@ -446,19 +450,15 @@
     },
     {
       "type": "category",
-      "label": "Builders",
+      "label": "Building Dashboards",
       "items": [
         {
           "type": "doc",
-          "id": "ui-docs/builders/reports"
+          "id": "ui-docs/builders/dashboards"
         },
         {
           "type": "doc",
-          "id": "ui-docs/builders/pages"
-        },
-        {
-          "type": "doc",
-          "id": "ui-docs/builders/pages_actions"
+          "id": "ui-docs/builders/actions"
         },
         {
           "type": "doc",
