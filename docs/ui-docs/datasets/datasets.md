@@ -1,12 +1,12 @@
 ---
 id: datasets
-title: Datasets
-sidebar_label: Datasets
+title: Managed Datasets
+sidebar_label: Datasets - Managed
 ---
-<div>
-Qrvey Datasets are the data constructs that support all visualizations and dashboards created within the product. Datasets can be based on one or more Data Sources. 
 
-This article is focused on single source Datasets and the options to design it in the best way to enable easy analysis of the data.  All topics discussed in this article also apply to multi-source Datasets. 
+<div>
+
+Qrvey Datasets are the data constructs that support all visualizations and dashboards created within the product. Datasets can be based on one or more Data Sources, and they can be *Managed* (stored inside Qrvey’s data repository), or *Live* (directly accessed from the data source). This article focuses on Managed, single source Datasets and the options to design it in the best way to enable easy analysis of the data.  All topics discussed in this article also apply to multi-source Datasets. You can learn more about [Live Connect Datasets](../../ui-docs/datasets/datasets-live.md) in the dedicated article. 
 
 
 >**Note**: Please see 
@@ -18,7 +18,7 @@ To create a dataset, go to the Datasets tab and click on **New Dataset**.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/new-dataset1.png#thumbnail-40)
  
-The first step to creating a Dataset is to choose its data source, aka where its data has to be fetched from. The data source can be based on a Connection, another Dataset you created earlier, or some other data construct that was created by someone else, or by you inside another app, and shared. If none of these exist, you can always create a new Connection from this screen by clicking the **Create New Connection** link and following the same steps that were described in the [Connections](../../ui-docs/datasets/databased.md) article.
+The first step to creating a Dataset is to choose its data source, aka where its data has to be fetched from. The data source can be based on a Connection, another Dataset you created earlier, or some other data construct that was created by someone else, or by you inside another app, and shared. If none of these exist, you can always create a new Connection from this screen by clicking the **Create New Connection** link and following the same steps that were described in the [Connections](../../ui-docs/datasets/databases.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 

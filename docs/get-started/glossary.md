@@ -6,7 +6,7 @@ sidebar_label: Glossary of Common Terms
 
 <div style={{textAlign: "justify"}}>
 
-The Qrvey glossary helps to clarify some of our most commonly used data, analytics and automation terms. See something confusing that's not mentioned here? Please, let us know.
+The Qrvey glossary helps to clarify some of our most commonly used data, analytics and automation terms. See something confusing that's not mentioned here? Please, let us know at <help@qrvey.com>
 
 ## A
 
@@ -14,7 +14,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 **API** - Application Programming Interface. Developers use APIs to integrate Qrvey with third-party applications and data sources.
 
-**Application** - In Qrvey terminology, an Application is the isolated parent entity that holds datasets, webforms, visualizations, pages/dashboards, and automation workflows. Qrvey Applications can be used as a simple standalone web interface for consumers. 
+**Application** - In Qrvey terminology, an Application is the isolated parent entity that holds datasets, webforms, visualizations, dashboards, and automation workflows. Qrvey Applications can be used as a simple standalone web interface for consumers. 
 
 ## B
 
@@ -46,7 +46,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## D
 
-**Dashboard** - A collection of charts, filters, images, and other visual components, placed on a surface called a “canvas”. Multiple dashboards can be combined with a common navigation bar and optional authentication to build standalone Qrvey Applications. They can also be embedded within wrapper/host web applications. In Qrvey, Dashboards are commonly referred to as Pages.
+**Dashboard** - A collection of charts, filters, images, and other visual components, placed on a surface called a “canvas”. Multiple dashboards can be combined with a common navigation bar and optional authentication to build standalone Qrvey Applications. They can also be embedded within wrapper/host web applications. In Qrvey, Dashboards are sometimes referred to as Pages.
 
 **Data Panel** - the left-side panel in the Chart Builder where you choose the dataset and view the Values and Categories it contains.
 
@@ -68,7 +68,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## G
 
-**Global Filter** - A filter that applies to all of the pages.
+**Global Filter** - A filter that applies to all of the Dashboards.
 
 ## H
 
@@ -104,9 +104,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## P
 
-**Page** - A collection of charts, filters, images, and other visual components, placed on a surface called a “canvas”. Multiple pages can be combined with a common navigation bar and optional authentication to build standalone Qrvey Applications. They can also be embedded within wrapper/host web applications. In Qrvey, Pages are sometimes referred to as Dashboards.
-
-**Page Flow** - A page that is combined with workflow actions to complete a task. For example, a page flow may display a form, then process the submission of that form.
+**Page** - Old terminology - Please see Dashboards.
 
 **Piping** - Piping allows the answer from one question to automatically be inserted into other questions in a web form. Qrvey uses the hashtag (##) and the name you provide as a placeholder for the answer in subsequent questions.
 
@@ -151,7 +149,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## W
 
-**Web Form** - A data collection tool that can be used inside Qrvey as a part of pages and workflows, or shared externally via email, social media or embedded in a website.
+**Web Form** - A data collection tool that can be used inside Qrvey as a part of Dashboards and Workflows, or shared externally via email, social media or embedded in a website.
 
 **Widget** - A pre-built web control, e.g. chart, form, etc., used to allow easy embedding of Qrvey functionality into a website or application. Typically just a code snippet is needed - with little to no associated coding or development - to embed a widget.
 

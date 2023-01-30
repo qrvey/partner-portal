@@ -211,10 +211,10 @@ ALTER USER SNOWFLAKE_USER SET rsa_public_key='KMS_PUBLIC_KEY'
 <ul style={{listStyle: 'lower-alpha', marginLeft: '20px'}}>
 <li>Open AWS Identity and Access Management (IAM).</li>
 <li>Click <b>Roles</b></li>
-<li>Search for the DB lambda role. It contains this string: “DBDatasourcePumpFunction”. There is one Role for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
+<li>Search for the lambdas role. It contains these strings: “DBDatasourcePumpFunction” and “elastic-view-function-role”. There are Roles for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
 <li>Click <b>Add inline policy</b>.</li>
 <li>Click the <b>JSON</b> tab.</li>
-<li>Paste the Sample Inline Policy for DbDatasourcePump shown below, replacing the appropriate ARN.</li>
+<li>Paste the Sample Inline Policy for the lambdas shown below, replacing the appropriate ARN.</li>
 </ul>
 
 ```json

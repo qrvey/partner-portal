@@ -1,12 +1,12 @@
 ---
 id: pages
-title: Page Builder
-sidebar_label: Page Builder
+title: Dashboard Builder
+sidebar_label: Dashboard Builder
 ---
 
 <div style={{textAlign: "justify"}}>
 
-**Page Builder** makes it easy to combine multiple **Qrvey Composer** components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple pages into a complete information application by using navigation, which is discussed in another article.
+**Dashboard Builder** makes it easy to combine multiple **Qrvey Composer** components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple pages into a complete information application by using navigation, which is discussed in another article.
 
 
 To begin building a page, click the page builder icon in the left navigation bar, and you will be taken to the page building canvas.
