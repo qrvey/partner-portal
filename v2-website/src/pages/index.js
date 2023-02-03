@@ -259,11 +259,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="/docs/ui-docs/datasets/dslive" target="_blank">Datasets - Live Connect<span>Feb 1, 2023</span></a>
              <a href="/docs/release-notes/upgrade-notes" target="_blank">Upgrade Notes<span>Dec 29, 2022</span></a> 
              <a href="/docs/aws/data-load-notifications" target="_blank">Setting Up Data Load Notifications <span>Dec 16, 2022</span></a>
              <a href="/docs/ui-docs/datasets/union" target="_blank">Appending Data (Union)<span>Jul 29, 2022</span></a>
              <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a> 
-             <a href="/docs/ui-docs/chart-builder/discrete-continuous-values" target="_blank">Discrete and Continuous Values<span>July 7th, 2022</span></a> 
                  </div>
              </div>
            </div>
