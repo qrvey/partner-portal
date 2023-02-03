@@ -7,6 +7,7 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Datasets - Live Connect](../ui-docs/datasets/datasets-live.md)|8.0|Data Analyst| Feb 1, 2023|
 |[Upgrade Notes](../release-notes/upgrade-notes.md)|By Version|CloudOps| Dec 29, 2022|
 |[Setting Up Data Load Notifications](../aws/data-load-notifications.md)|All|Administrator| Dec 16, 2022|
 |[Appending Data (Union)](../ui-docs/datasets/union.md)|7.3|Data Analyst| Jul 29, 2022|
