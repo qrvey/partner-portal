@@ -667,10 +667,6 @@
             {
               "type": "doc",
               "id": "embedding/widgets/app-building/widget-page-builder"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/app-building/widget-report-builder"
             }
           ]
         },
