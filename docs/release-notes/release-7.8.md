@@ -1,12 +1,12 @@
 ---
 id: release-7.8
-title: Qrvey 7.8.1 (LTS with the latest patch)
+title: Qrvey 7.8.2 (LTS with the latest patch)
 sidebar_label: Qrvey 7.8 (LTS)
  
 ---
 <div>
 
-Release Date: 2022-12-29
+Release Date: 2023-02-27
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
 
@@ -48,6 +48,7 @@ Release Date: 2022-12-29
 
 
 ## General Tweaks & Bug Fixes
+### Fixed in 7.8 & 7.8.1
 
 * **Data columns with special characters in their names didn’t show values in Tabular View (bug fix)**: This has been fixed.
 
@@ -60,6 +61,47 @@ Release Date: 2022-12-29
 * **Data Source pills showed inaccurate error messages when the user could not access a database (enhancement)**: This has been fixed.
 
 * **On Click Go to URL on Table charts had a slow response (enhancement)**: This has been fixed.
+
+### Fixed in 7.8.2
+* Timeout WatchDog error when pumping large join result files (bug fix)
+* Cascading Append and Update syncs did not work in 7.8.1 (bug fix)
+* AWS Batch - job would get stuck for Postgres connector (bug fix)
+* AWS Batch - Error with large custom SQL (bug fix)
+* Under rare circumstances data sync would stop without adding any information in the activity log. This issue has been fixed (bug fix)
+* Datasets that were created programmatically prior to 7.3 and had no “tableSchema” failed to load upon upgrade to version 7.8.0. This issue has been fixed (bug fix)
+* Data load for very large cases where a dataset is used as data source sometimes caused a timeout (bug fix)
+* In rare cases DynamoDB services failed with a “service unavailable” error, causing data load failure (bug fix)
+* In rare cases data sync would repeat unnecessarily, ignoring that it had already run (bug fix)
+* For datasets that had joins or unions and were created before version 7.4, a change in 7.8.0 would cause them to lose their join map and no longer load correctly. This issue has been fixed (bug fix)
+* Under special circumstances the tooltip for the data source name on the Dataset Design screen would show as “undefined, undefined” (bug fix)
+* * Inspecting the data source for new and removed columns in a Dataset View would remove geolocation settings. This issue has been fixed (bug fix)
+* When a Dataset View was used as the source for a join and then the view was removed, the view would lose its connection with its source. This issue has been fixed (bug fix)
+* Charts that were based on Dataviews from shared Datasets did not render (bug fix)
+* The DateAdd transformation was not returning the correct result if the Value field contained a data toke. This issue has been fixed (bug fix)
+
+* Line charts - Running Table Calculations with continuous category were plotted as 0 (bug fix)
+* Line & Symbol Multi-series charts - Zeros were not plotted with continuous category (bug fix)
+* X/Y charts - Value axis labels were repeated for small range of data (bug fix)
+* Charts with legends - Tooltips were not displayed (bug fix)
+* Charts - Start of the week was set to Monday (bug fix)
+* Charts - Data labels were not displayed in Safari browsers (bug fix)
+* Table charts - Tooltips of columns with ellipses flickered (bug fix)
+* Heatmaps - Cells contained an invisible label, preventing them from getting smaller as the container was resized (bug fix)
+* Multi-series Combo chart - Chart would break if the x-axis label was enabled (bug fix)
+* When two or more date picker filters were added to a dashboard, they would not work (bug fix)
+* Content Deployment was stopping active data sync processes. This issue has been fixed (bug fix)
+* Content Deployment would overwrite Global and Page-level filters (bug fix)
+* Content Deployment moved published pages to an unpublished state (bug fix)
+* Content Deployment was on only deploying one dataset view (bug fix)
+* Export of Tabular View did not show the correct selected columns (bug fix)
+* Some export requests were failing and emails not sent due to a timeout error (bug fix)
+* If security settings of a column were changed after the product was in production, in rare cases they would still be displayed due to caching (bug fix)
+* Under rare circumstances the PDF export of some charts would fail / come out as blank (bug fix)
+* There was a change in export/answers endpoint in 7.4.3. The old response has been restored to maintain backward compatibility
+* With Content Deployment, Dataset Views created from unions or joins of child datasets did not load (bug fix)
+* With Content Deployment, Update Syncs on child datasets did not run (bug fix)
+* With Content Deployment, when the installation or update of a job failed, it would sometimes cause an error in spin-up and creation of * pages (bug fix)
+
 
 
 </div>
