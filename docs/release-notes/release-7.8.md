@@ -100,7 +100,7 @@ Release Date: 2023-02-27
 * There was a change in export/answers endpoint in 7.4.3. The old response has been restored to maintain backward compatibility
 * With Content Deployment, Dataset Views created from unions or joins of child datasets did not load (bug fix)
 * With Content Deployment, Update Syncs on child datasets did not run (bug fix)
-* With Content Deployment, when the installation or update of a job failed, it would sometimes cause an error in spin-up and creation of * pages (bug fix)
+* With Content Deployment, when the installation or update of a job failed, it would sometimes cause an error in spin-up and creation of pages (bug fix)
 
 
 
