@@ -74,7 +74,7 @@ Release Date: 2023-02-27
 * In rare cases data sync would repeat unnecessarily, ignoring that it had already run (bug fix)
 * For datasets that had joins or unions and were created before version 7.4, a change in 7.8.0 would cause them to lose their join map and no longer load correctly. This issue has been fixed (bug fix)
 * Under special circumstances the tooltip for the data source name on the Dataset Design screen would show as “undefined, undefined” (bug fix)
-* * Inspecting the data source for new and removed columns in a Dataset View would remove geolocation settings. This issue has been fixed (bug fix)
+* Inspecting the data source for new and removed columns in a Dataset View would remove geolocation settings. This issue has been fixed (bug fix)
 * When a Dataset View was used as the source for a join and then the view was removed, the view would lose its connection with its source. This issue has been fixed (bug fix)
 * Charts that were based on Dataviews from shared Datasets did not render (bug fix)
 * The DateAdd transformation was not returning the correct result if the Value field contained a data toke. This issue has been fixed (bug fix)
