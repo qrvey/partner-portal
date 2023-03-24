@@ -61,7 +61,7 @@ Once a join has been created a new *Join Output* pill will appear on the main sc
 
 Click on any data source pill to filter the view to show only columns from the selected data source. 
 
-You may repeat this process to join any of the data sources with additional data sources to achieve the desired structure for your dataset. Apply your changes and load (or reload) the dataset to make it available to create charts, pages and reports.
+You may repeat this process to join any of the data sources with additional data sources to achieve the desired structure for your dataset. Apply your changes and load (or reload) the dataset to make it available to create charts, dashboards, and reports.
 
 
 </div>

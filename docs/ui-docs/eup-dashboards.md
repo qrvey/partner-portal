@@ -8,7 +8,7 @@ sidebar_label: Personalizing Your Dashboards
 
 ## Overview
 
-While working within the application pages you may have control over the different components and settings inside the page, depending on the permissions granted to you by the composer of the page. For example, you may have the permission to modify the position of the charts as you wish, remove the charts you don’t want to see and change a chart from one type to another. All of these personalizations are available only to you - the person who made the changes - and do not affect the original version of the page, or the personalized versions that any other users may have created for themselves.  You can also revert the changes that you made to a page to see the original content created by the Composer and later jump back to your personalized version at any given moment.
+While working within the host application, you may have control over the different components and settings inside a dashboard, depending on the permissions granted to you by the Composer of the dashboard. For example, you may have the permission to modify the position of the charts as you wish, remove the charts you don’t want to see and change a chart from one type to another. All of these personalizations are available only to you - the person who made the changes - and do not affect the original version of the dashboard, or the personalized versions that any other users may have created for themselves.  You can also revert the changes that you made to a dashboard to see the original content created by the Composer and later jump back to your personalized version at any given moment.
 
 This article describes these personalization options and how they can be performed. 
 

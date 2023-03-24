@@ -1,24 +1,24 @@
 ---
-id: widget-page-view
-title: Page View Widget
-sidebar_label: Page View Widget
+id: widget-dashboard-view
+title: Dashboard View Widget
+sidebar_label: Dashboard View Widget
 ---
 
 <div style={{textAlign: "justify"}}>
 
 
-The Page View widget (previously known as “End User widget”) is used to add the published page, or collection of pages, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need page creation ability provided in the Page Builder widget. Pages may contain embedded reports and web forms, as well as other static content.
+The Dashboard View widget (previously known as “Page View widget”) is used to add the published dashboard, or collection of dashboards, in a product that embeds this widget. The widget is meant to be used by the end users, who don’t need dashboard creation ability provided in the Dashboard Builder widget. Dashboards may contain embedded reports and web forms, as well as other static content.
 
 Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. 
 
-Depending on whether a single, specific published page needs to be embedded or all of the published pages, the code can be found in two different places:
-* In order to embed all of the published pages, you can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page View” option.
+Depending on whether a single, specific published dashboard needs to be embedded or all of the published dashboards, the code can be found in two different places:
+* In order to embed all of the published dashboards, you can find and copy the necessary piece of code by going to the Dashboard Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Dashboard View” option.
  
- ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail-40)
+ ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi-80.png#thumbnail-40)
 
 This will open a dialog with the necessary code, including the “domain” and property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
 
-* To embed an individual page, you will also need the page_id value. For this use case you can navigate to the desired page and click on the three-dot menu of the page at the bottom of the screen and select the “Embed Page” option. The code will be very similar to the previous case but include the page_id property of the selected page.
+* To embed an individual dashboard, you will also need the page_id value. For this use case you can navigate to the desired page and click on the three-dot menu of the page at the bottom of the screen and select the “Embed Page” option. The code will be very similar to the previous case but include the page_id property of the selected page.
 
  ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-view1.png#thumbnail-40)
 
@@ -59,7 +59,7 @@ The table below provides general information about each property of this widget�
 > **Note**: Refer to the [ FAQs](../../../faqs/faqs.md) if you don’t know where to find any of the required configuration properties. 
 
 ### Hiding Features
-Show or hide any feature you don’t require for your embedded use cases by setting a property to true or false which creates a customized version of the page builder widget.
+Show or hide any feature you don’t require for your embedded use cases by setting a property to true or false which creates a customized version of the Dashboard Builder widget.
 
 You can hide all the features mentioned in the table below If you set the *Liteversion* property to **true**.
 
@@ -112,7 +112,7 @@ widgetConfig = {
 
 
 ### Configuring End User Personalization
-By default, the Page View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
+By default, the Dashboard View widget supports end user personalization for all authenticated users. Use the following guide to configure and override the default settings.
 
 >**Note**: End user personalization feature relies on the user being authenticated and needs the **clientid** property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same **clientid** value for multiple end-users will result in the users’ personalized versions being overridden by each other.
 Please see the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
@@ -132,7 +132,7 @@ Please see the [Embedding Widgets Using a Security Token](../embedding-widgets-s
 
 
 ### Overriding the Default Styles 
-The **styles** object can be used to configure css settings of the Page View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
+The **styles** object can be used to configure css settings of the Dashboard View widget, allowing the widget to be used in multi-tenant environments, and other white-labeling scenarios. 
 All of the style properties listed in the following table have to be housed inside the **pageView** object, under **styles** like the following example:
 
 ```

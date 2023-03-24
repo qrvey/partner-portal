@@ -6,7 +6,7 @@ sidebar_label: Custom View
 
 <div style={{textAlign: "justify"}}>
 
-**Custom View** allows you to build custom visualizations for your data, which can then be used as part of reports, pages and workflows. Custom View also serves as your own personal dashboard view of what’s the most important in your dataset. 
+**Custom View** allows you to build custom visualizations for your data, which can then be used as part of reports, dashboards, and workflows. Custom View also serves as your own personal dashboard view of what’s the most important in your dataset. 
 
 To access Custom View, select it from the **Analyze** tab inside your web form or dataset. 
 
@@ -43,7 +43,7 @@ Use the **Filters** button to show or hide the **Filters** panel, where all of t
 Charts can be repositioned, filtered or manipulated using the controls in the chart heading.
 
 ### Reposition
-Use the drag handle to the right of the chart heading to reposition the charts on the page.
+Use the drag handle to the right of the chart heading to reposition the charts on the dashboard.
 
 ### Filter
 Use the filter button to the right of the chart heading to filter the chart data. See the **Filtering Data** page for further details.

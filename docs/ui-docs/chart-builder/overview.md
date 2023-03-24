@@ -24,7 +24,7 @@ The various areas and panels of the Chart Builder are introduced in the followin
 5. <strong>Canvas</strong>- the area where your chart will appear and where you can add/change the name and description of the chart.
  
 ## Where to Find the Chart Builder
-You can find Chart Builder in the <strong>Analyze</strong> section of your dataset, <strong>Page Builder</strong>, and <strong>Report Builder</strong>.
+You can find Chart Builder in the <strong>Analyze</strong> section of your dataset or in <strong>Dashboard Builder</strong>.
  
 ### The Analyze Section
 Access Chart Builder directly from your dataset navigation bar by clicking <strong>Analyze</strong> and choosing either <strong>Metric</strong> or <strong>Custom View</strong> and then clicking on the orange <strong>Add Metrics / Add Chart</strong> button.
@@ -32,13 +32,13 @@ Access Chart Builder directly from your dataset navigation bar by clicking <stro
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/overview2.gif#thumbnail)
  
  
-### Page/Report Builder
-Open Chart Builder from either <strong>Page</strong> or <strong>Report Builder</strong> by simply clicking on the <strong>Add Chart</strong> button in the toolbar.
+### Dashboard Builder
+To open Chart Builder from <strong>Dashboard Builder</strong>, click on the <strong>Add Chart</strong> button in the toolbar.
  
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/overview3.gif#thumbnail)
  
  
-When you access Chart Builder from either Page or Report Builder, you must first select the dataset you’ll be working with. Keep in mind that you can only choose one dataset from the list of the datasets you have created. 
+When you access Chart Builder from Dashboard Builder, you must first select the dataset you’ll be working with. Keep in mind that you can only choose one dataset from the list of the datasets you have created. 
  
 ![chart-builder](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/overview4.png#thumbnail)
  

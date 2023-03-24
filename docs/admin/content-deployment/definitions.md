@@ -16,7 +16,7 @@ Select the option to create a new application from the **Application** dropdown 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide5.png#thumbnail)
 
 If using a Package for the definition, pick the Package and the desired Version from the presented dropdown lists. At this point, the application asks you if you want to use your entered name and description, or prefer to use the name and description from the selected Version. Pick the option that you like. 
-Click on the **Select Content** button to choose the content that you want to include in the Definition. You can select **Baseline** to include all the content in the application, or select individual charts, pages, datasets or other content. 
+Click on the **Select Content** button to choose the content that you want to include in the Definition. You can select **Baseline** to include all the content in the application, or select individual charts, dashboards, datasets or other content. 
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide6.png#thumbnail-40)
 

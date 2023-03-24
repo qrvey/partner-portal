@@ -101,7 +101,7 @@ In the same way, if only Qrvey Authentication option is enabled for End Users, t
 
 ![11admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/11admin.png#thumbnail-60)
 
-If both methods are enabled, the Log In with OpenID option will now be visible. For Creators, components related to Qrvey authentication will still be controlled by Onboarding Tab. For End Users, components related to Qrvey Authentication will be controlled by User Management Tab in Page Builder Widget. 
+If both methods are enabled, the Log In with OpenID option will now be visible. For Creators, components related to Qrvey authentication will still be controlled by Onboarding Tab. For End Users, components related to Qrvey Authentication will be controlled by User Management Tab in Dashboard Builder Widget. 
 
 Users can choose their preferred method to sign up or log in to the Qrvey Composer.
 
@@ -109,7 +109,7 @@ Users can choose their preferred method to sign up or log in to the Qrvey Compos
 
 ![13admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/13admin.png#thumbnail-60)
 
-If only the OpenID method is enabled and Qrvey Authentication is disabled, all components related to Qrvey Authentication will be hidden in the Log In page, and only the Log In with OpenID option will be visible. Also, the related options will be deactivated and blocked in the Onboarding Tab (Creators) and User Management Tab (Page Builder). 
+If only the OpenID method is enabled and Qrvey Authentication is disabled, all components related to Qrvey Authentication will be hidden in the Log In page, and only the Log In with OpenID option will be visible. Also, the related options will be deactivated and blocked in the Onboarding Tab (Creators) and User Management Tab (Dashboard Builder). 
 
 
 ![14admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/14admin.png#thumbnail)
@@ -263,14 +263,14 @@ In the Features section, Administrators can turn on/off each of the Creator appl
 
 ![37admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/37admin.png#thumbnail)
 
-All of the other sections, Data Links, Reports, Page Builder, Workflows, Web Forms and Settings can also be turned off. However, it is important to take into consideration that if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the Business Analytics Application. Each section has an information icon where each of the features is explained, so Administrators can refer to this when deciding which sections and features to make available to their Creators.
+All of the other sections, Data Links, Reports, Dashboards, Automation, Web Forms, and Settings can also be turned off. However, it is important to take into consideration that if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the Business Analytics Application. Each section has an information icon where each of the features is explained, so Administrators can refer to this when deciding which sections and features to make available to their Creators.
 
 ![38admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/38admin.png#thumbnail)
 
 ![39admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/39admin.png#thumbnail)
 
 
-For Workflows, Administrators can decide to turn on/off any of the available triggers, actions or conditions depending on the datasets type they will be using, and the automated flows they need to build, using their specified datasets. For example, if Creators need to set up an alert system for metrics they might use the Scheduling Trigger along with the If Metric conditions. They wouldn’t have a use for any of the Quiz conditions like If Retry, If Score, If Rank, so these can be turned off. If Creators are only going to work with Database Connections, they would mostly use actions such as Get Data, Post Data and Submit Data. They wouldn’t have a use for actions like Insert Record, Update record, Delete Record, which only work for data inside the Qrvey system.
+For Automation/Workflows, Administrators can decide to turn on/off any of the available triggers, actions or conditions depending on the datasets type they will be using, and the automated flows they need to build, using their specified datasets. For example, if Creators need to set up an alert system for metrics they might use the Scheduling Trigger along with the If Metric conditions. They wouldn’t have a use for any of the Quiz conditions like If Retry, If Score, If Rank, so these can be turned off. If Creators are only going to work with Database Connections, they would mostly use actions such as Get Data, Post Data and Submit Data. They wouldn’t have a use for actions like Insert Record, Update record, Delete Record, which only work for data inside the Qrvey system.
 
 ![40admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/40admin.png#thumbnail)
 

@@ -31,7 +31,7 @@ The Qrvey Platform has two main concepts that control how all content is saved a
 Primary users typically have a Creator role. They create the content that is distributed, embedded, or managed within the Qrvey platform for end-users to consume. In the context of API integration, you might have one creator that is the owner of all of your content, or you might decide to add several creators to control different aspects of your integration. In any case, each primary user can own one or more Applications.
 
 ### Applications
-Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, pages, etc. In the context of an API integration, each creator user might have many applications they’re working with, or you may choose to manage everything within a single application.
+Applications are containers for storing all of your content, such as any web forms, workflows, datasets and analytics/charts, dashboards, etc. In the context of an API integration, each creator user might have many applications they’re working with, or you may choose to manage everything within a single application.
 The first step for working with the developer API is to establish a user and an application where your new content will be saved.
 
 ## Steps

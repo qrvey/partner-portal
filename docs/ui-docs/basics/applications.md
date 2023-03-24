@@ -22,8 +22,6 @@ At a high level, Qrvey offers the following application components:
 
 * **Dashboard Builder** – Dashboards allow composer users to create highly interactive dashboards and mashups of visualizations created across multiple datasets. Individual dashboards can include any combination of forms, charts, metrics and analytics, as well as standard web components like text, images, headers and footers. These dashboards can then be combined with navigation and user authentication to make complete, self-contained applications that can be distributed as needed.
 
-* **Report Builder** – Reports allow composer users to create export friendly layouts of visualizations, including custom text, logos and header/footer content.  As such, many of the interactive components available in the Page Builder are not provided in the Report Builder.
-
 * **Automated Workflows** – Create data-driven  workflows to generate alerts, send notifications, perform data write-backs and send data payloads to external applications.  Workflows can be manually triggered by users within an interactive dashboard, run continuously as a background service, or execute programmatically via an API call.
 
 

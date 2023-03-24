@@ -6,7 +6,7 @@ sidebar_label: Metric View
 
 <div style={{textAlign: "justify"}}>
 
-Metrics are a powerful feature that allows you to keep an eye on your most important data at glance. It can be used by itself or as a part of a page, report, dashboard, or workflow.
+Metrics are a powerful feature that allows you to keep an eye on your most important data at glance. It can be used by itself or as a part of a dashboard, report, or workflow.
 
 With Metric Builder, you can build the three different gauges seen below:
 
@@ -20,7 +20,7 @@ With Metric Builder, you can build the three different gauges seen below:
 ![3_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/3_metric-view.png#thumbnail-40)
 
 # Building a Metric
-To build your first metric, you can access the Chart Builder from the **Analyze** tab of the dataset you’d like to use, or through Page and Report Builder. Select the type of metric you would like to build, Indicator, Bullet or Gauge, and drag a value to the fields shelf or onto the canvas zone.
+To build your first metric, you can access the Chart Builder from the **Analyze** tab of the dataset you’d like to use, or through Dashboard Builder. Select the type of metric you would like to build, Indicator, Bullet or Gauge, and drag a value to the fields shelf or onto the canvas zone.
 
 ![5_metric-view](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.8_metric-view/5.png#thumbnail)
 
