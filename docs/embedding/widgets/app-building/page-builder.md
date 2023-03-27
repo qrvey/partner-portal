@@ -1,15 +1,15 @@
 ---
-id: widget-page-builder
-title: Page Builder Widget
-sidebar_label: Page Builder Widget
+id: widget-dashboard-builder
+title: Dashboard Builder Widget
+sidebar_label: Dashboard Builder Widget
 ---
 <div style={{textAlign: "justify"}}>
 
-The Page Builder widget is used to add the ability to create new pages or modify existing ones in a product that embeds this widget.  Pages may contain embedded reports and webforms, as well as other static content.
+The Dashboard Builder widget is used to add the ability to create new dashboards or modify existing ones in a product that embeds this widget.  Dashboards may contain embedded reports and webforms, as well as other static content.
 
-Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Page Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Page Builder” option.
+Like all widgets, this widget has an HTML tag, a launcher script, and a configuration object that needs to be added to the code of any page that embeds it and the necessary property values have to be provided for it to work properly. You can find and copy the necessary piece of code by going to the Dashboard Builder section of Qrvey Composer and clicking on the “Embedding Options” button in the top right corner of the page and selecting the “Embed Dashboard Builder” option.
 
-![page-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi.png#thumbnail-20)
+![dashboard-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/dashboard-builder-wi-80.png#thumbnail-20)
 
 This will open a dialog with the necessary code, including the “domain”, “app_id” and “user_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
 The building blocks of the code are explained below.
@@ -31,7 +31,7 @@ The table below provides general information about each property of this widget�
 | **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
 | **user_id** | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
 | **domain** | `String`, Qrvey Core URL. | Yes | 
-| **private_pages** | `Boolean`, predefine the state of new pages. If *True*, new pages will be private, if not new pages will be public. | No |
+| **private_pages** | `Boolean`, predefine the state of new dashboards. If *True*, new dashboards will be private, if not new dashboards will be public. | No |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
 | **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
 | userFilters | Array< Object >, collection of custom filters that the system will apply to the visualized data. Please see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md) for more details on how to create a filter object. | No
@@ -40,7 +40,7 @@ The table below provides general information about each property of this widget�
 >**Note**: Refer to the<a href="docs/faqs/faqs-intro/"> FAQs</a> if you don’t know where to find any of the required configuration properties. 
 
 ## Configuring Personalization
-The **personalization** object setting controls customization options for the Page Builder widget and supports the following properties at this time:
+The **personalization** object setting controls customization options for the Dashboard Builder widget and supports the following properties at this time:
 
 
 | **Property** | **Description** | **Type** | **Default** | **Required** |

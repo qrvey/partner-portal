@@ -122,9 +122,8 @@ var config = {
 ## Supported Widgets
 The following is a list of Qrvey widgets that currently support authentication through a security token.
 
-* [Page View](../widgets/app-building/page-view.md)
-* [Page Builder](../widgets/app-building/page-builder.md)
-* [Report Builder](../widgets/app-building/report-builder.md)
+* [Dashboard View](../widgets/app-building/page-view.md)
+* [Dashboard Builder](../widgets/app-building/page-builder.md)
 * [Analytic Suite](../widgets/analytics/analytic-suite.md)
 * [Single Panel](../widgets/analytics/single-panel.md)
 * [Web Form Design](../widgets/data-sources/web-forms.md)

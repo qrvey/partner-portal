@@ -8,7 +8,7 @@ sidebar_label: Automatic Column Links
 
 Automatic Column Links feature allows you to relate a URL to a column so that when the column is used in a page visualization, a “Go to URL” Page Action is automatically created with that column containing this URL. 
 
-URLs can also be set with tokens for more dynamic use cases.  When in Pages, if interacting with Page Actions, you will see this URL predefined for Page Actions in all charts created after a column link was established. From Datasets or Page Builder, the URL can be edited or removed at any point to update all chart Page Actions constructed with linked columns. 
+URLs can also be set with tokens for more dynamic use cases.  When in Pages, if interacting with Page Actions, you will see this URL predefined for Page Actions in all charts created after a column link was established. From Datasets or Dashboard Builder, the URL can be edited or removed at any point to update all chart Page Actions constructed with linked columns. 
 
 Alternatively, should you want to customize a specific chart page action with a different URL from the predefined one established in Datasets, this can be accomplished from any chart Page Action setting. 
 
@@ -34,10 +34,10 @@ Once the column link has been saved, a blue link icon will appear on the selecte
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.png#thumbnail)
 
-> **Note**: Hierarchical data on columns from JSON connections currently have a Known Issue with tokens. These tokens are not being received in Page Actions from Page Builder. 
+> **Note**: Hierarchical data on columns from JSON connections currently have a Known Issue with tokens. These tokens are not being received in Page Actions from Dashboard Builder. 
 
 
-Every time you add a new visualization to Page Builder, any visualization containing columns with links will have a Page Action automatically predefined with your set URL.
+Every time you add a new visualization to Dashboard Builder, any visualization containing columns with links will have a Page Action automatically predefined with your set URL.
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.gif#thumbnail)
 

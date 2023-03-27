@@ -6,10 +6,10 @@ sidebar_label: Dashboard Builder
 
 <div style={{textAlign: "justify"}}>
 
-**Dashboard Builder** makes it easy to combine multiple **Qrvey Composer** components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple pages into a complete information application by using navigation, which is discussed in another article.
+Dashboard Builder makes it easy to combine multiple Qrvey Composer components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple dashboards into a complete information application by using navigation, which is discussed in another article.
 
 
-To begin building a page, click the page builder icon in the left navigation bar, and you will be taken to the page building canvas.
+To open Dashboard Builder, click the **Dashboard Builder** icon in the left navigation bar.
 <br />
 
 
@@ -21,11 +21,11 @@ The top of the canvas is divided into three sections: the main menu, the toolbar
 
 ![1.2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/canvas_top.png#thumbnail-60)
 
-The bottom of the canvas will display a tab for every page you create. This is where you are able to rearrange the order of your pages, rename, delete or duplicate a page, make it private, and find a unique URL for the specific page you’re working on (as opposed to the overall application URL). 
+The bottom of the canvas displays a tab for every dashboard you create. This is where you are able to rearrange the order of your dashboards, rename, delete or duplicate a dashboard, make it private, and find a unique URL for the specific dashboard you’re working on (as opposed to the overall application URL). 
 
 ![1.3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.3_pages.png#thumbnail-40)
 
-You can arrange every tab’s width by clicking on the resize button located to the left of the first tab. By clicking it, the width will change to fit the page name and clicking it again will reset the tab to its default size.
+You can arrange every tab’s width by clicking on the resize button located to the left of the first tab. By clicking it, the width will change to fit the dashboard name and clicking it again will reset the tab to its default size.
 
 
 Filters along with Data & Configuration panels are displayed on the right side. Once you have configured the datasets you will be working with, you can see them listed in the Data Panel. 
@@ -33,7 +33,7 @@ Filters along with Data & Configuration panels are displayed on the right side. 
 ![1.4_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.4a_pages.png#thumbnail-80)  
 
 When a Dataset has been created, it appears listed in the Data Panel. 
-Expanding the dataset, shows all the charts and summary panels that have been created using that dataset. These can be dragged directly from the panel onto the canvas as some sort of a shortcut that saves you time adding already created charts to different pages.
+Expanding the dataset, shows all the charts and summary panels that have been created using that dataset. These can be dragged directly from the panel onto the canvas as some sort of a shortcut that saves you time adding already created charts to different dashboards.
 
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/list.png#thumbnail-40) 
 
@@ -49,25 +49,25 @@ You can click on the arrow icon next to the dataset name to get redirected to th
 
 
 ### Toolbar
-In the toolbar, you will find the options to configure your page and options to add content.
+In the toolbar, you will find the options to configure your dashboard and options to add content.
 
 ![1.5_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.5a_pages.png#thumbnail-60)
 
 
-You can choose the page resolution that will fit your page viewers best. You can change this setting at any time keeping in mind that this affects the sizes of all pages, and when switching to a smaller resolution, some objects may be repositioned which is an action that cannot be reverted. 
+You can choose the resolution that will fit your page viewers best. You can change this setting at any time keeping in mind that this affects the sizes of all pages, and when switching to a smaller resolution, some objects may be repositioned which is an action that cannot be reverted. 
 
-From the toolbar, you can also click on the chart icon to access the chart builder. Once you configure and save your chart, this will be added to your page right away. 
+From the toolbar, you can also click on the chart icon to access the chart builder. Once you configure and save your chart, this will be added to your dashboard right away. 
 
-On your page you can find page objects options: image, text, and button. When selecting the icon, you can click and drag the size of the object on the canvas. 
+On your dashboard you can find dashboard objects options: image, text, and button. When selecting the icon, you can click and drag the size of the object on the canvas. 
 
-Once there are multiple objects added to a page here, you have the option to arrange your objects by sending them to the front or back. 
+Once there are multiple objects added to a dashboard here, you have the option to arrange your objects by sending them to the front or back. 
 
 You can configure grid options such as showing the grid lines or the snap to grid option. 
 
-While designing your pages, you can see how your content will be displayed on different devices. In the toolbar, you will find the option to switch from desktop to tablet and mobile devices view. Configuration options are disabled in mobile views, you may only rearrange page components to further define your tablet and mobile layouts. 
+While designing your dashboards, you can see how your content will be displayed on different devices. In the toolbar, you will find the option to switch from desktop to tablet and mobile devices view. Configuration options are disabled in mobile views, you may only rearrange dashboard components to further define your tablet and mobile layouts. 
 
 
-Towards the right side of the toolbar, you will see the download button - you can use this to download the page data in CSV format. If there are multiple datasets being used on the same pages, they will be exported as separate files.
+Towards the right side of the toolbar, you will see the download button - you can use this to download the dashboard data in CSV format. If there are multiple datasets being used on the same dashboards, they will be exported as separate files.
 
 ### Selecting Objects
 Once you have added objects (charts, images, texts, or buttons) to the canvas, you can choose them by clicking on each of them to move them around, modify their properties or apply different configurations. 
@@ -102,9 +102,9 @@ Align center: The object is aligned to the center of the canvas. When multiple o
 * **Align bottom**: The object is aligned to the bottom side of the canvas. When multiple objects are selected, they will be bottom-aligned based on the lowermost item of that group.
 
 ### Data & Configuration
-In order to begin creating charts and filters for your pages, you will need to have configured at least one dataset first. This can be done in the [Data Section](../datasets/data_overview.md).  
+In order to begin creating charts and filters for your dashboards, you will need to have configured at least one dataset first. This can be done in the [Data Section](../datasets/data_overview.md).  
 
-Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a page. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
+Once you have one or a group of datasets ready, they will be displayed in the Data panel on the right side of the canvas. Here, you can search for a particular dataset and expand each dataset to find the created charts or summary panels that can be added to a dashboard. To add a chart just click and hold the chart’s blue box to drag and drop onto the canvas. You can also opt for **Shift + Click** to add multiple charts at the same time. 
 
 
 ![1.6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/1.6_pages.png#thumbnail-60)
@@ -119,7 +119,7 @@ If you need to access one of the datasets you are working with from Report Build
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.4.1_reports/shortcut.png#thumbnail-20)
 
 ### Object Configuration
-As you are building your pages, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a page. 
+As you are building your dashboards, you will need to use the Data & Configuration panel where you can find the configuration settings for each object added to a dashboard. 
 
 
 ![2_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/2.0_pages.png#thumbnail-80)
@@ -130,7 +130,7 @@ For charts, you will find the Page Actions access point where you will be able t
 
 To access the configuration options, you must click on the object you would like to work with. To switch back and view your datasets, you can click anywhere on the canvas. 
 
-To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the page.
+To reposition each object, you can click anywhere on the object and drag it to the desired position. You can also click on any of the nodes around the object to resize, and the “X” in the right corner to remove it from the dashboard.
 
 
 ![3_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/3.0_pages.png#thumbnail-20)
@@ -145,7 +145,7 @@ Insert an image that redirects your End Users to a target page of your choice. S
 
 
 
-Upload an image you want to insert into your page or paste the image URL if it’s already online.
+Upload an image you want to insert into your dashboard or paste the image URL if it’s already online.
 
 Set the *Aspect* keeping in mind that the image in *Contain* mode resizes to fully fit in the container; in *Cover* mode, it keeps its size and aspect ratio as is; in *Fill* mode, it resizes the image and changes its proportions, to fill the container. For example, you can either choose to resize an image with a custom resolution or choose to reduce the size but keep a 4:3 aspect ratio.
 
@@ -192,7 +192,7 @@ You can also customize text padding - *left, right, top*, and *bottom*.
 
 
 #### Filters
-The Filters menu item lets you easily manage global, page, and tab filters defined in your pages, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
+The Filters menu item lets you easily manage global, page, and tab filters defined in your dashboard, as well as all the filters defined in your panels. When you select the Filters menu item, you will see the list of filters defined. The filters are grouped under the headings Global Filters, Tab Filters, and Panel Filters. Panel filters are grouped by panel name.
 
 To enable or disable all filters for a group, click on the toggle button or check-box next to the group name. To enable or disable an individual filter value, use the check-box next to it.
 
@@ -208,9 +208,9 @@ To create a new global filter, click the Add Filter button and the filter modal 
 
 
 #### Filter Panel
-The filter panel has the same functionality as the filter described in the section above, but from the end-user perspective. Adding it to a page allows end-users to interact with all filters in the published application.
+The filter panel has the same functionality as the filter described in the section above, but from the end-user perspective. Adding it to a dashboard allows end-users to interact with all filters in the published application.
 
-To add a filter panel to the page, you just need to insert it from the **Insert** menu in the top-left corner of the page builder. After adding it, you will see a little icon in the top-right corner of the canvas (see image below.)
+To add a filter panel to the dashboard, you just need to insert it from the **Insert** menu in the top-left corner of the Dashboard Builder. After adding it, you will see a little icon in the top-right corner of the canvas (see image below.)
 
 ![6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/page_builder_00.png#thumbnail-40)
 
@@ -221,7 +221,7 @@ Filter panel has a set of settings you can edit to personalize styles and behavi
 
 * **Button**: Change the background color of the filter panel component. By default, the background color is dark blue.
 
-* **Filter Panel Default View**: Change how the end-user page displays the filter panel whenever a user navigates to the page.
+* **Filter Panel Default View**: Change how the end-user dashboard displays the filter panel whenever a user navigates to the page.
 
   * **Closed**: (Default) The filter panel will always be closed when an end-user navigates or reloads the page. They will be able to open or close it at any time.
 
@@ -233,7 +233,7 @@ Filter panel has a set of settings you can edit to personalize styles and behavi
 
 #### Tabs
 
-The tab strip lets you separate the content of a page in different sections. When you add a tab strip, it by default creates a tab with the name “Untitled Tab” that you can modify by clicking on the text and type in a new one. If you want to add more tabs to the strip, you need to click on the plus (+) icon located on the left side of the strip.
+The tab strip lets you separate the content of a dashboard in different sections. When you add a tab strip, it by default creates a tab with the name “Untitled Tab” that you can modify by clicking on the text and type in a new one. If you want to add more tabs to the strip, you need to click on the plus (+) icon located on the left side of the strip.
 
 ![7_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/13.png#thumbnail-40)
 
@@ -247,7 +247,7 @@ In the second section named “Tab Size,” you can change the tab width by chan
 
 
 #### Page Header
-You can add a page header to all your pages by clicking the Page Header item in the Insert menu. The header area gets added as a container on the page and other objects, such as images, buttons, and text can be placed inside of it. Selecting the page header component will open the configuration panel for it and allows you to customize its looks and behavior..
+You can add a page header to all your dashboards by clicking the Page Header item in the Insert menu. The header area gets added as a container on the page and other objects, such as images, buttons, and text can be placed inside of it. Selecting the page header component will open the configuration panel for it and allows you to customize its looks and behavior.
 
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/header_page.png#thumbnail-40)
  
@@ -269,7 +269,7 @@ The following options are available to configure the page header. Keep in mind a
 You can place Images, Text labels and Buttons inside the page header container and configure those to create the header anyway you wish.
 
 ## Enabling Subscription
-Creators can enable authenticated end users to subscribe to a scheduled delivery of exported pages or specific charts. This feature can be enabled by choosing the **Page Subscriptions** option from the **Insert** menu. This action places a subscription icon on the lower right corner of the page. This is just an indicator that subscription has been enabled on the page. The feature can be removed by clicking the **X** above the icon.
+Creators can enable authenticated end users to subscribe to a scheduled delivery of exported dashboards or specific charts. This feature can be enabled by choosing the **Page Subscriptions** option from the **Insert** menu. This action places a subscription icon on the lower right corner of the page. This is just an indicator that subscription has been enabled on the page. The feature can be removed by clicking the **X** above the icon.
         
 ![pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/subscribe.jpg#thumbnail-40) 
 
@@ -282,8 +282,8 @@ In the blue navigation bar along the top, you’ll find a button to **Publish Ap
 
 ![6_pages](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.1_pages/6.0_pages.png#thumbnail-40)
 
-**Note**: Your application must be published in order to use the link button. Accessing the URL of an application/individual page that is not published will display a message to users that the resource is currently unavailable.
+**Note**: Your application must be published in order to use the link button. Accessing the URL of an application/individual dashboard that is not published will display a message to users that the resource is currently unavailable.
 
-Once a page is published, its content is locked in place and cannot be changed unless the **Edit** button is clicked, or the application is unpublished. When you edit a page, your changes can be discarded or republished. Your changes are auto-saved but are not reflected in the published application until the page is republished. 
+Once a dashboard is published, its content is locked in place and cannot be changed unless the **Edit** button is clicked, or the application is unpublished. When you edit a dashboard, your changes can be discarded or republished. Your changes are auto-saved but are not reflected in the published application until the dashboard is republished. 
 
 </div>

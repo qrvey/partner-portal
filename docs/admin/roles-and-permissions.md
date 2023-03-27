@@ -38,8 +38,8 @@ Admin can define the access that composers have to the different sections of the
 | Web Forms| ✅ | ✅ |
 | Data Links| ✅ | ✅ |
 |**Applications**|
-| Page Builder| ✅ | ✅ |
-| Report Builder| ✅ | ✅ |
+| Dashboards| ✅ | ✅ |
+| Pixel-perfect Reports| ✅ | ✅ |
 | Automation| ✅ | ✅ |
 | Settings| ✅ | ✅ |
 |**App Administration**|

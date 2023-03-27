@@ -21,19 +21,19 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 
  * ** [Analytic Suite](../embedding/widgets/analytics/analytic-suite.md) ** (tag: <code>&lt; an-dashboard &gt;</code>) - This widget is a one-stop-shop that gives you the functionality of all Analysis Views: Summary, Tabular, and Custom Views. This is the newer version of Custom and Summary View widgets that we recommended using over those.
 
-* **Builders** (tag: <code>&lt; qrvey-builders &gt;</code>) - This is the second most popular widget used to embed the entire ** [Report Builder](../embedding/widgets/app-building/report-builder.md) ** or ** [Page Builder](../embedding/widgets/app-building/page-view.md) ** in your custom application. The default mode embeds the Page Builder widget and adding and setting the reports_dahboard property to true, embeds the Report Builder.
+* ** [Dashboard Builder](../embedding/widgets/app-building/page-view.md) ** (tag: <code>&lt; qrvey-builders &gt;</code>) - This is the second most popular widget used to embed the entire Dashboard Builder in your custom application. 
  
  * ** [Datasets](../ui-docs/datasets/datasets.md) ** (tag: <code>&lt; qrvey-data-sets &gt;</code>) - Give your users access to the powerful dataset widget with all of its capabilities (tie to creating connections, creating complex datasets with joins, data synchronization, etc.). Access to this widget has to be enabled with care, as it enables users to access any connections that have been created for the application.
 
-* ** [Page View](../embedding/widgets/app-building/page-view.md) ** (tag: <code>&lt; qrvey-end-user &gt;</code>) - Page View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Page Builder to be embedded in your custom applications.
+* ** [Dashboard View](../embedding/widgets/app-building/page-view.md) ** (tag: <code>&lt; qrvey-end-user &gt;</code>) - Dashboard View widget is the most commonly used widget of the entire set and it allows dashboards that are created in Dashboard Builder to be embedded in your custom applications.
 
 * ** [Single Panel](../embedding/widgets/analytics/single-panel.md) ** (tag: <code>&lt; an-panel &gt;</code>) - This widget can be used to embed a single visualization panel.
 
 * ** [Web Form Design](../embedding/widgets/data-sources/web-forms.md) ** (tag: <code>&lt; qrvey-design-widgets &gt;</code>) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
 
-* ** [Web Form - End User](../embedding/widgets/data-sources/web-form-end-user.md) ** (tag: <code>&lt; qrvey-webform-enduser &gt;</code>) - Designed web forms can be embedded, too. The widget will allow the end users to work in the web form without leaving the parent application. I.e. They can take a quiz or respond to a survey inside your application.
+* ** [Web Form - End User](../embedding/widgets/data-sources/web-form-end-user.md) ** (tag: <code>&lt; qrvey-webform-enduser &gt;</code>) - Designed web forms can be embedded, too. The widget will allow the end users to work in the web form without leaving the parent application--they can take a quiz or respond to a survey inside your application.
  
 ## APIs
-Our API references provide a list of the most commonly-used APIs needed to interact with the Qrvey platform. Qrvey APIs are documented in Stoplight so they can be easily accessed and tried out. The full collection can be accessed <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/">here</a>.
+Our API references provide a list of the most commonly-used APIs needed to interact with the Qrvey platform. Qrvey APIs are documented in Stoplight. To access the full collection, see <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/">Qrvey API Reference</a>.
  
 </div>
