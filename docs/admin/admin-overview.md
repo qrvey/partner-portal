@@ -1,7 +1,7 @@
 ---
 id: admin-intro
-title: Qrvey Admin Overview
-sidebar_label: Qrvey Admin Overview
+title: Admin Center Overview
+sidebar_label: Admin Center Overview
 ---
 
 <div style={{textAlign: "justify"}}>
