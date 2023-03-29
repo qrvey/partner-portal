@@ -23,7 +23,9 @@ The section describes how to use Qrvey Composer, one of the major components of 
 * **[Subscriptions](../ui-docs/subscriptions/subscribing-exports.md)** -
 Learn how to subscribe, configure and manage subscriptions in this section.
 
-* **[Automation (Workflow)](../ui-docs/automation/flows.md)** - Create a flow by defining triggers and setting a desired end-action, and read more about tokens in Qrvey.  
+* **[Automation (Workflow)](../ui-docs/automation/flows.md)** - Read more about how to create a flow by defining triggers and setting a desired end-action. This section also describes the types of tokens used in Qrvey platform.  
+
+* **[Premium Features](../ui-docs/pixel-perfect-reports/overview.md)** - Learn about premium features for enhanced functionality and special use cases. Currently limited to Pixel-perfect Reports, but you can expect more premium features in the future. 
 
 * **[Other](../ui-docs/automation/flows.md)** - Read more about sending, sharing, editing your Applications, and how to keep track of the changes in the Activity Log.
 

@@ -4,7 +4,7 @@ sidebar_label: Publishing Reports
 ---
 <div style={{textAlign: "justify"}}>
 
-# Publishing Reports
+>Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
 
 ## Preview the report
 The Preview feature enables you to see the report with actual data. It resolves all token values and applies all filters. Use it to verify your configurations. If you defined a Report Group, the report will be divided into separate tabs, one per each distinct value from the associated column. 
