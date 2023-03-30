@@ -1,12 +1,12 @@
 ---
 id: release-7.8
-title: Qrvey 7.8.2 (LTS with the latest patch)
+title: Qrvey 7.8.3 (LTS with the latest patch)
 sidebar_label: Qrvey 7.8 (LTS)
  
 ---
 <div>
 
-Release Date: 2023-02-27
+Release Date: 2023-03-30
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../../v2-website/versioned_docs/version-7.8/release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
 
@@ -102,6 +102,15 @@ Release Date: 2023-02-27
 * With Content Deployment, Update Syncs on child datasets did not run (bug fix)
 * With Content Deployment, when the installation or update of a job failed, it would sometimes cause an error in spin-up and creation of pages (bug fix)
 
+### Fixed in 7.8.3
+* Fixed an error that occurred in Page Builder when deleting a chart that uses filters from the same dataset. The application incorrectly deleted the filters as well. 
+* Fixed an error that occurred when loading a CSV file with special characters in the header.
+* Fixed an error that occurred in a chart with localization applied. In some situations, the Date values were not translated correctly in a chart.
+* Fixed an error that occurred in some situations when multiple delete or update tasks were performed together very quickly. 
+* Fixed a bug in datasets that occurred when a user unchecked Analyze column option and then updated a Query. The application incorrectly unchecked the Read column option.
+* Fixed an error that occurred in some situations after loading a dataset. The Analyze page incorrectly remained blank and did not display any information. 
+* Fixed an error that occurred in some situations when creating a new dataset from shared data. The new dataset was incorrectly listed multiple times in the Select the Data Source dialog. 
+* Fixed an error that occurred in Transformations when the Subtract option is selected. The system incorrectly required the values to be subtracted to include the minus (‘-’) sign. 
 
 
 </div>
