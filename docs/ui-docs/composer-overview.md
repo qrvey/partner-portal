@@ -6,9 +6,9 @@ sidebar_label: Introduction to Qrvey Composer
 
 <div style={{textAlign: "justify"}}>
 
-The section describes how to use Qrvey Composer, one of the major components of the Qrvey platform. Qrvey Composer is a web-based application that enables you to create and manage datasets, visualizations, and dashboards to share with end users. It offers a rich set of features that enable you to make the most of the Qrvey platform. For more information on its capabilities, see the following sections: 
+In this section, you can get to know more about Qrvey Composer, the UI where you can gather data through web forms, upload or connect to existing data sources, build visualizations and dashboards, create workflows, and more.
 
-* **[Basics](../ui-docs/basics/logging-in.md)** - Read how to sign up, log into and manage your account, get introduced to the Qrvey Composer UI and familiarize yourself with the basics of the concept of a Qrvey Application.
+* **[Basics](../ui-docs/basics/logging-in.md)** - RRead how to sign up, log into and manage your account, get introduced to the Qrvey Composer UI and familiarize yourself with the basics of the concept of a Qrvey Application.
 
 * **[Web Forms](../ui-docs/web-forms/1_web-forms.md)** - Read more about building, customizing, publishing and embedding different types of Web Forms.
 
@@ -23,9 +23,7 @@ The section describes how to use Qrvey Composer, one of the major components of 
 * **[Subscriptions](../ui-docs/subscriptions/subscribing-exports.md)** -
 Learn how to subscribe, configure and manage subscriptions in this section.
 
-* **[Automation (Workflow)](../ui-docs/automation/flows.md)** - Read more about how to create a flow by defining triggers and setting a desired end-action. This section also describes the types of tokens used in Qrvey platform.  
-
-* **[Premium Features](../ui-docs/pixel-perfect-reports/overview.md)** - Learn about premium features for enhanced functionality and special use cases. Currently limited to Pixel-perfect Reports, but you can expect more premium features in the future. 
+* **[Automation (Workflow)](../ui-docs/automation/flows.md)** - Create a flow by defining triggers and setting a desired end-action, and read more about tokens in Qrvey.  
 
 * **[Other](../ui-docs/automation/flows.md)** - Read more about sending, sharing, editing your Applications, and how to keep track of the changes in the Activity Log.
 
