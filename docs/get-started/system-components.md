@@ -9,7 +9,7 @@ sidebar_label: System Components
 Qrvey’s analytics platform is comprised of four major components:
 1. **Admin Center** - The application that is used to manage the infrastructure and the entire instance. 
 2. **Data Router** - The background engine that is used for data ingestion and transformation.
-3. **Qrvey Composer** - The product that is used by primary users to create and manage datasets, visualizations and dashboards to share with end users. or use for analytics purposes, and more
+3. **Qrvey Composer** - The application that is used by primary users to create and manage datasets, visualizations, and dashboards to share with end users. It provides a rich set of features for analytics purposes and more.
 4. **Embedding and APIs** - Widgets and APIs to be used for embedding Qrvey components into a host application.
 
 All of the created Qrvey contents that are created in Qrvey Composer can be deployed as a standalone application or be embedded into other software applications and platforms through the use of widgets and APIs. 
