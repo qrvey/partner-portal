@@ -20,9 +20,10 @@ You can add images to your report by uploading them or linking to a URL.
 3. In the Image Configuration panel, paste the URL to the image in the field provided, or click **Upload Image** and upload an image file. 
 
 4. Under Aspect, select how the image fills the bounding box:
-  - Contain
-  - Cover
-  - Fill
+  - Contain. Image resizes to fit in the container without changing proportions. 
+  - Cover. Image retains its size and aspect ratio, regardless of the size of the bounding box.
+  - Fill. Image resizes and changes its proportions to fit in the container.
+
 
 5. On the canvas, adjust the size and position of the image box as needed. 
 

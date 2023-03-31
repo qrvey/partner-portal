@@ -6,10 +6,10 @@ sidebar_label: Managing Users of Qrvey Composer
 
 <div style={{textAlign: "justify"}}>
 
-The Qrvey Admin Center enables you to create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
+The Qrvey Admin Center provides a enables you to create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
 
 To open the User Management page, in Qrvey Admin Center, click the User Management icon in the left-hand navigation pane: 
-![User Management Icon]()
+![User Management Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-user-management.png)
 
 # Roles and Permissions
 Roles and permissions enable you to control access to sections of Qrvey Composer. The Qrvey platform has two system-defined roles that cannot be deleted or renamed. They are: 
@@ -101,7 +101,7 @@ The Qrvey Admin Center enables you to set up authentication methods for both use
   - [Using Google as the OpenID Provider](openid-google.md)
   - [Using Auth0 as the OpenID Provider](openid-auth0.md)
 
-The Login page for Creators in Qrvey Composer is configured on the Onboarding tab in Qrvey Admin Center. For more information, see [Customize the Login Page](). The login settings for end users is configured in the Page Builder widget. 
+The Login page for Creators in Qrvey Composer is configured on the Onboarding tab in Qrvey Admin Center. For more information, see the "Customize the Login Page" section of [Customizing Qrvey Composer](../admin/admin-qrvey-console.md). The login settings for end users is configured in the Page Builder widget. 
 
 If both authentication methods are enabled, users can select their preferred method to log in to the system.  
 

@@ -1,0 +1,45 @@
+---
+id: timezone-support
+title: Timezone Support
+sidebar_label: Timezone Support
+---
+<div style={{textAlign: "justify"}}>
+
+The Qrvey platform enables end users to display dates and times in their local timezone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred local. The default timezone setting is specified in Qrvey Admin Center, but it can be overridden programmatically. The possible settings are:
+* **System Default Settings**. Use the timezone in which the data was stored in the Elasticsearch repository, which is UTC/GMT+0.
+* **User Browser Settings**. Use the timezone specified in the end user’s browser.
+* **Fixed Time Zone**. Use the timezone specified. 
+
+The timezone setting affects how data is filtered and displayed in Qrvey Composer, Qrvey Admin Center, and the following features: Dashboard View, Dashboard Builder, Analysis View, and Charts.
+
+>**Note**: The timezone settings do not change how the data is stored in the repository. The settings only affect how data is filtered and displayed to the user. 
+
+This timezone setting in Qrvey Admin Center is overridden in the following cases:
+* Specifying the timezone programmatically through APIs.
+* Specifying the timezone In a widget’s configuration object.
+* Specifying the timezone as a fixed setting for a dataset. 
+
+# To specify the default timezone setting
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand navigation pane and display the General Settings tab. 
+2. Click the **Time Zone** tab. 
+3. Under **Set Time Zone**, select one of the following options:
+  * **System Default Settings (UTC +00:00)**. Use the timezone in which the data was stored in the Elasticsearch repository, which is UTC/GMT+0.
+  * **User Browser Settings**. Use the timezone specified in the end user’s browser.
+  * **Fixed Time Zone**. Use the timezone specified in the dropdown menu below this setting. 
+4. Click **Apply Changes**. 
+
+# To specify the timezone in a widget
+You can configure the timezone in the JSON configuration object for the following widgets:
+* Dashboard View
+* Dashboard Builder
+* Automation
+
+Add the following property to the JSON configuration object:
+Timezone Configuration
+| **Property** | **Description** | **Required** |
+| --- | --- | --- |
+| **offset** | Timezone offset used to display dates. Overrides the timezone setting in Admin Center. Possible values are: `default` to show dates in UTC-0, `browser` to use the setting in the user’s browser, or specify a fixed offset such as `+05:00` or `-03:00` | Yes |
+
+
+
+</div>
