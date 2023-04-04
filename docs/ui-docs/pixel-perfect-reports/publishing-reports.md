@@ -5,7 +5,7 @@ sidebar_label: Publishing Reports
 ---
 <div style={{textAlign: "justify"}}>
 
-Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
+> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
 
 ## Preview the report
 The Preview feature enables you to see the report with actual data. It resolves all token values and applies all filters. Use it to verify your configurations. If you defined a Report Group, the report will be divided into separate tabs, one per each distinct value from the associated column. 
@@ -14,7 +14,7 @@ To preview the report, click the **Preview** button. If you included parameters 
 
 The report displays in its final format. To return to edit mode, click **Edit**.  
 
-**Note**: Reports are currently limited to 200 pages and 1,000 tabs. 
+>**Note**: Reports are currently limited to 200 pages and 1,000 tabs. 
 
 ## Download reports to PDF
 Pixel-perfect Reports enables you to download completed reports in PDF format. If you defined a Report Group, the report is divided into separate tabs, one per each distinct value from the associated column. You can choose to download a PDF of only the current tab or a ZIP file containing PDFs of all the tabs in the report. 

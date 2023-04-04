@@ -6,7 +6,7 @@ sidebar_label: Create a Qrvey Administrator Account in AWS IAM
 
 <div style={{textAlign: "justify"}}>
 
-The initial Qrvey Administrator account was created when your instance of Qrvey platform was created. You may create additional Adminstrator accounts using the [User Management](../admin/roles-and-permissions.md) feature in Qrvey Admin Center. You also have the option to create a Qrvey Administrator account in the AWS IAM service. 
+The initial Qrvey Administrator account was created when your instance of Qrvey platform was created. You may create additional Administrator accounts using the [User Management](../admin/roles-and-permissions.md) feature in Qrvey Admin Center. You also have the option to create a Qrvey Administrator account in the AWS IAM service. 
 
 To create a new Administrator account in the AWS IAM service:
 
