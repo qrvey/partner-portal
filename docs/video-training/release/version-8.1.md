@@ -1,13 +1,13 @@
 ---
-id: version-7.8
-title: Version 7.8
-sidebar_label: Version 7.8
+id: version-8.1
+title: Version 8.1
+sidebar_label: Version 8.1
 ---
 
 
-## Multiseries Combo Chart
+## Time Zone Offset
 
-<iframe src="//fast.wistia.net/embed/iframe/hzv52y84mt?videoFoam=true"
+<iframe src="//fast.wistia.net/embed/iframe/yegu0zm9mn?videoFoam=true"
 allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
 name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
@@ -15,9 +15,9 @@ name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
 <br />
 <br />
 
-## Indicators In Grouped Tables
+## Pixel Perfect Report Builder
 
-<iframe src="//fast.wistia.net/embed/iframe/wtmsp0ja18?videoFoam=true"
+<iframe src="//fast.wistia.net/embed/iframe/2ngcvwiy7c?videoFoam=true"
 allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
 name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
 <script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>

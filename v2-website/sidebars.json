@@ -1080,6 +1080,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "video-training/release/version-8.1"
+        },
+        {
+          "type": "doc",
           "id": "video-training/release/version-8.0"
         },
         {
