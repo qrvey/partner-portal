@@ -1,30 +1,23 @@
 ---
 id: admin-intro
-title: Qrvey Admin Center Overview
-sidebar_label: Qrvey Admin Center Overview
+title: Introduction to Qrvey Admin Center
+sidebar_label: Introduction to Qrvey Admin Center
 ---
 
 <div style={{textAlign: "justify"}}>
 
-Qrvey Admin Center is a web-based application used by administrators to manage and monitor the Qrvey platform. It is installed with every instance of the Qrvey platform along with [Qrvey Composer](../../ui-docs/composer-overview.md). With Qrvey Admin Center, you can:
-- Manage user accounts
-- Configure authentication methods
-- Customize the appearance of Qrvey Composer
-- Enable and disable features in Qrvey Composer
-- Manage the Elasticsearch cluster
-- Backup and restore Qrvey applications using the Content Deployment feature
+Qrvey Admin Center is a web-based application used by administrators to manage and monitor the Qrvey platform. It is installed with every instance of the Qrvey platform along with Qrvey Composer. For more information on its capabilities, see the following sections:
 
+* **[Accessing Qrvey Admin Center](../admin/accessing-admin-center)**. Describes how to access the Qrvey Admin Center, including how to create Qrvey Administrator accounts. 
 
-## Accessing the Admin Center
+* **[Customization](../admin/admin-qrvey-console.md)**. Use the Qrvey Admin Center to configure general settings of Qrvey Composer, including customizing its appearance. You can also enable and disable specific features available to users of Qrvey Composer.
 
-The link to the Qrvey Admin Center and the initial Administrator account was provided to your organization when your instance of the Qrvey platform was created. You can find this information in the Welcome email:
+* **[User Management](../admin/admin-managing-users.md)**. Create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
 
-![admin-overview](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/ac-overview1.png)
+* **[Infrastructure](../admin/elasticsearch-management.md)**. Describes how to monitor and manage the Elasticsearch cluster. 
 
+* **[Content Deployment](../admin/content-deployment/concepts.md)**. Learn how to use the Content Deployment feature to copy content from one Qrvey application to another, in the same environment or to a different one. 
 
-## Creating a Qrvey Administrator Account
-You must have an account with the Administrator role to access Qrvey Admin. You can create a new Administrator account using either of the following methods:
-- Assign an account the Administrator role using the [User Management](../admin/roles-and-permissions.md) feature in Qrvey Admin Center (recommended)
-- [Create a Qrvey Administrator account in the AWS IAM service](create-admin-using-aws-iam.md)
+ 
 
 </div>

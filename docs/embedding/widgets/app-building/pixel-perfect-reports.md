@@ -4,7 +4,7 @@ sidebar_label: Pixel-perfect Reports Widget
 ---
 
 <div style={{textAlign: "justify"}}>
-The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application. 
+The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application.  
 
 # Before You Begin
 - Review the [Widget Quick Start Guide](../intro.md) for an overview of the widget components. 
@@ -16,20 +16,16 @@ The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports 
 3. Click **Copy** to copy the code, and then paste it into your preferred editor. 
 
 # Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
+Identify where you would like this widget to display in your application, and then add the HTML tag in that location. The HTML tag for this widget is:
 
 ```<qrvey-pixel-builder settings="config"></qrvey-pixel-builder>```
 
 # Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
+Add the widget launcher script tag to your application. For reference, the launcher script code is:
 
 ```<[your-widget-url]/widgets-launcher/app.js>```
 
-# Set properties in the JSON configuration object
+# Set Properties in the JSON Configuration Object
 Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“<>”):
 
 ```var config = {
