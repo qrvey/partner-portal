@@ -557,6 +557,20 @@
       "label": "Admin",
       "items": [
         {
+          "type": "category",
+          "label": "Accessing Qrvey Admin Center",
+          "items": [
+            {
+              "type": "doc",
+              "id": "admin/admin-accessing-admin-center"
+            },
+            {
+              "type": "doc",
+              "id": "admin/create-admin-using-aws-iam"
+            }
+          ]
+        },
+        {
           "type": "doc",
           "id": "admin/admin-sections-platform"
         },
