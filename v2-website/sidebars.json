@@ -558,7 +558,7 @@
       "items": [
         {
           "type": "doc",
-          "id": "admin/elasticsearch-management"
+          "id": "admin/admin-sections-platform"
         },
         {
           "type": "doc",
@@ -566,11 +566,7 @@
         },
         {
           "type": "doc",
-          "id": "admin/admin-sections-platform"
-        },
-        {
-          "type": "doc",
-          "id": "admin/roles-and-permissions"
+          "id": "admin/elasticsearch-management"
         }
       ]
     },
@@ -1214,5 +1210,54 @@
         }
       ]
     }
+  ],
+  "premium-features": [
+    {
+      "type": "doc",
+      "id": "admin/premium-features/introduction-to-premium-features"
+    },
+    {
+      "type": "category",
+      "label": "Pixel-perfect Reports",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/pixel-perfect-reports-overview"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/create-a-new-report"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/setting-up-data-and-parameters"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/filtering-data"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/designing-reports"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/working-with-tables"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/page-groups"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/working-with-formulas"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/pixel-perfect-reports/publishing-reports"
+        }
+      ]
+    }
   ]
+  
 }

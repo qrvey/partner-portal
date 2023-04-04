@@ -133,7 +133,7 @@ module.exports = {
               "label": "Qrvey Composer",
             },
             {
-              "label": "Admin Docs",
+              "label": "Qrvey Admin Center",
               "type": 'doc',
               "docId": "admin/admin-intro"
             },
@@ -146,6 +146,11 @@ module.exports = {
               "label": "Special Features",
               "type": 'doc',
               "docId": "special-features/special-features-overview"
+            },
+            {
+              "label": "Premium Features",
+              "type": 'doc',
+              "docId": "admin/premium-features/introduction-to-premium-features"
             },
             {
               "label": "Release Notes",

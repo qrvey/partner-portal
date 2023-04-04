@@ -81,7 +81,7 @@ function fetchPopularArticles() {
                 || value.url === '/docs/admin/admin-intro' || value.url === '/docs/get-started/get-started-architecture'
                 || value.url === '/docs/ui-docs/end-user-personalization/overview' || value.url === '/docs/ui-docs/qrvey-composer-overview'
                 || value.url === '/docs/dev-docs/dev-docs-overview' || value.url === '/docs/special-features/special-features-overview'
-                || value.url === '/docs/video-training/building-qrvey-sample/multi-tenancy-architecture'
+                || value.url === '/docs/video-training/building-qrvey-sample/multi-tenancy-architecture' || value.url === '/docs/admin/premium-features/introduction-to-premium-features'
                 || (value.url.search('/blog') > -1)
                 || (value.url.search('/training/') === 0))).map(value => {
                 return {
