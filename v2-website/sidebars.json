@@ -677,6 +677,10 @@
             {
               "type": "doc",
               "id": "embedding/widgets/app-building/widget-dashboard-builder"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/app-building/widget-pixel-perfect-reports"
             }
           ]
         },

@@ -27,10 +27,10 @@ The table below provides general information about each property of this widgetâ
  
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, secret identification token to access the application. | Yes |
+| **api_key** | `String`, Your organizationâ€™s unique API token required to access the Qrvey platform. | Yes |
 | **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
-| **user_id** | `String`, Optional User ID: you can set up the widget without a user ID if it's set in a qrvey session cookie. | Yes  |
-| **domain** | `String`, Qrvey Core URL. | Yes | 
+| **user_id** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes  |
+| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **private_pages** | `Boolean`, predefine the state of new dashboards. If *True*, new dashboards will be private, if not new dashboards will be public. | No |
 | **do_not_allow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | No |
 | **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
