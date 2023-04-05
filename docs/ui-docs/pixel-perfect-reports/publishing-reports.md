@@ -20,15 +20,15 @@ Pixel-perfect Reports enables you to download completed reports in PDF format. I
 
 ### To download a PDF
 1. Click the **Preview** button to display the report with data resolved from the selected dataset column. 
-  - If you included parameters in the report, the Parameters panel displays, prompting you to enter values for the parameters before the report can be displayed. 
+    - If you included parameters in the report, the Parameters panel displays, prompting you to enter values for the parameters before the report can be displayed. 
 
 2. To download the tab you are currently viewing, click the **Download** icon and select **Download Report to PDF**. The Download File dialog displays indicating that the file will be exported. 
 
 3. If you defined a Report Group, you have the option to create PDFs of each tab (downloaded together in a single ZIP file). To download all tabs, click the **Download** icon and select **Download All Reports to PDF**. The Download File dialog displays indicating that the file will be exported. 
 
 4. On the Download File dialog, select one of the following options:
-  - Wait for processing to complete.  
-  - Receive an email with a download link. The link expires in 7 days. 
+    - Wait for processing to complete.  
+    - Receive an email with a download link. The link expires in 7 days. 
 
 5. Click **Download**.  
 

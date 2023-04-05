@@ -16,7 +16,7 @@ The section describes how to use Qrvey Composer, one of the major components of 
 
 * **[Analysis Views](../ui-docs/dataviews/formulas.md)** - Follow the steps in this section to create Formulas, Buckets, Table Calculations, and export data. Read more about the features available in different chart types, and come to know the Chart Builder.
 
-* **[Building Dashboards](../ui-docs/builders/reports.md)** - Learn about the various features of Qrvey Dashboards and publish those.
+* **[Building Dashboards](../ui-docs/builders/dashboards.md)** - Learn about the various features of Qrvey Dashboards and publish those.
 
 * **[Filtering Data](../ui-docs/filtering-data/introduction.md)** - Read more about adding, editing and the overall use of Filters in your Application.
 

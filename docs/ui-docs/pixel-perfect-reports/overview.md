@@ -9,6 +9,9 @@ sidebar_label: Overview of Pixel-perfect Reports
 
 The Pixel-perfect Reports tool enables you to build customizable report templates with precise control over the positioning and style of every element on the layout, down to the individual pixel. Pixel-perfect formatting is important when the output must meet exact specifications, such as in audit reports, tax forms, regulatory documents, shipping labels, and more. The Pixel-perfect Reports tool enables you rigorously control the formatting of a report, and the output is optimized for PDF and print.  
 
+To open the Pixel-perfect Reports feature, click the **Pixel-perfect Reports** icon in the left-hand navigation panel.  
+![Pixel-perfect Reports Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/icon-composer-pixel-perfect-reports.png)
+
 Pixel-perfect Reports works with the data already available in the Qrvey platform, which means that you do not need tertiary applications to create reports. In the report editor, you create fixed templates that do not contain live data. When you use the Preview or Export feature, the values are resolved, and the output displays with the complete data using as many pages as needed. 
 
 Pixel-perfect Reports is fully integrated into Qrvey Composer, and it supports many familiar features, including:
@@ -31,7 +34,7 @@ The majority of the interface is the canvas, on which you design your report. By
 - **Page Footer**. The footer that displays on all pages of the report. Note that the Page Footer does not display on the cover or back cover, if applicable. 
 - **Report Footer**. The back cover page or footer that displays only on the last page of the report. 
 
-**See also**
+**See also**:
 - [Version 8.1 Release Demo Videos](../../video-training/release/version-8.1.md)  
 - [Create a New Report](../pixel-perfect-reports/create-a-new-report.md)
 - [Setting Up Data and Parameters](../pixel-perfect-reports/data-and-parameters.md)

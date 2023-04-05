@@ -29,7 +29,7 @@ Before using the Qrvey API, gather the following:
 # Create a user
 To create a new user, begin by reviewing the API documentation for [Create User](https://qrvey.stoplight.io/docs/qrvey-api-doc/1930941cbe8d5-create-user). 
 
-In Postman, set the request type to POST and enter the URL to create a new user:
+In Postman, set the request type to POST and enter the URL to create a new user:  
 `POST https://{{your-domain-url}}/devapi/v4/core/user`
 
 Select the **Headers** tab, and set the following header values:
@@ -58,7 +58,7 @@ If you do not know the ID of a user, you can use the API to get it.
 
 To get the user ID, begin by reviewing the API documentation for [Get User List](https://qrvey.stoplight.io/docs/qrvey-api-doc/2f4a96d989b65-get-user-list). 
 
-In Postman, set the request type to POST and enter the URL to get users:
+In Postman, set the request type to POST and enter the URL to get users:  
 `POST https://{{url}}/devapi/v4/core/user/all`
 
 Select the **Headers** tab, and set the following header values:
@@ -85,7 +85,7 @@ A Qrvey application is a self-contained analytics project that contains data and
 
 To create a new application, begin by reviewing the API documentation for [Create Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/0d09929d631ef-create-application). 
 
-In Postman, set the request type to POST and enter the URL to create a new app. You will need the user ID that you created or obtained previously:
+In Postman, set the request type to POST and enter the URL to create a new app. You will need the user ID that you created or obtained previously:  
 `POST https://{{your-domain-url}}/devapi/v4/user/{{userid}}/app`
 
 Select the **Headers** tab, and set the following header values:
@@ -117,7 +117,7 @@ If you do not know the ID of an application, you can use the API to get a list o
 
 To get a list of applications, begin by reviewing the API documentation for [Get Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1d58213f533a-get-application). 
 
-In Postman, set the request type to POST and enter the URL to get applications:
+In Postman, set the request type to POST and enter the URL to get applications:  
 `POST https://{{url}}/devapi/v4/user/{{userid}}/app/all`
 
 Select the **Headers** tab, and set the following header values:
@@ -135,7 +135,7 @@ See the following screenshot for an example of using the Get Applications API to
 # Create a Quiz web form 
 To create a Quiz web form, begin by reviewing the API documentation for [Create Web Form](https://qrvey.stoplight.io/docs/qrvey-api-doc/eef26590d2937-create-web-form). 
 
-In Postman, set the request type to POST and enter the URL to create a form:
+In Postman, set the request type to POST and enter the URL to create a form:  
 `POST https://{{url}}/devapi/v4/user/{{userid}}/app/{{appid}}/qrvey`
 
 Select the **Headers** tab, and set the following header values:
@@ -176,7 +176,7 @@ The final step is to activate, or publish, the Quiz form using the `/activate` e
 
 To activate the Quiz web form, begin by reviewing the API documentation for [Activate Web Form](https://qrvey.stoplight.io/docs/qrvey-api-doc/c306de63797ba-activate-web-form).
 
-In Postman, set the request type to PUT and enter the URL to create a form:
+In Postman, set the request type to PUT and enter the URL to create a form:  
 `PUT https://{{url}}/devapi/v4/user/{{userid}}/app/{{appid}}/qrvey/{{qrvey}}/activate`
 
 Select the **Headers** tab, and set the following header values:
