@@ -554,35 +554,29 @@
     },
     {
       "type": "category",
-      "label": "Admin",
+      "label": "Accessing Qrvey Admin Center",
       "items": [
         {
-          "type": "category",
-          "label": "Accessing Qrvey Admin Center",
-          "items": [
-            {
-              "type": "doc",
-              "id": "admin/admin-accessing-admin-center"
-            },
-            {
-              "type": "doc",
-              "id": "admin/create-admin-using-aws-iam"
-            }
-          ]
+          "type": "doc",
+          "id": "admin/admin-accessing-admin-center"
         },
         {
           "type": "doc",
-          "id": "admin/admin-sections-platform"
-        },
-        {
-          "type": "doc",
-          "id": "admin/admin-managing-users"
-        },
-        {
-          "type": "doc",
-          "id": "admin/elasticsearch-management"
+          "id": "admin/create-admin-using-aws-iam"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "admin/admin-sections-platform"
+    },
+    {
+      "type": "doc",
+      "id": "admin/admin-managing-users"
+    },
+    {
+      "type": "doc",
+      "id": "admin/elasticsearch-management"
     },
     {
       "type": "category",
@@ -1231,6 +1225,10 @@
           "id": "special-features/internationalization/configure-dynamic-labels"
         }
       ]
+    },
+    {
+      "type": "doc",
+      "id": "special-features/time-zone-support"
     }
   ],
   "premium-features": [
