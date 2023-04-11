@@ -1,7 +1,7 @@
 ---
 id: overview
-title: Overview
-sidebar_label: Overview
+title: Introduction to Internationalization
+sidebar_label: Introduction to Internationalization
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,27 +4,23 @@ title: Customizing Qrvey Composer
 sidebar_label: Customizing Qrvey Composer
 ---
 
-The Customization page of Qrvey Admin provides administrators with a variety of options for customizing their instance of Qrvey Composer. It consists of two main tabs, General Settings and Features. 
+The Customization page of Qrvey Admin Center provides administrators with a variety of options for customizing their instance of Qrvey Composer. 
 
-To open the Customization page in Qrvey Admin Center, click the **Customization** icon in the left-hand navigation panel:  
+To open the Customization page, click the **Customization** icon in the left-hand navigation pane:  
 ![Customization Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-customization.png)
 
-On the **General Settings** tab, you can:
-- <a href="#view-qrvey-license-and-account-information">View Qrvey license and account information</a>
-- <a href="#update-company-information">Update company information</a>
-- <a href="#customize-the-look-and-feel-of-qrvey-composer">Customize the look and feel of the Qrvey Composer application</a>
-- <a href="#customize-the-login-page">Customize the look and feel of the Login page</a>
-- <a href="#overview-of-email-settings">Customize system-generated email messages</a>
-- <a href="#configure-email-provider">Set up an email provider for system-generated email messages</a>
-- <a href="#set-time-zone">Change the time zone</a>
+It consists of two main tabs, General Settings and Features. 
 
-On the <a href="#enabling-and-disabling-features"> Features tab</a>, you can enable and disable specific features available to users of Qrvey Composer. 
+![General Settings and Features tabs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/admin-center-customization-toolbar-81.png)
 
-## Configure General Settings
+This article describes the tasks you can perform on the General Settings and Features tabs. 
+
+
+## General Settings tab
 
 ### View Qrvey License and Account Information
 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Account Info** tab. Your Qrvey account information displays with information including:
     - Current plan status
     - Server name
@@ -39,7 +35,7 @@ On the <a href="#enabling-and-disabling-features"> Features tab</a>, you can ena
 
 ### Update Company Information
 Company information is displayed inside the Qrvey application and in emails sent from the application. 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Account Info** tab. 
 3. Under Company Info, provide the following information:
     - Company name
@@ -50,7 +46,7 @@ Company information is displayed inside the Qrvey application and in emails sent
 ### Customize the look and feel of Qrvey Composer
 You can change the visual style of Qrvey Composer to match your organization’s unique style. 
 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Styles** tab. This tab displays style options on the left and a preview pane on the right. 
 3. Under Styles, you can perform the following actions:
     - Upload a logo.
@@ -68,7 +64,7 @@ You can change the visual style of Qrvey Composer to match your organization’s
 ### Customize the Login page
 You can customize the look and feel of both the Log In page and the Sign Up page. You can also specify whether users can create new accounts. 
 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Onboarding** tab. This tab displays customization options on the left and a preview pane on the right. 
 3. Select or clear **Allow the creation of new accounts** depending on the needs of your organization.  
 4. To update the Log In page, click **Log In**. You can change the following settings, and a preview displays on the right: 
@@ -91,7 +87,7 @@ Qrvey Composer automatically sends a Welcome/Onboarding email message to users w
 You can choose whether to use AWS SES as the email provider or configure an SMTP email provider. By default, Qrvey Composer uses AWS SES. 
 
 To configure an SMTP email provider:
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Emails** tab, and then click **Email Provider**. 
 3. Under Select Sending Method, select **Configure an Email Provider**. The page updates with several configuration settings. 
 4. Provide the following information in the fields provided: 
@@ -107,7 +103,7 @@ To configure an SMTP email provider:
 
 #### Design email templates
 You can customize the look and feel of the templates used for both the Welcome/Onboarding and Forgot Password emails. 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Emails** tab, and then click **Templates**.
 3. Under Select an email template, click **Forgot Password** or **Welcome/Onboarding**. The editor below updates to display the selected template. 
 4. Enter your desired text in the **Email Subject** field. 
@@ -119,20 +115,20 @@ You can customize the look and feel of the templates used for both the Welcome/O
 8. When finished, click **Apply Changes**. 
 
 #### View email activity log
-Qrvey Admin maintains logs of email activity, and it provides filtering and search functions. You can also download a log file to your computer. 
+Qrvey Admin Center maintains logs of email activity, and it provides filtering and search functions. You can also download a log file to your computer. 
 
-1. In Qrvey Admin, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Emails** tab, and then click **Activity Log**. The email log displays. 
 3. To filter the logs, click the dropdown and select one of the following:
     - All
     - Successful
     - Failed
-4. To search for a log, start typing in the Search field and Qrvey Admin will begin searching automatically.
+4. To search for a log, start typing in the Search field and Qrvey Admin Center will begin searching automatically.
 5. To download a TXT file of the log to your computer, click **Download Log File**. 
 6. To refresh the logs displayed on the page, click **Refresh**. 
 
 ### Set Time Zone
-Qrvey Admin enables you to specify the default time zone. Changing the time zone affects how dates are displayed and filtered in Qrvey Admin and Qrvey Composer. 
+Qrvey Admin Center enables you to specify the default time zone. Changing the time zone affects how dates are displayed and filtered in Qrvey Admin Center and Qrvey Composer. 
 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand navigation pane and display the **General Settings** tab. 
 2. Click the **Time Zone** tab. 
@@ -144,10 +140,12 @@ Qrvey Admin enables you to specify the default time zone. Changing the time zone
 
 For additional details on time zone settings, see [Configuring Time Zone Settings](../special-features/timezone-support.md) in the Special Features section. 
 
-## Enabling and Disabling Features
-Qrvey Admin enables you to enable and disable the features available to users in Qrvey Composer. Keep in mind that, if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the application. 
+## Features tab
+The Features tab provides options to enable and disable the features available to users in Qrvey Composer. Keep in mind that, if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the application. 
 
-1. In Qrvey Admin, click the Customization icon in the left-hand menu and display the **Features** tab. 
+### Enable and Disable Features in Qrvey Composer
+
+1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **Features** tab. 
 2. Select any of the following tabs to enable and disable features:
     - Datasets
     - Data Links
@@ -159,33 +157,33 @@ Qrvey Admin enables you to enable and disable the features available to users in
 
 The following sections describe these features in more detail. 
 
-### Datasets
+#### Datasets
 Enables users to create new datasets or access/update existing datasets. 
 
 For more information, see [Data Overview](../ui-docs/datasets/data_overview.md). 
 
-### Pixel-perfect Reports
+#### Pixel-perfect Reports
 The Pixel-perfect Reports tool enables you to build customizable report templates with precise layout control. The generated reports are optimized for PDF and print, and they can be shared with colleagues, customers, suppliers, or anyone who needs access to the information.
 
 For more information, see [Pixel-perfect Reports Overview](../ui-docs/pixel-perfect-reports/overview.md). 
 
-### Dashboards
+#### Dashboards
 Enables users to combine Qrvey components, including web forms, charts, and metrics with standard web components like text and images to build beautiful web pages without needing to code a single line of HTML. Dashboards can then be combined to build entire information applications that can be easily shared with others.
 
 For more information, see [Dashboard Builder](../ui-docs/builders/dashboards.md). 
 
-### Automation
+#### Automation
 Enables users to add powerful automation to forms, datasets, and dashboards. Automation works in the background, constantly scanning all of the data and forms, ready to take action immediately. 
 
 The Workflow features are divided into Triggers, Conditions, and Actions. You can enable or disable any of the available features depending on your needs. Click the Information icon for more details on the specific options. 
 
 For additional information on Workflows, see [Flow Overview](../ui-docs/automation/flows.md). 
 
-### Web Forms
+#### Web Forms
 Web Forms are a quick and easy ways to collect new data through forms, surveys, and quizzes. They are an integral part of building web-based data applications.
 
 Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../ui-docs/web-forms/1_web-forms.md). 
 
-### Settings
+#### Settings
 Enables users to configure global settings that affect the entire application. For more information, see [Application Settings](../ui-docs/others/settings.md). 
 

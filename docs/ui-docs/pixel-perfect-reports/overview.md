@@ -1,7 +1,7 @@
 ---
 id: pixel-perfect-reports-overview
-title: Overview of Pixel-perfect Reports
-sidebar_label: Overview of Pixel-perfect Reports
+title: Introduction to Pixel-perfect Reports
+sidebar_label: Introduction to Pixel-perfect Reports
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -15,7 +15,7 @@ In this tutorial, we will use the API to programmatically create a Quiz web form
 - Update the web form and embed the Quiz form widget into your product (note: this step is for informational purposes and does not utilize APIs). 
 - Activate the Quiz form for use in production. 
 
-# Before you begin
+## Before you begin
 In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. In addition, you should be familiar with the following concepts:
 - [Qrvey User Roles](../../get-started/roles.md)
 - [Qrvey Applications](../../ui-docs/basics/applications.md)
@@ -26,7 +26,7 @@ Before using the Qrvey API, gather the following:
 
 > **Note**: For purposes of this tutorial, you are asked to include the base URL or API Key in the API calls. However, this information should never be exposed to external users. In Production environments, use secure tokens to encrypt your organization’s base URL and API Key.
 
-# Create a user
+## Create a user
 To create a new user, begin by reviewing the API documentation for [Create User](https://qrvey.stoplight.io/docs/qrvey-api-doc/1930941cbe8d5-create-user). 
 
 In Postman, set the request type to POST and enter the URL to create a new user:  
@@ -53,7 +53,7 @@ See the following screenshot for an example of using the Create User API in Post
 ![Create a User](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-create-user.png#thumbnail-50)
 
 
-## Get the ID of an Existing User
+### Get the ID of an Existing User
 If you do not know the ID of a user, you can use the API to get it. 
 
 To get the user ID, begin by reviewing the API documentation for [Get User List](https://qrvey.stoplight.io/docs/qrvey-api-doc/2f4a96d989b65-get-user-list). 
@@ -80,7 +80,7 @@ See the following screenshot for an example of using the Get User List API in Po
 
 ![Get User ID](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-get-user-id.png#thumbnail-50)
 
-# Create an application
+## Create an application
 A Qrvey application is a self-contained analytics project that contains data and any number of analytics components, such as charts, reports, dashboards, and workflows. The user that creates the application is the application owner.  For more information on applications, see [What Is a Qrvey Application?](../../ui-docs/basics/applications.md)
 
 To create a new application, begin by reviewing the API documentation for [Create Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/0d09929d631ef-create-application). 
@@ -112,7 +112,7 @@ See the following screenshot for an example of using the Create Application API 
 
 >**Note**: If you log in to Qrvey Composer with the same user account, you will see the new application. 
 
-## Get the ID of an existing application
+### Get the ID of an existing application
 If you do not know the ID of an application, you can use the API to get a list of all applications associated with the user.
 
 To get a list of applications, begin by reviewing the API documentation for [Get Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1d58213f533a-get-application). 
@@ -132,7 +132,7 @@ See the following screenshot for an example of using the Get Applications API to
 
 ![Get Application ID](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-get-application-id.png#thumbnail-50)
 
-# Create a Quiz web form 
+## Create a Quiz web form 
 To create a Quiz web form, begin by reviewing the API documentation for [Create Web Form](https://qrvey.stoplight.io/docs/qrvey-api-doc/eef26590d2937-create-web-form). 
 
 In Postman, set the request type to POST and enter the URL to create a form:  
@@ -159,7 +159,7 @@ See the following screenshot for an example of using the Create Web Form API to 
 
 ![Create Quiz Web Form](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-create-quiz.png#thumbnail-50)
 
-# Update and Embed the Quiz form
+## Update and Embed the Quiz form
 Once you’ve created the Quiz web form, you can update it to contain the quiz questions. It is possible to use the Update Web Form API, however, it is more practical to use Qrvey Composer. For purposes of this tutorial, we’ll assume that you use Qrvey Composer to update your form. 
 
 ![Sample Quiz Web Form](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_10.png#thumbnail) 
@@ -171,7 +171,7 @@ Embedding is outside the scope of this tutorial. For more information on embeddi
 - [Widgets Overview (video)](https://partners.qrvey.com/docs/video-training/building-qrvey-sample/widget-overview) 
 
 
-# Activate the Quiz
+## Activate the Quiz
 The final step is to activate, or publish, the Quiz form using the `/activate` endpoint. You will need the userID, appID, and qrveyID to embed the form.
 
 To activate the Quiz web form, begin by reviewing the API documentation for [Activate Web Form](https://qrvey.stoplight.io/docs/qrvey-api-doc/c306de63797ba-activate-web-form).

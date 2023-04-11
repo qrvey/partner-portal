@@ -730,7 +730,12 @@
       "items": [
         {
           "type": "doc",
-          "id": "release-notes/release-last"
+          "id": 
+          "release-notes/release-last"
+        },
+        {
+          "type": "doc",
+          "id": "release-notes/release-8.0"
         },
         {
           "type": "doc",
