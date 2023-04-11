@@ -6,6 +6,9 @@ sidebar_label: Elasticsearch Management
 
 <div style={{textAlign: "justify"}}>
 
+To open the Infrastructure page in Qrvey Admin Center, click the **Infrastructure** icon in the left-hand navigation panel.   
+![Infrastructure Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/icon-admin-infrastructure.png)
+
 ##  Infrastructure Widget
 ![1_elasticsearch_management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/elasticsearch_management/elastic1.png#thumbnail)
 

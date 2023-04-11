@@ -59,7 +59,7 @@ Dynamic tables are much more powerful than simple tables for displaying datasets
 
 **Note**: At any time, you may click **Preview** to preview the report. The Preview feature displays the actual data in the table. 
 
-### Add column data to a dynamic table
+#### Add column data to a dynamic table
 
 1. Select the table on the canvas by clicking its Grabber handle. 
 
@@ -77,7 +77,7 @@ Dynamic tables are much more powerful than simple tables for displaying datasets
 
 8. Click **Preview** to preview the report using the data selected. 
 
-### Add groups to a dynamic table
+#### Add groups to a dynamic table
 
 1. Select the table on the canvas by clicking its Grabber handle. 
 
@@ -95,7 +95,7 @@ Dynamic tables are much more powerful than simple tables for displaying datasets
  
 8. Click **Preview** to preview the report using the data selected.
 
-### Add totals to a dynamic table
+#### Add totals to a dynamic table
 
 1. Verify that the table is positioned on the canvas with sufficient empty space below it to fit an additional row. 
 

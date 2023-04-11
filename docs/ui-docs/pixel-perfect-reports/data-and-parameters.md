@@ -60,3 +60,5 @@ Parameters enable you to filter data and display information in the report. They
 - [Designing Reports](designing-reports.md)
 - [Working with Tables](tables.md)
 - [Working with Formulas](formulas.md)
+
+</div>

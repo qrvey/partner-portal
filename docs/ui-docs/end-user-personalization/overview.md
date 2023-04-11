@@ -1,7 +1,7 @@
 ---
 id: overview
-title: Overview
-sidebar_label: Overview
+title: Introduction to End User Personalization
+sidebar_label: Introduction to End User Personalization
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -10,6 +10,8 @@ Filters enable you to refine the data that is displayed in the reports. Filters 
 
 To create a filter, display the Filters panel and click **Add Filter**. 
 
+![Filter Panel](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Filter-Panel-81.png)
+
 For more information on configuring filters, see [Introduction to Filters](../filtering-data/introduction.md). 
 
 **See also**:
