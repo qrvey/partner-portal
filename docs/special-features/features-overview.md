@@ -10,7 +10,7 @@ This section describes features that apply to multiple components of the Qrvey p
 
 * **[Internationalization](../special-features/internationalization/overview.md)** (version 7.1 and later). Describes the steps required to support internationalization and localization across the components of the Qrvey platform. 
 
-* **[Time Zone Support](../special-features/timezone-support)**. Describes how the Qrvey platform supports time zones, including how to enable time zone support using the Qrvey Admin Center as well as programmatically through APIs. 
+* **[Time Zone Support](../special-features/timezone-support.md)**. Describes how the Qrvey platform supports time zones, including how to enable time zone support using the Qrvey Admin Center as well as programmatically through APIs. 
 
 
 
