@@ -25,7 +25,7 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
  
 ### Data Analysis & Visualization
 
-* **AN-15156 - [Support Time Zone Offset](../special-features/timezone-support)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
+* **AN-15156 - [Support Time Zone Offset](../special-features/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
 
 * **AN-18511 - Qrvey Theme 2 with Support for 100 Colors**: With this newly-added theme, we now support color palettes with 100 unique colors in sequence for visualizations with high numbers of data points.
 
