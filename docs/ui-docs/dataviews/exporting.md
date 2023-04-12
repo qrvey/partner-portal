@@ -50,6 +50,14 @@ When exporting charts, if for example you add a filter and there isn’t any dat
 
 >**Note 3**: If any “Max” limits (Max Data Points, Max records, Max columns, Max rows, Max slices and Max groups) have been applied to the chart, those limits apply to the exported data, also.
 
+## Overriding the Max Data Points setting
+
+When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. 
+
+To determine whether the Max Data Points field has been overridden, use the [Get General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/6addb9e3c599e-get-general-settings) and note the `maxDataPointExport` parameter. If value is set to `0`, all exports use the Max Data Point value set in charts. If value is set to `-1`, the export feature ignores the Max Data Point configuration and exports all data.
+
+To change the override setting, use the [Update General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/1757128781684-update-general-settings) and provide the desired value in the `maxDataPointExport` parameter. Set the value to `0` to use the Max Data Point value set in the chart. Set the value to `-1` to ignore the value set in the chart and export all data. 
+
 
 ## CSV Export
 CSV is a data export option. The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”. CSV export is not available as email attachment in workflows, at this time.
