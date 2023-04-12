@@ -72,6 +72,10 @@ Here you can set the maximum number of data points you’d like to display in yo
 * Default: 50
 * Applies to: <a href="" target="_blank"> Bar</a>, <a href="" target="_blank"> Line</a>, <a href="" target="_blank"> Symbol</a>, <a href="" target="_blank"> Multi-Series Bar</a>, <a href="" target="_blank"> Multi-Series Line</a>, <a href="" target="_blank"> Multi-Series Symbol</a>, <a href="" target="_blank"> Dot Map</a>, <a href="" target="_blank"> Bubble Map</a>, <a href="" target="_blank"> Choropleth Map</a>, <a href="" target="_blank"> Pie</a>, <a href="" target="_blank"> Heatmap</a>, <a href="" target="_blank"> Box & Whisker</a>, <a href="" target="_blank"> Word Cloud</a>
 
+#### Overriding the Max Data Points Setting
+
+When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. For more information, see [Exporting Data](../../../dataviews/exporting.md).
+
 ### Max Groups
 This control applies to grouped tables (default 50) and expandable tables (default 10) and determines the maximum number of groups. The setting is there for performance reasons and to prevent accidental grouping of data fields with too many unique values that may result in an excessive number of groups. 
 
