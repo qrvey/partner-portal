@@ -611,6 +611,10 @@
       "id": "dev-docs/dev-docs-overview"
     },
     {
+      "type": "doc",
+      "id": "get-started/get-started-architecture"
+    },
+    {
       "type": "category",
       "label": "Security",
       "items": [
@@ -691,16 +695,11 @@
         {
           "type": "doc",
           "id": "embedding/api/api-tutorial"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Architecture",
-      "items": [
+        },
         {
-          "type": "doc",
-          "id": "get-started/get-started-architecture"
+          "type": "link",
+          "label": "Qrvey API Reference Guide (Stoplight)",
+          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/YXBpOjI3MjE0MTA1"
         }
       ]
     }
