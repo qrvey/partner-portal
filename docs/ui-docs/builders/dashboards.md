@@ -40,8 +40,8 @@ To open an existing dashboard, locate its card in the list displayed on the main
 ## Create a new dashboard
 1. In Dashboard builder, click **Create New Dashboard**. 
 2. The Create New Dashboard dialog displays with the following two options:
-  * **Fixed Grid**. A fixed canvas that remains constant regardless of the device used to display the dashboard.
-  * **esponsive Grid**. An adaptive canvas that is suitable for displaying dashboards on multiple devices, such as tablets and phones.
+    * **Fixed Grid**. A fixed canvas that remains constant regardless of the device used to display the dashboard.
+    * **esponsive Grid**. An adaptive canvas that is suitable for displaying dashboards on multiple devices, such as tablets and phones.
 3. Select a grid option and click **Create**. An empty canvas displays, ready for you to create your dashboard. 
 
 >**Note**: You can change the grid option after you’ve created the dashboard. Open the dashboard, click the Grid menu, and select Change to Responsive Grid or Change to Fixed Grid. 
@@ -241,8 +241,10 @@ Dashboard Builder enables you to preview a single dashboard in a browser, so you
 
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list. 
 2. Click the **Publish Application** button.  
-  ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)
-  The application is committed to the server. 
+  
+    ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
+
+    The application is committed to the server. 
 3. Open the dashboard that you wish to preview. 
 4. Click the **File** menu and click **Copy Dashboard Link**.
 5. Open a new browser tab and paste in the link. The dashboard displays in the browser.  
@@ -253,9 +255,11 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list.
 2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Navigation](../builders/navigation.md). 
-3. Click the **Publish Application** button. 
-  ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)
-  The application is committed to the server, and the Link button is activated. 
+3. Click the **Publish Application** button.  
+  
+    ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
+
+    The application is committed to the server, and the Link button is activated. 
 4. Click the **Link** button. The application displays in the browser.  
 5. To continue editing on application, click **Unpublish**.
 
@@ -264,9 +268,11 @@ Before an application can be made available to end users, you must publish it. T
 
 1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Navigation](../builders/navigation.md). 
 2. Verify that you have granted and/or restricted access to the desired users. For more information, see [User Management](../builders/user-management.md). 
-3. Click the **Publish Application** button. 
-  ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)
-  The application is committed to the server. You may now preview the application using the **Link** option, or embed the application using the **Embed** options. 
+3. Click the **Publish Application** button.  
+
+    ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
+
+    The application is committed to the server. You may now preview the application using the **Link** option, or embed the application using the **Embed** options. 
  
 
 

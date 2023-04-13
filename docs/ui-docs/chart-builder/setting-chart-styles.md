@@ -65,23 +65,23 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 
 3. To apply this theme to all applications, select **Use Theme in All Apps**.
 4. Click the **Typeface** drop-down menu and select a font to use in the application. 
-5. Under **Panel Styles**, select whether to display or hide the following panel items: 
-  * Panel Background
-  * Header
-  * Title  
+5. Under **Panel Styles**, select whether to display or hide the following panel items:  
+    * Panel Background
+    * Header
+    * Title  
 
 6. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color. 
-7. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item. 
-  - Axis and Data Labels
-  - Values
-  - Legends
-  - Tooltips  
+7. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.  
+    - Axis and Data Labels
+    - Values
+    - Legends
+    - Tooltips  
 
 8. Under **Data Styles**, click the box next to **Main Color** to display the color picker dialog. Use the options provided to set the main color for the data.
 9. Select the colors to use for **Data Visualizations**. For your convenience, one hundred colors are chosen randomly by the system. You may change any of the colors individually, or you may click Generate New to randomly generate a new set of one hundred colors. 
-10. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.
-  - Header Font Color
-  - Header Background Color  
+10. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.  
+    - Header Font Color
+    - Header Background Color  
 
 11. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
 
