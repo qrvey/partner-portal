@@ -612,16 +612,6 @@
     },
     {
       "type": "category",
-      "label": "Architecture",
-      "items": [
-        {
-          "type": "doc",
-          "id": "get-started/get-started-architecture"
-        }
-      ]
-    },
-    {
-      "type": "category",
       "label": "Security",
       "items": [
         {
@@ -636,11 +626,23 @@
     },
     {
       "type": "category",
-      "label": "Embedding",
+      "label": "Embedding Qrvey Widgets",
       "items": [
         {
           "type": "doc",
           "id": "embedding/embedding-intro"
+        },
+        {
+          "type": "doc",
+          "id": "embedding/widgets/widget-intro"
+        },
+        {
+          "type": "doc",
+          "id": "embedding/widgets/embedding-widgets-security-token"
+        },
+        {
+          "type": "doc",
+          "id": "embedding/widgets/filters-embedded-scenarios"
         },
         {
           "type": "category",
@@ -648,40 +650,16 @@
           "items": [
             {
               "type": "doc",
-              "id": "embedding/widgets/widget-intro"
+              "id": "embedding/widgets/app-building/widget-dashboard-builder"
             },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/embedding-widgets-security-token"
-            },
-            {
-              "type": "doc",
-              "id": "embedding/widgets/filters-embedded-scenarios"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "App Building Widgets",
-          "items": [
             {
               "type": "doc",
               "id": "embedding/widgets/app-building/widget-dashboard-view"
             },
             {
               "type": "doc",
-              "id": "embedding/widgets/app-building/widget-dashboard-builder"
-            },
-            {
-              "type": "doc",
               "id": "embedding/widgets/app-building/widget-pixel-perfect-reports"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Analytics Widgets",
-          "items": [
+            },
             {
               "type": "doc",
               "id": "embedding/widgets/analytics/analytic-suite"
@@ -689,13 +667,7 @@
             {
               "type": "doc",
               "id": "embedding/widgets/analytics/single-panel"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "Data Collection and Forms",
-          "items": [
+            },
             {
               "type": "doc",
               "id": "embedding/widgets/data-sources/widget-webforms"
@@ -708,7 +680,7 @@
         },
         {
           "type": "category",
-          "label": "API References",
+          "label": "Working With Qrvey APIs",
           "items": [
             {
               "type": "doc",
@@ -719,6 +691,16 @@
               "id": "embedding/api/api-tutorial"
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Architecture",
+      "items": [
+        {
+          "type": "doc",
+          "id": "get-started/get-started-architecture"
         }
       ]
     }
