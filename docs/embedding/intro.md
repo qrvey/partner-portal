@@ -32,6 +32,10 @@ Please contact help@qrvey.com if you would like to embed any other Qrvey widget 
 * ** [Web Form Design](../embedding/widgets/data-sources/web-forms.md) ** (tag: <code>&lt; qrvey-design-widgets &gt;</code>) - Another popular widget, Webforms Design widget enables you to embed any webform designer (Form, Survey, Quiz) in your application, allowing your users to create and publish any type of webforms.
 
 * ** [Web Form - End User](../embedding/widgets/data-sources/web-form-end-user.md) ** (tag: <code>&lt; qrvey-webform-enduser &gt;</code>) - Designed web forms can be embedded, too. The widget will allow the end users to work in the web form without leaving the parent application--they can take a quiz or respond to a survey inside your application.
+
+* ** [Pixel-perfect Reports](../embedding/widgets/app-building/pixel-perfect-reports.md) ** (tag: <code>&lt; qrvey-pixel-builder &gt;</code>) - Enables you to embed the Pixel-perfect Reports feature into your application. 
+
+* ** [Automation](../embedding/widgets/automation-widget.md) ** (tag: <code>&lt; qrvey-workflow-design &gt;</code>) - Enables you to embed the Automation, or Workflow, functionality into your application. 
  
 ## APIs
 Our API references provide a list of the most commonly-used APIs needed to interact with the Qrvey platform. Qrvey APIs are documented in Stoplight. To access the full collection, see <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/">Qrvey API Reference</a>.

@@ -8,14 +8,15 @@ sidebar_label: Deployment Definitions
 
 A Deployment Definition is a set of instructions to create or update an application and does not contain any information about the destination(s) or recipient(s) of that application. One or more of these Definitions can be used later in a Deployment Job, to determine where and to whom the destination application is deployed. To create a new Deployment Definition, click on the **Create Definition** button. 
 
-The options of a Deployment Definition depend on whether it is going to be used to create a new application or to update an existing app. So that is the first decision to be made.
+The options vary depending on whether you intend to create a new application or update an existing application. 
 
 ## Definition for Creating a New Application
-Select the option to create a new application from the **Application** dropdown list. In the rare case that you may want to create an empty shell of an application, without using a Package as the base, you can give your new application a name and an optional description and you are done.
+In the Deployment Definitions tab, click the **Create Definition** button. The Deployment Definition Description page displays. At the top of the page, enter a name and description in the fields provided.
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide5.png#thumbnail)
 
-If using a Package for the definition, pick the Package and the desired Version from the presented dropdown lists. At this point, the application asks you if you want to use your entered name and description, or prefer to use the name and description from the selected Version. Pick the option that you like. 
+![Deployment Definitions page](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/deployment-definition-01-81.png)
+
+If using a Package for the definition, pick the **Package** and the desired **Package Version** from the dropdown lists. At this point, the application asks you if you want to use your entered name and description, or prefer to use the name and description from the selected Version. Pick the option that you like. 
 Click on the **Select Content** button to choose the content that you want to include in the Definition. You can select **Baseline** to include all the content in the application, or select individual charts, dashboards, datasets or other content. 
 
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide6.png#thumbnail-40)
@@ -45,9 +46,9 @@ You can replace any value with a Parameter Token by typing your own token name i
 ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide8.png#thumbnail)
 
 ## Definition for Updating an Existing Application
-You may need to update an existing application to either add new content or change some content that was previously deployed. In order to create such a Definition select the option to update [an existing] application from the **Application** dropdown list, and the desired package and version that you want to use for the update from the **Package** and **Package Version** dropdown lists, respectively. If you wish to update the application name and/or description, you have to check the desired option(s) from the dropdown list labeled “Select Fields to Update”. 
+You may need to update an existing application to either add new content or change some content that was previously deployed. In order to create such a Definition, select the option to **Update an Existing Application**, and then select the desired package and version that you want to use for the update from the **Package** and **Package Version** dropdown lists, respectively. If you wish to update the application name and/or description, you have to check the desired option(s) from the dropdown list labeled **Select Fields to Update**. 
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide9.png#thumbnail)
+![Deployment Definitions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/deployment-definition-02-81.png)
 
 Click on the **Select Content** button to see the content of the version that you have selected. You can optionally choose any of the other versions of the same Package from the **Compare to** dropdown to find the differences between the two versions. If the destination application or applications have been created from a Version of a Package, this can help in deciding what content needs to be added or updated. 
 
