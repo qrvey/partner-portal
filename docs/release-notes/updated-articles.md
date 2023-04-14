@@ -8,6 +8,7 @@ sidebar_label: Updated Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Qrvey API Tutorial](../embedding/api/tutorial.md)|8.1|Administrator| April 14, 2023|
 |[Deployment Definitions](../admin/content-deployment/definitions.md)|8.1|Administrator| April 14, 2023|
 |<a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration" target="_blank">API Reference</a>|All|Developers| April 14, 2023|
 |[Exporting Data](../ui-docs/dataviews/exporting.md)|8.1|Data Analyst| April 14, 2023|

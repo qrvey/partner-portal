@@ -280,11 +280,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
+             <a href="/docs/embedding/api/api-tutorial" target="_blank">Qrvey API Tutorial<span>April 14, 2023</span></a> 
              <a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions<span>April 14, 2023</span></a> 
               <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration" target="_blank">API Reference<span>April 14, 2023</span></a> 
              <a href="/docs/ui-docs/dataviews/exporting" target="_blank">Exporting Data<span>April 14, 2023</span></a> 
               <a href="/docs/ui-docs/chart-builder/setting-chart-styles" target="_blank">Setting Chart Colors and Themes<span>April 14, 2023</span></a> 
-              <a href="/docs/embedding/widgets/app-building/widget-dashboard-builder" target="_blank">Dashboard Builder Widget<span>April 14, 2023</span></a> 
                  </div>
              </div>
            </div>
