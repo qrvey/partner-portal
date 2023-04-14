@@ -33,6 +33,8 @@ You can configure the time zone in the JSON configuration object for the followi
 * Dashboard View
 * Dashboard Builder
 * Automation
+* Pixel-perfect Reports
+* Analyze
 
 Add the following property to the JSON configuration object:
 
