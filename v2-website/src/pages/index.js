@@ -259,11 +259,13 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/ui-docs/datasets/dslive" target="_blank">Datasets - Live Connect<span>Feb 1, 2023</span></a>
-             <a href="/docs/release-notes/upgrade-notes" target="_blank">Upgrade Notes<span>Dec 29, 2022</span></a> 
-             <a href="/docs/aws/data-load-notifications" target="_blank">Setting Up Data Load Notifications <span>Dec 16, 2022</span></a>
-             <a href="/docs/ui-docs/datasets/union" target="_blank">Appending Data (Union)<span>Jul 29, 2022</span></a>
-             <a href="/docs/ui-docs/chart-builder/chart-axes" target="_blank">Managing Chart Axes<span>June 29, 2022</span></a> 
+
+              
+             <a href="/docs/admin/admin-accessing-admin-center" target="_blank">Accessing Qrvey Admin Center<span>April 14, 2023</span></a>
+             <a href="/docs/special-features/time-zone-support" target="_blank">Configuring Time Zone Settings<span>April 14, 2023</span></a> 
+             <a href="/docs/embedding/widgets/app-building/widget-pixel-perfect-reports" target="_blank">Pixel-perfect Reports Widget <span>April 14, 2023</span></a>
+             <a href="/docs/embedding/widgets/automation-widget" target="_blank">Automation Widget<span>April 14, 2023</span></a>
+             <a href="/docs/ui-docs/pixel-perfect-reports/filtering-data" target="_blank">Create a New Report<span>April 14, 2023</span></a> 
                  </div>
              </div>
            </div>
@@ -278,11 +280,11 @@
              </div>
              <div className="articles--infocont">
              <div className="listarticles-links">
-             <a href="/docs/get-started/aws-services" target="_blank">AWS Services Used by Qrvey<span>Dec 29, 2022</span></a> 
-              <a href="/docs/get-started/upgrading-new-version" target="_blank">Upgrading To A New Version<span>Dec 29, 2022</span></a> 
-             <a href="/docs/get-started/deploying-aws/initial-installation" target="_blank">Initial Installation<span>Dec 29, 2022</span></a> 
-              <a href="/docs/get-started/deleting-installation" target="_blank">Deleting an Installation<span>Dec 29, 2022</span></a> 
-              <a href="/docs/get-started/prerequisites-for-installation" target="_blank">Prerequisites For Installation<span>Dec 29, 2022</span></a> 
+             <a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions<span>April 14, 2023</span></a> 
+              <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration" target="_blank">API Reference<span>April 14, 2023</span></a> 
+             <a href="/docs/ui-docs/dataviews/exporting" target="_blank">Exporting Data<span>April 14, 2023</span></a> 
+              <a href="/docs/ui-docs/chart-builder/setting-chart-styles" target="_blank">Setting Chart Colors and Themes<span>April 14, 2023</span></a> 
+              <a href="/docs/embedding/widgets/app-building/widget-dashboard-builder" target="_blank">Dashboard Builder Widget<span>April 14, 2023</span></a> 
                  </div>
              </div>
            </div>
@@ -313,7 +315,7 @@
                  Announcements
                </h3>
                <h3 className="side-right-nav-container-announcements-item">
-                 Version 8.0 has been released,{" "}
+                 Version 8.1 has been released,{" "}
                  <a
                    className="primary-color"
                    href="docs/release-notes/release-last/"

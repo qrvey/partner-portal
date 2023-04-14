@@ -7,6 +7,18 @@ sidebar_label: New Articles
 
 | **Article** | **Version(s)** |**Audience**|  **Date Published** |
 | --- | --- | --- |--- |
+|[Accessing Qrvey Admin Center](../admin/accessing-admin-center.md)|8.1|All| April 14, 2023|
+|[Configuring Time Zone Settings](../special-features/timezone-support.md)|8.1|All| April 14, 2023|
+|[Pixel-perfect Reports Widget](../embedding/widgets/app-building/pixel-perfect-reports.md)|8.1|All| April 14, 2023|
+|[Automation Widget](../embedding/widgets/automation-widget.md)|8.1|All| April 14, 2023|
+|[Create a New Report](../ui-docs/pixel-perfect-reports/filtering-data.md)|8.1|All| April 14, 2023|
+|[Publishing Reports](../ui-docs/pixel-perfect-reports/publishing-reports.md)|8.1|All| April 14, 2023|
+|[Working with Formulas](../ui-docs/pixel-perfect-reports/formulas.md)|8.1|All| April 14, 2023|
+|[Repeating Items Using Page Groups](../ui-docs/pixel-perfect-reports/page-groups.md)|8.1|All| April 14, 2023|
+|[Working with Tables](../ui-docs/pixel-perfect-reports/tables.md)|8.1|All| April 14, 2023|
+|[Designing Reports](../ui-docs/pixel-perfect-reports/designing-reports.md)|8.1|All| April 14, 2023|
+|[Filtering Data](../ui-docs/pixel-perfect-reports/create-a-new-report.md)|8.1|All| April 14, 2023|
+|[Setting Up Data and Parameters](../ui-docs/pixel-perfect-reports/data-and-parameters.md)|8.1|All| April 14, 2023|
 |[Datasets - Live Connect](../ui-docs/datasets/datasets-live.md)|8.0|Data Analyst| Feb 1, 2023|
 |[Upgrade Notes](../release-notes/upgrade-notes.md)|By Version|CloudOps| Dec 29, 2022|
 |[Setting Up Data Load Notifications](../aws/data-load-notifications.md)|All|Administrator| Dec 16, 2022|

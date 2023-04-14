@@ -679,6 +679,10 @@
             {
               "type": "doc",
               "id": "embedding/widgets/data-sources/web-form-end-user"
+            },
+            {
+              "type": "doc",
+              "id": "embedding/widgets/automation-widget"
             }
           ]
         }

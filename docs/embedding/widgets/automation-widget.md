@@ -21,7 +21,7 @@ The Automation widget enables you to embed the Automation functionality into you
 Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
 
 The HTML tag for this widget is:
-```
+```html
 <!-- widget's tag -->
 <qrvey-workflow-design settings="config"></qrvey-workflow-design>
 ```
@@ -30,14 +30,14 @@ The HTML tag for this widget is:
 Add the widget launcher script tag to your application. 
 
 For reference, the launcher script code is:
-```
+```html
 <!-- widget's launcher -->
 <script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>
 ```
 
 ## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“<>”), with the exception of the private API key:
-```
+Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets ("&lt;&gt;"), with the exception of the private API key:
+```html
 <!-- widget's Config Object -->
 <script>
 var config = {
@@ -76,7 +76,7 @@ The following sample demonstrates how this widget can be used in an HTML page.
 `<script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>`
 
 **JSON configuration object**:
-```
+```js
 {
    "apikey": "<MY_PRIVATE_APIKEY>",
    "domain": "https://domain.qrvey.com",
