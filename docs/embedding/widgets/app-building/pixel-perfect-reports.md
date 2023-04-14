@@ -77,6 +77,6 @@ var config = {
 </script>```
 
 **See also**:
-[Pixel-perfect Reports Overview](../../../ui-docs/pixel-perfect-reports/overview.md)
+[Introduction to Pixel-perfect Reports](../../../ui-docs/pixel-perfect-reports/overview.md)
 
 </div>

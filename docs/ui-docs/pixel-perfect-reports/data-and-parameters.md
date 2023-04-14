@@ -14,19 +14,19 @@ Parameters enable you to filter data and display information in the report. They
 
 1. Before you can create a parameter, you must select the dataset. On the right-side menu, click to display the **Data & Parameters** panel. 
 
-![Pixel-perfect-reports-Data-tab-New-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Data-tab-New-81.png)
+![Pixel-perfect-reports-Data-tab-New-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Data-tab-New-81.png#thumbnail-60)
 
 2. Click **Select Dataset**. The Select Dataset dialog displays. The functionality to create a connection is the same as the Connections feature in Qrvey Composer. For more information, see [Connections Overview](../datasets/connectors.md). 
 
   Once you’ve established the connection, the dataset columns display in the panel as Categories and Values. They are now available for use in the report. 
 
-![Pixel-perfect-reports-Data-tab-Supermarket-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Data-tab-Supermarket-81.png)
+![Pixel-perfect-reports-Data-tab-Supermarket-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Data-tab-Supermarket-81.png#thumbnail-60)
 
 ## To create a parameter
 
 1. Display the **Parameters** tab of the Data & Parameters panel. 
 
-![Pixel-perfect-reports-Parameters-tab-new-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Parameters-tab-new-81.png)
+![Pixel-perfect-reports-Parameters-tab-new-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Parameters-tab-new-81.png#thumbnail-60)
 
 2. Click **Add Parameter**. The New Parameter dialog displays. 
 

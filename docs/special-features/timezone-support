@@ -23,9 +23,9 @@ This time zone setting in Qrvey Admin Center is overridden in the following case
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand navigation pane and display the General Settings tab. 
 2. Click the **Time Zone** tab. 
 3. Under **Set Time Zone**, select one of the following options:
-  * **System Default Settings (UTC +00:00)**. Use the time zone in which the data was stored in the Elasticsearch repository, which is UTC/GMT+0.
-  * **User Browser Settings**. Use the time zone specified in the end user’s browser.
-  * **Fixed Time Zone**. Use the time zone specified in the dropdown menu below this setting. 
+    * **System Default Settings (UTC +00:00)**. Use the time zone in which the data was stored in the Elasticsearch repository, which is UTC/GMT+0.
+    * **User Browser Settings**. Use the time zone specified in the end user’s browser.
+    * **Fixed Time Zone**. Use the time zone specified in the dropdown menu below this setting. 
 4. Click **Apply Changes**. 
 
 ## To specify the time zone in a widget

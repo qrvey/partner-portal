@@ -20,9 +20,9 @@ You can add images to your report by uploading them or linking to a URL.
 3. In the Image Configuration panel, paste the URL to the image in the field provided, or click **Upload Image** and upload an image file. 
 
 4. Under Aspect, select how the image fills the bounding box:
-  - **Contain**. Image resizes to fit in the container without changing proportions. 
-  - **Cover**. Image retains its size and aspect ratio, regardless of the size of the bounding box.
-  - **Fill**. Image resizes and changes its proportions to fit in the container.
+    - **Contain**. Image resizes to fit in the container without changing proportions. 
+    - **Cover**. Image retains its size and aspect ratio, regardless of the size of the bounding box.
+    - **Fill**. Image resizes and changes its proportions to fit in the container.
 
 
 5. On the canvas, adjust the size and position of the image box as needed. 
@@ -59,9 +59,9 @@ The Report editor enables you to draw lines, rectangles, and ellipses on the rep
 
 ### To draw a shape
 1. Click the **Shape** icon on the toolbar and select one of the options:
-  - Line
-  - Rectangle
-  - Ellipse
+    - Line
+    - Rectangle
+    - Ellipse
 
 2. Draw a bounding box on the canvas. Size and position the box as desired. The Configuration panel updates to display Line/Rectangle/Ellipse Configuration options. 
 
@@ -82,11 +82,11 @@ The Page Setup feature enables you to modify the page orientation, paper size, a
 ### To change the page setup
 1. Click the **Page Setup** icon on the toolbar. It displays the current paper size and unit of measurement. The Page Setup dialog displays. 
 2. On the Page Setup dialog, select the following options:
-  - Paper Size
-  - Units of Measure
-  - Width
-  - Height
-  - Orientation
+    - Paper Size
+    - Units of Measure
+    - Width
+    - Height
+    - Orientation
 3. Click **Save**. 
 
 ## Show/hide gridlines and rulers
