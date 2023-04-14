@@ -64,7 +64,7 @@ The following table lists the properties associated with this widget.
 | **qv_token** | `String`, Codified string that can be embedded in the widget to pass private properties, such as the api_key, via token | No |
 
 #### Time Zone Configuration
-The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. You can specify the time zone offset in the configuration object properties. For more information, see [Time Zone Support](../../special-features/timezone-support). 
+The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. You can specify the time zone offset in the configuration object properties. For more information, see [Time Zone Support](../../special-features/timezone-support.md). 
 
 ## Sample
 The following sample demonstrates how this widget can be used in an HTML page.  
