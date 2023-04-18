@@ -155,8 +155,8 @@ Parameters:</li></ul>
 <ul style={{listStyle: 'none', marginLeft: '40px'}}><li>
 1. sslCertificateNameDesired - enter the new Composer URL. <br />
 2. CertificateARN - enter the SSL Certification ARN<br />
-3. AdminAppDomainURL - “https://<composerurl>/admin/api”<br />
-4. AdminServerURL - “https://<composerurl>/admin/api”</li></ul>
+3. AdminAppDomainURL - “https://&lt;composerurl&gt;/admin/api”<br />
+4. AdminServerURL - “https://&lt;composerurl&gt;/admin/api”</li></ul>
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>ii. CodePipeline: “Qrvey_xxxxx_Microservices”</li>
 </ul>
