@@ -154,7 +154,9 @@ You can change the Composer URL to match your own domain. You would need access 
 Parameters:</li></ul>
 <ul style={{listStyle: 'none', marginLeft: '40px'}}><li>
 1. sslCertificateNameDesired - enter the new Composer URL. <br />
-2. CertificateARN - enter the SSL Certification ARN</li></ul>
+2. CertificateARN - enter the SSL Certification ARN<br />
+3. AdminAppDomainURL - “https://<composerurl>/admin/api”<br />
+4. AdminServerURL - “https://<composerurl>/admin/api”</li></ul>
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>ii. CodePipeline: “Qrvey_xxxxx_Microservices”</li>
 </ul>
@@ -214,7 +216,7 @@ You can change the Widget URL to match your own domain. You would need access to
     4. Copy the URL as value for the output named “CloudfrontDomainName” (without https://)
 7. Log in or navigate to your DNS provider (Route 53 or similar) and add a CNAME record for “<Widget URL\>     CNAME    <CloudfrontDomainName\>”
 
->**Note**: If you have embedded Qrvey using the old cloudfront URL, then you would have to update your code to load all widgets using the new URL. 
+>**Note**: If you have embedded Qrvey using the old cloudfront URL, then you would have to update your code to load all widgets using the new URL.
 
 
 </div>

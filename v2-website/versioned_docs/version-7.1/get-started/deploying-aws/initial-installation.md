@@ -20,7 +20,7 @@ The following steps will walk you through installing the Qrvey platform in your 
 <li>a. This will take you to CloudFormation's quick create page. Enter values for the following parameters and click on <strong>Create Stack</strong>.</li></ul>
 <ul style={{listStyle: 'none', marginLeft: '35px'}}>
 <li>  i. Stack name - name this CloudFormation stack. </li>
-<li>  ii. SubnetID - pick subnets in your VPC. We recommend using at least 2 public subnets in different AZs for load balancing. Please make sure the EC2 instance type “t3.micro” is available in your selected AZ. You can use <a href="https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-supported-az-error/" target="_blank">this link</a> to verify the instance availability.  </li>
+<li>  ii. SubnetID - pick subnets in your VPC. We recommend using at least 2 public subnets in different AZs for load balancing. Please make sure the EC2 instance type “t3.micro” is available in your selected AZ. You can use <a href="https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-type-not-supported-az-error/" target="_blank">this link</a> to verify the instance availability. These subnets will be attached to a load balancer, so select <b>Public subnets only</b>. You may run into errors if you select any private subnets.  </li>
 <li>  iii. VPC ID - pick the VpcID that matches the subnets. </li>
 <li>  iv. WebAppInboundIPrange - IP address that will be added to the security group used by the deployment app. To make it available from any browser, you can use “0.0.0.0/0” or you can insert an IP address or range.</li>
 </ul>

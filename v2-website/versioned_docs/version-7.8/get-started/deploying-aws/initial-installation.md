@@ -21,7 +21,7 @@ The following steps will walk you through installing the Qrvey platform in your 
     <ul style={{listStyle: 'lower-roman'}}>
     <li>Stack name - name this CloudFormation stack. </li>
     <li>AllowDelete - Flag to lock deletion of the Qrvey Platform in your AWS Account. Set it to true only if you plan to delete the instance. This protects against any accidental deletes.</li>
-    <li>SubnetID - pick subnets in your VPC. We recommend using at least 2 public subnets in different AZs for load balancing. All Subnets should belong to the same VPC.</li>
+    <li>SubnetID - pick subnets in your VPC. We recommend using at least 2 public subnets in different AZs for load balancing. All Subnets should belong to the same VPC. These subnets will be attached to a load balancer, so select <b>Public subnets</b> only. You may run into errors if you pick any private subnets. For a deployment with all private subnets, you can use the advanced template, however, there are additional configuration steps after the deployment is done.</li>
     <li>VPC ID - pick the VpcID that matches the subnets. </li>
     <li>WebAppInboundIPrange - IP address that will be added to the security group used by the deployment app. To make it available from any browser, you can use “0.0.0.0/0” or you can insert an IP address or range.</li>
     <li>(Advanced) LoadBalancerScheme - If you are using the Advanced deployment template, you can use this to set the scheme for load balancer. Default is internet-facing and works well for most scenarios with public subnets.</li>
