@@ -724,7 +724,13 @@
         {
           "type": "doc",
           "id": "release-notes/release-7.8"
-        },
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Release Notes Archive",
+      "items": [
         {
           "type": "doc",
           "id": "release-notes/release-7.7"
@@ -780,13 +786,7 @@
         {
           "type": "doc",
           "id": "release-notes/release-jun-2021"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Release Notes Archive",
-      "items": [
+        },
         {
           "type": "doc",
           "id": "release-notes/release-may-2021"

@@ -222,7 +222,7 @@ Permissions Object
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
-| dataset_id| _String_ or _Array_| No |The ID of the dataset (from any type of data source Database, Index View, or CSV files) where the row-level security will apply. <br/><br/> _String_ <br/>If dataset_id is set to * ( wildcard), the column and the values defined in the Record Filter Object will be used to filter the data in all datasets available. <br/><br/>_Array_ <br/> Set the same group of conditions for multiple datasets and avoid repeating the conditions for each dataset. <br/>**Note:** Make sure that the security columns are the same in all datasets, or the system will give an error.<br/> 
+| dataset_id| _String_ or _Array_| Yes |The ID of the dataset (from any type of data source Database, Index View, or CSV files) where the row-level security will apply. <br/><br/> _String_ <br/>If dataset\_id is set to * (wildcard), the column and the values defined in the Record Filter Object will be used to filter the data in all datasets available. <br/><br/> _Array_ <br/> Set the same group of conditions for multiple datasets and avoid repeating the conditions for each dataset. <br/>**Note:** Make sure that the security columns are the same in all datasets, or the system will give an error.<br/> 
 | operator| _String_| No| Type of the logical operation on *record_permissions*. The available options are **AND, OR**.<br/><br/> Default: **AND**| 
 | record_permissions | _Array_| Yes | Each item in the collection contains a _Record Filter Object_.
 

@@ -265,7 +265,7 @@
              <a href="/docs/special-features/time-zone-support" target="_blank">Configuring Time Zone Settings<span>April 14, 2023</span></a> 
              <a href="/docs/embedding/widgets/app-building/widget-pixel-perfect-reports" target="_blank">Pixel-perfect Reports Widget <span>April 14, 2023</span></a>
              <a href="/docs/embedding/widgets/automation-widget" target="_blank">Automation Widget<span>April 14, 2023</span></a>
-             <a href="/docs/ui-docs/pixel-perfect-reports/filtering-data" target="_blank">Create a New Report<span>April 14, 2023</span></a> 
+             <a href="/docs/ui-docs/pixel-perfect-reports/create-a-new-report" target="_blank">Create a New Report<span>April 14, 2023</span></a> 
                  </div>
              </div>
            </div>
