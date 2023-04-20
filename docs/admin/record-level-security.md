@@ -212,7 +212,7 @@ In this section, the structure of the security token schema has been described.
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
-| version | _Number_| Yes |The version of the token structure. The current version is 2.0.0.| 
+| version | _Number_| Yes |The version of the token structure. The current version is 2.| 
 | user_id | _String_| Yes | User ID| 
 | appid | _String_ | Yes | The ID of the application you want to embed.| 
 | permissions| _Array_| Yes | Each item in the collection contains a _Permission Object_ | 
@@ -222,7 +222,7 @@ Permissions Object
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
-| dataset_id| _String_| No |The ID of the dataset (from any type of data source: Database, Index View, or CSV files) where the row-level security will apply. **If _dataset_id_ is set to * (wildcard), the column and the values defined in the** _Record Filter Object_ **will be used to filter the data in all datasets available.**
+| dataset_id| _String_ or _Array_| No |The ID of the dataset (from any type of data source Database, Index View, or CSV files) where the row-level security will apply. <br/><br/> _String_ <br/>If dataset_id is set to * ( wildcard), the column and the values defined in the Record Filter Object will be used to filter the data in all datasets available. <br/><br/>_Array_ <br/> Set the same group of conditions for multiple datasets and avoid repeating the conditions for each dataset. <br/>**Note:** Make sure that the security columns are the same in all datasets, or the system will give an error.<br/> 
 | operator| _String_| No| Type of the logical operation on *record_permissions*. The available options are **AND, OR**.<br/><br/> Default: **AND**| 
 | record_permissions | _Array_| Yes | Each item in the collection contains a _Record Filter Object_.
 
