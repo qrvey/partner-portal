@@ -77,7 +77,7 @@ The following is an example of a JSON object containing a user’s security perm
 
 ```JSON
 {
- "version": "2.0.0",
+ "version": "2",
    "userid": "userId",
    "appid": "appId",
    "permissions": [
@@ -140,7 +140,7 @@ var config = {
 };
 ```
 
->**Note**: While version 1.0.0 is supported for backward compatibility, it is strongly recommended that the version attribute be set to 2.0.0, starting with the 7.2 release. This setting provides support for large JWT, as well as complex logic in the creation of the token. The example above shows the configuration for a token that matches rows with the following pseudo code, as criteria: <br/>
+>**Note**: While version 1.0.0 is supported for backward compatibility, it is strongly recommended that the version attribute be set to 2, starting with the 7.2 release. This setting provides support for large JWT, as well as complex logic in the creation of the token. The example above shows the configuration for a token that matches rows with the following pseudo code, as criteria: <br/>
 `(Month(datasetId.MyDateSecurityName) between (June 2020 and December 2020)) OR (datasetId.MyCountrySecurityName Contains (“ina” or “col”)) OR (datasetId.MyNumericSecurityName > 1,000,000)`
 
 Once the token is part of the widget’s configuration object, it will contain the security token in every request’s header.
@@ -152,7 +152,7 @@ Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">A
 
 ```json
 {
-   "version": "2.0.0",
+   "version": "2",
    "userid": "userId",
    "appid": "appId",
    "permissions": [
