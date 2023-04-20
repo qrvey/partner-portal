@@ -11,7 +11,7 @@ sidebar_label: New Articles
 |[Configuring Time Zone Settings](../special-features/timezone-support.md)|8.1|All| April 14, 2023|
 |[Pixel-perfect Reports Widget](../embedding/widgets/app-building/pixel-perfect-reports.md)|8.1|All| April 14, 2023|
 |[Automation Widget](../embedding/widgets/automation-widget.md)|8.1|All| April 14, 2023|
-|[Create a New Report](../ui-docs/pixel-perfect-reports/filtering-data.md)|8.1|All| April 14, 2023|
+|[Create a New Report](../ui-docs/pixel-perfect-reports/create-a-new-report.md)|8.1|All| April 14, 2023|
 |[Publishing Reports](../ui-docs/pixel-perfect-reports/publishing-reports.md)|8.1|All| April 14, 2023|
 |[Working with Formulas](../ui-docs/pixel-perfect-reports/formulas.md)|8.1|All| April 14, 2023|
 |[Repeating Items Using Page Groups](../ui-docs/pixel-perfect-reports/page-groups.md)|8.1|All| April 14, 2023|
