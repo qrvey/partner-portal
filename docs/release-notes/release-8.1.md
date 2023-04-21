@@ -6,10 +6,9 @@ sidebar_label: Qrvey 8.1
 ---
 <div>
 
-Release Date: 2023-04-11
+Release Date: 2023-04-21
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
-
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../release-notes/upgrade-notes.md) document for important notes.
 
 Pixel-perfect Reporting is available in version 8.1! The feature is in beta and currently includes MVP-level capabilities. Future versions will include additional tools and  visualizations based on the feedback that we gather during the beta phase. This feature may be offered as a premium add-on to the Qrvey platform in the future.
 
