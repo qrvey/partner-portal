@@ -1,5 +1,5 @@
 ---
-id: upgrade-notes
+id: upgrade-notes8.0
 title: Upgrade Notes
 sidebar_label: Upgrade Notes
  
