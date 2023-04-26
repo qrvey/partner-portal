@@ -43,6 +43,11 @@ Add the following property to the JSON configuration object:
 | --- | --- | --- |
 | **offset** | Time zone offset used to display dates. Overrides the time zone setting in Admin Center. Possible values are: `default` to show dates in UTC-0, `browser` to use the setting in the user’s browser, or specify a fixed offset such as `+05:00` or `-03:00` | Yes |
 
+## To specify the time zone programmatically via API
+
+The Qrvey platform provides the following APIs to get and update the time zone settings. Click the links to view the API documentation:
+* [Get Time Zone Settings](https://qrvey.stoplight.io/docs/qrvey-api-doc/4045b9423953e-get-time-zone-settings) 
+* [Update Time Zone Settings](https://qrvey.stoplight.io/docs/qrvey-api-doc/99518be9162fb-update-time-zone-settings)
 
 
 </div>
