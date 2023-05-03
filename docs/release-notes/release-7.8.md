@@ -10,7 +10,7 @@ sidebar_label: Qrvey 7.8 (LTS)
 
 ## Qrvey 7.8.4
 
-Release Date: 2023-05-03
+Release Date: 2023-05-02
 
 ### New Features and Enhancements
 * Added support for Athena V3 when performing Data Source joins. 
