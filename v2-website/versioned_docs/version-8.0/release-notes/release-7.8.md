@@ -1,6 +1,6 @@
 ---
 id: release-7.8
-title: Qrvey 7.8.3 (LTS with the latest patch)
+title: Qrvey 7.8 (LTS)
 sidebar_label: Qrvey 7.8 (LTS)
  
 ---
