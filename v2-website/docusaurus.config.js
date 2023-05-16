@@ -162,7 +162,7 @@ module.exports = {
         {
           "type": 'doc',
           "position": 'right',
-          "docId": "video-training/building-qrvey-sample/multi-tenancy-architecture",
+          "docId": "video-training/videos-home",
           "label": "Videos"
         },
         {

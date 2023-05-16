@@ -1,7 +1,7 @@
 ---
-id: admin-accessing-admin-center
-title: Accessing Qrvey Admin Center
-sidebar_label: Accessing Qrvey Admin Center
+id: health-dashboard
+title: Health Dashboard
+sidebar_label: Health Dashboard
 ---
 
 <div style={{textAlign: "justify"}}>

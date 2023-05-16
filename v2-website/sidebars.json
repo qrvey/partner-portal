@@ -572,6 +572,10 @@
     },
     {
       "type": "doc",
+      "id": "admin/health-dashboard"
+    },
+    {
+      "type": "doc",
       "id": "admin/admin-managing-users"
     },
     {
@@ -935,6 +939,10 @@
     }
   ],
   "video-training": [
+    {
+      "type": "doc",
+      "id": "video-training/videos-home"
+    },
     {
       "type": "category",
       "label": "Short Training Videos",

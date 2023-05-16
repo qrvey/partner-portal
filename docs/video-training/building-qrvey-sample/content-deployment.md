@@ -2,7 +2,7 @@
 id: content-deployment
 title: Content Deployment
 sidebar_label: Content Deployment
-keywords:[Content,Deployment,Source,Target,Environment,Dev,QA,Staging,Production,Package,Server,Definition,Job,Release,Version,Dataset,Report,Page,Chart,Connection,Flow,Application,Update,Block,User,Activity,Log,Content,Parameter,Token,Asset,Baseline,Dependency]
+keywords: [Content,Deployment,Source,Target,Environment,Dev,QA,Staging,Production,Package,Server,Definition,Job,Release,Version,Dataset,Report,Page,Chart,Connection,Flow,Application,Update,Block,User,Activity,Log,Content,Parameter,Token,Asset,Baseline,Dependency]
 ---
 
 This video provides an in-depth overview of the Content Deployment feature in the Qrvey Admin Center. It provides an overview of each component of Content Deployment (Servers, Packages, Deployment Definitions and Deployment Jobs), and it demonstrates how to use these components to deploy content to a Qrvey instance. It also describes how to update existing content using the Content Deployment feature. 
