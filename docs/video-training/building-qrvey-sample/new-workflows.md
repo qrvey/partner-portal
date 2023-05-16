@@ -2,7 +2,10 @@
 id: new-workflows
 title: Workflows
 sidebar_label: Workflows
+keywords: [workflow,automation,flow,build]
 ---
+
+This video demonstrates how to use the Automation feature in Qrvey Composer to create a workflow. 
 
 <iframe src="//fast.wistia.net/embed/iframe/hkwe3j4krp?videoFoam=true"
 allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
