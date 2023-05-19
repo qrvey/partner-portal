@@ -6,7 +6,7 @@ sidebar_label: Managing Users of Qrvey Composer
 
 <div style={{textAlign: "justify"}}>
 
-The Qrvey Admin Center provides a enables you to create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
+The Qrvey Admin Center enables you to create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
 
 To open the User Management page, in Qrvey Admin Center, click the **User Management** icon in the left-hand navigation panel:<br />
 ![User Management Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-user-management.png)

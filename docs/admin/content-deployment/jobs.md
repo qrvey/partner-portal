@@ -6,56 +6,46 @@ sidebar_label: Deployment Jobs
 
 <div style={{textAlign: "justify"}}>
 
-Deployment Jobs consist of “blocks” of instructions, with each block configuring the deployment of **one Definition** to **any number of users** on **one destination Server**. That means that you can have one Deployment Job deploy multiple applications to as many users as necessary, on multiple environments. Jobs require at least one block to be considered complete.
+A Deployment Job executes the type of deployment specified by one or more deployment definitions against one or more target servers. Deployment jobs consist of “blocks” of instructions, with each block configuring the deployment of one deployment definition to any number of users on one destination server. That means that you can have one Deployment Job deploy multiple applications to as many users as necessary, on multiple environments. Deployment jobs require at least one block.
+  
 
-Access the **Deployment Jobs** page by clicking on the command from the top menu bar. All of the Deployment Jobs are listed in a table, along with their creation date, last run time, and status. You can open an existing Job to view, run, or modify it (if not run yet), from the **Edit** command on the three-dot menu. You can also delete an existing job from the same menu.
+## Before you begin
+* Verify that the desired deployment definition has been created. For more information, see [Deployment Definitions](../content-deployment/definitions.md). 
+* If you intend to give access to an application to all users from one organization, in the same environment, consider making the application public instead of deploying it to all users. This prevents the application from being replicated into copies of the original.
 
-To start the process of defining a new Deployment Job click on the **Create Job** button and give your Job any name and optional description. Choose a Deployment Definition, a destination Server, and any recipient users that you want to deploy the selected Definition to. You may select all users to receive the application in the Definition.
+## Create a deployment job
+1. In Qrvey Admin, click the Content Deployment icon in the left-side menu and display the **Deployment Jobs** tab. 
+2. Click **Create Job**. The Deployment Job Description page displays. 
+3. Enter a name and description in the fields provided.
+4. Click in the empty block. The block updates to display new fields related to the block. 
+5. For each block that you wish to add, perform the following:
+    * Click the **Select Definition** drop-down and select a deployment definition
+    * Click the **Server** drop-down and select the server to which to deploy. 
+    * Click the **Users** drop-down and select the users to receive the application. 
+  The page updates to display details of what is included in the deployment definition. 
+6. To view additional details, click the **Details** link. 
+7. Configure content tokens. See "Using content tokens" in [Deployment Definition](../content-deployment/definitions.md). 
+8. Configure parameter tokens. See "Using parameter tokens" in [Deployment Definition](../content-deployment/definitions.md).
+9. To add a new block, click Add Block and repeat the process described above.  
+  > **Note**: To deploy one application to several destination servers, create a block for each server. 
+10. To review the details of a section of the deployment definition, click its **Details** link. 
 
->**Note 1**: If you want to give access to an application to all users from one organization, in one environment, the better option may be making the application public, rather than deploying it to all users. It is important to note that the application will be replicated into copies of the original in the second case. 
-
->**Note 2**: If you would like to deploy one application to several destination Servers, you need to create several blocks for the Job, one for each Server.
-
-You can see the details of what is included in the Deployment Definition, by clicking on the **Details** link in the section that appears once the block information has been entered.
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job1.png#thumbnail)
-
-If any tokens have been used in the Definition - whether Parameter or Content - the token(s) have to be configured (their values have to be determined for all instances to be deployed) before the Job can be run. If present, these tokens will be listed under the **Definition Summary** section.
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job2.png#thumbnail)
-
-
-
-To configure the Content Tokens, which are automatically assigned to any object that has been selected to be updated, click on the **Configure** link to the right of each token to choose the matching object on the target instance. The product will offer the appropriate configuration dialog depending on the object that has to be picked. Also, if an object is required before the other objects can be configured, the **Configure** links for the later objects are disabled. If the job is only for deploying new content there will be no Content Tokens to configure.
-In the example used for this article (see the images), we are updating an application for two users. First, we have to decide which target application of each user is going to be updated. All of the other objects, such as the connections, datasets, etc. depend on the selected target application and have to be configured after the application token has been configured.
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job3.png#thumbnail-60)
-
-Configuring Parameter Tokens, which are user-defined parameters to replace the values of any selected properties, is quite similar to configuring the Content Tokens, except these values can be set in bulk for any number of users, if needed. To configure any Parameter Token click on the **Configure** link to the right of the token to open the configuration dialog. You may type the value of the parameter for each user next to their username. If you want to set it to the same value for multiple users, simply select those users, click on the **Bulk Edition** link on top, and enter the common value in the input box and apply your changes. You may repeat this process until the value of the parameter has been set for all of the users. 
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job4.png#thumbnail-60)
-
-
-Finally, you can review the values of all tokens that are set for each user by clicking the **Details** link to the right of each username, in the Users section of the page.
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/job5.png#thumbnail)
-
-You can add more blocks and repeat this process if you want to deploy multiple definitions or choose different destination servers for the deployment. 
-
-Once you are satisfied with your Job definition, you can choose to run it right away, by clicking on the **Deploy** button on the top right corner of the page or do that at a later time. When the Deploy button is clicked, the product suggests two options to handle failures:
-* You can choose to skip the installation for the user that the error happened to and continue the process for other users, if any. Or,
-* You can continue with the deployment, keeping the broken or faulty assets that were deployed.
-
-An example for when this might happen would be a case where the credentials provided for a database connection are wrong. The connection cannot be established and an internal error happens. If you keep the broken connection and keep installing all of the its dependencies, aka the datasets that rely on it, you can later go to the deployed app and correct the credentials and load the datasets, thereby easily fixing the error manually.  
-
-![deployment-jobs](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Jobs/deploy.png#thumbnail-60)
+## Run a deployment job
+1. In Qrvey Admin, click the **Content Deployment** icon in the left-side menu and display the **Deployment Jobs** tab. 
+2. Locate the job that you want to deploy in the list, click its three-dot menu, and click **Edit**. 
+3. Configure content tokens, if necessary. See "Using content tokens". 
+4. Configure parameter tokens, if necessary. See "Using parameter tokens".
+5. To review the details of a section of the deployment definition, click its **Details** link. 
+6. Click Deploy. A dialog displays providing options for handling failures. 
+7. Select one of the options provided, and then click **OK**:
+    * Skip the installation for the user that failed and continue installing the remaining users
+    * Deploy anyway for that user despite the broken or faulty assets
+  The deployment runs. 
+  > **Note**: You cannot modify a deployment job once it has been executed. 
 
 
-Note that a Deployment Job cannot be modified once it’s been deployed. 
-
-
->**Note**: You may continue your work in other parts of the product while a Job is running.
-
+## Delete a deployment job
+To delete an existing deployment job, click its corresponding three-dot menu in the deployment job list and click **Delete**. 
 
 
 

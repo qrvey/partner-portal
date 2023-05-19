@@ -19,11 +19,11 @@ Each new release of the Qrvey platform includes videos demonstrating new feature
 
 For reference, some recent releases include the following demos:
 
-### Version 8.1
+### [Version 8.1](../video-training/release/version-8.1.md)
 * Time Zone Offset
 * Pixel-perfect Report Builder
 
-### Version 8.0
+### [Version 8.0](../video-training/release/version-8.0.md)
 * Responsive Grid
 * Dashboard 2.0
 * Live Connections

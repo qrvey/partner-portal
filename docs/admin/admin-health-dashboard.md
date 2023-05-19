@@ -1,7 +1,7 @@
 ---
-id: admin-accessing-admin-center
-title: Accessing Qrvey Admin Center
-sidebar_label: Accessing Qrvey Admin Center
+id: health-dashboard
+title: Health Dashboard
+sidebar_label: Health Dashboard
 ---
 
 <div style={{textAlign: "justify"}}>
@@ -22,8 +22,8 @@ The Records Added section of the Health Dashboard provides information about the
 ## Elasticsearch
 The Elasticsearch section of the Health Dashboard provides basic information about the Elasticsearch cluster index, including space used, server type, and the overall health of the cluster.
 
-**See also**:
-[Infrastructure](../admin/elasticsearch-management.md)
+**See also**:  
+[Elasticsearch Management](../admin/elasticsearch-management.md)
 
 
 

@@ -6,58 +6,103 @@ sidebar_label: Deployment Definitions
 
 <div style={{textAlign: "justify"}}>
 
-A Deployment Definition is a set of instructions to create or update an application and does not contain any information about the destination(s) or recipient(s) of that application. One or more of these Definitions can be used later in a Deployment Job, to determine where and to whom the destination application is deployed. To create a new Deployment Definition, click on the **Create Definition** button. 
+A Deployment Definition is a set of instructions for a deployment job. It defines the package version to use, which content from the package to include, and whether any of the content has to be modified during deployment. You can configure the deployment definition to create a new application or to update an existing application.  
 
-The options vary depending on whether you intend to create a new application or update an existing application. 
+The deployment definition does not specify the target application. That information is in the deployment job. This separation enables you to use one deployment definition to update multiple target applications for any number of users. To take advantage of this capability, you must use parameter tokens, described next. 
 
-## Definition for Creating a New Application
-In the Deployment Definitions tab, click the **Create Definition** button. The Deployment Definition Description page displays. At the top of the page, enter a name and description in the fields provided.
+## Using Parameter Tokens
+In some cases, you may want to copy the same application to multiple instances but with different options. For example, you may want to have different connection strings in each destination application, depending on the recipient user or tenant. Qrvey supports user-defined variables called Parameter Tokens for this situation.
+
+Parameter tokens are user-defined parameters that can replace any value and be configured for each recipient at the time of creating the deployment job. Parameter tokens use the following syntax: 
+
+```{{tokenName}}```
+
+You can replace any value with a parameter token by typing your own token name inside two curly brackets. Note that as soon as you type in the first curly bracket the system will suggest a few names for the token, based on the context that you are in. These names are just suggestions and can be changed to any name that you prefer. For example, if the source application uses a connection to a database that is used for development and testing, and the copied destinations applications have to be each connected to a different production database, you can replace the host URL of the source application with a Parameter Token like `{{hostURL}}`. You may also accept one of the suggested token names, such as `{{connection.host_url}}`. The same process can be repeated to set the username and password of the connection to a token. 
+
+### Parameter token example
+In this example, we want to deploy an application that was created in a staging environment into several tenant accounts in a production environment. The source application is connected to a sample database that is used for development purposes, but each destination environment has its own database. To achieve this goal, replace the following attributes of the database connection with parameter tokens, such as:
+* Host URL: `{{host-url}}`
+* User Name: `{{db-username}}`
+* Password: `{{prodPassword}}` 
+
+Later, when this deployment definition is used in a deployment job, the deployment job will resolve the appropriate values for each token and create the database connections. 
+
+### Configure parameter tokens
+1. In the deployment job, display the Deployment Definition Summary section. 
+2. Locate the parameter token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
+3. Enter a value for each parameter token. To use the same value for multiple users, select those users, click the **Bulk Edit** link, and enter the common value in the box provided. 
+4. When finished, click **OK**. 
+5. To review the details for a user, click its **Details** link. 
+
+## Using Content Tokens
+Content Tokens are system-generated parameters that are automatically created for values that need to be resolved for each recipient. They are created in deployment definitions, and they are resolved when a deployment job runs. Just like Parameter Tokens, these tokens are formatted like `{{token}}`. However, these tokens are assigned by the system and apply to objects, rather than values. In other words, they identify things like “application” and “connection”, rather than “application name” and “connection’s username”.
+
+For example, if a deployment definition is created to update an application, the system assigns the application the content token, `{{ user.application }}`. Later, in the deployment job, if multiple users are picked as recipients of the deployed application, the system resolves the content token for each user. This enables the deployment job to update the application for each of the recipient users.
+
+After determining which target application of each user is going to be updated, all of the other objects which depend on the selected target application, such as the connections, datasets, etc., have to be configured.
+
+### Configure content tokens
+1. In the deployment job, display the Deployment Definition Summary section. 
+2. Locate the content token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
+  > **Note**: If a Configuration link is disabled, one or more of its prerequisite content tokens has not been configured yet. 
+  > **Note**: If a deployment job only deploys new content, there are no content tokens to configure. 
+3. Configure the destination content using the options provided. 
+4. When finished, click **OK**.
+
+## Create a Deployment Definition
+
+### Before you begin
+Verify that the desired package version has been created. For more information, see [Packages](../content-deployment/packages-and-versions.md). 
+
+### Create a deployment definition that creates a new application
+1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
+2. Click **Create Definition**. The Deployment Definition Description page displays. 
+3. At the top of the page, enter a name and description in the fields provided.
+4. Click the **Package** drop-down and select the package to use in this deployment. 
+5. Click the **Package Version** drop-down and select the package version to deploy. 
+6. Select the content to deploy:
+    * Click **Select Content**. The Select Content dialog displays. 
+    * Select the individual items to include in the deployment. To include all the content in the application, select **Baseline (all content)**. 
+    * Click **OK**. The page updates with the dependencies of each of your selections. 
+    >**NOTE**: If you select content that has dependencies, the system automatically includes them in the deployment. For example, if you select a dashboard, but you do not select the datasets that power the charts on that dashboard, the system will automatically include that dataset.  
+7. (Optional) If you intend to use APIs for Content Deployment, select **Show Content ID**. You will need this information to call the API.
+8. Leave **Create New Application** selected. 
+9. Enter a name in the **New Application Name** field. 
+10. (Optional) Enter a description in the **Application Description** field. 
+11. Expand the selections to reveal all their properties. Modify the selections as needed. 
+12. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
+13. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
 
-![Deployment Definitions page](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/deployment-definition-01-81.png)
-
-If using a Package for the definition, pick the **Package** and the desired **Package Version** from the dropdown lists. At this point, the application asks you if you want to use your entered name and description, or prefer to use the name and description from the selected Version. Pick the option that you like. 
-Click on the **Select Content** button to choose the content that you want to include in the Definition. You can select **Baseline** to include all the content in the application, or select individual charts, dashboards, datasets or other content. 
-
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide6.png#thumbnail-40)
-
-
-Once done, click **OK** and the product will populate each of the sections under Package with your selected content, for further, optional customization. All of the dependencies of your selections will also be included to ensure the proper outcome. Each of the sections can be expanded to reveal all of their properties, which can be customized to match your needs. For example, a connection’s host, name, and credentials can be changed to that of your intended deployment location. Page name has been changed in the image below.
-
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide7.png#thumbnail)
-
-Occasionally, when support for new types of connections is added to the product, it may take a few additional weeks for the Content Deployment process to catch up and fully support those new connection types. In such a case the connections will show an “unknown” label next to their names in the content dialog and the options to customize their configuration will be somewhat limited. However, they will still be deployed, set up and used properly. 
-
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/select-content.png#thumbnail-40)
-
-Datasets have an additional switch that allows you to choose if you want the data to be loaded, too, or the dataset to be created and not loaded. The default value for new datasets is to load data. Definitions are auto-saved and can be used in a Deployment Job immediately, or at a later time.
-
-
->**Note**: The checkbox to **Show Content ID** is there to help developers who may want to use APIs to create Deployment Jobs, find those items easily.
-
-### Using Parameter Tokens to Create Different Deployed Outcome
-Depending on the objectives of your deployment effort there may be occasions when you wish to copy the same application to multiple instances where some of the options of the destination apps differ from each other. One common example is when you want to have different connection strings in each destination application, depending on the recipient user or tenant. 
-Qrvey supports the use of user-defined variables called **Parameter Tokens** for this use case. 
-
->**Definition: Parameter Tokens** are user-defined parameters that can replace any value and be configured for each recipient at the time of creating the Deployment Job. Parameter Tokens have the syntax of {{tokenName}}. 
-
-You can replace any value with a Parameter Token by typing your own token name inside two curly brackets. Note that as soon as you type in the first curly bracket the system will suggest a few names for the token, based on the context that you are in. These names are just suggestions and can be changed to any name that you prefer. For example, if the source app uses a connection to a database that is used for development and testing, and the copied destinations apps have to be each connected to a different production database, you can replace the host URL of the source application with a Parameter Token like {{hostURL}}. You may also accept one of the suggested token names, such as {{connection.host_url}}. The same process can be repeated to set the username and password of the connection to a token. We will discuss how the replacements for these tokens will be configured in the Deployment Jobs section. 
-
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide8.png#thumbnail)
-
-## Definition for Updating an Existing Application
-You may need to update an existing application to either add new content or change some content that was previously deployed. In order to create such a Definition, select the option to **Update an Existing Application**, and then select the desired package and version that you want to use for the update from the **Package** and **Package Version** dropdown lists, respectively. If you wish to update the application name and/or description, you have to check the desired option(s) from the dropdown list labeled **Select Fields to Update**. 
-
-![Deployment Definitions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content-Deployment/Definitions/deployment-definition-02-81.png)
-
-Click on the **Select Content** button to see the content of the version that you have selected. You can optionally choose any of the other versions of the same Package from the **Compare to** dropdown to find the differences between the two versions. If the destination application or applications have been created from a Version of a Package, this can help in deciding what content needs to be added or updated. 
-
- ![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide10.png#thumbnail-40)
+ 
+### Create a deployment definition that updates an existing application
+1. In Qrvey Admin, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
+2. Click **Create Definition**. The Deployment Definition Description page displays. 
+3. At the top of the page, enter a name and description in the fields provided.
+4. Click the **Package** drop-down and select the package to use in this deployment. 
+5. Click the **Package Version** drop-down and select the package version to deploy. 
+6. Select the content to deploy:
+    * Click **Select Content**. The Select Content dialog displays. 
+    * Select the individual items to including in the deployment. To include all the content in the application, select **Baseline (all content)**. 
+    * Click **OK**. The page updates with the dependencies of each of your selections.
+7. (Optional) If you intend to use APIs for Content Deployment, select **Show Content ID**. You will need this information to call the API.
+8. Select **Update an Existing Application**. The page updates to display the Select Fields to Update field. 
+9. Click the Select Fields to Update drop-down and select one of the following options:
+    * **Select All**
+    * **Application Name**. If selected, a field displays for you to enter a name. 
+    * **Application Description**. If selected, a field displays for you to enter a description. 
+10. Expand the selections to reveal all their properties. Modify the selections as needed. 
+11. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
+12. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
 
-Once you have selected the content that you want to update click the **OK** button and the product will populate each of the sections under Package with your selected content for further, optional customization. All of the dependencies of your selections will also be included to ensure proper outcome. Each of the sections can be expanded to reveal all of their properties, which can be customized to match your needs. 
+>**Note**: An `unknown` label may indicate a new connection type that has not yet been updated in the Content Deployment interface. The new connection type will still be deployed, set up, and used properly.   
 
-Note that in creating a Definition, you don’t pick a specific application to update. That decision is made in the Deployment Job. The reason for this is that you may use one Definition to update multiple destination applications for any number of users. In order to facilitate this option all pieces of content, starting from the application itself, are assigned an automatic **Content Token** that they are identified with. Just like Parameter Tokens, these tokens are formatted like {{token}}. However, these tokens are assigned by the system and apply to objects, rather than values. In other words, they identify things like “application” and “connection”, rather than “application name and “connection’s username”. We will discuss how the replacements for these tokens will be configured in the Deployment Jobs section. 
+
+
+### Delete a deployment definition
+To delete an existing deployment definition from the list, click its corresponding three-dot menu in the list and click **Delete**. Note that you cannot delete a deployment definition if it is associated with a deployment job. 
+
 
 
 </div>
