@@ -6,25 +6,44 @@ sidebar_label: Packages and Versions
 
 <div style={{textAlign: "justify"}}>
 
+A package enables you to create a snapshot of a selected application with all of its content and dependencies. Each snapshot is called a “version”. You can use the same package to create subsequent versions. This enables you to create different versions of this snapshot over time, as the source application changes.
 
-Packages consist of one or more snapshots of any application that have been taken at any given time. Each snapshot is called a “Version”.
-Click on the **Packages** link on the navigation bar to see a list of the existing Deployment Packages, their creation and update dates, and their status. A Package remains in Draft status while the provided information is incomplete.
+Packages and versions give you the ability to “back up” source applications, which you can deploy at a later time - even if the source application has been changed or even removed. 
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide3.png#thumbnail-60)
+> **Note**: Packages include all of the objects contained within its source application, but they do not contain the actual data associated with any datasets from the source application.  Rather, the data is loaded when the objects are deployed to the target application, after the deployment job completes. 
 
-
-An existing Package can be selected and modified by clicking on its name or from the **Edit** command in the three-dot menu. It can also be deleted from the **Delete** command on the same menu. If the package has been used in a Deployment Definition, it can no longer be deleted, unless the Deployment Definition is deleted first.
+## Before you begin
+Verify that the desired source and target server connections have been created. For more information, see [Servers](../content-deployment/servers.md).
  
-Click on the **Create Package** button to start creating one. Pick the server where the intended source application resides, from the list of created servers. This filters down the list of users to those that have a Creator account on the server. 
+## Create a package
+1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the **Packages** tab. 
+2. Click **Create Package**. The Package Description page displays. 
+3. Enter a package name and description in the fields provided. 
+4. Under Content Source, click the **Server** drop-down and select the server to use as the source. 
+5. Click the **User** drop-down and select the User that owns the application you wish to include in the package. This list contains only the users with Composer rights on the server. 
+6. Click the **Source Application** drop-down and select the application you wish to include in the package. The list of applications available is filtered based on the user you selected previously. The Create New Version button activates, and you may now create a new version. 
 
-Choose the user that owns the application that you wish to create a snapshot from. This filters down the list of applications to those that belong to the selected user.
+## Edit a package
+To edit the details of an existing package, click its corresponding three-dot menu in the package list and click **Edit**. 
 
-Picking the application from the **Source Application** dropdown list enables the **Create New Version** button, which in turn takes a snapshot of the selected application and lets you name the version. This may take some time, depending on the size of the selected application, but you can continue working in the application as the process runs.
+## Delete a package
+To delete an existing package, click its corresponding three-dot menu in the package list and click **Delete**. 
 
-You can give your Package any name and description that helps you find it later. Versions can be deleted and their names can be changed from the three-dot menu. If a Version has been used in a Deployment Definition, it cannot be deleted unless the Deployment Definition is deleted first.
+>**Note**: You cannot delete a package if a deployment definition is associated with the package.
 
-![content_deploy_guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/cd_guide4.png#thumbnail)
+## Create a new version
+1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the **Packages** tab. 
+2. In the list of available packages, select the desired package. The Package Description page displays.  
+3. Click **Create New Version**. The Package Version dialog displays. 
+4. Enter a version name in the field provided, and click **OK**. A new version of the package is created and displays in the Package Versions list. 
 
-Once a Version has been created, the next step in deploying content is to create a [Deployment Definition](../content-deployment/definitions.md).
+## Edit a version
+To edit the name of an existing version, click it’s three-dot menu in the version list and click **Edit**. 
+
+## Delete a version
+To delete an existing version, click it’s three-dot menu in the version list and click **Delete**. 
+
+>**Note**: You cannot delete a version if a deployment definition is associated with the version.
+
 
 </div>
