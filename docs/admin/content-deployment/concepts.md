@@ -12,7 +12,7 @@ Content Deployment is the process of copying content from one application to ano
 * Releasing the new additions to a baseline application to multiple tenants of the system.
 * Provisioning a copy of a baseline application to multiple tenants of the system.
 
-To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane: 
+To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane:  
 ![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-content-deployment.png)
 
 Content Deployment requires you to configure four steps:
