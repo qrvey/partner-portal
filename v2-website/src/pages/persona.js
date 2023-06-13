@@ -2,7 +2,7 @@ const React = require('react');
 
 import Layout from "@theme/Layout";
 
-class SupportPage extends React.Component {
+class Persona extends React.Component {
 
     render() {
 
@@ -77,4 +77,4 @@ class SupportPage extends React.Component {
     }
   }
 
-export default props => <Layout><SupportPage {...props} /></Layout>;
+export default props => <Layout><Persona {...props} /></Layout>;

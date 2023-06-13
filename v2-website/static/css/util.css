@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Hellix;
+    src: url(./font/Hellix-Regular.woff);
+  }
+
 :root{
-    --primary-font:'Montserrat', sans-serif;
+    --primary-font: Hellix, sans-serif;
     --primary-color: #FF5400;
 }
 body {

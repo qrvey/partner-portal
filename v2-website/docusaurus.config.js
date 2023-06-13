@@ -95,11 +95,20 @@ module.exports = {
         searchResultLimits: 50,
         searchResultContextMaxLength: 200,
         explicitSearchResultPath: true,
-        highlightSearchTermsOnTargetPage: true
+        highlightSearchTermsOnTargetPage: true,
+        searchBarShortcut: false
       },
     ],
   ],
   "themeConfig": {
+    "home": {
+      "navbar": {
+        "logo": {
+          "src": "img/banne_home.png",
+          "alt": ''
+        }
+    }
+  },
     "colorMode": {
       "defaultMode": 'light',
       "disableSwitch": true,
@@ -112,11 +121,6 @@ module.exports = {
         "alt": ''
       },
       "items": [
-        {
-          "type": 'docsVersionDropdown',
-          "position": 'right',
-          "dropdownActiveClassDisabled": true,
-        },
         {
           "type": 'dropdown',
           "label": "Docs",
@@ -171,6 +175,11 @@ module.exports = {
           "label": "FAQS",
           "position": "right"
         },
+        {
+          "type": 'docsVersionDropdown',
+          "position": 'right',
+          "dropdownActiveClassDisabled": true,
+        }
       ]
     },
     "image": "img/Qrvey.png",

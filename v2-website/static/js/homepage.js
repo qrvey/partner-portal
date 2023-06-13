@@ -93,12 +93,16 @@ function fetchPopularArticles() {
         let popularPagesHTMl = ``;
         popularPages.splice(0, 9).forEach(
             value => {
-                popularPagesHTMl += `<a class="side-right-nav-container-popular-item" href=${value.link.replace('/docs/docs', '/docs')}>
-                                    ${value.title} (${value.visited})
-                                </a>`;
+                popularPagesHTMl += `<div className="popular-articles-list-item" style="border: 1px solid #C0C0C0;border-radius: 10px;padding: 20px;margin-bottom:30px;">
+                <div className="popular-articles-list-item-header" style="display: flex;justify-content: space-between;">
+                  <p><b>${value.title}</b></p>
+                  <span style="color: #7D7D7D">${value.visited} Views</span>
+                </div>
+                <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>Read more →</b></a>
+               </div>`;
             }
         );
-        const sidenavHTML = document.querySelector(`.side-right-nav-container-popular`);
+        const sidenavHTML = document.querySelector(`.popular-articles-list-home`);
         sidenavHTML.insertAdjacentHTML(`beforeend`, popularPagesHTMl);
     })
     .catch(error => console.log('error', error));
