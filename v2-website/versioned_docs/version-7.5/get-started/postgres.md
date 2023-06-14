@@ -21,9 +21,17 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>a. Using Postgres query tool, send the following psql command.</li>
 </ul>
 
+<ul style={{listStyle: 'none', marginLeft: '50px'}}>
+<li>
+
 `CREATE EXTENSION aws_s3 CASCADE;`
 
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+</li>
+</ul>
+
+
+
+<ul style={{listStyle: 'none', marginLeft: '50px'}}>
 <li>b. Grant access to queries used for monitoring and canceling other queries, replacing “myUser” with the Postgres Username which will be used for Qrvey Postgres Connections.</li>
 
 `GRANT SELECT ON pg_stat_activityTO myUser;`
@@ -63,7 +71,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 }
 ```
 
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<ul style={{listStyle: 'none', marginLeft: '60px'}}>
 <li>h. Click <b>Next: Tags</b>.</li>
 <li>i. Click <b>Next: Review</b>.</li>
 <li>j. Name the new Policy.  For example: `PostgresDataAccessPolicy`.</li>
@@ -105,7 +113,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
     }  ]
 }
 ```
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<ul style={{listStyle: 'none', marginLeft: '50px'}}>
 <li>g. Click <b>Update Trust Policy</b>.</li>
 </ul>
 
@@ -131,7 +139,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
     }
 }
 ```
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<ul style={{listStyle: 'none', marginLeft: '60px'}}>
 <li>h. Click <b>Review policy</b>.</li>
 <li>i. Name the policy.  For example: `PostgresDataAccessAssumeRole`.</li>
 <li>j. Click <b>Create Policy</b>.  See that the new policy has been added.</li>
