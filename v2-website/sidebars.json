@@ -65,6 +65,10 @@
         {
           "type": "doc",
           "id": "get-started/snowflake-connections"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/postgres-connections"
         }
       ]
     },
@@ -445,6 +449,10 @@
         {
           "type": "doc",
           "id": "ui-docs/dataviews/chart-types/word-cloud"
+        },
+        {
+          "type": "doc",
+          "id": "ui-docs/dataviews/chart-types/box-and-whisker-charts"
         }
       ]
     },

@@ -65,6 +65,10 @@
         {
           "type": "doc",
           "id": "get-started/snowflake-connections"
+        },
+        {
+          "type": "doc",
+          "id": "get-started/postgres-connections"
         }
       ]
     },

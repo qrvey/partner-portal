@@ -99,6 +99,13 @@ To create a Geolocation Group you have to map your address data column or column
 
 You can give your geolocation group a name to identify it with.
 
+## Optimizing the Live Connect Configuration
+
+The performance of your live connection may vary depending on the size of the dataset and the size of the database cluster. Performance issues may occur if the database cluster is not sized appropriately for the dataset. Qrvey recommends that your live connect data source returns results in under 30 seconds to prevent timeout errors. To ensure optimal performance, scale the infrastructure of your live connect data source by:
+- Loading a smaller dataset, if possible
+- Increasing the database cluster
+- Increasing the query timeout of your database engine 
+
 
 
 </div>
