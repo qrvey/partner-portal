@@ -101,92 +101,11 @@
        return (
          <div className="mainContainer">
            <div className="wrapper vertical-align">
-             <div className="select-role">
-               <h2>
-                 <b>Select your role</b>
+             <div className="select-role" >
+               <h2 style={{fontSize:'30px'}}>
+                 <b>Popular Articles</b>
                </h2>
-               <Tabs className="select-role--linkscont">
-                 <TabList>
-                   <Tab className="select-role--links">
-                     Platform Administrators
-                   </Tab>
-                   <Tab className="select-role--links">CloudOps Engineers</Tab>
-                   <Tab className="select-role--links">Data Analysts</Tab>
-                   <Tab className="select-role--links">Software Developers</Tab>
-                 </TabList>
-                 <TabPanel>
-                 <div className="howtouserol">
-                   <div className="howtouserol--infocont">
-                     <div className="howtouserol--info">
-                       <p className="howtouserol--infotext">
-                       <b>Platform Administrators</b> use Admin Center to manage the infrastructure, users, and content, as well as  configure Qrvey Composer.
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="listrole-links">
-                    <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
-                    <a href="docs/admin/admin-sections-platform">Administering Qrvey Composer</a>
-                    <a href="docs/admin/roles-and-permissions">Roles & Permissions</a>
-                    <a href="docs/get-started/authentication">Authentication</a>
-                    <a href="docs/admin/content-deployment/concepts">Content Deployment Concepts</a>
-                 </div>
-                 </TabPanel>
-                 <TabPanel>
-                 <div className="howtouserol">
-                   <div className="howtouserol--infocont">
-                     <div className="howtouserol--info">
-                       <p className="howtouserol--infotext">
-                       <b>CloudOps Engineers</b> are in charge of setting up, upgrading, and monitoring instances of the Qrvey platform.
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="listrole-links">
-                    <a href="docs/get-started/prerequisites-for-installation">Prerequisites for Installation</a>
-                    <a href="docs/get-started/preparing-AWS-account">Preparing Your AWS Account</a>
-                    <a href="docs/get-started/deploying-aws/initial-installation">Initial Installation</a>
-                    <a href="docs/get-started/customizing-qrvey-deployment">Customizing Qrvey Deployment</a>
-                    <a href="docs/get-started/managing-aws-cluster">Cluster Management</a>
-                 </div>
-                 </TabPanel>
-                 <TabPanel>
-                 <div className="howtouserol">
-                   <div className="howtouserol--infocont">
-                     <div className="howtouserol--info">
-                       <p className="howtouserol--infotext">
-                       <b>Data Analysts</b> Work in Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="listrole-links">
-                    <a href="docs/ui-docs/basics/introduction">Introduction to the UI</a>
-                    <a href="docs/ui-docs/basics/applications">What is a Qrvey Application?</a>
-                    <a href="docs/ui-docs/datasets">Creating Datasets</a>
-                    <a href="docs/ui-docs/builders/pages">Page Builder</a>
-                    <a href="docs/ui-docs/chart-builder/chart-builder-overview">Chart Builder</a>
-                 </div>
-                 </TabPanel>
-                 <TabPanel>
-                 <div className="howtouserol">
-                   <div className="howtouserol--infocont">
-                     <div className="howtouserol--info">
-                       <p className="howtouserol--infotext">
-                       <b>Software Developers</b> embed the needed Qrvey widgets in their host applications and may use Qrvey APIs to achieve desired goals.
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-                 <div className="listrole-links">
-                    <a href="docs/get-started/get-started-architecture">Architectural Overview</a>
-                    <a href="docs/get-started/authentication">Authentication</a>
-                    <a href="docs/embedding/api/api-intro">API Start Guide</a>
-                    <a href="https://tinyurl.com/atuznk6u">API Reference</a>
-                    <a href="docs/embedding/widgets/widget-intro">Embedding Widgets Quick Start</a>
-                 </div>
-                 </TabPanel>
-               </Tabs>
+               <div className="popular-articles-list-home"></div>
              </div>
            </div>
          </div>
@@ -202,91 +121,43 @@
      );
  
      const TopFold = () => (
-       <div className="mainContainer">
+       <div className="mainContainer main-index-container">
          <div className="wrapper vertical-align">
-           <div className="howtousesite">
-             <h2>
-               <b>How to Use This Site</b>
-             </h2>
-             <div className="howtousesite--infocont">
-               <div className="howtousesite--info">
-                 <div className="howtousesite--infonumbercont">
-                 <div className="howtousesite--infonumber">1</div>
-                 <b>Choose your role</b>
-                 </div>
-                 <p className="howtousesite--infotext">
-                   Find your target persona. Qrvey provides tailored learning
-                   tracks for Platform Administrators, Software Developers, Data
-                   Analysts and CloudOps professionals. Quickly find the
-                   resources that are most relevant to your job function.{" "}
-                 </p>
-               </div>
-               <div className="howtousesite--info">
-               <div className="howtousesite--infonumbercont">
-                 <div className="howtousesite--infonumber">2</div>
-                 <b>Explore the content</b>
-                 </div>
-                 <p className="howtousesite--infotext">
-                   Explore the list of curated articles and training videos for
-                   your target persona. Accelerate your implementation with
-                   sample integrations and code snippets. Quickly find answers to
-                   your specific questions and challenges with the portal search
-                   engine.
-                 </p>
-               </div>
-               <div className="howtousesite--info">
-               <div className="howtousesite--infonumbercont">
-                 <div className="howtousesite--infonumber">3</div>
-                 <b>Participate & interact</b>
-                 </div>
-                 <p className="howtousesite--infotext">
-                   Be an active member of the Qrvey community. Ask questions.
-                   Share your feedback. Check back often for updates and new
-                   content.
-                 </p>
-               </div>
-             </div>
+         <div className="howtousethissite-wrapper">
+          <div className="howtousethissite-infocont">
+            <div className="howtousethissite-info"></div>
+          <h1>
+            How to Use This Site
+          </h1>
+          </div>
+          <p>
+          Find your target persona. Qrvey provides tailored learning tracks for Platform Administrators, Software Developers, Data Analysts and CloudOps professionals. Quickly find the resources that are most relevant to your job function.
+          </p>
+        </div>
+           <div className="persona-cont">
+           <div className="persona-box">
+            <div className="solution image">
+            </div>
+            <h3><b>Solution Architects</b></h3>
+            <p>Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.</p>
            </div>
-           <div className="newandupdate-cont">
-           <div className="newarticles-cont">
-             <div className="newarticle-header">
-             <h3>
-               <b>New Articles</b>
-             </h3>
-             <div className="seeall-link" href="docs/release-notes/new-articles">
-             <b><a href="docs/release-notes/new-articles">See All</a></b>
-             </div>
-             </div>
-             <div className="articles--infocont">
-             <div className="listarticles-links">
-
-              
-             <a href="/docs/admin/admin-accessing-admin-center" target="_blank">Accessing Qrvey Admin Center<span>April 14, 2023</span></a>
-             <a href="/docs/special-features/time-zone-support" target="_blank">Configuring Time Zone Settings<span>April 14, 2023</span></a> 
-             <a href="/docs/embedding/widgets/app-building/widget-pixel-perfect-reports" target="_blank">Pixel-perfect Reports Widget <span>April 14, 2023</span></a>
-             <a href="/docs/embedding/widgets/automation-widget" target="_blank">Automation Widget<span>April 14, 2023</span></a>
-             <a href="/docs/ui-docs/pixel-perfect-reports/create-a-new-report" target="_blank">Create a New Report<span>April 14, 2023</span></a> 
-                 </div>
-             </div>
+           <div className="persona-box">
+            <div className="data image">
+            </div>
+            <h3><b>Data Analysts</b></h3>
+            <p>Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.</p>
            </div>
-           <div className="updatearticles-cont">
-           <div className="updatearticle-header">
-           <h3>
-               <b>Updated Articles</b>
-             </h3>
-             <div className="seeall-link">
-                  <b><a href="docs/release-notes/updated-articles">See All</a></b>
-             </div>
-             </div>
-             <div className="articles--infocont">
-             <div className="listarticles-links">
-             <a href="/docs/embedding/api/api-tutorial" target="_blank">Qrvey API Tutorial<span>April 14, 2023</span></a> 
-             <a href="/docs/admin/content-deployment/definitions" target="_blank">Deployment Definitions<span>April 14, 2023</span></a> 
-              <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration" target="_blank">API Reference<span>April 14, 2023</span></a> 
-             <a href="/docs/ui-docs/dataviews/exporting" target="_blank">Exporting Data<span>April 14, 2023</span></a> 
-              <a href="/docs/ui-docs/chart-builder/setting-chart-styles" target="_blank">Setting Chart Colors and Themes<span>April 14, 2023</span></a> 
-                 </div>
-             </div>
+           <div className="persona-box">
+            <div className="software image">
+            </div>
+            <h3><b>Software Developers</b></h3>
+            <p>Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.</p>
+           </div>
+           <div className="persona-box">
+            <div className="cloud image">
+            </div>
+            <h3><b>CloudOps Engineers</b></h3>
+            <p>CloudOps Engineers are AWS ninjas that deploy, upgrade, and monitor the instances of the Qrvey platform.</p>
            </div>
            </div>
          </div>
@@ -337,7 +208,7 @@
  
      return (
        <div className="gray-background" id="home-page">
-         <div>
+         <div style={{width:'100%'}}>
          <TopFold />
          {
            //<SplashContainer siteConfig={siteConfig} language={language} />
@@ -347,11 +218,6 @@
              <Category />
            </div>
          </div>
-         </div>
-         <div className="mainContainer" id="sidebar">
-           <div className="wrapper setsidebar">
-             <SidRightNav />
-           </div>
          </div>
          {this.props.config.homepagescripts &&
            this.props.config.homepagescripts.map((source, idx) => {

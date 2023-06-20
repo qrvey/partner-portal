@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Hellix;
+    src: url(./font/Hellix-Regular.woff);
+  }
+
 
 /* your custom css */
 :root {
@@ -121,6 +126,8 @@
     display: block;
     padding: 10px 0;
 }
+
+
 
 .side-right-nav-container-popular-item:hover{
     color: var(--primary-color);
@@ -484,7 +491,7 @@ html[data-theme='light'] .DocSearch {
   }
 
   :root{
-    --primary-font:'Montserrat', sans-serif;
+    --primary-font: Hellix, sans-serif;
     --primary-color: #FF5400;
 }
 .center {
