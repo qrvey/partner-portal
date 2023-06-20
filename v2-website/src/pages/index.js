@@ -123,6 +123,17 @@
      const TopFold = () => (
        <div className="mainContainer main-index-container">
          <div className="wrapper vertical-align">
+         <div className="howtousethissite-wrapper">
+          <div className="howtousethissite-infocont">
+            <div className="howtousethissite-info"></div>
+          <h1>
+            How to Use This Site
+          </h1>
+          </div>
+          <p>
+          Find your target persona. Qrvey provides tailored learning tracks for Platform Administrators, Software Developers, Data Analysts and CloudOps professionals. Quickly find the resources that are most relevant to your job function.
+          </p>
+        </div>
            <div className="persona-cont">
            <div className="persona-box">
             <div className="solution image">

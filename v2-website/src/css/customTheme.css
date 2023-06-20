@@ -50,6 +50,49 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
     color: #000000 !important;
 }
 
+.breadcrumbsContainer_Z_bl {
+  margin-bottom: 65px !important;
+}
+
+  .tag_QGVx a{
+  background: rgba(255, 83, 0, 0.2);
+    border-radius: 100px !important;
+    color: #000000 !important;
+}
+
+  .tag_QGVx a:hover {
+    border-color: var(--primary-color);
+    color: #000000 !important;
+}
+
+.howtousethissite-wrapper {
+  color: white;
+  top: 50px;
+  width: calc(50% - 150px);
+  position: relative;
+  top: 150px;
+  left: 80px;
+}
+
+.howtousethissite-wrapper h1 {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.howtousethissite-infocont {
+  display: flex;
+  align-self: center;
+}
+
+.howtousethissite-info {
+  background-image: url("../../static/img/how-info.svg");
+  width: 30px;
+  height: 40px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .theme-doc-footer-tags-row .col b::after {
   content: "This article is recomended to :" !important;
   background-color: white;
@@ -675,7 +718,7 @@ font-weight: 400;
 
 .select-role {
   margin-left: 82px;
-  margin-top: 150px;
+  margin-top: 300px;
   top: 50px;
   left: 80px;
   width: calc(100% - 150px);
