@@ -17,7 +17,7 @@
   --primary-color: #FF5400;
   --ifm-transition-fast: 200ms;
 --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg alt="Arrow" xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.5)" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
-
+--ifm-navbar-search-input-icon: url('../../static/img/search-icon.svg');
 }
 
 body, h1, h2, h3, h4, h5 {
@@ -26,9 +26,37 @@ body, h1, h2, h3, h4, h5 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.docusaurus-mt-lg {
+.docusaurus-mt-lg .theme-doc-footer-edit-meta-row, .pagination-nav {
   display: none;
 }
+
+.theme-doc-footer-tags-row {
+  position: absolute;
+  top: 125px;
+}
+
+nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocBreadcrumbs-styles-module {
+  margin-bottom: 65px;
+}
+
+.tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
+  background: rgba(255, 83, 0, 0.2);
+    border-radius: 100px !important;
+    color: #000000 !important;
+}
+
+.tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module:hover {
+    border-color: var(--primary-color);
+    color: #000000 !important;
+}
+
+.theme-doc-footer-tags-row .col b::after {
+  content: "This article is recomended to :" !important;
+  background-color: white;
+  margin-left: -40px;
+  padding-bottom: 5px;
+}
+
 
 
 .primary-button {
@@ -71,6 +99,38 @@ body, h1, h2, h3, h4, h5 {
 
 .navbar__link--active {
   color: var(--primary-color) !important;
+}
+
+.searchResultItem_U687 {
+  border: 1px solid #dfe3e8;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+padding: 20px !important;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.plugin-\@easyops-cn\/docusaurus-search-local.plugin-id-default h1 {
+  text-align: center !important;
+}
+
+.plugin-\@easyops-cn\/docusaurus-search-local.plugin-id-default section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+
+.searchResultItemSummary_oZHr {
+  width: 100%;
+}
+
+.searchQueryInput_CFBF {
+  border: none !important;
+  border-bottom: 1px solid #525860 !important;
+  border-radius: 0 !important;
 }
 
 /* your custom css */
@@ -1283,9 +1343,11 @@ a.nav-item-dropdown.active{
 }
 
 .navbar__search-input {
-  background: transparent var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+  background: transparent var(--ifm-navbar-search-input-icon) no-repeat 11rem center / 1rem 1rem;
     border-bottom: 1px solid var(--ifm-toc-border-color) !important;
     border-radius: 0;
+    padding: 0;
+    padding-left: 10px;
 }
 
 .navbar-sidebar__items .menu__link {

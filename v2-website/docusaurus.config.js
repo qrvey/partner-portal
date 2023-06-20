@@ -123,7 +123,7 @@ module.exports = {
       "items": [
         {
           "type": 'dropdown',
-          "label": "Docs",
+          "label": "Documentation",
           "position": "right",
           "items": [
             {
@@ -167,7 +167,7 @@ module.exports = {
           "type": 'doc',
           "position": 'right',
           "docId": "video-training/building-qrvey-sample/multi-tenancy-architecture",
-          "label": "Videos"
+          "label": "Knowledge Base"
         },
         {
           "type": 'doc',

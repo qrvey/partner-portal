@@ -133,7 +133,7 @@
            <div className="persona-box">
             <div className="data image">
             </div>
-            <h3><b>Data Analyst</b></h3>
+            <h3><b>Data Analysts</b></h3>
             <p>Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.</p>
            </div>
            <div className="persona-box">
