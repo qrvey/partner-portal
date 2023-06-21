@@ -2,7 +2,7 @@
 id: qrvey-composer-overview
 title: Introduction to Qrvey Composer
 sidebar_label: Introduction to Qrvey Composer
-tags: [Demo,Getting started]
+tags: [Demo,Getting started, Demo2]
 ---
 
 <div style={{textAlign: "justify"}}>

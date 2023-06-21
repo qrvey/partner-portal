@@ -164,10 +164,21 @@ module.exports = {
           ]
         },
         {
+          "to": "#",
+          "position": 'right',
+          "label": "API Reference"
+        },
+        {
+          "type": 'doc',
+          "position": 'right',
+          "docId": "release-notes/release-last",
+          "label": "Release Notes"
+        },
+        {
           "type": 'doc',
           "position": 'right',
           "docId": "video-training/videos-home",
-          "label": "Videos"
+          "label": "Knowledge Base"
         },
         {
           "type": 'doc',
