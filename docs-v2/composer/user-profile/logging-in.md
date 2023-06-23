@@ -1,6 +1,6 @@
 ---
-id: logging-in
-title: Logging In
+id: logging-in-to-qrvey-composer
+title: Logging In to Qrvey Composer
 sidebar_label: Logging In 
 ---
 
