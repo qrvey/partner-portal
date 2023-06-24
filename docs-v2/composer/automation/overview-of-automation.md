@@ -1,12 +1,12 @@
 ---
-id: flows
-title: Flow Overview 
-sidebar_label: Flow Overview
+id: overview-of-automation
+title: Overview of Automation
+sidebar_label: Overview of Automation
 ---
 
 <div style={{textAlign: "justify"}}>
 
-Flow is a series of components that work together to perform a task. They can be used to automate just about anything in Qrvey Composer, adding power and flexibility to your applications. In this article, we’ll discuss the main components of a workflow and explain how to create one.
+A flow is a series of components that work together to perform a task. They can be used to automate just about anything in Qrvey Composer, adding power and flexibility to your applications. This article discusses the main components of a flow and how to create one.
 
 ## Component Types
 Workflows are built from the following types of components:

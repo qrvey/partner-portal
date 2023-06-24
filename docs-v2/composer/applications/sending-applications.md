@@ -1,5 +1,5 @@
 ---
-id: sending
+id: sending-applications
 title: Sending Applications
 sidebar_label: Sending Applications
 ---

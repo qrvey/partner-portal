@@ -1,5 +1,5 @@
 ---
-id: definitions 
+id: deployment-definitions 
 title: Deployment Definitions
 sidebar_label: Deployment Definitions
 ---

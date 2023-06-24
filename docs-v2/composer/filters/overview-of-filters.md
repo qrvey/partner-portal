@@ -6,9 +6,9 @@ sidebar_label: Overview of Filters
 
 <div style={{textAlign: "justify"}}>
 
-Qrvey provides a filtering system to focus on the portion of the data relevant to your analysis, affecting the data displayed in the widgets. You can change these filters to focus on more specific data.
+Qrvey Composer provides filtering capabilities to focus on the portion of the data relevant to your analysis, affecting the data displayed in the widgets. You can change these filters to focus on more specific data.
 
-There are many different ways you can filter your data to focus on the things that matter. The essential aspects of the filtering system are described for your reference in this article.
+There are many different ways you can filter your data to focus on the things that matter. This article describes the essential aspects of filtering.
 
 ## Hierarchy and Scope
 Various filters apply in a hierarchical model: First, the data gets filtered by the security filters, and then the data filters for the user group refine it even further. The full hierarchical model is shown in the image and the purpose of each layer is described below.

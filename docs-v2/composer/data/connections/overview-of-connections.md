@@ -32,9 +32,9 @@ For CSV data or unstructured data, such as JSON documents, the UI supports uploa
 See the articles below to get more information on database sources, file sources, and API sources:
 
 
-* [Database Connections](../datasets/databases.md)
+* [Database Connections](../connections/databases.md)
 
-* [File Upload Connections](../datasets/csv.md)
+* [File Upload Connections](../connections/csv.md)
 
 * [API Connections](../datasets/api-connections.md)
 

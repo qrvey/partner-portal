@@ -6,7 +6,7 @@ sidebar_label: Overview of Settings
 
 <div style={{textAlign: "justify"}}>
 
-The **Settings** section of an application is where you can configure the global settings that will affect your entire application. 
+The **Settings** section enables you to configure global settings for a Qrvey application. 
 
 ![1_settings](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.7_settings/1_settings.png#thumbnail)
 

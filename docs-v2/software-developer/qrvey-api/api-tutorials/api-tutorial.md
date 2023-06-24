@@ -17,8 +17,8 @@ In this tutorial, we will use the API to programmatically create a Quiz web form
 
 ## Before you begin
 In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. In addition, you should be familiar with the following concepts:
-- [Qrvey User Roles](../../get-started/roles.md)
-- [Qrvey Applications](../../ui-docs/basics/applications.md)
+- [Introduction to the Qrvey Platform](../../../getting-started/intro-to-qrvey.md)
+- [Overview of Qrvey Applications](../../../composer/applications/overview-of-applications.md)
 
 Before using the Qrvey API, gather the following:
 - The base URL of your instance of the Qrvey platform. 

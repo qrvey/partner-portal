@@ -159,17 +159,7 @@ Shared datasets have a visual globe icon adjacent to the **Type** indicator on t
 Be advised that unsharing a dataset will prevent users from other applications to use this dataset as a source for a new dataset view and/or dataset. Any existing dataset views and/or datasets that use this dataset as a source will no longer be available to users building charts and metrics. Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
 
 ### Setting Up Geolocation Groups
-If your data contains address information that you wish to display on any type of map chart, you need to create a Geolocation Group out of your desired address fields. 
- 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/geolocation.png#thumbnail)
- 
- 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/modal.png#thumbnail-60)
- 
-To create a Geolocation Group you have to map your address data column or columns to the address type fields in the dialog. For example you may map the data column zip  to the Postal/Zip Code field. While any portion of address is enough to create a Geolocation Group, mapping more columns, especially unique columns such as the country, help create more accurate points on your map charts.  
-You can give your geolocation group a name to identify it with.  
-
-Defining, or changing Geolocation Groups will ***not*** require a data reload.
+See [Overview of Geolocation](../datasets/design/geolocation/overview-of-geolocation.md).
  
 ### Transformations
 Applying Transformations to the dataset is probably the most powerful feature in the dataset design.

@@ -1,5 +1,5 @@
 ---
-id: health-dashboard
+id: admin-health-dashboard
 title: Health Dashboard
 sidebar_label: Health Dashboard
 ---

@@ -1,17 +1,17 @@
 ---
-id: get-started-architecture
+id: architectural-overview
 title: Architectural Overview
 sidebar_label: Architectural Overview
 ---
 
 <div style={{textAlign: "justify"}}>
 
-In this section, we'll discuss the Qrvey architecture and how all of our components work together to deliver on the promise of a unified, all-in-one data solution.
+This article discusses the architecture of the Qrvey platform and how all of our components work together to deliver on the promise of a unified, all-in-one data solution.
 
 
-## Working with Qrvey 
+## Working with the Qrvey platform 
 
-There are three main ways to interact with Qrvey. First, we offer a robust API that allows for direct interaction with all of Qrvey's functions for data collection, analytics, automation and information distribution. Second, we offer a suite of pre-built widgets to simplify the process of embedding Qrvey into existing web pages and applications. Every part of the Qrvey platform can easily be embedded. 
+There are three main ways to interact with the Qrvey platform. First, we offer a robust API that allows for direct interaction with all of Qrvey's functions for data collection, analytics, automation and information distribution. Second, we offer a suite of pre-built widgets to simplify the process of embedding Qrvey into existing web pages and applications. Every part of the Qrvey platform can easily be embedded. 
 
 Finally, there is Qrvey Composer, which is a web-based application where primary user scan build forms, datasets, analytics, workflows and more. The Qrvey application has been 100% widgetized, ensuring that everything you can do with the app can also be done with embedded widgets.
 

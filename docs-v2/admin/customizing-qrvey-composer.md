@@ -1,5 +1,5 @@
 ---
-id: admin-sections-platform
+id: admin-customizing-composer
 title: Customizing Qrvey Composer
 sidebar_label: Customizing Qrvey Composer
 ---

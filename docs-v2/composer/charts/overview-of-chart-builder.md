@@ -1,5 +1,5 @@
 ---
-id: chart-builder-overview
+id: overview-of-chart-builder
 title: Overview of Chart Builder
 sidebar_label: Overview of Chart Builder
 ---

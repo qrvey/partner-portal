@@ -1,5 +1,5 @@
 ---
-id: union
+id: data-unions
 title: Appending Data (Union)
 sidebar_label: Appending Data (Union)
 ---

@@ -1,5 +1,5 @@
 ---
-id: elasticsearch-management
+id: admin-elasticsearch-management
 title: Elasticsearch Management
 sidebar_label: Elasticsearch Management
 ---

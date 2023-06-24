@@ -1,5 +1,5 @@
 ---
-id: joins
+id: data-joins
 title: Data Joins
 sidebar_label: Data Joins
 ---

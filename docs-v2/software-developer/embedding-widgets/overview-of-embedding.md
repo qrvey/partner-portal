@@ -16,19 +16,19 @@ For information on the structure of a widget, see [Widgets Quick Start Guide](..
 
 | If you want to… | Then use this widget… |
 | --------------- | --------------------- |
-| Embed a single chart, map, or metric | [Single Panel]() |
-| Embed a mashup of several charts, maps, and metrics | [Dashboard View]() |
-| Embed a dashboard | [Dashboard View]() |
-| Enable end users to build custom dashboards | [Dashboard Builder]() |
-| Enable end users to build custom charts | [Dashboard Builder]() or [Analytic Suite]() |
-| Enable end users to create and publish their own web forms | [Web Form Design]() |
-| Embed an existing web form (form, survey, or quiz), in which end users can enter data | [Web Form - End User]() |
-| Enable end users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view | [Analytic Suite]() |
-| Embed a Pixel-perfect report | [Pixel-perfect Reports]() |
-| Embed workflow functionality into your application | [Automation]() |
+| Embed a single chart, map, or metric | [Single Panel](../embedding-widgets/widgets/single-panel.md) |
+| Embed a mashup of several charts, maps, and metrics | [Dashboard View](../embedding-widgets/widgets/dashboard-view.md) |
+| Embed a dashboard | [Dashboard View](../embedding-widgets/widgets/dashboard-view.md) |
+| Enable end users to build custom dashboards | [Dashboard Builder](../embedding-widgets/widgets/dashboard-builder.md) |
+| Enable end users to build custom charts | [Dashboard Builder](../embedding-widgets/widgets/dashboard-builder.md) or [Analytic Suite](../embedding-widgets/widgets/analytic-suite.md) |
+| Enable end users to create and publish their own web forms | [Web Form Design](../embedding-widgets/widgets/web-forms.md) |
+| Embed an existing web form (form, survey, or quiz), in which end users can enter data | [Web Form - End User](../embedding-widgets/widgets/web-form-end-user.md) |
+| Enable end users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view | [Analytic Suite](../embedding-widgets/widgets/analytic-suite.md) |
+| Embed a Pixel-perfect report | [Pixel-perfect Reports](../embedding-widgets/widgets/pixel-perfect-reports.md) |
+| Embed workflow functionality into your application | [Automation](../embedding-widgets/widgets/automation-widget.md) |
 | Enable end users to access Download Manager to manage exported files | [Download Manager]() |
 
 
 
-The Qrvey Platform also provides a comprehensive REST API. For more information, see [API Start Guide]().
+The Qrvey Platform also provides a comprehensive REST API. For more information, see [Overview of Qrvey API](../qrvey-api/overview-of-qrvey-api.md).
 </div>
