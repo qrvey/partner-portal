@@ -15,6 +15,11 @@ The Qrvey platform offers a wide range of features that can be used in a Qrvey a
 * **Dashboard Builder**. Create highly interactive dashboards and mashups of visualizations across multiple datasets. A dashboard can include any combination of forms, charts, metrics, and analytics, as well as standard web components like text, images, headers and footers. Additional features include navigation and user authentication.
 * **Automation**. Create automated workflows to perform virtually any task supported in the Qrvey platform. 
 
-
+The Applications page of Qrvey Composer displays all the Qrvey applications available to the current user of Qrvey Composer. From this page, you can perform the following tasks:
+* **Open an application**. Click the application card to open it and display its associated [Data page](../data/introduction-to-data-in-qrvey.md). 
+* **Create an application**. Click **Create Application** and provide the necessary information. 
+* **[Send (and Receive) applications](../applications/sending-applications.md)**
+* **[Share an application](../applications/sharing-editing.md)**
+* **[View Activity Logs](../applications/activity-log.md)**
 
 </div>

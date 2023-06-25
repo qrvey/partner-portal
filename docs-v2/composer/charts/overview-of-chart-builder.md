@@ -129,7 +129,7 @@ Column Pills represent the dataset fields that appear either under <strong>Categ
 <li> - Remove</li></ul>
  
  
-We recommend watching this video on <a href="https://partners.qrvey.com/docs/video-training/building-qrvey-sample/chart-builder">Chart Builder</a>.
+For a tutorial on using Chart Builder, see the video <a href="/docs-v2/video-training/legacy/chart-builder.md">Chart Builder</a>.
  
  
 </div>

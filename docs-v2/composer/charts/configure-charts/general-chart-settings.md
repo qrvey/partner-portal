@@ -74,19 +74,19 @@ Here you can set the maximum number of data points you’d like to display in yo
 
 #### Overriding the Max Data Points Setting
 
-When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. For more information, see [Exporting Data](../../../dataviews/exporting.md).
+When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. For more information, see [Exporting Data](../../data/datasets/analyze/exporting.md).
 
 ### Max Groups
 This control applies to grouped tables (default 50) and expandable tables (default 10) and determines the maximum number of groups. The setting is there for performance reasons and to prevent accidental grouping of data fields with too many unique values that may result in an excessive number of groups. 
 
 * Default: 50 for Grouped Tables and 10 for Expandable Tables
-* Applies to: <a href="" target="_blank"> Grouped Tables</a>, <a href="" target="_blank"> Expandable Tables</a>
+* Applies to: [Groupd Tables](../chart-types/table.md), [Expandable Tables](../chart-types/expandable.md)</a>
 
 ### Max Rows / Max Columns
 These are fields in Crosstab Charts where you can set a maximum limit on the number of rows or columns you want to show. The maximum number of data points is 10,000 in total - this includes both rows and columns, combined. 
 
 * Default: 500 (Rows), 50 (Columns)
-* Applies to: <a href="" target="_blank"> Crosstab</a>
+* Applies to: [Crosstab](../chart-types/crosstab.md) 
 
 ### Max Series
 This field lets you increase or decrease a limit on the series you want to show in a single category in a multi-series chart, which is by default set to 50. 
@@ -103,13 +103,13 @@ When **Sorting** is checked, it adds the sorting button (<img alt="add" src="htt
 
 
 * Default: On
-* Applies to: <a href="" target="_blank"> Tables</a>
+* Applies to: [Tables](../chart-types/table.md)
 
 ### Records per Group
 This value controls the maximum number of rows that are retrieved for each group in expandable tables and defaults to 10.
 
 * Default: 10
-* Applies to: <a href="" target="_blank"> Expandable Table</a>
+* Applies to: [Expandable Table](../chart-types/expandable.md)
 
 ### Sort by
 All charts offer sorting capability on their various data columns, however the access point to the sorting options may vary. The **Sort by** option in the General configuration is available for a handful of charts - like the pie chart - that have a simple sorting use case by either the selected category or values column. 
@@ -118,7 +118,7 @@ Default sorting depends on the selected chart and the data types of the selected
 ![general](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sorting.png#thumbnail-20)
 
 	
-A comprehensive article on sorting data can be found <a href="" target="_blank">here</a>.
+For more information, see [Sorting](../sorting.md).
 
 * Default: Values column descending (Pie), Category column ascending (Heatmap)
 * Applies to: <a href="" target="_blank"> Pie</a>, <a href="" target="_blank"> Heatmap</a>
@@ -127,16 +127,16 @@ A comprehensive article on sorting data can be found <a href="" target="_blank">
 This option only applies to Crosstab charts and adds subtotals for each column, when more than one category has been added to Columns.
 
 * Default: Off
-* Applies to: <a href="" target="_blank"> Crosstab</a>
+* Applies to: [Crosstab](../chart-types/crosstab.md)
 
 ### Table Calculations
 Various standard functions can be used to calculate values based on data within the chart. Each table calculation function results in a new column of data that can be plotted in the chart. An example of such a table calculation function is the “running total” of a value within any given group. Read more about configuring Table Calculations here.
 
 * Default: –
-* Applies to: <a href="" target="_blank"> Multi-Series Bar</a>, <a href="" target="_blank"> Multi-Series Line</a>, <a href="" target="_blank"> Multi-Series Symbol</a>, <a href="" target="_blank"> Combo</a>, <a href="" target="_blank">Table (ungrouped)</a>
+* Applies to: [Multi-Series Bar](../chart-types/ms-bar.md), [Multi-Series Line](../chart-types/ms-line.md), [Multi-Series Symbol](../chart-types/ms-symbol.md), [Combo](../chart-types/symbol.md), [Table (ungrouped)](../chart-types/table.md)
 
 ### Tooltips
-This section allows adding tooltips based on any column to most chart types. Read more about applying tooltips to charts <a href="" target="_blank">here</a>.
+This section enables you to add [Tooltips](../tooltips.md) based on any column to most chart types. 
 
 * Default: On
 * Applies to: All charts other than Table, Crosstab, Expanded Table
@@ -146,7 +146,7 @@ Totals is an option for all table chart types and is described in detail in thos
 The option allows for aggregations to be added to rows and columns in Crosstab charts and aggregations for columns in the other types of Table charts. 
 
 * Default: –
-* Applies to: <a href="" target="_blank"> Table</a>, <a href="" target="_blank"> Crosstab</a>, <a href="" target="_blank"> Expanded Table</a>
+* Applies to: [Table](../chart-types/table.md), [Crosstab](../chart-types/crosstab.md), [Expanded Table](../chart-types/expandable.md)
 
 
 </div>

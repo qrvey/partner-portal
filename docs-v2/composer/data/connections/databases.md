@@ -10,7 +10,7 @@ You can create connections to various RDBMS by using the Database Connection fea
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/connections_list_new.png#thumbnail-60)
 
-To begin, choose the type of database you’d like to connect to. See [Connections Overview](../datasets/connectors.md) for the list of connections we currently support. 
+To begin, choose the type of database you’d like to connect to. See [Overview of Connections](../connections/overview-of-connections.md) for the list of connections we currently support. 
 
 The modal dialog to enter the connection information may be slightly different for each database type, depending on the required configuration attributes, but all of the fields are descriptive and familiar to those who have worked with databases.
 

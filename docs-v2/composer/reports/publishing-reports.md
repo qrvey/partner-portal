@@ -39,7 +39,7 @@ The Send Email action in Workflows/Automation supports Pixel-perfect Reports. It
 For more information, see the "Send an Email" section of [Send Actions](../automation/send-actions.md). 
 
 ## Embedding reports
-The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../embedding/widgets/app-building/pixel-perfect-reports.md). 
+The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/embedding-widgets/widgets/pixel-perfect-reports.md). 
 
 
 </div>

@@ -96,7 +96,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 </ul>
 
 
-* **Table Calculations** - add a calculation to your table - read more about this [here](../../dataviews/table-calculations.md).
+* **Table Calculations** - add a calculation to your table. For more information, see [Table Calculations](../table-calculations/table-calculations.md).
 
 
 * **Aggregated Formulas** - when you group the table, the option to add a table formula to your data appears. This feature has been explained in detail in the <a href="#aggregated-formulas">Aggregated Formulas</a> section of this article. 
@@ -132,7 +132,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### Format
 
-You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Table Charts.
+You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Table Charts.
 
 Click on **+Add Condition** to start. Pick the color of the text and the color of the cell you’d like to show when your condition is met. Decide if you want to outline the cell or highlight it in the chosen color. Select the column you want to use the condition on, set the operator and decide if it applies to a column of your choice or the entire row. 
 
@@ -239,7 +239,7 @@ Trend Charts can be added in one of two ways:
 
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
 
 
 ### Resizing Columns

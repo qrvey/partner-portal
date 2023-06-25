@@ -22,7 +22,7 @@ Live Connect Datasets can use the same Connections as Managed Datasets.  To crea
 ![dslive1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.1-8.0.png#thumbnail-40)
 
 
-Any existing connections which support Live Connect will be listed as possible Data Sources.  Either choose an existing connection or click the “Create New Connection” at the bottom of the window (following this method, rather than going through the Connections tab, will limit your source selections to connection methods supporting Live Connect).  For more information on creating connections see the [Connections](../../ui-docs/datasets/connectors.md) article.
+Any existing connections which support Live Connect will be listed as possible Data Sources.  Either choose an existing connection or click the “Create New Connection” at the bottom of the window (following this method, rather than going through the Connections tab, will limit your source selections to connection methods supporting Live Connect).  For more information on creating connections, see [Connections](../connections/overview-of-connections.md).
 
 ![dslive2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.2-8.0.png#thumbnail)
 
@@ -75,8 +75,8 @@ The system will pick a format for displaying date and numeric data in visualizat
 
 ![dslive8](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.8-8.0.png#thumbnail-40)
 
-If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Admin Center.
-For more information about RLS and how to set it up see the [Record Level Security article](../../admin/record-level-security.md).
+If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Qrvey Admin Center.
+For more information about RLS and how to set it up, see [Record Level Security](../../../software-developer/security/record-level-security.md).
 
 
 ### Setting Up Automatic Column Links​
@@ -85,7 +85,7 @@ For more information about RLS and how to set it up see the [Record Level Securi
 
 Any column of the dataset can be set up so that it presents an automatic link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map. The automatic link can be set up from the Column Link command in the dot menu of the intended column.
 
-For detailed information about [Column Links](../../ui-docs/datasets/column-links.md) see the article dedicated to the subject.
+For more information, see [Column Links](../datasets/column-links.md).
 
 
 ### Setting Up Geolocation Groups​

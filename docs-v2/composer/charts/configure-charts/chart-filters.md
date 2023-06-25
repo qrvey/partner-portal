@@ -29,8 +29,7 @@ Any number of filters can be added to the chart. An *AND* logic will be applied 
 
 The Internal chart filters cannot be edited to change their condition. You may however remove each value, or the entire filter, from the **X** icon next to each value or the filter. To edit or remove this filter, you will need to click on the option to **Edit** the chart first and then edit the filter.
 
-
-Read more about filters and their hierarchy <a href="/docs/ui-docs/filtering-data/introduction-to-filters">here</a>.
+For more information about filters and their hierarchy, see [Overview of Filters](../../filters/overview-of-filters.md).
 
 Applies to: All charts
 

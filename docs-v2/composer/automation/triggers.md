@@ -6,7 +6,7 @@ sidebar_label: Triggers
 
 <div style={{textAlign: "justify"}}>
 
-**Triggers** are the components that begin, i.e. initiate, a **Flow**. In this article, we will detail all of the trigger types in Qrvey and how to use them in your Flows. If you’re not yet familiar with the mechanics of a Flow, consult our **[Flow Overview article](../automation/flows.md)** article.
+**Triggers** are the components that begin, i.e. initiate, a **Flow**. In this article, we will detail all of the trigger types in Qrvey and how to use them in your Flows. If you’re not yet familiar with the mechanics of a Flow, see [Overview of Automation](../automation/overview-of-automation.md).
 
 ## Scheduling
 Use the scheduling trigger for when you need the flow to start by assigning the date(s) and time(s) of your choosing. Simply select the frequency and the time you would like your trigger to run. You can also choose a start date and an ending date.

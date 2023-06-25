@@ -20,7 +20,7 @@ var config = {
 }          
 }
 
-This feature is available with [Page View](../widgets/app-building/page-view.md), [Page Builder](../widgets/app-building/page-builder.md), [Single Panel](../widgets/analytics/single-panel.md), and [Analytic Suite](../widgets/analytics/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
+This feature is available with [Dashboard View](../embedding-widgets/widgets/dashboard-view.md), [Dashboard Builder](../embedding-widgets/widgets/dashboard-builder.md), [Single Panel](../embedding-widgets/widgets/single-panel.md), and [Analytic Suite](../embedding-widgets/widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
 
 ## Filter Object Structure
 ### Filters Object
@@ -36,7 +36,7 @@ This feature is available with [Page View](../widgets/app-building/page-view.md)
 | --- | --- | --- | --- |
 | **qrveyid** | `String` | No |Represent the dataset ID used to refine the data.|
 | **questionid** | `String` | No |Represent the dataset’s column ID used to refine the data, should belong to the qrvey defined above.|
-| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a [FORMULA](../../ui-docs/dataviews/formulas.md) or a [BUCKET](../../ui-docs/dataviews/buckets.md); otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
+| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a [FORMULA](../../composer/data/datasets/analyze/formulas.md) or a [BUCKET](../../composer/data/datasets/analyze/buckets.md); otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
 | **validationType** | `String` | Yes | The field represents the operand for filtering. Allowed values: <br />* EQUAL <br /> * NOT_EQUAL <br /> * CONTAIN <br /> * NOT_CONTAIN <br /> * END_WITH<br />* NOT_END_WITH <br />* START_WITH<br /> * NOT_START_WITH <br />* RANGE <br />* IS_EMPTY <br />* IS_NOT_EMPTY |
 | **property** | `String` | No | When using complex data types like the ones defined inside Webforms, Quizzes, or Surveys, it’s required. Please refer to <a href="#complex-properties">Complex Properties</a> for a complete list of supported values. |
 | **groupValue** | `String` | No | Default ‘day’. Only applies when you want to group date values. Allowed values:<br />* year<br />* month<br />* quarter<br />* week<br />* day<br />* hour<br />* minute<br />* second |

@@ -26,7 +26,7 @@ In the example below, we want to see if sales have reached the goal we had set f
 In the Configuration Panel on the right side of the Chart Builder, you can style different aspects of your chart.
 
 ### General
-* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md). With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric. 
+* **Tooltips** - enable or disable [Tooltips](../tooltips.md). With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric. 
   * To show more than one value on mouseover, click on **+Add Column**:
       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
       * **Display Values As** - The indicator chart only displays one value so you need to choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -69,9 +69,9 @@ Bullet Charts enable setting any number of **Thresholds**, which are defined num
 
 ## Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
 
-For more on the Bullet Gauge and other KPI Charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/kpi" target="_blank">this video</a>..
+For more on the Bullet Gauge and other KPI Charts, we recommend watching <a href="/docs-v2/video-training/legacy/kpi.md" target="_blank">this video</a>..
 
 
 

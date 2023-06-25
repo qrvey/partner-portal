@@ -37,7 +37,7 @@ The majority of the interface is the canvas, on which you design your report. By
 
 **See also**:
 - [Version 8.1 Release Demo Videos](../../video-training/release/version-8.1.md)  
-- [Create a New Report](../pixel-perfect-reports/create-a-new-report.md)
-- [Setting Up Data and Parameters](../pixel-perfect-reports/data-and-parameters.md)
+- [Create a New Report](../reports/create-a-new-report.md)
+- [Setting Up Data and Parameters](../reports/data-and-parameters.md)
 
 </div>

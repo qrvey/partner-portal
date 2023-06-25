@@ -26,7 +26,7 @@ In the case below, we want to get a visual representation of the hiring process 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General 
-* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
+* **Tooltips** - enable or disable [Tooltips](../tooltips.md).
   * To show more than one value on mouseover, click on **+Add Column**:
       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
       * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -63,7 +63,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Percentage** - the values shown in the segments do not represent the percentage of the total, but instead, they show the percentage of the max value, which is calculated by dividing the current value by the maximum value.
 
 ### Format
-You can apply [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) to your Funnel Chart.
+You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Funnel Chart.
 
 ### Sorting 
 You can sort Values directly from the column pill or in case you’d like to sort by a different column, go to the Sorting section of the Configuration Panel, pick your desired column from the dropdown, and select the sorting direction.
@@ -75,15 +75,14 @@ The sorting options include a drop-down list of all the values in the dataset fr
 ![funnel](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Funnel/sort2.png#thumbnail-40)
 
 
-Read more about Sorting in [this article](../../chart-builder/sorting.md).  
+For more information, see [Sorting](../sorting.md).
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article. 
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
 
 
 For more on Funnel Charts and other Percent of Total charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/kpi" target="_blank">this video</a>.
-
 
 
 

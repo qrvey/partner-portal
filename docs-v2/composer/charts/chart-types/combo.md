@@ -30,7 +30,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### General
 * **Legends** - show or hide the legend describing which color has been used to depict each selected value.
-* **Tooltips** - enable or disable Tooltips to show more than one value on mouseover. 
+* **Tooltips** - enable or disable [Tooltips](../tooltips.md) to show more than one value on mouseover. 
     * **Click on +Add Column** to add a column. 
         * **Column** - pick a column from the dropdown list. This can be any column, even if it is not used in the chart.
         * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (*Sum, Average, Median, Count, Distinct Count, Minimum, Maximum*).
@@ -67,17 +67,17 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ### Sorting
 Combo Charts can be sorted by their selected category column, or either of the value columns used in them. Choose the column that you wish to sort your chart by, from the dropdown list and select the sorting direction (ascending or descending) from the icons under the dropdown.
 
-Read more about Sorting in [this article](../../chart-builder/sorting.md).  
+For more information, see [Sorting](../sorting.md).   
 
 ### Layers
-Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your Combo Charts.
+Add a [Trend Line](../configure-charts/chart-layers.md#trend-line) or a [Reference Line](../configure-charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
 ### Format
-Both [Small Multiples](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples) feature and [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) options are available in Combo Charts.
+Both the [Small Multiples](../configure-charts/chart-format.md#small-multiples) and [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) options are available in this chart.
 
 ### Filters
-You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. To read more about different types of filters, go to the [Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md) article. 
+You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas.
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
 
 
 </div>

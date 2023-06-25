@@ -11,6 +11,8 @@ Qrvey Admin Center is a web-based application used by administrators to manage a
 * **[Accessing Qrvey Admin Center](../admin/accessing-admin-center.md)**. Describes how to access the Qrvey Admin Center, including how to create Qrvey Administrator accounts. 
 
 * **[Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md)**. Use the Qrvey Admin Center to configure general settings of Qrvey Composer, including customizing its appearance. You can also enable and disable specific features available to users of Qrvey Composer.
+  * **[Using Google as the OpenID Provider](../admin/openid-google.md)**
+  * **[Using OAuth as the OpenID Provider](../admin/openid-auth0.md)**
 
 * **[Health Dashboard](../admin/health-dashboard.md)**. View the status of the Elasticsearch cluster in this instance of the Qrvey platform.
 

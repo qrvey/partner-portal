@@ -146,7 +146,7 @@ var config = {
 Once the token is part of the widget’s configuration object, it will contain the security token in every request’s header.
 
 ### Generate a Security Token With OpenId Authentication
-Please review the [Administering Qrvey Composer](../admin/admin-qrvey-console.md) documentation for information on how to enable OpenId authentication.
+Please review the [Introduction to Qrvey Admin Center](../../admin/introduction-to-qrvey-admin-center.md) for links to articles on how to enable OpenId authentication.
 
 Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">Auth0 </a> as an OpenId provider. You define the security permissions by each user under Auth0 by adding the JSON object to the user_metadata section.
 
