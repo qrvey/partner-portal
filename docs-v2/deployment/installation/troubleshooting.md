@@ -1,7 +1,8 @@
 ---
-id: troubleshooting
-title: Troubleshooting
+id: troubleshooting-deployment
+title: Troubleshooting Deployment
 sidebar_label: Troubleshooting
+tags: [CloudOps Engineer]
 ---
 <div>
 Here are some common scenarios where a deployment could result in failure.

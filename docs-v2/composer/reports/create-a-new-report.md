@@ -2,6 +2,7 @@
 id: create-a-new-report
 title: Create a New Report
 sidebar_label: Create a New Report
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

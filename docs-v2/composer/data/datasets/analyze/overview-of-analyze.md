@@ -2,6 +2,7 @@
 id: overview-of-analyze
 title: Overview of Analyze
 sidebar_label: Overview of Analyze
+tags: [Data Analyst]
 ---
 
 The Analyze tab provides a variety of features for analyzing your dataset, including:

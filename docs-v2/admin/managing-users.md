@@ -2,6 +2,7 @@
 id: admin-managing-users
 title: Managing Users of Qrvey Composer
 sidebar_label: Managing Users of Qrvey Composer
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

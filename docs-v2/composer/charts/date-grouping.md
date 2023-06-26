@@ -2,6 +2,7 @@
 id: date-grouping
 title: Date Grouping
 sidebar_label: Date Grouping
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

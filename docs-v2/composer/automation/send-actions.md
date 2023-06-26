@@ -1,7 +1,8 @@
 ---
-id: send-actions
+id: automation-send-actions
 title: Actions - Send
 sidebar_label: Actions - Send
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

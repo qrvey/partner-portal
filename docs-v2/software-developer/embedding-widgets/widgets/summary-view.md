@@ -2,6 +2,7 @@
 id: widget-summary-view
 title: Summary View
 sidebar_label: Summary View
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

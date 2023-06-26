@@ -1,7 +1,8 @@
 ---
-id: triggers
+id: automation-triggers
 title: Triggers
 sidebar_label: Triggers
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

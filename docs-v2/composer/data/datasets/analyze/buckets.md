@@ -2,6 +2,7 @@
 id: bucketing-data
 title: Bucketing Data
 sidebar_label: Bucketing Data
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

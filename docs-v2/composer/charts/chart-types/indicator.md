@@ -1,7 +1,8 @@
 ---
-id: indicator-gauge
+id: chart-type-indicator-gauge
 title: Indicator Gauge
 sidebar_label: Indicator Gauge
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

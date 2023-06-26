@@ -2,6 +2,7 @@
 id: overview-of-connections
 title: Overview of Connections
 sidebar_label: Overview of Connections
+tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect, All Personas]
 ---
 
 You can create and manage your connections to various data sources in the *Connections* tab.

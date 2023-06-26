@@ -2,6 +2,7 @@
 id: table-calculations
 title: Table Calculations
 sidebar_label: Table Calculations
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

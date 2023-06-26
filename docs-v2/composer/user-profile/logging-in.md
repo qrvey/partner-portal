@@ -2,6 +2,7 @@
 id: logging-in-to-qrvey-composer
 title: Logging In to Qrvey Composer
 sidebar_label: Logging In 
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

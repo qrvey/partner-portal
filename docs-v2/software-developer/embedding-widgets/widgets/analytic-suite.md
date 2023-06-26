@@ -1,7 +1,8 @@
 ---
-id: analytic-suite
+id: widget-analytic-suite
 title: Analytic Suite Widget
 sidebar_label: Analytic Suite Widget
+tags: [Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

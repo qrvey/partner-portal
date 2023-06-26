@@ -2,6 +2,7 @@
 id: general-chart-settings
 title: General Chart Settings
 sidebar_label: General Chart Settings
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

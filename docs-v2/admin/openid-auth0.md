@@ -2,6 +2,7 @@
 id: authentication-openid-oauth
 title: Using OAuth as the OpenID Provider
 sidebar_label: Using OAuth as the OpenID Provider
+tags: [Solution Architect, CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

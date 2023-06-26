@@ -2,6 +2,7 @@
 id: designing-reports
 title: Designing Reports
 sidebar_label: Designing Reports
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

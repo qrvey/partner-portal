@@ -2,6 +2,7 @@
 id: sending-applications
 title: Sending Applications
 sidebar_label: Sending Applications
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

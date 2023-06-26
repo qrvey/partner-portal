@@ -2,6 +2,7 @@
 id: packages-and-versions 
 title: Packages and Versions
 sidebar_label: Packages and Versions
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

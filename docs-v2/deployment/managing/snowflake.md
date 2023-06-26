@@ -1,11 +1,8 @@
 ---
 id: snowflake-connections
-
 title: Configuring AWS and Qrvey for Snowflake Connections
-
-
 sidebar_label: Configuring AWS and Qrvey for Snowflake Connections
-
+tags: [CloudOps Engineer]
 
 ---
 <div style={{textAlign: "justify"}}>

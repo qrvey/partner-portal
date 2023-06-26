@@ -1,8 +1,9 @@
 ---
-id: map-chart
+id: video-map-chart
 title: Map Charts
 sidebar_label: Map Charts
 keywords: [chart,map,dot,bubble,choropleth]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of how to create Map charts, including Dot maps, Bubble maps, and Choropleth maps.

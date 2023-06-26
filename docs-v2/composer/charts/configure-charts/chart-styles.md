@@ -2,6 +2,7 @@
 id: chart-styles
 title: Styles
 sidebar_label: Styles
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

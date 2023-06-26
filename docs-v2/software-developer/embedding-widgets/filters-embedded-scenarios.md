@@ -2,6 +2,7 @@
 id: filters-embedded-scenarios
 title: Working With Filters in Embedded Scenarios
 sidebar_label: Working With Filters in Embedded Scenarios
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

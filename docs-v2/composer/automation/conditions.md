@@ -1,7 +1,8 @@
 ---
-id: conditions
+id: automation-conditions
 title: Conditions
 sidebar_label: Conditions
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: overview-of-dashboard-builder
 title: Overview of Dashboard Builder
 sidebar_label: Overview of Dashboard Builder
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

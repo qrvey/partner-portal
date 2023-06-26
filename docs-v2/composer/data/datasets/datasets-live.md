@@ -2,6 +2,7 @@
 id: dslive
 title: Live Connect Datasets
 sidebar_label: Datasets - Live Connect
+tags: [Data Analyst]
 ---
 
 <div>

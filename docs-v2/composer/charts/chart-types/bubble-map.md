@@ -1,7 +1,8 @@
 ---
-id: bubble-map
+id: chart-type-bubble-map
 title: Bubble Map
 sidebar_label: Bubble Map
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

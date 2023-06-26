@@ -2,6 +2,7 @@
 id: overview-of-pixel-perfect-reports
 title: Overview of Pixel-perfect Reports
 sidebar_label: Overview of Pixel-perfect Reports
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

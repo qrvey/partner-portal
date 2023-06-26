@@ -2,6 +2,7 @@
 id: sharing-editing
 title: Sharing & Editing
 sidebar_label: Sharing & Editing
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

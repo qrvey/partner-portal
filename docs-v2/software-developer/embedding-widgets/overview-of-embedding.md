@@ -2,6 +2,7 @@
 id: overview-of-embedding-and-widgets
 title: Overview of Embedding and Widgets
 sidebar_label: Overview of Embedding and Widgets
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: chart-filters
 title: Chart Filters
 sidebar_label: Chart Filters
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

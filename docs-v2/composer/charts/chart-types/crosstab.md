@@ -1,7 +1,8 @@
 ---
-id: crosstab
+id: chart-type-crosstab
 title: Crosstab
 sidebar_label: Crosstab
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

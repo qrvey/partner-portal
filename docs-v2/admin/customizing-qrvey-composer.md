@@ -2,6 +2,7 @@
 id: admin-customizing-composer
 title: Customizing Qrvey Composer
 sidebar_label: Customizing Qrvey Composer
+tags: [Solution Architect]
 ---
 
 The Customization page of Qrvey Admin Center provides administrators with a variety of options for customizing their instance of Qrvey Composer. 

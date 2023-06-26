@@ -1,7 +1,8 @@
 ---
-id: tokens
+id: automation-tokens
 title: Tokens
 sidebar_label: Tokens
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

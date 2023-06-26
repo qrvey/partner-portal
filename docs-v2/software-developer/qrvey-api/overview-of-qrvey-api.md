@@ -2,6 +2,7 @@
 id: api-intro
 title: Overview of Qrvey API
 sidebar_label: Overview of Qrvey API
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

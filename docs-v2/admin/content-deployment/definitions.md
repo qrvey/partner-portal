@@ -2,6 +2,7 @@
 id: deployment-definitions 
 title: Deployment Definitions
 sidebar_label: Deployment Definitions
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

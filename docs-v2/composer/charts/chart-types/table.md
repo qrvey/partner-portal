@@ -1,7 +1,8 @@
 ---
-id: table
+id: chart-type-table
 title: Table
 sidebar_label: Table
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

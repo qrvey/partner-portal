@@ -2,6 +2,7 @@
 id: working-with-formulas
 title: Working with Formulas
 sidebar_label: Working with Formulas
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -1,7 +1,8 @@
 ---
-id: activity-log
+id: widget-activity-log
 title: Activity Log
 sidebar_label: Activity Log
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

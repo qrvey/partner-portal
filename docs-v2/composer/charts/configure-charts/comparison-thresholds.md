@@ -2,6 +2,7 @@
 id: comparison-thresholds
 title: Comparison and Thresholds
 sidebar_label: Comparison and Thresholds
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

@@ -1,8 +1,9 @@
 ---
-id: new-workflows
+id: video-new-workflows
 title: Workflows
 sidebar_label: Workflows
 keywords: [workflow,automation,flow,build]
+tags: [Data Analyst, Solution Architect]
 ---
 
 This video demonstrates how to use the Automation feature in Qrvey Composer to create a workflow. 

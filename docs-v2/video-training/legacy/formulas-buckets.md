@@ -1,8 +1,9 @@
 ---
-id: formulas-buckets
+id: video-formulas-buckets
 title: Formulas & Buckets
 sidebar_label: Formulas & Buckets
 keywords: [formula,bucket,analytics,data,compute,values,partition,group]
+tags: [Solution Architect, Data Analyst]
 ---
 
 This video provides an in-depth overview of using Formulas and Buckets in Chart Builder to prepare data for analytics. Formulas enable you to compute values in real-time, and Buckets enable you to create partitions or groupings of data that do not already exist in the database.

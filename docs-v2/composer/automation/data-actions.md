@@ -1,7 +1,8 @@
 ---
-id: data-actions
+id: automation-data-actions
 title: Actions - Data
 sidebar_label: Actions - Data
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

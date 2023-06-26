@@ -2,6 +2,7 @@
 id: admin-elasticsearch-management
 title: Elasticsearch Management
 sidebar_label: Elasticsearch Management
+tags: [Solution Architect, CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

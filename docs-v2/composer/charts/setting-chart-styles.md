@@ -2,6 +2,7 @@
 id: setting-chart-styles
 title: Setting Chart Colors and Themes 
 sidebar_label: Setting Chart Colors and Themes 
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

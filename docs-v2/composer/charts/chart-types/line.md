@@ -1,7 +1,8 @@
 ---
-id: line-charts
+id: chart-type-line-charts
 title: Line Chart
 sidebar_label: Line Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

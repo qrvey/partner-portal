@@ -1,7 +1,8 @@
 ---
-id: dial-gauge
+id: chart-type-dial-gauge
 title: Dial Gauge
 sidebar_label: Dial Gauge
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

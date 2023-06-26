@@ -2,6 +2,7 @@
 id: admin-center-intro
 title: Introduction to Qrvey Admin Center
 sidebar_label: Introduction to Qrvey Admin Center
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

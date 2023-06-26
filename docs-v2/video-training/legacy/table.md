@@ -1,8 +1,9 @@
 ---
-id: table
+id: video-table-charts
 title: Table Charts
 sidebar_label: Table Charts
 keywords: [chart,table,tabular,expandable,crosstab]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of how to create tabular charts, including the Table chart, Expandable Table chart, and Crosstab chart. 

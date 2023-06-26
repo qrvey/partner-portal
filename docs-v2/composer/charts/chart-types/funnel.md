@@ -1,7 +1,8 @@
 ---
-id: funnel-charts
+id: chart-type-funnel-charts
 title: Funnel Chart
 sidebar_label: Funnel Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: column-level-security
 title: Column Level Security
 sidebar_label: Column Level Security
+tags: [Software Developer, Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

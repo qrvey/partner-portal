@@ -2,6 +2,7 @@
 id: overview-of-automation
 title: Overview of Automation
 sidebar_label: Overview of Automation
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

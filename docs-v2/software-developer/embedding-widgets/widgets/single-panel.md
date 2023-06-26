@@ -1,7 +1,8 @@
 ---
-id: single-panel
+id: widget-single-panel
 title: Single Panel Widget
 sidebar_label: Single Panel Widget
+tags: [Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

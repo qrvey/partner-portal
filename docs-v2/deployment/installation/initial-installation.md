@@ -2,7 +2,7 @@
 id: initial-installation
 title: Initial Installation
 sidebar_label: Initial Installation
-
+tags: [CloudOps Engineer]
 ---
 
 <div>

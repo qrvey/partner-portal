@@ -2,6 +2,7 @@
 id: admin-health-dashboard
 title: Health Dashboard
 sidebar_label: Health Dashboard
+tags: [Solution Architect, CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

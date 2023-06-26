@@ -2,6 +2,7 @@
 id: hierarchical-data
 title: Working With Hierarchical Data
 sidebar_label: Working With Hierarchical Data
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

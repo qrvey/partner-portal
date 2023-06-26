@@ -2,6 +2,7 @@
 id: architectural-overview
 title: Architectural Overview
 sidebar_label: Architectural Overview
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

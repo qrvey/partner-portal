@@ -2,6 +2,7 @@
 id: overview-of-navigation
 title: Overview of Navigation
 sidebar_label: Overview of Navigation
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -1,7 +1,8 @@
 ---
-id: word-cloud
+id: chart-type-word-cloud
 title: Word Cloud
 sidebar_label: Word Cloud
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: publishing-reports
 title: Publishing Reports
 sidebar_label: Publishing Reports
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

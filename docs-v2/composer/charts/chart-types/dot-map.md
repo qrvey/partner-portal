@@ -1,7 +1,8 @@
 ---
-id: dot-map
+id: chart-type-dot-map
 title: Dot Map
 sidebar_label: Dot Map
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

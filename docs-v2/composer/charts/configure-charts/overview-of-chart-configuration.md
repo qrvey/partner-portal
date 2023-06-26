@@ -2,6 +2,7 @@
 id: overview-of-chart-configuration
 title: Overview of Chart Configuration
 sidebar_label: Overview of Chart Configuration
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

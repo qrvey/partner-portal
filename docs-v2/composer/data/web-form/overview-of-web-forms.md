@@ -2,6 +2,7 @@
 id: web-forms
 title: Overview of Web Forms
 sidebar_label: Overview of Web Forms
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

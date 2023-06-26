@@ -2,6 +2,7 @@
 id: deployment-servers 
 title: Servers
 sidebar_label: Servers
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

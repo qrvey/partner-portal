@@ -2,6 +2,7 @@
 id: deployment-jobs 
 title: Deployment Jobs
 sidebar_label: Deployment Jobs
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

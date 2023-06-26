@@ -2,6 +2,7 @@
 id: managing-profile
 title: Managing Your Profile  
 sidebar_label: Managing Your Profile
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

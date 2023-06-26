@@ -1,7 +1,8 @@
 ---
-id: ms-line
+id: chart-type-ms-line
 title: Multiseries Line Chart
 sidebar_label: Multiseries Line Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

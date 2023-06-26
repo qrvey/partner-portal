@@ -1,7 +1,8 @@
 ---
-id: ms-symbol
+id: chart-type-ms-symbol
 title: Multiseries Symbol Chart
 sidebar_label: Multiseries Symbol Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

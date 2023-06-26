@@ -2,6 +2,7 @@
 id: overview-of-content-deployment
 title: Overview of Content Deployment
 sidebar_label: Overview of Content Deployment
+tags: [Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

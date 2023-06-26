@@ -2,6 +2,7 @@
 id: databases
 title: Database Connections
 sidebar_label: Database Connections
+tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect, All Personas]
 ---
 
 <div>

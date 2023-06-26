@@ -2,6 +2,7 @@
 id: overview-of-filters
 title: Overview of Filters
 sidebar_label: Overview of Filters
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

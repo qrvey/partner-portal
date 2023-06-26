@@ -1,7 +1,8 @@
 ---
-id: actions
+id: dashboard-actions
 title: Actions
 sidebar_label: Actions
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

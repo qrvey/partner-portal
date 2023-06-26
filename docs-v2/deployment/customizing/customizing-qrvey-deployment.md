@@ -2,6 +2,7 @@
 id: customizing-qrvey-deployment
 title: Customizing Qrvey Deployment
 sidebar_label: Customizing Qrvey Deployment
+tags: [CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

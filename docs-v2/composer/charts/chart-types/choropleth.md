@@ -1,7 +1,8 @@
 ---
-id: choropleth-map
+id: chart-type-choropleth-map
 title: Choropleth Map
 sidebar_label: Choropleth Map
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

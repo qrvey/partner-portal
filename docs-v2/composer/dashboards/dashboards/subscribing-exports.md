@@ -2,6 +2,7 @@
 id: subscribing-to-exports
 title: Subscribing to Exports
 sidebar_label: Subscribing to Exports
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

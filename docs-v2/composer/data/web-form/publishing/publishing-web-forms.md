@@ -2,6 +2,7 @@
 id: publishing-web-forms
 title: Publishing Web Forms 
 sidebar_label: Publishing Web Forms 
+tags: [Data Analyst, Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

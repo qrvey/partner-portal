@@ -1,8 +1,9 @@
 ---
-id: dataset-syncing
+id: video-dataset-syncing
 title: Dataset Syncing
 sidebar_label: Dataset Syncing
 keywords: [Dataset,Data,Sync,Source,Schedule,Frequency,Minutes,Hours,Daily,Weekly,Monthly,Event,Trigger,Update,Append,Insert,Reload,Load,Incremental,Time,Zone,Column,Row,Record,Push,Post,Batch,API,S3,Router,Timestamp,Unique,Identifier,Automation,Flow]
+tags: [Solution Architect, Data Analyst]
 ---
 
 This video describes how to keep your datasets up-to-date and in sync with your data sources. It covers the following methods of data set syncing:

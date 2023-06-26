@@ -2,6 +2,7 @@
 id: chart-sorting
 title: Sorting
 sidebar_label: Sorting
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

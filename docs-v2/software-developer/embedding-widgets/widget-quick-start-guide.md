@@ -2,6 +2,7 @@
 id: widget-intro
 title: Widgets Quick Start Guide
 sidebar_label: Widgets Quick Start Guide
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: overview-of-user-management
 title: Overview of User Management
 sidebar_label: Overview of User Management
+tags: [Data Analyst, Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

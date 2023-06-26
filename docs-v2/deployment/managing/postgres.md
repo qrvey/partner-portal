@@ -1,10 +1,8 @@
 ---
 id: postgres-connections
-
 title: Configuring AWS and Qrvey for Postgres Connections Utilizing the Export to S3 Method
-
 sidebar_label: Configuring AWS and Qrvey for Postgres Connections
-
+tags: [CloudOps Engineer]
 ---
 
 <div>

@@ -1,7 +1,8 @@
 ---
-id: heatmap
+id: chart-type-heatmap
 title: Heatmap
 sidebar_label: Heatmap
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

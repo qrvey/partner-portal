@@ -2,6 +2,7 @@
 id: dataset-view-api
 title: Creating a Dataset View using the Qrvey API
 sidebar_label: Dataset View (API)
+tags: [Software Developer]
 ---
 
 <div>

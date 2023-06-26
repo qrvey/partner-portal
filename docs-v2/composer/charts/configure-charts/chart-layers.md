@@ -2,6 +2,7 @@
 id: chart-layers
 title: Layers
 sidebar_label: Layers
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

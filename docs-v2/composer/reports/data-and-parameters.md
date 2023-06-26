@@ -2,6 +2,7 @@
 id: setting-up-data-and-parameters
 title: Setting Up Data and Parameters
 sidebar_label: Setting Up Data and Parameters
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

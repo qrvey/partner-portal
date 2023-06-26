@@ -2,6 +2,7 @@
 id: introduction-to-composer-ui
 title: Introduction to the Qrvey Composer User Interface
 sidebar_label: Introduction to the UI
+tags: [Data Analyst]
 ---
 
 In this document we will show you the basic features of the Qrvey Composer interface and how to navigate your way through them.  When you first log into Qrvey, you’ll see the following layout: 

@@ -2,6 +2,7 @@
 id: csv
 title: File Upload Connection
 sidebar_label: File Upload Connection
+tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect, All Personas]
 ---
 
 <div style={{textAlign: "justify"}}>

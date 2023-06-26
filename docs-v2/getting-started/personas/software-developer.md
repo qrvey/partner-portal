@@ -2,6 +2,7 @@
 id: software-developer
 title: Getting Started as a Software Developer
 sidebar_label: Getting Started as a Software Developer
+tags: [Software Developer]
 ---
 
 Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.
@@ -15,3 +16,5 @@ If you’re new to the role of Software Developer, start with the following reso
 * [Overview of the Qrvey Platform Architecture](../../software-developer/architecture.md)
 * [Overview of Embedding and Widgets](../../software-developer/embedding-widgets/overview-of-embedding.md)
 * [Overview of the Qrvey API](../../software-developer/qrvey-api/overview-of-qrvey-api.md)
+
+Another useful resource is the Qrvey [Frequently Asked Questions (FAQs)](../faqs.md) page. 

@@ -1,7 +1,8 @@
 ---
-id: automation-widget
+id: widget-automation-widget
 title: Automation Widget
 sidebar_label: Automation Widget
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

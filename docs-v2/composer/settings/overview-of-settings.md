@@ -2,6 +2,7 @@
 id: overview-of-settings
 title: Overview of Settings
 sidebar_label: Overview of Settings
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

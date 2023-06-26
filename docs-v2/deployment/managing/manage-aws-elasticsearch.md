@@ -2,6 +2,7 @@
 id: manage-aws-elasticsearch
 title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
+tags: [CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -1,8 +1,9 @@
 ---
-id: filter-design
+id: video-filter-design
 title: Filter Design
 sidebar_label: Filter Design
 keywords: [filters,hierarchy,panel]
+tags: [Solution Architect, Data Analyst]
 ---
 
 This video provides an in-depth overview of using Filters in the Qrvey platform, including how to build Filters, the types of Filters available, and how Filters can be configured for a cascading hierarchy. 

@@ -2,6 +2,7 @@
 id: metric-view
 title: Metric View
 sidebar_label: Metric View
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

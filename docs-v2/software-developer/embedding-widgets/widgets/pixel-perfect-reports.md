@@ -2,6 +2,7 @@
 id: widget-pixel-perfect-reports
 title: Pixel-perfect Reports Widget
 sidebar_label: Pixel-perfect Reports Widget
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

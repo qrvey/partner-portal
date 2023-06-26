@@ -1,7 +1,8 @@
 ---
-id: bar-charts
+id: chart-type-bar-charts
 title: Bar Chart
 sidebar_label: Bar Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: api-tutorial
 title: Qrvey API Tutorial
 sidebar_label: Qrvey API Tutorial
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

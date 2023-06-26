@@ -2,6 +2,7 @@
 id: datasets-managed
 title: Datasets - Managed
 sidebar_label: Datasets - Managed
+tags: [Data Analyst]
 ---
 
 <div>

@@ -1,8 +1,9 @@
 ---
-id: jwt-widget
+id: video-jwt-widget
 title: JWT Widget Integration
 sidebar_label: JWT Widget Integration
 keywords: [Widget, Builder, Page, Report, View, Analytics, Module, Embed, Integrate, Application, JSON, JWT, Token, JavaScript, Customization, Panel, Single, Launcher, API, Key, Domain]
+tags: [Software Developer]
 ---
 
 This video provides an in-depth overview of how to securely integrate Qrvey widgets using  JSON Web Tokens (JWT). JWT enables you to encrypt sensitive data, such as your organization’s API access key, logged-in user’s ID and role, as well as sensitive record-level security filters. This video demonstrates how to securely embed the Page View widget in an application using a JWT token, which includes examples of front-end and back-end code. 

@@ -2,7 +2,7 @@
 id: prerequisites-for-installation
 title: Prerequisites for Installation
 sidebar_label: Prerequisites for Installation
-
+tags: [CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

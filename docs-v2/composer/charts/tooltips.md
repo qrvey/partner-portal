@@ -2,6 +2,7 @@
 id: tooltips
 title: Applying Tooltips to Charts
 sidebar_label: Applying Tooltips to Charts
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

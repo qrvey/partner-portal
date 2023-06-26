@@ -2,6 +2,7 @@
 id: introduction-to-software-development
 title: Introduction to the Qrvey Software Development Guide
 sidebar_label: Introduction to the Qrvey Software Development Guide
+tags: [Software Developer]
 ---
 
 Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform. This section of the Qrvey Partner Portal provides Software Developers with the information they need to perform these tasks. Articles include:

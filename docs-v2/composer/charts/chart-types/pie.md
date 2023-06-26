@@ -1,7 +1,8 @@
 ---
-id: pie-charts
+id: chart-type-pie-charts
 title: Pie Chart
 sidebar_label: Pie Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

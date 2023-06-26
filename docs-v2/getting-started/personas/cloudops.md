@@ -2,6 +2,7 @@
 id: cloudops-engineer
 title: Getting Started as a CloudOps Engineer
 sidebar_label: Getting Started as a CloudOps Engineer
+tags: [CloudOps Engineer]
 ---
 
 CloudOps Engineers are AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.
@@ -15,3 +16,5 @@ If you’re new to the role of CloudOps Engineer, start with the following resou
 * [Initial Installation](../../deployment/introduction-to-deployment.md)
 * [Customizing Qrvey Deployment](../../deployment/customizing/customizing-qrvey-deployment.md)
 * [Cluster Management](../../deployment/managing/manage-aws-elasticsearch.md)
+
+Another useful resource is the Qrvey [Frequently Asked Questions (FAQs)](../faqs.md) page. 

@@ -2,6 +2,7 @@
 id: filtering-data
 title: Filtering Data
 sidebar_label: Filtering Data
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

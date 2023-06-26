@@ -1,8 +1,9 @@
 ---
-id: chart-builder
+id: video-chart-builder
 title: Chart Builder
 sidebar_label: Chart Builder
 keywords: [chart, builder]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of the Chart Builder feature in Qrvey Composer. It covers topics such as how to create a chart, the types of charts available, and the various options for customizing and configuring charts. 

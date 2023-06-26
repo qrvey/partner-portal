@@ -1,7 +1,8 @@
 ---
-id: bullet-gauge
+id: chart-type-bullet-gauge
 title: Bullet Gauge
 sidebar_label: Bullet Gauge
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

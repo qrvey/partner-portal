@@ -1,7 +1,8 @@
 ---
-id: ms-bar
+id: chart-type-ms-bar
 title: Multiseries Bar Chart
 sidebar_label: Multiseries Bar Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

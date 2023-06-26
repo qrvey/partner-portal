@@ -2,6 +2,7 @@
 id: dataset-views
 title: Dataset Views
 sidebar_label: Dataset Views
+tags: [Data Analyst]
 ---
 
 <div>

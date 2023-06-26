@@ -1,7 +1,8 @@
 ---
-id: activity-log
+id: activity-log-data
 title: Activity Log
 sidebar_label: Activity Log
+tags: [Data Analyst, CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

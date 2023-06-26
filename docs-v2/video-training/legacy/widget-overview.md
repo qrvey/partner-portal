@@ -1,8 +1,9 @@
 ---
-id: widget-overview
+id: video-widget-overview
 title: Widgets Overview
 sidebar_label: Widgets Overview
 keywords: [Widget, Builder, Page, Report, View, Analytics, Module, Embed, Integrate, Application, JSON, JWT, Token, JavaScript, Customization, Panel, Single, Launcher, API, Key, Domain]
+tags: [Software Developer, Solution Architect]
 ---
 
 This video provides an in-depth overview of Widgets in Qrvey. It defines Widgets, describes the process for embedding Widgets in an application, provides real-life examples of embedded Widgets, and describes Widget best-practices. 

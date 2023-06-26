@@ -1,7 +1,8 @@
 ---
-id: symbol-charts
+id: chart-type-symbol-charts
 title: Symbol Chart
 sidebar_label: Symbol Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

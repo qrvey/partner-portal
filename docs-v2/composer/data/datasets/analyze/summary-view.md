@@ -2,6 +2,7 @@
 id: summary-view
 title: Summary View
 sidebar_label: Summary View
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

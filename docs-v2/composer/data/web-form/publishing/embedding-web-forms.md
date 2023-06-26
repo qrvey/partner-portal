@@ -2,6 +2,7 @@
 id: embedding-web-forms
 title: Embedding Web Forms
 sidebar_label: Embedding Web Forms
+tags: [Data Analyst, Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

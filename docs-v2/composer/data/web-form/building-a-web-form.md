@@ -2,6 +2,7 @@
 id: create-web-forms
 title: Building a Web Form
 sidebar_label: Building a Web Form
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

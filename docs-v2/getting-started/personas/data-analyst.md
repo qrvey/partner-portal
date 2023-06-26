@@ -2,6 +2,7 @@
 id: data-analyst
 title: Getting Started as a Data Analyst
 sidebar_label: Getting Started as a Data Analyst
+tags: [Data Analyst]
 ---
 
 Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
@@ -15,3 +16,5 @@ If you’re new to the role of Data Analyst, start with the following resources:
 * [Introduction to Data in Qrvey](../../composer/data/introduction-to-data-in-qrvey.md)
 * [Overview of Dashboards](../../composer/dashboards/overview-of-dashboards.md)
 * [Overview of Chart Builder](../../composer/charts/overview-of-chart-builder.md)
+
+Another useful resource is the Qrvey [Frequently Asked Questions (FAQs)](../faqs.md) page. 

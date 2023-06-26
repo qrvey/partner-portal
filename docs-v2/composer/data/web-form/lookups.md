@@ -2,6 +2,7 @@
 id: lookup
 title: Lookups
 sidebar_label: Lookups
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}> 
 

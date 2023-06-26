@@ -1,8 +1,9 @@
 ---
-id: percent-total-charts
+id: video-percent-total-charts
 title: Percent of Total Charts
 sidebar_label: Percent of Total Charts
 keywords: [chart,percent,total,funnel,pie,word,cloud]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of how to create Percent of Total charts, including Funnel charts, Pie charts, and Word Cloud charts. 

@@ -2,6 +2,7 @@
 id: preparing-AWS-account
 title: Preparing Your AWS Account
 sidebar_label: Preparing Your AWS Account
+tags: [CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

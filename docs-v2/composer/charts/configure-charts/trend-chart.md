@@ -2,6 +2,7 @@
 id: trend-chart
 title: Trend Chart
 sidebar_label: Trend Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -2,6 +2,7 @@
 id: field-guide
 title: Web Form Field Guide 
 sidebar_label: Web Form Field Guide 
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

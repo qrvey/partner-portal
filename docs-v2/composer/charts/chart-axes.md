@@ -2,6 +2,7 @@
 id: chart-axes
 title: Managing Chart Axes
 sidebar_label: Managing Chart Axes
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

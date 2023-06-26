@@ -1,7 +1,8 @@
 ---
-id: activity-log
+id: activity-log-application
 title: Activity Log
 sidebar_label: Activity Log
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

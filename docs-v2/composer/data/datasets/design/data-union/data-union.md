@@ -2,6 +2,7 @@
 id: data-unions
 title: Appending Data (Union)
 sidebar_label: Appending Data (Union)
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

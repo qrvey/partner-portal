@@ -2,6 +2,7 @@
 id: connections-api
 title: Creating API Connections
 sidebar_label: Creading API Connections
+tags: [Software Developer]
 ---
 
 <div style={{textAlign: "justify"}}>

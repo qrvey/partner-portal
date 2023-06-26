@@ -2,6 +2,7 @@
 id: data-load-notifications
 title: Setting Up Data Load Notifications
 sidebar_label: Data Load Notifications
+tags: [CloudOps Engineer]
 ---
 
 <div>

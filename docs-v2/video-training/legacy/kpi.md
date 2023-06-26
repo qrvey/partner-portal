@@ -1,8 +1,9 @@
 ---
-id: kpi
+id: video-kpi
 title: KPI Charts
 sidebar_label: KPI Charts
 keywords: [kpi,key,performance,indicator,metric,chart,value,target,threshold,indicator,dial,bullet]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of how to create Key Performance Indicator (KPI), or Metrics, charts. KPI charts display a single value, which may include targets and thresholds. The three types of KPI charts discussed are Indicator, Dial, and Bullet charts. 

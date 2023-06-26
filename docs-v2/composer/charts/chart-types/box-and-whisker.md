@@ -1,7 +1,8 @@
 ---
-id: box-and-whisker-charts
+id: chart-type-box-and-whisker-charts
 title: Box and Whisker Chart
 sidebar_label: Box and Whisker Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

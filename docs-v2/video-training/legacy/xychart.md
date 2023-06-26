@@ -1,8 +1,9 @@
 ---
-id: xychart
+id: video-xychart
 title: XY Charts
 sidebar_label: XY Charts
 keywords: [chart,x,y,xy,bar,line,symbol,min,max]
+tags: [Data Analyst]
 ---
 
 This video provides an in-depth overview of how to create charts with an X-axis and a Y-axis. The types of X/Y charts discussed include Bar chart, Line chart, Symbol chart, and Min/Max chart. 

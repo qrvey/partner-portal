@@ -2,6 +2,7 @@
 id: embedding-widgets-security-token
 title: Embedding Widgets Using a Security Token
 sidebar_label: Embedding Widgets Using a Security Token
+tags: [Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -2,6 +2,7 @@
 id: chart-format
 title: Format
 sidebar_label: Format
+tags: [Data Analyst]
 ---
  
 <div style={{textAlign: "justify"}}>

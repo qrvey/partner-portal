@@ -2,6 +2,7 @@
 id: complex-data
 title: Complex Data
 sidebar_label: Complex Data
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

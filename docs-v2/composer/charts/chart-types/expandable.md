@@ -1,7 +1,8 @@
 ---
-id: expandable-table
+id: chart-type-expandable-table
 title: Expandable Table
 sidebar_label: Expandable Table
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

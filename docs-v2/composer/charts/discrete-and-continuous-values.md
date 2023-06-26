@@ -2,6 +2,7 @@
 id: discrete-continuous-values
 title: Discrete and Continuous Values
 sidebar_label: Discrete and Continuous Values
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

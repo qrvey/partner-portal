@@ -2,6 +2,7 @@
 id: custom-view
 title: Custom View
 sidebar_label: Custom View
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

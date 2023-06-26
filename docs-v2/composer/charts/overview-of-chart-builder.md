@@ -2,6 +2,7 @@
 id: overview-of-chart-builder
 title: Overview of Chart Builder
 sidebar_label: Overview of Chart Builder
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

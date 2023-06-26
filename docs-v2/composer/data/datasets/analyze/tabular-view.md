@@ -2,6 +2,7 @@
 id: tabular-view
 title: Tabular View
 sidebar_label: Tabular View
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

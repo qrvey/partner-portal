@@ -2,6 +2,7 @@
 id: formulas
 title: Formulas
 sidebar_label: Formulas
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

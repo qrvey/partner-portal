@@ -1,7 +1,8 @@
 ---
-id: combo-charts
+id: chart-type-combo-charts
 title: Combo Chart
 sidebar_label: Combo Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

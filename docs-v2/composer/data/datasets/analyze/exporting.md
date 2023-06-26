@@ -2,6 +2,7 @@
 id: exporting-data
 title: Exporting Data
 sidebar_label: Exporting Data
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

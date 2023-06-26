@@ -2,6 +2,7 @@
 id: record-level-security
 title: Record Level Security
 sidebar_label: Record Level Security
+tags: [Software Developer, Solution Architect]
 ---
 
 <div style={{textAlign: "justify"}}>

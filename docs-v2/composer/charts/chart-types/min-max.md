@@ -1,7 +1,8 @@
 ---
-id: min-max-charts
+id: chart-type-min-max-charts
 title: Min/Max Chart
 sidebar_label: Min/Max Chart
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

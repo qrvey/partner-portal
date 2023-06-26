@@ -2,6 +2,7 @@
 id: widget-dashboard-builder
 title: Dashboard Builder Widget
 sidebar_label: Dashboard Builder Widget
+tags: [Software Developer]
 ---
 <div style={{textAlign: "justify"}}>
 

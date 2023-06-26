@@ -2,6 +2,7 @@
 id: page-groups
 title: Repeating Items Using Page Groups
 sidebar_label: Repeating Items Using Page Groups
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

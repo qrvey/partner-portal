@@ -1,7 +1,8 @@
 ---
-id: web-form-end-user
+id: widget-web-form-end-user
 title: Web Form - End User
 sidebar_label: Web Form - End User
+tags: [Software Developer]
 ---
 
 The Web Form End User widget is a powerful and effective tool that allows you to embed existing Web Forms in your own web application. This means that users will be able to enter data through the designed Web Form without leaving your product.

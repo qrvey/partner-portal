@@ -2,6 +2,7 @@
 id: column-links
 title: Automatic Column Links
 sidebar_label: Automatic Column Links
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

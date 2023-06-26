@@ -2,6 +2,7 @@
 id: working-with-tables
 title: Working with Tables
 sidebar_label: Working with Tables
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

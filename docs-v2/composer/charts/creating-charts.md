@@ -2,6 +2,7 @@
 id: creating-a-chart
 title: Creating a Chart
 sidebar_label: Creating a Chart
+tags: [Data Analyst]
 ---
 <div style={{textAlign: "justify"}}>
 

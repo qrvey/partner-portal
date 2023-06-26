@@ -2,6 +2,7 @@
 id: how-to-use-chart-builder-documentation
 title: How to Use Chart Builder Documentation
 sidebar_label: How to Use Chart Builder Documentation
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

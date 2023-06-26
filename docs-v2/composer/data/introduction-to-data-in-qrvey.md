@@ -2,6 +2,7 @@
 id: introduction-to-data-in-qrvey
 title: Introduction to Data in Qrvey 
 sidebar_label: Introduction to Data in Qrvey
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>

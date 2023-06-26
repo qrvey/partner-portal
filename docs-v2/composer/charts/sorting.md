@@ -2,6 +2,7 @@
 id: sorting-data
 title: Sorting the Data
 sidebar_label: Sorting the Data
+tags: [Data Analyst]
 ---
 
 <div style={{textAlign: "justify"}}>
