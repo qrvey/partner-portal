@@ -295,16 +295,23 @@ height: 100%;
   background-color: initial;
 }
 
+.menu__list {
+  height: 100%;
+  overflow: auto;
+}
+
 .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
   background-color: #35373F;
   padding-top: 80px !important;
     margin-top: -60px;
+    overflow: hidden;
 }
 
 .sidebar_njMd {
   background-color: #35373F;
   padding-top: 80px !important;
     margin-top: -60px;
+    overflow: hidden;
 }
 
 .card-home-content-title, .card-home-content-link{
@@ -1344,6 +1351,7 @@ a.nav-item-dropdown.active{
   background-color: #35373F;
   padding-top: 80px !important;
     margin-top: -60px;
+    overflow: hidden;
 }
 
 .menu__link--active {

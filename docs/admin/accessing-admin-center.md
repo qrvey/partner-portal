@@ -2,6 +2,8 @@
 id: admin-accessing-admin-center
 title: Accessing Qrvey Admin Center
 sidebar_label: Accessing Qrvey Admin Center
+tags: [Solution Architect]
+sidebar_position: 2
 ---
 
 <div style={{textAlign: "justify"}}>

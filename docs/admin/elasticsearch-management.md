@@ -1,7 +1,9 @@
 ---
-id: elasticsearch-management
+id: admin-elasticsearch-management
 title: Elasticsearch Management
 sidebar_label: Elasticsearch Management
+tags: [Solution Architect, CloudOps Engineer]
+sidebar_position: 7
 ---
 
 <div style={{textAlign: "justify"}}>

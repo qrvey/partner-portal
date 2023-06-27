@@ -2,6 +2,7 @@
 id: videos-home
 title: Qrvey Videos
 sidebar_label: Qrvey Videos
+tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
 ---
 
 This section of the Qrvey Partner Portal contains a wide variety of short training videos to help you better understand how to work with the Qrvey platform. They are divided into the following categories: 

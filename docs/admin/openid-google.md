@@ -2,6 +2,7 @@
 id: authentication-openid-google
 title: Using Google as the OpenID Provider
 sidebar_label: Using Google as the OpenID Provider
+tags: [Solution Architect, CloudOps Engineer]
 ---
 
 <div style={{textAlign: "justify"}}>

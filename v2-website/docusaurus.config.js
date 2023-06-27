@@ -62,11 +62,7 @@ module.exports = {
           "versions": {
             "current": {
               "label": '8.1',
-            },
-            '6.5': {
-              "label": '6.5 and earlier',
-              "path": 'version-6.5',
-            },
+            }
           },
         },
         "blog": {
@@ -122,71 +118,45 @@ module.exports = {
       },
       "items": [
         {
+          "label": "API Reference",
+          "type": 'doc',
+          "position": 'right',
+          "docId": "software-developer/Working with Qrvey APIs/api-intro"
+        },
+        {
+          "label": "Release Notes",
+          "type": 'doc',
+          "position": 'right',
+          "docId": "release-notes/v8/release-last"
+        },
+        {
           "type": 'dropdown',
-          "label": "Documentation",
+          "label": "User Persona",
           "position": "right",
           "items": [
             {
               "type": 'doc',
-              "docId": "get-started/get-started-intro",
-              "label": "Getting Started",
+              "docId": "admin/admin-center-intro",
+              "label": "Solution Architects"
             },
             {
               "type": 'doc',
-              "docId": "ui-docs/qrvey-composer-overview",
-              "label": "Qrvey Composer",
+              "docId": "composer/introduction-to-qrvey-composer",
+              "label": "Data Analysts"
             },
             {
-              "label": "Qrvey Admin Center",
               "type": 'doc',
-              "docId": "admin/admin-intro"
+              "docId": "software-developer/introduction-to-software-development",
+              "label": "Software Developers"
             },
             {
-              "label": "Developer Docs",
               "type": 'doc',
-              "docId": "dev-docs/dev-docs-overview"
+              "docId": "deployment/introduction-to-deployment",
+              "label": "CloudOps Engineers"
             },
-            {
-              "label": "Special Features",
-              "type": 'doc',
-              "docId": "special-features/special-features-overview"
-            },
-            {
-              "label": "Premium Features",
-              "type": 'doc',
-              "docId": "admin/premium-features/introduction-to-premium-features"
-            },
-            {
-              "label": "Release Notes",
-              "type": 'doc',
-              "docId": "release-notes/release-last"
-            },
-          ]
+          ],
         },
-        {
-          "to": "#",
-          "position": 'right',
-          "label": "API Reference"
-        },
-        {
-          "type": 'doc',
-          "position": 'right',
-          "docId": "release-notes/release-last",
-          "label": "Release Notes"
-        },
-        {
-          "type": 'doc',
-          "position": 'right',
-          "docId": "video-training/videos-home",
-          "label": "Knowledge Base"
-        },
-        {
-          "type": 'doc',
-          "docId": "faqs/ask-us",
-          "label": "FAQS",
-          "position": "right"
-        },
-        {
+       {
           "type": 'docsVersionDropdown',
           "position": 'right',
           "dropdownActiveClassDisabled": true,
