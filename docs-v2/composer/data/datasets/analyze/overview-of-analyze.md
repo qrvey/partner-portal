@@ -6,7 +6,7 @@ tags: [Data Analyst]
 ---
 
 The Analyze tab provides a variety of features for analyzing your dataset, including:
-* **[Formulas](../analyze/formulas.md)** 
+* **[Formula Builder](../analyze/formula-builder/overview-of-formula-builder.md)** 
 * **[Bucketing Data](../analyze/buckets.md)** 
 * **[Exporting Data](../analyze/exporting.md)** 
 
