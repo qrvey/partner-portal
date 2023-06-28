@@ -215,7 +215,7 @@
          }
          <div className="mainContainer" id="main-container">
            <div className="wrapper">
-             <Category />
+             {/* <Category /> */}
            </div>
          </div>
          </div>
