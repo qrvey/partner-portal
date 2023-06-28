@@ -22,7 +22,7 @@ Qrvey Admin Center is a web-based application used by administrators to manage a
 
 * **[Elasticsearch Management](../admin/elasticsearch-management.md)**. Describes how to monitor and manage the Elasticsearch cluster. 
 
-* **[Content Deployment](../admin/content-deployment/overview-of-content-deployment.md)**. Learn how to use the Content Deployment feature to copy content from one Qrvey application to another, in the same environment or to a different one. 
+* **[Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md)**. Learn how to use the Content Deployment feature to copy content from one Qrvey application to another, in the same environment or to a different one. 
 
  
 

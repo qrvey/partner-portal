@@ -25,7 +25,7 @@ The Records Added section of the Health Dashboard provides information about the
 The Elasticsearch section of the Health Dashboard provides basic information about the Elasticsearch cluster index, including space used, server type, and the overall health of the cluster.
 
 **See also**:  
-[Elasticsearch Management](../admin/elasticsearch-management.md)
+[Elasticsearch Management](../admin/managing-users.md)
 
 
 

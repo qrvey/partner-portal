@@ -118,6 +118,12 @@ module.exports = {
       },
       "items": [
         {
+          "type": 'doc',
+          "position": 'right',
+          "docId": "getting-started/intro-to-qrvey",
+          "label": "Documentation"
+        },
+        {
           "label": "API Reference",
           "type": 'doc',
           "position": 'right',
@@ -155,6 +161,12 @@ module.exports = {
               "label": "CloudOps Engineers"
             },
           ],
+        },
+        {
+          "type": 'doc',
+          "position": 'right',
+          "docId": "video-training/videos-home",
+          "label": "Knowledge Base"
         },
        {
           "type": 'docsVersionDropdown',

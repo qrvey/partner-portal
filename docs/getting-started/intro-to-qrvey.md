@@ -3,6 +3,7 @@ id: intro-to-qrvey
 title: Introduction to the Qrvey Platform
 sidebar_label: Introduction to Qrvey
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+sidebar_position: 1
 ---
 
 The Qrvey platform is an all-in-one analytics solution that enables SaaS providers to put cutting-edge analytics into the hands of their users. This article contains essential information required to understand how to work with the Qrvey platform.

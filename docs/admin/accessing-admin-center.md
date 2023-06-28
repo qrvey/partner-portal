@@ -19,7 +19,7 @@ The link to open the Qrvey Admin Center and the initial Administrator account wa
 
 ## Creating a Qrvey Administrator Account
 You can create a new Administrator account using either of the following methods:
-- In Qrvey Admin Center, use the [User Management](../admin/admin-managing-users.md) feature to assign an account the Administrator role (recommended)
+- In Qrvey Admin Center, use the [User Management](./managing-users.md) feature to assign an account the Administrator role (recommended)
 - [Create a Qrvey Administrator Account in the AWS IAM Service](create-admin-using-aws-iam.md)
 
 </div>

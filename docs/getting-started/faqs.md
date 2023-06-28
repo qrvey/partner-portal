@@ -3,6 +3,7 @@ id: faqs-all-personas
 title: Frequently Asked Questions (FAQs)
 sidebar_label: FAQs
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+sidebar_position: 3
 ---
 
 <div style={{textAlign: "justify"}}>

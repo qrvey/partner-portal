@@ -44,6 +44,6 @@ Once all parameters have been entered, click the **Test and Save** button.
 ![24admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/24admin.png#thumbnail)
 
 **See also**:
-[Managing Users of Qrvey Composer](admin-managing-users.md)
+[Managing Users of Qrvey Composer](managing-users.md)
 
 </div>

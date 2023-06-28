@@ -39,6 +39,6 @@ The following steps provide an example of how configure Auth0 as OpenID provider
 ![30admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/30admin.png#thumbnail)
 
 **See also**:
-[Managing Users of Qrvey Composer](admin-managing-users.md)
+[Managing Users of Qrvey Composer](managing-users.md)
 
 </div>

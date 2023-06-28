@@ -103,7 +103,7 @@ The Qrvey Admin Center enables you to set up authentication methods for both use
   - [Using Google as the OpenID Provider](openid-google.md)
   - [Using Auth0 as the OpenID Provider](openid-auth0.md)
 
-The Login page for Creators in Qrvey Composer is configured on the Onboarding tab in Qrvey Admin Center. For more information, see the "Customize the Login Page" section of [Customizing Qrvey Composer](../admin/admin-qrvey-console.md). The login settings for end users is configured in the Page Builder widget. 
+The Login page for Creators in Qrvey Composer is configured on the Onboarding tab in Qrvey Admin Center. For more information, see the "Customize the Login Page" section of [Customizing Qrvey Composer](customizing-qrvey-composer.md). The login settings for end users is configured in the Page Builder widget. 
 
 If both authentication methods are enabled, users can select their preferred method to log in to the system.  
 
