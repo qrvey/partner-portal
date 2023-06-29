@@ -27,7 +27,7 @@ Every piece of text that has to be translated - whether static or dynamic - is a
 >**Note**: The internationalization process requires a Google Cloud Platform account. If you already have a GCP account you can use that. Otherwise, you will need to create one. GCP accounts are free to create and use.
  
 At a high level, setting up internationalization requires the following steps:
-1. Creating a new project in GCP and following a few configuration steps as described in the [Internationalization, Step By Step](../internationalization/internationalization-step-by-step.md) article.
+1. Creating a new project in GCP and following a few configuration steps as described in the [Internationalization, Step By Step](internationalization-step-by-step.md) article.
 2. Creating the Google spreadsheet that contains the keys and translations and configuring the utility that performs the import/export of the keys
 3. Importing the keys using the utility
 4. Performing the translation
@@ -35,9 +35,9 @@ At a high level, setting up internationalization requires the following steps:
 6. Configuring the widgets to use the translation at runtime
  
 The first two steps can be best performed by a Cloud Ops engineer or someone who is comfortable working within the GCP and AWS consoles and has access to these accounts. The Google spreadsheet needs to be created once for any instance of Qrvey that has to be internationalized.
-The next steps can be repeated when additional text or phrases need to be translated. For example, you may complete all of the steps and later decide to translate the column names for one or more datasets. In this case, you can configure the dynamic tokens as described in the [Configuring Dynamic Labels For Datasets](../internationalization/configuring-dynamic-labels.md) article, then repeat steps 3 to 5 to import the newly added keys, translate the new text, and publish it back to the system.
+The next steps can be repeated when additional text or phrases need to be translated. For example, you may complete all of the steps and later decide to translate the column names for one or more datasets. In this case, you can configure the dynamic tokens as described in the [Configuring Dynamic Labels For Datasets](configuring-dynamic-labels.md) article, then repeat steps 3 to 5 to import the newly added keys, translate the new text, and publish it back to the system.
  
-The above steps have been described in full detail in the [Internationalization, Step By Step](../internationalization/internationalization-step-by-step.md) article.
+The above steps have been described in full detail in the [Internationalization, Step By Step](internationalization-step-by-step.md) article.
  
  
 </div>

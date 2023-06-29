@@ -28,9 +28,9 @@ Embedding a Qrvey widget requires at least the following two properties:
 
 * **API KEY**: This is your unique key that must be a part of every API call. This key is shared in the onboarding email that you receive right after your Qrvey instance is set up. 
 
-Go to the [Widgets Quick Start Guide](../embedding-widgets/widget-quick-start-guide.md) for more information on how to obtain these values.
+Go to the [Widgets Quick Start Guide](../04-Embedding%20Qrvey%20Widgets/widget-quick-start-guide.md) for more information on how to obtain these values.
 
-Depending on the widget you want to embed, you may need additional information. See [Overview of Embedding](../embedding-widgets/overview-of-embedding.md).
+Depending on the widget you want to embed, you may need additional information. See [Overview of Embedding](../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
 
 ```html 
 var DOMAIN = 'https://your_qrvey_domain', //your Qrvey domain
@@ -124,11 +124,11 @@ var config = {
 ## Supported Widgets
 The following is a list of Qrvey widgets that currently support authentication through a security token.
 
-* [Dashboard View](../embedding-widgets/widgets/dashboard-view.md)
-* [Dashboard Builder](../embedding-widgets/widgets/dashboard-builder.md)
-* [Analytic Suite](../embedding-widgets/widgets/analytic-suite.md)
-* [Single Panel](../embedding-widgets/widgets/single-panel.md)
-* [Web Form Design](../embedding-widgets/widgets/web-forms.md)
+* [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md)
+* [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)
+* [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md)
+* [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md)
+* [Web Form Design](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-forms.md)
 
 
 </div>

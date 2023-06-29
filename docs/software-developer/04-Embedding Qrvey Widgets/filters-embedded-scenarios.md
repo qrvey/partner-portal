@@ -8,7 +8,7 @@ sidebar_position: 4
 
 <div style={{textAlign: "justify"}}>
 
-Qrvey provides a set of controls to create and interact with filters across the application to refine the data based on your needs. You can find more details about these controls in the portal section [Working with Interactive Filters](../../ui-docs/filtering-data/working-with-filters.md). When embedding Qrvey’s widgets into your system, you may run into situations where you need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps that are needed for passing the values of your own filters to embedded Qrvey widgets.
+Qrvey provides a set of controls to create and interact with filters across the application to refine the data based on your needs. You can find more details about these controls in the portal section [Working with Interactive Filters](../../composer/08-Filtering%20Data/working-with-filters.md). When embedding Qrvey’s widgets into your system, you may run into situations where you need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps that are needed for passing the values of your own filters to embedded Qrvey widgets.
 
 You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the <a href="#filter-object-structure">Filter Object Structure</a>, as described below. The structure is passed as part of the supported widget’s configuration object as “userFilters” and it can contain an array of filters with the default scope of global.
 
@@ -22,7 +22,7 @@ var config = {
 }          
 }
 
-This feature is available with [Dashboard View](../embedding-widgets/widgets/dashboard-view.md), [Dashboard Builder](../embedding-widgets/widgets/dashboard-builder.md), [Single Panel](../embedding-widgets/widgets/single-panel.md), and [Analytic Suite](../embedding-widgets/widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
+This feature is available with [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
 
 ## Filter Object Structure
 ### Filters Object
@@ -38,7 +38,7 @@ This feature is available with [Dashboard View](../embedding-widgets/widgets/das
 | --- | --- | --- | --- |
 | **qrveyid** | `String` | No |Represent the dataset ID used to refine the data.|
 | **questionid** | `String` | No |Represent the dataset’s column ID used to refine the data, should belong to the qrvey defined above.|
-| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a [FORMULA](../../composer/data/datasets/analyze/formulas.md) or a [BUCKET](../../composer/data/datasets/analyze/buckets.md); otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
+| **questionType** | `String`| Yes | It’s only required if the column used to refine the data is a [FORMULA](../../composer/05-Working%20with%20Data/Datasets/03-Analyze/formulas.md) or a [BUCKET](../../composer/05-Working%20with%20Data/Datasets/03-Analyze/buckets.md); otherwise, it is optional. Allowed values: <br />* FORMULA <br />* BUCKET |
 | **validationType** | `String` | Yes | The field represents the operand for filtering. Allowed values: <br />* EQUAL <br /> * NOT_EQUAL <br /> * CONTAIN <br /> * NOT_CONTAIN <br /> * END_WITH<br />* NOT_END_WITH <br />* START_WITH<br /> * NOT_START_WITH <br />* RANGE <br />* IS_EMPTY <br />* IS_NOT_EMPTY |
 | **property** | `String` | No | When using complex data types like the ones defined inside Webforms, Quizzes, or Surveys, it’s required. Please refer to <a href="#complex-properties">Complex Properties</a> for a complete list of supported values. |
 | **groupValue** | `String` | No | Default ‘day’. Only applies when you want to group date values. Allowed values:<br />* year<br />* month<br />* quarter<br />* week<br />* day<br />* hour<br />* minute<br />* second |

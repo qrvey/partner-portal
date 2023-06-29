@@ -184,7 +184,7 @@ Once the deployment is done and Verified, Qrvey’s deployment team will email t
      * ANView URL
   * Elasticsearch URL
 * Useful Links:
-    * [Developer Docs](../../software-developer/introduction-to-software-development.md)
-    * [API reference](../../software-developer/qrvey-api/overview-of-qrvey-api.md) and [Widgets Samples](../../software-developer/embedding-widgets/overview-of-embedding.md).
+    * [Developer Docs](../software-developer/introduction-to-software-development.md)
+    * [API reference](../software-developer/06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md) and [Widgets Samples](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
 
 </div>

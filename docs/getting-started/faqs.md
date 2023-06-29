@@ -8,7 +8,7 @@ sidebar_position: 3
 
 <div style={{textAlign: "justify"}}>
 
-This article contains frequently asked questions organized by user persona. If you still can't find what you're looking for, [ask us](../getting-started/ask-us.md)!
+This article contains frequently asked questions organized by user persona. If you still can't find what you're looking for, [ask us](ask-us.md)!
 
 ## FAQs for Solution Architects
 

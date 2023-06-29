@@ -10,11 +10,11 @@ sidebar_position: 3
 The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application.  
 
 ## Before You Begin
-- Review the [Widget Quick Start Guide](../intro.md) for an overview of the widget components. 
+- Review the [Widget Quick Start Guide](../overview-of-embedding.md) for an overview of the widget components. 
 - Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. To obtain a new API key, contact your Qrvey account representative.
 
 ## Get the Helper Code
-1. In Qrvey Composer, open the [Pixel-perfect Reports](../../../composer/reports/overview-of-pixel-perfect-reports.md) feature. 
+1. In Qrvey Composer, open the [Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) feature. 
 2. Click the **Embed Pixel-perfect Reports** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag. This code embeds the Pixel-perfect Reports widget. While you may embed a single report using its ID, the end user will still have access to all the reports available in the widget. 
 3. Click **Copy** to copy the code, and then paste it into your preferred editor. 
 
@@ -87,6 +87,6 @@ var config = {
 ```
 
 **See also**:
-[Introduction to Pixel-perfect Reports](../../../composer/reports/overview-of-pixel-perfect-reports.md)
+[Introduction to Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)
 
 </div>

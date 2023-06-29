@@ -14,7 +14,7 @@ The primary technical resources for the Software Developer are the:
 
 If you’re new to the role of Software Developer, start with the following resources:
 * [Overview of the Qrvey Platform Architecture](../../software-developer/architecture.md)
-* [Overview of Embedding and Widgets](../../software-developer/embedding-widgets/overview-of-embedding.md)
-* [Overview of the Qrvey API](../../software-developer/qrvey-api/overview-of-qrvey-api.md)
+* [Overview of Embedding and Widgets](../../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
+* [Overview of the Qrvey API](../../software-developer/06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md)
 
 Another useful resource is the Qrvey [Frequently Asked Questions (FAQs)](../faqs.md) page. 

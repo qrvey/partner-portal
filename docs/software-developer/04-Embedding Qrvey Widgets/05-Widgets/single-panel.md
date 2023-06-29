@@ -87,7 +87,7 @@ The table below provides general information about each property of this widget�
 | **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| No
 
 
-> **Note**: Refer to the[ FAQs](../../../faqs/faqs.md) if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the[ FAQs](../../../getting-started/faqs.md) if you don’t know where to find any of the required configuration properties. 
 
 ## Samples
 The following samples show the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 

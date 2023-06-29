@@ -58,7 +58,7 @@ The table below provides general information about each property of this widget�
 
 
 
-> **Note**: Refer to the [ FAQs](../../../faqs/faqs.md) if you don’t know where to find any of the required configuration properties. 
+> **Note**: Refer to the [ FAQs](../../../getting-started/faqs.md) if you don’t know where to find any of the required configuration properties. 
 
 ### Hiding Features
 Show or hide any feature you don’t require for your embedded use cases by setting a property to true or false which creates a customized version of the Dashboard Builder widget.

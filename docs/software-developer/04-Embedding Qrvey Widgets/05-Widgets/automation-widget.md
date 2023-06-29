@@ -11,8 +11,8 @@ sidebar_position: 9
 The Automation widget enables you to embed the Automation functionality into your application. 
 
 ## Before You Begin
-* Review the [Widget Quick Start Guide](../widgets/intro.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. For more information, see [General FAQs](../../faqs/faqs.md).
+* Review the [Widget Quick Start Guide](../overview-of-embedding.md) for an overview of the widget components. 
+* Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. For more information, see [General FAQs](../../../getting-started/faqs.md).
 
 ## Get the Helper Code
 1. In Qrvey Composer, open the Automation feature. 
@@ -66,7 +66,7 @@ The following table lists the properties associated with this widget.
 | **qv_token** | `String`, Codified string that can be embedded in the widget to pass private properties, such as the api_key, via token | No |
 
 #### Time Zone Configuration
-The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. You can specify the time zone offset in the configuration object properties. For more information, see [Time Zone Support](../../special-features/timezone-support.md). 
+The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. You can specify the time zone offset in the configuration object properties. For more information, see [Time Zone Support](../../10-Timezone%20Settings/timezone-support.md). 
 
 ## Sample
 The following sample demonstrates how this widget can be used in an HTML page.  

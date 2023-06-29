@@ -20,7 +20,7 @@ In this tutorial, we will use the API to programmatically create a Quiz web form
 ## Before you begin
 In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. In addition, you should be familiar with the following concepts:
 - [Introduction to the Qrvey Platform](../../../getting-started/intro-to-qrvey.md)
-- [Overview of Qrvey Applications](../../../composer/applications/overview-of-applications.md)
+- [Overview of Qrvey Applications](../../../composer/04-Managing%20Applications/overview-of-applications.md)
 
 Before using the Qrvey API, gather the following:
 - The base URL of your instance of the Qrvey platform. 
@@ -83,7 +83,7 @@ See the following screenshot for an example of using the Get User List API in Po
 ![Get User ID](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-get-user-id.png#thumbnail-50)
 
 ## Create an application
-A Qrvey application is a self-contained analytics project that contains data and any number of analytics components, such as charts, reports, dashboards, and workflows. The user that creates the application is the application owner.  For more information on applications, see [What Is a Qrvey Application?](../../ui-docs/basics/applications.md)
+A Qrvey application is a self-contained analytics project that contains data and any number of analytics components, such as charts, reports, dashboards, and workflows. The user that creates the application is the application owner.  For more information on applications, see [What Is a Qrvey Application?](../../../composer/04-Managing%20Applications/overview-of-applications.md)
 
 To create a new application, begin by reviewing the API documentation for [Create Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/0d09929d631ef-create-application). 
 
@@ -169,7 +169,7 @@ Once you’ve created the Quiz web form, you can update it to contain the quiz q
 At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. 
 
 Embedding is outside the scope of this tutorial. For more information on embedding and widgets, see:
-- [Widget Quick Start Guide](../../embedding/widgets/intro.md)
+- [Widget Quick Start Guide](../../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 - [Widgets Overview (video)](https://partners.qrvey.com/docs/video-training/building-qrvey-sample/widget-overview) 
 
 

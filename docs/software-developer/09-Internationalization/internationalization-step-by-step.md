@@ -111,7 +111,7 @@ In this section you will create a blank translation spreadsheet and configure th
 **Recommended Persona**: Cloud Ops engineer or software engineer <br/>
 **Prerequisites**: Qrvey API key
  
-The Translation Spreadsheet provides the location and mechanism for all translation values. It consists of two tabs, each holding keys and translations for different areas of the Qrvey platform. The keys uniquely identify each term or phrase and are automatically generated for the static text. Dynamic text keys are suggested by the system, but can be manually set during the configuration process. See [Configuring Dynamic Labels For Datasets](../internationalization/configuring-dynamic-labels.md) article to learn more about that process.
+The Translation Spreadsheet provides the location and mechanism for all translation values. It consists of two tabs, each holding keys and translations for different areas of the Qrvey platform. The keys uniquely identify each term or phrase and are automatically generated for the static text. Dynamic text keys are suggested by the system, but can be manually set during the configuration process. See [Configuring Dynamic Labels For Datasets](configuring-dynamic-labels.md) article to learn more about that process.
  
 The steps in this section use the Qrvey Translation Service Utility to import the keys into the spreadsheet.
  
@@ -147,7 +147,7 @@ A sample row on the static text tab of the spreadsheet may look something like t
 | pagebuilder| topbar.pages| Pages | Páginas | Seiten|
  
  
-The **i18nTokens** tab is for translating i18n tokens entered into the Qrvey UI and it does not have a **domain** column. The keys are configured from the Qrvey Composer and can be set to any uniquely identifiable value. It is recommended that the use of special characters is avoided for keys. See [Configuring Dynamic Labels For Datasets](../internationalization/configuring-dynamic-labels.md) article to learn about the process of configuring i18 tokens in Qrvey Composer.
+The **i18nTokens** tab is for translating i18n tokens entered into the Qrvey UI and it does not have a **domain** column. The keys are configured from the Qrvey Composer and can be set to any uniquely identifiable value. It is recommended that the use of special characters is avoided for keys. See [Configuring Dynamic Labels For Datasets](configuring-dynamic-labels.md) article to learn about the process of configuring i18 tokens in Qrvey Composer.
  
 Once the keys have been added to the spreadsheet by following the import process described in the previous section, any number of people can work on the spreadsheet to enter the translations.
 
