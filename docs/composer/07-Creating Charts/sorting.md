@@ -21,7 +21,7 @@ There are several ways to sort data within the Chart Builder. These different me
 Multiseries Charts also can be sorted by either the Category or Value column and the Series column can be sorted independently, at the same time. 
 Tables support sorting for all of their columns individually, or in a multi-column manner. Multi-column sorting gives you the option to first sort by one column and lets the next column’s sorting be applied on top of the previous sorting. 
 
-To learn more about sorting in specific charts please see the related articles under [Chart Types](../../ui-docs/dataviews/chart-types/bar.md). 
+To learn more about sorting in specific charts please see the related articles under [Chart Types](./07-Chart%20Types/bar.md). 
 
 ## Access Points for Sorting
 Sorting of data in charts can be initiated from various places in the Chart Builder. These access points are:
@@ -55,7 +55,7 @@ Using the said dropdown list, you can choose the column to sort the data by, eve
 ![sorting-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/sort-data/panel2.png#thumbnail-40)  
 
 ### Sorting from the General Section of the Configuration Panel
-Other charts that support sorting, but not through the two methods mentioned above, allow sorting from the icons in the **Sort by** subsection under the [General](../../ui-docs/chart-builder/overview.md) section of the configuration panel.
+Other charts that support sorting, but not through the two methods mentioned above, allow sorting from the icons in the **Sort by** subsection under the [General](../07-Creating%20Charts/overview-of-chart-builder.md) section of the configuration panel.
 
 ![sorting-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/sort-data/general1.png#thumbnail-40)  
 
@@ -83,7 +83,7 @@ If we want to still list Australian customers on top, but also sort the cities *
 
 Once the feature is enabled, an **Apply Multi-Column Sort** button appears above the table, from where various sorting options can be controlled. Sorting any of the columns after this point will result in its being sorted after - and on top of - the one that was sorted before it. 
 The feature can be removed at any time by clicking on the **X** icon on the button, and columns can be added, removed or dragged to another position in the stack to determine the priority of their sorting level.
-This feature is explained with more examples in the [Table Charts](../../ui-docs/dataviews/chart-types/table.md) article. 
+This feature is explained with more examples in the [Table Charts](./07-Chart%20Types/table.md) article. 
 
 
 ![sorting-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/sort-data/multicolumn4.png)  

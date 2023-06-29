@@ -65,7 +65,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Percentage** - the values shown in the segments do not represent the percentage of the total, but instead, they show the percentage of the max value, which is calculated by dividing the current value by the maximum value.
 
 ### Format
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Funnel Chart.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Funnel Chart.
 
 ### Sorting 
 You can sort Values directly from the column pill or in case you’d like to sort by a different column, go to the Sorting section of the Configuration Panel, pick your desired column from the dropdown, and select the sorting direction.
@@ -81,7 +81,7 @@ For more information, see [Sorting](../sorting.md).
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 For more on Funnel Charts and other Percent of Total charts, we recommend watching <a href="/docs/video-training/building-qrvey-sample/kpi" target="_blank">this video</a>.

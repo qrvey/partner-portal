@@ -85,7 +85,7 @@ Once a file connection exists you can create a dataset from your file upload to 
 
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/fileup7.png#thumbnail-60)
 
-For more information on creating datasets and working with your file upload data, see [Datasets](../datasets/overview-of-datasets.md). You can also read more about working with hierarchical data from a JSON upload in the [dedicated article](ui-docs/datasets/hierarchical-data.md). 
+For more information on creating datasets and working with your file upload data, see [Datasets](../Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md). You can also read more about working with hierarchical data from a JSON upload in the [dedicated article](../Datasets/01-Overview%20of%20Datasets/hierarchical-data.md). 
 
 
 

@@ -22,7 +22,7 @@ We set the **Date Group** as *Quarter, Year* in the Category column pill and con
 ![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/create-line.gif#thumbnail)
 
 
-If you have more than one category you’d like to visualize, you can use a [Multiseries Line Chart](../chart-types/ms-line.md)
+If you have more than one category you’d like to visualize, you can use a [Multiseries Line Chart](./ms-line.md)
 
 
 ## Styling the Line Chart
@@ -82,16 +82,16 @@ Like all XY Charts, you can sort by either the category or aggregated values fro
 For more information, see [Sorting](../sorting.md). 
  
 ### Layers
-Add a [Trend Line](../configure-charts/chart-layers.md#trend-line) or a [Reference Line](../configure-charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
+Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
  
 
 ### Format
-The [Small Multiples](../configure-charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
+The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
  
 For more on Line Charts and other XY charts, watch the <a href="/docs-v2/video-training/legacy/xychart.md" target="_blank">XY Chart video</a>.
 

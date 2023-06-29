@@ -14,6 +14,6 @@ As implied by their name, trend charts are used to analyze trends and changes in
 ![trend-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/trend-chart/trend1.png#thumbnail)
 
 
-For more information on trend charts, see [Tables](../chart-types/table.md).
+For more information on trend charts, see [Tables](../07-Chart%20Types/table.md).
 
 </div>

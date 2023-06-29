@@ -8,8 +8,8 @@ sidebar_position: 1
 
 The Design tab of the Data feature enables you to design your dataset. Its features include:
 
-* **[Geolocation](../design/geolocation/overview-of-geolocation.md)**
-* **[Transformations](../design/transformation/transformations.md)**
-* **[Data Syncronization](../design/data-sync/data-sync.md)**
-* **[Data Joins](../design/data-joins/data-joins.md)**
-* **[Data Unions](../design/data-union/data-union.md)**
+* **[Geolocation](../02-Design/02-Geolocation/overview-of-geolocation.md)**
+* **[Transformations](../02-Design/03-Transformations/transformations.md)**
+* **[Data Syncronization](../02-Design/04-Data%20Syncronization/data-sync.md)**
+* **[Data Joins](../02-Design/05-Data%20Joins/data-joins.md)**
+* **[Data Unions](../02-Design/06-Data%20Unions/data-union.md)**

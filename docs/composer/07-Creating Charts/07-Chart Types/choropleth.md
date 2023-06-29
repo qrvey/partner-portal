@@ -18,7 +18,7 @@ Choropleth maps use one geolocation column to determine regions on the map, and 
 Before you can create a Map Chart, your data needs to be prepared for the correct use of maps which is done by adding a *Geolocation* to your data.
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of **Datasets**. It's important to define these groups correctly for accurate map locations.
 
-For more information, see [Overview of Geolocation Groups](../../data/datasets/design/geolocation/overview-of-geolocation.md).
+For more information, see [Overview of Geolocation Groups](../../05-Working%20with%20Data/Datasets/02-Design/02-Geolocation/overview-of-geolocation.md).
 
 
 ## When to Use It
@@ -26,7 +26,7 @@ The type of analysis that can be best performed with a choropleth map usually in
 * “How does the average amount of rainfall in each state compare to each other?” Or “Which states get more rainfall than others?”
 * “Where, in the range of far left to far right, does each zip code’s voting statistics fall?”
 
-Note that the question is never “how may”, or “how much”. For getting definite numbers that are the answers to such questions, use a [Bubble Map](../chart-types/bubble-map.md).
+Note that the question is never “how may”, or “how much”. For getting definite numbers that are the answers to such questions, use a [Bubble Map](bubble-map.md).
 
 ## Creating a Choropleth Map
 
@@ -43,7 +43,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 ### General
 * **Legends** - show or hide the legend explaining which color represents which Value.
-* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md).
+* **Tooltips** - enable or disable [Tooltips](../tooltips.md).
  * To show more than one value on mouseover, click on **+Add Column**:
      * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
      * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
@@ -64,11 +64,11 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Data Labels** -  Show or hide value labels of your data points.
 
 ### Format
-You can apply [[Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
+You can apply [[Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 

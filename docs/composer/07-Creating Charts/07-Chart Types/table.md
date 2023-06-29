@@ -98,7 +98,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 </ul>
 
 
-* **Table Calculations** - add a calculation to your table. For more information, see [Table Calculations](../table-calculations/table-calculations.md).
+* **Table Calculations** - add a calculation to your table. For more information, see [Table Calculations](../08-Table%20Calculations/table-calculations.md).
 
 
 * **Aggregated Formulas** - when you group the table, the option to add a table formula to your data appears. This feature has been explained in detail in the <a href="#aggregated-formulas">Aggregated Formulas</a> section of this article. 
@@ -241,7 +241,7 @@ Trend Charts can be added in one of two ways:
 
 You can also add Filters to your table by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 ### Resizing Columns
@@ -327,7 +327,7 @@ Formulas apply to the values of one row of data and their results are presented 
 
 “Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
 
-Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../dataviews/formulas.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
+Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../05-Working%20with%20Data/Datasets/03-Analyze/formulas.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
 
 To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the Group shelf):
 

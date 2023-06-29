@@ -58,11 +58,11 @@ Header Font Color - set the foreground color for the text in your header using t
 * **Format** - set the format for your data points; pick between *Default* (depending on the format in the Values shelf, e.g. $1,234.56), *Abbreviated* (e.g. 1.23K), Numeric (e.g. 1,234.56), *Currency* (e.g. $1,234.56), *Percentage* (e.g.1,234.56%), *Scientific* (e.g.1.23e+3). 
 
 ### Format
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Crosstab Chart.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Crosstab Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 ## Sorting in Crosstab Tables

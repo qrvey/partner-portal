@@ -34,11 +34,11 @@ For CSV data or unstructured data, such as JSON documents, the UI supports uploa
 See the articles below to get more information on database sources, file sources, and API sources:
 
 
-* [Database Connections](../connections/databases.md)
+* [Database Connections](./databases.md)
 
-* [File Upload Connections](../connections/csv.md)
+* [File Upload Connections](./csv.md)
 
-* [API Connections](../datasets/api-connections.md)
+* [API Connections](./api-connections.md)
 
 If you have already created connections, then you will see them listed here, along with a **New Connection** button to create new ones, which will again prompt you with the available data source types modal window.
 

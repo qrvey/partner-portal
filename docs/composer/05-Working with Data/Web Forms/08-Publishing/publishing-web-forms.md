@@ -7,7 +7,7 @@ sidebar_position: 1
 ---
 <div style={{textAlign: "justify"}}>
 
-Qrvey makes it easy to publish your web forms just about anywhere. This article discusses different ways you can use your forms, surveys, and quizzes. For information on embedding web forms, see [Embedding Web Forms](../publishing/embedding-web-forms.md).
+Qrvey makes it easy to publish your web forms just about anywhere. This article discusses different ways you can use your forms, surveys, and quizzes. For information on embedding web forms, see [Embedding Web Forms](./embedding-web-forms.md).
 
 > **Note:** Before you can use or share any web forms, you must first activate the web form by clicking the **Activate** button at the top of the Publish page. To pause and make changes to your web form, you will need to click the **Pause** button.
 

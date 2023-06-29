@@ -19,7 +19,7 @@ Bubble maps use one geolocation column to determine the location, and a value co
 Before you can create a Map Chart, your data needs to be prepared for the correct use of maps which is done by adding **Geolocation** to your data.
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of Datasets. It's important to define these groups correctly for accurate map locations.
 
-Read more about setting geolocation in [Datasets](../../datasets/datasets.md).
+Read more about setting geolocation in [Datasets](../../05-Working%20with%20Data/Datasets/02-Design/02-Geolocation/overview-of-geolocation.md).
 
  
 ## When to Use It
@@ -58,11 +58,11 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
  
  
 ### Format
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to Bubble Map Charts.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Bubble Map Charts.
  
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
  
  
 For more on Bubble Maps and other Map charts, we recommend watching <a href="/docs-v2/video-training/legacy/map-chart.md" target="_blank">this video</a>.

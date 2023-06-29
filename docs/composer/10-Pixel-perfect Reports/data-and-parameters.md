@@ -19,7 +19,7 @@ Parameters enable you to filter data and display information in the report. They
 
 ![Pixel-perfect-reports-Data-tab-New-81](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Data-tab-New-81.png#thumbnail-60)
 
-2. Click **Select Dataset**. The Select Dataset dialog displays. The functionality to create a connection is the same as the Connections feature in Qrvey Composer. For more information, see [Connections Overview](../datasets/connectors.md). 
+2. Click **Select Dataset**. The Select Dataset dialog displays. The functionality to create a connection is the same as the Connections feature in Qrvey Composer. For more information, see [Connections Overview](../05-Working%20with%20Data/Connections/overview-of-connections.md). 
 
   Once you’ve established the connection, the dataset columns display in the panel as Categories and Values. They are now available for use in the report. 
 

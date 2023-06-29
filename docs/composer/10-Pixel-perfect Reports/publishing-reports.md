@@ -38,10 +38,10 @@ Pixel-perfect Reports enables you to download completed reports in PDF format. I
 ## Send reports via email
 The Send Email action in Workflows/Automation supports Pixel-perfect Reports. It currently supports one report per email action. Note that you can add other types of attachments (files, chart exports, and dashboard exports) to the same action. The email is sent to the address of the user ID in the widget or the logged in user. 
 
-For more information, see the "Send an Email" section of [Send Actions](../automation/send-actions.md). 
+For more information, see the "Send an Email" section of [Send Actions](../09-Automation/send-actions.md). 
 
 ## Embedding reports
-The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/embedding-widgets/widgets/pixel-perfect-reports.md). 
+The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md). 
 
 
 </div>

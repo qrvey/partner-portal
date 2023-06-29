@@ -87,7 +87,7 @@ For more information about RLS and how to set it up, see [Record Level Security]
 
 Any column of the dataset can be set up so that it presents an automatic link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map. The automatic link can be set up from the Column Link command in the dot menu of the intended column.
 
-For more information, see [Column Links](../datasets/column-links.md).
+For more information, see [Column Links](./column-links.md).
 
 
 ### Setting Up Geolocation Groups​

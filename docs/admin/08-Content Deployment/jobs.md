@@ -12,7 +12,7 @@ A Deployment Job executes the type of deployment specified by one or more deploy
   
 
 ## Before you begin
-* Verify that the desired deployment definition has been created. For more information, see [Deployment Definitions](../content-deployment/definitions.md). 
+* Verify that the desired deployment definition has been created. For more information, see [Deployment Definitions](../08-Content%20Deployment/definitions.md). 
 * If you intend to give access to an application to all users from one organization, in the same environment, consider making the application public instead of deploying it to all users. This prevents the application from being replicated into copies of the original.
 
 ## Create a deployment job
@@ -26,8 +26,8 @@ A Deployment Job executes the type of deployment specified by one or more deploy
     * Click the **Users** drop-down and select the users to receive the application. 
   The page updates to display details of what is included in the deployment definition. 
 6. To view additional details, click the **Details** link. 
-7. Configure content tokens. See "Using content tokens" in [Deployment Definition](../content-deployment/definitions.md). 
-8. Configure parameter tokens. See "Using parameter tokens" in [Deployment Definition](../content-deployment/definitions.md).
+7. Configure content tokens. See "Using content tokens" in [Deployment Definition](../08-Content%20Deployment/definitions.md). 
+8. Configure parameter tokens. See "Using parameter tokens" in [Deployment Definition](../08-Content%20Deployment/definitions.md).
 9. To add a new block, click Add Block and repeat the process described above.  
   > **Note**: To deploy one application to several destination servers, create a block for each server. 
 10. To review the details of a section of the deployment definition, click its **Details** link. 

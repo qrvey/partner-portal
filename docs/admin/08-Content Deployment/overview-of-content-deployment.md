@@ -18,13 +18,13 @@ To open the Content Deployment page in Qrvey Admin Center, click the Content Dep
 ![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-content-deployment.png)
 
 Content Deployment requires you to configure four steps:
-1. [**Servers**](../content-deployment/servers.md) define the source and destination instances.
-2. [**Packages**](../content-deployment/packages-and-versions.md) create a snapshot copy of the source application.
-3. [**Deployment Definitions**](../content-deployment/definitions.md) specify the content to copy and what to change during the deployment.
-4. [**Deployment Jobs**](../content-deployment/jobs.md) specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
+1. [**Servers**](../08-Content%20Deployment/servers.md) define the source and destination instances.
+2. [**Packages**](../08-Content%20Deployment/packages-and-versions.md) create a snapshot copy of the source application.
+3. [**Deployment Definitions**](../08-Content%20Deployment/definitions.md) specify the content to copy and what to change during the deployment.
+4. [**Deployment Jobs**](../08-Content%20Deployment/jobs.md) specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
 
 Once these steps are complete, you can run the deployment job. 
 
-For a video tutorial on using Content Deployment, see [Content Deployment](https://partners.qrvey.com/docs/video-training/building-qrvey-sample/content-deployment).
+For a video tutorial on using Content Deployment, see [Content Deployment](../../video-training/legacy/content-deployment.md).
 
 </div>

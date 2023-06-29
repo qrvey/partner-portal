@@ -19,6 +19,6 @@ The different statuses will indicate if the data was loaded successfully to the 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/status.png#thumbnail) 
 
 The Datasets page consists of three tabs:
-* **[Design](../datasets/design/overview-of-design.md)**
-* **[Analyze](../datasets/analyze/overview-of-analyze.md)**
-* **[Activity Log](../datasets/activity-log/activity-log.md)**
+* **[Design](../02-Design/overview-of-design.md)**
+* **[Analyze](../02-Design/overview-of-design.md)**
+* **[Activity Log](../03-Analyze/activity-log.md)**

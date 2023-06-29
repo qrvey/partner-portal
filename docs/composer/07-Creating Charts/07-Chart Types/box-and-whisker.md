@@ -61,7 +61,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 - **Opacity** - Set the level of opacity of the box, whisker, and outliers.
 
 ### Filters
-You can also add Filters to your data by expanding the Filters section in the Configuration panel or by clicking on the Filters button in the toolbar above the canvas. Filters that are created in Chart Builder are hidden from end users. These types of filters can’t be edited or modified in View mode. For more information, see [Filters](../configure-charts/chart-filters.md). 
+You can also add Filters to your data by expanding the Filters section in the Configuration panel or by clicking on the Filters button in the toolbar above the canvas. Filters that are created in Chart Builder are hidden from end users. These types of filters can’t be edited or modified in View mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md). 
 
 
 </div>

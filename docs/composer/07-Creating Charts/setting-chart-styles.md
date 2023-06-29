@@ -11,7 +11,7 @@ sidebar_position: 5
 The default visualization colors and font styles are determined by a “theme” that applies to the entire Qrvey app. The default theme can be modified and many of its settings can be further customized within each individual chart’s configuration. This article explains the various layers of applying colors and adjusting font styles of charts and their panels.
 
 ## Choosing Colors for Charts 
-Some charts, such as regular Bar and Line, use a single color to depict the values by default. These are the types of charts where the data values are the center of attention and not the categories for each value. The default single color (also called the *Main color*) used for these charts is shown, and can be changed, either from the Chart Builder Toolbar, or from the **[Styles](../../ui-docs/dataviews/chart-builder/chart-configuration/styles.md)** section of the Configuration Panel.    
+Some charts, such as regular Bar and Line, use a single color to depict the values by default. These are the types of charts where the data values are the center of attention and not the categories for each value. The default single color (also called the *Main color*) used for these charts is shown, and can be changed, either from the Chart Builder Toolbar, or from the **[Styles](./09-Configure%20charts/chart-styles.md)** section of the Configuration Panel.    
 
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/choose.png#thumbnail-40) 
 
@@ -32,7 +32,7 @@ The chosen sequence of colors is used to apply one color to each category. Each 
 
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/colors.png) 
 
-To read more about setting color styles for different charts, go to [Chart Types](../../ui-docs/dataviews/chart-types/bar.md) and check the Styles section of a specific chart.
+To read more about setting color styles for different charts, go to [Chart Types](./07-Chart%20Types/bar.md) and check the Styles section of a specific chart.
 
 ## Assigning Fixed Colors to Categories
 There are occasions when colors have specific meanings in your analytics and you wish to customize the colors assigned to each category of data, rather than going with the defaults chosen by the product. For example, if you are displaying the volume of sales of different flavors of ice creams, you may want to assign pink to strawberry, brown to chocolate flavor, and cream to vanilla. You may also want to use the same three colors consistently across all visualizations that are based on the same dataset. 

@@ -69,16 +69,16 @@ Like all XY Charts, you can sort by either the category or aggregated values fro
 For more information, see [Sorting](../sorting.md). 
  
 ### Layers
-Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
+Add a [Trend Line](../09-Configure%20charts/layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
 
 ### Format
-The [Small Multiples](../configure-charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Min/Max Chart.
+The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Min/Max Chart.
 
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 For more on Min/Max Chart and other XY charts, we recommend watching <a href="/docs-v2/video-training/legacy/xychart.md" target="_blank">this video</a>.

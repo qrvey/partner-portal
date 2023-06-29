@@ -8,7 +8,7 @@ sidebar_position: 3
  
 <div style={{textAlign: "justify"}}>
 
-Comparison and Thresholds sections appear only in KPI Charts and are described in more detail in corresponding Chart Types ([Bullet](../chart-types/bullet.md), [Dial](../chart-types/dial.md), [Indicator gauge](../chart-types/indicator.md)).
+Comparison and Thresholds sections appear only in KPI Charts and are described in more detail in corresponding Chart Types ([Bullet](../07-Chart%20Types/bullet.md), [Dial](../07-Chart%20Types/dial.md), [Indicator gauge](../07-Chart%20Types/indicator.md)).
 
 The Comparison feature allows the chosen value to be compared against its value at a different point in time. 
 

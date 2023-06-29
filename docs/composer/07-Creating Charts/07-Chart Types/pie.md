@@ -54,11 +54,11 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### Format
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Pie Chart.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Pie Chart.
 
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
 For more on Pie Charts and other Percent of Total charts, we recommend watching <a href="/docs-v2/video-training/legacy/percent-total-charts.md" target="_blank">this video</a>.

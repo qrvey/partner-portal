@@ -25,7 +25,7 @@ We drag and drop *country* as **Category**, *Quantity* as **Value**, and *status
  ![ms-symbol-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/MS-Symbol/ms-symbol.png#thumbnail-60)
 
 
-If you have only one category you’d like to visualize, you can use a [Symbol Chart](../chart-types/symbol.md).
+If you have only one category you’d like to visualize, you can use a [Symbol Chart](./symbol.md).
 
 
 ## Styling the Multiseries Symbol Chart
@@ -40,7 +40,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
       * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
       * **Remove** - remove the tooltip column.
   * **Header** - add a header to the tooltip.
-* **Table Calculations** - add calculations to your table. Read more on this [here](../../dataviews/table-calculations.md).
+* **Table Calculations** - add calculations to your table. Read more on this [here](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/dataset-views.md).
 * **Max Data Points** - set the upper limit of the data points you’d like to show in your Multiseries Bar Chart. Controlling the number of data points helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 * **Max Series** - increase/decrease a limit on the series you want to show in a single category in the chart, which is by default set to 50.
 
@@ -77,16 +77,16 @@ Like all Multiseries Charts, you can sort by either the category or aggregated v
 For more information, see [Sorting](../sorting.md). 
  
 ### Layers
-Add a [Trend Line](../configure-charts/chart-layers.md#trend-line) or a [Reference Line](../configure-charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
+Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
  
 
 ### Format
-The [Small Multiples](../configure-charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../configure-charts/chart-format.md#small-multiples#conditional-formatting) to your Multiseries Chart.
+The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Multiseries Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas.
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../configure-charts/chart-filters.md).
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
  
 For more on Multiseries Charts, watch the <a href="/docs-v2/video-training/legacy/multi-series.md" target="_blank">Multiseries Chart video</a>
 </div>

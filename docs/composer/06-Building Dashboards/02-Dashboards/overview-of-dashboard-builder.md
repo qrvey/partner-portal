@@ -16,8 +16,8 @@ To open Dashboard Builder, click the Dashboard Builder icon in the left navigati
 
 The Dashboard Builder feature consists of three top-level tabs:
 * **Dashboard**. Enables you to design and publish dashboards, described in this article. 
-* **[Navigation](../navigation/overview-of-navigation.md)**. Enables you to create navigation menus that combine multiple dashboards into a complete information application. 
-* **[User Management](../user-management/overview-of-user-management.md)**. Enables you to grant and restrict end users’ access to the dashboards. 
+* **[Navigation](../03-Navigation/overview-of-navigation.md)**. Enables you to create navigation menus that combine multiple dashboards into a complete information application. 
+* **[User Management](../04-User%20Management/overview-of-user-management.md)**. Enables you to grant and restrict end users’ access to the dashboards. 
 
 The Dashboards page lists all the existing dashboards. 
 
@@ -34,7 +34,7 @@ The shortcut menu provides the following options:
 * Delete
 * Duplicate
 * Copy Dashboard Link (For more information, see “Preview a Dashboard” later in this article) 
-* Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/embedding-widgets/widgets/dashboard-builder.md)). 
+* Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)). 
 
 ## Open an existing dashboard
 To open an existing dashboard, locate its card in the list displayed on the main page of Dashboard Builder, and click on it. The canvas displays with the contents of the dashboard. 
@@ -61,7 +61,7 @@ The Data panel displays the configured datasets that you can work with, and it e
 * Click the arrow icon next to a dataset name to open the design page for the dataset. 
 * Click the blue star to add it to your favorites. Click the orange button at the top of the panel to display only the favorites. 
 
-For more information on datasets, see [Overview of Datasets](../../data/datasets/overview-of-datasets.md). 
+For more information on datasets, see [Overview of Datasets](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md). 
 
 ### Filters panel overview
 The Filters panel enables you to add filters to the dashboard, so that end-users can interact with them in the published application. 
@@ -74,7 +74,7 @@ This panel also provides a variety of options for managing filters. Options incl
 * **Disable All Filters**. To disable all filters, click the three-dot menu in the Filters panel and click Disable All Filters. 
 * **Delete All Filters**. To delete all filters, click the three-dot menu in the Filters panel and click Delete All Filters.
 
-To work with filters, you should be familiar with the various filter components provided in the Qrvey platform. For more information, see [Overview of Filters](../../filters/overview-of-filters.md). 
+To work with filters, you should be familiar with the various filter components provided in the Qrvey platform. For more information, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md). 
 
 ### Configuration options panel overview
 The Configuration panel provides options for the object that is currently selected on the canvas. For example:
@@ -161,7 +161,7 @@ You can add buttons to your dashboard to enable end users to easily navigate to 
 ### Working with Themes
 The Themes feature enables you to apply the same look-and-feel to multiple charts. Qrvey Composer provides a default theme that you cannot delete or edit. However, you may create new themes and define your own visual styles. When you create a theme, it is available in all your applications. Every theme has a unique ID that you can reference programmatically. 
 
-For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../charts/setting-chart-styles.md).
+For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../07-Creating%20Charts/setting-chart-styles.md).
 
 
 ### Insert a Filter Control
@@ -170,7 +170,7 @@ The Filter Controls feature enables you to add an object to the dashboard that p
 * Value list
 * Input box
 
->**Note**: The Filter Controls feature is different than the Filters feature. For more information on configuring filters, see [Overview of Filters](../../filters/overview-of-filters.md).
+>**Note**: The Filter Controls feature is different than the Filters feature. For more information on configuring filters, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md).
 
 #### To add a filter control
 1. Click the **Filter Controls** icon in the toolbar and select one of the following options: 
@@ -236,7 +236,7 @@ To enable subscriptions, click the Insert menu and click **Page Subscriptions**.
 
 Once enabled, end users are provided the option to subscribe to the dashboard view in the Action menu of the embedded Dashboard View widget. 
 
-For more information on using subscriptions, see [Subscribing to Exports](../dashboards/subscribing-exports.md).
+For more information on using subscriptions, see [Subscribing to Exports](./subscribing-exports.md).
 
 ## Preview a Dashboard
 Dashboard Builder enables you to preview a single dashboard in a browser, so you can see how the page will appear to the end user. Note that the preview feature requires you to publish the application first, which commits the application to the server. You cannot resume editing the dashboard until you unpublish the application. 
@@ -256,7 +256,7 @@ Dashboard Builder enables you to preview a single dashboard in a browser, so you
 Dashboard Builder provides a preview link that you can use to view an application in a browser. The Preview feature enables you to see how the application will appear to the end user. Note that the preview feature requires you to publish the application first, which commits the application to the server. You cannot resume editing the application until you unpublish it. 
 
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list.
-2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../navigation/overview-of-navigation.md). 
+2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
 3. Click the **Publish Application** button.  
   
     ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
@@ -268,8 +268,8 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 ## Publish an Application
 Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see the training video, [Content Publishing](../../../video-training/legacy/content-publishing.md). 
 
-1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../navigation/overview-of-navigation.md). 
-2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](../user-management/overview-of-user-management.md). 
+1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
+2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](../04-User%20Management/overview-of-user-management.md). 
 3. Click the **Publish Application** button.  
 
     ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  

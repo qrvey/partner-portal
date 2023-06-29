@@ -18,10 +18,10 @@ The Qrvey platform offers a wide range of features that can be used in a Qrvey a
 * **Automation**. Create automated workflows to perform virtually any task supported in the Qrvey platform. 
 
 The Applications page of Qrvey Composer displays all the Qrvey applications available to the current user of Qrvey Composer. From the Applications page, you can perform the following tasks:
-* **Open an application**. Click the application card to open it and display its associated [Data page](../data/introduction-to-data-in-qrvey.md). 
+* **Open an application**. Click the application card to open it and display its associated [Data page](../05-Working%20with%20Data/introduction-to-data-in-qrvey.md). 
 * **Create an application**. Click **Create Application** and provide the necessary information. 
-* **[Send (and Receive) applications](../applications/sending-applications.md)**
-* **[Share an application](../applications/sharing-editing.md)**
-* **[View Activity Logs](../applications/activity-log.md)**
+* **[Send (and Receive) applications](./sending-applications.md)**
+* **[Share an application](./sharing-editing.md)**
+* **[View Activity Logs](./activity-log.md)**
 
 </div>

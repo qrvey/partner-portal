@@ -29,12 +29,12 @@ If you want to display something other than the column name, you can customize t
 
 
 
-For [Como Charts](../../ui-docs/dataviews/chart-types/combo.md), where more than one Y-axis may exist, each used column is presented in a section of its own, and the axis label, as well as other characteristics of the axis, can be controlled from under that section. 
+For [Como Charts](../07-Chart%20Types/combo.md), where more than one Y-axis may exist, each used column is presented in a section of its own, and the axis label, as well as other characteristics of the axis, can be controlled from under that section. 
 
 ![chart-axes](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/chart-axes/combo.png#thumbnail)
 
 
-It is important to note that the options for managing the chart axes depend on the type of chart you have chosen. To read more about managing axes in a specific chart, head to the [Chart Types](../../ui-docs/dataviews/chart-types/bar.md) section. 
+It is important to note that the options for managing the chart axes depend on the type of chart you have chosen. To read more about managing axes in a specific chart, head to the [Chart Types](../07-Chart%20Types/bar.md) section. 
 
 ## Controlling The Display of Values
 Data **Values** are displayed by default along both axes. All data values for category columns are listed next to a tick mark along the category axis (most commonly, the x-axis). Values shown along the value axis (most commonly the y-axis) are however numbers that reflect the range of the value axis, from the minimum to the maximum, and are displayed at appropriate intervals to prevent overcrowding.  
@@ -57,7 +57,7 @@ Choosing the logarithmic scale type will remove the ability to manage the interv
 
 ## Setting The Range
 
-By default, the automatic [range](../../get-started/glossary.md#r) for the value axis starts at 0 and goes up to the maximum value that is plotted on the chart. Chart creators can override the automatic range of their charts to fit their analysis needs so that a chart doesn’t result in too much whitespace giving it a cleaner look. In order to change the range, go to the Styles section of the configuration panel in the Chart Builder and expand the Y-axis subsection (or X-axis, if that happens to be the value axis). Set the values for **Min Range** and **Max Range** to what works for the chart.
+By default, the automatic [range](../../../getting-started/glossary.md#r) for the value axis starts at 0 and goes up to the maximum value that is plotted on the chart. Chart creators can override the automatic range of their charts to fit their analysis needs so that a chart doesn’t result in too much whitespace giving it a cleaner look. In order to change the range, go to the Styles section of the configuration panel in the Chart Builder and expand the Y-axis subsection (or X-axis, if that happens to be the value axis). Set the values for **Min Range** and **Max Range** to what works for the chart.
 
 ![chart-axes](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/chart-axes/range.png#thumbnail-60)
 

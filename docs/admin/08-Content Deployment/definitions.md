@@ -54,7 +54,7 @@ After determining which target application of each user is going to be updated, 
 ## Create a Deployment Definition
 
 ### Before you begin
-Verify that the desired package version has been created. For more information, see [Packages](../content-deployment/packages-and-versions.md). 
+Verify that the desired package version has been created. For more information, see [Packages](../08-Content%20Deployment/packages-and-versions.md). 
 
 ### Create a deployment definition that creates a new application
 1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
