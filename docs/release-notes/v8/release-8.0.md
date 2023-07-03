@@ -8,7 +8,7 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, 
 
 Release Date: 2023-02-01
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link. 
 
 
 **Qrvey Version 8.0** is a major release and introduces the following significant features and enhancements:
@@ -24,7 +24,7 @@ Please note that what was formerly known as a “Page” has been renamed, retoo
 
 ### Data Preparation
 
-* **[Live Connect Datasets](../ui-docs/datasets/datasets-live.md)**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets. <a href="/docs/video-training/release/version-8.0#live-connections" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **[Live Connect Datasets](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/datasets-live.md)**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets. <a href="/docs/video-training/release/version-8.0#live-connections" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
  
 ### Data Analysis & Visualization
 

@@ -29,7 +29,7 @@ __________________________
 ### Update to the Widgets Pipeline Needed For Customized URLs
 **Starting In Version: 7.6**
 
-If you have changed the Qrvey Composer URL from the default *.qrveyapp.com to a custom URL, and you are upgrading from a version prior to 7.6, you need to update the Widgets Pipeline with the custom composer URL. The necessary steps are documented in [this article](../get-started/customizing-qrvey-deployment.md). This is a one-time change.
+If you have changed the Qrvey Composer URL from the default *.qrveyapp.com to a custom URL, and you are upgrading from a version prior to 7.6, you need to update the Widgets Pipeline with the custom composer URL. The necessary steps are documented in [this article](../deployment/customizing-qrvey-deployment.md). This is a one-time change.
 __________________________
 
 ### Admin Center URL Change

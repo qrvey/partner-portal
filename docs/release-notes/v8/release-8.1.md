@@ -8,7 +8,7 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, 
 
 Release Date: 2023-04-21
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../release-notes/upgrade-notes.md) document for important notes.
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes.
 
 Pixel-perfect Reporting is available in version 8.1! The feature is in beta and currently includes MVP-level capabilities. Future versions will include additional tools and  visualizations based on the feedback that we gather during the beta phase. This feature may be offered as a premium add-on to the Qrvey platform in the future.
 
@@ -26,7 +26,7 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
  
 ### Data Analysis & Visualization
 
-* **[Support Time Zone Offset](../special-features/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
+* **[Support Time Zone Offset](../../software-developer/10-Timezone%20Settings/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
 
 * **Qrvey Theme 2 with Support for 100 Colors**: With this newly-added theme, we now support color palettes with 100 unique colors in sequence for visualizations with high numbers of data points.
 
@@ -34,7 +34,7 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
 
 * **Analyze General Downloads and Summary Panels PDF Exports**: PDF export options are now consistent between the Analysis Views and Dashboards.
 
-* **[Pixel-perfect Report Builder](../ui-docs/pixel-perfect-reports/overview.md)**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
+* **[Pixel-perfect Report Builder](../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
 
 
 ### Administration
