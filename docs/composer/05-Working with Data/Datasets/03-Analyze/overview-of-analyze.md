@@ -7,7 +7,7 @@ sidebar_position: 1
 ---
 
 The Analyze tab provides a variety of features for analyzing your dataset, including:
-* **[Formulas](./formulas.md)** 
+* **[Formula Builder](./formulas.md)** 
 * **[Bucketing Data](.buckets.md)** 
 * **[Exporting Data](./exporting.md)** 
 

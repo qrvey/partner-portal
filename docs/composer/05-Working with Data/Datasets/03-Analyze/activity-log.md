@@ -3,7 +3,7 @@ id: activity-log-data
 title: Activity Log
 sidebar_label: Activity Log
 tags: [Data Analyst, CloudOps Engineer]
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 <div style={{textAlign: "justify"}}>
