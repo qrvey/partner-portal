@@ -33,10 +33,11 @@ body, h1, h2, h3, h4, h5 {
 .theme-doc-footer-tags-row {
   position: absolute;
   top: 125px;
+  width: calc(100% - 42%);
 }
 
 nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocBreadcrumbs-styles-module {
-  margin-bottom: 65px;
+  margin-bottom: 75px;
 }
 
 .tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
@@ -44,6 +45,7 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
     border-radius: 100px !important;
     color: #000000 !important;
     border: none;
+    font-size: 70% !important;
 }
 
 .tagRegular_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module:hover {
@@ -52,7 +54,7 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
 }
 
 .breadcrumbsContainer_Z_bl {
-  margin-bottom: 65px !important;
+  margin-bottom: 75px !important;
 }
 
   .tag_QGVx a{
