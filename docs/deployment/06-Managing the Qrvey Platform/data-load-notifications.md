@@ -4,6 +4,7 @@ title: Setting Up Data Load Notifications
 sidebar_label: Data Load Notifications
 tags: [CloudOps Engineer]
 sidebar_position: 2
+displayed_sidebar: deployment-guide
 ---
 
 <div>

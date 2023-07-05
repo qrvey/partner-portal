@@ -4,6 +4,7 @@ title: Overview of the Design Page
 sidebar_label: Overview of the Design Page
 tags: [Data Analyst]
 sidebar_position: 1
+displayed_sidebar: data-analyst
 ---
 
 The Design tab of the Data feature enables you to design your dataset. Its features include:

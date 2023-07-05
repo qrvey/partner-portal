@@ -4,6 +4,7 @@ title: Actions - Data
 sidebar_label: Actions - Data
 tags: [Data Analyst]
 sidebar_position: 5
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Expandable Table
 sidebar_label: Expandable Table
 tags: [Data Analyst]
 sidebar_position: 15
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Embedding Web Forms
 sidebar_label: Embedding Web Forms
 tags: [Data Analyst, Software Developer]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -4,6 +4,7 @@ title: Servers
 sidebar_label: Servers
 tags: [Solution Architect]
 sidebar_position: 2
+displayed_sidebar: solution-architects
 ---
 
 <div style={{textAlign: "justify"}}>

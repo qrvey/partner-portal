@@ -3,6 +3,7 @@ id: transformations
 title: Transformations
 sidebar_label: Transformations
 tags: [Data Analyst]
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: 'justify'}}>
 

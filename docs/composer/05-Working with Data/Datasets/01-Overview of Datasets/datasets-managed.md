@@ -4,6 +4,7 @@ title: Datasets - Managed
 sidebar_label: Datasets - Managed
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div>

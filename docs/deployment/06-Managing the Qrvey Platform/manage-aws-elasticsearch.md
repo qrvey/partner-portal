@@ -4,6 +4,7 @@ title: Managing AWS Elasticsearch Cluster
 sidebar_label: Managing AWS Elasticsearch Cluster
 tags: [CloudOps Engineer]
 sidebar_position: 1
+displayed_sidebar: deployment-guide
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Overview of Dashboards
 sidebar_label: Overview of Dashboards
 tags: [Data Analyst]
 sidebar_position: 1
+displayed_sidebar: data-analyst
 ---
 
 This section describes how to use the Dashboard Builder feature to combine multiple Qrvey Composer components, like forms, charts and metrics, into full-featured interactive web pages that you can embed in your host application. Articles include:

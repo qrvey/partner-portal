@@ -4,6 +4,7 @@ title: Heatmap
 sidebar_label: Heatmap
 tags: [Data Analyst]
 sidebar_position: 17
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

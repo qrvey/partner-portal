@@ -4,6 +4,7 @@ title: Dataset Views
 sidebar_label: Dataset Views
 tags: [Data Analyst]
 sidebar_position: 4
+displayed_sidebar: data-analyst
 ---
 
 <div>

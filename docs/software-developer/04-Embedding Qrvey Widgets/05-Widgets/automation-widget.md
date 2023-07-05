@@ -4,6 +4,7 @@ title: Automation Widget
 sidebar_label: Automation Widget
 tags: [Software Developer]
 sidebar_position: 9
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

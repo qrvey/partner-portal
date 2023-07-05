@@ -4,6 +4,7 @@ title: Multiseries Line Chart
 sidebar_label: Multiseries Line Chart
 tags: [Data Analyst]
 sidebar_position: 5
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

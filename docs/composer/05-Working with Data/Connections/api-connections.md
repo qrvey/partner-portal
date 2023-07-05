@@ -2,6 +2,7 @@
 id: api-connections
 title: API Connections
 sidebar_label: API Connections
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

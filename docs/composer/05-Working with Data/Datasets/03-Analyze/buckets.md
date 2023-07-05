@@ -4,6 +4,7 @@ title: Bucketing Data
 sidebar_label: Bucketing Data
 tags: [Data Analyst]
 sidebar_position: 3
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

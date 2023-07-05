@@ -4,6 +4,7 @@ title: Configuring AWS and Qrvey for Redshift Connections
 sidebar_label: Configuring AWS and Qrvey for Redshift Connections
 tags: [CloudOps Engineer]
 sidebar_position: 4
+displayed_sidebar: deployment-guide
 ---
 
 <div>

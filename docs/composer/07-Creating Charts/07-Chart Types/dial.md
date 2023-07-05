@@ -4,6 +4,7 @@ title: Dial Gauge
 sidebar_label: Dial Gauge
 tags: [Data Analyst]
 sidebar_position: 12
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

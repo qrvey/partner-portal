@@ -3,6 +3,7 @@ id: branching
 title: Branching
 sidebar_label: Branching
 tags: [Data Analyst]
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

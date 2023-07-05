@@ -4,6 +4,7 @@ title: Overview of Chart Builder
 sidebar_label: Overview of Chart Builder
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

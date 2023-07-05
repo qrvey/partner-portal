@@ -4,6 +4,7 @@ title: Sorting the Data
 sidebar_label: Sorting the Data
 tags: [Data Analyst]
 sidebar_position: 4
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

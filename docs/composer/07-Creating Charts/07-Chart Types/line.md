@@ -4,6 +4,7 @@ title: Line Chart
 sidebar_label: Line Chart
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

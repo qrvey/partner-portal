@@ -4,6 +4,7 @@ title: Date Grouping
 sidebar_label: Date Grouping
 tags: [Data Analyst]
 sidebar_position: 4
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

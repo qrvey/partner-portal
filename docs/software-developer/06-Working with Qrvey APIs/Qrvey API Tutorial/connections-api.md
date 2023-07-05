@@ -4,6 +4,7 @@ title: Creating API Connections
 sidebar_label: Creading API Connections
 tags: [Software Developer]
 sidebar_position: 4
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Using Data Engine Syntax
 sidebar_label: Using Data Engine Syntax
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 Data Engine Syntax mode enables you to create formulas using the syntax of a specific database engine. 

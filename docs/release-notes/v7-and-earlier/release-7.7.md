@@ -16,7 +16,7 @@ This change does not affect any of the Admin Center functionality, however the l
 
 :::
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/autodeployappCloudformation-enterprise-7.7.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../get-started/upgrading-versions.md) article to upgrade your instance(s). 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/autodeployappCloudformation-enterprise-7.7.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../../deployment/upgrading-versions.md) article to upgrade your instance(s). 
 
 
 ## New Features & Enhancements

@@ -4,6 +4,7 @@ title: Building a Web Form
 sidebar_label: Building a Web Form
 tags: [Data Analyst]
 sidebar_position: 3
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

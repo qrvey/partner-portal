@@ -4,6 +4,7 @@ title: Table Calculations
 sidebar_label: Table Calculations
 tags: [Data Analyst]
 sidebar_position: 1
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

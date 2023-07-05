@@ -4,6 +4,7 @@ title: Activity Log
 sidebar_label: Activity Log
 tags: [Software Developer]
 sidebar_position: 10
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

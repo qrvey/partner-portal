@@ -4,6 +4,7 @@ title: Applying Tooltips to Charts
 sidebar_label: Applying Tooltips to Charts
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

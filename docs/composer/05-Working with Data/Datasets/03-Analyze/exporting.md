@@ -4,6 +4,7 @@ title: Exporting Data
 sidebar_label: Exporting Data
 tags: [Data Analyst]
 sidebar_position: 4
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

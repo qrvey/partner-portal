@@ -4,6 +4,7 @@ title: Create a New Report
 sidebar_label: Create a New Report
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

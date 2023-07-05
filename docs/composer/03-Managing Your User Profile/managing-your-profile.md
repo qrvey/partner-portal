@@ -4,6 +4,7 @@ title: Managing Your Profile
 sidebar_label: Managing Your Profile
 tags: [Data Analyst]
 sidebar_position: 1
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Metric View
 sidebar_label: Metric View
 tags: [Data Analyst]
 sidebar_position: 8
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

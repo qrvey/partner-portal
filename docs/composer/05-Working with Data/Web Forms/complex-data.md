@@ -4,6 +4,7 @@ title: Complex Data
 sidebar_label: Complex Data
 tags: [Data Analyst]
 sidebar_position: 4
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

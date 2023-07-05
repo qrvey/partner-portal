@@ -4,6 +4,7 @@ title: Format
 sidebar_label: Format
 tags: [Data Analyst]
 sidebar_position: 7
+displayed_sidebar: data-analyst
 ---
  
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Upgrading to a New Version
 sidebar_label: Upgrading to a New Version
 tags: [CloudOps Engineer]
 sidebar_position: 7
+displayed_sidebar: deployment-guide
 ---
 
 <div>

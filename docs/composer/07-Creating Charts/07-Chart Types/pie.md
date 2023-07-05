@@ -4,6 +4,7 @@ title: Pie Chart
 sidebar_label: Pie Chart
 tags: [Data Analyst]
 sidebar_position: 9
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Personalizing Your Dashboards
 sidebar_label: Personalizing Your Dashboards
 tags: [Software Developer, Data Analyst]
 sidebar_position: 2
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

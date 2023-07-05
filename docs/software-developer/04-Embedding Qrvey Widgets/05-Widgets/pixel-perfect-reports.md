@@ -4,6 +4,7 @@ title: Pixel-perfect Reports Widget
 sidebar_label: Pixel-perfect Reports Widget
 tags: [Software Developer]
 sidebar_position: 3
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Discrete and Continuous Values
 sidebar_label: Discrete and Continuous Values
 tags: [Data Analyst]
 sidebar_position: 3
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

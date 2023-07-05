@@ -4,6 +4,7 @@ title: Customizing Web Forms
 sidebar_label: Customizing Web Forms
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 
 You can customize web forms to fit the look and feel of your brand, as well as configure how they get embedded into your website or application. In this article, we’ll discuss the options available within Qrvey Composer. 

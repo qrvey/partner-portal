@@ -4,6 +4,7 @@ title: Health Dashboard
 sidebar_label: Health Dashboard
 tags: [Solution Architect, CloudOps Engineer]
 sidebar_position: 5
+displayed_sidebar: solution-architects
 ---
 
 <div style={{textAlign: "justify"}}>

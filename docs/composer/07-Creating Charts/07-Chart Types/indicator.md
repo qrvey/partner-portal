@@ -4,6 +4,7 @@ title: Indicator Gauge
 sidebar_label: Indicator Gauge
 tags: [Data Analyst]
 sidebar_position: 11
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

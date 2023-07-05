@@ -4,6 +4,7 @@ title: Deleting an Installation
 sidebar_label: Deleting an Installation
 tags: [CloudOps Engineer]
 sidebar_position: 8
+displayed_sidebar: deployment-guide
 ---
 
 <div>

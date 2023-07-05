@@ -3,6 +3,7 @@ id: data-sync
 title: Data Sync
 sidebar_label: Data Sync
 tags: [Data Analyst]
+displayed_sidebar: data-analyst
 ---
 
 <div>

@@ -4,6 +4,7 @@ title: Automatic Column Links
 sidebar_label: Automatic Column Links
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

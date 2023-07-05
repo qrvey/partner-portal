@@ -4,6 +4,7 @@ title: Combo Chart
 sidebar_label: Combo Chart
 tags: [Data Analyst]
 sidebar_position: 7
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

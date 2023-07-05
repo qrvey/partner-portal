@@ -3,6 +3,7 @@ id: overview-of-geolocation
 title: Overview of Geolocation
 sidebar_label: Overview of Geolocation
 tags: [Data Analyst]
+displayed_sidebar: data-analyst
 ---
 
 If your data contains address information that you wish to display on any type of map chart, you need to create a Geolocation Group out of your desired address fields. 

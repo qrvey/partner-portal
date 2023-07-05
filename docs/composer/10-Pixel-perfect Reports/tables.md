@@ -4,6 +4,7 @@ title: Working with Tables
 sidebar_label: Working with Tables
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

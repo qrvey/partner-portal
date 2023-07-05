@@ -4,6 +4,7 @@ title: Sending Applications
 sidebar_label: Sending Applications
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

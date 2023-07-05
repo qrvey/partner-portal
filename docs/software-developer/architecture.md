@@ -4,6 +4,7 @@ title: Architectural Overview
 sidebar_label: Architectural Overview
 tags: [Software Developer]
 sidebar_position: 2
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

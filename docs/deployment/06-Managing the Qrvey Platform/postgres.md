@@ -4,6 +4,7 @@ title: Configuring AWS and Qrvey for Postgres Connections Utilizing the Export t
 sidebar_label: Configuring AWS and Qrvey for Postgres Connections
 tags: [CloudOps Engineer]
 sidebar_position: 6
+displayed_sidebar: deployment-guide
 ---
 
 <div>

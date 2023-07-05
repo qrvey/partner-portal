@@ -4,6 +4,7 @@ title: Database Connections
 sidebar_label: Database Connections
 tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect, All Personas]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div>

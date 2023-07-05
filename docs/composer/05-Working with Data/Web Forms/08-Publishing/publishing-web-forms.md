@@ -4,6 +4,7 @@ title: Publishing Web Forms
 sidebar_label: Publishing Web Forms 
 tags: [Data Analyst, Software Developer]
 sidebar_position: 1
+displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 

@@ -4,6 +4,7 @@ title: Overview of Embedding and Widgets
 sidebar_label: Overview of Embedding and Widgets
 tags: [Software Developer]
 sidebar_position: 1
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

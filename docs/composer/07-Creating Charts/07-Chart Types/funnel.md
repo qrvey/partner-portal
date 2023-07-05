@@ -4,6 +4,7 @@ title: Funnel Chart
 sidebar_label: Funnel Chart
 tags: [Data Analyst]
 sidebar_position: 8
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

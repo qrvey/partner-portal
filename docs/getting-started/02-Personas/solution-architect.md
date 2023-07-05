@@ -3,6 +3,7 @@ id: solution-architect
 title: Getting Started as a Solution Architect
 sidebar_label: Getting Started as a Solution Architect
 tags: [Solution Architect]
+sidebar_position: 1
 ---
 
 Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.

@@ -4,6 +4,7 @@ title: Logging In to Qrvey Composer
 sidebar_label: Logging In 
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,6 +4,7 @@ title: Preparing Your AWS Account
 sidebar_label: Preparing Your AWS Account
 tags: [CloudOps Engineer]
 sidebar_position: 3
+displayed_sidebar: deployment-guide
 ---
 
 <div style={{textAlign: "justify"}}>

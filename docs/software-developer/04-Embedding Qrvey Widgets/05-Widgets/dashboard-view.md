@@ -4,6 +4,7 @@ title: Dashboard View Widget
 sidebar_label: Dashboard View Widget
 tags: [Software Developer]
 sidebar_position: 2
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

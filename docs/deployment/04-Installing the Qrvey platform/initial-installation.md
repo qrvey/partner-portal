@@ -4,6 +4,7 @@ title: Initial Installation
 sidebar_label: Initial Installation
 tags: [CloudOps Engineer]
 sidebar_position: 1
+displayed_sidebar: deployment-guide
 ---
 
 <div>

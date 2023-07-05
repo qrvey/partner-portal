@@ -4,6 +4,7 @@ title: Widgets Quick Start Guide
 sidebar_label: Widgets Quick Start Guide
 tags: [Software Developer]
 sidebar_position: 2
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

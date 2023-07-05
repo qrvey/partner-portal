@@ -4,6 +4,7 @@ title: Live Connect Datasets
 sidebar_label: Datasets - Live Connect
 tags: [Data Analyst]
 sidebar_position: 3
+displayed_sidebar: data-analyst
 ---
 
 <div>

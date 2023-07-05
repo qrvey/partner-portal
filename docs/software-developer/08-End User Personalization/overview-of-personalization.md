@@ -4,6 +4,7 @@ title: Introduction to End User Personalization
 sidebar_label: Introduction to End User Personalization
 tags: [Software Developer, Data Analyst]
 sidebar_position: 1
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

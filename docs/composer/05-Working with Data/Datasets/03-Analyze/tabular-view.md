@@ -4,6 +4,7 @@ title: Tabular View
 sidebar_label: Tabular View
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

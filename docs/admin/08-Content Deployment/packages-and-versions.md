@@ -4,6 +4,7 @@ title: Packages and Versions
 sidebar_label: Packages and Versions
 tags: [Solution Architect]
 sidebar_position: 3
+displayed_sidebar: solution-architects
 ---
 
 <div style={{textAlign: "justify"}}>

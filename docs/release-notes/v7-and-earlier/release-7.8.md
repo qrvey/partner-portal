@@ -6,7 +6,7 @@ sidebar_label: Qrvey 7.8 (LTS)
 ---
 <div>
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../../v2-website/versioned_docs/version-7.8/release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../../../v2-website/versioned_docs/version-7.8/release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
 
 ## Qrvey 7.8.4
 

@@ -4,6 +4,7 @@ title: Working With Filters in Embedded Scenarios
 sidebar_label: Working With Filters in Embedded Scenarios
 tags: [Software Developer]
 sidebar_position: 4
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

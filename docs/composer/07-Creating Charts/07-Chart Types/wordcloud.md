@@ -4,6 +4,7 @@ title: Word Cloud
 sidebar_label: Word Cloud
 tags: [Data Analyst]
 sidebar_position: 21
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

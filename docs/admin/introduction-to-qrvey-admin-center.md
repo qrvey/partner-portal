@@ -4,6 +4,7 @@ title: Introduction to Qrvey Admin Center
 sidebar_label: Introduction to Qrvey Admin Center
 tags: [Solution Architect]
 sidebar_position: 1
+displayed_sidebar: solution-architects
 ---
 
 <div style={{textAlign: "justify"}}>

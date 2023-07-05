@@ -4,6 +4,7 @@ title: Managing Chart Axes
 sidebar_label: Managing Chart Axes
 tags: [Data Analyst]
 sidebar_position: 2
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>

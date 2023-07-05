@@ -4,6 +4,7 @@ title: Summary View
 sidebar_label: Summary View
 tags: [Software Developer]
 sidebar_position: 5
+displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>

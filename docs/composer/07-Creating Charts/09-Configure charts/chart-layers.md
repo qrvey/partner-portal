@@ -4,6 +4,7 @@ title: Layers
 sidebar_label: Layers
 tags: [Data Analyst]
 sidebar_position: 6
+displayed_sidebar: data-analyst
 ---
 
 <div style={{textAlign: "justify"}}>
