@@ -14,3 +14,4 @@ The Design tab of the Data feature enables you to design your dataset. Its featu
 * **[Data Syncronization](../02-Design/04-Data%20Syncronization/data-sync.md)**
 * **[Data Joins](../02-Design/05-Data%20Joins/data-joins.md)**
 * **[Data Unions](../02-Design/06-Data%20Unions/data-union.md)**
+* **[Advanced Settings]()**

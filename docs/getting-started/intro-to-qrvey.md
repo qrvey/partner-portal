@@ -19,11 +19,19 @@ The Qrvey platform consists of the following primary components:
 Users of the Qrvey platform and analytics solutions can be divided into two fundamental categories, internal and external.
 
 ### Internal Users
-An internal user is typically an employee of the SaaS organization that is embedding the Qrvey platform within their application. In other words, the internal user is the direct customer of Qrvey. The internal user is divided into the following personas, each with specific responsibilities:
+An internal user is typically an employee of the SaaS organization that is embedding the Qrvey platform within their application. In other words, the internal user is the direct customer of Qrvey. There are two ways to perceive internal users: by user persona and by user role. 
+
+#### Qrvey User Personas
+The internal user is divided into the following personas, each with specific responsibilities:
 * **CloudOps Engineer**. AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.
 * **Data Analyst**. Use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
 * **Solution Architect**. Design the embedding strategy, tenant experiences, and access strategy. Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.
 * **Software Developer**. Embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.
+
+#### Qrvey User Roles
+The internal user, regardless of persona, interacts with the Qrvey platform in one of the following two roles:
+* **Creator**. Creators set up datasets and create visualizations and dashboards to help end users find trends in their data. Creators may be Data Analysts that use Qrvey Composer or Software Developers that perform these tasks using APIs and embeddable widgets.  
+* **Administrator**. Qrvey Administrators monitor and manage the application infrastructure, which includes managing Creator accounts. They also manage the Qrvey Data Router, create Elasticsearch Indexes, and deploy Creator content and applications across servers or installations. Administrators do not manage the content within the applications. 
 
 ### External Users 
 The external user interacts with the Qrvey charts, dashboards, and other components from within the host application. An external user is typically a customer of the SaaS organization that has embedded the Qrvey platform within their application. External users can be divided into the following categories:

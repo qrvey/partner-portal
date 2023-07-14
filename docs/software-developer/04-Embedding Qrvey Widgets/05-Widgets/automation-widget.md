@@ -73,12 +73,15 @@ The Qrvey platform enables end users to display dates and times in their local t
 The following sample demonstrates how this widget can be used in an HTML page.  
 
 **HTML tag**:
+
 `<qrvey-workflow-design settings="config"></qrvey-workflow-design>`
 
 **Widget launcher script**:
+
 `<script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>`
 
 **JSON configuration object**:
+
 ```js
 {
    "apikey": "<MY_PRIVATE_APIKEY>",

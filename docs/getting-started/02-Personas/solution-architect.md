@@ -11,7 +11,7 @@ Solution Architects use the Qrvey Admin Center to manage the infrastructure, use
 ## Essential Links for the Solution Architect
 The primary technical resource for the Solution Architect is the [Qrvey Admin Center User Guide](../../admin/introduction-to-qrvey-admin-center.md). 
 
-If you’re new to the role of Solution Architect, start with the following resources:
+If you’re new to working with the Qrvey platform as a Solution Architect, start with the following resources:
 * [Introduction to the Qrvey Admin Center](../../admin/introduction-to-qrvey-admin-center.md)
 * [Customizing Qrvey Composer](../../admin/customizing-qrvey-composer.md)
 * [Managing Users of Qrvey Composer](../../admin/managing-users.md)

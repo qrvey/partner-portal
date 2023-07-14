@@ -8,43 +8,68 @@ displayed_sidebar: software-developer
 ---
 <div style={{textAlign: "justify"}}>
 
-This widget allows the user to display the distinct views available on the analyze side (i.e Summary, Custom, Metric views), through a configuration object where properties are set to define some options and behaviors.
 
+When embedded in an application, the Analytic Suite widget enables users to display the distinct views available on the analyze side (i.e Summary, Table, Custom, and Metric views).
 
-To obtain the specific configuration object for your environment, go to the *Analyze* tab for the desired dataset and click the **Embed Analyze View** icon in the top-right corner of any analysis view.
+## Before You Begin
+* Review the [Widget Quick Start Guide]() for an overview of the widget components. 
+* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)]().
+* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](). 
 
-![analytic-suite](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/analytic-suite/Embed.png#thumbnail-40)
+## Get the Helper Code
+1. In Qrvey Composer, display the **Analyze** tab for the desired dataset.  
+2. Click the **Embedding Options** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
+4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
 
+## Embed the HTML tag
+Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
 
-This will open a dialog with the necessary code, including the “domain”, “app_id” and “user_id” property values. You can copy the code from here and include it in your application. You have to provide the unique API key value.
-The building blocks of the code are explained below:
+The HTML tag for this widget is:
 
+`<an-dashboard config="anSuiteConfig"></an-dashboard>``
 
-## HTML Tag And Launcher
-The HTML tag for this widget is: 
-`<an-dashboard config=...>`
+## Embed the Widget Launcher Script Tag
+Add the widget launcher script tag to your application. Note that this widget requires an additional script for proper support in all browsers. 
 
-> **Note**: The configuration property for this widget is called “config”, unlike most other widgets where the same property is called “settings”.
+For reference, the launcher script code is:
 
-This widget needs an extra script for proper support in all browsers.
+```json
+<script type="module" src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js"></script>
+<script nomodule src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js"></script>
+```
 
-`<script type="module"   src=”https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js”></script> `(For all browsers support)
+## Set Properties in the JSON Configuration Object
+Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“<>”):
 
-`<script nomodule   src=”https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js”></script> `(Widget launcher)
+```json
+<script>
+var anSuiteConfig = {
+   "api_key": "<API_KEY>",
+   "app_id": "<APP_ID>",
+    “domain”: 'https://<your_qrvey_domain>',
+   "user_id": "<USER_ID>",
+   "qrveyid": "<QRVEY_ID>",
+   "settings": {
+      "view": "CUSTOM_VIEW"
+   }
+}
+</script>
+```
 
+When complete, add the JSON configuration object to your application. 
 
-
-## Configuration Object
-The table below provides general information about each property of this widget’s configuration object, along with a description of the expected value. The **Required** column indicates whether the property is required for the configuration object to work properly.
-
+### Configuration Object Properties
+The following table lists the properties associated with this widget. 
 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, secret identification token to access the application. | Yes |
-| **app_id** | `String`, ID of the qrvey application containing the webform.| Yes |
-| **user_id** | `String`, ID of the user that edits the widget. | Yes  |
-| **domain** | `String`, domain URL in which the application is in. | Yes | 
+| **api_key** | `String`, Your organization’s unique API token required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
+| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
+| **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
+| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
+| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
+| **timezone** | `Object <TimezoneConfiguration>`, Overrides the time zone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).  | No | 
 | **qrveyid** | `String`, ID of the dataset being used.| Yes |
 | **settings** | `Object`, general configuration in order to set some behaviors. | No |
 | **settings.view** | `String`, determines the initial view to display and it accepts: <br /> * SUMMARY_VIEW/MULTI_PANEL <br />* TABULAR_VIEW<br />* CUSTOM_VIEW<br />* METRIC_VIEW<br />Default: MULTI_PANEL (alias for SUMMARY_VIEW)| No |
@@ -67,17 +92,27 @@ The table below provides general information about each property of this widget�
 
 
 
-> **Note**: Refer to the[ FAQs](../../../getting-started/faqs.md) if you don’t know where to find any of the required configuration properties. 
-
 ## Samples
-The following samples show the way this widget is used in an HTML page. Please note that the example may not include the non-required properties of the configuration object. 
+The following samples demonstrate how this widget can be used in an HTML page. 
 
-You can copy and paste this code to your application after replacing the red values with your own valid values in order to see the embedded widget in action.
+### Sample Dashboard
+The following sample displays a simple dashboard. 
 
-### Basic Sample:
- 
+To use this code in your application, replace the values in brackets (“<>”) with your own values. 
+
+**HTML tag:**
+
 `<an-dashboard config="configDashBoard"></an-dashboard>`
 
+**Widget launcher script:**
+
+```json
+<!-- your launcher js link (replace with your js link) -->
+<script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
+<script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
+```
+
+**JSON configuration object:**
 
 ```json
 <script>
@@ -94,16 +129,25 @@ var configDashBoard = {
 </script>
 ```
 
+
+### Sample with Filter
+The following sample displays with a filter object generated by a user. 
+
+To use this code in your application, replace the values in brackets (“<>”) with your own values.
+
+**HTML tag:**
+
+`<an-dashboard config='config'></an-dashboard>`
+
+**Widget launcher script:**
+
 ```json
 <!-- your launcher js link (replace with your js link) -->
 <script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
 <script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
 ```
 
-### Sample With the Filter Object Generated by a User:
- 
-`<an-dashboard config="configDashBoard"></an-dashboard>
-<button onClick="applyNewFilter()">Apply other filter</button>`
+**JSON configuration object:**
 
 ```json
 <script>
@@ -132,9 +176,7 @@ var configDashBoard = {
     }
 }
 </script>
-```
 
-```json
 <script>
 function applyNewFilter() {
     window.dispatchEvent(new CustomEvent('anApplyUserFilters', {
@@ -159,13 +201,7 @@ function applyNewFilter() {
 </script>
 ```
 
-```json
-<!-- your launcher js link (replace with your js link) -->
-<script type="module" src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.esm.js"></script>
-<script nomodule src="https://<WIDGETS_URL>/your_qrvey_an_widgets_container/an-dashboard/andashboard/andashboard.js"></script>
-```
-
-#### See the widget in CodePen:
+### Widget Sample in CodePen
 
 <iframe
   allowFullScreen

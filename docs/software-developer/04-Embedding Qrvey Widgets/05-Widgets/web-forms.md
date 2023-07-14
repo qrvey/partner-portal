@@ -9,62 +9,92 @@ displayed_sidebar: software-developer
 
 <div style={{textAlign: "justify"}}>
 
-The Web Form Design widget is a powerful and effective tool that allows you to embed the Web Form design in your own web application. We provide three different types of Web Forms, Survey, Form and Quiz. 
-This widget allows your users to create, preview and modify a Web Form. Users can create new questions, sections and branches in a Web Form with just a few code lines in your web application. 
+When embedded in an application, the Web Form Design widget enables end users to create, preview, and modify web forms. The Qrvey platform provides three types of web forms: survey, form, and quiz. 
 
+## Before You Begin
+* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
+* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
+* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
 
+## Embed the HTML tag
+Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
 
-## HTML Tag And Launcher
-The HTML tag for this widget is: 
-```<qrvey-design-widgets settings=...>```
+The HTML tag for this widget is:
 
+`<qrvey-design-widgets settings="config"></qrvey-design-widgets>`
 
-You can use the following script to launch this widget:
-```<widgets-launcher/app.js>```
+## Embed the Widget Launcher script tag
+Add the widget launcher script tag to your application. 
 
+For reference, the launcher script code is:
 
-## Configuration Object
-The table below provides general information about each property of this widget’s configuration object along with a description of the expected value. The **Required** column indicates whether the property is required for the configuration object to work properly.
+```
+<script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
 
+## Set properties in the JSON configuration object
+Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“<>”):
 
-
-| **Property** | **Value** | **Required** |
-| --- | --- | --- |
-| **api_key** |`String`, secret identification token to access the application.| Yes |
-| **app_id** | `String`, Qrvey application ID containing the webform. | Yes |
-| **domain** | `String`, domain URL in which the application is in. | Yes |
-| **qrvey_id** | `String`, webform ID that will be edited in the widget.  | Yes |
-| **user_id** | `String`, user ID that edits the webform.| Yes |
-| **app_type** | `String`, a type of webform the widget will instance. Options: "FORM" / "QUIZ" / "SURVEY". | Yes |
-| **Style_option** |Object {<br />"main_color": String (HEX Color),<br />"secondary_color": String (HEX Color),<br />"tab_bar": String (HEX Color),<br /> "field_icon": String (HEX Color),<br />"error": String (HEX Color),<br />"notification": String (HEX Color),<br />"successful": String (HEX Color), <br />"warning": String (HEX Color)<br /> } <br /><br />to change widget colors| No |
-
-> **Note**: Refer to the[ FAQs](../../../getting-started/faqs.md)
-if you don’t know where to find any of the required configuration properties. 
-
-## Sample
-In this example, we have the design widget configuration object for a Form. This shows the minimum configuration object required to embed the webform design widget. 
-
-> **Note**: <APP_ID> must refer to a valid and active application defined on your Qrvey instance, and <QRVEY_ID> must refer to a draft form in that application.
-
-```html
+```json
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 var configWebForm = {
     "api_key": "<API_KEY>",
     "app_id": "<APP_ID>",
-    "domain": "https://your_qrvey_domain",
+    "domain": "https://<your_qrvey_domain>",
     "user_id": "<USER_ID>",
     "qrvey_id": "<QRVEY_ID>",
-    "app_type": "FORM"
+    "app_type": "<APP_TYPE>"
 }
-</script>
-<!-- your launcher js link (replace with your js link) -->
-<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
- ```
+```
 
-As we mentioned earlier, this widget allows us to collect three types of webforms: Survey, Form and Quiz. The ```app_type``` property allows you to switch between those types. Valid options are: ```"FORM" || "SURVEY" || "QUIZ"```
+When complete, add the JSON configuration object to your application. 
+
+## Configuration Object Properties
+The following table lists the properties associated with this widget. 
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **api_key** | `String`, Your organization’s unique API token required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
+| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
+| **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
+| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
+| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
+| **qrvey_id** | `String`, ID of the webform ID that will be edited in the widget.  | Yes |
+| **app_type** | `String`, The type of webform the widget will instance. Options: "FORM" / "QUIZ" / "SURVEY". | Yes |
+| **Style_option** |Object {<br />"main_color": String (HEX Color),<br />"secondary_color": String (HEX Color),<br />"tab_bar": String (HEX Color),<br /> "field_icon": String (HEX Color),<br />"error": String (HEX Color),<br />"notification": String (HEX Color),<br />"successful": String (HEX Color), <br />"warning": String (HEX Color)<br /> } <br /><br />to change widget colors| No |
 
 
-## See It In Action
+## Sample
+The following sample shows a simple form using the minimum configuration object required to embed the Web Form Design widget. 
+
+To use this code in your application, replace the values in brackets (“<>”) with your own values. 
+
+**HTML Tag:**
+
+`<qrvey-design-widgets settings="config"></qrvey-design-widgets>`
+
+
+**Widget Launch Script:**
+
+```
+<script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
+
+**JSON Configuration Object:**
+
+```json
+<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
+var configWebForm = {
+    "api_key": "<API_KEY>",
+    "app_id": "<APP_ID>",
+    "domain": "https://<your_qrvey_domain>",
+    "user_id": "<USER_ID>",
+    "qrvey_id": "<QRVEY_ID>",
+    "app_type": "<APP_TYPE>"
+}
+```
+
+### Sample in CodePen
 See the widget in CodePen:
 
 <iframe
@@ -82,11 +112,6 @@ See the widget in CodePen:
   id="cp_embed_17ca2ace17e54cd26353f638666f91be">
   </iframe>
 
-
-## Sample With Security Token
-Web Form Design widget supports the use of JWT tokens for authentication and it is strongly recommended that this method be used to ensure the security of your widget implementation. Please refer to the [Embedding Widgets Using A Security Token](../embedding-widgets-security-token.md) article for an explanation of the principles. 
-
-You can find the secure implementation of the same example as above <a href="https://codepen.io/qrveysamples/pen/8ae9eb19a3464b64d293d44e102ccd4b">here</a>.
 
 
 </div>

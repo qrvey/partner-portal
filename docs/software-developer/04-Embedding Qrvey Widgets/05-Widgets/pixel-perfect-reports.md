@@ -62,19 +62,22 @@ The following table lists the properties associated with this widget.
 ## Sample Code
 The following sample demonstrates how this widget can be used in an HTML page. To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
 
-### HTML tag:
+**HTML tag:**
+
 ```html
 <!-- widget's tag -->
 <qrvey-pixel-builder settings="config"></qrvey-pixel-builder>
 ```
 
-## Widget launcher script:
+**Widget launcher script:**
+
 ```html
 <!-- widget's launcher -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
 
-## JSON configuration object:
+**JSON configuration object:**
+
 ```html
 <!-- widget's Config Object -->
 <script>
