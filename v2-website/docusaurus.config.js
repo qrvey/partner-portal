@@ -163,10 +163,22 @@ module.exports = {
           ],
         },
         {
-          "type": 'doc',
+          "type": 'dropdown',
           "position": 'right',
           "docId": "video-training/videos-home",
-          "label": "Knowledge Base"
+          "label": "Knowledge Base",
+          "items" : [
+            {
+              "type": 'doc',
+              "docId": "video-training/videos-home",
+              "label": "Videos"
+            },
+            {
+              "type": 'doc',
+              "docId": "getting-started/faqs-all-personas",
+              "label": "FAQs"
+            },
+          ] 
         },
        {
           "type": 'docsVersionDropdown',

@@ -63,7 +63,7 @@ The following outline describes the initial onboarding process for new customers
 
 ## Next Steps
 Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation. It is organized based on user persona. Select one of the following personas to learn more:
-* [CloudOps Engineer](./02-Personas/cloudops.md)
-* [Data Analyst](./02-Personas/data-analyst.md)
-* [Solution Architect](./02-Personas/solution-architect.md)
-* [Software Developer](./02-Personas/software-developer.md)
+* [CloudOps Engineer](../deployment/cloudops.md)
+* [Data Analyst](../composer/data-analyst.md)
+* [Solution Architect](../admin/solution-architect.md)
+* [Software Developer](../software-developer/software-developer.md)
