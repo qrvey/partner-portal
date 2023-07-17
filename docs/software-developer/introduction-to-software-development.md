@@ -3,7 +3,7 @@ id: introduction-to-software-development
 title: Introduction to the Qrvey Software Development Guide
 sidebar_label: Introduction to the Qrvey Software Development Guide
 tags: [Software Developer]
-sidebar_position: 1
+sidebar_position: 1.1
 displayed_sidebar: software-developer
 ---
 

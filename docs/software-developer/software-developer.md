@@ -3,7 +3,8 @@ id: software-developer
 title: Getting Started as a Software Developer
 sidebar_label: Getting Started as a Software Developer
 tags: [Software Developer]
-sidebar_position: 3
+sidebar_position: 1
+displayed_sidebar: software-developer
 ---
 
 Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.

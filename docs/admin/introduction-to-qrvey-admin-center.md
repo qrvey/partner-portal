@@ -3,7 +3,7 @@ id: admin-center-intro
 title: Introduction to Qrvey Admin Center
 sidebar_label: Introduction to Qrvey Admin Center
 tags: [Solution Architect]
-sidebar_position: 1
+sidebar_position: 1.1
 displayed_sidebar: solution-architects
 ---
 

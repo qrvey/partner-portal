@@ -142,22 +142,22 @@ module.exports = {
           "items": [
             {
               "type": 'doc',
-              "docId": "admin/admin-center-intro",
+              "docId": "admin/solution-architect",
               "label": "Solution Architects"
             },
             {
               "type": 'doc',
-              "docId": "composer/introduction-to-qrvey-composer",
+              "docId": "composer/data-analyst",
               "label": "Data Analysts"
             },
             {
               "type": 'doc',
-              "docId": "software-developer/introduction-to-software-development",
+              "docId": "software-developer/software-developer",
               "label": "Software Developers"
             },
             {
               "type": 'doc',
-              "docId": "deployment/introduction-to-deployment",
+              "docId": "deployment/cloudops-engineer",
               "label": "CloudOps Engineers"
             },
           ],

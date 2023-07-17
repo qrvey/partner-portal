@@ -3,7 +3,7 @@ id: introduction-to-deployment
 title: Introduction to the Qrvey Deployment Guide
 sidebar_label: Introduction to the Qrvey Deployment Guide
 tags: [CloudOps Engineer]
-sidebar_position: 1
+sidebar_position: 1.1
 displayed_sidebar: deployment-guide
 ---
 

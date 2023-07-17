@@ -3,7 +3,7 @@ id: introduction-to-qrvey-composer
 title: Introduction to Qrvey Composer
 sidebar_label: Introduction to Qrvey Composer
 tags: [Data Analyst]
-sidebar_position: 1
+sidebar_position: 1.1
 displayed_sidebar: data-analyst
 ---
 

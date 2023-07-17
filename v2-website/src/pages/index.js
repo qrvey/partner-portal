@@ -135,30 +135,30 @@
           </p>
         </div>
            <div className="persona-cont">
-           <div className="persona-box">
+           <a href="/docs/admin/solution-architect" className="persona-box">
             <div className="solution image">
             </div>
-            <h3><b><a href="/docs/getting-started/Personas/solution-architect">Solution Architects</a></b></h3>
+            <h3><b>Solution Architects</b></h3>
             <p>Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.</p>
-           </div>
-           <div className="persona-box">
+           </a>
+           <a href="/docs/composer/data-analyst" className="persona-box">
             <div className="data image">
             </div>
-            <h3><b><a href="/docs/getting-started/Personas/data-analyst">Data Analysts</a></b></h3>
+            <h3><b>Data Analysts</b></h3>
             <p>Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.</p>
-           </div>
-           <div className="persona-box">
+           </a>
+           <a href="/docs/software-developer" className="persona-box">
             <div className="software image">
             </div>
-            <h3><b><a href="/docs/getting-started/Personas/software-developer">Software Developers</a></b></h3>
+            <h3><b>Software Developers</b></h3>
             <p>Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.</p>
-           </div>
-           <div className="persona-box">
+           </a>
+           <a href="/docs/deployment/cloudops-engineer" className="persona-box">
             <div className="cloud image">
             </div>
-            <h3><b><a href="/docs/getting-started/Personas/cloudops-engineer">CloudOps Engineers</a></b></h3>
+            <h3><b>CloudOps Engineers</b></h3>
             <p>CloudOps Engineers are AWS ninjas that deploy, upgrade, and monitor the instances of the Qrvey platform.</p>
-           </div>
+           </a>
            </div>
          </div>
        </div>
