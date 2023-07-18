@@ -54,41 +54,86 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 ![Data Styles Theme 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/data-styles-theme-2-81.png)
 
 ### To create a new theme
-1. Click the **Style Themes** icon in the toolbar.  
-  ![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)  
+1. Click the **Style Themes** icon in the toolbar.
 
-  The Style Themes dialog displays.  
+![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
-  ![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)  
+  The Style Themes dialog displays.
 
-2. Click **Create New Theme**. The Create New Theme dialog displays.  
-  >**Note**: To duplicate an existing theme, click its three-dot menu and click **Duplicate**.  
-    
-  ![Create New Theme](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/create-new-theme-81.png)  
+![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
 
-3. To apply this theme to all applications, select **Use Theme in All Apps**.
-4. Click the **Typeface** drop-down menu and select a font to use in the application. 
-5. Under **Panel Styles**, select whether to display or hide the following panel items:  
-    * Panel Background
-    * Header
-    * Title  
+2. Click **Create New Theme**. The Create New Theme dialog displays.
+3. Follow the steps described in "To modify theme settings" below.
 
-6. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color. 
-7. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.  
-    - Axis and Data Labels
-    - Values
-    - Legends
-    - Tooltips  
 
-8. Under **Data Styles**, click the box next to **Main Color** to display the color picker dialog. Use the options provided to set the main color for the data.
-9. Select the colors to use for **Data Visualizations**. For your convenience, one hundred colors are chosen randomly by the system. You may change any of the colors individually, or you may click Generate New to randomly generate a new set of one hundred colors. 
-10. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.  
-    - Header Font Color
-    - Header Background Color  
+### To edit an existing theme
+1. Click the **Style Themes** icon in the toolbar.
 
-11. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
+![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
->**Note**: A theme in a “shared application” that has been created by someone else, can only be deleted by the owner of the application. Such a theme will not have the **Delete** option in the menu.
+  The Style Themes dialog displays.
+
+![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+
+2. Locate the theme you want to edit, click its three-dot menu, and click **Edit**. The Edit Theme dialog displays.
+3. Follow the steps described in "To modify theme settings" below.
+
+
+### To modify theme settings
+
+1. Create a new theme or edit an existing theme. The Create New/Edit Theme dialog displays.
+
+![Create New Theme](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/create-new-theme-81.png)
+
+2. To apply this theme to all applications, select **Use Theme in All Apps**.
+3. Click the **Typeface** drop-down menu and select a font to use in the application.
+4. Under **Panel Styles**, select whether to display or hide the following panel items:
+* Panel Background
+* Header
+* Title
+
+5. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color.
+6. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.
+- Axis and Data Labels
+- Values
+- Legends
+- Tooltips
+
+7. Under **Data Styles**, click the box next to **Main Color** to display the color picker dialog. Use the options provided to set the main color for the data.
+8. Select the colors to use for **Data Visualizations**. For your convenience, one hundred colors are chosen randomly by the system. You may change any of the colors individually, or you may click Generate New to randomly generate a new set of one hundred colors.
+9. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.
+- Header Font Color
+- Header Background Color
+
+10. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
+
+
+### To duplicate a theme
+1. Click the **Style Themes** icon in the toolbar.
+
+![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+
+  The Style Themes dialog displays.
+
+![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+
+2. Locate the theme you want to duplicate, click its three-dot menu, and click **Duplicate**. The new theme displays in the Style Themes dialog. You may now choose to Edit, Duplicate, or Delete the theme as needed.
+
+
+### To delete a theme
+A theme in a “shared application” that has been created by someone else, can only be deleted by the owner of the application. Such a theme will not have the **Delete** option in the menu.
+
+1. Click the **Style Themes** icon in the toolbar.
+
+![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+
+  The Style Themes dialog displays.
+
+![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+
+2. Locate the theme you want to delete, click its three-dot menu, and click **Delete**. A dialog displays verify that you wish to delete the theme.
+3. Click **Yes**. The theme is deleted.
+
 
 
 ### Accessing a Theme Programmatically

@@ -14,7 +14,7 @@ Qrvey lets you connect to your data in two different ways:  Managed and Live Con
 Some caveats of using Live Connect:
 
 * Joins, Unions, and Formulas are not supported, they must be performed in the source (via SQL in Qrvey or other source db methodologies, for example a database view)
-* Live Connect supports a smaller list of Data sources (v8.0 supports Redshift and Snowflake, PostgreSQL is coming soon)
+* Live Connect supports a smaller list of Data sources, currently Redshift, Snowflake, and PostgreSQL.
 * The performance of objects built on Live Connect Datasets are entirely dependent on the source database so care should be taken with source database design such as partitioning, indexes and keys as well as monitoring the source for concurrency, auto-scaling etc.  
 
 While Live Connect can be used for many scenarios, the most common use is for real-time analytics removing the delay and maintenance of ingesting data or for datasets with frequent deletes without the need to issue delete commands.

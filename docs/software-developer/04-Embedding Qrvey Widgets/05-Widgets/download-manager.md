@@ -67,6 +67,7 @@ The following table lists the properties associated with this widget.
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | No  |
 | **client_id** | `String`, The client ID, or unique identifier, of the user working with the Download Manager. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports.  | Yes |
+| **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
 | **showModalButton** | Boolean, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
 
 ## Opening the Download Manager Modal

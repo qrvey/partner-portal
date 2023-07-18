@@ -38,8 +38,21 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 `GRANT SELECT ON pg_terminate_backend TO myUser;`
 </ul>
 
+<ul style={{listStyle: 'none', marginLeft: '50px'}}>
+<li>c. Grant access to “myUser” to use aws_s3 schema and query_export_to_s3 functions.</li>
 
-2. Create a new Policy.  (Different accounts only.)
+`GRANT USAGE ON SCHEMA aws_s3 TO "myUser";`
+
+`GRANT EXECUTE ON FUNCTION aws_s3.query_export_to_s3(query text, s3_info aws_commons._s3_uri_1, options text, OUT rows_uploaded bigint, OUT files_uploaded bigint, OUT bytes_uploaded bigint) TO "myUser";`
+
+`GRANT EXECUTE ON FUNCTION aws_s3.query_export_to_s3(query text, bucket text, file_path text, region text, options text, OUT rows_uploaded bigint, OUT files_uploaded bigint, OUT bytes_uploaded bigint) TO "myUser";`
+
+
+</ul>
+
+
+
+2. Create a new Policy.  
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Open the AWS console.</li>
 <li>b. Switch to the Postgres RDS’s AWS account.</li>
@@ -68,7 +81,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
             ]
         }
     ]
-}
+    }
 ```
 
 <ul style={{listStyle: 'none', marginLeft: '60px'}}>
@@ -77,7 +90,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>j. Name the new Policy.  For example: `PostgresDataAccessPolicy`.</li>
 </ul>
 
-3. Create a new Role.  (Different accounts only.)
+3. Create a new Role.  
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Continue in the Postgres AWS account, IAM.</li>
 <li>b. Click <b>Roles</b>.</li>
@@ -91,7 +104,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>j. Note this Role’s ARN string for later use.</li>
 </ul>
 
-4. Add a trust relationship.   (Different accounts only.)
+4. Add a trust relationship.  
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Click <b>Roles</b>.</li>
 <li>b. Locate the newly created Role.</li>
@@ -117,7 +130,7 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>g. Click <b>Update Trust Policy</b>.</li>
 </ul>
 
-5. Set inline policies for the Qrvey lambdas.  (Different accounts only.)
+5. Set inline policies for the Qrvey lambdas.  
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Use the Qrvey AWS account.</li>
 <li>b. Open AWS Identity and Access Management (IAM).</li>
@@ -147,7 +160,30 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>l. Repeat these steps for the lambda role `FilesourcePrimerFunction`.</li>
 </ul>
 
-6. Configure a Qrvey Connection.
+6. Set policy for commons bucket.
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>a. Use the Qrvey AWS account.</li>
+<li>b. Open AWS S3 service and open the bucket called `QRVEY_DEPLOYMENT-dataload-drdatacommons`.</li>
+<li>c. Click the <b>Permissions</b> tab, scroll down to the <b>Bucket policy</b> section and add the next policy. Change `POSTGRES_DATA_ACCESS_ROLE_ARN` by the access role arn created in the step #3 and change `QRVEY_DEPLOYMENT` to the Qrvey deployment name.</li>
+</ul>
+
+```{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": " Statement1",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "POSTGRES_DATA_ACCESS_ROLE_ARN"
+			},
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons/*"
+		}
+	]
+}
+```
+
+7. Configure a Qrvey Connection.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Open the Qrvey Composer application.</li>
 <li>b. Click <b>Data</b>.</li>

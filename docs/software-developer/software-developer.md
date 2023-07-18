@@ -1,7 +1,7 @@
 ---
 id: software-developer
-title: Getting Started as a Software Developer
-sidebar_label: Getting Started as a Software Developer
+title: Overview of the Software Developer Persona
+sidebar_label: Overview of the Software Developer Persona
 tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: software-developer

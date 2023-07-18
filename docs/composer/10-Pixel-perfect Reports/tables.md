@@ -59,9 +59,20 @@ Dynamic tables are much more powerful than simple tables for displaying datasets
     - To add a group to a table cell, see the section below called, "Add groups to a dynamic table".  
     - To add a table total, see the section below called, "Add totals to a dynamic table".  
 
-7. Format the table as desired using the **Border** and **Padding** settings in the Simple Table Cell Configuration panel.
+7. Format the table as desired using the options on the Style tab.
 
 **Note**: At any time, you may click **Preview** to preview the report. The Preview feature displays the actual data in the table. 
+
+#### To alternate colors in a dynamic table
+Dynamic tables enable you to define alternating font and background colors to make the table easier to read. By default, alternate colors are not applied. To define alternating colors:
+1. Select the table to display its Configuration panel. 
+2. Click the **Style** tab, and configure the following settings:
+    * Font Color
+    * Background Color
+    * Alternate Font Color
+    * Alternate Background Color
+  The alternating colors will be applied when the table is displayed, previewed, and exported. 
+
 
 #### Add column data to a dynamic table
 

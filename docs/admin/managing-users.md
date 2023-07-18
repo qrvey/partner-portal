@@ -33,7 +33,6 @@ The following table describes the available permissions:
 | Connections| ✅ | ✅ |
 | Datasets| ✅ | ✅ |
 | Web Forms| ✅ | ✅ |
-| Data Links| ✅ | ✅ |
 |**Applications**|
 | Dashboards| ✅ | ✅ |
 | Pixel-perfect Reports| ✅ | ✅ |
