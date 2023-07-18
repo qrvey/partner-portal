@@ -188,7 +188,8 @@ Web Forms are a quick and easy ways to collect new data through forms, surveys, 
 Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../composer/05-Working%20with%20Data/Web%20Forms/overview-of-web-forms.md). 
 
 #### Settings
-Enables users to configure global settings that affect the entire application. Options include:
-* **Settings Section**. General application settings. For more information, see [Application Settings](../composer/11-Configuring%20Settings/overview-of-settings.md). 
-* **Download Manager Section**. Enables the Download Manager feature. For more information, see [Download Manager](../composer/03-Managing%20Your%20User%20Profile/download-manager.md).
+Provide users with access to general application settings as well as to specific features. Options include:
+* **Settings Section**. Enables users to configure global settings that affect the entire application. For more information, see [Application Settings](../composer/11-Configuring%20Settings/overview-of-settings.md).
+* **Download Manager Section**. Enables the Download Manager feature, which provides users with a central location to access and manage exported files. For more information, see [Download Manager](../composer/03-Managing%20Your%20User%20Profile/download-manager.md).
+
 

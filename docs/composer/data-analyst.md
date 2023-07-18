@@ -1,7 +1,7 @@
 ---
 id: data-analyst
-title: Getting Started as a Data Analyst
-sidebar_label: Getting Started as a Data Analyst
+title: Overview of the Data Analyst Persona
+sidebar_label: Overview of the Data Analyst Persona
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: data-analyst

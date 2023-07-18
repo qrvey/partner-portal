@@ -1,7 +1,7 @@
 ---
 id: cloudops-engineer
-title: Getting Started as a CloudOps Engineer
-sidebar_label: Getting Started as a CloudOps Engineer
+title: Overview of the CloudOps Engineer Persona
+sidebar_label: Overview of the CloudOps Engineer Persona
 tags: [CloudOps Engineer]
 sidebar_position: 1
 displayed_sidebar: deployment-guide

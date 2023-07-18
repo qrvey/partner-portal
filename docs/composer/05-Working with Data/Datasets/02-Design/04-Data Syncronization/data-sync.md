@@ -47,14 +47,19 @@ This option will only add or update records that have been added or updated sinc
 Data Sync can run based on a schedule, be triggered as a result of an underlying Dataset getting loaded or synced, or be run manually.
 
 ### Scheduled Sync
-Scheduled syncs can be planned ranging from every minute to every month. Each option presents relevant controls to customize its start time. All times are in the GMT timezone. 
+You can schedule the Data Sync process using one of two methods:
+* **Basic**. Enables you to define the sync schedule ranging from every minute to every month using the drop-down menus under Schedule.
+* **CRON**. Enables you to use an AWS Cron expression for more advanced scheduling options. To ensure that the expression uses proper syntax, click **Test CRON Expression** to validate it. For more information on Cron, see the AWS documentation, [Cron expressions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions).
 
-![2_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/ds2.png#thumbnail)
+![scheduled-sync-82.png](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/scheduled-sync-82.png)
 
+When scheduling a sync, keep in mind the following points:
+* If you have multiple syncs schedule, be sure to stagger the schedule to avoid overstressing data load resources. If using the Basic mode, vary the number of minutes set in the **Minutes after the Hour** field.
+* To set a schedule, at least one of your Data Sources is required to have a Sync Type.
+* The data synchronization trigger is ignored if another data synchronization for the same dataset is already running. To avoid potential conflicts, ensure that syncs on the same dataset are scheduled far enough apart so that one completes before the next one begins.
+* To schedule the sync to occur on the last day of the month, in Basic mode, select the **Last Day** option under **Day of the month**.
+* All times are in the GMT timezone.
 
-You just need to set your schedule and pick the Sync Type. At least one of your Data Sources is required to have a Sync Type.
-
-Please keep in mind that the data synchronization trigger is ignored if another data synchronization for the same dataset is already running. That means that you don’t want to schedule your syncs too close to each other and have to take the time that it takes for the process to finish, into account. 
 
 ### Cascade Sync
 The last option in the list of frequencies is <i>When data sources are updated</i>. This option is only enabled when the Dataset has at least another Dataset among its Data Sources. Choosing this option will cause the data sync process to be triggered automatically when one of the underlying Datasets gets its data updated.

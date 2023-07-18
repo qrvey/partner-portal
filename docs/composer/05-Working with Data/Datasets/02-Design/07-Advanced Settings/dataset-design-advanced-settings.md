@@ -27,4 +27,11 @@ Specifies whether to enable internationalization in the dataset. If enabled, the
 When a new column is discovered during a Data Source query, specifies whether to automatically add it to the dataset. 
 
 ## Estimated Dataset Size
-Specifies the estimated size of the dataset based on its number of records. This option helps the system optimize the performance of loading and displaying data. This setting is designed to improve performance–an inaccurate estimate will not harm performance. 
+Specifies the estimated size of the dataset based on its number of records. This option determines the number of shards allocated to the dataset’s ES index, which helps the system optimize the performance of loading and displaying data. The default setting is Small. 
+
+| Dataset Size | Number of Records | Number of Shards |
+| ---- | --------- | ------ |
+| **Small** | Up to 10M records | 1 shard |
+| **Medium** | Between 10M and 250M records | 3 shards |
+| **Large** | Over 250M records | 5 or more shards. If the node count is higher than 5, the number of shards equals the number of nodes. |
+ 

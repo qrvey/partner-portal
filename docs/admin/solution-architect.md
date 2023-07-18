@@ -1,7 +1,7 @@
 ---
 id: solution-architect
-title: Getting Started as a Solution Architect
-sidebar_label: Getting Started as a Solution Architect
+title: Overview of the Solution Architect Persona
+sidebar_label: Overview of the Solution Architect Persona
 tags: [Solution Architect]
 sidebar_position: 1
 displayed_sidebar: solution-architects
