@@ -142,22 +142,22 @@ module.exports = {
           "items": [
             {
               "type": 'doc',
-              "docId": "admin/solution-architect",
+              "docId": "user-persona/solution-architect",
               "label": "Solution Architects"
             },
             {
               "type": 'doc',
-              "docId": "composer/data-analyst",
+              "docId": "user-persona/data-analyst",
               "label": "Data Analysts"
             },
             {
               "type": 'doc',
-              "docId": "software-developer/software-developer",
+              "docId": "user-persona/software-developer",
               "label": "Software Developers"
             },
             {
               "type": 'doc',
-              "docId": "deployment/cloudops-engineer",
+              "docId": "user-persona/cloudops-engineer",
               "label": "CloudOps Engineers"
             },
           ],

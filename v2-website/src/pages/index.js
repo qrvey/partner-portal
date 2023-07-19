@@ -102,10 +102,34 @@
          <div className="mainContainer">
            <div className="wrapper vertical-align">
              <div className="select-role" >
+              <div style={{display:'flex'}}>
+              <div className="highlights-star"></div>
                <h2 style={{fontSize:'30px'}}>
-                 <b>Popular Articles</b>
+                 <b>New Highlights</b>
                </h2>
-               <div className="popular-articles-list-home"></div>
+              </div>
+               <div class="highlights-container ">
+                <div class="left">
+                  <div class="highlight-box">
+                  <div class="section"></div>
+                  <div class="section"></div> 
+                  <div class="section"></div>
+                  </div>
+                  <div class="highlight-box"></div>
+                  <div class="highlight-box"></div>
+                  <div class="highlight-box"></div>
+                  <div class="highlight-box"></div>
+                  <div class="highlight-box"></div>
+                </div>
+                <div class="right">
+                  <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                    <li>Element 4</li>
+                  </ul>
+                </div>
+              </div>
              </div>
            </div>
          </div>
@@ -135,25 +159,25 @@
           </p>
         </div>
            <div className="persona-cont">
-           <a href="/docs/admin/solution-architect" className="persona-box">
+           <a href="/docs/user-persona/solution-architect" className="persona-box">
             <div className="solution image">
             </div>
             <h3><b>Solution Architects</b></h3>
             <p>Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.</p>
            </a>
-           <a href="/docs/composer/data-analyst" className="persona-box">
+           <a href="/docs/user-persona/data-analyst" className="persona-box">
             <div className="data image">
             </div>
             <h3><b>Data Analysts</b></h3>
             <p>Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.</p>
            </a>
-           <a href="/docs/software-developer" className="persona-box">
+           <a href="/docs/user-persona/software-developer" className="persona-box">
             <div className="software image">
             </div>
             <h3><b>Software Developers</b></h3>
             <p>Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.</p>
            </a>
-           <a href="/docs/deployment/cloudops-engineer" className="persona-box">
+           <a href="/docs/user-persona/cloudops-engineer" className="persona-box">
             <div className="cloud image">
             </div>
             <h3><b>CloudOps Engineers</b></h3>

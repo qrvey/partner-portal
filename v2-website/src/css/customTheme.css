@@ -74,7 +74,7 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
   top: 50px;
   width: calc(70% - 150px);
   position: relative;
-  top: 150px;
+  top: 130px;
   left: 80px;
 }
 
@@ -92,6 +92,15 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
   background-image: url("../../static/img/how-info.svg");
   width: 30px;
   height: 40px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.highlights-star {
+  background-image: url("../../static/img/star.svg");
+  width: 30px;
+  height: 35px;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -769,13 +778,11 @@ font-weight: 400;
 
 .select-role {
   margin-left: 82px;
-  margin-top: 300px;
-  top: 50px;
-  left: 80px;
-  width: calc(100% - 150px);
+  margin-top: 250px;
+  width: calc(100% - 130px);
   border-radius: 10px;
   height: 100%;
-  padding: 0 100px;
+  padding: 0 10px;
 }
 
 .select-role--links {
@@ -813,8 +820,40 @@ font-weight: 400;
   padding: 10px 0;
 }
 
+.highlights-container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.highlight-box {
+  display: grid;
+  width: calc(33.33% - 10px); 
+  height: 237px;
+  margin: 5px;
+  border: 1px solid rgba(214, 211, 211, 1);
+  background-image: url("../../static/img/banner2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 115%;
+} 
+.right {
+  flex: 1;
+}
+
+.highlight-box-center {
+  width: 100%;
+  margin-top: 20px;
+  height: 50%;
+  background-color: rgba(214, 211, 211, 1);
+}
+
 .persona-cont {
-  margin-top: 40px;
+  margin-top: -10px;
   display: flex;
   justify-content: space-between;
   width: calc(100% - 150px);

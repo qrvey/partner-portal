@@ -1,6 +1,10 @@
 {
   "data-analyst": [
     {
+      "type": "doc",
+      "id": "user-persona/data-analyst"
+    },
+    {
       "type": "category",
       "label": "Qrvey Composer User Guide",
       "items": [
@@ -12,6 +16,10 @@
     }
   ],
   "deployment-guide": [
+    {
+      "type": "doc",
+      "id": "user-persona/cloudops-engineer"
+    },
     {
       "type": "category",
       "label": "Qrvey Deployment Guide",
@@ -25,6 +33,10 @@
   ],
   "solution-architects": [
     {
+      "type": "doc",
+      "id": "user-persona/solution-architect"
+    },
+    {
       "type": "category",
       "label": "Qrvey Admin Center User Guide",
       "items": [
@@ -36,6 +48,10 @@
     }
   ],
   "software-developer": [
+    {
+      "type": "doc",
+      "id": "user-persona/software-developer"
+    },
     {
       "type": "category",
       "label": "Qrvey Software Developer Guide",
