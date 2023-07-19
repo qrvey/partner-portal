@@ -118,28 +118,24 @@ module.exports = {
       },
       "items": [
         {
-          "type": 'doc',
-          "position": 'right',
-          "docId": "getting-started/intro-to-qrvey",
-          "label": "Documentation"
-        },
-        {
-          "label": "API Reference",
-          "type": 'doc',
-          "position": 'right',
-          "docId": "software-developer/Working with Qrvey APIs/api-intro"
-        },
-        {
-          "label": "Release Notes",
-          "type": 'doc',
-          "position": 'right',
-          "docId": "release-notes/v8/release-last"
-        },
-        {
           "type": 'dropdown',
-          "label": "User Persona",
-          "position": "right",
-          "items": [
+          "position": 'right',
+          
+          "label": "Documentation",
+          "items" : [
+            {
+              "label": "All Documentation",
+              "type": 'doc',
+              "docId": "getting-started/intro-to-qrvey",
+            },
+            {
+              "type": 'html',
+              "value": '<hr style="border: none; height: 2px; background-color: black; margin: 5px 0;">',
+            },
+            {
+              "type": 'html',
+              "value": '<b style="color: black;font-size: .875rem;padding: 0.2rem 0.5rem;">By Persona:</b>',
+            },
             {
               "type": 'doc',
               "docId": "user-persona/solution-architect",
@@ -160,7 +156,19 @@ module.exports = {
               "docId": "user-persona/cloudops-engineer",
               "label": "CloudOps Engineers"
             },
-          ],
+          ]
+        },
+        {
+          "label": "API Reference",
+          "type": 'doc',
+          "position": 'right',
+          "docId": "software-developer/Working with Qrvey APIs/api-intro"
+        },
+        {
+          "label": "Release Notes",
+          "type": 'doc',
+          "position": 'right',
+          "docId": "release-notes/v8/release-last"
         },
         {
           "type": 'dropdown',
