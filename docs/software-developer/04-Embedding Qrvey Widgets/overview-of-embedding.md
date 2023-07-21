@@ -29,7 +29,7 @@ For information on the structure of a widget, see [Widgets Quick Start Guide](..
 | Enable end users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view | [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) |
 | Embed a Pixel-perfect report | [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md) |
 | Embed workflow functionality into your application | [Automation](../04-Embedding%20Qrvey%20Widgets/05-Widgets/automation-widget.md) |
-| Enable end users to access Download Manager to manage exported files | Download Manager |
+| Enable end users to access Download Manager to manage exported files | [Download Manager](../04-Embedding%20Qrvey%20Widgets/05-Widgets/download-manager.md) |
 
 
 
