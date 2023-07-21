@@ -18,7 +18,7 @@ Before using the Qrvey API, gather the following:
 > **Note**: Never expose your organization’s base URL or API Key to external users in Production environments. Instead, use secure tokens to encrypt the base URL and API Key.
 
 For more information on using the Qrvey APIs, see the following resources:
-- [Qrvey API Tutorial](./Qrvey%20API%20Tutorial/api-tutorial.md)
+- [Qrvey API Tutorial](./Qrvey%20API%20Tutorials/api-tutorial.md)
 - <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>
 
 
