@@ -1,7 +1,7 @@
 ---
 id: connections-api
-title: Creating API Connections
-sidebar_label: Creading API Connections
+title: Creating a Connection (API)
+sidebar_label: Creating a Connection (API)
 tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: software-developer
