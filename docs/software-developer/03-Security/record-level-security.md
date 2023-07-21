@@ -10,7 +10,7 @@ displayed_sidebar: software-developer
 <div style={{textAlign: "justify"}}>
 
 ## Overview
-Record-level security (RLS) with Qrvey allows administrators to restrict data access at a row-level in a dataset, so each user only gets the information they are authorized to see. When RLS is enabled, creators can load their data in a single dataset, regardless of each record’s owner, yet have the data be automatically filtered.
+Record-level security (RLS) with Qrvey allows administrators to restrict data access at a row-level in a dataset, so each user gets only the information they are authorized to see. With RLS, creators can load their data in a single dataset, regardless of each record’s owner, yet have the data be automatically filtered.
 
 ## Supported Scenarios
 The following are the supported scenarios where you can use Qrvey Record-Level Security.
@@ -19,7 +19,7 @@ The following are the supported scenarios where you can use Qrvey Record-Level S
 You can use Qrvey RLS if you are using the end-user widget. Your users may be authenticated against an OpenId provider (e.g., Auth0) or you may have your own login/authentication mechanism.
 
 * **Builders widget with Backend authentication**:
-You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have your custom login/authentication mechanism, at this time
+You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have your custom login/authentication mechanism, at this time.
 
 If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see <a href="#generate-a-security-token-with-backend-authentication">generate a security token with backend authentication</a> for more details).
 
@@ -33,24 +33,17 @@ It’s essential to understand four critical elements of record-level security (
 
 4. **Security Token Schema (STS)**: It is a JSON structure in Qrvey to establish a communication protocol between the Security Provider and Qrvey’s platform to obtain the user’s security token. The security token is added after the user has been logged in. See more details in the STS section below.
 
-The following steps walk you through setting up record-level security with Qrvey.
+Setting up RLS consists of two primary steps, described next.  
 
-### Step 1 - Enable Record-Level Security
-The first thing you need to do is enable record-level security from the Admin Center. RLS settings are located under *User Management - Security options*.
-
-![1_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/1rls.png#thumbnail-0)
-
-Data security is the main configuration to enable record-level security. If it is turned off, Qrvey will not restrict access in any dataset created by the Composer, regardless of the security configuration. The same applies to the users’ security tokens; they will be ignored if this feature is not enabled.
-
-### Step 2 - Create a Dataset Security Column
+### Step 1 - Create a Dataset Security Column
 Security columns play an essential role in Qrvey's security architecture. When you want to secure your datasets under row-level security, you need to choose which columns of your datasets will be used to filter the data so users only see what they are allowed to see.
 
-To define security columns, you need to go to the data-prep option, and under the three-dot menu on the right-hand side, you will see the “Enable Record Level Security” option.
+To define security columns, open the Dataset Design page in Qrvey Composer. Click the three-dot menu on the right-hand side, and click **Enable Record Level Security**.
 
 ![2_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/2rls.png#thumbnail)
 
 
-Clicking on the **Enable Record Level Security** option will open a new window where you need to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3---define-users-security-tokens"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
+The Record Level Security - Security Name dialog displays. Use this dialog to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3---define-users-security-tokens"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
 
 ![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail-40)
 
@@ -68,7 +61,7 @@ Defining the security columns for your datasets is all you need to secure your d
 
 Defining your datasets’ security columns is optional, regardless of the data security configuration in the Admin Center. If you want to secure only a few datasets, you just need to define security columns for those. Do not define security columns for datasets that you do not wish to secure. Qrvey only will request the user’s security token when the secured datasets are accessed.
 
-### Step 3 - Define User's Security Token(s)
+### Step 2 - Define User's Security Token(s)
 Finally, you need to grant permission to the users you want to access the dataset by defining their security token(s). It is essential to understand that record-level security requires users to be authenticated, and during the authentication process, the security token is added to the user’s profile.
 
 As described in the <a href="#supported-scenarios">supported scenarios </a> section above, you can define and generate your users’ security tokens in two different ways. In this section, we will explain in detail how to do it with each one.

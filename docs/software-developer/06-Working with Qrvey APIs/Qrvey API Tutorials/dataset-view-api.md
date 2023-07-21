@@ -21,9 +21,9 @@ Creating a dataset view programmatically is a three step process, assuming you m
 
 Use the following API endpoint to designate the source dataset as a shared dataset:
 
-https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
+`https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true`
 
-You must also define a request body with the “isPublic” property set to “true”:
+You must also define a request body with the `isPublic` property set to `true`:
 
 ```
 {
@@ -40,11 +40,11 @@ The following parameters must be defined for the API endpoint:
 
 You can get the ID of the dataset by entering the Design view for the target dataset and inspecting the URL:
 
-https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}
+`https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}`
 
 After designating the dataset as a shared dataset, the next step is to create a new dataset view that will use the shared dataset as its source.  The first step is to call the following API endpoint to retrieve the shared dataset’s connection ID:
 
-https://{{DOMAIN}}.qrveyapp.com/devapi/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}
+`https://{{DOMAIN}}.qrveyapp.com/devapi/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}`
 
 From the JSON response, retrieve the “connectionId” property value, which you will use in the next and final API call.
 
@@ -53,7 +53,7 @@ From the JSON response, retrieve the “connectionId” property value, which yo
 
 Once you have the connection ID for the source shared dataset, call the following API endpoint to create a new dataset view:
 
-https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/clone/connection/{{CONNECTION_ID}}
+`https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/clone/connection/{{CONNECTION_ID}}`
 
 For this API call, the user ID and app ID must be the ID of the target application and the ID of the user owner for the target application where the new dataset view will be created.
 

@@ -26,7 +26,7 @@ Identify where you would like this widget to display in your application, and th
 
 The HTML tag for this widget is:
 
-`<an-dashboard config="anSuiteConfig"></an-dashboard>``
+`<an-dashboard config="anSuiteConfig"></an-dashboard>`
 
 ## Embed the Widget Launcher Script Tag
 Add the widget launcher script tag to your application. Note that this widget requires an additional script for proper support in all browsers. 
