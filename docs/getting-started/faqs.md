@@ -18,21 +18,18 @@ This article contains frequently asked questions organized by user persona. If y
 
 ## FAQs for Data Analysts
 
-### I published a page (or an application), but when I click the link to see the page and share it with a user, a message appears saying the page is not available.**
+### I published a dashboard (or an application), but when I click the link to see the dashboard and share it with a user, a message appears saying the dashboard is not available.
 
-**A**: Navigation has to be added for a page to show up. Click on the navigation tab and add the page that you wish to share to the right. The page will now be available upon publishing the application from the URL that is accessible from the link icon.
+**A**: Navigation has to be added for a dashboard to show up. Click on the navigation tab and add the dashboard that you wish to share to the right. The dashboard will now be available upon publishing the application from the URL that is accessible from the link icon.
 
 <br />
     
-### I have filters on my page that I see in the side panel of the page builder, but they don’t show up for my end users when I publish the application.**
+### I have filters on my dashboard that I see in the side panel of the Dashboard Builder, but they don’t show up for my end users when I publish the application.
 
-**A**: In order to enable the side panel for your end-users, you have to insert the filter panel on your page from the **Insert** menu in the top-left corner of the page builder.
+**A**: In order to enable the side panel for your end-users, you have to insert the filter panel on your dashboard from the **Insert** menu in the top-left corner of the Dashboard Builder.
 
-<img
-  src="https://s3.amazonaws.com/partners-staging.qrvey.com/FAQ/faq_pub_apps.png"
-  style={{ margin: "auto", display: "block" }}
-  width={200}
-/>
+![Insert Filter Controls](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/faq_pub_apps_82.png)
+
 
 
 ## FAQs for Software Developers
@@ -101,7 +98,7 @@ Both of these components should be able to connect to your data source. For exam
 ### I created users but the activation e-mails never arrived in their e-mail address. They have even checked the spam folder.
 
 **A:** This is probably because your AWS account is in Sandbox mode for Simple Email Service (SES). AWS blocks email going out from SES, which means you need to submit a ticket to AWS to enable the access within one day. To submit the ticket please go to
-<a href="https://console.aws.amazon.com/ses/home?region=us-east-1#"> <strong>AWS SES </strong></a> console, click on the **Sending Statistics** menu option, and follow the link from the warning message to request a limit increase. 
+<a href="https://console.aws.amazon.com/ses/home?region=us-east-1#"> <strong>AWS SES </strong></a> console, click on the **Sending Statistics** menu option, and follow the link from the warning message to request a limit increase.  
 
 <br />
 

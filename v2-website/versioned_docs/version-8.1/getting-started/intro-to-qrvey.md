@@ -53,12 +53,12 @@ The following outline describes the initial onboarding process for new customers
 1. Configure AWS environments.
 2. Install and configure the Qrvey platform on AWS. 
 3. Build your first Qrvey application in Qrvey Composer. 
-  * a. Create a new application.
-  * b. Create a connection to a data source.
-  * c. Create a data set.
-  * d. Build a dashboard with charts. 
-  * e. Publish the application. 
-  * f. Share the application with the organization. 
+    * Create a new application.
+    * Create a connection to a data source.
+    * Create a data set.
+    * Build a dashboard with charts. 
+    * Publish the application. 
+    * Share the application with the organization. 
 4. Embed the application in the host application. 
 
 ## Next Steps
