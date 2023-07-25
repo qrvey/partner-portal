@@ -111,9 +111,14 @@
                <div class="highlights-container ">
                 <div class="left">
                   <div class="highlight-box">
-                  <div class="section"></div>
-                  <div class="section"></div> 
-                  <div class="section"></div>
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article</div>
+                    <div className="highlight-audience">Audience</div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Setting Chart Colors and Themes</h3>
+                    <p className="highlight-description">The default visualization colors and font styles are determined by a “theme” that applies to the entire Qrvey app.</p>
+                    </div> 
                   </div>
                   <div class="highlight-box"></div>
                   <div class="highlight-box"></div>

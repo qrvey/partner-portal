@@ -23,7 +23,7 @@ This article contains frequently asked questions organized by user persona. If y
 **A**: Navigation has to be added for a dashboard to show up. Click on the navigation tab and add the dashboard that you wish to share to the right. The dashboard will now be available upon publishing the application from the URL that is accessible from the link icon.
 
 <br />
-    
+
 ### I have filters on my dashboard that I see in the side panel of the Dashboard Builder, but they don’t show up for my end users when I publish the application.**
 
 **A**: In order to enable the side panel for your end-users, you have to insert the filter panel on your dashboard from the **Insert** menu in the top-left corner of the Dashboard Builder.

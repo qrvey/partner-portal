@@ -825,32 +825,55 @@ font-weight: 400;
   width: 100%;
 }
 
+.highlights-header-container {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
 .left {
   flex: 3;
   display: flex;
   flex-wrap: wrap;
 }
 
+h3.highlight-title-body {
+  margin-bottom: 5px;
+  font-weight: 600 !important;
+  font-size: 16px;
+}
+
+p.highlight-description {
+  font-size: 11px;
+}
+
+.highlight-title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.highlight-audience {
+  font-weight: 400;
+  font-size: 12px;
+}
+
 .highlight-box {
-  display: grid;
   width: calc(33.33% - 10px); 
-  height: 237px;
+  height: 195px;
   margin: 5px;
   border: 1px solid rgba(214, 211, 211, 1);
-  background-image: url("../../static/img/banner2.png");
+  background-image: url("../../static/img/background-card.png");
   background-repeat: no-repeat;
-  background-size: 100% 115%;
+  background-size: 40%;
+  background-position-x: 100%;
+  padding: 20px 
 } 
 .right {
   flex: 1;
 }
 
-.highlight-box-center {
-  width: 100%;
-  margin-top: 20px;
-  height: 50%;
-  background-color: rgba(214, 211, 211, 1);
-}
+
 
 .persona-cont {
   margin-top: -10px;
