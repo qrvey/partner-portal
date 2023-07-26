@@ -131,7 +131,7 @@
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Formula Builder</h3>
-                    <p className="highlight-description">Formula Builder has been updated in version 8.2 to enable you to create formulas using a standardized language that works with any database engine supported by the Qrvey platform.</p>
+                    <p className="highlight-description">Version 8.2 enables you to create formulas using a standardized language that works with any database engine supported by the Qrvey platform.</p>
                     </div> 
                   </a> <a class="highlight-box" href="/docs/getting-started/intro-to-qrvey">
                   <div class="highlights-header-container">
@@ -167,7 +167,7 @@
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Overview of Qrvey API</h3>
-                    <p className="highlight-description">Learn how to use Qrvey’s comprehensive set of REST APIs to work with any of the core Qrvey platform features for data collection, automation, and analytics, or when integrating Qrvey into your own applications.</p>
+                    <p className="highlight-description">Learn how to use Qrvey’s comprehensive set of REST APIs to work with the core Qrvey platform features.</p>
                     </div> 
                   </a> <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
                   <div class="highlights-header-container">
@@ -178,7 +178,7 @@
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
-                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s self-service data collection, automation, and analytics functionalities into your web application.</p>
+                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
                     </div> 
                   </a>
                 </div>
