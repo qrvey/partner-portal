@@ -184,6 +184,7 @@
                 </div>
                 <div class="right">
                   <h2 className="highlight-title-body">Other Popular Content</h2>
+                  <div className="other-popular-articles-cont">
                   <div className="other-popular-articles">
                     <h3 className="highlight-title-body">Filtering and Bucketing Data</h3>
                     <a href="/docs/composer/Pixel-perfect%20Reports/filtering-data">Read More</a>
@@ -219,6 +220,7 @@
                   <div className="other-popular-articles">
                     <h3 className="highlight-title-body">Embedding Widgets Using a Security Token</h3>
                     <a href="/docs/software-developer/Embedding%20Qrvey%20Widgets/embedding-widgets-security-token">Read More</a>
+                  </div>
                   </div>
                 </div>
               </div>

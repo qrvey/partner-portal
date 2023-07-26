@@ -886,19 +886,24 @@ h3.highlight-title-body {
 }
 
 p.highlight-description {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .highlight-title {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   display: flex;
 }
 
 .highlight-audience {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
   display: flex;
+}
+
+.other-popular-articles-cont {
+  height: 350px;
+  overflow: auto;
 }
 
 .other-popular-articles {
@@ -912,11 +917,11 @@ border: none;
 }
 
 .other-popular-articles h3 {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .other-popular-articles a {
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
   font-weight: 600;
   color: var(--primary-color);
