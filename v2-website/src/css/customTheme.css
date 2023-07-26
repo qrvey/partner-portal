@@ -819,7 +819,7 @@ font-weight: 400;
 
 .select-role {
   margin-left: 82px;
-  margin-top: 250px;
+  margin-top: 180px;
   width: calc(100% - 130px);
   border-radius: 10px;
   height: 100%;
@@ -971,7 +971,7 @@ a.persona-box {
     width: 100%;
     margin-right: 30px;
     border-radius: 20px;
-    padding: 30px 60px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
@@ -1496,8 +1496,8 @@ a.nav-item-dropdown.active{
 .menu.menu--responsive.thin-scrollbar.menu_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocSidebar- {
   background-color: #35373F;
   padding-top: 80px !important;
-    margin-top: -60px;
     overflow: hidden;
+    position: fixed;
 }
 
 .menu__link--active {
