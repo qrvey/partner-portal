@@ -2,7 +2,7 @@
 id: overview-of-internationalization
 title: Overview of Internationalization
 sidebar_label: Overview of Internationalization
-tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 1
 displayed_sidebar: software-developer
 ---
