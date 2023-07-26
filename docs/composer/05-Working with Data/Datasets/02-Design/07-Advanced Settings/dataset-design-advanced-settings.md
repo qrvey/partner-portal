@@ -7,7 +7,7 @@ sidebar_position: 1
 displayed_sidebar: data-analyst
 ---
 
-The Advanced Settings tab provided advanced configuration options for your dataset. 
+The Advanced Settings tab provides advanced configuration options for your dataset. 
 
 To open the Advanced Settings tab, click **Data** in the left menu, open your dataset, click the **Design** tab, and then click **Advanced Settings**. 
 

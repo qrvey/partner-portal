@@ -2,7 +2,7 @@
 id: time-zone-support
 title: Configuring Time Zone Settings
 sidebar_label: Configuring Time Zone Settings
-tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 displayed_sidebar: software-developer
 ---
 <div style={{textAlign: "justify"}}>

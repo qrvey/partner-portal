@@ -2,7 +2,7 @@
 id: i18n-step-by-step
 title: Internationalization, Step By Step
 sidebar_label: Internationalization, Step By Step
-tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 2
 displayed_sidebar: software-developer
 ---

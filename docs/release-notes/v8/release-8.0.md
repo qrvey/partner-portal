@@ -2,7 +2,7 @@
 id: release-8.0
 title: Qrvey 8.0
 sidebar_label: Qrvey 8.0
-tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
+tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 <div>
 
