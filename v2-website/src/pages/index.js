@@ -108,31 +108,118 @@
                  <b>New Highlights</b>
                </h2>
               </div>
-               <div class="highlights-container ">
+               <div class="highlights-container">
                 <div class="left">
-                  <div class="highlight-box">
+                  <a class="highlight-box" href="/docs/composer/Managing%20Your%20User%20Profile/download-manager">
                   <div class="highlights-header-container">
-                    <div className="highlight-title">Article</div>
-                    <div className="highlight-audience">Audience</div>
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-da"></div>
+                    <div className="highlights-icons icon-sa"></div></div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Setting Chart Colors and Themes</h3>
-                    <p className="highlight-description">The default visualization colors and font styles are determined by a “theme” that applies to the entire Qrvey app.</p>
+                  <h3 className="highlight-title-body">Download Manager</h3>
+                    <p className="highlight-description">Introduced in version 8.2, Download Manager provides a central location to access and manage exported files.</p>
                     </div> 
+                  </a>
+                  <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-da"></div>
+                    </div>
                   </div>
-                  <div class="highlight-box"></div>
-                  <div class="highlight-box"></div>
-                  <div class="highlight-box"></div>
-                  <div class="highlight-box"></div>
-                  <div class="highlight-box"></div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Formula Builder</h3>
+                    <p className="highlight-description">Formula Builder has been updated in version 8.2 to enable you to create formulas using a standardized language that works with any database engine supported by the Qrvey platform.</p>
+                    </div> 
+                  </a> <a class="highlight-box" href="/docs/getting-started/intro-to-qrvey">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    <div className="highlights-icons icon-sa"></div>
+                    <div className="highlights-icons icon-ce"></div>
+                    <div className="highlights-icons icon-da"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Introduction to the Qrvey Platform</h3>
+                    <p className="highlight-description">New to Qrvey? This article provides essential information required to understand how to work with the Qrvey platform.</p>
+                    </div> 
+                  </a> <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Design/Advanced%20Settings/dataset-design-advanced-settings">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-da"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Advanced Settings</h3>
+                    <p className="highlight-description">Provides advanced configuration options for your dataset, including the ability to set the number of shards allocated to the dataset’s ES index. </p>
+                    </div> 
+                  </a> <a class="highlight-box" href="/docs/software-developer/Working%20with%20Qrvey%20APIs/api-intro">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Overview of Qrvey API</h3>
+                    <p className="highlight-description">Learn how to use Qrvey’s comprehensive set of REST APIs to work with any of the core Qrvey platform features for data collection, automation, and analytics, or when integrating Qrvey into your own applications.</p>
+                    </div> 
+                  </a> <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
+                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s self-service data collection, automation, and analytics functionalities into your web application.</p>
+                    </div> 
+                  </a>
                 </div>
                 <div class="right">
-                  <ul>
-                    <li>Element 1</li>
-                    <li>Element 2</li>
-                    <li>Element 3</li>
-                    <li>Element 4</li>
-                  </ul>
+                  <h2 className="highlight-title-body">Other Popular Content</h2>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Filtering and Bucketing Data</h3>
+                    <a href="/docs/composer/Pixel-perfect%20Reports/filtering-data">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Live Connect Datasets</h3>
+                    <a href="/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Overview of Pixel-perfect Reports</h3>
+                    <a href="/docs/composer/Pixel-perfect%20Reports/overview-of-pixel-perfect-reports">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Overview of Internationalization</h3>
+                    <a href="/docs/software-developer/Internationalization/overview-of-internationalization">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Download Manager Widget</h3>
+                    <a href="/docs/software-developer/Embedding%20Qrvey%20Widgets/Widgets/widget-download-manager">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Configuring Time Zone Settings</h3>
+                    <a href="/docs/software-developer/Timezone%20Settings/time-zone-support">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Overview of Content Deployment</h3>
+                    <a href="/docs/admin/Content%20Deployment/overview-of-content-deployment">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Configuring AWS and Qrvey for PostgreSQL Connections</h3>
+                    <a href="/docs/deployment/Managing%20the%20Qrvey%20Platform/postgres-connections">Read More</a>
+                  </div>
+                  <div className="other-popular-articles">
+                    <h3 className="highlight-title-body">Embedding Widgets Using a Security Token</h3>
+                    <a href="/docs/software-developer/Embedding%20Qrvey%20Widgets/embedding-widgets-security-token">Read More</a>
+                  </div>
                 </div>
               </div>
              </div>
@@ -244,7 +331,7 @@
          }
          <div className="mainContainer" id="main-container">
            <div className="wrapper">
-             {/* <Category /> */}
+             <Category />
            </div>
          </div>
          </div>

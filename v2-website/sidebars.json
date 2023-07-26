@@ -314,7 +314,7 @@
       "items": [
         {
           "type": "category",
-          "label": "For Platform Architects",
+          "label": "For CloudOps Engineers",
           "items": [
             {
               "type": "doc",
@@ -324,7 +324,7 @@
         },
         {
           "type": "category",
-          "label": "For Data Engineers",
+          "label": "For Data Analysts",
           "items": [
             {
               "type": "doc",
@@ -337,13 +337,7 @@
             {
               "type": "doc",
               "id": "video-training/legacy/video-dataset-syncing"
-            }
-          ]
-        },
-        {
-          "type": "category",
-          "label": "For Composers",
-          "items": [
+            },
             {
               "type": "doc",
               "id": "video-training/legacy/video-chart-builder"
@@ -404,7 +398,7 @@
         },
         {
           "type": "category",
-          "label": "For Administrators",
+          "label": "For Solution Architects",
           "items": [
             {
               "type": "doc",
@@ -430,7 +424,7 @@
         },
         {
           "type": "category",
-          "label": "For Developers",
+          "label": "For Software Developers",
           "items": [
             {
               "type": "doc",
