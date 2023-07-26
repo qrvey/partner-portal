@@ -79,6 +79,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/v8/release-8.1"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/v8/release-8.0"
         },
         {
@@ -438,6 +442,10 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-8.2"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-8.1"

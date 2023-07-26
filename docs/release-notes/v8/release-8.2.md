@@ -4,7 +4,6 @@ title: Qrvey 8.2
 sidebar_label: Qrvey 8.2
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
-<div>
 
 Release Date: 2023-07-31
 
