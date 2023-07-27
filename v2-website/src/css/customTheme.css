@@ -42,6 +42,12 @@ body, h1, h2, h3, h4, h5 {
   margin-top: 60px;
 }
 
+.docsWrapper_BCFX {
+  display: flex;
+  flex: 1 0 auto;
+  margin-top: 60px;
+}
+
 .docs-wrapper .navbar__brand {
   align-items: center;
   color: var(--ifm-navbar-link-color);
@@ -380,7 +386,7 @@ height: 100%;
 }
 
 .menu__list {
-  height: calc(100% - 10px);
+  height: calc(100% - 80px);
   overflow: auto;
 }
 
@@ -392,7 +398,7 @@ height: 100%;
 
 .sidebar_njMd {
   background-color: #35373F;
-  padding-top: 30px !important;
+  padding-top: 80px !important;
     overflow: hidden;
 }
 
