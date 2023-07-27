@@ -53,6 +53,8 @@ Release Date: 2023-07-31
 
 * **DR-4400 - Transformation Error Messages Improvement** (improvement)
 
+* **AN-14379 - Data Labels overlapping in pie charts with many slices** (behavior correction)
+
 * **DR-4398 - Data Router Services sending a different error code** (bug fix)
 
 * **DR-4420 - S3 connector with multiple files discovering the same column multiple times** (bug fix)

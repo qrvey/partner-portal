@@ -19,7 +19,7 @@ Each new release of the Qrvey platform includes videos demonstrating new feature
 
 For reference, some recent releases include the following demos:
 
-###[Version 8.2](./release/version-8.2.md)
+### [Version 8.2](./release/version-8.2.md)
 * Download Manager
 * Standard Formula Syntax
 
