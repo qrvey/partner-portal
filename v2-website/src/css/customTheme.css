@@ -402,6 +402,14 @@ height: 100%;
     overflow: hidden;
 }
 
+.docs-wrapper .menu_SIkG {
+  position: fixed;
+}
+
+.menu_SIkG {
+  position: fixed !important;
+}
+
 .card-home-content-title, .card-home-content-link{
   text-align: start;
   padding: 5px 0;
