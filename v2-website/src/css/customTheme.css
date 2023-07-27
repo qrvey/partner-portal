@@ -26,7 +26,7 @@ body, h1, h2, h3, h4, h5 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.menu__list-item-collapsible, .menu__list-item-collapsible {
+.menu__list-item-collapsible .menu__link:hover, .menu__list-item-collapsible .menu__link--active {
   color: white !important;
 }
 
