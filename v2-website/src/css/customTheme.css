@@ -408,6 +408,9 @@ height: 100%;
 
 .menu_SIkG {
   position: fixed !important;
+  width: 290px;
+  overflow: auto;
+  height: calc(100% - 80px);
 }
 
 .card-home-content-title, .card-home-content-link{
