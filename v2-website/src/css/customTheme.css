@@ -1003,7 +1003,7 @@ margin-bottom: 20px;
   font-weight: 600 !important;
 }
 
- .docs-doc-page .navbar__logo, .sidebar, .sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-styles-module {
+ .docs-doc-page .navbar__logo, .sidebar{
   position: fixed;
 }
 
