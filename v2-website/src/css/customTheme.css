@@ -50,7 +50,6 @@ body, h1, h2, h3, h4, h5 {
 .docsWrapper_BCFX {
   display: flex;
   flex: 1 0 auto;
-  margin-top: 60px;
 }
 
  .docs-doc-page .navbar__brand {
@@ -407,15 +406,12 @@ height: 100%;
     overflow: hidden;
 }
 
-.docs-doc-page .menu_SIkG {
-  position: fixed;
-}
-
 .menu_SIkG {
   position: fixed !important;
   width: 290px;
   overflow: auto;
   height: calc(100% - 80px);
+  margin-top: 60px;
 }
 
 .card-home-content-title, .card-home-content-link{
