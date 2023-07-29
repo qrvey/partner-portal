@@ -1,5 +1,5 @@
 ---
-id: upgrade-notes
+id: upgrade-notes8.1
 title: Upgrade Notes
 sidebar_label: Upgrade Notes
 tags: [CloudOps Engineer]
@@ -12,11 +12,9 @@ Please review the notes in this document carefully before using the upgrade link
 
 :::
 
-### Custom Attribute Support
-**Starting In Version: Future (Post 8.2)**
+> **Important Note**: Qrvey 8.1 includes important enhancements for validation of dataset settings, attributes and configurations. We have observed that data syncs running in the background during a platform upgrade to 8.1 are affected when the new dataset validation enhancements are put in place. To ensure that your data sync jobs continue to run in the background uninterrupted during the 8.1 platform upgrade, Qrvey Support will assist with a manual pre-upgrade installation of the new dataset validation enhancements. Having these validation enhancements in place prior to performing the platform upgrade will ensure that your data sync jobs continue to run and complete successfully during the upgrade process. If you are interested in upgrading to 8.1, please reach out to Qrvey Support and we will help you get the upgrade process started.
 
-In future releases, custom attributes will no longer be supported as root attributes of Qrvey objects (Dashboards, Datasets, etc). To support custom attributes moving forward, any custom attributes should be added as children of the root `customAttributes` attribute.
-__________________________
+
 
 ### AWS Batch - Check Region Support And Additional Configuration For Secure Database Connection
 **Starting In Version: 7.8**
@@ -44,9 +42,6 @@ Admin Center is fully serverless as of version 7.5. This change does not affect 
 __________________________
 
 ## Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.2-ubxeh.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/upgrading-versions.md) article to upgrade your instance(s).
- 
-If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
-
+Please contact Qrvey Support for help with upgrading to version 8.1.
 
 </div>
