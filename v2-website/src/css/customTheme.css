@@ -584,7 +584,7 @@ a.highlight-box {
 .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
   background-color: #35373F;
   padding: 0.5rem !important;
-  padding-top: 30px !important;
+  padding-top: 80px !important;
   overflow: hidden;
 }
 
@@ -918,7 +918,7 @@ img[src*="#thumbnail-20"] {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 800px) {
+@media only screen and (min-width: 360px) and (max-width: 997px) {
   .main-index-container {
     background-repeat: no-repeat !important;
     background-size: cover !important;
