@@ -13,7 +13,7 @@ Qrvey Datasets are the data constructs that support all visualizations and dashb
 
 
 >**Note**: Please see 
-[Data Joins](../datasets/design/data-joins/data-joins.md) and [Union](../datasets/design/data-union/) articles for more information on creating multi-source Datasets.
+[Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Union](../02-Design/06-Data%20Unions/data-union.md) articles for more information on creating multi-source Datasets.
 
 
 ## Creating Datasets
