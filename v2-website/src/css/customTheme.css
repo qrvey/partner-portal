@@ -143,7 +143,7 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
 }
 
 .howtousethissite-wrapper p {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .howtousethissite-info {
@@ -170,7 +170,7 @@ a.persona-box {
   width: 100%;
   margin-right: 30px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 50px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -209,11 +209,11 @@ a.persona-box {
 
 .persona-box h3 {
   margin-top: 30px;
-  font-size: 1em;
+  font-size: 1.3rem;
 }
 
 .persona-box p {
-  font-size: 0.7em;
+  font-size: 0.8rem;
   margin-top: 10px;
 }
 
@@ -248,22 +248,22 @@ a.persona-box {
 h3.highlight-title-body {
   margin-bottom: 5px;
   font-weight: 600 !important;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 p.highlight-description {
-  font-size: 0.7em;
+  font-size: 0.8rem;
 }
 
 .highlight-title {
-  font-size: 0.7em;
+  font-size: 0.8rem;
   font-weight: 600;
   display: flex;
 }
 
 .highlight-audience {
   font-weight: 500;
-  font-size: 0.7em;
+  font-size: 0.8rem;
   display: flex;
 }
 
@@ -283,11 +283,11 @@ p.highlight-description {
 }
 
 .other-popular-articles h3 {
-  font-size: 0.7em;
+  font-size: 0.8rem;
 }
 
 .other-popular-articles a {
-  font-size: 0.7em;
+  font-size: 0.8rem;
   text-decoration: none;
   font-weight: 600;
   color: var(--primary-color);
@@ -312,7 +312,7 @@ a.highlight-box {
 }
 
 .right h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   font-weight: 600 !important;
 }
@@ -905,9 +905,27 @@ img[src*="#thumbnail-20"] {
   opacity: 1;
 }
 
+.sidebarViewport_Xe31, .sidebarViewport_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-Sidebar-styles-module {
+  max-height: 100% !important;
+}
+
 @media only screen and (min-device-width: 801px) and (max-device-width: 3600px) {
   html {
     min-width: 1700px;
+  }
+}
+
+@media only screen and (min-device-width: 801px) and (max-device-width: 1160px) {
+  html {
+    min-width: 1700px;
+  }
+  .select-role {
+    margin-top: 240px;
+  }
+
+  .navbar__search-input:not(:focus), .navbar__search-input {
+    width: 13rem !important;
+    color: white;
   }
 }
 
@@ -933,14 +951,14 @@ img[src*="#thumbnail-20"] {
   }
 
   .persona-cont {
-    /* margin-top: -10px; */
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: initial;
-    top: 150px;
-    left: 80px;
     flex-wrap: wrap;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-top: 0px !important;
   }
 
   .select-role {
@@ -980,7 +998,7 @@ img[src*="#thumbnail-20"] {
     margin-top: 15px;
   }
 
-  .navbar__search-input:not(:focus) {
+  .navbar__search-input:not(:focus), .navbar__search-input {
     width: 9rem !important;
     color: white;
   }
@@ -2001,7 +2019,7 @@ blockquote {
   .persona-box {
     background-color: #FFFFFF;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 30px;
     margin-right: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

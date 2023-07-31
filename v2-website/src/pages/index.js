@@ -181,6 +181,42 @@
                     <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
                     </div> 
                   </a>
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
+                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
+                    </div> 
+                  </a>
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
+                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
+                    </div> 
+                  </a>
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
+                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
+                    </div> 
+                  </a>
                 </div>
                 <div class="right">
                   <h2 className="highlight-title-body">Other Popular Content</h2>
