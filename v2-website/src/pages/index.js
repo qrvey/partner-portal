@@ -104,7 +104,7 @@
              <div className="select-role" >
               <div style={{display:'flex'}}>
               <div className="highlights-star"></div>
-               <h2 style={{fontSize:'30px'}}>
+               <h2 style={{fontSize:'1.7em'}}>
                  <b>New Highlights</b>
                </h2>
               </div>
