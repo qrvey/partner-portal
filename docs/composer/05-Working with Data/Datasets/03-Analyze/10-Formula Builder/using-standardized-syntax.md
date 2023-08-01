@@ -72,21 +72,16 @@ The following table lists the available operators. Note that normal operator pre
 
 | Symbol | Operation |
 |---|---|
-|**.**|_Apply_ the function following the dot to the string/text value before the dot.|
 |**\***|_Multiplication_ of two numbers.|
 |**/**|_Division_ of two numbers.|
 |**+**|_Addition_ of two numbers.|
 |**-**|_Subtraction_ of two numbers, or negation of a number.|
-|**==**|Test _equality_ of two values.|
-|**>**|Test if the first value is _greater than_ the second value.|
-|**<**|Test if the first value is _less than_ the second value.|
-|**>=**|Test if the first value is _greater than or equal to_ the second value.|
-|**<=**|Test if the first value is _less than or equal to_ the second value.|
-|**!=**|Test _inequality_ of two values.|
-|**^**|Bitwise _exclusive or_ (XOR) of two values.|
-|**AND**|Logical _and_ of two values.|
-|**OR**|Logical _or_ of two values.|
-|**NOT**|Logical _not_ of a value.|
+|**=**|Test _equality_ of two values.|
+|**>**|Test if the first number is _greater than_ the second number.|
+|**<**|Test if the first number is _less than_ the second number.|
+|**>=**|Test if the first number is _greater than or equal to_ the second number.|
+|**<=**|Test if the first number is _less than or equal to_ the second number.|
+|**<>**|Test _inequality_ of two values.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
 
 #### Supported values
