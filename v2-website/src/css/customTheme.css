@@ -385,6 +385,9 @@ a.highlight-box:hover {
   color: white;
 }
 
+.tableOfContents_bqdL {
+  position: fixed !important;
+}
 
 .theme-doc-footer-tags-row .col b::after {
   content: "This article is recomended to :" !important;
@@ -1152,11 +1155,6 @@ html[data-theme='dark'] .DocSearch {
   box-shadow: none !important;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  -webkit-appearance: none;
-}
-
-input {
-  -webkit-appearance: none;
 }
 
 .spacer {
@@ -1437,7 +1435,6 @@ ul.nav-site.nav-site-internal li a {
   background-color: #889DBD;
 }
 
-.algolia-autocomplete {}
 
 .algolia-autocomplete input#search_input_react {
   background-color: #26344A;
@@ -1606,7 +1603,6 @@ a.nav-item-dropdown.active {
     width: 100px;
   }
 
-  .headerWrapper header a {}
 
   .fixedHeaderContainer header img {
     height: 100%;
@@ -1627,9 +1623,6 @@ a.nav-item-dropdown.active {
 }
 
 @media only screen and (min-width: 1160px) {
-  .headerWrapper {
-    /*max-width: 1160px !important;*/
-  }
 
   ul.nav-site.nav-site-internal li .primary-button {
     width: 100px;
