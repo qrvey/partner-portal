@@ -81,7 +81,7 @@ The following table lists the available operators. Note that normal operator pre
 |**<**|Test if the first number is _less than_ the second number.|
 |**>=**|Test if the first number is _greater than or equal to_ the second number.|
 |**<=**|Test if the first number is _less than or equal to_ the second number.|
-|**<>**|Test _inequality_ of two values.|
+|**&lt;&gt;**|Test _inequality_ of two values.|
 |**( )**|Evaluate the bracketed expression before applying operators to it.|
 
 #### Supported values
