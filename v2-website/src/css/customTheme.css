@@ -381,6 +381,10 @@ a.highlight-box:hover {
   background-image: url("../../static/img/card-icons/sd.svg");
 }
 
+.plugin-pages .navbar__search-input {
+  color: white;
+}
+
 
 .theme-doc-footer-tags-row .col b::after {
   content: "This article is recomended to :" !important;
