@@ -16,7 +16,7 @@ For more information about Lambda recursive loop detection, see the following AW
 To prevent an interruption to your Qrvey platform, contact AWS Support to file a support case. For each AWS account where Qrvey is or will be installed, create an AWS Support case with the following information:
 
 **Category**:  
-`Tech Support (or) Account -> Other Account issues`
+`Tech Support` (or) `Account -> Other Account issues`
 
 **Subject**:  
 `Disable Lambda recursive loop detection`
