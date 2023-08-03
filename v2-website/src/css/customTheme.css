@@ -396,6 +396,10 @@ a.highlight-box:hover {
   padding-bottom: 5px;
 }
 
+.alert {
+  display: none;
+}
+
 .docs-tags-doc-list-page header {
   text-align: center !important;
 }
