@@ -103,6 +103,6 @@ If you’re new to working with the Qrvey platform as a Solution Architect, star
 * [Introduction to the Qrvey Admin Center](../admin/introduction-to-qrvey-admin-center.md)
 * [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md)
 * [Managing Users of Qrvey Composer](../admin/managing-users.md)
-* [Overview of Content Deployment](../admin/09-Content%20Deployment/overview-of-content-deployment.md)
+* [Overview of Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
 
 Another useful resource is the Qrvey [Frequently Asked Questions (FAQs)](../getting-started/faqs.md) page. 

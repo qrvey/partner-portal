@@ -72,7 +72,7 @@ The Automatic Adjustments section helps you avoid running out of storage capacit
 
 >**Note**: This feature is disabled by default to avoid unwanted adjustments to the Elasticsearch cluster after the initial deployment of the Qrvey platform. 
 
-If Automatic Adjustment are not enabled, the process runs anyway at the scheduled time and checks the available free storage. If the available free storage is below the specified threshold, the process will not perform any adjustments, but it can send an email notification if the following email option is selected: **Free storage threshold has been reached and automatic adjustments are not enabled or not allowed**. 
+If Automatic Adjustments are not enabled, the process runs anyway at the scheduled time and checks the available free storage. If the available free storage is below the specified threshold, the process will not perform any adjustments, but it can send an email notification if the following email option is selected: **Free storage threshold has been reached and automatic adjustments are not enabled or not allowed**. 
 
 To determine whether any servers have been automatically added, note the value under **Number of servers automatically added**. Compare this value with value under **Max. number of servers allowed to be automatically added** to determine how many more servers are available.
 
