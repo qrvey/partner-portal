@@ -68,7 +68,7 @@ S3 buckets and folders can be leveraged to store CSV, JSON, or ndJSON files and 
 
 * You can load data from multiple files that are in the same bucket or folder in bulk, instead of loading those one at a time.
 * Wildcards can be used in the **S3 Folder** field. 
-* File upload time to S3 is automatically used as a timestamp to enable the [“append and update”](ui-docs/datasets/data-sync.md#append-and-update) mode of data synchronization. 
+* File upload time to S3 is automatically used as a timestamp to enable the [“append and update”](../Datasets/02-Design/04-Data%20Syncronization/data-sync.md#append-and-update) mode of data synchronization. 
  
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 

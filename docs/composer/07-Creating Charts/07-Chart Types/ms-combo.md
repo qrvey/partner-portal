@@ -28,13 +28,13 @@ In the case below, we’d like to better understand which customers are purchasi
 ### General
 
 * **Legends** - show or hide the legend describing which color has been used to depict each selected value.
-* **Tooltips** - enable or disable [Tooltips](../../chart-builder/tooltips.md) to show more than one value on mouseover. Click **+Add Column** to add a column. 
+* **Tooltips** - enable or disable [Tooltips](../tooltips.md) to show more than one value on mouseover. Click **+Add Column** to add a column. 
   * **Column** - pick a column from the dropdown list. This can be any column, even if it is not used in the chart.
   * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
   * **Values Format** - set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific. 
   * **Remove** - remove the tooltip column.
   * **Header** - add a header to the tooltip. 
-* **Table Calculations** - add [calculations](../../dataviews/table-calculations.md) to your Combo Chart. 
+* **Table Calculations** - add [calculations](../08-Table%20Calculations/table-calculations.md) to your Combo Chart. 
 * **Max Data Points** - set the upper limit for the categories that are shown on the x-axis of the combo chart. Controlling the number of symbols helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
 * **Max Series** - Increase or decrease a limit on the series you want to show in a single category in a multiseries chart. 
 
@@ -64,13 +64,13 @@ In the case below, we’d like to better understand which customers are purchasi
 ### Sorting
 Multiseries Combo Charts can be sorted by their selected category column, or either of the value columns used in them. Choose the column that you wish to sort your chart by, from the dropdown list and select the sorting direction (ascending or descending) from the icons under the dropdown.
 
-For more information, see [Sorting](../../chart-builder/sorting.md). 
+For more information, see [Sorting](../sorting.md). 
 
 ### Layers
-Add a [Trend Line](../../dataviews/chart-builder/chart-configuration/layers.md#trend-line) or a [Reference Line](../../dataviews/chart-builder/chart-configuration/layers.md#reference-line) to your Multiseries Combo Charts.
+Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
 ### Format
-The [Conditional Formatting](../../dataviews/chart-builder/chart-configuration/format.md#small-multiples#conditional-formatting) option is available in Multiseries Combo Charts.
+The [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) option is available in Multiseries Combo Charts.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 

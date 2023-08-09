@@ -68,10 +68,9 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 Like all XY Charts, you can sort by either the category or aggregated values from the column pills. If the column is not included in the chart, go to the **Sorting** section of the Configuration Panel and pick your desired column from the dropdown, and select the sorting direction.
 
 For more information, see [Sorting](../sorting.md). 
- 
-### Layers
-Add a [Trend Line](../09-Configure%20charts/layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
+### Layers
+Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
 
 ### Format
 The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
