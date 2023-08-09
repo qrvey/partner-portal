@@ -75,7 +75,8 @@ The [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-mult
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 
 
-Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information on the types of filters, see [Chart Filters](../../dataviews/chart-builder/chart-configuration/chart-filters.md). 
+Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. 
+For more information on the types of filters, see [Chart Filters](../09-Configure%20charts/chart-filters.md). 
  
 Multiseries Combo Charts supports **Filter By**, which applies a filter over the chart’s data when users click on a data point.
 

@@ -78,8 +78,8 @@ The system will pick a format for displaying date and numeric data in visualizat
 
 ![dslive8](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.8-8.0.png#thumbnail-40)
 
-If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Qrvey Admin Center.
-For more information about RLS and how to set it up, see [Record Level Security](../../../software-developer/security/record-level-security.md).
+If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. The menu item “Enable Record Level Security” in the dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Qrvey Admin Center.  
+For more information, see [Record Level Security](../../../../software-developer/03-Security/record-level-security.md).
 
 
 ### Setting Up Automatic Column Links​
