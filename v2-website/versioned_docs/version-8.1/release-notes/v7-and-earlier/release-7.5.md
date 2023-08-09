@@ -14,20 +14,20 @@ Release Date: 2022-08-30
 
 :::
  
- >**Important Note**: With this version Qrvey has started leveraging Amazon Location Service for all of its mapping needs for accuracy and consistency reasons. The service is currently not available in all AWS regions. If setting up a new environment, and intend to use maps in your product, please note the supported regions in [this document](../get-started/prerequisites-for-installation.md#aws-region-support).
+ >**Important Note**: With this version Qrvey has started leveraging Amazon Location Service for all of its mapping needs for accuracy and consistency reasons. The service is currently not available in all AWS regions. If setting up a new environment, and intend to use maps in your product, please note the supported regions in [this document](../../deployment/prerequisites-for-installation.md#aws-region-support).
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.5.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
 
 ## New Features & Enhancements
  
 ### Data Preparation
-* **[CSV Files - Support for Different Delimiters](../ui-docs/datasets/csv.md)**: We now support semicolon, tab character, and pipe symbol, in addition to commas, in CSV files.
+* **[CSV Files - Support for Different Delimiters](../../composer/05-Working%20with%20Data/Connections/csv.md)**: We now support semicolon, tab character, and pipe symbol, in addition to commas, in CSV files.
 
-* **[RDBMS Connections - Pagination for Tables and Views](../ui-docs/datasets/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
+* **[RDBMS Connections - Pagination for Tables and Views](../../composer/05-Working%20with%20Data/Connections/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
 
-* **[Data Sync - Allow users to determine the start of the sync range](../ui-docs/datasets/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
+* **[Data Sync - Allow users to determine the start of the sync range](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Syncronization/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
 
-* **[Shared Data List Improvement](../ui-docs/datasets/dataset-views.md)**: Users can now see the owner and the source application of shared datasets.
+* **[Shared Data List Improvement](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/dataset-views.md)**: Users can now see the owner and the source application of shared datasets.
 
 * **Numeric Data Type - Duration Values Visualization Format**: With this version numeric values can have their default visualization format set as Duration, allowing types such as days, hours, minutes, etc. <a href="/docs/video-training/release/version-7.5#duration-visualization-format" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
@@ -39,7 +39,7 @@ Release Date: 2022-08-30
 
 * **Support for Duration format**: We added support for Duration Format in the Chart Builder and exports to let users format numeric columns when creating/editing charts and tables. 
 
-* **Maps Migration to Amazon Location Service**: We have migrated the maps feature to the new AWS Location Service. Please make sure that this service is available [in the region](../get-started/prerequisites-for-installation.md#aws-region-support) of your choice, before deploying Qrvey in a new region. 
+* **Maps Migration to Amazon Location Service**: We have migrated the maps feature to the new AWS Location Service. Please make sure that this service is available [in the region](../../deployment/prerequisites-for-installation.md#aws-region-support) of your choice, before deploying Qrvey in a new region. 
 
 * **Workflows - Tokens in the “Submit Data” fields**: We added support for tokens when creating a flow using Submit Data so that the system can use dynamic values in this action. <a href="/docs/video-training/release/version-7.5#submit-data-action-improvements" target="_blank" className="tooltip"><img alt="Duration Format" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 

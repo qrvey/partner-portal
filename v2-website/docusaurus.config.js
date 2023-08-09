@@ -1,12 +1,12 @@
 module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
-  "url": "http://partners-staging.qrvey.com/",
+  "url": "http://partners.qrvey.com/",
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
-  "onBrokenLinks": 'ignore',
-  "onBrokenMarkdownLinks": 'ignore',
+  "onBrokenLinks": 'warn',
+  "onBrokenMarkdownLinks": 'warn',
   "scripts": [
     "/js/custom.js",
     "/js/user.js",
@@ -97,6 +97,7 @@ module.exports = {
     ],
   ],
   "themeConfig": {
+    "metadata": [{"name": 'Qrvey Documentation', "content": 'Qrvey Documentation, Qrvey blog'}],
     "home": {
       "navbar": {
         "logo": {

@@ -24,21 +24,21 @@ Click <a href="/docs/video-training/release/version-5.9" target="_blank"> <stron
 
 * <strong>QV-12555 - File Uploads JSON Support</strong>: You can now upload JSON and ndJSON files to create connections.
 
-* <a href="/docs/video-training/release/version-5.9/#hierarchical-data-support" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <strong> QV-12660 - Dataset Page - Hierarchical Data Support</strong>: You can now create a Connection with hierarchical data or JSON structure. Indentation is used on the Dataset Page to show the hierarchy in the data structure.
+* <a href="/docs/video-training/release/version-5.9/#hierarchical-data-support" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>  <strong> QV-12660 - Dataset Page - Hierarchical Data Support</strong>: You can now create a Connection with hierarchical data or JSON structure. Indentation is used on the Dataset Page to show the hierarchy in the data structure.
 
 * <strong>DR-2195 - New Dataset API</strong>: We enhanced the Datasets API to make it easier to programmatically create, edit and delete Datasets with any type of data source, specifying transformations, columns, formatting options, geolocation groups, join information, and unique ID per column.
 
 
 ## Data Analysis & Automation
 
-* <a href="/docs/video-training/release/version-5.9/#relative-dates-in-filter-builder" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> 
+* <a href="/docs/video-training/release/version-5.9/#relative-dates-in-filter-builder" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>  
 <strong> AN-12461 - Relative Dates In Filter Builder</strong>: You can now set relative date filters with the “In” operator from the main filter creation modal, i.e.: “Sales in the last 6 months”
 
 * <strong> AN-9826 - Conditional Formatting In Bar, Line, Symbol, and Min/Max Charts</strong>: You can now set a threshold on Bar, Line, Symbol, and Min/Max charts to change the value marker color in order to easily distinguish between the values that meet your conditions.
 
-* <a href="/docs/video-training/release/version-5.9/#color-mapping-and-table-header-styles" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a> <strong>AN-12318 - Chart Themes - Color Mapping</strong>: You can now tie the color of each category to it so the category is always depicted in the same color. This feature currently works for Bar, Line and Symbol charts.
+* <a href="/docs/video-training/release/version-5.9/#color-mapping-and-table-header-styles" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>  <strong>AN-12318 - Chart Themes - Color Mapping</strong>: You can now tie the color of each category to it so the category is always depicted in the same color. This feature currently works for Bar, Line and Symbol charts.
 
-* <a href="/docs/video-training/release/version-5.9/#color-mapping-and-table-header-styles" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a>
+* <a href="/docs/video-training/release/version-5.9/#color-mapping-and-table-header-styles" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
 <strong>AN-12311 - Table Header Styles</strong>: You can now change the background and font color of table headers from the Styles section in chart builder.
 
 * <strong>AN-12020 - Column Sorting on Grouped Tables</strong>: You can now configure a custom sorting order when performing multi-column sorting in grouped tables.
@@ -50,7 +50,7 @@ Click <a href="/docs/video-training/release/version-5.9" target="_blank"> <stron
 
 ## Admin Center
 
-* <a href="/docs/video-training/release/version-5.9/#roles-and-permissions" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a>
+* <a href="/docs/video-training/release/version-5.9/#roles-and-permissions" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
 <a href="/docs/admin/roles-and-permissions" target="_blank"><strong>Roles and Permissions</strong></a>: We have introduced the new Roles & Permissions system in the Admin Center. Admins can add users to the system-defined Administrator or Composer roles or create new roles for them and configure access to the main functionalities in the Qrvey Composer within those roles.  
 
 

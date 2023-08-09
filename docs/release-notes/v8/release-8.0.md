@@ -24,7 +24,7 @@ Please note that what was formerly known as a “Page” has been renamed, retoo
 
 ### Data Preparation
 
-* **[Live Connect Datasets](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/datasets-live.md)**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets. <a href="/docs/video-training/release/version-8.0#live-connections" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **[Live Connect Datasets](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/datasets-live.md)**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets. <a href="/docs/video-training/release/version-8.0#live-connections" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
  
 ### Data Analysis & Visualization
 

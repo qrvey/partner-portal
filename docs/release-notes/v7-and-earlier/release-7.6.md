@@ -15,13 +15,13 @@ This change does not affect any of the Admin Center functionality, however the l
 
 :::
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/autodeployappCloudformation-enterprise-7.6.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../get-started/upgrading-versions.md) article to upgrade your instance(s). 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/autodeployappCloudformation-enterprise-7.6.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../../deployment/upgrading-versions.md) article to upgrade your instance(s). 
 
 
 ## New Features & Enhancements
  
 ### Data Preparation
-* **[Consistent Connection Creation](../ui-docs/datasets/databases.md)**: We improved how Connections are created. The Connection creation screens are the same regardless of where they appear. Also, Connections will no longer include queries.
+* **[Consistent Connection Creation](../../composer/05-Working%20with%20Data/Connections/databases.md)**: We improved how Connections are created. The Connection creation screens are the same regardless of where they appear. Also, Connections will no longer include queries.
 
  
 ### Data Analysis & Visualization

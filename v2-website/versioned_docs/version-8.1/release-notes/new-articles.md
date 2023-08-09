@@ -27,7 +27,7 @@ sidebar_label: New Articles
 |[Discrete and Continuous Values](../composer/07-Creating%20Charts/08-Table%20Calculations/discrete-and-continuous-values.md)|All|Composer| July 7th, 2022|
 |[Table Calcuations](../composer/07-Creating%20Charts/08-Table%20Calculations/table-calculations.md)|All|Data Analyst| July 7th, 2022|
 |[Date Grouping](../composer/07-Creating%20Charts/08-Table%20Calculations/date-grouping.md)|All|Composer| July 7th, 2022|
-|[Chart Builder section](../ui-docs/dataviews/chart-builder/how-to-cb.md)|All|Data Analyst| June 15, 2022|
+|[Chart Builder section](../composer/07-Creating%20Charts/how-to-use-cb-documentation.md)|All|Data Analyst| June 15, 2022|
 |[Chart Types section](../composer/07-Creating%20Charts/07-Chart%20Types/bar.md)|All|Data Analyst| June 15, 2022|
 |[Configuring AWS and Qrvey for Redshift Connections](../deployment/06-Managing%20the%20Qrvey%20Platform/redshift.md)|All|CloudOps| April 8, 2022|
 |[Configuring AWS and Qrvey for Snowflake Connections](../deployment/06-Managing%20the%20Qrvey%20Platform/snowflake.md)|All|CloudOps| April 8, 2022|

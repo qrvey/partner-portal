@@ -328,7 +328,7 @@ Formulas apply to the values of one row of data and their results are presented 
 
 “Aggregated formulas” action item shows up in the action panel only when the table is grouped, otherwise that action item is disabled.
 
-Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../05-Working%20with%20Data/Datasets/03-Analyze/formulas.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
+Aggregated Formulas are created using the same UI and syntax as the regular formulas, described in the [Formulas](../../05-Working%20with%20Data/Datasets/03-Analyze/10-Formula%20Builder/overview-of-formula-builder.md) article. The main difference between the two is that Aggregated Formulas only work on data that has been aggregated by the selected group(s) for the table, and are therefore limited to numeric functions and all aggregated columns in the table chart. 
 
 To create calculations across columns on the aggregated values while creating or editing a grouped table (a table that has at least one column in the Group shelf):
 

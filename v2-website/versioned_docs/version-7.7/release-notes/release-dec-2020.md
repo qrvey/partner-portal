@@ -27,7 +27,7 @@ Click <a href="/docs/next/video-training/release/version-5.7" target="_blank"> <
 
 ### Data Analysis & Automation
 
-* <a href="/docs/video-training/release/version-5.7/#filters-v20" target="_blank" class="tooltip"><img alt="Filters v2.0" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" class="video-icon-png" /><span class="tooltiptext">Watch video</span></a><a href="/docs/ui-docs/datasets/data_overview/#data_overview" target="_blank"><strong>AN-11308 - Filters Creation 2.0</strong></a>: Filter creation has been revamped to provide a better and more consistent experience. As a result of this change you get: 
+* <a href="/docs/video-training/release/version-5.7/#filters-v20" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> <a href="/docs/ui-docs/datasets/data_overview/#data_overview" target="_blank"><strong>AN-11308 - Filters Creation 2.0</strong></a>: Filter creation has been revamped to provide a better and more consistent experience. As a result of this change you get: 
     * Improved and more consistent UI across different data types.
     * More complete and consistent list of operands for all data types.
 
