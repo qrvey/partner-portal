@@ -8,8 +8,8 @@ displayed_sidebar: data-analyst
 ---
 
 The Analyze tab provides a variety of features for analyzing your dataset, including:
-* **[Formula Builder](./formulas.md)** 
-* **[Bucketing Data](.buckets.md)** 
+* **[Formula Builder](../03-Analyze/10-Formula%20Builder/overview-of-formula-builder.md)** 
+* **[Bucketing Data](../03-Analyze/buckets.md)** 
 * **[Exporting Data](./exporting.md)** 
 
 Ways to view your data include:
