@@ -11,7 +11,7 @@ displayed_sidebar: deployment-guide
 
 To install a new version of Qrvey to update your deployment, follow these steps:
 
-1. Get the URL for the latest version of the CloudFormation template (see <a href="/docs/release-notes/release-last" target="_blank">release notes</a>).
+1. Get the URL for the latest version of the CloudFormation template (see <a href="/docs/release-notes/v8/release-last" target="_blank">release notes</a>).
 2. Navigate to the CloudFormation section of your AWS account.
     1. From the list of “Stacks” find the cloudformation stack for Qrvey’s Deployment manager. To identify if the stack exists go to the “Exports” tab in CloudFormation console and look for Export Name = AutoDeployAppURL. If you have removed this template for any reason, then create a new stack with the Quick Create URL from step 2 of [Initial Installation](../deployment/04-Installing%20the%20Qrvey%20platform/initial-installation.md).
     2. If the stack exists then:
