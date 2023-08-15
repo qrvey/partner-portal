@@ -8,6 +8,26 @@ sidebar_label: Qrvey 7.8 (LTS)
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../../../v2-website/versioned_docs/version-7.8/release-notes/upgrade-notes.md) document for important notes and access to the upgrade link. 
 
+## Qrvey 7.8.5
+
+Release Date: 2023-08-15
+
+### Preventive Maintenance
+* This patch upgrades all lambdas to Node.js 16 to enable continued support after Node.js 14 is deprecated by AWS.
+* The Open SSH package has been removed from the container to avoid any associated security vulnerability.
+
+### Fixes
+* Fixed an error that occurred when the user attempted to flatten an array that included a column in numerical format instead of a Data Array.
+* Fixed a `Connection lost` error that occurred when the MySQL results were paused for too long.
+* Fixed an intermittent error that triggered a `Response Error` when syncing or loading datasets.
+* Fixed an error that occurred when the user created a Dataset view from shared data and the parent dataset was configured with a Sync `Full Reload`.
+* Fixed a language translation issue that occurred when the user set a `lang` value in the widget configuration. 
+* Fixed an error that occurred when a user attempted to export an embedded dashboard chart with userFilters applied to multiple datasets.
+* Fixed console errors that occurred when a user embedded the Dashboard Builder or Dashboard View widget using `i18.lang_object`.
+* Fixed an issue in which a page did not render correctly when it had over 100 actions activated.
+* Fixed an error in Content Deployment that prevented the deployment after the user filled the values for the parameter tokens when creating a Job.
+
+
 ## Qrvey 7.8.4
 
 Release Date: 2023-05-02
