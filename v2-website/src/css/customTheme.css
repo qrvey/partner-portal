@@ -390,7 +390,7 @@ a.highlight-box:hover {
 }
 
 .theme-doc-footer-tags-row .col b::after {
-  content: "This article is recomended to :" !important;
+  content: "This article is recommended for: " !important;
   background-color: white;
   margin-left: -40px;
   padding-bottom: 5px;
