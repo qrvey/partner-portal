@@ -69,29 +69,14 @@ The following table lists the properties associated with this widget.
 #### Time Zone Configuration
 The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. You can specify the time zone offset in the configuration object properties. For more information, see [Time Zone Support](../../10-Timezone%20Settings/timezone-support.md). 
 
-## Sample
-The following sample demonstrates how this widget can be used in an HTML page.  
+## Code Samples
+The following samples demonstrate how this widget can be used in an HTML page. 
 
-**HTML tag**:
+| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
+| --- | --- | --- | --- |
+| Basic API Key | This sample uses a basic API key to embed a full Automation widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/yLOopqq/4f4030cdea91163a3b9583234335e360) | n/a |
+| Basic API Key - Single Workflow | This sample uses a basic API key to embed a single-flow Automation widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMea/b95fa2580bb7d30ad11ff69d34838499) | n/a |
 
-`<qrvey-workflow-design settings="config"></qrvey-workflow-design>`
-
-**Widget launcher script**:
-
-`<script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>`
-
-**JSON configuration object**:
-
-```js
-{
-   "apikey": "<MY_PRIVATE_APIKEY>",
-   "domain": "https://domain.qrvey.com",
-   "appid": "usaL1yR4j",
-   "userid": "pwWErgJ",
-   "workflowid": "sddW12dasw",
-   "timezone": { "offset": "-03:00" }
-}
-```
 
 
 
