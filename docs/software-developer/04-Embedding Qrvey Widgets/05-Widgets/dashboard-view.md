@@ -230,51 +230,13 @@ The widget supports custom events to update keys of the configuration, you can d
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
 
-## Sample
-The following sample demonstrates how this widget can be used in an HTML page. 
+## Code Samples
+The following samples demonstrate how this widget can be used in an HTML page. 
 
-### Dashboard with Filter Applied
-The following sample displays a single dashboard and applies a filter to the data. 
-
-To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
-
-**HTML Tag:**
-
-`<qrvey-end-user settings="config"></qrvey-end-user>`
-
-**JSON Configuration Object:**
-
-```json
-<script>
-var config = {
-    "api_key": "<API_KEY>", // your API key
-    "app_id": "<APP_ID>", // your app_id
-    "domain": "https://your_qrvey_domain", // your domain
-    "group_list": ["Admin", "oJn4Cr_yV", ...], //your group list, if any (this is optional)
-    "page_id": "<PAGE_ID>", // the id of the page that you want in the view. All pages in navigation will be included, if this is omitted.
-    "userFilters": { "filters": [
-    				{
-		"operator": "AND",
-		"expressions": [
-		{
-			"questionid": "aQc13F",
-      			"validationType": "EQUAL",
-			"value": ["January"]
-}
-]
-}          
- 	   	]
- 	} // your filters, if any, can be added like this.
-}
-</script>
-```
-
-**Widget Launcher Script:**
-
-```
-<!-- your launcher js link (replace with your js link) -->
-<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
-```
-
+| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
+| --- | --- | --- | --- |
+| Basic API Key | This sample uses a basic API key to embed a full Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/NWNvyWM/cf1d20805cc1f18680d7a9d15a07dce3) | n/a |
+| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/LYXwKoM/6f4049ea4a7fe9be92984be3591285d6) | n/a |
+| CSS Injection | This sample uses a basic API key and custom CSS to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments. | [codepen](https://codepen.io/qrveysamples/pen/BavBNjY/4bb40af9433781a4ae41d36e6ffca40c?editors=1010) | n/a | 
 
 </div>

@@ -59,36 +59,14 @@ The following table lists the properties associated with this widget.
 | **parameter_values** | `Object. {key1: value, key2: value}`, you can set the value of a parameter from the configuration object. This value will override the default value set for the parameter. | No |
 
 
-## Sample Code
-The following sample demonstrates how this widget can be used in an HTML page. To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
+## Code Samples
+The following samples demonstrate how this widget can be used in an HTML page. 
 
-**HTML tag:**
+| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
+| --- | --- | --- | --- |
+| Basic API Key | This sample uses a basic API key to embed a full Pixel-perfect Report widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/PoxMMKb/ab9b9ab06d4e37d4df8f1be67bb7ea1e) | n/a |
+| Basic API Key - Single Report | This sample uses a basic API key to embed a single Pixel-perfect Report widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/YzRmmrX/a207d5ccb5f7e29204b1f95033674178) | n/a |
 
-```html
-<!-- widget's tag -->
-<qrvey-pixel-builder settings="config"></qrvey-pixel-builder>
-```
-
-**Widget launcher script:**
-
-```html
-<!-- widget's launcher -->
-<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
-```
-
-**JSON configuration object:**
-
-```html
-<!-- widget's Config Object -->
-<script>
-var config = {
-  "api_key": "<YOUR_PRIVATE_API_KEY>",
-  "domain": "https://your_qrvey_domain",
-  "app_id":  "<APP_ID>",
-  "user_id": "<USER_ID>",
-};
-</script>
-```
 
 **See also**:
 [Introduction to Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)

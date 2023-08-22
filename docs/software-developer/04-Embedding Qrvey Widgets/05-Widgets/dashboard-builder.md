@@ -88,58 +88,12 @@ The widget supports custom events to update keys of the configuration, you can d
   * Operator: defines which operation will be performed with the expressions.
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
+## Code Samples
+The following samples demonstrate how this widget can be used in an HTML page. 
 
-## Sample
-The following sample demonstrates how this widget can be used in an HTML page. 
+| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
+| --- | --- | --- | --- |
+| Basic API Key | This sample uses a basic API key to embed a full Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/PoxMMYP/38e4021367bada1da1cb90d58bb3da24) | n/a |
+| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a |
 
-To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
-
-**HTML tag:**
-
-`<qrvey-builders settings="config"></qrvey-builders>`
-
-**Widget launcher script:**
-
-```
-<!-- your launcher js link (replace with your js link) -->
-<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
-```
-
-**JSON configuration object:**
-
-```json
-<script>
-var config = {
-    "api_key": "<API_KEY>", // your API key
-    "app_id": "<APP_ID>",
-    "user_id": "<USER_ID>", // your user_id
-    "domain": "https://your_qrvey_domain", // your domain
-    "private_pages": true,
-    "do_not_allow": ['CREATE_CHART', 'USERS_AUTHENTICATION'], // optional properties to customize the controls
-    "styles": {
-        "main_color": '#3E94FF',
-        "main_text_color": '#000000',
-        "secondary_color": 'black',
-        "icon_color": '#000000',
-        "tab_bar_color": '#EEEEEE',
-        "tab_font_color": '#000000',
-        "error_color": '#FF0000'
-    },
-    "userFilters": { "filters": [
-                    {
-        "operator": "AND",
-        "expressions": [
-        {
-            "questionid": "aQc13F",
-                "validationType": "EQUAL",
-            "value": ["January"]
-}
-]
-}          
-        ]
-    }  // your filters, if any, can be added like this.
-
-}
-</script>
-```
 </div>
