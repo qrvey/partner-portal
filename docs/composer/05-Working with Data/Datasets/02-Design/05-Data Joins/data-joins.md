@@ -23,9 +23,7 @@ The following join types are supported:
 
 ![data-joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/data-joins-nv3.png#thumbnail-60) 
 
-    The Select the Data Source dialog displays. 
-
-2. Select the data source that you wish to join. Click the **Connection**, **My Data**, or **Shared Data** tabs to display existing data sources. 
+2. On the Select the Data Source dialog, select the data source that you wish to join. Click the **Connection**, **My Data**, or **Shared Data** tabs to display existing data sources. 
 
 3. Click **Next**. The Join Data dialog displays.  
 
