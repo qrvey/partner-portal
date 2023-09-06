@@ -176,14 +176,27 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 			"Principal": {
 				"AWS": "POSTGRES_DATA_ACCESS_ROLE_ARN"
 			},
-			"Action": "s3:PutObject",
+			"Action": ["s3:PutObject","s3:GetBucketLocation"],
 			"Resource": "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons/*"
 		}
 	]
 }
 ```
 
-7. Configure a Qrvey Connection.
+7. Associate the Postgres cluster with the new Role.
+<ul style={{listStyle: 'none', marginLeft: '20px'}}>
+<li>a. Go to AWS RDS.</li>
+<li>b. Click the desired postgres cluster.</li>
+<li>c. Click the <b>Connectivity and security</b> tab.</li>
+<li>d. Go to the <b>Manage IAM roles</b> section.</li>
+<li>e. Select the role in <b>Add IAM roles to this instance</b> combo box.</li>
+<li>f. Select <b>s3Export</b> in the feature combo box.</li>
+<li>g. Click <b>Add Role</b>.</li>
+</ul>
+
+
+
+8. Configure a Qrvey Connection.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Open the Qrvey Composer application.</li>
 <li>b. Click <b>Data</b>.</li>
