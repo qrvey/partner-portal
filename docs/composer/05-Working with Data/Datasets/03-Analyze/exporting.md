@@ -152,7 +152,7 @@ PDF export is mainly a layout export option and produces results that look a lot
 >**Note 3**: PDF export is not available in the Tabular view from the Dataset Analyze tabs, but can be found in the same menu as the other exports everywhere download is possible.
 
 ## Export and Workflows
-As explained in the <a href="/docs/ui-docs/automation/send-actions#send-an-email">workflow article</a>, dashboards, reports, and individual table charts on dashboards can be exported automatically and the results can be attached and sent to the selected recipients with the **Send Email** action. 
+As explained in the [Actions - Send](../../../09-Automation/send-actions.md) article, dashboards, reports, and individual table charts on dashboards can be exported automatically and the results can be attached and sent to the selected recipients with the **Send Email** action. 
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export16.png#thumbnail-40)
 
