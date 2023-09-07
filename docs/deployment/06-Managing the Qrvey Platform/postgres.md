@@ -63,7 +63,8 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>g. Paste the policy below. Change QRVEY_DEPLOYMENT to the Qrvey deployment name.</li>
 </ul>
 
-```{
+```
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -114,7 +115,8 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>f. Paste the trust relationship shown below, replacing `AWS_ACCOUNT_QRVEY` with the AWS account number for the Qrvey deployment.</li>
 </ul>
 
-```{
+```
+{
   "Version": "2012-10-17",
   "Statement": [
     {
@@ -141,7 +143,8 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>g. Paste the policy, replacing `AWS_ACCOUNT_POSTGRES` with the AWS account number for the Postgres cluster.</li>
 </ul>
 
-```{
+```
+{
     "Version": "2012-10-17",
     "Statement": {
         "Effect": "Allow",
@@ -167,7 +170,8 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 <li>c. Click the <b>Permissions</b> tab, scroll down to the <b>Bucket policy</b> section and add the next policy. Change `POSTGRES_DATA_ACCESS_ROLE_ARN` by the access role arn created in the step #3 and change `QRVEY_DEPLOYMENT` to the Qrvey deployment name.</li>
 </ul>
 
-```{
+```
+{
 	"Version": "2012-10-17",
 	"Statement": [
 		{
