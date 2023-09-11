@@ -1,5 +1,5 @@
 ---
-id: solution-architect
+id: multi-tenant-dataset-architecture
 title: Multi-tenant Dataset Architecture
 sidebar_label: Multi-tenant Dataset Architecture
 tags: [Solution Architect]

@@ -1,5 +1,5 @@
 ---
-id: solution-architect
+id: overview-of-multi-tenant-deployments
 title: Overview of Multi-tenant Deployments
 sidebar_label: Overview of Multi-tenant Deployments
 tags: [Solution Architect]
@@ -28,7 +28,7 @@ SaaS organizations that want to embed self-service analytics within their core a
 
 Your security implementation for embedded analytics must consider how users will be authenticated within Qrvey, as well as how the platform will know what the current logged-in user can see and do.  First, let us consider the authentication mechanism, and also recognize that there are typically two fundamental types of users accessing Qrvey: internal users and external users.  An **internal user** is typically an employee of the SaaS organization (i.e. Qrvey’s direct customer), and an **external user** is typically an employee of the tenant organization (i.e. SaaS organization’s direct customer).  Recognizing the distinction between these two fundamental types of users is important, because these two types of users typically access Qrvey in very different ways.  Internal users may have access to log into Qrvey Composer directly, i.e. outside the context of the SaaS organization’s core application.  External users would access Qrvey components as embedded widgets within the SaaS organization’s core application.  This might mean that internal users could have one authentication mechanism with Qrvey, and external users could have a completely different authentication mechanism with Qrvey. 
 
->**Note**: For more information on Qrvey users, roles, and personas, see [Introduction to the Qrvey Platform](../getting-started/intro-to-qrvey.md).
+>**Note**: For more information on Qrvey users, roles, and personas, see [Introduction to the Qrvey Platform](../../getting-started/intro-to-qrvey.md).
 
 Now, let us consider the authorization mechanism, and continue to work within the assumed framework of internal and external users accessing Qrvey.  Since internal users belong to the SaaS organization, authorization may simply come down to hiding the various UIs within Qrvey Composer.  For example, you may have data architects as well as data analysts within your organization.  You could give the data architects access to build datasets, dashboards and automations; but the data analysts would only be able to access dashboards.
 
@@ -86,7 +86,7 @@ SaaS organizations who are application builders will already have established De
 * CI/CD Production Updates
 * Application Build Process
 
-You likely already have at least two types of environments for your core application - Dev & Prod.  Most SaaS organizations also include a Staging environment that closely mirrors Production for testing and QA purposes.  The Qrvey [Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md) feature, available in the Qrvey Admin Center, is designed to promote content between different types of environments.  You can either have Dev, Staging, and Prod environments configured within different regions in the same account, or more likely, each environment is in a separate account within your AWS organization.
+You likely already have at least two types of environments for your core application - Dev & Prod.  Most SaaS organizations also include a Staging environment that closely mirrors Production for testing and QA purposes.  The Qrvey [Content Deployment](../../admin/08-Content%20Deployment/overview-of-content-deployment.md) feature, available in the Qrvey Admin Center, is designed to promote content between different types of environments.  You can either have Dev, Staging, and Prod environments configured within different regions in the same account, or more likely, each environment is in a separate account within your AWS organization.
 
 Deploying and upgrading your core application is likely a purely automated and programmatic process, requiring no manual intervention at any step.  Since your embedded analytics is effectively integrated with your core application, you should expect that Qrvey Content Deployment facilitates this type of automated deployment without requiring an admin user to log into the Qrvey Admin Center.  
 
