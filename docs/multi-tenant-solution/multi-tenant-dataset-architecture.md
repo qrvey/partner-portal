@@ -3,7 +3,7 @@ id: multi-tenant-dataset-architecture
 title: Multi-tenant Dataset Architecture
 sidebar_label: Multi-tenant Dataset Architecture
 tags: [Solution Architect]
-sidebar_position: 1
+sidebar_position: 2
 displayed_sidebar: solution-architects
 ---
 
