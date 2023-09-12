@@ -16,7 +16,7 @@ Release Date: 2022-08-30
  
  >**Important Note**: With this version Qrvey has started leveraging Amazon Location Service for all of its mapping needs for accuracy and consistency reasons. The service is currently not available in all AWS regions. If setting up a new environment, and intend to use maps in your product, please note the supported regions in [this document](../../deployment/prerequisites-for-installation.md#aws-region-support).
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-7.5.json" target="_blank">this upgrade link</a> and follow the directions in the Upgrading to a New Version article to upgrade your instance(s). 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. 
 
 ## New Features & Enhancements
  
