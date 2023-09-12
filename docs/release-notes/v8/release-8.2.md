@@ -7,15 +7,15 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
 
-## Qrvey 8.2.1
+### Qrvey 8.2.1
 
 Release Date: 2023-09-12
 
-### Preventive Maintenance
+#### Preventive Maintenance
 
 * **Open SSH Removal**: The Open SSH package has been removed from the container to avoid any associated security vulnerabilities.
 
-### General Tweaks & Fixes
+#### General Tweaks & Fixes
 
 * **Long Running Query Not Working (bug fix)**: Fixed a npm notice error that occurred with the Long Running Query (AWS Batch) process.
 
@@ -42,13 +42,13 @@ Release Date: 2023-09-12
 * **Filter Control Data is Not Displayed Correctly When Using Buckets (bug fix)**: Fixed a “No data found” issue that occurred when an application with buckets was deployed with Filter controls added in its dashboards.
 
 
-## Qrvey 8.2
+### Qrvey 8.2
 
 Release Date: 2023-07-31
 
-### New Features & Enhancements
+#### New Features & Enhancements
 
-#### Data Preparation
+##### Data Preparation
 
 * **Improved Performance of Loading Join Results**: Increased the speed of loading very large volumes of data that result from joining by approximately 60 times (60x).
 
@@ -62,7 +62,7 @@ Release Date: 2023-07-31
 
 
 
-#### Data Analysis & Visualization
+##### Data Analysis & Visualization
 
 * **[Download Manager](../../composer/03-Managing%20Your%20User%20Profile/download-manager.md)**: The new Download Manager widget provides a central location to access and manage exported files, including images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). It is embeddable and can be accessed at the account level in Qrvey Composer. It is currently in MVP and will have more features in the next few releases. <a href="/docs/video-training/release/version-8.2#download-manager" target="_blank" className="tooltip"><img alt="Download Manager" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
@@ -84,7 +84,7 @@ Release Date: 2023-07-31
 
 
 
-### General Tweaks & Bug Fixes
+#### General Tweaks & Bug Fixes
 
 * **Labels (improvement)**: Updates the descriptions and labels in the Qrvey Admin Center user interface to improve the usability of the product. 
 
