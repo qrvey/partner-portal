@@ -18,6 +18,7 @@ const Modal = ({ isOpen, onRequestClose, content }) => {
           color: 'silver',
           height: 'max-content',
           maxHeight: '90vh',
+          backgroundColor: '#E7E7E7',
           width: 'max-content',
           maxWidth: '45%',
           position: 'absolute',
