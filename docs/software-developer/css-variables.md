@@ -7,8 +7,8 @@ sidebar_position: 14
 displayed_sidebar: software-developer
 ---
 
-import ModalButton from '@site/src/components/ModalButton';
-import contents from '@site/src/components/modalContents';
+import ModalButton from '@site/src/components/VariablesModal/ModalButton';
+import contents from '@site/src/components/VariablesModal/modalContents';
 
 
 <div style={{textAlign: "justify"}}>

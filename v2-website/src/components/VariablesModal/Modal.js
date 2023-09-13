@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 import { IoClose } from 'react-icons/io5';  // Importing the close icon from Io5 set
+import "../VariablesModal/styles/varmodal.css";
 
 
 const Modal = ({ isOpen, onRequestClose, content }) => {
@@ -38,10 +39,10 @@ const Modal = ({ isOpen, onRequestClose, content }) => {
         onClick={onRequestClose}
       />
       <div>
-        <div style={{ display: "flex", fontWeight:'bold', size:"13px", color:"#35373F" }}>{content.title1}<div style={{ padding: "5px", backgroundColor: content.color1, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
+        <div className='custom-modal--title'>{content.title1}<div className='custom-modal--color' style={{ backgroundColor: content.color1 }}></div></div>
         <img src={content.image1} alt={content.title1} />
 
-        <div style={{ display: "flex", fontWeight:"bold", size:"13px", color:"#35373F", marginTop:"20px" }}>{content.title2}<div style={{ padding: "5px", backgroundColor: content.color2, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
+        <div className='custom-modal--title custom-modal--margin-top'>{content.title2}<div className='custom-modal--color' style={{ backgroundColor: content.color2 }}></div></div>
         <img src={content.image2} alt={content.title2} />
       </div>
     </ReactModal>
