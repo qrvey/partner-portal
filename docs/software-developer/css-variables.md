@@ -8,14 +8,15 @@ displayed_sidebar: software-developer
 ---
 
 import ModalButton from '@site/src/components/ModalButton';
+import contents from '@site/src/components/modalContents';
 
 
 <div style={{textAlign: "justify"}}>
 
 |**Variable name**|**Functionality**|**Example**|
 | :- | :- | :- |
-|--qv-main-color|Modifies the main color of the Theme. The default is #E6773D.|<ModalButton modalContent={<><h2>Modal Title</h2><p>This is the modal content.</p></>}></ModalButton>|
-|--qv-main-text-color|Modifies the main color of the Theme fonts. The default is white.|
+|--qv-main-color|Modifies the main color of the Theme. The default is #E6773D.|<ModalButton content={contents[0].colors[0]}/>|
+|--qv-main-text-color|Modifies the main color of the Theme fonts. The default is white.| <ModalButton content={contents[0].colors[1]}/>|
 |--qv-secondary-color|Modifies the secondary color of the Theme. The default is is #25486F.|
 |--qv-tab-bar-color|Modifies the background of the Navigation Tab Bar. The default is is #25486F.|
 |--qv-info-notification-color|Modifies the color of the informative notifications. The default is #4FA6DA.|

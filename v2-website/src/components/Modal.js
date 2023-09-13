@@ -3,9 +3,9 @@ import ReactModal from 'react-modal';
 import { IoClose } from 'react-icons/io5';  // Importing the close icon from Io5 set
 
 
-const Modal = ({ isOpen, onRequestClose, children }) => {
+const Modal = ({ isOpen, onRequestClose, content }) => {
   return (
-    <ReactModal 
+    <ReactModal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       style={{
@@ -14,27 +14,35 @@ const Modal = ({ isOpen, onRequestClose, children }) => {
           zIndex: 99999999
         },
         content: {
-          color: 'lightsteelblue',
-          height: '90vh',
-          width: '70%',
+          color: 'silver',
+          height: 'min-content',
+          maxHeight: '90vh',
+          width: '50%',
           position: 'absolute',
           left: '50%',
           top: '50%',
           transform: 'translate(-50%, -50%)',
+          padding: '50px',
         }
       }}
     >
-        <IoClose 
-        size={30} 
-        style={{ 
-          position: 'absolute', 
-          top: '10px', 
-          right: '10px', 
-          cursor: 'pointer' 
+      <IoClose
+        size={30}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+          cursor: 'pointer'
         }}
         onClick={onRequestClose}
       />
-      {children}
+      <div>
+        <div style={{ display: "flex", fontWeight:'bold', size:"13px", color:"#35373F" }}>{content.title1}<div style={{ padding: "5px", backgroundColor: content.color1, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
+        <img src={content.image1} alt={content.title1} height={"70%"} />
+
+        <div style={{ display: "flex", fontWeight:"bold", size:"13px", color:"#35373F", marginTop:"20px" }}>{content.title2}<div style={{ padding: "5px", backgroundColor: content.color2, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
+        <img src={content.image2} alt={content.title2} />
+      </div>
     </ReactModal>
   );
 };

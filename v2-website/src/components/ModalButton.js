@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
 
-const ModalButton = ({ modalContent }) => {
+const ModalButton = ({ content  }) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const buttonStyles = {
@@ -37,12 +37,7 @@ const ModalButton = ({ modalContent }) => {
       >
         Example
       </button>
-      <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}  content={{
-        title1: "Título 1",
-        image1: "/ruta/a/imagen1.png",
-        title2: "Título 2",
-        image2: "/ruta/a/imagen2.png"
-    }}>
+      <Modal isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)}  content={content}>
       </Modal>
     </div>
   );
