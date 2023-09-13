@@ -15,9 +15,10 @@ const Modal = ({ isOpen, onRequestClose, content }) => {
         },
         content: {
           color: 'silver',
-          height: 'min-content',
+          height: 'max-content',
           maxHeight: '90vh',
-          width: '50%',
+          width: 'max-content',
+          maxWidth: '45%',
           position: 'absolute',
           left: '50%',
           top: '50%',
@@ -38,7 +39,7 @@ const Modal = ({ isOpen, onRequestClose, content }) => {
       />
       <div>
         <div style={{ display: "flex", fontWeight:'bold', size:"13px", color:"#35373F" }}>{content.title1}<div style={{ padding: "5px", backgroundColor: content.color1, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
-        <img src={content.image1} alt={content.title1} height={"70%"} />
+        <img src={content.image1} alt={content.title1} />
 
         <div style={{ display: "flex", fontWeight:"bold", size:"13px", color:"#35373F", marginTop:"20px" }}>{content.title2}<div style={{ padding: "5px", backgroundColor: content.color2, marginLeft: "10px", borderRadius: "5px", width: "20px", height: "20px", marginTop:"2px" }}></div></div>
         <img src={content.image2} alt={content.title2} />
