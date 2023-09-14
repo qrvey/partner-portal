@@ -5,7 +5,7 @@ sidebar_label: Qrvey Version 6.4
 ---
 <div style={{textAlign: "justify"}}>
 
-**Note**: If you wish to upgrade to this version, please contact the CX team if you have a *Managed Infrastructure* contract, or use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/autodeployappCloudformation-enterprise-6.4.json">this upgrade link</a> and follow the directions in <a href="/docs/get-started/upgrading-new-version">Upgrading to a New Version</a> article to upgrade your instance(s).  
+**Note**: If you wish to upgrade to this version, please contact the CX team if you have a *Managed Infrastructure* contract.  
 
 
 ## New Features & Enhancements
