@@ -71,7 +71,7 @@ We recommend using back-end authentication if you control the authentication pro
 
 The following is an example of a JSON object containing a user’s security permissions.
 
-```JSON
+```json
 {
  "version": "2",
    "userid": "userId",

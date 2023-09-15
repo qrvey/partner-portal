@@ -8,7 +8,7 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 
 Release Date: 2023-02-01
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link. 
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes-8.0.md) document for important notes and access to the upgrade link. 
 
 
 **Qrvey Version 8.0** is a major release and introduces the following significant features and enhancements:
