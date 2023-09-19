@@ -238,6 +238,306 @@ const contents = [{
             color1: "transparent",
             color2: "transparent"
         },
+    ],
+    borders: [
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-button/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-button/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-card/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-card/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-dropdown/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-dropdown/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-modal/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-modal/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-toast/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-toast/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-pills/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-pills/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-tags/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-tags/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-table/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-table/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-dropdown-list/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-dropdown-list/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-tooltips/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-tooltips/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-qvdatepicker/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-qvdatepicker/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-switch/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-switch/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-color-picker/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-color-picker/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-color-picker/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-color-picker/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-value-list/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-value-list/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input-box/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input-box/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-rich-editor/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-rich-editor/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-chart-panel/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-chart-panel/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-action-chart/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-action-chart/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-item-values/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-item-values/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-menu-icons/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-menu-icons/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input-box/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-input-box/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-item-values/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-an-border-radius-cb-item-values/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-expandable-card/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-expandable-card/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-db-draganddrop/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-qum-card/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-qum-card/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-card/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius-card/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-sms-cont/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-sms-cont/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-email-cont/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-email-cont/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-item-sidebar/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-item-sidebar/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-log-details/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-log-details/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-expandible-card/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-at-border-radius-workflows-expandible-card/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
+        {
+            title1: "Default",
+            title2: "Customized",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Borders/--qv-global-border-radius/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        }
+    ],
+    padding: [
+        {
+            title1: "Default Font / Roboto",
+            title2: "Customized Font / Allan",
+            image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Padding/--qv-an-padding-chart-panel-header/Default.png",
+            image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Padding/--qv-an-padding-chart-panel-header/Customized.png",
+            color1: "transparent",
+            color2: "transparent"
+        },
     ]
 }];
 

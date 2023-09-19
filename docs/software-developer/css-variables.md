@@ -18,7 +18,7 @@ To see an example in codepen of how CSS variables can be used with embedded widg
 
 
 
-# Naming Convention
+## Naming Convention
 Use the following naming convention for CSS variables:
 
 **--qv-**[module]-[property]-[attribute]
@@ -50,7 +50,7 @@ Use the following naming convention for CSS variables:
   - --qv-chart-font-size-title
   - --qv-chart-font-font-size-tooltip
 
-# Priority and Fallback 
+## Priority and Fallback 
 Some components may depend on more than one CSS variable or custom property, so it is important to define the priority of which one takes precedence. In addition, you should always define a fixed value as a last resort (or fallback).
 
 The  **var**() function evaluates the first argument, and, if it exists, it finishes its evaluation. Otherwise, it evaluates the second argument. This second argument can be another var() function, which indicates that the first argument is the most relevant in case all CSS variables exist. For example:
@@ -196,5 +196,66 @@ To modify the location of specific components in the navigation menu, use the po
 |**--qv-global-position-modal-top-offset**|Modifies the distance of the modal with respect to the height of the browser window.|<ModalButton content={contents[0].positions[2]}/>|
 |**--qv-position-floatingmenu-right**|Modifies the horizontal position of the floating menu component.|<ModalButton content={contents[0].positions[3]}/>|
 |**--qv-position-floatingmenu-bottom**|Modifies the vertical position of the floating menu component.|<ModalButton content={contents[0].positions[4]}/>|
+
+## Borders
+
+To modify the border radius of the components that are inside the widget, use the following global CSS variable: 
+
+--qv-global-border-radius
+
+The following table lists specific border variables for each of the components: 
+
+
+
+|**Variable name**|**Functionality**|**Example**|
+| :- | :- | :- |
+|--qv-global-border-radius|Modifies the border radius globally.|<ModalButton content={contents[0].borders[35]}/>|
+|--qv-global-border-radius-button|Modifies the border radius of the button component.|<ModalButton content={contents[0].borders[0]}/>|
+|--qv-global-border-radius-card|Modifies the border radius of the application card component.|<ModalButton content={contents[0].borders[1]}/>|
+|--qv-global-border-radius-dropdown|Modifies e the border radius of the drop-down list component.|<ModalButton content={contents[0].borders[2]}/>|
+|--qv-global-border-radius-input|Modifies the border radius of the textboxes component.|<ModalButton content={contents[0].borders[3]}/>|
+|--qv-global-border-radius-modal|Modifies the border radius of the modals component.|<ModalButton content={contents[0].borders[4]}/>|
+|--qv-global-border-radius-toast|Modifies the border radius of the Notifications component.|<ModalButton content={contents[0].borders[5]}/>|
+|--qv-global-border-radius-pills|Modifies the border radius of the pills component.|<ModalButton content={contents[0].borders[6]}/>|
+|--qv-global-border-radius-tags|Modifies the border radius of the tags component.|<ModalButton content={contents[0].borders[7]}/>|
+|--qv-global-border-radius-table|Modifies the border radius of the table component.|<ModalButton content={contents[0].borders[8]}/>|
+|--qv-global-border-radius-dropdown-list|Modifies the border radius of the list component.|<ModalButton content={contents[0].borders[9]}/>|
+|--qv-global-border-radius-tooltips|Modifies the border radius of the tooltips component.|<ModalButton content={contents[0].borders[10]}/>|
+|--qv-global-border-radius-qvdatepicker|Modifies the border radius of the calendar component.|<ModalButton content={contents[0].borders[11]}/>|
+|--qv-global-border-radius-switch|Modifies the border radius of the switch button component.|<ModalButton content={contents[0].borders[12]}/>|
+|--qv-global-border-radius-color-picker|Modifies the border radius of the color selection component|<ModalButton content={contents[0].borders[13]}/>|
+|--qv-global-border-radius-color-picker-preview|Modifies the border radius of color selection preview component.|<ModalButton content={contents[0].borders[14]}/>|
+|--qv-global-border-radius-value-list|Modifies the border radius of the value list component component.|<ModalButton content={contents[0].borders[15]}/>|
+|--qv-global-border-radius-input-box|Modifies the border radius of the input box component.|<ModalButton content={contents[0].borders[16]}/>|
+|--qv-global-border-radius-rich-editor|Modifies the border radius of the advanced text input component.|<ModalButton content={contents[0].borders[17]}/>|
+|**Analytic Widget**|||
+|--qv-an-border-radius-chart-panel|Modifies the border radius of the Chart Panels component.|<ModalButton content={contents[0].borders[18]}/>|
+|--qv-an-border-radius-cb-action-chart|Modifies the border radius of the Chart Builder action list component.|<ModalButton content={contents[0].borders[19]}/>|
+|--qv-an-border-radius-cb-item-values|Modifies the border radius of the Chart Builder dataset list component.|<ModalButton content={contents[0].borders[20]}/>|
+|**Dashboard:**|||
+|--qv-at-border-radius-db-menu-icons|Modifies the border radius of the dashboard menu component.|<ModalButton content={contents[0].borders[21]}/>|
+|--qv-at-border-radius-db-draganddrop|Modifies the border radius of the drag-n-drop component in the Dashboard Builder.|<ModalButton content={contents[0].borders[22]}/>|
+|--qv-at-border-radius-db-input-box|Modifies the border radius of the menu component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[23]}/>|
+|--qv-at-border-radius-db-draggable-dataset|Modifies the border radius of the dragg component in the Dashboard Builder.|<ModalButton content={contents[0].borders[24]}/>|
+|--qv-at-border-radius-db-expandable-card|Modifies the border radius of the expandable card component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[25]}/>|
+|--qv-at-border-radius-db-image|Modifies the border radius of the image component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[26]}/>|
+|--qv-at-border-radius-db-grid-item|Modifies the border radius of the grid component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[27]}/>|
+|**User Management**|||
+|--qv-at-border-radius-qum-card|Modifies the border radius of the card component in User Management.|<ModalButton content={contents[0].borders[28]}/>|
+|**Workflows:**|||
+|--qv-at-border-radius-workflows-card|Modifies the border radius of the card component in workflows.|<ModalButton content={contents[0].borders[29]}/>|
+|--qv-at-border-radius-workflows-sms-cont|Modifies the border radius of the SMS component in workflows.|<ModalButton content={contents[0].borders[30]}/>|
+|--qv-at-border-radius-workflows-email-cont|Modifies the border radius of the email component in workflows.|<ModalButton content={contents[0].borders[31]}/>|
+|--qv-at-border-radius-workflows-item-sidebar|Modifies the border radius of the sidebar list component.|<ModalButton content={contents[0].borders[32]}/>|
+|--qv-at-border-radius-workflows-log-details|Modifies the border radius of the log details component.|<ModalButton content={contents[0].borders[33]}/>|
+|--qv-at-border-radius-workflows-expandible-card|Modifies the border radius of expandable card component.|<ModalButton content={contents[0].borders[34]}/>|
+
+## Padding
+
+To modify the internal space of supported components, use the padding variables.
+
+|**Variable name**|**Functionality**|**Example**|
+| :- | :- | :- |
+|**--qv-an-padding-chart-panel-header**|allows you to modify the internal space of the header of the chart panel component|<ModalButton content={contents[0].padding[0]}/>|
 
 </div>
