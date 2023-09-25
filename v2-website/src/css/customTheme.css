@@ -349,6 +349,10 @@ a.highlight-box:hover {
   background-position: center;
 }
 
+.navbar__items--right {
+  margin-right: 30px;
+}
+
 .icon-article {
   background-image: url("../../static/img/card-icons/article.svg");
 }
