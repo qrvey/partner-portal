@@ -126,13 +126,15 @@ button {
   align-items: flex-start;
   gap: 15px;
   align-self: stretch;
+  margin-top: 10px;
 }
 
 .notification-list {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.notification-list:hover {
+.notification-content:hover {
   background-color: #f4faff;
   cursor: pointer;
 }
