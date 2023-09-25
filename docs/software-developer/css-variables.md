@@ -1,7 +1,7 @@
 ---
-id: theming-css-variables
-title: Qrvey Theming CSS Variables
-sidebar_label: Qrvey Theming CSS Variables
+id: customizing-css-variables
+title: Customizing the Appearance Using CSS
+sidebar_label: Customizing the Appearance Using CSS
 tags: [Software Developer]
 sidebar_position: 14
 displayed_sidebar: software-developer
