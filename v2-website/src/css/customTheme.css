@@ -353,6 +353,10 @@ a.highlight-box:hover {
   margin-right: 30px;
 }
 
+.navbar__items--right a:hover {
+  color: #E6773D;
+}
+
 .icon-article {
   background-image: url("../../static/img/card-icons/article.svg");
 }

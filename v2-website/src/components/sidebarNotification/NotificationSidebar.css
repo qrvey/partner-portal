@@ -2,12 +2,9 @@
   position: fixed;
   top: 0;
   right: -300px;
-  /* El ancho inicial del sidebar, puedes ajustarlo */
   height: 100%;
   width: 300px;
-  /* Ajusta según prefieras */
-  background-color: #f4f4f4;
-  /* Cambia según tu diseño */
+  background-color: white;
   transition: right 0.3s;
   overflow-y: auto;
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
@@ -22,31 +19,31 @@ button {
   background: none;
   border: none;
   font-size: 20px;
-  /* Ajusta el tamaño del ícono */
   cursor: pointer;
   outline: none;
   color: white;
-  /* Color del ícono */
   cursor: pointer;
+}
+
+button:hover {
+  color: #E6773D;
 }
 
 .close-btn {
   background: none;
   border: none;
   font-size: 15px;
-  /* Ajusta el tamaño del texto */
   cursor: pointer;
   outline: none;
   color: white;
-  /* Color del texto */
   position: absolute;
   top: 20px;
   right: 10px;
 }
 
-/* Puedes añadir estilos adicionales para el hover y el active state si lo deseas */
+
 .close-btn:hover {
-  color: silver;
+  color: #E6773D;
 }
 
 .close-btn:active {
