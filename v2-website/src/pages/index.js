@@ -107,7 +107,7 @@
               <div className="highlights-star"></div>
                <h2 style={{fontSize:'1.7em'}}>
                  <b>New Highlights</b>
-                 <NotificationSidebar />
+                 {/* <NotificationSidebar /> */}
 
                </h2>
               </div>
