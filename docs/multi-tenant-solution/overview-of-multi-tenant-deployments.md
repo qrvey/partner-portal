@@ -93,3 +93,6 @@ Deploying and upgrading your core application is likely a purely automated and p
 Finally, multi-tenant applications almost always have some form of tenant onboarding process, offboarding process, as well as processes to keep tenant workspaces in sync with the latest updates and content.  Qrvey Content Deployment is designed to support all of these tenant management scenarios.
 
 
+**See Also:**
+* [Multi-tenant Dataset Architecture](../multi-tenant-solution/multi-tenant-dataset-architecture.md)
+* [Multi-tenant Security Architecture](../multi-tenant-solution/multi-tenant-security-architecture.md)
