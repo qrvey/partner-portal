@@ -3,7 +3,7 @@ id: multi-tenant-security-architecture
 title: Multi-tenant Security Architecture
 sidebar_label: Multi-tenant Security Architecture
 tags: [Solution Architect]
-sidebar_position: 2
+sidebar_position: 3
 displayed_sidebar: solution-architects
 ---
 
