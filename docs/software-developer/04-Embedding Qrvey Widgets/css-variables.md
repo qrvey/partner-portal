@@ -3,7 +3,7 @@ id: customizing-css-variables
 title: Customizing the Appearance Using CSS
 sidebar_label: Customizing the Appearance Using CSS
 tags: [Software Developer]
-sidebar_position: 14
+sidebar_position: 4.2
 displayed_sidebar: software-developer
 ---
 
