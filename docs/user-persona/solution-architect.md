@@ -19,7 +19,8 @@ If you’re new to working with the Qrvey platform as a Solution Architect, star
 
 ## Multi-tenant Solution Architecture Guide
 The following articles provide guidelines for multi-tenant deployments:
-* [Overview of Multi-tenant Deployments](../admin/multi-tenant-solution/overview-of-multi-tenant-deployments.md)
-* [Multi-tenant Dataset Architecture](../admin/multi-tenant-solution/multi-tenant-dataset-architecture.md)
+* [Overview of Multi-tenant Deployments](../multi-tenant-solution/overview-of-multi-tenant-deployments.md)
+* [Multi-tenant Dataset Architecture](../multi-tenant-solution/multi-tenant-dataset-architecture.md)
+* [Multi-tenant Security Architecture](../multi-tenant-solution/multi-tenant-security-architecture.md)
 
 Finally, another useful resource for Solution Architects is the Qrvey [Frequently Asked Questions (FAQs)](../getting-started/faqs.md) page. 
