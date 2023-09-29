@@ -10,19 +10,33 @@ displayed_sidebar: data-analyst
 <div style={{textAlign: "justify"}}>
 
 The Design tab of the Data feature enables you to design your dataset. The following diagram provides an overview of its features. 
-
-![data-joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/data-joins-nv1.png#thumbnail) 
-
-1. **Name and dataset status** - Here you can change the name of the dataset by clicking on it and typing in a new one. You can also favorite the dataset by clicking on the star next to its name, and get information on the last time the dataset was loaded, how many columns and records it has.
-2. **Load Dataset button** - Before a dataset can be used after being created or modified, it must be loaded. 
-    When modifying a dataset that has already been loaded, instead of the Load Dataset button, you will see **Discard Changes**, **Apply Changes**, and **Reload Dataset**.
-    ![data-joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/data-joins-nv2.png#thumbnail-40) 
-
-3. The three dot menu where you can share data with everyone (after it has been loaded), mark the dataset as favorite, enable or disable label internalization, and unshare the dataset if it had been shared beforehand.
-
-4. The Data source column pill and the three-dot menu where you can edit connection settings, edit data source query, join to another data source, select a different data source, or rename the current data source. 
+ 
+![design-page-overview-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/design-page-overview-83.png)
 
 
+1. **Name and dataset status**. Displays the dataset name, status, last load time, number of columns, and number of records. To change the name of the dataset, click its name and type a new one.
+2. **Discard Changes** and **Apply Changes**. Changes made on this page are not saved until they are applied. 
+3. **Load/Reload Dataset** - Click **Load Dataset** to begin using a new dataset. Click **Reload Dataset** after making changes and applying changes to an existing dataset. 
+4. **Data source column pill** - Click the three-dot menu to display the following options for working with the column:
+    * Edit Connection Settings
+    * Edit Query
+    * Join to Another Data Source
+    * Union with Another Data Source
+    * Switch to Another Data Source
+    * Rename  
+    
+    Hover the mouse pointer over the pill to display a tooltip with the Source Name, Connection Name, and Connection Type.
+    ![design-page-pill-tooltip-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/design-page-pill-tooltip-83.png)
+
+
+## Columns tab and Column IDs
+The Columns tab enables you to view each column in the dataset and modify its settings as needed. 
+
+![design-page-columns-tab-83]()
+
+If you are a Software Developer and would like to obtain the column ID, click the column’s three-dot menu and select **Copy Column ID**.
+
+**See also:**
 For more information on the features available in the Design page, see:
 
 * **[Geolocation](../02-Design/02-Geolocation/overview-of-geolocation.md)**

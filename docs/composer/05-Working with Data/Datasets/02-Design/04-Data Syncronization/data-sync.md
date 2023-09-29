@@ -8,87 +8,75 @@ displayed_sidebar: data-analyst
 
 <div>
 
-Data Sync is the most commonly used method to keep the data up-to-date and synchronized with the Data Sources. Data synchronization can be done on a schedule or automatically triggered if the Dataset is based on other Datasets and those Datasets are reloaded (cascade synchronization).
+The Data Sync feature enables you to keep data up-to-date and synchronized with the Data Sources. You can run the synchronization manually or set up a schedule. This feature also supports cascade synchronization, in cases in which the Dataset is based on other Datasets and those Datasets are reloaded.
 
-This feature can be accessed by going to the Data Sync tab of the Dataset Design screen. Note that you have to have loaded your dataset at least once before you can set up a sync schedule for it.  
+The data from the Dataset remains accessible during data synchronization, as the process runs in the background. Refreshed data is only made available once the process finishes. You cannot run a data synchronization if another data synchronization for the same Dataset is already running.
 
-![1_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/ds1.png)
+>**Note**: In addition to using the Data Sync feature, you can also use data change triggers in the Automation feature or Qrvey APIs to keep your data up-to-date and synchronized. 
 
+## Configuring Data Sync
+1. In the Data feature, open a Dataset and click **Data Sync** on the Design tab. Note that you must have loaded your dataset at least once before you can set up a sync schedule for it. 
+2. Click the **Data Sync** toggle to activate this feature. 
 
-> **Note**: While data sync is a good way to keep your data up-to-date, it is not the only way. You may want to consider using data change triggers in Automation, or a programmatic approach using APIs for the same purpose. The method that you choose depends on your needs and the frequency of changes to your data, among other considerations. 
+![Data Sync tab 83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/Data-Sync-tab-83.png)
 
-## Sync Types
-
-Data can be obtained in two ways from the Data Sources: by reloading all of the data from the source or by getting the records that have been added or updated since the last sync.
-In order to enable data synchronization, at least one of the Data Sources must have a Sync Type.
-
-### Full Reload
-When setting the Sync Type to “Full Reload”, the Data Sync process will get all records from the selected Data Sources, drop all the data in the Dataset, and load them again.
-
-The most common reason for a full reload is if some records have been deleted from the source and they have to be deleted from the Dataset as well. Since Append and Update mode only inserts or updates new or changed records, it does not provide a way to remove records from the dataset and a full reload is required.
-
-Other reasons include, but are not limited to, lack of unique identifier or a timestamp column in the source data.
-
-![6_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/6_data_sync.png#thumbnail)
-
-### Append and Update
-This option will only add or update records that have been added or updated since the last data load. In order to select the Append and Update mode for data sync the corresponding Data Source must have the following two features:
-
-* A unique identifier (see Datasets article to learn about setting up unique identifiers)
-* A data field that can be used as the timestamp for the change; when the record was added, or updated
+3. Under **Data Source Settings**, configure the sync type. For more information, see the following section, “Data Source Settings”.
+4. To run a synchronization manually, click **Sync Now**.
+5. Under **Schedule**, configure the scheduling options. For more information, see “Scheduling a Data Sync”.
+6. Click **Apply Changes**.
+7. Repeat for all Data Sources in the Dataset. 
 
 
-<i>Append and Update</i> is the preferred method of data sync as it requires processing of a limited number of records and is therefore faster than a full reload.
+## Data Source Settings
+The Data Source Settings section displays each data source and provides the option to select its Sync Type.  At least one data source must have a Sync Type. Options are:
+* **Off**. Do not perform data synchronization on this data source. Select this option for data sources that rarely or never change, such as geographical data or an employee roster. 
+* **Full Reload**. Reload all data from the data source. This option ensures that, when data is deleted from the source, the dataset is properly updated. This option is also required when the data source does not have unique identifiers or a timestamp column. 
+* **Append and Update**. Update only the records that have been added or updated since the last data load. For more information, see the following section, “About the Append and Update Process”.
 
-![7_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/7_data_sync.png#thumbnail)
+### About the Append and Update Process
+The Append and Update process updates only the records that have been added or updated since the last data load. This option is more computationally efficient than the Full Reload process, however, the data source must have both unique identifiers and a data field that can function as a timestamp (indicating when the record was added or updated). Otherwise, this option is disabled. Append and Update does not delete records that have been deleted in the data source. 
 
+>**Note**: To set up a unique identifier, on the Design tab, click **Columns** and click the three-dot menu for the desired column. Point to **Unique ID**, and click **On**. 
 
-## Sync Frequency
-Data Sync can run based on a schedule, be triggered as a result of an underlying Dataset getting loaded or synced, or be run manually.
+>![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
-### Scheduled Sync
+The Append and Update process compares the timestamp column to the last successful load time and processes every record that its timestamp falls between that last successful load time and “now” minus one minute. 
+
+When you select Append and Update option, the Next Sync Query Window section displays. 
+
+![new-sync-query-window-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/new-sync-query-window-83.png)
+
+This section enables you to set an earlier time than the last load time by changing the values in the **Query Start Time** fields. The values in these fields must be set to a time in the past. The default time is the last successful load time, and it rarely needs to be changed. One example in which this setting is helpful is when you change the data source at some point after the Dataset has been loaded and the new data source contains historical data that were added or modified before the last load time of the Dataset. In this case, set the start time to the earliest timestamp that you wish to load. 
+
+The value in the **Query End Time** field is always set to the current time.
+
+>**Note**: The values in the Query Start Time fields are automatically updated to the last successful load time.
+
+## Scheduling a Data Sync
 You can schedule the Data Sync process using one of two methods:
 * **Basic**. Enables you to define the sync schedule ranging from every minute to every month using the drop-down menus under Schedule.
-* **CRON**. Enables you to use an AWS Cron expression for more advanced scheduling options. To ensure that the expression uses proper syntax, click **Test CRON Expression** to validate it. For more information on Cron, see the AWS documentation, [Cron expressions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions).
-
-![scheduled-sync-82.png](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/scheduled-sync-82.png)
+* **CRON**. Enables you to use an AWS Cron expression for more advanced scheduling options. To ensure that the expression uses proper syntax, click Test CRON Expression to validate it. For more information on Cron, see the AWS documentation, [Cron expressions](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html#CronExpressions).
 
 When scheduling a sync, keep in mind the following points:
+* Because the data sync process consumes resources, schedule them as infrequently as possible and during off hours when traffic is at its lowest. 
 * If you have multiple syncs schedule, be sure to stagger the schedule to avoid overstressing data load resources. If using the Basic mode, vary the number of minutes set in the **Minutes after the Hour** field.
-* To set a schedule, at least one of your Data Sources is required to have a Sync Type.
 * The data synchronization trigger is ignored if another data synchronization for the same dataset is already running. To avoid potential conflicts, ensure that syncs on the same dataset are scheduled far enough apart so that one completes before the next one begins.
 * To schedule the sync to occur on the last day of the month, in Basic mode, select the **Last Day** option under **Day of the month**.
-* All times are in the GMT timezone.
+* All times are in the GMT timezone. 
 
+## Configuring a Cascade Synchronization
+A cascade synchronization triggers the Data Sync process automatically when one of the underlying Datasets gets its data updated. This method does not require a schedule as the platform automatically detects when one of the underlying Datasets gets new records. 
 
-### Cascade Sync
-The last option in the list of frequencies is <i>When data sources are updated</i>. This option is only enabled when the Dataset has at least another Dataset among its Data Sources. Choosing this option will cause the data sync process to be triggered automatically when one of the underlying Datasets gets its data updated.
+To configure a cascade synchronization, in the Schedule section, select **When data sources are updated**. This option is only enabled when the Dataset has at least another Dataset among its Data Sources. 
 
 ![4_datasync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/ds3.png#thumbnail)
 
-This method does not require a schedule as the product automatically detects when one of the underlying Datasets gets new records.
-
-
-### Manual Sync
-You can initiate a data sync at any time by turning on Data Sync, choosing your sync type and clicking the <b>Sync Now</b> button. A sync job will run immediately according to the sync type settings and then continue based on the selected schedule. 
-
-## Next Sync Query Window
-In Append and Update mode the product compares the timestamp column to the last successful load time and processes every record that its timestamp falls between that last successful load time and “now” minus one minute. This logic works in most cases but if you need to adjust this window for any reason, and start at an earlier time than that last load time, you can use the controls under the Next Sync Query Window section to pick your desired starting time. The end time is always set to “now”.
-
-Note that the start time has to be in the past and less than the end time. 
-Once a sync job is run with the selected time, the start time will reset to the successful load time again.
-
-![next_sync](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Data+Sync/ds4.png#thumbnail)
-
-## Deciding the Sync Logic
-Starting with version 7.2, Qrvey uses the previous data load’s time and compares that to the timestamp of the records to determine which records of data need to be added or updated. This method works in all cases where the timestamp column values are close to the actual time when records get inserted into the data source (within one minute). 
-Prior to 7.2, Qrvey obtained the sync query window's start time from the newest value stored. 
-
-> **Important Note**: If in your use case, the timestamp columns don't match the actual data insert time and you wish to continue using the old logic present in versions prior to 7.2, you can set the deployment-wide AWS Lambda environment variable DATASYNC_START_TIME_MODE to “FromIndex”:
-<ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>Lambda: <strong><i>deploymentId</i>_dataload_drInit</strong></li>
-<li>Environment Variable: <strong>DATASYNC_START_TIME_MODE</strong></li>
-<li>Value: <strong>FromIndex</strong></li> </ul>
+## Running the Data Sync Manually
+Use the Sync Now button to initiate the Data Sync process. You cannot run a data synchronization if another data synchronization for the same Dataset is already running.
+1. In the Data feature, open a Dataset and click **Data Sync** on the Design tab. 
+2. Click the **Data Sync** toggle to activate this feature. 
+3. Under **Data Source Settings**, configure the Sync Type. For more information, see “Data Source Settings”
+4. Click **Sync Now**. The sync job runs immediately. If you set up a schedule, the process will run again based on the schedule. 
 
 ## Putting It All Together To Set Up A Data Sync
 In order to set up an efficient sync job you have to go through the following steps and make the appropriate decisions:

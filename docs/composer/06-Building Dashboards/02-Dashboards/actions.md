@@ -20,8 +20,7 @@ To configure these actions, Creators need to:
 
 3. Choose the action to be configured.
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/pg_act2-80.png#thumbnail-0) 
-
+![choose-action-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/choose-action-83.png)
 
 There are three main sections in the actions configuration page. 
 
@@ -31,8 +30,8 @@ There are three main sections in the actions configuration page.
 
 * The third and last section shows the available actions to configure. This list could vary depending on the type of chart selected.
 
+![actions-configuration-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/actions-configuration-83.png)
 
-![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_2-80.png#thumbnail-60)
 
 The following is the list of available actions that we currently support. Section Action Types will provide a more detailed description of each one.
 
@@ -43,6 +42,8 @@ The following is the list of available actions that we currently support. Sectio
 * **Go To URL**: Redirect users to an external page.
 
 * **Chart Drill Down**: Drill down on data.
+
+* **See Data**: Displays a Tabular View of the dataset. 
 
 ## Actions Types
 
@@ -93,6 +94,37 @@ To activate it, you first need to define the behavior of the action. There are t
 
 
 ![page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/page_act_7.png#thumbnail-60)
+
+
+### See Data
+To activate this action, select **See Data**. Enter a label in the box provided. This label displays when the user clicks the chart and more than one On Click action is available. If you do not provide a label, the text “See Data” displays. 
+
+![see-data-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/see-data-83.png)
+
+The See Data action opens a dialog that displays the underlying dataset in Tabular View. This view of the dataset provides Filter, Sort, and Select Columns options. Any filters or changes made by the user in this view are not saved and otherwise do not affect the dataset or chart. For more information on using this view, see [Tabular View](../../05-Working%20with%20Data/Datasets/03-Analyze/tabular-view.md).
+
+![see-data-behind-bar-chart-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/see-data-behind-bar-chart-83.png)
+
+The See Data action is available for the following chart types:
+* Bar
+* Line
+* Symbol
+* Multiseries Bar
+* Multiseries Combo
+* Multiseries Line
+* Multiseries Symbol
+* Combo
+* Funnel
+* Pie
+* Indicator Gauge
+* Dial Gauge
+* Bullet Gauge
+* Table
+* Heatmap
+* Dot Map
+* Bubble Map
+* Choropleth
+* Word Cloud
 
 
 ## Dashboard Actions in Charts

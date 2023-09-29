@@ -86,7 +86,10 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 ![Create New Theme](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/create-new-theme-81.png)
 
 2. To apply this theme to all applications, select **Use Theme in All Apps**.
-3. Click the **Typeface** drop-down menu and select a font to use in the application.
+3. Click the **Typeface** drop-down menu and select a font to use in the application. To use the default font, select **(Default)**. 
+
+    >**Note**: If you intend to use CSS to modify the typeface, select (Default). For more information, see [Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md).
+
 4. Under **Panel Styles**, select whether to display or hide the following panel items:
 * Panel Background
 * Header
@@ -106,6 +109,8 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 - Header Background Color
 
 10. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
+
+>**Note**: Embedded widgets support the use of CSS variables to customize the visual theme. For more information, see [Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md). 
 
 
 ### To duplicate a theme

@@ -28,13 +28,11 @@ For general information on using the Formula Builder interface, see [Overview of
 
 ![Error detection in Standardized Syntax Mode](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/formula-builder-20/formula-builder-standardized-syntax-error-detection-82.png)
 
-6. Before you can use the formula, you must test it with sample data. If your formula uses correct syntax, you may display the **Testing** tab to test your formula. For more information, see the following section, “Testing a Formula in Standardized Syntax.”
+6. Before you can use the formula, you should test it with sample data. If your formula uses correct syntax, you may display the **Testing** tab to test your formula. For more information, see the following section, “Testing a Formula in Standardized Syntax.”
 7. Click **Save** to save the formula. In Standardized Syntax Mode, the **Save** button is displayed on the Formula tab.
 
 
 ![formula-builder-example-standardized-syntax](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/formula-builder-20/formula-builder-standardized-syntax-example-82.png)
-
->**Note**: The Standardized Syntax Mode released in Version 8.2 does not support nested formulas. This capability will be added in a future release. 
 
 ## Testing a Formula in Standardized Syntax
 1. In Standardized Syntax mode, create your formula and click **Testing**. If the formula contains any syntax errors or incorrect usage of data types, the Testing tab is not available. 
@@ -100,22 +98,38 @@ Standardized Syntax mode supports the following functions:
 | AND | Logical | Evaluates different logical tests and returns true if all logical tests are true and false if at least one of the logical tests returns false.
 | CONCATENATE | String/Text | Joins two or more strings into one string.
 | DATEADD | Date/Time | Adds a specific date part value to a given date. Date part allows: "Y" years, "M" months, "D" days, “H” hours, “MI” minutes and “S” seconds.
+| DATESUBTRACT | Date/Time | Subtracts a specific date part value to a given date. Date part allows: "Y" years, "M" months, "D" days, “H” hours, “MI” minutes and “S” seconds.
 | DATEDIF | Date/Time | Calculates the difference between two dates based on the date part requested. Date part allows: "Y" the number of complete years in the period, "M" the number of complete months in the period, "D" the number of days in the period.
 | DAY | Date/Time | Returns the day of a date. The day is given as an integer ranging from 1 to 31.
 | DAYOFWEEK | Date/Time | Returns a number or string representative of the weekday for a given date.
+| EVEN | Numeric | Returns a number rounded to the next greatest even integer.
+| EXP | Numeric | Returns Euler’s number e raised to the power of a number.
 | HOUR | Date/Time | Returns the hour of a datetime value. The hour is given as an integer ranging from 0 to 23.
 | IF | Logical | Performs a logical test and returns a value based on the result. You need to set a value in case the test result is true and one if it is false.
 | IFS | Logical | Allows different logical tests and returns the values set for the first condition equal to true.
+| INCLUDE | String/Text | Returns true if a string contains a specified sequence of characters. This function is case sensitive.
 | ISNULL | Logical | Replaces null values with the specified replacement value.
 | LEFT | String/Text | Returns the first character or characters in a text string, based on the number of characters you specify.
+| LENGTH | String/Text | Returns the length of a string.
+| LOG | Numeric | Returns the logarithm of a number to the base you specify.
 | LOWER | String/Text | Converts all the characters in a string to lowercase.
+| MAX | Numeric | Returns the greater of two or more numeric or datetime values.
 | MID | String/Text | Returns a specific number of characters from a text string. The resulting substring begins at the specified beginIndex and extends, t the right, the number of characters specified on numChars.
+| MIN | Numeric | Returns the smaller of two or more numeric or datetime values.
 | MINUTE | Date/Time | Returns the minute of a datetime value. The minute is given as an integer ranging from 0 to 59.
 | MONTH | Date/Time | Returns the month of a date. The month is given as an integer ranging from 1 (January) to 12 (December).
+| ODD | Numeric | Returns a number rounded to the next greatest odd integer.
 | OR | Logical | Evaluates different logical tests and returns false if all logical tests are false and true if at least one of the logical tests returns true.
+| POWER | Numeric | Returns the value of the first argument raised to the power of the second argument.
 | PROPER | String/Text | Capitalizes the first letter in a string and any other letters in the text placed next to any character other than a letter or number. Converts the rest of the letters to lowercase.
+| RANDOM | Numeric | Returns a positive decimal number between 0 (inclusive) and 1 (exclusive).
+| REPLACE | String/Text | Looks for a specific sequence of characters inside a string and replaces it with a different sequence of characters. This function is case sensitive.
 | RIGHT | String/Text | Returns the last character or characters in a text string, based on the number of characters you specify.
+| ROUND | Numeric | Rounds a number to a specified number of digits.
+| ROUNDDOWN | Numeric | Rounds a number down to a specified number of digits.
+| ROUNDUP | Numeric | Rounds a number up to a specified number of digits.
 | SECOND | Date/Time | Returns the second of a datetime value. The second is given as an integer ranging from 0 to 59.
+| SQRT | Numeric | Returns the positive square root of a value.
 | TRIM | String/Text | Removes all leading and trailing spaces from text.
 | UPPER | String/Text | Converts all the characters in a string to uppercase.
 | YEAR | Date/Time | Returns the year of a date. The year is given as an integer ranging from 1900 to 9999.

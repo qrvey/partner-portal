@@ -49,11 +49,19 @@ To open an existing dashboard, locate its card in the list displayed on the main
 
 >**Note**: You can change the grid option after you’ve created the dashboard. Open the dashboard, click the Grid menu, and select Change to Responsive Grid or Change to Fixed Grid. 
 
+## Using Design Mode and Interaction Mode
+Dashboard Builder provides two modes for working with dashboards: 
+* **Design mode**. The default mode for building and configuring dashboards. 
+* **Interaction mode**. Enables you to review and interact with the dashboard just as you would in Dashboard View. For example, you can create filters, use filter controls, and execute Dashboard Actions. To open Interaction mode, click the **Interact** button at the top of the page. To return to Design mode, click the **Design** button. 
 
-## Overview of the Canvas
-The Dashboard Builder canvas provides a wide variety of options for creating custom dashboards. The upper portion of the page displays the page status, publishing options, menus, and a toolbar. The right side contains the configuration panels. The remainder of the page is the canvas for designing your dashboard. 
+>**Note**: Any changes made in Interaction mode are not persisted after returning to Design mode.   
 
-![Dashboard Builder Canvas](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-canvas-81.png)
+
+## Overview of the Canvas in Design mode
+The Dashboard Builder canvas in Design mode provides a wide variety of options for creating custom dashboards. The upper portion of the page displays the page status, publishing options, menus, and a toolbar. The right side contains the configuration panels. The remainder of the page is the canvas for designing your dashboard. 
+
+![Dashboard Builder Canvas 8.3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-canvas-83.png)
+
 
 ### Data panel overview
 The Data panel displays the configured datasets that you can work with, and it enables you to search for a particular dataset. Expand a dataset to display all the charts and summary panels that have been created using that dataset. From here, you can perform the following:
@@ -83,7 +91,7 @@ The Configuration panel provides options for the object that is currently select
 * For charts, the Configuration panel provides chart options such as Filter By or Drill-Downs in a customized way for your page viewers.
 
 ### Resolution options
-You can choose the resolution that will fit your page viewers best. 
+In Fixed Grid dashboards, you can choose the resolution that will fit your page viewers best. 
 
 To change resolution, click **Grid Options** in the toolbar and select a resolution from the dropdown menu:
 * 1024px
@@ -112,9 +120,18 @@ You can configure the minimum and minimum width for the dashboard in each of the
 
 ## Working with objects in the canvas
 
-The canvas provides standard controls that are common in design tools, such as selecting, dragging, selecting, and resizing objects. 
+The canvas in Design mode provides standard controls that are common in design tools, such as selecting, dragging, selecting, and resizing objects. 
 
-The following sections describe features you can use to build your dashboard.
+The following sections describe features you can use in Design mode to build your dashboard.
+
+### Undo and Redo
+Dashboard Builder provides conventional Undo and Redo buttons, which can undo and redo up to 50 actions. 
+
+![Undo and Redo](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/icon-undo-redo.png)
+
+You can also use the following keyboard shortcuts:
+* **Undo**: COMMAND+Z (on a Mac) or CTRL+Z (on a PC)
+* **Redo**: COMMAND+SHIFT+Z (on a Mac) or CTRL+SHIFT+Z (on a PC)
 
 ### Insert a chart
 To insert a chart, in the toolbar, click Add Chart. The Chart Builder opens. For more information on creating charts, see Chart Builder Overview. 
@@ -204,6 +221,8 @@ To download a file, click the Download icon on the toolbar and select one of the
 * PDF
 * Excel
 
+Use Download Manager to access and manage exported files. For more information, see [Download Manager](../../03-Managing%20Your%20User%20Profile/download-manager.md). 
+
 ### Add a page header
 Dashboard Builder enables you to add a customized page header to all your dashboards. 
 
@@ -242,6 +261,8 @@ For more information on using subscriptions, see [Subscribing to Exports](./subs
 ## Preview a Dashboard
 Dashboard Builder enables you to preview a single dashboard in a browser, so you can see how the page will appear to the end user. Note that the preview feature requires you to publish the application first, which commits the application to the server. You cannot resume editing the dashboard until you unpublish the application. 
 
+>**NOTE**: Version 8.3 introduces Interaction mode, which provides a quick way to preview your dashboard within the Dashboard Builder interface. For more information, see "Using Design Mode and Interaction Mode" earlier in this article. 
+
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list. 
 2. Click the **Publish Application** button.  
   
@@ -255,6 +276,8 @@ Dashboard Builder enables you to preview a single dashboard in a browser, so you
 
 ## Preview an Application
 Dashboard Builder provides a preview link that you can use to view an application in a browser. The Preview feature enables you to see how the application will appear to the end user. Note that the preview feature requires you to publish the application first, which commits the application to the server. You cannot resume editing the application until you unpublish it. 
+
+>**NOTE**: Version 8.3 introduces Interaction mode, which provides a quick way to preview your dashboard within the Dashboard Builder interface. For more information, see "Using Design Mode and Interaction Mode" earlier in this article. 
 
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list.
 2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
