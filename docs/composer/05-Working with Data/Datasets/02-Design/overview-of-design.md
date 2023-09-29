@@ -32,7 +32,7 @@ The Design tab of the Data feature enables you to design your dataset. The follo
 ## Columns tab and Column IDs
 The Columns tab enables you to view each column in the dataset and modify its settings as needed. 
 
-![design-page-columns-tab-83]()
+
 
 If you are a Software Developer and would like to obtain the column ID, click the column’s three-dot menu and select **Copy Column ID**.
 
