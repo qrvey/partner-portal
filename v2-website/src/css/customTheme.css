@@ -487,7 +487,8 @@ a.highlight-box:hover {
   content: url('./../../static/img/home-logo.png');
 }
 
-.docs-doc-page .notifications-component {
+.docs-doc-page .notifications-component, .plugin-\@easyops-cn\/docusaurus-search-local.plugin-id-default .notifications-component,
+.docs-tags-doc-list-page .notifications-component, .docs-tags-list-page .notifications-component{
   color:#7D7D7D;
 }
 
