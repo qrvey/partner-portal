@@ -6,15 +6,15 @@ sidebar_label: Known Issues
 ---
 <div>
 
-* **DR-4793 - "Response Error" from putchunktoES lambda**: If the Opensearch cluster is too small and a big loading is running, the putchunktoes lambda throws an error message.
+* **DR-4793 - "Response Error" from putchunktoES lambda**: If the Opensearch cluster instance type is t3.small.search or t3.medium.search and a  loading runs with more than 1M rows, the putchunktoes lambda throws an error message.
 
-* **QV-18209 - Sync Now button tooltip disabled**: When Sync option is ON, but Sync Type is not configured yet, “Sync Now” button is disabled as expected. However, hovering over the “Sync Now” button displays a tooltip with an incorrect message.
+* **QV-18209 - Sync Now button tooltip disabled**: When the Sync option is ON, but the Sync Type is not configured, the **Sync Now** button is disabled as expected. However, hovering over the **Sync Now** button displays a tooltip with an incorrect message.
 
-* **QV-16259 - Dataset load stopping after adding a lot of joins or unions**: When the dataset becomes very complex, it may stop working and data can’t be loaded. This behavior has been observed with 12 joins and 44 unions, however, it may depend on other factors, such as the number of columns in the data sources.
+* **QV-16259 - Dataset load stopping after adding a lot of joins or unions**: When the dataset becomes very complex, it may stop working and data cannot be loaded. This behavior has been observed with 12 joins and 44 unions, however, it may depend on other factors, such as the number of columns in the data sources.
 
 * **QV-17894 - Changing of the database connection not reflecting in the existing datasets**: If the user changes a database connection and tries to edit a regular or custom query dataset that’s been created off of that connection, they observe that the dataset shows columns based on the previous connection.
 
-* **QV-17835 - Poor error reporting when data sync fails**: When the syncnow endpoint fails because of the unsupported character ^ in the data, it correctly returns the lastStatusFailed status, but not sufficient information to diagnose the problem.
+* **QV-17835 - Poor error reporting when data sync fails**: When the syncnow endpoint fails because of the unsupported character `^` in the data, it correctly returns the lastStatusFailed status, but not sufficient information to diagnose the problem.
 
 * **QV-17607 - Orphaned Filters** : Inability to edit a filter when its used column is hidden in the dataset design phase: If a user removes the checkbox that includes a column in visualizations in the dataset design process, all charts that use the column will correctly fail with a “Missing Column” error. However, if the column has been used in a filter, it will be rendered useless as it no longer shows the column and it is not editable by users.
 
@@ -24,17 +24,17 @@ sidebar_label: Known Issues
 
 * **QV-13881 - Deleted datasets listing for creation of other datasets under special circumstances**: When a user deletes an public index of a dataset and tries to create a new dataset from that dataset, the application shows the dataset that was deleted.
 
-* **AN-20418 - Simple, Grouped Table**: disabling Sorting under General: When creating simple tables, the Menu Actions moves the table up, leaving a gap at the bottom.
+* **AN-20418 - Simple, Grouped Table: disabling Sorting under General**: When creating simple tables, the Menu Actions moves the table up, leaving a gap at the bottom.
 
-* **AN-20647 - Multiseries Cluster Bar default width is too wide**: Clustered multiseries bar chart has tick mark labels displayed at the wrong clusters.
+* **AN-20647 - Multiseries Cluster Bar default width is too wide**: Clustered multiseries bar chart displays tick mark labels at the wrong clusters.
 
 * **AN-20834 - Relative date not updating when changing operator**: When the user edits a relative date filter and changes to the other operator, the filter endpoint is not updated and the filter does not display in the filter list. 
 
-* **AN-20934 - Embed Button Visible on AN panel**: When the user embeds the AN panel, the Embed Analyze view button is visible.
+* **AN-20934 - Embed Button Visible on AN panel**: When the user embeds the AN panel, the **Embed Analyze view** button is visible.
 
 * **AN-20979 - Download error**: When a user displays the Summary panel and then downloads a JPG in the Summary and resizes the page, the download fails and a console error appears.
 
-* **AN-20227 - Browser throws "Aw Snap" error when running out of memory**: When a user has more than 30 charts in any of the Analyze widgets, and scrolls down, the browser displays an error message.
+* **AN-20227 - Browser throws "Aw Snap" error when running out of memory**: When a user has more than 30 charts in any of the Analyze widgets and scrolls down, the browser displays an error message.
 
 * **AN-19723 - Confusing behavior of disabled filters when edited**: When adding a global filter and then disabling and consequently editing it, the list of values refreshes but the value is not found.
 
@@ -58,17 +58,17 @@ sidebar_label: Known Issues
 
 * **AT-15411 - Dashboard email download with no filters applied**: Dashboard exports are downloaded with charts without filters.
 
-* **AT-15422 - Subscriptions not executing on correct date**: When the user's timezone needs to be a UTC+ time zone (for example,ie UTC+2) the execution time on the first of the month needs to be earlier than the time difference from users timezone to UTC (for example,ie for UTC+2 user timezone, scheduling for any time midnight to 1:59 AM will experience the issue.) When the next execution time is calculated, it takes the current UTC date, which will be the last day of the current month causing some schedules to be incorrect (for example,ie a run on Feb 28 UTC will cause the next execution to run on Mar 28.)
+* **AT-15422 - Subscriptions not executing on correct date**: When the user's timezone needs to be a UTC+ time zone (for example, UTC+2) the execution time on the first of the month needs to be earlier than the time difference from users timezone to UTC (for example, for UTC+2 user timezone, scheduling for any time midnight to 1:59 AM will experience the issue.) When the next execution time is calculated, it takes the current UTC date, which will be the last day of the current month causing some schedules to be incorrect (for example, a run on Feb 28 UTC will cause the next execution to run on Mar 28).
 
-* **AT-15444 - Subscriptions - Incorrect Recipient**: The ZIPzip file of separate export requests can have the same filename, causing them to be overwritten and exposing data to the incorrect recipients.
+* **AT-15444 - Subscriptions - Incorrect Recipient**: The ZIP file of separate export requests can have the same filename, causing them to be overwritten and exposing data to the incorrect recipients.
 
-* **AT-14778 - Dashboard Drill not replacing existing filter value when filter already exists on the target dashboard**: If the target page has a filter applied, some users expect it to be replaced by the incoming filter from a dashboard drill, if it is on the same data column. This is currently not the behavior.
+* **AT-14778 - Dashboard Drill not replacing existing filter value when filter already exists on the target dashboard**: If the target page has a filter applied, users may expect it to be replaced by the incoming filter from a dashboard drill, if it is on the same data column. This is currently not the behavior.
 
-* **AT-14634 - ​​Dashboard Drill from a chart not passing page filters**: When a chart has a Dashboard Drill action with applied filters on the dashboard, the user´s assumption is that all dashboard filters will also be passed to the next page. Right now it only passes the category value from the chart.
+* **AT-14634 - ​​Dashboard Drill from a chart not passing page filters**: When a chart has a Dashboard Drill action with applied filters on the dashboard, users may expect that all dashboard filters will also be passed to the next page. Currently, it only passes the category value from the chart.
  
 * **AT-14263 - Simultaneous attempts to unsubscribe from an export not removing all subscriptions**: When multiple users unsubscribe from their subscriptions by clicking on the Unsubscribe link of the email at the same time, some subscriptions are not removed.
 
-* **AT-14197 - Exports failing when an orphan filter is applied**: If an orphan filter is applied to exports in an Automation Flow, the user receives an email notifying them that the report could not be exported.
+* **AT-14197 - Exports failing when an orphan filter is applied**: If an orphan filter is applied to exports in an Automation Flow, the user receives an email notification that the report could not be exported.
 
 * **AT-12531 - Automatic Column Links added after creating a chart not being applied**: The chart needs to be created after the Automatic Column Link has been created in order for the links to work.
 

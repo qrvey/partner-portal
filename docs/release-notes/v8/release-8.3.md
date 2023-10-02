@@ -5,7 +5,7 @@ sidebar_label: Qrvey 8.3 (LTS)
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
-Release Date: 2023-09-29
+Release Date: 2023-10-03
 
  >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
 
@@ -27,15 +27,15 @@ Release Date: 2023-09-29
 
 * **[Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md)**: Adds the ability to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets. 
 
-* **Open AI On Charts (beta)**: Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data.<a href="/docs/video-training/release/version-8.3" target="_blank" className="tooltip"><img alt="Smart Analyzer" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Open AI On Charts (beta)**: Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data. <a href="docs/video-training/release/version-8.3#openai-on-charts-beta" target="_blank" className="tooltip"><img alt="Smart Analyzer" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
-* **Dynamic Threshold in dial and Bullet Metrics**: Adds the option to set thresholds as fixed or dynamic values based on the aggregates of a column.
+* **Dynamic Threshold in Dial and Bullet Metrics**: Adds the option to set thresholds as fixed or dynamic values based on the aggregates of a column.
 
-* **View Modes in Dashboards**: Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View.<a href="/docs/video-training/release/version-8.3" target="_blank" className="tooltip"><img alt="Dashboard View Modes" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
+* **View Modes in Dashboards**: Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View. <a href="docs/video-training/release/version-8.3#view-modes-in-dashboards" target="_blank" className="tooltip"><img alt="Dashboard View Modes" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
 
-* **Undo and Redo in Dashboards**: Adds the Undo and Redo options to the Design mode in Dashboard Builder.<a href="/docs/video-training/release/version-8.3" target="_blank" className="tooltip"><img alt="Undo and Redo" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Undo and Redo in Dashboards**: Adds the Undo and Redo options to the Design mode in Dashboard Builder.
 
-* **See Data Action**: In Dashboard Builder, adds the See Data Action Type, enabling users to see the data in the dataset underlying the chart.<a href="/docs/video-training/release/version-8.3" target="_blank" className="tooltip"><img alt="See Data Action" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **See Data Action**: In Dashboard Builder, adds the See Data Action Type, enabling users to see the data in the dataset underlying the chart. <a href="docs/video-training/release/version-8.3#see-data-action" target="_blank" className="tooltip"><img alt="See Data Action" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
 * **Custom Tokens In PDF/JPG Export**: In PDF and JPG exports, adds support for custom tokens as values of a metrics's threshold through emails and subscriptions.
 
@@ -45,7 +45,7 @@ Release Date: 2023-09-29
 
 * **Nested Formulas Support**: Adds support for nested formulas in Formula Builder, enabling users to create formulas inside other formulas without having to repeat the calculations.
 
-## Administration
+### Administration
 
 * **Connections Security Fields**: Adds fields to enable users to update passwords and ARNs as plain text during the deployment configuration.
 
@@ -60,7 +60,8 @@ Release Date: 2023-09-29
 * **Error changing Bar Visualizations in Dashboard View (bug fix)**: Fixes an error that occurred when switching between bar and numeric visualizations in grouped tables in the Dashboard View widget.
 
 * **Table charts with many conditions on the same dataset column causing an error (bug fix)**: Fixes an error that occurred in some situations when saving a table chart with many conditions defined for the same dataset column. 
-AN-20983 - Server error when applying sort with added formula column (bug fix). Fixes an error that occurred when applying a sort with an added formula column. 
+
+* **Server error when applying sort with added formula column (bug fix)**. Fixes an error that occurred when applying a sort with an added formula column. 
 
 * **IsNull formula not working correctly (bug fix)**: Fixes an issue in which an incorrect value was returned when a user created a formula using IsNull.
 
