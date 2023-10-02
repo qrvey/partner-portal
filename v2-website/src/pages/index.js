@@ -6,7 +6,6 @@
  */
 
  import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
- import NotificationSidebar from '../components/sidebarNotification/NotificationSidebar';
  import "react-tabs/style/react-tabs.css";
  
  const React = require("react");
@@ -107,7 +106,6 @@
               <div className="highlights-star"></div>
                <h2 style={{fontSize:'1.7em'}}>
                  <b>New Highlights</b>
-                 <NotificationSidebar />
 
                </h2>
               </div>

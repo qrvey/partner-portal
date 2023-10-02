@@ -487,6 +487,10 @@ a.highlight-box:hover {
   content: url('./../../static/img/home-logo.png');
 }
 
+.docs-doc-page .notifications-component {
+  color:#7D7D7D;
+}
+
 .plugin-pages .navbar__item,
 .plugin-pages .navbar__link {
   color: #FFFFFF;
