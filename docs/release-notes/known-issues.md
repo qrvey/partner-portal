@@ -6,7 +6,7 @@ sidebar_label: Known Issues
 ---
 <div>
 
-* **DR-4793 - "Response Error" from putchunktoES lambda**: If the Opensearch cluster instance type is t3.small.search or t3.medium.search and a  loading runs with more than 1M rows, the putchunktoes lambda throws an error message.
+* **DR-4793 - "Response Error" from putchunktoES lambda**: If the Opensearch cluster instance type is `t3.small.search` or `t3.medium.search` and a  loading runs with more than 1M rows, the putchunktoes lambda throws an error message.
 
 * **QV-18209 - Sync Now button tooltip disabled**: When the Sync option is ON, but the Sync Type is not configured, the **Sync Now** button is disabled as expected. However, hovering over the **Sync Now** button displays a tooltip with an incorrect message.
 
@@ -14,9 +14,9 @@ sidebar_label: Known Issues
 
 * **QV-17894 - Changing of the database connection not reflecting in the existing datasets**: If the user changes a database connection and tries to edit a regular or custom query dataset that’s been created off of that connection, they observe that the dataset shows columns based on the previous connection.
 
-* **QV-17835 - Poor error reporting when data sync fails**: When the syncnow endpoint fails because of the unsupported character `^` in the data, it correctly returns the lastStatusFailed status, but not sufficient information to diagnose the problem.
+* **QV-17835 - Poor error reporting when data sync fails**: When the `syncnow` endpoint fails because of the unsupported character `^` in the data, it correctly returns the lastStatusFailed status, but not sufficient information to diagnose the problem.
 
-* **QV-17607 - Orphaned Filters** : Inability to edit a filter when its used column is hidden in the dataset design phase: If a user removes the checkbox that includes a column in visualizations in the dataset design process, all charts that use the column will correctly fail with a “Missing Column” error. However, if the column has been used in a filter, it will be rendered useless as it no longer shows the column and it is not editable by users.
+* **QV-17607 - Orphaned Filters : Inability to edit a filter when its used column is hidden in the dataset design phase**: If a user removes the checkbox that includes a column in visualizations in the dataset design process, all charts that use the column will correctly fail with a “Missing Column” error. However, if the column has been used in a filter, it will be rendered useless as it no longer shows the column and it is not editable by users.
 
 * **QV-17050 - Wrong tooltip on data source name of shared, unioned datasets**: When a user creates a dataset from shared data and the dataset parent has unions, the column tooltip on similar columns displays as “Data source name: Undefined, undefined”.
 
@@ -38,7 +38,7 @@ sidebar_label: Known Issues
 
 * **AN-19723 - Confusing behavior of disabled filters when edited**: When adding a global filter and then disabling and consequently editing it, the list of values refreshes but the value is not found.
 
-* **AN-19497 - Maps - poor error message when column or geo group is removed**: When the user removes the geo group after creating a dot map, the error message is not descriptive.
+* **AN-19497 - Maps - poor error message when column or geo group is removed**: When the user removes the Geo group after creating a dot map, the error message is not descriptive.
 
 * **AN-19235 - Dataset Tabular View occasionally no persisting changes**: When the user selects or deselects columns in the Tabular View, their changes may be lost.
 
@@ -48,9 +48,9 @@ sidebar_label: Known Issues
 
 * **AN-18291 - Wrong grouping of table charts on date columns containing null values**: When a table chart is grouped based on a date column with null values, the grouping works differently depending on the position of the grouped column.
 
-* **AN-17619 - Some programmatically-set style properties are not applied - 1**: Colors set using the themePalette style property are not applied to multi-series charts and maps.
+* **AN-17619 - Some programmatically-set style properties are not applied - 1**: Colors set using the `themePalette` style property are not applied to multi-series charts and maps.
 
-* **AN-17618 -  Some programmatically-set style properties are not applied - 2**: Colors set using the chartsMain style property are not applied to pie charts.
+* **AN-17618 -  Some programmatically-set style properties are not applied - 2**: Colors set using the `chartsMain` style property are not applied to pie charts.
 
 * **AN-15919 - Tokens not resolved in some filter controls**: Some filters created with tokens show the token instead of the resolved token value.
 
@@ -66,7 +66,7 @@ sidebar_label: Known Issues
 
 * **AT-14634 - ​​Dashboard Drill from a chart not passing page filters**: When a chart has a Dashboard Drill action with applied filters on the dashboard, users may expect that all dashboard filters will also be passed to the next page. Currently, it only passes the category value from the chart.
  
-* **AT-14263 - Simultaneous attempts to unsubscribe from an export not removing all subscriptions**: When multiple users unsubscribe from their subscriptions by clicking on the Unsubscribe link of the email at the same time, some subscriptions are not removed.
+* **AT-14263 - Simultaneous attempts to unsubscribe from an export not removing all subscriptions**: When multiple users unsubscribe from their subscriptions by clicking on the **Unsubscribe** link of the email at the same time, some subscriptions are not removed.
 
 * **AT-14197 - Exports failing when an orphan filter is applied**: If an orphan filter is applied to exports in an Automation Flow, the user receives an email notification that the report could not be exported.
 
