@@ -250,6 +250,10 @@
     {
       "type": "doc",
       "id": "release-notes/upgrade-notes"
+    },
+    {
+      "type": "doc",
+      "id": "release-notes/announcements"
     }
   ],
   "getting-started": [

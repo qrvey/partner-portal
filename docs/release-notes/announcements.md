@@ -1,10 +1,9 @@
-
 ---
 id: announcements
 title: Announcements
 sidebar_label: Announcements
-
 ---
+
 <div>
 
 ## NodeJS Deprecation
