@@ -302,6 +302,15 @@ p.highlight-description {
   color: var(--primary-color);
 }
 
+.other-popular-articles a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.other-popular-articles h3:hover {
+text-decoration: none;
+}
+
 a.highlight-box {
   width: calc(33.33% - 10px);
   margin: 5px;

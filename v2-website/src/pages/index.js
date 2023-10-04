@@ -111,7 +111,7 @@
               </div>
                <div class="highlights-container">
                 <div class="left">
-                  <a class="highlight-box" href="/docs/composer/Managing%20Your%20User%20Profile/download-manager">
+                  <a class="highlight-box" href="/docs/composer/Creating%20Charts/Configure%20charts/smart-analyzer">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -119,11 +119,11 @@
                     <div className="highlights-icons icon-sa"></div></div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Download Manager</h3>
-                    <p className="highlight-description">Introduced in version 8.2, Download Manager provides a central location to access and manage exported files.</p>
+                  <h3 className="highlight-title-body">Smart Analyzer</h3>
+                    <p className="highlight-description">Smart Analyzer, introduced in version 8.3, unleashes the power of artificial intelligence (AI) to acquire new insights into data. This feature establishes a link between ChatGPT and the data in charts, enabling users to ask ChatGPT questions in natural language about their data.</p>
                     </div> 
                   </a>
-                  <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/customizing-css-variables">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -131,10 +131,10 @@
                     </div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Formula Builder</h3>
-                    <p className="highlight-description">Version 8.2 enables you to create formulas using a standardized language that works with any database engine supported by the Qrvey platform.</p>
+                  <h3 className="highlight-title-body">Customizing the Appearance Using CSS</h3>
+                    <p className="highlight-description">Version 8.3 enables Qrvey Software Developers to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/getting-started/intro-to-qrvey">
+                  </a> <a class="highlight-box" href="/docs/multi-tenant-solution/overview-of-multi-tenant-deployments">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -145,10 +145,10 @@
                     </div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Introduction to the Qrvey Platform</h3>
-                    <p className="highlight-description">New to Qrvey? This article provides essential information required to understand how to work with the Qrvey platform.</p>
+                  <h3 className="highlight-title-body">Multi-tenant Solution Architecture Guide</h3>
+                    <p className="highlight-description">This new guide for Qrvey Solution Architects provides guidance and best practices for supporting multi-tenant deployments.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Design/Advanced%20Settings/dataset-design-advanced-settings">
+                  </a> <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -156,10 +156,10 @@
                     </div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Advanced Settings</h3>
-                    <p className="highlight-description">Provides advanced configuration options for your dataset, including the ability to set the number of shards allocated to the dataset’s ES index. </p>
+                  <h3 className="highlight-title-body">Custom Events</h3>
+                    <p className="highlight-description">Custom events enable Qrvey Software Developers to handle custom scenarios. This article describes several custom events that can be triggered by Qrvey widgets.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/software-developer/Working%20with%20Qrvey%20APIs/api-intro">
+                  </a> <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -167,10 +167,10 @@
                     </div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Overview of Qrvey API</h3>
-                    <p className="highlight-description">Learn how to use Qrvey’s comprehensive set of REST APIs to work with the core Qrvey platform features.</p>
+                  <h3 className="highlight-title-body">Using Standardized Syntax</h3>
+                    <p className="highlight-description">Version 8.3 further enhances the Standardized Syntax mode in Formula Builder by adding several new, advanced functions.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/overview-of-embedding-and-widgets">
+                  </a> <a class="highlight-box" href="/docs/composer/Building%20Dashboards/Dashboards/overview-of-dashboard-builder">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
@@ -178,8 +178,8 @@
                     </div>
                   </div>
                   <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Overview of Embedding and Widgets</h3>
-                    <p className="highlight-description">Learn how to seamlessly embed the Qrvey platform’s data collection, automation, and analytics functionalities into your web application.</p>
+                  <h3 className="highlight-title-body">Overview of Dashboard Builder</h3>
+                    <p className="highlight-description">Dashboard Builder adds Interaction mode in version 8.3, which enables you to review and interact with the dashboard just as you would in Dashboard View. This version also introduces Undo and Redo buttons.</p>
                     </div> 
                   </a>
                 </div>
