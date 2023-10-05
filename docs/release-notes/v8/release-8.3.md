@@ -1,7 +1,7 @@
 ---
 id: release-last
-title: Qrvey 8.3 (LTS)
-sidebar_label: Qrvey 8.3 (LTS)
+title: Qrvey 8.3
+sidebar_label: Qrvey 8.3
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
