@@ -5,7 +5,17 @@ sidebar_label: Qrvey 8.2 (LTS)
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes-8.2.md) document for important notes and access to the upgrade link.
+
+### Qrvey 8.2.2
+
+Release Date: 2023-10-06
+
+#### General Tweaks & Fixes
+
+* **RLS Support in Flows**: Improves the performance of RLS support for the New Data and Update Data triggers in Flows. Fixes a variety of issues related to RLS that affected the execution of Flows.
+
+* **Dashboard Email Download with No Filters Applied (bug fix)**: Fixes an issue in which filters were not applied to charts in Dashboard exports.
 
 ### Qrvey 8.2.1
 
