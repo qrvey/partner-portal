@@ -52,6 +52,8 @@ The value in the **Query End Time** field is always set to the current time.
 
 >**Note**: The values in the Query Start Time fields are automatically updated to the last successful load time.
 
+If the performance of the Append and Update process degrades over time, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../../deployment/06-Managing%20the%20Qrvey%20Platform/join-lake-optimization.md). 
+
 ## Scheduling a Data Sync
 You can schedule the Data Sync process using one of two methods:
 * **Basic**. Enables you to define the sync schedule ranging from every minute to every month using the drop-down menus under Schedule.
@@ -81,27 +83,27 @@ Use the Sync Now button to initiate the Data Sync process. You cannot run a data
 ## Putting It All Together To Set Up A Data Sync
 In order to set up an efficient sync job you have to go through the following steps and make the appropriate decisions:
 
-<b>1- Does the data in this Dataset need to be refreshed based on a schedule?</b>
+<b>1. Does the data in this Dataset need to be refreshed based on a schedule?</b>
 
 Some datasets may not require scheduled updates. For example a dataset of employees may not change frequently and may need to be reloaded manually, or through an Automation workflow whenever a new employee is hired. 
 
 If the answer to this question is No, stop here and don’t set up a sync. However, if your answer is Yes, then go to step 2.
 
-<b>2- Determine the best Sync Type for each Data Source</b>
+<b>2. Determine the best Sync Type for each Data Source</b>
 
 You have to repeat these steps for all of the Data Sources that make up your Dataset:
 
-<b>2.1- Does this Data Source need to be refreshed?</b>
+<b>2.1. Does this Data Source need to be refreshed?</b>
 
 Just like you have to answer this question for the Dataset itself, you have to make that decision for each underlying data source, too. Note that when you have a multi-source Dataset, in many cases some of its data sources may be static and not need refreshing. For example you may have joined data from a States table with your Customers to include their geographical location in the Dataset. Since the list of states does not change you may want to set the <b>Sync Type</b> of this Data Source to <b>Off</b>. If you decide that the Data Source needs to be refreshed, then answer the next question.
 
-<b>2.2- Does this Data Source have a unique identifier and a datetime field that reflects the added/modified date and time for the record? </b>
+<b>2.2. Does this Data Source have a unique identifier and a datetime field that reflects the added/modified date and time for the record? </b>
 
 > **Note**: Unique identifiers and timestamps can be composite. In other words, you don’t need to pick a single column as a unique identifier or timestamp and can pick multiple columns to play those roles.
 
 If the answer to both parts of this question is Yes, you still need to ask yourself a final question before choosing the Append and Update mode:
 
-<b>2.3- Do records from this Data Source get deleted that need to be reflected in the Dataset?</b>
+<b>2.3. Do records from this Data Source get deleted that need to be reflected in the Dataset?</b>
 
 If there are no deletes you can safely pick your **Timestamp Column(s)** and set **Sync Type** to **Append and Update**. If either of the fields in 2.2 are missing, or there are hard deletes that have to be reflected in the Dataset, you have to set the **Sync Type** to **Full Reload**. 
 
@@ -109,11 +111,11 @@ If there are no deletes you can safely pick your **Timestamp Column(s)** and set
 
 The database timezone is set to GMT 0 by default. If your database is in a different timezone, set the timezone to the appropriate zone under the **Database Time Zone** column.
 
-<b>3- Does the Next Sync Query start time need to be adjusted?</b>
+<b>3. Does the Next Sync Query start time need to be adjusted?</b>
 
 This section only shows up if at least one of the Data Sources have been set to refresh in <i>Append and Update</i> mode. This setting rarely needs to be changed, as the default time is set to the last successful load time and is appropriate. One example that shows how this setting might come in handy is a case where you change the data source at some point after the Dataset has been loaded and the new data source contains historical data that were added or modified before the last load time of the Dataset and you wish to bring in those records. Simply set the **Query Start Time** to (or before) the earliest record’s timestamp that you wish to load. This will ensure that those records are included in the next sync.
 
-<b>4- How frequently does the Dataset need to be updated?</b>
+<b>4. How frequently does the Dataset need to be updated?</b>
 
 While it’s tempting to initiate a sync job as frequently as possible, keep in mind that data load takes time and consumes resources and it’s best to keep the syncs as infrequent as possible. 
 
@@ -121,18 +123,22 @@ Another point to keep in mind when picking a frequency is that you may wish to p
 
 Choose the desired frequency and set up the time(s) for the sync. You can choose <i>When data sources are updated</i>, if your Dataset is based on other Datasets and you wish for it to be refreshed every time any of those Datasets gets refreshed. In this case the frequency is determined by the sync schedule of the underlying Datasets.
 
-<b>5- Turn on Data Sync</b>
+<b>5. Turn on Data Sync</b>
 
 Use the toggle button at the top of the section to turn on Data Sync.
 
-<b>6- (Optional) Run a manual Sync</b>
+<b>6. (Optional) Run a manual Sync</b>
 
 You can initiate a sync manually by clicking the **Sync Now** button if you need to do so. 
 
-<b>7- (Important) Apply Changes</b>
+<b>7. (Important) Apply Changes</b>
 
 Don’t forget to persist your changes by clicking the **Apply Changes** button located at the top right corner of the screen!
 
 > **Note**: The data from the Dataset remains accessible during data synchronization, as the process runs in the background. Refreshed data is only made available once the process finishes. 
+
+<b>8. (Optional) Has the performance of the Append and Update process degraded over time? </b>
+
+If so, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../../deployment/06-Managing%20the%20Qrvey%20Platform/join-lake-optimization.md).
 
 </div>
