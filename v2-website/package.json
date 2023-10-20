@@ -6,7 +6,11 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "node generateRobots.js && docusaurus build",
+    "generate-robots": "node generateRobots.js",
+    "build": "docusaurus build",
+    "build:prod": "ENVIRONMENT=prod docusaurus build",
+    "build:staging": "ENVIRONMENT=staging node generateRobots.js && docusaurus build",
+    "build:dev": "ENVIRONMENT=dev node generateRobots.js && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
