@@ -25,7 +25,7 @@ Release Date: 2022-08-30
 
 * **[RDBMS Connections - Pagination for Tables and Views](../../composer/05-Working%20with%20Data/Connections/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
 
-* **[Data Sync - Allow users to determine the start of the sync range](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Syncronization/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
+* **[Data Sync - Allow users to determine the start of the sync range](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Synchronization/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
 
 * **[Shared Data List Improvement](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/dataset-views.md)**: Users can now see the owner and the source application of shared datasets.
 

@@ -41,7 +41,7 @@ For more information on the features available in the Design page, see:
 
 * **[Geolocation](../02-Design/02-Geolocation/overview-of-geolocation.md)**
 * **[Transformations](../02-Design/03-Transformations/transformations.md)**
-* **[Data Synchronization](../02-Design/04-Data%20Syncronization/data-sync.md)**
+* **[Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md)**
 * **[Data Joins](../02-Design/05-Data%20Joins/data-joins.md)**
 * **[Data Unions](../02-Design/06-Data%20Unions/data-union.md)**
 * **[Advanced Settings](./07-Advanced%20Settings/dataset-design-advanced-settings.md)**

@@ -31,7 +31,7 @@ sidebar_label: Updated Articles
 |[Customizing Qrvey Deployment](../deployment/customizing-qrvey-deployment.md)|7.6|CloudOps| Nov 23, 2022|
 |[Database Connections](../composer/05-Working%20with%20Data/Connections/overview-of-connections.md)|7.6|Data Analyst| Oct 13, 2022|
 |[Datasets](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)|7.6|Data Analyst| Oct 13, 2022|
-|[Data Sync](../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Syncronization/data-sync.md)|7.5|Data Analyst| Sep 13, 2022|
+|[Data Sync](../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Synchronization/data-sync.md)|7.5|Data Analyst| Sep 13, 2022|
 |[AWS Services Used by Qrvey](../deployment/06-Managing%20the%20Qrvey%20Platform/aws-services-qrvey.md)|7.5|CloudOps| Sep 13, 2022|
 |[Prerequisites for Installation](../deployment/prerequisites-for-installation.md)|7.5|CloudOps| Sep 13, 2022|
 |[Database Connections](../composer/05-Working%20with%20Data/Connections/overview-of-connections.md)|7.5|Data Analyst| Sep 13, 2022|
@@ -39,7 +39,7 @@ sidebar_label: Updated Articles
 |[File Upload Connection](../composer/05-Working%20with%20Data/Connections/csv.md)|7.5|Data Analyst| Sep 13, 2022|
 |[Connecting to Secure RDS](../deployment/06-Managing%20the%20Qrvey%20Platform/connect-instance.md)|All|CloudOps| Sep 7, 2022|
 |[Configuring AWS and Qrvey for Redshift Connections](../deployment/06-Managing%20the%20Qrvey%20Platform/redshift.md)|All|CloudOps| Sep 7, 2022|
-|[Data Sync](../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Syncronization/data-sync.md)|7.4|Data Analyst| Jul 29, 2022|
+|[Data Sync](../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Synchronization/data-sync.md)|7.4|Data Analyst| Jul 29, 2022|
 |[Datasets](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Working With Filters in Embedded Scenarios](../software-developer/04-Embedding%20Qrvey%20Widgets/filters-embedded-scenarios.md)|7.3|Data Analyst| Jul 7, 2022|
 |[Analytic Suite Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md)|7.3|Data Analyst| Jul 7, 2022|

@@ -68,7 +68,7 @@ Release Date: 2023-07-31
 
 * **[Setting the Shard Count](../../composer/05-Working%20with%20Data/Datasets/02-Design/07-Advanced%20Settings/dataset-design-advanced-settings.md)**: Adds the option for users to set the number of shards for their index based on the size of the dataset, which helps optimize the performance of loading and displaying data. 
 
-* **Additional Options for [Data Sync Scheduling](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Syncronization/data-sync.md)**: Adds new options to the data sync scheduling feature such as Last Day Of The Month and Every n Days.
+* **Additional Options for [Data Sync Scheduling](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Synchronization/data-sync.md)**: Adds new options to the data sync scheduling feature such as Last Day Of The Month and Every n Days.
 
 
 

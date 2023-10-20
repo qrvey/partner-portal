@@ -121,7 +121,7 @@ Changing visualization formats will *not* require a data reload.
 ### Selecting A Unique Identifier Column
 If the data in a dataset has to be refreshed using the data synchronization feature in an “append and update” mode, it is important to have a unique identifier for each record. The unique ID may consist of a single column or a group of columns. Columns that make up the unique identifier can be marked as such from the option in the dot menu for each column.  
 To learn about data synchronization and the role of unique IDs in it, please see the 
-[Data Sync](../02-Design/04-Data%20Syncronization/data-sync.md) article.
+[Data Sync](../02-Design/04-Data%20Synchronization/data-sync.md) article.
 
 ![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/9datasets.png#thumbnail-40)
 
@@ -195,7 +195,7 @@ You can determine when you want this to happen by configuring the scheduling opt
 
 Data Syncing is available for single-source datasets as well as datasets using joins.
 
-For more information, see [Data Synchronization](../02-Design/04-Data%20Syncronization/data-sync.md).
+For more information, see [Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md).
 
 ## Loading Data
 Once you have made all the necessary adjustments and are happy with the design of your dataset, you can begin loading your data by clicking **Load Data**. This process may take a few seconds or a few minutes, depending on the amount of data to be loaded.  
