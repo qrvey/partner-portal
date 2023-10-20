@@ -1,3 +1,25 @@
+require('dotenv').config();
+
+let currentBaseUrl;
+let currentIndex;
+
+if (process.env.NODE_ENV === 'production') {
+    currentBaseUrl = process.env.BASE_URL_PROD;
+    currentIndex = process.env.INDEX_PROD;
+} else if (process.env.NODE_ENV === 'staging') {
+    currentBaseUrl = process.env.BASE_URL_STAGING;
+    currentIndex = process.env.INDEX_STAGING;
+} else {
+    currentBaseUrl = process.env.BASE_URL_DEV;
+    currentIndex = process.env.INDEX_DEV;
+}
+
+let noIndex = true;
+
+if (process.env.NODE_ENV === 'production' || process.env.BASE_URL === process.env.BASE_URL_PROD) {
+    noIndex = false;
+}
+
 module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
@@ -99,6 +121,7 @@ module.exports = {
   ],
   "themeConfig": {
     "metadata": [{"name": 'Qrvey Documentation', "content": 'Qrvey Documentation, Qrvey blog'}],
+    "noIndex": noIndex,
     "home": {
       "navbar": {
         "logo": {
