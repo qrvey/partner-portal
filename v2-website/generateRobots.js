@@ -7,6 +7,12 @@ const {
     BASE_URL_DEV
 } = process.env;
 
+
+console.log('ENVIRONMENT:', ENVIRONMENT);
+console.log('BASE_URL_PROD:', BASE_URL_PROD);
+console.log('BASE_URL_STAGING:', BASE_URL_STAGING);
+console.log('BASE_URL_DEV:', BASE_URL_DEV);
+
 let BASE_URL;
 
 switch (ENVIRONMENT) {
@@ -26,11 +32,10 @@ switch (ENVIRONMENT) {
 
 let content;
 
-// Verificar el ambiente actual basándose en la URL base
 if (BASE_URL === BASE_URL_PROD) {
-    content = 'User-agent: *\nAllow: /';  // Por defecto, permite a todos los rastreadores
+    content = 'User-agent: *\nAllow: /'; 
 } else {
-    content = 'User-agent: *\nDisallow: /';  // Bloquea todos los rastreadores en staging y dev
+    content = 'User-agent: *\nDisallow: /';
 }
 
 fs.writeFileSync('static/robots.txt', content);
