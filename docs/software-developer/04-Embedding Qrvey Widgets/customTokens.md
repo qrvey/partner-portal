@@ -46,9 +46,11 @@ Use the following syntax:
 ```
 customTokens {
   "token group label": [{
+    "key": "token 1 key",
     "label": "token 1 label",
     "value": "token 1 value"
     },{
+    "key": "token 2 key",
     "label": "token 2 label",
     "value": "token 2 value"
     }
