@@ -324,6 +324,15 @@
          </div>
        );
      };
+
+     const PopularArticles = () => {
+      return (
+        <div>
+          <h2 className="highlight-title-body"><b>Other Popular Content</b></h2>
+          <ul className="popular-articles-list-home"></ul>
+        </div>
+      );
+    };
  
      return (
        <div className="gray-background" id="home-page">
@@ -335,6 +344,7 @@
          <div className="mainContainer" id="main-container">
            <div className="wrapper">
              <Category />
+             <PopularArticles />
            </div>
          </div>
          </div>

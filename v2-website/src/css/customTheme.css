@@ -311,6 +311,16 @@ p.highlight-description {
 text-decoration: none;
 }
 
+.popular-articles-list-home {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 20em;
+  padding: 0;
+}
+
+
 a.highlight-box {
   width: calc(33.33% - 10px);
   margin: 5px;

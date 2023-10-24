@@ -83,6 +83,15 @@ function fetchPopularArticles() {
                 || value.url === '/docs/dev-docs/dev-docs-overview' || value.url === '/docs/special-features/special-features-overview'
                 || value.url === '/docs/video-training/building-qrvey-sample/multi-tenancy-architecture' || value.url === '/docs/admin/premium-features/introduction-to-premium-features'
                 || (value.url.search('/blog') > -1)
+                || (value.url.search('/embedding') > -1)
+                || (value.url.search('/get-started') > -1)
+                || (value.url.search('/ui-docs') > -1)
+                || (value.url.search('/admin/column-level-security') > -1)
+                || (value.url.search('/admin/record-level-security') > -1)
+                || (value.url.search('/docs/getting-started/intro-to-qrvey') > -1)
+                || (value.url.search('/docs/admin/elasticsearch-management') > -1)
+                || (value.url.search('/docs/release-notes/v8/release-last') > -1)
+                || (value.url.search('/videos') > -1)
                 || (value.url.search('/training/') === 0))).map(value => {
                 return {
                     link: value.url,
@@ -93,13 +102,9 @@ function fetchPopularArticles() {
         let popularPagesHTMl = ``;
         popularPages.splice(0, 9).forEach(
             value => {
-                popularPagesHTMl += `<div className="popular-articles-list-item" style="border: 1px solid #C0C0C0;border-radius: 10px;padding: 20px;margin-bottom:30px;">
-                <div className="popular-articles-list-item-header" style="display: flex;justify-content: space-between;">
-                  <p><b>${value.title}</b></p>
-                  <span style="color: #7D7D7D">${value.visited} Views</span>
-                </div>
-                <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>Read more →</b></a>
-               </div>`;
+                popularPagesHTMl += `<li className="popular-articles-list-item" style="border-radius: 10px;padding: 20px;  margin:5px;">
+                <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>${value.title} (${value.visited})</b></a>
+               </li>`;
             }
         );
         const sidenavHTML = document.querySelector(`.popular-articles-list-home`);
