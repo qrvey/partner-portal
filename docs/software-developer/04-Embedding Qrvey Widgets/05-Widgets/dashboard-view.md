@@ -83,6 +83,7 @@ The following table lists the properties associated with this widget.
 | **personalization** | `Object`, JSON object to configure and overwrite the default personalization settings. Please see the section about <a href="#configuring-end-user-personalization">Configuring End User Personalization</a> for more details.|No
 | **styles** | `Object`, JSON object configuring style options that can be used to override the default styles, allowing for while-labeling the widget. Please see the<a href="#overriding-the-default-styles"> Overriding the Default Styles</a> section for more details.|No
 | **featurePermission** | `Object`, JSON object to configure which features are or are not available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
+| **customTokens** | `Object`, JSON object used to set custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | No
 
 
 ## Showing and Hiding Features
