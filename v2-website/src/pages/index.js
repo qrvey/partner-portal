@@ -115,8 +115,7 @@
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-da"></div>
-                    <div className="highlights-icons icon-sa"></div></div>
+                    <div className="highlights-icons icon-da"></div></div>
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Smart Analyzer</h3>
@@ -127,32 +126,43 @@
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-da"></div>
+                    <div className="highlights-icons icon-sd"></div>
                     </div>
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Customizing the Appearance Using CSS</h3>
                     <p className="highlight-description">Version 8.3 enables Qrvey Software Developers to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/multi-tenant-solution/overview-of-multi-tenant-deployments">
+                  </a> 
+                  <a class="highlight-box" href="/docs/multi-tenant-solution/overview-of-multi-tenant-deployments">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-sd"></div>
                     <div className="highlights-icons icon-sa"></div>
-                    <div className="highlights-icons icon-ce"></div>
-                    <div className="highlights-icons icon-da"></div>
                     </div>
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Multi-tenant Solution Architecture Guide</h3>
                     <p className="highlight-description">This new guide for Qrvey Solution Architects provides guidance and best practices for supporting multi-tenant deployments.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
+                  </a> 
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-tokens">
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-da"></div>
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div class="highlights-body-container">
+                  <h3 className="highlight-title-body">Using Custom Tokens</h3>
+                    <p className="highlight-description">Beginning in version 8.3, you can use custom tokens in Bullet charts and Dial charts to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered.</p>
+                    </div> 
+                  </a>
+                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
+                  <div class="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
                     </div>
                   </div>
                   <div class="highlights-body-container">
@@ -163,66 +173,14 @@
                   <div class="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-sd"></div>
+                    <div className="highlights-icons icon-da"></div>
                     </div>
                   </div>
                   <div class="highlights-body-container">
                   <h3 className="highlight-title-body">Using Standardized Syntax</h3>
                     <p className="highlight-description">Version 8.3 further enhances the Standardized Syntax mode in Formula Builder by adding several new, advanced functions.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/composer/Building%20Dashboards/Dashboards/overview-of-dashboard-builder">
-                  <div class="highlights-header-container">
-                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
-                    <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-sd"></div>
-                    </div>
-                  </div>
-                  <div class="highlights-body-container">
-                  <h3 className="highlight-title-body">Overview of Dashboard Builder</h3>
-                    <p className="highlight-description">Dashboard Builder adds Interaction mode in version 8.3, which enables you to review and interact with the dashboard just as you would in Dashboard View. This version also introduces Undo and Redo buttons.</p>
-                    </div> 
-                  </a>
-                </div>
-                <div class="right">
-                  <h2 className="highlight-title-body">Other Popular Content</h2>
-                  <div className="other-popular-articles-cont">
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Filtering and Bucketing Data</h3>
-                    <a href="/docs/composer/Pixel-perfect%20Reports/filtering-data">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Live Connect Datasets</h3>
-                    <a href="/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Overview of Pixel-perfect Reports</h3>
-                    <a href="/docs/composer/Pixel-perfect%20Reports/overview-of-pixel-perfect-reports">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Overview of Internationalization</h3>
-                    <a href="/docs/software-developer/Internationalization/overview-of-internationalization">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Download Manager Widget</h3>
-                    <a href="/docs/software-developer/Embedding%20Qrvey%20Widgets/Widgets/widget-download-manager">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Configuring Time Zone Settings</h3>
-                    <a href="/docs/software-developer/Timezone%20Settings/time-zone-support">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Overview of Content Deployment</h3>
-                    <a href="/docs/admin/Content%20Deployment/overview-of-content-deployment">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Configuring AWS and Qrvey for PostgreSQL Connections</h3>
-                    <a href="/docs/deployment/Managing%20the%20Qrvey%20Platform/postgres-connections">Read More</a>
-                  </div>
-                  <div className="other-popular-articles">
-                    <h3 className="highlight-title-body">Embedding Widgets Using a Security Token</h3>
-                    <a href="/docs/software-developer/Embedding%20Qrvey%20Widgets/embedding-widgets-security-token">Read More</a>
-                  </div>
-                  </div>
+                  </a> 
                 </div>
               </div>
              </div>
