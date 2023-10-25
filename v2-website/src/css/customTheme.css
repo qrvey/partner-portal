@@ -127,6 +127,13 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
   color: white;
   padding-top: 130px;
   padding: 130px 50px 0px;
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+.mainContainer-max-width {
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 .howtousethissite-wrapper h1 {
@@ -153,12 +160,14 @@ nav.theme-doc-breadcrumbs.breadcrumbsContainer_node_modules-\@docusaurus-theme-c
 }
 
 .persona-cont {
-  margin-top: -230px;
+  margin-top: -230px !important;
   display: flex;
   justify-content: space-between;
   padding: 130px 50px 0px;
   position: relative;
   top: 123px;
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 a.persona-box {
@@ -413,6 +422,10 @@ a.highlight-box:hover {
 
 .icon-video {
   background-image: url("../../static/img/card-icons/video.svg");
+}
+
+.icon-eye {
+  background-image: url("../../static/img/card-icons/eye.svg");
 }
 
 .icon-ce {

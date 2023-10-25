@@ -102,9 +102,13 @@ function fetchPopularArticles() {
         let popularPagesHTMl = ``;
         popularPages.splice(0, 9).forEach(
             value => {
-                popularPagesHTMl += `<li className="popular-articles-list-item" style="border-radius: 10px;padding: 20px; padding-left:0px;  margin:5px;">
-                <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>${value.title} (${value.visited})</b></a>
-               </li>`;
+                popularPagesHTMl += `<div className="popular-articles-list-item" style="display: flex; border-bottom:1px solid silver; padding: 20px; padding-left:0px; margin:5px;">
+                <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>${value.title}</b></a>
+                <div style="display: flex;align-items: center;color: #A1A1A1; margin-left: 10px">
+                <div class="highlights-icons icon-eye" style="margin-right:5px"></div>
+                <b>${value.visited} Views</b>
+                </div>
+               </div>`;
             }
         );
         const sidenavHTML = document.querySelector(`.popular-articles-list-home`);

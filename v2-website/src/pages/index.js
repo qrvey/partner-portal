@@ -294,7 +294,7 @@
       return (
         <div className="new-popular-articles">
           <h2 className="highlight-title-body"><b>Other Popular Content</b></h2>
-          <ul className="popular-articles-list-home"></ul>
+          <div className="popular-articles-list-home"></div>
         </div>
       );
     };
@@ -303,10 +303,7 @@
        <div className="gray-background" id="home-page">
          <div style={{width:'100%'}}>
          <TopFold />
-         {
-           //<SplashContainer siteConfig={siteConfig} language={language} />
-         }
-         <div className="mainContainer" id="main-container">
+         <div className="mainContainer mainContainer-max-width" id="main-container">
            <div className="wrapper">
              <Category />
              <Videos />
