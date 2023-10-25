@@ -230,6 +230,14 @@ a.persona-box:hover {
 }
 
 
+
+.select-role-videos {
+  margin-top: 50px;
+  height: 100%;
+  padding: 0 50px;
+}
+
+
 .highlights-container {
   display: flex;
   width: 100%;
@@ -320,6 +328,12 @@ text-decoration: none;
   padding: 0;
 }
 
+.new-popular-articles {
+  height: 100%;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
 
 a.highlight-box {
   width: calc(33.33% - 10px);
@@ -353,6 +367,15 @@ a.highlight-box:hover {
 
 .highlights-star {
   background-image: url("../../static/img/star.svg");
+  width: 30px;
+  height: 35px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.highlights-video {
+  background-image: url("../../static/img/video2.svg");
   width: 30px;
   height: 35px;
   margin-right: 10px;
@@ -1018,6 +1041,14 @@ img[src*="#thumbnail-20"] {
     height: 100%;
     margin-left: 0;
     padding: 0 20px !important;
+  }
+
+  .select-role-videos, .new-popular-articles {
+    padding: 0 20px !important;
+  }
+
+  .popular-articles-list-home {
+    height: 50em !important;
   }
 
   .left {

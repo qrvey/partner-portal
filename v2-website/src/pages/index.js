@@ -109,74 +109,74 @@
 
                </h2>
               </div>
-               <div class="highlights-container">
-                <div class="left">
-                  <a class="highlight-box" href="/docs/composer/Creating%20Charts/Configure%20charts/smart-analyzer">
-                  <div class="highlights-header-container">
+               <div className="highlights-container">
+                <div className="left">
+                  <a className="highlight-box" href="/docs/composer/Creating%20Charts/Configure%20charts/smart-analyzer">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-da"></div></div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Smart Analyzer</h3>
                     <p className="highlight-description">Smart Analyzer, introduced in version 8.3, unleashes the power of artificial intelligence (AI) to acquire new insights into data. This feature establishes a link between ChatGPT and the data in charts, enabling users to ask ChatGPT questions in natural language about their data.</p>
                     </div> 
                   </a>
-                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/customizing-css-variables">
-                  <div class="highlights-header-container">
+                  <a className="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/customizing-css-variables">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-sd"></div>
                     </div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Customizing the Appearance Using CSS</h3>
                     <p className="highlight-description">Version 8.3 enables Qrvey Software Developers to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets.</p>
                     </div> 
                   </a> 
-                  <a class="highlight-box" href="/docs/multi-tenant-solution/overview-of-multi-tenant-deployments">
-                  <div class="highlights-header-container">
+                  <a className="highlight-box" href="/docs/multi-tenant-solution/overview-of-multi-tenant-deployments">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-sa"></div>
                     </div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Multi-tenant Solution Architecture Guide</h3>
                     <p className="highlight-description">This new guide for Qrvey Solution Architects provides guidance and best practices for supporting multi-tenant deployments.</p>
                     </div> 
                   </a> 
-                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-tokens">
-                  <div class="highlights-header-container">
+                  <a className="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-tokens">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-sd"></div>
                     </div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Using Custom Tokens</h3>
                     <p className="highlight-description">Beginning in version 8.3, you can use custom tokens in Bullet charts and Dial charts to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered.</p>
                     </div> 
                   </a>
-                  <a class="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
-                  <div class="highlights-header-container">
+                  <a className="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-sd"></div>
                     </div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Custom Events</h3>
                     <p className="highlight-description">Custom events enable Qrvey Software Developers to handle custom scenarios. This article describes several custom events that can be triggered by Qrvey widgets.</p>
                     </div> 
-                  </a> <a class="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
-                  <div class="highlights-header-container">
+                  </a> <a className="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
+                  <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
                     <div className="highlight-audience">Audience: 
                     <div className="highlights-icons icon-da"></div>
                     </div>
                   </div>
-                  <div class="highlights-body-container">
+                  <div className="highlights-body-container">
                   <h3 className="highlight-title-body">Using Standardized Syntax</h3>
                     <p className="highlight-description">Version 8.3 further enhances the Standardized Syntax mode in Formula Builder by adding several new, advanced functions.</p>
                     </div> 
@@ -188,15 +188,64 @@
          </div>
        );
      };
- 
-     const SplashContainer = (props) => (
-       <div className="homeContainer">
-         <div className="homeSplashFade">
-           <div className="wrapper homeWrapper" id="home-wrapper"></div>
-         </div>
-       </div>
-     );
- 
+
+     const Videos = () => {
+      return (
+        <div className="mainContainer">
+          <div className="wrapper vertical-align">
+            <div className="select-role-videos" >
+             <div style={{display:'flex'}}>
+             <div className="highlights-video"></div>
+              <h2 style={{fontSize:'1.7em'}}>
+                <b>New Videos</b>
+
+              </h2>
+             </div>
+              <div className="highlights-container">
+               <div className="left">
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#openai-on-charts-beta">
+                 <div className="highlights-header-container">
+                   <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
+                   <div className="highlight-audience">Audience: 
+                   <div className="highlights-icons icon-da"></div></div>
+                 </div>
+                 <div className="highlights-body-container">
+                 <h3 className="highlight-title-body">OpenAI On Charts (beta)</h3>
+                   <p className="highlight-description">OpenAI On Charts (beta)</p>
+                   </div> 
+                 </a>
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#view-modes-in-dashboards">
+                 <div className="highlights-header-container">
+                   <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
+                   <div className="highlight-audience">Audience: 
+                   <div className="highlights-icons icon-sd"></div>
+                   </div>
+                 </div>
+                 <div className="highlights-body-container">
+                 <h3 className="highlight-title-body">View Modes in Dashboards</h3>
+                   <p className="highlight-description">View Modes in Dashboards</p>
+                   </div> 
+                 </a> 
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#see-data-action">
+                 <div className="highlights-header-container">
+                   <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
+                   <div className="highlight-audience">Audience: 
+                   <div className="highlights-icons icon-sa"></div>
+                   </div>
+                 </div>
+                 <div className="highlights-body-container">
+                 <h3 className="highlight-title-body">See Data Action</h3>
+                   <p className="highlight-description">See Data Action</p>
+                   </div> 
+                 </a> 
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
      const TopFold = () => (
        <div className="mainContainer main-index-container">
          <div className="wrapper vertical-align">
@@ -241,51 +290,9 @@
        </div>
      );
  
-     const SidRightNav = () => {
-       const announcements = [
-         {
-           name: "Release Notes February",
-           path: siteConfig.baseUrl + "docs/release-notes/release-last/",
-         },
-         {
-           name: "February Newsletter",
-           path: siteConfig.baseUrl + "blog/2020/02/29/qsnewsflash/",
-         },
-       ];
-       return (
-         <div className="side-right-nav">
-           <div className="side-right-nav-container">
-             <div className="side-right-nav-container-announcements">
-               {/* announcements && announcements.map((value, idx) => <a key={idx} className="side-right-nav-item" href={value.path}>{value.name}</a>)*/}
-               {/* <img src={siteConfig.baseUrl + 'img/icons/calendar_icon.svg'}/> */}
-               <h3 className="side-right-nav-container-announcements-title">
-                 {" "}
-                 Announcements
-               </h3>
-               <h3 className="side-right-nav-container-announcements-item">
-                 Version 8.1 has been released,{" "}
-                 <a
-                   className="primary-color"
-                   href="docs/release-notes/release-last/"
-                 >
-                   learn more.
-                 </a>
-               </h3>
-             </div>
-             <div className="side-right-nav-container-popular">
-               <h3 className="side-right-nav-container-popular-title">
-                 {/* <img src={siteConfig.baseUrl + 'img/icons/check_icon.svg'}/>  */}
-                 POPULAR ARTICLES
-               </h3>
-             </div>
-           </div>
-         </div>
-       );
-     };
-
      const PopularArticles = () => {
       return (
-        <div>
+        <div className="new-popular-articles">
           <h2 className="highlight-title-body"><b>Other Popular Content</b></h2>
           <ul className="popular-articles-list-home"></ul>
         </div>
@@ -302,6 +309,7 @@
          <div className="mainContainer" id="main-container">
            <div className="wrapper">
              <Category />
+             <Videos />
              <PopularArticles />
            </div>
          </div>

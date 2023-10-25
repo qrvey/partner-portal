@@ -102,7 +102,7 @@ function fetchPopularArticles() {
         let popularPagesHTMl = ``;
         popularPages.splice(0, 9).forEach(
             value => {
-                popularPagesHTMl += `<li className="popular-articles-list-item" style="border-radius: 10px;padding: 20px;  margin:5px;">
+                popularPagesHTMl += `<li className="popular-articles-list-item" style="border-radius: 10px;padding: 20px; padding-left:0px;  margin:5px;">
                 <a className="popular-articles-list-link" style="color:#FF5400;" href=${value.link.replace('/docs/docs', '/docs')}><b>${value.title} (${value.visited})</b></a>
                </li>`;
             }
