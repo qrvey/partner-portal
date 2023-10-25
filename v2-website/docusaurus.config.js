@@ -5,33 +5,17 @@ module.exports = {
   "baseUrl": "/",
   "organizationName": "qrvey",
   "projectName": "docs-site",
-  "onBrokenLinks": 'warn',
-  "onBrokenMarkdownLinks": 'warn',
+  "onBrokenLinks": 'ignore',
+  "onBrokenMarkdownLinks": 'ignore',
   "scripts": [
     "/js/custom.js",
-    "/js/user.js",
-    'https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js',
-    'https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js',
-    '/js/firebase.js',
     '/js/homepage.js'
   ],
   "stylesheets": [
-    "https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
   ],
   "favicon": "img/Qrvey.png",
   "customFields": {
-    "homeTitle": "Begin your journey with our Detailed Documents",
-    "blogSidebarTitle": {
-      "default": "Newsletters",
-      "all": "Newsletters"
-    },
-    "users": [{
-      "caption": "User1",
-      "image": "/img/qrvey-logo.png",
-      "infoLink": "https://www.qrvey.com",
-      "pinned": true
-    }],
     "fonts": {
       "myFont": [
         "Roboto-Regular",
@@ -55,8 +39,6 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "showLastUpdateAuthor": true,
-          "showLastUpdateTime": true,
           "path": "../docs",
           sidebarPath: require.resolve('../v2-website/sidebars.json'),
           "lastVersion": "current",
@@ -65,9 +47,6 @@ module.exports = {
               "label": '8.3',
             }
           },
-        },
-        "blog": {
-          "path": "blog"
         },
         "theme": {
           "customCss": require.resolve('./src/css/customTheme.css')
@@ -82,14 +61,16 @@ module.exports = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
+        indexPages: false,
+        indexBlog: false,
+
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
         // ```
         // When applying `zh` in language, please install `nodejieba` in your project.
         indexPages: false,
-        indexBlog: false,
-        searchResultLimits: 50,
+        searchResultLimits: 30,
         searchResultContextMaxLength: 200,
         explicitSearchResultPath: true,
         highlightSearchTermsOnTargetPage: true,
@@ -98,7 +79,7 @@ module.exports = {
     ],
   ],
   "themeConfig": {
-    "metadata": [{"name": 'Qrvey Documentation', "content": 'Qrvey Documentation, Qrvey blog'}],
+    "metadata": [{"name": 'Qrvey Documentation', "content": 'Qrvey Documentation'}],
     "home": {
       "navbar": {
         "logo": {
