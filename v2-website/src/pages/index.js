@@ -210,8 +210,9 @@
                    <div className="highlights-icons icon-da"></div></div>
                  </div>
                  <div className="highlights-body-container">
+                 <div className="preview-videos preview-1"></div>
                  <h3 className="highlight-title-body">OpenAI On Charts (beta)</h3>
-                   <p className="highlight-description">OpenAI On Charts (beta)</p>
+                   <p className="highlight-description">Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data.</p>
                    </div> 
                  </a>
                  <a className="highlight-box" href="/docs/video-training/release/version-8.3#view-modes-in-dashboards">
@@ -222,8 +223,9 @@
                    </div>
                  </div>
                  <div className="highlights-body-container">
+                 <div className="preview-videos preview-2"></div>
                  <h3 className="highlight-title-body">View Modes in Dashboards</h3>
-                   <p className="highlight-description">View Modes in Dashboards</p>
+                   <p className="highlight-description">Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View</p>
                    </div> 
                  </a> 
                  <a className="highlight-box" href="/docs/video-training/release/version-8.3#see-data-action">
@@ -234,8 +236,9 @@
                    </div>
                  </div>
                  <div className="highlights-body-container">
+                  <div className="preview-videos preview-3"></div>
                  <h3 className="highlight-title-body">See Data Action</h3>
-                   <p className="highlight-description">See Data Action</p>
+                   <p className="highlight-description">In Dashboard Builder, adds the see Data Action Type, enabling users to see the data in the dataset underlying the chart.</p>
                    </div> 
                  </a> 
                </div>
