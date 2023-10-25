@@ -35,6 +35,12 @@ customTokens {
 The tokens display in Qrvey Composer in the following format:
 `{{customTokens.key}}`
 
+Continuing the example above, the tokens display as follows:
+`{{customTokens.numericKey}}`
+`{{customTokens.dateTimeKey}}`
+`{{customTokens.textKey}}`
+
+
 ## Expanded Syntax
 The expanded syntax of customTokens supports grouping and labels. In expanded syntax, use the following attributes:
 * `key`: the name of the token
@@ -45,7 +51,7 @@ Use the following syntax:
 
 ```
 customTokens {
-  "token group label": [{
+  "tokenGroupLabel": [{
     "key": "token 1 key",
     "label": "token 1 label",
     "value": "token 1 value"
@@ -63,7 +69,7 @@ For example:
 
 ```
 customTokens {
-  "Custom Token": [{
+  "customGroup": [{
       "key": "someNumber",
       "label": "some Number",
       "value": 42.6
@@ -82,6 +88,12 @@ customTokens {
 
 The tokens display in Qrvey Composer in the following format:
 `{{customTokens.tokenGroupLabel.key}}`
+
+Continuing the example above, the tokens display as follows:
+`{{customTokens.customGroup.someNumber}}`
+`{{customTokens.customGroup.someDateTime}}`
+`{{customTokens.customGroup.someText}}`
+
 
 ## Applying a Custom Token to Chart
 After the customToken property is added to the Dashboard Builder or Dashboard View configuration object, it is ready to use in a chart:
