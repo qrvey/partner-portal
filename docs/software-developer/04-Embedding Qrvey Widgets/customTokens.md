@@ -33,12 +33,24 @@ customTokens {
 ```
 
 The tokens display in Qrvey Composer in the following format:
-`{{customTokens.key}}`
+
+`
+{{customTokens.key}}
+`
 
 Continuing the example above, the tokens display as follows:
-`{{customTokens.numericKey}}`
-`{{customTokens.dateTimeKey}}`
-`{{customTokens.textKey}}`
+
+`
+{{customTokens.numericKey}}
+`
+
+`
+{{customTokens.dateTimeKey}}
+`
+
+`
+{{customTokens.textKey}}
+`
 
 
 ## Expanded Syntax
@@ -87,12 +99,22 @@ customTokens {
 ```
 
 The tokens display in Qrvey Composer in the following format:
+
 `{{customTokens.tokenGroupLabel.key}}`
 
 Continuing the example above, the tokens display as follows:
-`{{customTokens.customGroup.someNumber}}`
-`{{customTokens.customGroup.someDateTime}}`
-`{{customTokens.customGroup.someText}}`
+
+`
+{{customTokens.customGroup.someNumber}}
+`
+
+`
+{{customTokens.customGroup.someDateTime}}
+`
+
+`
+{{customTokens.customGroup.someText}}
+ `
 
 
 ## Applying a Custom Token to Chart
