@@ -71,7 +71,7 @@ The Threshold options are:
 * **Color**. Choose a color for the threshold.
 * **Label**. Give your threshold a custom label.
 * **Operator**. Choose the operator for the criteria. 
-* **(Fixed) Value**. Set the value for the criteria. To set a custom token, enter {{ and begin typing the name of the token until it displays in the suggestion box. For more information, see [Using Custom Tokens](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
+* **(Fixed) Value**. Set the value for the criteria. To set a custom token, enter `{{` and begin typing the name of the token until it displays in the suggestion box. For more information, see [Using Custom Tokens](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
 * **(Dynamic) Value Column**. Select the column to use to calculate the threshold. 
 * **(Dynamic) Value Aggregate**. Set the type of aggregate to use to calculate the threshold. Options are:
     * Average
