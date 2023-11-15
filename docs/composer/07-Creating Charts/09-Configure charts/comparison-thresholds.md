@@ -17,5 +17,6 @@ Thresholds are used to create defined bands in the range of values of the KPI in
 
 ![comparison-thresholds](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/comparison-thresholds/comparison1.png#thumbnail-60)
 
+The Bullet chart and Dial chart support the use of custom tokens to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered. For more information, see [Using Custom Tokens](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
 
 </div>
