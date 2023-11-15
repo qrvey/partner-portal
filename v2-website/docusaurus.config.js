@@ -9,6 +9,7 @@ module.exports = {
   "onBrokenMarkdownLinks": 'ignore',
   "scripts": [
     "/js/custom.js",
+    "/js/user.js",
     '/js/homepage.js'
   ],
   "stylesheets": [
