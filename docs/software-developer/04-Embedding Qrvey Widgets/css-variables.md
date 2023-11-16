@@ -178,7 +178,7 @@ To modify the font type of the components inside the widget, use the following g
 
 |**Variable name**|**Functionality**|**Example**|
 | :- | :- | :- |
-|**--qv-global-family**|Changes the font family across the complete interface|<ModalButton content={contents[0].fonts[0]}/>|
+|**--qv-global-font-family**|Changes the font family across the complete interface|<ModalButton content={contents[0].fonts[0]}/>|
 
 
 ### Support Custom Font Family On Visualizations

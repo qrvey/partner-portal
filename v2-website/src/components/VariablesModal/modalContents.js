@@ -531,8 +531,8 @@ const contents = [{
     ],
     padding: [
         {
-            title1: "Default Font / Roboto",
-            title2: "Customized Font / Allan",
+            title1: "Default Padding",
+            title2: "Customized Padding",
             image1: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Padding/--qv-an-padding-chart-panel-header/Default.png",
             image2: "https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/software-developer/css-variables/Padding/--qv-an-padding-chart-panel-header/Customized.png",
             color1: "transparent",
