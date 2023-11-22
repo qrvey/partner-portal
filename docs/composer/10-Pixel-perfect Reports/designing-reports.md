@@ -11,7 +11,7 @@ displayed_sidebar: data-analyst
 
 
 
-Pixel-perfect Reports provides a variety of design and layout options for formatting reports. 
+The Pixel-perfect Reports Builder provides a variety of design and layout options for formatting reports. 
 
 ## Insert an image
 You can add images to your report by uploading them or linking to a URL.
