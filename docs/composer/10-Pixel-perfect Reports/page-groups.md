@@ -8,7 +8,7 @@ displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
+
 
 Page Groups enable you to repeat a set of components in the report body. For example, you can create a standard invoice format and associate it with a dataset column, so the report will display separate invoices with the distinct values of the column. Page Groups also provide an option to insert a page break after every iteration. 
 

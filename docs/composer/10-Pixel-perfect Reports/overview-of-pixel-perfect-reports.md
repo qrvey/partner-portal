@@ -9,9 +9,8 @@ displayed_sidebar: data-analyst
 <div style={{textAlign: "justify"}}>
 
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
 
-The Pixel-perfect Reports tool enables you to build customizable report templates with precise control over the positioning and style of every element on the layout, down to the individual pixel. Pixel-perfect formatting is important when the output must meet exact specifications, such as in audit reports, tax forms, regulatory documents, shipping labels, and more. This feature also provides rigorous controls for formatting PDF and print output.     
+The Pixel-perfect Reports Builder enables you to build customizable report templates with precise control over the positioning and style of every element on the layout, down to the individual pixel. Pixel-perfect formatting is important when the output must meet exact specifications, such as in audit reports, tax forms, regulatory documents, shipping labels, and more. This feature also provides rigorous controls for formatting PDF and print output.     
 
 To open the Pixel-perfect Reports feature, click the **Pixel-perfect Reports** icon in the left-hand navigation panel.  
 ![Pixel-perfect Reports Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/icon-composer-pixel-perfect-reports.png)

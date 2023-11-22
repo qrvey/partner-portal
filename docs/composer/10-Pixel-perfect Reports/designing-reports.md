@@ -9,7 +9,7 @@ displayed_sidebar: data-analyst
 <div style={{textAlign: "justify"}}>
 
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
+
 
 Pixel-perfect Reports provides a variety of design and layout options for formatting reports. 
 

@@ -8,7 +8,7 @@ displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
+
 
 The Data & Parameters panel enables you to set up the datasets used in your report.  You can only select one dataset per report. You must create parameters before you can add them to a report. 
 
