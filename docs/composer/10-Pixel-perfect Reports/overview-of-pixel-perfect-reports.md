@@ -24,7 +24,7 @@ Pixel-perfect Reports shares may familiar features with dashboards, including:
 - **Embedding**. The Pixel-perfect Reports widget can be embedded in an application, and it supports CLS and RLS security to ensure that end users only have access to specified data. For more information, see [Embedding Overview](../../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md) and [Pixel-perfect Reports Widget](../../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md). 
 
 ## Overview of the Editor
-The Pixel Perfect editor provides a variety of tools for creating reports, including designing the layout, setting up datasets, and configuring settings. 
+The Pixel-perfect Reports editor provides a variety of tools for creating reports, including designing the layout, setting up datasets, and configuring settings. 
 
 ![Pixel-perfect Editor](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Overview-81.png#thumbnail-80)
 
