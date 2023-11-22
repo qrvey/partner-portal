@@ -8,7 +8,7 @@ displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
+
 
 ## Filtering Data
 Filters enable you to refine the data that is displayed in the reports. Filters in Pixel-perfect Reports are configured similar to Filters in Qrvey Composer. The only difference is that filters in Pixel-perfect Reports are not applied while the canvas is in Edit mode. The filters are applied when you preview a report. 

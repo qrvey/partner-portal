@@ -10,9 +10,8 @@ displayed_sidebar: data-analyst
 <div style={{textAlign: "justify"}}>
 
 
-> Pixel-perfect Reports is a new feature currently in *beta* introduced with version 8.1 of the Qrvey platform. Your feedback and ideas are greatly appreciated, as they can help us improve this feature in future releases.
 
-The Pixel-perfect Reports tool enables you to build customizable report templates with precise control over the positioning and style of every element on the layout, down to the individual pixel. 
+The Pixel-perfect Reports Builder enables you to build customizable report templates with precise control over the positioning and style of every element on the layout, down to the individual pixel. 
 
 ## Before you begin
 Determine which Qrvey application will provide the data in the report. All reports are linked to Qrvey applications.  
