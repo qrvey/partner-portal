@@ -16,10 +16,11 @@ Use the scheduling trigger for when you need the flow to start by assigning the 
 
 ![1_triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/1_triggers.png#thumbnail)
 
+
 When you finish setting your scheduling presets, you may complete your flow by adding conditions and actions.
 
 ## New Data
-Use the **New Data** trigger for when you need the flow to run as soon as new data is received – for example, when a new record has been added to a data source or when a new response is received on a specified web form.
+Use the **New Data** trigger for when you need the flow to run as soon as new data is received – for example, when a new record has been added to a data source or when a new response is received on a specified web form. This trigger also starts each time a record is added by a data load process.
 
 To set up a new data trigger, just drag and drop the **New Data** trigger, then select the name of the dataset or web form you would like to monitor. The flow will start when a change is detected.
 
@@ -28,17 +29,19 @@ Note, that only active web forms can be selected for the **New Data** trigger. I
 ![3_triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/3_triggers.png#thumbnail)
 
 ## Update Data
-Use **Update Data** trigger if you need the flow to start whenever information in an existing dataset or web form has been updated. Select the dataset name you would like this flow to monitor, then continue with your conditions and actions. 
+Use **Update Data** trigger if you need the flow to start whenever information in an existing dataset or web form has been updated. This trigger also starts each time a record is updated by a data load process. Select the dataset name you would like this flow to monitor, then continue with your conditions and actions. 
 
 ![4_triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/4_triggers.png#thumbnail)
 
 ## Webhook
 Use the **Webhook** trigger when you need the flow to be triggered from external sources, via a URL. Selecting this trigger will automatically generate a unique URL for the flow you are building. You can quickly copy the link by clicking the **Copy** button. Use this URL in your external application which would trigger the flow.
 
-![5_triggers](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.2_triggers/5_triggers.png#thumbnail)
+![Webhook-Trigger-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/Webhook-Trigger-83.png)
 
 Click the **Generate Another** button whenever you wish to replace the current URL with another. 
 
 >**Note:** Replacing a URL cannot be undone so please use this feature carefully.
+
+To prevent unauthorized end users from starting a flow using the webhook URL, select **Require Authentication**. This option requires end users to be authenticated using JSON web tokens (JTW). For more information, see [Embedding Widgets Using a Security Token](https://partners.qrvey.com/docs/software-developer/Embedding%20Qrvey%20Widgets/embedding-widgets-security-token).
 
 </div>
