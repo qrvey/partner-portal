@@ -25,5 +25,5 @@ The Datasets page consists of three tabs:
 * **[Activity Log](../03-Analyze/activity-log.md)**
 
 For an overview of creating and configuring datasets, see the following articles:
-* [**Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md)**
-* [**Datasets - Live Connect](../01-Overview%20of%20Datasets/datasets-live.md)**
+* **[Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md)**
+* **[Datasets - Live Connect](../01-Overview%20of%20Datasets/datasets-live.md)**
