@@ -15,7 +15,7 @@ Qrvey datasets are the data constructs that support all visualizations and dashb
 
 This article covers managed datasets. For more information on live connections, see [Datasets - Live Connect](../01-Overview%20of%20Datasets/datasets-live.md). 
 
-Managed datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data Unions](../02-Design/06-Data%20Unions/data-union.md).
+Managed datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
 
 ## Creating a Managed Dataset
 To create a managed dataset, in the Data section, open the Datasets tab, click **Create New Dataset**, and select **New Managed Dataset**.  
@@ -40,8 +40,8 @@ If you anticipate that the data will require 10 minutes or longer to load, selec
 
 Click **Save**. The Design page for the newly created dataset displays. Use this page to configure your columns and dataset options before loading the data. For an introduction to the Design page, see [Overview of the Design Page](../02-Design/overview-of-design.md).
 
->Notice that the new dataset is given a default name, using the following format:
->`{the connection name} - {table/view name}`
+>Notice that the new dataset is given a default name, using the following format:  
+>`{the connection name} - {table/view name}`  
 >You may change this name to something more friendly to help you identify it later. Click on the name and enter a new one.
 
 At this point, the dataset is not actually created or populated with data. You may return to the Datasets page, and you will see a new, draft dataset, with its default name and a gray bar next to it that indicates its being in draft mode.
@@ -67,7 +67,7 @@ Select one of the following options:
 * **Edit Query**. Enables you to either select a different table or view from the same Connection or change the SQL query of a custom query data source.
 This option is only available for database data sources.
 * **Join to Another Data Source**. Enables you to add another data source to the existing ones. For more information, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md). 
-* **Union with Another Data Source**. Enables you to append or union the data from another data source to the existing ones. For more information, see [Append Data](../02-Design/06-Data%20Unions/data-union.md). 
+* **Union with Another Data Source**. Enables you to append or union the data from another data source to the existing ones. For more information, see [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md). 
 * **Switch for Another Data Source**. Enables you to select a data source from a connection other than the one currently in use.
 * **Rename**. Enables you to change the name of the data source to something more meaningful to you.
 * **Delete**.  Enables you to remove the selected data source from a join. This option is only available for data sources that have been joined with another.
