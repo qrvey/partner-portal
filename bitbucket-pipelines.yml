@@ -30,12 +30,9 @@ pipelines:
     'release/*':
      - step:
         script:
-          - npm install
-          - npm run staging
           - cd v2-website
-          - npm update
           - npm install
-          - npm install replace@1.0.0 -g --force
+          - npm run build:staging
           - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
           - cd static/js
           - replace "MKT_METADATAID" "marketing_test" custom.js
@@ -57,12 +54,9 @@ pipelines:
     'hotfix/*':
      - step:
         script:
-          - npm install
-          - npm run staging
           - cd v2-website
           - npm install
-          - npm update
-          - npm install replace@1.0.0 -g --force
+          - npm run build:staging
           - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
           - cd static/js
           - replace "MKT_METADATAID" "marketing_test" custom.js
@@ -85,11 +79,9 @@ pipelines:
     develop:
       - step:
          script:
-          - npm install
-          - npm run staging
           - cd v2-website
           - npm install
-          - npm install replace@1.0.0 -g --force
+          - npm run build:staging
           - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
           - cd static/js
           - replace "MKT_METADATAID" "marketing_test" custom.js
@@ -114,13 +106,9 @@ pipelines:
           caches:
             - node
           script:
-            - npm install
-            - npm run prod
             - cd v2-website
-            - npm install
-            - npm install replace@1.0.0 -g --force
+            - npm run build:prod
             - cd static/js
-            - replace "firebaseProd = false" "firebaseProd = true"  firebase.js
             - replace "MKT_METADATAID" "marketing_prod" custom.js
             - cd ../..
             - npm run build
@@ -146,27 +134,3 @@ pipelines:
                 AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
                 AWS_DEFAULT_REGION: "us-east-1"
                 DISTRIBUTION_ID: $DISTRIBUTION_ID_PROD
-    v2-website:
-      - step:
-         script:
-          - npm install
-          - cd v2-website
-          - npm install
-          - npm install replace@1.0.0 -g --force
-          - cd static/js
-          - cd ../..
-          - npm run build
-         artifacts:
-          - v2-website/build/**/*
-      - step:
-         name: Deploy
-         deployment: staging 
-         script:
-          - pipe: atlassian/aws-s3-deploy:0.3.7
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "v2-website/build/"
-
