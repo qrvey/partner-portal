@@ -1,6 +1,6 @@
 ---
 id: dslive
-title: Live Connect Datasets
+title: Datasets - Live Connect
 sidebar_label: Datasets - Live Connect
 tags: [Data Analyst]
 sidebar_position: 3
@@ -9,7 +9,13 @@ displayed_sidebar: data-analyst
 
 <div>
 
-Qrvey lets you connect to your data in two different ways:  Managed and Live Connect (Live Connect method only available on v8.0 or greater).  Managed Datasets are stored in Qrvey’s high-performance, scalable, serverless OpenSearch cluster while Live Connect works directly with your existing database for real time querying without the need to load data.
+Qrvey datasets are the data constructs that support all visualizations and dashboards created within the product. The Qrvey platform supports two types of datasets:
+* **Managed**. The data is stored inside Qrvey’s data repository, which is a high-performance, scalable, serverless OpenSearch cluster. 
+* **Live**. Directly accessed from the data source, enabling real-time queries without the need to load data.  
+
+This article covers live connect datasets. For more information on managed connections, see [Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md).  
+
+>**Note**: Live Connect is only available on version 8.0 or greater of the Qrvey Platform.  
 
 Some caveats of using Live Connect:
 
