@@ -13,6 +13,8 @@ The *Activity Log* records all major activity in your user account across all of
 
 ![activity-log](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.5_activity-log/1_activity-log.png#thumbnail-60)
 
+>**Note**: Qrvey Composer also provides an Activity Log for each dataset. To view the dataset Activity Log, open the dataset and select **Activity Log** in the top toolbar. The features and options available are the same.  
+
 You’ll then see the *Activity Log* page where you can view, search, filter, and download events as needed. 
 
 ![activity-log](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.5_activity-log/act-log1.png#thumbnail) 
