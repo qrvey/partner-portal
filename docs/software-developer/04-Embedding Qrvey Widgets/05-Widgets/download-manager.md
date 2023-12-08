@@ -37,6 +37,8 @@ For reference, the launcher script code is:
 <!-- widget's launcher -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.js"></script>
 <script type="module" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.esm.js"></script>
+<script type="text/javascript" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.js"></script>
+<script type="module" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.esm.js"></script>
 <script> window.downloadManagerConfig = downloadManagerConfig</script>
 ```
 
