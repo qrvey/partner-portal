@@ -37,6 +37,8 @@ For reference, the launcher script code is:
 <!-- widget's launcher -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.js"></script>
 <script type="module" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.esm.js"></script>
+<script type="text/javascript" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.js"></script>
+<script type="module" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.esm.js"></script>
 <script> window.downloadManagerConfig = downloadManagerConfig</script>
 ```
 
@@ -68,7 +70,9 @@ The following table lists the properties associated with this widget.
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | No  |
 | **client_id** | `String`, The client ID, or unique identifier, of the user working with the Download Manager. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports.  | Yes |
 | **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
-| **showModalButton** | Boolean, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
+| **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
+| **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. |No|
+
 
 ## Opening the Download Manager Modal
 
