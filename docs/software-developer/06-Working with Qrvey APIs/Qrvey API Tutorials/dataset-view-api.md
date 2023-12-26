@@ -1,6 +1,6 @@
 ---
 id: dataset-view-api
-title: Creating a Dataset View using the Qrvey API
+title: Creating a Dataset View Using the Qrvey API
 sidebar_label: Creating a Dataset View (API)
 tags: [Software Developer]
 sidebar_position: 3
@@ -25,7 +25,7 @@ Use the following API endpoint to designate the source dataset as a shared datas
 
 You must also define a request body with the `isPublic` property set to `true`:
 
-```
+```json
 {
    “isPublic”: true
 }
@@ -59,7 +59,7 @@ For this API call, the user ID and app ID must be the ID of the target applicati
 
 You must also define the app ID and user ID of the source application where the source dataset resides within the API call’s request body:
 
-```
+```json
 {
    appId: “{{APP_ID}}”,
    userId: “{{USER_ID}}”
