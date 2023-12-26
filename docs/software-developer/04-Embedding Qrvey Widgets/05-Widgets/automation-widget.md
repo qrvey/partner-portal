@@ -61,7 +61,6 @@ The following table lists the properties associated with this widget.
 | **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes  |
-| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization feature. The clientId must be set to a unique value for each tenant end user. | No |
 | **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
 | **workflow_id** | `String`, ID of a single flow to display | No |
 | **timezone** | `Object <TimezoneConfiguration>`, overrides the time zone setting in Qrvey Admin Center. | No | 

@@ -13,8 +13,8 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
+* The Download Manager widget requires the use of JWT tokens for authentication. In addition, the token must include the clientId of the tenant end user, in order to display the exports for that end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
+* Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. 
 
 ## Get the Helper Code
 * In Qrvey Composer, display the Download Manager. 
@@ -33,7 +33,7 @@ Add the widget launcher script tag to your application.
 
 For reference, the launcher script code is:
 
-```
+```json
 <!-- widget's launcher -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.js"></script>
 <script type="module" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.esm.js"></script>
@@ -45,16 +45,16 @@ For reference, the launcher script code is:
 ## Set properties in the JSON configuration object
 Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”), with the exception of the private API key:
 
-```
-<!-- widget's Config Object -->
-<script>
-    var downloadManagerConfig = {
+```json
+ <!-- widget's Config Object -->
+  <script>
+      var downloadManagerConfig = {
         "api_key": "<YOUR_PRIVATE_API_KEY>",
-        "domain": "https://<your_qrvey_domain>",
+        "domain": "<your_qrvey_domain>",
         "user_id": "<USER_ID>",
-        "client_id": "<YOUR_CLIENT_ID>"
+        "showModalButton": true
     };
-</script>
+  </script>
 ```
 
 When complete, add the JSON configuration object to your application. 
@@ -64,11 +64,11 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API token required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
+| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. It is not recommended for using with the Download Manager widget. Instead, use a JWT token for authentication and include the clientId of the tenant end user. | Yes, if the qv_token is not provided |
 | **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | No  |
-| **client_id** | `String`, The client ID, or unique identifier, of the user working with the Download Manager. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports.  | Yes |
+| **client_id** | `String`, The clientId, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the clientId in the configuration object. Instead, include the clientId in a JWT token.  | Yes, in the JWT token |
 | **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
 | **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
 | **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. |No|
