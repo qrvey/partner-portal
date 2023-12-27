@@ -13,7 +13,7 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* The Download Manager widget requires the use of JWT tokens for authentication. In addition, the token must include the clientId of the tenant end user, in order to display the exports for that end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
+* The Download Manager widget supports the use of JWT tokens for authentication. In addition, in order to display the exports for that end user, the token must include the clientId of the tenant end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
 * Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. 
 
 ## Get the Helper Code
@@ -52,7 +52,7 @@ Define the JSON configuration object by starting with the script provided in the
         "api_key": "<YOUR_PRIVATE_API_KEY>",
         "domain": "<your_qrvey_domain>",
         "user_id": "<USER_ID>",
-        "showModalButton": true
+         "client_id": "<YOUR_CLIENT_ID>"
     };
   </script>
 ```
