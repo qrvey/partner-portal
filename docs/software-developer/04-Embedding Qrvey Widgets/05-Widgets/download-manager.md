@@ -13,7 +13,7 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* The Download Manager widget supports the use of JWT tokens for authentication. In addition, in order to display the exports for that end user, the token must include the clientId of the tenant end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
+* The Download Manager widget supports the use of JWT tokens for authentication. In addition, in order to display the exports for that end user, the token must include the client ID of the tenant end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
 * Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. 
 
 ## Get the Helper Code
@@ -64,14 +64,14 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. It is not recommended for using with the Download Manager widget. Instead, use a JWT token for authentication and include the clientId of the tenant end user. | Yes, if the qv_token is not provided |
+| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. It is not recommended for using with the Download Manager widget. Instead, use a JWT token for authentication and include the client ID of the tenant end user. | Yes, if the qv_token is not provided |
 | **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | No  |
-| **client_id** | `String`, The clientId, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the clientId in the configuration object. Instead, include the clientId in a JWT token.  | Yes, in the JWT token |
+| **client_id** | `String`, The clientId, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the client ID in the configuration object. Instead, include the client ID in a JWT token.  | Yes, in the JWT token |
 | **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
 | **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
-| **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. |No|
+
 
 
 ## Opening the Download Manager Modal
