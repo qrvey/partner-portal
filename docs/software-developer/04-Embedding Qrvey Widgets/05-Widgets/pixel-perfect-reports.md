@@ -48,7 +48,7 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API token required to access the Qrvey platform. | Yes |
+| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
 | **user_id** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes  |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
