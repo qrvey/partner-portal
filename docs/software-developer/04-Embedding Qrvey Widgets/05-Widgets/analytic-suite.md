@@ -69,6 +69,7 @@ The following table lists the properties associated with this widget.
 | **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
+| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization feature. The clientId must be set to a unique value for each tenant end user. | No |
 | **timezone** | `Object <TimezoneConfiguration>`, Overrides the time zone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).  | No | 
 | **qrveyid** | `String`, ID of the dataset being used.| Yes |
 | **settings** | `Object`, general configuration in order to set some behaviors. | No |

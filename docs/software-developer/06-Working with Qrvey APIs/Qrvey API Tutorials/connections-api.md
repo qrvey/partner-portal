@@ -1,6 +1,6 @@
 ---
 id: connections-api
-title: Creating a Connection (API)
+title: Creating a Connection Using the Qrvey API
 sidebar_label: Creating a Connection (API)
 tags: [Software Developer]
 sidebar_position: 4

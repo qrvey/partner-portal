@@ -26,7 +26,8 @@ Qrvey Composer details:
 ## Using the Post Data API
 The Post Data API enables you to upload an array of records. An example of its syntax is below:
 
-```curl  '{postdataurl}/postdata' \
+```json
+curl  '{postdataurl}/postdata' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: {datarouter-api-key}' \
 --data '{
@@ -54,7 +55,7 @@ The Post Data API returns a JobID, indicating that data is queued for upsert. To
 ## Example of Using the Post Data API 
 The following example enters three records into the Users dataset. This dataset has the following unique IDs: `TENANT_ID`, `ID`, `USER_ID`, `ACCOUNT_ID`, `STATUS`, `ROLE_NAME`. The values in these fields dictate whether to use the Insert or Update action. 
 
-```
+```json
 curl --location 'https://your_qrvey_domain/Prod/dataload/postdata' \
 --header 'Content-Type: application/json' \
 --header 'x-api-key: <API_KEY>' \
@@ -107,7 +108,7 @@ curl --location 'https://your_qrvey_domain/Prod/dataload/postdata' \
 
 This call returns a jobID value. For example:
 
-```
+```json
 {
 "jobId": "825ec7a0-1f48-11ee-9c29-5f7a08107b15"
 }
@@ -121,7 +122,7 @@ To request the job status, use the following call:
 
 This call returns the status of the data upsert request. For example:
 
-```
+```json
 {
   "statusJob": {
     "jobId": "7ef78c10-1fdd-11ee-8cf2-4b9f0f29818b",
