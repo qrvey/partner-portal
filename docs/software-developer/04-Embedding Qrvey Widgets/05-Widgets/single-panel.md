@@ -60,7 +60,7 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API token required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
+| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
 | **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
