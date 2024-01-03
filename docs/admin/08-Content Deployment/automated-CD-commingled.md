@@ -3,7 +3,7 @@ id: autmated-content-deployment-commingled
 title: Automated Content Deployment - Commingled Data
 sidebar_label: Automated Content Deployment (Commingled)
 tags: [Solution Architect]
-sidebar_position: 4
+sidebar_position: 6
 displayed_sidebar: solution-architects
 ---
 
