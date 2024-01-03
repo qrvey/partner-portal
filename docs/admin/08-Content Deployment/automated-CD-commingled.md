@@ -12,8 +12,8 @@ displayed_sidebar: solution-architects
 This article describes how to perform an automated deployment of a baseline shared data application and a baseline content application between two Qrvey instances in separate environments. This article assumes a commingled tenant data model. For more information on tenant data models, see [Multi-tenant Dataset Architecture](../../multi-tenant-solution/multi-tenant-dataset-architecture.md).  
 
 ## Before You Begin
-All of the API endpoints referenced in this document require you to authenticate with the Qrvey Admin Center API using an encrypted JWT token. When making a call to a Qrvey Admin Center endpoint, you must pass the JWT token in the request header or the request will be denied. For more information, see [Generating Security Tokens](../../software-developer/06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
-Verify that you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions. For more information, see [Managing Users of Qrvey Composer](../managing-users.md).
+* All of the API endpoints referenced in this document require you to authenticate with the Qrvey Admin Center API using an encrypted JWT token. When making a call to a Qrvey Admin Center endpoint, you must pass the JWT token in the request header or the request will be denied. For more information, see [Generating Security Tokens](../../software-developer/06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
+* Verify that you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions. For more information, see [Managing Users of Qrvey Composer](../managing-users.md).
 
 ## Prepare Source App(s) for Deployment
 Perform the following steps using the [Content Deployment](../08-Content%20Deployment/overview-of-content-deployment.md) feature in the Qrvey Admin Center. Be sure that you are in the **Dev** environment:
@@ -61,7 +61,7 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 1. Call the CreateServer() endpoint and pass in the following request parameters:
     * `name` = any name you want
     * `description` = any description you want
-    * `host` = fully qualified URL to this Qrvey instance  (e.g. https://abcde.qrveyapp.com)
+    * `host` = fully qualified URL to this Qrvey instance
     * `apiKey` = your Prod API key
 2. Parse the response, extract the value from the `adminserverid` property and save it off somewhere so it can be recalled for future deployments.  *Perform steps 1 and 2 once…and only once*.
 3. Call the GetUploadURL() endpoint for deployment definitions and save the `url` and `key` properties from the response.
@@ -144,7 +144,7 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 5. Extract the `definitionId` property value returned in the response, because you will need it for the next API call.
 6. Call the CreateDeploymentJobBlock() endpoint, passing in the following request parameters:
     * `definitionId` = ID of the Master Content App deployment definition
-    * `adminServerId` = ID of the target server to deploy the content to  (Prod)
+    * `adminServerId` = ID of the target server to deploy the content to (Prod)
     * `selectAllUsers` = false
 7. Extract the `deploymentJobBlockId` value from the response.
 8. Call the GetUserList() endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding `userid` property.
@@ -178,8 +178,7 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 13. Call the GetJobStatus() endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`.  This endpoint returns lots of useful information about the deployment of the content objects.
 
 >**Note**:  The content token for a shared dataset begins with the string `shared_data`.  Here is an example of what the content token might look like for a shared dataset called “Demo Data”:  
-
-`{{shared_data.demo_data}}`
+>`{{shared_data.demo_data}}`
 
 You should always pass the shared dataset’s ID when setting the content token for a deployment job block, in case there are multiple datasets with the same name in the target environment.
 
