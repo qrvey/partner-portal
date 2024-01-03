@@ -54,7 +54,7 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 1. Call the CreateServer() endpoint and pass in the following request parameters:
     * `name` = any name you want
     * `description` = any description you want
-    * `host` = fully qualified URL to this Qrvey instance (e.g. https://abcde.qrveyapp.com)
+    * `host` = fully qualified URL to this Qrvey instance
     * `apiKey` = your Prod API key
 2. Parse the response, extract the value from the `adminserverid` property and save it off somewhere so it can be recalled for future deployments.  *Perform steps 1 and 2 once…and only once*.
 3. Call the GetUploadURL() endpoint for deployment definitions and save the `url` and `key` properties from the response.
