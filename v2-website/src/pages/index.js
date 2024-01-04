@@ -111,6 +111,42 @@
               </div>
                <div className="highlights-container">
                 <div className="left">
+                <a className="highlight-box" href="/docs/admin/Content%20Deployment/autmated-content-deployment-segregated">
+                  <div className="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sa"></div>
+                    </div>
+                  </div>
+                  <div className="highlights-body-container">
+                  <h3 className="highlight-title-body">Automated Content Deployment - Segregated Data</h3>
+                    <p className="highlight-description">Describes how to use the Qrvey API to perform an automated deployment of a source baseline application between two Qrvey instances in separate environments.</p>
+                    </div> 
+                  </a>
+                  <a className="highlight-box" href="/docs/admin/Content%20Deployment/autmated-content-deployment-commingled">
+                  <div className="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sa"></div>
+                    </div>
+                  </div>
+                  <div className="highlights-body-container">
+                  <h3 className="highlight-title-body">Automated Content Deployment - Commingled Data</h3>
+                    <p className="highlight-description">Describes how to use the Qrvey API to perform an automated deployment of a baseline shared data application and a baseline content application between two Qrvey instances in separate environments.</p>
+                    </div> 
+                  </a> 
+                  <a className="highlight-box" href="/docs/software-developer/Working%20with%20Qrvey%20APIs/Qrvey%20API%20Tutorials/dataset-api">
+                  <div className="highlights-header-container">
+                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
+                    <div className="highlight-audience">Audience: 
+                    <div className="highlights-icons icon-sd"></div>
+                    </div>
+                  </div>
+                  <div className="highlights-body-container">
+                  <h3 className="highlight-title-body">Creating a Dataset Using the Qrvey API</h3>
+                    <p className="highlight-description">Describes how to use the Qrvey API to create a dataset from scratch using the endpoint, Create Dataset.</p>
+                    </div> 
+                  </a> 
                   <a className="highlight-box" href="/docs/composer/Creating%20Charts/Configure%20charts/smart-analyzer">
                   <div className="highlights-header-container">
                     <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
@@ -145,42 +181,7 @@
                   <h3 className="highlight-title-body">Multi-tenant Solution Architecture Guide</h3>
                     <p className="highlight-description">This new guide for Qrvey Solution Architects provides guidance and best practices for supporting multi-tenant deployments.</p>
                     </div> 
-                  </a> 
-                  <a className="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-tokens">
-                  <div className="highlights-header-container">
-                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
-                    <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-sd"></div>
-                    </div>
-                  </div>
-                  <div className="highlights-body-container">
-                  <h3 className="highlight-title-body">Using Custom Tokens</h3>
-                    <p className="highlight-description">Beginning in version 8.3, you can use custom tokens in Bullet charts and Dial charts to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered.</p>
-                    </div> 
                   </a>
-                  <a className="highlight-box" href="/docs/software-developer/Embedding%20Qrvey%20Widgets/custom-events">
-                  <div className="highlights-header-container">
-                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
-                    <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-sd"></div>
-                    </div>
-                  </div>
-                  <div className="highlights-body-container">
-                  <h3 className="highlight-title-body">Custom Events</h3>
-                    <p className="highlight-description">Custom events enable Qrvey Software Developers to handle custom scenarios. This article describes several custom events that can be triggered by Qrvey widgets.</p>
-                    </div> 
-                  </a> <a className="highlight-box" href="/docs/composer/Working%20with%20Data/Datasets/Analyze/Formula%20Builder/formula-builder-standardized-syntax">
-                  <div className="highlights-header-container">
-                    <div className="highlight-title">Article <div className="highlights-icons icon-article"></div></div>
-                    <div className="highlight-audience">Audience: 
-                    <div className="highlights-icons icon-da"></div>
-                    </div>
-                  </div>
-                  <div className="highlights-body-container">
-                  <h3 className="highlight-title-body">Using Standardized Syntax</h3>
-                    <p className="highlight-description">Version 8.3 further enhances the Standardized Syntax mode in Formula Builder by adding several new, advanced functions.</p>
-                    </div> 
-                  </a> 
                 </div>
               </div>
              </div>
