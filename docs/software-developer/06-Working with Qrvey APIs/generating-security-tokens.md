@@ -3,7 +3,7 @@ id: generating-security-tokens
 title: Generating Security Tokens
 sidebar_label: Generating Security Tokens
 tags: [Software Developer]
-sidebar_position: 1
+sidebar_position: 2
 displayed_sidebar: software-developer
 ---
 
