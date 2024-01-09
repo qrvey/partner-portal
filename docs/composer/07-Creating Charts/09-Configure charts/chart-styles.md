@@ -327,7 +327,7 @@ Set the degree of the symbol opacity from solid to more opaque.
 * Applies to:  Dot Map, Bubble Map 
 
 ### Target Color
-See <a href="#target-indicator">Target Indicator 
+See <a href="#target-indicator">Target Indicator </a>
 
 * Default: Green
 * Applies to: Bullet Gauge 
@@ -339,7 +339,7 @@ This setting works in conjunction with the Comparison option. When set to Compar
 * Applies to: Bullet Gauge 
 
 ### Theme
-This setting applies to most chart types by default, or when the <a href="#color-type">Color Type  is set to By Category. The setting allows for applying one of the predefined themes, or the selected custom theme, to the chart. As a result of this, the colors of the chart are picked from the range that is defined in the selected theme.
+This setting applies to most chart types by default, or when the <a href="#color-type">Color Type </a>  is set to By Category. The setting allows for applying one of the predefined themes, or the selected custom theme, to the chart. As a result of this, the colors of the chart are picked from the range that is defined in the selected theme.
 
 * **Match colors across charts**. Select this option to unify the colors of each categorical value throughout the page and application where the same categories of the same dataset are used.
 
