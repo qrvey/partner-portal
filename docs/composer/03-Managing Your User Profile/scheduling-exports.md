@@ -3,7 +3,7 @@ id: scheduling-exports
 title: Scheduling Exports  
 sidebar_label: Scheduling Exports 
 tags: [Data Analyst]
-sidebar_position: 1
+sidebar_position: 4
 displayed_sidebar: data-analyst
 ---
 
