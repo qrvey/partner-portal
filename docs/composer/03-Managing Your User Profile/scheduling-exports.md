@@ -40,19 +40,19 @@ In embedded scenarios, the Schedule Exports feature is enabled by default. To di
 ## Scheduling an Export
 1. Export a file using one of the methods described in [Exporting Data](../05-Working%20with%20Data/Datasets/03-Analyze/exporting.md) or [Publishing Reports](../10-Pixel-perfect%20Reports/publishing-reports.md). The Export dialog displays. 
 
-![Export-CSV-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-84.png)
+  ![Export-CSV-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-84.png)
 
 2. To ensure the uniqueness of the file name of the export, under For Uniqueness Concatenate, select **Date and Time**. Date and time values will be automatically appended to the file name. 
 
 3. Click the **Schedule** link. If this link does not display, your user account does not have the Exporting and Scheduling Exports permissions, which is configured in Qrvey Admin Center. For more information, see [Managing Users](../../admin/managing-users.md). The Scheduling section displays in the Export dialog. 
 
-![Export-CSV-Scheduling-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-Scheduling-84.png)
+  ![Export-CSV-Scheduling-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-Scheduling-84.png)
 
 4. In the fields provided, select the desired date and time of the export. 
 
 5. To create a recurring schedule, select **Repeats**. The Export dialog updates to display the necessary fields for scheduling recurrence. Complete the fields to define the schedule. 
 
-![Export-CSV-Scheduling-Repeats-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-Scheduling-Repeats-84.png)
+  ![Export-CSV-Scheduling-Repeats-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Export-CSV-Scheduling-Repeats-84.png)
 
 6. Click **Schedule**. The export will be performed at the scheduled time, and the exported file will display in [Download Manager](../03-Managing%20Your%20User%20Profile/download-manager.md). 
 
@@ -62,10 +62,10 @@ Download Manager provides several options for managing your scheduled exports. L
 * **Pause/Restart Schedule**
 * **Delete Schedule**
 * **More Info**. Displays a summary of the export, including the following information:
-      * The frequency of the schedule
-      * The email address of the owner of the schedule
-      * The associated Qrvey application 
-      * Path that identifies the chart that is being exported
+   * The frequency of the schedule
+   * The email address of the owner of the schedule
+   * The associated Qrvey application 
+   * Path that identifies the chart that is being exported
 
 
 
