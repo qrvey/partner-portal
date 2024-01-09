@@ -29,7 +29,7 @@ In the case below, we want to get a visual representation of the hiring process 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General 
-The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings]().
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](#general).
 
 
 ### Styles
