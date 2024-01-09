@@ -35,11 +35,10 @@ For reference, the launcher script code is:
 
 ```json
 <!-- widget's launcher -->
-<script type="text/javascript" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.js"></script>
-<script type="module" src="https://<WIDGETS_URL>/qrvey-qomponents-library/qomponents-library/qomponents-library.esm.js"></script>
-<script type="text/javascript" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.js"></script>
-<script type="module" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.esm.js"></script>
+<script type="text/javascript" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.js?2023-12-26T15:16:09.665Z"></script>
+<script type="module" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.esm.js?2023-12-26T15:16:09.665Z"></script>
 <script> window.downloadManagerConfig = downloadManagerConfig</script>
+
 ```
 
 ## Set properties in the JSON configuration object
@@ -52,7 +51,7 @@ Define the JSON configuration object by starting with the script provided in the
         "api_key": "<YOUR_PRIVATE_API_KEY>",
         "domain": "<your_qrvey_domain>",
         "user_id": "<USER_ID>",
-         "client_id": "<YOUR_CLIENT_ID>"
+        "showModalButton": true
     };
   </script>
 ```
@@ -71,6 +70,7 @@ The following table lists the properties associated with this widget.
 | **client_id** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the client ID in the configuration object. Instead, include the client ID in a JWT token.  | Yes, in the JWT token |
 | **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
 | **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
+| **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. |No|
 
 
 

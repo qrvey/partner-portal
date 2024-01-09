@@ -17,9 +17,9 @@ Some charts, such as regular Bar and Line, use a single color to depict the valu
 ![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/choose.png#thumbnail-40) 
 
 
-If you wish to change the main color used for your chart, click in the colored box and change the color from the standard color picker dialog that is presented. Note that this change will only apply to the chart that is being designed and all other charts will continue to be created with the same default color as before.
+If you wish to change the main color used for your chart, click in the colored box and change the color from the standard color picker dialog that is presented. Note that this change will only apply to the chart that is being designed and all other charts will continue to be created with the same default color as before. The color picker also supports the option to apply transparency.
 
-![setting-styles](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/color-picker.png) 
+![Color-Picker-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Color-Picker-84.png) 
 
 You can choose to apply a different color for each category by picking **By Category** from the *Color Type* dropdown in the Styles section of the Configuration Panel. This feature is useful if the categories that are presented in the chart have special meaning in your analytics. For example each bar in the Bar Chart may be associated with a status and the statuses have specific colors in your product (e.g. <u>delayed</u> depicted in red, and <u>on time</u> depicted in green). 
 If this mode is selected, the default sequence of colors is shown and used to apply one color of the sequence to each category. Each sequence consists of 10 pre-determined colors and colors are assigned to the categories, cycling from the first to the last and repeating when all of the colors are used. 
@@ -83,32 +83,36 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 
 1. Create a new theme or edit an existing theme. The Create New/Edit Theme dialog displays.
 
-![Create New Theme](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/create-new-theme-81.png)
+![Create New Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Create-New-Theme-84.png)
 
 2. To apply this theme to all applications, select **Use Theme in All Apps**.
 3. Click the **Typeface** drop-down menu and select a font to use in the application. To use the default font, select **(Default)**. 
 
     >**Note**: If you intend to use CSS to modify the typeface, select (Default). For more information, see [Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md).
 
-4. Under **Panel Styles**, select whether to display or hide the following panel items:
-* Panel Background
-* Header
-* Title
+4. Under **Workspace Settings**, select the background color using the following settings:
+   * Canvas Background Color
+   * Panel Icons and Foreground Color
 
-5. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color.
-6. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.
-- Axis and Data Labels
-- Values
-- Legends
-- Tooltips
+5. Under **Panel Styles**, select whether to display or hide the following panel items:
+   * Panel Background
+   * Header
+   * Title
 
-7. Under **Data Styles**, click the box next to **Main Color** to display the color picker dialog. Use the options provided to set the main color for the data.
-8. Select the colors to use for **Data Visualizations**. For your convenience, one hundred colors are chosen randomly by the system. You may change any of the colors individually, or you may click Generate New to randomly generate a new set of one hundred colors.
-9. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.
-- Header Font Color
-- Header Background Color
+6. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color.
+7. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.
+   * Axis and Data Labels
+   * Values
+   * Legends
+   * Tooltips
 
-10. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
+8. Under **Data Styles**, click the box next to **Main Color** to display the color picker dialog. Use the options provided to set the main color for the data.
+9. Select the colors to use for **Data Visualizations**. For your convenience, one hundred colors are chosen randomly by the system. You may change any of the colors individually, or you may click Generate New to randomly generate a new set of one hundred colors.
+10. Under **Table Header Styles**, click the box next to each option to display the color picker dialog. Use the options provided to set a color for that text item.
+   * Header Font Color
+   * Header Background Color
+
+11. Click **Save Theme**. Once created, a theme can be further edited, chosen to apply to all of your applications, duplicated to be used as the basis for another theme, or deleted, from the three-dot menu on the theme card.
 
 >**Note**: Embedded widgets support the use of CSS variables to customize the visual theme. For more information, see [Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md). 
 

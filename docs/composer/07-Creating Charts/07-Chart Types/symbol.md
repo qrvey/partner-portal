@@ -28,22 +28,30 @@ If you have more than one category you’d like to visualize, you can use a [Mul
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
  
 ### General
-* * **Tooltips** - enable or disable [Tooltips](../tooltips.md).
-  * To show more than one value on mouseover, click on **+Add Column**:
-      * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-      * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-      * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
-      * **Remove** - remove the tooltip column.
-  * **Header** - add a header to the tooltip.
-* **Max Data Points** - set the upper limit of the symbols you’d like to show in your chart. Controlling the number of symbols helps you manage the clarity and organization of the chart - if you have too many symbols, the chart can quickly become unreadable.
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
+
+
  
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Color Type**
   * **Single** - all bars are the same color.
       * **Color** - change the color of the bars.
   * **By category** - each bar is colored based on its category.
       * **Theme** - set one of the predetermined themes for a more unified look of your charts.
       * **Match colors across charts** - unify the colors of each categorical value throughout the page and application.
+
+* **Color Type**. Select one of the following color types: 
+   * **Single color**.  Sets all bars to the same color. Select the color in the Color field.  
+      * **Color**. Change the color of the bars. 
+   * **By category**. Sets the color of each bar is colored based on its category. Select the following color options:
+      * **Theme**. Set one of the predetermined themes for a more unified look of your charts.
+      * **Match colors across charts**. Select to unify the colors of each categorical value throughout the page and application.
+
+
+
+
 * **Axis Labels** - Show or hide the labels of the axes.
 * **Values axis** *(typically y axis)*
   * **Label** - give the axis a custom label.

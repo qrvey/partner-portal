@@ -35,6 +35,8 @@ We drag and drop *college_name* as **Row**, *sex* and *age_cat* as **Columns** a
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected.
+
 * **Labels** - show or hide the labels for Rows and Columns. By default, labels are set to the selected column names. By clicking on the three-dot menu in the label pill you can edit the label, sort the values in ascending/descending order or remove sorting from the label.
 
 ![crosstab](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Crosstab/labels.png#thumbnail)
@@ -54,6 +56,8 @@ Subtotals - If you have more than one level in Columns, this option shows the to
 *The maximum number of data points within both dimensions is 10,000 in total.
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Header Color** - set the background color for your header using the color picker. 
 Header Font Color - set the foreground color for the text in your header using the color picker.  
 * **Format** - set the format for your data points; pick between *Default* (depending on the format in the Values shelf, e.g. $1,234.56), *Abbreviated* (e.g. 1.23K), Numeric (e.g. 1,234.56), *Currency* (e.g. $1,234.56), *Percentage* (e.g.1,234.56%), *Scientific* (e.g.1.23e+3). 
