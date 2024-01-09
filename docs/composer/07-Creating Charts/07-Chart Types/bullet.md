@@ -29,14 +29,8 @@ In the example below, we want to see if sales have reached the goal we had set f
 In the Configuration Panel on the right side of the Chart Builder, you can style different aspects of your chart.
 
 ### General
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md). With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric. 
-  * To show more than one value on mouseover, click on **+Add Column**:
-      * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-      * **Display Values As** - The indicator chart only displays one value so you need to choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-      * **Values Format**- set the format of the values on the scale choosing between *Default, Abbreviated, Decimal* (set a number of decimals), *Currency* (choose the currency from the drop-down menu and set a number of decimals), *Percentage* (set a number of decimals), *Scientific*.
-      * **Remove** - remove the tooltip column.
-  * **Header** - add a header to the tooltip.
-* **Fixed Scale** -  The range of the gauge is determined automatically, based on the data. You can choose to set the range manually, by choosing the Fixed Scale option and entering a *Minimum* and a *Maximum* value for the two ends of the range. 
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md). 
+
 
 
 ### Comparison
@@ -72,6 +66,8 @@ The Threshold options are:
 
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 
 * **Bullet Color** - change the color of the bullet.
 * **Threshold Opacity** - decrease the opacity from the default 100% or by typing a number in the box, and decide how opaque you want your threshold to appear in contrast with the target and the needle.

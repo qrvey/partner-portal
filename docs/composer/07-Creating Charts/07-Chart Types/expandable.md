@@ -29,6 +29,8 @@ In the example below, we wanted to show which products and how many of them have
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your table.
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected.
+
 * **Freeze First Column** - this checkbox is only displayed when using an “Expandable Table” and is set to “ON” by default:
     * **ON**: This action freezes the first column of the table so that when doing a horizontal scroll, that column remains fixed to the left of the table visualization, while the rest of the table visualization scrolls beneath (a behavior commonly seen in spreadsheet tools).
     * **OFF**: When performing a horizontal scroll, all columns and groups will scroll together. Some columns may disappear from view depending on screen size.
@@ -41,6 +43,8 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Header**
   * **Align** - set the alignment of the text for all columns or for a specific one.
   * **Font Color** - set a color for the text in your header using the color picker. 

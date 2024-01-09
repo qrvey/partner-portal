@@ -67,8 +67,17 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
 * **Menu Actions** 
+   * **Filtering**. 
+   * **Column Resizing**. 
+   * **Column Arrangement**. 
+   * **Visualization Options**. 
+   * **Sorting**. 
+   * **Adding/removing Columns**.
+   * **Adding/removing Aggregations**.
+
 
     * **Sorting** - add the sorting button () to the header. This option will be available in both edit and interactive mode. Head to the Sorting in Tables section to read more about it.
 
@@ -116,6 +125,7 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
 
 * **Header** - Choose the font, weight, size, and color of the text, as well as cell color and borders for your headers.
 

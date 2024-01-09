@@ -65,7 +65,8 @@ The Datasets tab provides several options for modifying the data source. Click t
 Select one of the following options:
 * **Edit Connection Settings**. Enables you to modify the properties of the connection for the data source. It is available for all types of data sources.
 * **Edit Query**. Enables you to either select a different table or view from the same Connection or change the SQL query of a custom query data source.
-This option is only available for database data sources.
+   This option is only available for database data sources. 
+   >**Note**: If the data source is MongoDB, the Edit Query dialog enables you to configure Queries, Aggregations, and Projections.
 * **Join to Another Data Source**. Enables you to add another data source to the existing ones. For more information, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md). 
 * **Union with Another Data Source**. Enables you to append or union the data from another data source to the existing ones. For more information, see [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md). 
 * **Switch for Another Data Source**. Enables you to select a data source from a connection other than the one currently in use.
@@ -212,6 +213,8 @@ The progress bar at the top-right of the screen indicates the current progress o
 If you remain on the Design tab during the data load process, when it completes, the Summary view displays with information about the data loaded. 
 
 ![Summary-View](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/18datasets.png#thumbnail-60)
+
+Events related to the data load process are logged in the Activity Log. If any errors or issues occur with the data load, check the Activity Log for more information. 
 
 ## Activity Log
 The Activity Log records all major activity for the dataset, including dataset creation, updates to dataset structure, data loads, and data synchronization jobs. The options available in the dataset-level Activity Log are the same as the Activity Log at the application level. For more information, see [Activity Log](../../../04-Managing%20Applications/activity-log.md). 

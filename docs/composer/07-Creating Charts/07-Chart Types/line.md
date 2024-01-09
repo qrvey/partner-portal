@@ -30,23 +30,13 @@ If you have more than one category you’d like to visualize, you can use a [Mul
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md).
-   * To show more than one value on mouseover, click on **+Add Column**:
-       * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-       * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-       * **Values Format** - set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
-       * **Remove** - remove the tooltip column.
-   * **Header** - add a header to the tooltip.
-![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/header.png#thumbnail-60)
-<ul style={{listStyle: 'none', marginLeft: '40px'}}>
-<li>  1. Header</li>
-<li>  2. Value column field</li>
-<li>  3. Tooltip column field </li></ul>
 
-* **Max Data Points** - set the upper limit of the data points you’d like to show in your Line Chart. Controlling the number of data points helps you manage the clarity and organization of the chart as well as affect its performance.
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Color Type**
    * **Single** - all bars are the same color. 
        * **Color** - change the color of the bars.
@@ -76,6 +66,7 @@ It’s important to keep in mind that when the axis range is vast (e.g., 0 - 10,
 ![line-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Line/line-type.png#thumbnail-60)
 * **Data Labels** - show or hide the Value labels of your data points.
     * **Borders** - display your values within a frame.
+* **Offset**. Determines the offset of the chart. Select whether to configure a manual offset as a **Percentage** or in **Pixels**, and enter the desired values in the **Left** and **Top/Bottom** fields. To enable the platform to automatically manage the offsets, click **Reset to Default** to set the values under **Left** and **Top/Bottom** to **Auto**.
 
 ### Sorting
 Like all XY Charts, you can sort by either the category or aggregated values from the column pills. If the column is not included in the chart, go to the **Sorting** section of the Configuration Panel and pick your desired column from the dropdown, and select the sorting direction.

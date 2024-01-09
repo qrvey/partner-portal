@@ -26,19 +26,15 @@ In the case below, we’d like to better understand which customers are purchasi
 ## Styling the Multiseries Combo Chart
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
-* **Legends** - show or hide the legend describing which color has been used to depict each selected value.
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md) to show more than one value on mouseover. Click **+Add Column** to add a column. 
-  * **Column** - pick a column from the dropdown list. This can be any column, even if it is not used in the chart.
-  * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-  * **Values Format** - set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific. 
-  * **Remove** - remove the tooltip column.
-  * **Header** - add a header to the tooltip. 
-* **Table Calculations** - add [calculations](../08-Table%20Calculations/table-calculations.md) to your Combo Chart. 
-* **Max Data Points** - set the upper limit for the categories that are shown on the x-axis of the combo chart. Controlling the number of symbols helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
-* **Max Series** - Increase or decrease a limit on the series you want to show in a single category in a multiseries chart. 
+>**Note**: Use the **Table Calculations** option to add calculations to your chart. For more information, see [Table Calculations](../08-Table%20Calculations/table-calculations.md).
+
+
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Theme** - Set a theme that applies to the Series and the Combo values. 
 * **Multiseries Type** - select whether to display the chart as Bar, Line, or Symbol. 
 * **X-axis**

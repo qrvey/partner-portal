@@ -95,7 +95,7 @@ The following table describes the properties of the `featurePermission` object.
 
 | **Property** | **Description** |  **Type** | **Default** | **Required** |
 | --- | --- | --- | --- | --- |
-| **featurePermission** | Main property of this feature.| `Object`| N/A| No| 
+| **featurePermission** | Main property of this feature | `Object`| N/A| No| 
 | **navigation** | Define navigation-related features that can be hidden| `Object`| N/A| No| 
 | **hideNavigationTab** | Hide the entry method to the navigation tab in the top bar of the widget| `Boolean`| false| No| 
 | **userManagement** | Define user management related features that can be hidden| `Object`| N/A| No| 
@@ -110,7 +110,9 @@ The following table describes the properties of the `featurePermission` object.
 | **hidePagesBar** | Hide bottom bar pages| `Boolean`| False| No| 
 | **LiteVersion** | Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
 | **canvas** | Define canvas related features that can be hidden| `Object`| N/A| No| 
-| **hideManageCanvas** | Hide the following options: Grid, Responsive View, Discard Changes.| `Boolean`| false | No| 
+| **hideManageCanvas** | Hide the following options: Grid, Responsive View, Discard Changes | `Boolean`| false | No| 
+| **downloads** | Displays the download access points in the widget | `Boolean` | false | No |
+| **downloads.hideSchedule** |  Hides the scheduling export option in the export modal | `Boolean`| true | No |
 
 >**Tip**: To hide all features, set the `Liteversion` property to `true`. For example:
 
@@ -139,6 +141,38 @@ widgetConfig = {
      }
    },
 }
+```
+
+## Subscription Settings
+In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
+
+To enable the User Subscriptions option in the Dashboard View widget, set the `enable_subscriptions` property to `true`. For example:
+
+```json
+subscriptions_settings: {
+          enable_subscriptions: true
+}
+```
+
+>**Note**: The Subscriptions feature relies on the user being authenticated and needs the `clientid` property set for the logged-in user. The property’s value should represent a unique identifier for each end user. 
+
+### subscriptions_settings object properties
+The following table describes the properties of the `subscription_settings` object.  
+
+| **Property** | **Description** |  **Type** |  **Default** |  **Required** |
+| --- | --- | --- | --- | --- |
+| enable_subscriptions | Toggle the visibility of the User Subscriptions alarm bell. When disabled, subscriptions are not available to the end user. | `boolean` | true | No |
+| emails | Email addresses to deliver the exports to. | `Array<Object>` | N/A | No | 
+| allow_editing_recipients | Enables the end user to modify the list of recipients of the export. | `boolean` | N/A | No |
+| email_message | JSON object to configure the email message. See below for the structure. | `Object` | N/A | No |
+
+The structure of the email_message object is:
+```json
+email_message: 
+    {
+     hide_add_subject: true/false,
+     hide_add_message: true/false
+    }
 ```
 
 ## Configuring End User Personalization
