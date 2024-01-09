@@ -1,41 +1,19 @@
 ---
-id: upgrade-notes
+id: upgrade-notes8.3
 title: Upgrade Notes
 sidebar_label: Upgrade Notes
 tags: [CloudOps Engineer]
 ---
 <div>
+
 :::danger :warning: **Warning:**
 
 Please review the notes in this document carefully before using the upgrade link located at the bottom of the page. **Failing to do so may result in breaking changes in your environment or product**. 
 
 :::
 
-### Downtime During Upgrade Process
-**Starting In Version: 8.4**  
-
-If you are upgrading the Qrvey Platform from a version older than 8.4 (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-__________________________
-
-### New API Domain URL
-**Starting In Version: 8.4**  
-
-A new API domain URL has been added to the deployment. For customers that use the default domain (for example, `xyz.qrveyapp.com`), the change is automatic and no action is required. 
-Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrade steps for 8.4+ with API Domain URL](https://www.notion.so/qrvey/Upgrade-steps-for-8-4-with-API-Domain-URL-e1f2af113fdc48e3aeb774ae794fe340). Qrvey Customer Support is available to assist with this change. 
-
-__________________________
-
-### The Qrvey Composer URL Can Now Be Used As the Widget URL
-**Starting In Version: 8.4**  
-
-The Qrvey Composer application now uses the AWS Cloudfront service as the initial entry point. Prior to version 8.4, it used Application Load balancer. With this change, the URL to Qrvey Composer (for example, `xyz.qrveyapp.com`) can be used for both the Qrvey Composer UI and for widgets. If you are using the default `qrveyapp` domain, this change is automatic and you may now use the Qrvey Composer URL as the base URL for widgets. For backward compatibility, the old Widget URL (from Cloudfront) is still valid, but we recommend that you to start using the Qrvey Composer URL. 
-
-For customers using a custom domain for Qrvey Composer and/or widgets, you must update the SSL Certificates and the deployment for this change. Qrvey Customer support is available to assist with this change.
-
-__________________________
-
 ### Custom Attribute Support
-**Starting In Version: Future (8.3)**
+**Starting In Version: Future (Post 8.2)**
 
 In future releases, custom attributes will no longer be supported as root attributes of Qrvey objects (Dashboards, Datasets, etc). To support custom attributes moving forward, any custom attributes should be added as children of the root `customAttributes` attribute.
 __________________________
