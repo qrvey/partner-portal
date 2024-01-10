@@ -12,34 +12,34 @@ displayed_sidebar: data-analyst
 This section is available for all chart types, however the options in it vary among chart types. All available options, regardless of the applicable chart type, have been listed in alphabetical order and briefly described in this article. Options that are specific to some charts are discussed in more detail in the individual chart type articles and a link is provided where applicable.
 
 ### Aggregated Formulas
-This feature allows you to create a new column of data using a formula that is based on the aggregated columns in a table chart and is explained in more detail in the <a href="" target="_blank">Table Charts</a> article.
+This feature allows you to create a new column of data using a formula that is based on the aggregated columns in a table chart and is explained in more detail in the [Table Charts](../07-Chart%20Types/table.md) article.
 
 * Default: –
-* Applies to: <a href="" target="_blank"> Grouped Tables </a>
+* Applies to: Grouped Tables  
 
 ### Allow Pagination
 This checkbox is only available for ungrouped Table charts and works in conjunction with the Max Rows value. If it is unchecked (default), the table appears without pagination and displays a maximum of rows as selected in the Max Rows control (500 by default), in one long table. If selected, the table will break into smaller pages, each containing 30 rows by default. In this case, the Max Rows control is replaced with Records Per Page control, which determines the number of records displayed per page of the table. In this mode, you can page through all of the data in the dataset. 
 
 * Default: Off
-* Applies to: <a href="" target="_blank"> Ungrouped Tables</a>
+* Applies to: Ungrouped Tables 
 
 ### Display Averages
 This checkbox is available for Min/Max charts and plots the average point for each data point if it is checked.
 
 * Default: Off
-* Applies to: <a href="" target="_blank"> Min/Max charts</a>
+* Applies to: Min/Max charts 
 
 ### Fixed Scale
 This checkbox is only available for Dial and Bullet gauges and allows you to determine the lower and upper limits of the chart.
 
 * Default: Off
-* Applies to: <a href="" target="_blank"> Dial Gauge</a>, <a href="" target="_blank"> Bullet Gauge</a>
+* Applies to: Dial Gauge, Bullet Gauge 
 
 ### Freeze First Column
 This checkbox is only available for Expandable Table charts and it keeps the first column in place if the table is scrolled horizontally. It is checked by default.
 
 * Default: On
-* Applies to: <a href="" target="_blank"> Expandable Tables</a>
+* Applies to: Expandable Tables 
 
 ### Labels
 Labels checkbox controls showing or hiding labels for Rows and Columns in Crosstab Charts. When the Labels checkbox is marked, an Edit option is automatically added in the three-dot button of the label box. The additional option of Sorting also appears, in the form of another checkbox. Turning on that option adds sorting icons inside the label boxes.
@@ -48,7 +48,7 @@ Labels checkbox controls showing or hiding labels for Rows and Columns in Crosst
 
 
 * Default: Off
-* Applies to: <a href="" target="_blank"> Crosstab</a>
+* Applies to: Crosstab 
 
 ### Legends
 This setting is available for charts that support legends, like all multi-series charts, the Combo and Pie charts, as well as most metric and map charts. When on, legends are displayed as colored boxes above the chart, showing the category that is represented by the color. Thresholds have to be defined for metric charts before legends are displayed. 
@@ -60,7 +60,7 @@ Legends can be turned off or on from the icons shown in the following image. By 
 
 
 * Default: On
-* Applies to: <a href="" target="_blank"> Multi-Series Bar</a>, <a href="" target="_blank"> Multi-Series Line</a>, <a href="" target="_blank"> Multi-Series Symbol</a>, <a href="" target="_blank"> Combo</a>, <a href="" target="_blank"> Pie</a>, <a href="" target="_blank"> Dial</a>, <a href="" target="_blank"> Bullet</a>, <a href="" target="_blank"> Heatmap</a>, <a href="" target="_blank"> Bubble Map</a>, <a href="" target="_blank"> Choropleth Map</a>
+* Applies to: Multi-Series Bar, Multi-Series Line, Multi-Series Symbol, Combo, Pie, Dial, Bullet, Heatmap, Bubble Map, Choropleth Map 
 
 ### Max Data Points / Max Slices
 Here you can set the maximum number of data points you’d like to display in your chart. By default, the Max Data Points limit is set to 50 for performance reasons, but it can be set to a lower or higher number. To define the max number of data points in your chart, set the desired number in the box which will immediately be reflected in the chart preview. Keep in mind that selecting a large number of data points may cause the charts to have longer loading times.
@@ -73,7 +73,7 @@ Here you can set the maximum number of data points you’d like to display in yo
 >**Note 2**: The same setting changes name to Max Slices for pie charts.
 
 * Default: 50
-* Applies to: <a href="" target="_blank"> Bar</a>, <a href="" target="_blank"> Line</a>, <a href="" target="_blank"> Symbol</a>, <a href="" target="_blank"> Multi-Series Bar</a>, <a href="" target="_blank"> Multi-Series Line</a>, <a href="" target="_blank"> Multi-Series Symbol</a>, <a href="" target="_blank"> Dot Map</a>, <a href="" target="_blank"> Bubble Map</a>, <a href="" target="_blank"> Choropleth Map</a>, <a href="" target="_blank"> Pie</a>, <a href="" target="_blank"> Heatmap</a>, <a href="" target="_blank"> Box & Whisker</a>, <a href="" target="_blank"> Word Cloud</a>
+* Applies to: Bar, Line, Symbol, Multi-Series Bar, Multi-Series Line, Multi-Series Symbol, Dot Map, Bubble Map, Choropleth Map, Pie, Heatmap, Box & Whisker, Word Cloud 
 
 #### Overriding the Max Data Points Setting
 
@@ -95,10 +95,10 @@ These are fields in Crosstab Charts where you can set a maximum limit on the num
 This field lets you increase or decrease a limit on the series you want to show in a single category in a multi-series chart, which is by default set to 50. 
 
 * Default: 50
-* Applies to: <a href="" target="_blank">Multi-Series Bar</a>, <a href="" target="_blank">Multi-Series Line</a>, <a href="" target="_blank"> Multi-Series Symbol</a>
+* Applies to: Multi-Series Bar, Multi-Series Line, Multi-Series Symbol 
 
 ### Menu Actions 
-<a href="" target="_blank">Table Charts</a> offer some options in interaction mode (when the chart is saved and placed on the dashboard). The *Edit* and *Multi-column Sort* options are always available from the three-dot menu in the header of each column. The availability of the two other options, Sorting and Visualization, can be controlled from this section. 
+[Table Charts](../07-Chart%20Types/table.md) offer some options in interaction mode (when the chart is saved and placed on the dashboard). The *Edit* and *Multi-column Sort* options are always available from the three-dot menu in the header of each column. The availability of the two other options, Sorting and Visualization, can be controlled from this section. 
 When **Sorting** is checked, it adds the sorting button (<img alt="add" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-builder/chart-configuration/general/sort.png" width="2%"/>) to the column header for all columns. When **Visualization** is checked, the command is added in the three-dot menu of numeric columns and allows users to decide whether they want values to be displayed as numeric or as bars.
 
 
@@ -124,7 +124,7 @@ Default sorting depends on the selected chart and the data types of the selected
 For more information, see [Sorting](../sorting.md).
 
 * Default: Values column descending (Pie), Category column ascending (Heatmap)
-* Applies to: <a href="" target="_blank"> Pie</a>, <a href="" target="_blank"> Heatmap</a>
+* Applies to:   Pie ,   Heatmap 
 
 ### Subtotals
 This option only applies to Crosstab charts and adds subtotals for each column, when more than one category has been added to Columns.

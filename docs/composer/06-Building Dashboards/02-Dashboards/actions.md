@@ -81,6 +81,7 @@ In case of Table Charts, choose a column the Dashboard Action applies to from th
 The URL must be a valid one for the action to work. As part of the URL, you can use data or system tokens.
 You can set the URL to open on the same page the user is currently on, a new tab, or a new window. 
 
+>**Note**: Beginning with version 8.4, the Go to URL option is available for Multiseries Combo charts.
 
 
 ### Chart Drill Down

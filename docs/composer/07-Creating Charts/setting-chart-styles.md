@@ -45,22 +45,22 @@ To achieve this effect select the **Match colors across charts** checkbox in the
 
 
 ## Managing Themes
-In Chart Builder, you can customize the colors used for depicting data in various charts. The defined colors apply to the chart for which the customization was made, and they don’t affect the default colors for other charts (note that the **Match colors across charts** setting is an exception to this rule, but even that only applies to charts that are based on the same dataset. Furthermore, the selections are only about “colors” and don’t offer any control over the panel style, used fonts, and the like.
+In Chart Builder, you can customize the colors used for depicting data in various charts. The defined colors apply to the chart for which the customization was made, and they don’t affect the default colors for other charts. Note that the **Match colors across charts** setting is an exception to this rule, but even that only applies to charts that are based on the same dataset. Furthermore, the selections are only about “colors” and don’t offer any control over the panel style, used fonts, and the like.
 
-To give all your charts a unified look and feel, use the Style Themes feature to create a customized theme that replaces the default theme settings. Beginning with version 8.1, this feature provides two default themes:
-* **Theme**. The legacy default theme supported in applications created in version 8.0 and earlier.
-* **Theme 2**. The new default theme introduced in version 8.1. Theme 2 expands the number of colors provided in the Data Visualization section from 20 to 100, as shown in the screenshot below. 
-
-![Data Styles Theme 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/data-styles-theme-2-81.png)
+To give all your charts a unified look and feel, use the Style Themes feature to create a customized theme that replaces the default theme settings. Beginning with version 8.1, this feature provides the following default themes:
+* **Qrvey Theme**. The legacy default theme supported in applications created in version 8.0 and earlier.
+* **Qrvey Theme 2**. The new default theme introduced in version 8.1. Theme 2 expands the number of colors provided in the Data Visualization section from 20 to 100, as shown in the screenshot below. 
+  ![Data Styles Theme 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/data-styles-theme-2-81.png)
+* **Qrvey Dark Theme**. Introduced in version 8.4, Qrvey Dark Theme applies a dark mode to charts and chart panels.
 
 ### To create a new theme
 1. Click the **Style Themes** icon in the toolbar.
 
-![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+  ![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
   The Style Themes dialog displays.
 
-![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+  ![Style-Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Style-Theme-84.png)
 
 2. Click **Create New Theme**. The Create New Theme dialog displays.
 3. Follow the steps described in "To modify theme settings" below.
@@ -69,11 +69,11 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 ### To edit an existing theme
 1. Click the **Style Themes** icon in the toolbar.
 
-![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+  ![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
   The Style Themes dialog displays.
 
-![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+  ![Style-Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Style-Theme-84.png)
 
 2. Locate the theme you want to edit, click its three-dot menu, and click **Edit**. The Edit Theme dialog displays.
 3. Follow the steps described in "To modify theme settings" below.
@@ -83,22 +83,22 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 
 1. Create a new theme or edit an existing theme. The Create New/Edit Theme dialog displays.
 
-![Create New Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Create-New-Theme-84.png)
+  ![Create New Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Create-New-Theme-84.png)
 
 2. To apply this theme to all applications, select **Use Theme in All Apps**.
 3. Click the **Typeface** drop-down menu and select a font to use in the application. To use the default font, select **(Default)**. 
 
     >**Note**: If you intend to use CSS to modify the typeface, select (Default). For more information, see [Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md).
 
-4. Under **Workspace Settings**, select the background color using the following settings:
+4. Under **Workspace Settings**, select the following colors:
    * Canvas Background Color
    * Panel Icons and Foreground Color
 
 5. Under **Panel Styles**, select whether to display or hide the following panel items:
-   * Panel Background
    * Header
    * Title
 
+6. Click the box next to **Panel Background Color** to display the color picker dialog. Use the options provided to set a color. 
 6. If displaying the title, click the box next to **Chart Titles Color** to display the color picker dialog. Use the options provided to set a color.
 7. Under **Text Styles**, click the box next to each text item to display the color picker dialog. Use the options provided to set a color for that text item.
    * Axis and Data Labels
@@ -120,11 +120,11 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 ### To duplicate a theme
 1. Click the **Style Themes** icon in the toolbar.
 
-![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+  ![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
   The Style Themes dialog displays.
 
-![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+  ![Style-Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Style-Theme-84.png)
 
 2. Locate the theme you want to duplicate, click its three-dot menu, and click **Duplicate**. The new theme displays in the Style Themes dialog. You may now choose to Edit, Duplicate, or Delete the theme as needed.
 
@@ -134,11 +134,11 @@ A theme in a “shared application” that has been created by someone else, can
 
 1. Click the **Style Themes** icon in the toolbar.
 
-![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
+  ![Themes Toolbar Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/themes-toolbar-button-81.png)
 
   The Style Themes dialog displays.
 
-![Style Theme 01](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/style-theme-01-81.png)
+  ![Style-Theme-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Style-Theme-84.png)
 
 2. Locate the theme you want to delete, click its three-dot menu, and click **Delete**. A dialog displays verify that you wish to delete the theme.
 3. Click **Yes**. The theme is deleted.

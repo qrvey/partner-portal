@@ -25,18 +25,21 @@ The General section is available for all chart types, and the options vary depen
 ### Styles
 The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
 
-* **Theme**. Set one of the predetermined themes to customize the look of your charts.
+* **Theme**. Set one of the predetermined themes to customize the look of your charts. For more information, see [Setting Chart Colors and Themes](../setting-chart-styles.md).
 * **Type**. Select the shape for the chart.
+   * **None**. Displays only the data points. 
+   * **Line**. Displays lines connecting the data points.
+   * **Area**. Displays the lines with shading in the area within the lines. Displays the **Opacity** field, enabling you to set a percentage (10-100%).
 * **Line Thickness**. Select a thin, normal, or bold line for your chart.
 * **Line Style**. Choose between solid, dashed, or dotted line styles.
 * **Min Range**. Set the minimum value for the axis.
 * **Max Range**. Set the maximum value for the axis.
-* **Steps**. Set an appropriate interval to maximize the readability of the chart. Depending on how wide the axis range is, the default configuration could display a high number of intervals, making it hard to read or analyze the chart. Intervals are set to Auto by default, enabling the chart to calculate the appropriate intervals based on the axis scale range and the dataset values. 
+* **Steps**. Set an appropriate number of steps to maximize the readability of the chart. Depending on how wide the axis range is, the default configuration could display a high number of intervals, making it hard to read or analyze the chart. Steps are set to Auto by default, enabling the chart to calculate the appropriate intervals based on the axis scale range and the dataset values. 
 * **Typeface**. Select the typeface of the labels.
 * **Weight**. Select the font weight of the labels.
 * **Size**. Select the font size of the labels.
 * **Font Color**. Select the font color of the labels.
-* **Format**. Set the format of the data displayed in the labels.  
+* **Format**. Set the format of the numerical data (currency, percentage, etc.) displayed in the labels.  
 * **Data Labels**. Select whether to display data values from the dataset column assigned to the Value shelf.
 * **Borders**. Select whether to display borders around the Data Labels. 
 * **Offset**. Determines the offset of the chart. Select whether to configure a manual offset as a Percentage or in Pixels, and enter the desired values in the Left and Top fields. To enable the platform to automatically manage the offsets, click Reset to Default to set the values under Left and Top to Auto. 
