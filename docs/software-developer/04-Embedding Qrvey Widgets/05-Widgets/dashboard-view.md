@@ -55,11 +55,12 @@ Define the JSON configuration object by starting with the script provided in the
 ```json
 <script>
 var config = {
-  api_key: '<API_KEY>',
-  domain: 'https://your_qrvey_domain',
-  page_id: ‘PAGE_ID’,  // Optional. Embeds the specified page only.
-  app_id: 'APP_ID'
-};
+   "api_key": "<YOUR_PRIVATE_API_KEY>",
+   "domain": "https://your_qrvey_domain",
+   "user_id": "<USER_ID>",
+   "dashboard_id": "<DASHBOARD_ID>",  // Optional. Embeds the specified dashboard only.
+   "app_id": "<APPLICATION_ID>"
+}
 </script>
 ```
 
@@ -75,6 +76,7 @@ The following table lists the properties associated with this widget.
 | **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
+| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
 | **group_list** | `Array<String>`, collection of IDs/names of the groups created in User Management. | No
 | **page_id** | `String`, ID of one page to visualize it: all auth process is still required if the configuration exists.|No
 | **userFilters** | `Array<Object>`, collection of custom filters that the system will apply to the visualized data. Please see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md) for more details on how to create a filter object. | No
@@ -85,6 +87,7 @@ The following table lists the properties associated with this widget.
 | **featurePermission** | `Object`, JSON object to configure which features are or are not available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
 | **customTokens** | `Object`, JSON object used to set custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | No
 | **clientid** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user. | No
+| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No 
 
 
 ## Showing and Hiding Features
@@ -161,10 +164,10 @@ The following table describes the properties of the `subscription_settings` obje
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
 | --- | --- | --- | --- | --- |
-| enable_subscriptions | Toggle the visibility of the User Subscriptions alarm bell. When disabled, subscriptions are not available to the end user. | `boolean` | true | No |
-| emails | Email addresses to deliver the exports to. | `Array<Object>` | N/A | No | 
-| allow_editing_recipients | Enables the end user to modify the list of recipients of the export. | `boolean` | N/A | No |
-| email_message | JSON object to configure the email message. See below for the structure. | `Object` | N/A | No |
+| **enable_subscriptions** | Toggle the visibility of the User Subscriptions alarm bell. When disabled, subscriptions are not available to the end user. | `boolean` | true | No |
+| **emails** | Email addresses to deliver the exports to. | `Array<Object>` | N/A | No | 
+| **allow_editing_recipients** | Enables the end user to modify the list of recipients of the export. | `boolean` | N/A | No |
+| **email_message** | JSON object to configure the email message. See below for the structure. | `Object` | N/A | No |
 
 The structure of the email_message object is:
 ```json

@@ -11,7 +11,7 @@ displayed_sidebar: data-analyst
 
 Qrvey supports exporting charts, tables, dashboards, and reports to print-friendly formats such as PDF, as well as data dumps to CSV for further analysis in other tools such as Excel. 
 
-Users can export the entire dashboard with all the panels or simply choose a single panel and download only that one. Depending on the chosen format and the context, exports can be of the data (CSV, CSV Summary, and PDF options) or the design / visual layout (JPG, PDF).
+Users can export the entire dashboard with all the panels or simply choose a single panel and download only that one. Depending on the chosen format and the context, exports can be of the data (CSV, CSV Summary, and PDF options) or the design / visual layout (JPG, PDF). Download Manager provides a central location to access and manage exported files. For more information, see [Download Manager](../../../03-Managing%20Your%20User%20Profile/download-manager.md).
 
 Data can be exported from the end-user view, either from a published or embedded page, or any of the following Qrvey Composer UIs:
 * Dataset Analyze view
@@ -112,13 +112,7 @@ The CSV download option can be found from a similar icon that appears upon click
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export8.png#thumbnail-40)
 
-The behavior of CSV download is exactly the same as in the Page and Report Builder. However, to prevent end-users from having to wait until their browser completes the export request, the user is given the option to have the file emailed to them. If authentication has not been set up, the end user is asked to provide their email address.
-
-![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export9.png#thumbnail-60)
-
-![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export10.png#thumbnail-60)
-
-![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export11.png#thumbnail-60)
+You can also use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](../../../03-Managing%20Your%20User%20Profile/scheduling-exports.md).
 
 ### From the Chart, Metric, and Summary Panels
 In the upper-right corner of each panel inside Summary, Custom, and Metric views, as well as the panels that have been placed on a dashboard or report, you’ll also find a download option for the individual panel/visualization. 
@@ -171,6 +165,10 @@ It is important to note the following points:
 * All chart exports adhere to their applied filters and other configuration settings.
 * Additional filters can be applied to charts, dashboards, and reports from the workflow.
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export20.png#thumbnail-60)
+
+## Scheduling Exports
+You can use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](../../../03-Managing%20Your%20User%20Profile/scheduling-exports.md).
+
 
 </div>
 

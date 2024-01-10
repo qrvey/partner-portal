@@ -69,25 +69,14 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 ### General
 The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
-* **Menu Actions** 
-   * **Filtering**. 
-   * **Column Resizing**. 
-   * **Column Arrangement**. 
-   * **Visualization Options**. 
-   * **Sorting**. 
-   * **Adding/removing Columns**.
-   * **Adding/removing Aggregations**.
-
-
-    * **Sorting** - add the sorting button () to the header. This option will be available in both edit and interactive mode. Head to the Sorting in Tables section to read more about it.
-
-    * **Visualization** - checked by default, this option allows the users to choose if they want to see the numeric columns as numbers, or visualized in the form of bars. When unchecked, that option is disabled.
-
-    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/7visualization.png#thumbnail-40)
-
-    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/8visualization.png#thumbnail) 
-
-
+* **Self-service Options**. Provides several options that enable end users to personalize their tables. Customizations made in Dashboard View are saved for the end user. Note that, in embedded scenarios, the clientid must be provided to save the personalizations.   
+   * **Filtering**. Enables the Filtering option, so that end users can add filters to the chart. For more information, see the Filters section. 
+   * **Column Resizing**. Enables end users to change the width of columns inside the table. 
+   * **Column Arrangement**. Enables end users to drag-and-drop columns to change their order inside the table. 
+   * **Visualization Options**. Enables end users to select whether to display the values inside each column as values or bars. 
+   * **Sorting**. Enables the Sorting option, so that end users can apply sorting to the table. The Sorting option supports both multi-column and individual column sorting. For more information, see the Sorting in Tables section.
+   * **Adding/removing Columns**. Enables end users to select which columns to hide or display. 
+   * **Change Column Aggregations**. Enables end users to change the aggregation used inside columns. Only applies to columns inside a grouped table. 
 
 * **Totals** - display the total and/or subtotal of chosen values in the last row of the table or the group.
 

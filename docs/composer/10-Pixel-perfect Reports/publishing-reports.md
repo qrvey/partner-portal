@@ -38,8 +38,6 @@ Pixel-perfect Reports enables you to download completed reports in PDF format. I
 
 5. Click **Download**.  
 
->**Note**: You may also create a schedule for automatically downloading reports at specified intervals. For more information, see [Scheduling Exports](../03-Managing%20Your%20User%20Profile/scheduling-exports.md).
-
 
 ## Send reports via email
 The Send Email action in Workflows/Automation supports Pixel-perfect Reports. It currently supports one report per email action. Note that you can add other types of attachments (files, chart exports, and dashboard exports) to the same action. The email is sent to the address of the user ID in the widget or the logged in user. 

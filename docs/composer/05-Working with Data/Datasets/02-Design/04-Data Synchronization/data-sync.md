@@ -80,7 +80,23 @@ Use the Sync Now button to initiate the Data Sync process. You cannot run a data
 3. Under **Data Source Settings**, configure the Sync Type. For more information, see “Data Source Settings”
 4. Click **Sync Now**. The sync job runs immediately. If you set up a schedule, the process will run again based on the schedule. 
 
-## Putting It All Together To Set Up A Data Sync
+
+## Deciding the Sync Logic
+Starting with version 7.2, Qrvey uses the previous data load’s time and compares that to the timestamp of the records to determine which records of data need to be added or updated. This method works in all cases where the timestamp column values are close to the actual time when records get inserted into the data source (within one minute).  
+
+Prior to 7.2, Qrvey obtained the sync query window's start time from the newest value stored. 
+
+**Important Note**: If in your use case the timestamp columns don't match the actual data insert time, and you wish to continue using the old logic present in versions prior to 7.2, you can set the deployment-wide AWS Lambda environment variable `DATASYNC_START_TIME_MODE` to `FromIndex`:
+
+```json
+Lambda: deploymentId_dataload_drInit
+Environment Variable: DATASYNC_START_TIME_MODE
+Value: FromIndex
+```
+
+
+
+## Putting It All Together To Set Up a Data Sync
 In order to set up an efficient sync job you have to go through the following steps and make the appropriate decisions:
 
 <b>1. Does the data in this Dataset need to be refreshed based on a schedule?</b>
