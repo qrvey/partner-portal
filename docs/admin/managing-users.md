@@ -40,6 +40,10 @@ The following table describes the available permissions:
 | Settings| ✅ | ✅ |
 |**App Administration**|
 | Admin Center| ✅ | ❌ |
+|**Exports**|
+|Exporting| ✅ | ✅ |
+|Scheduling Exports| ✅ | ✅ |
+
 
 ### Create a new role
 1. In Qrvey Admin Center, click the **User Management** icon in the left-hand menu and display the **Roles** tab.

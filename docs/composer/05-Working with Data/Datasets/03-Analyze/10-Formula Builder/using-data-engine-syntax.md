@@ -19,6 +19,7 @@ For general information on using the Formula Builder interface, see [Overview of
 2. Enter a name in the **Formula Name** box. 
 3. To add a function to the formula, type it directly in the editor. A suggestion box displays with columns and functions that fit your text. You may also use the following method:
     * Under **Insert Functions**, select the function that you want to insert. The description box displays helpful information about the function. 
+    >**Note**: The Insert Functions section is only available for use with Managed datasets. If you are using a Live Connect dataset, you must use the appropriate syntax supported by that dataset. 
     * Click **Add to Formula**. The formula displays in the Formula box. 
 4. To add a column to the formula, type it directly in the editor. A suggestion box displays with columns and functions that fit your text. You may also use the following method:
     * Insert the cursor in the desired location in the formula. 
