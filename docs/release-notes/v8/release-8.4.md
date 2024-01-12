@@ -104,6 +104,3 @@ Release Date: 2024-01-15
 
 * **Side-by-side MultiSeries Bar Chart labels are not aligned (bug fix)**.
 
-
-
-<TBD>
