@@ -181,7 +181,7 @@ module.exports = {
     "image": "img/Qrvey.png",
     "footer": {
       "links": [],
-      "copyright": "Copyright © 2023 Qrvey",
+      "copyright": "Copyright © 2024 Qrvey",
     },
   },
 }
