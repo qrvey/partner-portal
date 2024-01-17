@@ -38,7 +38,7 @@ One glance at the resulting map shows a heavier concentration of customers in Eu
 
 Qrvey dot maps support clustering of locations based on the zoom factor of the map; when zoomed out, the dots that are very close to each other are clumped together as a single dot, and the number of items in the cluster shown on each dot. Subsequently, the cluster “explodes” into smaller and smaller clusters as you zoom in. This is the default behavior and can be changed by turning off the *Allow Clustering* configuration option under the **Styles** section.
 
-If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a [Bubble Map](./bubble-map).
+If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a [Bubble Map](../07-Chart%20Types/bubble-map.md).
 
 ## Styling the Dot Map 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your map.

@@ -29,7 +29,7 @@ Release Date: 2024-01-15
 
 * **Dark Theme**: Adds the Dark theme to the list of default themes available for Qrvey applications. This new theme applies to charts and chart panels. Also adds the canvas background color and panel background color properties to themes. <a href="/docs/video-training/release/version-8.4#dark-theme" target="_blank" className="tooltip"><img alt="Dark Theme" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
-* **Data Load Finish Trigger**: Adds a new trigger in Automation flows to enable end users to set a dataset as the trigger. This trigger is activated when a data load job finishes.
+* **Data Load Finish Trigger**: Adds a new trigger in Automation flows to enable end users to set a dataset as the trigger. This trigger is activated when a data load job finishes. This trigger is enabled by default on new instances of the Qrvey platform. If you are upgrading from a previous version, please contact Qrvey Customer Support for assistance.
 
 * **Download Manager Improvements**: Improves the Download Manager user interface to enable end users to better manage and view exports and schedules. Also adds support for Internationalization, Locale Formatting, and Timezones.
 

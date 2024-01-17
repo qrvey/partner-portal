@@ -59,15 +59,14 @@ The Styles section enables you to control various visual elements of the charts,
 * **Data Labels** -  Show or hide value labels of your data points.
 
 ### Format
-You can apply [[Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas. 
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
-
-For more on Choropleth Maps and other Map charts, we recommend watching <a href="/docs-v2/video-training/legacy/map-chart.md" target="_blank">this video</a>.
+For more on Choropleth Maps and other Map charts, we recommend watching the [Map Chart](../../../video-training/legacy/map-chart.md) video</a>.
 
 
 
