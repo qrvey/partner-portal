@@ -262,6 +262,10 @@
     {
       "type": "doc",
       "id": "release-notes/announcements"
+    },
+    {
+      "type": "doc",
+      "id": "release-notes/end-of-life"
     }
   ],
   "getting-started": [
