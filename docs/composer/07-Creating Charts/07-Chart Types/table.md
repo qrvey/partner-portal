@@ -112,6 +112,17 @@ The General section is available for all chart types, and the options vary depen
 
 * **Max Groups** - this option appears for grouped tables (when you add at least one column to the **Groups** shelf). It’s set to 50 by default and has an upper limit of 10,000. 
 
+### Comparison
+In the Comparison section, you can choose a date (dragged into the **Date Column** field) to compare the value of the selected column, aggregated over the time period of your choice (set from the **Time Period** dropdown) to the same value from another time period (set in the **Comparison** dropdown).  
+
+The **Time Period** and **Comparison** date periods can be picked from predefined values in their respective dropdown lists, or set to custom ranges (the last option in each dropdown).  
+
+* **Time Period** - the period over which you want the indicator value to be aggregated. For example “Sales of the Last Quarter”.
+* **Comparison** - the period you want the indicator to compare the Time Period to. 
+* **Add Comparison Column** - Add as many comparisons as numeric columns are in the table’s Columns shelf.
+* **Column** - in each Comparison column, select the numeric column (currently in the Columns shelf) from which you want to display comparisons. 
+* **Type** - display the higher/lower difference in either percent format or as the actual numeric value.
+
 
 ### Styles
 The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
