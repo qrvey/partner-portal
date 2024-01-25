@@ -13,7 +13,7 @@ This article provides an overview of the basic features of the Qrvey Composer us
 ![Applications-Page-Home-Numbered-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Applications-Page-Home-Numbered-84.png)
 
 1. **Qrvey logo**. Click this logo at any time to return to the Applications page. 
-2. **Create Application**. Click to the **Create Application** button to create a new Qrvey application. For more information, see [Overview of Applications](#inside-an-application).
+2. **Create Application**. Click to the **Create Application** button to create a new Qrvey application. For more information, see [Overview of Applications](../composer/04-Managing%20Applications/overview-of-applications.md).
 3. **Three-dot menu**. Click an application’s three-dot menu to display options for sharing the application with other Qrvey Composer users. For more information, see:
    * [Sending Applications](../composer/04-Managing%20Applications/sending-applications.md)
    * [Sharing and Editing Applications](../composer/04-Managing%20Applications/sharing-editing.md) 

@@ -20,7 +20,7 @@ Bubble maps use one geolocation column to determine the location, and a value co
 Before you can create a Map Chart, your data needs to be prepared for the correct use of maps which is done by adding **Geolocation** to your data.
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of Datasets. It's important to define these groups correctly for accurate map locations.
 
-Read more about setting geolocation in [Datasets](../../05-Working%20with%20Data/Datasets/02-Design/02-Geolocation/overview-of-geolocation.md).
+For more information, see [Overview of Geolocation](../../05-Working%20with%20Data/Datasets/02-Design/02-Geolocation/overview-of-geolocation.md).
 
  
 ## When to Use It
@@ -30,7 +30,7 @@ Bubble Maps are used to visualize the size of a measure in different locations i
  
 To create a Bubble Map, drag and drop a data field from a geolocation group into the **Geolocation** shelf.
  
-In the case below, we want to compare sales in US cities. We drag and drop *city* as **Geolocation**, and *Total Sales* as **Values**. Then we go to the Styles section and choose *USA* as **Map Region** to set the US as the initial region that is displayed in the map. We set the **opacity** of the bubble to *70%* to see the map and the clustered symbols a bit better. As our next step, we want to highlight the cities where the sales have been low so we head over to the <a href="#format">Conditional Formatting</a> section and create a condition called *Low Sales* with *Total Sales* as the **Column**, the Operator as less than, and set the **Value** to **10,000**. All cities with sales under $10,000 are now displayed in a red bubble. 
+In the case below, we want to compare sales in US cities. We drag and drop *city* as **Geolocation**, and *Total Sales* as **Values**. Then we go to the Styles section and choose *USA* as **Map Region** to set the US as the initial region that is displayed in the map. We set the **opacity** of the bubble to *70%* to see the map and the clustered symbols a bit better. As our next step, we want to highlight the cities where the sales have been low so we head over to the [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) section and create a condition called *Low Sales* with *Total Sales* as the **Column**, the Operator as less than, and set the **Value** to **10,000**. All cities with sales under $10,000 are now displayed in a red bubble. 
  
 ![bubble-map](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Bubble-Map/create.gif#thumbnail)
  

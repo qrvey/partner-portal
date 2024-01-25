@@ -17,9 +17,17 @@ Before using the Qrvey API, gather the following:
 
 > **Note**: Never expose your organization’s base URL or API Key to external users in Production environments. Instead, use secure tokens to encrypt the base URL and API Key. For more information, see [Generating Security Tokens](../06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
 
-For more information on using the Qrvey APIs, see the following resources:
-- [Qrvey API Tutorial](./Qrvey%20API%20Tutorials/api-tutorial.md)
-- <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>
+## Qrvey API Tutorials
+The Qrvey Partner Portal contains a variety of tutorials for working with the Qrvey API. 
+* If you are new to the Qrvey platform, see [Qrvey API Tutorial](./Qrvey%20API%20Tutorials/api-tutorial.md).
+* To view the list of current tutorials, expand **Qrvey API Tutorials** in the navigation tree on the left. 
+* For information specific to Content Deployment, see the following tutorials in the *Qrvey Admin Center User Guide*:
+   * [Automated Content Deployment (Commingled)](../../admin/08-Content%20Deployment/automated-CD-commingled.md)
+   * [Automated Content Deployment (Segregated)](../../admin/08-Content%20Deployment/automated-CD-segregated.md)
+
+
+## Qrvey API Reference
+For information on the specific endpoints, see the <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>
 
 
 
