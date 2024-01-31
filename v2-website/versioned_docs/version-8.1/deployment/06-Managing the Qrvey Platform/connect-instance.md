@@ -29,7 +29,7 @@ This document explains the steps you need to take if you want to securely access
 <ul style={{listStyleType: 'lower-roman', marginLeft: '30px'}}>
 <li>Select Custom VPC </li> 
 <li>Pick the VPC you would like to use. For this example, it will be the same VPC as your RDS. </li> 
- <li>Select Applicable subnets. If you are not sure, pick all subnets but only the private ones. </li> 
+ <li>Select Applicable subnets. If you are not sure, <strong>pick all private subnets (only the private ones)</strong>. </li> 
  <li>Select the security group that has access to the RDS. </li> 
  <li>Click on <strong>Save</strong>. It takes about 1-2 mins for these settings to apply. </li> 
  </ul>
@@ -85,13 +85,17 @@ VPC Peering is necessary if the user’s RDS is in a different VPC, account or r
 <li>iv. For <strong>Destination</strong>, enter the IPv4 CIDR range that you found in step 1, and for <b>Target</b> select the Peering Connection that you created in step 2.</li>
 <li> iv. <strong>Save</strong> routes </li>
 </ul>
+5. Add a new inbound rule in the RDS security group to allow traffic from the Qrvey Account CIDR.  
+
+6. Enable DNS resolution for VPC peering in the <strong>Requester</strong> and <strong>Accepter</strong> side.  
 
 Now, you will be able to follow the <a href="#steps">steps</a> above, for connecting Qrvey to your RDS instance.
 
->**Note**: Make sure that the VPC peering connection has domain name server (DNS) resolution enabled.
+
 
 ## Additional considerations
-* By moving the Lambda function inside a VPC, it does not have internet access. So if you would like to connect to external data sources (outside the VPC) then you would need to add an Internet Gateway or NAT Gateway depending on your use case. For internal data sources or services inside, you can repeat the steps to create a VPC Endpoint for that service or use security groups to access.
+* By moving the Lambda function inside a VPC, it does not have internet access. So if you would like to connect to external data sources (outside the VPC) then you would need to add an Internet Gateway or NAT Gateway depending on your use case. For internal data sources or services inside, you can repeat the steps to create a VPC Endpoint for that service or use security groups to access. To add an extra layer of security, whitelist in your database the IP of the **Primary public IPv4 address** of the NAT Gateway.
+
 * There may be additional charges for VPC endpoints.
 * Follow the next steps to avoid losing the VPC configuration in future updates and deployments:
     * Go to CloudFormation service on AWS console, find the Qrvey<code>&lt;prefix&gt;</code>DataRouterCodePipeline CloudFormation template. Click on the **Update** button, select *Use current template* and click on **Next**.
