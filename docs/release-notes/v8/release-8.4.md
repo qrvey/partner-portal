@@ -15,7 +15,7 @@ Version 8.4 implements major architectural improvements that provide multiple be
 Note that, if you are upgrading from an older version, an automatic script updates your datasets to be compatible with this new architecture. As a result, your installation time may be extended, depending on the number of datasets.  
 
 In addition, due to the architectural improvements, this version updates many endpoints. While we continue to support the existing endpoints as documented on our [API documentation site](https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration), we encourage you to update those at your convenience to leverage the new enhancements. 
-The legacy endpoints are listed on a deprecation schedule that you can find on our [Announcements](../announcements.md) page.  
+The legacy endpoints are listed on a deprecation schedule that you can find on our [End-of-life Schedule](../end-of-life.md) page.  
 
 
 ## New Features & Enhancements
