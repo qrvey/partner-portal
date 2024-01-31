@@ -94,7 +94,8 @@ Now, you will be able to follow the <a href="#steps">steps</a> above, for connec
 
 
 ## Additional considerations
-* By moving the Lambda function inside a VPC, it does not have internet access. So if you would like to connect to external data sources (outside the VPC) then you would need to add an Internet Gateway or NAT Gateway depending on your use case. For internal data sources or services inside, you can repeat the steps to create a VPC Endpoint for that service or use security groups to access.
+* By moving the Lambda function inside a VPC, it does not have internet access. So if you would like to connect to external data sources (outside the VPC) then you would need to add an Internet Gateway or NAT Gateway depending on your use case. For internal data sources or services inside, you can repeat the steps to create a VPC Endpoint for that service or use security groups to access. To add an extra layer of security, whitelist in your database the IP of the **Primary public IPv4 address** of the NAT Gateway.
+
 * There may be additional charges for VPC endpoints.
 * Follow the next steps to avoid losing the VPC configuration in future updates and deployments:
     * Go to CloudFormation service on AWS console, find the Qrvey<code>&lt;prefix&gt;</code>DataRouterCodePipeline CloudFormation template. Click on the **Update** button, select *Use current template* and click on **Next**.

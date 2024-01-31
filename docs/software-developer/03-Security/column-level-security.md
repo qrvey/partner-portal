@@ -42,9 +42,9 @@ For more information about creating user roles in the Admin Center, please refer
 
 Applying Column Level Security to a dataset requires making calls to the following API endpoints:
 
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjgyMjcxNDE">Get a Dataset (HTTP GET)</a>
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjgyMjcxNDI-update-a-dataset">Update a Dataset (HTTP PUT)</a>
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/b3A6MjgyMjcxNDg-apply-changes">Apply Changes (HTTP POST)</a>
+* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/2ff17959232b9-get-dataset">Get Dataset (HTTP GET)</a>
+* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/c559f406c921b-update-dataset">Update a Dataset (HTTP PUT)</a>
+* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/94b9bad59a2cc-apply-changes">Apply Changes (HTTP POST)</a>
 
 The “Get a Dataset” endpoint will return the complete dataset definition for a specific dataset in JSON format, which can then be modified to include the Column Level Security access roles.  The property to modify for CLS is called “accessRoles” and is found in the “columns” child object.  Define the “accessRoles” property if it does not exist, and then set the property value to the name of the user role.  You can optionally set the “accessRoles” property to an array of comma-delimited role names.
 
