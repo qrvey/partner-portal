@@ -1,5 +1,5 @@
 const myHeaders = new Headers({
-    "x-api-key": "MARKETING_DEMO_API_KEY",
+    "x-api-key": "d41d8cd98f00b204e9800998ecf8427e",
     "Content-Type": "application/json"
 });
 
