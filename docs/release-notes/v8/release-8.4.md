@@ -33,7 +33,7 @@ The legacy endpoints are listed on a deprecation schedule that you can find on o
 
 * **Self-service Table Charts**: Adds the option for end users to manipulate various table chart configurations directly from the Dashboard View widget, without the need to open the Chart Builder. <a href="/docs/video-training/release/version-8.4#self-service-table-charts" target="_blank" className="tooltip"><img alt="Self-Service Table Charts" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
-* **[Schedule Exporting](../../composer/03-Managing%20Your%20User%20Profile/scheduling-exports.md)**: Adds additional options to the Export feature, including the option to choose file names as well as configure scheduled exports. Note that these features must be enabled in Qrvey Admin Center.
+* **[Schedule Exporting](../../composer/03-Managing%20Your%20User%20Profile/scheduling-exports.md)**: Adds additional options to the Export feature, including the option to choose file names as well as configure scheduled exports. Note that these features must be enabled in the Qrvey Admin Center.
 
 * **Dark Theme**: Adds the Dark theme to the list of out-of-the-box themes available for Qrvey applications. With the addition of this new theme, new properties, such as canvas background color and panel background color were added to all themes. <a href="/docs/video-training/release/version-8.4#dark-theme" target="_blank" className="tooltip"><img alt="Dark Theme" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 
@@ -45,40 +45,38 @@ The legacy endpoints are listed on a deprecation schedule that you can find on o
 
 ## General Tweaks & Bug Fixes
 
-* **Cascading process updates in the Activity Log**: Adds information to the Activity Log on dataset views (dataset as data source updates) of the parent dataset.
-
 * **RLS security enhancements**: Improves the record-level security (RLS) configuration to ensure that RLS is always applied when a workflow is triggered.
 
-* **More descriptive error message**: A vague error message (Response Error) that was thrown during the load process when the Opensearch cluster was too small has been improved to be more descriptive.
+* **More descriptive error message**: A vague error message (Response Error) that was thrown during the load process when the OpenSearch cluster was too small has been improved to be more descriptive.
 
 * **Data Sets with unions and joins (bug fix)**. Fixes a variety of issues related to the data sync process involving datasets with unions and joins. 
 
 * **Wrong tooltip on Sync Now button (bug fix)**: Fixes an incorrect tooltip message that displayed when the user hovered over the Sync Now button when the button was disabled. 
 
-* **Simple, Grouped Table: disabling Sorting leaves gap (bug fix)**: Fixes an issue that occurred when creating simple tables. The Menu Actions moved the table up, improperly leaving a gap at the bottom. 
+* **Simple, Grouped Table: disabling Sorting leaves a gap (bug fix)**: Fixes an issue that occurred when creating simple tables. The Menu Actions moved the table up, improperly leaving a gap at the bottom. 
 
-* **Multiseries Cluster Bar default width is too wide (bug fix)**: Fixes an issue that occurred with clustered multiseries bar charts in which the tick mark labels displayed at the wrong clusters. 
+* **Multiseries Cluster Bar default width is too wide (bug fix)**: Fixes an issue that occurred with clustered multiseries bar charts in which the tick mark labels are displayed at the wrong clusters. 
 
 * **Download error (bug fix)**: Fixes a console error that occurred when a user resized the page while downloading a JPG in the Summary panel. The download failed and a console error appeared. 
 
 * **Browser throws "Aw Snap" error when running out of memory (bug fix)**: Fixes a browser error that occurred when a user has more than 30 charts in any of the Analyze widgets and then scrolls down.
 
-* **Subscriptions not executing on correct date (bug fix)**: Fixes an issue that occurred in some situations in which the UTC offset (for example, UTC+2) was improperly calculated at the beginning and end of a month, resulting in an incorrect execution of schedules. 
+* **Subscriptions not executing on the correct date (bug fix)**: Fixes an issue that occurred in some situations in which the UTC offset (for example, UTC+2) was improperly calculated at the beginning and end of a month, resulting in incorrect execution of schedules. 
 
 * **Subscriptions provided to incorrect recipient (bug fix)**: Fixes a rare issue in which the ZIP files of separate export requests that ran at the exact same time were given the same file name, causing the files to be overwritten and some recipients potentially receiving the wrong file. 
 
 
-* **Content Deployment: Shared dataset does not auto-map (bug fix)**.
+* **Content Deployment: Dataset View does not auto-map (bug fix)**.
 
 * **Data Sync: CRON Expression does not save unless tested first (bug fix)**.
 
 * **Dataset Data Sync configured with CRON schedule displays as Daily on Dataset Listing (bug fix)**.
 
-* **Missing columns - the refresh dataset option changes the column ids (bug fix)**.
+* **Missing columns - the refresh dataset option changes the column Ids (bug fix)**.
 
-* **Users unable to log in after their roles were updated (bug fix)**.
+* **Users were unable to log in after their roles were updated (bug fix)**.
 
-* **Under special circumstances syncing if a dataset view that is based on a dataset with RLS fails and the loader keeps spinning (bug fix)**.
+* **Under special circumstances syncing a dataset view that is based on a dataset with RLS fails and the loader keeps spinning (bug fix)**.
 
 * **The modal to compare Packages in Deployment Definition freezes under certain circumstances (bug fix)**.
 
@@ -90,15 +88,15 @@ The legacy endpoints are listed on a deprecation schedule that you can find on o
 
 * **API Key exposed in Cloudwatch log under rare circumstances (bug fix)**.
 
-* **Some metric visualizations display a 404 error after upgrade to version 8.2.1 (bug fix)**.
+* **Some metric visualizations display a 404 error after upgrading to version 8.2.1 (bug fix)**.
 
-* **PDF and JPG exports fail after upgrade to version 8.2.1 (bug fix)**.
+* **PDF and JPG exports fail after upgrading to version 8.2.1 (bug fix)**.
 
 * **Table Bar visualization defaults to right-aligned for numeric column (bug fix)**.
 
 * **Geolocation Group not shown in Chart Builder (bug fix)**.
 
-* **Dataset View columns from different sources are renamed (bug fix)**.
+* **Dataset View columns from different sources are renamed after inspecting the data sources (bug fix)**.
 
 * **Side-by-side MultiSeries Bar Chart labels are not aligned (bug fix)**.
 
