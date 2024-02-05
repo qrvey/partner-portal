@@ -59,7 +59,7 @@ Smart Analyzer supports the following chart types:
 Smart Analyzer is not enabled by default. To enable Smart Analyzer in Dashboard Builder, Dashboard View, Analyze or AN-panel, follow these steps:
 
 1. Obtain the API key for your OpenAI license: https://platform.openai.com/docs/api-reference/authentication
-2. Send this API key to the Update AI Configuration Settings endpoint. 
+2. Send this API key to the Update AI Configuration Settings endpoint. For information on using this endpoint, contact Qrvey Customer Support. 
 3. Enable the Smart Analyzer. Two scenarios are described below. 
 
     For embedded scenarios, define the following global variable:

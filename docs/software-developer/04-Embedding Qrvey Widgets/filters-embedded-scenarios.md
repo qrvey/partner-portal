@@ -13,6 +13,7 @@ Qrvey provides a set of controls to create and interact with filters across the 
 
 You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the <a href="#filter-object-structure">Filter Object Structure</a>, as described below. The structure is passed as part of the supported widget’s configuration object as “userFilters” and it can contain an array of filters with the default scope of global.
 
+```
 var config = {
     attribute1: value1,
     attribute2: value2,
@@ -22,6 +23,7 @@ var config = {
 ]
 }          
 }
+```
 
 This feature is available with [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
 

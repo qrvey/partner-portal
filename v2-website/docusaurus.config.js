@@ -45,7 +45,7 @@ module.exports = {
           "lastVersion": "current",
           "versions": {
             "current": {
-              "label": '8.3',
+              "label": '8.4',
             }
           },
         },

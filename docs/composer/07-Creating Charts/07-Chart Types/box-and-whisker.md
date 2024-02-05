@@ -42,10 +42,12 @@ Hover over a box to display a tooltip with the following information:
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General
-- **Tooltips** - Enable or disable [Tooltips](../tooltips.md). 
-- **Max Data Points** - Set the upper limit of the data points you’d like to show in your Box & Whisker Chart. Controlling the number of data points helps you manage the clarity and organization of the chart - if you have too many of them, the chart can quickly become unreadable.
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
+
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 - **Theme** - Choose the color theme used for your chart. Box & Whisker Charts use the first color in the sequence for the lower quartile and the whiskers, the second for the upper quartile, and the third for the outliers.
 - **Axis Labels** - Show or hide the labels of the axes. 
 - **Chart Orientation** - Choose between the vertical or horizontal orientation of your chart. Vertical is the default value. 

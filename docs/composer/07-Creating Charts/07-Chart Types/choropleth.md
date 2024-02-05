@@ -43,17 +43,11 @@ In the case below, we want to compare sales in US cities. We drag and drop *coun
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your map.
 
 ### General
-* **Legends** - show or hide the legend explaining which color represents which Value.
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md).
- * To show more than one value on mouseover, click on **+Add Column**:
-     * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-     * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-     * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
-     * **Remove** - remove the tooltip column.
- * **Header** - add a header to the tooltip.
-* **Max Data Points** - set the upper limit of the data points you’d like to show in your Choropleth map. Too many data points can have an adverse effect on the map’s performance.
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Theme** - Set one of the predetermined themes for shading your regions. In most cases, it makes sense to use a gradient spectrum for a choropleth map. 
 * **Map Region** - Choose one of the predetermined areas as the initial view of the map -- you can always zoom in or out of the chosen area.
 * **Map Borders** - Show or hide country and region borders on your map.  
@@ -65,15 +59,14 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 * **Data Labels** -  Show or hide value labels of your data points.
 
 ### Format
-You can apply [[Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
+You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to Choropleth Maps.
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or clicking on the Filters button in the toolbar above the canvas. 
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
-
-For more on Choropleth Maps and other Map charts, we recommend watching <a href="/docs-v2/video-training/legacy/map-chart.md" target="_blank">this video</a>.
+For more on Choropleth Maps and other Map charts, we recommend watching the [Map Chart](../../../video-training/legacy/map-chart.md) video.
 
 
 

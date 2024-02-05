@@ -67,18 +67,16 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
-* **Menu Actions** 
-
-    * **Sorting** - add the sorting button () to the header. This option will be available in both edit and interactive mode. Head to the Sorting in Tables section to read more about it.
-
-    * **Visualization** - checked by default, this option allows the users to choose if they want to see the numeric columns as numbers, or visualized in the form of bars. When unchecked, that option is disabled.
-
-    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/7visualization.png#thumbnail-40)
-
-    ![table](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Table/8visualization.png#thumbnail) 
-
-
+* **Self-service Options**. Provides several options that enable end users to personalize their tables. Customizations made in Dashboard View are saved for the end user. Note that, in embedded scenarios, the clientid must be provided to save the personalizations.   
+   * **Filtering**. Enables the Filtering option, so that end users can add filters to the chart. For more information, see the Filters section. 
+   * **Column Resizing**. Enables end users to change the width of columns inside the table. 
+   * **Column Arrangement**. Enables end users to drag-and-drop columns to change their order inside the table. 
+   * **Visualization Options**. Enables end users to select whether to display the values inside each column as values or bars. 
+   * **Sorting**. Enables the Sorting option, so that end users can apply sorting to the table. The Sorting option supports both multi-column and individual column sorting. For more information, see the Sorting in Tables section.
+   * **Adding/removing Columns**. Enables end users to select which columns to hide or display. 
+   * **Change Column Aggregations**. Enables end users to change the aggregation used inside columns. Only applies to columns inside a grouped table. 
 
 * **Totals** - display the total and/or subtotal of chosen values in the last row of the table or the group.
 
@@ -114,8 +112,20 @@ In the Configuration Panel on the right of the Chart Builder, you can style diff
 
 * **Max Groups** - this option appears for grouped tables (when you add at least one column to the **Groups** shelf). It’s set to 50 by default and has an upper limit of 10,000. 
 
+### Comparison
+In the Comparison section, you can choose a date (dragged into the **Date Column** field) to compare the value of the selected column, aggregated over the time period of your choice (set from the **Time Period** dropdown) to the same value from another time period (set in the **Comparison** dropdown).  
+
+The **Time Period** and **Comparison** date periods can be picked from predefined values in their respective dropdown lists, or set to custom ranges (the last option in each dropdown).  
+
+* **Time Period** - the period over which you want the indicator value to be aggregated. For example “Sales of the Last Quarter”.
+* **Comparison** - the period you want the indicator to compare the Time Period to. 
+* **Add Comparison Column** - Add as many comparisons as numeric columns are in the table’s Columns shelf.
+* **Column** - in each Comparison column, select the numeric column (currently in the Columns shelf) from which you want to display comparisons. 
+* **Type** - display the higher/lower difference in either percent format or as the actual numeric value.
+
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
 
 * **Header** - Choose the font, weight, size, and color of the text, as well as cell color and borders for your headers.
 

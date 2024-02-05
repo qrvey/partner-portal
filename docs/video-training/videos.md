@@ -19,6 +19,12 @@ Each new release of the Qrvey platform includes videos demonstrating new feature
 
 For reference, some recent releases include the following demos:
 
+### [Version 8.4](./release/version-8.4.md)
+* Radar Chart
+* Chart Positioning and Axis Enhancements
+* Self-service Table Charts
+* Dark Theme
+
 ### [Version 8.3](./release/version-8.3.md)
 * OpenAI On Charts (beta)
 * View Modes in Dashboards

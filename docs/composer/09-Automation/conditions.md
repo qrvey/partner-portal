@@ -12,7 +12,7 @@ displayed_sidebar: data-analyst
 Conditions are components that can be added to Triggers to test if certain filter criteria are met. Depending on the test results some of the following actions may or may not be executed. This allows for refining trigger conditions, as well as for branching within Flows. In this article, we’ll review what conditions are and how you can deploy them in your Flows to control actions.
 
 ## Adding Conditions
-Conditions can be added to any trigger to control when the trigger causes the flow to run. For example, you can add a condition to a **New Data** trigger to define scenarios that must be met before the trigger will run. Another possibility is to add a condition to a scheduling trigger, e.g. to send an alert if a metric is outside preset bounds. 
+Conditions can be added to any trigger to control when the trigger causes the flow to run. For example, you can add a condition to a **Records Added** trigger to define scenarios that must be met before the trigger will run. Another possibility is to add a condition to a scheduling trigger, e.g. to send an alert if a metric is outside preset bounds. 
 
 Conditions can also be added to branch options of action components. For example, you could add a condition to the _One Record Found_ branch option of a **Search Records** component to check the details of the found record.
 
@@ -26,14 +26,14 @@ Then, define the specific conditions that need to be met. Any actions you drag b
 
 Qrvey offers different types of conditions depending on the trigger they are attached to:
 
-For all triggers, the following two conditions can be used:
+For all triggers except Data Load Finish, the following two conditions can be used:
 
 * **If Field** - allows you to specify a particular field that should trigger the action.
 * **If Metric** - allows you to specify a metric threshold that will trigger the action.
 
 ![2_conditions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/automation/3.4.6.3_conditions/2_conditions.png#thumbnail-60)
 
-For a New Data trigger with a Quiz dataset, the following four conditions can also be used:
+For a Records Added trigger with a Quiz dataset, the following four conditions can also be used:
 
 * **If Result** - the condition is based on the user's quiz result. For example, the quiz may have a result value of Pass or Fail.
 * **If Retry** - the condition is based on the user's retry count.
@@ -46,6 +46,15 @@ For a New Data trigger with a Quiz dataset, the following four conditions can al
 >**Note**: A quiz’s rank is determined in real time and represents that person’s position on the leaderboard at the time of their submission. Ranks will change with every submission received. As a result, if you are sending notifications based on a rank condition, it is more accurate to say “You are _currently_ in the first place” rather than “You _are_ in the first place”. While the latter is correct at that time, it could change with the next quiz submission.
 
 >**Also Note**: In the event of a tie, with two or more submissions having the exact same score, rankings are determined in the order in which they were received. The earlier the quiz was received, the higher its rank will be.
+
+For a Data Load Finish trigger, the following conditions can be used:
+* **If Field** - allows you to specify a particular field that should trigger the action.
+* **If Data Load Status** - allows you to specify the status of the data load finish that should trigger the action:
+   * Successful
+   * Failed
+   * Canceled
+
+![Conditions-Data-Load-Finish-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Conditions-Data-Load-Finish-84.png)
 
 ## Using Conditions
 Once you have selected your conditions, you may drag as many Action blocks to your Flow as needed. Conditions and actions will be nested so you can easily follow along visually to see what is taking place and when.

@@ -133,7 +133,7 @@ To continue to support legacy variables, assign each variable in a node. For exa
 ```css
 body {
 
--–qv-color-main: var(--qv-global-main-color, orange);
+-–qv-main-color: var(--qv-global-main-color, orange);
 
 }
 ```

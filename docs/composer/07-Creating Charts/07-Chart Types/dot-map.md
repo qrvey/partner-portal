@@ -38,24 +38,19 @@ One glance at the resulting map shows a heavier concentration of customers in Eu
 
 Qrvey dot maps support clustering of locations based on the zoom factor of the map; when zoomed out, the dots that are very close to each other are clumped together as a single dot, and the number of items in the cluster shown on each dot. Subsequently, the cluster “explodes” into smaller and smaller clusters as you zoom in. This is the default behavior and can be changed by turning off the *Allow Clustering* configuration option under the **Styles** section.
 
-If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a [Bubble Map](./bubble-map).
+If you would like not only to visualize the geolocation but also to add a value to your map to show for example the number of sales, number of customers, or a similar measure in specific areas, you can use a [Bubble Map](../07-Chart%20Types/bubble-map.md).
 
 ## Styling the Dot Map 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your map.
 
 ### General
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
 
-
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md).
-  * To show more than one value on mouseover, click on **+Add Column**:
-      * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-      * **Display Values As** - choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-      * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
-      * **Remove** - remove the tooltip column.
-  * **Header** - add a header to the tooltip.
-* **Max Data Points** - set the upper limit of the data points you’d like to show in your Dot Map. Too many data points can have an adverse effect on the map’s performance.  
+ 
 
 ### Styles
+The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Color** - Change the color of the dot shown on the map. 
 * **Base Map** - Sets the map mode and layers. The choices are S*treets, Outdoors, Light, Dark, Satellite,* and *Satellite Streets* views. 
 * **Map Region** - Choose one of the predetermined areas as the initial view of the map -- you can always zoom in or out of the chosen area.

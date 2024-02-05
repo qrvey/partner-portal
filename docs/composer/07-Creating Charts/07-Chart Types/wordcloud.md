@@ -28,9 +28,8 @@ In the case below, we want to see which of the product categories appears in our
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your visualization.
 
 ### General
-* **Sort by** - sort the data by label or numerical value in ascending/descending order.
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md). 
-* **Max Data Points**- set the upper limit of the words you’d like to show in your Word Cloud. Controlling the number of these data points helps you manage the clarity and organization of the chart - if you have too many data points, the chart can quickly become unreadable.
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
+
 
 ### Filters
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas. 

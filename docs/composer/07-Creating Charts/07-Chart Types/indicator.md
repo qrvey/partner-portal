@@ -31,15 +31,8 @@ We drag and drop the *Total Sales* column as **Values**, changed the **format** 
 In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your metrics.
  
 ### General
-* **Tooltips** - enable or disable [Tooltips](../tooltips.md). With Tooltips enabled, you can for example show the Quantity of sold products for the Total Price metric.
- * To show more than one value on mouseover, click on **+Add Column**:
-     * **Column** - pick a value from the dropdown list. This can be any column, even if it is not used in the chart.
-     * **Display Values As** - The indicator chart only displays one value so you need to choose the aggregation type for each additional column you’d like to display in the tooltip (Sum, Average, Median, Count, Distinct Count, Minimum, Maximum).
-     * **Values Format**- set the format of the values on the scale choosing between Default, Abbreviated, Decimal (set a number of decimals), Currency (choose the currency from the drop-down menu and set a number of decimals), Percentage (set a number of decimals), Scientific.
-     * **Remove** - remove the tooltip column.
- * **Header** - add a header to the tooltip.
- 
-![indicator](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Indicator/tooltip.png#thumbnail)
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md). 
+
  
 ### Comparison
 In the Comparison section, you can choose a date (dragged into the **Date Column** field) to compare the value of the selected column, aggregated over the time period of your choice (set from the **Time Period** dropdown) to the same value from another time period (set in the Comparison dropdown).
@@ -59,7 +52,8 @@ The **Time Period** and **Comparison** date periods can be picked from predefine
  
  
 ### Styles
- 
+ The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
+
 * **Format** - set the format of the values on the indicator choosing between *Default, Abbreviated, Decimal* (set a number of decimals), *Currency* (choose the currency from the drop-down menu and set a number of decimals), *Percentage* (set a number of decimals), *Scientific*.
 * **Font Color** - choose the color of the font.
 * **Font Style** - decide between regular, italic, or bold font style.

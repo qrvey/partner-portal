@@ -51,6 +51,7 @@ The following table lists the properties associated with this widget.
 | **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
 | **user_id** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes  |
+| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the Download Manager feature. The clientId must be set to a unique value for each tenant end user. | No |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **qv_token** | A more secure way to authenticate and authorize embedded widgets is through a Security Token requested as a backend-to-backend communication between your backend side of the host application and the Qrvey system. | Yes, if no api_key is provided |
 | **report_id** | `String`, used to embed a specific report. | No |

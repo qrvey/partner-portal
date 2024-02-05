@@ -89,6 +89,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/v8/release-8.3"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/v8/release-8.2"
         },
         {
@@ -258,6 +262,10 @@
     {
       "type": "doc",
       "id": "release-notes/announcements"
+    },
+    {
+      "type": "doc",
+      "id": "release-notes/end-of-life"
     }
   ],
   "getting-started": [
@@ -460,6 +468,10 @@
       "type": "category",
       "label": "Release Demos",
       "items": [
+        {
+          "type": "doc",
+          "id": "video-training/release/version-8.4"
+        },
         {
           "type": "doc",
           "id": "video-training/release/version-8.3"

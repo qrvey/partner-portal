@@ -23,7 +23,7 @@ Roles and permissions enable you to control access to sections of Qrvey Composer
 
 You can create custom roles with specific permissions and assign user accounts to those roles. You can also specify the Default Role that is automatically assigned to new users when they sign up from the Login page. 
 
-### Overview of permissions
+### Overview of Permissions
 
 The following table describes the available permissions:
 
@@ -40,8 +40,12 @@ The following table describes the available permissions:
 | Settings| ✅ | ✅ |
 |**App Administration**|
 | Admin Center| ✅ | ❌ |
+|**Exports**|
+|Exporting| ✅ | ✅ |
+|Scheduling Exports| ✅ | ✅ |
 
-### Create a new role
+
+### Create a New Role
 1. In Qrvey Admin Center, click the **User Management** icon in the left-hand menu and display the **Roles** tab.
 2. Click **Create New Role**. The New Role dialog displays. 
 3. Enter a name and description in the fields provided, and then click **Next**. The dialog updates to display all the users in the system. 
@@ -53,14 +57,14 @@ The Default Role is automatically assigned to new users of Qrvey Composer when t
 1. In Qrvey Admin, click the User Management icon in the left-hand menu and display the **Roles** tab.
 2. Find the role that you want to use and select **Set as Default Role**. 
 
-### Change permissions
+### Change Permissions
 1. In Qrvey Admin Center, click the **User Management** icon in the left-hand menu and display the **Roles** tab.
 2. Find the role that you want to modify and click the name of the role. The page updates to display two options, **Users** and **Permissions**. 
 3. Click **Permissions**. The page updates to display the available permissions. 
 4. Select the **Edit** checkbox for each permission you want to allow. 
 5. Clear the **Edit** checkbox for each permission you want to restrict. 
 
-### Change users assigned to a role
+### Change Users Assigned to a Role
 1. In Qrvey Admin Center, click the **User Management** icon in the left-hand menu and display the **Roles** tab.
 2. Find the role that you want to modify and click the name of the role. The page updates to display two options, **Users** and **Permissions**. 
 3. Click **Users**. The page updates to display the users currently assigned to the role. 
