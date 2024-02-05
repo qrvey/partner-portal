@@ -204,7 +204,7 @@
              </div>
               <div className="highlights-container">
                <div className="left">
-                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#openai-on-charts-beta">
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.4#dark-theme">
                  <div className="highlights-header-container">
                    <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
                    <div className="highlight-audience">Audience: 
@@ -212,11 +212,11 @@
                  </div>
                  <div className="highlights-body-container">
                  <div className="preview-videos preview-1"></div>
-                 <h3 className="highlight-title-body">OpenAI On Charts (beta)</h3>
-                   <p className="highlight-description">Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data.</p>
+                 <h3 className="highlight-title-body">Dark Theme</h3>
+                   <p className="highlight-description">Adds the Dark theme to the list of out-of-the-box themes available for Qrvey applications. With the addition of this new theme, new properties, such as canvas background color and panel background color were added to all themes.</p>
                    </div> 
                  </a>
-                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#view-modes-in-dashboards">
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.4#radar-chart">
                  <div className="highlights-header-container">
                    <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
                    <div className="highlight-audience">Audience: 
@@ -225,11 +225,11 @@
                  </div>
                  <div className="highlights-body-container">
                  <div className="preview-videos preview-2"></div>
-                 <h3 className="highlight-title-body">View Modes in Dashboards</h3>
-                   <p className="highlight-description">Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View</p>
+                 <h3 className="highlight-title-body">Radar Chart</h3>
+                   <p className="highlight-description">Adds a new type of chart that enables end users to compare the performance of multiple values in different areas.</p>
                    </div> 
                  </a> 
-                 <a className="highlight-box" href="/docs/video-training/release/version-8.3#see-data-action">
+                 <a className="highlight-box" href="/docs/video-training/release/version-8.4#self-service-table-charts">
                  <div className="highlights-header-container">
                    <div className="highlight-title">Video <div className="highlights-icons icon-video"></div></div>
                    <div className="highlight-audience">Audience: 
@@ -238,8 +238,8 @@
                  </div>
                  <div className="highlights-body-container">
                   <div className="preview-videos preview-3"></div>
-                 <h3 className="highlight-title-body">See Data Action</h3>
-                   <p className="highlight-description">In Dashboard Builder, adds the see Data Action Type, enabling users to see the data in the dataset underlying the chart.</p>
+                 <h3 className="highlight-title-body">Self-Service Table Charts</h3>
+                   <p className="highlight-description">Adds the option for end users to manipulate various table chart configurations directly from the Dashboard View widget, without the need to open the Chart Builder.</p>
                    </div> 
                  </a> 
                </div>
