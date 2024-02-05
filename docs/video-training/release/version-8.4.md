@@ -4,8 +4,6 @@ title: Version 8.4
 sidebar_label: Version 8.4
 ---
 
->**Editorial Note**: Update the links when available
-
 ## Radar Chart
 <iframe src="//fast.wistia.net/embed/iframe/3837tbfgzy?videoFoam=true"
 allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"

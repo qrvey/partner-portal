@@ -5,11 +5,9 @@ sidebar_label: Upgrade Notes
 tags: [CloudOps Engineer]
 ---
 <div>
-:::danger :warning: **Warning:**
 
-Please review the notes in this document carefully before using the upgrade link located at the bottom of the page. **Failing to do so may result in breaking changes in your environment or product**. 
+>**Warning:** Please review the notes in this document carefully before using the upgrade link located at the bottom of the page. **Failing to do so may result in breaking changes in your environment or product**. 
 
-:::
 
 ### Downtime During Upgrade Process
 **Starting In Version: 8.4**  
