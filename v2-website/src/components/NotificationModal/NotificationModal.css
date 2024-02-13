@@ -1,0 +1,203 @@
+.NotificationModal button {
+    padding: 8px 15px;
+    background-color: #FF5300;
+    font-size: 12px;
+    color: white !important; 
+    margin-top: 10px;
+    border-radius: 2px;
+    width: fit-content;
+    align-self: self-end;
+}
+
+.NotificationModal p {
+    margin-bottom: 10px;
+}
+
+.NotificationModal label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.NotificationModal h2 {
+    font-size: 22px;
+    font-weight: 600 !important;
+}
+
+.NotificationModal {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+/* Estilo básico del toggle */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  
+  /* Oculta el checkbox */
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Estilo del slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FF5300;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FF5300;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(128px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Forma redonda del slider */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle-container span {
+    margin-left: 5px;
+  }
+
+  .toggle-container .slider {
+    margin-left: 0;
+  }
+
+  .toggle-switch {
+    position: relative;
+    top: -1px;
+  }
+
+  .dashboard-table {
+    width: 100%;
+    margin-top: 20px !important;
+    border-radius: 2px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+  }
+
+  .dashboard-table td {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #c0c0c0;
+  }
+
+  .dashboard-table .title-cell {
+    background-color: #F4F6F8;
+    color: black;
+    width: 50%;
+  }
+
+  .dashboard-table .content-cell {
+    background-color: #fff;
+    color: black;
+    width: 50%;
+  }
+
+  .dashboard-table .content-cell ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dashboard-table .content-cell ul li {
+    margin: 5px 0;
+    position: relative;
+    padding-right: 30px;
+  }
+
+  .dashboard-table .content-cell ul li input[type="checkbox"] {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  /* Redondear las esquinas de las celdas de las esquinas */
+  .dashboard-table tr:first-child td:first-child {
+    border-top-left-radius: 2px;
+  }
+  
+  .dashboard-table tr:first-child td:last-child {
+    border-top-right-radius: 2px;
+  }
+  
+  .dashboard-table tr:last-child td:first-child {
+    border-bottom-left-radius: 2px;
+  }
+  
+  .dashboard-table tr:last-child td:last-child {
+    border-bottom-right-radius: 2px;
+  }
+
+/* Oculta el checkbox original */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilo para el pseudo-elemento que se mostrará como el checkbox */
+.custom-checkbox span {
+  display: inline-block;
+  width: 16px; /* Ancho del checkbox */
+  height: 16px; /* Altura del checkbox */
+  background: white;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ccc; /* Borde gris cuando no está seleccionado */
+}
+
+/* Cuando el checkbox está marcado, cambia el color de fondo y muestra un ícono personalizado */
+.custom-checkbox input[type="checkbox"]:checked + span {
+  background-color: #FF5300; /* Fondo naranja */
+  border-color: #FF5300; /* Borde naranja */
+}
+
+/* Crea el ícono de "check" con pseudo-elementos */
+.custom-checkbox input[type="checkbox"]:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px; /* Ajusta para centrar el ícono en el checkbox */
+  top: 6px; /* Ajusta para centrar el ícono en el checkbox */
+  width: 8px; /* Ancho del ícono */
+  height: 5px; /* Altura del ícono */
+  border: solid white;
+  border-width: 0 2px 2px 0; /* Grosor de las líneas del ícono */
+  transform: rotate(45deg);
+}

@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import './NotificationSidebar.css';
+import EmailQueryModal from '../EmailQueryModal/EmailQueryModal'; // Asume que este es tu componente modal para el email
+import NotificationModal from '../NotificationModal/NotificationModal'; 
 
 function NotificationSidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+
+  const handleEmailQuery = (email) => {
+    // Aquí iría la lógica para consultar el email, por simplicidad, pasaremos directo a mostrar el modal de notificaciones
+    setIsEmailModalOpen(false); // Cierra el modal de consulta de email
+    setIsNotificationModalOpen(true); // Abre el modal de notificaciones
+  };
   
   // Ejemplo de array de notificaciones:
   const notifications = [
@@ -47,7 +57,10 @@ function NotificationSidebar() {
             </div>
           ))}
         </div>
+        <button style={{color: 'black'}} onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
       </div>
+      <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
+      <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} /* Aquí pasarías las props necesarias */ />
     </div>
   );
 }
