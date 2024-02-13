@@ -7,9 +7,14 @@ function NotificationSidebar() {
   // Ejemplo de array de notificaciones:
   const notifications = [
     {
-      title: "Qrvey 8.3",
-      description: "Version 8.3 of the Qrvey platform is now available to customers. This version includes several new features and performance improvements.",
+      title: "Qrvey 8.4",
+      description: "Version 8.4 of the Qrvey platform is now available to customers. This version includes several new features and performance improvements.",
       link: "/docs/release-notes/v8/release-last"
+    },
+    {
+      title: "End-of-life Schedule",
+      description: "We've added a new article that lists the features and endpoints that have been scheduled for deprecation. All features and endpoints will be supported for (1) year after the release date of the LTS version that contains the alternative.",
+      link: "/docs/release-notes/end-of-life"
     },
     {
       title: "NodeJS Deprecation",
