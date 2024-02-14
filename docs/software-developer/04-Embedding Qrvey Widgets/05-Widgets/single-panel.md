@@ -114,6 +114,7 @@ The following table lists the properties associated with this widget.
 | **panel.styles.tableHeaderFont**| `String`, set color for table header texts| No
 | **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| No
 | **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| No
+| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
 
 
 ## Code Samples

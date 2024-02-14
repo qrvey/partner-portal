@@ -90,6 +90,7 @@ The following table lists the properties associated with this widget.
 | **settings.styles.chartsMain** | `String`, set color for chart data points like bars, symbols and lines. | No | 
 | **settings.styles.themePalette** | `Array`, contains a maximum of 20 colors that will be used for chart data points. | No | 
 | **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br /><br />{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
+| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No  
 
 
 

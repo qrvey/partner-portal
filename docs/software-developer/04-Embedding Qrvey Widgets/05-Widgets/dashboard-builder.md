@@ -72,7 +72,8 @@ The following table lists the general properties associated with this widget.
 | **styles** | `Object`, a JSON object with properties that allow users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color.<br /><br />* **main_color**: `String`<br />* **main_text_color**: `String`<br />* **secondary_color**: `String`<br />* **icon_color**: `String`<br />* **tab_bar_color**: `String`<br />* **tab_font_color**: `String`<br />* **error_color**: `String` | No |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | No
 | **customTokens** | `Object`, JSON object used to set custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | No
-| **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. For more information, see "Configuring Personalization" below. | No
+| **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. For more information, see "Configuring Personalization" below. | No  
+| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
 
 
 

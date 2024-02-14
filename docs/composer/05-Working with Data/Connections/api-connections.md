@@ -38,6 +38,41 @@ If you do not see a sample cURL command for “Post Data” after clicking the P
 
 > **Note**:  Joins are not supported for datasets that use Push API source connections.
 
+
+## Executing the Push API Request
+To execute a Push API request, you will need to provide an API key. Use the API key associated with the Qrvey Data Router. For information on obtaining your API key, see [Frequently Asked Questions](../../../getting-started/faqs.md#where-can-i-find-my-api-key).
+
+The optimal payload size for the Push API is 1MB. You may make concurrent requests–you do not need to wait until one request completes before making another request. The maximum recommended number of concurrent requests is 100. 
+
+## Checking the Status of the Push API Request
+You can check the status of the Push API request using the following cURL command: 
+
+```
+curl --location --globoff '{{postdataUrl}}/{{jobId}}/status' \
+--header 'x-api-key: {{apikey}}'
+```
+
+The variables in the command are:
+* `postdataUrl`. Provided by Qrvey when your Qrvey instance was initially set up. For more information, see [Frequently Asked Questions](../../../getting-started/faqs.md#where-can-i-find-my-api-key).
+* `jobId`. Included in the response provided by the Push API request. 
+* `apikey`. Use the API key associated with the Qrvey Data Router. For information on obtaining your API key, see [Frequently Asked Questions](../../../getting-started/faqs.md#where-can-i-find-my-api-key).
+
+The possible statuses are:
+* Initializing
+* QueryingDatasources
+* PumpingDatasources
+* FillingJoinLakes
+* Joining
+* FillingEs
+* Complete
+* TerminatedExit
+* ErrorExit
+
+
+
+
+
+
 </div>
 
 

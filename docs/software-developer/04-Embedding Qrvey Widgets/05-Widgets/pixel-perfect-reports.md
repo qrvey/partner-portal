@@ -54,6 +54,7 @@ The following table lists the properties associated with this widget.
 | **clientId** | `String`, Unique identifier for the tenant end user. Required for using the Download Manager feature. The clientId must be set to a unique value for each tenant end user. | No |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **qv_token** | A more secure way to authenticate and authorize embedded widgets is through a Security Token requested as a backend-to-backend communication between your backend side of the host application and the Qrvey system. | Yes, if no api_key is provided |
+| **timezone** | `Object <TimezoneConfiguration>`, Overrides the time zone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).  | No |
 | **report_id** | `String`, used to embed a specific report. | No |
 | **show_embed_button** | `Boolean`, shows or hides the embed button. By default the embed button is hidden in embedded scenarios. | No |
 | **show_formulas_button** | `Boolean`, shows or hides the formula modal button in the toolbar. It is visible by default. | No |

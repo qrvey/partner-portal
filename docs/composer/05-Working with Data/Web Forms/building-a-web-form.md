@@ -8,7 +8,16 @@ displayed_sidebar: data-analyst
 ---
 <div style={{textAlign: "justify"}}>
 
-In this document, we’ll discuss the basics of building a web form and working with our various field and question types. 
+This article describes the basics of building a web form and working with the various field and question types. 
+
+## Creating a New Web Form
+To create a web form:
+1. In the Data section, display the Webforms tab, and click **New Web Form**. The Select a Web Form dialog displays. 
+2. Select the type of web form to create: **Form**, **Survey**, or **Quiz**. For more information, see [Overview of Web Forms](../Web%20Forms/overview-of-web-forms.md).
+3. Click **Create New**. The Design tab displays, ready for you to begin building the web form. 
+
+>**Note**: If web form templates exist for the selected web form type, the **Use a Template** option is also available. Web form templates can only be created via the Qrvey API. For more information, contact your Qrvey support representative. 
+  
 
 ## Starting From Scratch
 After you first choose which type of web form you want to create, you’ll find yourself on the **Design** tab of the web form builder. On this tab, you’ll define the structure of your form. You’ll also see tabs along the top labelled **Customize**, **Publish** and **Analyze**, all of which you’ll use later on in the building process. 
