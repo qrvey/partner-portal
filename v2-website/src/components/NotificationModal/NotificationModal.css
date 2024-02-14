@@ -110,7 +110,7 @@
     border-radius: 2px;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   .dashboard-table td {
@@ -138,9 +138,14 @@
   }
 
   .dashboard-table .content-cell ul li {
-    margin: 5px 0;
+    margin: 15px 0;
     position: relative;
     padding-right: 30px;
+    display: flex;
+  }
+
+  .dashboard-table .content-cell ul li:first-child {
+    margin: 0;
   }
 
   .dashboard-table .content-cell ul li input[type="checkbox"] {
@@ -193,11 +198,16 @@
 .custom-checkbox input[type="checkbox"]:checked + span::after {
   content: '';
   position: absolute;
-  left: 4px; /* Ajusta para centrar el ícono en el checkbox */
-  top: 6px; /* Ajusta para centrar el ícono en el checkbox */
+  left: 3px; /* Ajusta para centrar el ícono en el checkbox */
+  top: 2px; /* Ajusta para centrar el ícono en el checkbox */
   width: 8px; /* Ancho del ícono */
   height: 5px; /* Altura del ícono */
   border: solid white;
-  border-width: 0 2px 2px 0; /* Grosor de las líneas del ícono */
-  transform: rotate(45deg);
+  border-width: 1px 1px 0 0; /* Grosor de las líneas del ícono */
+  transform: rotate(130deg);
+}
+
+.custom-checkbox {
+  position: absolute;
+  right: 0;
 }

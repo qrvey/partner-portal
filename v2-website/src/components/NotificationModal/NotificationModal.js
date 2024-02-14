@@ -3,10 +3,44 @@ import Modal from 'react-modal';
 import './NotificationModal.css'; // Asegúrate de que la ruta es correcta
 
 const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
-  const [isEnabled, setIsEnabled] = React.useState(notificationStatus);
+  // Estado inicial basado en un objeto de ejemplo. Ajusta según tus datos reales.
+  const initialState = {
+    pp0001: false,
+    pp002: false,
+    pp003: false,
+    sa001: false,
+    sa002: false,
+    sa003: false,
+    pn001: false,
+    pn002: false,
+    cn001: false,
+  };
+
+  const [notificationPreferences, setNotificationPreferences] = React.useState(notificationStatus || initialState);
+  
+  const [isEnabled, setIsEnabled] = React.useState(true);
+
+  const handleGlobalToggleChange = (e) => {
+    setIsEnabled(e.target.checked);
+    if (!e.target.checked) {
+      // Establecer todos los valores en false si el interruptor global está desactivado
+      const disabledPreferences = Object.keys(notificationPreferences).reduce((acc, key) => {
+        acc[key] = false;
+        return acc;
+      }, {});
+      setNotificationPreferences(disabledPreferences);
+    }
+  };
+
+  const handleChange = (name, value) => {
+    setNotificationPreferences(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
 
   const handleSave = () => {
-    onSave(isEnabled);
+    onSave(notificationPreferences);
   };
 
   return (
@@ -31,156 +65,169 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
       }
     }} isOpen={isOpen} onRequestClose={onClose}>
       <h2>Notifications Preferences</h2>
-      <p>To unsubscribe from all notifications, disable the  toggle.</p>
-      <div className='toggle-container'><label className="toggle-switch">
-        <input
-          type="checkbox"
-          checked={isEnabled}
-          onChange={(e) => setIsEnabled(e.target.checked)}
-        />
-        <span className="slider round"></span>
-      </label>
-        <span>Show Notifications
-</span>
+      <p>To unsubscribe from all notifications, disable the toggle.</p>
+      <div className='toggle-container'>
+        <label className="toggle-switch">
+          <input
+            type="checkbox"
+            checked={isEnabled}
+            onChange={handleGlobalToggleChange}
+          />
+          <span className="slider round"></span>
+        </label>
+        <span>Show Notifications</span>
       </div>
-      <table class="dashboard-table">
-  <tr>
-    <td class="title-cell">Partner Portal</td>
-    <td class="content-cell">
-      <ul>
-        <li>New Release Notes Published <div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
-</li>
-        <li>Updates to Known Issues Article <div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
-</li>
-        <li>Update to Upgrade Notes <div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
-</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td class="title-cell">Service Announcements</td>
-    <td class="content-cell">
-      <ul>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- Outages or Services Interruptions</li>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- Feature Deprecation Notice</li>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- Security Incident</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td class="title-cell">Product News</td>
-    <td class="content-cell">
-      <ul>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- New Release Announcements</li>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- Patch Release Announcements</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td class="title-cell">Company News</td>
-    <td class="content-cell">
-      <ul>
-        <li><div className='custom-checkbox'>
-  <label>
-    <input
-      type="checkbox"
-      checked={isEnabled}
-      onChange={(e) => setIsEnabled(e.target.checked)}
-    />
-    <span></span> {/* Este span será estilizado para parecerse a un checkbox */}
-  </label>
-  
-</div>
- Survey Press Release</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+      <table className="dashboard-table" style={{ opacity: isEnabled ? 1 : 0.5, pointerEvents: isEnabled ? 'auto' : 'none' }}>
+        {/* Partner Portal */}
+        <tr>
+          <td className="title-cell">Partner Portal</td>
+          <td className="content-cell">
+            <ul>
+              <li>New Release Notes Published
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.pp0001}
+                      onChange={(e) => handleChange('pp0001', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+              <li>Updates to Known Issues Article
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.pp002}
+                      onChange={(e) => handleChange('pp002', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+              <li>Update to Upgrade Notes
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.pp003}
+                      onChange={(e) => handleChange('pp003', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        {/* Service Announcements */}
+        <tr>
+          <td className="title-cell">Service Announcements</td>
+          <td className="content-cell">
+            <ul>
+              <li>Outages or Services Interruptions
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.sa001}
+                      onChange={(e) => handleChange('sa001', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+              <li>Feature Deprecation Notice
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.sa002}
+                      onChange={(e) => handleChange('sa002', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+              <li>Security Incident
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.sa003}
+                      onChange={(e) => handleChange('sa003', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        {/* Product News */}
+        <tr>
+          <td className="title-cell">Product News</td>
+          <td className="content-cell">
+            <ul>
+              <li>New Release Announcements
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.pn001}
+                      onChange={(e) => handleChange('pn001', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+              <li>Patch Release Announcements
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.pn002}
+                      onChange={(e) => handleChange('pn002', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        {/* Company News */}
+        <tr>
+          <td className="title-cell">Company News</td>
+          <td className="content-cell">
+            <ul>
+              <li>Survey Press Release
+                <div className='custom-checkbox'>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={notificationPreferences.cn001}
+                      onChange={(e) => handleChange('cn001', e.target.checked)}
+                      disabled={!isEnabled}
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
       <button onClick={handleSave}>Save Preferences</button>
     </Modal>
   );

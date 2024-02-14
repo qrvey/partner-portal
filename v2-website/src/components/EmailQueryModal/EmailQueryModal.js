@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal'; // Asegúrate de tener esta librería instalada
-import './EmailQueryModal.css'
+import Modal from 'react-modal';
+import './EmailQueryModal.css';
 
 const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
   const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+
+  const validateEmail = (email) => {
+    // Expresión regular para validar el correo electrónico
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
+    return re.test(String(email).toLowerCase());
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onEmailSubmit(email);
+    if(validateEmail(email)) {
+      onEmailSubmit(email);
+      setEmailError(''); // Reiniciar el mensaje de error si el correo es válido
+    } else {
+      setEmailError('Please enter a valid email address.');
+    }
   };
 
   return (
@@ -42,6 +54,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
           required
           placeholder='Type Email'
         />
+        {emailError && <div style={{color: 'red'}}>{emailError}</div>}
         <button style={{color:'#FF5300'}} type="submit">OK</button>
       </form>
     </Modal>
