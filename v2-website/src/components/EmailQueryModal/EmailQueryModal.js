@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import './EmailQueryModal.css';
 
 const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
+  const [userEmail, setUserEmail] = useState('');
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
 
@@ -42,7 +43,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose}>
+    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')}>
       <form className='EmailQueryModal-form' onSubmit={handleSubmit}>
         <h2>Notifications Preferences</h2>
         <p>Enter your email address to set notifications preferences</p>

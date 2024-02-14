@@ -7,9 +7,11 @@ function NotificationSidebar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+  const [userEmail, setUserEmail] = useState('');
+
 
   const handleEmailQuery = (email) => {
-    // Aquí iría la lógica para consultar el email, por simplicidad, pasaremos directo a mostrar el modal de notificaciones
+    setUserEmail(email); // Guarda el email capturado
     setIsEmailModalOpen(false); // Cierra el modal de consulta de email
     setIsNotificationModalOpen(true); // Abre el modal de notificaciones
   };
@@ -60,7 +62,7 @@ function NotificationSidebar() {
         <button style={{color: 'black'}} onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
       </div>
       <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
-      <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} /* Aquí pasarías las props necesarias */ />
+      <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} userEmail={userEmail} /* Aquí pasarías las props necesarias */ />
     </div>
   );
 }

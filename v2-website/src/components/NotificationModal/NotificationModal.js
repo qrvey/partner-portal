@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import './NotificationModal.css'; // Asegúrate de que la ruta es correcta
 
-const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
+const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) => {
   // Estado inicial basado en un objeto de ejemplo. Ajusta según tus datos reales.
   const initialState = {
-    pp0001: false,
+    pp001: false,
     pp002: false,
     pp003: false,
     sa001: false,
@@ -19,6 +19,81 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
   const [notificationPreferences, setNotificationPreferences] = React.useState(notificationStatus || initialState);
   
   const [isEnabled, setIsEnabled] = React.useState(true);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      const apiURL = "https://demo.qrvey.com/devapi/v5/user/VkRfd5iis/app/9b21hQU3D/qrvey/ptokaq6lz/analytics/results/rows";
+      const data = {
+        logic: [
+          {
+            filters: [
+              {
+                operator: "AND",
+                expressions: [
+                  {
+                    questionid: "5G7NcDu9J",
+                    questionType: "TEXT_LABEL",
+                    validationType: "EQUAL",
+                    value: [userEmail] // Utiliza el email del usuario para la solicitud
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        skip: 0,
+        take: 50,
+        expanded: false,
+        select: [
+          {
+            questionid: "5G7NcDu9J",
+            questionType: "TEXT_LABEL"
+          },
+          {
+            questionid: "5i2wcfPxL",
+            questionType: "TEXT_LABEL"
+          }
+        ]
+      };
+
+      try {
+        const response = await fetch(apiURL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': 'd41d8cd98f00b204e9800998ecf8427e' // Asegúrate de reemplazarlo con tu clave API real
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (!response.ok) throw new Error('Network response was not ok.');
+
+        const json = await response.json();
+        const notificationConfigString = json.items.data[0][1];
+        const notificationConfigObject = processNotificationConfig(notificationConfigString);
+        setNotificationPreferences(prevState => ({ ...prevState, ...notificationConfigObject }));
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error fetching notification configuration:', error);
+        setIsLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [userEmail]);
+
+  const processNotificationConfig = (configString) => {
+    const configArray = configString.split("##").filter(Boolean).map(item => item.replace(/#/g, ''));
+    const configObject = configArray.reduce((acc, cur) => {
+      acc[cur] = true;
+      return acc;
+    }, {});
+    return configObject;
+  };
 
   const handleGlobalToggleChange = (e) => {
     setIsEnabled(e.target.checked);
@@ -39,9 +114,41 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
     }));
   };
 
-  const handleSave = () => {
-    onSave(notificationPreferences);
+  const handleSave = async () => {
+    const apiURL = 'https://demo.qrvey.com/devapi/v4/user/VkRfd5iis/app/9b21hQU3D/qollect/dataset/ptokaq6lz/pushapi/data/post';
+    const apiKey = 'd41d8cd98f00b204e9800998ecf8427e'; // Reemplaza con tu clave API real
+    const notificationConfig = Object.keys(notificationPreferences).filter(key => notificationPreferences[key]).map(key => `#${key}#`).join("");
+    // Prepara los datos. Asegúrate de que `email` y `notificationConfig` sean recogidos correctamente.
+    const dataToSend = {
+      datasetId: "ptokaq6lz",
+      data: [
+        {
+          email: userEmail, // Aquí deberías usar el email recogido
+          notificationConfig: notificationConfig,
+          frecuency: "INSTANT" // Asumiendo que "INSTANT" es el valor correcto
+        }
+      ]
+    };
+  
+    try {
+      const response = await fetch(apiURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': apiKey
+        },
+        body: JSON.stringify(dataToSend)
+      });
+  
+      if (!response.ok) throw new Error('Network response was not ok.');
+  
+      const responseData = await response.json();
+      console.log('Success:', responseData);
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
+  
 
   return (
     <Modal className='NotificationModal' style={{
@@ -63,8 +170,12 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose}>
-      <h2>Notifications Preferences</h2>
+    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')}>
+      {isLoading ? (
+      <div className="loader" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}></div>
+    ) : (
+      <div>
+        <h2>Notifications Preferences</h2>
       <p>To unsubscribe from all notifications, disable the toggle.</p>
       <div className='toggle-container'>
         <label className="toggle-switch">
@@ -88,8 +199,8 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
                   <label>
                     <input
                       type="checkbox"
-                      checked={notificationPreferences.pp0001}
-                      onChange={(e) => handleChange('pp0001', e.target.checked)}
+                      checked={notificationPreferences.pp001}
+                      onChange={(e) => handleChange('pp001', e.target.checked)}
                       disabled={!isEnabled}
                     />
                     <span></span>
@@ -229,6 +340,8 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, onSave }) => {
         </tr>
       </table>
       <button onClick={handleSave}>Save Preferences</button>
+      </div>
+      )}
     </Modal>
   );
 };
