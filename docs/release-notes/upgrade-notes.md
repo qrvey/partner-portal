@@ -19,7 +19,7 @@ __________________________
 **Starting In Version: 8.4**  
 
 A new API domain URL has been added to the deployment. For customers that use the default domain (for example, `xyz.qrveyapp.com`), the change is automatic and no action is required. 
-Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrade steps for 8.4+ with API Domain URL](https://www.notion.so/qrvey/Upgrade-steps-for-8-4-with-API-Domain-URL-e1f2af113fdc48e3aeb774ae794fe340). Qrvey Customer Support is available to assist with this change. 
+Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrading to Version 8.4 or Later with a Custom Domain](../deployment/upgrading-with-custom-domain.md). Qrvey Customer Support is available to assist with this change. 
 
 __________________________
 
