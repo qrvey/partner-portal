@@ -3,7 +3,7 @@ id: upgrading-new-version
 title: Upgrading to a New Version
 sidebar_label: Upgrading to a New Version
 tags: [CloudOps Engineer]
-sidebar_position: 7
+sidebar_position: 1
 displayed_sidebar: deployment-guide
 ---
 
