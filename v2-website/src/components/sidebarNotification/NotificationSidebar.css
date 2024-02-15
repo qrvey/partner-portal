@@ -26,7 +26,7 @@ button {
 }
 
 button:hover {
-  color: #E6773D;
+  color: #FF5300;
 }
 
 .close-btn {
@@ -43,7 +43,7 @@ button:hover {
 
 
 .close-btn:hover {
-  color: #E6773D;
+  color: #FF5300;
 }
 
 .close-btn:active {
@@ -99,7 +99,7 @@ button:hover {
 }
 
 .notification-list-link {
-  color: #E6773D;
+  color: #FF5300;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -108,7 +108,7 @@ button:hover {
 }
 
 .notification-list-link:hover {
-  color: #E6773D;
+  color: #FF5300;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -134,4 +134,26 @@ button:hover {
 .notification-content:hover {
   background-color: #f4faff;
   cursor: pointer;
+}
+
+.notifications-modal {
+  color: #FF5300;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Hellix;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.notifications-modal::hover {
+  text-decoration: underline;
+}
+
+.notifications-modal::before {
+  content: "⚙";
+  position: relative;
+  font-size: 20px;
+  margin-right: 5px;
+  top: 2px;
 }

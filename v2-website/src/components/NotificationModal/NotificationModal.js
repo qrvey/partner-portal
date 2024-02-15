@@ -38,7 +38,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
                     questionid: "5G7NcDu9J",
                     questionType: "TEXT_LABEL",
                     validationType: "EQUAL",
-                    value: [userEmail] // Utiliza el email del usuario para la solicitud
+                    value: [userEmail] // Asegúrate de que userEmail está correctamente definido.
                   }
                 ]
               }
@@ -59,29 +59,35 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
           }
         ]
       };
-
+    
       try {
         const response = await fetch(apiURL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'd41d8cd98f00b204e9800998ecf8427e' // Asegúrate de reemplazarlo con tu clave API real
+            'x-api-key': 'd41d8cd98f00b204e9800998ecf8427e' // Asegúrate de reemplazarlo con tu clave API real.
           },
           body: JSON.stringify(data)
         });
-
+    
         if (!response.ok) throw new Error('Network response was not ok.');
-
+    
         const json = await response.json();
-        const notificationConfigString = json.items.data[0][1];
-        const notificationConfigObject = processNotificationConfig(notificationConfigString);
-        setNotificationPreferences(prevState => ({ ...prevState, ...notificationConfigObject }));
-        setIsLoading(false);
+        if (json.items && json.items.data && json.items.data[0] && json.items.data[0].length > 1) {
+          const notificationConfigString = json.items.data[0][1];
+          const notificationConfigObject = processNotificationConfig(notificationConfigString);
+          setNotificationPreferences(prevState => ({ ...prevState, ...notificationConfigObject }));
+          setIsEnabled(true);
+        } else {
+          setIsEnabled(false);
+          console.error('Data format is not as expected:', json);
+        }
       } catch (error) {
         console.error('Error fetching notification configuration:', error);
-        setIsLoading(false);
       }
+      setIsLoading(false);
     };
+    
 
     fetchData();
   }, [userEmail]);
@@ -115,6 +121,13 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
   };
 
   const handleSave = async () => {
+    if (isEnabled && !Object.values(notificationPreferences).includes(true)) {
+      alert("Please select at least one notification preference before saving.");
+      return;
+    }
+
+    setIsLoading(true); 
+
     const apiURL = 'https://demo.qrvey.com/devapi/v4/user/VkRfd5iis/app/9b21hQU3D/qollect/dataset/ptokaq6lz/pushapi/data/post';
     const apiKey = 'd41d8cd98f00b204e9800998ecf8427e'; // Reemplaza con tu clave API real
     const notificationConfig = Object.keys(notificationPreferences).filter(key => notificationPreferences[key]).map(key => `#${key}#`).join("");
@@ -144,9 +157,11 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
   
       const responseData = await response.json();
       console.log('Success:', responseData);
+      onClose();
     } catch (error) {
       console.error('Error:', error);
     }
+    setIsLoading(false);
   };
   
 
@@ -161,7 +176,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
         height: 'max-content',
         maxHeight: '90vh',
         backgroundColor: 'white',
-        width: '650px',
+        width: '640px',
         maxWidth: '45%',
         position: 'absolute',
         left: '50%',
@@ -170,11 +185,14 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')}>
+    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')} ariaHideApp={false}>
       {isLoading ? (
       <div className="loader" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}></div>
     ) : (
-      <div>
+      <div className='NotificationModal'>
+        <a onClick={onClose} style={{float: 'right', cursor: 'pointer', background: 'none', border: 'none', fontSize: '1.8rem', color: '#C0C0C0', position: 'absolute', right: '30px', top: '25px'}}>
+        &times;
+      </a>
         <h2>Notifications Preferences</h2>
       <p>To unsubscribe from all notifications, disable the toggle.</p>
       <div className='toggle-container'>
@@ -189,7 +207,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
         <span>Show Notifications</span>
       </div>
       <table className="dashboard-table" style={{ opacity: isEnabled ? 1 : 0.5, pointerEvents: isEnabled ? 'auto' : 'none' }}>
-        {/* Partner Portal */}
+      <tbody>
         <tr>
           <td className="title-cell">Partner Portal</td>
           <td className="content-cell">
@@ -338,6 +356,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
             </ul>
           </td>
         </tr>
+        </tbody>
       </table>
       <button onClick={handleSave}>Save Preferences</button>
       </div>

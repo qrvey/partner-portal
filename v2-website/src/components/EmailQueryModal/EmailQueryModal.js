@@ -43,7 +43,10 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')}>
+    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')} ariaHideApp={false}>
+      <button onClick={onClose} style={{float: 'right', cursor: 'pointer', background: 'none', border: 'none', fontSize: '1.8rem', color: '#C0C0C0', position: 'absolute', right: '30px', top: '25px'}}>
+        &times;
+      </button>
       <form className='EmailQueryModal-form' onSubmit={handleSubmit}>
         <h2>Notifications Preferences</h2>
         <p>Enter your email address to set notifications preferences</p>

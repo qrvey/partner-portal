@@ -59,7 +59,7 @@ function NotificationSidebar() {
             </div>
           ))}
         </div>
-        <button style={{color: 'black'}} onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
+        <button className='notifications-modal' onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
       </div>
       <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
       <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} userEmail={userEmail} /* Aquí pasarías las props necesarias */ />

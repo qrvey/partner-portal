@@ -214,7 +214,7 @@
 
 .loader {
   border: 6px solid #f3f3f3; /* Color de fondo */
-  border-top: 6px solid #3498db; /* Color del spinner */
+  border-top: 6px solid #C0C0C0; /* Color del spinner */
   border-radius: 50%;
   width: 40px;
   height: 40px;
