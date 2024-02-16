@@ -154,7 +154,7 @@
     top: 5px;
   }
 
-  /* Redondear las esquinas de las celdas de las esquinas */
+
   .dashboard-table tr:first-child td:first-child {
     border-top-left-radius: 2px;
   }
@@ -171,39 +171,38 @@
     border-bottom-right-radius: 2px;
   }
 
-/* Oculta el checkbox original */
+
 .custom-checkbox input[type="checkbox"] {
   display: none;
 }
 
-/* Estilo para el pseudo-elemento que se mostrará como el checkbox */
+
 .custom-checkbox span {
   display: inline-block;
-  width: 16px; /* Ancho del checkbox */
-  height: 16px; /* Altura del checkbox */
+  width: 16px; 
+  height: 16px; 
   background: white;
   border-radius: 2px;
   position: relative;
   cursor: pointer;
-  border: 1px solid #ccc; /* Borde gris cuando no está seleccionado */
+  border: 1px solid #ccc; 
 }
 
-/* Cuando el checkbox está marcado, cambia el color de fondo y muestra un ícono personalizado */
 .custom-checkbox input[type="checkbox"]:checked + span {
-  background-color: #FF5300; /* Fondo naranja */
-  border-color: #FF5300; /* Borde naranja */
+  background-color: #FF5300; 
+  border-color: #FF5300; 
 }
 
-/* Crea el ícono de "check" con pseudo-elementos */
+
 .custom-checkbox input[type="checkbox"]:checked + span::after {
   content: '';
   position: absolute;
-  left: 3px; /* Ajusta para centrar el ícono en el checkbox */
-  top: 2px; /* Ajusta para centrar el ícono en el checkbox */
-  width: 8px; /* Ancho del ícono */
-  height: 5px; /* Altura del ícono */
+  left: 3px; 
+  top: 2px; 
+  width: 8px; 
+  height: 5px; 
   border: solid white;
-  border-width: 1px 1px 0 0; /* Grosor de las líneas del ícono */
+  border-width: 1px 1px 0 0; 
   transform: rotate(130deg);
 }
 
@@ -213,8 +212,8 @@
 }
 
 .loader {
-  border: 6px solid #f3f3f3; /* Color de fondo */
-  border-top: 6px solid #C0C0C0; /* Color del spinner */
+  border: 6px solid #f3f3f3; 
+  border-top: 6px solid #C0C0C0; 
   border-radius: 50%;
   width: 40px;
   height: 40px;

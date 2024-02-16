@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import './NotificationModal.css';
 import toast from 'react-hot-toast';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 
 const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) => {
-  // Estado inicial basado en un objeto de ejemplo. Ajusta según tus datos reales.
+
+  const { siteConfig } = useDocusaurusContext();
+  const { apiUrlNotificationPost, apiUrlNotificationResult, apiKey } = siteConfig.customFields;
+
   const initialState = {
     pp001: false,
     pp002: false,
@@ -25,9 +30,16 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
 
 
   useEffect(() => {
+    const resetPreferences = () => {
+      setNotificationPreferences(initialState);
+      setIsEnabled(true); 
+    };
+  
     const fetchData = async () => {
+      resetPreferences(); 
       setIsLoading(true);
-      const apiURL = "https://demo.qrvey.com/devapi/v5/user/VkRfd5iis/app/9b21hQU3D/qrvey/ptokaq6lz/analytics/results/rows";
+  
+      const apiURL = apiUrlNotificationResult;
       const data = {
         logic: [
           {
@@ -39,7 +51,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
                     questionid: "5G7NcDu9J",
                     questionType: "TEXT_LABEL",
                     validationType: "EQUAL",
-                    value: [userEmail] // Asegúrate de que userEmail está correctamente definido.
+                    value: [userEmail]
                   }
                 ]
               }
@@ -60,38 +72,38 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
           }
         ]
       };
-    
+  
       try {
         const response = await fetch(apiURL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': 'd41d8cd98f00b204e9800998ecf8427e' // Asegúrate de reemplazarlo con tu clave API real.
+            'x-api-key': apiKey
           },
           body: JSON.stringify(data)
         });
-    
+  
         if (!response.ok) throw new Error('Network response was not ok.');
-    
+  
         const json = await response.json();
         if (json.items && json.items.data && json.items.data[0] && json.items.data[0].length > 1) {
           const notificationConfigString = json.items.data[0][1];
           const notificationConfigObject = processNotificationConfig(notificationConfigString);
-          setNotificationPreferences(prevState => ({ ...prevState, ...notificationConfigObject }));
+          setNotificationPreferences(notificationConfigObject);
           setIsEnabled(true);
         } else {
           setIsEnabled(false);
-          console.error('Data format is not as expected:', json);
         }
       } catch (error) {
         console.error('Error fetching notification configuration:', error);
+        setIsEnabled(false); 
       }
       setIsLoading(false);
     };
-    
-
+  
     fetchData();
-  }, [userEmail]);
+  }, [userEmail]); 
+  
 
   const processNotificationConfig = (configString) => {
     const configArray = configString.split("##").filter(Boolean).map(item => item.replace(/#/g, ''));
@@ -105,7 +117,6 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
   const handleGlobalToggleChange = (e) => {
     setIsEnabled(e.target.checked);
     if (!e.target.checked) {
-      // Establecer todos los valores en false si el interruptor global está desactivado
       const disabledPreferences = Object.keys(notificationPreferences).reduce((acc, key) => {
         acc[key] = false;
         return acc;
@@ -129,17 +140,15 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
 
     setIsLoading(true); 
 
-    const apiURL = 'https://demo.qrvey.com/devapi/v4/user/VkRfd5iis/app/9b21hQU3D/qollect/dataset/ptokaq6lz/pushapi/data/post';
-    const apiKey = 'd41d8cd98f00b204e9800998ecf8427e'; // Reemplaza con tu clave API real
+    const apiURL = apiUrlNotificationPost;
     const notificationConfig = Object.keys(notificationPreferences).filter(key => notificationPreferences[key]).map(key => `#${key}#`).join("");
-    // Prepara los datos. Asegúrate de que `email` y `notificationConfig` sean recogidos correctamente.
     const dataToSend = {
       datasetId: "ptokaq6lz",
       data: [
         {
-          email: userEmail, // Aquí deberías usar el email recogido
+          email: userEmail, 
           notificationConfig: notificationConfig,
-          frecuency: "INSTANT" // Asumiendo que "INSTANT" es el valor correcto
+          frecuency: "INSTANT" 
         }
       ]
     };
@@ -165,7 +174,8 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
       toast.error('Failed to save preferences.');
     }
     setIsLoading(false);
-  };
+};
+
   
 
   return (
@@ -188,7 +198,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')} ariaHideApp={false}>
+    }} isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
       {isLoading ? (
       <div className="loader" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}></div>
     ) : (

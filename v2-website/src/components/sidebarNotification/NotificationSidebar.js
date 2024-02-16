@@ -12,12 +12,12 @@ function NotificationSidebar() {
 
 
   const handleEmailQuery = (email) => {
-    setUserEmail(email); // Guarda el email capturado
-    setIsEmailModalOpen(false); // Cierra el modal de consulta de email
-    setIsNotificationModalOpen(true); // Abre el modal de notificaciones
+    setUserEmail(email); 
+    setIsEmailModalOpen(false); 
+    setIsNotificationModalOpen(true); 
   };
   
-  // Ejemplo de array de notificaciones:
+
   const notifications = [
     {
       title: "Qrvey 8.4",

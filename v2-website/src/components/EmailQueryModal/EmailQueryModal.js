@@ -8,7 +8,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
   const [emailError, setEmailError] = useState('');
 
   const validateEmail = (email) => {
-    // Expresión regular para validar el correo electrónico
+
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
     return re.test(String(email).toLowerCase());
   }
@@ -17,7 +17,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
     e.preventDefault();
     if(validateEmail(email)) {
       onEmailSubmit(email);
-      setEmailError(''); // Reiniciar el mensaje de error si el correo es válido
+      setEmailError(''); 
     } else {
       setEmailError('Please enter a valid email address.');
     }
@@ -43,7 +43,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
         padding: '30px',
         borderRadius: '20px',
       }
-    }} isOpen={isOpen} onRequestClose={onClose} appElement={document.getElementById('root')} ariaHideApp={false}>
+    }} isOpen={isOpen} onRequestClose={onClose} ariaHideApp={false}>
       <button onClick={onClose} style={{float: 'right', cursor: 'pointer', background: 'none', border: 'none', fontSize: '1.8rem', color: '#C0C0C0', position: 'absolute', right: '30px', top: '25px'}}>
         &times;
       </button>
