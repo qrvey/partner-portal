@@ -8,7 +8,7 @@
   transition: right 0.3s;
   overflow-y: auto;
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
-  z-index: 9999999;
+  z-index: 999;
 }
 
 .notification-sidebar.open {

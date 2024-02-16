@@ -27,7 +27,7 @@ const EmailQueryModal = ({ isOpen, onClose, onEmailSubmit }) => {
     <Modal style={{
       overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
-        zIndex: 99999999
+        zIndex: 9999
       },
       content: {
         color: 'black',

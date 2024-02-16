@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import './NotificationModal.css'; // Asegúrate de que la ruta es correcta
+import './NotificationModal.css';
+import toast from 'react-hot-toast';
 
 const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) => {
   // Estado inicial basado en un objeto de ejemplo. Ajusta según tus datos reales.
@@ -122,7 +123,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
 
   const handleSave = async () => {
     if (isEnabled && !Object.values(notificationPreferences).includes(true)) {
-      alert("Please select at least one notification preference before saving.");
+      toast.error("Please select at least one notification preference before saving.");
       return;
     }
 
@@ -157,9 +158,11 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
   
       const responseData = await response.json();
       console.log('Success:', responseData);
+      toast.success('Preferences saved successfully!');
       onClose();
     } catch (error) {
       console.error('Error:', error);
+      toast.error('Failed to save preferences.');
     }
     setIsLoading(false);
   };
@@ -169,7 +172,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
     <Modal className='NotificationModal' style={{
       overlay: {
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
-        zIndex: 99999999
+        zIndex: 9999
       },
       content: {
         color: 'black',
