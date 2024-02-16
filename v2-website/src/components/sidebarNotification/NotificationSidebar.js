@@ -1,8 +1,21 @@
 import React, { useState } from 'react';
 import './NotificationSidebar.css';
+import EmailQueryModal from '../EmailQueryModal/EmailQueryModal'; // Asume que este es tu componente modal para el email
+import NotificationModal from '../NotificationModal/NotificationModal'; 
+import { Toaster } from 'react-hot-toast';
 
 function NotificationSidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+  const [userEmail, setUserEmail] = useState('');
+
+
+  const handleEmailQuery = (email) => {
+    setUserEmail(email); // Guarda el email capturado
+    setIsEmailModalOpen(false); // Cierra el modal de consulta de email
+    setIsNotificationModalOpen(true); // Abre el modal de notificaciones
+  };
   
   // Ejemplo de array de notificaciones:
   const notifications = [
@@ -52,7 +65,30 @@ function NotificationSidebar() {
             </div>
           ))}
         </div>
+        <button className='notifications-modal' onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
       </div>
+      <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
+      <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} userEmail={userEmail} />
+      <Toaster 
+  toastOptions={{
+    success: {
+      style: {
+        background: 'green',
+        color: 'white',
+      },
+    },
+    error: {
+      style: {
+        background: 'red',
+        color: 'white',
+      },
+    },
+  }}
+  containerStyle={{
+    zIndex: 999999999999,
+  }}
+/>
+
     </div>
   );
 }
