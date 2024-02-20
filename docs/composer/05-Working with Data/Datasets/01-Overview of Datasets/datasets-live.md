@@ -108,6 +108,15 @@ To create a Geolocation Group you have to map your address data column or column
 
 You can give your geolocation group a name to identify it with.
 
+### Using Formula Builder with Live Connect Datasets
+Formula Builder provides two modes for creating formulas. In most cases, select **Standardized Syntax**. This mode enables you to create formulas using a standardized syntax that is compatible with any database connected to the Qrvey platform. If you want to use the specific syntax of the database, select **Data Engine Syntax (legacy)**.  
+
+![formula-builder-standardized-syntax-82](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/formula-builder-20/formula-builder-standardized-syntax-82.png)  
+
+For more information on Standardized Syntax, see [Using Standardized Syntax Mode](../03-Analyze/10-Formula%20Builder/using-standardized-syntax.md).
+
+
+
 ## Optimizing the Live Connect Configuration
 
 The performance of your live connection may vary depending on the size of the dataset and the size of the database cluster. Performance issues may occur if the database cluster is not sized appropriately for the dataset. Qrvey recommends that your live connect data source returns results in under 30 seconds to prevent timeout errors. To ensure optimal performance, scale the infrastructure of your live connect data source by:
