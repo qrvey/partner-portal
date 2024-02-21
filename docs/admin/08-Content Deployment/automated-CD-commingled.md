@@ -43,12 +43,12 @@ Perform the following steps using the [Content Deployment](../08-Content%20Deplo
 
 Execute the following steps as part of a programmatic routine from the **Dev** environment:
 
-1. Call the GetAllDeploymentDefinitions() endpoint.
+1. Call the [GetAllDeploymentDefinitions()](https://qrvey.stoplight.io/docs/qrvey-api-doc/40cdaed8ecd8b-get-all-deployment-definitions) endpoint.
 2. Parse the `items` object array in the response body to find the object with the `name` property that matches `Master Data App`, as well as the object where `name` matches `Master Content App`.
 3. Extract the `definitionId` property value from both objects returned in the response, because you will need them for the next API call.
-4. Call the ExportDeploymentDefinition() endpoint, passing in the definition ID for the Master Data App deployment definition, making sure to capture the `jobTrackerId` value from the response.
-5. Call the ExportDeploymentDefinition() endpoint, passing in the definition ID for the Master Content App deployment definition, making sure to capture the `jobTrackerId` value from the response.
-6. Make a call to the GetJobStatus() endpoint for each of the job tracker IDs.
+4. Call the [ExportDeploymentDefinition()](https://qrvey.stoplight.io/docs/qrvey-api-doc/e83fd7ad23195-export-deployment-definition) endpoint, passing in the definition ID for the Master Data App deployment definition, making sure to capture the `jobTrackerId` value from the response.
+5. Call the [ExportDeploymentDefinition()](https://qrvey.stoplight.io/docs/qrvey-api-doc/e83fd7ad23195-export-deployment-definition) endpoint, passing in the definition ID for the Master Content App deployment definition, making sure to capture the `jobTrackerId` value from the response.
+6. Make a call to the [GetJobStatus()](https://qrvey.stoplight.io/docs/qrvey-api-doc/010c3982be464-get-job-status-by-job-tracker-id) endpoint for each of the job tracker IDs.
 7. Repeat the previous step until the response returns a URL path to collect both of the ZIP files for the exported deployment definitions.
 
 >**Note**:  The time it takes to export a deployment definition is heavily dependent on the number of content objects selected for deployment.
@@ -58,15 +58,15 @@ You should now have two separate ZIP files, one for the Master Data App and the 
 ## Prepare Target App(s) for Deployment
 Execute the following steps as part of a programmatic routine from the **Prod** environment:
 
-1. Call the CreateServer() endpoint and pass in the following request parameters:
+1. Call the [CreateServer()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2a028d399e95b-create-server) endpoint and pass in the following request parameters:
     * `name` = any name you want
     * `description` = any description you want
     * `host` = fully qualified URL to this Qrvey instance
     * `apiKey` = your Prod API key
 2. Parse the response, extract the value from the `adminserverid` property and save it off somewhere so it can be recalled for future deployments.  *Perform steps 1 and 2 once…and only once*.
-3. Call the GetUploadURL() endpoint for deployment definitions and save the `url` and `key` properties from the response.
+3. Call the [GetUploadURL()](https://qrvey.stoplight.io/docs/qrvey-api-doc/76c769bdb3fe5-get-upload-url-definitions) endpoint for deployment definitions and save the `url` and `key` properties from the response.
 4. Use the URL provided to make a separate POST request to upload the ZIP file for the Master Data App to the target S3 bucket.
-5. Wait for the ZIP file to finish uploading to the target S3 bucket, and then call the UploadDeploymentDefinition() endpoint, setting the following request parameters:
+5. Wait for the ZIP file to finish uploading to the target S3 bucket, and then call the [UploadDeploymentDefinition()](https://qrvey.stoplight.io/docs/qrvey-api-doc/7b3389f298ff9-upload-deployment-definition) endpoint, setting the following request parameters:
     * `key` = “key” value from the GetUploadURL() response
     * `definitionName` = any name you want
     * `description` = any description you want that describes the content you are deploying
@@ -77,18 +77,18 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 ## Deploy the Master Data App
 Execute the following steps as part of a programmatic routine from the **Prod** environment:
 
-1. Call the CreateDeploymentJob() endpoint, passing in any name and description that you want.
+1. Call the [CreateDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job) endpoint, passing in any name and description that you want.
 2. Extract the value from the `deploymentJobId` property in the response.
-3. Call the GetAllDeploymentDefinitions() endpoint.
+3. Call the [GetAllDeploymentDefinitions()](https://qrvey.stoplight.io/docs/qrvey-api-doc/40cdaed8ecd8b-get-all-deployment-definitions) endpoint.
 4. Parse the `items` object array in the response body to find the object with the `name` property that matches `Master Data App`.
 5. Extract the `definitionId` property value returned in the response, because you will need it for the next API call.
-6. Call the CreateDeploymentJobBlock() endpoint, passing in the following request parameters:
+6. Call the [CreateDeploymentJobBlock()](https://qrvey.stoplight.io/docs/qrvey-api-doc/d5cf25a16aa4c-create-deployment-job-block) endpoint, passing in the following request parameters:
     * `definitionId` = ID of the Master Data App deployment definition
     * `adminServerId` = ID of the target server to deploy the content to  (Prod)
     * `selectAllUsers` = false
 7. Extract the `deploymentJobBlockId` value from the response.
-8. Call the GetUserList() endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding “userid” property.
-9. Call the AddRecipientsToDeploymentJobBlock() endpoint, using the `deploymentJobId` and `deploymentJobBlockId` as path parameters for calling the endpoint.  Use the following request body JSON:
+8. Call the [GetUserList()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2f4a96d989b65-get-user-list) endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding `userid` property.
+9. Call the [AddRecipientsToDeploymentJobBlock()](https://qrvey.stoplight.io/docs/qrvey-api-doc/3d9dfa5aab257-add-recipients-to-deployment-job-block) endpoint, using the `deploymentJobId` and `deploymentJobBlockId` as path parameters for calling the endpoint.  Use the following request body JSON:
 
 ```json
 { 
@@ -128,28 +128,28 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 ```
 
 10. Make sure you pass values for each of the parameters you created for the shared dataset’s connection information.  You should have at least one parameter for each connection’s host URL, which will need to change when you deploy this app and load the shared datasets.
-11. Call the ExecuteDeploymentJob() endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
+11. Call the [ExecuteDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/0246facc766fb-execute-deployment-job) endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
 12. Parse the `jobTrackerId` value from the response.
-13. Call the GetJobStatus() endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`.  This endpoint returns lots of useful information about the deployment of the content objects.
+13. Call the [GetJobStatus()](https://qrvey.stoplight.io/docs/qrvey-api-doc/010c3982be464-get-job-status-by-job-tracker-id) endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`.  This endpoint returns lots of useful information about the deployment of the content objects.
 
 >**Note**:  You must wait until the Master Data App has finished deploying before continuing with the deployment of the Master Content App.
 
 ## Deploy the Master Content App
 Execute the following steps as part of a programmatic routine from the **Prod** environment:
 
-1. Call the CreateDeploymentJob() endpoint, passing in any name and description that you want.
+1. Call the [CreateDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job) endpoint, passing in any name and description that you want.
 2. Extract the value from the `deploymentJobId` property in the response.
-3. Call the GetAllDeploymentDefinitions() endpoint.
+3. Call the [GetAllDeploymentDefinitions()](https://qrvey.stoplight.io/docs/qrvey-api-doc/40cdaed8ecd8b-get-all-deployment-definitions) endpoint.
 4. Parse the `items` object array in the response body to find the object with the `name` property that matches `Master Content App`.
 5. Extract the `definitionId` property value returned in the response, because you will need it for the next API call.
-6. Call the CreateDeploymentJobBlock() endpoint, passing in the following request parameters:
+6. Call the [CreateDeploymentJobBlock()](https://qrvey.stoplight.io/docs/qrvey-api-doc/d5cf25a16aa4c-create-deployment-job-block) endpoint, passing in the following request parameters:
     * `definitionId` = ID of the Master Content App deployment definition
     * `adminServerId` = ID of the target server to deploy the content to (Prod)
     * `selectAllUsers` = false
 7. Extract the `deploymentJobBlockId` value from the response.
-8. Call the GetUserList() endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding `userid` property.
-9. Call the GetAllDatasets() endpoint to find the matching dataset IDs for all shared datasets that the dataset views should reference once deployed to the target environment.
-10. Call the AddRecipientsToDeploymentJobBlock() endpoint, using the `deploymentJobId` and `deploymentJobBlockId` as path parameters for calling the endpoint.  Use the following request body JSON:
+8. Call the [GetUserList()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2f4a96d989b65-get-user-list) endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding `userid` property.
+9. Call the [GetAllDatasets()](https://qrvey.stoplight.io/docs/qrvey-api-doc/ae33c9e237eb3-get-all-datasets) endpoint to find the matching dataset IDs for all shared datasets that the dataset views should reference once deployed to the target environment.
+10. Call the [AddRecipientsToDeploymentJobBlock()](https://qrvey.stoplight.io/docs/qrvey-api-doc/3d9dfa5aab257-add-recipients-to-deployment-job-block) endpoint, using the `deploymentJobId` and `deploymentJobBlockId` as path parameters for calling the endpoint.  Use the following request body JSON:
 
 
 ```json
@@ -173,9 +173,9 @@ Execute the following steps as part of a programmatic routine from the **Prod** 
 }
 ```
 
-11. Call the ExecuteDeploymentJob() endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
+11. Call the [ExecuteDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/0246facc766fb-execute-deployment-job) endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
 12. Parse the `jobTrackerId` value from the response.
-13. Call the GetJobStatus() endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`.  This endpoint returns lots of useful information about the deployment of the content objects.
+13. Call the [GetJobStatus()](https://qrvey.stoplight.io/docs/qrvey-api-doc/010c3982be464-get-job-status-by-job-tracker-id) endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`.  This endpoint returns lots of useful information about the deployment of the content objects.
 
 >**Note**:  The content token for a shared dataset begins with the string `shared_data`.  Here is an example of what the content token might look like for a shared dataset called “Demo Data”:  
 >`{{shared_data.demo_data}}`
