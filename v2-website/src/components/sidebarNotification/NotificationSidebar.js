@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 import './NotificationSidebar.css';
+import EmailQueryModal from '../EmailQueryModal/EmailQueryModal'; // Asume que este es tu componente modal para el email
+import NotificationModal from '../NotificationModal/NotificationModal'; 
+import { Toaster } from 'react-hot-toast';
 
 function NotificationSidebar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
+  const [isNotificationModalOpen, setIsNotificationModalOpen] = useState(false);
+  const [userEmail, setUserEmail] = useState('');
+
+
+  const handleEmailQuery = (email) => {
+    setUserEmail(email); 
+    setIsEmailModalOpen(false); 
+    setIsNotificationModalOpen(true); 
+  };
   
-  // Ejemplo de array de notificaciones:
+
   const notifications = [
     {
       title: "Qrvey 8.4",
@@ -37,8 +50,12 @@ function NotificationSidebar() {
           <i className="fas fa-bell"></i>
           <p>What’s New</p>
         </div>
-        <button className="close-btn" onClick={() => setIsOpen(false)}>X</button>
+        <button className="close-btn" onClick={() => setIsOpen(false)}></button>
         <div className='notification-list'>
+          <div className='notifications-button-modal' onClick={() => setIsEmailModalOpen(true)}>
+            <div className='notifications-modal-button-icon'>⚙</div>
+          <div className='notifications-modal'>Notification Settings</div>
+          </div>
           {notifications.map((notification, index) => (
             <div key={index} className='notification-content'>
               <div className='notification-list-header'>
@@ -53,6 +70,28 @@ function NotificationSidebar() {
           ))}
         </div>
       </div>
+      <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
+      <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} userEmail={userEmail} />
+      <Toaster 
+  toastOptions={{
+    success: {
+      style: {
+        background: 'green',
+        color: 'white',
+      },
+    },
+    error: {
+      style: {
+        background: 'red',
+        color: 'white',
+      },
+    },
+  }}
+  containerStyle={{
+    zIndex: 999999999999,
+  }}
+/>
+
     </div>
   );
 }

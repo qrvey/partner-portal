@@ -46,8 +46,6 @@ let currentPageInfo = window.location.href;
             }
             console.log(CURRENT_PAGE);
           if (CURRENT_PAGE === '/'){
-            console.log("here");
-            fetchPopularArticles();
           }
         }, 5000);
     }

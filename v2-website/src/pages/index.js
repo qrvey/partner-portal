@@ -4,98 +4,20 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+ import PopularArticlesList from "../components/PopularArticles";
  import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
  import "react-tabs/style/react-tabs.css";
  
  const React = require("react");
  
- const CompLibrary = {
-   Container: (props) => <div {...props}></div>,
-   GridBlock: (props) => <div {...props}></div>,
-   MarkdownBlock: (props) => <div {...props}></div>,
- };
- 
  import Layout from "@theme/Layout";
- 
- const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
- const Container = CompLibrary.Container;
- const GridBlock = CompLibrary.GridBlock;
  
  class Index extends React.Component {
    constructor(props) {
-     const { config: siteConfig } = props;
      super(props);
-     this.categories = [
-       {
-         name: "Documentation",
-         path: siteConfig.baseUrl + "docs/release-notes/release-last",
-         iconUrl: `${siteConfig.baseUrl}img/cards/docs.svg`,
-         topLinks: [
-           {
-             link: siteConfig.baseUrl + "docs/release-notes/release-last",
-             name: "Release Notes",
-           },
-           {
-             link: siteConfig.baseUrl + "docs/get-started/get-started-intro",
-             name: "Getting Started",
-           },
-           {
-             link:
-               siteConfig.baseUrl + "docs/get-started/get-started-architecture",
-             name: "Architecture",
-           },
-         ],
-       },
-       {
-         name: "Videos",
-         path: siteConfig.baseUrl + "docs/video-training/release/version-6.5",
-         topLinks: [
-           {
-             link:
-               siteConfig.baseUrl +
-               "docs/video-training/building-qrvey-sample/new-webforms",
-             name: "Web Forms",
-           },
-           {
-             link:
-               siteConfig.baseUrl +
-               "docs/video-training/building-qrvey-sample/new-workflows",
-             name: "Workflows",
-           },
-           {
-             link:
-               siteConfig.baseUrl +
-               "docs/video-training/building-qrvey-sample/new-datalinks",
-             name: "Data Links",
-           },
-         ],
-         iconUrl: `${siteConfig.baseUrl}img/cards/videos.svg`,
-       },
-       {
-         name: "FAQs",
-         path: siteConfig.baseUrl + "docs/faqs/faqs-intro",
-         topLinks: [
-           {
-             link: siteConfig.baseUrl + "docs/faqs/ask-us/",
-             name: "Ask Us a Question",
-           },
-         ],
-         iconUrl: `${siteConfig.baseUrl}img/cards/faqs.svg`,
-       },
-     ];
    }
  
    render() {
-     const { config: siteConfig, language = "" } = this.props;
-     //const background_title = "url('" + siteConfig.baseUrl + "img/top-fold-background.jpg')";
- 
-     const Categories = () => {
-       const categoriesElem = this.categories.map((elem, id) => (
-         <Category key={id} value={elem} />
-       ));
-       return <div className="flex-categories-container">{categoriesElem}</div>;
-     };
  
      const Category = () => {
        return (
@@ -298,7 +220,7 @@
       return (
         <div className="new-popular-articles">
           <h2 className="highlight-title-body"><b>Other Popular Content</b></h2>
-          <div className="popular-articles-list-home"></div>
+          <PopularArticlesList/>
         </div>
       );
     };
@@ -315,16 +237,6 @@
            </div>
          </div>
          </div>
-         {this.props.config.homepagescripts &&
-           this.props.config.homepagescripts.map((source, idx) => {
-             return (
-               <script
-                 type="text/javascript"
-                 key={"script" + idx}
-                 src={source}
-               />
-             );
-           })}
        </div>
      );
    }

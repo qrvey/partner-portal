@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   "title": "Qrvey Documentation",
   "tagline": "Qrvey Documentation",
@@ -10,7 +12,6 @@ module.exports = {
   "scripts": [
     "/js/custom.js",
     "/js/user.js",
-    '/js/homepage.js'
   ],
   "stylesheets": [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
@@ -27,9 +28,6 @@ module.exports = {
         "system-ui"
       ]
     },
-    homepagescripts: [
-      "/js/homepage.js",
-    ],
     rules: [{
       test: /\.css$/,
       use: ["style-loader", "css-loader", "postcss-loader"]
@@ -183,5 +181,12 @@ module.exports = {
       "links": [],
       "copyright": `Copyright © ${new Date().getFullYear()} Qrvey`,
     },
+  },
+  customFields: {
+    apiUrlHomeResult: process.env.PUBLIC_API_URL_HOMEPAGE_RESULTS,
+    apiUrlHomePost: process.env.PUBLIC_API_URL_HOMEPAGE_POST,
+    apiUrlNotificationPost: process.env.PUBLIC_API_URL_NOTIFICATION_POST,
+    apiUrlNotificationResult: process.env.PUBLIC_API_URL_NOTIFICATION_RESULTS,
+    apiKey: process.env.PUBLIC_API_KEY_QRVEY,
   },
 }
