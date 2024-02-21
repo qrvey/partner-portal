@@ -50,8 +50,12 @@ function NotificationSidebar() {
           <i className="fas fa-bell"></i>
           <p>What’s New</p>
         </div>
-        <button className="close-btn" onClick={() => setIsOpen(false)}>X</button>
+        <button className="close-btn" onClick={() => setIsOpen(false)}></button>
         <div className='notification-list'>
+          <div className='notifications-button-modal' onClick={() => setIsEmailModalOpen(true)}>
+            <div className='notifications-modal-button-icon'>⚙</div>
+          <div className='notifications-modal'>Notification Settings</div>
+          </div>
           {notifications.map((notification, index) => (
             <div key={index} className='notification-content'>
               <div className='notification-list-header'>
@@ -65,7 +69,6 @@ function NotificationSidebar() {
             </div>
           ))}
         </div>
-        <button className='notifications-modal' onClick={() => setIsEmailModalOpen(true)}>Notification Settings</button>
       </div>
       <EmailQueryModal isOpen={isEmailModalOpen} onClose={() => setIsEmailModalOpen(false)} onEmailSubmit={handleEmailQuery} />
       <NotificationModal isOpen={isNotificationModalOpen} onClose={() => setIsNotificationModalOpen(false)} userEmail={userEmail} />

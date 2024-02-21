@@ -203,8 +203,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
       <div className="loader" style={{marginLeft: 'auto', marginRight: 'auto', marginTop: '20px'}}></div>
     ) : (
       <div className='NotificationModal'>
-        <a onClick={onClose} style={{float: 'right', cursor: 'pointer', background: 'none', border: 'none', fontSize: '1.8rem', color: '#C0C0C0', position: 'absolute', right: '30px', top: '25px'}}>
-        &times;
+        <a className='close-btn-noti-modal' onClick={onClose}>
       </a>
         <h2>Notifications Preferences</h2>
       <p>To unsubscribe from all notifications, disable the toggle.</p>
