@@ -138,33 +138,24 @@ button:hover {
   background-color: #f4faff;
   cursor: pointer;
 }
-
 .notifications-modal {
   color: #FF5300;
   font-size: 14px;
   font-weight: 600;
   font-family: Hellix;
-  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .notifications-modal::hover {
   text-decoration: underline;
 }
 
-.notifications-modal-button-icon {
-  font-size: 30px;
-  color: #FF5300;
-  margin-right: 10px;
-}
-
-.notifications-button-modal {
-  background-color: #F6F6F6;
-  padding-left: 17px;
-  margin-top: -10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
+.notifications-modal::before {
+  content: "⚙";
+  position: relative;
+  font-size: 20px;
+  margin-right: 5px;
+  top: 2px;
 }

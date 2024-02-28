@@ -216,7 +216,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
           />
           <span className="slider round"></span>
         </label>
-        <span>Show Notifications</span>
+        <span>Send email notifications</span>
       </div>
       <table className="dashboard-table" style={{ opacity: isEnabled ? 1 : 0.5, pointerEvents: isEnabled ? 'auto' : 'none' }}>
       <tbody>
@@ -237,7 +237,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
                   </label>
                 </div>
               </li>
-              <li>Updates to Known Issues Article
+              <li>Updates to Known Issues
                 <div className='custom-checkbox'>
                   <label>
                     <input
@@ -250,7 +250,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
                   </label>
                 </div>
               </li>
-              <li>Update to Upgrade Notes
+              <li>Updates to Upgrade Notes
                 <div className='custom-checkbox'>
                   <label>
                     <input
@@ -271,7 +271,7 @@ const NotificationModal = ({ isOpen, onClose, notificationStatus, userEmail }) =
           <td className="title-cell">Service Announcements</td>
           <td className="content-cell">
             <ul>
-              <li>Outages or Services Interruptions
+              <li>Outages or Service Interruptions
                 <div className='custom-checkbox'>
                   <label>
                     <input
