@@ -39,7 +39,7 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
 1. Log in to AWS Console and navigate to DynamoDB service.
 2. Find a table called “qrveyDeploymentApp_Config” -> Explore Table Items
 3. Update the following records in this table and add/update the following properties. Please note that if you have multiple instances in the same region then each configID will have a prefix with the InstanceName. 
-   a. configID = DeploymentParameters or “<InstanceName>_DeploymentParameters”
+   a. configID = DeploymentParameters or “&#60;InstanceName&#62;_DeploymentParameters”
       i. appResourceValues
          1. [*CustomDomain*] adminUnifiedBackendURL - replace the composer url part
          2. [*CustomDomain*] adminUnifiedURL - replace the composer url part
@@ -53,14 +53,14 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
          10. [*CustomDomain*] NoVaSSLCertificateARN - add or update this value to the SSL Certificate for your custom domain in us-east-1 region. If your instance is already in us-east-1 then use the same value as SSLCertificateARN
          11. [*CustomDomain*] widgetURL - Add or update this to the widget URL with “https://”. If you have an existing custom subdomain for widgets and would like to continue using it then set it to the custom subdomain. Otherwise you can set it to the Composer URL which is the default.
          12. [*CustomDomain*] widgetBaseURL - Same value as Widget URL but without “https://”
-   b. configID = WidgetCodePipeline or <InstanceName>_WidgetCodePipeline
+   b. configID = WidgetCodePipeline or &#60;InstanceName&#62;_WidgetCodePipeline
       i. cloudfrontDistributionId - Set the Distribution ID of a cloudfront distribution for Widgets matching this instance. If it does not exist, add this property.
       ii. [*CustomDomain*] cloudfrontDomainName - set this to Composer or Widget URL with “https://”. If you require Widgets to continue using the old widgets domain (usually required for CSP or Whitelisting) then use the old Widget URL for this value. Otherwise, use the Composer URL.
-   c. configID = AdminCodePipeline or <InstanceName>_AdminCodePipeline
+   c. configID = AdminCodePipeline or &#60;InstanceName&#62;_AdminCodePipeline
       i. appResourceValues
          1. [*CustomDomain*] adminUnifiedURL - Replace the Composer URL part
          2. [*CustomDomain*] adminUnifiedBackendURL - replace the Composer URL part
-   d. configID = MicroservicesCodePipeline or <InstanceName>_MicroservicesCodePipeline
+   d. configID = MicroservicesCodePipeline or &#60;InstanceName&#62;_MicroservicesCodePipeline
       i. appResourceValues
          1. [*CustomDomain*] apiDomainURL - add or update this property with new API domain URL
          2. [*CustomDomain*] composerURL - add or update this property with the Composer URL.
@@ -90,7 +90,7 @@ Now you are ready to trigger the upgrade. Make sure to use the correct InstanceN
 At this point, you can follow these steps using the API or UI. The instructions below are using the API. For UI, Just click on Upgrade button and wait for the upgrade to finish. 
 
 ### Step 4.1: Initialize
-This step has to be done every time you deploy the Installer template. Call the following API to initialize the Installer. Replace <Auto-Deploy-App-URL> with the URL from [Step 2](#step-2-deploying-the-installer-template).
+This step has to be done every time you deploy the Installer template. Call the following API to initialize the Installer. Replace &#60;Auto-Deploy-App-URL&#62; with the URL from [Step 2](#step-2-deploying-the-installer-template).
 
 ```
 curl --location --request GET 'http://<Auto-Deploy-App-URL>/api/v1/init'
