@@ -17,7 +17,7 @@ AWS has announced that it is deprecating NodeJS 12, 14, and 16. To avoid any iss
 AWS has identified the following deprecation dates for NodeJS 12, 14, and 16 managed Lambda runtimes:
 * NodeJS 12 was fully deprecated on April 30, 2023.
 * NodeJS 14 will begin deprecation on November 27, 2023.
-* NodeJS 16 will begin deprecation on March 11, 2024.
+* NodeJS 16 will begin deprecation on June 12, 2024.
 
 Existing instances of the Qrvey platform that use the deprecated NodeJS runtimes will continue to operate. However, you will not be able to apply changes to existing instances or deploy new instances. 
 
