@@ -44,6 +44,7 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
 
       i. appResourceValues
 
+    | # | Property | Task |
     | --- | --- | --- | 
     | 1. | [*CustomDomain*] adminUnifiedBackendURL | replace the composer url part |
     | 2. | [*CustomDomain*] adminUnifiedURL | replace the composer url part |
@@ -51,7 +52,7 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
     | 4. | [*MultipleDeployments*] [*ExternalIdentityPoolId*] AWSLocationRegion | Set it to the region where the cloudformation template with IdentityPoolId (AWS Location) is deployed. |
     | 5. | [*CustomDomain*] composerURL | update this to Composer URL. |
     | 6. | [*MultipleDeployments*] [*ExternalIdentityPoolId*] enableLocation | Set to “false” if the AWS Location IdentityPoolId is coming from a stack/region outside of this environment. |
-    | 7. [*MultipleDeployments*] [*ExternalIdentityPoolId*] LocationIdentityPoolID | This value would exist only if the IdentityPoolID was defined outside of this environment. This is usually true for multiple deployments in the same region and enableLocation is false. If it exists make sure it has the correct IdentityPoolID. |
+    | 7. | [*MultipleDeployments*] [*ExternalIdentityPoolId*] LocationIdentityPoolID | This value would exist only if the IdentityPoolID was defined outside of this environment. This is usually true for multiple deployments in the same region and enableLocation is false. If it exists make sure it has the correct IdentityPoolID. |
     | 8. | [*MultipleDeployments*] [*ExternalIdentityPoolId*]  useExistingAWSLocation | Set this to true if enableLocation is false and LocationIdentityPoolID is set to a valid ID. |
     | 9. | [*CustomDomain*] SSLCertificateARN | Set it to the certificate ARN for your custom domain from the Same region as the Instance. |
     | 10. | [*CustomDomain*] NoVaSSLCertificateARN | Add or update this value to the SSL Certificate for your custom domain in us-east-1 region. If your instance is already in us-east-1 then use the same value as SSLCertificateARN |
@@ -68,6 +69,7 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
 
       i. appResourceValues
 
+    | # | Property | Task |
     | --- | --- | --- |
     | 1. | [*CustomDomain*] adminUnifiedURL | Replace the Composer URL part |
     | 2. | [*CustomDomain*] adminUnifiedBackendURL | Replace the Composer URL part |
@@ -76,6 +78,7 @@ The Qrvey Deployment app uses a DynamoDB table to persist data about the instanc
 
       i. appResourceValues
 
+    | # | Property | Task |
     | --- | --- | --- |
     | 1. | [*CustomDomain*] apiDomainURL | Add or update this property with new API domain URL. |
     | 2. | [*CustomDomain*] composerURL | Add or update this property with the Composer URL. |
