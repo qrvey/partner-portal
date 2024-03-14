@@ -256,6 +256,6 @@ To modify the internal space of supported components, use the padding variables.
 
 |**Variable name**|**Functionality**|**Example**|
 | :- | :- | :- |
-|**--qv-an-padding-chart-panel-header**|allows you to modify the internal space of the header of the chart panel component|<ModalButton content={contents[0].padding[0]}/>|
+|**--qv-an-padding-chart-panel-header**|Modifies the internal space of the header of the chart panel component|<ModalButton content={contents[0].padding[0]}/>|
 
 </div>

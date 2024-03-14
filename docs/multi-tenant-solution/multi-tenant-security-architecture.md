@@ -165,7 +165,7 @@ Here is an example of what the `asset_permissions` property would look like when
 }
 ```
 
->**Note**:  The `asset_permissions` property is only supported by the Dashboard Builder widget.
+>**Note**:  The `asset_permissions` property is only supported by the Dashboard Builder and Dashboard View widgets.
 
 
 ### Feature Permissions
