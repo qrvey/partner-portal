@@ -8,18 +8,27 @@ tags: [CloudOps Engineer]
 
 >**Warning:** Please review the notes in this document carefully before using the upgrade link located at the bottom of the page. **Failing to do so may result in breaking changes in your environment or product**. 
 
+<!-- 
+### UPGRADE NOTES TITLE
+**Starting In Version: 8.5 LTS**  
+
+`<UPGRADE NOTES GO HERE>`
+
+__________________________ 
+-->
+
 
 ### Downtime During Upgrade Process
 **Starting In Version: 8.4**  
 
-If you are upgrading the Qrvey Platform from a version older than 8.4 (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
+If you are upgrading the Qrvey Platform from a version older than 8.5 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
 __________________________
 
 ### New API Domain URL
 **Starting In Version: 8.4**  
 
 A new API domain URL has been added to the deployment. For customers that use the default domain (for example, `xyz.qrveyapp.com`), the change is automatic and no action is required. 
-Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrading to Version 8.4 or Later with a Custom Domain](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-with-custom-domain.md). Qrvey Customer Support is available to assist with this change. 
+Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrading to Version 8.5 LTS or Later with a Custom Domain](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-with-custom-domain.md). Qrvey Customer Support is available to assist with this change. 
 
 __________________________
 
@@ -61,10 +70,11 @@ Admin Center is fully serverless as of version 7.5. This change does not affect 
 
 * The URL for the Admin Center application has been changed to  *[ComposerURL]/admin/app/#/*.
 * Any Qrvey APIs with the paths *https://[id]-admin.qrveyapp.com* or *https://[id]-admin-backend.qrveyapp.com* has to be changed to *https://[id].qrveyapp.com/admin/app/#/*.
+
 __________________________
 
 ## Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-wnzhm.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.5-wunhh.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
  
 If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 

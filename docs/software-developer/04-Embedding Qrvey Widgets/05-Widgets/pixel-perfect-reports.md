@@ -59,6 +59,7 @@ The following table lists the properties associated with this widget.
 | **show_embed_button** | `Boolean`, shows or hides the embed button. By default the embed button is hidden in embedded scenarios. | No |
 | **show_formulas_button** | `Boolean`, shows or hides the formula modal button in the toolbar. It is visible by default. | No |
 | **parameter_values** | `Object. {key1: value, key2: value}`, you can set the value of a parameter from the configuration object. This value will override the default value set for the parameter. | No |
+| **default_mode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | No |
 
 
 ## Code Samples

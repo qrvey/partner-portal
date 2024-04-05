@@ -89,6 +89,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/v8/release-8.4"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/v8/release-8.3"
         },
         {
