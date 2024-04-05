@@ -20,8 +20,8 @@ function NotificationSidebar() {
 
   const notifications = [
     {
-      title: "Qrvey 8.4",
-      description: "Version 8.4 of the Qrvey platform is now available to customers. This version includes several new features and performance improvements.",
+      title: "Qrvey 8.5",
+      description: "Version 8.5 of the Qrvey platform is now available to customers. This version includes several new features and performance improvements.",
       link: "/docs/release-notes/v8/release-last"
     },
     {

@@ -21,14 +21,14 @@ __________________________
 ### Downtime During Upgrade Process
 **Starting In Version: 8.4**  
 
-If you are upgrading the Qrvey Platform from a version older than 8.5 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
+If you are upgrading the Qrvey Platform from a version older than 8.4 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
 __________________________
 
 ### New API Domain URL
 **Starting In Version: 8.4**  
 
 A new API domain URL has been added to the deployment. For customers that use the default domain (for example, `xyz.qrveyapp.com`), the change is automatic and no action is required. 
-Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrading to Version 8.5 LTS or Later with a Custom Domain](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-with-custom-domain.md). Qrvey Customer Support is available to assist with this change. 
+Customers that use a custom domain need to set up the new domain with their custom domain provider. For more information, see [Upgrading to Version 8.4 LTS or Later with a Custom Domain](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-with-custom-domain.md). Qrvey Customer Support is available to assist with this change. 
 
 __________________________
 
