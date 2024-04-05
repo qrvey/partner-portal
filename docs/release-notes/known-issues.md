@@ -22,21 +22,9 @@ sidebar_label: Known Issues
 
 * **QV-13881 - Deleted datasets listing for creation of other datasets under special circumstances**: When a user deletes an public index of a dataset and tries to create a new dataset from that dataset, the application shows the dataset that was deleted.
 
-
-* **AN-21962 - Grouped Table keeps vertical borders**: In Table charts, when a user groups tables and removes borders, the vertical borders reappear.
-
 * **AN-21489 - "In" Date Filter Error**: When using a Date Filter in a dashboard, the "In" operator incorrectly starts from tomorrow instead of today.
 
-
-
-
-
-
 * **AN-20834 - Relative date not updating when changing operator**: When the user edits a relative date filter and changes to the other operator, the filter endpoint is not updated and the filter does not display in the filter list. 
-
-* **AN-20934 - Embed Button Visible on AN panel**: When the user embeds the AN panel, the **Embed Analyze view** button is visible.
-
-* **AN-19723 - Confusing behavior of disabled filters when edited**: When adding a global filter and then disabling and consequently editing it, the list of values refreshes but the value is not found.
 
 * **AN-19497 - Maps - poor error message when column or geo group is removed**: When the user removes the Geo group after creating a dot map, the error message is not descriptive.
 
@@ -57,23 +45,15 @@ sidebar_label: Known Issues
 * **AN-15688 - Geo Map Chart Performance Issue**: Geo map charts that are associated with datasets or web forms with more than 5M records are slow to render. 
 
 
-
 * **AT-16574 - Work Flows filters documentation**: Updates to Work Flows filters that were implemented in version 8.2 are not documented in Partner Portal. 
 
 * **AT-16572 - No functionality to publish/unpublish individual Dashboards**: The platform does not provide the ability to publish and unpublish individual dashboards.
-
-* **AT-16571 - Token is displayed in Filter Tooltip**: When filtering charts that use date columns, tokens incorrectly appear in tooltips instead of the filter value.
 
 * **AT-16564 - In Flows, Array object values are not inserted**: When a user attempts to insert a new record with a Workflow into a dataset with JSON array object columns that have been flattened, the flattened columns do not receive any values.
 
 * **AT-16269 - Dashboard Builder - Use Lambda alias in the Target Group**: The Page Builder Lambda alias was not properly registered as a target for Dashboard Builder endpoints.
 
 * **AT-16217 - Inconsistency in API parameter naming**: The naming convention of certain parameters is inconsistent, even when returned by the same endpoint.
-
-
-
-
-
 
 * **AT-14778 - Dashboard Drill not replacing existing filter value when filter already exists on the target dashboard**: If the target page has a filter applied, users may expect it to be replaced by the incoming filter from a dashboard drill, if it is on the same data column. This is currently not the behavior.
 
@@ -84,11 +64,6 @@ sidebar_label: Known Issues
 * **AT-14197 - Exports failing when an orphan filter is applied**: If an orphan filter is applied to exports in an Automation Flow, the user receives an email notification that the report could not be exported.
 
 * **AT-12531 - Automatic Column Links added after creating a chart not being applied**: The chart needs to be created after the Automatic Column Link has been created in order for the links to work.
-
-
-* **EX-3096 - Filter applied to the attachment does not display**: When a Flow exports a PDF with a filter via email, the filter is correctly applied, but the “Filters Applied:“ label incorrectly displays “No Filters Applied”.
-
-
 
 * **EX-1436 - Lack of support for Unicode characters in PDF exports**: When a user exports data that contains unicode characters, the downloaded file displays squares in place of the characters.
 
