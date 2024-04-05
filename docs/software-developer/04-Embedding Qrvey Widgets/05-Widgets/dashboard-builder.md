@@ -74,8 +74,7 @@ The following table lists the general properties associated with this widget.
 | **customTokens** | `Object`, JSON object used to set custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | No
 | **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. For more information, see "Configuring Personalization" below. | No  
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
-
-
+| **themeid** | String, theme ID to use in the component. | No
 
 ### Configuring Personalization
 The **personalization** object setting controls customization options for the Dashboard Builder widget and supports the following properties at this time:

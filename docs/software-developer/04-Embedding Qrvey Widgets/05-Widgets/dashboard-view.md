@@ -88,7 +88,7 @@ The following table lists the properties associated with this widget.
 | **customTokens** | `Object`, JSON object used to set custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | No
 | **clientid** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user. | Yes, for certain features
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No 
-
+| **themeid** | String, theme ID to use in the component | No
 
 ## Showing and Hiding Features
 In the Dashboard View widget, the `featurePermission` object enables you to create a customized view by showing and hiding specific features. The properties table below lists all the features that you can show or hide. 
@@ -258,6 +258,7 @@ The following table describes the properties of the `styles` object.
 | **canvasBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page
 | **pageViewButtonBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
 | **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
+
 
 
 ## Events
