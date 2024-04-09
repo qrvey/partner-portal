@@ -110,7 +110,10 @@ pipelines:
             - node
           script:
             - cd v2-website
+            - npm install
             - npm run build:prod
+            - npm install replace@1.0.0 -g --force
+            - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" docusaurus.config.js
             - cd static/js
             - replace "MKT_METADATAID" "marketing_prod" custom.js
             - cd ../..
