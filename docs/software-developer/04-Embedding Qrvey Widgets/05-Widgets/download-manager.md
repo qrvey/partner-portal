@@ -7,7 +7,7 @@ sidebar_position: 2
 displayed_sidebar: software-developer
 ---
 
-The Download Manager widget enables users to access and manage exported files in a central location. For more information about this feature, see [Download Manager](../../../composer/03-Managing%20Your%20User%20Profile/download-manager.md). 
+The Download Manager widget enables users to access and manage exported files in a central location. For more information about this feature, see [Download Manager](../../../composer/download-manager.md). 
 
 Download Manager filters the files displayed based on user ID and client ID. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. If you do not define a user ID and client ID for a widget, all exports performed using the widget will not be accessible from Download Manager.
 

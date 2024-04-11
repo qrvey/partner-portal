@@ -1,8 +1,9 @@
 ---
 id: overview-of-settings
-title: Overview of Settings
-sidebar_label: Overview of Settings
+title: Application Settings
+sidebar_label: Application Settings
 tags: [Data Analyst]
+sidebar_position: 4
 displayed_sidebar: data-analyst
 ---
 
@@ -21,6 +22,5 @@ In the top section you can update the name and the description of the applicatio
 In the next area, you can choose either a light or dark background for your application as well as the primary color that will be used for your toolbar and navigation elements.
 
 ![3_settings](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.7_settings/3_settings.png#thumbnail)
-
 
 </div>

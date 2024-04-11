@@ -221,7 +221,7 @@ To download a file, click the Download icon on the toolbar and select one of the
 * PDF
 * Excel
 
-Use Download Manager to access and manage exported files. For more information, see [Download Manager](../../03-Managing%20Your%20User%20Profile/download-manager.md). 
+Use Download Manager to access and manage exported files. For more information, see [Download Manager](../../download-manager.md). 
 
 ### Add a page header
 Dashboard Builder enables you to add a customized page header to all your dashboards. 

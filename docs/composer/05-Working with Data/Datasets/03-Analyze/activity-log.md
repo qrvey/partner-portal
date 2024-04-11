@@ -9,7 +9,9 @@ displayed_sidebar: data-analyst
 
 <div style={{textAlign: "justify"}}>
 
-The *Activity Log* records all major activity in your user account across all of your applications. It logs events in an application, such as creation, deletion, and major changes, as well as sending or receiving applications. Click on the **Activity Log** tab in the top toolbar to access this feature.
+The *Activity Log* records all major activity in your user account across all of your applications. Each data set also has its own Activity Log. It logs events in an application, such as creation, deletion, and major changes, as well as sending or receiving applications. 
+
+Click on the **Activity Log** tab in the top toolbar to access this feature.
 
 ![activity-log](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.5_activity-log/1_activity-log.png#thumbnail-60)
 

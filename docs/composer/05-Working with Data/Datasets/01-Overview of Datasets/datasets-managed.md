@@ -214,9 +214,6 @@ If you remain on the Design tab during the data load process, when it completes,
 
 ![Summary-View](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/18datasets.png#thumbnail-60)
 
-Events related to the data load process are logged in the Activity Log. If any errors or issues occur with the data load, check the Activity Log for more information. 
+Events related to the data load process are logged in the [Activity Log](../../../activity-log.md). If any errors or issues occur with the data load, check the Activity Log for more information. 
 
-## Activity Log
-The Activity Log records all major activity for the dataset, including dataset creation, updates to dataset structure, data loads, and data synchronization jobs. The options available in the dataset-level Activity Log are the same as the Activity Log at the application level. For more information, see [Activity Log](../../../04-Managing%20Applications/activity-log.md). 
 </div>
-

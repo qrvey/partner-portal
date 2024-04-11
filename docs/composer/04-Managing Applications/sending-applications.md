@@ -9,7 +9,7 @@ displayed_sidebar: data-analyst
 
 <div style={{textAlign: "justify"}}>
 
-You can package up your entire application, including any data you’ve added or collected, and send it to another Qrvey user so that they can either use the app themselves or build upon it. 
+You can package up your entire application, including any data you’ve added or collected, and send it to another Qrvey user so that they can either use the app themselves or build upon it.
 
 In this article, we’ll review the steps needed for both sending, and receiving, an application. 
 
