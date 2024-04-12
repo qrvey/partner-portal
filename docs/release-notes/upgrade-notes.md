@@ -10,7 +10,7 @@ tags: [CloudOps Engineer]
 
 <!-- 
 ### UPGRADE NOTES TITLE
-**Starting In Version: (8.5 LTS)**  
+**Starting In Version: 8.5 (LTS)**  
 
 `<UPGRADE NOTES GO HERE>`
 
