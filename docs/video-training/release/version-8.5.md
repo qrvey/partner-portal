@@ -6,7 +6,7 @@ sidebar_label: Version 8.4
 
 <div>
 
-## No Videos for 8.5 LTS Release
+## No Videos for 8.5 (LTS) Release
 
 <br />
 <br />

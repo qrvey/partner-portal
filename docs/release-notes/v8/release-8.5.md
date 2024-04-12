@@ -1,11 +1,11 @@
 ---
 id: release-last
-title: Qrvey 8.5
-sidebar_label: Qrvey 8.5
+title: Qrvey 8.5 (LTS)
+sidebar_label: Qrvey 8.5 (LTS)
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
-# Qrvey 8.5 LTS
+# Qrvey 8.5 (LTS)
 
 Release Date: 2024-04-10
 
