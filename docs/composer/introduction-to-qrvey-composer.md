@@ -21,7 +21,7 @@ The platform is tailored for the specific needs of SaaS companies, enabling your
   Your browser does not support the video tag.
 </video>
 
-After you've signed up or logged in, you enter the Applications Page, where you can access and manage **[Your Profile](../composer/manage-your-profile.md)**, platform **[Activity Logs](../composer/activity-log.md)**, the **[Download Manager](../composer/download-manager.md)**, and **[Applications](../composer/04-Managing%20Applications/overview-of-applications.md)**.
+After you've signed up or logged in, you enter the Applications Page, where you can access and manage **[Your Profile](../composer/manage-your-profile.md)**, platform **[Activity Logs](../composer/activity-log.md)**, the **[Download Manager](./download-manager.md)**, and **[Applications](./overview-of-applications.md)**.
 
 An application is a self-contained analytics project, composed of five modules:
 
@@ -29,4 +29,4 @@ An application is a self-contained analytics project, composed of five modules:
 2. **[Dashboards](./06-Building%20Dashboards/overview-of-dashboards.md)** — A robust data dashboard system to create, browse, configure, customize, and deploy interactive data visualizations.
 3. **[Automation](./09-Automation/overview-of-automation.md)** — Set triggers, then define conditions and actions to automate tasks within an application.
 4. **[Pixel-Perfect Reports](./10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)** — Build highly customizable and detailed reports out of your data and data visualizations.
-5. **[Settings](../composer/04-Managing%20Applications/overview-of-settings.md)** — Configure the global settings for an application.
+5. **[Settings](./overview-of-applications.md#application-settings)** — Configure the global settings for an application.

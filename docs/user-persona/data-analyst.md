@@ -14,7 +14,7 @@ The primary technical resource for the Data Analyst is the [Qrvey Composer User 
 
 If you’re new to working with the Qrvey platform as a Data Analyst, start with the following resources:
 * [Introduction to Qrvey Composer](../composer/introduction-to-qrvey-composer.md)
-* [Overview of Qrvey Applications](../composer/04-Managing%20Applications/overview-of-applications.md)
+* [Overview of Qrvey Applications](../composer/overview-of-applications.md)
 * [Introduction to Data in Qrvey](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)
 * [Overview of Dashboards](../composer/06-Building%20Dashboards/overview-of-dashboards.md)
 * [Overview of Chart Builder](../composer/07-Creating%20Charts/overview-of-chart-builder.md)

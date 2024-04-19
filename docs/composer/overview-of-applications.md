@@ -34,12 +34,8 @@ To create an application, follow these steps.
 3. Provide a **Name** and **Description**, then click **Next**.
 4. Select either **Webform** or **Datasets** and your application will be created.
 
-Next, you'll want to import data into your Application. To learn more, please see the [Introduction to Data in Qrvey](../05-Working%20with%20Data/introduction-to-data-in-qrvey.md).
+Next, you'll want to import data into your Application. To learn more, please see the [Introduction to Data in Qrvey](./05-Working%20with%20Data/introduction-to-data-in-qrvey.md).
 
-<!-- 
-## View an Application
-
--->
 
 ## Delete an Application
 

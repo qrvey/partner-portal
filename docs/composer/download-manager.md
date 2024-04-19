@@ -7,9 +7,9 @@ sidebar_position: 3
 displayed_sidebar: data-analyst
 ---
 
-> This feature is disabled by default and must be enabled your team admin. For details, please see [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md).
+> This feature is disabled by default and must be enabled by your team admin. For details, please see [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md).
 
-Download Manager provides a central location to access and manage both exported files and scheduled exports. Exported files are created using the Download option available in a variety of features in Qrvey Composer, including Analyze, Dashboards, Automation, Subscriptions, and Pixel-perfect Reports. Types of exported files include images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). The exported files are stored in AWS, and they are automatically deleted after seven days. For more information, see [Exporting Data](../05-Working%20with%20Data/Datasets/03-Analyze/exporting.md).
+Download Manager provides a central location to access and manage both exported files and scheduled exports. Exported files are created using the Download option available in a variety of features in Qrvey Composer, including Analyze, Dashboards, Automation, Subscriptions, and Pixel-perfect Reports. Types of exported files include images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). The exported files are stored in AWS, and they are automatically deleted after seven days. For more information, see [Exporting Data](./05-Working%20with%20Data/Datasets/03-Analyze/exporting.md).
 
 To open Download Manager, click the Download Manager icon at the top right of the Qrvey Composer interface (next to your user name):
 
@@ -26,4 +26,4 @@ You can perform the following tasks in Download Manager:
 * To refresh the list of files, click on the **Refresh** button.
 * To schedule an export at a specified time, or to manage an existing scheduled export, see [Scheduling Exports](./scheduling-exports.md).
 
-Download Manager is an embeddable widget. Click the **Embedding Options** button to obtain the helper code. Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. For more information on embedding widgets, see [Embedding Overview](../../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
+Download Manager is an embeddable widget. Click the **Embedding Options** button to obtain the helper code. Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. For more information on embedding widgets, see [Embedding Overview](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
