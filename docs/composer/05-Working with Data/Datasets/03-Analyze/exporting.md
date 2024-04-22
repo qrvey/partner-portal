@@ -9,65 +9,52 @@ displayed_sidebar: data-analyst
 
 <div style={{textAlign: "justify"}}>
 
-Qrvey supports exporting charts, tables, dashboards, and reports to print-friendly formats such as PDF, as well as data dumps to CSV for further analysis in other tools such as Excel. 
-
-Users can export the entire dashboard with all the panels or simply choose a single panel and download only that one. Depending on the chosen format and the context, exports can be of the data (CSV, CSV Summary, and PDF options) or the design / visual layout (JPG, PDF). Download Manager provides a central location to access and manage exported files. For more information, see [Download Manager](../../../download-manager.md).
-
-Data can be exported from the end-user view, either from a published or embedded page, or any of the following Qrvey Composer UIs:
-* Dataset Analyze view
-* Dashboard Builder
-* Individual Chart panels on any of those three 
-* Summary panels on any of those
-* Workflows: Send Email Action
-
-The available export formats are:
-* **CSV** - For data export
-* **CSV Summary** - For data export 
-* **JPG** - For visual layout export
-* **PDF** - For visual layout export, as well as data export in the case of table charts
-
-The availability and the behavior of these export options depend on the context in which they are used and are captured in the following matrix.
+Qrvey supports exporting charts, tables, dashboards, and reports to print-friendly formats for further analysis in tools like Excel. Users can export an entire dashboard with all its panels or simply choose a single panel. Download Manager provides a central location to access and manage exported files. For more information, see [Download Manager](../../../download-manager.md).
 
 
-| **Context \ Format** | **CSV** | **CSV Summary** | **JPG** | **PDF*** |
+## Export Formats
+
+The following export formats are available in the following UIs.
+
+| **Context / Format** | **CSV** | **CSV Summary** | **JPG** | **PDF*** |
 | --- | --- | --- | --- | --- |
-Dataset Analyze > Tabular view | yes | no | no |no |
-Dataset Analyze > Other views | yes | no | yes | yes |
-Dashboard Builder | yes | no | no | yes |
-Published / Embedded Page | yes | no | no | yes |
-Chart panel | yes | yes**| yes | yes |
-Summary Panel | yes | no | yes| yes |
-Workflow > Email attachment | no | no | no | yes |
+| Dataset Analyze > Tabular View | yes | no | no | no |
+| Dataset Analyze > Other Views | yes | no | yes | yes |
+| Dashboard Builder | yes | no | no | yes |
+| Published / Embedded Page | yes | no | no | yes |
+| Chart Panel | yes | yes**| yes | yes |
+| Summary Panel | yes | no | yes| yes |
+| Workflow > Email Attachment | no | no | no | yes |
 
 
 *PDF export comes in two flavors: Layout Export and Data Export. The latter applies to table charts only and everything else is exported in the layout mode. See the <a href="#pdf-export">PDF Export</a> section for more on this.
 
-**CSV Summary is available for most charts and it exports the aggregated data, as it appears in the chart. See the <a href="#csv-summary-export">CSV Summary Export</a> section for more on this. 
+**CSV Summary is available for most charts and it exports the aggregated data, as it appears in the chart. See the <a href="#csv-summary-export">CSV Summary Export</a> section for more on this.
 
-When exporting charts, if for example you add a filter and there isn’t any data found meeting the parameters you had set, you’ll see a message in your PDF and CSV exports informing you that there weren’t any records to export.
+<!-- When exporting charts, if for example you add a filter and there isn’t any data found meeting the parameters you had set, you’ll see a message in your PDF and CSV exports informing you that there weren’t any records to export. -->
 
 
->**Note 1**: It is recommended that you wait for all visuals to fully render before attempting to export them. This is required in order to get a reliable export.  
+> **Note 1:** All export types take time to complete. And depends on the size of the data and the complexity of the exported content. The product notifies the user of this and gives them the option to continue work while the download completes in the background.
 
-> **Note 2**: All exports take some time to complete. This time depends on the size of the data and the complexity of the exported content. The product notifies the user of this and gives them the option to continue work while the download completes in the background.
+> **Note 2:** If any “Max” limits (Max Data Points, Max records, Max columns, Max rows, Max slices and Max groups) have been applied to the chart, those limits apply to the exported data as well.
 
->**Note 3**: If any “Max” limits (Max Data Points, Max records, Max columns, Max rows, Max slices and Max groups) have been applied to the chart, those limits apply to the exported data, also.
-
-## Overriding the Max Data Points setting
+## Override Max Data Points
 
 When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. 
 
-To determine whether the Max Data Points field has been overridden, use the [Get General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/6addb9e3c599e-get-general-settings) and note the `maxDataPointExport` parameter. If value is set to `0`, all exports use the Max Data Point value set in charts. If value is set to `-1`, the export feature ignores the Max Data Point configuration and exports all data.
+To **determine whether the Max Data Points field has been overridden**, use the [Get General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/6addb9e3c599e-get-general-settings) to configure the `maxDataPointExport` parameter.
+- If value is set to `0`, all exports use the Max Data Point value set in charts.
+- If value is set to `-1`, the export feature ignores the Max Data Point configuration and exports all data.
 
-To change the override setting, use the [Update General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/1757128781684-update-general-settings) and provide the desired value in the `maxDataPointExport` parameter. Set the value to `0` to use the Max Data Point value set in the chart. Set the value to `-1` to ignore the value set in the chart and export all data. 
-
+To **change the override setting**, use the [Update General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/1757128781684-update-general-settings) and provide the desired value in the `maxDataPointExport` parameter.
+-  Set the value to `0` to use the Max Data Point value set in the chart.
+-  Set the value to `-1` to ignore the value set in the chart and export all data.
 
 ## CSV Export
-CSV is a data export option. The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”. CSV export is not available as email attachment in workflows, at this time.
-
+The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”. CSV exports are not available as email attachments in workflows, at this time.
 
 ### From the Dataset Analyze Views
-Here, this feature can be found under the download icon in the top right corner of the page.
+This feature can be found under the download icon in the top right corner of the page.
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export1.png#thumbnail-60)
 
@@ -167,6 +154,6 @@ It is important to note the following points:
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export20.png#thumbnail-60)
 
 ## Scheduling Exports
-You can use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](../../../scheduling-exports.md).
+You can use the [Scheduling Exports](./scheduling-exports.md) feature to automatically produce exports at specified intervals and send them to an email address.
 
 </div>

@@ -18,5 +18,4 @@ The Data section consists of three main tabs:
 * **[Web Forms](./Web%20Forms/overview-of-web-forms.md)**. Create forms, surveys, and quizzes to collect new data or update existing data.
 * **[Connections](./Connections/overview-of-connections.md)**. Add new data connections and managing existing data connections. 
 
-
 </div>
