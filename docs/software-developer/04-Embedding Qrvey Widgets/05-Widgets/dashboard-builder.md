@@ -13,6 +13,7 @@ When embedded in an application, the Dashboard Builder widget enables users to m
 
 >**Note**: The Dashboard Builder widget replaces the Page Builder widget in Qrvey version 8.0 and later. 
 
+<!--
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -53,7 +54,8 @@ var config = {
 </script>
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ### Configuration Object Properties
 The following table lists the general properties associated with this widget. 
@@ -91,12 +93,14 @@ The widget supports custom events to update keys of the configuration, you can d
   * Operator: defines which operation will be performed with the expressions.
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
 | **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
 | --- | --- | --- | --- |
 | Basic API Key | This sample uses a basic API key to embed a full Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/PoxMMYP/38e4021367bada1da1cb90d58bb3da24) | n/a |
-| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a |
+| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a | 
+-->
 
 </div>

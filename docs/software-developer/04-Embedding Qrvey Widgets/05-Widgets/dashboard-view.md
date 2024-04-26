@@ -14,6 +14,7 @@ The Dashboard View widget enables you to embed one or more dashboards or a mashu
 
 >**Note**: The Dashboard View widget replaces the Page View widget in Qrvey version 8.0 and later. 
 
+<!-- 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -64,11 +65,11 @@ var config = {
 </script>
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ### General Properties
-The following table lists the properties associated with this widget. 
-
+The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -268,7 +269,7 @@ The widget supports custom events to update keys of the configuration, you can d
   * Operator: defines which operation will be performed with the expressions.
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
-
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
@@ -277,5 +278,6 @@ The following samples demonstrate how this widget can be used in an HTML page.
 | Basic API Key | This sample uses a basic API key to embed a full Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/NWNvyWM/cf1d20805cc1f18680d7a9d15a07dce3) | n/a |
 | Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/LYXwKoM/6f4049ea4a7fe9be92984be3591285d6) | n/a |
 | CSS Injection | This sample uses a basic API key and custom CSS to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments. | [codepen](https://codepen.io/qrveysamples/pen/BavBNjY/4bb40af9433781a4ae41d36e6ffca40c?editors=1010) | n/a | 
+-->
 
 </div>

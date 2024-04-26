@@ -8,8 +8,10 @@ displayed_sidebar: software-developer
 ---
 
 <div style={{textAlign: "justify"}}>
+
 The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application.  
 
+<!-- 
 ## Before You Begin
 - Review the [Widget Quick Start Guide](../overview-of-embedding.md) for an overview of the widget components. 
 - Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. To obtain a new API key, contact your Qrvey account representative.
@@ -41,9 +43,11 @@ var config = {
 };
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ### Configuration Object Properties
+
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
@@ -62,6 +66,7 @@ The following table lists the properties associated with this widget.
 | **default_mode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | No |
 
 
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
@@ -72,6 +77,7 @@ The following samples demonstrate how this widget can be used in an HTML page.
 
 
 **See also**:
-[Introduction to Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)
+[Introduction to Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) 
+-->
 
 </div>

@@ -1,7 +1,7 @@
 ---
 id: customizing-css-variables
-title: Customizing the Appearance Using CSS
-sidebar_label: Customizing the Appearance Using CSS
+title: Customize Widgets Styles Using CSS
+sidebar_label: Customize Widgets Styles Using CSS
 tags: [Software Developer]
 sidebar_position: 4.2
 displayed_sidebar: software-developer
@@ -13,28 +13,25 @@ import contents from '@site/src/components/VariablesModal/modalContents';
 
 <div style={{textAlign: "justify"}}>
 
-This article provides guidelines for properly using CSS to customize the visual theme of embedded widgets. 
-To see an example in codepen of how CSS variables can be used with embedded widgets, click the following [link](https://codepen.io/qrveysamples/pen/dywbyKQ/92b794c45e4a61a68e58a436f587d940).
-
-
+You can fully customize the visual theme of embedded widgets using CSS. For examples, please see our [Codepen](https://codepen.io/qrveysamples/pen/dywbyKQ/92b794c45e4a61a68e58a436f587d940).
 
 ## Naming Convention
 Use the following naming convention for CSS variables:
 
 **--qv-**[module]-[property]-[attribute]
 
-- **--qv-**: Every CSS variable in Qrvey must start with the prefix -qv-. This prefix minimizes the risk of name collision when embedding widgets, and it helps to identify Qrvey's own variables.
+- **--qv-**: Every CSS variable in Qrvey must start with the prefix `-qv-`. This minimizes the risk of name collision when embedding widgets and helps to identify Qrvey variables.
 
 - **Module**: Refers to sections or areas in which the product is divided. It is necessary for variables that only affect a specific area of the product.
-  - For global variables, this value must be the global word: -qv-global-.
-  - For variables that apply only to the chart, they must start with -qv-chart-. 
+  - For global variables, this value must be the global word: `-qv-global-`.
+  - For variables that apply only to the chart, they must start with: `-qv-chart-`. 
 
 - **Property**:The CSS property to which the variable applies.
   - Color
-  - Font 
-  - Margin / padding 
-  - Border 
-  - Example: -qv-color- , -qv-chart-color
+  - Font
+  - Margin / padding
+  - Border
+  - Example: `-qv-color-` , `-qv-chart-color`
 
 - **Attribute**: Further context or detail of the variable's purpose. Examples: 
   - --qv-global-color-main
@@ -51,9 +48,8 @@ Use the following naming convention for CSS variables:
   - --qv-chart-font-font-size-tooltip
 
 ## Priority and Fallback 
-Some components may depend on more than one CSS variable or custom property, so it is important to define the priority of which one takes precedence. In addition, you should always define a fixed value as a last resort (or fallback).
 
-The  **var**() function evaluates the first argument, and, if it exists, it finishes its evaluation. Otherwise, it evaluates the second argument. This second argument can be another var() function, which indicates that the first argument is the most relevant in case all CSS variables exist. For example:
+Some components may depend on more than one CSS variable or custom property, so it is important to define which one takes precedence. In addition, you should always define a fixed value as a last resort (or fallback). For example:
 
 ```css
 .cl1 {
@@ -69,53 +65,50 @@ The  **var**() function evaluates the first argument, and, if it exists, it fini
 }
 ```
 
-For .cl1, if the variable **--qv-color-main** does not exist, the fixed value orange will be applied.
+For .cl1, if the variable `--qv-color-main` does not exist, the fixed value orange will be applied.
 
-For .cl2, if **--qv-cell-color-main** does not exist, **--qv-color-main** will be evaluated, and if it does not exist, orange will be applied.
+For .cl2, if `--qv-cell-color-main` does not exist, `--qv-color-main` will be evaluated, and if it does not exist, orange will be applied.
 
->**Note**: When using another CSS variable as fallback in the **var()** function, it must be enclosed inside another **var()** function.  For more information on using **var()**, see <https://developer.mozilla.org/en-US/docs/Web/CSS/var> and <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>.
-
-
-
-
-
+>**Note**: For more information on using `var()`, see <https://developer.mozilla.org/en-US/docs/Web/CSS/var> and <https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties>.
 
 ## Inheritance
 
-Like other aspects of CSS, CSS variables are cascading in nature. As such, the value of a variable is inherited from its parent (and it will inherit from its parent), if it is not defined. The following example demonstrates how to overwrite a CSS variable by making a declaration with a higher level of detail: 
+CSS variables are cascading in nature. As such, the value of a variable is inherited from its parent.
+
+Please click here to see an [example of inheritance in codepen](https://codepen.io/qrveysamples/pen/zYaVVEG/3cd521ac96add078e63fa0a748f410ad?editors=1100).
+
+You can also assign the inline CSS variables in a closer node/element.
+
+Qrvey widgets usually assign CSS variables in the `<body/>` or in the `:root{}` pseudo-class.
 
 ```css
+
 :root {
+
 --qv-color-main: blue;
 --qv-cell-color-main: pink;
 
 }
 
 .overwrite {
+
 --qv-color-main: red;
 
 }
 
 .cl1 {
+
 background-color: var(--qv-color-main, orange)
 
 }
 
 .cl2 {
+
 background-color: var(--qv-cell-color-main, var(--qv-color-main, orange))
 
 }
 
 ```
-
-To see an example in codepen of inheritance, click the following [link](https://codepen.io/qrveysamples/pen/zYaVVEG/3cd521ac96add078e63fa0a748f410ad?editors=1100).
-
-
-You can also assign the inline CSS variables in a closer node/element. 
-
-Qrvey widgets usually assign CSS variables in the `<body/>` or in the `:root{}` pseudo-class.
-
-
 
 ## Qrvey Component Library
 
@@ -125,10 +118,9 @@ Most of the library components depend on the main color, and this is applicable 
 
 For more information on the design system, see [Qrvey Design System](https://d30an7r0bzb512.cloudfront.net/).
 
-
 ## Backward Compatibility (in progress)
 
-To continue to support legacy variables, assign each variable in a node. For example, to support --qv-main-color, assign the variable using the following technique: 
+To continue to support legacy variables, assign each variable in a node. For example, to support `--qv-main-color`, assign the variable using the following technique: 
 
 ```css
 body {
@@ -138,10 +130,9 @@ body {
 }
 ```
 
-
 ## Colors
 
-Among the customization variables we find the color variables, which allow by means of their declaration, as their name indicates, to change the main colors of the theme, which are the following ones:
+Among the customization variables we find the color variables, which let you change the main colors of the theme:
 
 |**Variable name**|**Functionality**|**Example**|
 | :- | :- | :- |
@@ -169,12 +160,9 @@ Among the customization variables we find the color variables, which allow by me
 |**--qv-global-threedots-icon-color**|Modifies the color of the three-dot options icon.| <ModalButton content={contents[0].colors[21]}/>|
 |**--qv-global-tooltips-background-color**|Modifies the background color of tooltips.| <ModalButton content={contents[0].colors[22]}/>|
 
-
-
 ## Fonts
 
 To modify the font type of the components inside the widget, use the following global CSS variable:
-
 
 |**Variable name**|**Functionality**|**Example**|
 | :- | :- | :- |
@@ -183,7 +171,7 @@ To modify the font type of the components inside the widget, use the following g
 
 ### Support Custom Font Family On Visualizations
 
-Version 8.3 of the Qrvey platform introduced visualizations using echarts, which you cannot manipulate through CSS.  Instead, those charts render with canvas. In version 8.2 and earlier, visualizations worked by svg and allowed immediate changes by elements. By themes performance, constant requests cannot be made to monitor the immediate change by CSS, therefore we defined that it must be necessary that the user has the custom variable of --qv-global-font-family declared before, or he should reload the theme, or the widget so that the changes can be applied when the default option is selected in the font dropdown of the themes modal.
+Version 8.3 of the Qrvey platform introduced visualizations using echarts, which you cannot manipulate through CSS. Instead, those charts render with canvas. In version 8.2 and earlier, visualizations worked by svg and allowed immediate changes by elements. By themes performance, constant requests cannot be made to monitor the immediate change by CSS, therefore we defined that it must be necessary that the user has the custom variable of --qv-global-font-family declared before, or he should reload the theme, or the widget so that the changes can be applied when the default option is selected in the font dropdown of the themes modal.
 
 ## Positions
 
@@ -201,10 +189,9 @@ To modify the location of specific components in the navigation menu, use the po
 
 To modify the border radius of the components that are inside the widget, use the following global CSS variable: 
 
---qv-global-border-radius
+`--qv-global-border-radius`
 
-The following table lists specific border variables for each of the components: 
-
+The following table lists specific border variables for each of the components:
 
 
 |**Variable name**|**Functionality**|**Example**|
@@ -236,7 +223,7 @@ The following table lists specific border variables for each of the components:
 |--qv-at-border-radius-db-menu-icons|Modifies the border radius of the dashboard menu component.|<ModalButton content={contents[0].borders[21]}/>|
 |--qv-at-border-radius-db-draganddrop|Modifies the border radius of the drag-n-drop component in the Dashboard Builder.|<ModalButton content={contents[0].borders[22]}/>|
 |--qv-at-border-radius-db-input-box|Modifies the border radius of the menu component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[23]}/>|
-|--qv-at-border-radius-db-draggable-dataset|Modifies the border radius of the dragg component in the Dashboard Builder.|<ModalButton content={contents[0].borders[24]}/>|
+|--qv-at-border-radius-db-draggable-dataset|Modifies the border radius of the drag component in the Dashboard Builder.|<ModalButton content={contents[0].borders[24]}/>|
 |--qv-at-border-radius-db-expandable-card|Modifies the border radius of the expandable card component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[25]}/>|
 |--qv-at-border-radius-db-image|Modifies the border radius of the image component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[26]}/>|
 |--qv-at-border-radius-db-grid-item|Modifies the border radius of the grid component inside the Dashboard Builder.|<ModalButton content={contents[0].borders[27]}/>|

@@ -8,7 +8,7 @@ displayed_sidebar: software-developer
 ---
 
 When embedded in an application, the Web Form - End User widget enables end users to enter data in a designed Web Form. 
-
+<!-- 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -41,7 +41,8 @@ var config = {
 }
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 
@@ -79,6 +80,7 @@ var config = {
  }
 ```
 
+<!-- 
 ### Sample in CodePen
 See the widget in CodePen:
 
@@ -97,4 +99,4 @@ See the widget in CodePen:
   id="cp_embed_dd309a42f2c856e6eb73c8f047153ca3"
 />
 
-     
+-->

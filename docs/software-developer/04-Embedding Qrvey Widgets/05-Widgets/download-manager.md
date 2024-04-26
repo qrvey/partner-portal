@@ -11,6 +11,8 @@ The Download Manager widget enables users to access and manage exported files in
 
 Download Manager filters the files displayed based on user ID and client ID. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. If you do not define a user ID and client ID for a widget, all exports performed using the widget will not be accessible from Download Manager.
 
+<!--
+
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * The Download Manager widget supports the use of JWT tokens for authentication. In addition, in order to display the exports for that end user, the token must include the client ID of the tenant end user. For more information on creating tokens, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).
@@ -34,7 +36,6 @@ Add the widget launcher script tag to your application.
 For reference, the launcher script code is:
 
 ```json
-<!-- widget's launcher -->
 <script type="text/javascript" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.js?2023-12-26T15:16:09.665Z"></script>
 <script type="module" src="https://<WIDGETS_URL>/qrvey_download_manager/qrvey-download-manager/qrvey-download-manager.esm.js?2023-12-26T15:16:09.665Z"></script>
 <script> window.downloadManagerConfig = downloadManagerConfig</script>
@@ -45,7 +46,7 @@ For reference, the launcher script code is:
 Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”), with the exception of the private API key:
 
 ```json
- <!-- widget's Config Object -->
+
   <script>
       var downloadManagerConfig = {
         "api_key": "<YOUR_PRIVATE_API_KEY>",
@@ -57,6 +58,8 @@ Define the JSON configuration object by starting with the script provided in the
 ```
 
 When complete, add the JSON configuration object to your application. 
+
+-->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 

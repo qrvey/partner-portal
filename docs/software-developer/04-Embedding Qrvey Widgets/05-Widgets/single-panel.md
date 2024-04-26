@@ -11,6 +11,7 @@ displayed_sidebar: software-developer
 
 The Single Panel widget enables you to embed a chart, metric, or summary panel that has already been created in Qrvey Composer.
 
+<!-- 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -53,7 +54,8 @@ var anPanelConfig = {
 </script>
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 
@@ -117,13 +119,14 @@ The following table lists the properties associated with this widget.
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
 
 
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
 | **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
 | --- | --- | --- | --- |
 | Basic API Key | This sample uses a basic API key to embed a Single Panel widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/KKzvqgV/c395bd9162f9d675bb8d02317cc5a1e2) | n/a |
-
+-->
 
 </div>
 

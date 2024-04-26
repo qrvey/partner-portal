@@ -11,6 +11,7 @@ displayed_sidebar: software-developer
 
 When embedded in an application, the Web Form Design widget enables end users to create, preview, and modify web forms. The Qrvey platform provides three types of web forms: survey, form, and quiz. 
 
+<!-- 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -47,7 +48,8 @@ var configWebForm = {
 }
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  
+-->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 
@@ -94,6 +96,7 @@ var configWebForm = {
 }
 ```
 
+<!-- 
 ### Sample in CodePen
 See the widget in CodePen:
 
@@ -111,7 +114,6 @@ See the widget in CodePen:
   loading="lazy"
   id="cp_embed_17ca2ace17e54cd26353f638666f91be">
   </iframe>
-
-
+ -->
 
 </div>

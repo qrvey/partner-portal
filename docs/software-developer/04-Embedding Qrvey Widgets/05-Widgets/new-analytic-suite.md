@@ -1,48 +1,29 @@
 ---
-id: widget-analytic-suite
-title: Analytic Suite Widget
-sidebar_label: Analytic Suite Widget
+id: new-widget-analytic-suite
+title: New Widget Analytic Suite
+sidebar_label: New Analytic Suite Widget
 tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: software-developer
 ---
 <div style={{textAlign: "justify"}}>
 
-
-The Analytic Suite widget enables users to display the distinct data analysis views available within the Analyze functionality of Qrvey Composer. This includes Summaries, Tables, Metric Views, etc. 
-
 <!-- 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
+```html
+<an-dashboard config="anSuiteConfig"></an-dashboard>
+```
 
-## Get the Helper Code
-1. In Qrvey Composer, display the **Analyze** tab for the desired dataset.  
-2. Click the **Embedding Options** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
-4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
+```html
 
-## Embed the HTML Tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location.
-
-The HTML tag for this widget is:
-
-`<an-dashboard config="anSuiteConfig"></an-dashboard>`
-
-## Embed the Widget Launcher Script Tag
-Add the widget launcher script tag to your application. Note that this widget requires an additional script for proper support in all browsers. 
-
-For reference, the launcher script code is:
-
-```json
 <script type="module" src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js"></script>
 <script nomodule src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js"></script>
 ```
 
-## Set Properties in the JSON Configuration Object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
 
 ```json
+// The config object to embed in your HTML head.
+// Please sure to include carrots `<...>`. 
+// This is for example only. See the table below for all options.
 <script>
 var anSuiteConfig = {
    "api_key": "<API_KEY>",
@@ -55,12 +36,9 @@ var anSuiteConfig = {
    }
 }
 </script>
-```
+``` -->
 
-When complete, add the JSON configuration object to your application.  -->
-
-### Configuration Object Properties
-The following table lists the properties associated with this widget. 
+## Configuration Options
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -91,5 +69,14 @@ The following table lists the properties associated with this widget.
 | **settings.styles.themePalette** | `Array`, contains a maximum of 20 colors that will be used for chart data points. | No | 
 | **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br /><br />{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No  
+
+
+## Code Samples
+The following samples demonstrate how this widget can be used in an HTML page. 
+
+| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
+| --- | --- | --- | --- |
+| Basic API Key | This sample uses a basic API key to embed an Analytic Suite widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/gOQVVpa/b3e91d1d0e4315a20cd0cf9046892aa3?editors=1010) | n/a |
+
 
 </div>
