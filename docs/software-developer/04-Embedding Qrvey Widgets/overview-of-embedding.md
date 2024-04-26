@@ -1,25 +1,13 @@
 ---
 id: overview-of-embedding-and-widgets
-title: Embedded Widgets
-sidebar_label: Embedded Widgets
+title: Embedded Widgets Overview
+sidebar_label: Embedded Widgets Overview
 tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: software-developer
 ---
 
-<div style={{textAlign: "justify"}}>
-
-Developers can seamlessly embed the Qrvey platform’s functionalities (such as web form builders, data visualizations, and more) into their frontend applications using a comprehensive suite of customizable “widgets”.
-
-<!-- 
-> **Before You Begin**
-
-Obtain your unique API key provided in the welcome email that you received when your Qrvey instance was created.
-
-For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-
-For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).  
--->
+Developers can seamlessly embed the Qrvey platform’s functionalities (such as web form builders, data visualizations, and more) directly into their frontend applications using a comprehensive suite of customizable “widgets”.
 
 ## How to Embed a Widget
 
@@ -33,35 +21,36 @@ For more information, see [Embedding Widgets Using a Security Token](../embeddin
     - An HTML Script tag containing the widget's JSON config object.
     - An HTML script tag to launch the widget.
 4. Click **Copy** and then close the widget.
-5. Paste the code into your frontend application
-6. Configure the Widget's JSON object as desired.
-7. Set authentication as desired. To learn more, please see [widget authentication](./embedding-widgets-security-token.md).
+5. Place the code in your frontend application as desired.
+6. Set configuration and [authentication](./embedding-widgets-security-token.md) on the widget's JSON object as desired.
 
-<!--
+Refresh your frontend application and your widget should now be visible in the UI.
 
-All CodePen samples use the API key method and can be copied and edited to use your own API key and other case-specific attributes, such as IDs, in order to experiment with the widget and see its behavior. Please see the article on [Embedding Widgets Using Security Tokens](../04-Embedding%20Qrvey%20Widgets/embedding-widgets-security-token.md) for the proper production implementation. 
+## Anatomy of a Widget
 
-## Set Properties in the JSON Configuration Object
+The embedded widget code snippet copied from Qrvey composer consists of an HTML Tag and two scripts.
 
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
+```html
+<!-- widget's tag -->
+<qrvey-WIDGET-TYPE settings="config"></qrvey-WIDGET-TYPE>
 
-```json
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
-var configWebForm = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://<your_qrvey_domain>",
-    "user_id": "<USER_ID>",
-    "qrvey_id": "<QRVEY_ID>",
-    "app_type": "<APP_TYPE>"
-}
+<!-- widget's Config Object -->
+<script>
+var config = {
+  "api_key": "<YOUR_PRIVATE_API_KEY>", //Switch this with the actual API key.
+  "domain": "https://documentation-demos.qrvey.com",
+  "user_id": "OIJFsiS4-",
+  "app_id": "fQiu0ogde"
+};
+</script>
+
+<!-- widget's launcher -->
+<script type="text/javascript" src="https://demo.qrvey.com/widgets-launcher/app.js"></script>
 ```
 
-When complete, add the JSON configuration object to your application.
+## Widgets
 
--->
-
-## Choose Your Widget
+Each widget has its own set of configuration options. Please browse the following sections to find details about each type of widget.
 
 |  Widget | Description |
 | --------------- | --------------------- |
@@ -72,15 +61,12 @@ When complete, add the JSON configuration object to your application.
 | [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md) | Enable end users to build custom charts. |
 | [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enable end users to build custom charts. |
 | [Web Form Design](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-forms.md) | Enable end users to create and publish their own web forms. | 
-| [Web Form - End User](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-form-end-user.md) | Embed an existing web form (form, survey, or quiz), in which end users can enter data. | 
+| [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-form-end-user.md) | Embed an existing web form (form, survey, or quiz), in which end users can enter data. | 
 | [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enable end users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis vie. | 
 | [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md) | Embed a Pixel-perfect report. |
 | [Automation](../04-Embedding%20Qrvey%20Widgets/05-Widgets/automation-widget.md) | Embed workflow functionality into your application. |
 | [Download Manager](../04-Embedding%20Qrvey%20Widgets/05-Widgets/download-manager.md) | Enable end users to access Download Manager to manage exported files. |
 
-
-## Additional Tools
+## Additional Tooling
 
 The Qrvey Platform also provides a comprehensive REST API. For more information, see [Overview of Qrvey API](../06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md).
-
-</div>

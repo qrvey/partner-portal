@@ -3,7 +3,7 @@ id: customizing-css-variables
 title: Customize Widgets Styles Using CSS
 sidebar_label: Customize Widgets Styles Using CSS
 tags: [Software Developer]
-sidebar_position: 4.2
+sidebar_position: 5
 displayed_sidebar: software-developer
 ---
 
