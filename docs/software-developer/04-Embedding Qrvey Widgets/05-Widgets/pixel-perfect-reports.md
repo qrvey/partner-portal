@@ -11,40 +11,6 @@ displayed_sidebar: software-developer
 
 The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application.  
 
-<!-- 
-## Before You Begin
-- Review the [Widget Quick Start Guide](../overview-of-embedding.md) for an overview of the widget components. 
-- Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. To obtain a new API key, contact your Qrvey account representative.
-
-## Get the Helper Code
-1. In Qrvey Composer, open the [Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) feature. 
-2. Click the **Embed Pixel-perfect Reports** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag. This code embeds the Pixel-perfect Reports widget. While you may embed a single report using its ID, the end user will still have access to all the reports available in the widget. 
-3. Click **Copy** to copy the code, and then paste it into your preferred editor. 
-
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. The HTML tag for this widget is:
-
-```<qrvey-pixel-builder settings="config"></qrvey-pixel-builder>```
-
-## Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. For reference, the launcher script code is:
-
-```<[your-widget-url]/widgets-launcher/app.js>```
-
-## Set Properties in the JSON Configuration Object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```js
-var config = {
-  "api_key": "<API_KEY>",
-  "domain": "https://your_qrvey_domain",
-  "app_id":  "<APP_ID>",
-  "user_id": "<USER_ID>",
-};
-```
-
-When complete, add the JSON configuration object to your application.  
--->
 
 ### Configuration Object Properties
 

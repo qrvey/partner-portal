@@ -11,45 +11,6 @@ displayed_sidebar: software-developer
 
 When embedded in an application, the Web Form Design widget enables end users to create, preview, and modify web forms. The Qrvey platform provides three types of web forms: survey, form, and quiz. 
 
-<!-- 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
-
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<qrvey-design-widgets settings="config"></qrvey-design-widgets>`
-
-## Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-```
-<script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
-```
-
-## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```json
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
-var configWebForm = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://<your_qrvey_domain>",
-    "user_id": "<USER_ID>",
-    "qrvey_id": "<QRVEY_ID>",
-    "app_type": "<APP_TYPE>"
-}
-```
-
-When complete, add the JSON configuration object to your application.  
--->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 

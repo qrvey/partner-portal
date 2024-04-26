@@ -14,59 +14,6 @@ The Dashboard View widget enables you to embed one or more dashboards or a mashu
 
 >**Note**: The Dashboard View widget replaces the Page View widget in Qrvey version 8.0 and later. 
 
-<!-- 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
-
-## Get the Helper Code
-1. In Qrvey Composer, open Dashboard Builder and display the Dashboard list. 
-2. Select one of the following options: 
-
-  a. To embed all dashboards in the application, click the **Embedding Options** button in the upper right corner of the page, and then click **Embed Dashboard View**. 
-
-  ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi-80.png#thumbnail-40)
-
-  b. To embed a single dashboard, click its three-dot menu in the Dashboard list, point to **Embed**, and then click **Embed Dashboard View**. 
-
-  ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/dashboard-builder-options-81.png)
-
-3. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
-
-4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
-
-## Embed the HTML Tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<qrvey-end-user settings="config"></qrvey-end-user>`
-
-## Embed the Widget Launcher Script Tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-`<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>`
-
-## Set Properties in the JSON Configuration Object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values:
-
-```json
-<script>
-var config = {
-   "api_key": "<YOUR_PRIVATE_API_KEY>",
-   "domain": "https://your_qrvey_domain",
-   "user_id": "<USER_ID>",
-   "dashboard_id": "<DASHBOARD_ID>",  // Optional. Embeds the specified dashboard only.
-   "app_id": "<APPLICATION_ID>"
-}
-</script>
-```
-
-When complete, add the JSON configuration object to your application.  
--->
 
 ### General Properties
 The following table lists the properties associated with this widget.

@@ -11,52 +11,6 @@ displayed_sidebar: software-developer
 
 The Single Panel widget enables you to embed a chart, metric, or summary panel that has already been created in Qrvey Composer.
 
-<!-- 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-
-## Get the Helper Code
-1. In Qrvey Composer, display the panel that you would like to embed. 
-2. Click the three-dot menu in the upper right corner of the panel, and then click the **Embed** option. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag. 
-3. Click **Copy** to copy the code, and then paste it into your preferred editor. 
-
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<an-panel config="anPanelConfig"></an-panel>`
-
-## Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-```
-<script type="module" src="<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js"></script>
-<script nomodule src="<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js"></script>
-```
-
-## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```json
-<script>
-var anPanelConfig = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://your_qrvey_domain",
-    "user_id": "<USER_ID>",
-    "qrvey_id": "<QRVEY_ID>",
-    "type": "<PANEL_TYPE>",
-    "chart_id": "<CHART_ID>",}
-</script>
-```
-
-When complete, add the JSON configuration object to your application.  
--->
-
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 
 

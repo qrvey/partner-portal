@@ -8,41 +8,6 @@ displayed_sidebar: software-developer
 ---
 
 When embedded in an application, the Web Form - End User widget enables end users to enter data in a designed Web Form. 
-<!-- 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-
-## Embed the HTML Tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<qrvey-webform-enduser config="configWebForm"></qrvey-webform-enduser>`
-
-## Embed the Widget Launcher Script Tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-```
-<script type="module" src="https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js"></script>
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
-```
-
-## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```json
-var config = {
-   webformid: "<WEB_FORM_ID>", 
-   server: "https://<your_qrvey_domain>", 
-   defaultAnswers: [{id:"<QUESTION_ID>",data:"<DATA_STRING>"}]
-}
-```
-
-When complete, add the JSON configuration object to your application.  
--->
 
 ## Configuration Object Properties
 The following table lists the properties associated with this widget. 

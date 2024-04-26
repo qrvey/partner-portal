@@ -11,46 +11,6 @@ displayed_sidebar: software-developer
 
 The Automation widget enables you to embed the Automation functionality into your application. 
 
-<!-- ## Before You Begin
-* Review the [Widget Quick Start Guide](../overview-of-embedding.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. For more information, see [General FAQs](../../../getting-started/faqs.md).
-
-## Get the Helper Code
-1. In Qrvey Composer, open the Automation feature. 
-2. Click the **Embedding Options** button in the upper right corner of the page, and then click **Embed Automation Widget**. 
-3. Click **Copy** to copy the code, and then paste it into your preferred editor. 
-
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-```html
-<qrvey-workflow-design settings="config"></qrvey-workflow-design>
-```
-
-## Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-```html
-<script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>
-```
-
-## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets ("&lt;&gt;"), with the exception of the private API key:
-```html
-<script>
-var config = {
-  api_key: '<API_KEY>',
-  domain: 'https://<your_qrvey_domain>',
-  user_id: '<USER_ID>',
-  app_id: '<APP_ID>'
-};
-</script>
-```
-When complete, add the JSON configuration object to your application.  
--->
-
 ### Configuration Object Properties
 The following table lists the properties associated with this widget. 
 
