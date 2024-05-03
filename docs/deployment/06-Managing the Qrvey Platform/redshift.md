@@ -225,7 +225,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
     {
       "Effect": "Allow",
       "Principal": {
-        "AWS": "ESC_TASK_EXECUTION_ROLE"
+        "AWS": "ECS_TASK_EXECUTION_ROLE"
       },
       "Action": "sts:AssumeRole"
     },
