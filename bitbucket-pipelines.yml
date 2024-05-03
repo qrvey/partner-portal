@@ -8,135 +8,88 @@ image: node:16.14.2
 pipelines:
   pull-requests:
     'feature/*':
-     - step:
-        script:
-          - node -v
-          - cd v2-website
-          - npm install
-          - npm run build
-        artifacts:
-          - v2-website/build/**/*
-     - step:
-        name: Deploy
-        deployment: test 
-        script:
-          - pipe: atlassian/aws-s3-deploy:0.3.7
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              S3_BUCKET: "uidoc.qrvey.com"
-              LOCAL_PATH: "v2-website/build/"
-    'release/*':
-     - step:
-        script:
-          - cd v2-website
-          - npm install
-          - npm run build:staging
-          - npm install replace@1.0.0 -g --force
-          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
-          - cd static/js
-          - replace "MKT_METADATAID" "marketing_test" custom.js
-          - cd ../..
-          - npm run build
-        artifacts:
-          - v2-website/build/**/*
-     - step:
-        name: Deploy
-        deployment: staging 
-        script:
-          - pipe: atlassian/aws-s3-deploy:0.3.7
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "v2-website/build/"
-    'hotfix/*':
-     - step:
-        script:
-          - cd v2-website
-          - npm install
-          - npm run build:staging
-          - npm install replace@1.0.0 -g --force
-          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
-          - cd static/js
-          - replace "MKT_METADATAID" "marketing_test" custom.js
-          - cd ../..
-          - npm run build
-        artifacts:
-          - v2-website/build/**/*
-     - step:
-        name: Deploy
-        deployment: staging 
-        script:
-          - pipe: atlassian/aws-s3-deploy:0.3.7
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "v2-website/build/"
-  branches:
-    develop:
       - step:
-         script:
-          - cd v2-website
-          - npm install
-          - npm run build:staging
-          - npm install replace@1.0.0 -g --force
-          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
-          - cd static/js
-          - replace "MKT_METADATAID" "marketing_test" custom.js
-          - cd ../..
-          - npm run build
-         artifacts:
-          - v2-website/build/**/*
-      - step:
-         name: Deploy
-         deployment: staging 
-         script:
-          - pipe: atlassian/aws-s3-deploy:0.3.7
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              S3_BUCKET: "partners-staging.qrvey.com"
-              LOCAL_PATH: "v2-website/build/"
-    master:
-      - step:
-          name: Deploy to production
-          caches:
-            - node
           script:
+            - node -v
             - cd v2-website
             - npm install
-            - npm run build:prod
-            - npm install replace@1.0.0 -g --force
-            - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" docusaurus.config.js
-            - cd static/js
-            - replace "MKT_METADATAID" "marketing_prod" custom.js
-            - cd ../..
             - npm run build
           artifacts:
             - v2-website/build/**/*
       - step:
           name: Deploy
-          deployment: production
+          deployment: test 
           script:
             - pipe: atlassian/aws-s3-deploy:0.3.7
               variables:
-                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID_PROD
-                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
                 AWS_DEFAULT_REGION: "us-east-1"
-                S3_BUCKET: "partners.qrvey.com"
+                S3_BUCKET: "uidoc.qrvey.com"
                 LOCAL_PATH: "v2-website/build/"
-      - step:
-          name: Invalidate Cloudfront Cache
-          script:
-            - pipe: atlassian/aws-cloudfront-invalidate:0.1.1
-              variables:
-                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID_PROD
-                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
-                AWS_DEFAULT_REGION: "us-east-1"
-                DISTRIBUTION_ID: $DISTRIBUTION_ID_PROD
+
+  release/*:
+  hotfix/*:
+  develop:
+    - step:
+        script:
+          - cd v2-website
+          - npm install
+          - NODE_OPTIONS="--max-old-space-size=4096" npm run build:staging
+          - npm install replace@1.0.0 -g --force
+          - replace "indexName:'dev_qrvey'" "indexName:'staging_qrvey'" docusaurus.config.js
+          - cd static/js
+          - replace "MKT_METADATAID" "marketing_test" custom.js
+          - cd ../..
+          - npm run build
+        artifacts:
+          - v2-website/build/**/*
+    - step:
+        name: Deploy
+        deployment: staging 
+        script:
+          - pipe: atlassian/aws-s3-deploy:0.3.7
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "us-east-1"
+              S3_BUCKET: "partners-staging.qrvey.com"
+              LOCAL_PATH: "v2-website/build/"
+
+  master:
+    - step:
+        name: Deploy to production
+        caches:
+          - node
+        script:
+          - cd v2-website
+          - npm install
+          - NODE_OPTIONS="--max-old-space-size=4096" npm run build:prod
+          - npm install replace@1.0.0 -g --force
+          - replace "indexName:'dev_qrvey'" "indexName:'prod_qrvey'" docusaurus.config.js
+          - cd static/js
+          - replace "MKT_METADATAID" "marketing_prod" custom.js
+          - cd ../..
+          - npm run build
+        artifacts:
+          - v2-website/build/**/*
+    - step:
+        name: Deploy
+        deployment: production
+        script:
+          - pipe: atlassian/aws-s3-deploy:0.3.7
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID_PROD
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
+              AWS_DEFAULT_REGION: "us-east-1"
+              S3_BUCKET: "partners.qrvey.com"
+              LOCAL_PATH: "v2-website/build/"
+    - step:
+        name: Invalidate Cloudfront Cache
+        script:
+          - pipe: atlassian/aws-cloudfront-invalidate:0.1.1
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID_PROD
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_PROD
+              AWS_DEFAULT_REGION: "us-east-1"
+              DISTRIBUTION_ID: $DISTRIBUTION_ID_PROD
