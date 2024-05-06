@@ -15,8 +15,8 @@ To create a custom token, use the `customTokens` property in the [Dashboard Buil
 ## Basic Syntax
 In basic syntax, provide key-value pairs using the following syntax:
 
-```js
-customTokens {
+```json
+"customTokens": {
   "key1": "value1",
   "key2": "value2"
 }
@@ -24,8 +24,8 @@ customTokens {
 
 For example:
 
-```js
-customTokens {
+```json
+"customTokens": {
   "numericKey": 42.6,
   "dateTimeKey": "2023-08-14 10:12:32",
   "textKey": "some Text"
@@ -61,8 +61,8 @@ The expanded syntax of `customTokens` supports grouping and labels. In expanded 
 
 Use the following syntax:
 
-```js
-customTokens {
+```json
+"customTokens": {
   "tokenGroupLabel": [{
     "key": "token 1 key",
     "label": "token 1 label",
@@ -78,8 +78,8 @@ customTokens {
 
 For example:
 
-```js
-customTokens {
+```json
+"customTokens": {
   "customGroup": [{
       "key": "someNumber",
       "label": "some Number",
