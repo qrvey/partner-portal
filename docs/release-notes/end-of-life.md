@@ -21,7 +21,7 @@ This article lists the features and endpoints that have been scheduled for depre
 
 | **Supported Until** | **Deprecated Endpoint** | **Deprecated Endpoint Path** | **Alternative Version Available** | **Alternative Endpoint** |
 | --- | --- | --- | --- | --- |
-| Two LTS releases after 8.5 (LTS) | Export CSV in Builders | `/devapi/v5/export/user/{userId}/app/{appId}/{qrveyId}/answers` | 8.3 | `user/{userid}/app/{appid}/qrvey/{qrveyid}/export/answers` |
+| Two LTS releases after 8.5 (LTS) | Export CSV in Builders | `user/{userid}/app/{appid}/qrvey/{qrveyid}/export/answers` | 8.3 | `/devapi/v5/export/user/{userId}/app/{appId}/{qrveyId}/answers` |
 | Two LTS releases after 8.5 (LTS) | Log in to Qrvey Admin Center | `/admin/api/v5/login` | 8.4 | `/api/admin/v6/login` |
 | Two LTS releases after 8.5 (LTS) | Log in to Composer | `/devapi/v4/core/login` | 8.4 | `/api/admin/v6/login` |
 | Two LTS releases after 8.5 (LTS) | Backend Login (Set Session) | `/devapi/v4/core/login/token/session` | 8.4 | `/api/admin/v6/login` |
