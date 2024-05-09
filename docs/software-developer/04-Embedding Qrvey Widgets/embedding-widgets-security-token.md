@@ -69,7 +69,7 @@ A more secure way to authenticate and authorize embedded widgets is through a <a
   ```js
   // In development/testing, this sample script shows how to set the JWT Security Token from the frontend.
   // In Production, make a similar call from the backend.
-  // Put this response in the qv_token attribute.
+  // Put its response in the qv_token attribute.
 
   var config = {
       'domain': DOMAIN,
@@ -111,7 +111,6 @@ A more secure way to authenticate and authorize embedded widgets is through a <a
     "token": "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB..."
   }
   ```
-  
 
 3. Embed the JWT Security Token in the Widget.
 
@@ -146,4 +145,3 @@ A more secure way to authenticate and authorize embedded widgets is through a <a
   ```
 
 </div>
-
