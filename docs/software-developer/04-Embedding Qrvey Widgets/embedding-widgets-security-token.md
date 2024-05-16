@@ -28,17 +28,17 @@ It is not safe to pass an API key directly from the frontend.
 
   **Note**: `CLIENT_ID` is optional, but for end-user personalization to work, it has to be set to the logged-in user’s identifier. This can be their `name`, `id`, `email address`, or any other unique identifier.
 
-```html
-<script>
-  var config = {
-    "api_key": "<YOUR_PRIVATE_API_KEY>", // Switch this with the actual API key.
-    "domain": "https://documentation-demos.qrvey.com", 
-    "user_id": "OIJFsiSsdafgf-",
-    "app_id": "fQiu0ogde3454sv",
-    "clientId" :  'sampleuser@sampledomain.com'; // For end-user personalization
-  };
-</script>
-```
+  ```html
+  <script>
+    var config = {
+      "api_key": "<YOUR_PRIVATE_API_KEY>", // Switch this with the actual API key.
+      "domain": "https://documentation-demos.qrvey.com", 
+      "user_id": "OIJFsiSsdafgf-",
+      "app_id": "fQiu0ogde3454sv",
+      "clientId" :  'sampleuser@sampledomain.com'; // For end-user personalization
+    };
+  </script>
+  ```
 
 ## JWT Security Token Authentication
 
@@ -49,7 +49,6 @@ A more secure way to authenticate and authorize embedded widgets is through a <a
     - `API_KEY` – The unique key required for every API call. Provided in an onboarding email after Qrvey instance set up.
   
   You may need additional key configuration, depending on the widget.
-  
 
   ```html
   <script>
@@ -67,7 +66,8 @@ A more secure way to authenticate and authorize embedded widgets is through a <a
   **Example Request:**
 
   ```js
-  // In development/testing, this sample script shows how to set the JWT Security Token from the frontend.
+  // For development/testing ONLY.
+  // This sample script shows how to set the JWT Security Token from the frontend.
   // In Production, make a similar call from the backend.
   // Put its response in the qv_token attribute.
 

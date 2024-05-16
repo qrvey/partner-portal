@@ -8,15 +8,7 @@ displayed_sidebar: software-developer
 ---
 <div style={{textAlign: "justify"}}>
 
-Custom events enable Qrvey Software Developers to handle custom scenarios. This article describes several custom events that can be triggered by Qrvey widgets. The host application can be programmed to listen to these events and then perform its own custom tasks. 
-
-To use a custom event, follow these steps.
-
-1. Create the event using the `CustomEvent()` constructor.
-2. Listen to this event using the `addEventListener()` method.
-3. Trigger or dispatch the event using the `document.dispatchEvent(eventName)` method.
-
-The Dashboard Builder and Dashboard View widgets support the following custom events:
+Custom events enable Qrvey Software Developers to handle custom scenarios. This article describes several custom events that can be triggered by Qrvey widgets. The host application can be programmed to listen to these events and then perform its own custom tasks. The Dashboard Builder and Dashboard View widgets support the following custom events:
 * Dashboard Loaded Event
 * Items Loaded Event
 
@@ -38,6 +30,7 @@ The Items Loaded event `qvDSHItemsLoaded` is emitted when all charts in the view
 
 ```js
 const event = new CustomEvent('qvDSHItemsLoaded');
+
 document.addEventListener(“qvDSHItemsLoaded”, () => { 
     // Do Something
 });
