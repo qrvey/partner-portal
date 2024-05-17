@@ -18,10 +18,8 @@ In this tutorial, we will use the API to programmatically create a Quiz web form
 - Update the web form and embed the Quiz form widget into your product (note: this step is for informational purposes and does not utilize APIs). 
 - Activate the Quiz form for use in production. 
 
-## Before you begin
-In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. In addition, you should be familiar with the following concepts:
-- [Introduction to the Qrvey Platform](../../../getting-started/intro-to-qrvey.md)
-- [Overview of Qrvey Applications](../../../composer/04-Managing%20Applications/overview-of-applications.md)
+## Before You Begin
+In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. For more details, please see [Introduction to the Qrvey Platform](../../../getting-started/intro-to-qrvey.md).
 
 Before using the Qrvey API, gather the following:
 - The base URL of your instance of the Qrvey platform. 
@@ -29,7 +27,7 @@ Before using the Qrvey API, gather the following:
 
 > **Note**: For purposes of this tutorial, you are asked to include the base URL or API Key in the API calls. However, this information should never be exposed to external users. In Production environments, use secure tokens to encrypt your organization’s base URL and API Key.
 
-## Create a user
+## Create a User
 To create a new user, begin by reviewing the API documentation for [Create User](https://qrvey.stoplight.io/docs/qrvey-api-doc/1930941cbe8d5-create-user). 
 
 In Postman, set the request type to POST and enter the URL to create a new user:  
@@ -84,7 +82,6 @@ See the following screenshot for an example of using the Get User List API in Po
 ![Get User ID](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/postman-get-user-id.png#thumbnail-50)
 
 ## Create an application
-A Qrvey application is a self-contained analytics project that contains data and any number of analytics components, such as charts, reports, dashboards, and workflows. The user that creates the application is the application owner.  For more information on applications, see [What Is a Qrvey Application?](../../../composer/04-Managing%20Applications/overview-of-applications.md)
 
 To create a new application, begin by reviewing the API documentation for [Create Application](https://qrvey.stoplight.io/docs/qrvey-api-doc/0d09929d631ef-create-application). 
 
@@ -167,11 +164,7 @@ Once you’ve created the Quiz web form, you can update it to contain the quiz q
 
 ![Sample Quiz Web Form](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_10.png#thumbnail) 
 
-At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. 
-
-Embedding is outside the scope of this tutorial. For more information on embedding and widgets, see:
-- [Widget Quick Start Guide](../../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
-- [Widgets Overview (video)](https://partners.qrvey.com/docs/video-training/building-qrvey-sample/widget-overview) 
+At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. For more information on embedding and widgets, please see [Widget Quick Start Guide](../../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 
 
 ## Activate the Quiz
@@ -190,7 +183,6 @@ x-api-key = your api key
 In Postman, click **Send**. A response returns with the URL to the quiz.
 
 Congratulations! You have completed this tutorial. 
-
 
 **See also**:
 <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>

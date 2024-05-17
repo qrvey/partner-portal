@@ -7,9 +7,7 @@ sidebar_position: 1
 displayed_sidebar: data-analyst
 ---
 
-Qrvey Composer is a web-based platform that enables data analysts to import and manage datasets from many sources, design data visualizations within drag-n-drop dashboards, build web forms, setup automated workflows, and generate pixel perfect reports.
-
-The platform is tailored for the specific needs of SaaS companies, enabling your team to share, distribute, or [embed Qrvey's features](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-quick-start-guide.md) within their own platform UIs for fully customized data experiences.
+Qrvey Composer is a web-based platform that enables data analysts to import and manage datasets from many sources, design data visualizations within drag-n-drop dashboards, build web forms, setup automated workflows, and generate pixel perfect reports. The platform is tailored for the specific needs of SaaS companies, enabling your team to share, distribute, or [embed Qrvey's features](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-quick-start-guide.md) within their own platform UIs for fully customized data experiences.
 
 <video 
     autoPlay playsInline muted loop controls
