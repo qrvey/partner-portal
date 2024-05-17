@@ -99,7 +99,7 @@ The CSV download option can be found from a similar icon that appears upon click
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export8.png#thumbnail-40)
 
-You can also use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](../../../scheduling-exports.md).
+You can also use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](./scheduling-exports.md).
 
 ### From the Chart, Metric, and Summary Panels
 In the upper-right corner of each panel inside Summary, Custom, and Metric views, as well as the panels that have been placed on a dashboard or report, you’ll also find a download option for the individual panel/visualization. 
