@@ -25,10 +25,11 @@ The Qrvey Partner Portal contains a variety of tutorials for working with the Qr
    * [Automated Content Deployment (Commingled)](../../admin/08-Content%20Deployment/automated-CD-commingled.md)
    * [Automated Content Deployment (Segregated)](../../admin/08-Content%20Deployment/automated-CD-segregated.md)
 
-
 ## Qrvey API Reference
-For information on the specific endpoints, see the <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>
+For information, please see the API reference for:
 
+- [Version 8.3 and earlier](https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.3--Earlier/)
+- [Version 8.4 and later](https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.4--Later/)
 
 
 </div>
