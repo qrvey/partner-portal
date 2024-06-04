@@ -72,8 +72,13 @@
         },
         {
           "type": "link",
-          "label": "Qrvey API Reference Guide (Stoplight)",
-          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/YXBpOjI3MjE0MTA1"
+          "label": "Qrvey API Reference 8.3 and Earlier",
+          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.3--Earlier/"
+        },
+        {
+          "type": "link",
+          "label": "Qrvey API Reference 8.4 and Later",
+          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.4--Later/"
         }
       ]
     }
@@ -323,8 +328,13 @@
         },
         {
           "type": "link",
-          "label": "Qrvey API Reference Guide (Stoplight)",
-          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/YXBpOjI3MjE0MTA1"
+          "label": "Qrvey API Reference 8.3 and Earlier",
+          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.3--Earlier/"
+        },
+        {
+          "type": "link",
+          "label": "Qrvey API Reference 8.4 and Later",
+          "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.4--Later/"
         }
       ]
     }

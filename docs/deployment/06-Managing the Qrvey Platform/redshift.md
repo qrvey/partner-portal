@@ -64,7 +64,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>a. Use the Qrvey AWS account.</li>
 <li>b. Open AWS Identity and Access Management (IAM).</li>
 <li>c. Click <b>Roles</b>.</li>
-<li>d. Search for the DB lambda role. It contains the strings "<i>DBDatasourcePumpFunction</i>" and "<i>elastic-view-function-role</i>". There is one <b>Role</b> for each Qrvey deployment. Select the role applying to the current Qrvey deployment. Note down the ARN to be used later as <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i> and <i>ELASTIC_VIEW_FUNCTION_ROLE</i>.</li>
+<li>d. Search for the DB lambda role. It contains the strings <code>DBDatasourcePumpFunction</code>, <code>elastic-view-function-role</code>, and <code>&lt;prefix&gt;TaskExecutionRole</code>. There is one <b>Role</b> for each Qrvey deployment. Select the role applying to the current Qrvey deployment. Note down the ARN to be used later as <code>ROLE_DB_DATASOURCE_PUMP_FUNCTION</code>, <code>ELASTIC_VIEW_FUNCTION_ROLE</code>, and <code>ECS_TASK_EXECUTION_ROLE</code></li>
 <li>e. Click <b>Add inline policy</b>.</li>
 <li>f. Click the <b>JSON</b> tab.</li>
 <li>g. Paste the policy, replacing AWS_ACCOUNT_REDSHIFT with the AWS account number for the Redshift cluster.</li>
@@ -92,8 +92,8 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 3. Add a trust relationship for Qrvey role DbDatasourceExportToS3Role.  (During data loads, Qrvey will temporarily move the data to S3.) 
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
 <li>a. Continue in the Qrvey AWS account, IAM.</li>
-<li>b. Search for the export role.  It contains this string: “DbDatasourceExportToS3Role”.</li>
-<li>c. Note the ARN of role DbDatasourceExportToS3Role, to be used later.</li>
+<li>b. Search for the export role.  It contains this string: <code>DbDatasourceExportToS3Role</code>.</li>
+<li>c. Note the ARN of role <code>DbDatasourceExportToS3Role</code>, to be used later.</li>
 <li>d. Click the <b>Trust relationships</b> tab.</li>
 <li>e. Click <b>Edit trust relationship</b>.</li>
 <li>f. Paste the trust relationship below, replacing the appropriate ARN.</li>
@@ -132,7 +132,7 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 
 <ul style={{listStyle: 'none', marginLeft: '30px'}}>
 <li>i. Set the Secret ARN generated above, replacing SECRET_ARN.</li>
-<li>ii. Set the Role ARN for the DbDatasourceExportToS3Role, noted above, replacing EXPORT_TO_S3_ARN.</li>
+<li>ii. Set the Role ARN for the <code>DbDatasourceExportToS3Role</code>, noted above, replacing <code>EXPORT_TO_S3_ARN</code>.</li>
 </ul>
 
 ```json
@@ -193,16 +193,15 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>m. Note this Role’s ARN string for later use.</li>
 </ul>
 
-
 6. Add a Trust Relation to the new Role.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
-<li>a. Search for the lambda roles that contain in the name <i>DBDatasourcePumpFunction</i> and <i>elastic-view-function-role</i>. There is one Role for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
+<li>a. Search for the lambda roles that contain in the name <code>DBDatasourcePumpFunction</code> and <code>elastic-view-function-role</code>. There is one Role for each Qrvey deployment. Select the role applying to the current Qrvey deployment.</li>
 <li>b. Click <b>Roles</b>.</li>
 <li>c. Locate the newly created Role.</li>
 <li>d. Click the <b>Trust Relations</b> tab.</li>
 <li>e. Click <b>Edit trust relationship</b>.</li>
 <li>f. Click the tab <b>Trust relationships</b>, then <b>Edit trust relationship</b>.</li>
-<li>g. Paste the trust relationship shown below, replacing <i>ROLE_DB_DATASOURCE_PUMP_FUNCTION</i> and <i>ELASTIC_VIEW_FUNCTION_ROLE</i> with the Roles noted in Step 2.</li>
+<li>g. Paste the trust relationship shown below, replacing <code>ROLE_DB_DATASOURCE_PUMP_FUNCTION</code>, <code>ELASTIC_VIEW_FUNCTION_ROLE</code>, and <code>ECS_TASK_EXECUTION_ROLE</code> with the Roles noted in Step 2.</li>
 </ul>
 
 ```json
@@ -224,13 +223,19 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
       "Action": "sts:AssumeRole"
     },
     {
-     "Effect": "Allow",
-     "Principal": {
-       "Service": "redshift.amazonaws.com"
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "ECS_TASK_EXECUTION_ROLE"
       },
       "Action": "sts:AssumeRole"
-   }
-
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "redshift.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
   ]
 }
 ```
@@ -258,7 +263,6 @@ The changes allow Qrvey to access the cluster and also enable the cluster to exp
 <li>e. Test the new Connection.</li>
 </ul>
 
-
 ## Debugging
 
 #### Connection Test timeout error:
@@ -269,9 +273,13 @@ If Qrvey is in a different account, then a VPC is necessary for DBDatasourcePump
 
 #### Not authorized to assume IAM Role
 
-Error in Redshift SQL UNLOAD command: ERROR: User arn:aws:redshift:us-east-1:790133296469:dbuser:redshift-drdev/awsuser is not authorized to assume IAM Role arn:aws:iam::790133296469:role/RedshiftDataAccessRole,arn:aws:iam::790133296469:role/rouup_dataload_DbDatasourceExportToS3Role.
+```
+Error in Redshift SQL UNLOAD command: ERROR: User 
+arn:aws:redshift:us-east-1:790133296469:dbuser:redshift-drdev/awsuser is not authorized to assume IAM 
+Role arn:aws:iam::790133296469:role/RedshiftDataAccessRole,arn:aws:iam::790133296469:role/
+rouup_dataload_DbDatasourceExportToS3Role.
+```
 
 This error occurs when the trust relationship for the role DbDatasourceExportToS3Role is not set.  See step 3 above.
-
 
 </div>

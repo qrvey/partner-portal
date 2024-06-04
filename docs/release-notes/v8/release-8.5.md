@@ -1,83 +1,83 @@
 ---
 id: release-last
-title: Qrvey 8.5
-sidebar_label: Qrvey 8.5
+title: Qrvey 8.5 (LTS)
+sidebar_label: Qrvey 8.5 (LTS)
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
-# Qrvey 8.5 LTS Release Notes
+# Qrvey 8.5 (LTS)
 
-Release Date: 2024-04-05
+Release Date: 2024-04-10
 
-> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
+
+> Note: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
 
 ### New Features & Enhancements
 
-- **NodeJS 20 Upgrade** - Node.js library has been upgraded to version 20 to extend the lifespan of this LTS version beyond the deprecation date of Node.js 18, which was the version used in earlier releases.
+- **NodeJS 20 Upgrade** - The Node.js library has been upgraded to version 20, enhancing the longevity of this LTS version beyond the Node.js 18 deprecation date, which was utilized in previous releases.
 
-- **Dashboard Performance Improvements** - The dashboard load and rendering process has undergone extensive updates, resulting in noticeable performance improvements.
+- **Dashboard Performance Improvements** - Significant enhancements have been made to the dashboard's load and rendering processes, leading to noticeable performance improvements.
 
-- **Support ThemeId Property in Dashboards** - A new attribute - `themeId` - has been added to the config object of the Dashboard Builder and Dashboard View widgets. This attribute allows developers to choose and apply any of the existing themes to the dashboard.
+- **Support for ThemeId Property in Dashboards** - A new attribute, `themeId`, has been introduced to the config object of the Dashboard Builder and Dashboard View widgets, allowing developers to select and apply any existing theme to the dashboard.
 
-
-- **See Data Action - Phase 2** - See Data Action was added to allow users to see the underlying data for charts in the 8.3 release. The feature has been extended to cover metrics in this release. 
+- **Enhanced See Data Action** - The See Data Action, introduced in the 8.3 release to display underlying data for charts, now extends its functionality to metrics.
 
 ### General Tweaks & Bug Fixes
 
-- **Dataset Mapping Fixes** - Improvements in the mapping algorithm of Content Deployment have made the solution more robust and complete.
+- **Dataset Mapping Enhancements** - The mapping algorithm for Content Deployment has been enhanced, resulting in a more robust and comprehensive solution.
 
-- **Content Deployment Record Size Limit Improvement** - Content Deployment has been improved to allow more, and larger assets to be deployed with one package.
+- **Improved Record Size Limit in Content Deployment** - Enhancements to Content Deployment now accommodate a larger number and size of assets within a single package.
 
-- **`readFromSource` Bug Fix** - Fixed issue where `readFromSource` could be set to `false` on RLS column.
+- **`readFromSource` Bug Resolution** - Resolved an issue where `readFromSource` could inadvertently be set to `false` on an RLS column.
 
-- **Fixed Error when Handling Empty String Values** - Resolved unexpected Error when handling Empty String Values in Numeric Fields During Joins.
+- **Correction for Empty String Value Handling** - Addressed an unexpected error encountered when processing empty string values in numeric fields during joins.
 
-- **Fixed issue in Push API** - Fixed an bug where when all records fail, there is no error in activity log.
+- **Push API Issue Resolution** - Rectified a problem where no error appeared in the activity log even when all records failed in the Push API.
 
-- **If `readFromSourceParam` is an RLS, an error message is shown when trying to change the flag to false.**
+- **ReadFromSourceParam RLS Error Messaging** - An error message is now displayed when an attempt is made to change the `readFromSourceParam` flag to false for an RLS.
 
-- **MongoDB Array Flattening Fix** - Addressed an issue in ColumnDiscover related to flattening nested objects with MongoDB connections.
+- **MongoDB Array Flattening Correction** - Resolved an issue in ColumnDiscover related to flattening nested objects in MongoDB connections.
 
-- **Data JOIN Bug Fix** - Fixed a loading issue that occurred when joining with a union which has a join as a source.
+- **Data JOIN Issue Fix** - Corrected a loading problem occurring during data joins with a union that has a join as a source.
 
-- **Grouped Table Keeps Vertical Borders** - Fixed an issue in Table charts, when a user grouped tables and removed borders, the vertical borders reappeared.
+- **Maintenance of Vertical Borders in Grouped Tables** - Addressed a problem where vertical borders reappeared in table charts when grouping tables and removing borders.
 
-- **"In" Date Filter Error Fix** - Fixed an issue when using a Date Filter in a dashboard, the "In" operator incorrectly starts from tomorrow instead of today.
+- **"In" Date Filter Correction** - Resolved an issue where the "In" operator in a Date Filter started from tomorrow instead of today.
 
-- **Embed Button Visible on AN Panel** - Fixed an issue when the user embedded the AN panel, the Embed Analyze view button was visible.
+- **Visibility Adjustment for Embed Button on AN Panel** - Corrected an issue where the Embed Analyze view button remained visible when embedding the AN panel.
 
-- **Optimized Behavior Editing Disabled Filters** - Fixes an issue when a global filter was added and then disabled and consequently edited, the list of values refreshed, but the value was not found.
+- **Optimized Editing for Disabled Filters** - Fixed a scenario where editing a disabled global filter caused the values list to refresh without locating the value.
 
-- **Fixed Go To URL Action** - Fixed an issue where the Go to URL action was not working in specific cases.
+- **Go To URL Action Fix** - Resolved a malfunction in the Go to URL action under specific circumstances.
 
-- **Fixed Tab View Error** - Fixed an issue where permission changes in Snowflake would show an error in the Analyze tab.
+- **Tab View Error Correction in Snowflake** - Addressed an error displayed in the Analyze tab when altering permissions in Snowflake.
 
-- **Expanded Bucket Search Limit** - Increased the Bucket Search limit to allow more than 1000 results.
+- **Expanded Search Limit in Buckets** - Increased the search limit in buckets to support over 1000 results.
 
-- **Corrected Fill/Null Summary Accuracy** - Fixed an issue where the Fill/Null Summary showed incorrect percentages for filled-in and null values when there were null records.
+- **Accuracy Improvement in Fill/Null Summary** - Corrected the percentage accuracy in the Fill/Null Summary for filled and null values amidst null records.
 
-- **Resolved Grouped Table Tooltip Flickering** - Fixed the flickering tooltips issue in Grouped Table visualizations.
+- **Grouped Table Tooltip Flickering Resolution** - Eliminated flickering tooltips in Grouped Table visualizations.
 
-- **Token Display Fix in Filter Tooltip** - Corrected an issue where tokens incorrectly appeared in tooltips when filtering charts using date columns.
+- **Token Display Correction in Filter Tooltip** - Fixed an issue where tokens displayed incorrectly in tooltips during chart filtering with date columns.
 
-- **Dashboard Builder Lambda Alias Registration Fix** - Resolved an issue where the Page Builder Lambda alias was not properly registered as a target for Dashboard Builder endpoints.
+- **Dashboard Builder Lambda Alias Registration Correction** - Resolved a registration issue with the Page Builder Lambda alias for Dashboard Builder endpoints.
 
-- **LC Metrics Support in Automation Flows** - Applied a manual patch to support LC Metrics in Automation (Flows).
+- **LC Metrics Integration in Automation Flows** - Implemented a manual patch to incorporate LC Metrics in Automation (Flows).
 
-- **Embedding Flow Widget Style Fix** - Addressed an issue where embedding the flow widget would overwrite the hosting styles.
+- **Embedding Flow Widget Style Correction** - Addressed a style override issue when embedding the flow widget.
 
-- **Navigation Menu Custom Attributes Fix** - Corrected an issue where publishing/unpublishing the Navigation Menu would remove the `customAttributes` object from the Dashboard.
+- **Navigation Menu Custom Attributes Preservation** - Corrected a problem where publishing/unpublishing the Navigation Menu removed the `customAttributes` object from the Dashboard.
 
-- **Chart Filter Removal Fix** - Fixed an issue where the chart filter was not removed from Interact mode in the Dashboard after the chart was deleted.
+- **Chart Filter Removal in Dashboard Interact Mode** - Ensured the removal of chart filters from Interact mode in the Dashboard after deleting the chart.
 
-- **Dashboard Section Error After Upgrade** - Resolved a 500 error in the dashboard section that occurred after upgrading from environment 7.8.x to 8.2.1.
+- **Dashboard Section Stability Post-Upgrade** - Resolved a 500 error in the dashboard section post-upgrade from environment 7.8.x to 8.2.1.
 
-- **Drilling Dashboard Edit Mode Error Fix** - Addressed an error that returned "This page is not available" when drilling into the dashboard, then editing and closing the edit mode.
+- **Drilling Dashboard Edit Mode Error Resolution** - Corrected an error that displayed "This page is not available" when editing and closing the edit mode after drilling into the dashboard.
 
-- **Filter Visibility Fix in Flow Exports** - Fixed an issue where the “Filters Applied” label incorrectly displayed “No Filters Applied” when a filter was applied to an attachment in Flow exports.
+- **Filter Visibility in Flow Exports** - Rectified an incorrect "No Filters Applied" label when filters were indeed applied to an attachment in Flow exports.
 
-- **Excel Panel Export Step Function Implementation** - Implemented a step function in Excel panel exports for Raw-type export.
+- **Excel Panel Export Enhancement** - Implemented a step function for Raw-type export in Excel panel exports.
 
-- **Inclusion of Automation Filters in Exports** - Included Automation Filters in the export's additional information for enhanced data clarity.
+- **Inclusion of Automation Filters in Exports** - Added Automation Filters to the export's additional information for improved data clarity.
 
-- **Logic Object Support in Export Report Endpoint** - Updated support for the logic object in the export report endpoint and refined the API documentation.
+- **Enhanced Logic Object Support in Export Report Endpoint** - Upgraded the support for the logic object in the export report endpoint and refined the API documentation.
