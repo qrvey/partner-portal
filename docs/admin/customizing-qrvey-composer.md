@@ -189,6 +189,5 @@ Click the Information icon for more details on the specific options. For additio
 
 #### Settings
 Provide users with access to general application settings as well as to specific features. Options include:
-* **Settings Section**. Enables users to configure global settings that affect the entire application. For more information, please see [Application Settings](../composer/Managing%20Applications/overview-of-settings.md)
-
-* **Download Manager Section**. Enables the Download Manager feature, which provides users with a central location to access and manage exported files. For more information, see [Download Manager](../composer/download-manager.md).
+* **Settings Section**. Enables users to configure global settings that affect an entire application.
+* **Download Manager Section**. Enables the Download Manager feature, which provides users with a central location to access and manage exported files.
