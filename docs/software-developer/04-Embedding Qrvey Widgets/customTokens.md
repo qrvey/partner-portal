@@ -116,12 +116,12 @@ Continuing the example above, the tokens display as follows:
 ```
 
 
-## Applying a Custom Token to a Chart
+## Apply a Custom Token to a Chart
 
 After the `customToken` property is added to the Dashboard Builder or Dashboard View configuration object, it is ready to use in a chart:
 
-1. In Qrvey Composer, open Dashboard Builder and create or edit a dashboard.
-2. Open Chart Builder and add either a Bulle chart or Dial chart.
+1. Open the embedded Dashboard Builder widget and create or edit a dashboard.
+2. Open Chart Builder to add a Bullet chart or Dial chart.
 3. Expand the Thresholds section and click **Add Threshold**.
 4. Select **Fixed**.
 
