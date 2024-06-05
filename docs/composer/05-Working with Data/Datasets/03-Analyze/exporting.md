@@ -26,23 +26,21 @@ The following export formats are available in the following UIs.
 | Summary Panel | yes | no | yes| yes |
 | Workflow > Email Attachment | no | no | no | yes |
 
-
 *PDF export comes in two flavors: Layout Export and Data Export. The latter applies to table charts only and everything else is exported in the layout mode. See the <a href="#pdf-export">PDF Export</a> section for more on this.
 
 **CSV Summary is available for most charts and it exports the aggregated data, as it appears in the chart. See the <a href="#csv-summary-export">CSV Summary Export</a> section for more on this.
 
 <!-- When exporting charts, if for example you add a filter and there isn’t any data found meeting the parameters you had set, you’ll see a message in your PDF and CSV exports informing you that there weren’t any records to export. -->
 
-
 > **Note 1:** All export types take time to complete. And depends on the size of the data and the complexity of the exported content. The product notifies the user of this and gives them the option to continue work while the download completes in the background.
 
 > **Note 2:** If any “Max” limits (Max Data Points, Max records, Max columns, Max rows, Max slices and Max groups) have been applied to the chart, those limits apply to the exported data as well.
 
-## Override Max Data Points
+## Customize Max Data Points
 
-When exporting charts, you can configure the Qrvey platform to override the value set in the Max Data Points field and always export all data. This override is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. 
+When exporting charts, you can configure the Qrvey platform to customize the value set in the Max Data Points field and always export all data. This is configured using the Backend API. It affects the CSV, CSV Summary, Excel, and PDF export features. 
 
-To **determine whether the Max Data Points field has been overridden**, use the [Get General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/6addb9e3c599e-get-general-settings) to configure the `maxDataPointExport` parameter.
+To **determine whether the Max Data Points field has been overridden**, use the [Get General Settings API](https://qrvey.stoplight.io/docs/qrvey-api-doc/6addb9e3c599e-get-general-settings) and check the `maxDataPointExport` parameter.
 - If value is set to `0`, all exports use the Max Data Point value set in charts.
 - If value is set to `-1`, the export feature ignores the Max Data Point configuration and exports all data.
 
@@ -51,9 +49,11 @@ To **change the override setting**, use the [Update General Settings API](https:
 -  Set the value to `-1` to ignore the value set in the chart and export all data.
 
 ## CSV Export
-The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”. CSV exports are not available as email attachments in workflows, at this time.
+
+The option to export data in CSV format is available in various contexts and can be used to download files containing the “data behind the visual or visuals in that context”.
 
 ### From the Dataset Analyze Views
+
 This feature can be found under the download icon in the top right corner of the page.
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export1.png#thumbnail-60)
@@ -61,8 +61,8 @@ This feature can be found under the download icon in the top right corner of the
 In this context, we are working with all of the data from a single dataset: the one that we are analyzing. Hence, the CSV export will be a single file that contains the entire dataset, with the same sorting and filters that have been applied to it in this view.
 
 ### From the Dashboard Builder
-Here, the feature can be found under a similar icon in the toolbar.
 
+Here, the feature can be found under a similar icon in the toolbar.
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export2.png#thumbnail-60)
 
@@ -92,9 +92,8 @@ When the exporting is done, you’ll see the following message:
 
 > **Note 1**: The data downloaded is the “raw” data behind the visualizations and not aggregated in the same way that it appears in the visualizations. For aggregated data, use the <a href="#csv-summary-export">CSV Summary export</a>.
 
->**Note 2**: If there are multiple pages, each page has to be downloaded individually, but if there are multiple tabs on a page, data for all tabs is downloaded at the same time, as if the content of all tabs were on one of the tabs.
-
 ### From the Published Page Or Embedded Dashboard View Widget
+
 The CSV download option can be found from a similar icon that appears upon clicking on the three-dot menu on the lower right corner of the dashboard.
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export8.png#thumbnail-40)
@@ -102,12 +101,14 @@ The CSV download option can be found from a similar icon that appears upon click
 You can also use the Schedule Exports feature to automatically produce exports at specified intervals and send them to an email address. For more information, see [Scheduling Exports](./scheduling-exports.md).
 
 ### From the Chart, Metric, and Summary Panels
+
 In the upper-right corner of each panel inside Summary, Custom, and Metric views, as well as the panels that have been placed on a dashboard or report, you’ll also find a download option for the individual panel/visualization. 
 The CSV export option for panels only includes the raw data (unaggregated) for the columns that are used in the chart. As a result, CSV export of summary panels will contain only the one column that is summarized in the summary chart.
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export12.png#thumbnail-60)
 
 ## CSV Summary Export
+
 CSV Summary is another data export option that is only available for chart panels in Custom and Metric views, as well as chart panels that have been placed on a dashboard or report. This option is fairly similar to the CSV export, in that it only includes the columns that have been used in the chart, but the data is reflected in its aggregated form in the same way that it has been aggregated for the chart. For example, while the CSV export of the **Order By Quarter** chart in our example contains the raw underlying data for the columns, the CSV Summary export for the same chart contains the same two columns, but **Total Order** is aggregated, just as it is in the chart.
 
 
@@ -116,6 +117,7 @@ CSV Summary is another data export option that is only available for chart panel
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export14.png#thumbnail-60)
 
 ## JPG Export
+
 JPG is a layout export option. The JPG export option is available from the chart and summary panels, as well as all of the Dataset Analyze views other than the Tabular view. 
 Being a design or layout export option, the exported visuals will be downloaded as they appear at the time of export and may include scroll bars or show only the part of the charts that are visible within the panels. The best way to describe this feature is that the JPG export looks exactly like a screenshot of the visual. 
 
@@ -124,6 +126,7 @@ The following image shows the JPG export results of the Customers dataset’s Su
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/visualization2.png#thumbnail) 
 
 ## PDF Export
+
 PDF export is mainly a layout export option and produces results that look a lot like the JPG export, but are in PDF format. The feature that sets PDF export apart from other formats is its different behavior when it comes to exporting tables: In this case, all of the data for the table is exported, much like a CSV export, but in PDF format.
 
 >**Note 1**: The same table, when exported as part of a dashboard or report, is exported in the layout mode and is part of the image of the dashboard or report. The full data mode only works when exporting the table from the chart panel.
@@ -133,6 +136,7 @@ PDF export is mainly a layout export option and produces results that look a lot
 >**Note 3**: PDF export is not available in the Tabular view from the Dataset Analyze tabs, but can be found in the same menu as the other exports everywhere download is possible.
 
 ## Export and Workflows
+
 As explained in the [Actions - Send](../../../09-Automation/send-actions.md) article, dashboards, reports, and individual table charts on dashboards can be exported automatically and the results can be attached and sent to the selected recipients with the **Send Email** action. 
 
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export16.png#thumbnail-40)
@@ -154,6 +158,7 @@ It is important to note the following points:
 ![data_export](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/3.4.3.4_exporting/export20.png#thumbnail-60)
 
 ## Scheduling Exports
+
 You can use the [Scheduling Exports](./scheduling-exports.md) feature to automatically produce exports at specified intervals and send them to an email address.
 
 </div>

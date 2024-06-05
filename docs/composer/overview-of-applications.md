@@ -29,44 +29,25 @@ Use the controls in the upper right side of the Applications page to filter the 
 ## Create an Application
 
 To create an application, follow these steps.
-1. Navigate to the Applications Page,
-2. Click **Create Application** and a modal will appear. 
+1. Navigate to the Applications Page.
+2. Click **Create Application**in the upper left corner and a modal will appear. 
 3. Provide a **Name** and **Description**, then click **Next**.
 4. Select either **Webform** or **Datasets** and your application will be created.
 
 Next, you'll want to import data into your Application. To learn more, please see the [Introduction to Data in Qrvey](./05-Working%20with%20Data/introduction-to-data-in-qrvey.md).
 
-
-## Delete an Application
-
-To delete an application, follow these steps.
-1. Navigate to the Applications Page and find the application you'd like to delete.
-2. Open its context menu in the top right corner. 
-3. Click **Delete** and a modal will appear.
-4. Click **Delete** to confirm.
-
 ## Send an Application
 
 ![Sending Step 1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/1_sending.png#thumbnail-80)
 
-To send an app to another Qrvey user, follow these steps:
-1. Go to the application dashboard.
-2. Click **Send** from the drop-down menu in the lower-right corner.
+To send an app to another Qrvey user, follow these steps.
+1. Navigate to the Applications page.
+2. Find the application you want to send and click its three-dot menu, then click **Send**.
 3. Select the email address of the Qrvey user you want to send your application to.
    - Ensure the recipient has an active Qrvey account on the same instance.
 4. Optionally, modify the application's name and description.
 5. Click **Send**. You will see a green confirmation message once the application is sent.
    - Sending may take several minutes based on the application's size.
-
-## Receive an Application
-
-![Receiving Step 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/5_sending.png#thumbnail-60)
-
-To install an application you've received:
-1. Look for a notification number on the **Received** tab in the application dashboard.
-2. Click the application name for more details and then click **Install**.
-3. Once installed, a green notification confirms the application is ready.
-   - Installation time depends on the application size.
 
 ## Share an Application
 
@@ -74,14 +55,32 @@ To install an application you've received:
 
 By default, the applications you create in Qrvey Composer are private to your user account.
 
-To share an application, follow these steps:
-1. Navigate to the Applications page to view your applications.
-2. Find the application you want to share and click the three-dot menu, then select **Share**.
+To share an application, follow these steps.
+1. Navigate to the Applications page.
+2. Find the application you want to send and click its three-dot menu, then click **Send**.
    - The **Share Application** modal will appear.
-3. You several sharing options:
+3. You have several sharing options:
    - Select **Share with my organization** to share with all users in your organization.
    - Select specific users and roles (please ensure **Share with my organization** is deselected).
 5. Click **Done** to share and exit.
+
+## Delete an Application
+
+To delete an application, follow these steps.
+1. Navigate to the Applications Page.
+2. Find the application you want to send and click its three-dot menu, then click **Send**.
+3. Click **Delete** and a modal will appear.
+4. Click **Delete** to confirm.
+
+## Receive an Application
+
+![Receiving Step 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/others/3.4.8_sending/5_sending.png#thumbnail-60)
+
+To install an application, follow these steps.
+1. Look for a notification number on the **Received** tab in the application dashboard.
+2. Click the application name for more details and then click **Install**.
+3. Once installed, a green notification confirms the application is ready.
+   - Installation time depends on the application size.
 
 ## Application Settings
 
@@ -90,7 +89,7 @@ To share an application, follow these steps:
 Use this module to configure the name, description, icon, and color scheme for a Qrvey application.
 
 - **Name & Icon** — Click to edit the name and the description of the application, as well as upload an application icon. 
-- **Web Form Them:** Choose a light or dark background for your application.
+- **Web Form Theme:** Choose a light or dark background for your application.
 - **Primary Color:** Choose the primary color for your toolbar and navigation elements.
 
 </div>
