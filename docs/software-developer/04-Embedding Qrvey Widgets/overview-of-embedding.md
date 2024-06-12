@@ -27,7 +27,7 @@ Refresh your frontend application and your widget should now be visible in the U
 
 ## Anatomy of a Widget
 
-The embedded widget code snippet copied from Qrvey composer consists of an HTML Tag and two scripts.
+The widget's code snippet that you copied from Qrvey composer consists of an HTML Tag and two scripts.
 
 ```html
 <!-- widget's tag -->
@@ -36,7 +36,7 @@ The embedded widget code snippet copied from Qrvey composer consists of an HTML 
 <!-- widget's Config Object -->
 <script>
 var config = {
-  "api_key": "<YOUR_PRIVATE_API_KEY>", //Switch this with the actual API key.
+  "api_key": "<YOUR_PRIVATE_API_KEY>",
   "domain": "https://documentation-demos.qrvey.com",
   "user_id": "OIJFsiS4-",
   "app_id": "fQiu0ogde"
@@ -59,7 +59,7 @@ Each widget has its own set of configuration options. Please browse the followin
 | [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enables end-users to build custom charts. |
 | [Web Form Design](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-forms.md) | Enables end users to create and publish their own web forms. | 
 | [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-form-end-user.md) | Embeds an existing web form (form, survey, or quiz), in which end users can enter data. | 
-| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enables end-users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis vie. | 
+| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enables end-users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view. | 
 | [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md) | Embeds a Pixel-perfect report. |
 | [Automation](../04-Embedding%20Qrvey%20Widgets/05-Widgets/automation-widget.md) | Embeds workflow functionality into your application. |
 | [Download Manager](../04-Embedding%20Qrvey%20Widgets/05-Widgets/download-manager.md) | Enables end-users to access Download Manager to manage exported files. |

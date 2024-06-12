@@ -10,12 +10,11 @@ displayed_sidebar: software-developer
 
 Qrvey provides filtering to refine data based on your needs. When embedding Qrvey Widgets into your system, you may need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps needed to pass the values of your own filters to embedded Qrvey widgets. For an general introduction to filters, please see [Working with Interactive Filters](../../composer/08-Filtering%20Data/working-with-filters.md).
 
-You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the Filter Object Structure, as described below. The structure is passed as part of the supported widget’s configuration object as “userFilters” and it can contain an array of filters with the default scope of global.
+You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the Filter Object Structure, as described below. The structure is passed as part of the supported widget’s configuration object as `userFilters` and it can contain an array of filters with the global scope by default.
 
 ## The Filter Object
 
 This feature is available with the [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
-
 
 ```js
 var config = {
@@ -111,7 +110,7 @@ var config = {
 ## Example: A Simple Filter
 The following example shows the filter structure for a simple range filter on a numeric column: 
 
-Sample filter: COLUMN_ID BETWEEN 10 AND 15.
+**Sample Filter:** COLUMN_ID BETWEEN 10 AND 15.
 
 ```
 ...
@@ -140,12 +139,13 @@ Sample filter: COLUMN_ID BETWEEN 10 AND 15.
 ## Example: Filter Multiple Columns
 The following example shows the filter structure for three filters with different columns and conditions.
 
-Sample filter: <br />
+**Sample Filter:** <br />
 COLUMN_ID_1 BETWEEN 05/15/2014<br /> AND<br /> 11/30/2016<br />
 AND<br />
 		COLUMN_ID_2 EQUAL ‘United States’
 		AND
 		COLUMN_ID_3 GREATHER_THAN 10507.231
+    
 ```
 ...
  "userFilters": {

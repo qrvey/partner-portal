@@ -41,7 +41,7 @@ The following table lists the properties associated with this widget.
 ## Showing and Hiding Features
 In the Dashboard View widget, the `featurePermission` object enables you to create a customized view by showing and hiding specific features. The properties table below lists all the features that you can show or hide. 
 
-### featurePermission object properties
+### featurePermission Object Properties
 The following table describes the properties of the `featurePermission` object.  
 
 | **Property** | **Description** |  **Type** | **Default** | **Required** |
@@ -67,8 +67,8 @@ The following table describes the properties of the `featurePermission` object.
 
 >**Tip**: To hide all features, set the `Liteversion` property to `true`. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -80,8 +80,8 @@ widgetConfig = {
 
 >**Tip**: To hide most features, set the `Liteversion` property to `true` and list the exceptions you want to show to false. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -99,8 +99,8 @@ In the Dashboard View widget, you can enable end users to subscribe to a schedul
 
 To enable the User Subscriptions option in the Dashboard View widget, set the `enable_subscriptions` property to `true`. For example:
 
-```json
-subscriptions_settings: {
+```js
+const subscriptions_settings = {
           enable_subscriptions: true
 }
 ```
@@ -118,8 +118,9 @@ The following table describes the properties of the `subscription_settings` obje
 | **email_message** | JSON object to configure the email message. See below for the structure. | `Object` | N/A | No |
 
 The structure of the email_message object is:
-```json
-email_message: 
+
+```js
+const email_message =
     {
      hide_add_subject: true/false,
      hide_add_message: true/false
@@ -131,8 +132,8 @@ In the Dashboard View widget, all authenticated users can personalize their view
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -144,7 +145,7 @@ widgetConfig = {
 
 >**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
 
-### personalization object properties
+### Personalization Object Properties
 The following table describes the properties of the `personalization` object.  
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -164,19 +165,19 @@ In the Dashboard View widget, you can override CSS settings for white-labeling p
 When using the `styles` object, house the properties inside the `pageView` object. For example:
 
 ```
-        styles: {
-          pageView: {
-            canvasTextFontFamily: 'Roboto, sans-serif',
-            canvasTextFontWeight: 'normal',
-            canvasTextFontSize: '12px',
-            canvasTextFontColor: 'blue',
-            canvasTextBackgroundColor: 'white',
-            canvasTextAlign: 'left'
-          }
-        }
+styles: {
+  pageView: {
+    canvasTextFontFamily: 'Roboto, sans-serif',
+    canvasTextFontWeight: 'normal',
+    canvasTextFontSize: '12px',
+    canvasTextFontColor: 'blue',
+    canvasTextBackgroundColor: 'white',
+    canvasTextAlign: 'left'
+  }
+}
 ```
 
-#### styles object properties
+#### Styles Object Properties
 The following table describes the properties of the `styles` object.  
 
 | **Property** | **Values** | **Target** |

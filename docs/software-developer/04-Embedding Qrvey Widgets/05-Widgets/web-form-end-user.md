@@ -26,18 +26,20 @@ To use this code in your application, replace the values in brackets (“&lt;&gt
 
 **HTML Tag:**
 
-`<qrvey-webform-enduser config="config"></qrvey-webform-enduser>`
+```html
+<qrvey-webform-enduser config="config"></qrvey-webform-enduser>
+```
 
 **Widget Launcher Script:**
 
-```
+```html
 <script type="module" src="https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js"></script>
 ```
 
 **JSON Configuration Object:**
 
-```json
-var config = {
+```js
+const widgetConfig = {
    style: "", //CSS Stylesheet URL
    webformid: "<WEB_FORM_ID>", //QrveyLookUpID
    server: "https://<your_qrvey_domain>", 

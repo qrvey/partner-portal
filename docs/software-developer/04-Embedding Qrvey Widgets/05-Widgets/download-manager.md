@@ -36,7 +36,7 @@ The Download Manager widget provides an exposed method that enables you to trigg
 
 You can access the method by using query selector. For example: 
 
-```
+```js
 function openmodal () {
 const el = document.querySelector('qrvey-download-manager');
 el.openDownloadManager();
@@ -45,7 +45,9 @@ el.openDownloadManager();
 
 You then can create a button and execute that function. For example: 
 
-`<button onclick="openmodal()">Open Modal</button>`
+```html
+<button onclick="openmodal()">Open Modal</button>
+```
 
 
 

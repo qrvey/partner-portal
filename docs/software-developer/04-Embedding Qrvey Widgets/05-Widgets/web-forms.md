@@ -34,18 +34,20 @@ To use this code in your application, replace the values in brackets (“&lt;&gt
 
 **HTML Tag:**
 
-`<qrvey-design-widgets settings="config"></qrvey-design-widgets>`
+```html
+<qrvey-design-widgets settings="config"></qrvey-design-widgets>
+```
 
 
 **Widget Launch Script:**
 
-```
+```html
 <script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
 
 **JSON Configuration Object:**
 
-```json
+```
 <qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
 var configWebForm = {
     "api_key": "<API_KEY>",
