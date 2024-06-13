@@ -12,7 +12,7 @@ Qrvey’s approach to multi-tenant security architecture is to utilize the **ass
 Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime.  This document discusses best practices for implementing authentication and authorization using these widget configuration properties.  If you are not yet familiar with how to embed and configure Qrvey widgets, review the following documentation before continuing:
 
 * [Overview of Embedding & Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
-* [Widgets Quick Start Guide](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-quick-start-guide.md)
+* [Widgets Quick Start Guide](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 * [Embedding Widgets Using a Security Token](../software-developer/04-Embedding%20Qrvey%20Widgets/embedding-widgets-security-token.md)
 * [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md)
 * [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)
