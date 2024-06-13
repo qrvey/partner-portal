@@ -9,8 +9,9 @@ displayed_sidebar: software-developer
 <div style={{textAlign: "justify"}}>
 
 
-When embedded in an application, the Analytic Suite widget enables users to display the distinct views available on the analyze side (i.e Summary, Table, Custom, and Metric views).
+The Analytic Suite widget enables users to display the distinct data analysis views available within the Analyze functionality of Qrvey Composer. This includes Summaries, Tables, Metric Views, etc. 
 
+<!-- 
 ## Before You Begin
 * Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
@@ -21,8 +22,8 @@ When embedded in an application, the Analytic Suite widget enables users to disp
 2. Click the **Embedding Options** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
 4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
 
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
+## Embed the HTML Tag
+Identify where you would like this widget to display in your application, and then add the HTML tag in that location.
 
 The HTML tag for this widget is:
 
@@ -56,11 +57,10 @@ var anSuiteConfig = {
 </script>
 ```
 
-When complete, add the JSON configuration object to your application. 
+When complete, add the JSON configuration object to your application.  -->
 
 ### Configuration Object Properties
 The following table lists the properties associated with this widget. 
-
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -91,15 +91,5 @@ The following table lists the properties associated with this widget.
 | **settings.styles.themePalette** | `Array`, contains a maximum of 20 colors that will be used for chart data points. | No | 
 | **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br /><br />{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No  
-
-
-
-## Code Samples
-The following samples demonstrate how this widget can be used in an HTML page. 
-
-| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
-| --- | --- | --- | --- |
-| Basic API Key | This sample uses a basic API key to embed an Analytic Suite widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/gOQVVpa/b3e91d1d0e4315a20cd0cf9046892aa3?editors=1010) | n/a |
-
 
 </div>
