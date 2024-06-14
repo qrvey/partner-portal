@@ -13,47 +13,6 @@ When embedded in an application, the Dashboard Builder widget enables users to m
 
 >**Note**: The Dashboard Builder widget replaces the Page Builder widget in Qrvey version 8.0 and later. 
 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
-
-## Get the Helper Code
-1. In Qrvey Composer, open Dashboard Builder and display the Dashboard list. 
-2. Click the **Embedding Options** button in the upper right corner of the page, and then click **Embed Dashboard Builder**. 
-  ![dashboard-builder-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/dashboard-builder-wi-80.png#thumbnail-20)
-3. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
-4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
- 
-## Embed the HTML tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<qrvey-builders settings="config"></qrvey-builders>`
-
-## Embed the Widget Launcher script tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-`<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>`
-
-## Set properties in the JSON configuration object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```json
-<script>
-var config = {
-  api_key: '<API_KEY>',
-  domain: 'https://<your_qrvey_domain>',
-  user_id: '<USER_ID>',
-  app_id: '<APP_ID>'
-};
-</script>
-```
-
-When complete, add the JSON configuration object to your application. 
 
 ### Configuration Object Properties
 The following table lists the general properties associated with this widget. 
@@ -91,12 +50,14 @@ The widget supports custom events to update keys of the configuration, you can d
   * Operator: defines which operation will be performed with the expressions.
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
 | **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
 | --- | --- | --- | --- |
 | Basic API Key | This sample uses a basic API key to embed a full Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/PoxMMYP/38e4021367bada1da1cb90d58bb3da24) | n/a |
-| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a |
+| Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a | 
+-->
 
 </div>

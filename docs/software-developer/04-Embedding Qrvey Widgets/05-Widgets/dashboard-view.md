@@ -14,61 +14,9 @@ The Dashboard View widget enables you to embed one or more dashboards or a mashu
 
 >**Note**: The Dashboard View widget replaces the Page View widget in Qrvey version 8.0 and later. 
 
-## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
-
-## Get the Helper Code
-1. In Qrvey Composer, open Dashboard Builder and display the Dashboard list. 
-2. Select one of the following options: 
-
-  a. To embed all dashboards in the application, click the **Embedding Options** button in the upper right corner of the page, and then click **Embed Dashboard View**. 
-
-  ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/page-builder-wi-80.png#thumbnail-40)
-
-  b. To embed a single dashboard, click its three-dot menu in the Dashboard list, point to **Embed**, and then click **Embed Dashboard View**. 
-
-  ![page-view-widget](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/dashboard-builder-options-81.png)
-
-3. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
-
-4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
-
-## Embed the HTML Tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location. 
-
-The HTML tag for this widget is:
-
-`<qrvey-end-user settings="config"></qrvey-end-user>`
-
-## Embed the Widget Launcher Script Tag
-Add the widget launcher script tag to your application. 
-
-For reference, the launcher script code is:
-
-`<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>`
-
-## Set Properties in the JSON Configuration Object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values:
-
-```json
-<script>
-var config = {
-   "api_key": "<YOUR_PRIVATE_API_KEY>",
-   "domain": "https://your_qrvey_domain",
-   "user_id": "<USER_ID>",
-   "dashboard_id": "<DASHBOARD_ID>",  // Optional. Embeds the specified dashboard only.
-   "app_id": "<APPLICATION_ID>"
-}
-</script>
-```
-
-When complete, add the JSON configuration object to your application. 
 
 ### General Properties
-The following table lists the properties associated with this widget. 
-
+The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -93,7 +41,7 @@ The following table lists the properties associated with this widget.
 ## Showing and Hiding Features
 In the Dashboard View widget, the `featurePermission` object enables you to create a customized view by showing and hiding specific features. The properties table below lists all the features that you can show or hide. 
 
-### featurePermission object properties
+### featurePermission Object Properties
 The following table describes the properties of the `featurePermission` object.  
 
 | **Property** | **Description** |  **Type** | **Default** | **Required** |
@@ -119,8 +67,8 @@ The following table describes the properties of the `featurePermission` object.
 
 >**Tip**: To hide all features, set the `Liteversion` property to `true`. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -132,8 +80,8 @@ widgetConfig = {
 
 >**Tip**: To hide most features, set the `Liteversion` property to `true` and list the exceptions you want to show to false. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -151,8 +99,8 @@ In the Dashboard View widget, you can enable end users to subscribe to a schedul
 
 To enable the User Subscriptions option in the Dashboard View widget, set the `enable_subscriptions` property to `true`. For example:
 
-```json
-subscriptions_settings: {
+```js
+const subscriptions_settings = {
           enable_subscriptions: true
 }
 ```
@@ -170,8 +118,9 @@ The following table describes the properties of the `subscription_settings` obje
 | **email_message** | JSON object to configure the email message. See below for the structure. | `Object` | N/A | No |
 
 The structure of the email_message object is:
-```json
-email_message: 
+
+```js
+const email_message =
     {
      hide_add_subject: true/false,
      hide_add_message: true/false
@@ -183,8 +132,8 @@ In the Dashboard View widget, all authenticated users can personalize their view
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
 
-```json
-widgetConfig = {
+```js
+const widgetConfig = {
    domain: "DOMAIN",
    appid: "APP_ID",
    userid: "USER_ID",
@@ -196,7 +145,7 @@ widgetConfig = {
 
 >**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
 
-### personalization object properties
+### Personalization Object Properties
 The following table describes the properties of the `personalization` object.  
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -216,19 +165,19 @@ In the Dashboard View widget, you can override CSS settings for white-labeling p
 When using the `styles` object, house the properties inside the `pageView` object. For example:
 
 ```
-        styles: {
-          pageView: {
-            canvasTextFontFamily: 'Roboto, sans-serif',
-            canvasTextFontWeight: 'normal',
-            canvasTextFontSize: '12px',
-            canvasTextFontColor: 'blue',
-            canvasTextBackgroundColor: 'white',
-            canvasTextAlign: 'left'
-          }
-        }
+styles: {
+  pageView: {
+    canvasTextFontFamily: 'Roboto, sans-serif',
+    canvasTextFontWeight: 'normal',
+    canvasTextFontSize: '12px',
+    canvasTextFontColor: 'blue',
+    canvasTextBackgroundColor: 'white',
+    canvasTextAlign: 'left'
+  }
+}
 ```
 
-#### styles object properties
+#### Styles Object Properties
 The following table describes the properties of the `styles` object.  
 
 | **Property** | **Values** | **Target** |
@@ -268,7 +217,7 @@ The widget supports custom events to update keys of the configuration, you can d
   * Operator: defines which operation will be performed with the expressions.
   * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
 
-
+<!-- 
 ## Code Samples
 The following samples demonstrate how this widget can be used in an HTML page. 
 
@@ -277,5 +226,6 @@ The following samples demonstrate how this widget can be used in an HTML page.
 | Basic API Key | This sample uses a basic API key to embed a full Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/NWNvyWM/cf1d20805cc1f18680d7a9d15a07dce3) | n/a |
 | Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/LYXwKoM/6f4049ea4a7fe9be92984be3591285d6) | n/a |
 | CSS Injection | This sample uses a basic API key and custom CSS to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments. | [codepen](https://codepen.io/qrveysamples/pen/BavBNjY/4bb40af9433781a4ae41d36e6ffca40c?editors=1010) | n/a | 
+-->
 
 </div>

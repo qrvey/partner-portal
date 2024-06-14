@@ -1,33 +1,30 @@
 ---
 id: filters-embedded-scenarios
-title: Working With Filters in Embedded Scenarios
-sidebar_label: Working With Filters in Embedded Scenarios
+title: Working With Filters in Widgets
+sidebar_label: Working With Filters in Widgets
 tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: software-developer
 ---
 
-<div style={{textAlign: "justify"}}>
 
-Qrvey provides a set of controls to create and interact with filters across the application to refine the data based on your needs. You can find more details about these controls in the portal section [Working with Interactive Filters](../../composer/08-Filtering%20Data/working-with-filters.md). When embedding Qrvey’s widgets into your system, you may run into situations where you need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps that are needed for passing the values of your own filters to embedded Qrvey widgets.
+Qrvey provides filtering to refine data based on your needs. When embedding Qrvey Widgets into your system, you may need to combine Qrvey’s filters with your own set of filter controls. This article walks you through the steps needed to pass the values of your own filters to embedded Qrvey widgets. For an general introduction to filters, please see [Working with Interactive Filters](../../composer/08-Filtering%20Data/working-with-filters.md).
 
-You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the <a href="#filter-object-structure">Filter Object Structure</a>, as described below. The structure is passed as part of the supported widget’s configuration object as “userFilters” and it can contain an array of filters with the default scope of global.
+You can pass values to Qrvey’s widgets to filter charts or pages depending on your needs using the Filter Object Structure, as described below. The structure is passed as part of the supported widget’s configuration object as `userFilters` and it can contain an array of filters with the global scope by default.
 
-```
+## The Filter Object
+
+This feature is available with the [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
+
+```js
 var config = {
     attribute1: value1,
     attribute2: value2,
     ...,
-    "userFilters": { "filters": [
-    				...
-]
-}          
-}
+    "userFilters": { "filters": [...] }          
+  }
 ```
 
-This feature is available with [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
-
-## Filter Object Structure
 ### Filters Object
 
 | **Property** | **Type** | **Required** | **Description** 
@@ -110,12 +107,10 @@ This feature is available with [Dashboard View](../04-Embedding%20Qrvey%20Widget
 | **display_all** | `String` |LOOKUP|
 | **display_{{x}}** | `String` |LOOKUP. Show display with index (x)|
 
-
-## Examples
-### Simple Filter
+## Example: A Simple Filter
 The following example shows the filter structure for a simple range filter on a numeric column: 
 
-Sample filter: COLUMN_ID BETWEEN 10 AND 15.
+**Sample Filter:** COLUMN_ID BETWEEN 10 AND 15.
 
 ```
 ...
@@ -141,15 +136,16 @@ Sample filter: COLUMN_ID BETWEEN 10 AND 15.
    }
  ```
 
-### Filtering Multiple Columns
+## Example: Filter Multiple Columns
 The following example shows the filter structure for three filters with different columns and conditions.
 
-Sample filter: <br />
+**Sample Filter:** <br />
 COLUMN_ID_1 BETWEEN 05/15/2014<br /> AND<br /> 11/30/2016<br />
 AND<br />
 		COLUMN_ID_2 EQUAL ‘United States’
 		AND
 		COLUMN_ID_3 GREATHER_THAN 10507.231
+    
 ```
 ...
  "userFilters": {
@@ -190,5 +186,3 @@ AND<br />
      ]
    }
 ```
-
-</div>

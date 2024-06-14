@@ -7,8 +7,36 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 
 # Qrvey 8.5 (LTS)
 
-Release Date: 2024-04-10
+### Qrvey 8.5.1 (LTS)
 
+Release Date: 2024-05-31
+
+> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes) document for important notes and access to the upgrade link.
+
+### General Tweaks & Fixes
+
+- **readFromSource validation issue** – Bug fix that sets the `readFromSource` attribute as true if the attribute is not defined during the create column process.
+
+- **Draft Dataset Reflects Source Updates** – After updating the source dataset, refreshing the target dataset will now allow child columns of an object array to be selected for analysis.
+
+- **Union Draft Reflects Source Changes** – Creating a dataset that unions two sources containing object array columns will now properly refresh the unioned dataset if an array flatten is applied to the first union source.
+
+- **Refresh Button Maintains Joined Dataset Integrity** – Refreshing the metadata of a target dataset sourced from a dataset containing an object array column will no longer experience an error, and changes to the source will be reflected in the target.
+
+- **Data Sync Error Resolved for Joined Datasets** – Selecting a date column for a dataset sync that is a child of an object array will no longer cause an error during data synchronization.
+
+- **Data Integrity Maintained with Composite Dataset Syncs** – Combining data synchronization types of Append and Update and Full Reload will no longer result in data loss in the composite dataset.
+
+- **Full Array Values Displayed in Table Chart** – Visualizing a text array in a simple table chart will now display all values as a comma-delimited list instead of only the first value in the array.
+
+- **Favorite Datasets Listed in Response** – Datasets marked as Favorite will now be returned in the Get All Datasets endpoint response.
+
+- **Join with Flat Transformation Error Resolved** – A composite dataset that joins a source including an array flatten transformation will no longer throw a 'TYPE_MISMATCH' error when loading data if "Automatically add new columns" is selected.
+
+
+### Qrvey 8.5 (LTS)
+
+Release Date: 2024-04-10
 
 > Note: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
 
