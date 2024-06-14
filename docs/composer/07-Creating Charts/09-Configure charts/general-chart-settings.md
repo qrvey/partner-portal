@@ -106,13 +106,13 @@ When **Sorting** is checked, it adds the sorting button (<img alt="add" src="htt
 
 
 * Default: On
-* Applies to: [Tables](../chart-types/table.md)
+* Applies to: [Tables](../07-Chart%20Types/table.md)
 
 ### Records per Group
 This value controls the maximum number of rows that are retrieved for each group in expandable tables and defaults to 10.
 
 * Default: 10
-* Applies to: [Expandable Table](../chart-types/expandable.md)
+* Applies to: [Expandable Table](../07-Chart%20Types/expandable.md)
 
 ### Sort by
 All charts offer sorting capability on their various data columns, however the access point to the sorting options may vary. The **Sort by** option in the General configuration is available for a handful of charts - like the pie chart - that have a simple sorting use case by either the selected category or values column. 

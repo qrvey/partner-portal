@@ -22,7 +22,7 @@ The different statuses will indicate if the data was loaded successfully to the 
 The Datasets page consists of three tabs:
 * **[Design](../02-Design/overview-of-design.md)**
 * **[Analyze](../03-Analyze/overview-of-analyze.md)**
-* **[Activity Log](../03-Analyze/activity-log.md)**
+* **[Activity Log](../../../activity-log.md)**
 
 For an overview of creating and configuring datasets, see the following articles:
 * **[Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md)**

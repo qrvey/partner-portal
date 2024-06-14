@@ -7,8 +7,8 @@ module.exports = {
   baseUrl: "/",
   organizationName: "qrvey",
   projectName: "docs-site",
-  onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
   scripts: ["/js/custom.js", "/js/user.js"],
   stylesheets: [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",

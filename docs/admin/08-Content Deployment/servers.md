@@ -15,8 +15,8 @@ The first step in the Content Deployment process is to create connections to the
 
 ## Create a Server
 
-### Before you begin
-Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. For more information, see [General FAQs](../../faqs/faqs.md).
+### Before You Begin
+Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created.
 
 ### Create a server
 1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the **Server** tab. 

@@ -24,7 +24,7 @@ We dragged and dropped *status* as **Category** and *Quantity* as **Value**. The
 ![bar-chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Bar/create.gif#thumbnail)
  
  
-If you have more than one category you’d like to visualize, you can use a [Multiseries Bar Chart](../chart-types/ms-bar.md).
+If you have more than one category you’d like to visualize, you can use a [Multiseries Bar Chart](./ms-bar.md).
  
  
 ## Styling the Bar Chart
