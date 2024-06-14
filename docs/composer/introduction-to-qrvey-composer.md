@@ -15,7 +15,7 @@ Qrvey Composer is a web-based platform that enables data analysts to import and 
     onMouseOver={(e) => e.currentTarget.setAttribute('controls', 'controls')}
     onMouseLeave={(e) => e.currentTarget.removeAttribute('controls')}
 >
-  <source src="/qrvey-app-modules-20240409.mp4" type="video/mp4" />
+  <source src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/intro-ui/qrvey-app-modules-20240409.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 

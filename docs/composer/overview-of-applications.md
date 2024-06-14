@@ -1,6 +1,6 @@
 ---
 id: overview-of-applications
-title: Manage an Application
+title: Manage Applications
 sidebar_label: Manage an Application
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
 sidebar_position: 1
@@ -20,11 +20,9 @@ Each Qrvey Composer offers the following features:
 * **Automation**. Create automated workflows to perform virtually any task supported in the Qrvey platform. 
 -->
 
-The Applications page of Qrvey Composer displays all the Qrvey applications available to the current user of Qrvey Composer. The Applications page displays when you initially log in to Qrvey Composer. You can also click the home icon at the top left corner of the Qrvey Composer user interface.
+After a user is logged in, they are directed to the Applications page, which serves as a Home page and displays all the Qrvey applications available to them. While navigating the app, a user can return to this page by clicking the home icon in the upper left corner of the Qrvey Composer user interface.
 
-![Applications-Page-Home-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/bulk_uploads/version_84/Applications-Page-Home-84.png)
-
-Use the controls in the upper right side of the Applications page to filter the applications displayed, search for a specific application, and change between Card View and List View.
+![Applications-Page-Home-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/intro-ui/application-page-04042024.webp)
 
 ## Create an Application
 
