@@ -32,6 +32,7 @@ __________________________
 **Starting In Version: 7.6**
 
 If you have changed the Qrvey Composer URL from the default *.qrveyapp.com to a custom URL, and you are upgrading from a version prior to 7.6, you need to update the Widgets Pipeline with the custom composer URL. The necessary steps are documented in [this article](../deployment/customizing-qrvey-deployment.md). This is a one-time change.
+
 __________________________
 
 ### Admin Center URL Change
@@ -44,9 +45,8 @@ Admin Center is fully serverless as of version 7.5. This change does not affect 
 __________________________
 
 ## Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.2.2-mpmws.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/upgrading-versions.md) article to upgrade your instance(s).
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.2.2-mpmws.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
  
 If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
-
 
 </div>

@@ -13,7 +13,6 @@ The Analytic Suite widget enables users to display the distinct data analysis vi
 
 <!-- 
 ## Before You Begin
-* Review the [Widget Quick Start Guide](../widget-quick-start-guide.md) for an overview of the widget components. 
 * Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
 * This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
 
@@ -65,7 +64,7 @@ The following table lists the properties associated with this widget.
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
-| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
+| **qv_token** | `String`, Widget's JWT security token, used to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. | Yes, if the api_key is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |

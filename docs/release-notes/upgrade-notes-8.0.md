@@ -38,7 +38,7 @@ Admin Center is fully serverless as of version 7.5. This change does not affect 
 __________________________
 
 ## Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.0-gdvwt.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/upgrading-versions.md) article to upgrade your instance(s).
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.0-gdvwt.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
  
 If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 
