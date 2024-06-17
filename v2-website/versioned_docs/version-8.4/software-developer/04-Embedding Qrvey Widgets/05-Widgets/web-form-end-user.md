@@ -4,7 +4,7 @@ title: Web Form - End User
 sidebar_label: Web Form - End User
 tags: [Software Developer]
 sidebar_position: 8
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 When embedded in an application, the Web Form - End User widget enables end users to enter data in a designed Web Form. 

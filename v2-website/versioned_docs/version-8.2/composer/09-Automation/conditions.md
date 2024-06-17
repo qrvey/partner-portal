@@ -4,7 +4,7 @@ title: Conditions
 sidebar_label: Conditions
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

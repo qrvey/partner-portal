@@ -4,7 +4,7 @@ title: Internationalization, Step By Step
 sidebar_label: Internationalization, Step By Step
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 2
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
  

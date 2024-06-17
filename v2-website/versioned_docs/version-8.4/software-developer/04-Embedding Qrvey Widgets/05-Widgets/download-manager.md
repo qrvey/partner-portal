@@ -4,7 +4,7 @@ title: Download Manager Widget
 sidebar_label: Download Manager Widget
 tags: [Software Developer]
 sidebar_position: 2
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 The Download Manager widget enables users to access and manage exported files in a central location. For more information about this feature, see [Download Manager](../../../composer/03-Managing%20Your%20User%20Profile/download-manager.md). 

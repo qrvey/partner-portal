@@ -4,7 +4,7 @@ title: Comparison and Thresholds
 sidebar_label: Comparison and Thresholds
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
  
 <div style={{textAlign: "justify"}}>

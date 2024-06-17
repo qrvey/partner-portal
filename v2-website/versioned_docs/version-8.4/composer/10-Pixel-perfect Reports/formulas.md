@@ -4,7 +4,7 @@ title: Working with Formulas
 sidebar_label: Working with Formulas
 tags: [Data Analyst]
 sidebar_position: 8
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

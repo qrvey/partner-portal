@@ -4,7 +4,7 @@ title: File Upload Connection
 sidebar_label: File Upload Connection
 tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

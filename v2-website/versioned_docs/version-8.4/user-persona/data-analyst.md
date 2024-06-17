@@ -4,7 +4,7 @@ title: Overview of the Data Analyst Persona
 sidebar_label: Overview of the Data Analyst Persona
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 Data Analysts use Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.

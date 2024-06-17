@@ -4,7 +4,7 @@ title: Create a Qrvey Administrator Account in AWS IAM
 sidebar_label: Create a Qrvey Administrator Account in AWS IAM
 tags: [Solution Architect, CloudOps Engineer]
 sidebar_position: 3
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Deployment Jobs
 sidebar_label: Deployment Jobs
 tags: [Solution Architect]
 sidebar_position: 5
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

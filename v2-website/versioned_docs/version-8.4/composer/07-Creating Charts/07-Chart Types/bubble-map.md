@@ -4,7 +4,7 @@ title: Bubble Map
 sidebar_label: Bubble Map
 tags: [Data Analyst]
 sidebar_position: 19
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

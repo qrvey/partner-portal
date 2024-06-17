@@ -4,7 +4,7 @@ title: Managing Users of Qrvey Composer
 sidebar_label: Managing Users of Qrvey Composer
 tags: [Solution Architect]
 sidebar_position: 6
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Box and Whisker Chart
 sidebar_label: Box and Whisker Chart
 tags: [Data Analyst]
 sidebar_position: 22
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Customizing the Appearance Using CSS
 sidebar_label: Customizing the Appearance Using CSS
 tags: [Software Developer]
 sidebar_position: 4.2
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 import ModalButton from '@site/src/components/VariablesModal/ModalButton';

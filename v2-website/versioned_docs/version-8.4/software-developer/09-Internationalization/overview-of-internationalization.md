@@ -4,7 +4,7 @@ title: Overview of Internationalization
 sidebar_label: Overview of Internationalization
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 1
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

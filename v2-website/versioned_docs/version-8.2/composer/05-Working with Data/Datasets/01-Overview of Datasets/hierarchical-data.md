@@ -4,7 +4,7 @@ title: Working With Hierarchical Data
 sidebar_label: Working With Hierarchical Data
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

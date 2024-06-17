@@ -4,7 +4,7 @@ title: Overview of Qrvey API
 sidebar_label: Overview of Qrvey API
 tags: [Software Developer]
 sidebar_position: 1
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

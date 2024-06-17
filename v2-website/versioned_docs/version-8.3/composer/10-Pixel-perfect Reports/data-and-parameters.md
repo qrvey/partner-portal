@@ -4,7 +4,7 @@ title: Setting Up Data and Parameters
 sidebar_label: Setting Up Data and Parameters
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

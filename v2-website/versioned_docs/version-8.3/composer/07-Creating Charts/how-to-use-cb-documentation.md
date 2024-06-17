@@ -4,7 +4,7 @@ title: How to Use Chart Builder Documentation
 sidebar_label: How to Use Chart Builder Documentation
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

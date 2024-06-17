@@ -4,7 +4,7 @@ title: Custom View
 sidebar_label: Custom View
 tags: [Data Analyst]
 sidebar_position: 7
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

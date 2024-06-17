@@ -4,7 +4,7 @@ title: Table
 sidebar_label: Table
 tags: [Data Analyst]
 sidebar_position: 14
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
  
 <div style={{textAlign: "justify"}}>

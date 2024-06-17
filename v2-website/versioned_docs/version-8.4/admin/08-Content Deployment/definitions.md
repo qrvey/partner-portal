@@ -4,7 +4,7 @@ title: Deployment Definitions
 sidebar_label: Deployment Definitions
 tags: [Solution Architect]
 sidebar_position: 4
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

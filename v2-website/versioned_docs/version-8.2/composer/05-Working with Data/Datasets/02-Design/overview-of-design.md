@@ -4,7 +4,7 @@ title: Overview of the Design Page
 sidebar_label: Overview of the Design Page
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

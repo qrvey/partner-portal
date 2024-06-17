@@ -4,7 +4,7 @@ title: Multi-tenant Security Architecture
 sidebar_label: Multi-tenant Security Architecture
 tags: [Solution Architect]
 sidebar_position: 3
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 Qrvey’s approach to multi-tenant security architecture is to utilize the **assert model** for both authentication and authorization.  The assert model effectively allows you to maintain your existing user accounts, roles/groups and permissions, and then declare a user’s identity and permissions to the Qrvey platform dynamically at runtime.  The ability to assert/declare a user’s identity and access permissions is favorable when embedding third party platforms in your core application for a multi-tenancy deployment, because it means that you will not need to redefine and replicate your existing security schema.

@@ -4,7 +4,7 @@ title: Multi-tenant Dataset Architecture
 sidebar_label: Multi-tenant Dataset Architecture
 tags: [Solution Architect]
 sidebar_position: 2
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 The first step with any self-service embedded analytics implementation is to design, develop and then populate the datasets that will become the sources for all charts, metrics and visualizations created in the platform.  SaaS organizations building datasets for multi-tenant deployments of embedded analytics must think about the following topics with respect to the data architecture:

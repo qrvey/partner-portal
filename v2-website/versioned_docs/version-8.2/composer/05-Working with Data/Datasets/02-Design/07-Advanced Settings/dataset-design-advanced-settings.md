@@ -4,7 +4,7 @@ title: Advanced Settings
 sidebar_label: Advanced Settings
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 The Advanced Settings tab provides advanced configuration options for your dataset. 

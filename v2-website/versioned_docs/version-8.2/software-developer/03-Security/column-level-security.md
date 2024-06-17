@@ -4,7 +4,7 @@ title: Column Level Security
 sidebar_label: Column Level Security
 tags: [Software Developer, Solution Architect]
 sidebar_position: 2
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

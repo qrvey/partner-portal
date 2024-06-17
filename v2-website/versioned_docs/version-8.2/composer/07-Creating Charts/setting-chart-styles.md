@@ -4,7 +4,7 @@ title: Setting Chart Colors and Themes
 sidebar_label: Setting Chart Colors and Themes 
 tags: [Data Analyst]
 sidebar_position: 5
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -3,7 +3,7 @@ id: overview-of-settings
 title: Overview of Settings
 sidebar_label: Overview of Settings
 tags: [Data Analyst]
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>
