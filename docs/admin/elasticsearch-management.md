@@ -4,7 +4,7 @@ title: Elasticsearch Management
 sidebar_label: Elasticsearch Management
 tags: [Solution Architect, CloudOps Engineer]
 sidebar_position: 7
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

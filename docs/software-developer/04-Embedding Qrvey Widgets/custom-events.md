@@ -4,7 +4,7 @@ title: Using Custom Events
 sidebar_label: Using Custom Events
 tags: [Software Developer]
 sidebar_position: 3
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

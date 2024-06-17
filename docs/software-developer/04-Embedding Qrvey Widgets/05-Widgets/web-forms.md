@@ -4,7 +4,7 @@ title: Web Form Design Widget
 sidebar_label: Web Form Design Widget
 tags: [Software Developer]
 sidebar_position: 7
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

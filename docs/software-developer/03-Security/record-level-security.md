@@ -4,7 +4,7 @@ title: Record Level Security
 sidebar_label: Record Level Security
 tags: [Software Developer, Solution Architect]
 sidebar_position: 3
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Dot Map
 sidebar_label: Dot Map
 tags: [Data Analyst]
 sidebar_position: 18
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

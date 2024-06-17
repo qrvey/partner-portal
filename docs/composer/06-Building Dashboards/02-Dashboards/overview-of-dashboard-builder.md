@@ -4,7 +4,7 @@ title: Overview of Dashboard Builder
 sidebar_label: Overview of Dashboard Builder
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

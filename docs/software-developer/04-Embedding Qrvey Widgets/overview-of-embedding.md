@@ -4,7 +4,7 @@ title: Embedded Widgets Overview
 sidebar_label: Embedded Widgets Overview
 tags: [Software Developer]
 sidebar_position: 1
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 Developers can seamlessly embed the Qrvey platform’s functionalities (such as web form builders, data visualizations, and more) directly into their frontend applications using a comprehensive suite of customizable “widgets”.

@@ -98,12 +98,6 @@ module.exports = {
           docId: "getting-started/intro-to-qrvey",
         },
         {
-          label: "API Reference",
-          type: "doc",
-          position: "right",
-          docId: "software-developer/Working with Qrvey APIs/api-intro",
-        },
-        {
           label: "Release Notes",
           type: "doc",
           position: "right",
@@ -134,6 +128,12 @@ module.exports = {
       ],
     },
     image: "img/Qrvey.png",
+    docs: {
+      sidebar: {
+        hideable: false,
+        autoCollapseCategories: true,
+      },
+    },
     footer: {
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Qrvey`,

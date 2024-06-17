@@ -4,7 +4,7 @@ title: Widget Authentication
 sidebar_label: Widget Authentication
 tags: [Software Developer]
 sidebar_position: 2
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

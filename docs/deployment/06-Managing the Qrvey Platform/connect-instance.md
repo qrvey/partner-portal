@@ -4,7 +4,7 @@ title: Connecting Qrvey Platform to Your Secure Database Instance
 sidebar_label: Connecting Qrvey Platform to Your Secure Database Instance
 tags: [CloudOps Engineer]
 sidebar_position: 3
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 <div>
