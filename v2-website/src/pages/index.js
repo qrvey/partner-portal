@@ -57,7 +57,7 @@ class Index extends React.Component {
                   </a>
                   <a
                     className="highlight-box"
-                    href="/docs/composer/scheduling-exports"
+                    href="/docs/composer/05-Working%20with%20Data/Datasets/03-Analyze/scheduling-exports"
                   >
                     <div className="highlights-header-container">
                       <div className="highlight-title">
@@ -82,7 +82,7 @@ class Index extends React.Component {
                   </a>
                   <a
                     className="highlight-box"
-                    href="/docs/composer/introduction-to-composer-ui"
+                    href="/docs/composer/introduction-to-qrvey-composer"
                   >
                     <div className="highlights-header-container">
                       <div className="highlight-title">
