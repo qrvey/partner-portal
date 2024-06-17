@@ -55,7 +55,6 @@ module.exports = {
         hashed: true,
         indexPages: false,
         indexBlog: false,
-
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
@@ -93,47 +92,10 @@ module.exports = {
       },
       items: [
         {
-          type: "dropdown",
-          position: "right",
-
           label: "Documentation",
-          items: [
-            {
-              label: "All Documentation",
-              type: "doc",
-              docId: "getting-started/intro-to-qrvey",
-            },
-            {
-              type: "html",
-              value:
-                '<hr style="border: none; height: 2px; background-color: black; margin: 5px 0;">',
-            },
-            {
-              type: "html",
-              value:
-                '<b style="color: black;font-size: .875rem;padding: 0.2rem 0.5rem;">By Persona:</b>',
-            },
-            {
-              type: "doc",
-              docId: "user-persona/solution-architect",
-              label: "Solution Architects",
-            },
-            {
-              type: "doc",
-              docId: "user-persona/data-analyst",
-              label: "Data Analysts",
-            },
-            {
-              type: "doc",
-              docId: "user-persona/software-developer",
-              label: "Software Developers",
-            },
-            {
-              type: "doc",
-              docId: "user-persona/cloudops-engineer",
-              label: "CloudOps Engineers",
-            },
-          ],
+          type: "doc",
+          position: "right",
+          docId: "getting-started/intro-to-qrvey",
         },
         {
           label: "API Reference",
