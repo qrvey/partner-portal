@@ -4,7 +4,7 @@ title: Using Standardized Syntax
 sidebar_label: Using Standardized Syntax
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 Standardized Syntax Mode enables you to create formulas using a standardized language rather than a specific syntax for a specific database engine. Formulas created in Standardize Syntax Mode work with any database engine supported by the Managed Connect and Live Connect features.

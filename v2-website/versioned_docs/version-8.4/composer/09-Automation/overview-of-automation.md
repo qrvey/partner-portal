@@ -4,7 +4,7 @@ title: Overview of Automation
 sidebar_label: Overview of Automation
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -3,7 +3,7 @@ id: overview-of-navigation
 title: Overview of Navigation
 sidebar_label: Overview of Navigation
 tags: [Data Analyst]
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Bullet Gauge
 sidebar_label: Bullet Gauge
 tags: [Data Analyst]
 sidebar_position: 13
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

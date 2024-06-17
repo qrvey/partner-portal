@@ -4,7 +4,7 @@ title: Sharing Applications
 sidebar_label: Sharing Applications
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

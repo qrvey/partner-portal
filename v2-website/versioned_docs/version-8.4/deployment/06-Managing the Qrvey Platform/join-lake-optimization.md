@@ -4,7 +4,7 @@ title: Join Lake Optimization
 sidebar_label: Join Lake Optimization
 tags: [CloudOps Engineer]
 sidebar_position: 2
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 <div>

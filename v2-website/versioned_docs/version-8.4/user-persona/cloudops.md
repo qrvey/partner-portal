@@ -4,7 +4,7 @@ title: Overview of the CloudOps Engineer Persona
 sidebar_label: Overview of the CloudOps Engineer Persona
 tags: [CloudOps Engineer]
 sidebar_position: 1
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 CloudOps Engineers are AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.

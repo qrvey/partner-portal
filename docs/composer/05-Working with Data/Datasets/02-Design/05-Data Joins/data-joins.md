@@ -3,7 +3,7 @@ id: data-joins
 title: Data Joins
 sidebar_label: Data Joins
 tags: [Data Analyst]
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

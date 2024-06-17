@@ -4,7 +4,7 @@ title: Working With Interactive Filters
 sidebar_label: Working With Interactive Filters
 tags: [Data Analyst]
 sidebar_position: 2
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

@@ -4,7 +4,7 @@ title: Subscribing to Exports
 sidebar_label: Subscribing to Exports
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

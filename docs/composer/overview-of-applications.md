@@ -4,7 +4,7 @@ title: Manage Applications
 sidebar_label: Manage an Application
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst, All Personas]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

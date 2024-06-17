@@ -4,7 +4,7 @@ title: General Chart Settings
 sidebar_label: General Chart Settings
 tags: [Data Analyst]
 sidebar_position: 2
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
  
 <div style={{textAlign: "justify"}}>

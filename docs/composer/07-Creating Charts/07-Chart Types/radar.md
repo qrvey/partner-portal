@@ -4,7 +4,7 @@ title: Radar Chart
 sidebar_label: Radar Chart
 tags: [Data Analyst]
 sidebar_position: 9
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

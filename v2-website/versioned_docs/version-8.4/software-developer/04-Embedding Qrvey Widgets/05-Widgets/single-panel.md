@@ -4,7 +4,7 @@ title: Single Panel Widget
 sidebar_label: Single Panel Widget
 tags: [Software Developer]
 sidebar_position: 6
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

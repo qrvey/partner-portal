@@ -4,7 +4,7 @@ title: Using Custom Tokens
 sidebar_label: Using Custom Tokens
 tags: [Software Developer]
 sidebar_position: 4
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

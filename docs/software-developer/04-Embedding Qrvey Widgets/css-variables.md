@@ -4,7 +4,7 @@ title: Customize Widgets Styles Using CSS
 sidebar_label: Customize Widgets Styles Using CSS
 tags: [Software Developer]
 sidebar_position: 5
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 import ModalButton from '@site/src/components/VariablesModal/ModalButton';

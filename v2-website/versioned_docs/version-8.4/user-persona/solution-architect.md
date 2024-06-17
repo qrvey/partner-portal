@@ -4,7 +4,7 @@ title: Overview of the Solution Architect Persona
 sidebar_label: Overview of the Solution Architect Persona
 tags: [Solution Architect]
 sidebar_position: 1
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 Solution Architects use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer. The primary technical resource for the Solution Architect is the [Qrvey Admin Center User Guide](../admin/introduction-to-qrvey-admin-center.md). 

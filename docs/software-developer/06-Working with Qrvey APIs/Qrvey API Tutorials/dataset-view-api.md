@@ -4,7 +4,7 @@ title: Creating a Dataset View Using the Qrvey API
 sidebar_label: Creating a Dataset View (API)
 tags: [Software Developer]
 sidebar_position: 3
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div>

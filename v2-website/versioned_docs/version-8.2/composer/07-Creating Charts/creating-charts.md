@@ -4,7 +4,7 @@ title: Creating a Chart
 sidebar_label: Creating a Chart
 tags: [Data Analyst]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

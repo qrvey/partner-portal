@@ -4,7 +4,7 @@ title: Overview of Chart Configuration
 sidebar_label: Overview of Chart Configuration
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
  
 <div style={{textAlign: "justify"}}>

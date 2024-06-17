@@ -4,7 +4,7 @@ title: Prerequisites for Installation
 sidebar_label: Prerequisites for Installation
 tags: [CloudOps Engineer]
 sidebar_position: 2
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

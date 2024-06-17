@@ -4,7 +4,7 @@ title: Download Manager
 sidebar_label: Download Manager
 tags: [Data Analyst, Solution Architect]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 Download Manager provides a central location to access and manage both exported files and scheduled exports. Exported files are created using the Download option available in a variety of features in Qrvey Composer, including Analyze, Dashboards, Automation, Subscriptions, and Pixel-perfect Reports. Types of exported files include images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). The exported files are stored in AWS, and they are automatically deleted after seven days. For more information, see [Exporting Data](../05-Working%20with%20Data/Datasets/03-Analyze/exporting.md). 

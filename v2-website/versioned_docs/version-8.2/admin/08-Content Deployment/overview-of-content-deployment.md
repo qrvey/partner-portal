@@ -4,7 +4,7 @@ title: Overview of Content Deployment
 sidebar_label: Overview of Content Deployment
 tags: [Solution Architect]
 sidebar_position: 1
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

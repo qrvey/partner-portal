@@ -4,7 +4,7 @@ title: Introduction to Qrvey Composer
 sidebar_label: Introduction to Qrvey Composer
 tags: [Data Analyst]
 sidebar_position: 1.1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

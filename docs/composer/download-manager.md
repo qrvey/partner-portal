@@ -4,7 +4,7 @@ title: Download Manager
 sidebar_label: Download Manager
 tags: [Data Analyst, Solution Architect]
 sidebar_position: 3
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 > This feature is disabled by default and must be enabled by your team admin. For details, please see [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md).

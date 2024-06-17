@@ -4,7 +4,7 @@ title: Troubleshooting Deployment
 sidebar_label: Troubleshooting
 tags: [CloudOps Engineer]
 sidebar_position: 2
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 <div>
 Here are some common scenarios where a deployment could result in failure.

@@ -4,7 +4,7 @@ title: Overview of Multi-tenant Deployments
 sidebar_label: Overview of Multi-tenant Deployments
 tags: [Solution Architect]
 sidebar_position: 1
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 

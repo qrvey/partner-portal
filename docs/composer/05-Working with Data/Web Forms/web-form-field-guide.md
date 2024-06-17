@@ -4,7 +4,7 @@ title: Web Form Field Guide
 sidebar_label: Web Form Field Guide 
 tags: [Data Analyst]
 sidebar_position: 2
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

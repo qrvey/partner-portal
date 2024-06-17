@@ -4,7 +4,7 @@ title: Overview of the Software Developer Persona
 sidebar_label: Overview of the Software Developer Persona
 tags: [Software Developer]
 sidebar_position: 1
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 Software Developers embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.

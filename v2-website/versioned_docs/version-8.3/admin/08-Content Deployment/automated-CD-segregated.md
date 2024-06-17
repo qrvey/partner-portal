@@ -4,7 +4,7 @@ title: Automated Content Deployment - Segregated Data
 sidebar_label: Automated Content Deployment (Segregated)
 tags: [Solution Architect]
 sidebar_position: 7
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

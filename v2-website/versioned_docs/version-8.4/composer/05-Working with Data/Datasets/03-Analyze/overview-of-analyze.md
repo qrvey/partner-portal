@@ -4,7 +4,7 @@ title: Overview of Analyze
 sidebar_label: Overview of Analyze
 tags: [Data Analyst]
 sidebar_position: 1
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 The Analyze tab provides a variety of features for analyzing your dataset, including:

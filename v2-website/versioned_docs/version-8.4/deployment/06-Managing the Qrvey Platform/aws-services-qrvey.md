@@ -4,7 +4,7 @@ title: AWS Services Used by Qrvey
 sidebar_label: AWS Services Used by Qrvey
 tags: [CloudOps Engineer]
 sidebar_position: 7
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

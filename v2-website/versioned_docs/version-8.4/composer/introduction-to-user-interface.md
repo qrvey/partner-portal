@@ -4,7 +4,7 @@ title: Introduction to the Qrvey Composer User Interface
 sidebar_label: Introduction to the UI
 tags: [Data Analyst]
 sidebar_position: 2
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 This article provides an overview of the basic features of the Qrvey Composer user interface. When you first log in, the Applications page displays. Use this page to select an existing Qrvey application or create a new one. The following diagram provides an overview of its features:

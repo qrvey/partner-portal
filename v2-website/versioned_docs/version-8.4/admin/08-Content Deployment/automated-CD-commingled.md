@@ -4,7 +4,7 @@ title: Automated Content Deployment - Commingled Data
 sidebar_label: Automated Content Deployment (Commingled)
 tags: [Solution Architect]
 sidebar_position: 6
-displayed_sidebar: solution-architects
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

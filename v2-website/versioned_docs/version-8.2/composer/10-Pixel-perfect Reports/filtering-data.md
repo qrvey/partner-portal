@@ -4,7 +4,7 @@ title: Filtering and Bucketing Data
 sidebar_label: Filtering and Bucketing Data
 tags: [Data Analyst]
 sidebar_position: 4
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

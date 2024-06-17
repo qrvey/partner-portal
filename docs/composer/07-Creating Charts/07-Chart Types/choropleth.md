@@ -4,7 +4,7 @@ title: Choropleth Map
 sidebar_label: Choropleth Map
 tags: [Data Analyst]
 sidebar_position: 20
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

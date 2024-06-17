@@ -4,7 +4,7 @@ title: Lookups
 sidebar_label: Lookups
 tags: [Data Analyst]
 sidebar_position: 5
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}> 
 

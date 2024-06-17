@@ -4,7 +4,7 @@ title: Embedding Widgets Using a Security Token
 sidebar_label: Embedding Widgets Using a Security Token
 tags: [Software Developer]
 sidebar_position: 3
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>
 

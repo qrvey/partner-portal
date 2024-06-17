@@ -4,7 +4,7 @@ title: Crosstab
 sidebar_label: Crosstab
 tags: [Data Analyst]
 sidebar_position: 16
-displayed_sidebar: data-analyst
+displayed_sidebar: getting-started
 ---
 
 <div style={{textAlign: "justify"}}>

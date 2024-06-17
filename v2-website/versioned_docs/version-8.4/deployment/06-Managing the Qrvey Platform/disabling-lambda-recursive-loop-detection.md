@@ -4,7 +4,7 @@ title: Disabling Lambda Recursive Loop Detection
 sidebar_label: Disabling Lambda Recursive Loop Detection
 tags: [CloudOps Engineer]
 sidebar_position: 2
-displayed_sidebar: deployment-guide
+displayed_sidebar: getting-started
 ---
 
 <div>

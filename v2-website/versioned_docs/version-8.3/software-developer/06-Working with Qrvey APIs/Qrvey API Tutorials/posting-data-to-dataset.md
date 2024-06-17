@@ -4,7 +4,7 @@ title: Posting Data to a Dataset Using the Qrvey API
 sidebar_label: Posting Data (API)
 tags: [Software Developer]
 sidebar_position: 3
-displayed_sidebar: software-developer
+displayed_sidebar: getting-started
 ---
 
 <div>
