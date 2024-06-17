@@ -57,7 +57,7 @@ class Index extends React.Component {
                   </a>
                   <a
                     className="highlight-box"
-                    href="/docs/composer/05-Working%20with%20Data/Datasets/03-Analyze/scheduling-exports"
+                    href="/docs/composer/Working%20with%20Data/Datasets/Analyze/scheduling-exports"
                   >
                     <div className="highlights-header-container">
                       <div className="highlight-title">
