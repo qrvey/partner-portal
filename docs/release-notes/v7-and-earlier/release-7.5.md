@@ -21,9 +21,9 @@ Release Date: 2022-08-30
 ## New Features & Enhancements
  
 ### Data Preparation
-* **[CSV Files - Support for Different Delimiters](../../composer/05-Working%20with%20Data/Connections/csv.md)**: We now support semicolon, tab character, and pipe symbol, in addition to commas, in CSV files.
+* **[CSV Files - Support for Different Delimiters](../../composer/05-Working%20with%20Data/Connections/overview-of-connections.md)**: We now support semicolon, tab character, and pipe symbol, in addition to commas, in CSV files.
 
-* **[RDBMS Connections - Pagination for Tables and Views](../../composer/05-Working%20with%20Data/Connections/databases.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
+* **[RDBMS Connections - Pagination for Tables and Views](../../composer/05-Working%20with%20Data/Connections/overview-of-connections.md#creating-a-connection-using-the-default-method)**: We added an option to let users enable or disable Qrvey´s pagination for tables and views, so their queries can run without issues. 
 
 * **[Data Sync - Allow users to determine the start of the sync range](../../composer/05-Working%20with%20Data/Datasets/02-Design/04-Data%20Synchronization/data-sync.md#next-sync-query-window)**: Users can change the pointer that determines the starting time of the sync process.
 

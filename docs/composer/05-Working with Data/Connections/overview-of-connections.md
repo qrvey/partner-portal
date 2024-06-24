@@ -7,61 +7,117 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-You can create and manage your connections to various data sources in the *Connections* tab.
+A Connection is a link established between Qrvey and an external data source.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect1.png#thumbnail-40)  
+This could be a database, a data warehouse, CSV & JSON files, a cloud storage service like AWS, incoming data from REST APIs, or some other system that store data. Connections allow Qrvey to access and retrieve data from these external sources. The main purpose of a connection is to establish a secure and reliable pathway for data retrieval and integration into Qrvey.
 
+## View and Monitor Connections
 
-From the Connections page, you can click on an existing connection to make changes to the configuration settings. If this is the first time you are accessing the Connections page, you must first create a new connection by choosing the connection type and filling in the required information to establish the connection.
+1. To view all connections, navigate to the **Data** Module, then into **Connections**. An option to preview data appears on Connections established directly to a data source, such as a file, table/view, or query. You have several monitoring options.
+    - **View Source Data** — Find the desired Connection and click **View Source Data**. A preview of loadable data will appear.  
+    You can see the first 100 records and the total number of records for custom queries displayed above the table on the right.
+    - **Verify if Connection is In Use** — Click **In Use** to check how many Datasets are using a specific Connection.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect2.png#thumbnail)
+## Create a Connection
+
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect3.png#thumbnail)
+
+To create a Connection, follow these steps.
+
+1. Navigate to the **Data** Module and then into **Connections**. 
+2. Click **New Connection**.
+3. Choose the desired Connection Type. You have the following options:
+    - **File Upload**
+    - **AWS S3 Bucket**
+    - **SQL Server** 
+    - **MySQL**
+    - **PostgreSQL**
+    - **Oracle**
+    - **Amazon Redshift**
+    - **Amazon Athen**
+    - **MongoDB**
+    - **Snowflake**
+    - **DynamoDB**
+    - **API connections** - Supported in UI to push data into datasets. For more details, please see [API Connections](./api-connections.md).
+4. Set a Connection Name.
+5. Set the configuration details as desired.  
+    Configuration options vary for each connection type, but all the fields should be descriptive and standard for the relevant database. For more information on configuration options, please see the following subsections on configuration.
+6. **Optional:** Manually verify your connection by clicking on **Test Connection** in the bottom left corner.  
+7. Click **Create** to confirm and create the Connection.
+
+The system will attempt to connect to the database server as soon as all of the required information has been provided. A message is displayed to indicate if the connection was successful or it failed. 
+
+> **Note:** Once the connection to the database server is established, the information can be saved as a new connection. However, this connection is to the database server itself, and more information needs to be provided at the time that the connection is used, in order to get to a specific database on that server, and a specific table or view in that database, to load data.
+
+### Typical Configuration Method
+
+<!-- ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/databases/dbs2.7.6.png#thumbnail-60) -->
+
+All database types allow configuration using a standard form field UI.
+- Required fields are highlighted when information is missing.
+- If you want to make your connection more specific, you can select the database from the *Database* dropdown list.
+
+>**Note 1**: For an Amazon Redshift cluster or Amazon RDS instance, enter the endpoint of the cluster or instance without the port number. For example, if the endpoint value is `clustername.1234abcd.us-west-2.redshift.amazonaws.com:1234`, then enter `clustername.1234abcd.us-west-2.redshift.amazonaws.com`. You can get the endpoint value from the Endpoint field on the cluster or instance detail page in the AWS console. You may also choose to use SSL with the connection by checking the **Use SSL** checkbox.
+
+>**Note 2**: For SQL Server databases dirty reads can be enabled by checking the checkbox to set the isolation level to “Read Uncommitted”. 
+
+### Advanced JSON Method
+
+If you need to include more advanced attributes with your connection, you may use the **Advanced JSON Configuration** option. With this method, you can enter any connection attribute as a key/value pair, enabling you to configure properties that are typically not included, such as timeout and encryption preferences. Please remember to keep attribute names accurate when using JSON configuration. The **Connection Config Help** link will open a new tab with the relevant database documentation.
+
+![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/connections4.png#thumbnail-60)
+
+### File Upload Configuration
+
+It is possible to create connections by uploading a single file from your local machine. Acceptable file types include: CSV, JSON, ndJSON, and Parquet. File-based data is much simpler than data stored within a database. This makes the storage medium versatile, yet error-prone at the same time. Please make sure your data is cleaned, properly formatted, and follows any other data storage best-practices for your relevant file type.
+
+- **Tips on File-Based Data:**
+    - JSON files may contain a top-level array of JSON items.
+    - R records may be delimited using the ndJSON format.
+    - Files may be compressed in GZIP format.
+- **View & Edit Sample JSON Data:** The system will validate JSON uploads and show the first record as a sample. You can edit this sample directly to modify the structure of the final dataset uploaded from this connection.
+- **Optional:** To display a partial view of the data, click the **View Source Data** link.
+- **View Source Data:** Once the connection is saved, click the **View Source Data** option to display a partial view of the data.
+
+### Amazon S3 Bucket Configuration
+
+Amazon S3 Buckets and folders storing CSV, JSON, or ndJSON files can be used as Connections. This offers the following features:
+
+- Load data from multiple files from the same bucket or folder in bulk, instead one file at a time.
+- Wildcards can be used in the **S3 Folder** field.
+- File upload time to S3 is automatically used as a timestamp to enable the [append and update](../Datasets/02-Design/04-Data%20Synchronization/data-sync.md#append-and-update) mode for data synchronization. 
  
+![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 
-The UI supports creating connections for the following data sources:
-* SQL Server
-* MySQL
-* PostgreSQL
-* Oracle
-* Amazon Redshift
-* Amazon Athena
-* MongoDB
-* Snowflake
-* DynamoDB
+By default, Qrvey looks for the named bucket under the same AWS account as the instance. If you wish to connect to a bucket from a different account, enter the access key and secret key for the desired account in the provided fields. 
 
+- **Optional:** Specify a folder or subfolder to upload files from.
+- **Optional:** Use a wildcard to match a subset of files:
+    - starts with `SALES_`, please use `myFolder/SALES_*`
+    - ends with `.csv`, please use `myFolder/*.csv`
+    - contains `data_load`, please use `myFolder/*data_load*`
 
+## Edit a Connection
 
-For CSV data or unstructured data, such as JSON documents, the UI supports uploading those file types directly or by pointing to an S3 bucket where those files reside. Additionally, API connections are supported in the UI to “push” data into one or more datasets.
+To edit a Connection, follow these steps.
 
-See the articles below to get more information on database sources, file sources, and API sources:
+1. Click on an existing connection card or click the three-dot menu and click edit. A modal will appear. 
+2. Click "Edit" to confirm and the Connection's configuration modal will appear.
+3. Make your edits as desired.
+4. Click "Save to confirm".
 
+> Note: Reconfiguring a connection may lead to errors with for datasets that rely on the Connection.
 
-* [Database Connections](./databases.md)
+## Delete A Connection
 
-* [File Upload Connections](./csv.md)
+![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect5.png#thumbnail-60)
 
-* [API Connections](./api-connections.md)
+To delete a Connection, follow these steps.
 
-If you have already created connections, then you will see them listed here, along with a **New Connection** button to create new ones, which will again prompt you with the available data source types modal window.
-
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect3.png#thumbnail) 
-
-To edit or delete an existing connection, use the three-dot menu in the top-right corner of each card. Note, that editing connections can potentially lead to errors with any data syncs configured for datasets that rely on those connections. Please verify that the connection is successful after making any changes.
-
-Check how many Datasets are using a specific Connection by hovering over the **In use** button. If there are no Datasets tied to that Connection, there is a gray **Not used** button.
-
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect-number.png#thumbnail) 
-
-
-By clicking the **In use** button, you can get more details about the Datasets that are using this connection, like the *Dataset Name* along with the creation date and the person who created it. 
-
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect-details.png#thumbnail-60)  
-
-
-An option to preview data appears on cards for which the connection is established directly to a data source, such as a file, table/view, or query. When you click on **View Source Data** in the connection card, a preview of the data that’s available for loading will appear. You can see the first 100 records and the number of total records for custom queries displayed above the table. 
-
-
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect4.png#thumbnail-80)
+1. Navigate to the **Data** Module and then into **Connections**. 
+2. Click to open the three-dot menu on the desired Connection and select "Delete". A modal will appear.
+3. Click "Delete" to confirm.
 
 Before a connection can be deleted, the UI will list any dependent *Datasets* and *Automated Flows* that depend on that connection. If a connection that is being used is deleted, the assets that depend on that connection can break. In the case of datasets, they will remain active, however, the data cannot be reloaded. In the case of *Automation*, flows will be executed but the actions using the connection will not work.
 
-![connections](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.4_connectors/connect5.png#thumbnail-60)
+> Note: deleting a connection may lead to errors with for datasets that rely on the Connection. 
