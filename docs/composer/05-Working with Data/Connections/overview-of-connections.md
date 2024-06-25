@@ -76,8 +76,7 @@ It is possible to create connections by uploading a single file from your local 
     - R records may be delimited using the ndJSON format.
     - Files may be compressed in GZIP format.
 - **View & Edit Sample JSON Data:** The system will validate JSON uploads and show the first record as a sample. You can edit this sample directly to modify the structure of the final dataset uploaded from this connection.
-- **Optional:** To display a partial view of the data, click the **View Source Data** link.
-- **View Source Data:** Once the connection is saved, click the **View Source Data** option to display a partial view of the data.
+- **View Source Data:** Once the connection is saved, click **View Source Data** to display a partial view of the data.
 
 ### Amazon S3 Bucket Configuration
 
