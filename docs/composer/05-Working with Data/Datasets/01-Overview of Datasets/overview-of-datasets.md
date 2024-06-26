@@ -7,23 +7,56 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
+There are two types of Datasets in Qrvey. **Managed Datasets**, store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, **Live Connect Datasets** provide data access directly from its source, enabling real-time queries without the need to load data.
 
-The Datasets page lists the Datasets that have been created, including the dataset name, the date it was created, the date it was last successfully loaded, the Data Sources connected to the dataset, the **Scheduling** or **Data Sync** (turned on or off), **Status** (active, draft, failed), whether the dataset is currently in use or not, how many records and columns there are in the dataset, and the type of the dataset. In the upper-right corner, there is a star icon used to mark a dataset as a *favorite*, and a three-dot menu where you can share/unshare the dataset, or permanently delete it.
+## Create a Dataset
+1. Navigate to the **Data** Module and make sure you are in the **Datasets** tab.
+2. Click **Create** **New Dataset**. A dropdown will appear. Choose to create a:
+    - **New Managed Dataset**
+    - **New Live Connect Dataset**
+3. Configure as Desired. For details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/datasets-managed) and [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive).
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/card.png#thumbnail-40) 
 
+## View Datasets
 
-In order to create datasets, there need to be existing connections. These connections are created in the *Connections* tab. Datasets can also be created from already existing datasets. 
+1. Navigate to **Data > Datasets** to browse all Datasets within the application.  
+   Each dataset will be displayed as a card, displaying the following details:
+    - **Name** — The name assigned to the Dataset.
+    - **Type** — Notes if it a **Managed** or a **Live Connect** Dataset.
+    - **Status** — `active` (ready to create visualizations), `draft` (dataset is still loading), or `failed` (dataset is not properly loaded).
+    - **Last Loaded** — The date that the data was loaded.
+    - **Data Sync** — Notes if Data Sync is `On` or `Off`.
+    - **Data Source** — The Connection used by this Dataset.
+    - **Records** — Number of records within the dataset.
+    - **Columns** —  Number of columns within the dataset.
 
-The different statuses will indicate if the data was loaded successfully to the dataset and is **Active** and therefore ready to be used for creating visualizations, or if the data is loading and the dataset is in **Draft** state. When the data fails to load, the dataset card will show a red indicator and the status will be shown as **Failed**.
+## Mark Dataset as Favorite
 
-![datasets](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.1_overview/status.png#thumbnail) 
+To mark a Dataset as a Favorite, follow these steps.
 
-The Datasets page consists of three tabs:
-* **[Design](../02-Design/overview-of-design.md)**
-* **[Analyze](../03-Analyze/overview-of-analyze.md)**
-* **[Activity Log](../../../activity-log.md)**
+1. Navigate to **Data >** **Datasets**.
+2. Find the desired dataset card.
+3. Click the star in the upper-right corner.
 
-For an overview of creating and configuring datasets, see the following articles:
-* **[Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md)**
-* **[Datasets - Live Connect](../01-Overview%20of%20Datasets/datasets-live.md)**
+## Manage a Dataset
+
+1. Navigate to **Data > Datasets**.
+2. Click on the desired Dataset.
+3. Configure and Manage the Dataset as Desired. For more details, please see:
+    - [Design](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Design/overview-of-the-design-page)
+    - [Analyze](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Analyze/overview-of-analyze)
+    - [Activity Log](https://partners.qrvey.com/docs/composer/activity-log)
+
+## **Share and Un-share Datasets**
+
+1. Navigate to **Data > Datasets**.
+2. Find the desired Dataset and click its three-dot menu. A dropdown will appear.
+3. Click either **Share Data with my Organization** or **Unshare with my Organization**. A modal will appear.
+4. Click to confirm your choice in the modal and you will return to **Data > Datasets**.
+
+## **Delete a Dataset**
+
+1. Navigate to **Data > Datasets**.
+2. Find the desired Dataset and click its three-dot menu. A dropdown menu will appear.
+3. Click **Delete**. A modal will appear.
+4. Click **Delete** to confirm your choice in the modal and you will return to **Data > Datasets**.
