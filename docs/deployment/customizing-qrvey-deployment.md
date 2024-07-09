@@ -189,6 +189,7 @@ Parameters:</li></ul>
 
 >**Note**: If you or your users have created content inside Qrvey Composer (Pages, Workflows or Webforms) using the old URL then those may not work properly. Any new content will use the new URL but any old content may still have the URL saved somewhere. Please contact Qrvey support for guidance on how to update the URL in content.
 
+<!-- 
 ### Change Widget URL
 You can change the Widget URL to match your own domain. You would need access to DNS settings for that domain (Route 53 or similar) to be able to create a new CNAME record and SSL Certificate.
 
@@ -219,7 +220,8 @@ You can change the Widget URL to match your own domain. You would need access to
     4. Copy the URL as value for the output named “CloudfrontDomainName” (without https://)
 7. Log in or navigate to your DNS provider (Route 53 or similar) and add a CNAME record for “<Widget URL\>     CNAME    <CloudfrontDomainName\>”
 
->**Note**: If you have embedded Qrvey using the old cloudfront URL, then you would have to update your code to load all widgets using the new URL.
+>**Note**: If you have embedded Qrvey using the old cloudfront URL, then you would have to update your code to load all widgets using the new URL. 
+-->
 
 
 </div>
