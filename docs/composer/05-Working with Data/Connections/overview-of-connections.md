@@ -14,9 +14,10 @@ This could be a database, a data warehouse, CSV & JSON files, a cloud storage se
 ## View and Monitor Connections
 
 1. To view all connections, navigate to the **Data** Module, then into **Connections**. An option to preview data appears on Connections established directly to a data source, such as a file, table/view, or query. You have several monitoring options.
-    - **View Source Data** — Find the desired Connection and click **View Source Data**. A preview of loadable data will appear.  
-    You can see the first 100 records and the total number of records for custom queries displayed above the table on the right.
-    - **Verify if Connection is In Use** — Click **In Use** to check how many Datasets are using a specific Connection.
+    - **View Source Data** — Find the desired Connection and click **View Source Data**. A preview of loadable data will appear.
+    - **Verify if Connection is In Use** — Click **In Use** to check how many Datasets are using a specific Connection. You may also access this from the three-dot menu.
+    - **Favorite a Connection** — Click the star on the connection card to add it to your list of favorites.
+
 
 ## Create a Connection
 
@@ -114,9 +115,9 @@ To edit a Connection, follow these steps.
 To delete a Connection, follow these steps.
 
 1. Navigate to the **Data** Module and then into **Connections**. 
-2. Click to open the three-dot menu on the desired Connection and select "Delete". A modal will appear.
+2. Click to open the three-dot menu on the desired Connection and select "Delete". A warning modal will appear.
 3. Click "Delete" to confirm.
 
-Before a connection can be deleted, the UI will list any dependent *Datasets* and *Automated Flows* that depend on that connection. If a connection that is being used is deleted, the assets that depend on that connection can break. In the case of datasets, they will remain active, however, the data cannot be reloaded. In the case of *Automation*, flows will be executed but the actions using the connection will not work.
+**Warning:** If a connection that is being used is deleted, the assets that depend on that connection can break. In the case of datasets, they will remain active, however, the data cannot be reloaded. In the case of *Automation*, flows will be executed but actions using the connection will not work.
 
-> Note: deleting a connection may lead to errors with for datasets that rely on the Connection. 
+> Note: deleting a connection may lead to errors with datasets that rely on the Connection. 
