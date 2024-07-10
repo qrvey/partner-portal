@@ -218,6 +218,7 @@ Parameters:</li></ul>
 ```json
 { "RequestType": "UpdateVariables" }
 ```
-7. Wait for the function to finish and then you can start using the new URL.
+
+Wait for the function to finish and then you can start using the new URL.
 
 </div>
