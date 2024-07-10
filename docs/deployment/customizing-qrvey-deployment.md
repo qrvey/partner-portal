@@ -38,14 +38,12 @@ These steps will show you how to update the parameters for a single pipeline. In
 
 ![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/custom-deploy_3.png#thumbnail)
 
-
 4. Click on **Next** on the Configure Stack options screen.
 5. On the next screen (Review), review the changes you have made, select the Capabilities checkbox (if shown) and click on **Update Stack** to apply the changes.
 6. At this point, the CloudFormation stack will move to “UPDATE_IN_PROGRESS” state.
 7. Wait for the CloudFormation stack to finish updating. Once it’s done the status would change to “UPDATE_COMPLETE”.
 
 ![customizing_deployment](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/customizing-qrvey-deployment/custom-deploy_4.png#thumbnail)
-
 
 ### Step 3: Trigger CodePipeline to deploy changes
 
@@ -109,7 +107,10 @@ You can change the Composer URL to match your own domain. You would need access 
 2. Log into your AWS account and navigate to the AWS Certificate Manager console.
 3. Create a new certificate matching the URL/domain you would like to use. You can create a specific certificate for the exact URL or a wildcard (*.yourdomain.com). You can also import or use an existing certificate if you already have one. Here’s <a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html" target="_blank">a document about creating certificates</a>. We recommend using DNS validation.
 4. Once the certificate is verified (status changes to “Issued”), copy the ARN.  
-**Note:** If your Qrvey Installation is in a region other than “us-east-1” then you will need to perform steps 2-4 for “us-east-1”.  
+
+> **Note:** If your Qrvey Installation is in a region other than `us-east-1` then you will need to repeat steps 2-4 for `us-east-1`.
+
+> **Note:** Starting on v8.4 the **Widget URL** is the same as the **Composer URL**.
 
 ## Update MainTemplate
 
@@ -121,7 +122,6 @@ You can change the Composer URL to match your own domain. You would need access 
 ## Update CloudFormation
 
 Update the following CloudFormation Stacks and CodePipelines by following the steps from <a href="#update-a-single-pipeline" target="_blank">Update a Single Pipeline</a>.
-
 
 
 <ul style={{listStyle: 'none'}}>
@@ -162,7 +162,6 @@ Update the following CloudFormation Stacks and CodePipelines by following the st
 </li>
 </ul>
 
-
 <ul style={{listStyle: 'none'}}>
 <li>d. Microservices<br /></li>
 </ul>
@@ -202,44 +201,5 @@ Parameters:</li></ul>
 8. Once all the pipelines have finished successfully you should be able to launch Composer using the new URL. 
 
 >**Note**: If you or your users have created content inside Qrvey Composer (Pages, Workflows or Webforms) using the old URL then those may not work properly. Any new content will use the new URL but any old content may still have the URL saved somewhere. Please contact Qrvey support for guidance on how to update the URL in content.
-
-
-
-
-
-<!-- 
-### Change Widget URL
-You can change the Widget URL to match your own domain. You would need access to DNS settings for that domain (Route 53 or similar) to be able to create a new CNAME record and SSL Certificate.
-
-1. Identify the URL you would like to use for the Qrvey Widgets. It would be something like “https://qrveywidgets.yourdomain.com"
-2. Log into your AWS account and navigate to the AWS Certificate Manager console.
-3. Create a new certificate matching the URL/domain you would like to use. You can create a specific certificate for the exact URL or a wildcard (*.yourdomain.com). You can also import or use an existing certificate if you already have one. Here’s <a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html" target="_blank">a document about creating certificates</a>. We recommend using DNS validation. You can re-use an existing SSL Certificate if the domain name matches.
-4. Once the certificate is verified (status changes to “Issued”), copy the ARN.
-5. Update the following CloudFormation Stacks and CodePipelines by following the steps mentioned <a href="#update-a-single-pipeline" target="_blank"> here</a>.
-    1. Widgets
-        1. CloudFormation Stack: “xxxxxWidgetsCodePipeline”. Parameters:
-            1. CustomDNS - enter the new Widget URL (without https://)
-            2. ARNSSLCertificate - enter the SSL Certificate ARN
-            3. EnableCustomDNS - enter “true”.
-        2. CodePipeline: “Qrvey_xxxxx_Widgets”
-    2. Microservices
-        1. CloudFormation Stack: “xxxxxMicroservicesCodePipeline”. Parameters:
-            1. WidgetsBucketlauncherPath - enter the new launcher path which would be the new widget URL + “/widgets-launcher/app.js”. For example it may look like “https://qrveywidgets.yourdomain.com/widgets-launcher/app.js”
-            2. WidgetsBucketPath - enter the new Widget URL (with https://)
-        2. CodePipeline: “Qrvey_xxxxx_Microservices”
-    3. Admin Center
-        1. CloudFormation Stack: “xxxxxAdminAppCodePipeline”. Parameters:
-            1. widgetBucketURL - enter the new Widget URL (with https://)
-        2. CodePipeline: “Qrvey_xxxxx_Admin”
-6. The next step is to find the value for the CNAME record to be added to your DNS.
-    1. Navigate to the AWS Cloudformation console. 
-    2. Find the stack called “xxxxxWidgetsCodePipeline”.
-    3. Click on the Outputs tab
-    4. Copy the URL as value for the output named “CloudfrontDomainName” (without https://)
-7. Log in or navigate to your DNS provider (Route 53 or similar) and add a CNAME record for “<Widget URL\>     CNAME    <CloudfrontDomainName\>”
-
->**Note**: If you have embedded Qrvey using the old cloudfront URL, then you would have to update your code to load all widgets using the new URL. 
--->
-
 
 </div>
