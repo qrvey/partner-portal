@@ -59,8 +59,9 @@ These steps will show you how to update the parameters for a single pipeline. In
 
 At this point, the changes are deployed and you can start using the Platform.
 
-## Updating Deployment Settings
-This section will show you the steps needed to update a particular setting in a Qrvey Platform’s deployment.
+## Update Deployment Settings
+
+Follow these steps to update a particular setting in a Qrvey Platform’s deployment.
 
 ### Change “From” Email Address 
 Qrvey platform uses AWS SES to send out all emails. These emails come from Automation or Page flows and also transactional emails like the “forgot password” feature. 
@@ -102,11 +103,24 @@ Parameters:</li></ul>
 ### Change Composer URL
 You can change the Composer URL to match your own domain. You would need access to DNS settings for that domain (Route 53 or similar) to be able to create a new CNAME record and SSL Certificate.
 
-1. Identify the URL you would like to use for Qrvey Composer. It would be something like “https://qrveysample.yourdomain.com”.
+1. Identify two URLs associated with your Qrvey instance:
+    - The **Composer** URL — (e.g., `https://qrveysample.yourdomain.com`)
+    - The **API Domain** URL — (e.g., `api-<composerURL>`)
 2. Log into your AWS account and navigate to the AWS Certificate Manager console.
 3. Create a new certificate matching the URL/domain you would like to use. You can create a specific certificate for the exact URL or a wildcard (*.yourdomain.com). You can also import or use an existing certificate if you already have one. Here’s <a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html" target="_blank">a document about creating certificates</a>. We recommend using DNS validation.
-4. Once the certificate is verified (status changes to “Issued”), copy the ARN.
-5. Update the following CloudFormation Stacks and CodePipelines by following the steps mentioned <a href="#update-a-single-pipeline" target="_blank"> here</a>.
+4. Once the certificate is verified (status changes to “Issued”), copy the ARN.  
+**Note:** If your Qrvey Installation is in a region other than “us-east-1” then you will need to perform steps 2-4 for “us-east-1”.  
+
+## Update MainTemplate
+
+1. Navigate to AWS Cloudformation console. 
+2. Find the stack called `Qrvey-----MainTemplate`.
+3. Navigate into Update > Use Existing Template > Update and replace any parameters using the old URLs (composer or API) to use the new ones. 
+4. Apply the changes and wait for the update to finish.
+
+## Update CloudFormation
+
+Update the following CloudFormation Stacks and CodePipelines by following the steps from <a href="#update-a-single-pipeline" target="_blank">Update a Single Pipeline</a>.
 
 
 
@@ -188,6 +202,10 @@ Parameters:</li></ul>
 8. Once all the pipelines have finished successfully you should be able to launch Composer using the new URL. 
 
 >**Note**: If you or your users have created content inside Qrvey Composer (Pages, Workflows or Webforms) using the old URL then those may not work properly. Any new content will use the new URL but any old content may still have the URL saved somewhere. Please contact Qrvey support for guidance on how to update the URL in content.
+
+
+
+
 
 <!-- 
 ### Change Widget URL
