@@ -103,7 +103,7 @@ You can change the Composer URL to match your own domain. You would need access 
 
 1. Identify two URLs associated with your Qrvey instance:
     - The **Composer** URL — (e.g., `https://qrveysample.yourdomain.com`)
-    - The **API Domain** URL — (e.g., `api-<composerURL>`)
+    - The **API Domain** URL — (e.g., `https://api-qrveysample.yourdomain.com`)
 2. Log into your AWS account and navigate to the AWS Certificate Manager console.
 3. Create a new certificate matching the URL/domain you would like to use. You can create a specific certificate for the exact URL or a wildcard (*.yourdomain.com). You can also import or use an existing certificate if you already have one. Here’s <a href="https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html" target="_blank">a document about creating certificates</a>. We recommend using DNS validation.
 4. Once the certificate is verified (status changes to “Issued”), copy the ARN.  
@@ -191,15 +191,33 @@ Parameters:</li></ul>
 
 6. The next step is to find the value for the CNAME record to be added to your DNS.
 <ul style={{listStyle: 'none'}}>
-<li>  a) Navigate to the AWS EC2 console</li>
-<li>  b) Open the “Load Balancers” section</li>
-<li>  c) Find the load balancer called “xxxxx-qrvey-elb”</li>
-<li>  d) Copy the DNS name value for this load balancer</li>
+<li>  a) Navigate to AWS Cloudformation console</li>
+<li>  b) Find the stack called “Qrvey-----WidgetsCodePipeline”. Select Outputs Tab. Copy the value for “CloudfrontDomainName”. This will be the destination for composer URL CNAME record.</li>
+<li>  c) Navigate to AWS API Gateway console. Click on Custom Domain names</li>
+<li>  d) Select the domain matching the API Domain URL. Copy the value for “API Gateway domain name”. This will be the value for API Domain URL CNAME record.</li>
 </ul>
 
-7. Log in or navigate to your DNS provider (Route 53 or similar) and add a CNAME record for “< Composer URL >     CNAME    < Load Balancer DNS Name >”
+7. Login or navigate to your DNS provider (Route 53 or similar) and add or update the CNAME records for Composer URL and API URL with the values from last step.
 8. Once all the pipelines have finished successfully you should be able to launch Composer using the new URL. 
 
 >**Note**: If you or your users have created content inside Qrvey Composer (Pages, Workflows or Webforms) using the old URL then those may not work properly. Any new content will use the new URL but any old content may still have the URL saved somewhere. Please contact Qrvey support for guidance on how to update the URL in content.
+
+## Run Lambda Function
+
+1. Navigate to AWS Lambda console. Find the function called `-----_CreateEnvFile_LambdaFunction`. Click on function name to open the details
+2. Select the **Test** tab:
+    - Enter any string in event name.
+    - Add this JSON to the body:
+```json
+{ "RequestType": "UpdateEnvFile" } 
+
+```
+3. Again, select the **Test** tab:
+    - Enter any string in event name.
+    - Add this JSON to the body:
+```json
+{ "RequestType": "UpdateVariables" }
+```
+7. Wait for the function to finish and then you can start using the new URL.
 
 </div>
