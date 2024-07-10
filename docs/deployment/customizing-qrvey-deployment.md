@@ -204,20 +204,22 @@ Parameters:</li></ul>
 
 ## Run Lambda Function
 
-1. Navigate to AWS Lambda console. Find the function called `-----_CreateEnvFile_LambdaFunction`. Click on function name to open the details
+1. Navigate to AWS Lambda console. Find the function called `-----_CreateEnvFile_LambdaFunction`. Click the function name to open the details.
 2. Select the **Test** tab:
     - Enter any string in event name.
     - Add this JSON to the body:
-```json
-{ "RequestType": "UpdateEnvFile" } 
+    ```json
+    { "RequestType": "UpdateEnvFile" } 
 
-```
-3. Again, select the **Test** tab:
+    ``` 
+    - Click **Test**.
+3. Again, selecting the **Test** tab:
     - Enter any string in event name.
     - Add this JSON to the body:
-```json
-{ "RequestType": "UpdateVariables" }
-```
+    ```json
+    { "RequestType": "UpdateVariables" }
+    ```
+     - Click **Test**.
 
 Wait for the function to finish and then you can start using the new URL.
 
