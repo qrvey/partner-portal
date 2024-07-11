@@ -13,7 +13,7 @@ Content Deployment enables you to copy the contents of a source Qrvey applicatio
 
 ## Explanation
 
-This article describes how to perform an automated deployment of a source baseline application between two Qrvey instances in separate environments. This article assumes a segregated tenant data model. For more information on tenant data models, see [Multi-tenant Dataset Architecture](../../multi-tenant-solution/multi-tenant-dataset-architecture.md).  
+This article describes how to perform an automated deployment of a source baseline application between two Qrvey instances in separate environments. This article assumes a segregated tenant data model. For more information on tenant data models, see [Multi-tenant Dataset Architecture](./01-Multi%20Tenant%20Solution/multi-tenant-dataset-architecture.md).  
 
 This can be broken into the following high-level steps.
 1. Prepare Source App for Deployment

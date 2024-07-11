@@ -15,8 +15,9 @@ Examples:
 * Releasing the new additions to a baseline application to multiple tenants of the system.
 * Provisioning a copy of a baseline application to multiple tenants of the system.
   
-To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane:  
-![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-content-deployment.png)
+To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane: 
+
+![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/content-deployment-20240711A.webp)
 
 Content Deployment entails the following steps:
 
@@ -26,8 +27,12 @@ Content Deployment entails the following steps:
 4. [**Create a Deployment Job**](../08-Content%20Deployment/jobs.md) to specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
 5. Finally, [**run a Deployment Job**](../08-Content%20Deployment/jobs.md) to populate the target application with content.
 
-> **Video Tutorial**  
-For video instructions, please watch our [Content Deployment Tutorial](../../video-training/legacy/content-deployment.md).
+**Video Tutorials**  
 
-> **API-Based "Automated" Content Deployment**  
-For more automated Content Deployment using the Qrvey API, please read: [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md) and [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).
+For video instructions, please watch the [Content Deployment Tutorial](../../video-training/legacy/content-deployment.md).
+
+**API-Based "Automated" Content Deployment**  
+
+For details, please read:
+- [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
+- [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).

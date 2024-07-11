@@ -22,7 +22,7 @@ Parameter tokens are user-defined parameters that can replace any value and be c
 
 You can replace any value with a parameter token by typing your own token name inside two curly brackets. Note that as soon as you type in the first curly bracket the system will suggest a few names for the token, based on the context that you are in. These names are just suggestions and can be changed to any name that you prefer. For example, if the source application uses a connection to a database that is used for development and testing, and the copied destinations applications have to be each connected to a different production database, you can replace the host URL of the source application with a Parameter Token like `{{hostURL}}`. You may also accept one of the suggested token names, such as `{{connection.host_url}}`. The same process can be repeated to set the username and password of the connection to a token. 
 
-### Parameter token example
+### Parameter Token Example
 In this example, we want to deploy an application that was created in a staging environment into several tenant accounts in a production environment. The source application is connected to a sample database that is used for development purposes, but each destination environment has its own database. To achieve this goal, replace the following attributes of the database connection with parameter tokens, such as:
 * Host URL: `{{host-url}}`
 * User Name: `{{db-username}}`
@@ -30,7 +30,7 @@ In this example, we want to deploy an application that was created in a staging 
 
 Later, when this deployment definition is used in a deployment job, the deployment job will resolve the appropriate values for each token and create the database connections. 
 
-### Configure parameter tokens
+### Configure Parameter Tokens
 1. In the deployment job, display the Deployment Definition Summary section. 
 2. Locate the parameter token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
 3. Enter a value for each parameter token. To use the same value for multiple users, select those users, click the **Bulk Edit** link, and enter the common value in the box provided. 
@@ -44,7 +44,7 @@ For example, if a deployment definition is created to update an application, the
 
 After determining which target application of each user is going to be updated, all of the other objects which depend on the selected target application, such as the connections, datasets, etc., have to be configured.
 
-### Configure content tokens
+### Configure Content Tokens
 1. In the deployment job, display the Deployment Definition Summary section. 
 2. Locate the content token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
   > **Note**: If a Configuration link is disabled, one or more of its prerequisite content tokens has not been configured yet. 
@@ -76,9 +76,7 @@ Verify that the desired package version has been created. For more information, 
 12. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
 13. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
-
- 
-### Create a deployment definition that updates an existing application
+### Create a Deployment Definition That Updates an Existing Application
 1. In Qrvey Admin, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
 2. Click **Create Definition**. The Deployment Definition Description page displays. 
 3. At the top of the page, enter a name and description in the fields provided.
@@ -98,14 +96,9 @@ Verify that the desired package version has been created. For more information, 
 11. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
 12. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
-
 >**Note**: An `unknown` label may indicate a new connection type that has not yet been updated in the Content Deployment interface. The new connection type will still be deployed, set up, and used properly.   
 
-
-
-### Delete a deployment definition
+### Delete a Deployment Definition
 To delete an existing deployment definition from the list, click its corresponding three-dot menu in the list and click **Delete**. Note that you cannot delete a deployment definition if it is associated with a deployment job. 
-
-
 
 </div>

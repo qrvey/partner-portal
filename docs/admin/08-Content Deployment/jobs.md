@@ -10,7 +10,6 @@ displayed_sidebar: getting-started
 <div style={{textAlign: "justify"}}>
 
 A Deployment Job executes the type of deployment specified by one or more deployment definitions against one or more target servers. Deployment jobs consist of “blocks” of instructions, with each block configuring the deployment of one deployment definition to any number of users on one destination server. That means that you can have one Deployment Job deploy multiple applications to as many users as necessary, on multiple environments. Deployment jobs require at least one block.
-  
 
 ## Before you begin
 * Verify that the desired deployment definition has been created. For more information, see [Deployment Definitions](../08-Content%20Deployment/definitions.md). 
