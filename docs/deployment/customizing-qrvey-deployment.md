@@ -198,29 +198,29 @@ Parameters:</li></ul>
 </ul>
 
 7. Login or navigate to your DNS provider (Route 53 or similar) and add or update the CNAME records for Composer URL and API URL with the values from last step.
+8. Run the Lambda Function:
+    - Navigate to AWS Lambda console. Find the function called `-----_CreateEnvFile_LambdaFunction`. Click the function name to open the details.
+    - Select the **Test** tab:
+        - Enter any string in event name.
+        - Add this JSON to the body:
+        ```json
+        { "RequestType": "UpdateEnvFile" } 
+        ``` 
+        - Click **Test**.
+    - Again, selecting the **Test** tab:
+        - Enter any string in event name.
+        - Add this JSON to the body:
+        ```json
+        { "RequestType": "UpdateVariables" }
+        ```
+        - Click **Test**.
+    - Wait for the function to finish and then you can start using the new URL.
+
 8. Once all the pipelines have finished successfully you should be able to launch Composer using the new URL. 
 
 >**Note**: If you or your users have created content inside Qrvey Composer (Pages, Workflows or Webforms) using the old URL then those may not work properly. Any new content will use the new URL but any old content may still have the URL saved somewhere. Please contact Qrvey support for guidance on how to update the URL in content.
 
-## Run Lambda Function
 
-1. Navigate to AWS Lambda console. Find the function called `-----_CreateEnvFile_LambdaFunction`. Click the function name to open the details.
-2. Select the **Test** tab:
-    - Enter any string in event name.
-    - Add this JSON to the body:
-    ```json
-    { "RequestType": "UpdateEnvFile" } 
 
-    ``` 
-    - Click **Test**.
-3. Again, selecting the **Test** tab:
-    - Enter any string in event name.
-    - Add this JSON to the body:
-    ```json
-    { "RequestType": "UpdateVariables" }
-    ```
-     - Click **Test**.
-
-Wait for the function to finish and then you can start using the new URL.
 
 </div>
