@@ -27,9 +27,7 @@ This can be broken into the following high-level steps.
 
 ### Prepare Source App(s) for Deployment
 
-Within the Qrvey Admin Center UI, ensure that you are in a **Dev** environment.
-
-Follow these [Content Deployment](../08-Content%20Deployment/overview-of-content-deployment.md) steps.
+Within the Qrvey Admin Center UI, ensure that you are in a **Dev** environment and follow these steps:
 
 1. Create a target server that points to the Dev instance with the Dev API key.  This step will not need to be repeated for all future content deployments.
 2. Create a release package with a single version that points to the source baseline app.
@@ -133,7 +131,7 @@ From the **Prod** environment, use the API to execute the follow steps.
 ```
 
 10. Make sure you pass values for each of the parameters you created for each dataset’s connection information.  You should have at least one parameter for each connection’s host URL, which will need to change when you deploy this app and load each tenant’s data.
-11. Call the [ExecuteDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/0246facc766fb-execute-deployment-job) endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
+11. Call the [ExecuteDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/ml6wb5114qoz2-execute-deployment-job) endpoint, passing in the value of the `deploymentJobId` as a path parameter to the endpoint.
 Parse the `jobTrackerId` value from the response.
 12. Call the [GetJobStatus()](https://qrvey.stoplight.io/docs/qrvey-api-doc/locquocpky6qv-get-job-status-by-job-tracker-id) endpoint, passing in the value for the `jobTrackerId` and wait until the `status` property has a value of `CREATED`. This endpoint returns lots of useful information about the deployment of the content objects.
 
