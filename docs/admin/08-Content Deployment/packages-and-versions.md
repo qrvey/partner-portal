@@ -15,8 +15,7 @@ Packages and versions give you the ability to “back up” source applications,
 
 > **Note**: Packages include all of the objects contained within its source application, but they do not contain the actual data associated with any datasets from the source application.  Rather, the data is loaded when the objects are deployed to the target application, after the deployment job completes. 
 
-## Before You Begin
-Verify that the desired source and target server connections have been created. For more information, see [Servers](./servers.md).
+> **Before You Begin:** Verify that the desired [source and target servers](./servers.md) have been created.
  
 ## Create a Package
 1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the **Packages** tab. 

@@ -11,11 +11,11 @@ displayed_sidebar: getting-started
 
 A Deployment Job executes the type of deployment specified by one or more deployment definitions against one or more target servers. Deployment jobs consist of “blocks” of instructions, with each block configuring the deployment of one deployment definition to any number of users on one destination server. That means that you can have one Deployment Job deploy multiple applications to as many users as necessary, on multiple environments. Deployment jobs require at least one block.
 
-## Before you begin
-* Verify that the desired deployment definition has been created. For more information, see [Deployment Definitions](../08-Content%20Deployment/definitions.md). 
-* If you intend to give access to an application to all users from one organization, in the same environment, consider making the application public instead of deploying it to all users. This prevents the application from being replicated into copies of the original.
+> **Before You Begin:** Verify that the desired [Deployment Definition](../08-Content%20Deployment/definitions.md) has been created. 
 
-## Create a deployment job
+> **Note:** If you intend to give access to an application to all users from one organization, in the same environment, consider making the application public instead of deploying it to all users. This prevents the application from being replicated into copies of the original.
+
+## Create a Deployment Job
 1. In Qrvey Admin, click the Content Deployment icon in the left-side menu and display the **Deployment Jobs** tab. 
 2. Click **Create Job**. The Deployment Job Description page displays. 
 3. Enter a name and description in the fields provided.
@@ -32,7 +32,7 @@ A Deployment Job executes the type of deployment specified by one or more deploy
   > **Note**: To deploy one application to several destination servers, create a block for each server. 
 10. To review the details of a section of the deployment definition, click its **Details** link. 
 
-## Run a deployment job
+## Run a Deployment Job
 1. In Qrvey Admin, click the **Content Deployment** icon in the left-side menu and display the **Deployment Jobs** tab. 
 2. Locate the job that you want to deploy in the list, click its three-dot menu, and click **Edit**. 
 3. Configure content tokens, if necessary. See "Using content tokens". 
@@ -46,9 +46,10 @@ A Deployment Job executes the type of deployment specified by one or more deploy
   > **Note**: You cannot modify a deployment job once it has been executed. 
 
 
-## Delete a deployment job
-To delete an existing deployment job, click its corresponding three-dot menu in the deployment job list and click **Delete**. 
-
+## Delete a Deployment Job
+To delete an existing deployment job:
+1. Click its corresponding three-dot menu in the deployment job list.
+2. Click **Delete**. 
 
 
 </div>

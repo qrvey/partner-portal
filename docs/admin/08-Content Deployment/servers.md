@@ -15,12 +15,9 @@ Servers are identified by the base URL for the Qrvey instance. For example, the 
 
 The first step in the Content Deployment process is to create connections to the servers that you wish to use. Each connection is also called a “Server” in the Qrvey Admin user interface, and these servers are displayed on the Server tab of the Content Deployment feature. Once a connection is established, you can use (and re-use) it in the Content Deployment process.
 
+> **Before You Begin:** Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created.
+
 ## Create a Server
-
-### Before You Begin
-Obtain your unique API key. It was provided in the welcome email that your organization received when your Qrvey instance was created.
-
-### Create a Server
 1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the **Server** tab. 
 2. Click **Add Server**. The Add Server dialog displays. 
 3. Enter the following information in the fields provided:
