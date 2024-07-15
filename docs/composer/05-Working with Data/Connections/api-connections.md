@@ -32,7 +32,7 @@ After creating the Push API connection, you must create a new dataset using this
 
 ## Configure a Push API Dataset
 
-1. Create a Dataset and set the desired Push API connection as its data source.  
+1. Create a **New Managed Dataset** and set the desired Push API connection as its data source.  
 The sample JSON schema you supplied for the source connection will be translated into columns with associated column data types.
 - Columns that appear indented below another column are constructed from a hierarchical JSON object array in the sample source JSON provided in the Push API connection. 
 - Columns of type `Object Array` are disabled in the **Design** page and cannot be used to construct unique identifiers, row-level security and column links; however, they can be used within a transformation that operates on array types.
@@ -44,12 +44,14 @@ The sample JSON schema you supplied for the source connection will be translated
 
 ![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api4.png#thumbnail)
 
-1. Navigate into the desired Dataset, click **Push API Instructions**. and copy the sample cURL command Post Data to the dataset. By default, the sample cURL command will use the exact same JSON sample schema supplied in the source Push API connection as a reminder of what the required JSON data structure must be.
+1. Navigate into the desired Dataset.
+2. Click **Push API Instructions**
+3. Copy the sample cURL command Post Data to the dataset.
+4. By default, the sample cURL command will use the exact same JSON sample schema supplied in the source Push API connection as a reminder of what the required JSON data structure must be.
 
-<!-- 
-If you do not see a sample cURL command for “Post Data” after clicking the Push API Instructions tab, click on **Apply Changes** in the top-right corner of the Design page. 
+
+> If you do not see a sample cURL command for “Post Data” after clicking the Push API Instructions tab, click on **Apply Changes** in the top-right corner of the Design page. 
 This page will also show sample cURL commands for “Delete Data” and “Delete All Data” actions. There must be at least one column configured as a unique identifier to see the “Delete Data” cURL command. There must be at least one record of data present in the dataset to see the “Delete All Data” cURL command.
--->
 
 > Joins are not supported for datasets that use Push API source connections. For details, please see [Data Joins](../Datasets/02-Design/05-Data%20Joins/data-joins.md).
 
