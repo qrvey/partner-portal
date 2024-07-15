@@ -32,7 +32,7 @@ After creating the Push API connection, you must create a new dataset using this
 
 ## Configure a Push API Dataset
 
-1. Create a **New Managed Dataset** and set the desired Push API connection as its data source.  
+1. Create a [New Managed Dataset](../Datasets/01-Overview%20of%20Datasets/datasets-managed.md) and set the desired Push API connection as its data source.  
 The sample JSON schema you supplied for the source connection will be translated into columns with associated column data types.
 - Columns that appear indented below another column are constructed from a hierarchical JSON object array in the sample source JSON provided in the Push API connection. 
 - Columns of type `Object Array` are disabled in the **Design** page and cannot be used to construct unique identifiers, row-level security and column links; however, they can be used within a transformation that operates on array types.
