@@ -11,9 +11,11 @@ displayed_sidebar: getting-started
 
 A Deployment Definition is a set of instructions for a deployment job. It defines the package version to use, which content from the package to include, and whether any of the content has to be modified during deployment. You can configure the deployment definition to create a new application or to update an existing application.  
 
+> **Before You Begin:** Verify that the desired [package and version](../08-Content%20Deployment/packages-and-versions.md) have been created.
+
 The deployment definition does not specify the target application. That information is in the deployment job. This separation enables you to use one deployment definition to update multiple target applications for any number of users. To take advantage of this capability, you must use parameter tokens, described next. 
 
-## Using Parameter Tokens
+## Parameter Tokens
 In some cases, you may want to copy the same application to multiple instances but with different options. For example, you may want to have different connection strings in each destination application, depending on the recipient user or tenant. Qrvey supports user-defined variables called Parameter Tokens for this situation.
 
 Parameter tokens are user-defined parameters that can replace any value and be configured for each recipient at the time of creating the deployment job. Parameter tokens use the following syntax: 
@@ -22,7 +24,7 @@ Parameter tokens are user-defined parameters that can replace any value and be c
 
 You can replace any value with a parameter token by typing your own token name inside two curly brackets. Note that as soon as you type in the first curly bracket the system will suggest a few names for the token, based on the context that you are in. These names are just suggestions and can be changed to any name that you prefer. For example, if the source application uses a connection to a database that is used for development and testing, and the copied destinations applications have to be each connected to a different production database, you can replace the host URL of the source application with a Parameter Token like `{{hostURL}}`. You may also accept one of the suggested token names, such as `{{connection.host_url}}`. The same process can be repeated to set the username and password of the connection to a token. 
 
-### Parameter token example
+### Parameter Token Example
 In this example, we want to deploy an application that was created in a staging environment into several tenant accounts in a production environment. The source application is connected to a sample database that is used for development purposes, but each destination environment has its own database. To achieve this goal, replace the following attributes of the database connection with parameter tokens, such as:
 * Host URL: `{{host-url}}`
 * User Name: `{{db-username}}`
@@ -30,21 +32,22 @@ In this example, we want to deploy an application that was created in a staging 
 
 Later, when this deployment definition is used in a deployment job, the deployment job will resolve the appropriate values for each token and create the database connections. 
 
-### Configure parameter tokens
+### Configure Parameter Tokens
 1. In the deployment job, display the Deployment Definition Summary section. 
 2. Locate the parameter token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
 3. Enter a value for each parameter token. To use the same value for multiple users, select those users, click the **Bulk Edit** link, and enter the common value in the box provided. 
 4. When finished, click **OK**. 
 5. To review the details for a user, click its **Details** link. 
 
-## Using Content Tokens
+## Content Tokens
 Content Tokens are system-generated parameters that are automatically created for values that need to be resolved for each recipient. They are created in deployment definitions, and they are resolved when a deployment job runs. Just like Parameter Tokens, these tokens are formatted like `{{token}}`. However, these tokens are assigned by the system and apply to objects, rather than values. In other words, they identify things like “application” and “connection”, rather than “application name” and “connection’s username”.
 
+### Content Token Example
 For example, if a deployment definition is created to update an application, the system assigns the application the content token, `{{ user.application }}`. Later, in the deployment job, if multiple users are picked as recipients of the deployed application, the system resolves the content token for each user. This enables the deployment job to update the application for each of the recipient users.
 
 After determining which target application of each user is going to be updated, all of the other objects which depend on the selected target application, such as the connections, datasets, etc., have to be configured.
 
-### Configure content tokens
+### Configure Content Tokens
 1. In the deployment job, display the Deployment Definition Summary section. 
 2. Locate the content token you wish to configure, and click its **Configure** link. A configuration dialog displays. 
   > **Note**: If a Configuration link is disabled, one or more of its prerequisite content tokens has not been configured yet. 
@@ -52,12 +55,7 @@ After determining which target application of each user is going to be updated, 
 3. Configure the destination content using the options provided. 
 4. When finished, click **OK**.
 
-## Create a Deployment Definition
-
-### Before you begin
-Verify that the desired package version has been created. For more information, see [Packages](../08-Content%20Deployment/packages-and-versions.md). 
-
-### Create a deployment definition that creates a new application
+## Create a Deployment Definition That Creates a New Application
 1. In Qrvey Admin Center, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
 2. Click **Create Definition**. The Deployment Definition Description page displays. 
 3. At the top of the page, enter a name and description in the fields provided.
@@ -76,9 +74,7 @@ Verify that the desired package version has been created. For more information, 
 12. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
 13. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
-
- 
-### Create a deployment definition that updates an existing application
+## Create a Deployment Definition That Updates an Existing Application
 1. In Qrvey Admin, click the **Content Deployment** icon in the left-side menu and display the Deployment Definitions tab. 
 2. Click **Create Definition**. The Deployment Definition Description page displays. 
 3. At the top of the page, enter a name and description in the fields provided.
@@ -98,14 +94,15 @@ Verify that the desired package version has been created. For more information, 
 11. For datasets, select whether to load the data or to create the dataset without the data. The default setting is to load the data. 
 12. Insert parameter tokens as needed. For more information, see "Using Parameter Tokens" above. 
 
-
 >**Note**: An `unknown` label may indicate a new connection type that has not yet been updated in the Content Deployment interface. The new connection type will still be deployed, set up, and used properly.   
 
+## Delete a Deployment Definition
 
+To delete an existing deployment definition:
 
-### Delete a deployment definition
-To delete an existing deployment definition from the list, click its corresponding three-dot menu in the list and click **Delete**. Note that you cannot delete a deployment definition if it is associated with a deployment job. 
+1. Click its corresponding three-dot menu in the list
+2. Click **Delete**.
 
-
+> **Note:** You cannot delete a deployment definition if it is associated with a deployment job. 
 
 </div>
