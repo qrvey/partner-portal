@@ -1,7 +1,7 @@
 ---
 id: datasets-managed
-title: Datasets - Managed
-sidebar_label: Datasets - Managed
+title: Managed Datasets
+sidebar_label: Managed Datasets
 tags: [Data Analyst]
 sidebar_position: 2
 displayed_sidebar: getting-started
@@ -9,36 +9,37 @@ displayed_sidebar: getting-started
 
 <div>
 
-Qrvey datasets are the data constructs that support all visualizations and dashboards created within the product. The Qrvey platform supports two types of datasets:
-* **Managed**. The data is stored inside Qrvey’s data repository, which is a high-performance, scalable, serverless OpenSearch cluster. 
-* **Live**. Directly accessed from the data source, enabling real-time queries without the need to load data. 
+Managed Datasets are stored inside Qrvey’s data repository, which is a high-performance, scalable, serverless OpenSearch cluster. Managed datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
 
-This article covers managed datasets. For more information on live connections, see [Datasets - Live Connect](../01-Overview%20of%20Datasets/datasets-live.md). 
+## Create a Managed Dataset
 
-Managed datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
-
-## Creating a Managed Dataset
-To create a managed dataset, in the Data section, open the Datasets tab, click **Create New Dataset**, and select **New Managed Dataset**.  
+To create a managed dataset, follow these steps:
 
 ![Create-New-Dataset-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Create-New-Dataset-84.png)
 
-The Select the Data Source dialog displays. 
+
+1. Go to the **Data** section and open the **Datasets** tab.
+2. Click **Create New Dataset** and select **New Managed Dataset**. A dialog will open.
 
 ![Select-the-Data-Source](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 
-This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking the **Create New Connection** link. For more information, see [Overview of Connections](../../Connections/overview-of-connections.md). 
+This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking [Create New Connection](../../Connections/overview-of-connections.md) in the bottom left of the modal.
 
-Select a data source and click **Next**. If you selected a database connection, the Select Database and Query dialog displays. 
+3. Select a data source and click **Next**.  
+   If you selected a database connection, the **Select Database and Query** dialog displays. 
 
 ![Select-Database-and-Query-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Select-Database-and-Query-84.png)
 
-Select one of the following options for defining the data to view from that database:
-* **Tables and Views**. Select a table or view from the list. To display a partial view of the data, hover over a column name to display (and then click) the **View Source Data** link.  
-* **SQL Query**. Enter a custom SQL query as your data source in the field provided. 
+4. Select one of the following options for defining the data to view from that database:
+   * **Tables and Views**. Select a table or view from the list. To display a partial view of the data, hover over a column name to display (and then click) the **View Source Data** link.  
+   * **SQL Query**. Enter a custom SQL query as your data source in the field provided. 
 
-If you anticipate that the data will require 10 minutes or longer to load, select the **This is a long-running query** check box. Otherwise, you may experience timeout errors. For smaller datasets, leave this option clear for optimal performance. 
+5. Optional: If you anticipate that the data will require 10 minutes or longer to load, select the **This is a long-running query** check box. Otherwise, you may experience timeout errors. For smaller datasets, leave this option clear for optimal performance. 
 
-Click **Save**. The Design page for the newly created dataset displays. Use this page to configure your columns and dataset options before loading the data. For an introduction to the Design page, see [Overview of the Design Page](../02-Design/overview-of-design.md).
+6. Click **Save**.  
+   The Design page for the newly created dataset displays. 
+   
+7. Use this page to configure your columns and dataset options before loading the data. To learn more, please read [Overview of the Design Page](../02-Design/overview-of-design.md).
 
 >Notice that the new dataset is given a default name, using the following format:  
 >`{the connection name} - {table/view name}`  
@@ -48,13 +49,12 @@ At this point, the dataset is not actually created or populated with data. You m
 
 ![Dataset-in-Draft-mode](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset2.7.7.png#thumbnail-40)
 
-Draft mode indicates that your selections have been saved and you can resume working on it at any time. Note that all design steps are optional and can be used to fully customize your dataset. For more information on the Datasets page, see [Overview of Datasets](../01-Overview%20of%20Datasets/overview-of-datasets.md).
+Draft mode indicates that your selections have been saved and you can resume working on it at any time. Note that all design steps are optional and can be used to fully customize your dataset.
 
-Next steps:
-* Configure your dataset. For more information, see the following section, “Customizing the Dataset”. 
-* Load the dataset. For more information, see “Loading Data”. 
+8. [Customize and Configure the Dataset](#customize-the-dataset) as desired.
+9. Once your dataset is configured, [Load the Data](#load-data).
 
-## Customizing the Dataset
+## Customize the Dataset
 This section describes various options for configuring the dataset. 
 
 ### Modify The Data Source
@@ -199,21 +199,24 @@ The View Source Data option displays the first 100 rows of data from the data so
 ### Data Sync
 The Data Syncronization option enables you to keep data up-to-date and synchronized. For more information, see [Data Sync](../02-Design/04-Data%20Synchronization/data-sync.md).   
 
-## Loading Data
-Once you have made all the necessary adjustments to your dataset, you may load the data. To begin loading your data, click **Load Dataset**. The Load Dataset dialog displays.
+## Load Data
+
+Once you have made all the necessary adjustments to your dataset, you may load the data. 
+
+1. Click **Load Dataset**. The Load Dataset dialog displays.
 
 ![Load-Dataset-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Load-Dataset-84.png)
 
-Select the estimated size of the dataset and click **Load**. You may change this setting at a later time in Advanced Settings tab. For more information, see [Advanced Settings](../02-Design/07-Advanced%20Settings/dataset-design-advanced-settings.md).
+2. Select the estimated size of the dataset and click **Load**. You may change this setting at a later time in Advanced Settings tab. For more information, see [Advanced Settings](../02-Design/07-Advanced%20Settings/dataset-design-advanced-settings.md).
 
-The progress bar at the top-right of the screen indicates the current progress of the data load. You may continue working in Qrvey Composer while the data loads in the background. 
+3. The progress bar at the top-right of the screen indicates the current progress of the data load. You may continue working in Qrvey Composer while the data loads in the background. 
 
 ![Loading-Dataset](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/17datasets.png#thumbnail-40)
 
-If you remain on the Design tab during the data load process, when it completes, the Summary view displays with information about the data loaded. 
+4. If you remain on the Design tab during the data load process, when it completes, the Summary view displays with information about the data loaded. 
 
 ![Summary-View](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/18datasets.png#thumbnail-60)
 
-Events related to the data load process are logged in the [Activity Log](../../../activity-log.md). If any errors or issues occur with the data load, check the Activity Log for more information. 
+5. Events related to the data load process are logged in the [Activity Log](../../../activity-log.md). If any errors or issues occur with the data load, check the Activity Log for more information. 
 
 </div>

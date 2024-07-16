@@ -7,7 +7,8 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-There are two types of Datasets in Qrvey. **Managed Datasets**, store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, **Live Connect Datasets** provide data access directly from its source, enabling real-time queries without the need to load data.
+
+A Qrvey Dataset is a collection of structured data used to create dashboards and visualizations within the platform. There are two types of Datasets. **Managed Datasets** store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, **Live Connect Datasets** provide data access directly from its source, enabling real-time queries without the need to load data.
 
 ## Create a Dataset
 1. Navigate to the **Data** Module and make sure you are in the **Datasets** tab.
@@ -15,7 +16,6 @@ There are two types of Datasets in Qrvey. **Managed Datasets**, store data insid
     - **New Managed Dataset**
     - **New Live Connect Dataset**
 3. Configure as Desired. For details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/datasets-managed) and [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive).
-
 
 ## View Datasets
 
@@ -32,7 +32,7 @@ There are two types of Datasets in Qrvey. **Managed Datasets**, store data insid
 
 ## Mark Dataset as Favorite
 
-To mark a Dataset as a Favorite, follow these steps.
+To mark a Dataset as a favorite, follow these steps.
 
 1. Navigate to **Data >** **Datasets**.
 2. Find the desired dataset card.
@@ -47,14 +47,14 @@ To mark a Dataset as a Favorite, follow these steps.
     - [Analyze](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Analyze/overview-of-analyze)
     - [Activity Log](https://partners.qrvey.com/docs/composer/activity-log)
 
-## **Share and Un-share Datasets**
+## Share and Un-Share Datasets
 
 1. Navigate to **Data > Datasets**.
 2. Find the desired Dataset and click its three-dot menu. A dropdown will appear.
 3. Click either **Share Data with my Organization** or **Unshare with my Organization**. A modal will appear.
 4. Click to confirm your choice in the modal and you will return to **Data > Datasets**.
 
-## **Delete a Dataset**
+## Delete a Dataset
 
 1. Navigate to **Data > Datasets**.
 2. Find the desired Dataset and click its three-dot menu. A dropdown menu will appear.
