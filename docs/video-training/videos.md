@@ -19,6 +19,9 @@ Each new release of the Qrvey platform includes videos demonstrating new feature
 
 For reference, some recent releases include the following demos:
 
+### Version 8.6
+* No new videos. This version was dedicated to minor enhancements of existing features, platform hardening, and optimization.
+
 ### Version 8.5 LTS
 * No new videos. This version was dedicated to platform hardening and optimization.
 
