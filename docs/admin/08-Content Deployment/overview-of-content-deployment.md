@@ -15,6 +15,8 @@ Examples:
 * Releasing the new additions to a baseline application to multiple tenants of the system.
 * Provisioning a copy of a baseline application to multiple tenants of the system.
   
+
+## How to Deploy Content
 To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane: 
 
 ![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/content-deployment-20240711A.webp)
@@ -27,12 +29,17 @@ Content Deployment entails the following steps:
 4. [**Create a Deployment Job**](../08-Content%20Deployment/jobs.md) to specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
 5. Finally, [**run a Deployment Job**](../08-Content%20Deployment/jobs.md) to populate the target application with content.
 
-**Video Tutorials**  
+**Video Tutorials**
 
 For video instructions, please watch the [Content Deployment Tutorial](../../video-training/legacy/content-deployment.md).
 
-**API-Based "Automated" Content Deployment**  
+**API-Based Content Deployment**
 
 For details, please read:
 - [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
 - [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).
+
+
+## Pixel Perfect Reports
+
+Content Deployment now supports the [Pixel Perfect Reports](../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) feature. Any reports created inside the application are included in the deployment process, retaining all their configurations and properties after the deployment. Pixel Perfect reports can be installed or updated with Content Deployment as any other asset in the platform.
