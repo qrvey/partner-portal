@@ -14,13 +14,11 @@ Release Date: 2024-07-16
 
 > **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes) document for important notes and access to the upgrade link.
 
-
 ### New Features & Enhancements
 
 - **NodeJS 20 Remaining Upgrade**
 - **Table Charts and Tabular View DevExpress Update** — Iframe has been removed from table charts, in order to improve the performance and loading times of tables.
 - **Enhanced Chart Panel Customization with CSS Variables** — Additional CSS variables in Qrvey Widgets. Developers can customize options for the Font Size of Chart Panel Titles, Width of Title Header Line, and Chart Panel Box Shadow.
-- **Handling of Large Response Size in Dashboards** — All endpoints that return a response that has the potential to grow beyond the 6MB response limit have to be reviewed and appropriate solutions applied to them.
 - **Cost Tags to all Qrvey Services** — All Qrvey AWS resources have been tagged and are now differentiated from other resources. They can be explored and analyzed in the AWS cost explorer.
 - **Pixel Perfect in Content Deployment and Admin Support** — The new Pixel Perfect Report Builder is now supported in Content Deployment. Reports created by users inside applications are included in the deployment processes. Administrators can define the roles that have access to the Pixel Perfect Builder as well.
 
@@ -40,4 +38,3 @@ Release Date: 2024-07-16
 - **Relative date not updating when changing operator** — Fixed an issue when the user edited a relative date filter and changed to the other operator. The filter endpoint is now updated, and the filter displays in the filter list.
 - **Date Tokens are saved as static dates in Chart Filters when editing a Chart** — Fixed an issue where tokens were not saved as tokens even when the chart has been edited.
 - **Table Copy Bug Fix** — Fixed an issue where user could not long-click to select all on table.
-
