@@ -1,0 +1,62 @@
+---
+id: complex-data
+title: Complex Data
+sidebar_label: Complex Data
+tags: [Data Analyst]
+sidebar_position: 4
+displayed_sidebar: getting-started
+---
+<div style={{textAlign: "justify"}}>
+
+For data analysis, we have different options that allow users to work with more complex data types, such as images, long texts or files, by making additional metadata available as column values which can be used in chart creation. 
+
+
+## Working with Complex Data Types
+
+To start, create a form that contains any of the complex data types we support. In <i>Web Forms</i>, select Form or Survey and add an image upload, file upload, short text or long text field. 
+
+![1_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/1_complex_data.png#thumbnail)
+
+Once you publish your Web Forms and responses come in, you can access the chart builder where you will be able to select the fields in your form to create charts using complex data. 
+
+In the example below, a long text field is added as a category. Click on the dot menu to see the metadata options that are available. In the case of long text, you can use <i>Words and Keyphrases</i> to create charts that display the most recurring words/keyphrases in the text. You can also use <i>Sentiment</i> which will display a positive vs negative visualization. Entities will reference unique names of real-world objects such as people, places, and commercial items. 
+
+![2_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/2_complex_data.png#thumbnail)
+
+![3_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/3_complex_data.png#thumbnail)
+
+## Drill-Downs With Complex Data Types
+
+You can also use the drill-down option in your charts using complex data types. In Custom View, you will find all the charts you have created. By clicking on any data point, a menu showing all the columns of the web form will be displayed. The columns that contain complex data will display the corresponding data part so that you can select one of them to drill-down.
+
+![4_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/4_complex_data.png#thumbnail)
+
+In this example, you can see the chart showing the results based on the File type. At the bottom of the chart, there is a displayed breadcrumb that shows the route of the drill-down that has been applied.
+
+![5_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/5_complex_data.png#thumbnail)
+
+## Complex Data Drill-downs in Page Actions
+
+<strong>Chart Drill Down - Default </strong>
+
+As a creator in Dashboard Builder, you can also select which columns you want to be displayed in the drill-down menu for end-users. After selecting a chart that supports Page Actions, you can choose the On Click option, which will enable you to turn on Chart Drill-Down - Default.
+
+![6_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/6_complex_data.png#thumbnail)
+
+In this example, we’ll show you how to select only two columns to be displayed as drill-down options for the end-user side.
+
+![7_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/7_complex_data.png#thumbnail)
+
+On the end-user side, only the two columns selected will be displayed.
+
+![8_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/8_complex_data.png#thumbnail)
+
+## Complex Data Drill-downs in Page Actions
+
+In Flows, you can also use Complex Data parts to execute different automated processes.
+
+In this example, we’ll show how to use one of the complex data parts with the Search Record Action. First, select the Dataset, then select the complex data part you want to search in the Field dropdown.
+
+![9_complex_data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2.2_complex-data/9_complex_data.png#thumbnail)
+
+</div>
