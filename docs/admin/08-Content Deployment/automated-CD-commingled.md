@@ -53,7 +53,7 @@ Within the Qrvey Admin Center UI, ensure that you are in a **Dev** environment a
 
 >**Note**: You will see the shared dataset from the Master Data App added as a dependency to the deployment definition for the Master Content App, but that doesn’t mean that the shared dataset will be deployed again. Rather, you will map the source of the dataset views to the correct shared datasets in the target environment at the time the deployment job is executed.
 
-Within the **Dev** environment, use the API to execute the follow steps.
+From the **Dev** environment, use the API to execute the following steps.
 
 1. Call the [GetAllDeploymentDefinitions()](https://qrvey.stoplight.io/docs/qrvey-api-doc/40cdaed8ecd8b-get-all-deployment-definitions) endpoint.
 2. Parse the `items` object array in the response body to find the object with the `name` property that matches `Master Data App`, as well as the object where `name` matches `Master Content App`.
@@ -69,7 +69,7 @@ Within the **Dev** environment, use the API to execute the follow steps.
 
 ### Prepare Target App(s) for Deployment
 
-From the **Prod** environment, use the API to execute the follow steps.
+From the **Prod** environment, use the API to execute the following steps.
 
 1. Call the [CreateServer()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2a028d399e95b-create-server) endpoint and pass in the following request parameters:
     * `name` = any name you want
@@ -89,7 +89,7 @@ Before you continue, ensure you have at least one user account in the Qrvey Admi
 
 ### Deploy the Master Data App
 
-From the **Prod** environment, use the API to execute the follow steps.
+From the **Prod** environment, use the API to execute the following steps.
 
 1. Call the [CreateDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job) endpoint, passing in any name and description that you want.
 2. Extract the value from the `deploymentJobId` property in the response.
@@ -150,7 +150,7 @@ From the **Prod** environment, use the API to execute the follow steps.
 
 ### Deploy the Master Content App
 
-From the **Prod** environment, use the API to execute the follow steps.
+From the **Prod** environment, use the API to execute the following steps.
 
 1. Call the [CreateDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job) endpoint, passing in any name and description that you want.
 2. Extract the value from the `deploymentJobId` property in the response.
