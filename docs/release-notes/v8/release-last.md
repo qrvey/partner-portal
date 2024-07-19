@@ -16,11 +16,11 @@ Release Date: 2024-07-16
 
 ### New Features & Enhancements
 
-- **NodeJS 20 Remaining Upgrade**
 - **Table Charts and Tabular View DevExpress Update** — Iframe has been removed from table charts, in order to improve the performance and loading times of tables.
 - **Enhanced Chart Panel Customization with CSS Variables** — Additional CSS variables in Qrvey Widgets. Developers can customize options for the Font Size of Chart Panel Titles, Width of Title Header Line, and Chart Panel Box Shadow.
 - **Cost Tags to all Qrvey Services** — All Qrvey AWS resources have been tagged and are now differentiated from other resources. They can be explored and analyzed in the AWS cost explorer.
 - **Pixel Perfect in Content Deployment and Admin Support** — The new Pixel Perfect Report Builder is now supported in Content Deployment. Reports created by users inside applications are included in the deployment processes. Administrators can define the roles that have access to the Pixel Perfect Builder as well.
+- **Handling of Large Response Size in Dashboards** — We implemented pagination in widgets where the information of the charts is requested such as Dashboards and Analyze. We also optimized the size of the conditional formatting configuration for charts.
 
 ### General Tweaks & Fixes
 
