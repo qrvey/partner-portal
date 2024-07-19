@@ -7,21 +7,20 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-In Qrvey, Content Deployment refers to the process of copying content from one application to another, in the same environment or to a different one. Content Deployment is a powerful tool for managing all of the content generated in a multi-tenant deployment.
-
-Examples:
+In Qrvey, Content Deployment refers to the process of copying content from one application to another, in the same environment or to a different one. Content Deployment is a powerful tool for managing all of the content generated _(including Connections, Datasets, Web Forms, Charts, Pixel-Perfect Reports, and Flows)_ in a multi-tenant deployment.
+ 
+**Examples:**
 * Copying an application that has been created in a staging environment to the production environment.
 * Copying some content, or an entire application created by one user to other users’ accounts.
 * Releasing the new additions to a baseline application to multiple tenants of the system.
 * Provisioning a copy of a baseline application to multiple tenants of the system.
-  
 
 ## How to Deploy Content
 To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane: 
 
 ![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/content-deployment-20240711A.webp)
 
-Content Deployment entails the following steps:
+To Deploy Content, follow these general steps:
 
 1. Create the source and target [**servers**](../08-Content%20Deployment/servers.md).
 2. [**Create a package and version**](../08-Content%20Deployment/packages-and-versions.md) of the source application.
@@ -38,8 +37,3 @@ For video instructions, please watch the [Content Deployment Tutorial](../../vid
 For details, please read:
 - [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
 - [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).
-
-
-## Pixel Perfect Reports
-
-Content Deployment now supports the [Pixel Perfect Reports](../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) feature. Any reports created inside the application are included in the deployment process, retaining all their configurations and properties after the deployment. Pixel Perfect reports can be installed or updated with Content Deployment as any other asset in the platform.
