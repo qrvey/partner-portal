@@ -27,7 +27,7 @@ This can be broken into the following high-level steps.
 
 ### Prepare Source App(s) for Deployment
 
-Within the Qrvey Admin Center UI, ensure that you are in a **Dev** environment and follow these steps:
+From the **Dev** environment, use the API to execute the following steps.
 
 1. Create a target server that points to the Dev instance with the Dev API key.  This step will not need to be repeated for all future content deployments.
 2. Create a release package with a single version that points to the source baseline app.
@@ -59,7 +59,7 @@ Repeat this step until the response returns a URL path to collect the ZIP file f
 
 ### Prepare Target App for Deployment
 
-From the **Prod** environment, use the API to execute the follow steps.
+From the **Prod** environment, use the API to execute the following steps.
 
 1. Call the [CreateServer()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2a028d399e95b-create-server) endpoint and pass in the following request parameters:
     * `name` = any name you want
@@ -78,7 +78,7 @@ Before you continue, please make sure you have at least one user account created
 
 ### Deploy the Baseline App
 
-From the **Prod** environment, use the API to execute the follow steps.
+From the **Prod** environment, use the API to execute the following steps.
 
 1. Call the [CreateDeploymentJob()](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job) endpoint, passing in any name and description that you want.
 2. Extract the value from the `deploymentJobId` property in the response.

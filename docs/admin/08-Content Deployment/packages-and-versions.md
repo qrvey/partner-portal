@@ -45,7 +45,7 @@ To edit the name of an existing version, click it’s three-dot menu in the vers
 ## Delete a Version
 To delete an existing version, click it’s three-dot menu in the version list and click **Delete**. 
 
->**Note**: You cannot delete a version if a deployment definition is associated with the version.
+>**Note**: You cannot delete a package version if a deployment definition is associated with the version.
 
 
 </div>
