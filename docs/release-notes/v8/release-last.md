@@ -21,6 +21,7 @@ Release Date: 2024-07-16
 - **Cost Tags to all Qrvey Services** — All Qrvey AWS resources have been tagged and are now differentiated from other resources. They can be explored and analyzed in the AWS cost explorer.
 - **Pixel Perfect in Content Deployment and Admin Support** — The new Pixel Perfect Report Builder is now supported in Content Deployment. Reports created by users inside applications are included in the deployment processes. Administrators can define the roles that have access to the Pixel Perfect Builder as well.
 - **Handling of Large Response Size in Dashboards** — We implemented pagination in widgets where the information of the charts is requested such as Dashboards and Analyze. We also optimized the size of the conditional formatting configuration for charts.
+- **Copy Table Data Disabled** — Starting in v8.6 users cannot copy content inside a table.
 
 ### General Tweaks & Fixes
 
@@ -37,4 +38,3 @@ Release Date: 2024-07-16
 - **It's not possible to scroll through all the columns in Transformation Formula** — Fixed an issue when creating a Formula Transformation. If a user scrolled to the bottom of the Insert Values or Insert Functions lists, the scroll would not go all the way to the bottom, hiding options that should be available.
 - **Relative date not updating when changing operator** — Fixed an issue when the user edited a relative date filter and changed to the other operator. The filter endpoint is now updated, and the filter displays in the filter list.
 - **Date Tokens are saved as static dates in Chart Filters when editing a Chart** — Fixed an issue where tokens were not saved as tokens even when the chart has been edited.
-- **Table Copy Bug Fix** — Fixed an issue where user could not long-click to select all on table.
