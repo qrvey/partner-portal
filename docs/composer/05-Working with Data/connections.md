@@ -1,9 +1,9 @@
 ---
-id: overview-of-connections
-title: Overview of Connections
-sidebar_label: Overview of Connections
+id: connections
+title: Connections
+sidebar_label: Connections
 tags: [Data Analyst, CloudOps Engineer, Software Developer, Solution Architect, All Personas]
-sidebar_position: 1
+sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
@@ -39,7 +39,7 @@ To create a Connection, follow these steps.
     - **MongoDB**
     - **Snowflake**
     - **DynamoDB**
-    - **API connections** - Supported in UI to push data into datasets. For more details, please see [API Connections](./api-connections.md).
+    - **API connections** - Supported in UI to push data into datasets. For more details, please see [API Connections](#push-api-connections).
 4. Set a Connection Name.
 5. Set the configuration details as desired.  
     Configuration options vary for each connection type, but all the fields should be descriptive and standard for the relevant database. For more information on configuration options, please see the following subsections on configuration.
@@ -85,7 +85,7 @@ Amazon S3 Buckets and folders storing CSV, JSON, or ndJSON files can be used as 
 
 - Load data from multiple files from the same bucket or folder in bulk, instead one file at a time.
 - Wildcards can be used in the **S3 Folder** field.
-- File upload time to S3 is automatically used as a timestamp to enable the [append and update](../Datasets/02-Design/04-Data%20Synchronization/data-sync.md#append-and-update) mode for data synchronization. 
+- File upload time to S3 is automatically used as a timestamp to enable the [append and update](./Datasets/02-Design/04-Data%20Synchronization/data-sync.md) mode for data synchronization. 
  
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 
@@ -96,6 +96,91 @@ By default, Qrvey looks for the named bucket under the same AWS account as the i
     - starts with `SALES_`, please use `myFolder/SALES_*`
     - ends with `.csv`, please use `myFolder/*.csv`
     - contains `data_load`, please use `myFolder/*data_load*`
+
+
+### Push API Connections
+
+Qrvey Composer supports the configuration of Push API connections from the Connections page within the Dataset UI. This feature provides “creator” users a low-code way to create datasets that are populated from an API. 
+
+Configuring a Dataset to use a Push API Connection requires the following:
+- **Configure a Push API Connection** and provide a sample JSON object structure.
+- **Configure a Dataset** that uses the Push API Connection.
+- **Execute a Push API Request** to push new data into the dataset.
+
+Please see the following sections for detailed instructions.
+
+#### Configure a Push API Connection
+
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api1.png#thumbnail)
+
+To configure a Push API Connection, follow these steps.
+1. [Create a Connection](#create-a-connection) and select the **Push API** connection type. 
+2. Type a name for the connection.
+3. Add a sample JSON data structure in the provided field.  
+    Ensure this sample JSON exactly matches the structure of the JSON data being pushed by the actual source API endpoint. Mismatches between the sample JSON data structure and the JSON data returned by the API will cause the dataset to fail on load.
+
+After creating the Push API connection, you must create a new dataset using this Push API connection as the source.
+
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api2.png#thumbnail-40)
+
+#### Configure a Push API Dataset
+
+To configure a Push API Dataset, follow these steps.
+
+1. Create a [New Managed Dataset](./Datasets/01-Overview%20of%20Datasets/datasets-managed.md) and set the desired Push API connection as its data source.  
+The sample JSON schema you supplied for the source connection will be translated into columns with associated column data types.
+- Columns that appear indented below another column are constructed from a hierarchical JSON object array in the sample source JSON provided in the Push API connection. 
+- Columns of type `Object Array` are disabled in the **Design** page and cannot be used to construct unique identifiers, row-level security and column links; however, they can be used within a transformation that operates on array types.
+2. Configure the column names and column data types, as well as any transformations, geocoding and row-level security.
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api3.png#thumbnail-60)
+3. Click **Apply Changes** to confirm configuration.
+
+#### Execute a Push API Request
+
+![api](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/api-connections/api4.png#thumbnail)
+
+1. Navigate into the desired Dataset.
+2. Click **Push API Instructions**
+3. Copy the sample cURL command Post Data to the dataset.
+4. By default, the sample cURL command will use the exact same JSON sample schema supplied in the source Push API connection as a reminder of what the required JSON data structure must be.
+
+
+> If you do not see a sample cURL command for “Post Data” after clicking the Push API Instructions tab, click on **Apply Changes** in the top-right corner of the Design page. 
+This page will also show sample cURL commands for “Delete Data” and “Delete All Data” actions. There must be at least one column configured as a unique identifier to see the “Delete Data” cURL command. There must be at least one record of data present in the dataset to see the “Delete All Data” cURL command.
+
+> Joins are not supported for datasets that use Push API source connections. For details, please see [Data Joins](./Datasets/02-Design/05-Data%20Joins/data-joins.md).
+
+> To execute a Push API request, you will need to [provide the API key](../../getting-started/faqs.md#where-can-i-find-my-api-key) associated with the Qrvey Data Router.
+
+> The optimal payload size for the Push API is 1MB. You may make concurrent requests and do not need to wait until one request completes before making another request. The maximum recommended number of concurrent requests is 100. 
+
+#### Check Status of the Push API Request
+
+You can check the status of the Push API request using the following cURL command: 
+
+```
+curl --location --globoff '{{postdataUrl}}/{{jobId}}/status' \
+--header 'x-api-key: {{apikey}}'
+```
+
+**Request Variables:**
+- `postdataUrl` — Provided by Qrvey when your Qrvey instance was initially set up.
+- `jobId` — Included in the response provided by the Push API request. 
+- `apikey` — Use the API key associated with the Qrvey Data Router.
+
+#### Possible Response Statuses 
+
+- `Initializing`
+- `QueryingDatasources`
+- `Initializing`
+- `QueryingDatasources`
+- `PumpingDatasources`
+- `FillingJoinLakes`
+- `Joining`
+- `FillingEs`
+- `Complete`
+- `TerminatedExit`
+- `ErrorExit`
 
 ## Edit a Connection
 
@@ -120,4 +205,4 @@ To delete a Connection, follow these steps.
 
 **Warning:** If a connection that is being used is deleted, the assets that depend on that connection can break. In the case of datasets, they will remain active, however, the data cannot be reloaded. In the case of *Automation*, flows will be executed but actions using the connection will not work.
 
-> Note: deleting a connection may lead to errors with datasets that rely on the Connection. 
+> Note: deleting a connection may lead to errors with datasets that rely on the Connection.

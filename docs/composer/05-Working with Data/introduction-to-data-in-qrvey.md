@@ -12,7 +12,7 @@ displayed_sidebar: getting-started
 Datasets, Web Forms, and Connections work together to play vital roles in the data lifecycle within Qrvey, from data collection to data storage and analysis.
 
 ## Connections
-A [Connection](./Connections/overview-of-connections.md) is a link established between Qrvey and an external data source.
+A [Connection](./connections.md) is a link established between Qrvey and an external data source.
 
 This could be a database, a data warehouse, CSV & JSON files, a cloud storage services like AWS, incoming data from REST APIs, or some other system that store data. Connections allow Qrvey to access and retrieve data from these external sources. The main purpose of a connection is to establish a secure and reliable pathway for data retrieval and integration into Qrvey.
 
