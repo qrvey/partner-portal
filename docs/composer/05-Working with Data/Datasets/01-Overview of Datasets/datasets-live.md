@@ -31,7 +31,7 @@ Live Connect Datasets can use the same Connections as Managed Datasets.  To crea
 ![dslive1](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.1-8.0.png#thumbnail-40)
 
 
-Any existing connections which support Live Connect will be listed as possible Data Sources.  Either choose an existing connection or click the “Create New Connection” at the bottom of the window (following this method, rather than going through the Connections tab, will limit your source selections to connection methods supporting Live Connect).  For more information on creating connections, see [Connections](../../Connections/overview-of-connections.md).
+Any existing connections which support Live Connect will be listed as possible Data Sources.  Either choose an existing connection or click the “Create New Connection” at the bottom of the window (following this method, rather than going through the Connections tab, will limit your source selections to connection methods supporting Live Connect).  For more information on creating connections, see [Connections](../../connections.md).
 
 ![dslive2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.2-8.0.png#thumbnail)
 

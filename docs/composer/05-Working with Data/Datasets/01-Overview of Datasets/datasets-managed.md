@@ -26,7 +26,7 @@ The Select the Data Source dialog displays.
 
 ![Select-the-Data-Source](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 
-This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking the **Create New Connection** link. For more information, see [Overview of Connections](../../Connections/overview-of-connections.md). 
+This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking the **Create New Connection** link. For more information, see [Connections](../../connections.md). 
 
 Select a data source and click **Next**. If you selected a database connection, the Select Database and Query dialog displays. 
 

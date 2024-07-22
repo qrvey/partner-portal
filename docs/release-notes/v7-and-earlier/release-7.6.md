@@ -21,7 +21,7 @@ This change does not affect any of the Admin Center functionality, however the l
 ## New Features & Enhancements
  
 ### Data Preparation
-* **[Consistent Connection Creation](../../composer/05-Working%20with%20Data/Connections/overview-of-connections.md)**: We improved how Connections are created. The Connection creation screens are the same regardless of where they appear. Also, Connections will no longer include queries.
+* **[Consistent Connection Creation](../../composer/05-Working%20with%20Data/connections.md)**: We improved how Connections are created. The Connection creation screens are the same regardless of where they appear. Also, Connections will no longer include queries.
 
  
 ### Data Analysis & Visualization
