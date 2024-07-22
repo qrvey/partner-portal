@@ -7,9 +7,11 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div>
+## Introducing Qrvey Managed Datasets
 
-Managed Datasets are stored inside Qrvey’s data repository, which is a high-performance, scalable, serverless OpenSearch cluster. Managed datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
+Managed Datasets offer a scalable, secure solution for storing and processing large volumes of data within the Qrvey platform. Enjoy fast, reliable analytics with features like automatic indexing and optimized querying, making it easy to manage and gain insights.
+
+Stored in Qrvey’s high-performance, serverless OpenSearch cluster, Managed Datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
 
 ## Create a Managed Dataset
 
@@ -217,5 +219,3 @@ Once you have made all the necessary adjustments to your dataset, you may load t
 ![Summary-View](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/18datasets.png#thumbnail-60)
 
 5. Events related to the data load process are logged in the [Activity Log](../../../activity-log.md). If any errors or issues occur with the data load, check the Activity Log for more information. 
-
-</div>

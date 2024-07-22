@@ -3,7 +3,7 @@ id: dataset-views
 title: Dataset Views
 sidebar_label: Dataset Views
 tags: [Data Analyst]
-sidebar_position: 4
+sidebar_position: 5
 displayed_sidebar: getting-started
 ---
 

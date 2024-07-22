@@ -15,7 +15,11 @@ A Qrvey Dataset is a collection of structured data used to create dashboards and
 2. Click **Create** **New Dataset**. A dropdown will appear. Choose to create a:
     - **New Managed Dataset**
     - **New Live Connect Dataset**
-3. Configure as Desired. For details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/managed-datasets) and [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive).
+3. Configure as Desired. 
+
+All new datasets are given the default name of `{connection name} - {table/view name}`.  At this point your Dataset is ready for use; however you can make changes as needed.
+
+For more details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/managed-datasets) or [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive), depending on the type of Dataset you are working with.
 
 ## View Datasets
 

@@ -20,7 +20,7 @@ Dot maps use one single geolocation column.
 Before you can create a Map Chart, your data needs to be prepared for the correct use of maps which is done by adding **Geolocation** to your data.
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of Datasets. It's important to define these groups correctly for accurate map locations.
 
-For more information on geolocation, see "Setting Up Geolocation Groups" in the [Live Connect Datasets](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/datasets-live.md#setting-up-geolocation-groups) article.
+For more information on geolocation, see "Setting Up Geolocation Groups" in the [Live Connect Datasets](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/live-connect-datasets.md#setting-up-geolocation-groups) article.
 
 ## When to Use It
 Dot Maps are used to visualize the distribution of locations in the data and can highlight the density of data points, especially in large sets of data. For example, the location of individual traffic accidents can draw attention to the areas where the dots are dense, as problem areas. The question that leads to choosing a dot map for visualization always starts with “where”; “Where are my customers concentrated?” or “Where are the households below the poverty line?”

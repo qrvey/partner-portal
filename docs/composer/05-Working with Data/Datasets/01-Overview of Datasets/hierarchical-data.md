@@ -3,7 +3,7 @@ id: hierarchical-data
 title: Working With Hierarchical Data
 sidebar_label: Working With Hierarchical Data
 tags: [Data Analyst]
-sidebar_position: 3
+sidebar_position: 4
 displayed_sidebar: getting-started
 ---
 
