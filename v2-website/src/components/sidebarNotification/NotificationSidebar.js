@@ -18,22 +18,22 @@ function NotificationSidebar() {
 
   const notifications = [
     {
+      title: "Qrvey 8.6",
+      description:
+        "Version 8.6 of the Qrvey platform is now available to customers. This version includes several new feature enhancements and performance improvements.",
+      link: "/docs/release-notes/v8/release-last",
+    },
+    {
       title: "Qrvey 8.5",
       description:
         "Version 8.5 (LTS) of the Qrvey platform is now available to customers. This version includes several new features and performance improvements.",
-      link: "/docs/release-notes/v8/release-last",
+      link: "/docs/release-notes/v8/release-8.5",
     },
     {
       title: "End-of-life Schedule",
       description:
         "We've added a new article that lists the features and endpoints that have been scheduled for deprecation. All features and endpoints will be supported for (1) year after the release date of the LTS version that contains the alternative.",
       link: "/docs/release-notes/end-of-life",
-    },
-    {
-      title: "NodeJS Deprecation",
-      description:
-        "AWS has announced that it is deprecating NodeJS 12, 14, and 16. To avoid any issues as a result of this deprecation, upgrade your instances of the Qrvey platform as described in this announcement.",
-      link: "/docs/release-notes/announcements",
     },
   ];
 

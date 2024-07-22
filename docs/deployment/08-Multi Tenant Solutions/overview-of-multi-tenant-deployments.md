@@ -94,5 +94,5 @@ Finally, multi-tenant applications almost always have some form of tenant onboar
 
 
 **See Also:**
-* [Multi-tenant Dataset Architecture](../multi-tenant-solution/multi-tenant-dataset-architecture.md)
-* [Multi-tenant Security Architecture](../multi-tenant-solution/multi-tenant-security-architecture.md)
+* [Multi-tenant Dataset Architecture](./multi-tenant-solution/multi-tenant-dataset-architecture.md)
+* [Multi-tenant Security Architecture](./multi-tenant-solution/multi-tenant-security-architecture.md)

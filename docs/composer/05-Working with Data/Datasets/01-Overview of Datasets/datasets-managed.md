@@ -23,7 +23,7 @@ To create a managed dataset, follow these steps:
 
 ![Select-the-Data-Source](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/ds2.7.6.png#thumbnail-60)
 
-This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking [Create New Connection](../../Connections/overview-of-connections.md) in the bottom left of the modal.
+This dialog enables you to specify where the data will be fetched from. The data source can be based on an existing connection, another dataset that you created earlier, or some other data construct that was created and shared. If none of these exist, you can create a new Connection by clicking the **Create New Connection** link. For more information, see [Connections](../../connections.md). 
 
 3. Select a data source and click **Next**.  
    If you selected a database connection, the **Select Database and Query** dialog displays. 

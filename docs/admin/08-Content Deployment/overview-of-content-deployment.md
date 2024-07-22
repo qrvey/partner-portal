@@ -7,29 +7,33 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
-Content Deployment is the process of copying content from one application to another, in the same environment or to a different one. Content Deployment is a powerful tool for managing all of the content generated in a multi-tenant deployment. Some examples of where this feature may be used are:
+In Qrvey, Content Deployment refers to the process of copying content from one application to another, in the same environment or to a different one. Content Deployment is a powerful tool for managing all of the content generated _(including Connections, Datasets, Web Forms, Charts, Pixel-Perfect Reports, and Flows)_ in a multi-tenant deployment.
+ 
+**Examples:**
 * Copying an application that has been created in a staging environment to the production environment.
 * Copying some content, or an entire application created by one user to other users’ accounts.
 * Releasing the new additions to a baseline application to multiple tenants of the system.
 * Provisioning a copy of a baseline application to multiple tenants of the system.
 
->**Note**: This section of the Partner Portal describes how to use the Qrvey Admin Center to perform Content Deployment. This feature can also be managed using the Qrvey API. For more information, see:
-> * [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
-> * [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md)
-  
-To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane:  
-![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/admin/icon-admin-content-deployment.png)
+## How to Deploy Content
+To open the Content Deployment page in Qrvey Admin Center, click the Content Deployment icon in the left-hand navigation pane: 
 
-Content Deployment requires you to configure four steps:
-1. [**Servers**](../08-Content%20Deployment/servers.md) define the source and destination instances.
-2. [**Packages**](../08-Content%20Deployment/packages-and-versions.md) create a snapshot copy of the source application.
-3. [**Deployment Definitions**](../08-Content%20Deployment/definitions.md) specify the content to copy and what to change during the deployment.
-4. [**Deployment Jobs**](../08-Content%20Deployment/jobs.md) specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
+![Content Deployment Icon](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Content+Deployment+Guide/content-deployment-20240711A.webp)
 
-Once these steps are complete, you can run the deployment job. 
+To Deploy Content, follow these general steps:
 
-For a video tutorial on using Content Deployment, see [Content Deployment](../../video-training/legacy/content-deployment.md).
+1. Create the source and target [**servers**](../08-Content%20Deployment/servers.md).
+2. [**Create a package and version**](../08-Content%20Deployment/packages-and-versions.md) of the source application.
+3. [**Create a Deployment Definition**](../08-Content%20Deployment/definitions.md) to specify the content to copy and what to change during the deployment.
+4. [**Create a Deployment Job**](../08-Content%20Deployment/jobs.md) to specify the recipient users and the destination instances, and they determine the value of all marked tokens for each recipient or group of recipients.
+5. Finally, [**run a Deployment Job**](../08-Content%20Deployment/jobs.md) to populate the target application with content.
 
-</div>
+**Video Tutorials**
+
+For video instructions, please watch the [Content Deployment Tutorial](../../video-training/legacy/content-deployment.md).
+
+**API-Based Content Deployment**
+
+For details, please read:
+- [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
+- [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).

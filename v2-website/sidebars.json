@@ -10,6 +10,10 @@
         },
         {
           "type": "doc",
+          "id": "release-notes/v8/release-8.5"
+        },
+        {
+          "type": "doc",
           "id": "release-notes/v8/release-8.4"
         },
         {
@@ -175,10 +179,6 @@
           "id": "release-notes/v7-and-earlier/release-jan-2019"
         }
       ]
-    },
-    {
-      "type": "doc",
-      "id": "release-notes/known-issues"
     },
     {
       "type": "doc",
