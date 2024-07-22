@@ -1,21 +1,21 @@
 ---
 id: overview-of-datasets
-title: Overview of Datasets
-sidebar_label: Overview of Datasets
+title: Datasets
+sidebar_label: Datasets
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-
 A Qrvey Dataset is a collection of structured data used to create dashboards and visualizations within the platform. There are two types of Datasets. **Managed Datasets** store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, **Live Connect Datasets** provide data access directly from its source, enabling real-time queries without the need to load data.
 
 ## Create a Dataset
+
 1. Navigate to the **Data** Module and make sure you are in the **Datasets** tab.
 2. Click **Create** **New Dataset**. A dropdown will appear. Choose to create a:
     - **New Managed Dataset**
     - **New Live Connect Dataset**
-3. Configure as Desired. For details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/datasets-managed) and [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive).
+3. Configure as Desired. For details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/managed-datasets) and [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive).
 
 ## View Datasets
 

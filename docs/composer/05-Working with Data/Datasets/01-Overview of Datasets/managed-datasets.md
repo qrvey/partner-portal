@@ -1,5 +1,5 @@
 ---
-id: datasets-managed
+id: managed-datasets
 title: Managed Datasets
 sidebar_label: Managed Datasets
 tags: [Data Analyst]
@@ -13,10 +13,9 @@ Managed Datasets are stored inside Qrvey’s data repository, which is a high-pe
 
 ## Create a Managed Dataset
 
-To create a managed dataset, follow these steps:
-
 ![Create-New-Dataset-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Create-New-Dataset-84.png)
 
+To create a managed dataset, follow these steps:
 
 1. Go to the **Data** section and open the **Datasets** tab.
 2. Click **Create New Dataset** and select **New Managed Dataset**. A dialog will open.

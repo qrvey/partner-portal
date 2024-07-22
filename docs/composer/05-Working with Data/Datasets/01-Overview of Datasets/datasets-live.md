@@ -13,7 +13,7 @@ Qrvey datasets are the data constructs that support all visualizations and dashb
 * **Managed**. The data is stored inside Qrvey’s data repository, which is a high-performance, scalable, serverless OpenSearch cluster. 
 * **Live**. Directly accessed from the data source, enabling real-time queries without the need to load data.  
 
-This article covers live connect datasets. For more information on managed connections, see [Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md).  
+This article covers live connect datasets. For more information on managed connections, see [Datasets - Managed](../01-Overview%20of%20Datasets/managed-datasets.md).  
 
 >**Note**: Live Connect is only available on version 8.0 or greater of the Qrvey Platform.  
 

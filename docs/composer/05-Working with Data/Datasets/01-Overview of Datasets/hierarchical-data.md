@@ -35,15 +35,12 @@ The parent records in the main data source have a one-to-many relationship with 
 
  ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon4.png#thumbnail)
 
-
 This transformation flattens the array and the effect can be seen in the form of an enabled object on the Dataset Design tab, as soon as the Transformation dialog is closed. 
 
  ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon5.png#thumbnail)
 
-
 >**Note**: To learn more about Transformations, see [Transformations](../02-Design/03-Transformations/transformations.md).
 
 You can design your dataset as usual before loading it. For more information, see [Overview of Datasets](./overview-of-datasets.md).
-
 
 </div>
