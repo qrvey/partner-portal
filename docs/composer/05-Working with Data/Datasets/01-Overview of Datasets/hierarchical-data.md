@@ -62,7 +62,7 @@ You may also navigate into the **Data > Dataset > View Source Data** tab to see 
 
 The parent records in the main data source have a one-to-many relationship with `countriesVisited` object array, which can act like a left join between two relational tables and can be “inflated” to produce a flat dataset. 
 
-## Transform Hierarchical Dataset
+## Customize Hierarchical Datasets
 
 You can [Transformations](../02-Design/03-Transformations/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it, just like with other datasets, as well as flatten object arrays.
 
