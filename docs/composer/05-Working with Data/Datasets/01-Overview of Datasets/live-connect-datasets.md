@@ -40,14 +40,16 @@ To create a new Live Connect Dataset, follow these steps.
     For some sources you will need to choose a Schema from a list of tables or views. Alternatively, you can write a SQL Query in order to perform joins and formulas.
 6. Click **Save** once the data source is selected or the custom query is written and tested. You will be directed to the main Datasets page.
 
-### Rename the Live Connect Dataset
-
-1. Click on the name type to change it as desired.
-
-![Rename Live Connect Dataset](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.3-8.0.png#thumbnail-40)
 
 ## Manage the Dataset​
-There are several options that enable you to transform the dataset as needed.
+The following options enable you to transform and manage your dataset.
+
+### Rename Live Connect Dataset
+
+1. Click on the name.
+2. Type to change it as desired.
+
+![Rename Live Connect Dataset](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.3-8.0.png#thumbnail-40)
 
 ### Change the Data Source​
 
@@ -107,15 +109,13 @@ If your data contains address information that you wish to display on any type o
 To create a Geolocation Group you have to map your address data column or columns to the address type fields in the dialog. For example you may map the data column zip to the Postal/Zip Code field. Although any partial address is enough to create a Geolocation Group, mapping more columns, especially unique columns such as the country, helps create more accurate points on your map charts.
 
 ### Use Formula Builder with Live Connect Datasets
-Formula Builder provides two modes for creating formulas. In most cases, select **Standardized Syntax**. This mode enables you to create formulas using a standardized syntax that is compatible with any database connected to the Qrvey platform.
-
-1. To use the specific syntax of the database, select **Data Engine Syntax (legacy)**.  
-
 ![formula-builder-standardized-syntax-82](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/formula-builder-20/formula-builder-standardized-syntax-82.png)  
+
+Formula Builder provides two modes for creating formulas. In most cases, select **Standardized Syntax**. This mode enables you to create formulas using a standardized syntax that is compatible with any database connected to the Qrvey platform. To use the specific syntax of the database, select **Data Engine Syntax (legacy)**.  
 
 For more information on Standardized Syntax, see [Using Standardized Syntax Mode](../03-Analyze/10-Formula%20Builder/using-standardized-syntax.md).
 
-## Optimize Live Connect Configuration
+### Optimize Live Connect Configuration
 
 The performance of your live connection may vary depending on the size of the dataset and the size of the database cluster. Performance issues may occur if the database cluster is not sized appropriately for the dataset. Qrvey recommends that your live connect data source returns results in under 30 seconds to prevent timeout errors. 
 
