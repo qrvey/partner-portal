@@ -66,11 +66,11 @@ To create a dataset view via the API, follow these steps.
       https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
       ```
    2. You can find the parameters in two places:
-      - Using Qrvey Composer, navigate into **Qrvey Composer > [Application] > Data > [Dataset] > Design** and check the page's URL:
+      - Using Qrvey Composer, navigate into **Qrvey Composer > [Application] > Data > [Dataset] > Design** and check the page's URL to get the `DOMAIN`, `APP_ID`, and `DATASET_ID`:
       ```
       https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}
       ```
-      - If you have the `DATASET_ID` and `DOMAIN` of a shared Dataset, you can use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/9xpku63qfxq54-get-dataset) endpoint.
+      - If you have the `DATASET_ID` and `DOMAIN` of a shared Dataset, you can use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/9xpku63qfxq54-get-dataset) endpoint to get the remaining parameters.
 
 2. Create a new Dataset View using the Shared Dataset as its source.
 
