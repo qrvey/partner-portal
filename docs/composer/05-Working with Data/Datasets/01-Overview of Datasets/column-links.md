@@ -28,8 +28,6 @@ To create Column Links, follow these steps.
 
 Every time you add a new visualization to Dashboard Builder, any visualization containing columns with links will have a Page Action automatically predefined with your set URL.
 
-> **Note**: Hierarchical data on columns from JSON connections currently have a Known Issue with tokens. These tokens are not being received in Page Actions from Dashboard Builder. 
-
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.gif#thumbnail)
  
 

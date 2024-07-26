@@ -75,17 +75,17 @@ To create a dataset view via the API, follow these steps.
 2. Create a new Dataset View using the Shared Dataset as its source.
 
    1. Call the [Create Dataset View from Shared Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1a594100ae37-create-dataset-view-from-shared-dataset). 
-   
-   2. Use these parameters on the API endpoint:
-      `DOMAIN` — The 5-letter subdomain of your Qrvey instance.
-      `APP_ID ` — ID of the **target application** where the new dataset view will be created.
-      `USER_ID` — ID of the **user-owner for the target application** where the new dataset view will be created.
-      `CONNECTION_ID` — From the source / Shared Dataset.
-      ```
+         ```
       https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/clone/connection/{{CONNECTION_ID}}
       ```
 
-      Pass the `APP_ID` and `USER_ID` of the **source application** where the shared dataset resides into the request body:
+      Use these parameters on the API endpoint:
+      - `DOMAIN` — The 5-letter subdomain of your Qrvey instance.
+      - `APP_ID` — ID of the **target application** where the new Dataset View will be created.
+      - `USER_ID` — ID of the **user/owner for the target application** where the new dataset view will be created.
+      - `CONNECTION_ID` — Connection ID of your **Shared Dataset**, colelcted in step one.
+      
+      Pass the `APP_ID` and `USER_ID` of the shared dataset collected in step one into the request body:
 
       ```
       {
