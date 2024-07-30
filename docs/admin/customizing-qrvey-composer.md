@@ -42,7 +42,7 @@ Company information is displayed inside the Qrvey application and in emails sent
 3. Under Company Info, provide the following information:
     - Company name
     - Address
-    - Email (used in email signature, not the actual email’s "From" field)
+    - Email (Used in email signature, not the actual email "From" field.)
     - Phone number
 
 ### Customize the Look and Feel of Qrvey Composer
@@ -96,7 +96,7 @@ To configure an SMTP email provider:
     - Server URL
     - Port number
     - Encryption type (STARTTLS, TLS, or SSL)
-    - From email (Configured in AWS. Optional depending on the requirements of the email provider)
+    - From email (Configured in AWS. Optional, depending on the requirements of the email provider.)
     - User name
     - Password 
   Once completed, the Test Connection button activates. 
