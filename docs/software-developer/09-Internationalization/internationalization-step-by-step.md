@@ -33,8 +33,6 @@ The full process can be broken down into six high-level steps that each may be b
 **Prerequisites**: A GCP account and credentials to access and create projects in it.
  
 In this section you will create a new project in your GCP account and enable the Google Spreadsheet API that is used by Qrvey to access the Translation Spreadsheet. Google does not charge for creating an account or spreadsheet API access.
- 
-### Steps
 
 1. Create a Google Cloud Platform account by visiting https://cloud.google.com/ or log into your existing GCP account.
 2. From the Google Cloud dashboard, create a new project. This option can also be found by typing “Create a Project” in GCP’s search bar.
@@ -66,8 +64,7 @@ In this section you will create a new project in your GCP account and enable the
 **Prerequisites**: Credentials to access the AWS account where Qrvey is installed, the email and key that were generated in the last section.
  
 In this section you will create a blank translation spreadsheet and configure the Qrvey Translation Service Utility to enable access to it via the Google Spreadsheet API.
- 
-### Steps
+
 1. Create the translation spreadsheet.
    - Open this [sample translation spreadsheet](https://docs.google.com/spreadsheets/d/1_qvW2327-e5M___oymzIvNHAtcMqpssx3UZUOviUwAE/edit?usp=sharing).
    - From the "File" menu, select **Make a copy**. This copy will be used to enter translated text for your deployment.
@@ -77,16 +74,15 @@ In this section you will create a blank translation spreadsheet and configure th
    DOC ID: `1YygAI9_UoRefEjDfUYAKh62FMZWJMjKJHDFZ6wzws`
    - Share this spreadsheet, as “Editor”, with user accounts of people who will enter or review translations.
    - Share this spreadsheet as “Editor” with the email account saved above, the one ending in `iam.gserviceaccount.com`.
- 2. Configure the Translation Service Utility.
-   - Sign in to the AWS management console.
-   - Select the account in which Qrvey is deployed.
-   - Select the Lambda service.
-   - Locate the utility lambda: `<deploymentId>_globalization_translationDictionary`.
-   - Select “Configuration”, then “Environment variables”.
-   - Fill in values for three variables. Enter the API key, email address, and document id saved above.
-      - `GOOGLE_CLIENT_EMAIL`
-      - `GOOGLE_CLIENT_PRIVATE_KEY`
-      - `GOOGLE_DOCUMENT_ID`
+2. Configure the Translation Service Utility
+   - Reconfigure the following CloudFormation Stacks and CodePipelines by following our [Update a Single Pipeline](https://partners.qrvey.com/docs/deployment/customizing-qrvey-deployment#update-a-single-pipeline) guide.
+      - Microservices
+         - CloudFormation Stack: `xxxxxMicroservicesCodePipeline`. Parameters:
+            - `GoogleClientDocId`
+            - `GoogleClientEmail`
+            - `GoogleClientPK`
+         - CodePipeline: `Qrvey_xxxxx_Microservices`
+   - Wait for the pipelines to finish before moving on the next step
 
 ## 3- Importing the Keys
 
@@ -98,8 +94,7 @@ The Translation Spreadsheet provides the location and mechanism for all translat
 The steps in this section use the Qrvey Translation Service Utility to import the keys into the spreadsheet.
  
 >**Note**: If you wish to translate dynamic text, it is advisable to configure the desired values before running these steps. This will ensure that the keys for the dynamic values are also imported at this stage.
- 
-### Steps
+
 1. Obtain the Qrvey API key, generated during the deployment process.
 2. From a terminal, call the [Update Globalization Spreadsheet](https://qrvey.stoplight.io/docs/qrvey-api-doc/25e8ac0578467-update-globalization-spread-sheet) endpoint.
  
@@ -134,7 +129,6 @@ The **i18nTokens** tab is for translating i18n tokens entered into the Qrvey UI 
  
 Once the keys have been added to the spreadsheet by following the import process described in the previous section, any number of people can work on the spreadsheet to enter the translations.
 
-### Steps
 1. Open the spreadsheet.
 2. Open each of the tabs. See that the tabs are loaded with keys.
 3. If they don’t already exist, create a column for each language desired.
@@ -142,23 +136,24 @@ Once the keys have been added to the spreadsheet by following the import process
    - See [language sub-code and optional national sub-code](https://en.wikipedia.org/wiki/Language_localisation) to learn more about language codes.
 4. Enter a translation value for blank cells under the language columns.
 
-#### Hints
+**Tips:**  
 Standard spreadsheet features help with managing the translation process.
-1. It’s OK to sort the spreadsheet.
-2. It’s OK to reorder columns.
-3. It’s OK to add row filters. The translation utility ignores row filters.
-4. It’s OK to add additional working columns for any purpose desired, such as translation, or QA tracking. The translation utility ignores extra columns.
-5. Do not change the values in the “key” and “original source” columns.
+- It’s OK to sort the spreadsheet.
+- It’s OK to reorder columns.
+- It’s OK to add row filters. The translation utility ignores row filters.
+- It’s OK to add additional working columns for any purpose desired, such as translation, or QA tracking. The translation utility ignores extra columns.
+- Do not change the values in the “key” and “original source” columns.
 
 ## 5- Publishing the Translated Values
+
 **Recommended Persona**: Cloud Ops engineer or software engineer  
 **Prerequisites**: Qrvey API key
  
 Once there are translation values in the spreadsheet, they may be published into Qrvey, making them accessible to the end-users who are working with the embedded widgets in different languages.
 
-### Steps
 1. Obtain the Qrvey API key, generated during the deployment process.
 2. From a terminal, call the [Update i18n Dictionary Files](https://qrvey.stoplight.io/docs/qrvey-api-doc/ecdaf40552e7b-update-i18n-dictionary-files) endpoint.
+
 ```shell
 curl --location --request POST '{{DOMAIN}}/devapi/v5/globalization/translation/config/dictionary' \
 --header 'content-type: application/json' \
@@ -192,7 +187,7 @@ The value of the **lang** (and the optional **locale**) property may be a [langu
  
 Alternatively, the value may be “browser”, in which case the browser’s primary language code is selected.
 
-## Final Notes and Considerations
+## Final Tips
 The following points frequently come up as questions and are worth noting.
 
 ### Adding Keys in Multiple Rounds
