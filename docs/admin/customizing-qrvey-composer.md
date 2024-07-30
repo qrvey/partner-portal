@@ -18,7 +18,6 @@ It consists of two main tabs, General Settings and Features.
 
 This article describes the tasks you can perform on the General Settings and Features tabs. 
 
-
 ## General Settings tab
 
 ### View Qrvey License and Account Information
@@ -43,10 +42,10 @@ Company information is displayed inside the Qrvey application and in emails sent
 3. Under Company Info, provide the following information:
     - Company name
     - Address
-    - Email
+    - Email (used in email signature, not the actual email’s "From" field)
     - Phone number
 
-### Customize the look and feel of Qrvey Composer
+### Customize the Look and Feel of Qrvey Composer
 You can change the visual style of Qrvey Composer to match your organization’s unique style. 
 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
@@ -64,7 +63,7 @@ You can change the visual style of Qrvey Composer to match your organization’s
 
 **Note**: You can revert to the default style settings at any time by clicking RESTORE TO DEFAULT.
 
-### Customize the Login page
+### Customize the Login Page
 You can customize the look and feel of both the Log In page and the Sign Up page. You can also specify whether users can create new accounts. 
 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
@@ -86,7 +85,7 @@ You can customize the look and feel of both the Log In page and the Sign Up page
 ### Overview of Email Settings
 Qrvey Composer automatically sends a Welcome/Onboarding email message to users when they first sign up and a Forgot Password email message when they forget their password. Qrvey Admin provides a variety of options for setting up and configuring these emails. 
 
-#### Configure email provider
+#### Configure Email Provider
 You can choose whether to use AWS SES as the email provider or configure an SMTP email provider. By default, Qrvey Composer uses AWS SES. 
 
 To configure an SMTP email provider:
@@ -97,14 +96,14 @@ To configure an SMTP email provider:
     - Server URL
     - Port number
     - Encryption type (STARTTLS, TLS, or SSL)
-    - From email (optional depending on the requirements of the email provider)
+    - From email (Configured in AWS. Optional depending on the requirements of the email provider)
     - User name
     - Password 
   Once completed, the Test Connection button activates. 
 5. Click **Test Connection**. A dialog displays with fields an email address and message text. 
 6. Provide a valid email address and some message text and click **Test**. A message displays indicating whether the test was successful. 
 
-#### Design email templates
+#### Design Email Templates
 You can customize the look and feel of the templates used for both the Welcome/Onboarding and Forgot Password emails. 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Emails** tab, and then click **Templates**.
@@ -117,7 +116,7 @@ You can customize the look and feel of the templates used for both the Welcome/O
 7. To preview the changes, click **Preview**. 
 8. When finished, click **Apply Changes**. 
 
-#### View email activity log
+#### View Email Activity Log
 Qrvey Admin Center maintains logs of email activity, and it provides filtering and search functions. You can also download a log file to your computer. 
 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
@@ -143,7 +142,7 @@ Qrvey Admin Center enables you to specify the default time zone. Changing the ti
 
 For additional details on time zone settings, see [Configuring Time Zone Settings](../software-developer/10-Timezone%20Settings/timezone-support.md). 
 
-## Features tab
+## Features Tab
 The Features tab provides options to enable and disable the features available to users in Qrvey Composer. Keep in mind that, if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the application. 
 
 ### Enable and Disable Features in Qrvey Composer
@@ -165,7 +164,7 @@ Enables users to create new datasets or access/update existing datasets.
 
 For more information, see [Data Overview](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md). 
 
-#### Pixel-perfect Reports
+#### Pixel-Perfect Reports
 The Pixel-perfect Reports tool enables you to build customizable report templates with precise layout control. The generated reports are optimized for PDF and print, and they can be shared with colleagues, customers, suppliers, or anyone who needs access to the information.
 
 For more information, see [Pixel-perfect Reports Overview](../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md). 
