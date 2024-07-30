@@ -98,6 +98,11 @@ module.exports = {
           docId: "getting-started/intro-to-qrvey",
         },
         {
+          label: "API Reference",
+          position: "right",
+          href: "https://qrvey.stoplight.io/docs/qrvey-api-doc/",
+        },
+        {
           label: "Release Notes",
           type: "doc",
           position: "right",
