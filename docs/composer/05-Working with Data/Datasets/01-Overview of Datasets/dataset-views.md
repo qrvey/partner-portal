@@ -83,7 +83,7 @@ To create a dataset view via the API, follow these steps.
       - `DOMAIN` — The 5-letter subdomain of your Qrvey instance.
       - `APP_ID` — ID of the **target application** where the new Dataset View will be created.
       - `USER_ID` — ID of the **user/owner for the target application** where the new dataset view will be created.
-      - `CONNECTION_ID` — Connection ID of your **Shared Dataset**, colelcted in step one.
+      - `CONNECTION_ID` — Connection ID of your **Shared Dataset**, collected in step one.
       
       Pass the `APP_ID` and `USER_ID` of the shared dataset collected in step one into the request body:
 
