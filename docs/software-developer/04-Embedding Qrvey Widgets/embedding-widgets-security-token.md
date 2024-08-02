@@ -6,142 +6,55 @@ tags: [Software Developer]
 sidebar_position: 2
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
 
 When embedding Qrvey widgets in your applications, you have to authenticate to authorize use of the widget. 
 
 Qrvey widgets offer two authentication methods:
 
-- **API Keys** (quick, but insecure, for dev mode only)
-- **JWT Security Tokens** (the secure method, for production use cases)
+- **API Key** — for dev mode only.
+- **Qrvey Security Token** — for production use cases.
 
 ## API Key Authentication
 
-> **WARNING: This method is for dev-mode only.**
+> **WARNING:** Authenticating via `apiKey` exposes sensitive information to the end-user and is not recommended in production.
 
-Since you send sensitive information *(API-KEY, User Security Settings, etc.)*, using this `API_key` method to pass these parameters is insecure and therefore not recommended.
-
-It is not safe to pass an API key directly from the frontend.
+> **Note:** Originally, widget parameters were in `snake_case`, but Qrvey widgets are shifting over to `camelCase`, which is standard for variables in JS. Please see the widget parameter documentation to choose the right case for a param.
 
 1. [Embed the widget](./overview-of-embedding-and-widgets#how-to-embed-a-widget) and configure as desired.
-2. Place the API key directly in the widget's JSON object.
+2. Place the `apiKey`, `domain`, `userId`, and `appId` directly in the widget's JSON object.
+3. Configure any other parameters as desired.
 
-  **Note**: `CLIENT_ID` is optional, but for end-user personalization to work, it has to be set to the logged-in user’s identifier. This can be their `name`, `id`, `email address`, or any other unique identifier.
-
-  ```html
-  <script>
-    var config = {
-      "api_key": "<YOUR_PRIVATE_API_KEY>", // Switch this with the actual API key.
-      "domain": "https://documentation-demos.qrvey.com", 
-      "user_id": "OIJFsiSsdafgf-",
-      "app_id": "fQiu0ogde3454sv",
-      "clientId" :  'sampleuser@sampledomain.com'; // For end-user personalization
-    };
-  </script>
-  ```
-
-## JWT Security Token Authentication
-
-A more secure way to authenticate and authorize embedded widgets is through a <a href="https://tools.ietf.org/html/rfc6749#section-1.4" target="_blank">Security Token</a> requested as a backend-to-backend communication between the backend of your application and the Qrvey system. Doing this will make it harder for undesired or malicious users to intercept the communication and access the sensitive information transmitted between the two applications.
-
-1. Configure the widget as desired. The following two properties are required for every widget:
-    - `DOMAIN` – The URL of your Qrvey instance.
-    - `API_KEY` – The unique key required for every API call. Provided in an onboarding email after Qrvey instance set up.
-  
-  You may need additional key configuration, depending on the widget.
-
-  ```html
-  <script>
-   var DOMAIN = { 'https://your_qrvey_domain', // your Qrvey domain
-        API_KEY = '<API_KEY>'; // your API key
-        USER_ID = '<USER_ID>'; // the app owner's user id
-        APP_ID = '<APP_ID>'; // the app id you want to embed in your host application
-        CLIENT_ID = 'sampleuser@sampledomain.com'; // for end-user personalization
-   };
-  </script>
-  ```
-
-2. Generate a JWT for your widget using the <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-token-for-creators" target="_blank">Generate Token</a> endpoint.
-
-  **Example Request:**
-
-  ```js
-  // For development/testing ONLY.
-  // This sample script shows how to set the JWT Security Token from the frontend.
-  // In Production, make a similar call from the backend.
-  // Put its response in the qv_token attribute.
-
-  var config = {
-      'domain': DOMAIN,
-      'qv_token': '' 
+```html
+<script>
+  var config = { // Example uses "var" to ensure it is in the global scope.
+    apiKey: "<your_private_api_key>",       
+    domain: "https://<your_qrvey_domain>",  
+    userId: "OIJFsiSsdafgf-",               
+    appId: "fQiu0ogde3454sv",               
+    // ... Configure other params as desired.
   };
- 
-  function auth() {
-      const getJWT = () => {
-          const GENERATE_URL = `${DOMAIN}/devapi/v4/core/login/token`;
-          const GENERATE_BODY = {
-            "userid": USER_ID,
-            "appid": APP_ID,
-            "clientid": CLIENT_ID //this is for end user personalization
-          };
-          const GENERATE_CONFIG = {
-              headers: {
-                  "x-api-key": API_KEY,
-                  "Content-Type": 'application/json'
-              }
-          };
-          return axios
-              .post(GENERATE_URL, GENERATE_BODY, GENERATE_CONFIG)
-              .then(response => response.data.token)
-              .catch(error => console.log('generateToken ->', error));
-      };
-      this.init = () => {
-          return getJWT()
-              .then(res => {
-                  config.qv_token = res;
-              });
-      };
+</script>
+```
+
+## Qrvey Security Token Authentication 
+
+The secure, production-ready way to authenticate and authorize embedded widgets is through a Qrvey Security Token requested via backend-to-backend request made your application to the Qrvey instance, then passed into the frontend. 
+
+For simple code examples, see the [Dashboard Builder - QV Token](https://codepen.io/qrveysamples/pen/BaQGvrL/c3fa477a66f3d2615ed3a029d7998941?editors=1010) or [Dashboard View - QV Token](https://codepen.io/qrveysamples/pen/mdWNPMM/ed754fee791ee64f68151b624531749b?editors=1010) examples on Coda.
+
+1. First, from your backend infrastructure, [generate a Qrvey Security Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token), and ensure that both `userId` and `appId` are passed into the request body.
+
+2. Pass the Qrvey Security Token to the widget configuration object in your frontend, along with the domain.  
+   This ensures that every request made by the widget through the Qrvey System includes the encrypted token in the request header, preventing malicious users from extracting sensitive information.
+
+3. Configure the remaining parameters as desired.
+
+```html
+<script>
+  var config = {                           // Example uses "var" to ensure it is in the global scope.
+    domain: 'https://<your_qrvey_domain>', // Required. Specify your Qrvey domain.
+    qvToken: '<qv_security_token>',        // Required. Qrvey Security Token.
+    // ... Configure other params as desired.
   };
-  ```
-
-  **Example Response:**
-
-  ```json
-  {
-    "token": "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB..."
-  }
-  ```
-
-3. Embed the JWT Security Token in the Widget.
-
-  Pass the security token to the widget's configuration object. This ensures that every request made by the widget through the Qrvey System includes the encrypted token in the request's header, preventing malicious users from extracting sensitive information.
-
-  ```js
-
-  function setToken() {
-    new auth().init().then(() => {
-      setTimeout(() => {
-        // Note: WIDGET_TAG is the widget you are embedding.
-        const widget = document.querySelector(WIDGET_TAG);
-        widget && widget.remove();
-        const newWidget = document.createElement(WIDGET_TAG);
-        newWidget.settings = 'config';
-        document.body.append(newWidget);
-      }, 500);
-    });
-  }
-
-  setToken();
-
-  ```
-
-  Here's an example of what is added to the widget. The token includes all necessary configurations, such as user security permissions, which are encrypted for security. The Qrvey system decrypts this token to extract necessary data, processing your requests and delivering the appropriate results.
-
-  ```js
-  var config = {
-    domain: "https://your_qrvey_domain", // Specify your Qrvey domain
-    qv_token: "eyJraWQiOiJuTlBnd3Y2LV96TXJqVzFDbWVB...", // JWT security token
-  };
-  ```
-
-</div>
+</script>
+```
