@@ -77,12 +77,12 @@ In this section you will create a blank translation spreadsheet and configure th
 2. Configure the Translation Service Utility
    - Reconfigure the following CloudFormation Stacks and CodePipelines by following our [Update a Single Pipeline](https://partners.qrvey.com/docs/deployment/customizing-qrvey-deployment#update-a-single-pipeline) guide.
       - Microservices
-         - CloudFormation Stack: `xxxxxMicroservicesCodePipeline`. Parameters:
+         - CloudFormation Stack: `xxxxxMicroserviceCodePipeline`. Parameters:
             - `GoogleClientDocId`
             - `GoogleClientEmail`
             - `GoogleClientPK`
-         - CodePipeline: `Qrvey_xxxxx_Microservices`
-   - Wait for the pipelines to finish before moving on the next step
+         - CodePipeline: `Qrvey_xxxxx_Microservice`
+   - Wait for the pipelines to finish before moving on the next step.
 
 ## 3- Importing the Keys
 
