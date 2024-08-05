@@ -7,49 +7,40 @@ sidebar_position: 8
 displayed_sidebar: getting-started
 ---
 
-When embedded in an application, the Web Form - End User widget enables end users to enter data in a designed Web Form. 
+When embedded in an application, the Web Form - End User widget enables end users to enter data in a designed Web Form.
 
-## Configuration Object Properties
+```html
+<!-- Tag -->
+<qrvey-webform-enduser config="config"></qrvey-webform-enduser>
+
+
+<!-- Config -->
+<script>
+  const config = {
+    style: "<CSS_STYLESHEET_URL>",
+    webformid: "<WEB_FORM_ID>", 
+    server: "https://<your_qrvey_domain>", 
+    defaultAnswers: [{id:"7VS7I1C_",data:"ID-123456"}] 
+  }
+</script>
+
+<!-- Launcher -->
+<script type="module" src="https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js"></script>
+
+```
+
+## Configuration Object
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
+| **style** | `String`, External CSS Stylesheet URL. | No  |
+| **defaultAnswers** | `Object Array`, If configured, fills an answer (just for work textFields) with default values. Multiple fields can be added, it only needs `questionID` and the `data` to be inserted. Example: [{id:"UMLFTXTT",data:"Default value"}] | No |
 | **webformid** | `String`, WebformID containing the webform. | Yes |
 | **server** | `String`, The base URL of your instance of the Qrvey platform. | Yes |
-| **style** | `String`, External CSS Stylesheet URL. | No  |
-| **defaultAnswers** | `Object Array`, Option to fill an answer (just for work textFields) with default values.  Multiple fields can be added, it only needs questionID and the data(string) to be inserted. Example: [{id:"UMLFTXTT",data:"Default value"}] | No | 
-
-## Sample
-The following sample demonstrates how this widget can be used in an HTML page. 
-
-To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
-
-**HTML Tag:**
-
-```html
-<qrvey-webform-enduser config="config"></qrvey-webform-enduser>
-```
-
-**Widget Launcher Script:**
-
-```html
-<script type="module" src="https://<WIDGETS_URL>/qrvey-webform-enduser/qrvey-webform-enduser/qrvey-webform-enduser.esm.js"></script>
-```
-
-**JSON Configuration Object:**
-
-```js
-const widgetConfig = {
-   style: "", //CSS Stylesheet URL
-   webformid: "<WEB_FORM_ID>", //QrveyLookUpID
-   server: "https://<your_qrvey_domain>", 
-   defaultAnswers: [{id:"7VS7I1C_",data:"ID-123456"}] 
- }
-```
 
 <!-- 
 ### Sample in CodePen
-See the widget in CodePen:
 
 <iframe
   allowFullScreen

@@ -7,15 +7,30 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
+The Dashboard View widget enables you to embed one or more dashboards or a mashup of several charts, maps, and metrics into your application.
 
-The Dashboard View widget enables you to embed one or more dashboards or a mashup of several charts, maps, and metrics into your application. 
+## Embeddable Script
 
->**Note**: The Dashboard View widget replaces the Page View widget in Qrvey version 8.0 and later. 
+```html
+<!-- Tag -->
+<qrvey-end-user settings="config"></qrvey-end-user>`
 
+<!-- Config -->
+<script>
+var config = {
+  api_key: "<YOUR_PRIVATE_API_KEY>",
+  domain: "https://<YOUR_QRVEY_DOMAIN>",
+  user_id: "<USER_ID>",
+  app_id: "<APP_ID>"
+};
+</script>
 
-### General Properties
+<!-- Launcher -->
+<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
+
+## Configuration Object
 The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
@@ -36,16 +51,14 @@ The following table lists the properties associated with this widget.
 | **clientid** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user. | Yes, for certain features
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No 
 | **themeid** | String, theme ID to use in the component | No
+| **featurePermission** | `Object`, JSON object to configure which features are available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
 
-## Showing and Hiding Features
-In the Dashboard View widget, the `featurePermission` object enables you to create a customized view by showing and hiding specific features. The properties table below lists all the features that you can show or hide. 
 
-### featurePermission Object Properties
+### featurePermission
 The following table describes the properties of the `featurePermission` object.  
 
 | **Property** | **Description** |  **Type** | **Default** | **Required** |
 | --- | --- | --- | --- | --- |
-| **featurePermission** | Main property of this feature | `Object`| N/A| No| 
 | **navigation** | Define navigation-related features that can be hidden| `Object`| N/A| No| 
 | **hideNavigationTab** | Hide the entry method to the navigation tab in the top bar of the widget| `Boolean`| false| No| 
 | **userManagement** | Define user management related features that can be hidden| `Object`| N/A| No| 
@@ -58,32 +71,32 @@ The following table describes the properties of the `featurePermission` object.
 | **hideCreateManagePages** | Hide all options to create pages| `Boolean`| false| No| 
 | **hidePageStatus** | Hide Text “status”| `Boolean`| False| No| 
 | **hidePagesBar** | Hide bottom bar pages| `Boolean`| False| No| 
-| **LiteVersion** | Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
+| **liteVersion** | Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
 | **canvas** | Define canvas related features that can be hidden| `Object`| N/A| No| 
 | **hideManageCanvas** | Hide the following options: Grid, Responsive View, Discard Changes | `Boolean`| false | No| 
 | **downloads** | Displays the download access points in the widget | `Boolean` | false | No |
 | **downloads.hideSchedule** |  Hides the scheduling export option in the export modal | `Boolean`| true | No |
 
->**Tip**: To hide all features, set the `Liteversion` property to `true`. For example:
+>**Tip**: To hide all features, set the `liteVersion` property to `true`. For example:
 
 ```js
 const widgetConfig = {
    domain: "DOMAIN",
-   appid: "APP_ID",
-   userid: "USER_ID",
+   app_id: "APP_ID",
+   user_id: "USER_ID",
    featurePermission: {
      liteVersion: true,
    },
 }
 ```
 
->**Tip**: To hide most features, set the `Liteversion` property to `true` and list the exceptions you want to show to false. For example:
+>**Tip**: To hide most features, set the `liteVersion` property to `true` and list the exceptions you want to show to false. For example:
 
 ```js
 const widgetConfig = {
    domain: "DOMAIN",
-   appid: "APP_ID",
-   userid: "USER_ID",
+   app_id: "APP_ID",
+   user_id: "USER_ID",
    featurePermission: {
      liteVersion: true,
      userManagement:{
@@ -93,21 +106,18 @@ const widgetConfig = {
 }
 ```
 
-## Subscription Settings
+### Subscription Settings
 In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
 
-To enable the User Subscriptions option in the Dashboard View widget, set the `enable_subscriptions` property to `true`. For example:
+>**Note**: The Subscriptions feature relies on the user being authenticated and needs the `clientid` property set for the logged-in user. The property’s value should represent a unique identifier for each end user. 
+
+To enable the User Subscriptions option in the Dashboard View widget, set the `enable_subscriptions` property to `true`.
 
 ```js
 const subscriptions_settings = {
           enable_subscriptions: true
 }
 ```
-
->**Note**: The Subscriptions feature relies on the user being authenticated and needs the `clientid` property set for the logged-in user. The property’s value should represent a unique identifier for each end user. 
-
-### subscriptions_settings object properties
-The following table describes the properties of the `subscription_settings` object.  
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
 | --- | --- | --- | --- | --- |
@@ -126,25 +136,24 @@ const email_message =
     }
 ```
 
-## Configuring End User Personalization
-In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings. 
+### Personalization
+Configures end-user personalization. In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings.
+
+>**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
 
 ```js
 const widgetConfig = {
    domain: "DOMAIN",
-   appid: "APP_ID",
-   userid: "USER_ID",
+   app_id: "APP_ID",
+   user_id: "USER_ID",
    personalization: {
      enabled: false,
    },
 }
 ```
 
->**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
-
-### Personalization Object Properties
 The following table describes the properties of the `personalization` object.  
 
 | **Property** | **Description** |  **Type** |  **Default** |  **Required** |
@@ -158,7 +167,7 @@ The following table describes the properties of the `personalization` object.
 | **rearrange_chart** | Allow users to rearrange the chart panels, when in edit mode | boolean | true | No
 
 
-## Overriding the Default Styles
+## Override Default Styles
 In the Dashboard View widget, you can override CSS settings for white-labeling purposes.
 
 When using the `styles` object, house the properties inside the `pageView` object. For example:
@@ -176,7 +185,6 @@ styles: {
 }
 ```
 
-#### Styles Object Properties
 The following table describes the properties of the `styles` object.  
 
 | **Property** | **Values** | **Target** |
@@ -207,8 +215,6 @@ The following table describes the properties of the `styles` object.
 | **pageViewButtonBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
 | **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right)
 
-
-
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
 
@@ -226,5 +232,3 @@ The following samples demonstrate how this widget can be used in an HTML page.
 | Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/LYXwKoM/6f4049ea4a7fe9be92984be3591285d6) | n/a |
 | CSS Injection | This sample uses a basic API key and custom CSS to embed a single Dashboard View widget. It does not encrypt the API key and is not suitable for production environments. | [codepen](https://codepen.io/qrveysamples/pen/BavBNjY/4bb40af9433781a4ae41d36e6ffca40c?editors=1010) | n/a | 
 -->
-
-</div>

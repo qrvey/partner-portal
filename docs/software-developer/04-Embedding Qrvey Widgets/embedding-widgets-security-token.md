@@ -16,9 +16,7 @@ Qrvey widgets offer two authentication methods:
 
 ## API Key Authentication
 
-> **WARNING:** Authenticating via `apiKey` exposes sensitive information to the end-user and is not recommended in production.
-
-> **Note:** Originally, widget parameters were in `snake_case`, but Qrvey widgets are shifting over to `camelCase`, which is standard for variables in JS. Please see the widget parameter documentation to choose the right case for a param.
+> **WARNING: This method is for dev-mode only.** Exposing an API Key on the frontend is insecure.
 
 1. [Embed the widget](./overview-of-embedding-and-widgets#how-to-embed-a-widget) and configure as desired.
 2. Place the `apiKey`, `domain`, `userId`, and `appId` directly in the widget's JSON object.

@@ -6,59 +6,33 @@ tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
-
 
 The Analytic Suite widget enables users to display the distinct data analysis views available within the Analyze functionality of Qrvey Composer. This includes Summaries, Tables, Metric Views, etc. 
 
-<!-- 
-## Before You Begin
-* Obtain your unique API key. It was provided in the welcome email that you received when your Qrvey instance was created. For more information, see [Frequently Asked Questions (FAQs)](../../../getting-started/faqs.md).
-* This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). 
+<!-- This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).  -->
 
-## Get the Helper Code
-1. In Qrvey Composer, display the **Analyze** tab for the desired dataset.  
-2. Click the **Embedding Options** button in the upper right corner of the page. A dialog displays with an HTML tag, a JSON configuration object, and the Widget Launcher script tag.
-4. Click **Copy** to copy the code, and then paste it into your preferred editor. 
+## Embeddable Script
 
-## Embed the HTML Tag
-Identify where you would like this widget to display in your application, and then add the HTML tag in that location.
+```html
+<!-- Tag -->
+<an-dashboard config="anSuiteConfig"></an-dashboard>
 
-The HTML tag for this widget is:
+<!-- Config -->
+<script>
+var config = {
+  api_key: "<YOUR_PRIVATE_API_KEY>",
+  domain: "https://<YOUR_QRVEY_DOMAIN>",
+  user_id: "<USER_ID>",
+  qrveyid: "<APP_ID>"
+};
+</script>
 
-`<an-dashboard config="anSuiteConfig"></an-dashboard>`
-
-## Embed the Widget Launcher Script Tag
-Add the widget launcher script tag to your application. Note that this widget requires an additional script for proper support in all browsers. 
-
-For reference, the launcher script code is:
-
-```json
+<!-- Launcher -->
 <script type="module" src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js"></script>
 <script nomodule src="https://<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js"></script>
 ```
 
-## Set Properties in the JSON Configuration Object
-Define the JSON configuration object by starting with the script provided in the helper code, and then adding additional configuration properties as needed. The script provided contains only the required properties. For reference, an example is copied below. The helper code that you obtained above should include the unique values indicated with brackets (“&lt;&gt;”):
-
-```json
-<script>
-var anSuiteConfig = {
-   "api_key": "<API_KEY>",
-   "app_id": "<APP_ID>",
-   "domain": "https://<your_qrvey_domain>",
-   "user_id": "<USER_ID>",
-   "qrveyid": "<QRVEY_ID>",
-   "settings": {
-      "view": "CUSTOM_VIEW"
-   }
-}
-</script>
-```
-
-When complete, add the JSON configuration object to your application.  -->
-
-### Configuration Object Properties
+### Configuration Object
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
@@ -90,5 +64,3 @@ The following table lists the properties associated with this widget.
 | **settings.styles.themePalette** | `Array`, contains a maximum of 20 colors that will be used for chart data points. | No | 
 | **custom_tokens** | `Object`, contains a set of custom tokens, each of them in turn, receives an array of with the list of tokens.<br /><br />{<custom token 1>: [<token 1>: “token 1”, <token 2>: “token 2”]} | No |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No  
-
-</div>

@@ -7,12 +7,31 @@ sidebar_position: 7
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
 When embedded in an application, the Web Form Design widget enables end users to create, preview, and modify web forms. The Qrvey platform provides three types of web forms: survey, form, and quiz. 
 
+## Embeddable Script
 
-## Configuration Object Properties
+```html
+<!-- Tag -->
+<qrvey-design-widgets settings="config"></qrvey-design-widgets>
+
+<!-- Config -->
+<script>
+  var config = {
+      api_key: "<API_KEY>",
+      app_id: "<APP_ID>",
+      domain: "https://<your_qrvey_domain>",
+      user_id: "<USER_ID>",
+      qrvey_id: "<QRVEY_ID>",
+      app_type: "<APP_TYPE>"
+  };
+</script>
+
+<!-- Launcher -->
+<script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
+
+## Configuration Object
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
@@ -25,58 +44,3 @@ The following table lists the properties associated with this widget.
 | **qrvey_id** | `String`, ID of the webform ID that will be edited in the widget.  | Yes |
 | **app_type** | `String`, The type of webform the widget will instance. Options: "FORM" / "QUIZ" / "SURVEY". | Yes |
 | **Style_option** |Object {<br />"main_color": String (HEX Color),<br />"secondary_color": String (HEX Color),<br />"tab_bar": String (HEX Color),<br /> "field_icon": String (HEX Color),<br />"error": String (HEX Color),<br />"notification": String (HEX Color),<br />"successful": String (HEX Color), <br />"warning": String (HEX Color)<br /> } <br /><br />to change widget colors| No |
-
-
-## Sample
-The following sample shows a simple form using the minimum configuration object required to embed the Web Form Design widget. 
-
-To use this code in your application, replace the values in brackets (“&lt;&gt;”) with your own values. 
-
-**HTML Tag:**
-
-```html
-<qrvey-design-widgets settings="config"></qrvey-design-widgets>
-```
-
-
-**Widget Launch Script:**
-
-```html
-<script src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
-```
-
-**JSON Configuration Object:**
-
-```
-<qrvey-design-widgets settings="configWebForm"></qrvey-design-widgets><script>
-var configWebForm = {
-    "api_key": "<API_KEY>",
-    "app_id": "<APP_ID>",
-    "domain": "https://<your_qrvey_domain>",
-    "user_id": "<USER_ID>",
-    "qrvey_id": "<QRVEY_ID>",
-    "app_type": "<APP_TYPE>"
-}
-```
-
-<!-- 
-### Sample in CodePen
-See the widget in CodePen:
-
-<iframe
-  allowFullScreen
-  className="cp_embed_iframe "
-  frameBorder={0}
-  height={838}
-  width="100%"
-  name="cp_embed_1"
-  scrolling="no"
-  src="https://codepen.io/qrveysamples/embed/17ca2ace17e54cd26353f638666f91be?height=838&theme-id=light&default-tab=result&user=qrveysamples&slug-hash=17ca2ace17e54cd26353f638666f91be&pen-title=Sample-%20Webform%20Design&name=cp_embed_1"
-  style={{ width: "100%", overflow: "hidden", display: "block" }}
-  title="Sample- Webform Design"
-  loading="lazy"
-  id="cp_embed_17ca2ace17e54cd26353f638666f91be">
-  </iframe>
- -->
-
-</div>
