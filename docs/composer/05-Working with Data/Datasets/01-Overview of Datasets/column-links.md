@@ -30,9 +30,8 @@ Every time you add a new visualization to Dashboard Builder, any visualization c
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.gif#thumbnail)
  
-
 ## Edit Column Links
-There are several ways to a Column Link:
+There are several ways to edit a Column Link:
 
 1. Navigate to **Data > Datasets > Design**.
 2. Click on the three-dot menu located at the right end of the column.

@@ -52,44 +52,20 @@ The following actions are restricted for dataset views:
 ## Create Dataset View via API
 
 To create a dataset view via the API, follow these steps.
-1. Choose a Shared Dataset and collect the following parameters from it.
-   - `DOMAIN` — The 5-letter subdomain of your Qrvey instance.
-   - `USER_ID` — The ID of the user that owns the application where the dataset was created.
-   - `APP_ID` — The ID of the application where the dataset was created.
-   - `DATASET_ID` — The ID of the dataset that is to become a shared dataset.
-   - `CONNECTION_ID` — System-defined ID of the connection associated with the data source.
 
-   1. There are two ways to choose a Shared Dataset:  
-      - Use Qrvey Composer to [Share a Dataset](./overview-of-datasets.md#share-and-un-share-datasets) or identify an existing one.
-      - Share a dataset programmatically using the following endpoint and passing `{ “isPublic”: true }` in the request body.
-      ```
-      https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
-      ```
-   2. You can find the parameters in two places:
-      - Using Qrvey Composer, navigate into **Qrvey Composer > [Application] > Data > [Dataset] > Design** and check the page's URL to get the `DOMAIN`, `APP_ID`, and `DATASET_ID`:
-      ```
-      https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}
-      ```
-      - If you have the `DATASET_ID` and `DOMAIN` of a shared Dataset, you can use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/9xpku63qfxq54-get-dataset) endpoint to get the remaining parameters.
+1. Choose a Shared Dataset. There are two ways to do this:  
 
-2. Create a new Dataset View using the Shared Dataset as its source.
+   - **Use Qrvey Composer** to [Share a Dataset](./overview-of-datasets.md#share-and-un-share-datasets) or identify an existing one.
+   - **Use this Endpoint** to mark a dataset as shared. To do this, you must pass `{ “isPublic”: true }` in the request body.
+   ```
 
-   1. Call the [Create Dataset View from Shared Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1a594100ae37-create-dataset-view-from-shared-dataset). 
-         ```
-      https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/clone/connection/{{CONNECTION_ID}}
-      ```
+   https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
+   
+   ```
 
-      Use these parameters on the API endpoint:
-      - `DOMAIN` — The 5-letter subdomain of your Qrvey instance.
-      - `APP_ID` — ID of the **target application** where the new Dataset View will be created.
-      - `USER_ID` — ID of the **user/owner for the target application** where the new dataset view will be created.
-      - `CONNECTION_ID` — Connection ID of your **Shared Dataset**, collected in step one.
-      
-      Pass the `APP_ID` and `USER_ID` of the shared dataset collected in step one into the request body:
+2. Get the shared dataset's `connectionId`, which you will need in the next step. To do this, you can use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/9xpku63qfxq54-get-dataset) endpoint.
 
-      ```
-      {
-         appId: “{{APP_ID}}”,
-         userId: “{{USER_ID}}”
-      }
-      ```
+3. Call the [Create Dataset View from Shared Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1a594100ae37-create-dataset-view-from-shared-dataset) endpoint.
+
+> **Note:** If using Qrvey Composer, open the to **Apps > [Application] > Data > [Dataset] > Design** and check the URL to get the `domain`, `appId`, and `datasetId`: 
+> `https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}`
