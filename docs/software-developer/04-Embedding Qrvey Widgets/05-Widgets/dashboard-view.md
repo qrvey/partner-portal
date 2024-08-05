@@ -36,7 +36,7 @@ The following table lists the properties associated with this widget.
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
-| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md). | Yes, if the api_key is not provided |
+| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../widget-authentication.md). | Yes, if the api_key is not provided |
 | **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
 | **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
@@ -139,7 +139,7 @@ const email_message =
 ### Personalization
 Configures end-user personalization. In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings.
 
->**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md) property set for the logged-in user.
+>**Note**: The End User Personalization feature relies on the user being authenticated and needs the clientid property set for the logged-in user. The property’s value should represent a unique identifier for each end-user, as Qrvey uses it as a key to store any personalization made. Using the same clientid value for multiple end-users will result in the users’ personalized versions being overridden by each other. See the [Embedding Widgets Using a Security Token](../widget-authentication.md) property set for the logged-in user.
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
 

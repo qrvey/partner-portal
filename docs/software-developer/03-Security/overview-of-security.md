@@ -13,5 +13,5 @@ This section describes how to configure security to restrict and grant access to
 
 
 For information on creating security tokens for authoriziation, see:
-* [Embedding Widgets Using a Security Token](../04-Embedding%20Qrvey%20Widgets/embedding-widgets-security-token.md)
+* [Embedding Widgets Using a Security Token](../04-Embedding%20Qrvey%20Widgets/widget-authentication.md)
 * [Generating Security Tokens](../06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md)

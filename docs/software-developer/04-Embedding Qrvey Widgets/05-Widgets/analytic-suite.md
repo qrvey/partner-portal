@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 The Analytic Suite widget enables users to display the distinct data analysis views available within the Analyze functionality of Qrvey Composer. This includes Summaries, Tables, Metric Views, etc. 
 
-<!-- This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../embedding-widgets-security-token.md).  -->
+<!-- This widget supports using security tokens for secure authentication. For more information, see [Embedding Widgets Using a Security Token](../widget-authentication.md).  -->
 
 ## Embeddable Script
 

@@ -40,7 +40,7 @@ var config = {
    - Get the relevant [widget script](#widget-scripts-and-configuration) from the documentation.
    - For most widgets, you can copy/paste the widget script in [Qrvey Composer](#get-widget-script-from-composer), which will include most relevant configuration details.
 4. Place the code in your frontend application as desired.
-5. Set [authentication](./embedding-widgets-security-token.md) and configure widget parameters as desired.
+5. Set [authentication](./widget-authentication.md) and configure widget parameters as desired.
 
 Refresh your frontend application and your widget should appear in the UI.
 
