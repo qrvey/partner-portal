@@ -6,12 +6,32 @@ tags: [Software Developer]
 sidebar_position: 6
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
-
 
 The Single Panel widget enables you to embed a chart, metric, or summary panel that has already been created in Qrvey Composer.
 
-## Configuration Object Properties
+## Embeddable Script
+
+```html
+<!-- Tag -->
+<an-panel config="anPanelConfig"></an-panel>
+
+<!-- Config -->
+<script>
+var config = {
+  api_key: "<YOUR_PRIVATE_API_KEY>",
+  domain: "https://<YOUR_QRVEY_DOMAIN>",
+  user_id: "<USER_ID>",
+  app_id: "<APP_ID>"
+};
+</script>
+
+<!-- Launcher -->
+<script type="module" src="<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.esm.js"></script>
+<script nomodule src="<WIDGETS_URL>/qrvey-an-widgets/an-dashboard/andashboard/andashboard.js"></script>```
+
+```
+
+## Configuration Object
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
@@ -81,8 +101,4 @@ The following samples demonstrate how this widget can be used in an HTML page.
 | --- | --- | --- | --- |
 | Basic API Key | This sample uses a basic API key to embed a Single Panel widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/KKzvqgV/c395bd9162f9d675bb8d02317cc5a1e2) | n/a |
 -->
-
-</div>
-
-
 

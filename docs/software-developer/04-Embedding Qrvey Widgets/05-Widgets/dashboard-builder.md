@@ -6,16 +6,30 @@ tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
 
+When embedded in an application, the Dashboard Builder widget enables users to modify existing dashboards or add new dashboards. Dashboards may contain reports, web forms, or other content.
 
-When embedded in an application, the Dashboard Builder widget enables users to modify existing dashboards or add new dashboards. Dashboards may contain reports, web forms, or other content. 
+## Embeddable Script
 
->**Note**: The Dashboard Builder widget replaces the Page Builder widget in Qrvey version 8.0 and later. 
+```html 
+<!-- Tag -->
+<qrvey-builders settings="config"></qrvey-builders>
 
+<!-- Config -->
+<script>
+var config = {
+  api_key: "<YOUR_PRIVATE_API_KEY>",
+  domain: "https://<YOUR_QRVEY_DOMAIN>",
+  user_id: "OIJFsiS4-",
+  app_id: "fQiu0ogde"
+};
+</script>
 
-### Configuration Object Properties
-The following table lists the general properties associated with this widget. 
+<!-- Launcher -->
+<script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
+```
+
+## Configuration Object
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -34,16 +48,66 @@ The following table lists the general properties associated with this widget.
 | **personalization** | `Object`, JSON object to configure and overwrite the default personalization/customization settings. For more information, see "Configuring Personalization" below. | No  
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
 | **themeid** | String, theme ID to use in the component. | No
-| **featurePermission** | `Object`, JSON object to configure which features are or are not available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
+| **featurePermission** | `Object`, JSON object to configure which features are available in the widget. Presently it only supports showing and hiding of the pages bar, where the pages appear as tabs at the bottom of the widget.*<br/>The object’s structure is:<br/><code>featurePermission:{<br/>&nbsp;&nbsp;pagesAndApplication{<br/>&nbsp;&nbsp;&nbsp;hidePagesBar: true // or false (default)<br/>&nbsp;&nbsp;}<br/>}</code> | No
 
-### Configuring Personalization
+### featurePermission
+The following table describes the properties of the `featurePermission` object.  
+
+| **Property** | **Description** |  **Type** | **Default** | **Required** |
+| --- | --- | --- | --- | --- |
+| **navigation** | Define navigation-related features that can be hidden| `Object`| N/A| No| 
+| **hideNavigationTab** | Hide the entry method to the navigation tab in the top bar of the widget| `Boolean`| false| No| 
+| **userManagement** | Define user management related features that can be hidden| `Object`| N/A| No| 
+| **hideUserManagementTab** | Hide the entry method to the user management tab in the top bar of the widget| `Boolean`| false| No| 
+| **pagesAndApplication** | Define pages and application-related features that can be hidden| `Object`| N/A| No| 
+| **hidePublishAppButton** | Hide button “Unpublish”/”publish application”| `Boolean`| false| No| 
+| **hidePublishPageButton** | Hide button “publish page”| `Boolean`| false| No| 
+| **hideCopyPageLink** | Hide the UI interfaces where the user can get the link of a page| `Boolean`| false| No| 
+| **hideLaunchButton** | Hide the button to access the page view| `Boolean`| false| No| 
+| **hideCreateManagePages** | Hide all options to create pages| `Boolean`| false| No| 
+| **hidePageStatus** | Hide Text “status”| `Boolean`| False| No| 
+| **hidePagesBar** | Hide bottom bar pages| `Boolean`| False| No| 
+| **LiteVersion** | Hide all elements that are managed by feature permissions| `Boolean`| false| No| 
+| **canvas** | Define canvas related features that can be hidden| `Object`| N/A| No| 
+| **hideManageCanvas** | Hide the following options: Grid, Responsive View, Discard Changes | `Boolean`| false | No| 
+| **downloads** | Displays the download access points in the widget | `Boolean` | false | No |
+| **downloads.hideSchedule** |  Hides the scheduling export option in the export modal | `Boolean`| true | No |
+
+>**Tip**: To hide all features, set the `Liteversion` property to `true`. For example:
+
+```js
+const widgetConfig = {
+   domain: "DOMAIN",
+   appid: "APP_ID",
+   userid: "USER_ID",
+   featurePermission: {
+     liteVersion: true,
+   },
+}
+```
+
+>**Tip**: To hide most features, set the `Liteversion` property to `true` and list the exceptions you want to show to false. For example:
+
+```js
+const widgetConfig = {
+   domain: "DOMAIN",
+   appid: "APP_ID",
+   userid: "USER_ID",
+   featurePermission: {
+     liteVersion: true,
+     userManagement:{
+       hideUserManagementTab: false
+     }
+   },
+}
+```
+
+### Personalization
 The **personalization** object setting controls customization options for the Dashboard Builder widget and supports the following properties at this time:
-
 
 | **Property** | **Description** | **Type** | **Default** | **Required** |
 | --- | --- | --- | --- | --- |
 | fit_panel_button | Show the fit to panel button on the panels | boolean | true | No
-
 
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
@@ -60,5 +124,3 @@ The following samples demonstrate how this widget can be used in an HTML page.
 | Basic API Key | This sample uses a basic API key to embed a full Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/PoxMMYP/38e4021367bada1da1cb90d58bb3da24) | n/a |
 | Basic API Key - Single Report | This sample uses a basic API key to embed a single Dashboard Builder widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/poQMMvW/d6c0435e222946438ab38782bcedc380) | n/a | 
 -->
-
-</div>
