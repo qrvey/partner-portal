@@ -1,5 +1,5 @@
 ---
-id: embedding-widgets-security-token
+id: widget-authentication
 title: Widget Authentication
 sidebar_label: Widget Authentication
 tags: [Software Developer]
@@ -38,7 +38,7 @@ Qrvey widgets offer two authentication methods:
 
 The secure, production-ready way to authenticate and authorize embedded widgets is through a Qrvey Security Token requested via backend-to-backend request made your application to the Qrvey instance, then passed into the frontend. 
 
-For simple code examples, see the [Dashboard Builder - QV Token](https://codepen.io/qrveysamples/pen/BaQGvrL/c3fa477a66f3d2615ed3a029d7998941?editors=1010) or [Dashboard View - QV Token](https://codepen.io/qrveysamples/pen/mdWNPMM/ed754fee791ee64f68151b624531749b?editors=1010) examples on Coda.
+For simple examples, please see our CodePen for the [Dashboard Builder - QV Token](https://codepen.io/qrveysamples/pen/BaQGvrL/c3fa477a66f3d2615ed3a029d7998941?editors=1010) or [Dashboard View - QV Token](https://codepen.io/qrveysamples/pen/mdWNPMM/ed754fee791ee64f68151b624531749b?editors=1010).
 
 1. First, from your backend infrastructure, [generate a Qrvey Security Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token), and ensure that both `userId` and `appId` are passed into the request body.
 

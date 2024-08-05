@@ -13,7 +13,7 @@ Qrvey makes the assert model for security possible by providing a comprehensive 
 
 * [Overview of Embedding & Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 * [Widgets Quick Start Guide](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
-* [Embedding Widgets Using a Security Token](../software-developer/04-Embedding%20Qrvey%20Widgets/embedding-widgets-security-token.md)
+* [Embedding Widgets Using a Security Token](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md)
 * [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md)
 * [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)
 

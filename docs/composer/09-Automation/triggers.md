@@ -52,6 +52,6 @@ Click the **Generate Another** button whenever you wish to replace the current U
 
 >**Note:** Replacing a URL cannot be undone so please use this feature carefully.
 
-To prevent unauthorized end users from starting a flow using the webhook URL, select **Require Authentication**. This option requires end users to be authenticated using JSON web tokens (JTW). For more information, see [Embedding Widgets Using a Security Token](https://partners.qrvey.com/docs/software-developer/Embedding%20Qrvey%20Widgets/embedding-widgets-security-token).
+To prevent unauthorized end users from starting a flow using the webhook URL, select **Require Authentication**. This option requires end users to be authenticated using JSON web tokens (JTW). For more information, see [Embedding Widgets Using a Security Token](https://partners.qrvey.com/docs/software-developer/Embedding%20Qrvey%20Widgets/widget-authentication).
 
 </div>
