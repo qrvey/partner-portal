@@ -20,7 +20,7 @@ function NotificationSidebar() {
     {
       title: "Required Update for 8.5.1",
       description:
-        "An update is required to ensure you are running the latest images.",
+        "Attention 8.5.1 customers: for any 8.5.1 instance deployed prior to 08/05/2024, an update is required to ensure you are running the latest images.",
       link: "/docs/release-notes/announcements",
     },
     {
