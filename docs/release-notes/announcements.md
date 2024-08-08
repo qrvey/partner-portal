@@ -9,7 +9,7 @@ sidebar_label: Announcements
 
 Announcement Date: 2024-08-05
 
-Attention 8.5.1 customers! To ensure you are running the latest images:
+**Attention 8.5.1 Customers:** For any 8.5.1 instance deployed prior to 08/05/2024, execute the following to ensure you are running the latest images:
 
 1. Go to "ECS > Clusters" and find the `qrvey-<instanceID>-microservices` cluster.
 2. Look for the "Services" section located at the bottom of the page.
