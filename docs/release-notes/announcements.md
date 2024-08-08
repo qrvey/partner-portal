@@ -4,7 +4,23 @@ title: Announcements
 sidebar_label: Announcements
 ---
 
-<div>
+
+## Required Update for 8.5.1
+
+Announcement Date: 2024-08-05
+
+Attention 8.5.1 customers! To ensure you are running the latest images:
+
+1. Go to "ECS > Clusters" and find the `qrvey-<instanceID>-microservices` cluster.
+2. Look for the "Services" section located at the bottom of the page.
+3. Identify the worker service `<instanceID>_qrvey_analytics_service` and click on it.
+    - Click on "Update Service".
+    - Tick the "Force new deployment" checkbox.
+    - Select "LATEST" in the Revision dropdown.
+4. Go to the bottom of the page and click "Update".
+5. Wait for the service to reach Active status.
+
+Follow the same steps for the `<instanceID>_qrvey_core_service`, `<instanceID>_qrvey_job_service`, `<instanceID>_qrvey_worker_service` and `<instanceID>_qrvey_builder_service`.
 
 ## NodeJS Deprecation
 
@@ -26,4 +42,3 @@ To maintain support for your Qrvey environments, perform the following upgrades:
 * If you are running version 8.1 or earlier, upgrade to version 8.2.1 or later before March 11, 2024.
 
 We are happy to answer any questions you have regarding the impact the deprecation may have on your Qrvey implementation.
-</div>

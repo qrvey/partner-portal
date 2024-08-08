@@ -18,6 +18,12 @@ function NotificationSidebar() {
 
   const notifications = [
     {
+      title: "Required Update for 8.5.1",
+      description:
+        "An update is required to ensure you are running the latest images.",
+      link: "/docs/release-notes/announcements",
+    },
+    {
       title: "Qrvey 8.6",
       description:
         "Version 8.6 of the Qrvey platform is now available to customers. This version includes several new feature enhancements and performance improvements.",
