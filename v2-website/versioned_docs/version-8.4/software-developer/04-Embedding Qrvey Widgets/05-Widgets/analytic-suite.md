@@ -46,7 +46,7 @@ Define the JSON configuration object by starting with the script provided in the
 var anSuiteConfig = {
    "api_key": "<API_KEY>",
    "app_id": "<APP_ID>",
-    “domain”: 'https://<your_qrvey_domain>',
+   "domain": "https://<your_qrvey_domain>",
    "user_id": "<USER_ID>",
    "qrveyid": "<QRVEY_ID>",
    "settings": {

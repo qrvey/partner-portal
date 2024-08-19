@@ -159,7 +159,10 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
                 "Principal": {
                     "AWS": "POSTGRES_DATA_ACCESS_ROLE_ARN"
                 },
-                "Action": ["s3:PutObject","s3:GetBucketLocation"],
+                "Action": [
+                    "s3:PutObject",
+                    "s3:GetBucketLocation"
+                ],
                 "Resource": [
                     "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons/*",
                     "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons"
