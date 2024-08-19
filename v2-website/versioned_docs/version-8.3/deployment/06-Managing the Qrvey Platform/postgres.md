@@ -172,25 +172,28 @@ Many of the steps below are necessary only when the Postgres RDS and Qrvey deplo
 </ul>
 
 
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Statement1",
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "POSTGRES_DATA_ACCESS_ROLE_ARN"
-            },
-            "Action": ["s3:PutObject","s3:GetBucketLocation"],
-            "Resource": [
-                "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons/*",
-                "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons"
-            ]
-        }
-    ]
-}
-```
+  ```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "Statement1",
+                "Effect": "Allow",
+                "Principal": {
+                    "AWS": "POSTGRES_DATA_ACCESS_ROLE_ARN"
+                },
+                "Action": [
+                    "s3:PutObject",
+                    "s3:GetBucketLocation"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons/*",
+                    "arn:aws:s3:::QRVEY_DEPLOYMENT-dataload-drdatacommons"
+                ]
+            }
+        ]
+    }
+    ```
 
 7. Associate the Postgres cluster with the new Role.
 <ul style={{listStyle: 'none', marginLeft: '20px'}}>
