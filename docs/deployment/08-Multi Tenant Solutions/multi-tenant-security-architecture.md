@@ -14,8 +14,8 @@ Qrvey makes the assert model for security possible by providing a comprehensive 
 * [Overview of Embedding & Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 * [Widgets Quick Start Guide](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
 * [Embedding Widgets Using a Security Token](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md)
-* [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md)
-* [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)
+* [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md)
+* [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md)
 
 You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with JWT.  It is recommended to watch the [JWT Widget Integration training video](../video-training/legacy/jwt-widget.md) on the Qrvey Partner Portal.
 
@@ -125,7 +125,7 @@ Using asset permissions, you can implement many of the most common scenarios tha
 * Toggling the visibility of specific charts within a single dashboard based on the user’s group/role
 * Controlling which datasets a user can build visualizations from based on the user’s group/role
 
-As with RLS data security, asset permissions are also defined and controlled using a special JSON widget configuration property.  The property is called `asset_permissions` and you can review the full documentation for this property by reviewing the [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md) article on the Qrvey Partner Portal.
+As with RLS data security, asset permissions are also defined and controlled using a special JSON widget configuration property.  The property is called `asset_permissions` and you can review the full documentation for this property by reviewing the [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md) article on the Qrvey Partner Portal.
 
 Here is an example of what the `asset_permissions` property would look like when included in the JSON widget configuration:
 
@@ -182,7 +182,7 @@ Qrvey allows you to restrict the visibility of specific UI elements and controls
 * Export/Download Controls
 * Data Filter Controls
 
-The main JSON property to use in the widget configuration object is called `featurePermission`.  You can then utilize several sub-properties to toggle the visibility of specific UI controls.  For the full list of supported JSON properties, please review the [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md) article.
+The main JSON property to use in the widget configuration object is called `featurePermission`.  You can then utilize several sub-properties to toggle the visibility of specific UI controls.  For the full list of supported JSON properties, please review the [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) article.
 
 Here is an example of what the `featurePermission` property would look like when included in the JSON widget configuration:
 

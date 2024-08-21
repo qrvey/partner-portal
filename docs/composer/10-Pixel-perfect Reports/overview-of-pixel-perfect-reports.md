@@ -21,7 +21,7 @@ Pixel-perfect Reports shares may familiar features with dashboards, including:
 - **Filters**. In the Pixel-perfect Reports tool, filters are configured in the Filters panel. For more information on using filters, see [Introduction to Filters](../08-Filtering%20Data/overview-of-filters.md). 
 - **Workflows**. The Send Email action in Workflows/Automation supports Pixel-perfect Reports. For more information, see the "Send an Email" section of [Send Actions](../09-Automation/send-actions.md). 
 - **Formulas**. You can apply formulas to columns in the dataset. For more information, see [Working with Formulas](formulas.md). 
-- **Embedding**. The Pixel-perfect Reports widget can be embedded in an application, and it supports CLS and RLS security to ensure that end users only have access to specified data. For more information, see [Embedding Overview](../../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md) and [Pixel-perfect Reports Widget](../../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md). 
+- **Embedding**. The Pixel-perfect Reports widget can be embedded in an application, and it supports CLS and RLS security to ensure that end users only have access to specified data. For more information, see [Embedding Overview](../../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md) and [Pixel-perfect Reports Widget](../../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md). 
 
 ## Overview of the Editor
 The Pixel-perfect Reports editor provides a variety of tools for creating reports, including designing the layout, setting up datasets, and configuring settings. 

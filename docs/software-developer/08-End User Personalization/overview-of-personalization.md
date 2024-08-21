@@ -21,7 +21,7 @@ End Users have to be authenticated in order for the personalization feature to w
 
 Through the User Management feature in Qrvey Composer, Data Analysts can decide which pieces of content to show or hide to which group of users. If you embed the Dashboard View widget in your product, Software Developers can enable or disable the options that are available in the widget for the authenticated end users to enjoy. All available options and personalization features inside the Dashboard View and the Dashboard Builder widget can be turned on or off in any combination desired.
 
-If you're a Software Developer, see [Dashboard View Widget](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md) for information on enabling individual personalization features.  
+If you're a Software Developer, see [Dashboard View Widget](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) for information on enabling individual personalization features.  
 
 If you're a Data Analyst:
 * See [User Management](../../composer/06-Building%20Dashboards/04-User%20Management/overview-of-user-management.md) to learn how to create end users.
