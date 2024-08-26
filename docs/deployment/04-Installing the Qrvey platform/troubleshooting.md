@@ -3,7 +3,7 @@ id: troubleshooting-deployment
 title: Troubleshooting Deployment
 sidebar_label: Troubleshooting
 tags: [CloudOps Engineer]
-sidebar_position: 2
+sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 <div>
