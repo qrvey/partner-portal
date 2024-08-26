@@ -1,13 +1,13 @@
 ---
-id: gov-cloud-fips
-title: Deploying Qrvey in AWS GovCloud with FIPS 
-sidebar_label: Deploying in AWS GovCloud with FIPS 
+id: deploy-in-aws-govcloud-with-fips
+title: Deploy in AWS GovCloud with FIPS 
+sidebar_label: Deploy in AWS GovCloud with FIPS 
 tags: [CloudOps Engineer]
 sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-# Deploying Qrvey in AWS GovCloud with FIPS 
+# Deploy in AWS GovCloud with FIPS 
 
 This document outlines the process for deploying a Qrvey Platform instance in AWS GovCloud with FIPS enabled.
 
