@@ -20,9 +20,9 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 <!-- Config -->
 <script>
     var config = {
-        api_key: "<YOUR_PRIVATE_API_KEY>",
-        domain: "<your_qrvey_domain>",
-        user_id: "<USER_ID>"
+        apiKey: "<YOUR_PRIVATE_API_KEY>",
+        domain: "<DOMAIN>",
+        clientId: "<CLIENT_ID>"
     };
 </script>
 
@@ -32,23 +32,30 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 <script> window.config = config</script>
 ```
 
-
 ## Configuration Object
 The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. It is not recommended for using with the Download Manager widget. Instead, use a JWT token for authentication and include the client ID of the tenant end user. | Yes, if the qv_token is not provided |
-| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../widget-authentication.md). | Yes, if the api_key is not provided |
-| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
-| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | No  |
-| **client_id** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the client ID in the configuration object. Instead, include the client ID in a JWT token.  | Yes, in the JWT token |
-| **i18n** | `String`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md). | No |
-| **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. |No|
-| **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. |No|
+| **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
+| **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
+| **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
+| **userId** | `String`, The ID of the Qrvey Composer user account accessing this feature. Alternatively, you can specify the user ID in a Qrvey session cookie. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | **Optional**  |
+| **clientId** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the client ID in the configuration object. Instead, include the client ID in a QV Token.  | **Required** in API key & to authenticate with QV Token. |
+| **i18n** | `Object`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. Please see [The i18n Object](#the-i18n-object) for details. | **Optional** |
+| **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. | **Optional** |
+| **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. | **Optional** |
 
+### The i18n Object
 
-## Open the Download Manager Modal
+For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **lang** | `String`, The language the language to use for the UI. Example: `"es"`,  | **Required** |
+| **locale** | `String`, The locale code to use for date and number formatting. Example: `"es-ES"`,  | **Optional** |
+
+## Open Download Manager Modal
 
 The Download Manager widget provides an exposed method that enables you to trigger the modal from any other element in your page. For example:
 

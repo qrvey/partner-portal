@@ -7,7 +7,7 @@ sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 
-The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports feature in an application. 
+The Pixel-perfect Reports widget enables you to embed the [Pixel-perfect Reports](../../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md) feature in an application.
 
 ## Embeddable Script
 
@@ -18,10 +18,10 @@ The Pixel-perfect Reports widget enables you to embed the Pixel-perfect Reports 
 <!-- Config -->
 <script>
   var config = {
-    api_key: "<YOUR_PRIVATE_API_KEY>",
-    domain: "https://<YOUR_QRVEY_DOMAIN>",
-    user_id: "<USER_ID>",
-    app_id: "<APP_ID>"
+    apiKey: "<YOUR_PRIVATE_API_KEY>",
+    domain: "<DOMAIN>",
+    userId: "<USER_ID>",
+    appId: "<APP_ID>"
   };
 </script>
 
@@ -35,22 +35,22 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
-| **app_id** | `String`, ID of the Qrvey application containing the webform.| Yes |
-| **user_id** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes  |
-| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the Download Manager feature. The clientId must be set to a unique value for each tenant end user. | No |
-| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
-| **qv_token** | A more secure way to authenticate and authorize embedded widgets is through a Security Token requested as a backend-to-backend communication between your backend side of the host application and the Qrvey system. | Yes, if no api_key is provided |
-| **timezone** | `Object <TimezoneConfiguration>`, Overrides the time zone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).  | No |
-| **report_id** | `String`, used to embed a specific report. If omitted, this embeds the "browse all reports page". | No |
-| **show_embed_button** | `Boolean`, shows or hides the embed button. By default the embed button is hidden in embedded scenarios. | No |
-| **show_formulas_button** | `Boolean`, shows or hides the formula modal button in the toolbar. It is visible by default. | No |
-| **parameter_values** | `Object. {key1: value, key2: value}`, you can set the value of a parameter from the configuration object. This value will override the default value set for the parameter. | No |
-| **default_mode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | No |
+| **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided |
+| **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
+| **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
+| **appId** | `String`, ID of the desired Qrvey application.| **Required** |
+| **userId** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
+| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the Download Manager feature. The client ID must be set to a unique value for each tenant end user. | **Optional** |
+| **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** |
+| **reportId** | `String`, Used to embed a specific report by ID. If omitted, this embeds the "browse all reports" page. | **Optional** |
+| **showFormulasButton** | `Boolean`, Shows or hides the formula modal button in the toolbar. It is "visible" by default. | **Optional** |
+| **parameterValues** | `Object`, Enables you to set the value of a [pixel perfect parameter](../../../composer/10-Pixel-perfect%20Reports/data-and-parameters.md). This value will override the default value set for the parameter. Pattern: `{ key1: value1, key2: value2 }` Example: `{ parameterName: paramVal }`. | **Optional** |
+| **defaultMode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | **Optional** |
 
+### The `timezone` Object
 
-<!-- 
-## Code Samples
-Embeds the "browse all reports page" [codepen](https://codepen.io/qrveysamples/pen/PoxMMKb/ab9b9ab06d4e37d4df8f1be67bb7ea1e)
-Embeds a single Pixel-perfect Report widget [codepen](https://codepen.io/qrveysamples/pen/YzRmmrX/a207d5ccb5f7e29204b1f95033674178)
--->
+For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).
+
+| **Parameter** | **Description** | **Required** |
+| --- | --- | --- |
+| `offset` | `string`, Time to offset by. Pattern: `{"HH:MM" }` Example: `{ "offset": "-1:00" }`   | **Optional** | 
