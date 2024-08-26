@@ -50,23 +50,23 @@ Each widget has its own unique tag, configuration options, and launcher. For det
 
 |  Widget | Description | Embed Tag |
 | --------------- | --------------------- | 
-| [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md) | Embeds a single chart, map, or metric. | 
-| [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md) | Embeds a dashboard containing charts, maps, and metrics. |
-| [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md) | Enables end users to build custom charts and dashboards. | 
-| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enables end-users to build custom charts. |
-| [Web Form Design](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-forms.md) | Enables end users to create and publish their own web forms. | 
-| [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-form-end-user.md) | Embeds an existing web form (form, survey, or quiz), in which end users can enter data. | 
-| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) | Enables end-users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view. | 
-| [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md) | Embeds a Pixel-perfect report. |
-| [Automation](../04-Embedding%20Qrvey%20Widgets/05-Widgets/automation-widget.md) | Embeds workflow functionality into your application. |
-| [Download Manager](../04-Embedding%20Qrvey%20Widgets/05-Widgets/download-manager.md) | Enables end-users to access Download Manager to manage exported files. |
+| [Single Panel](../04-Embedding%20Qrvey%20Widgets/07-Widgets/single-panel.md) | Embeds a single chart, map, or metric. | 
+| [Dashboard View](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) | Embeds a dashboard containing charts, maps, and metrics. |
+| [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md) | Enables end users to build custom charts and dashboards. | 
+| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/07-Widgets/analytic-suite.md) | Enables end-users to build custom charts. |
+| [Web Form Design](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-forms.md) | Enables end users to create and publish their own web forms. | 
+| [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-form-end-user.md) | Embeds an existing web form (form, survey, or quiz), in which end users can enter data. | 
+| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/07-Widgets/analytic-suite.md) | Enables end-users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view. | 
+| [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md) | Embeds a Pixel-perfect report. |
+| [Automation](../04-Embedding%20Qrvey%20Widgets/07-Widgets/automation-widget.md) | Embeds workflow functionality into your application. |
+| [Download Manager](../04-Embedding%20Qrvey%20Widgets/07-Widgets/download-manager.md) | Enables end-users to access Download Manager to manage exported files. |
 
 
 ## Get Widget Script from Composer
 
 ![widget-guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/widget-intro.png#thumbnail-60)
 
-With the exception of [Web Form Design](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-forms.md) and [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/05-Widgets/web-form-end-user.md), embeddable widget scripts can be also be found in Qrvey Composer.
+With the exception of [Web Form Design](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-forms.md) and [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-form-end-user.md), embeddable widget scripts can be also be found in Qrvey Composer.
 
 1. Navigate to the Qrvey Composer interface you'd like to embed.
 2. Depending on the widget type, find and click either the **`</>` Embed Widget Options** button or **three-dot menu > Embed** in the right corner of the top bar.

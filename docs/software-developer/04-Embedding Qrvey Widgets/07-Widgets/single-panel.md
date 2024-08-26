@@ -91,14 +91,3 @@ The following table lists the properties associated with this widget.
 | **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| No
 | **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| No
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
-
-
-<!-- 
-## Code Samples
-The following samples demonstrate how this widget can be used in an HTML page. 
-
-| **Implementation** | **Description** | **Front-end Code** | **Back-end Code** |
-| --- | --- | --- | --- |
-| Basic API Key | This sample uses a basic API key to embed a Single Panel widget. It does not encrypt the API key and is not suitable for production environments.| [codepen](https://codepen.io/qrveysamples/pen/KKzvqgV/c395bd9162f9d675bb8d02317cc5a1e2) | n/a |
--->
-

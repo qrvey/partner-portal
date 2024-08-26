@@ -13,9 +13,9 @@ displayed_sidebar: getting-started
 
 Column Level Security (CLS) allows administrators to restrict data access at the column level within a dataset to users belonging to one or more predefined roles.  Users must be members of at least one of the assigned roles for CLS in order to see data for that column and reference it within any of the supported embedded widgets.  CLS is only supported for embedded widgets at this time and only for the following UI components:
 
-* [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md)
-* [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)
-* [Reports](../04-Embedding%20Qrvey%20Widgets/05-Widgets/pixel-perfect-reports.md)
+* [Dashboard View](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md)
+* [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md)
+* [Reports](../04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md)
 
 Column Level Security is particularly useful for hiding entire columns of data from specific groups and/or types of users, and may also help eliminate the need to create separate datasets for specific groups of users.  Enabling CLS is a three-step process:
 

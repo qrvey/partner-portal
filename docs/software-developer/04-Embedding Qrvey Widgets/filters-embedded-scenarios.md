@@ -3,7 +3,7 @@ id: filters-embedded-scenarios
 title: Working With Filters in Widgets
 sidebar_label: Working With Filters in Widgets
 tags: [Software Developer]
-sidebar_position: 4
+sidebar_position: 5
 displayed_sidebar: getting-started
 ---
 
@@ -14,7 +14,7 @@ You can pass values to Qrvey’s widgets to filter charts or pages depending on 
 
 ## The Filter Object
 
-This feature is available with the [Dashboard View](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/05-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/05-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
+This feature is available with the [Dashboard View](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md), [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md), [Single Panel](../04-Embedding%20Qrvey%20Widgets/07-Widgets/single-panel.md), and [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/07-Widgets/analytic-suite.md) widgets and you can find sample code in each of the mentioned articles.
 
 ```js
 var config = {

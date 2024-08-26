@@ -35,7 +35,7 @@ The shortcut menu provides the following options:
 * Delete
 * Duplicate
 * Copy Dashboard Link (For more information, see “Preview a Dashboard” later in this article) 
-* Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/04-Embedding%20Qrvey%20Widgets/05-Widgets/dashboard-builder.md)). 
+* Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md)). 
 
 ## Open an existing dashboard
 To open an existing dashboard, locate its card in the list displayed on the main page of Dashboard Builder, and click on it. The canvas displays with the contents of the dashboard. 
