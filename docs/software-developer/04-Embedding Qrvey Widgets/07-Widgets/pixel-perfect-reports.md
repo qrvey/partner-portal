@@ -44,6 +44,7 @@ The following table lists the properties associated with this widget.
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** |
 | **reportId** | `String`, Used to embed a specific report by ID. If omitted, this embeds the "browse all reports" page. | **Optional** |
 | **showFormulasButton** | `Boolean`, Shows or hides the formula modal button in the toolbar. It is "visible" by default. | **Optional** |
+| **showBucketsButton** | `Boolean`, Shows or hides the bucket modal button in the toolbar. It is "visible" by default. | **Optional** |
 | **parameterValues** | `Object`, Enables you to set the value of a [pixel perfect parameter](../../../composer/10-Pixel-perfect%20Reports/data-and-parameters.md). This value will override the default value set for the parameter. Pattern: `{ key1: value1, key2: value2 }` Example: `{ parameterName: paramVal }`. | **Optional** |
 | **defaultMode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | **Optional** |
 
