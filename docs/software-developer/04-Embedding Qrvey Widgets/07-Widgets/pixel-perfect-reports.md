@@ -29,7 +29,7 @@ The Pixel-perfect Reports widget enables you to embed the [Pixel-perfect Reports
 <script type="text/javascript" src="https://<YOUR_QRVEY_DOMAIN>/widgets-launcher/app.js?2024-07-15T17:26:30.135Z"></script>
 ```
 
-### Configuration Object
+## Configuration Object
 
 The following table lists the properties associated with this widget.
 
@@ -40,7 +40,6 @@ The following table lists the properties associated with this widget.
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **appId** | `String`, ID of the desired Qrvey application.| **Required** |
 | **userId** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
-| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the Download Manager feature. The client ID must be set to a unique value for each tenant end user. | **Optional** |
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** |
 | **reportId** | `String`, Used to embed a specific report by ID. If omitted, this embeds the "browse all reports" page. | **Optional** |
 | **showFormulasButton** | `Boolean`, Shows or hides the formula modal button in the toolbar. It is "visible" by default. | **Optional** |
@@ -54,4 +53,4 @@ For more information, see [Configuring Time Zone Settings](../../10-Timezone%20S
 
 | **Parameter** | **Description** | **Required** |
 | --- | --- | --- |
-| `offset` | `string`, Time to offset by. Pattern: `{"HH:MM" }` Example: `{ "offset": "-1:00" }`   | **Optional** | 
+| **offset** | `string`, Time to offset by. Pattern: `{"HH:MM" }` Example: `{ "offset": "-1:00" }`   | **Optional** | 

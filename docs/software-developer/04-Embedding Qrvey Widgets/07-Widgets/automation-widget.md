@@ -29,8 +29,6 @@ var config = {
 <script type="text/javascript" src="https://<your_qrvey_domain>/widgets-launcher/app.js"></script>
 ```
 
-The Automation widget enables you to embed [Automation and Flows](../../../composer/09-Automation/overview-of-automation.md) into your application. 
-
 ## Configuration Object
 The following table lists the properties associated with this widget.
 
@@ -40,8 +38,8 @@ The following table lists the properties associated with this widget.
 | `apiKey` | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
 | `userId` | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
 | `domain` | `String`, The base URL of your Qrvey instance. | **Required** | 
-| `appId` | `String`, ID of the Qrvey application containing the webform.| **Required** |
-| `workflowId` | `String`, ID of a single flow. If configured, widget will open that workflow. | **Optional** |
+| `appId` | `String`, ID of the Qrvey application containing the flow.| **Required** |
+| `workflowId` | `String`, ID of a single flow. If configured, widget will open that flow. If omitted, this widget will display the "browse all workflows" page. | **Optional** |
 | `timezone` | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** | 
 
 ### The `timezone` Object
