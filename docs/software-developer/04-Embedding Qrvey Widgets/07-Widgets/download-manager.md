@@ -41,9 +41,9 @@ The following table lists the properties associated with this widget.
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **userId** | `String`, The ID of the Qrvey Composer user account accessing this feature. Alternatively, you can specify the user ID in a Qrvey session cookie. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | **Optional**  |
-| **clientId** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. It is not recommended to include the client ID in the configuration object. Instead, include the client ID in a QV Token.  | **Required** in API key & to authenticate with QV Token. |
+| **clientId** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. If authenticating with a `qvToken`, pas this into the token for authentication.  | **Required** |
 | **i18n** | `Object`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. Please see [The i18n Object](#the-i18n-object) for details. | **Optional** |
-| **showModalButton** | `Boolean`, determines whether or not to show a modal button. If set to true, a modal button will be displayed. If set to false or not set, the modal button will not be displayed. | **Optional** |
+| **showModalButton** | `Boolean`, If set to `true`, displays the Download Manager as a download button, which opens the download manager as a modal on click. Defaults to `false`. | **Optional** |
 | **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. | **Optional** |
 
 ### The i18n Object
