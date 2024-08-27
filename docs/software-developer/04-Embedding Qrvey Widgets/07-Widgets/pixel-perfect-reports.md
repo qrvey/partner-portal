@@ -40,6 +40,7 @@ The following table lists the properties associated with this widget.
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **appId** | `String`, ID of the desired Qrvey application.| **Required** |
 | **userId** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
+| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The client ID must be set to a unique value for each tenant end user. | **Optional** |
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** |
 | **reportId** | `String`, Used to embed a specific report by ID. If omitted, this embeds the "browse all reports" page. | **Optional** |
 | **showFormulasButton** | `Boolean`, Shows or hides the formula modal button in the toolbar. It is "visible" by default. | **Optional** |
