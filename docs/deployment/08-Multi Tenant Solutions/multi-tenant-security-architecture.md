@@ -35,7 +35,7 @@ When a `clientId` is passed into Qrvey, the system will check whether the value 
 
 >**Note**:  It is critical for the `clientId` property to be set to a unique value for each tenant end user.
 
-Here is an example of a JSON widget configuration object using the `clientid` property to enable End User Personalization:
+Here is an example of a JSON widget configuration object using the `clientId` property to enable End User Personalization:
 
 ```json
 {
