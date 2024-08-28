@@ -46,7 +46,7 @@ As of this writing, AWS offers two GovCloud regions (us-gov-east-1 and us-gov-we
         "useDeployID": "<prefix>",
         "UseFipsEndpoint": "true",
         "Referer": "<Referer>",
-        "LocationIdentityPoolID": "<value from Step 3>",
+        "LocationIdentityPoolID": "<us-west-2:xxxxxxxxx>",
         "GovCloudRegion": "us-gov-west-1",
         "GovCloudAccount": "<GovCloudAWSAccountID>"
     }'
@@ -72,7 +72,7 @@ As of this writing, AWS offers two GovCloud regions (us-gov-east-1 and us-gov-we
     - Obtain the template URL from Qrvey Support for the appropriate version (e.g., 8.5.2).
     - Create a new stack using the URL, selecting public subnets within the appropriate VPC.
     - Once the stack is ready, copy and save the URL from the Outputs tab.
-    - Initialize the installer by calling the INIT API. Replace placeholder values as needed. [Link to Notion](https://www.notion.so/Deploy-a-New-Gov-Cloud-FIPS-Instance-df785239505b4e30a78363cb8a8e4234?pvs=21).
+    - Initialize the installer by calling the INIT API. Replace placeholder values with those from step 5 in the prerequisites section above.
 3. Begin deployment by calling the following API. Replace placeholder values as needed, ensuring the data matches Step 5 of the Non-GovCloud deployment.
     
     ```bash
