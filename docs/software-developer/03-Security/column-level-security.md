@@ -17,13 +17,13 @@ Column Level Security (CLS) allows administrators to restrict data access at the
 * [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md)
 * [Reports](../04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md)
 
-Column Level Security is particularly useful for hiding entire columns of data from specific groups and/or types of users, and may also help eliminate the need to create separate datasets for specific groups of users.  Enabling CLS is a three-step process:
+Column Level Security is particularly useful for hiding entire columns of data from specific groups and/or types of users, and may also help eliminate the need to create separate datasets for specific groups of users. Enabling CLS is a three-step process:
 
-1. **Defining User Roles**:  Roles must be predefined within the platform in order to lock down specific columns of a dataset by user role.  All users have access to all columns within a dataset by default.
+1. **Defining User Roles**: Roles must be predefined within the platform in order to lock down specific columns of a dataset by user role.  All users have access to all columns within a dataset by default.
 
-2. **Applying CLS to Datasets**:  Column Level Security must be explicitly set for each column of a dataset using a series of API endpoints.  This step must be performed through API calls.
+2. **Applying CLS to Datasets**: Column Level Security must be explicitly set for each column of a dataset using a series of API endpoints.  This step must be performed through API calls.
 
-3. **Using CLS with Security Tokens**:  Developers embedding content with Qrvey’s user widget model must explicitly reference one or more of the predefined user roles within the JSON configuration object for that widget.
+3. **Using CLS with Security Tokens**: Developers embedding content with Qrvey’s user widget model must explicitly reference one or more of the predefined user roles within the JSON configuration object for that widget.
 
 The next section provides more detail around the process outlined above, and offers a step-by-step guide for configuring CLS on a dataset.
 
