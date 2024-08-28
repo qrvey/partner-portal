@@ -19,7 +19,7 @@ In a multi-tenant production deployment, there could be thousands of tenants and
 
 However, there are two features in Qrvey that need to know who the specific tenant end user is: [End User Personalization](../software-developer/08-End%20User%20Personalization/overview-of-personalization.md) and [Download Manager](../composer/download-manager.md). Both of these features work by track actions that the user takes, persist those changes to the Qrvey platform database, and then recall those actions and changes when the same user logs in to the application at a later time.
 
-If you want to utilize one or both of these features, you define the `clientId` property for the desired widget.
+If you want to utilize one or both of these features in embedded widgets, you define the `clientId` property during [Widget Authentication](../../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md).
 
 The `clientId` is used in embedded widgets and serves two functions:
 - In the Download Manager, Qrvey filters the downloadable files to show only those associated with a `clientId`.
