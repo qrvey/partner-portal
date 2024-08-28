@@ -9,38 +9,46 @@ displayed_sidebar: getting-started
 
 Qrvey’s approach to multi-tenant security architecture is to utilize the **assert model** for both authentication and authorization.  The assert model effectively allows you to maintain your existing user accounts, roles/groups and permissions, and then declare a user’s identity and permissions to the Qrvey platform dynamically at runtime.  The ability to assert/declare a user’s identity and access permissions is favorable when embedding third party platforms in your core application for a multi-tenancy deployment, because it means that you will not need to redefine and replicate your existing security schema.
 
-Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime.  This document discusses best practices for implementing authentication and authorization using these widget configuration properties.  If you are not yet familiar with how to embed and configure Qrvey widgets, review the following documentation before continuing:
+Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime.  This document discusses best practices for implementing authentication and authorization using these widget configuration properties.  If you are not yet familiar with how to embed and configure Qrvey widgets, review the [Embedded Widgets Overview](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
 
-* [Overview of Embedding & Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
-* [Widgets Quick Start Guide](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
-* [Embedding Widgets Using a Security Token](../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md)
-* [Dashboard View Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md)
-* [Dashboard Builder Widget](../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md)
-
-You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with JWT.  It is recommended to watch the [JWT Widget Integration training video](../video-training/legacy/jwt-widget.md) on the Qrvey Partner Portal.
+You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with a Qrvey Token. It is recommended to watch the [JWT Widget Integration training video](../video-training/legacy/jwt-widget.md) on the Qrvey Partner Portal.
 
 ## Authentication
 
-In a multi-tenant production deployment, there could be thousands of tenants and potentially tens of thousands of end users.  Using the assert security model for authentication, you would never need to create and maintain a user account for your tenant end users.  Furthermore, since your core application is responsible for authenticating all end user access, there is no real need for Qrvey to know exactly who is accessing the embedded dashboards.  More likely, it would be more important to determine what that specific tenant end user is allowed to see and do once the dashboard loads.
+In a multi-tenant production deployment, there could be thousands of tenants and potentially tens of thousands of end users. Using the assert security model for authentication, you would never need to create and maintain a user account for your tenant end users. Furthermore, since your core application is responsible for authenticating all end user access, there is no real need for Qrvey to know exactly who is accessing the embedded dashboards. More likely, it would be more important to determine what that specific tenant end user is allowed to see and do once the dashboard loads.
 
-There are only two exceptions presently where Qrvey does need to know who the specific tenant end user is: [End User Personalization](../software-developer/08-End%20User%20Personalization/overview-of-personalization.md) and [Download Manager](../composer/download-manager.md).  Both of these features work by tracking actions that the user takes, persisting those changes to the Qrvey platform database, and then being able to recall those actions and changes when the same user logs in to the application at a later time.  For End User Personalization, Qrvey will track changes made to a published dashboard and must associate the saved state of a dashboard with the end user’s ID.  For the Download Manager, Qrvey will track all of the exports requested by an end user and provide a UI for that end user to access their download history.  If you want to utilize one or both of these features, you simply define the `clientid` property for the Dashboard View widget and set the value to the ID of the end user logged into the core/parent application.
+However, there are two features in Qrvey that need to know who the specific tenant end user is: [End User Personalization](../software-developer/08-End%20User%20Personalization/overview-of-personalization.md) and [Download Manager](../composer/download-manager.md). Both of these features work by track actions that the user takes, persist those changes to the Qrvey platform database, and then recall those actions and changes when the same user logs in to the application at a later time.
 
->**Note**:  It is critical for the `clientid` property to be set to a unique value for each tenant end user.  For this reason, it is a good idea to use the end user’s email address or a UUID to ensure uniqueness.
+If you want to utilize one or both of these features in embedded widgets, you define the `clientId` property during [Widget Authentication](../../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md).
 
-Here is an example of a JSON widget configuration object using the `clientid` property to enable End User Personalization:
+The `clientId` is used in embedded widgets and serves two functions:
+- In the Download Manager, Qrvey filters the downloadable files to show only those associated with a `clientId`.
+- For End user Personalization, Qrvey stores the state of a widget.
+
+### What is the clientId?
+
+In Qrvey, a `clientId` is a unique string value (email, id, token, username, or anything else) that is associated with a specific end user authenticated by the SaaS organization's core application. Therefore, a `clientId` is different from a `userId`, which represents a user of the Qrvey platform. In other words, the `clientId` is associated with a SaaS organization's tenant end users who consume Qrvey's embedded widgets, while the `userId` is associated with an SaaS organization's own team members who build content directly in Qrvey Composer.
+
+For production implementation in widgets, pass clientId into the request to [Generate a Qrvey Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token). In dev mode, you can pass `clientId` directly in the widget config object; though this may not be secure and is not recommended in production.
+
+When a `clientId` is passed into Qrvey, the system will check whether the value exists. If it does not, it will store the string in your Qrvey instance's database as a new client. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
+
+>**Note**:  It is critical for the `clientId` property to be set to a unique value for each tenant end user.
+
+Here is an example of a JSON widget configuration object using the `clientId` property to enable End User Personalization:
 
 ```json
 {
    "domain": "https://myinstance.qrveyapp.com",
-   "appid": "APP_ID_VALUE",
-   "clientid": "CLIENT_ID_VALUE",
+   "appId": "APP_ID_VALUE",
+   "clientId": "CLIENT_ID_VALUE",
    "personalization": {
        "enabled": true,
    },
 }
 ```
 
-The only users who need Qrvey accounts created for them in the platform, are the users who will be accessing the Qrvey Composer UI directly, outside of an embedded context.  These users will almost always either be the direct employees or partner contractors working for the SaaS organization.  There will only likely be a few dozen of these types of user accounts, and all of these user accounts can be created programmatically via the API.
+The only users who need Qrvey accounts created for them in the platform, are the users who will be accessing Qrvey Composer UI directly, as opposed to the embedded widgets. These users will almost always either be the direct employees or partner contractors working for the SaaS organization. There will only likely be a few dozen of these types of user accounts, and all of these user accounts can be created programmatically via the API.
 
 
 ## Authorization
