@@ -28,7 +28,7 @@ In Qrvey, a `clientId` is a unique string value (email, id, token, username, or 
 
 For production implementation in widgets, pass `clientId` into the request to [Generate a Qrvey Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token). In dev mode, you can pass `clientId` directly in the widget config object; though this may not be secure and is not recommended in production.
 
-When a `clientId` is passed into Qrvey, the system will check whether the value exists. If it does not, it will store the string in your Qrvey instance's database as a new client. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
+When a `clientId` is passed into Qrvey, the system will check whether the value exists. If it does not, it will be saved within your Qrvey instance. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
 
 >**Note**:  It is critical for the `clientId` property to be set to a unique value for each tenant end user.
 
@@ -45,7 +45,7 @@ Here is an example of a JSON widget configuration object using the `clientId` pr
 }
 ```
 
-The only users who need Qrvey accounts created for them in the platform, are the users who will be accessing Qrvey Composer UI directly, as opposed to the embedded widgets. These users will almost always either be the direct employees or partner contractors working for the SaaS organization. There will only likely be a few dozen of these types of user accounts, and all of these user accounts can be created programmatically via the API.
+The "`userId`" users are those that need Qrvey accounts in order to access and manage Qrvey data and content directly through the Composer and Admin Center UIs, as well as programmatically via the API; as opposed to those that consume embedded widgets. These users will almost always either be the direct employees or partner contractors working for the SaaS organization. There will only likely be a few dozen of these types of user accounts, which can be created through the Admin Center as well as programmatically via the API.
 
 
 ## Authorization
