@@ -7,7 +7,7 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-A Qrvey Dataset is a collection of structured data used to create dashboards and visualizations within the platform. There are two types of Datasets. **Managed Datasets** store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, **Live Connect Datasets** provide data access directly from its source, enabling real-time queries without the need to load data.
+A Qrvey Dataset is a collection of structured data used to create dashboards and visualizations within the platform. There are two types of Datasets. [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/managed-datasets) store data inside Qrvey’s data repository, a high-performance, scalable, serverless OpenSearch cluster. Alternatively, [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive)provide data access directly from its source, enabling real-time queries without the need to load data.
 
 ## Create a Dataset
 
@@ -17,9 +17,7 @@ A Qrvey Dataset is a collection of structured data used to create dashboards and
     - **New Live Connect Dataset**
 3. Configure as Desired. 
 
-All new datasets are given the default name of `{connection name} - {table/view name}`.  At this point your Dataset is ready for use; however you can make changes as needed.
-
-For more details, please see [Managed Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/managed-datasets) or [Live Connect Datasets](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Overview%20of%20Datasets/dslive), depending on the type of Dataset you are working with.
+    All new datasets are given the default name of `{connection name} - {table/view name}`.  At this point your Dataset is ready for use; however you can make changes as needed.
 
 ## View Datasets
 
@@ -53,10 +51,14 @@ To mark a Dataset as a favorite, follow these steps.
 
 ## Share and Un-Share Datasets
 
+By default, datasets are only accessible in the application in which they are created.
+
 1. Navigate to **Data > Datasets**.
 2. Find the desired Dataset and click its three-dot menu. A dropdown will appear.
 3. Click either **Share Data with my Organization** or **Unshare with my Organization**. A modal will appear.
 4. Click to confirm your choice in the modal and you will return to **Data > Datasets**.
+
+> **Note:** If unshared, any existing datasets and/or dataset views created from this dataset will no longer be available to users building charts and metrics. Any existing charts and metrics that have a dependency on this dataset will no longer show any data.
 
 ## Delete a Dataset
 
