@@ -40,7 +40,7 @@ This dialog enables you to specify where the data will be fetched from. The data
 
 The new dataset is given a default name using the following format:  `{the connection name} - {table/view name}` which you can edit by clicking on the name and entering a new one.
 
-At this point, the dataset is not actually created or populated with data. You may return to the Datasets page, and you will see a new, draft dataset, with its default name and a gray bar next to it that indicates its being in draft mode.
+At this point, the dataset is not actually created or populated with data. You may return to the Datasets page and you will see a new draft dataset, with its default name and a gray bar next to it that indicates its being in draft mode.
 
 ![Dataset-in-Draft-mode](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Datasets/dataset2.7.7.png#thumbnail-40)
 
@@ -75,11 +75,12 @@ View Source Data displays the first 100 rows of data from the data source.
 
 >**Note**: Modifying the data source by removing columns, renaming columns, or changing the data type, may break visualizations previously built based on this dataset.
 
-## Automatically Add New Dataset Columns
-
-Allow the product to add any new columns that it finds during the data reload process. This feature is especially useful if the data source is a query or view that may change or include new data columns over time. This option is disabled by default. 
+## Automatically Add New Columns
 
 ![Automatically-add-new-columns-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Automatically-add-new-columns-84.png)
+
+
+Allows Qrvey to add any new columns that it finds during the data reload process. This feature is especially useful if the data source is a query or view that may change or include new data columns over time. This option is disabled by default. 
 
 To enable this option, follow these steps.
 1. Scroll to the bottom of the page.
@@ -202,3 +203,4 @@ Once the dataset is configured as desired, you may load the data.
    This estimate can be changed at a later time in the [Advanced Settings](../02-Design/07-Advanced%20Settings/dataset-design-advanced-settings.md) tab.  
 3. If you remain on the Design tab during the data load process, once complete, the Summary view displays information about the data loaded. 
 4. To view events, errors or issues with the data load, please check the [Activity Log](../../../activity-log.md).
+   
