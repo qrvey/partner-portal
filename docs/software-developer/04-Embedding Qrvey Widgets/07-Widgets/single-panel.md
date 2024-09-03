@@ -36,58 +36,77 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
-| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../widget-authentication.md). | Yes, if the api_key is not provided |
-| **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
-| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
-| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
-| **qrveyid** | `String`, ID of the dataset being used. | Yes |
-| **type** | `String`, Type of panel.<br />Accepted values: <br />* CHART <br />* METRIC <br />* SUMMARY | Yes |
-| **chart_id** | `String`, ID of the chart to display. **Required if type is CHART.**| Yes |
-| **metric_id** | `String`, ID of the metric to display. **Required if type is METRIC.** | Yes |
-| **summary_id** | `String`, ID of the summary panel to display. **Required if type is SUMMARY**.| No |
-| **summary_type** | `String`, column type. Optional for summary panels.| No |
-| **panel** | `Object`, panel options object.| No |
-| **panel.header** | `Object`, panel header options object.| No |
-| **panel.header.visible** | `Boolean`,determines if the panel header is visible. The default setting is *true*.| No |
-| **panel.header.draggable** | `Boolean`, determines if the panel header has an icon to drag and drop the panel. Used by Custom View and Metric View.| No |
-| **panel.header.filter** | `Boolean`, determines if the panel header has a filter button to open the Filter Modal widget.| No |
-| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br />Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br />(Note: SIZE is used only by the Custom View)| No |
-|**panel.header.fit_panel**| `Boolean`, set if fit to panel button is enabled. False by default. | No
-| **panel.header.title_prefix** | `String`, prefix for the title of the panel.| No |
-| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br />Accepted values: CSV| No |
-| **panel.body** | `Object`, panel body options object.| No | 
-| **panel.body.popup** | `Object`, panel body popup options object. Used to show Filter By, See Data and Drill-Down options.|No | 
-| **panel.body.popup.items** | `Array`, set of options to show on the popup. Description of properties are below. <br /> Accepted array items format: {<br />label: '<popup_item>', // Required <br />action: <customCallbackFunction()> // Optional<br />customdrills: <<br />}<br />Usage example: [<br />{ label: 'SEEDATA' },<br />{ label: 'FILTERBY' }, <br />{ label: 'DRILLDOWN' }, <br />{ label: 'CUSTOMDRILL' }<br />]|No | 
-| **panel.body.popup.items[itemIndex]**| `Object`, popup item options object to use in panel.body.popup.items array.|No | 
-| **panel.body.popup.items[itemIndex].label**| `String`, option name. Required for this array.|No | 
-| **panel.body.popup.items[itemIndex].action**| `Function`, custom callback function.| No | 
-| **panel.body.popup.items[itemIndex].drilldowns**| `Array`, set of column objects. Used by End-Users.| No |
-| **panel.body.popup.items[itemIndex].customdrills**| `Array`, set of objects with chart ids, names and other properties. Used by End-Users.| No | 
-| **panel.footer**| `Object`, panel footer options object.| No | 
-| **panel.footer.visible**| `Boolean`, determines if a panel footer is visible. The default setting is *false*.| No |
-| **page_id**| `String`, ID of the page that contains the panel. Required only on Page Builder and End-User.| No |
-| **tab_id**| `String`, ID of the tab that contains the panel. Required only on Page Builder, Report Builder and End User.| No |
-| **model**| `Object`, dataset model previously defined.| No |
-| **panel_view**| `String`, name of the view that contains the panel. Required only on Analyze section. <br />Accepted values: `ANALYZE | ANYWHERE`| No |
-| **filterData**|`Object`, set of previously defined filters to be applied in the panel. <br /> `{logic: <Logic Key Structure>}`| No |
-| **userFilters**| `Object`, the filters object generated by the user. These filters and filterData filters are applied together. <br />`{filters: <Filters Key Structure>}`| No |
-| **id**| `String`, custom ID for the panel element.| No |
-| **data**| `Object`, internal chart or metric data configuration previously defined. Used by Chart Builder widget to show the preview panel.| No |
-| **inBuilder**| `Boolean`, determines if the panel is the preview on Chart Builder.| No |
-| **drilldowns**| `Object`, drilldowns object previously defined. Used by Custom View and Page Builder.| No |
-| **customdrills**| `Array`, set of customdrill objects previously defined. Used by End-User.| No |
-| **clickable**| `Boolean`, determines if the panel has click events. Used by End User.| No |
-| **themeid**| `String`, theme ID to use in the component| No
-| **panel.styles**| `Object`, styles options object. These properties will extend from the current theme| No
-| **panel.styles.chartsTitle**| `String`, set the charts title color| No
-| **panel.styles.chartsFontFamily**| `String`, set the charts font family| No
-| **panel.styles.axisDataLabels**| `String`, set axis labels color in charts| No
-| **panel.styles.dataLabels**| `String`, color for data labels in charts| No
-| **panel.styles.valuesMain**| `String`, set color for axis ticks values in charts| No
-| **panel.styles.chartsLegends**| `String`, color for charts legends labels| No
-| **panel.styles.chartsTooltips**| `String`, color for charts tooltips| No
-| **panel.styles.tableHeaderFont**| `String`, set color for table header texts| No
-| **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| No
-| **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| No
-| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | No
+| **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required** if `qvToken` is not provided. |
+| **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
+| **appId** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | **Required** |
+| **domain** | `String`, The base URL of your instance of the Qrvey platform. | **Required** | 
+| **userId** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Alternatively, you can specify the user ID in a Qrvey session cookie. | **Required**, if the `userId` is not included in a session cookie.  |
+| **qrveyId** | `String`, ID of the dataset being used. | **Required** |
+| **type** | `String`, Defines the panel type. Choose between `CHART`, `SUMMARY`, or `METRIC`. | **Required** |
+| **chartId** | `String`, ID of the chart to display.|  **Required** if type is CHART. |
+| **metricId** | `String`, ID of the metric to display. | **Required** if type is METRIC. |
+| **summaryId** | `String`, ID of the summary panel to display. | **Required** if type is SUMMARY. |
+| **panel** | `Object`, Allows you to configure which features are used in a panel. For details, please see [The Panel Object](#the-panel-object) below.| **Optional** |
+| **filterData**|`Object`, Receives all filters that need to be applied in the panel. <br /> **Example:** `{logic: <Logic Key Structure>}`| **Optional** |
+| **userFilters**| `Object`, A filters object generated by the user. These filters and filterData filters are applied together. **Example:**  <br /> `{filters: <Filters Key Structure>}`| **Optional** |
+| **i18n**| `Object`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. For details, please see  [The i18n Object](#the-i18n-object) for details.| **Optional** |
+| **themeId**| `String`, Theme ID to use in the component. For more details please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically).| **Optional** |
+| **authenticatedSession**| `Object`, Contains authenticatedSession.email, which is used to configure scheduled exports. For details, please see [The authenticatedSession Object](#the-authenticatedsession-object) below| **Optional** |
+
+<!-- 
+| **drilldowns**| `Object`, drilldowns object previously defined. Used by Custom View and Page Builder.| **Optional** |
+| **customdrills**| `Array`, set of customdrill objects previously defined. Used by End-User.| **Optional** |
+| **clickable**| `Boolean`, determines if the panel has click events. Used by End User.| **Optional** | 
+-->
+
+### The i18n Object
+
+For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **lang** | `String`, The language the language to use for the UI. Example: `"es"`,  | **Required** |
+| **locale** | `String`, The locale code to use for date and number formatting. Example: `"es-ES"`,  | **Optional** |
+
+
+## The authenticatedSession Object
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **authenticatedSession.email**| `String`, Specifies the email address to send scheduled exports. <br /> Example: `"example@qrvey.com"`| **Optional** |
+
+
+## The Panel Object
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **panel.header** | `Object`, panel header options object.| **Optional** |
+| **panel.header.visible** | `Boolean`,determines if the panel header is visible. The default setting is *true*.| **Optional** |
+| **panel.header.draggable** | `Boolean`, determines if the panel header has an icon to drag and drop the panel. Used by Custom View and Metric View.| **Optional** |
+| **panel.header.filter** | `Boolean`, determines if the panel header has a filter button to open the Filter Modal widget.| **Optional** |
+| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br />Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br />(Note: SIZE is used only by the Custom View)| **Optional** |
+|**panel.header.fit_panel**| `Boolean`, set if fit to panel button is enabled. False by default. | **Optional** |
+| **panel.header.title_prefix** | `String`, prefix for the title of the panel.| **Optional** |
+| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br />Accepted values: CSV| **Optional** |
+| **panel.body** | `Object`, panel body options object.| **Optional** | 
+| **panel.body.popup** | `Object`, panel body popup options object. Used to show Filter By, See Data and Drill-Down options.|**Optional** | 
+| **panel.body.popup.items** | `Array`, set of options to show on the popup. Description of properties are below. <br /> Accepted array items format: {<br />label: '<popup_item>', // Required <br />action: <customCallbackFunction()> // Optional<br />customdrills: <<br />}<br />Usage example: [<br />{ label: 'SEEDATA' },<br />{ label: 'FILTERBY' }, <br />{ label: 'DRILLDOWN' }, <br />{ label: 'CUSTOMDRILL' }<br />]| **Optional** | 
+| **panel.body.popup.items[itemIndex]**| `Object`, popup item options object to use in panel.body.popup.items array.| **Optional** | 
+| **panel.body.popup.items[itemIndex].label**| `String`, option name. Required for this array.| **Optional** | 
+| **panel.body.popup.items[itemIndex].action**| `Function`, custom callback function.| **Optional** | 
+| **panel.body.popup.items[itemIndex].drilldowns**| `Array`, set of column objects. Used by End-Users.| **Optional** |
+| **panel.body.popup.items[itemIndex].customdrills**| `Array`, set of objects with chart ids, names and other properties. Used by End-Users.| **Optional** | 
+| **panel.footer**| `Object`, panel footer options object.| **Optional** | 
+| **panel.footer.visible**| `Boolean`, determines if a panel footer is visible. The default setting is *false*.| **Optional** |
+| **panel.styles**| `Object`, styles options object. These properties will extend from the current theme| **Optional**
+| **panel.styles.chartsTitle**| `String`, set the charts title color| **Optional** |
+| **panel.styles.chartsFontFamily**| `String`, set the charts font family| **Optional** |
+| **panel.styles.axisDataLabels**| `String`, set axis labels color in charts| **Optional** |
+| **panel.styles.dataLabels**| `String`, color for data labels in charts| **Optional** |
+| **panel.styles.valuesMain**| `String`, set color for axis ticks values in charts| **Optional** |
+| **panel.styles.chartsLegends**| `String`, color for charts legends labels| **Optional** |
+| **panel.styles.chartsTooltips**| `String`, color for charts tooltips| **Optional** |
+| **panel.styles.tableHeaderFont**| `String`, set color for table header texts| **Optional** |
+| **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| **Optional** |
+| **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| **Optional** |
+| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
