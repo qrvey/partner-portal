@@ -84,10 +84,10 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | **panel.header.visible** | `Boolean`,determines if the panel header is visible. The default setting is *true*.| **Optional** |
 | **panel.header.draggable** | `Boolean`, determines if the panel header has an icon to drag and drop the panel. Used by Custom View and Metric View.| **Optional** |
 | **panel.header.filter** | `Boolean`, determines if the panel header has a filter button to open the Filter Modal widget.| **Optional** |
-| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br />Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br />(Note: SIZE is used only by the Custom View)| **Optional** |
+| **panel.header.menu** | `Array/Boolean`, if it's an array, the panel header will show the options passed through the array. If the value is true, the panel header will show a default menu. <br />Accepted values for the array: `EDIT, DOWNLOAD, DUPLICATE, SIZE and DELETE`<br />(Note: SIZE is used only by the Custom View).| **Optional** |
 |**panel.header.fit_panel**| `Boolean`, set if fit to panel button is enabled. False by default. | **Optional** |
 | **panel.header.title_prefix** | `String`, prefix for the title of the panel.| **Optional** |
-| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br />Accepted values: CSV| **Optional** |
+| **panel.header.externalDownload** | `Array`, set of values to allow external download for defined formats. Used by Page Builder and End User. <br />Accepted values: CSV. | **Optional** |
 | **panel.body** | `Object`, panel body options object.| **Optional** | 
 | **panel.body.popup** | `Object`, panel body popup options object. Used to show Filter By, See Data and Drill-Down options.|**Optional** | 
 | **panel.body.popup.items** | `Array`, set of options to show on the popup. Description of properties are below. <br /> Accepted array items format: {<br />label: '<popup_item>', // Required <br />action: <customCallbackFunction()> // Optional<br />customdrills: <<br />}<br />Usage example: [<br />{ label: 'SEEDATA' },<br />{ label: 'FILTERBY' }, <br />{ label: 'DRILLDOWN' }, <br />{ label: 'CUSTOMDRILL' }<br />]| **Optional** | 
@@ -98,14 +98,14 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | **panel.body.popup.items[itemIndex].customdrills**| `Array`, set of objects with chart ids, names and other properties. Used by End-Users.| **Optional** | 
 | **panel.footer**| `Object`, panel footer options object.| **Optional** | 
 | **panel.footer.visible**| `Boolean`, determines if a panel footer is visible. The default setting is *false*.| **Optional** |
-| **panel.styles**| `Object`, styles options object. These properties will extend from the current theme| **Optional**
-| **panel.styles.chartsTitle**| `String`, set the charts title color| **Optional** |
-| **panel.styles.chartsFontFamily**| `String`, set the charts font family| **Optional** |
-| **panel.styles.axisDataLabels**| `String`, set axis labels color in charts| **Optional** |
-| **panel.styles.dataLabels**| `String`, color for data labels in charts| **Optional** |
-| **panel.styles.valuesMain**| `String`, set color for axis ticks values in charts| **Optional** |
-| **panel.styles.chartsLegends**| `String`, color for charts legends labels| **Optional** |
-| **panel.styles.chartsTooltips**| `String`, color for charts tooltips| **Optional** |
-| **panel.styles.tableHeaderFont**| `String`, set color for table header texts| **Optional** |
-| **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| **Optional** |
-| **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| **Optional** |
+| **panel.styles**| `Object`, styles options object. These properties will extend from the current theme. | **Optional**
+| **panel.styles.chartsTitle**| `String`, set the charts title color. | **Optional** |
+| **panel.styles.chartsFontFamily**| `String`, set the charts font family. | **Optional** |
+| **panel.styles.axisDataLabels**| `String`, set axis labels color in charts. | **Optional** |
+| **panel.styles.dataLabels**| `String`, color for data labels in charts. | **Optional** |
+| **panel.styles.valuesMain**| `String`, set color for axis ticks values in charts. | **Optional** |
+| **panel.styles.chartsLegends**| `String`, color for charts legends labels. | **Optional** |
+| **panel.styles.chartsTooltips**| `String`, color for charts tooltips. | **Optional** |
+| **panel.styles.tableHeaderFont**| `String`, set color for table header texts. | **Optional** |
+| **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines. | **Optional** |
+| **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines. | **Optional** |
