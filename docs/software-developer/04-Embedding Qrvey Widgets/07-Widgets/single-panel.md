@@ -59,7 +59,7 @@ The following table lists the properties associated with this widget.
 | **clickable**| `Boolean`, determines if the panel has click events. Used by End User.| **Optional** | 
 -->
 
-### The i18n Object
+## The i18n Object
 
 For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
 
