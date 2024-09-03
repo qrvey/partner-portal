@@ -109,4 +109,3 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | **panel.styles.tableHeaderFont**| `String`, set color for table header texts| **Optional** |
 | **panel.styles.chartsMain**| `String`, set color for chart data points like bars, symbols and lines.| **Optional** |
 | **panel.styles.themePalette**| `Array`, contains a maximum 20 color for char data points like bars, symbols and lines.| **Optional** |
-| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
