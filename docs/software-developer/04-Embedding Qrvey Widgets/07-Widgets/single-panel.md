@@ -68,7 +68,6 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | --- | --- | --- |
 | **authenticatedSession.email**| `String`, Specifies the email address to send scheduled exports. <br /> Example: `"example@qrvey.com"`| **Optional** |
 
-
 ## The Panel Object
 
 | **Property** | **Value** | **Required** |
