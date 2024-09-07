@@ -1,7 +1,7 @@
 ---
 id: widget-web-form-end-user
-title: Web Form (End User)
-sidebar_label: Web Form (End User)
+title: Web Form - End User
+sidebar_label: Web Form - End User
 tags: [Software Developer]
 sidebar_position: 8
 displayed_sidebar: getting-started
