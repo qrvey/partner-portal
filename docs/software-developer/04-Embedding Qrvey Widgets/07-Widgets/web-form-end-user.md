@@ -35,3 +35,7 @@ The following table lists the properties associated with this widget.
 | **qrvey_hash** | `String`, The webform's ID. | Yes |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes |
 
+<!-- 
+| **style** | `String`, External CSS Stylesheet URL. | No  |
+| **defaultAnswers** | `Object Array`, If configured, fills an answer (just for work textFields) with default values. Multiple fields can be added, it only needs `questionID` and the `data` to be inserted. Example: [{id:"UMLFTXTT",data:"Default value"}] | No |
+ -->
