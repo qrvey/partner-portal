@@ -7,7 +7,7 @@ sidebar_position: 8
 displayed_sidebar: getting-started
 ---
 
-The Web Form End User widget enables allows you to embed web forms into your frontend application.
+The Web Form End User widget enables allows you to embed web forms into your frontend application. Alternatively, you can [use an iframe to embed Web Forms](../../../composer/05-Working%20with%20Data/Web%20Forms/08-Publishing/embedding-web-forms.md).
 
 ```html
 <!-- Tag -->
