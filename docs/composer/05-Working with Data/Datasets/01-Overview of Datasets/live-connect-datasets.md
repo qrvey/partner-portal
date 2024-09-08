@@ -40,18 +40,7 @@ To create a new Live Connect Dataset, follow these steps.
     For some sources you will need to choose a Schema from a list of tables or views. Alternatively, you can write a SQL Query in order to perform joins and formulas.
 6. Click **Save** once the data source is selected or the custom query is written and tested. You will be directed to the main Datasets page.
 
-
-## Manage the Dataset​
-The following options enable you to transform and manage your dataset.
-
-### Rename Live Connect Dataset
-
-1. Click on the name.
-2. Type to change it as desired.
-
-![Rename Live Connect Dataset](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.3-8.0.png#thumbnail-40)
-
-### Change the Data Source​
+## Change the Data Source​
 
 ![Change Data Source](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.4-8.0.png#thumbnail)
 
@@ -61,7 +50,7 @@ The following options enable you to transform and manage your dataset.
     - **Switch for Another Data Source** - Choose a data source from a connection other than the one currently in use.
     - **Rename** - Give your data sources an alias or more user-friendly name.
 
-### Change Dataset Columns
+## Change Dataset Columns
 
 Changing the columns in the Live Connect Dataset does not change the query executed for the dataset, it impacts the presentation layer only. Data types are inherited from the source database. To make changes to data types, either change the source object or use the SQL Query option with `CAST` or `CONVERT` syntax as appropriate for your source.
 
@@ -72,7 +61,7 @@ Changing the columns in the Live Connect Dataset does not change the query execu
 - **Change Geolocation** — Click the Change Geolocation button to map columns to addresses for map charts.
 - **Visualization Format** — Numeric and date columns can have the default display format changed.
 
-### Choose the Visualization Format​
+## Choose the Visualization Format​
 
 The system will pick a format for displaying date and numeric data in visualizations based on a smart algorithm. While this default format can be changed every time that a chart is created based on this data, you can also choose a different format for it at design time. For example, if a numeric data column contains currency data, it may make sense to choose a Currency format for it, which will add the currency symbol before it and format it with two decimal places.
 
@@ -82,7 +71,7 @@ The system will pick a format for displaying date and numeric data in visualizat
 
 ![Choose Visualization Format 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.7-8.0.png#thumbnail-40)
 
-### Define Column​ Security Name
+## Define Column​ Security Name
 
 ![dslive8](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.8-8.0.png#thumbnail-40)
 
@@ -90,7 +79,7 @@ If the data in a dataset has to be controlled by Record Level Security or RLS, t
 
 For more information, please see [Record Level Security](../../../../software-developer/03-Security/record-level-security.md).
 
-### Set Up Automatic Column Links​
+## Set Up Automatic Column Links​
 
 ![Set Up Automatic Column Links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.9-8.0.png#thumbnail-40)
 
@@ -98,26 +87,28 @@ Any column of the dataset can be set up so that it presents an automatic link to
 
 For more information, see [Column Links](./column-links.md).
 
-### Set Up Geolocation Groups​
+## Set Up Geolocation Groups​
 
-If your data contains address information that you wish to display on any type of map chart, you need to create a Geolocation Group out of your desired address fields.
+If your data contains address information that you wish to display on any type of map chart, you must create a Geolocation Group out of your desired address fields.
 
 ![Set Up Geolocation Groups 1​](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.10-8.0.png#thumbnail)
 
 ![Set Up Geolocation Groups​ 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.11-8.0.png#thumbnail-60)
 
-To create a Geolocation Group you have to map your address data column or columns to the address type fields in the dialog. For example you may map the data column zip to the Postal/Zip Code field. Although any partial address is enough to create a Geolocation Group, mapping more columns, especially unique columns such as the country, helps create more accurate points on your map charts.
+To create a Geolocation Group, you have to map your address data column or columns to the address type fields in the dialog. For example, you may map the data column zip to the Postal/Zip Code field. Although any partial address is enough to create a Geolocation Group, mapping more columns, especially unique columns such as the country, helps create more accurate points on your map charts.
 
-### Use Formula Builder with Live Connect Datasets
+## Use Formula Builder with Live Connect Datasets
 ![formula-builder-standardized-syntax-82](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/formula-builder-20/formula-builder-standardized-syntax-82.png)  
 
-Formula Builder provides two modes for creating formulas. In most cases, select **Standardized Syntax**. This mode enables you to create formulas using a standardized syntax that is compatible with any database connected to the Qrvey platform. To use the specific syntax of the database, select **Data Engine Syntax (legacy)**.  
+Formula Builder provides two modes for creating formulas:
+- **Standardized Syntax** — (Most Common) This mode enables you to create formulas using a standardized syntax that is compatible with any database connected to the Qrvey platform.
+- **Data Engine Syntax (Legacy)** —  Uses the specific syntax of the database.
 
 For more information on Standardized Syntax, see [Using Standardized Syntax Mode](../03-Analyze/10-Formula%20Builder/using-standardized-syntax.md).
 
-### Optimize Live Connect Configuration
+## Optimize Live Connect Configuration
 
-The performance of your live connection may vary depending on the size of the dataset and the size of the database cluster. Performance issues may occur if the database cluster is not sized appropriately for the dataset. Qrvey recommends that your live connect data source returns results in under 30 seconds to prevent timeout errors. 
+The performance of your live connection may vary depending on the size of the dataset and the size of the database cluster. Performance issues may occur if the database cluster is not sized appropriately for the dataset. We recommend that your live connect data source returns results in under 30 seconds to prevent timeout errors.
 
 To ensure optimal performance, scale the infrastructure of your live connect data source by:
 - Loading a smaller dataset, if possible.

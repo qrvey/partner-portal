@@ -49,6 +49,14 @@ To mark a Dataset as a favorite, follow these steps.
     - [Analyze](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Analyze/overview-of-analyze)
     - [Activity Log](https://partners.qrvey.com/docs/composer/activity-log)
 
+### Rename a Dataset
+
+1. Navigate to the desired dataset card.
+2. Click on its name.
+3. Type to change it as desired.
+
+![Rename a Dataset](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.3-8.0.png#thumbnail-40)
+
 ## Share and Un-Share Datasets
 
 By default, datasets are only accessible in the application in which they are created.
