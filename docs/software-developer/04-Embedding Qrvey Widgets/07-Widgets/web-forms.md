@@ -1,7 +1,7 @@
 ---
 id: widget-webforms
-title: Web Form Design Widget
-sidebar_label: Web Form Design Widget
+title: Web Form - Design
+sidebar_label: Web Form - Design
 tags: [Software Developer]
 sidebar_position: 7
 displayed_sidebar: getting-started
