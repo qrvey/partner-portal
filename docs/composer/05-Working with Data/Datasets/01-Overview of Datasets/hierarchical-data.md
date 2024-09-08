@@ -10,7 +10,6 @@ displayed_sidebar: getting-started
 
 Qrvey has the ability to work with and analyze hierarchical data, which is often uploaded via [JSON File](../../connections.md#file-upload-connections). Hierarchical data allows you to organize information in a nested structure, making it easy to represent parent-child relationships. In Qrvey, hierarchical data can be used to create detailed, multi-level data visualizations and analyses.
 
-
 ## Create a Hierarchical Dataset
 
 ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon1.png#thumbnail)
@@ -22,7 +21,6 @@ To create a hierarchical dataset, follow these steps.
 2. Find the desired [JSON File](../../connections.md#file-upload-connections) connection from the list.
 3. Click **Create**.
     This will take you to the **Dataset Design** step.
-    
     
 ## View Hierarchical Dataset
 
@@ -63,9 +61,9 @@ The parent records in the main data source have a one-to-many relationship with 
 
 ## Customize Hierarchical Datasets
 
-You can apply [Transformations](../02-Design/03-Transformations/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it, just like with other datasets, as well as flatten object arrays.
+You can apply [Transformations](../02-Design/03-Transformations/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it (just like with other datasets) as well as flatten object arrays.
 
-In order to flatten the object array, follow these steps.
+In order to flatten an object array, follow these steps.
 
 2. Click the **Transformations** button on the top right corner of the columns list.
 3. Drag the **Array Flatten** transformation to the workspace.
@@ -73,8 +71,6 @@ In order to flatten the object array, follow these steps.
 
 ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon4.png#thumbnail)
 
-This transformation flattens the array and the effect can be seen in the form of an enabled object on the Dataset Design tab, as soon as the Transformation dialog is closed.
+As soon as the Transformation dialog is closed, this transformation flattens the array and the effect can be seen on the Dataset Design tab.
 
 ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon5.png#thumbnail)
-
-
