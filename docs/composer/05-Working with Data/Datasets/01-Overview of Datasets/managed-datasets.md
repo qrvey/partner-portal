@@ -171,19 +171,9 @@ To assign a security name to a column:
 3. Enter a security name and click **OK** to confirm.  
    Defining the security name for a column does *not* require a data reload. 
 
-## Set Up Automatic Column Links
-
-![Column-Link-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Column-Link-84.png)
+## Automatic Column Links
 
 Any dataset column can be configured so that it automatically presents a link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map. For more information, see [Column Links](../01-Overview%20of%20Datasets/column-links.md). 
-
-To set up an automatic column link:
-1. Click its three-dot menu.
-2. Point to **Column Link**.
-3. Click **Set**.  
-   Setting up automatic links for a column does *not* require a data reload. 
-
->**Note**: To obtain a column's ID for development purposes, click the column’s three-dot menu and select **Copy Column ID**.
 
 ## Configure Geolocation Groups
 

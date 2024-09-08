@@ -26,6 +26,8 @@ To create Column Links, follow these steps.
 5. Click **Save** to confirm and exit the modal.
     A blue link icon will appear on the selected column.
 
+>**Note**: To obtain a column's ID for development purposes, click the column’s three-dot menu and select **Copy Column ID**.
+
 Every time you add a new visualization to Dashboard Builder, any visualization containing columns with links will have a Page Action automatically predefined with your set URL.
 
 ![column-links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/column-links/column_3.gif#thumbnail)

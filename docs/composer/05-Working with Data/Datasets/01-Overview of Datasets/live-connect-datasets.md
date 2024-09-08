@@ -79,13 +79,11 @@ If the data in a dataset has to be controlled by Record Level Security or RLS, t
 
 For more information, please see [Record Level Security](../../../../software-developer/03-Security/record-level-security.md).
 
-## Set Up Automatic Column Links​
+## Automatic Column Links​
 
 ![Set Up Automatic Column Links](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/DatasetLive/dslive.9-8.0.png#thumbnail-40)
 
-Any column of the dataset can be set up so that it presents an automatic link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map. The automatic link can be set up from the Column Link command in the dot menu of the intended column.
-
-For more information, see [Column Links](./column-links.md).
+Any column of the dataset can be set up so that it presents an automatic link to a selected URL when it is used in a visualization. A common use case for this feature is where a column contains a location and you want the column to always link to a map site, showing the location on the map. The automatic link can be set up from the Column Link command in the dot menu of the intended column. For more information, please see [Column Links](./column-links.md).
 
 ## Set Up Geolocation Groups​
 
