@@ -1,49 +1,76 @@
 ---
 id: hierarchical-data
-title: Working With Hierarchical Data
-sidebar_label: Working With Hierarchical Data
+title: Hierarchical Data
+sidebar_label: Hierarchical Data
 tags: [Data Analyst]
-sidebar_position: 3
+sidebar_position: 4
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
-Qrvey has the ability to work with, and analyze hierarchical data, most of the time uploaded from JSON files. This article describes the process of loading such data in datasets and the fundamentals of hierarchical analysis.
+Qrvey has the ability to work with and analyze hierarchical data, which is often uploaded via [JSON File](../../connections.md#file-upload-connections). Hierarchical data allows you to organize information in a nested structure, making it easy to represent parent-child relationships. In Qrvey, hierarchical data can be used to create detailed, multi-level data visualizations and analyses.
 
-## Loading Hierarchical Data
-It is most common for the hierarchical data to exist in the form of a JSON file. A connection to the JSON file may be created from the **Connections** tab or when creating a new Dataset. For details, please see [File Upload Connection](../../connections.md). 
+## Create a Hierarchical Dataset
 
-To create a dataset out of your data begin with clicking on the **New Dataset** button on the *Datasets* tab, selecting the connection to the JSON file from the list of connections and clicking on **Create**.
- 
- ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon1.png#thumbnail)
+![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon1.png#thumbnail)
 
-This will take you to the **Dataset Design** step, which may look slightly different from your previous encounters with the screen if your JSON file contains *arrays* (either numeric or text), *objects*, or *object arrays*. We have used the attached <a href="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/contractors.json">contractors.json</a> file for the purpose of this documentation, which contains all of these field types: childrenAges is a numeric array, carModels is a text array, address is an object, and countriesVisited is an object array.
+To create a hierarchical dataset, follow these steps.
 
- ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon2.png#thumbnail)
+1. Navigate to the **Data > Dataset**.
+2. Click **New Dataset**. A modal will appear.
+2. Find the desired [JSON File](../../connections.md#file-upload-connections) connection from the list.
+3. Click **Create**.
+    This will take you to the **Dataset Design** step.
+    
+## View Hierarchical Dataset
 
-You notice the following special features with this data source:
-* There are new column types like *Numeric Array, Text Array, Object,* and *Object Array*.
-* *Address* column is an object that has additional columns of its own that are indented.
-* *CountriesVisited* is an object array that has additional columns of its own that are also indented. Furthermore, the column and its children are not selected and are in fact disabled.
+1. Navigate to the desired hierarchical dataset.  
+2. Click to open it.  
+    If your JSON file contains numeric or text `arrays`, `objects`, or `object arrays`, the UI will reflect this. 
+    
+For example, assuming the following JSON structure:
+```json
+[
+    {
+        "Name":"John Smith",
+        "DOB":"12/23/1975",
+        "children":2,
+        "childrenAges":[10,12],                         // numeric array
+        "carModels":["Ford","Chevy"],                   // string array
+        "address": { "city":"Chicago", "state":"IL",},  // object
+        "countriesVisited":[                            // object array
+        { "id":10, "country":"Germany" }, 
+        { "id":15, "country":"Spain" },
+        { "id":18, "country":"Iraq" }
+        ]
+    }
+]
+```
+The **Data > Dataset > Columns** page will register these new data structures.
+- There are new column types like *Numeric Array, Text Array, Object,* and *Object Array*.
+- The `Address` column is an object that has its own nested columns.
+- `CountriesVisited` is an object array with its own nested columns. Furthermore, the column and its children are not selected and are in fact disabled.
 
-If you go to the *View Data* tab you will see a better view of how the data is perceived by the system.
+![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon2.png#thumbnail)
 
- ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon3.png#thumbnail)
+You may also navigate into the **Data > Dataset > View Source Data** tab to see how the raw data is registered in Qrvey.
 
-The parent records in the main data source have a one-to-many relationship with *countriesVisited* object array that can behave like a left join between two relational tables and can be “inflated” to produce a flat dataset. In order to flatten the object array click on the **Transformations** button on the top right corner of the columns list, drag the **Array Flatten** transformation to the workspace and select the **Inflate** option.
+![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon3.png#thumbnail)
 
- ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon4.png#thumbnail)
+The parent records in the main data source have a one-to-many relationship with `countriesVisited` object array, which can act like a left join between two relational tables and can be “inflated” to produce a flat dataset. 
 
+## Customize Hierarchical Datasets
 
-This transformation flattens the array and the effect can be seen in the form of an enabled object on the Dataset Design tab, as soon as the Transformation dialog is closed. 
+You can apply [Transformations](../02-Design/03-Transformations/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it (just like with other datasets) as well as flatten object arrays.
 
- ![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon5.png#thumbnail)
+In order to flatten an object array, follow these steps.
 
+2. Click the **Transformations** button on the top right corner of the columns list.
+3. Drag the **Array Flatten** transformation to the workspace.
+4. Select the **Inflate** option from the dropdown menu.
 
->**Note**: To learn more about Transformations, see [Transformations](../02-Design/03-Transformations/transformations.md).
+![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon4.png#thumbnail)
 
-You can design your dataset as usual before loading it. For more information, see [Overview of Datasets](./overview-of-datasets.md).
+As soon as the Transformation dialog is closed, this transformation flattens the array and the effect can be seen on the Dataset Design tab.
 
-
-</div>
+![hierarchical-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/get-started/hierarchical-data/hiercon5.png#thumbnail)

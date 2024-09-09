@@ -50,7 +50,7 @@ The system will attempt to connect to the database server as soon as all of the 
 
 > **Note:** Once the connection to the database server is established, the information can be saved as a new connection. However, this connection is to the database server itself, and more information needs to be provided at the time that the connection is used, in order to get to a specific database on that server, and a specific table or view in that database, to load data.
 
-### Typical Configuration Method
+### Standard Configuration Method
 
 <!-- ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/databases/dbs2.7.6.png#thumbnail-60) -->
 
@@ -68,7 +68,7 @@ If you need to include more advanced attributes with your connection, you may us
 
 ![databases](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_databases/connections4.png#thumbnail-60)
 
-### File Upload Configuration
+### File Upload Connections
 
 It is possible to create connections by uploading a single file from your local machine. Acceptable file types include: CSV, JSON, ndJSON, and Parquet. File-based data is much simpler than data stored within a database. This makes the storage medium versatile, yet error-prone at the same time. Please make sure your data is cleaned, properly formatted, and follows any other data storage best-practices for your relevant file type.
 
@@ -79,7 +79,7 @@ It is possible to create connections by uploading a single file from your local 
 - **View & Edit Sample JSON Data:** The system will validate JSON uploads and show the first record as a sample. You can edit this sample directly to modify the structure of the final dataset uploaded from this connection.
 - **View Source Data:** Once the connection is saved, click **View Source Data** to display a partial view of the data.
 
-### Amazon S3 Bucket Configuration
+### Amazon S3 Bucket Connection
 
 Amazon S3 Buckets and folders storing CSV, JSON, or ndJSON files can be used as Connections. This offers the following features:
 
@@ -127,7 +127,7 @@ After creating the Push API connection, you must create a new dataset using this
 
 To configure a Push API Dataset, follow these steps.
 
-1. Create a [New Managed Dataset](./Datasets/01-Overview%20of%20Datasets/datasets-managed.md) and set the desired Push API connection as its data source.  
+1. Create a [New Managed Dataset](./Datasets/01-Overview%20of%20Datasets/managed-datasets.md) and set the desired Push API connection as its data source.  
 The sample JSON schema you supplied for the source connection will be translated into columns with associated column data types.
 - Columns that appear indented below another column are constructed from a hierarchical JSON object array in the sample source JSON provided in the Push API connection. 
 - Columns of type `Object Array` are disabled in the **Design** page and cannot be used to construct unique identifiers, row-level security and column links; however, they can be used within a transformation that operates on array types.

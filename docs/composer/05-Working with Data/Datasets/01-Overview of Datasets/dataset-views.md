@@ -3,103 +3,70 @@ id: dataset-views
 title: Dataset Views
 sidebar_label: Dataset Views
 tags: [Data Analyst]
-sidebar_position: 4
+sidebar_position: 5
 displayed_sidebar: getting-started
 ---
 
-<div>
+A Dataset View is a type of reference dataset that points to another dataset as its source. Dataset views allow you to create a customized view of a dataset for users with access to the application where the dataset view resides. Dataset views only belong to a single application; however, the source dataset can belong to a different application. Dataset views are recommended whenever you want to share data amongst users with access to different applications, while avoiding replication and copying of large datasets.
 
+## Create a Dataset View
 
-A dataset view is a type of reference dataset that points to another dataset as its source.  Dataset views allow you to create a customized view of a dataset for users with access to the application where the dataset view resides.  Dataset views only belong to a single application; however, the source dataset can belong to a different application.  Dataset views are recommended whenever you want to share data amongst users with access to different applications and avoid replicating and copying large datasets.
+Dataset views can only be created from [shared datasets](./overview-of-datasets.md#share-and-un-share-datasets).
 
-## Creating a Dataset View (in Qrvey Composer)
-To create a new dataset view, click **New Dataset** on the *Datasets* page.  Click on the *Shared Data* tab, select a shared dataset as the source, and then click **New Dataset View**.  Dataset views can only be created if at least one shared dataset exists in at least one application.
+To create a new dataset view, follow these steps.
 
+1. Navigate to **Data > Datasets** and click **New Dataset**.  
+2. Click on the **Shared Data** tab and select a shared dataset as the source.
+3. Click **New Dataset View**.  
+   The owner's name as well as the app in which the original dataset was created are both shown for all shared datasets. 
 
 ![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/datasetviews4.png#thumbnail-60) 
 
+## View Dataset View
 
-Note that the name of the owner and the app in which the original dataset was created are shown for all shared datasets. <br/>
-From the Design page you can perform the following actions on a dataset view:
-
-* Activate or deactivate individual columns
-* Change friendly column names
-* Change column visualization formats
-* Create geolocation groups
-* Set column links
-
-The following actions are restricted for dataset views: 
-* Edit connection settings and/or source queries
-* Create dataset joins
-* Create and modify transformations
-* Change column data types
-* Change column input formats
-* Set unique identifiers
-* Define data sync schedules
-
-In summary, any action that would change the underlying data structure is restricted for dataset views.
+1. Navigate to **Data > Datasets** and find the desired dataset.  
+   You can see which datasets have been created as dataset views by looking at the Type property from the main Datasets page.
 
 ![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/dataviews2.png#thumbnail-40) 
 
+## Customize Dataset Views
 
+Any [customization or configuration](./managed-datasets.md#create-a-managed-dataset) that would change the underlying data structure is restricted for dataset views.
 
-You can see which datasets have been created as dataset views by looking at the Type property from the main Datasets page.
+Therefore, you can perform the following:
+- Show/hide individual columns.
+- Change friendly column names.
+- Change column visualization formats.
+- Create geolocation groups.
+- Set column links.
 
+The following actions are restricted for dataset views: 
+- Edit connection settings and/or source queries.
+- Create dataset joins.
+- Create and modify transformations.
+- Change column data types.
+- Change column input formats.
+- Set unique identifiers.
+- Define data sync schedules.
 
-## Creating a Dataset View (via API)
-Creating a dataset view programmatically is a three step process, assuming you must first create a shared dataset:
+## Create Dataset View via API
 
-1. Designate a dataset as a shared dataset.
-2. Retrieve the connection ID of the shared dataset.
-3. Create a new dataset view with the source dataset’s connection ID.
+To create a dataset view via the API, follow these steps.
 
-Use the following API endpoint to designate the source dataset as a shared dataset:
+1. Choose a Shared Dataset. There are two ways to do this:  
 
-https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
+   - **Use Qrvey Composer** to [Share a Dataset](./overview-of-datasets.md#share-and-un-share-datasets) or identify an existing one.
+   - **Use this Endpoint** to mark a dataset as shared. To do this, you must pass `{ “isPublic”: true }` in the request body.
+   ```
 
-You must also define a request body with the “isPublic” property set to “true”:
+   https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true
+   
+   ```
 
-```
-{
-   “isPublic”: true
-}
-```
+2. Get the shared dataset's `connectionId`, which you will need in the next step. To do this, you can use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/9xpku63qfxq54-get-dataset) endpoint.
 
-The following parameters must be defined for the API endpoint:
+3. Call the [Create Dataset View from Shared Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/d1a594100ae37-create-dataset-view-from-shared-dataset) endpoint.
 
-* **DOMAIN** is the 5-letter subdomain of your Qrvey instance
-* **USER_ID** parameter should be the ID of the user that owns the application where the dataset was created
-* **APP_ID** is the ID of the application where the dataset was created
-* **DATASET_ID** is the ID of the dataset that is to become a shared dataset.
+**Note:** To make this request, you need the `domain`, `appId`, and `datasetId` values. If using Qrvey Composer, open **Apps > [Application] > Data > [Dataset] > Design** and check the URL: `https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}`
+   
 
-You can get the ID of the dataset by entering the Design view for the target dataset and inspecting the URL:
-
-https://{{DOMAIN}}.qrveyapp.com/app/index.html#/application/{{APP_ID}}/data-uploads/{{DATASET_ID}}
-
-After designating the dataset as a shared dataset, the next step is to create a new dataset view that will use the shared dataset as its source.  The first step is to call the following API endpoint to retrieve the shared dataset’s connection ID:
-
-https://{{DOMAIN}}.qrveyapp.com/devapi/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}
-
-From the JSON response, retrieve the “connectionId” property value, which you will use in the next and final API call.
-
-![dataset_views](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Dataset+Views/dataviews3.png#thumbnail-60) 
-
-
-Once you have the connection ID for the source shared dataset, call the following API endpoint to create a new dataset view:
-
-https://{{DOMAIN}}.qrveyapp.com/api/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/clone/connection/{{CONNECTION_ID}}
-
-For this API call, the `appId` and `userId` must be the ID of the target application and the ID of the user owner for the target application where the new dataset view will be created.
-
-You must also define the `appId` and `userId` of the source application where the source dataset resides within the API call’s request body:
-
-```
-{
-   appId: “{{APP_ID}}”,
-   userId: “{{USER_ID}}”
-}
-```
-
-
-
-</div>

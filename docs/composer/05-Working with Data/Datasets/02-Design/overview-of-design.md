@@ -30,13 +30,13 @@ The Design tab of the Data feature enables you to design your dataset. The follo
 
 
 ## Columns tab and Column IDs
-The Columns tab enables you to view each column in the dataset and modify its settings as needed. For information on the available options, see [Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md).
+The Columns tab enables you to view each column in the dataset and modify its settings as needed. For information on the available options, see [Datasets - Managed](../01-Overview%20of%20Datasets/managed-datasets.md).
 
 
 **See also:**
 For more information on the features available in the Design page, see:
 
-* **[Datasets - Managed](../01-Overview%20of%20Datasets/datasets-managed.md)**
+* **[Datasets - Managed](../01-Overview%20of%20Datasets/managed-datasets.md)**
 * **[Geolocation](../02-Design/02-Geolocation/overview-of-geolocation.md)**
 * **[Transformations](../02-Design/03-Transformations/transformations.md)**
 * **[Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md)**
