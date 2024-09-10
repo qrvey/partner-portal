@@ -42,14 +42,14 @@ For more information about creating user roles in the Admin Center, please refer
 
 Use the [Set Record and Column Level Security](https://qrvey.stoplight.io/docs/qrvey-api-doc/cd1930d56b7c8-set-record-level-and-column-level-security) endpoint to apply CLS to a dataset. If you need a column ID, use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/2ff17959232b9-get-dataset) endpoint. The “Get Dataset” endpoint will return the complete dataset definition for a specific dataset in JSON format, which can then be modified to include the Column Level Security access roles.
 
-The property to modify for CLS is called `accessRoles` and is found in the “columns” child object. Define the `accessRoles` property if it does not exist, and then set the property value to either the name or ID of the user role. You can optionally set the `accessRoles` property to an array of comma-delimited role names.
+Within the the "Set Record and Column Level Security Request", define the `accessRoles` property if it does not exist on the dataset column, and set its value to either the name or ID of the user role. You can optionally set the `accessRoles` property to an array of comma-delimited role names.
 
 When applying Column Level Security (CLS) to a Dataset Column, the developer can utilize either the Role Id or the Role Name to define the `accessRoles` on the column and to pass the roles in the Widget configuration. However, the role Id and role name cannot be used simultaneously.
 
 - If the role id is applied to the column `accessRoles`, then role ID must be used in the roles attribute for widget configuration.
 - If the role name is applied to the column `accessRoles`, then the role name must be used in the roles attribute for widget configuration.
 
-Notice the difference between the screenshots here in step 2 (which demonstrates role ID) and step 3 below (which demonstrates role name). Choose one system or the other for both the the application of CLS and widget config.
+Notice the difference between the screenshots here in step 2 (which demonstrates role ID) and step 3 below (which demonstrates role name). Choose one system or the other for both the application of CLS and widget config.
 
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls2.png#thumbnail-60) 
 
