@@ -28,7 +28,6 @@ The Admin Center is an application to manage and monitor your:
 ## Data Router
 The Data Router module is responsible for handling data ingestion and synchronization. Additionally, all transformation rules are configured through the Data Router. The engine is behind all data functionality of Qrvey and all interaction with APIs that manage connections and datasets are handled by the Data Router Engine. We don’t recommend interacting with the Data Router engine, as all interactions are going to be very low level and require deep understanding of the inner workings of the product. Please contact the Qrvey support team if you think that you need to work with any of these low level functions.
 
-<a href="https://www.google.com/url?q=https://documenter.getpostman.com/view/1152381/TVCb4AGN%23f5d31d51-13e7-4983-af72-0a414de50756&sa=D&source=docs&ust=1645016920099460&usg=AOvVaw2Li2lUlzOEWCnnix6j05Zk" target="_blank">Details for using Data Router can be found here</a>.
 
 ## Qrvey Composer
 Qrvey Composer is the main interface used by Tier 1 Users.The product serves as the UI that users can login to in order to configure datasets, create dashboards, set up automation rules and build reports. 
