@@ -7,8 +7,6 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
 ## Overview
 
 Column Level Security (CLS) allows administrators to restrict data access at the column level within a dataset to users belonging to one or more predefined roles.  Users must be members of at least one of the assigned roles for CLS in order to see data for that column and reference it within any of the supported embedded widgets.  CLS is only supported for embedded widgets at this time and only for the following UI components:
@@ -30,7 +28,7 @@ The next section provides more detail around the process outlined above, and off
 ## Configuring Column Level Security
 ### Step 1:  Create the User Role(s)
 
-This step must be performed by a user with administrator credentials.  Log in to the Admin Center and navigate to the Roles & Permissions UI.  At least one user role must be defined here to use with Column Level Security.
+This step must be performed by a user with administrator credentials. Log in to the Admin Center and navigate to the Roles & Permissions UI.  At least one user role must be defined here to use with Column Level Security.
 
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls1.png#thumbnail) 
 
@@ -40,27 +38,25 @@ For more information about creating user roles in the Admin Center, please refer
 
 ### Step 2:  Apply CLS to Dataset(s)
 
-Applying Column Level Security to a dataset requires making calls to the following API endpoints:
+> **Note**: CLS can only be applied via API calls. Applying CLS to datasets within the Composer UI is not supported at this time.
 
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/2ff17959232b9-get-dataset">Get Dataset (HTTP GET)</a>
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/c559f406c921b-update-dataset">Update a Dataset (HTTP PUT)</a>
-* <a href="https://qrvey.stoplight.io/docs/qrvey-api-doc/94b9bad59a2cc-apply-changes">Apply Changes (HTTP POST)</a>
+Use the [Set Record and Column Level Security](https://qrvey.stoplight.io/docs/qrvey-api-doc/cd1930d56b7c8-set-record-level-and-column-level-security) endpoint to apply CLS to a dataset. If you need a column ID, use the [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/2ff17959232b9-get-dataset) endpoint. The “Get Dataset” endpoint will return the complete dataset definition for a specific dataset in JSON format, which can then be modified to include the Column Level Security access roles.
 
-The “Get a Dataset” endpoint will return the complete dataset definition for a specific dataset in JSON format, which can then be modified to include the Column Level Security access roles.  The property to modify for CLS is called “accessRoles” and is found in the “columns” child object.  Define the “accessRoles” property if it does not exist, and then set the property value to the name of the user role.  You can optionally set the “accessRoles” property to an array of comma-delimited role names.
+The property to modify for CLS is called `accessRoles` and is found in the “columns” child object. Define the `accessRoles` property if it does not exist, and then set the property value to either the name or ID of the user role. You can optionally set the `accessRoles` property to an array of comma-delimited role names.
+
+When applying Column Level Security (CLS) to a Dataset Column, the developer can utilize either the Role Id or the Role Name to define the `accessRoles` on the column and to pass the roles in the Widget configuration. However, the role Id and role name cannot be used simultaneously.
+
+- If the role id is applied to the column `accessRoles`, then role ID must be used in the roles attribute for widget configuration.
+- If the role name is applied to the column `accessRoles`, then the role name must be used in the roles attribute for widget configuration.
+
+Notice the difference between the screenshots here in step 2 (which demonstrates role ID) and step 3 below (which demonstrates role name). Choose one system or the other for both the the application of CLS and widget config.
 
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls2.png#thumbnail-60) 
 
-
-First, make a call to the “Get a Dataset” endpoint to retrieve the dataset definition.  Apply one or more access roles and then call the “Update a Dataset” endpoint, using the modified response from the “Get a Dataset” endpoint.  Finally, call the “Apply Changes” endpoint to make the dataset property changes effective.  All the endpoints listed above require the User ID, App ID and Dataset ID to make the API calls.
-
-> **Note**:  CLS can only be applied via API calls.  Applying CLS to datasets within the Composer UI is not supported at this time.
-
 ### Step 3:  Pass the User Role(s) in Widget Config Object
 
-The final step is to declare the roles that the user is a member of when constructing the JSON config object for the embedded widget.  If you are unfamiliar with embedding widgets, please refer to the [Widgets Quick Start Guide](../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md) article for a good overview of how it works.  The JSON widget config object should be constructed on the back-end, so that the widget configuration is properly encrypted with the JWT token for security purposes.  Simply define the “roles” property in the JSON config object and set the value to the name of the user role as a string.  You can optionally use an array of strings to pass more than one role with the configuration object.  The sample Javascript code below provides an example of what this call looks like.
+The final step is to declare the roles that the user is a member of when constructing the JSON config object for the embedded widget. If you are unfamiliar with embedding widgets, please refer to the [Widgets Quick Start Guide](../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md) article for a good overview of how it works. The JSON widget config object should be constructed on the back-end, so that the widget configuration is properly encrypted with the JWT token for security purposes. Simply define the “roles” property in the JSON config object and set the value to the name of the user role as a string. You can optionally use an array of strings to pass more than one role with the configuration object. The sample JavaScript code below provides an example of what this call looks like.
 
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls3.png#thumbnail-60) 
 
 The sample code above is written in Javascript; however, you can make the JWT call in any back-end server-side web application development language of your choice.  For more information about securely embedding Qrvey platform widgets within external web applications, please see the [Embedding Widgets Using a Security Token](../04-Embedding%20Qrvey%20Widgets/widget-authentication.md) article.
-
-</div>
