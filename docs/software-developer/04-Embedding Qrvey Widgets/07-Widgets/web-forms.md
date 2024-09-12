@@ -9,6 +9,8 @@ displayed_sidebar: getting-started
 
 When embedded in an application, the Web Form Design widget enables end users to create, preview, and modify web forms. The Qrvey platform provides three types of web forms: survey, form, and quiz. 
 
+**Remember:** A Webform must be paused in order for any changes or edits to be made. If a Webform is not paused, the embedded widget will be visible, but not accept click events.
+
 ## Embeddable Script
 
 ```html
@@ -32,7 +34,7 @@ When embedded in an application, the Web Form Design widget enables end users to
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget. 
+The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -44,6 +46,9 @@ The following table lists the properties associated with this widget.
 | **qrvey_id** | `String`. The ID of the webform that will be edited in the widget. | **Required** |
 | **app_type** | `String`. The type of webform the widget will instantiate. Options: `FORM` / `QUIZ` / `SURVEY`. | **Required** |
 | **style_options** | `Object`. Sets CSS colors and styles for the web form. For details, please see [the style options object](#the-style-options-object) below. | **Optional** |
+
+
+## The Style Options Object
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
