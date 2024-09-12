@@ -36,11 +36,23 @@ The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
-| **api_key** | `String`, Your organization’s unique API key required to access the Qrvey platform. Never expose your organization’s API key to external users. In Production environments, use a secure token (qv_token) to encrypt the API key. | Yes, if the qv_token is not provided |
-| **qv_token** | `String`, A secure token encrypted via JWT to authenticate and authorize embedded widgets. Establishes a secure connection between the host application and the Qrvey system. For more information, see [Embedding Widgets Using a Security Token](../widget-authentication.md). | Yes, if the api_key is not provided |
-| **app_id** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | Yes |
-| **domain** | `String`, The base URL of your instance of the Qrvey platform. | Yes | 
-| **user_id** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if the user_id is not included in a session cookie  |
-| **qrvey_id** | `String`, ID of the webform ID that will be edited in the widget.  | Yes |
-| **app_type** | `String`, The type of webform the widget will instance. Options: "FORM" / "QUIZ" / "SURVEY". | Yes |
-| **Style_option** |Object {<br />"main_color": String (HEX Color),<br />"secondary_color": String (HEX Color),<br />"tab_bar": String (HEX Color),<br /> "field_icon": String (HEX Color),<br />"error": String (HEX Color),<br />"notification": String (HEX Color),<br />"successful": String (HEX Color), <br />"warning": String (HEX Color)<br /> } <br /><br />to change widget colors| No |
+| **api_key** | `String`. Your organization’s API key to access the Qrvey platform. | **Required**, if `qv_token` is not provided. |
+| **qv_token** | `String`. A secure token used to authenticate and authorize embedded widgets. | **Required**, if `api_key` is not provided. |
+| **app_id** | `String`. The ID of the Qrvey application containing the webform. | **Required** |
+| **domain** | `String`. The base URL of your Qrvey instance. | **Required** |
+| **user_id** | `String`. The ID of the Qrvey Composer user who owns the application that is being embedded. Alternatively, you can specify the user ID in a Qrvey session cookie. | **Required**, if the `user_id` is not included in a session cookie. |
+| **qrvey_id** | `String`. The ID of the webform that will be edited in the widget. | **Required** |
+| **app_type** | `String`. The type of webform the widget will instantiate. Options: `FORM` / `QUIZ` / `SURVEY`. | **Required** |
+| **style_options** | `Object`. Sets CSS colors and styles for the web form. For details, please see [the style options object](#the-style-options-object) below. | **Optional** |
+
+| **Property** | **Value** | **Required** |
+| --- | --- | --- |
+| **main_color** | `String`, Sets a hex color for the main elements of the webform. | **Optional** |
+| **secondary_color** | `String`, Sets a hex color for secondary elements of the webform. | **Optional** |
+| **tab_bar** | `String`, Sets a hex color for the tab bar of the webform. | **Optional** |
+| **field_icon** | `String`, Sets a hex color for field icons in the webform. | **Optional** |
+| **error** | `String`, Sets a hex color for error messages in the webform. | **Optional** |
+| **notification** | `String`, Sets a hex color for notifications in the webform. | **Optional** |
+| **successful** | `String`, Sets a hex color for successful messages in the webform. | **Optional** |
+| **warning** | `String`, Sets a hex color for warning messages in the webform. | **Optional** |
+
