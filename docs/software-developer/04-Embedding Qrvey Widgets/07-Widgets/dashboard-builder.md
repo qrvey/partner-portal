@@ -18,10 +18,10 @@ When embedded in an application, the Dashboard Builder widget enables users to m
 <!-- Config -->
 <script>
 var config = {
-  api_key: "<API_KEY>",
+  apiKey: "<API_KEY>",
   domain: "<DOMAIN>",
-  user_id: "<USER_ID>",
-  app_id: "<APP_ID>"
+  userId: "<USER_ID>",
+  appId: "<APP_ID>"
 };
 </script>
 
@@ -29,7 +29,7 @@ var config = {
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
 
-## Configuration Object
+## The Configuration Object
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -42,14 +42,13 @@ var config = {
 | **timezone** | `Object`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user.  | **Optional** |
 | **privatePages** | `Boolean`, Predefines the state of new dashboards. If `true`, every new dashboards will be private. Defaults to false. | **Optional** |
 | **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | **Optional** |
-| **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. | **Optional** |
+| **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. For details, please see [The Style Object](#the-style-object) below.| **Optional** |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. | **Optional** |
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#the-feature-permission-object) below. | **Optional** |
-
 
 ## The Style Object
 
@@ -66,19 +65,8 @@ var config = {
 ## The Feature Permission Object 
 The following table describes the properties of the `featurePermission` object.
 
-Structure:
-
-```js
-
-featurePermission: {
-  pagesAndApplication{
-   hidePagesBar: true // or false (default)
-  },
-}
-```
-
-| **Property** | **Description** |  **Type** | **Default** | **Required** |
-| --- | --- | --- | --- | --- |
+| **Property** | **Description** | **Required** |
+| --- | --- | --- |
 | **liteVersion** | `Boolean`, Hides all elements that are managed by feature permissions if true. Defaults to false. For more details, check the example given below this table. | **Optional** |
 | **navigation** | `Object`, Defines navigation-related features that can be hidden. | **Optional** |
 | **navigation.hideNavigationTab** | `Boolean`, Hides the entry method to the navigation tab in the top bar of the widget if true. Defaults to false. | **Optional**| 
@@ -131,7 +119,7 @@ const widgetConfig = {
 The **personalization** object setting controls customization options for the Dashboard Builder widget and supports the following properties at this time:
 
 | **Property** | **Description** | **Required** |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- |
 | **fit_panel_button** | `Boolean`, Shows the fit to panel button on the panels. Defaults to true. | **Optional** | 
 
 
