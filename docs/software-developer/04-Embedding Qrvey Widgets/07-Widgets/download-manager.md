@@ -1,7 +1,7 @@
 ---
 id: widget-download-manager
-title: Download Manager Widget
-sidebar_label: Download Manager Widget
+title: Download Manager
+sidebar_label: Download Manager
 tags: [Software Developer]
 sidebar_position: 2
 displayed_sidebar: getting-started
@@ -33,7 +33,6 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -46,7 +45,7 @@ The following table lists the properties associated with this widget.
 | **showModalButton** | `Boolean`, If set to `true`, displays the Download Manager as a download button, which opens the download manager as a modal on click. Defaults to `false`. | **Optional** |
 | **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. | **Optional** |
 
-### The i18n Object
+### i18n
 
 For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
 
@@ -55,23 +54,21 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | **lang** | `String`, The language the language to use for the UI. Example: `"es"`,  | **Required** |
 | **locale** | `String`, The locale code to use for date and number formatting. Example: `"es-ES"`,  | **Optional** |
 
-## Open Download Manager Modal
+## Events 
 
-The Download Manager widget provides an exposed method that enables you to trigger the modal from any other element in your page. For example:
+### `openDownloadManager()`
 
-`<qrvey-download-manager settings="downloadManagerConfig"></qrvey-download-manager>`
+Enables you to open the Download Manager modal in JS or from another element in your page. Example:
 
-Access the method using a query selector. For example: 
+```html
+<qrvey-download-manager settings="downloadManagerConfig"></qrvey-download-manager>
+
+<button onclick="openmodal()">Open Modal</button>
+```
 
 ```js
 function openmodal () {
-const el = document.querySelector('qrvey-download-manager');
-el.openDownloadManager();
+    const el = document.querySelector('qrvey-download-manager');
+    el.openDownloadManager();
 }
-```
-
-Then create a button and execute your function. For example: 
-
-```html
-<button onclick="openmodal()">Open Modal</button>
 ```

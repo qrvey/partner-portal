@@ -29,7 +29,7 @@ var config = {
 <script type="text/javascript" src="https://<WIDGETS_URL>/widgets-launcher/app.js"></script>
 ```
 
-## The Configuration Object
+## Configuration Object
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
@@ -40,19 +40,19 @@ var config = {
 | **userId** | `String`, ID of the Qrvey User that owns the application being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if `userid` is not included in a session cookie.  |
 | **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user. | **Optional** |
 | **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the widget will open to "browse all dashboards". | **Optional** |
-| **timezone** | `Object`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user.  | **Optional** |
+| **timezone** | `Object`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user.  | **Optional** |
 | **privatePages** | `Boolean`, Predefines the state of new dashboards. If `true`, every new dashboards will be private. Defaults to false. | **Optional** |
 | **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | **Optional** |
-| **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. For details, please see [The Style Object](#the-style-object) below.| **Optional** |
+| **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
-| **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
+| **authenticatedSession.email** | `String`, The `email` property in the `authenticatedSession` object specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
-| **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#the-feature-permission-object) below. | **Optional** |
+| **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 
-## The Style Object
+### Styles
 
 | **Property** | **Description**  | **Required** |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ var config = {
 | **tab_font_color** | Sets tab font color using a hex color value. | **Optional** |
 | **error_color** | Sets error color using a hex color value. | **Optional** |
 
-## The Feature Permission Object 
+###  Feature Permission 
 The following table describes the properties of the `featurePermission` object.
 
 | **Property** | **Description** | **Required** |
@@ -118,7 +118,7 @@ const widgetConfig = {
 ```
 
 ## Events
-The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
-* `atApplyUserFilters()`: Enables changes to the `builderFilters` property - the expected value for this property is a reduced version of the filter object. This property is a collection of objects that includes:
-  * Operator: defines which operation will be performed with the expressions.
-  * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
+
+### `atApplyUserFilters()`
+
+Enables changes and updates to [the `userFilters`](../filters-embedded-scenarios.md) property.

@@ -1,7 +1,7 @@
 ---
 id: widget-pixel-perfect-reports
-title: Pixel-perfect Reports Widget
-sidebar_label: Pixel-perfect Reports Widget
+title: Pixel-perfect Reports
+sidebar_label: Pixel-perfect Reports
 tags: [Software Developer]
 sidebar_position: 3
 displayed_sidebar: getting-started
@@ -31,8 +31,6 @@ The Pixel-perfect Reports widget enables you to embed the [Pixel-perfect Reports
 
 ## Configuration Object
 
-The following table lists the properties associated with this widget.
-
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided |
@@ -48,7 +46,7 @@ The following table lists the properties associated with this widget.
 | **parameterValues** | `Object`, Enables you to set the value of a [pixel perfect parameter](../../../composer/10-Pixel-perfect%20Reports/data-and-parameters.md). This value will override the default value set for the parameter. Pattern: `{ key1: value1, key2: value2 }` Example: `{ parameterName: paramVal }`. | **Optional** |
 | **defaultMode** | `String`, either `"preview"` or `"design"`. A value of `"preview"` enables users to embed the Pixel-perfect Reports in preview mode. Defaults to `"design"` if not set.  | **Optional** |
 
-### The `timezone` Object
+### Timezone
 
 For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).
 
