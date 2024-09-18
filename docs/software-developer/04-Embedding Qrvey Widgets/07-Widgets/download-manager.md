@@ -46,7 +46,7 @@ The following table lists the properties associated with this widget.
 | **showModalButton** | `Boolean`, If set to `true`, displays the Download Manager as a download button, which opens the download manager as a modal on click. Defaults to `false`. | **Optional** |
 | **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. | **Optional** |
 
-### The i18n Object
+### i18n
 
 For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
 

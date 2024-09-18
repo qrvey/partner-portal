@@ -49,13 +49,13 @@ The following table lists the properties associated with this widget.
 | **fitPanelButton** | `Boolean`, When false, hides the "fit to panel" button on charts within the dashboard. Default value is true. | **Optional** |
 | **filterPanelDefaultView** | `String`, Decides the default state of the side filter panel, if it’s been added to the view. It can be set to `open` or `closed`. The default value is `closed`. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
-| **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
-| **styles** | `Object`, Configure style options that can be used to override the default styles, allowing for while-labeling the widget. For details, please see [The Styles Object](#the-styles-object) below.| **Optional** |
+| **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see [The Personalization Object](#personalization) below. | **Optional** |
+| **styles** | `Object`, Configure style options that can be used to override the default styles, allowing for while-labeling the widget. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, please see [Using Custom Tokens](../customTokens.md). | **Optional** |
-| **featurePermission** | `Object`, Configures which features are available in the widget. For more details, please see [The Feature Permission Object](#the-feature-permission-object) below. | **Optional** |
-| **subscriptionSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscription Settings Object](#the-subscription-settings-object) below. | **Optional** |
+| **featurePermission** | `Object`, Configures which features are available in the widget. For more details, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
+| **subscriptionSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscription Settings Object](#subscription-settings) below. | **Optional** |
 
-## The Feature Permission Object
+### Feature Permission
 
 The following table describes the properties of the `featurePermission` object.
 
@@ -109,7 +109,7 @@ const widgetConfig = {
 }
 ```
 
-## The Subscription Settings Object
+### Subscription Settings
 
 In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts.  The Subscriptions feature relies on the user being authenticated and needs the `clientId` property set for the logged-in user. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
 
@@ -122,7 +122,8 @@ In the Dashboard View widget, you can enable end users to subscribe to a schedul
 | **email_message.hide_add_subject** | `Boolean`, Toggles visibility of the email's subject field.| **Optional** |
 | **email_message.hide_add_message** | `Boolean`, Toggles visibility of the message field. | **Optional** |
 
-## The Personalization Object
+### Personalization
+
 Configures end-user personalization. In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings. End User Personalization feature relies on the user being authenticated and needs the `clientId` property set for the logged-in user.
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
@@ -151,7 +152,8 @@ The following table describes the properties of the `personalization` object.
 | **rearrange_chart** | `Boolean`, If false, users cannot rearrange the chart panels, when in edit mode. Defaults to true. | **Optional** |
 
 
-## The Styles Object 
+### Styles 
+
 In the Dashboard View widget, you can override CSS settings for white-labeling purposes. When using the `styles` object, house the properties inside the `pageView` object. For example:
 
 ```
