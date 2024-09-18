@@ -56,7 +56,7 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 
 ## Events 
 
-### `openDownloadManager`
+### `openDownloadManager()`
 
 Enables you to open the Download Manager modal in JS or from another element in your page. Example:
 
