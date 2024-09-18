@@ -197,5 +197,7 @@ The following table describes the properties of the `styles` object.
 | **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) |
 
 ## Events
-The widget [supports custom events](../custom-events.md) to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
-* `atApplyUserFilters()` — Enables changes to [the `userFilters` property](../filters-embedded-scenarios.md).
+
+### `atApplyUserFilters()`
+
+Enables changes and updates to [the `userFilters`](../filters-embedded-scenarios.md) property.

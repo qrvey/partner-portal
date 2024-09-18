@@ -118,7 +118,7 @@ const widgetConfig = {
 ```
 
 ## Events
-The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
-* `atApplyUserFilters()`: Enables changes to the `builderFilters` property - the expected value for this property is a reduced version of the filter object. This property is a collection of objects that includes:
-  * Operator: defines which operation will be performed with the expressions.
-  * Expressions: a collection of objects that contains the questions/column reference, the type of operation applied to the questions, and the values that will be used for filtering.
+
+### `atApplyUserFilters()`
+
+Enables changes and updates to [the `userFilters`](../filters-embedded-scenarios.md) property.
