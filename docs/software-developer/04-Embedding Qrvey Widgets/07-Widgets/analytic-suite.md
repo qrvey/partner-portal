@@ -1,7 +1,7 @@
 ---
 id: widget-analytic-suite
-title: Analytic Suite Widget
-sidebar_label: Analytic Suite Widget
+title: Analytic Suite
+sidebar_label: Analytic Suite
 tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: getting-started

@@ -1,7 +1,7 @@
 ---
 id: widget-download-manager
-title: Download Manager Widget
-sidebar_label: Download Manager Widget
+title: Download Manager
+sidebar_label: Download Manager
 tags: [Software Developer]
 sidebar_position: 2
 displayed_sidebar: getting-started

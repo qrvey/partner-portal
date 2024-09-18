@@ -1,7 +1,7 @@
 ---
 id: widget-dashboard-view
-title: Dashboard View Widget
-sidebar_label: Dashboard View Widget
+title: Dashboard View
+sidebar_label: Dashboard View
 tags: [Software Developer]
 sidebar_position: 2
 displayed_sidebar: getting-started

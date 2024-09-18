@@ -1,7 +1,7 @@
 ---
 id: widget-single-panel
-title: Single Panel Widget
-sidebar_label: Single Panel Widget
+title: Single Panel
+sidebar_label: Single Panel
 tags: [Software Developer]
 sidebar_position: 6
 displayed_sidebar: getting-started

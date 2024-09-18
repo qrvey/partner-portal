@@ -1,7 +1,7 @@
 ---
 id: widget-pixel-perfect-reports
-title: Pixel-perfect Reports Widget
-sidebar_label: Pixel-perfect Reports Widget
+title: Pixel-perfect Reports
+sidebar_label: Pixel-perfect Reports
 tags: [Software Developer]
 sidebar_position: 3
 displayed_sidebar: getting-started
