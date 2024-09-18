@@ -48,7 +48,7 @@ var config = {
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
-| **themeId** | `String`, theme ID to use in the component. | **Optional** |
+| **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#the-feature-permission-object) below. | **Optional** |
 
