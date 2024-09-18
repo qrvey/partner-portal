@@ -31,7 +31,6 @@ var config = {
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget.
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |

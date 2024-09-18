@@ -28,7 +28,6 @@ The Web Form End User widget enables allows you to embed web forms into your fro
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |

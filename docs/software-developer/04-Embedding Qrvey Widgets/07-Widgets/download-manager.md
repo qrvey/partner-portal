@@ -33,7 +33,6 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget. 
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |

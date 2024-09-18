@@ -35,8 +35,6 @@ When embedded in an application, the Web Form Design widget enables end users to
 
 ## Configuration Object
 
-The following table lists the properties associated with this widget.
-
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **api_key** | `String`. Your organization’s API key to access the Qrvey platform. | **Required**, if `qv_token` is not provided. |

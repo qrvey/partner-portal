@@ -31,8 +31,6 @@ The Pixel-perfect Reports widget enables you to embed the [Pixel-perfect Reports
 
 ## Configuration Object
 
-The following table lists the properties associated with this widget.
-
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided |
