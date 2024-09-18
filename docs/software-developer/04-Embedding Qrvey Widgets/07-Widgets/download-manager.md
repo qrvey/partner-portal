@@ -55,23 +55,21 @@ For more information, see [Internationalization, Step by Step](../../09-Internat
 | **lang** | `String`, The language the language to use for the UI. Example: `"es"`,  | **Required** |
 | **locale** | `String`, The locale code to use for date and number formatting. Example: `"es-ES"`,  | **Optional** |
 
-## Open Download Manager Modal
+## Events 
 
-The Download Manager widget provides an exposed method that enables you to trigger the modal from any other element in your page. For example:
+### `openDownloadManager`
 
-`<qrvey-download-manager settings="downloadManagerConfig"></qrvey-download-manager>`
+Enables you to open the Download Manager modal in JS or from another element in your page. Example:
 
-Access the method using a query selector. For example: 
+```html
+<qrvey-download-manager settings="downloadManagerConfig"></qrvey-download-manager>
+
+<button onclick="openmodal()">Open Modal</button>
+```
 
 ```js
 function openmodal () {
-const el = document.querySelector('qrvey-download-manager');
-el.openDownloadManager();
+    const el = document.querySelector('qrvey-download-manager');
+    el.openDownloadManager();
 }
-```
-
-Then create a button and execute your function. For example: 
-
-```html
-<button onclick="openmodal()">Open Modal</button>
 ```
