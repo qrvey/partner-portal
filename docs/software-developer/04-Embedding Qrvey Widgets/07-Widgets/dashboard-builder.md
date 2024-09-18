@@ -49,6 +49,7 @@ var config = {
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
+| **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#the-feature-permission-object) below. | **Optional** |
 
 ## The Style Object
@@ -115,14 +116,6 @@ const widgetConfig = {
    },
 }
 ```
-
-## The Personalization Object
-The **personalization** object setting controls customization options for the Dashboard Builder widget and supports the following properties at this time:
-
-| **Property** | **Description** | **Required** |
-| --- | --- | --- |
-| **fit_panel_button** | `Boolean`, Shows the fit to panel button on the panels. Defaults to true. | **Optional** | 
-
 
 ## Events
 The widget supports custom events to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
