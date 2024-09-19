@@ -1,7 +1,7 @@
 ---
 id: widget-automation-widget
-title: Automation Widget
-sidebar_label: Automation Widget
+title: Automation
+sidebar_label: Automation
 tags: [Software Developer]
 sidebar_position: 9
 displayed_sidebar: getting-started
@@ -30,7 +30,6 @@ var config = {
 ```
 
 ## Configuration Object
-The following table lists the properties associated with this widget.
 
 | **Parameter** | **Description** | **Required** |
 | --- | --- | --- |
@@ -41,7 +40,7 @@ The following table lists the properties associated with this widget.
 | **workflowId** | `String`, ID of a single flow. If configured, widget will open that flow. If omitted, this widget will display the "browse all workflows" page. | **Optional** |
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** | 
 
-### The `timezone` Object
+### Timezone
 
 For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md).
 
