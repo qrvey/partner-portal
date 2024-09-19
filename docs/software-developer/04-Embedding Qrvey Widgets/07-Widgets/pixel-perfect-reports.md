@@ -38,7 +38,7 @@ The following table lists the properties associated with this widget.
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided |
 | **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
-| **appId** | `String`, ID of the desired Qrvey application.| **Required** |
+| **appId** | `String`, ID of the Qrvey application that contains the asset you want to embed.| **Required** |
 | **userId** | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
 | **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The client ID must be set to a unique value for each tenant end user. | **Optional** |
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** |
