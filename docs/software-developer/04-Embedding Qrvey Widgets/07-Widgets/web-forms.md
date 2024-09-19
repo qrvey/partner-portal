@@ -39,7 +39,7 @@ When embedded in an application, the Web Form Design widget enables end users to
 | --- | --- | --- |
 | **api_key** | `String`. Your organization’s API key to access the Qrvey platform. | **Required**, if `qv_token` is not provided. |
 | **qv_token** | `String`. A secure token used to authenticate and authorize embedded widgets. | **Required**, if `api_key` is not provided. |
-| **app_id** | `String`. The ID of the Qrvey application containing the webform. | **Required** |
+| **app_id** | `String`.  ID of the Qrvey application that contains the asset you want to embed.| **Required** |
 | **domain** | `String`. The base URL of your Qrvey instance. | **Required** |
 | **user_id** | `String`. The ID of the Qrvey Composer user who owns the application that is being embedded. Alternatively, you can specify the user ID in a Qrvey session cookie. | **Required**, if the `user_id` is not included in a session cookie. |
 | **qrvey_id** | `String`. The ID of the webform that will be edited in the widget. | **Required** |

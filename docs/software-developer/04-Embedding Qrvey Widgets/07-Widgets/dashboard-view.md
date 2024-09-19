@@ -36,7 +36,7 @@ var config = {
 | --- | --- | --- |
 | **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
-| **appId** | `String`, ID of the Qrvey Application containing the widget. | **Required** |
+| **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **userId** | `String`, ID of the Qrvey User that owns the application being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**, if `userId` is not included in a session cookie.  |
 | **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the widget will open to "browse all dashboards". | **Optional** |
@@ -52,7 +52,8 @@ var config = {
 | **styles** | `Object`, Configure style options that can be used to override the default styles, allowing for while-labeling the widget. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, please see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **featurePermission** | `Object`, Configures which features are available in the widget. For more details, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
-| **subscriptionSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscription Settings Object](#subscription-settings) below. | **Optional** |
+| **subscriptionsSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscriptions Settings Object](#subscriptions-settings) below. | **Optional** |
+
 
 ### Feature Permission
 
@@ -108,11 +109,11 @@ const widgetConfig = {
 }
 ```
 
-### Subscription Settings
+### Subscriptions Settings
 
-In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts.  The Subscriptions feature relies on the user being authenticated and needs the `clientId` property set for the logged-in user. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
+In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For the Subscriptions feature to work, you must appropriately set the `clientId` property and pass it in when generating the `qvToken`. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
 
-\| **Property** | **Description** |  **Required** |
+| **Property** | **Description** |  **Required** |
 | --- | --- | --- |
 | **enable_subscriptions** | `Boolean`, If false, disables the User Subscriptions alarm bell and subscriptions are not available to the end user within the widget. Defaults to true. | **Optional** |
 | **emails** | `Array`, Email addresses to deliver the exports to. <br /> Example: `[ "email@jmail.com", "email2@jmail.com"]` | **Optional** |  
@@ -197,6 +198,9 @@ The following table describes the properties of the `styles` object.
 
 ## Events
 
-### `atApplyUserFilters()`
+The widget [supports custom events](../custom-events.md) to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
+* `atApplyUserFilters()` — Enables changes to [the `userFilters` property](../filters-embedded-scenarios.md).
 
-Enables changes and updates to [the `userFilters`](../filters-embedded-scenarios.md) property.
+  ```js
+  window.dispatchEvent(new CustomEvent('atApplyUserFilters', {detail: userFilters}));
+  ```

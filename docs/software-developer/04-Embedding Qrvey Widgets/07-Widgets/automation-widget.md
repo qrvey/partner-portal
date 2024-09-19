@@ -33,13 +33,12 @@ var config = {
 
 | **Parameter** | **Description** | **Required** |
 | --- | --- | --- |
-| `qvToken` | `String`, Encrypted token used for secure authentication. | **Required** if `apiKey` is not provided. |
-| `apiKey` | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
-| `userId` | `String`, ID of the Qrvey Composer user account accessing this feature. Optional: You can alternately specify the user ID in a Qrvey session cookie. | **Required**  |
-| `domain` | `String`, The base URL of your Qrvey instance. | **Required** | 
-| `appId` | `String`, ID of the Qrvey application containing the flow.| **Required** |
-| `workflowId` | `String`, ID of a single flow. If configured, widget will open that flow. If omitted, this widget will display the "browse all workflows" page. | **Optional** |
-| `timezone` | `Object`, Overrides the time zone setting in Qrvey Admin Center. For details, please see [The Timezone Object](#timezone) below.  | **Optional** | 
+| **qvToken** | `String`, Encrypted token used for secure authentication. | **Required** if `apiKey` is not provided. |
+| **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
+| **userId** | `String`, ID of the Qrvey User that owns the application being embedded. | **Required**  || `domain` | `String`, The base URL of your Qrvey instance. | **Required** | 
+| **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |
+| **workflowId** | `String`, ID of a single flow. If configured, widget will open that flow. If omitted, this widget will display the "browse all workflows" page. | **Optional** |
+| **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. Please see [The timezone Object](#the-timezone-object) for details.  | **Optional** | 
 
 ### Timezone
 

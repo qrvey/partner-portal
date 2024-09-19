@@ -35,22 +35,26 @@ var config = {
 | --- | --- | --- |
 | **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided |
-| **appId** | `String`, ID of the Qrvey Application containing the widget. | **Required** |
+| **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
-| **userId** | `String`, ID of the Qrvey User that owns the application being embedded. Optional: You can alternately specify the user ID in a Qrvey session cookie. | Yes, if `userid` is not included in a session cookie.  |
+| **userId** | `String`, ID of the Qrvey User that owns the application being embedded. | **Required**  |
 | **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user. | **Optional** |
-| **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the widget will open to "browse all dashboards". | **Optional** |
-| **timezone** | `Object`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user.  | **Optional** |
-| **privatePages** | `Boolean`, Predefines the state of new dashboards. If `true`, every new dashboards will be private. Defaults to false. | **Optional** |
-| **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. | **Optional** |
+| **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the end user will be taken to the "dashboard selection" page. | **Optional**, but in practice you should always send the user to a specific dashboard. |
+| **timezone** | `Object`, Overrides the timezone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](https://partners.qrvey.com/docs/software-developer/Timezone%20Settings/time-zone-support). | **Optional** |
+| **privatePages** | `Boolean`, Pre-defines the privacy state of new dashboards. If true, every new dashboard will be private (and unavailable to unauthenticated users). Defaults to false, and therefore dashboards are published in a public state. | **Optional** |
+| **doNotAllow** | `Array<String>`, Hides or blocks certain features. Currently only supports: `CREATE_CHART` which hides the "Create Chart" button. <br /> **Example:** `["CREATE_CHART"]`| **Optional** |
 | **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | **Optional** |
-| **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see  [The Personalization Object](#the-personalization-object) below. | **Optional** |
 | **authenticatedSession.email** | `String`, The `email` property in the `authenticatedSession` object specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
+
+<!-- 
+| **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. <br /> **Example:** `["CREATE_CHART", "USERS_AUTHENTICATION"]` hides the create chart button and users authentication. | **Optional** | 
+-->
+
 
 ### Styles
 
@@ -118,7 +122,9 @@ const widgetConfig = {
 ```
 
 ## Events
+The widget [supports custom events](../custom-events.md) to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
+* `atApplyUserFilters()` — Enables changes to [the `userFilters` property](../filters-embedded-scenarios.md).
 
-### `atApplyUserFilters()`
-
-Enables changes and updates to [the `userFilters`](../filters-embedded-scenarios.md) property.
+  ```js
+  window.dispatchEvent(new CustomEvent('atApplyUserFilters', {detail: userFilters}));
+  ```

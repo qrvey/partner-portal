@@ -37,7 +37,7 @@ var config = {
 | --- | --- | --- |
 | **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required** if `qvToken` is not provided. |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
-| **appId** | `String`, ID of the Qrvey application containing the dashboard, report, automation, or web form. | **Required** |
+| **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |
 | **domain** | `String`, The base URL of your instance of the Qrvey platform. | **Required** | 
 | **userId** | `String`, ID of the Qrvey Composer user that owns the application that is being embedded. Alternatively, you can specify the user ID in a Qrvey session cookie. | **Required**, if the `userId` is not included in a session cookie.  |
 | **qrveyId** | `String`, ID of the dataset being used. | **Required** |
