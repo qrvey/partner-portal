@@ -16,6 +16,8 @@ Qrvey widgets offer two authentication methods:
 
 For widgets that use the Download Manager or End User Personalization features, a `clientId` may be required in addition to or in place of `userId`. For more details on `clientId`, please see [Multi Tenant Security Architecture](../../deployment/08-Multi%20Tenant%20Solutions/multi-tenant-security-architecture.md#authentication). Please refer to the relevant widget's documentation and consider your implementation needs to determine which should be provided.
 
+For the system to recognize a `clientId`, you must pass it in when you generate the Qrvey Security Token. You cannot pass it directly on a widget's config object as you do with many other params during API Key Authentication during development and testing.
+
 ## API Key Authentication
 
 > **WARNING: This method is for dev-mode only.** Exposing an API Key on the frontend is insecure.
