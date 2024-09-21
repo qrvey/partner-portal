@@ -7,7 +7,6 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-
 The Dashboard View widget enables you to embed one or more dashboards or a mashup of several charts, maps, and metrics into your application.
 
 ## Embeddable Script
@@ -112,23 +111,6 @@ The following table describes the properties of the `featurePermission` object.
 | **panels.charts.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for charts panels. Defaults to false. | **Optional** |
 | **panels.charts.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for charts panels. Defaults to false. | **Optional** |
 | **panels.charts.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for charts panels. Defaults to false. | **Optional** |
-
-
-
-<!-- | **navigation** | `Object`, Defines navigation-related features that can be hidden. | **Optional** | -->
-<!-- | **navigation.hideNavigationTab** | `Boolean`, If true, hides the entry method to the navigation tab in the top bar of the widget.  | **Optional** | -->
-<!-- | **userManagement** | `Object`, Defines user management related features that can be hidden. | **Optional** | -->
-<!-- | **userManagement.hideUserManagementTab** | `Boolean`, If true, hides the entry method to the user management tab in the top bar of the widget. | **Optional** | -->
-<!-- | **pagesAndApplication** | `Object`, Defines pages and application-related features that can be hidden. | **Optional** | -->
-<!-- | **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides the “Unpublish”/“Publish Application” button. | **Optional** | -->
-<!-- | **pagesAndApplication.hidePublishPageButton** | `Boolean`, Hides the “Publish Page” button. | **Optional** | -->
-<!-- | **pagesAndApplication.hideCopyPageLink** | `Boolean`, Hides the UI interfaces where the user can get the link of a page. | **Optional** | -->
-<!-- | **pagesAndApplication.hideLaunchButton** | `Boolean`, Hides the button to access the page view. | **Optional** | -->
-<!-- | **pagesAndApplication.hideCreateManagePages** | `Boolean`, Hides all options to create pages. | **Optional** | -->
-<!-- | **pagesAndApplication.hidePageStatus** | `Boolean`, Hides the “Status” text. | **Optional** | -->
-<!-- | **pagesAndApplication.hidePagesBar** | `Boolean`, Hides the bottom bar for pages. | **Optional** | -->
-<!-- | **canvas** | `Object`, Defines canvas-related features that can be hidden. | **Optional** | -->
-<!-- | **canvas.hideManageCanvas** | `Boolean`, Hides the following options: Grid, Responsive View, Discard Changes. | **Optional** | -->
 
 >**Tip**: To hide all features, set the `liteVersion` property to `true`. For example:
 
