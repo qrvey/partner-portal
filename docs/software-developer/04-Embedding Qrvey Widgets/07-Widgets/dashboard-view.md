@@ -62,23 +62,73 @@ The following table describes the properties of the `featurePermission` object.
 | **Property** | **Description** | **Required** |
 | --- | --- | --- |
 | **liteVersion** | `Boolean`, If true, hides all elements that are managed by feature permissions. Defaults to false. | **Optional** |
-| **navigation** | `Object`, Defines navigation-related features that can be hidden. | **Optional** |
-| **navigation.hideNavigationTab** | `Boolean`, If true, hides the entry method to the navigation tab in the top bar of the widget.  | **Optional** |
-| **userManagement** | `Object`, Defines user management related features that can be hidden. | **Optional** |
-| **userManagement.hideUserManagementTab** | `Boolean`, If true, hides the entry method to the user management tab in the top bar of the widget. | **Optional** |
-| **pagesAndApplication** | `Object`, Defines pages and application-related features that can be hidden. | **Optional** |
-| **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides the “Unpublish”/“Publish Application” button. | **Optional** |
-| **pagesAndApplication.hidePublishPageButton** | `Boolean`, Hides the “Publish Page” button. | **Optional** |
-| **pagesAndApplication.hideCopyPageLink** | `Boolean`, Hides the UI interfaces where the user can get the link of a page. | **Optional** |
-| **pagesAndApplication.hideLaunchButton** | `Boolean`, Hides the button to access the page view. | **Optional** |
-| **pagesAndApplication.hideCreateManagePages** | `Boolean`, Hides all options to create pages. | **Optional** |
-| **pagesAndApplication.hidePageStatus** | `Boolean`, Hides the “Status” text. | **Optional** |
-| **pagesAndApplication.hidePagesBar** | `Boolean`, Hides the bottom bar for pages. | **Optional** |
-| **canvas** | `Object`, Defines canvas-related features that can be hidden. | **Optional** |
-| **canvas.hideManageCanvas** | `Boolean`, Hides the following options: Grid, Responsive View, Discard Changes. | **Optional** |
-| **downloads** | `Object`, Contains download and export options. | **Optional** |
+| **downloads** | `Object`, Contains the download and export parameters. | **Optional** |
 | **downloads.hideGeneralDownload** | `Boolean`, If true, hides the download feature from the dashboard tool bar. Defaults to false. | **Optional** |
 | **downloads.hideSchedule** | `Boolean`, If true, hides the scheduling export option in the export modal. Defaults to false. | **Optional** |
+| **filters** | `Object`. Contains the filters object parameters. | **Optional** |
+| **filters.global** | `Boolean`, When true, hides creation points of global filters. Defaults to false. | **Optional** |
+| **filters.page** | `Boolean`, wWen true, hides creation points of page filters. Defaults to false. | **Optional** |
+| **filters.tab** | `Boolean`, When true, hides creation points of tab filters. Defaults to false. | **Optional** |
+| **filters.chart** | `Boolean`, When true, hides creation points of chart filters. Defaults to false. | **Optional** |
+| **filters.filterPanel** | `Boolean`, when true, hides the filter panel. Defaults to false. | **Optional** |
+| **panels** |  `Object`. Contains the panels object parameters. | **Optional** |
+| **panels.global** | `Object`, Contains global panel settings. | **Optional** |
+| **panels.global.hide_all** | `Boolean`, When true, hides the entire panel menu. Defaults to false. | **Optional** |
+| **panels.global.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option. Defaults to false. | **Optional** |
+| **panels.global.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_JPG** | `Boolean`, When true, hides the "download JPG" option. Defaults to false. | **Optional** |
+| **panels.global.hide_PDF** | `Boolean`, When true, hides the "PDF download" option. Defaults to false. | **Optional** |
+| **panels.global.hide_CSV** | `Boolean`, When true, hides the "CSV download" option. Defaults to false. | **Optional** |
+| **panels.global.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option. Defaults to false. | **Optional** |
+| **panels.metrics** | `Object`, Contains metrics panel settings. | **Optional** |
+| **panels.metrics.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.summaries** | `Object`, Contains summaries panel settings. | **Optional** |
+| **panels.summaries.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.charts** | `Object`, Contains charts panel settings. | **Optional** |
+| **panels.charts.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for charts panels. Defaults to false. | **Optional** |
+
+
+
+<!-- | **navigation** | `Object`, Defines navigation-related features that can be hidden. | **Optional** | -->
+<!-- | **navigation.hideNavigationTab** | `Boolean`, If true, hides the entry method to the navigation tab in the top bar of the widget.  | **Optional** | -->
+<!-- | **userManagement** | `Object`, Defines user management related features that can be hidden. | **Optional** | -->
+<!-- | **userManagement.hideUserManagementTab** | `Boolean`, If true, hides the entry method to the user management tab in the top bar of the widget. | **Optional** | -->
+<!-- | **pagesAndApplication** | `Object`, Defines pages and application-related features that can be hidden. | **Optional** | -->
+<!-- | **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides the “Unpublish”/“Publish Application” button. | **Optional** | -->
+<!-- | **pagesAndApplication.hidePublishPageButton** | `Boolean`, Hides the “Publish Page” button. | **Optional** | -->
+<!-- | **pagesAndApplication.hideCopyPageLink** | `Boolean`, Hides the UI interfaces where the user can get the link of a page. | **Optional** | -->
+<!-- | **pagesAndApplication.hideLaunchButton** | `Boolean`, Hides the button to access the page view. | **Optional** | -->
+<!-- | **pagesAndApplication.hideCreateManagePages** | `Boolean`, Hides all options to create pages. | **Optional** | -->
+<!-- | **pagesAndApplication.hidePageStatus** | `Boolean`, Hides the “Status” text. | **Optional** | -->
+<!-- | **pagesAndApplication.hidePagesBar** | `Boolean`, Hides the bottom bar for pages. | **Optional** | -->
+<!-- | **canvas** | `Object`, Defines canvas-related features that can be hidden. | **Optional** | -->
+<!-- | **canvas.hideManageCanvas** | `Boolean`, Hides the following options: Grid, Responsive View, Discard Changes. | **Optional** | -->
 
 >**Tip**: To hide all features, set the `liteVersion` property to `true`. For example:
 
