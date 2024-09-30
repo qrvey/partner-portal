@@ -6,7 +6,6 @@ tags: [Data Analyst, Software Developer]
 sidebar_position: 1
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
 
 Qrvey makes it easy to publish your web forms just about anywhere. This article discusses different ways you can use your forms, surveys, and quizzes. For information on embedding web forms, see [Embedding Web Forms](./embedding-web-forms.md).
 
@@ -27,7 +26,6 @@ You can drag and drop any active web form onto a dashboard or a report. To do th
 
 ![2_publishing](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.4_publishing/2_publishing.png#thumbnail-60)
 
-
 ## Shareable URL
 If you’d like to share your web form outside of an app you are building in Qrvey Composer, the shareable URL is the easiest way to do so. First, navigate to the **Publish** tab of your web form.
 
@@ -41,5 +39,3 @@ Next, scroll down to locate the web form’s URL. Copy and paste the link where 
 Qrvey Composer has an embedding option available if you’d like to display your web form inside an external application, such as a website, blog, web or mobile app. The first and simplest method is to use an **iFrame**, which essentially just creates a small window in a web page that points directly to your Qrvey web form. Just click on **iFrame** and then copy and paste the code provided into your external application.
 
 ![5_publishing](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.4_publishing/5.1_publishing.png#thumbnail)
-
-</div>
