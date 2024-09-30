@@ -49,7 +49,6 @@ var config = {
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 | **defaultMode** | `Boolean`, Toggles the default Dashboard view to "design" or "interaction". Defaults to "design". | **Optional** |
 
-
 <!--
 | **assetPermissions** | `Object`, Controls visibility of these asset types: datasets, charts, metrics, summaries, pages. | **Optional** |
 | **datasets** | `Object`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
