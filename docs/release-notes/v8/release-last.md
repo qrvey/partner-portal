@@ -15,7 +15,6 @@ Release Date: 2024-09-30
 
 ### New Features & Enhancements
 
-
 - **Make Filters Part of EUP:** A new property has been added to the End User widget’s configuration, allowing users to enable or disable a mode where Filter Personalizations can be autosaved or not. Filters can also be restored using the restore button in dashboards.
 
 - **Support clientId and Personalizations in Automation:** A solution was implemented for the Workflows widget to display Flows with the `qv_token` correctly.
