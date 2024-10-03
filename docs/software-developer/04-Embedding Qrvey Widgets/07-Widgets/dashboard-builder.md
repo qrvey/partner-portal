@@ -46,17 +46,33 @@ var config = {
 | **authenticatedSession.email** | `String`, The `email` property in the `authenticatedSession` object specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
-| **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 | **defaultMode** | `Boolean`, Toggles the default Dashboard view to "design" or "interaction". Defaults to "design". | **Optional** |
+| **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
+| **assetPermissions** | `Object`, Controls visibility of the following asset types: datasets, charts, metrics, summaries, pages. For more information, please see [The Asset Permissions Object](#asset-permission) below. | **Optional** |
 
-<!--
-| **assetPermissions** | `Object`, Controls visibility of these asset types: datasets, charts, metrics, summaries, pages. | **Optional** |
-| **datasets** | `Object`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
-| **charts** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
-| **metrics** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
-| **summaries** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
-| **pages** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** | 
--->
+
+### Asset Permissions
+
+| **Property** | **Description** | **Required** |
+| --- | --- | --- |
+| **datasets.dataset_ids** | `Object`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **charts.chart_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **metrics.metric_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **summaries.question_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **pages.page_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** | 
+
+**Example:**
+
+```json
+"assetPermissions": {       
+ "pages": {
+           "page_ids": [
+               "Vy4rfc4lqa",
+               "jy4rfd6qj9"
+           ]
+ }
+}
+```
 
 ###  Feature Permission 
 The following table describes the properties of the `featurePermission` object.
@@ -129,10 +145,6 @@ The following table describes the properties of the `featurePermission` object.
 | **panels.charts.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for charts panels. Defaults to false. | **Optional** |
 | **panels.charts.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for charts panels. Defaults to false. | **Optional** |
 | **panels.charts.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for charts panels. Defaults to false. | **Optional** |
-
-
-
-
 
 
 >**Tip**: To hide all features, set the `liteVersion` property to `true`. For example:

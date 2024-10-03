@@ -48,7 +48,6 @@ var config = {
 | **filterPanelDefaultView** | `String`, Decides the default state of the side filter panel, if it’s been added to the view. It can be set to `open` or `closed`. The default value is `closed`. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see [The Personalization Object](#personalization) below. | **Optional** |
-<!-- | **styles** | `Object`, Configure style options that can be used to override the default styles, allowing for while-labeling the widget. For details, please see [The Styles Object](#styles) below.| **Optional** | -->
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, please see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **featurePermission** | `Object`, Configures which features are available in the widget. For more details, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 | **subscriptionsSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscriptions Settings Object](#subscriptions-settings) below. | **Optional** |
