@@ -67,8 +67,8 @@ var config = {
 "assetPermissions": {       
  "pages": {
            "page_ids": [
-               "Vy4rfc4lqa",
-               "jy4rfd6qj9"
+               "Vy4rfcqlqa",
+               "jy4r0d6qj9"
            ]
  }
 }
