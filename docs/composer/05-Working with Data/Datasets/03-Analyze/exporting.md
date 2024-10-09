@@ -7,8 +7,6 @@ sidebar_position: 4
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
 Qrvey supports exporting charts, tables, dashboards, and reports to print-friendly formats for further analysis in tools like Excel. Users can export an entire dashboard with all its panels or simply choose a single panel. Download Manager provides a central location to access and manage exported files. For more information, see [Download Manager](../../../download-manager.md).
 
 
@@ -161,4 +159,28 @@ It is important to note the following points:
 
 You can use the [Scheduling Exports](./scheduling-exports.md) feature to automatically produce exports at specified intervals and send them to an email address.
 
-</div>
+
+## Pivot Exported Data
+
+You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-datasets.md) for export.
+
+1. Navigate to **Data > [Dataset] > Design Tab > Advanced Settings**.
+2. Under "Pivoting for Analysis", click **Configure Pivoting**. A modal will appear.
+3. Configure your pivot table as desired:
+    - **Pivot Column** — Choose the field whose unique values become columns in the pivot table.  
+        *For example, if you have a dataset with a column called "Month," using it as a pivot column will create separate columns for each month (e.g., January, February, March).*
+    - **Pivot Value** — Define the data or metrics that get aggregated (e.g., summed, averaged, counted) in the cells of the pivot table. It represents what you want to measure or calculate for each combination of the row and column data.  
+        *For example, if you want to see total sales by month, "Sales" would be the pivot value, and you might use a sum function to add up the sales for each month.*
+    - **Row Key Columns** — Choose fields whose unique values become the rows of the pivot table. This is what you categorize or group the data by in rows.  
+        *For example, if you have a column called "Region" and use it as the row key column, each region (e.g., North, South, East, West) will become a row in the pivot table.*
+    - **Pivot Label** — Optional. Assign a label for the pivot table.
+4. Click **Save** to confirm. The modal will close.
+5. Under "Pivoting for Analysis", click the **Enable** radio button.
+6. Click **Apply Changes** in the top right tool bar area.
+7. Next, navigate into the **Dashboard** module then open any dashboard.
+8. Click **Download** in the dashboard toolbar area. A dropdown menu will appear.
+9. Select **Dataset**. A modal will appear.
+10. Under **Dataset**, choose a desired dataset that has been configured for pivoting.
+11. Then, a radio toggle **Pivoting: Yes / No** will appear within the modal. Click **Yes**.
+12. Configure all other fields as desired.
+13. Click **Export Now** to process and download your pivoted dataset.
