@@ -40,11 +40,11 @@ The General section is available for all chart types, and the options vary depen
 The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
 
 #### Color Type
-* **Single** - all bars are the same color.  
-      * **Color** - change the color of the bars.  
-* **By category** - each bar is colored based on its category.  
-      * **Theme** - set one of the predetermined themes for a more unified look of your charts.  
-      * **Match colors across charts** - unify the colors of each categorical value throughout the page and application.  
+- **Single** - all bars are the same color.  
+      **Color** - change the color of the bars.  
+- **By category** - each bar is colored based on its category.  
+      **Theme** - set one of the predetermined themes for a more unified look of your charts.  
+      **Match colors across charts** - unify the colors of each categorical value throughout the page and application.  
 
 
 #### X-Axis
