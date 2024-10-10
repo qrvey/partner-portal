@@ -181,13 +181,105 @@ The following table describes the properties of the `personalization` object.
 | **edit_page** | `Boolean`, If false, disables edit mode for the dashboard widget will be displayed and hides the “edit page” button in the floating three-dot menu. Defaults to true. | **Optional** |
 | **remove_chart** | `Boolean`, If false, users cannot remove charts from the page, when in edit mode. Defaults to true. | **Optional** |
 | **rearrange_chart** | `Boolean`, If false, users cannot rearrange the chart panels, when in edit mode. Defaults to true. | **Optional** |
-
+| **autoSaveFilters** | `Boolean`, If false, this parameter disables the auto-saving of filters and enables the "Save" button, allowing users to manually save filters when applied. Additionally, setting autoSaveFilters to false removes the ability to restore filters through the filter panel. Defaults to true. | **Optional** |
+| **skipRestoreOriginalModal** | `Boolean`, If true, this parameter disables the confirmation modal that appears during the "restore original" action. Defaults to false. | **Optional** |
 
 ## Events
 
 The widget [supports custom events](../custom-events.md) to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
-* `atApplyUserFilters()` — Enables changes to [the `userFilters` property](../filters-embedded-scenarios.md).
 
-  ```js
-  window.dispatchEvent(new CustomEvent('atApplyUserFilters', {detail: userFilters}));
-  ```
+- **`atApplyUserFilters()`**
+  - **Purpose**: Enables changes to [the `userFilters` property](../filters-embedded-scenarios.md).
+  - **Example**:
+    ```js
+    window.dispatchEvent(new CustomEvent('atApplyUserFilters', {detail: userFilters}));
+    ```
+
+- **`qvDSHRestoreDashboard()`**
+  - **Purpose**: Restores a dashboard to a specified version: `ORIGINAL` or `PERSONALIZED`, which must be included in the event's `detail` field. 
+  - **Scope**: Dashboard view.
+  - **Details**: Logs `[qvDSHRestoreDashboard]: Unable to restore to the provided version` if:
+    - No version is specified.
+    - An invalid version is provided.
+    - `clientId` is missing in the authentication token.
+    - No personalization exists for the dashboard.
+    - Personalization is disabled in the configuration.
+    - The same version is already active.
+  - **Example**:
+    ```js
+    window.dispatchEvent(new CustomEvent('qvDSHRestoreDashboard', { detail: { version: 'PERSONALIZED' } }));
+    window.dispatchEvent(new CustomEvent('qvDSHRestoreDashboard', { detail: { version: 'ORIGINAL' } }));
+    ```
+
+- **`qvDSHSaveDashboard()`**
+  - **Purpose**: Saves modifications to create a personalized version for the `clientId` specified in the widget configuration.
+  - **Scope**: Dashboard view and edit mode.
+  - **Details**: Logs `[qvDSHSaveDashboard]: Unable to save changes.` if:
+    - No changes are detected.
+    - Personalization is disabled in the configuration.
+    - `clientId` is missing in the authentication token.
+  - **Example**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHSaveDashboard'));
+    ```
+
+- **`qvDSHEditDashboard()`**
+  - **Purpose**: Opens the dashboard in edit mode.
+  - **Scope**: Dashboard view.
+  - **Details**: Logs `[qvDSHEditDashboard]: Unable to edit dashboard.` if:
+    - Personalization is disabled in the configuration.
+    - The dashboard is not in desktop view.
+    - Dashboard editing is disabled.
+    - `clientId` is missing in the authentication token.
+  - **Example**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHEditDashboard'));
+    ```
+
+- **`qvDSHCloseEditDashboard()`**
+  - **Purpose**: Exits edit mode in the dashboard.
+  - **Scope**: Edit mode.
+  - **Example**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHCloseEditDashboard'));
+    ```
+
+- **`qvDSHCreateNewSubscription()`**
+  - **Purpose**: Opens the modal for creating a new subscription.
+  - **Scope**: Dashboard view.
+  - **Details**: Logs `[qvDSHCreateNewSubscription]: Unable to create subscription.` if:
+    - The user is not authenticated.
+    - The user is in interact mode.
+    - Subscriptions are disabled.
+  - **Example**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHCreateNewSubscription'));
+    ```
+
+  
+- **`qvDSHManageSubscriptions()`**
+  - **Purpose**: Opens the manage subscriptions modal.
+  - **Scope**: Dashboard view.
+  - **Details**: Logs `[qvDSHManageSubscriptions]: Unable to manage subscriptions.` if:
+    - The user is not authenticated.
+    - The user is in interact mode.
+    - Subscriptions are disabled.
+  - **Example**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHManageSubscriptions'));
+    ```
+
+- **`qvDSHDownloadDashboard()`**
+  - **Purpose**: Downloads the dashboard in the specified format (`CSV`, `EXCEL`, or `PDF`).
+  - **Scope**: Dashboard view and edit mode.
+  - **Details**: Logs `[qvDSHDownloadDashboard]: Unable to download the provided format.` if:
+    - No format is specified.
+    - An unsupported format is provided.
+    - Downloads are disabled in the configuration or due to permission settings.
+    - The dashboard is loading or a process is currently locking the screen.
+  - **Examples**:
+    ```javascript
+    window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'PDF' } }));
+    window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'CSV' } }));
+    window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'EXCEL' } }));
+    ```   
