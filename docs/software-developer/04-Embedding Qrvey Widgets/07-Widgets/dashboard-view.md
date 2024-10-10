@@ -48,7 +48,6 @@ var config = {
 | **filterPanelDefaultView** | `String`, Decides the default state of the side filter panel, if it’s been added to the view. It can be set to `open` or `closed`. The default value is `closed`. | **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **personalization** | `Object`, Configures and/or overwrites the default personalization/customization settings. For more information, please see [The Personalization Object](#personalization) below. | **Optional** |
-| **styles** | `Object`, Configure style options that can be used to override the default styles, allowing for while-labeling the widget. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, please see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **featurePermission** | `Object`, Configures which features are available in the widget. For more details, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 | **subscriptionsSettings** | `Object`, Configures subscription details in the widget. For details, please see [The Subscriptions Settings Object](#subscriptions-settings) below. | **Optional** |
@@ -65,11 +64,11 @@ The following table describes the properties of the `featurePermission` object.
 | **downloads.hideGeneralDownload** | `Boolean`, If true, hides the download feature from the dashboard tool bar. Defaults to false. | **Optional** |
 | **downloads.hideSchedule** | `Boolean`, If true, hides the scheduling export option in the export modal. Defaults to false. | **Optional** |
 | **filters** | `Object`. Contains the filters object parameters. | **Optional** |
-| **filters.global** | `Boolean`, When true, hides creation points of global filters. Defaults to false. | **Optional** |
-| **filters.page** | `Boolean`, wWen true, hides creation points of page filters. Defaults to false. | **Optional** |
-| **filters.tab** | `Boolean`, When true, hides creation points of tab filters. Defaults to false. | **Optional** |
-| **filters.chart** | `Boolean`, When true, hides creation points of chart filters. Defaults to false. | **Optional** |
-| **filters.filterPanel** | `Boolean`, when true, hides the filter panel. Defaults to false. | **Optional** |
+| **filters.global** | `Boolean`, If true, hides creation points of global filters. Defaults to false. | **Optional** |
+| **filters.page** | `Boolean`, If true, hides creation points of page filters. Defaults to false. | **Optional** |
+| **filters.tab** | `Boolean`, If true, hides creation points of tab filters. Defaults to false. | **Optional** |
+| **filters.chart** | `Boolean`, If true, hides creation points of chart filters. Defaults to false. | **Optional** |
+| **filters.filterPanel** | `Boolean`, If true, hides the filter panel. Defaults to false. | **Optional** |
 | **panels** |  `Object`. Contains the panels object parameters. | **Optional** |
 | **panels.global** | `Object`, Contains global panel settings. | **Optional** |
 | **panels.global.hide_all** | `Boolean`, When true, hides the entire panel menu. Defaults to false. | **Optional** |
@@ -184,6 +183,7 @@ The following table describes the properties of the `personalization` object.
 | **rearrange_chart** | `Boolean`, If false, users cannot rearrange the chart panels, when in edit mode. Defaults to true. | **Optional** |
 
 
+<!-- 
 ### Styles 
 
 In the Dashboard View widget, you can override CSS settings for white-labeling purposes. When using the `styles` object, house the properties inside the `pageView` object. For example:
@@ -226,7 +226,9 @@ The following table describes the properties of the `styles` object.
 | **selectedTabBarColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar |
 | **canvasBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page |
 | **pageViewButtonBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) |
-| **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) |
+| **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) | 
+-->
+
 
 ## Events
 
