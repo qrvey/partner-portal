@@ -41,56 +41,111 @@ var config = {
 | **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user. | **Optional** |
 | **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the end user will be taken to the "dashboard selection" page. | **Optional**, but in practice you should always send the user to a specific dashboard. |
 | **timezone** | `Object`, Overrides the timezone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](https://partners.qrvey.com/docs/software-developer/Timezone%20Settings/time-zone-support). | **Optional** |
-| **privatePages** | `Boolean`, Pre-defines the privacy state of new dashboards. If true, every new dashboard will be private (and unavailable to unauthenticated users). Defaults to false, and therefore dashboards are published in a public state. | **Optional** |
-| **doNotAllow** | `Array<String>`, Hides or blocks certain features. Currently only supports: `CREATE_CHART` which hides the "Create Chart" button. <br /> **Example:** `["CREATE_CHART"]`| **Optional** |
-| **styles** | `Object`, Allows users to modify part of the look and feel of the widget. Every property supports a string (hexadecimal color) or the name of a color. For details, please see [The Styles Object](#styles) below.| **Optional** |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | **Optional** |
 | **customTokens** | `Object`, Sets custom threshold values in Bullet and Dial charts. For more information, see [Using Custom Tokens](../customTokens.md). | **Optional** |
 | **authenticatedSession.email** | `String`, The `email` property in the `authenticatedSession` object specifies the email address to associate with the widget. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** |
 | **themeId** | `String`, theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
+| **defaultMode** | `Boolean`, Toggles the default Dashboard view to "design" or "interaction". Defaults to "design". | **Optional** |
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
-
-<!-- 
-| **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. <br /> **Example:** `["CREATE_CHART", "USERS_AUTHENTICATION"]` hides the create chart button and users authentication. | **Optional** | 
--->
+| **assetPermissions** | `Object`, Controls visibility of the following asset types: datasets, charts, metrics, summaries, pages. For more information, please see [The Asset Permissions Object](#asset-permission) below. | **Optional** |
 
 
-### Styles
+### Asset Permissions
 
-| **Property** | **Description**  | **Required** |
+| **Property** | **Description** | **Required** |
 | --- | --- | --- |
-| **main_color** | Sets main color using a hex color value. | **Optional** |
-| **main_text_color** | Sets main text color using a hex color value. | **Optional** |
-| **secondary_color** | Sets secondary color using a hex color value. | **Optional** |
-| **icon_color** | Sets icon color using a hex color value. | **Optional** |
-| **tab_bar_color** | DeSets tab bar using a hex color value.sc | **Optional** |
-| **tab_font_color** | Sets tab font color using a hex color value. | **Optional** |
-| **error_color** | Sets error color using a hex color value. | **Optional** |
+| **datasets.dataset_ids** | `Object`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **charts.chart_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **metrics.metric_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **summaries.question_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** |
+| **pages.page_ids** | `String Array`, Pass in string array of IDs for the assets to be whitelisted. Any assets not defined in the list will be rendered in the UI and the others will not be visible or usable. | **Optional** | 
+
+**Example:**
+
+```json
+"assetPermissions": {       
+ "pages": {
+           "page_ids": [
+               "Vy4rfcqlqa",
+               "jy4r0d6qj9"
+           ]
+ }
+}
+```
 
 ###  Feature Permission 
 The following table describes the properties of the `featurePermission` object.
 
 | **Property** | **Description** | **Required** |
 | --- | --- | --- |
-| **liteVersion** | `Boolean`, Hides all elements that are managed by feature permissions if true. Defaults to false. For more details, check the example given below this table. | **Optional** |
+| **liteVersion** | `Boolean`, If true, it is the equivalent of setting the following properties `pagesAndApplication.hidePublishPageButton`, `pagesAndApplication.hidePageStatus`, and `navigation.hideNavigationTab` to true. Defaults to false. For more details, check the example given below this table. | **Optional** |
 | **navigation** | `Object`, Defines navigation-related features that can be hidden. | **Optional** |
-| **navigation.hideNavigationTab** | `Boolean`, Hides the entry method to the navigation tab in the top bar of the widget if true. Defaults to false. | **Optional**| 
+| **navigation.hideNavigationTab** | `Boolean`, If true, hides the Navigation link in the top menu bar. Defaults to false. | **Optional**| 
 | **userManagement** | `Object`, Defines user management related features that can be hidden.| **Optional**| 
-| **userManagement.hideUserManagementTab** | `Boolean` Hides the entry method to the user management tab in the top bar of the widget if true. Defaults to false.| **Optional**| 
+| **userManagement.hideUserManagementTab** | `Boolean` If true, hides the User Management link in the top bar of the widget. Defaults to false.| **Optional**| 
 | **pagesAndApplication** | `Object`, Define pages and application-related features that can be hidden. | **Optional**| 
-| **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides button “Unpublish / publish" application button if true. Defaults to false| **Optional**| 
-| **pagesAndApplication.hidePublishPageButton** |  `Boolean`, Hides “publish page” button if true. Defaults to false. | **Optional**| 
-| **pagesAndApplication.hideCopyPageLink** | `Boolean`, Hides the UI interfaces where the user can get the link of a page if true. Defaults to false. | **Optional**| 
-| **pagesAndApplication.hideLaunchButton** | `Boolean`, Hides the button to access the page view if true. Defaults to false.| **Optional**| 
-| **pagesAndApplication.hideCreateManagePages** | `Boolean`, Hides all options to create pages if true. Defaults to false. | **Optional**| 
-| **pagesAndApplication.hidePageStatus** | `Boolean`, Hides Text status if true. Defaults to false.| **Optional**| 
-| **pagesAndApplication.hidePagesBar** | `Boolean`, Hide bottom bar pages if true. Defaults to false. | **Optional**| 
+| **pagesAndApplication.hidePublishAppButton** | `Boolean`, If true, hides “unpublish / publish" application button. Defaults to false.| **Optional**| 
+| **pagesAndApplication.hidePublishPageButton** |  `Boolean`, If true, hides “publish dashboard" button. Defaults to false. | **Optional**| 
+| **pagesAndApplication.hideCopyPageLink** | `Boolean`, If true, hides **File > Copy Dashboard** link where the user can get the link of a page. Defaults to false. | **Optional**| 
+| **pagesAndApplication.hideLaunchButton** | `Boolean`, If true, hides the button to access the page view. Defaults to false.| **Optional**| 
+| **pagesAndApplication.hidePageStatus** | `Boolean`, If true, hides the Dashboard Status Message. Defaults to false.| **Optional**| 
+| **pagesAndApplication.hidePrivacyOption** | `Boolean`, If true, hides the **File > Privacy** menu on dashboards. Defaults to false.| **Optional**| 
+| **pagesAndApplication.hideSubscriptionsOption** | `Boolean`, If true, hides the **Insert > Subscriptions** menu on dashboards. Defaults to false.| **Optional**| 
+| **pagesAndApplication.hideModeChangeButton** | `Boolean`, If true, hides the **Interact / Design** button. Defaults to false.| **Optional**| 
 | **canvas** | `Object`, Defines canvas related features that can be hidden. | **Optional**| 
-| **canvas.hideManageCanvas** | `Boolean`, If true, hides the following options: Grid, Responsive View, Discard Changes. Defaults to false. | **Optional**| 
+| **canvas.hideManageCanvas** | `Boolean`, If true, hides the Grid Dropdown Menu, Discard button, Grid Options button and Responsive View buttons. Defaults to false. | **Optional**| 
 | **downloads** | `Object`, Contains params to control display of the download and schedule exports feature. | **Optional** |
-| **downloads.hideGeneralDownload** | `Boolean`, Displays the download access points in the widget if true. Defaults to false. | **Optional** |
-| **downloads.hideSchedule** | `Boolean`, Hides the scheduling export option if true. Defaults to true. | **Optional** |
+| **downloads.hideGeneralDownload** | `Boolean`, If true, hides the "Download Dashboard" access points within the widget. However, it does not impact the "Download Chart" access points.  Defaults to false.  | **Optional** |
+| **downloads.hideSchedule** | `Boolean`, If true, disables the **Schedule Export** link within dashboard and panel downloads. Defaults to false. <br /> Note: If false, both `clientId` and `authenticatedSession.email` are required for the **Schedule Export** link to be visible. | **Optional** |
+| **filters** | `Object`. Contains the filters object parameters. | **Optional** |
+| **filters.global** | `Boolean`, If true, hides creation points of global filters. Defaults to false. | **Optional** |
+| **filters.page** | `Boolean`, If true, hides creation points of page filters. Defaults to false. | **Optional** |
+| **filters.tab** | `Boolean`, If true, hides creation points of tab filters. Defaults to false. | **Optional** |
+| **filters.chart** | `Boolean`, If true, hides creation points of chart filters. Defaults to false. | **Optional** |
+| **filters.filterPanel** | `Boolean`, If true, hides the filter panel. Defaults to false. | **Optional** |
+| **panels** |  `Object`. Contains the panels object parameters. | **Optional** |
+| **panels.global** | `Object`, Contains global panel settings. | **Optional** |
+| **panels.global.hide_all** | `Boolean`, When true, hides the entire panel menu. Defaults to false. | **Optional** |
+| **panels.global.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option. Defaults to false. | **Optional** |
+| **panels.global.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option. Defaults to false. | **Optional** |
+| **panels.global.hide_JPG** | `Boolean`, When true, hides the "download JPG" option. Defaults to false. | **Optional** |
+| **panels.global.hide_PDF** | `Boolean`, When true, hides the "PDF download" option. Defaults to false. | **Optional** |
+| **panels.global.hide_CSV** | `Boolean`, When true, hides the "CSV download" option. Defaults to false. | **Optional** |
+| **panels.global.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option. Defaults to false. | **Optional** |
+| **panels.metrics** | `Object`, Contains metrics panel settings. | **Optional** |
+| **panels.metrics.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.metrics.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for metrics panels. Defaults to false. | **Optional** |
+| **panels.summaries** | `Object`, Contains summaries panel settings. | **Optional** |
+| **panels.summaries.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.summaries.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for summaries panels. Defaults to false. | **Optional** |
+| **panels.charts** | `Object`, Contains charts panel settings. | **Optional** |
+| **panels.charts.hide_edit_menu** | `Boolean`, When true, hides the "edit chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_duplicate_menu** | `Boolean`, When true, hides the "duplicate chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_downloads_menu** | `Boolean`, When true, hides the "download" sub-menu option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_delete_menu** | `Boolean`, When true, hides the "delete chart" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_JPG** | `Boolean`, When true, hides the "download JPG" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_PDF** | `Boolean`, When true, hides the "PDF download" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_CSV** | `Boolean`, When true, hides the "CSV download" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_CSV_summary** | `Boolean`, When true, hides the "CSV summary" option for charts panels. Defaults to false. | **Optional** |
+| **panels.charts.hide_EXCEL** | `Boolean`, When true, hides the "EXCEL download" option for charts panels. Defaults to false. | **Optional** |
+
 
 >**Tip**: To hide all features, set the `liteVersion` property to `true`. For example:
 
