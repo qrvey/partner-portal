@@ -23,9 +23,7 @@ An **Area Chart** is used to visualize quantitative data and represent changes o
 
 ## Creating an Area Chart
 
-You can create an Area Chart in the **Chart Builder** by selecting a dataset, defining the values and categories, and configuring the display settings in the **Configuration Panel**. For more advanced customization, you can adjust colors, add tooltips, and fine-tune other display options.
-
-For more detailed instructions on how to configure Area Charts and use the Chart Builder, refer to the [Qrvey documentation](https://partners.qrvey.com/docs/composer/Creating%20Charts/overview-of-chart-builder).
+To create an area chart, choose the desired **Category** and **Value**, then style and configure as desired.
 
 ## Styling an Area Chart
 
@@ -35,7 +33,6 @@ The General section is available for all chart types, and the options vary depen
 ### Styles
 
 The **Styles** toolbar in Qrvey's Chart Builder allows you to customize the appearance of your chart to better fit your needs. This section offers various options to modify the visual style and presentation of your area chart.
-
 
 - **Theme**: Choose from a variety of themes to change the overall color scheme of your chart.
 - **Chart Orientation**: Switch between vertical and horizontal orientations to better display your data.
@@ -75,11 +72,9 @@ Like all XY Charts, you can sort by either the category or aggregated values fro
 ### Layers
 Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
  
-
 ### Format
 The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
 You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
-

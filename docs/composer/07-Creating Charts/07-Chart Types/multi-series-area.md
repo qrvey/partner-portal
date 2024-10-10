@@ -21,10 +21,11 @@ A **Multiseries Area Chart** is a powerful visualization tool used to compare mu
 - **Stacked or Overlapping**: Choose a stacked layout to emphasize cumulative values or an overlapping layout for a direct comparison between series.
 - **Category & Values**: Typically, the X-axis represents time or sequential data, while the Y-axis shows the values being measured.
 
-
 ## Creating a Multiseries Area Chart
 
 Drag and drop your **Categories** and **Values** as desired. Then, configure **Series** to define the how to separate the aggregated values.
+
+## Styling a Multiseries Area Chart
 
 ### General
 
@@ -65,7 +66,6 @@ Multiseries area charts provide a visually appealing way to explore complex data
     - **Left**: Pixels to offset from the left.
     - **Bottom**: Pixels to offset from the bottom.
 
-
 ### Sorting
 Like all XY Charts, you can sort by either the category or aggregated values from the column pills. If the column is not included in the chart, go to the **Sorting** section of the Configuration Panel and pick your desired column from the dropdown, and select the sorting direction. For more information, see [Sorting](../sorting.md). 
  
@@ -79,4 +79,3 @@ You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
-
