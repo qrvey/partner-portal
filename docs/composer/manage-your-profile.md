@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 <div style={{textAlign: "justify"}}>
 
-## Sign Up & Log In
+## Log In
 
 ![1_logging-in](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.1_logging-in/login.png#thumbnail-60)
 
@@ -17,7 +17,7 @@ Navigate to the URL provided by your Qrvey administrator. If you were given an e
 
 > This feature is disabled by default and must be enabled your team admin. For details, please see [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md).
 
-If configured by your team's Qrvey Administrator, you may see an option to login automatically with your organization’s SSO provider. Additionally, your admin may have enabled user account creation, which you may access from the "I’m new **Sign Up**" link in the lower-right corner.
+If configured by your team's Qrvey Administrator, you may see an option to login automatically with your organization’s SSO provider.
 
 ## Manage Your Profile
 

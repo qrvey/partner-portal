@@ -20,8 +20,7 @@ Roles and permissions enable you to control access to sections of Qrvey Composer
   - Assign an account the Administrator role in Qrvey Admin Center (recommended)
   - [Create a Qrvey Administrator account in the AWS IAM service](create-admin-using-aws-iam.md) 
 - **Composers**. The default user role with access to all Qrvey Composer features. This role can be edited. 
-
-You can create custom roles with specific permissions and assign user accounts to those roles. You can also specify the Default Role that is automatically assigned to new users when they sign up from the Login page. 
+- **Custom Role**. You can also create additional roles with customized permissions.
 
 ### Overview of Permissions
 
@@ -53,7 +52,6 @@ The following table describes the available permissions:
 5. When finished, click **Save**. 
 
 ### Set the Default Role
-The Default Role is automatically assigned to new users of Qrvey Composer when they sign up from the Login page. 
 1. In Qrvey Admin, click the User Management icon in the left-hand menu and display the **Roles** tab.
 2. Find the role that you want to use and select **Set as Default Role**. 
 
