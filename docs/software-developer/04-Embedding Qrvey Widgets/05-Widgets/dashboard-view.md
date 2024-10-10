@@ -183,53 +183,6 @@ The following table describes the properties of the `personalization` object.
 | **rearrange_chart** | `Boolean`, If false, users cannot rearrange the chart panels, when in edit mode. Defaults to true. | **Optional** |
 
 
-<!-- 
-### Styles 
-
-In the Dashboard View widget, you can override CSS settings for white-labeling purposes. When using the `styles` object, house the properties inside the `pageView` object. For example:
-
-```
-styles: {
-  pageView: {
-    canvasTextFontFamily: 'Roboto, sans-serif',
-    canvasTextFontSize: '12px',
-    ...
-  }
-}
-```
-
-The following table describes the properties of the `styles` object.  
-
-| **Property** | **Values** | **Target** |
-| --- | --- | --- | 
-| **canvasButtonBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button |
-| **canvasButtonFontColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | button |
-| **canvasDatepickerFontFamily** | Groups of values: <br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace'<br /> | datepicker |
-| **canvasDatepickerFontColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker |
-| **canvasDatepickerIconSelectorsColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | datepicker |
-| **canvasValuelistFontFamily** | Groups of values:<br />'Roboto, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | valuelist |
-| **canvasValuelistFontColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist |
-| **canvasValuelistIconSelectorsColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | valuelist |
-| **canvasTextFontFamily** | Groups of values:<br />, sans-serif'<br />'Georgia, serif'<br />'Palatino Linotype, Book Antiqua, Palatino, serif'<br />'Times New Roman, Times, serif'<br />'Arial, Helvetica, sans-serif'<br />'Arial Black, Gadget, sans-serif'<br />'Comic Sans MS, cursive, sans-serif'<br />'Impact, Charcoal, sans-serif'<br />'Lucida Sans Unicode, Lucida Grande, sans-serif'<br />'Tahoma, Geneva, sans-serif'<br />'Trebuchet MS, Helvetica, sans-serif'<br />'Verdana, Geneva, sans-serif'<br />'Courier New, Courier, monospace'<br />'Lucida Console, Monaco, monospace' | textbox |
-| **canvasTextFontWeight** | All CSS supported values (names of numbers) <br /> 'bold', 'bolder', 200, 400 | textbox |
-| **canvasTextFontSize** | All CSS supported values <br />'10px', '10em', '10rem', '10%', 'large', 'small' | textbox |
-| **canvasTextFontColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox |
-| **canvasTextBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | textbox |
-| **canvasTextAlign** | right, 'center', 'left' | textbox |
-| **canvasImageAspect** | ‘cover’, ‘contain’, ‘fill’ | image |
-| **navigationBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | navigation bar |
-| **navigationElementsColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | navigation bar |
-| **tabsBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar |
-| **tabsFontColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar |
-| **tabsBorderColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar |
-| **tabSize** | All CSS supported values'10px', '10em', '10rem', '10%' | tabs bar |
-| **selectedTabBarColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | tabs bar |
-| **canvasBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | page |
-| **pageViewButtonBackgroundColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) |
-| **pageViewButtonIconColor** | All CSS supported values (color names or Hex), '#000000', 'green', 'GREEN' | floating button (bottom right) | 
--->
-
-
 ## Events
 
 The widget [supports custom events](../custom-events.md) to update keys of the configuration, you can dispatch an event using your own user interface to modify the behavior.
