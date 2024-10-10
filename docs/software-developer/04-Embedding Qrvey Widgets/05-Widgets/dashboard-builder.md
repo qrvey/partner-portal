@@ -51,11 +51,6 @@ var config = {
 | **fitPanelButton** | `Boolean`, If false, hides the "fit to panel" button on charts and panels. Defaults to true. | **Optional** | 
 | **featurePermission** | `Object`, Configure which features are available in the widget. For more information, please see [The Feature Permission Object](#feature-permission) below. | **Optional** |
 
-<!-- 
-| **doNotAllow** | `Array<String>`, Collection of strings to define permissions (will hide or block some features): <br /><br />**CREATE_CHART**: Hide Create Chart button.<br />**USERS_AUTHENTICATION**: Hide Authentication tab.<br />**USERS_LIST**: Hide Users tab.<br />**GROUPS_CRUD**: Hide the actions for create, duplicate or delete groups.<br />**GROUPS_USERS_DETAIL**: Hide the users table inside the group detail view. <br /> **Example:** `["CREATE_CHART", "USERS_AUTHENTICATION"]` hides the create chart button and users authentication. | **Optional** | 
--->
-
-
 ### Styles
 
 | **Property** | **Description**  | **Required** |
@@ -79,13 +74,14 @@ The following table describes the properties of the `featurePermission` object.
 | **userManagement** | `Object`, Defines user management related features that can be hidden.| **Optional**| 
 | **userManagement.hideUserManagementTab** | `Boolean` Hides the entry method to the user management tab in the top bar of the widget if true. Defaults to false.| **Optional**| 
 | **pagesAndApplication** | `Object`, Define pages and application-related features that can be hidden. | **Optional**| 
-| **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides button “Unpublish / publish" application button if true. Defaults to false| **Optional**| 
+| **pagesAndApplication.hidePublishAppButton** | `Boolean`, Hides button “Unpublish / publish" application button if true. Defaults to false.| **Optional**| 
 | **pagesAndApplication.hidePublishPageButton** |  `Boolean`, Hides “publish page” button if true. Defaults to false. | **Optional**| 
 | **pagesAndApplication.hideCopyPageLink** | `Boolean`, Hides the UI interfaces where the user can get the link of a page if true. Defaults to false. | **Optional**| 
 | **pagesAndApplication.hideLaunchButton** | `Boolean`, Hides the button to access the page view if true. Defaults to false.| **Optional**| 
 | **pagesAndApplication.hideCreateManagePages** | `Boolean`, Hides all options to create pages if true. Defaults to false. | **Optional**| 
 | **pagesAndApplication.hidePageStatus** | `Boolean`, Hides Text status if true. Defaults to false.| **Optional**| 
-| **pagesAndApplication.hidePagesBar** | `Boolean`, Hide bottom bar pages if true. Defaults to false. | **Optional**| 
+| **pagesAndApplication.hidePagesBar** | `Boolean`, Hide bottom bar pages if true. Defaults to false. | **Optional**|
+| **pagesAndApplication.hideThreeDotMenu** | `Boolean`, When true, hides the three-dot menu, including in edit mode. Defaults to false. | **Optional** |
 | **canvas** | `Object`, Defines canvas related features that can be hidden. | **Optional**| 
 | **canvas.hideManageCanvas** | `Boolean`, If true, hides the following options: Grid, Responsive View, Discard Changes. Defaults to false. | **Optional**| 
 | **downloads** | `Object`, Contains params to control display of the download and schedule exports feature. | **Optional** |
