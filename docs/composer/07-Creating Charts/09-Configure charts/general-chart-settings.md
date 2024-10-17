@@ -6,10 +6,27 @@ tags: [Data Analyst]
 sidebar_position: 2
 displayed_sidebar: getting-started
 ---
- 
-<div style={{textAlign: "justify"}}>
+
 
 This section is available for all chart types, however the options in it vary among chart types. All available options, regardless of the applicable chart type, have been listed in alphabetical order and briefly described in this article. Options that are specific to some charts are discussed in more detail in the individual chart type articles and a link is provided where applicable.
+
+
+### Tooltips
+
+Toggle the **Tooltips** option to display additional information when hovering over data points in a chart. You can also custom-configure information displayed in a widget's chart tooltips using a [Custom Token](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
+
+### Self-service Options
+
+The **Self-service Options** enable users with the ability to toggle, enhancing their ability to customize and manage their data views. These options include:
+
+- **Filtering**: Allows users to apply filters directly to the chart, refining the data displayed according to specific criteria.
+- **Fit To Panel**: Toggle whether users can access the "fit to panel" button.
+- **Download**: Toggle whether users can download chart data. Or alternatively, specify formats:
+  - **JPG**
+  - **PDF**
+  - **Excel** 
+  - **CSV**
+  - **CSV Summary**
 
 ### Aggregated Formulas
 This feature allows you to create a new column of data using a formula that is based on the aggregated columns in a table chart and is explained in more detail in the [Table Charts](../07-Chart%20Types/table.md) article.
@@ -150,6 +167,3 @@ The option allows for aggregations to be added to rows and columns in Crosstab c
 
 * Default: –
 * Applies to: [Table](../07-Chart%20Types/table.md), [Crosstab](../07-Chart%20Types/crosstab.md), [Expanded Table](../07-Chart%20Types/expandable.md)
-
-
-</div>

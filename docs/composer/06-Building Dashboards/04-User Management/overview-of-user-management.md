@@ -6,7 +6,6 @@ tags: [Data Analyst, Solution Architect]
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 In the **User Management** tab, you can not only create users and groups but also restrict access to certain portions of your application. For instance, you may wish to hide individual pages or components from certain users or allow certain groups of users to access only specific datasets.
 
@@ -18,7 +17,7 @@ To use OpenId, first, an Admin user must enable it from the admin app. Please re
 <br />
 
 ## Qrvey Authentication
-Qrvey is the traditional way to authenticate users. When enabled, users must sign up directly from the platform, creating a new user account or logging in with an existing Qrvey account based on the authentication configuration settings. Read more on these settings in the section below.
+Qrvey is the traditional way to authenticate users. When enabled, users must log in with an existing Qrvey account. Read more on these settings in the section below.
 
 If you require authentication for your users, the Qrvey method sets it as default when you turn on the option.
 
@@ -49,18 +48,15 @@ If the login was successful, the external provider (in this case, Google) would 
 
 Qrvey will add users that authenticate for the first time within the platform with an OpenId provider to a group called *OpenId*. If the group does not exist, it will create it and add the users to the group. A creator is able to change the name of the group later on, and new users can be added to it regardless of the name.
 
-Using OpenId as the unique authentication method, the rest of the settings will not affect the end-users login. If an end-user wants to recover their password or sign up, they should use the configured OpenId provider.
+Using OpenId as the unique authentication method, the rest of the settings will not affect the end-users login. If an end-user wants to recover their password, they should use the configured OpenId provider.
 
 
 
 ## Settings
-**Note**: The following settings will only be available when the Qrvey authentication method is turned on.
 
-First, you can choose whether to allow new users to sign up by themselves. If this is disabled, you will need to add new users manually in the User Table tab.
+**Note**: The following settings will only be available when the Qrvey authentication method is turned on. You will need to add new users manually in the User Table tab.
 
-Next, you can choose whether your login page defaults to signups for new users or login for existing ones. This is handy if you plan on having a lot of new users signing up for your application, or if most of your users will be existing users returning to your app. This setting does not apply if you’ve restricted new signups above.
-
-Finally, you can choose whether or not to add an email recovery system for lost passwords.
+- Configure whether or not to add an email recovery system for lost passwords.
 
 ![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail-70)
 
@@ -122,5 +118,3 @@ The following are the filter types supported by this settings:
 * **Pre - Defined Filters**: Filters that were added by a creator.
 
 Any changes you make to users or permissions are updated in real-time as you make them.
-
-</div>

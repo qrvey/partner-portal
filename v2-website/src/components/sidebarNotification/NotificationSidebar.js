@@ -18,16 +18,22 @@ function NotificationSidebar() {
 
   const notifications = [
     {
-      title: "Required Update for 8.5.1",
+      title: "Qrvey 8.7",
       description:
-        "Attention 8.5.1 customers: for any 8.5.1 instance deployed prior to 08/05/2024, an update is required to ensure you are running the latest images.",
-      link: "/docs/release-notes/announcements",
+        "Version 8.7 of the Qrvey platform is now available to customers! This version includes new features including area charts, the ability to pivot and export data, as well as numerous bug fixes and performance improvements.",
+      link: "/docs/release-notes/v8/release-last",
     },
     {
       title: "Qrvey 8.6",
       description:
         "Version 8.6 of the Qrvey platform is now available to customers. This version includes several new feature enhancements and performance improvements.",
-      link: "/docs/release-notes/v8/release-last",
+      link: "/docs/release-notes/v8/release-8.6",
+    },
+    {
+      title: "Required Update for 8.5.1",
+      description:
+        "Attention 8.5.1 customers: for any 8.5.1 instance deployed prior to 08/05/2024, an update is required to ensure you are running the latest images.",
+      link: "/docs/release-notes/announcements",
     },
     {
       title: "Qrvey 8.5",

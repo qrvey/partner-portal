@@ -64,7 +64,7 @@ You can change the visual style of Qrvey Composer to match your organization’s
 **Note**: You can revert to the default style settings at any time by clicking RESTORE TO DEFAULT.
 
 ### Customize the Login Page
-You can customize the look and feel of both the Log In page and the Sign Up page. You can also specify whether users can create new accounts. 
+You can customize the look and feel of the Log In page. You can also specify whether users can create new accounts. 
 
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand menu and display the **General Settings** tab. 
 2. Click the **Onboarding** tab. This tab displays customization options on the left and a preview pane on the right. 
@@ -72,18 +72,13 @@ You can customize the look and feel of both the Log In page and the Sign Up page
 4. To update the Log In page, click **Log In**. You can change the following settings, and a preview displays on the right: 
     - Title. To hide the title, clear **Show title**. 
     - Login Message. To hide the login message, clear **Show Login message**. 
-    - Sign Up Message. To hide the sign up message, clear **Show Sign up message**. 
-5. To update the Sign Up page, click **Sign Up**. You can change the following settings, and a preview displays on the right: 
-    - Title. To hide the title, clear **Show title**. 
-    - Sign Up Message. To hide the sign up message, clear **Show sign up message**. 
-    - Login Message. To hide the login message, clear **Show Login message**. 
-6. When finished, click **Save Changes**. 
+5. When finished, click **Save Changes**. 
 
 **Note**: You can revert to the default style settings at any time by clicking RESTORE TO DEFAULT.
 
 
 ### Overview of Email Settings
-Qrvey Composer automatically sends a Welcome/Onboarding email message to users when they first sign up and a Forgot Password email message when they forget their password. Qrvey Admin provides a variety of options for setting up and configuring these emails. 
+Qrvey Composer automatically sends a Welcome/Onboarding email message to users when their accounts are created as well as a Forgot Password email message when they forget their password. Qrvey Admin provides a variety of options for setting up and configuring these emails. 
 
 #### Configure Email Provider
 You can choose whether to use AWS SES as the email provider or configure an SMTP email provider. By default, Qrvey Composer uses AWS SES. 
