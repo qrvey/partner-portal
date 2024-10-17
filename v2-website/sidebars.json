@@ -35,10 +35,6 @@
         {
           "type": "doc",
           "id": "release-notes/v8/release-8.0"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.8"
         }
       ]
     },

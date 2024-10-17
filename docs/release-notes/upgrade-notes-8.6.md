@@ -1,5 +1,5 @@
 ---
-id: upgrade-notes
+id: upgrade-notes8.6
 title: Upgrade Notes
 sidebar_label: Upgrade Notes
 tags: [CloudOps Engineer]
