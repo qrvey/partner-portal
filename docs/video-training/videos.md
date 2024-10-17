@@ -17,6 +17,11 @@ The Qrvey Short Training Videos are organized by user persona. To browse videos,
 ## Release Demos
 Each new release of the Qrvey platform includes videos demonstrating new features. To browse the release demos, select the release number in the left-side navigation pane. 
 
+### [Version 8.7](./release/version-8.7.md)
+* Area Chart
+* Multiseries Area Chart
+* Export and Download Pivoted Datasets
+
 For reference, some recent releases include the following demos:
 
 ### Version 8.6

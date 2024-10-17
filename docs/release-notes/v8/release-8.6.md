@@ -6,10 +6,6 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
 
-# Qrvey 8.6
-
-### Qrvey 8.6
-
 Release Date: 2024-07-16
 
 > **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes) document for important notes and access to the upgrade link.
