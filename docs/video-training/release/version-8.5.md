@@ -1,7 +1,7 @@
 ---
 id: version-8.5
-title: Version 8.4
-sidebar_label: Version 8.4
+title: Version 8.5
+sidebar_label: Version 8.5
 ---
 
 <div>

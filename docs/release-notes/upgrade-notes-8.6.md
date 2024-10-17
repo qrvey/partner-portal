@@ -4,12 +4,11 @@ title: Upgrade Notes
 sidebar_label: Upgrade Notes
 tags: [CloudOps Engineer]
 ---
-
+<div>
 
 >**Warning:** Please review the notes in this document carefully before using the upgrade link located at the bottom of the page. **Failing to do so may result in breaking changes in your environment or product**. 
 
-<!-- format
-
+<!-- 
 ### UPGRADE NOTES TITLE
 **Starting In Version: 8.X**  
 
@@ -17,14 +16,6 @@ tags: [CloudOps Engineer]
 
 __________________________ 
 -->
-
-
-### Downtime During Upgrade Process
-**Starting In Version: 8.7**  
-
-The 8.7 upgrade may take an hour or more 1.5 hours. During the upgrade, load data and CD installations are not possible, and the application cannot be used. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-
-__________________________
 
 
 ### Downtime During Upgrade Process
@@ -36,10 +27,9 @@ __________________________
 
 
 ### Downtime During Upgrade Process
-**Starting In Version: 8.5**  
+**Starting In Version: 8.4**  
 
 If you are upgrading the Qrvey Platform from a version older than 8.4 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-
 __________________________
 
 ### New API Domain URL
@@ -91,7 +81,8 @@ Admin Center is fully serverless as of version 7.5. This change does not affect 
 __________________________
 
 ## Upgrade Link
-
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.7-plbvm.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.6-rmwpa.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
  
 If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
+
+</div>
