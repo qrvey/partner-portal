@@ -41,7 +41,7 @@ var config = {
 | **domain** | `String`, The base URL of your instance of the Qrvey platform.  | **Required** | 
 | **userId** | `String`, ID of the Qrvey User that owns the application being embedded. | **Required**  |
 | **qrveyId** | `String`, ID of the dataset being used.| **Required** |
-| **clientId** | `String`, A unique identifier of the tenant end user working with the Analytic Suite. Enables use of the End User Personalization and Download Manager features. | **Optional** |
+| **clientid** | `String`, A unique identifier of the tenant end user working with the Analytic Suite. Enables use of the End User Personalization and Download Manager features. | **Optional** |
 | **timezone** | `Object`, Overrides the time zone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](../../10-Timezone%20Settings/timezone-support.md). | **Optional** | 
 | **customTokens**| `Object`, Enables you to add custom tooltips onto metric panels. For details, please see [Custom Tokens](../customTokens.md). <br /> **Example** `{ "my_header": "A Cool Tooltip Header!"}`| **Optional** |
 | **authenticatedSession.email** | `String`, Specifies the email address to send scheduled exports. If an address is not specified, exports are sent to the email address associated with the user ID. | **Optional** | 

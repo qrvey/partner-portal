@@ -34,7 +34,7 @@ var config = {
 | **Parameter** | **Description** | **Required** |
 | --- | --- | --- |
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required** if `apiKey` is not provided. |
-| **clientId** | `String`, A unique identifier of the tenant end user working with the Analytic Suite. Enables use of the End User Personalization and Download Manager features.  In the automation widget, clientId links flows, allowing the export of personalized dashboards. <br /> **Note:** Passing `clientId` in a widget activates a "Show Personalized Dashboards" checkbox in the "Create Flow" modal, which must be checked for the feature to apply. | **Optional** |
+| **clientid** | `String`, A unique identifier of the tenant end user. Enables use of the End User Personalization and Download Manager features. In the automation widget, the `clientid` links flows to the end user that created them, allowing the export of personalized dashboards. <br /> **Note:** Passing `clientid` in a widget activates a "Show Personalized Dashboards" checkbox in the attachment modal of the Send Email action inside a Flow, which must be checked for the feature to apply. | **Optional** |
 | **apiKey** | `String`, Your organization’s unique API key required to access the Qrvey platform. | **Required**, if `qvToken` is not provided. |
 | **userId** | `String`, ID of the Qrvey User that owns the application being embedded. | **Required**  || `domain` | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |

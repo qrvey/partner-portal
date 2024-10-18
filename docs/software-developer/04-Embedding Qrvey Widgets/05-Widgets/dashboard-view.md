@@ -41,7 +41,7 @@ var config = {
 | **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the widget will open to "browse all dashboards". | **Optional** |
 | **groupList** | `Array<String>`, Collection of IDs/names of the groups created in User Management. | **Optional** |
 | **pageId** | `String`, ID of a page to visualize. If configured, all auth processes are still required. | **Optional** |
-| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. | **Optional** |
+| **clientid** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. | **Optional** |
 | **themeId** | `String`, Theme ID to use in the component. For more details, please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically). | **Optional** |
 | **userFilters** | `Array<Object>`, Collection of custom filters that the system will apply to the visualized data. For more information, please see [Working With Filters in Embedded Scenarios](../filters-embedded-scenarios.md). | **Optional** |
 | **fitPanelButton** | `Boolean`, When false, hides the "fit to panel" button on charts within the dashboard. Default value is true. | **Optional** |
@@ -142,7 +142,7 @@ const widgetConfig = {
 
 ### Subscriptions Settings
 
-In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For the Subscriptions feature to work, you must appropriately set the `clientId` property and pass it in when generating the `qvToken`. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
+In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For the Subscriptions feature to work, you must appropriately set the `clientid` property and pass it in when generating the `qvToken`. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
 
 | **Property** | **Description** |  **Required** |
 | --- | --- | --- |
@@ -155,7 +155,7 @@ In the Dashboard View widget, you can enable end users to subscribe to a schedul
 
 ### Personalization
 
-Configures end-user personalization. In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings. End User Personalization feature relies on the user being authenticated and needs the `clientId` property set for the logged-in user.
+Configures end-user personalization. In the Dashboard View widget, all authenticated users can personalize their view by default. You can use the personalization object to configure and override the personalization settings. End User Personalization feature relies on the user being authenticated and needs the `clientid` property set for the logged-in user.
 
 To turn personalization off for all users, set the `enabled` property to `false`. For example:
 
@@ -201,7 +201,7 @@ The widget [supports custom events](../custom-events.md) to update keys of the c
   - **Details**: Logs `[qvDSHRestoreDashboard]: Unable to restore to the provided version` if:
     - No version is specified.
     - An invalid version is provided.
-    - `clientId` is missing in the authentication token.
+    - `clientid` is missing in the authentication token.
     - No personalization exists for the dashboard.
     - Personalization is disabled in the configuration.
     - The same version is already active.
@@ -212,12 +212,12 @@ The widget [supports custom events](../custom-events.md) to update keys of the c
     ```
 
 - **`qvDSHSaveDashboard()`**
-  - **Purpose**: Saves modifications to create a personalized version for the `clientId` specified in the widget configuration.
+  - **Purpose**: Saves modifications to create a personalized version for the `clientid` specified in the widget configuration.
   - **Scope**: Dashboard view and edit mode.
   - **Details**: Logs `[qvDSHSaveDashboard]: Unable to save changes.` if:
     - No changes are detected.
     - Personalization is disabled in the configuration.
-    - `clientId` is missing in the authentication token.
+    - `clientid` is missing in the authentication token.
   - **Example**:
     ```javascript
     window.dispatchEvent(new CustomEvent('qvDSHSaveDashboard'));
@@ -230,7 +230,7 @@ The widget [supports custom events](../custom-events.md) to update keys of the c
     - Personalization is disabled in the configuration.
     - The dashboard is not in desktop view.
     - Dashboard editing is disabled.
-    - `clientId` is missing in the authentication token.
+    - `clientid` is missing in the authentication token.
   - **Example**:
     ```javascript
     window.dispatchEvent(new CustomEvent('qvDSHEditDashboard'));
@@ -270,7 +270,7 @@ The widget [supports custom events](../custom-events.md) to update keys of the c
     ```
 
 - **`qvDSHDownloadDashboard()`**
-  - **Purpose**: Downloads the dashboard in the specified format (`CSV`, `EXCEL`, or `PDF`).
+  - **Purpose**: Downloads the dashboard in the specified format (`CSV`, `EXCEL`, `PDF`, or `DATASET`).
   - **Scope**: Dashboard view and edit mode.
   - **Details**: Logs `[qvDSHDownloadDashboard]: Unable to download the provided format.` if:
     - No format is specified.
@@ -282,4 +282,5 @@ The widget [supports custom events](../custom-events.md) to update keys of the c
     window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'PDF' } }));
     window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'CSV' } }));
     window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'EXCEL' } }));
+    window.dispatchEvent(new CustomEvent('qvDSHDownloadDashboard', { detail: { format: 'DATASET' } }));
     ```   

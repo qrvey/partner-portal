@@ -12,7 +12,7 @@ Release Date: 2024-09-30
 ### New Features & Enhancements
 
 - **Make Filters Part of EUP:** A new property has been added to the End User widget’s configuration, allowing users to enable or disable a mode where Filter Personalizations can be autosaved or not.
-- **Support clientId and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientId` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientId`.
+- **Support clientid and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientid` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientid`.
 - **Implement Unsubscribe Page for Subscriptions:** An Unsubscribe page was implemented where users can confirm their wish to stop receiving emails from a subscription, scheduled export, and/or flow.
 - **New Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
 - **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
@@ -22,7 +22,7 @@ Release Date: 2024-09-30
 <!-- 
 **New Self-Service Options for All Charts** — When creating or editing a chart from the Chart Builder, it is now possible to configure whether the following options should be available for a chart: panel filtering, fit-to-panel, and exports (including the ability to control each export format individually).
 **Area Chart** — We now offer single and multi-series Area Charts, which are variations of line charts. These depict one dimension and one metric, with the dimension typically being a continuous variable, such as time.
-**Support for ClientId and Personalizations in Automation** — The Automation (Flows) widget now supports the `clientId` property, allowing flows to be saved per end user. Additionally, when this property is provided, users can choose to export either the original or personalized versions of dashboards, if the personalized version was created under the same `clientId`.
+**Support for clientid and Personalizations in Automation** — The Automation (Flows) widget now supports the `clientid` property, allowing flows to be saved per end user. Additionally, when this property is provided, users can choose to export either the original or personalized versions of dashboards, if the personalized version was created under the same `clientid`.
 
 **Implement Unsubscribe Page for Subscriptions, Scheduled Exports, and Flows** — A new page has been implemented requiring users to confirm whenever they want to unsubscribe from any of their email exports.
 
