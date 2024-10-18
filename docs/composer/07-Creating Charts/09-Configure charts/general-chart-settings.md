@@ -17,9 +17,9 @@ Toggle the **Tooltips** option to display additional information when hovering o
 
 ### Self-service Options
 
-The **Self-service Options** enable users with the ability to toggle, enhancing their ability to customize and manage their data views. These options include:
+The **Self-service Options** enable users with the ability to toggle access to self-service features within their data views. These options include:
 
-- **Filtering**: Allows users to apply filters directly to the chart, refining the data displayed according to specific criteria.
+- **Filtering**: Toggle whether users can apply filters directly to the chart, refining the data displayed according to specific criteria.
 - **Fit To Panel**: Toggle whether users can access the "fit to panel" button.
 - **Download**: Toggle whether users can download chart data. Or alternatively, specify formats:
   - **JPG**
