@@ -1,7 +1,7 @@
 ---
 id: chart-type-area-charts
 title: Area Chart
-sidebar_label: Area
+sidebar_label: Area Chart
 tags: [Data Analyst]
 sidebar_position: 23
 displayed_sidebar: getting-started
@@ -74,7 +74,6 @@ Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Re
  
 ### Format
 The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).

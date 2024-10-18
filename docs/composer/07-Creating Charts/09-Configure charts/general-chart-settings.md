@@ -20,6 +20,12 @@ Toggle the **Tooltips** option to display additional information when hovering o
 The **Self-service Options** enable users with the ability to toggle access to self-service features within their data views. These options include:
 
 - **Filtering**: Toggle whether users can apply filters directly to the chart, refining the data displayed according to specific criteria.
+- **Column Resizing**: Toggle whether users can adjust the width of a column.
+- **Column Arrangement**: Toggle whether users can rearrange the relative position of a column.
+- **Visualization Options**: Toggle whether users can adjust visualization options.
+- **Sorting**: Toggle whether users can use data sorting.
+- **Adding/Removing Columns**: Toggle whether users can add/remove columns.
+- **Change Column Aggregator**: Toggle whether users can adjust how the column data is aggregated.
 - **Fit To Panel**: Toggle whether users can access the "fit to panel" button.
 - **Download**: Toggle whether users can download chart data. Or alternatively, specify formats:
   - **JPG**
