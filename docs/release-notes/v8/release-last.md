@@ -19,9 +19,10 @@ Release Date: 2024-09-30
 
 - **New Self-Service Options for All Charts:** New self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts.
 
-- **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time.
+- **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
 
-- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting.
+- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md)
+
 
 <!-- 
 **New Self-Service Options for All Charts** — When creating or editing a chart from the Chart Builder, it is now possible to configure whether the following options should be available for a chart: panel filtering, fit-to-panel, and exports (including the ability to control each export format individually).
