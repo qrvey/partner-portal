@@ -11,17 +11,12 @@ Release Date: 2024-09-30
 
 ### New Features & Enhancements
 
-- **Make Filters Part of EUP:** A new property has been added to the End User widget’s configuration, allowing users to enable or disable a mode where Filter Personalizations can be autosaved or not. Filters can also be restored using the restore button in dashboards.
-
-- **Support clientId and Personalizations in Automation:** A solution was implemented for the Workflows widget to display Flows with the `qv_token` correctly.
-
+- **Make Filters Part of EUP:** A new property has been added to the End User widget’s configuration, allowing users to enable or disable a mode where Filter Personalizations can be autosaved or not.
+- **Support clientId and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientId` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientId`.
 - **Implement Unsubscribe Page for Subscriptions:** An Unsubscribe page was implemented where users can confirm their wish to stop receiving emails from a subscription, scheduled export, and/or flow.
-
-- **New Self-Service Options for All Charts:** New self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts.
-
+- **New Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
 - **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
-
-- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md)
+- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Exporting Pivoted Data](../../video-training/release/version-8.7.md).
 
 
 <!-- 
@@ -63,6 +58,10 @@ Release Date: 2024-09-30
 - **Filter By Action Not Triggered in Grouped Tables** — Fixed an issue where the Filter By action was not triggered when it was the only action on the chart.
 - **Tabular View and Table Chart Not Showing Rows** — Applied improvements to Tabular View to support formulas with a large set of nested formulas.
 - **See Data Action Removes Chart Filters When Changed to Dashboard Filters** — Fixed the See Data action so that it no longer removes chart filters when switching to dashboard filters.
+- **New Applications Not Published via API** — Fixed the update dashboard process to ensure new applications are published correctly via API.
+- **Incorrect Actions Returned in Dashboards** — Fixed an issue where personalized actions were returned instead of original actions, depending on the dashboard version in use.
+- **“Discard Changes” Feature in Dashboard Builder Not Restoring Chart Actions** — Fixed the “Discard Changes” feature to ensure chart actions are restored correctly in the Dashboard Builder.
+- **Dashboards Stuck in Loading State When Personalization Disabled** — Fixed an issue where dashboards were stuck in a loading state when personalization was set to false.
 
 
 <!-- 
