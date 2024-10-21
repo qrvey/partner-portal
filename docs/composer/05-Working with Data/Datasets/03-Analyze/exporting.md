@@ -167,7 +167,7 @@ You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-data
 1. Navigate to **Data > [Dataset] > Design Tab > Advanced Settings**.
 2. Under "Pivoting for Analysis", click **Configure Pivoting**. A modal will appear.
 3. Configure your pivot table as desired:
-    - **Pivot Column** — Choose the field whose unique values become columns in the pivot table.  
+    - **Pivot Column** — Choose the field whose unique values get transformed into columns.  
         *For example, if you have a dataset with a column called "Month," using it as a pivot column will create separate columns for each month (e.g., January, February, March).*
     - **Pivot Value** — Define the data or metrics that get aggregated (e.g., summed, averaged, counted) in the cells of the pivot table. It represents what you want to measure or calculate for each combination of the row and column data.  
         *For example, if you want to see total sales by month, "Sales" would be the pivot value, and you might use a sum function to add up the sales for each month.*
