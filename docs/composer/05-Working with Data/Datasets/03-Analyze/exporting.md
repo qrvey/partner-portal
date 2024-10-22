@@ -160,19 +160,19 @@ It is important to note the following points:
 You can use the [Scheduling Exports](./scheduling-exports.md) feature to automatically produce exports at specified intervals and send them to an email address.
 
 
-## Pivot Exported Data
+## Pivot and Export Data
 
-You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-datasets.md) for export.
+You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-datasets.md) for export and download as a CSV.
 
 1. Navigate to **Data > [Dataset] > Design Tab > Advanced Settings**.
 2. Under "Pivoting for Analysis", click **Configure Pivoting**. A modal will appear.
 3. Configure your pivot table as desired:
     - **Pivot Column** — Choose the field whose unique values get transformed into columns.  
         *For example, if you have a dataset with a column called "Month," using it as a pivot column will create separate columns for each month (e.g., January, February, March).*
-    - **Pivot Value** — Define the data or metrics that get aggregated (e.g., summed, averaged, counted) in the cells of the pivot table. It represents what you want to measure or calculate for each combination of the row and column data.  
-        *For example, if you want to see total sales by month, "Sales" would be the pivot value, and you might use a sum function to add up the sales for each month.*
+    - **Pivot Value** — Define the column who's value will be displayed. The first row value for each unique Pivot Column and Row Key Column combination will be displayed. 
+        *Note: Aggregation of pivoted data is not supported. If there are multiple rows that have the same Pivot Column and Row Key Column combination, the first row's value will be shown, the others will not be included.*
     - **Row Key Columns** — Choose fields whose unique values become the rows of the pivot table. This is what you categorize or group the data by in rows.  
-        *For example, if you have a column called "Region" and use it as the row key column, each region (e.g., North, South, East, West) will become a row in the pivot table.*
+        *For example, if you have a column called "Region" and use it as the row key column, each region (e.g., North, South, East, West) will become a row in the pivot table, with 4 rows in total.*
     - **Pivot Label** — Optional. Assign a label for the pivot table.
 4. Click **Save** to confirm. The modal will close.
 5. Under "Pivoting for Analysis", click the **Enable** radio button.
@@ -183,4 +183,4 @@ You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-data
 10. Under **Dataset**, choose a desired dataset that has been configured for pivoting.
 11. Then, a radio toggle **Pivoting: Yes / No** will appear within the modal. Click **Yes**.
 12. Configure all other fields as desired.
-13. Click **Export Now** to process and download your pivoted dataset.
+13. Click **Export Now** to process and download your pivoted dataset as a CSV file.
