@@ -109,6 +109,12 @@ module.exports = {
           docId: "release-notes/v8/release-last",
         },
         {
+          label: "Guides",
+          type: "doc",
+          position: "right",
+          docId: "guides/guides-home",
+        },
+        {
           type: "dropdown",
           position: "right",
           label: "Knowledge Base",
