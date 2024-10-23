@@ -89,144 +89,132 @@
           "dirName": "guides/new-features"
         }
       ]
-    }
-  ],
-  "video-training": [
-    {
-      "type": "doc",
-      "id": "video-training/videos-home"
     },
     {
       "type": "category",
-      "label": "Short Training Videos",
+      "label": "CloudOps",
       "items": [
         {
-          "type": "category",
-          "label": "For CloudOps Engineers",
-          "items": [
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-multi-tenancy-architecture"
-            }
-          ]
+          "type": "doc",
+          "id": "video-training/legacy/video-multi-tenancy-architecture"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Data Analysis",
+      "items": [
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-dataset-design"
         },
         {
-          "type": "category",
-          "label": "For Data Analysts",
-          "items": [
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-dataset-design"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-dataset-transformations"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-dataset-syncing"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-chart-builder"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-xychart"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-map-chart"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-percent-total-charts"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-multi-series"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-kpi"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-table-charts"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-page-builder"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-filter-design"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-formulas-buckets"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-page-actions"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-content-publishing"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-new-webforms"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-new-workflows"
-            }
-          ]
+          "type": "doc",
+          "id": "video-training/legacy/video-dataset-transformations"
         },
         {
-          "type": "category",
-          "label": "For Solution Architects",
-          "items": [
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-security-overview"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-security-groups"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-row-level-security"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-column-level-security"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-content-deployment"
-            }
-          ]
+          "type": "doc",
+          "id": "video-training/legacy/video-dataset-syncing"
         },
         {
-          "type": "category",
-          "label": "For Software Developers",
-          "items": [
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-widget-overview"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-jwt-widget"
-            },
-            {
-              "type": "doc",
-              "id": "video-training/legacy/video-branding-styling"
-            }
-          ]
+          "type": "doc",
+          "id": "video-training/legacy/video-chart-builder"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-xychart"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-map-chart"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-percent-total-charts"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-multi-series"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-kpi"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-table-charts"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-page-builder"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-filter-design"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-formulas-buckets"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-page-actions"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-content-publishing"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-new-webforms"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-new-workflows"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Solutions Architecture",
+      "items": [
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-security-overview"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-security-groups"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-row-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-column-level-security"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-content-deployment"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Software Development",
+      "items": [
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-widget-overview"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-jwt-widget"
+        },
+        {
+          "type": "doc",
+          "id": "video-training/legacy/video-branding-styling"
         }
       ]
     }
