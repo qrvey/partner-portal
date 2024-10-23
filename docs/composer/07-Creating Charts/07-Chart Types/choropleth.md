@@ -66,7 +66,7 @@ You can also add Filters to your data by expanding the Filters section in the co
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
-For more on Choropleth Maps and other Map charts, we recommend watching the [Map Chart](../../../video-training/legacy/map-chart.md) video.
+For more on Choropleth Maps and other Map charts, we recommend watching the [Map Chart](../../../guides/legacy/map-chart.md) video.
 
 
 

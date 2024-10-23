@@ -30,7 +30,7 @@ To Deploy Content, follow these general steps:
 
 **Video Tutorials**
 
-For video instructions, please watch the [Content Deployment Tutorial](../../video-training/legacy/content-deployment.md).
+For video instructions, please watch the [Content Deployment Tutorial](../../guides/legacy/content-deployment.md).
 
 **API-Based Content Deployment**
 

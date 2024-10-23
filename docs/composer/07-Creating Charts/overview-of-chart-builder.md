@@ -132,7 +132,7 @@ Column Pills represent the dataset fields that appear either under <strong>Categ
 <li> - Remove</li></ul>
  
  
-For a tutorial on using Chart Builder, see the video <a href="/docs/video-training/legacy/video-chart-builder">Chart Builder</a>.
+For a tutorial on using Chart Builder, see the video <a href="/docs/guides/legacy/video-chart-builder">Chart Builder</a>.
  
  
 </div>

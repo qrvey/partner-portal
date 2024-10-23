@@ -55,7 +55,7 @@ You can also add Filters to your data by expanding the **Filters** section in th
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
 
 
-For more on Pie Charts and other Percent of Total charts, we recommend watching <a href="/docs-v2/video-training/legacy/percent-total-charts.md" target="_blank">this video</a>.
+For more on Pie Charts and other Percent of Total charts, we recommend watching <a href="/docs-v2/guides/legacy/percent-total-charts.md" target="_blank">this video</a>.
 
 
 

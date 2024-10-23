@@ -65,7 +65,7 @@ The **Time Period** and **Comparison** date periods can be picked from predefine
 You can also add Filters to your data by expanding the Filters section in the configuration panel or by clicking on the Filters button in the toolbar above the canvas.
 Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
  
-For more on the Indicator Gauge and other KPI Charts, we recommend watching <a href="/docs-v2/video-training/legacy/kpi.md" target="_blank">this video</a>..
+For more on the Indicator Gauge and other KPI Charts, we recommend watching <a href="/docs-v2/guides/legacy/kpi.md" target="_blank">this video</a>..
  
  
  

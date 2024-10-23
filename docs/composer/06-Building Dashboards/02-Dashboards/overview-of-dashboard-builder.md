@@ -290,7 +290,7 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 5. To continue editing on application, click **Unpublish**.
 
 ## Publish an Application
-Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see the training video, [Content Publishing](../../../video-training/legacy/content-publishing.md). 
+Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see the training video, [Content Publishing](../../../guides/legacy/content-publishing.md). 
 
 1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
 2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](../04-User%20Management/overview-of-user-management.md). 

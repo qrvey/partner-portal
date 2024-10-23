@@ -11,7 +11,7 @@ Qrvey’s approach to multi-tenant security architecture is to utilize the **ass
 
 Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime.  This document discusses best practices for implementing authentication and authorization using these widget configuration properties.  If you are not yet familiar with how to embed and configure Qrvey widgets, review the [Embedded Widgets Overview](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
 
-You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with a Qrvey Token. It is recommended to watch the [JWT Widget Integration training video](../video-training/legacy/jwt-widget.md) on the Qrvey Partner Portal.
+You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with a Qrvey Token. It is recommended to watch the [JWT Widget Integration training video](../guides/legacy/jwt-widget.md) on the Qrvey Partner Portal.
 
 ## Authentication
 
@@ -112,7 +112,7 @@ In the example above, the end user would be restricted to all records dated betw
 
 `Month In Range (6/2020 - 12/2020) AND (Country = “USA” OR Number >= 10000)`
 
-You can read the [Record Level Security](../software-developer/03-Security/record-level-security.md) article for specific details around implementation and which properties are supported.  There is also a [Record Level Security training video](../video-training/legacy/row-level-security.md) that is also recommended.
+You can read the [Record Level Security](../software-developer/03-Security/record-level-security.md) article for specific details around implementation and which properties are supported.  There is also a [Record Level Security training video](../guides/legacy/row-level-security.md) that is also recommended.
 
 ### Asset/Object Permissions
 
