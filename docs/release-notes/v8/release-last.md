@@ -17,7 +17,7 @@ Release Date: 2024-09-30
 - **New Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
 - **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
 - **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Exporting Pivoted Data](../../video-training/release/version-8.7.md).
-- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform for greater security.
+- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
 <!-- 
 **New Self-Service Options for All Charts** — When creating or editing a chart from the Chart Builder, it is now possible to configure whether the following options should be available for a chart: panel filtering, fit-to-panel, and exports (including the ability to control each export format individually).
@@ -32,7 +32,8 @@ Release Date: 2024-09-30
 
 ### General Tweaks & Fixes
 
-- **Fix Security Token API — AWS Native Version** — Resolved security issues in the AWS native version of the Security Token API.
+- **Security Token API Improvements — AWS Native Version** — Changed the way we create and process security tokens in AWS native version.  
+    ***Note that old tokens will no longer work in 8.7***
 - **Flatten Transformation Causing Athena Join Query Error** — Fixed an error during the Athena process when a joined dataset contains a flatten transformation applied as a pre-join transform.
 - **Error Inspecting Columns to Fetch New Columns from Data Source** — Fixed an issue when refreshing columns to fetch new columns from the data source.
 - **DynamoDB Clients Being Consumed When Creating, Updating, or Deleting Columns** — Fixed a random error when loading multiple datasets simultaneously, particularly involving column creation, deletion, or updates.
@@ -44,7 +45,6 @@ Release Date: 2024-09-30
 - **Data Loading Fails Due to Invalid Binary Character** — Fixed an issue where loading a dataset containing non-printable characters into AWS SQS caused a failure.
 - **Duplicate Entries When Sharing Previously Shared Applications** — Fixed an issue where sharing a previously shared application created duplicate entries in the database.
 - **Error During Upgrade Process Due to Memory Limitation** — Fixed a memory issue that caused the upgrade script to run out of memory and fail during the auto-deployment process.
-- **FIPS - MSSQL/MySQL Connections Can't Be Created** — Fixed an issue preventing users from creating connections using MySQL and MSSQL under FIPS mode.
 - **Schedule Date Shows One Day Before Selected Date** — Fixed issues with date selection for certain time zones in Scheduled Exports.
 - **View/Edit Schedule Popup Time Error Message Is Incorrect** — Improved error messages for set date and times in Scheduled Exports.
 - **Exports Do Not Complete Due to Retry Limit** — Implemented error handling and retries for CSV raw exports.
