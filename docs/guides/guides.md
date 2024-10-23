@@ -18,10 +18,11 @@ We’ve organized our guides to suit every learning style and expertise level. D
 - [Area Charts](./new-features/version-8.7.md#area-charts) 
 - [Pivot Download Datasets](./new-features/version-8.7.md#export-pivoted-data)
 
-### Video Tutorials
-
+### Dev Mode
 - [Intro to Widgets](#)
 - [Multitenancy Architecture](#)
+
+### Composer Essentials
 - [Dataset Design](#)
 - [Formulas & Buckets](#)
 - [Workflow](#)
