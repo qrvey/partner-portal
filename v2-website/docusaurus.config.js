@@ -103,33 +103,16 @@ module.exports = {
           href: "https://qrvey.stoplight.io/docs/qrvey-api-doc/",
         },
         {
+          label: "Guides",
+          type: "doc",
+          position: "right",
+          docId: "guides/guides",
+        },
+        {
           label: "Release Notes",
           type: "doc",
           position: "right",
           docId: "release-notes/v8/release-last",
-        },
-        {
-          label: "Guides",
-          type: "doc",
-          position: "right",
-          docId: "guides/guides-home",
-        },
-        {
-          type: "dropdown",
-          position: "right",
-          label: "Knowledge Base",
-          items: [
-            {
-              type: "doc",
-              docId: "video-training/videos-home",
-              label: "Videos",
-            },
-            {
-              type: "doc",
-              docId: "getting-started/faqs-all-personas",
-              label: "FAQs",
-            },
-          ],
         },
         {
           type: "docsVersionDropdown",
