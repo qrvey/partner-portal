@@ -1,7 +1,7 @@
 ---
 id: chart-type-area-charts
 title: Area Chart
-sidebar_label: Area
+sidebar_label: Area Chart
 tags: [Data Analyst]
 sidebar_position: 23
 displayed_sidebar: getting-started
@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 An **Area Chart** is used to visualize quantitative data and represent changes over time. It is particularly effective for illustrating trends or showing how values accumulate over a period. By filling the space between the line and the x-axis with color, area charts make it easier to see the volume of changes over time, making them a great choice when you want to highlight the magnitude of trends.
 
-![Area Chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/area-chart-20241010A.webp)
+![Area Chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/area-chart-20241022A.webp)
 
 **When to Use an Area Chart:**
 - To display how a value evolves over time.
@@ -74,7 +74,6 @@ Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Re
  
 ### Format
 The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).

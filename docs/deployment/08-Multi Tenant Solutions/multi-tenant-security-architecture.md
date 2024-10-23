@@ -19,26 +19,26 @@ In a multi-tenant production deployment, there could be thousands of tenants and
 
 However, there are two features in Qrvey that track, persist, and recall data; and therefore need to know who the specific tenant end user is: [End User Personalization](../../software-developer/08-End%20User%20Personalization/overview-of-personalization.md) and [Download Manager](../../composer/download-manager.md).
 
-To use one or both of these features in embedded widgets, you define the `clientId` property during [Widget Authentication](../../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md).
+To use one or both of these features in embedded widgets, you define the `clientid` property during [Widget Authentication](../../software-developer/04-Embedding%20Qrvey%20Widgets/widget-authentication.md).
 
 
-### What is the clientId?
+### What is the clientid?
 
-In Qrvey, a `clientId` is a unique string value (email, id, token, username, or anything else) that is associated with a specific end user authenticated by the SaaS organization's core application. Therefore, a `clientId` is different from a `userId`, which represents a user of the Qrvey platform. In other words, the `clientId` is associated with a SaaS organization's tenant end users who consume Qrvey's embedded widgets, while the `userId` is associated with an SaaS organization's own team members who build content directly in Qrvey Composer.
+In Qrvey, a `clientid` is a unique string value (email, id, token, username, or anything else) that is associated with a specific end user authenticated by the SaaS organization's core application. Therefore, a `clientid` is different from a `userId`, which represents a user of the Qrvey platform. In other words, the `clientid` is associated with a SaaS organization's tenant end users who consume Qrvey's embedded widgets, while the `userId` is associated with an SaaS organization's own team members who build content directly in Qrvey Composer.
 
-For production implementation in widgets, pass `clientId` into the request to [Generate a Qrvey Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token). In dev mode, you can pass `clientId` directly in the widget config object; though this may not be secure and is not recommended in production.
+For production implementation in widgets, pass `clientid` into the request to [Generate a Qrvey Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token). In dev mode, you can pass `clientid` directly in the widget config object; though this may not be secure and is not recommended in production.
 
-When a `clientId` is passed into Qrvey, the system will check whether the value exists. If it does not, it will be saved within your Qrvey instance. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
+When a `clientid` is passed into Qrvey, the system will check whether the value exists. If it does not, it will be saved within your Qrvey instance. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
 
->**Note**:  It is critical for the `clientId` property to be set to a unique value for each tenant end user.
+>**Note**:  It is critical for the `clientid` property to be set to a unique value for each tenant end user.
 
-Here is an example of a JSON widget configuration object using the `clientId` property to enable End User Personalization:
+Here is an example of a JSON widget configuration object using the `clientid` property to enable End User Personalization:
 
 ```json
 {
    "domain": "https://myinstance.qrveyapp.com",
    "appId": "APP_ID_VALUE",
-   "clientId": "CLIENT_ID_VALUE",
+   "clientid": "CLIENT_ID_VALUE",
    "personalization": {
        "enabled": true,
    },

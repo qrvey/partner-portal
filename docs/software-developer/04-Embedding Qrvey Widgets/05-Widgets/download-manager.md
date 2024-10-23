@@ -22,7 +22,7 @@ Download Manager filters the files displayed based on user ID and client ID. To 
     var config = {
         apiKey: "<YOUR_PRIVATE_API_KEY>",
         domain: "<DOMAIN>",
-        clientId: "<CLIENT_ID>"
+        clientid: "<CLIENT_ID>"
     };
 </script>
 
@@ -40,7 +40,7 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 | **qvToken** | `String`, Encrypted token used for secure authentication. | **Required**, if `apiKey` is not provided. |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **userId** | `String`, The ID of the Qrvey Composer user account accessing this feature. Alternatively, you can specify the user ID in a Qrvey session cookie. To save the exports for a certain end user and then list them in your Download Manager instance, set the same values for the user ID and client ID properties in all the widgets from where you will run the exports. | **Optional**  |
-| **clientId** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. If authenticating with a `qvToken`, pas this into the token for authentication.  | **Required** |
+| **clientid** | `String`, The client ID, or unique identifier, of the tenant end user working with the Download Manager. If authenticating with a `qvToken`, pas this into the token for authentication.  | **Required** |
 | **i18n** | `Object`, Defines the language to be displayed in the static text of the widget as well as the dataset columns. Please see [The i18n Object](#the-i18n-object) for details. | **Optional** |
 | **showModalButton** | `Boolean`, If set to `true`, displays the Download Manager as a download button, which opens the download manager as a modal on click. Defaults to `false`. | **Optional** |
 | **widgetView** | `String`, determines how the component is displayed. The default setting is modal, in which the component is displayed as a popup window. If set to table, the component is displayed as a page. | **Optional** |

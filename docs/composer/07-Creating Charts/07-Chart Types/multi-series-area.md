@@ -1,7 +1,7 @@
 ---
 id: chart-type-multiseries-area-charts
 title: Multiseries Area Chart
-sidebar_label: Multiseries Area
+sidebar_label: Multiseries Area Chart
 tags: [Data Analyst]
 sidebar_position: 24
 displayed_sidebar: getting-started
@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 A **Multiseries Area Chart** is a powerful visualization tool used to compare multiple data series over time. It displays trends across different categories or groups, with each series represented by a separate filled area beneath a line. This type of chart is ideal for highlighting the cumulative nature of different datasets, as well as understanding how individual series contribute to the overall trend.
 
-![Multiseries Area](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/multiseries-area-chart-20241010A.webp)
+![Multiseries Area](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/multi-series-area-chart-20241022A.webp)
 
 **When to Use a Multiseries Area Chart:**
 - To compare trends across multiple categories, such as sales data from different regions or products.
@@ -59,8 +59,8 @@ Multiseries area charts provide a visually appealing way to explore complex data
     - **Min Range & Max Range**: Set the minimum and maximum values for the Y-axis range manually or use "Auto" to allow Qrvey to adjust it based on the data.
     - **Steps**: Define the interval between tick marks on the Y-axis. Choose "Auto" for automatic scaling or set a custom value for precise control.
 - **Opacity**: Adjust the transparency level of the chart elements, allowing you to make the chart more or less prominent in the dashboard.
-- **Type**: Select from different layout styles to adjust how the data is visually layered, including standard, stacked, or normalized views.
-- **Line Type**: Choose the style of lines used in the chart, such as straight, smooth, or stepped, to best represent the flow of data.
+- **Layout Type**: Select from different layout styles to adjust how the data is visually layered, including standard, stacked, or normalized views.
+- **Type**: Choose the style of lines used in the chart, such as straight, smooth, or stepped, to best represent the flow of data.
 - **Data Labels**: Enable or disable data labels to show specific values directly on the chart for easier reference.
 - **Offset**: Adjust the position of elements using **Percentage** or **Pixels** for precise control over the layout.
     - **Left**: Pixels to offset from the left.
@@ -75,7 +75,6 @@ Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Re
 
 ### Format
 The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
-You can apply [Conditional Formatting](../09-Configure%20charts/chart-format.md#small-multiples#conditional-formatting) to your Line Chart.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).

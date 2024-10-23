@@ -19,10 +19,10 @@ __________________________
 -->
 
 
-### Downtime During Upgrade Process
+### Upgrade Notes
 **Starting In Version: 8.7**  
 
-The 8.7 upgrade may take an hour or more 1.5 hours. During the upgrade, load data and CD installations are not possible, and the application cannot be used. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
+We highly recommend planning upgrades during off-hours to minimize disruptions to your users.
 
 __________________________
 

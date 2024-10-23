@@ -38,7 +38,7 @@ var config = {
 | **appId** | `String`,  ID of the Qrvey application that contains the asset you want to embed. | **Required** |
 | **domain** | `String`, The base URL of your Qrvey instance. | **Required** | 
 | **userId** | `String`, ID of the Qrvey User that owns the application being embedded. | **Required**  |
-| **clientId** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientId must be set to a unique value for each tenant end user. | **Optional** |
+| **clientid** | `String`, Unique identifier for the tenant end user. Required for using the End User Personalization and Download Manager features. The clientid must be set to a unique value for each tenant end user. | **Optional** |
 | **dashboardId** | `String`, ID of a specific dashboard to open to. If omitted, the end user will be taken to the "dashboard selection" page. | **Optional**, but in practice you should always send the user to a specific dashboard. |
 | **timezone** | `Object`, Overrides the timezone setting in Qrvey Admin Center. For more information, see [Configuring Time Zone Settings](https://partners.qrvey.com/docs/software-developer/Timezone%20Settings/time-zone-support). | **Optional** |
 | **privatePages** | `Boolean`, Pre-defines the privacy state of new dashboards. If true, every new dashboard will be private (and unavailable to unauthenticated users). Defaults to false, and therefore dashboards are published in a public state. | **Optional** |

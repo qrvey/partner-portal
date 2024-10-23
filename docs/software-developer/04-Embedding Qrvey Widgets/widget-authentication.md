@@ -14,9 +14,9 @@ Qrvey widgets offer two authentication methods:
 - **API Key** — for dev & testing only. A quick and easy, but insecure way to test widgets. 
 - **Qrvey Security Token** — for production use cases. Backend-to-backend authentication that protects secrets.
 
-For widgets that use the Download Manager or End User Personalization features, a `clientId` may be required in addition to or in place of `userId`. For more details on `clientId`, please see [Multi Tenant Security Architecture](../../deployment/08-Multi%20Tenant%20Solutions/multi-tenant-security-architecture.md#authentication). Please refer to the relevant widget's documentation and consider your implementation needs to determine which should be provided.
+For widgets that use the Download Manager or End User Personalization features, a `clientid` may be required in addition to or in place of `userId`. For more details on `clientid`, please see [Multi Tenant Security Architecture](../../deployment/08-Multi%20Tenant%20Solutions/multi-tenant-security-architecture.md#authentication). Please refer to the relevant widget's documentation and consider your implementation needs to determine which should be provided.
 
-For the system to recognize a `clientId`, you must pass it in when you generate the Qrvey Security Token. You cannot pass it directly on a widget's config object as you do with many other params during API Key Authentication during development and testing.
+For the system to recognize a `clientid`, you must pass it in when you generate the Qrvey Security Token. You cannot pass it directly on a widget's config object as you do with many other params during API Key Authentication during development and testing.
 
 ## API Key Authentication
 
