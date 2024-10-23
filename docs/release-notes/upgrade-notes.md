@@ -22,6 +22,7 @@ __________________________
 ### Upgrade Notes
 **Starting In Version: 8.7**  
 
+This version has modified how the platform generates JWT tokens, so existing tokens will need to be refreshed.
 We highly recommend planning upgrades during off-hours to minimize disruptions to your users.
 
 __________________________
