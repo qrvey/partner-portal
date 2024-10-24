@@ -11,26 +11,26 @@ We’ve organized our guides to suit every learning style and expertise level. D
 
 ---
 
-## Featured Content
-
-### What's New in Version 8.7
+## What's New in Version 8.7
 
 - [Area Charts](./new-features/version-8.7.md#area-charts) 
-- [Pivot Download Datasets](./new-features/version-8.7.md#export-pivoted-data)
+- [Pivot & Download Datasets](./new-features/version-8.7.md#export-pivoted-data)
 
-### Dev Mode
+## Dev Mode
 - [Intro to Widgets](#)
 - [Multitenancy Architecture](#)
 
-### Composer Essentials
+## Composer Essentials
 - [Dataset Design](#)
 - [Formulas & Buckets](#)
 - [Workflow](#)
 
+<!-- 
 ### Advanced Use Cases
 
 **Take Your Skills to the Next Level:** Ready to go deeper? These advanced tutorials cover complex scenarios like automated workflows, custom analytics, and integrating Qrvey into your business processes.  
 [Master Advanced Features →](#)
+-->
 
 <!-- 
 ## Categories
