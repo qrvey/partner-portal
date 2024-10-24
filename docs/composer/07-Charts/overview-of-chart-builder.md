@@ -1,7 +1,7 @@
 ---
 id: overview-of-chart-builder
-title: Overview of Chart Builder
-sidebar_label: Overview of Chart Builder
+title: The Chart Builder
+sidebar_label: The Chart Builder
 tags: [Data Analyst]
 sidebar_position: 2
 displayed_sidebar: getting-started
@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 <div style={{textAlign: "justify"}}>
 
-Chart Builder is the tool that is used for creating charts and metrics based on the data. As you work within the Chart Builder and make changes to your selections, you can see results instantaneously, which allows you to discover new insights about your data.
+The Chart Builder is the tool that is used for creating charts and metrics based on the data. As you work within the Chart Builder and make changes to your selections, you can see results instantaneously, which allows you to discover new insights about your data.
  
 The various areas and panels of the Chart Builder are introduced in the following image:
  

@@ -1,7 +1,7 @@
 ---
 id: subscribing-to-exports
-title: Subscribing to Exports
-sidebar_label: Subscribing to Exports
+title: Subscribe to Exports
+sidebar_label: Subscribe to Exports
 tags: [Data Analyst]
 sidebar_position: 3
 displayed_sidebar: getting-started

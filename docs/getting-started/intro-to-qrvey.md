@@ -93,8 +93,8 @@ Those that Qrvey Composer to set up datasets and create visualizations and dashb
 * [Introduction to Qrvey Composer](../composer/introduction-to-qrvey-composer.md)
 * [Overview of Qrvey Applications](../composer/overview-of-applications.md)
 * [Introduction to Data in Qrvey](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)
-* [Overview of Dashboards](../composer/06-Building%20Dashboards/overview-of-dashboards.md)
-* [Overview of Chart Builder](../composer/07-Creating%20Charts/overview-of-chart-builder.md)
+* [Overview of Dashboards](../composer/06-Dashboards/dashboard-builder.md)
+* [Overview of Chart Builder](../composer/07-Charts/overview-of-chart-builder.md)
 
 ### Software Developers
 The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.

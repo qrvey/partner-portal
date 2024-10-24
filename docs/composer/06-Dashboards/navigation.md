@@ -1,12 +1,11 @@
 ---
-id: overview-of-navigation
-title: Overview of Navigation
-sidebar_label: Overview of Navigation
+id: navigation
+title: Navigation
+sidebar_label: Navigation
 tags: [Data Analyst]
+sidebar_position: 2
 displayed_sidebar: getting-started
 ---
-
-<div style={{textAlign: "justify"}}>
 
 You can combine multiple pages together into a complete information application by using the **Navigation** tab to add a simple menu that will appear on all of your pages.
 
@@ -27,5 +26,3 @@ You can use the link icon to launch your application and see what your users wi
 After your application is published, your users will see a drop-down menu atop all of your pages so that they can easily navigate between the pages you’ve selected. Only published pages will appear to users.
 
 ![4_navigation](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.2_navigation/4_navigation.png#thumbnail-40)
-
-</div>

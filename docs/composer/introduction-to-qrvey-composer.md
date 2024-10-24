@@ -24,7 +24,7 @@ After you've signed up or logged in, you enter the Applications Page, where you 
 An application is a self-contained analytics project, composed of five modules:
 
 1. **[Data](./05-Working%20with%20Data/introduction-to-data-in-qrvey.md)** — Enable configuration and management of the application's data sources.
-2. **[Dashboards](./06-Building%20Dashboards/overview-of-dashboards.md)** — A robust data dashboard system to create, browse, configure, customize, and deploy interactive data visualizations.
-3. **[Automation](./09-Automation/overview-of-automation.md)** — Set triggers, then define conditions and actions to automate tasks within an application.
-4. **[Pixel-Perfect Reports](./10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)** — Build highly customizable and detailed reports out of your data and data visualizations.
+2. **[Dashboards](./06-Dashboards/dashboard-builder.md)** — A robust data dashboard system to create, browse, configure, customize, and deploy interactive data visualizations.
+3. **[Automation](./09-Automation/introduction-to-automation.md)** — Set triggers, then define conditions and actions to automate tasks within an application.
+4. **[Pixel-Perfect Reports](./10-Pixel-Perfect%20Reports/overview-of-pixel-perfect-reports.md)** — Build highly customizable and detailed reports out of your data and data visualizations.
 5. **[Settings](./overview-of-applications.md#application-settings)** — Configure the global settings for an application.

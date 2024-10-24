@@ -56,7 +56,7 @@ Using the said dropdown list, you can choose the column to sort the data by, eve
 ![sorting-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/sort-data/panel2.png#thumbnail-40)  
 
 ### Sorting from the General Section of the Configuration Panel
-Other charts that support sorting, but not through the two methods mentioned above, allow sorting from the icons in the **Sort by** subsection under the [General](../07-Creating%20Charts/overview-of-chart-builder.md) section of the configuration panel.
+Other charts that support sorting, but not through the two methods mentioned above, allow sorting from the icons in the **Sort by** subsection under the [General](../07-Charts/overview-of-chart-builder.md) section of the configuration panel.
 
 ![sorting-data](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/sort-data/general1.png#thumbnail-40)  
 

@@ -142,7 +142,7 @@ const widgetConfig = {
 
 ### Subscriptions Settings
 
-In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For the Subscriptions feature to work, you must appropriately set the `clientid` property and pass it in when generating the `qvToken`. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Building%20Dashboards/02-Dashboards/subscribing-exports.md).
+In the Dashboard View widget, you can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. For the Subscriptions feature to work, you must appropriately set the `clientid` property and pass it in when generating the `qvToken`. The property’s value should represent a unique identifier for each end user. For more information on using subscriptions, see [Subscribing to Exports](../../../composer/06-Dashboards/subscribing-exports.md).
 
 | **Property** | **Description** |  **Required** |
 | --- | --- | --- |

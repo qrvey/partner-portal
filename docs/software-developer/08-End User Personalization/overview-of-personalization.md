@@ -24,7 +24,7 @@ Through the User Management feature in Qrvey Composer, Data Analysts can decide 
 If you're a Software Developer, see [Dashboard View Widget](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) for information on enabling individual personalization features.  
 
 If you're a Data Analyst:
-* See [User Management](../../composer/06-Building%20Dashboards/04-User%20Management/overview-of-user-management.md) to learn how to create end users.
+* See [User Management](../../composer/06-Dashboards/overview-of-user-management.md) to learn how to create end users.
 * See [Personalizing Your Dashboards](../08-End%20User%20Personalization/overview-of-personalization.md) to learn about personalization features that are available to end users.
 
 </div>

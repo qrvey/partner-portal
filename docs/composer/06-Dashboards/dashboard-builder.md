@@ -1,13 +1,12 @@
 ---
-id: overview-of-dashboard-builder
-title: Overview of Dashboard Builder
-sidebar_label: Overview of Dashboard Builder
+id: dashboard-builder
+title: The Dashboard Builder
+sidebar_label: The Dashboard Builder
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 Dashboard Builder makes it easy to combine multiple Qrvey Composer components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple dashboards into a complete information application by using the Navigation feature.
 
@@ -17,8 +16,8 @@ To open Dashboard Builder, click the Dashboard Builder icon in the left navigati
 
 The Dashboard Builder feature consists of three top-level tabs:
 * **Dashboard**. Enables you to design and publish dashboards, described in this article. 
-* **[Navigation](../03-Navigation/overview-of-navigation.md)**. Enables you to create navigation menus that combine multiple dashboards into a complete information application. 
-* **[User Management](../04-User%20Management/overview-of-user-management.md)**. Enables you to grant and restrict end users’ access to the dashboards. 
+* **[Navigation](./navigation.md)**. Enables you to create navigation menus that combine multiple dashboards into a complete information application. 
+* **[User Management](./overview-of-user-management.md)**. Enables you to grant and restrict end users’ access to the dashboards. 
 
 The Dashboards page lists all the existing dashboards. 
 
@@ -179,7 +178,7 @@ You can add buttons to your dashboard to enable end users to easily navigate to 
 ### Working with Themes
 The Themes feature enables you to apply the same look-and-feel to multiple charts. Qrvey Composer provides a default theme that you cannot delete or edit. However, you may create new themes and define your own visual styles. When you create a theme, it is available in all your applications. Every theme has a unique ID that you can reference programmatically. 
 
-For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../07-Creating%20Charts/setting-chart-styles.md).
+For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../07-Charts/setting-chart-styles.md).
 
 
 ### Insert a Filter Control
@@ -221,7 +220,6 @@ To download a file, click the Download icon on the toolbar and select one of the
 * PDF
 * Excel
 
-Use Download Manager to access and manage exported files. For more information, see [Download Manager](../../download-manager.md). 
 
 ### Add a page header
 Dashboard Builder enables you to add a customized page header to all your dashboards. 
@@ -280,7 +278,7 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 >**NOTE**: Version 8.3 introduces Interaction mode, which provides a quick way to preview your dashboard within the Dashboard Builder interface. For more information, see "Using Design Mode and Interaction Mode" earlier in this article. 
 
 1. Click the **Dashboard** icon in the left-hand menu to display the Dashboard list.
-2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
+2. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](./navigation.md). 
 3. Click the **Publish Application** button.  
   
     ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
@@ -292,15 +290,11 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 ## Publish an Application
 Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see the training video, [Content Publishing](../../../guides/legacy/content-publishing.md). 
 
-1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](../03-Navigation/overview-of-navigation.md). 
-2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](../04-User%20Management/overview-of-user-management.md). 
+1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](./navigation.md). 
+2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](./overview-of-user-management.md). 
 3. Click the **Publish Application** button.  
 
     ![Publish Application Button](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/publish-application-button-81.png)  
 
     The application is committed to the server. You may now preview the application using the **Link** option, or embed the application using the **Embed** options. 
  
-
-
-
-</div>

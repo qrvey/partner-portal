@@ -7,8 +7,6 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
 
 You can configure chart interactions on the Dashboard Builder by setting up actions when users click on a data point or a chart panel area in the *End User* pages.
 
@@ -102,7 +100,7 @@ To activate this action, select **See Data**. Enter a label in the box provided.
 
 ![see-data-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/see-data-83.png)
 
-The See Data action opens a dialog that displays the underlying dataset in Tabular View. This view of the dataset provides Filter, Sort, and Select Columns options. Any filters or changes made by the user in this view are not saved and otherwise do not affect the dataset or chart. For more information on using this view, see [Tabular View](../../05-Working%20with%20Data/Datasets/03-Analyze/tabular-view.md).
+The See Data action opens a dialog that displays the underlying dataset in Tabular View. This view of the dataset provides Filter, Sort, and Select Columns options. Any filters or changes made by the user in this view are not saved and otherwise do not affect the dataset or chart. For more information on using this view, see [Tabular View](../05-Working%20with%20Data/Datasets/03-Analyze/tabular-view.md).
 
 ![see-data-behind-bar-chart-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/see-data-behind-bar-chart-83.png)
 
@@ -239,6 +237,3 @@ The *Dashboard Drill* action on a symbol chart allows users to interact with the
 
 ![21_page_actions](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/21.png#thumbnail-40) 
 
-
-
-</div>

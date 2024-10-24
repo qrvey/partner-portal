@@ -366,7 +366,7 @@ Release Date: 2023-07-31
 * **Page Actions - Drilldown in Funnel Charts**: Enables Default and Custom Drilldowns for Funnel Charts.
 * **Card and Table View in Flow List**: Updates the card and table views of the Flows UI to standardize the interface and improve the user experience.
 * **Support for Drill-down Action in Exports**: CSV, Excel, and PDF formats now honor the drill-down action when exporting data.
-* **[Buckets in Reports](../../composer/10-Pixel-perfect%20Reports/filtering-data.md)**: Adds the Bucketing Data feature to Pixel-perfect Reports, enabling users to create and use buckets in their reports.
+* **[Buckets in Reports](../../composer/10-Pixel-Perfect%20Reports/filtering-data.md)**: Adds the Bucketing Data feature to Pixel-perfect Reports, enabling users to create and use buckets in their reports.
 
 ### General Tweaks & Bug Fixes
 * **Labels (improvement)**: Updates the descriptions and labels in the Qrvey Admin Center user interface to improve the usability of the product. 
@@ -398,7 +398,7 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
 * **Qrvey Theme 2 with Support for 100 Colors**: With this newly-added theme, we now support color palettes with 100 unique colors in sequence for visualizations with high numbers of data points.
 * **CLS/RLS Support in the Automation Widget**: We implemented Column Level Security and Record Level Security on the Automation (Workflows) widget. Implementers can set these values in the widget’s configuration object when embedding the widget.
 * **Analyze General Downloads and Summary Panels PDF Exports**: PDF export options are now consistent between the Analysis Views and Dashboards.
-* **[Pixel-perfect Report Builder](../../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md)**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
+* **[Pixel-perfect Report Builder](../../composer/10-Pixel-Perfect%20Reports/overview-of-pixel-perfect-reports.md)**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
 * **Pixel-perfect Report Tab in the Features Section**: We added the option to enable and disable the new Pixel-perfect Report Builder in the Features section.
 * **Time Zone Configuration**: With the newly-added support for time zones, we added the Time Zone configuration tab under General Settings in Qrvey Admin Center, enabling administrative users to configure the behavior of the feature in their applications.
 * **Application Installation Notification**: As of 8.1, a notification is shown on Application cards when they are being installed or updated from a Content Deployment Job. This prevents users from attempting to change the application while it is being changed by the automatic process.

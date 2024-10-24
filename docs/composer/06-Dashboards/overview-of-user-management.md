@@ -1,8 +1,9 @@
 ---
 id: overview-of-user-management
-title: Overview of User Management
-sidebar_label: Overview of User Management
+title: User Management
+sidebar_label: User Management
 tags: [Data Analyst, Solution Architect]
+sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 
@@ -11,7 +12,6 @@ In the **User Management** tab, you can not only create users and groups but als
 
 ## Authentication Settings
 In this tab, you can enable and disable authentication as well as set authentication settings. In version v5.3, we added a second authentication method called **OpenId** that will allow you to configure a third-party OpenId provider as an additional authentication method for Qrvey.
-
  
 To use OpenId, first, an Admin user must enable it from the admin app. Please refer to the admin portal documentation related to enabling OpenId Provider. As a creator, you can allow your users to authenticate with any of the methods available.
 <br />
@@ -103,7 +103,6 @@ In the **Pages** section, you’ll see a list of all the pages in your applicati
 
 
 ![14_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_14.png#thumbnail)
-
 
 
 In the Actions section, you’ll see the different filter types, and you will be able to enable or disable these filters for the end-users. So they will not be able to use those types of filters in your application.

@@ -1,7 +1,7 @@
 ---
-id: overview-of-automation
-title: Overview of Automation
-sidebar_label: Overview of Automation
+id: introduction-to-automation
+title: Introduction to Automation
+sidebar_label: Introduction to Automation
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started

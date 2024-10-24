@@ -25,7 +25,7 @@ The filters in this category are mainly for security purposes and are therefore 
 * **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The [Record Level Security](../../software-developer/03-Security/record-level-security.md) feature uses this type of filter to restrict user's access to any data they don't have permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
 The scope of Security Filters is the entire application, i.e. they govern data used in workflows, pages, reports, and so on.
 
-* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the [User Management](../06-Building%20Dashboards/04-User%20Management/overview-of-user-management.md) section of the Dashboard Builder to restrict access to the data based on the end-user's user group. 
+* **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the [User Management](../06-Dashboards/overview-of-user-management.md) section of the Dashboard Builder to restrict access to the data based on the end-user's user group. 
 The scope of this type of filter is the end-user site.
 
 * **Default Filters**: These are the filters that Creators may apply to an individual chart, inside the Chart Builder. Their scope is limited to the chart to which they have been applied.
@@ -46,7 +46,7 @@ Just as a Page may contain multiple Tabs and a Tab may have many Panels on it, t
 
 * **Panel Filters**: These are the filters applied directly to the charts. Their scope is local, meaning they only apply to the chart where they were defined.
 
-* **Action Filters**: These are the filters applied when using [actions](../06-Building%20Dashboards/02-Dashboards/actions.md) like *See Data, Filter by*, or *Drill-down*.
+* **Action Filters**: These are the filters applied when using [actions](../06-Dashboards/actions.md) like *See Data, Filter by*, or *Drill-down*.
 Action filters are special because their scope may be broader than one panel and may apply to the entire page, as decided by the choice made in the configuration panel (see the image below).
 
 ![introduction](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/filters/introduction/2_intro.png#thumbnail-40)

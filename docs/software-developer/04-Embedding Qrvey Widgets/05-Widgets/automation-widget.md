@@ -7,7 +7,7 @@ sidebar_position: 9
 displayed_sidebar: getting-started
 ---
 
-The Automation widget enables you to embed the [Automated Flows](../../../composer/09-Automation/overview-of-automation.md) feature within an application.
+The Automation widget enables you to embed the [Automated Flows](../../../composer/09-Automation/introduction-to-automation.md) feature within an application.
 
 ## Embeddable Script
 
