@@ -332,7 +332,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "guides/legacy/video-multi-tenancy-architecture"
+              "id": "video-training/legacy/video-multi-tenancy-architecture"
             }
           ]
         },
@@ -342,71 +342,71 @@
           "items": [
             {
               "type": "doc",
-              "id": "guides/legacy/video-dataset-design"
+              "id": "video-training/legacy/video-dataset-design"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-dataset-transformations"
+              "id": "video-training/legacy/video-dataset-transformations"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-dataset-syncing"
+              "id": "video-training/legacy/video-dataset-syncing"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-chart-builder"
+              "id": "video-training/legacy/video-chart-builder"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-xychart"
+              "id": "video-training/legacy/video-xychart"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-map-chart"
+              "id": "video-training/legacy/video-map-chart"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-percent-total-charts"
+              "id": "video-training/legacy/video-percent-total-charts"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-multi-series"
+              "id": "video-training/legacy/video-multi-series"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-kpi"
+              "id": "video-training/legacy/video-kpi"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-table-charts"
+              "id": "video-training/legacy/video-table-charts"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-page-builder"
+              "id": "video-training/legacy/video-page-builder"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-filter-design"
+              "id": "video-training/legacy/video-filter-design"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-formulas-buckets"
+              "id": "video-training/legacy/video-formulas-buckets"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-page-actions"
+              "id": "video-training/legacy/video-page-actions"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-content-publishing"
+              "id": "video-training/legacy/video-content-publishing"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-new-webforms"
+              "id": "video-training/legacy/video-new-webforms"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-new-workflows"
+              "id": "video-training/legacy/video-new-workflows"
             }
           ]
         },
@@ -416,23 +416,23 @@
           "items": [
             {
               "type": "doc",
-              "id": "guides/legacy/video-security-overview"
+              "id": "video-training/legacy/video-security-overview"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-security-groups"
+              "id": "video-training/legacy/video-security-groups"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-row-level-security"
+              "id": "video-training/legacy/video-row-level-security"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-column-level-security"
+              "id": "video-training/legacy/video-column-level-security"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-content-deployment"
+              "id": "video-training/legacy/video-content-deployment"
             }
           ]
         },
@@ -442,15 +442,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "guides/legacy/video-widget-overview"
+              "id": "video-training/legacy/video-widget-overview"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-jwt-widget"
+              "id": "video-training/legacy/video-jwt-widget"
             },
             {
               "type": "doc",
-              "id": "guides/legacy/video-branding-styling"
+              "id": "video-training/legacy/video-branding-styling"
             }
           ]
         }

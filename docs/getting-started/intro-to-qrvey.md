@@ -61,9 +61,46 @@ The following outline describes the initial onboarding process for new customers
     * Share the application with the organization. 
 4. Embed the application in the host application. 
 
-## Next Steps
-Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation. It is organized based on user persona. Select one of the following personas to learn more:
-* [Solution Architect](../user-persona/solution-architect.md)
-* [Data Analyst](../user-persona/data-analyst.md)
-* [Software Developer](../user-persona/software-developer.md)
-* [CloudOps Engineer](../user-persona/cloudops.md)
+## What to Learn Next
+Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation.
+
+### Solution Architects 
+Stakeholders that use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.
+
+* [Qrvey Admin Center User Guide](../admin/introduction-to-qrvey-admin-center.md). 
+* [Introduction to the Qrvey Admin Center](../admin/introduction-to-qrvey-admin-center.md)
+* [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md)
+* [Managing Users of Qrvey Composer](../admin/managing-users.md)
+* [Overview of Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
+* [Overview of Multi-tenant Deployments](../multi-tenant-solution/overview-of-multi-tenant-deployments.md)
+* [Multi-tenant Dataset Architecture](../multi-tenant-solution/multi-tenant-dataset-architecture.md)
+* [Multi-tenant Security Architecture](../multi-tenant-solution/multi-tenant-security-architecture.md)
+
+### CloudOps Engineers
+The AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.
+
+* [Qrvey Deployment Guide](../deployment/introduction-to-deployment.md). 
+* [Prerequisites for Installation](../deployment/prerequisites-for-installation.md)
+* [Preparing Your AWS Account](../deployment/preparing-AWS-account.md)
+* [Initial Installation](../deployment/04-Installing%20the%20Qrvey%20platform/initial-installation.md)
+* [Customizing Qrvey Deployment](../deployment/customizing-qrvey-deployment.md)
+* [Cluster Management](../deployment/06-Managing%20the%20Qrvey%20Platform/manage-aws-elasticsearch.md)
+
+### Data Analysts 
+Those that Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
+
+* [Qrvey Composer User Guide](../composer/introduction-to-qrvey-composer.md). 
+* [Introduction to Qrvey Composer](../composer/introduction-to-qrvey-composer.md)
+* [Overview of Qrvey Applications](../composer/overview-of-applications.md)
+* [Introduction to Data in Qrvey](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)
+* [Overview of Dashboards](../composer/06-Building%20Dashboards/overview-of-dashboards.md)
+* [Overview of Chart Builder](../composer/07-Creating%20Charts/overview-of-chart-builder.md)
+
+### Software Developers
+The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.
+
+* [Qrvey Software Developer Guide](../software-developer/introduction-to-software-development.md)
+* [Overview of the Qrvey API](../software-developer/06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md)
+* [Qrvey API Reference (Stoplight)](https://tinyurl.com/atuznk6u)
+* [Overview of the Qrvey Platform Architecture](../software-developer/architecture.md)
+* [Overview of Embedding and Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
