@@ -7,7 +7,6 @@ sidebar_position: 4
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 A Deployment Definition is a set of instructions for a deployment job. It defines the package version to use, which content from the package to include, and whether any of the content has to be modified during deployment. You can configure the deployment definition to create a new application or to update an existing application.  
 
@@ -104,5 +103,3 @@ To delete an existing deployment definition:
 2. Click **Delete**.
 
 > **Note:** You cannot delete a deployment definition if it is associated with a deployment job. 
-
-</div>

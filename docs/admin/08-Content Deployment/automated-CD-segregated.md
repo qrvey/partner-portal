@@ -7,7 +7,6 @@ sidebar_position: 7
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 Content Deployment enables you to copy the contents of a source Qrvey application, then pass it into a new target application.
 
@@ -153,5 +152,3 @@ Here is a consolidated list of the endpoints used in this article.
 * [Create Deployment Job](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job)
 * [Create Deployment Job Block](https://qrvey.stoplight.io/docs/qrvey-api-doc/d5cf25a16aa4c-create-deployment-job-block)
 * [Add Recipients to Deployment Job Block](https://qrvey.stoplight.io/docs/qrvey-api-doc/dq6nwy2k9kpzn-add-recipients-to-deployment-job-block)
-
-</div>
