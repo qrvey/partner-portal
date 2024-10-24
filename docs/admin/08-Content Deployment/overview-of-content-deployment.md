@@ -1,7 +1,7 @@
 ---
 id: overview-of-content-deployment
-title: Overview of Content Deployment
-sidebar_label: Overview of Content Deployment
+title: What is Content Deployment?
+sidebar_label:  What is Content Deployment?
 tags: [Solution Architect]
 sidebar_position: 1
 displayed_sidebar: getting-started

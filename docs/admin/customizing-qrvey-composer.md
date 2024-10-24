@@ -1,7 +1,7 @@
 ---
 id: admin-customizing-composer
-title: Customizing Qrvey Composer
-sidebar_label: Customizing Qrvey Composer
+title: Customize Qrvey Composer
+sidebar_label: Customize Qrvey Composer
 tags: [Solution Architect]
 sidebar_position: 4
 displayed_sidebar: getting-started
