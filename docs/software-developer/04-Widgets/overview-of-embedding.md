@@ -1,7 +1,7 @@
 ---
 id: overview-of-embedding-and-widgets
-title: Embedded Widgets Overview
-sidebar_label: Embedded Widgets Overview
+title: Introduction to Widgets
+sidebar_label: Introduction to Widgets
 tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: getting-started

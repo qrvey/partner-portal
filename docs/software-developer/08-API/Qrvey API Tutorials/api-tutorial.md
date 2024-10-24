@@ -164,7 +164,7 @@ Once you’ve created the Quiz web form, you can update it to contain the quiz q
 
 ![Sample Quiz Web Form](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_10.png#thumbnail) 
 
-At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. For more information on embedding and widgets, please see [Widget Quick Start Guide](../../04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
+At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. For more information on embedding and widgets, please see [Widget Quick Start Guide](../../04-Widgets/overview-of-embedding.md)
 
 
 ## Activate the Quiz

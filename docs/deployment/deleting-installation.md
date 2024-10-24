@@ -1,7 +1,7 @@
 ---
 id: deleting-installation
-title: Deleting an Installation
-sidebar_label: Deleting an Installation
+title: Delete an Installation
+sidebar_label: Delete an Installation
 tags: [CloudOps Engineer]
 sidebar_position: 8
 displayed_sidebar: getting-started

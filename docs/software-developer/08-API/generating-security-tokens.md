@@ -37,7 +37,7 @@ To generate the token:
 3. In the response, parse out the `token` value and save it for all future Qrvey Composer API calls.
 
 ## For Additional Information
-* If you intend to use the JWT token to embed a Qrvey widget, see the additional details in [Embedding Widgets Using a Security Token](../04-Embedding%20Qrvey%20Widgets/widget-authentication.md).
+* If you intend to use the JWT token to embed a Qrvey widget, see the additional details in [Embedding Widgets Using a Security Token](../04-Widgets/widget-authentication.md).
 * For a video tutorial on embedding Qrvey widgets using JWT tokens, see [JWT Widget Integration](../../guides/legacy/jwt-widget.md). 
 
 

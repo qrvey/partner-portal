@@ -1,7 +1,7 @@
 ---
 id: architectural-overview
-title: Architectural Overview
-sidebar_label: Architectural Overview
+title: Architecture
+sidebar_label: Architecture
 tags: [Software Developer]
 sidebar_position: 2
 displayed_sidebar: getting-started

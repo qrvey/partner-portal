@@ -55,7 +55,7 @@ The **Time Period** and **Comparison** date periods can be picked from predefine
 
 ### Thresholds
 Dial Charts enable setting any number of *Thresholds*, which are defined numerical ranges with a color-coded classification for the computed metric. Each threshold is defined by criteria. Chart Builder provides two types of Thresholds:
-* **Fixed**. A Fixed threshold is a static value. For example, when showing the temperature, you can decide that the range below 50 shall be called “Cold” and be depicted in blue, the range between 50 and 75 will be “Warm” and colored yellow, and numbers above 75 be called “Hot” and colored red. Fixed thresholds also support custom tokens, which set the value of the threshold each time the widget is rendered. For more information, see [Using Custom Tokens](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
+* **Fixed**. A Fixed threshold is a static value. For example, when showing the temperature, you can decide that the range below 50 shall be called “Cold” and be depicted in blue, the range between 50 and 75 will be “Warm” and colored yellow, and numbers above 75 be called “Hot” and colored red. Fixed thresholds also support custom tokens, which set the value of the threshold each time the widget is rendered. For more information, see [Using Custom Tokens](../../../software-developer/04-Widgets/customTokens.md).
 * **Dynamic**. A Dynamic threshold is based on the aggregate of a column in the dataset. For example, displaying the number of users that completed an activity based on the count of all activities. 
 
 ![Threshold Fixed](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/Dial/threshold-fixed-83.png)
@@ -64,7 +64,7 @@ The Threshold options are:
 * **Color**. Choose a color for the threshold.
 * **Label**. Give your threshold a custom label.
 * **Operator**. Choose the operator for the criteria. 
-* **(Fixed) Value**. Set the value for the criteria. To set a custom token, enter `{{` and begin typing the name of the token until it displays in the suggestion box. For more information, see [Using Custom Tokens](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
+* **(Fixed) Value**. Set the value for the criteria. To set a custom token, enter `{{` and begin typing the name of the token until it displays in the suggestion box. For more information, see [Using Custom Tokens](../../../software-developer/04-Widgets/customTokens.md).
 * **(Dynamic) Value Column**. Select the column to use to calculate the threshold. 
 * **(Dynamic) Value Aggregate**. Set the type of aggregate to use to calculate the threshold. Options are:
     * Average

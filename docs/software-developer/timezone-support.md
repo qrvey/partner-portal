@@ -1,11 +1,12 @@
 ---
 id: time-zone-support
-title: Configuring Time Zone Settings
-sidebar_label: Configuring Time Zone Settings
+title: Timezone Settings
+sidebar_label: Timezone Settings
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
+sidebar_position: 7
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
+
 
 The Qrvey platform enables end users to display dates and times in their local time zone. The Qrvey platform stores data in UTC/GMT+0 and adjusts the time displayed to the end user based on their preferred settings. The default time zone setting is specified in Qrvey Admin Center, but it can be overridden programmatically. The possible settings are:
 * **System Default Settings**. Use the time zone in which the data was stored in the Elasticsearch repository, which is UTC/GMT+0.
@@ -51,5 +52,3 @@ The Qrvey platform provides the following APIs to get and update the time zone s
 * [Get Time Zone Settings](https://qrvey.stoplight.io/docs/qrvey-api-doc/4045b9423953e-get-time-zone-settings) 
 * [Update Time Zone Settings](https://qrvey.stoplight.io/docs/qrvey-api-doc/99518be9162fb-update-time-zone-settings)
 
-
-</div>

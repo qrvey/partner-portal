@@ -1,7 +1,7 @@
 ---
 id: api-intro
-title: Overview of Qrvey API
-sidebar_label: Overview of Qrvey API
+title: Introduction
+sidebar_label: Introduction
 tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: getting-started
@@ -15,7 +15,7 @@ Before using the Qrvey API, gather the following:
 - The base URL of your instance of the Qrvey platform. 
 - Your unique API key. All Qrvey API requests require an API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. To obtain a new API key, contact your Qrvey account representative.
 
-> **Note**: Never expose your organization’s base URL or API Key to external users in Production environments. Instead, use secure tokens to encrypt the base URL and API Key. For more information, see [Generating Security Tokens](../06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
+> **Note**: Never expose your organization’s base URL or API Key to external users in Production environments. Instead, use secure tokens to encrypt the base URL and API Key. For more information, see [Generating Security Tokens](../08-API/generating-security-tokens.md).
 
 ## Qrvey API Tutorials
 The Qrvey Partner Portal contains a variety of tutorials for working with the Qrvey API. 

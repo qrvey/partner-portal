@@ -7,7 +7,7 @@ tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 
 <div>
 
-> **Upgrade Note:** If you are planning to upgrade to a new version of Qrvey, please read through the Upgrade and release notes on all prior versions, as they may contain platform changes that must be accounted for in the development process. You can follow the steps outlined in [Upgrading to a New Version](../../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) to perform your upgrade. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade, please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade. 
+> **Upgrade Note:** If you are planning to upgrade to a new version of Qrvey, please read through the Upgrade and release notes on all prior versions, as they may contain platform changes that must be accounted for in the development process. You can follow the steps outlined in [Upgrading to a New Version](../../deployment/07-Upgrades/upgrading-versions.md) to perform your upgrade. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade, please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade. 
 
 ## Version 8.7
 
@@ -61,7 +61,7 @@ Release Date: 2024-09-30
 This version has modified how the platform generates JWT tokens, so existing tokens will need to be refreshed.
 We highly recommend planning upgrades during off-hours to minimize disruptions to your users.
 
-> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.7-plbvm.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s).
+> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.7-plbvm.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s).
 
 ---
 
@@ -101,7 +101,7 @@ Release Date: 2024-07-16
 
 The 8.6 upgrade may take approximately 1.5 hours. During the upgrade, load data and CD installations are not possible, and the application cannot be used. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
 
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.6-rmwpa.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade.
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.6-rmwpa.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade.
 
  ---
 
@@ -135,7 +135,7 @@ Release Date: 2024-05-31
 
 If you are upgrading the Qrvey Platform from a version older than 8.5 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
 
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.5.1-ghtfw.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrading%20the%20Qrvey%20Platform/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.5.1-ghtfw.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 
 ---
 
@@ -268,7 +268,7 @@ Release Date: 2023-10-04
 * **Query Start Time Date Picker Improvement**: In the Data Sync feature of Qrvey Composer, improves the usability of the Query Start Time field under Next Sync Query Window. 
 * **Connection Type in Tooltip**: Adds the Connection Type information to the tooltip that displays when hovering over the Data Source pill.
 * **Concatenate Transformation Improvement**: In the Transformations feature of Qrvey Composer, improves the usability of the Concatenate transformation by adding a second input by default.
-* **[Customizing the Appearance Using CSS](../../software-developer/04-Embedding%20Qrvey%20Widgets/css-variables.md)**: Adds the ability to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets. 
+* **[Customizing the Appearance Using CSS](../../software-developer/04-Widgets/css-variables.md)**: Adds the ability to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets. 
 * **Open AI On Charts (beta)**: Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data. <a href="/docs/video-training/release/version-8.3#openai-on-charts-beta" target="_blank" className="tooltip"><img alt="Smart Analyzer" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
 * **Dynamic Threshold in Dial and Bullet Metrics**: Adds the option to set thresholds as fixed or dynamic values based on the aggregates of a column.
 * **View Modes in Dashboards**: Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View. <a href="/docs/video-training/release/version-8.3#view-modes-in-dashboards" target="_blank" className="tooltip"><img alt="Dashboard View Modes" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
@@ -394,7 +394,7 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
 * **Column Discovery for JSON, Parquet, and CSV files**: We added the column discovery option to (nd)JSON (DynamoDB, S3, MongoDB), Parquet, and CSV data sources in the Dataset design phase.
 * **Prompt Users to Save Draft Changes Before On-demand Data Sync**: We added a verification to let users decide if they want to apply pending changes to a dataset, if any, when they click the **Sync Now** button.
 * **Support for Athena v3**: The Athena default has been v2, which will soon be out of support by AWS. With this enhancement, it’s easy to switch the Athena Workgroup to v3. Athena is used when performing Data Source joins.
-* **[Support Time Zone Offset](../../software-developer/10-Timezone%20Settings/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
+* **[Support Time Zone Offset](../../software-developer/07-Timezone%20Settings/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
 * **Qrvey Theme 2 with Support for 100 Colors**: With this newly-added theme, we now support color palettes with 100 unique colors in sequence for visualizations with high numbers of data points.
 * **CLS/RLS Support in the Automation Widget**: We implemented Column Level Security and Record Level Security on the Automation (Workflows) widget. Implementers can set these values in the widget’s configuration object when embedding the widget.
 * **Analyze General Downloads and Summary Panels PDF Exports**: PDF export options are now consistent between the Analysis Views and Dashboards.

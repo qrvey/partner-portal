@@ -163,7 +163,7 @@ To set a unique identifier on a column:
 
 If the data in a dataset is controlled by Record Level Security (RLS), the columns used to filter the data need to be identified and given a security name. This name is used at authentication time and the data is filtered by the value of the set variable for each authenticated user. 
 
->**Note**: Assigning a security name does not, by itself, enable RLS. RLS must be configured in the Qrvey Admin Center. For more information, see [Record Level Security](../../../../software-developer/03-Security/record-level-security.md).
+>**Note**: Assigning a security name does not, by itself, enable RLS. RLS must be configured in the Qrvey Admin Center. For more information, see [Record Level Security](../../../../software-developer/record-level-security.md).
 
 To assign a security name to a column:
 1. Click its three-dot menu and select **Enable Record Level Security**.

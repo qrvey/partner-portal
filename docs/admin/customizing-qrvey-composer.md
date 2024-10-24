@@ -135,7 +135,7 @@ Qrvey Admin Center enables you to specify the default time zone. Changing the ti
     - **Fixed Time Zone**. Use the time zone specified in the dropdown menu below. 
 4. Click **Apply Changes**. 
 
-For additional details on time zone settings, see [Configuring Time Zone Settings](../software-developer/10-Timezone%20Settings/timezone-support.md). 
+For additional details on time zone settings, see [Configuring Time Zone Settings](../software-developer/07-Timezone%20Settings/timezone-support.md). 
 
 ## Features Tab
 The Features tab provides options to enable and disable the features available to users in Qrvey Composer. Keep in mind that, if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the application. 

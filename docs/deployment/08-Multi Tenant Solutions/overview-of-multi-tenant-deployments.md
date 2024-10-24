@@ -1,7 +1,7 @@
 ---
 id: overview-of-multi-tenant-deployments
-title: Overview of Multi-tenant Deployments
-sidebar_label: Overview of Multi-tenant Deployments
+title: Intro to Multi-tenant Deployments
+sidebar_label: Intro to Multi-tenant Deployments
 tags: [Solution Architect]
 sidebar_position: 1
 displayed_sidebar: getting-started

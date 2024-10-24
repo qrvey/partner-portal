@@ -45,7 +45,7 @@ The Send Email action in Workflows/Automation supports Pixel-perfect Reports. It
 For more information, see the "Send an Email" section of [Send Actions](../09-Automation/send-actions.md). 
 
 ## Embedding reports
-The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md). 
+The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/04-Widgets/07-Widgets/pixel-perfect-reports.md). 
 
 
 </div>

@@ -22,7 +22,7 @@ Various filters apply in a hierarchical model: First, the data gets filtered by 
 ### Hidden Filters
 The filters in this category are mainly for security purposes and are therefore hidden from the end-user view. This means that they have no visible component and cannot be interacted with.
 
-* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The [Record Level Security](../../software-developer/03-Security/record-level-security.md) feature uses this type of filter to restrict user's access to any data they don't have permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
+* **Security Filters**: These are at the top of the hierarchy and applied before any other filter. The [Record Level Security](../../software-developer/record-level-security.md) feature uses this type of filter to restrict user's access to any data they don't have permission to see. Security filters are applied to datasets and rely on identifier columns in data. 
 The scope of Security Filters is the entire application, i.e. they govern data used in workflows, pages, reports, and so on.
 
 * **Data Filters**: These are another type of security filters that don’t rely on any data column, but rather on the user group that the end-user belongs to. These may be defined by Creators, inside the [User Management](../06-Dashboards/overview-of-user-management.md) section of the Dashboard Builder to restrict access to the data based on the end-user's user group. 

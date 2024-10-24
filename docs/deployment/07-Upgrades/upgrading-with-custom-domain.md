@@ -197,7 +197,7 @@ curl --location --request GET 'http://<Auto-Deploy-App-URL>/api/v1/status' \
 
 
 ### Step 4.5: (Optional) Restart Upgrade
-In case there is an error during the upgrade process the “upgradeStatus” will be “UPGRADE_FAILED” and there will be an error message in the step that failed. You can follow the troubleshooting steps in [this document](../04-Installing%20the%20Qrvey%20platform/troubleshooting.md) to restart the AWS CodePipeline once the issue has been fixed. To restart the upgrade AFTER the pipeline is running or finished successfully use the Trigger upgrade API from [Step 4.3](#step-43-trigger-upgrade).
+In case there is an error during the upgrade process the “upgradeStatus” will be “UPGRADE_FAILED” and there will be an error message in the step that failed. You can follow the troubleshooting steps in [this document](../04-Installation/troubleshooting.md) to restart the AWS CodePipeline once the issue has been fixed. To restart the upgrade AFTER the pipeline is running or finished successfully use the Trigger upgrade API from [Step 4.3](#step-43-trigger-upgrade).
 
 ### Step 4.6: (Optional) Remove Installer Template
 Once the upgrade is done you can remove the Installer Template that was deployed in [Step 2](#step-2-deploying-the-installer-template) above.

@@ -21,7 +21,7 @@ This can be broken into the following high-level steps.
 3. Deploy the Master Data App
 4. Deploy the Master Content App
 
-* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
+* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/08-API/generating-security-tokens.md).
 * Verify that you have [at least one user account](../managing-users.md) created in the Qrvey Admin Center with “Composer” role permissions.
 
 ## How To Guide

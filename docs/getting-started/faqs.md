@@ -85,13 +85,13 @@ Alternatively, if an API is used to create a user programmatically, the user id 
 
 **A:** There are 2 components in Qrvey that connect to a data source and download data. The first one is an ECS container running on an EC2 instance called *qrvey*_*_*microservice_ECSInstance* and the second one is a Lambda function called **_dataload_drDataSourcePump*.   
 
-Both of these components should be able to connect to your data source. For example, if you are using an RDS with restricted access, see [Connecting Qrvey Platform to Your Secure Database Instance](../deployment/06-Managing%20the%20Qrvey%20Platform/connect-instance.md). If your data source is outside of AWS and can only be restricted using IP addresses, then you can configure a VPC with a private subnet and Internet/NAT gateway to get a static IP for Lambda functions.
+Both of these components should be able to connect to your data source. For example, if you are using an RDS with restricted access, see [Connecting Qrvey Platform to Your Secure Database Instance](../deployment/06-Management/connect-instance.md). If your data source is outside of AWS and can only be restricted using IP addresses, then you can configure a VPC with a private subnet and Internet/NAT gateway to get a static IP for Lambda functions.
 
 <br />
 
 ### How can I speed up my data load?
 
-**A:** Data load times mostly depend on the Elasticsearch cluster. Since there is a cost associated with Elasticsearch, we normally create the minimum resources possible, however, you can always scale up based on your needs. Currently, we are using **1 node t2.small** (10GB). If you want to increase processing speed, we recommend going with **3 node t2.small** or trying higher-cost options like the **t2.medium** or **m4.large instances**. For more information, see [](../deployment/06-Managing%20the%20Qrvey%20Platform/manage-aws-elasticsearch.md).  
+**A:** Data load times mostly depend on the Elasticsearch cluster. Since there is a cost associated with Elasticsearch, we normally create the minimum resources possible, however, you can always scale up based on your needs. Currently, we are using **1 node t2.small** (10GB). If you want to increase processing speed, we recommend going with **3 node t2.small** or trying higher-cost options like the **t2.medium** or **m4.large instances**. For more information, see [](../deployment/06-Management/manage-aws-elasticsearch.md).  
 
 <br />
 

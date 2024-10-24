@@ -26,4 +26,4 @@ You can perform the following tasks in Download Manager:
 * To refresh the list of files, click on the **Refresh** button.
 * To schedule an export at a specified time, or to manage an existing scheduled export, see [Scheduling Exports](./05-Working with Data/Datasets/03-Analyze/scheduling-exports.md).
 
-Download Manager is an embeddable widget. Click the **Embedding Options** button to obtain the helper code. Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. For more information on embedding widgets, see [Embedding Overview](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
+Download Manager is an embeddable widget. Click the **Embedding Options** button to obtain the helper code. Note that the Download Manager widget must be embedded separately from other widgets. It is not accessible directly from other widgets. For more information on embedding widgets, see [Embedding Overview](../software-developer/04-Widgets/overview-of-embedding.md).

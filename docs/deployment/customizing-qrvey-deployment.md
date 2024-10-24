@@ -1,7 +1,7 @@
 ---
 id: customizing-qrvey-deployment
-title: Customizing Qrvey Deployment
-sidebar_label: Customizing Qrvey Deployment
+title: Customize Deployment
+sidebar_label: Customize Deployment
 tags: [CloudOps Engineer]
 sidebar_position: 5
 displayed_sidebar: getting-started

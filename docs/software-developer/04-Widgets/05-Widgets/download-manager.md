@@ -47,7 +47,7 @@ Download Manager filters the files displayed based on user ID and client ID. To 
 
 ### i18n
 
-For more information, see [Internationalization, Step by Step](../../09-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
+For more information, see [Internationalization, Step by Step](../../06-Internationalization/internationalization-step-by-step.md#6--configuring-qrvey-widgets-for-internationalization).
 
 | **Property** | **Value** | **Required** |
 | --- | --- | --- |

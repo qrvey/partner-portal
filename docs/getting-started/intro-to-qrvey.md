@@ -82,9 +82,9 @@ The AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platf
 * [Qrvey Deployment Guide](../deployment/introduction-to-deployment.md). 
 * [Prerequisites for Installation](../deployment/prerequisites-for-installation.md)
 * [Preparing Your AWS Account](../deployment/preparing-AWS-account.md)
-* [Initial Installation](../deployment/04-Installing%20the%20Qrvey%20platform/initial-installation.md)
+* [Initial Installation](../deployment/04-Installation/initial-installation.md)
 * [Customizing Qrvey Deployment](../deployment/customizing-qrvey-deployment.md)
-* [Cluster Management](../deployment/06-Managing%20the%20Qrvey%20Platform/manage-aws-elasticsearch.md)
+* [Cluster Management](../deployment/06-Management/manage-aws-elasticsearch.md)
 
 ### Data Analysts 
 Those that Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
@@ -100,7 +100,7 @@ Those that Qrvey Composer to set up datasets and create visualizations and dashb
 The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.
 
 * [Qrvey Software Developer Guide](../software-developer/introduction-to-software-development.md)
-* [Overview of the Qrvey API](../software-developer/06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md)
+* [Overview of the Qrvey API](../software-developer/08-API/overview-of-qrvey-api.md)
 * [Qrvey API Reference (Stoplight)](https://tinyurl.com/atuznk6u)
 * [Overview of the Qrvey Platform Architecture](../software-developer/architecture.md)
-* [Overview of Embedding and Widgets](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md)
+* [Overview of Embedding and Widgets](../software-developer/04-Widgets/overview-of-embedding.md)

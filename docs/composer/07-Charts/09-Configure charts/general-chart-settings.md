@@ -13,7 +13,7 @@ This section is available for all chart types, however the options in it vary am
 
 ### Tooltips
 
-Toggle the **Tooltips** option to display additional information when hovering over data points in a chart. You can also custom-configure information displayed in a widget's chart tooltips using a [Custom Token](../../../software-developer/04-Embedding%20Qrvey%20Widgets/customTokens.md).
+Toggle the **Tooltips** option to display additional information when hovering over data points in a chart. You can also custom-configure information displayed in a widget's chart tooltips using a [Custom Token](../../../software-developer/04-Widgets/customTokens.md).
 
 ### Self-service Options
 
