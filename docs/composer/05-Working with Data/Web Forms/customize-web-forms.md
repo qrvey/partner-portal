@@ -1,7 +1,7 @@
 ---
 id: customize-web-forms
-title: Customizing Web Forms
-sidebar_label: Customizing Web Forms
+title: Customize Web Forms
+sidebar_label: Customize Web Forms
 tags: [Data Analyst]
 sidebar_position: 6
 displayed_sidebar: getting-started

@@ -1,13 +1,13 @@
 ---
-id: publishing-web-forms
-title: Publishing Web Forms 
-sidebar_label: Publishing Web Forms 
+id: publish-web-forms
+title: Publish Web Forms 
+sidebar_label: Publish Web Forms 
 tags: [Data Analyst, Software Developer]
-sidebar_position: 1
+sidebar_position: 8
 displayed_sidebar: getting-started
 ---
 
-Qrvey makes it easy to publish your web forms just about anywhere. This article discusses different ways you can use your forms, surveys, and quizzes. For information on embedding web forms, see [Embedding Web Forms](./embedding-web-forms.md).
+Qrvey makes it easy to publish your web forms just about anywhere. This article discusses different ways you can use your forms, surveys, and quizzes. For information on embedding web forms, see [Embedding Web Forms](./embed-web-forms.md).
 
 > **Note:** Before you can use or share any web forms, you must first activate the web form by clicking the **Activate** button at the top of the Publish page. To pause and make changes to your web form, you will need to click the **Pause** button.
 

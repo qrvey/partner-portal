@@ -179,7 +179,7 @@ For additional information on Workflows, see [Flow Overview](../composer/09-Auto
 #### Web Forms
 Web Forms are a quick and easy ways to collect new data through forms, surveys, and quizzes. They are an integral part of building web-based data applications.
 
-Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../composer/05-Working%20with%20Data/Web%20Forms/overview-of-web-forms.md). 
+Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../composer/05-Working%20with%20Data/Web%20Forms/introduction-to-web-forms.md). 
 
 #### Settings
 Provide users with access to general application settings as well as to specific features. Options include:

@@ -1,9 +1,9 @@
 ---
-id: embedding-web-forms
-title: Embedding Web Forms
-sidebar_label: Embedding Web Forms
+id: embed-web-forms
+title: Embed Web Forms
+sidebar_label: Embed Web Forms
 tags: [Data Analyst, Software Developer]
-sidebar_position: 2
+sidebar_position: 9
 displayed_sidebar: getting-started
 ---
 <div style={{textAlign: "justify"}}>

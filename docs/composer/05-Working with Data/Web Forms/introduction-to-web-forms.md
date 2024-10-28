@@ -1,19 +1,31 @@
 ---
-id: create-web-forms
-title: Building a Web Form
-sidebar_label: Building a Web Form
+id: introduction-to-web-forms
+title: Introduction to Web Forms
+sidebar_label: Introduction to Web Forms
 tags: [Data Analyst]
-sidebar_position: 3
+sidebar_position: 1
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
 
-This article describes the basics of building a web form and working with the various field and question types. 
 
-## Creating a New Web Form
+Web Forms are the mechanism with which Qrvey application collect new information from humans. They're also the primary way people update existing data within Qrvey apps. 
+
+## Types of Web Forms
+The Qrvey platform currently has three different types of web forms: forms, surveys, and quizzes. Each of these form types is similar but has slightly different features, depending on your data collection use case.  Web form types are discussed in the next section. 
+
+## Use Cases
+Web Forms can be used in a variety of ways:  they can be a vital part of your Qrvey applications, residing inside the dashboards and reports you create with the Qrvey platform; they can also be embedded into other websites or applications; and they can be shared in a variety of ways, including via social media or email. 
+
+## What Makes Up a Web Form
+Web Forms primarily include data fields, which are called questions if you’re creating a survey. Surveys may also include branching, which allows you to ask different questions based on the answers to the previous question.  Quizzes include a scoring feature that enables you to rank the results in the order they’re received. 
+
+Every time a user completes a web form, the data is saved in the Qrvey platform either as a new or existing record for analysis. The results of this analysis can then be included in workflows, dashboards, and reports throughout the rest of your application. 
+
+
+## Create a New Web Form
 To create a web form:
 1. In the Data section, display the Webforms tab, and click **New Web Form**. The Select a Web Form dialog displays. 
-2. Select the type of web form to create: **Form**, **Survey**, or **Quiz**. For more information, see [Overview of Web Forms](../Web%20Forms/overview-of-web-forms.md).
+2. Select the type of web form to create: **Form**, **Survey**, or **Quiz**. For more information, see [Overview of Web Forms](../Web%20Forms/introduction-to-web-forms.md).
 3. Click **Create New**. The Design tab displays, ready for you to begin building the web form. 
 
 >**Note**: If web form templates exist for the selected web form type, the **Use a Template** option is also available. Web form templates can only be created via the Qrvey API. For more information, contact your Qrvey support representative. 
@@ -28,14 +40,14 @@ To begin, start by giving your form a name and a description, and choose whether
 
 ![2_create-web-forms](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2_create-web-forms/2_create-web-forms.png#thumbnail-60)
 
-## Adding Content to Your Web Form
+## Add Content to Your Web Form
 Once you’ve completed the top section, you can begin adding content to your web form. You can add fields or questions, depending on which type of web form you’re building, or group those fields into sections with the **Add Section** option.
 
 You also have the option to **Add Text** between sections or fields to give the user some instructions. You can also add an introduction page to your web form if you’d like to give your users instructions or other information before they begin. 
 
 ![3_create-web-forms](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2_create-web-forms/3_create-web-forms.png#thumbnail)
 
-## Reordering Fields
+## Reorder Fields
 You can quickly reorder the questions and fields in your web forms just by clicking and dragging the cross-arrows icon, as shown below.
 
 ![4_create-web-forms](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2_create-web-forms/4_create-web-forms.png#thumbnail-60)
@@ -48,7 +60,7 @@ You also have the option of making your questions and fields Required, Optional 
 ## Other Options
 Also in the lower right-hand menu, there are options for duplicating and deleting a field, both of which come in handy from time to time.
 
-## Archiving Fields
+## Archive Fields
 When initially designing your web form, you can make whatever changes you like. However, once your web form has been activated and data has been collected, you will not be able to delete any existing fields. You are able to archive them, which is the next best thing. 
 
 First pause your web form on the **Publish** tab then go back to the **Design** tab.  You’ll now see an **Archive** link in the menu options.
@@ -66,5 +78,3 @@ All of your archived fields are not gone forever, they appear at the link in the
 Clicking on this link will allow you to unarchive, i.e. restore, any archived fields.
 
 ![9_create-web-forms](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/web-forms/3.4.1.2_create-web-forms/9_create-web-forms.png#thumbnail)
-
-</div>
