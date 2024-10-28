@@ -7,9 +7,7 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-
 This section is available for all chart types, however the options in it vary among chart types. All available options, regardless of the applicable chart type, have been listed in alphabetical order and briefly described in this article. Options that are specific to some charts are discussed in more detail in the individual chart type articles and a link is provided where applicable.
-
 
 ### Tooltips
 
@@ -17,20 +15,20 @@ Toggle the **Tooltips** option to display additional information when hovering o
 
 ### Self-service Options
 
-The **Self-service Options** enable users with the ability to toggle access to self-service features within their data views. These options include:
+The **Self-service Options** enable users with the ability to toggle access to self-service features within their data views. Depending on your chart type, these options include:
 
 - **Filtering**: Toggle whether users can apply filters directly to the chart, refining the data displayed according to specific criteria.
-- **Column Resizing**: Toggle whether users can adjust the width of a column.
-- **Column Arrangement**: Toggle whether users can rearrange the relative position of a column.
-- **Visualization Options**: Toggle whether users can adjust visualization options.
-- **Sorting**: Toggle whether users can use data sorting.
-- **Adding/Removing Columns**: Toggle whether users can add/remove columns.
-- **Change Column Aggregator**: Toggle whether users can adjust how the column data is aggregated.
+- **Column Resizing**: Toggle whether users can adjust the width of a column. (simple and grouped tables only)
+- **Column Arrangement**: Toggle whether users can rearrange the relative position of a column. (simple and grouped tables only)
+- **Visualization Options**: Toggle whether users can change the visualization of numeric values inside a table between values and bar. (simple and grouped tables only)
+- **Sorting**: Toggle whether users can use data sorting. (simple and grouped tables only)
+- **Adding/Removing Columns**: Toggle whether users can add/remove grouped columns. (simple and grouped tables only)
+- **Change Column Aggregator**: Toggle whether users can adjust how the column data is aggregated. (simple and grouped tables only)
 - **Fit To Panel**: Toggle whether users can access the "fit to panel" button.
 - **Download**: Toggle whether users can download chart data. Or alternatively, specify formats:
   - **JPG**
   - **PDF**
-  - **Excel** 
+  - **Excel**
   - **CSV**
   - **CSV Summary**
 
