@@ -14,6 +14,7 @@ In this tab, you can enable and disable authentication as well as set authentica
 
  
 To use OpenId, first, an Admin user must enable it from the admin app. Please refer to the admin portal documentation related to enabling OpenId Provider. As a creator, you can allow your users to authenticate with any of the methods available.
+
 <br />
 
 ## Qrvey Authentication
@@ -26,7 +27,7 @@ If you require authentication for your users, the Qrvey method sets it as defaul
 
 If an end-user wants to login on a page that has Qrvey login as the authentication method, the following login form will appear:
 
-![2_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_2.png#thumbnail-60)
+![2_user-management](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/qrvey-login-20241028A.png)
 
 
 ## OpenId Authentication
@@ -40,7 +41,7 @@ When enabled, users will be able to use their existing credentials based on the 
 
 If a creator enables both methods (Qrvey and OpenId), an end-user should see the following page:
 
-![5_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_5.png#thumbnail-60)
+![5_user-management](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/openid-login-20241028A.png)
 
 
 After clicking on the **Log in with Google** button, the OpenId authentication flow will redirect the users to the Google login page so they can log in with their Google credentials. 
@@ -58,7 +59,7 @@ Using OpenId as the unique authentication method, the rest of the settings will 
 
 - Configure whether or not to add an email recovery system for lost passwords.
 
-![6_user-management](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/userm_6.png#thumbnail-70)
+![6_user-management](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/3.4.5.3_user-management/authentication-config-20231028A.png)
 
 
 
