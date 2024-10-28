@@ -183,6 +183,6 @@ You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-data
 10. Under **Dataset**, choose a desired dataset that has been configured for pivoting.
 11. Then, a radio toggle **Pivoting: Yes / No** will appear within the modal. Click **Yes**.  
     If **No** is selected, the un-pivoted version of the dataset will be exported.
-12. Configure all other fields as desired.
-13. Click **Export Now** to process and download your pivoted dataset as a CSV file.
+12. Configure all other fields as desired.  
     **Note:** A limit of 100 columns will be generated for pivoted data.
+13. Click **Export Now** to process and download your pivoted dataset as a CSV file.
