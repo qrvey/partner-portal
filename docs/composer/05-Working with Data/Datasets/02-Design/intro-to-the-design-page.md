@@ -1,7 +1,7 @@
 ---
-id: overview-of-the-design-page
-title: Overview of the Design Page
-sidebar_label: Overview of the Design Page
+id: intro-to-the-design-page
+title: Intro to the Design Page
+sidebar_label:  Intro to the Design Page
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started
@@ -31,17 +31,5 @@ The Design tab of the Data feature enables you to design your dataset. The follo
 
 ## Columns tab and Column IDs
 The Columns tab enables you to view each column in the dataset and modify its settings as needed. For information on the available options, see [Datasets - Managed](../01-Overview%20of%20Datasets/managed-datasets.md).
-
-
-**See also:**
-For more information on the features available in the Design page, see:
-
-* **[Datasets - Managed](../01-Overview%20of%20Datasets/managed-datasets.md)**
-* **[Geolocation](../02-Design/02-Geolocation/overview-of-geolocation.md)**
-* **[Transformations](../02-Design/03-Transformations/transformations.md)**
-* **[Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md)**
-* **[Data Joins](../02-Design/05-Data%20Joins/data-joins.md)**
-* **[Data Unions](../02-Design/06-Data%20Unions/data-union.md)**
-* **[Advanced Settings](./07-Advanced%20Settings/dataset-design-advanced-settings.md)**
 
 </div>

@@ -1,8 +1,9 @@
 ---
-id: overview-of-geolocation
-title: Overview of Geolocation
-sidebar_label: Overview of Geolocation
+id: geolocation
+title: Geolocation
+sidebar_label: Geolocation
 tags: [Data Analyst]
+sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 

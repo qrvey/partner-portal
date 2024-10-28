@@ -1,7 +1,7 @@
 ---
 id: upgrading-with-custom-domain
-title: Upgrading to Version 8.4 or Later with a Custom Domain
-sidebar_label: Upgrading with Custom Domain
+title: Upgrade to Version 8.4 or Later with a Custom Domain
+sidebar_label: Upgrade with Custom Domain
 tags: [CloudOps Engineer]
 sidebar_position: 2
 displayed_sidebar: getting-started

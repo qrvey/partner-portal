@@ -85,7 +85,7 @@ Amazon S3 Buckets and folders storing CSV, JSON, or ndJSON files can be used as 
 
 - Load data from multiple files from the same bucket or folder in bulk, instead one file at a time.
 - Wildcards can be used in the **S3 Folder** field.
-- File upload time to S3 is automatically used as a timestamp to enable the [append and update](./Datasets/02-Design/04-Data%20Synchronization/data-sync.md) mode for data synchronization. 
+- File upload time to S3 is automatically used as a timestamp to enable the [append and update](./Datasets/02-Designdata-synchronization.md) mode for data synchronization. 
  
 ![csv](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/3.4.2.2_csv/createS3.png#thumbnail-60) 
 
@@ -148,7 +148,7 @@ The sample JSON schema you supplied for the source connection will be translated
 > If you do not see a sample cURL command for “Post Data” after clicking the Push API Instructions tab, click on **Apply Changes** in the top-right corner of the Design page. 
 This page will also show sample cURL commands for “Delete Data” and “Delete All Data” actions. There must be at least one column configured as a unique identifier to see the “Delete Data” cURL command. There must be at least one record of data present in the dataset to see the “Delete All Data” cURL command.
 
-> Joins are not supported for datasets that use Push API source connections. For details, please see [Data Joins](./Datasets/02-Design/05-Data%20Joins/data-joins.md).
+> Joins are not supported for datasets that use Push API source connections. For details, please see [Data Joins](./Datasets/02-Design/data-joins.md).
 
 > To execute a Push API request, you will need to [provide the API key](../../getting-started/faqs.md#where-can-i-find-my-api-key) associated with the Qrvey Data Router.
 

@@ -7,7 +7,7 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-Managed Datasets offer a scalable, secure solution for storing and processing large volumes of data within the Qrvey platform. Enjoy fast, reliable analytics with features like automatic indexing and optimized querying, making it easy to manage and gain insights. Stored in Qrvey’s high-performance, serverless OpenSearch cluster, Managed Datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md) and [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md).
+Managed Datasets offer a scalable, secure solution for storing and processing large volumes of data within the Qrvey platform. Enjoy fast, reliable analytics with features like automatic indexing and optimized querying, making it easy to manage and gain insights. Stored in Qrvey’s high-performance, serverless OpenSearch cluster, Managed Datasets can be based on one or more data sources. For more information on creating multi-source datasets, see [Data Joins](../02-Design/data-joins.md) and [Appending Data (Union)](../02-Design/data-unions.md).
 
 ## Create a Managed Dataset
 
@@ -36,7 +36,7 @@ This dialog enables you to specify where the data will be fetched from. The data
 6. Click **Save**.  
    The Design page for the newly created dataset displays. 
    
-7. Use this page to configure your columns and dataset options before loading the data. To learn more, please read [Overview of the Design Page](../02-Design/overview-of-design.md).
+7. Use this page to configure your columns and dataset options before loading the data. To learn more, please read [Overview of the Design Page](../02-Design/intro-to-the-design-page.md).
 
 The new dataset is given a default name using the following format:  `{the connection name} - {table/view name}` which you can edit by clicking on the name and entering a new one.
 
@@ -50,7 +50,7 @@ Draft mode indicates that your selections have been saved and you can resume wor
 9. Once your dataset is configured, [Load the Data](#load-data).
 
 ## Synchronize Data
-[Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md) enables you to keep data up-to-date and synchronized.   
+[Data Synchronization](../02-Designdata-synchronization.md) enables you to keep data up-to-date and synchronized.   
 
 ## View Source Data
 
@@ -67,8 +67,8 @@ View Source Data displays the first 100 rows of data from the data source.
 - **Edit Connection Settings** — Modify the properties of the data source's connection. Available for all data sources.
 - **Edit Query** — Select a different table or view from the same Connection or change the SQL query of a custom query data source.  
    **Note**: This option is only available for database data sources. If the data source is MongoDB, the Edit Query dialog enables you to configure Queries, Aggregations, and Projections.
-- **Join to Another Data Source** — Add another data source to the existing ones. For more information, see [Data Joins](../02-Design/05-Data%20Joins/data-joins.md). 
-- **Union with Another Data Source** — Append or union the data from another data source to the existing ones. For more information, see [Appending Data (Union)](../02-Design/06-Data%20Unions/data-union.md). 
+- **Join to Another Data Source** — Add another data source to the existing ones. For more information, see [Data Joins](../02-Design/data-joins.md). 
+- **Union with Another Data Source** — Append or union the data from another data source to the existing ones. For more information, see [Appending Data (Union)](../02-Design/data-unions.md). 
 - **Switch for Another Data Source** — Select a data source from a connection other than the one currently in use.
 - **Rename** — Change the name of the data source.
 - **Delete** — Remove the selected data source from a join. Only available for data sources that have been joined with another.
@@ -149,7 +149,7 @@ You can also enter custom Date format with the following syntax:
 
 ![Unique-ID-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Unique-Id-84.png)
 
-If you are the using [Data Synchronization](../02-Design/04-Data%20Synchronization/data-sync.md) feature in *Append and Update* mode, you must select a unique identifier column. The unique ID may consist of a single column or a group of columns.
+If you are the using [Data Synchronization](../02-Designdata-synchronization.md) feature in *Append and Update* mode, you must select a unique identifier column. The unique ID may consist of a single column or a group of columns.
 
 To set a unique identifier on a column:
 1. Click it’s three-dot menu.
@@ -177,10 +177,10 @@ Any dataset column can be configured so that it automatically presents a link to
 
 ## Configure Geolocation Groups
 
-The [Geolocation Groups](../02-Design/02-Geolocation/overview-of-geolocation.md) feature displays address information in map charts. 
+The [Geolocation Groups](../02-Design/geolocation.md) feature displays address information in map charts. 
 
 ## Transform Column Data
-A [Transformation](../02-Design/03-Transformations/transformations.md) enables you to change any piece of data before loading it into a dataset. Transformations may be simple, such as changing the values in a column to uppercase, or more complex, such as parsing JSON objects into arrays. Transformed data can be loaded into the same column from which it originated, or into new columns.
+A [Transformation](../02-Design/transformations.md) enables you to change any piece of data before loading it into a dataset. Transformations may be simple, such as changing the values in a column to uppercase, or more complex, such as parsing JSON objects into arrays. Transformed data can be loaded into the same column from which it originated, or into new columns.
 
 
 ## Load Data
@@ -190,7 +190,7 @@ Once the dataset is configured as desired, you may load the data.
 1. Click **Load Dataset**. The Load Dataset dialog will appear.
 2. Select the estimated size of the dataset and click **Load**. The progress bar at the top-right of the screen indicates the current progress of the data load. 
    You may continue working in Qrvey Composer while the data loads in the background.  
-   This estimate can be changed at a later time in the [Advanced Settings](../02-Design/07-Advanced%20Settings/dataset-design-advanced-settings.md) tab.  
+   This estimate can be changed at a later time in the [Advanced Settings](../02-Design/dataset-design-advanced-settings.md) tab.  
 3. If you remain on the Design tab during the data load process, once complete, the Summary view displays information about the data loaded. 
 4. To view events, errors or issues with the data load, please check the [Activity Log](../../../activity-log.md).
    

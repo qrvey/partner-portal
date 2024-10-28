@@ -1,7 +1,7 @@
 ---
 id: dataset-api
-title: Creating a Dataset Using the Qrvey API
-sidebar_label: Creating a Dataset (API)
+title: Create a Dataset (API)
+sidebar_label: Create a Dataset (API)
 tags: [Software Developer]
 sidebar_position: 3
 displayed_sidebar: getting-started

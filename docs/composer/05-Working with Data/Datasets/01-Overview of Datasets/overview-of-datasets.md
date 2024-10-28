@@ -45,7 +45,7 @@ To mark a Dataset as a favorite, follow these steps.
 1. Navigate to **Data > Datasets**.
 2. Click on the desired Dataset.
 3. Configure and Manage the Dataset as Desired. For more details, please see:
-    - [Design](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Design/overview-of-the-design-page)
+    - [Design](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Design/intro-to-the-design-page)
     - [Analyze](https://partners.qrvey.com/docs/composer/Working%20with%20Data/Datasets/Analyze/overview-of-analyze)
     - [Activity Log](https://partners.qrvey.com/docs/composer/activity-log)
 

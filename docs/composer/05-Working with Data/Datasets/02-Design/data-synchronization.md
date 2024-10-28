@@ -1,8 +1,9 @@
 ---
-id: data-sync
-title: Data Sync
-sidebar_label: Data Sync
+id: data-synchronization
+title: Data Synchronization
+sidebar_label: Data Synchronization
 tags: [Data Analyst]
+sidebar_position: 4
 displayed_sidebar: getting-started
 ---
 
@@ -52,7 +53,7 @@ The value in the **Query End Time** field is always set to the current time.
 
 >**Note**: The values in the Query Start Time fields are automatically updated to the last successful load time.
 
-If the performance of the Append and Update process degrades over time, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../../deployment/06-Management/join-lake-optimization.md). 
+If the performance of the Append and Update process degrades over time, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../deployment/06-Management/join-lake-optimization.md). 
 
 ## Scheduling a Data Sync
 You can schedule the Data Sync process using one of two methods:
@@ -155,6 +156,6 @@ Don’t forget to persist your changes by clicking the **Apply Changes** button 
 
 <b>8. (Optional) Has the performance of the Append and Update process degraded over time? </b>
 
-If so, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../../deployment/06-Management/join-lake-optimization.md).
+If so, you may need to optimize the join lake. For more information, see [Join Lake Optimization](../../../../deployment/06-Management/join-lake-optimization.md).
 
 </div>

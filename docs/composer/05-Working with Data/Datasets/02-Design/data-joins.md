@@ -3,6 +3,7 @@ id: data-joins
 title: Data Joins
 sidebar_label: Data Joins
 tags: [Data Analyst]
+sidebar_position: 5
 displayed_sidebar: getting-started
 ---
 
@@ -19,7 +20,7 @@ The following join types are supported:
 
 ## To Create a Joined Dataset
 
-1. On the Design page, click the three-dot menu on the data source pill, and select **Join to Another Data Source**. For more information on using the Design page, see [Overview of the Design Page](../overview-of-design.md).
+1. On the Design page, click the three-dot menu on the data source pill, and select **Join to Another Data Source**. For more information on using the Design page, see [Overview of the Design Page](./intro-to-the-design-page).
 
 ![data-joins](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Joins/data-joins-nv3.png#thumbnail-60) 
 

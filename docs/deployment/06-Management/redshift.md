@@ -1,7 +1,7 @@
 ---
 id: redshift-connections
-title: Configuring AWS and Qrvey for Redshift Connections
-sidebar_label: Configuring AWS and Qrvey for Redshift Connections
+title: Configure AWS & Qrvey for Redshift
+sidebar_label: Configure AWS & Qrvey for Redshift
 tags: [CloudOps Engineer]
 sidebar_position: 4
 displayed_sidebar: getting-started

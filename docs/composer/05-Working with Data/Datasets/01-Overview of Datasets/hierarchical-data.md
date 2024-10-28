@@ -61,7 +61,7 @@ The parent records in the main data source have a one-to-many relationship with 
 
 ## Customize Hierarchical Datasets
 
-You can apply [Transformations](../02-Design/03-Transformations/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it (just like with other datasets) as well as flatten object arrays.
+You can apply [Transformations](../02-Design/transformations.md) as well as [design and modify](./overview-of-datasets.md#manage-a-dataset) your dataset before loading it (just like with other datasets) as well as flatten object arrays.
 
 In order to flatten an object array, follow these steps.
 

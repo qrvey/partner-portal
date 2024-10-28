@@ -3,7 +3,7 @@ id: dataset-design-advanced-settings
 title: Advanced Settings
 sidebar_label: Advanced Settings
 tags: [Data Analyst]
-sidebar_position: 1
+sidebar_position: 7
 displayed_sidebar: getting-started
 ---
 
@@ -21,7 +21,7 @@ Advanced Settings provides the following options:
 Specifies whether to make the dataset available to the rest of the organization. If enabled, users can create new datasets from this dataset. 
 
 ## Label Internationalization
-Specifies whether to enable internationalization in the dataset. If enabled, the dataset name and column names can be translated to multiple languages. For more information, see [Configuring Dynamic Labels for Datasets](../../../../../software-developer/06-Internationalization/configuring-dynamic-labels.md).
+Specifies whether to enable internationalization in the dataset. If enabled, the dataset name and column names can be translated to multiple languages. For more information, see [Configuring Dynamic Labels for Datasets](../../../../software-developer/06-Internationalization/configuring-dynamic-labels.md).
 
 ## Discovered Columns
 When a new column is discovered during a Data Source query, specifies whether to automatically add it to the dataset. 

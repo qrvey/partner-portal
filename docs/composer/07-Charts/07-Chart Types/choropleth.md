@@ -19,7 +19,7 @@ Choropleth maps use one geolocation column to determine regions on the map, and 
 Before you can create a Map Chart, your data needs to be prepared for the correct use of maps which is done by adding a *Geolocation* to your data.
 Every Map Chart needs at least one geolocation group to identify the parts of an address that will be used for positioning locations on the map. This can be set in the **Design** section of **Datasets**. It's important to define these groups correctly for accurate map locations.
 
-For more information, see [Overview of Geolocation Groups](../../05-Working%20with%20Data/Datasets/02-Design/02-Geolocation/overview-of-geolocation.md).
+For more information, see [Overview of Geolocation Groups](../../05-Working%20with%20Data/Datasets/02-Design/geolocation.md).
 
 
 ## When to Use It
