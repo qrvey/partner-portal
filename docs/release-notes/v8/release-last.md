@@ -17,7 +17,6 @@ Release Date: 2024-10-24
 - **New Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
 - **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
 - **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Exporting Pivoted Data](../../video-training/release/version-8.7.md).
-- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
 <!-- 
 **New Self-Service Options for All Charts** — When creating or editing a chart from the Chart Builder, it is now possible to configure whether the following options should be available for a chart: panel filtering, fit-to-panel, and exports (including the ability to control each export format individually).
@@ -62,6 +61,7 @@ Release Date: 2024-10-24
 - **Incorrect Actions Returned in Dashboards** — Fixed an issue where personalized actions were returned instead of original actions, depending on the dashboard version in use.
 - **“Discard Changes” Feature in Dashboard Builder Not Restoring Chart Actions** — Fixed the “Discard Changes” feature to ensure chart actions are restored correctly in the Dashboard Builder.
 - **Dashboards Stuck in Loading State When Personalization Disabled** — Fixed an issue where dashboards were stuck in a loading state when personalization was set to false.
+- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
 
 <!-- 
