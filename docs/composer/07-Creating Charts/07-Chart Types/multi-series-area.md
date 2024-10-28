@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 A **Multiseries Area Chart** is a powerful visualization tool used to compare multiple data series over time. It displays trends across different categories or groups, with each series represented by a separate filled area beneath a line. This type of chart is ideal for highlighting the cumulative nature of different datasets, as well as understanding how individual series contribute to the overall trend.
 
-![Multiseries Area](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/multi-series-area-chart-20241022A.webp)
+![Multiseries Area](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/multiseries-area-chart-20241028A.webp)
 
 **When to Use a Multiseries Area Chart:**
 - To compare trends across multiple categories, such as sales data from different regions or products.
