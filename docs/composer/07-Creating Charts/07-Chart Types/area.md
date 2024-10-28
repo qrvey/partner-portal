@@ -9,7 +9,7 @@ displayed_sidebar: getting-started
 
 An **Area Chart** is used to visualize quantitative data and represent changes over time. It is particularly effective for illustrating trends or showing how values accumulate over a period. By filling the space between the line and the x-axis with color, area charts make it easier to see the volume of changes over time, making them a great choice when you want to highlight the magnitude of trends.
 
-![Area Chart](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/area-chart-20241022A.webp)
+![Area Chart](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/dataviews/chart-types-all/area/area-chart-20241028A.webp)
 
 **When to Use an Area Chart:**
 - To display how a value evolves over time.
