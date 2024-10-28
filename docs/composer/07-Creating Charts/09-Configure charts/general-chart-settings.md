@@ -23,7 +23,7 @@ The **Self-service Options** enable users with the ability to toggle access to s
 - **Visualization Options**: Toggle whether users can change the visualization of numeric values inside a table between values and bar. (simple and grouped tables only)
 - **Sorting**: Toggle whether users can use data sorting. (simple and grouped tables only)
 - **Adding/Removing Columns**: Toggle whether users can add/remove grouped columns. (simple and grouped tables only)
-- **Change Column Aggregator**: Toggle whether users can adjust how the column data is aggregated. (simple and grouped tables only)
+- **Change Column Aggregator**: Toggle whether users can adjust how the data is aggregated. (grouped tables only)
 - **Fit To Panel**: Toggle whether users can access the "fit to panel" button.
 - **Download**: Toggle whether users can download chart data. Or alternatively, specify formats:
   - **JPG**

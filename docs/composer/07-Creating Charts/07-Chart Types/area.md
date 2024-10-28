@@ -13,13 +13,11 @@ An **Area Chart** is used to visualize quantitative data and represent changes o
 
 **When to Use an Area Chart:**
 - To display how a value evolves over time.
-- To emphasize the cumulative trend of multiple series.
 - To compare the relative proportions of different categories over a continuous range.
 
 **Key Features:**
-- **Categories**: Used for the x-axis to represent time or sequential data.
-- **Values**: Represented along the y-axis to show the quantitative measure.
-- **Stacked View**: Allows multiple series to be layered, showing both individual and cumulative contributions.
+- **Categories**: Used as the independent variable, such as time or sequential data.
+- **Values**: Used as the dependent variable, such as quantitative measures.
 
 ## Creating an Area Chart
 
@@ -28,13 +26,13 @@ To create an area chart, choose the desired **Category** and **Value**, then sty
 ## Styling an Area Chart
 
 ### General
-The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).
+The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../Configure%20charts/general-chart-settings).
 
 ### Styles
 
 The **Styles** toolbar in Qrvey's Chart Builder allows you to customize the appearance of your chart to better fit your needs. This section offers various options to modify the visual style and presentation of your area chart.
 
-- **Theme**: Choose from a variety of themes to change the overall color scheme of your chart.
+- **Color**: Choose a color for your area chart.
 - **Chart Orientation**: Switch between vertical and horizontal orientations to better display your data.
 - **X-Axis**: Access detailed settings for both axes to adjust labels, scales, and other display options.
     - **Axis Title**: Toggle the display of the axis title on or off.
@@ -73,7 +71,7 @@ Like all XY Charts, you can sort by either the category or aggregated values fro
 Add a [Trend Line](../09-Configure%20charts/chart-layers.md#trend-line) or a [Reference Line](../09-Configure%20charts/chart-layers.md#reference-line) to your chart to allow users to visually compare the data against some set trend or reference value.
  
 ### Format
-The [Small Multiples](../09-Configure%20charts/chart-format.md#small-multiples) feature is available in all XY Charts.
+The [Small Multiples](../09-Configure%20charts/chart-format.md) feature is available in all XY Charts.
  
 ### Filters
 You can also add Filters to your data by expanding the **Filters** section in the configuration panel or by clicking on the **Filters** button in the toolbar above the canvas. Filters that are created in the Chart Builder are hidden from End Users. These types of filters can’t be edited or interacted with in the view mode. For more information, see [Filters](../09-Configure%20charts/chart-filters.md).
