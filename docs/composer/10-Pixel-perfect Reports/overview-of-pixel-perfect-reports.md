@@ -1,7 +1,7 @@
 ---
 id: overview-of-pixel-perfect-reports
-title: Intro to Pixel-perfect Reports
-sidebar_label: Intro to Pixel-perfect Reports
+title: Intro to Pixel-Perfect Reports
+sidebar_label: Intro to Pixel-Perfect Reports
 tags: [Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started
