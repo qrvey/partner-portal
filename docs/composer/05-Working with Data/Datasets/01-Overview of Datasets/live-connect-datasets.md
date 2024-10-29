@@ -20,6 +20,11 @@ Keep these details in mind while using Live Connect Datasets:
 
 ## Create a Live Connect Dataset
 
+<iframe src="//fast.wistia.net/embed/iframe/a47kc85u89?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+
 To create a new Live Connect Dataset, follow these steps.
 
 1. Click the **New Dataset** button.

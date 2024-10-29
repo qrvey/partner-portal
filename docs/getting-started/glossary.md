@@ -1,7 +1,7 @@
 ---
 id: glossary
-title: Glossary of Common Terms
-sidebar_label: Glossary of Common Terms
+title: Glossary
+sidebar_label: Glossary
 ---
 
 <div style={{textAlign: "justify"}}>

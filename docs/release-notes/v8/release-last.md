@@ -366,7 +366,7 @@ Release Date: 2023-07-31
 * **Page Actions - Drilldown in Funnel Charts**: Enables Default and Custom Drilldowns for Funnel Charts.
 * **Card and Table View in Flow List**: Updates the card and table views of the Flows UI to standardize the interface and improve the user experience.
 * **Support for Drill-down Action in Exports**: CSV, Excel, and PDF formats now honor the drill-down action when exporting data.
-* **[Buckets in Reports](../../composer/10-Pixel-Perfect%20Reports/filtering-data.md)**: Adds the Bucketing Data feature to Pixel-perfect Reports, enabling users to create and use buckets in their reports.
+* **Buckets in Reports**: Adds the Bucketing Data feature to Pixel-perfect Reports, enabling users to create and use buckets in their reports.
 
 ### General Tweaks & Bug Fixes
 * **Labels (improvement)**: Updates the descriptions and labels in the Qrvey Admin Center user interface to improve the usability of the product. 

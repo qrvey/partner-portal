@@ -1,7 +1,7 @@
 ---
 id: time-zone-support
-title: Timezone Settings
-sidebar_label: Timezone Settings
+title: Time Zone Settings
+sidebar_label: Time Zone Settings
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 7
 displayed_sidebar: getting-started
@@ -22,7 +22,14 @@ This time zone setting in Qrvey Admin Center is overridden in the following case
 * Specifying the time zone In a widget’s configuration object.
 * Specifying the time zone as a fixed setting for a dataset. 
 
-## To specify the default time zone setting
+## Configure Time Zones
+
+<iframe src="//fast.wistia.net/embed/iframe/yegu0zm9mn?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+
+### Set Default Time Zone
 1. In Qrvey Admin Center, click the **Customization** icon in the left-hand navigation pane and display the General Settings tab. 
 2. Click the **Time Zone** tab. 
 3. Under **Set Time Zone**, select one of the following options:
@@ -31,7 +38,8 @@ This time zone setting in Qrvey Admin Center is overridden in the following case
     * **Fixed Time Zone**. Use the time zone specified in the dropdown menu below this setting. 
 4. Click **Apply Changes**. 
 
-## To specify the time zone in a widget
+### Configure a Widget's Time Zone
+
 You can configure the time zone in the JSON configuration object for the following widgets:
 * Dashboard View
 * Dashboard Builder
@@ -41,12 +49,11 @@ You can configure the time zone in the JSON configuration object for the followi
 
 Add the following property to the JSON configuration object:
 
-### Time zone Configuration
 | **Property** | **Description** | **Required** |
 | --- | --- | --- |
 | **offset** | Time zone offset used to display dates. Overrides the time zone setting in Admin Center. Possible values are: `default` to show dates in UTC-0, `browser` to use the setting in the user’s browser, or specify a fixed offset such as `+05:00` or `-03:00` | Yes |
 
-## To specify the time zone programmatically via API
+## Set Time Zone via API
 
 The Qrvey platform provides the following APIs to get and update the time zone settings. Click the links to view the API documentation:
 * [Get Time Zone Settings](https://qrvey.stoplight.io/docs/qrvey-api-doc/4045b9423953e-get-time-zone-settings) 

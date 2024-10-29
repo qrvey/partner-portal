@@ -1,7 +1,7 @@
 ---
 id: ask-us
-title: Ask us a question
-sidebar_label: Ask us a question
+title: Ask a Question
+sidebar_label: Ask a Question
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 4
 ---

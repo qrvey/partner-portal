@@ -103,12 +103,6 @@ module.exports = {
           href: "https://qrvey.stoplight.io/docs/qrvey-api-doc/",
         },
         {
-          label: "Guides",
-          type: "doc",
-          position: "right",
-          docId: "guides/guides",
-        },
-        {
           label: "Release Notes",
           type: "doc",
           position: "right",
