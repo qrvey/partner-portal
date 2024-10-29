@@ -9,7 +9,10 @@ displayed_sidebar: getting-started
 
 Formula Builder is an interactive user interface that enables you to quickly create, test, and save formulas. Formulas enable you to create new columns of data that do not already exist in the dataset. For example, you can create a formula to segment data, aggregate data, calculate ratios, and much more. Once a formula is created and saved, it is available in Chart Builder, Pixel-perfect Reports, and the Analyze widget as a new column that can be added to a chart or visualization. The Qrvey platform computes the values of that column in real time, when the end user displays the chart or visualization. 
 
-For a video tutorial on using Formula Builder, see the video [Formulas and Buckets](../../../../../guides/legacy/formulas-buckets.md). 
+<iframe src="//fast.wistia.net/embed/iframe/pb3hfi8jms?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 Formula Builder is opened from within Chart Builder, Pixel-perfect Reports, or the Analyze widget. Click the sigma icon on the toolbar:
 
