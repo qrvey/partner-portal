@@ -1,7 +1,7 @@
 ---
 id: overview-of-internationalization
-title: Overview of Internationalization
-sidebar_label: Overview of Internationalization
+title: Intro to Internationalization
+sidebar_label: Intro to Internationalization
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 1
 displayed_sidebar: getting-started

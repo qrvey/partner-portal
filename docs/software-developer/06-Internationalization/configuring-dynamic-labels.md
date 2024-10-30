@@ -1,7 +1,7 @@
 ---
 id: i18n-configure-dynamic-labels
-title: Configuring Dynamic Labels For Datasets
-sidebar_label: Configuring Dynamic Labels For Datasets
+title: Dynamic Labels For Datasets
+sidebar_label: Dynamic Labels For Datasets
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 3
 displayed_sidebar: getting-started
@@ -31,8 +31,7 @@ On the dataset design screen select the 3-dot popup menu from the top-right side
  
  
 ![internationalization](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/special-features/internationalization/configuring-dynamic-labels/dynamic1.png#thumbnail-40)
- 
- 
+
  
 Tokens are suggested for each name based on the name itself. For example a column named “age” will be assigned the token &#123;&#123;i18n.age&#125;&#125;. In order to view and optionally modify the assigned token, click the toggle button on the top-right corner of the screen to the <b>{ }</b> position. This changes the displayed value to show the assigned tokens.
  
@@ -40,7 +39,5 @@ Tokens appear in the UI like: &#123;&#123;i18n.myTokenKey&#125;&#125;
 Click in each field to change the “key” part of any token. If a similar token already exists, the system will suggest it and you can select any of the suggested tokens to reuse.
  
 Once the **Label Internationalization** has been turned on, keys have optionally been modified, and changes to the dataset have been applied, remember to run (or re-run) the steps in sections 3-6 as described in the [Internationalization, Step By Step](../06-Internationalization/internationalization-step-by-step.md) article, to add the new keys to the Translation Spreadsheet, translate their value, and publish them for use at runtime. 
- 
- 
  
 </div>
