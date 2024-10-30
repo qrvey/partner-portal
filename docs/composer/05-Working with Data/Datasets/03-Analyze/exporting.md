@@ -162,7 +162,12 @@ You can use the [Scheduling Exports](./scheduling-exports.md) feature to automat
 
 ## Pivot and Export Data
 
-You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-datasets.md) for export and download as a CSV.
+You can pivot any [Managed Data Set](../01-Overview%20of%20Datasets/managed-datasets.md) for export and download it as a CSV file.
+
+<iframe src="//fast.wistia.net/embed/iframe/ntt9pk2gzg?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 1. Navigate to **Data > [Dataset] > Design Tab > Advanced Settings**.
 2. Under "Pivoting for Analysis", click **Configure Pivoting**. A modal will appear.

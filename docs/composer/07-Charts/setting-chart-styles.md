@@ -51,7 +51,7 @@ To give all your charts a unified look and feel, use the Style Themes feature to
 * **Qrvey Theme**. The legacy default theme supported in applications created in version 8.0 and earlier.
 * **Qrvey Theme 2**. The new default theme introduced in version 8.1. Theme 2 expands the number of colors provided in the Data Visualization section from 20 to 100, as shown in the screenshot below. 
   ![Data Styles Theme 2](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/chart-builder/colors-and-themes/data-styles-theme-2-81.png)
-* **Qrvey Dark Theme**. Introduced in version 8.4, Qrvey Dark Theme applies a dark mode to the dashboard, charts, and chart panels.
+* **Qrvey Dark Theme**. Applies a dark mode to the dashboard, charts, and chart panels.
 
 ### To create a new theme
 1. Click the **Style Themes** icon in the toolbar.

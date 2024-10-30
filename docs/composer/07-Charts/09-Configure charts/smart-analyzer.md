@@ -7,11 +7,14 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
  
-<div style={{textAlign: "justify"}}>
-
 Smart Analyzer unleashes the power of artificial intelligence (AI) to acquire new insights into your data. This feature establishes a link between ChatGPT and the data in your chart, enabling you to ask ChatGPT questions in natural language about your data. This feature does not alter or modify datasets in any way. 
 
 >**Note**: Smart Analyze is not enabled by default. To enable Smart Analyzer, see “Enabling Smart Analyzer” later in this article. 
+
+<iframe src="//fast.wistia.net/embed/iframe/gcmgwy7sxd?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
 To open Smart Analyzer, click the Smart Analyzer icon in any of the supported charts:
 
@@ -77,6 +80,3 @@ Smart Analyzer is not enabled by default. To enable Smart Analyzer in Dashboard 
         `?smartan=true`
 
     >**Note**: You can also use the above method for embedded scenarios by adding this query var to the embedded widget's URL.
-
-
-</div>

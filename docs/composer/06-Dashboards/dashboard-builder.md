@@ -7,7 +7,6 @@ sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-
 Dashboard Builder makes it easy to combine multiple Qrvey Composer components, like forms, charts and metrics, into beautiful web pages, each with their own unique sharable URL. You can also combine multiple dashboards into a complete information application by using the Navigation feature.
 
 To open Dashboard Builder, click the Dashboard Builder icon in the left navigation bar.  
@@ -36,10 +35,10 @@ The shortcut menu provides the following options:
 * Copy Dashboard Link (For more information, see “Preview a Dashboard” later in this article) 
 * Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/04-Widgets/07-Widgets/dashboard-builder.md)). 
 
-## Open an existing dashboard
+## View a Dashboard
 To open an existing dashboard, locate its card in the list displayed on the main page of Dashboard Builder, and click on it. The canvas displays with the contents of the dashboard. 
 
-## Create a new dashboard
+## Create a Dashboard
 1. In Dashboard builder, click **Create New Dashboard**. 
 2. The Create New Dashboard dialog displays with the following two options:
     * **Fixed Grid**. A fixed canvas that remains constant regardless of the device used to display the dashboard.
@@ -48,21 +47,20 @@ To open an existing dashboard, locate its card in the list displayed on the main
 
 >**Note**: You can change the grid option after you’ve created the dashboard. Open the dashboard, click the Grid menu, and select Change to Responsive Grid or Change to Fixed Grid. 
 
-## Using Design Mode and Interaction Mode
+## Design Mode and Interaction Mode
+
+<iframe src="//fast.wistia.net/embed/iframe/2gcjx3i98p?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+
 Dashboard Builder provides two modes for working with dashboards: 
 * **Design mode**. The default mode for building and configuring dashboards. 
 * **Interaction mode**. Enables you to review and interact with the dashboard just as you would in Dashboard View. For example, you can create filters, use filter controls, and execute Dashboard Actions. To open Interaction mode, click the **Interact** button at the top of the page. To return to Design mode, click the **Design** button. 
 
 >**Note**: Any changes made in Interaction mode are not persisted after returning to Design mode.   
 
-
-## Overview of the Canvas in Design mode
-The Dashboard Builder canvas in Design mode provides a wide variety of options for creating custom dashboards. The upper portion of the page displays the page status, publishing options, menus, and a toolbar. The right side contains the configuration panels. The remainder of the page is the canvas for designing your dashboard. 
-
-![Dashboard Builder Canvas 8.3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-canvas-83.png)
-
-
-### Data panel overview
+### The Data Panel
 The Data panel displays the configured datasets that you can work with, and it enables you to search for a particular dataset. Expand a dataset to display all the charts and summary panels that have been created using that dataset. From here, you can perform the following:
 * Drag a panel directly onto the canvas. 
 * Hover over a panel to display the name of the chart, chart type, and description (if available).
@@ -71,7 +69,7 @@ The Data panel displays the configured datasets that you can work with, and it e
 
 For more information on datasets, see [Overview of Datasets](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md). 
 
-### Filters panel overview
+### The Filters Panel
 The Filters panel enables you to add filters to the dashboard, so that end-users can interact with them in the published application. 
 
 >**Note**: The Filters panel is different than the Filter Control panel, which provides configuration settings for the selected filter object on the canvas. 
@@ -84,12 +82,12 @@ This panel also provides a variety of options for managing filters. Options incl
 
 To work with filters, you should be familiar with the various filter components provided in the Qrvey platform. For more information, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md). 
 
-### Configuration options panel overview
+### The Configuration Options Panel
 The Configuration panel provides options for the object that is currently selected on the canvas. For example:
 * For Text, Images and Buttons, the Configuration panel provides options to style fonts, colors, text alignment, image aspect, and an option to add a URL to create links from the objects.
 * For charts, the Configuration panel provides chart options such as Filter By or Drill-Downs in a customized way for your page viewers.
 
-### Resolution options
+### Resolution Options
 In Fixed Grid dashboards, you can choose the resolution that will fit your page viewers best. 
 
 To change resolution, click **Grid Options** in the toolbar and select a resolution from the dropdown menu:
@@ -100,9 +98,7 @@ To change resolution, click **Grid Options** in the toolbar and select a resolut
 
 You can change this setting at any time keeping in mind that this affects the sizes of all pages, and when switching to a smaller resolution, some objects may be repositioned which is an action that cannot be reverted.
 
-
-
-### Grid options 
+### Grid Options 
 Dashboard Builder provides the following options for configuring the grid that is displayed on the canvas:
 * To enable or disable the snap-to-grid functionality, click the **Grid** menu and select **Snap to Grid**. 
 * To hide the grid, click the **Grid** menu and select **Hide Grid**. 
@@ -112,12 +108,16 @@ In addition, the Grid menu enables you to switch between Responsive Grid and Fix
 * Responsive Grid. An adaptive canvas that is suitable for displaying dashboards on multiple devices, such as tablets and phones. 
 * Fixed Grid. A fixed canvas that remains constant regardless of the device used to display the dashboard. 
 
-### Responsive View options
+### Responsive View Options
 The Responsive View option in the toolbar enables you to preview how your content will be displayed on different devices. Options are **Desktop**, **Tablet**, and **Mobile**. 
 
 You can configure the minimum and minimum width for the dashboard in each of these options. Click the **Responsive View** icon in the toolbar and select **Customize Breakpoints Resolution**. The Customize Breakpoints Dimensions dialog displays with minimum and maximum settings for desktop, tablet, and mobile devices. 
 
-## Working with objects in the canvas
+## The Canvas
+
+The Dashboard Builder canvas in Design mode provides a wide variety of options for creating custom dashboards. The upper portion of the page displays the page status, publishing options, menus, and a toolbar. The right side contains the configuration panels. The remainder of the page is the canvas for designing your dashboard. 
+
+![Dashboard Builder Canvas 8.3](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-canvas-83.png)
 
 The canvas in Design mode provides standard controls that are common in design tools, such as selecting, dragging, selecting, and resizing objects. 
 
@@ -132,10 +132,10 @@ You can also use the following keyboard shortcuts:
 * **Undo**: COMMAND+Z (on a Mac) or CTRL+Z (on a PC)
 * **Redo**: COMMAND+SHIFT+Z (on a Mac) or CTRL+SHIFT+Z (on a PC)
 
-### Insert a chart
+### Insert a Chart
 To insert a chart, in the toolbar, click Add Chart. The Chart Builder opens. For more information on creating charts, see Chart Builder Overview. 
 
-### Insert an image
+### Insert an Image
 You can add images to your report by uploading them or linking to a URL.
 
 1. Click the Image icon in the toolbar. 
@@ -147,81 +147,53 @@ You can add images to your report by uploading them or linking to a URL.
     * **Fill**. Image resizes and changes its proportions to fit in the container. 
 5. On the canvas, adjust the size and position of the image box as needed. 
 
-### Add text
-You can add static text to your report by drawing a Text box on the canvas and configuring its settings. Text settings include:
-* Font Type
-* Font Size
-* Text Styles (Bold, Italic, etc.)
-* Font Color
-* Background Color
-* Alignment
-* Text Wrapping
-* Borders
-* Padding
+### Add Text
+You can add static text to your report by drawing a Text box on the canvas and configuring its settings, including font type, font size, text styles (bold, italic, etc.), font color, background color, alignment, text wrapping, borders, and padding.
 
-#### To add text
 1. Click the **Text** icon on the toolbar. 
 2. Draw a bounding box on the canvas. Size and position the box as desired. The Configuration panel updates to display Text Configuration options.
 3. Click in the box and type your text.  
 4. Use the settings in the Text Configuration panel to format the text. 
 
-### Insert a button
+### Insert a Button
 You can add buttons to your dashboard to enable end users to easily navigate to a different site. 
 
-#### To add a button
 1. Click the **Button** icon on the toolbar. 
 2. Draw a bounding box on the canvas. Size and position the box as desired. The Configuration panel updates to display Button Configuration options.
 3. In the Button Configuration panel, under Label, enter the text to display on the button. 
 4. Select the Font Color and Background Color in the boxes provided. 
 5. In the **Add Link** box, paste in the URL you want the button to redirect to.
 
-### Working with Themes
+### Themes
 The Themes feature enables you to apply the same look-and-feel to multiple charts. Qrvey Composer provides a default theme that you cannot delete or edit. However, you may create new themes and define your own visual styles. When you create a theme, it is available in all your applications. Every theme has a unique ID that you can reference programmatically. 
 
 For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../07-Charts/setting-chart-styles.md).
 
-
 ### Insert a Filter Control
-The Filter Controls feature enables you to add an object to the dashboard that provides end users with some data filtering capabilities. Options are:
-* Date picker
-* Value list
-* Input box
+The Filter Controls feature enables you to add an object to the dashboard that provides end users with some data filtering capabilities. Options are: Date Picker, Value List, and Input Box.
 
 >**Note**: The Filter Controls feature is different than the Filters feature. For more information on configuring filters, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md).
 
-#### To add a filter control
-1. Click the **Filter Controls** icon in the toolbar and select one of the following options: 
-    * Date picker
-    * Value list
-    * Input box
+1. Click the **Filter Controls** icon in the toolbar and select: Date Picker, Value List, or Input Box.
 2. Draw a bounding box on the canvas. Size and position the box as desired. The Configuration panel updates to display Filter Control Configuration options. 
 3. Under General, select the column to use in the Filter Control. 
 4. Complete the remaining options for the filter control. Note that the options provided vary depending on the type of Filter Control selected. 
 
 ### Align Objects
-The Align components feature helps arrange the components with more precision. To align components, select them on the canvas and click the Align Objects icon on the toolbar. Select one of the following options:
-* Align left
-* Align center
-* Align right
-* Align top
-* Align middle
-* Align bottom
+The Align components feature helps arrange the components with more precision. To align components, select them on the canvas and click the Align Objects icon on the toolbar. Options include align left, align center, align right, align top, align middle, and align bottom.
 
 ### Arrange Objects
 You can arrange overlapping components so that one is in front or behind the other. Select the component you want to arrange and click the Arrange Components icon on the toolbar. Select one of the following options: 
 * Send to Front
 * Send to Back
 
-### Download options
+### Download Options
 The Download feature enables you to download the dashboard data in CSV or Excel format or a visualization of the dashboard in PDF format. If multiple datasets are used on the same dashboards, they are exported as separate files.
 
-To download a file, click the Download icon on the toolbar and select one of the following options:
-* CSV 
-* PDF
-* Excel
+To download a file, click the Download icon on the toolbar and select one of the following options: CSV, PDF, or Excel.
 
 
-### Add a page header
+### Add a Page Header
 Dashboard Builder enables you to add a customized page header to all your dashboards. 
 
 1. To add a page header, click the **Insert** menu and click **Page Header**. The canvas updates to display a header area as a container on the page. The Configuration panel updates to display Header Configuration options. 
@@ -233,7 +205,7 @@ Dashboard Builder enables you to add a customized page header to all your dashbo
     * Height 
 3. In the header area of the canvas, add the desired visual components, such as images, buttons, text, etc. 
  
-### Using tabs
+### Tabs
 The Tab feature enables you to separate the content of a dashboard in different sections. 
 
 1. To add a tab strip, click the Insert menu and click Tabs. A tab strip displays at the top of the dashboard. The Configuration panel updates to display Tab Configuration options.
@@ -247,14 +219,12 @@ The Tab feature enables you to separate the content of a dashboard in different 
 4. To add a new tab, click the **+** icon to the right of the existing tab(s). 
 5. To create a duplicate tab, click the three-dot menu and select **Duplicate Tab**. 
 
-### Enabling Subscriptions
-You can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. 
+### Enable Subscriptions
+You can enable end users to subscribe to a scheduled delivery of exported dashboards or specific charts. To enable subscriptions:
 
-To enable subscriptions, click the Insert menu and click **Page Subscriptions**. A subscription icon displays in the lower right corner of the dashboard. 
+1. Click the Insert menu and click **Page Subscriptions**. A subscription icon displays in the lower right corner of the dashboard. 
 
-Once enabled, end users are provided the option to subscribe to the dashboard view in the Action menu of the embedded Dashboard View widget. 
-
-For more information on using subscriptions, see [Subscribing to Exports](./subscribing-exports.md).
+Once enabled, end users are provided the option to subscribe to the dashboard view in the Action menu of the embedded Dashboard View widget. For more information on using subscriptions, see [Subscribing to Exports](./subscribing-exports.md).
 
 ## Preview a Dashboard
 Dashboard Builder enables you to preview a single dashboard in a browser, so you can see how the page will appear to the end user. Note that the preview feature requires you to publish the application first, which commits the application to the server. You cannot resume editing the dashboard until you unpublish the application. 

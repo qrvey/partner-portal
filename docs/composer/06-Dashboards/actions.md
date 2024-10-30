@@ -96,6 +96,12 @@ To activate it, you first need to define the behavior of the action. There are t
 
 
 ### See Data
+
+<iframe src="//fast.wistia.net/embed/iframe/lifvy0j6qj?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+
 To activate this action, select **See Data**. Enter a label in the box provided. This label displays when the user clicks the chart and more than one On Click action is available. If you do not provide a label, the text “See Data” displays. 
 
 ![see-data-83](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/page_actions/see-data-83.png)

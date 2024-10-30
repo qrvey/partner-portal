@@ -11,16 +11,19 @@ displayed_sidebar: getting-started
 
 Radar chart, also known as a Polar, Spider, or Web chart, is mainly used to compare the performance of multiple items (values columns) in different areas (category column). The category values are depicted as “poles” of the chart, while the aggregate of the value column in each category is depicted as a point on the pole. In most cases the points are connected with a line to create a polygon.
 
-![Radar-Chart-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/chart-types/Radar-Chart-84.png)
+<iframe src="//fast.wistia.net/embed/iframe/3837tbfgzy?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 
-## Creating a Radar Chart
+## Create a Radar Chart
 To create a Radar Chart, add one column to the **Category** shelf and any number of columns to the **Values** shelf. The columns may be of any data type, including buckets and formulas. Each Category value is represented using one pole radiating from the center of the chart. 
-
-## Styling The Radar Chart
-In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### General 
 The General section is available for all chart types, and the options vary depending on the chart selected. For more information on the options, see [General Chart Settings](../09-Configure%20charts/general-chart-settings.md).  
+
+### Styles
+In the Configuration Panel on the right of the Chart Builder, you can style different aspects of your chart.
 
 ### Styles
 The Styles section enables you to control various visual elements of the charts, such as colors, labels, and more. It is available for most chart types, and the options vary depending on the chart selected. For a glossary of all styles, see [Styles](../09-Configure%20charts/chart-styles.md). Style options specific to this chart are listed below. 
