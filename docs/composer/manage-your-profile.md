@@ -11,7 +11,7 @@ displayed_sidebar: getting-started
 
 ## Log In
 
-![1_logging-in](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.1_logging-in/login.png#thumbnail-60)
+![1_logging-in](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/basics/3.2_profile/openid-login-20241028A.png)
 
 Navigate to the URL provided by your Qrvey administrator. If you were given an email address and password for your account, you may use them here.
 

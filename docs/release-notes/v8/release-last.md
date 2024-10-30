@@ -5,7 +5,7 @@ sidebar_label: Release & Upgrade Notes
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
-<div>
+Release Date: 2024-10-24
 
 > **Upgrade Note:** If you are planning to upgrade to a new version of Qrvey, please read through the Upgrade and release notes on all prior versions, as they may contain platform changes that must be accounted for in the development process. You can follow the steps outlined in [Upgrading to a New Version](../../deployment/07-Upgrades/upgrading-versions.md) to perform your upgrade. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade, please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade. 
 
@@ -15,13 +15,12 @@ Release Date: 2024-09-30
 
 ### New Features & Enhancements
 
-- **Make Filters Part of EUP:** A new property has been added to the End User widget’s configuration, allowing users to enable or disable a mode where Filter Personalizations can be autosaved or not.
+- **Make Filters Part of EUP:** A new "filters" property has been added to the End User widget’s configuration.
 - **Support clientid and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientid` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientid`.
 - **Implement Unsubscribe Page for Subscriptions:** An Unsubscribe page was implemented where users can confirm their wish to stop receiving emails from a subscription, scheduled export, and/or flow.
-- **New Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
+- **Additional Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
 - **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more information, please see [our video on Area Charts](../../video-training/release/version-8.7.md).
 - **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [our video on Exporting Pivoted Data](../../video-training/release/version-8.7.md).
-- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
 ### General Tweaks & Fixes
 
@@ -43,18 +42,12 @@ Release Date: 2024-09-30
 - **Exports Do Not Complete Due to Retry Limit** — Implemented error handling and retries for CSV raw exports.
 - **baseUrl Only Applied for Exports of Zip Files** — Fixed an issue where the baseUrl property was only applied to exports of zip files, ensuring it now applies to all export types.
 - **Cloning a Page with the Publish Parameter Not Working** — Fixed the clone page external endpoint to publish the page correctly when the `publish=true` parameter is included.
-- **New Applications Not Published via API** — Fixed the update dashboard process to ensure new applications are published correctly via API.
-- **Incorrect Actions Returned in Dashboards** — Fixed an issue where personalized actions were returned instead of original actions, depending on the dashboard version in use.
-- **“Discard Changes” Feature in Dashboard Builder Not Restoring Chart Actions** — Fixed the “Discard Changes” feature to ensure chart actions are restored correctly in the Dashboard Builder.
-- **Dashboards Stuck in Loading State When Personalization Disabled** — Fixed an issue where dashboards were stuck in a loading state when personalization was set to false.
 - **Conditional Formatting Removed When Moving Columns in Table Chart** — Fixed an issue where conditional formatting was removed when moving columns inside a table.
 - **Filter By Action Not Triggered in Grouped Tables** — Fixed an issue where the Filter By action was not triggered when it was the only action on the chart.
 - **Tabular View and Table Chart Not Showing Rows** — Applied improvements to Tabular View to support formulas with a large set of nested formulas.
 - **See Data Action Removes Chart Filters When Changed to Dashboard Filters** — Fixed the See Data action so that it no longer removes chart filters when switching to dashboard filters.
-- **New Applications Not Published via API** — Fixed the update dashboard process to ensure new applications are published correctly via API.
-- **Incorrect Actions Returned in Dashboards** — Fixed an issue where personalized actions were returned instead of original actions, depending on the dashboard version in use.
-- **“Discard Changes” Feature in Dashboard Builder Not Restoring Chart Actions** — Fixed the “Discard Changes” feature to ensure chart actions are restored correctly in the Dashboard Builder.
 - **Dashboards Stuck in Loading State When Personalization Disabled** — Fixed an issue where dashboards were stuck in a loading state when personalization was set to false.
+- **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
 ### Upgrade Link
 
@@ -114,21 +107,13 @@ Release Date: 2024-05-31
 ### General Tweaks & Fixes
 
 - **readFromSource validation issue** – Bug fix that sets the `readFromSource` attribute as true if the attribute is not defined during the create column process.
-
 - **Draft Dataset Reflects Source Updates** – After updating the source dataset, refreshing the target dataset will now allow child columns of an object array to be selected for analysis.
-
 - **Union Draft Reflects Source Changes** – Creating a dataset that unions two sources containing object array columns will now properly refresh the unioned dataset if an array flatten is applied to the first union source.
-
 - **Refresh Button Maintains Joined Dataset Integrity** – Refreshing the metadata of a target dataset sourced from a dataset containing an object array column will no longer experience an error, and changes to the source will be reflected in the target.
-
 - **Data Sync Error Resolved for Joined Datasets** – Selecting a date column for a dataset sync that is a child of an object array will no longer cause an error during data synchronization.
-
 - **Data Integrity Maintained with Composite Dataset Syncs** – Combining data synchronization types of Append and Update and Full Reload will no longer result in data loss in the composite dataset.
-
 - **Full Array Values Displayed in Table Chart** – Visualizing a text array in a simple table chart will now display all values as a comma-delimited list instead of only the first value in the array.
-
 - **Favorite Datasets Listed in Response** – Datasets marked as Favorite will now be returned in the Get All Datasets endpoint response.
-
 - **Join with Flat Transformation Error Resolved** – A composite dataset that joins a source including an array flatten transformation will no longer throw a 'TYPE_MISMATCH' error when loading data if "Automatically add new columns" is selected.
 
 ### Upgrade Link
