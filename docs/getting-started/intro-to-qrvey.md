@@ -65,41 +65,30 @@ The following outline describes the initial onboarding process for new customers
 Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation.
 
 ### Solution Architects 
-Stakeholders that use the Qrvey Admin Center to manage the infrastructure, users, and content, as well as configure Qrvey Composer.
+Admin Center users that manage the infrastructure, its users, and content, as well as configure Qrvey Composer.
 
-* [Qrvey Admin Center User Guide](../admin/introduction-to-qrvey-admin-center.md). 
-* [Introduction to the Qrvey Admin Center](../admin/introduction-to-qrvey-admin-center.md)
-* [Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md)
-* [Managing Users of Qrvey Composer](../admin/managing-users.md)
-* [Overview of Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
-* [Overview of Multi-tenant Deployments](../multi-tenant-solution/overview-of-multi-tenant-deployments.md)
-* [Multi-tenant Dataset Architecture](../multi-tenant-solution/multi-tenant-dataset-architecture.md)
-* [Multi-tenant Security Architecture](../multi-tenant-solution/multi-tenant-security-architecture.md)
+* [Introduction to The Admin Center](../admin/introduction-to-qrvey-admin-center.md)
+* [What is Content Deployment?](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
+* [Intro to Multi-tenant Deployments](../deployment/08-Multi%20Tenant%20Solutions/overview-of-multi-tenant-deployments.md)
+* [Guide - Security Overview](../guides/legacy/security-overview.md)
 
 ### CloudOps Engineers
 The AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.
 
-* [Qrvey Deployment Guide](../deployment/introduction-to-deployment.md). 
-* [Prerequisites for Installation](../deployment/prerequisites-for-installation.md)
-* [Preparing Your AWS Account](../deployment/preparing-AWS-account.md)
-* [Initial Installation](../deployment/04-Installation/initial-installation.md)
-* [Customizing Qrvey Deployment](../deployment/customizing-qrvey-deployment.md)
-* [Cluster Management](../deployment/06-Management/manage-aws-elasticsearch.md)
+* [Introduction to Qrvey Deployment](../deployment/introduction-to-deployment.md). 
+* [Guide - Multi-tenancy Architecture](../guides/legacy/video-multi-tenancy-architecture).
 
 ### Data Analysts 
 Those that Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
 
-* [Qrvey Composer User Guide](../composer/introduction-to-qrvey-composer.md). 
 * [Introduction to Qrvey Composer](../composer/introduction-to-qrvey-composer.md)
-* [Overview of Qrvey Applications](../composer/overview-of-applications.md)
-* [Introduction to Data in Qrvey](../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md)
-* [Overview of Dashboards](../composer/06-Dashboards/dashboard-builder.md)
-* [Overview of Chart Builder](../composer/07-Charts/overview-of-chart-builder.md)
+* [Tutorial - Design a Dataset](../guides/legacy/dataset-design.md)
 
 ### Software Developers
-The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to programmatically interact with the Qrvey platform.
+The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to interact with the platform.
 
-* [Qrvey Software Developer Guide](../software-developer/introduction-to-software-development.md)
-* [Overview of the Qrvey API](../software-developer/introduction-to-software-development.md
-* [Qrvey API Reference (Stoplight)](https://tinyurl.com/atuznk6u)
-* [Overview of Embedding and Widgets](../software-developer/04-Widgets/overview-of-embedding.md)
+* [Introduction to Development](../software-developer/introduction-to-software-development.md)
+* [Introduction to Widgets](../software-developer/04-Widgets/overview-of-embedding.md)
+* [Tutorial - Widgets Overview](../guides/legacy/video-widget-overview)
+* [API Reference](https://tinyurl.com/atuznk6u)
+* [Tutorial - Qrvey API](../guides/api-tutorials/api-tutorial)
