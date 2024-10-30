@@ -19,7 +19,7 @@ This can be broken into the following high-level steps.
 2. Prepare Target App for Deployment
 3. Deploy the Baseline App
 
-* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/08-API/generating-security-tokens.md).
+* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/introduction-to-software-development.md
 * Verify that you have [at least one user account](../managing-users.md) created in the Qrvey Admin Center with “Composer” role permissions.
 
 ## How To Guide
