@@ -1,6 +1,6 @@
 ---
 id: intro-to-qrvey
-title: Introduction to the Qrvey Platform
+title: Introduction to Qrvey
 sidebar_label: Introduction to Qrvey
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 1
