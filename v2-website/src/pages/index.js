@@ -301,7 +301,7 @@ class Index extends React.Component {
           </div>
           <div className="persona-cont">
             <a
-              href="/docs/user-persona/solution-architect"
+              href="/docs/getting-started/intro-to-qrvey"
               className="persona-box"
             >
               <div className="solution image"></div>
@@ -314,7 +314,10 @@ class Index extends React.Component {
                 Composer.
               </p>
             </a>
-            <a href="/docs/user-persona/data-analyst" className="persona-box">
+            <a
+              href="/docs/getting-started/intro-to-qrvey"
+              className="persona-box"
+            >
               <div className="data image"></div>
               <h3>
                 <b>Data Analysts</b>
@@ -326,7 +329,7 @@ class Index extends React.Component {
               </p>
             </a>
             <a
-              href="/docs/user-persona/software-developer"
+              href="/docs/getting-started/intro-to-qrvey"
               className="persona-box"
             >
               <div className="software image"></div>
@@ -340,7 +343,7 @@ class Index extends React.Component {
               </p>
             </a>
             <a
-              href="/docs/user-persona/cloudops-engineer"
+              href="/docs/getting-started/intro-to-qrvey"
               className="persona-box"
             >
               <div className="cloud image"></div>

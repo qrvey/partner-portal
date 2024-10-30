@@ -7,7 +7,6 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 Each instance of the Qrvey platform is considered a “server”. A server includes Qrvey Composer, Qrvey Admin Center, the ElasticSearch cluster, the users of the instance, and all content and related metadata. 
 
@@ -34,5 +33,3 @@ To edit the details of an existing server, click its corresponding three-dot men
 To delete an existing server from the server list, click its corresponding three-dot menu in the server list and click **Delete**. This will delete the connection to the server, but it will not affect the actual environment. 
 
 >**Note**: You cannot delete a server if a package is associated with the server. 
-
-</div>

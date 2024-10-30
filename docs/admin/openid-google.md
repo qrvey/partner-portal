@@ -1,12 +1,11 @@
 ---
 id: authentication-openid-google
-title: Using Google as the OpenID Provider
-sidebar_label: Using Google as the OpenID Provider
+title: Google as the OpenID Provider
+sidebar_label: Google as the OpenID Provider
 tags: [Solution Architect, CloudOps Engineer]
+sidebar_position: 6.2
 displayed_sidebar: getting-started
 ---
-
-<div style={{textAlign: "justify"}}>
  
 Before Creators can use the OpenID provider to log in, you must set up your OpenID provider account in order to obtain the OAuth 2.0 credentials: clientid, Client Secret, Realm; set a redirect URL (Return URL); and optionally, customize the branding information that creators will see on the user-consent screen. 
 
@@ -36,7 +35,6 @@ Google API Console</strong></a>:
 
 ![22admin](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Administering+Qrvey+Composer/newimg/22admin.png#thumbnail-80)
 
-
 6. Once the OAuth client is created you can view and copy the OAuth Credentials. Paste them into the Authentication Tab of User Management in Qrvey Admin Center. In the case of Google, the Realm URL is: https://accounts.google.com . <br/>
 Once all parameters have been entered, click the **Test and Save** button. 
 
@@ -46,5 +44,3 @@ Once all parameters have been entered, click the **Test and Save** button.
 
 **See also**:
 [Managing Users of Qrvey Composer](managing-users.md)
-
-</div>

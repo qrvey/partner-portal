@@ -24,7 +24,7 @@ This may include data from one or more Connections. The transformation process i
 
 ## Webforms
 
-[Webforms](./Web%20Forms/overview-of-web-forms.md) allow you to create forms, surveys, and quizzes to collect new data or update existing data directly from end-users. 
+[Webforms](./Web%20Forms/introduction-to-web-forms.md) allow you to create forms, surveys, and quizzes to collect new data or update existing data directly from end-users. 
 
 Once created and configured, they can be embedded on websites, shared via links, or integrated into applications. Data collected via Webforms can be immediately stored within Qrvey and can be used to update datasets.
 

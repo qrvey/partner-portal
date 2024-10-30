@@ -1,7 +1,7 @@
 ---
 id: preparing-AWS-account
-title: Preparing Your AWS Account
-sidebar_label: Preparing Your AWS Account
+title: Prepare Your AWS Account
+sidebar_label: Prepare Your AWS Account
 tags: [CloudOps Engineer]
 sidebar_position: 3
 displayed_sidebar: getting-started
@@ -186,6 +186,6 @@ Once the deployment is done and Verified, Qrvey’s deployment team will email t
   * Elasticsearch URL
 * Useful Links:
     * [Developer Docs](../software-developer/introduction-to-software-development.md)
-    * [API reference](../software-developer/06-Working%20with%20Qrvey%20APIs/overview-of-qrvey-api.md) and [Widgets Samples](../software-developer/04-Embedding%20Qrvey%20Widgets/overview-of-embedding.md).
+    * [API reference](../software-developer/introduction-to-software-development.md
 
 </div>

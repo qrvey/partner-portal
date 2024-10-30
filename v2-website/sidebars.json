@@ -1,188 +1,8 @@
 {
   "release-notes": [
     {
-      "type": "category",
-      "label": "Release Notes",
-      "items": [
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-last"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.6"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.5"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.4"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.3"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.2"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.1"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v8/release-8.0"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Release Notes Archive",
-      "items": [
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.7"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.6"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.5"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.4"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-7.3"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-may-2022"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-apr-2022"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-mar-2022"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-dec-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-oct-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-sep-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-aug-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jul-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jun-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-may-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-apr-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-feb-2021"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-december-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-oct-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-sep-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-aug-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jul-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jun-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-apr-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-mar-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-feb-2020"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-dec-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-nov-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-sep-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-aug-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jul-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-mar-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-feb-2019"
-        },
-        {
-          "type": "doc",
-          "id": "release-notes/v7-and-earlier/release-jan-2019"
-        }
-      ]
-    },
-    {
       "type": "doc",
-      "id": "release-notes/upgrade-notes"
+      "id": "release-notes/v8/release-last"
     },
     {
       "type": "doc",
@@ -196,7 +16,7 @@
   "getting-started": [
     {
       "type": "category",
-      "label": "Getting Started with Qrvey",
+      "label": "Getting Started",
       "items": [
         {
           "type": "autogenerated",
@@ -206,7 +26,7 @@
     },
     {
       "type": "category",
-      "label": "The Qrvey Admin Center",
+      "label": "Admin Center",
       "items": [
         {
           "type": "autogenerated",
@@ -216,7 +36,7 @@
     },
     {
       "type": "category",
-      "label": "Qrvey Composer User's Manual",
+      "label": "Composer",
       "items": [
         {
           "type": "autogenerated",
@@ -226,7 +46,7 @@
     },
     {
       "type": "category",
-      "label": "Qrvey Platform Deployment",
+      "label": "Deployment",
       "items": [
         {
           "type": "autogenerated",
@@ -236,7 +56,7 @@
     },
     {
       "type": "category",
-      "label": "Software Developer's Guide",
+      "label": "Development",
       "items": [
         {
           "type": "autogenerated",
@@ -244,279 +64,157 @@
         },
         {
           "type": "link",
-          "label": "Qrvey API Reference 8.3 and Earlier",
+          "label": "API Reference 8.3 and Earlier",
           "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.3--Earlier/"
         },
         {
           "type": "link",
-          "label": "Qrvey API Reference 8.4 and Later",
+          "label": "API Reference 8.4 and Later",
           "href": "https://qrvey.stoplight.io/docs/qrvey-api-doc/branches/release%2F8.4--Later/"
         }
       ]
-    }
-  ],
-  "video-training": [
-    {
-      "type": "doc",
-      "id": "video-training/videos-home"
     },
     {
       "type": "category",
-      "label": "Short Training Videos",
+      "label": "Guides & Tutorials",
       "items": [
         {
           "type": "category",
-          "label": "For CloudOps Engineers",
+          "label": "CloudOps",
           "items": [
             {
               "type": "doc",
-              "id": "video-training/legacy/video-multi-tenancy-architecture"
+              "id": "guides/legacy/video-multi-tenancy-architecture"
             }
           ]
         },
         {
           "type": "category",
-          "label": "For Data Analysts",
+          "label": "Data Analysis",
           "items": [
             {
               "type": "doc",
-              "id": "video-training/legacy/video-dataset-design"
+              "id": "guides/legacy/video-dataset-design"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-dataset-transformations"
+              "id": "guides/legacy/video-dataset-transformations"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-dataset-syncing"
+              "id": "guides/legacy/video-dataset-syncing"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-chart-builder"
+              "id": "guides/legacy/video-chart-builder"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-xychart"
+              "id": "guides/legacy/video-xychart"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-map-chart"
+              "id": "guides/legacy/video-map-chart"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-percent-total-charts"
+              "id": "guides/legacy/video-percent-total-charts"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-multi-series"
+              "id": "guides/legacy/video-multi-series"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-kpi"
+              "id": "guides/legacy/video-kpi"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-table-charts"
+              "id": "guides/legacy/video-table-charts"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-page-builder"
+              "id": "guides/legacy/video-page-builder"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-filter-design"
+              "id": "guides/legacy/video-filter-design"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-formulas-buckets"
+              "id": "guides/legacy/video-formulas-buckets"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-page-actions"
+              "id": "guides/legacy/video-page-actions"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-content-publishing"
+              "id": "guides/legacy/video-content-publishing"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-new-webforms"
+              "id": "guides/legacy/video-new-webforms"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-new-workflows"
+              "id": "guides/legacy/video-new-workflows"
             }
           ]
         },
         {
           "type": "category",
-          "label": "For Solution Architects",
+          "label": "Solutions Architecture",
           "items": [
             {
               "type": "doc",
-              "id": "video-training/legacy/video-security-overview"
+              "id": "guides/legacy/video-security-overview"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-security-groups"
+              "id": "guides/legacy/video-security-groups"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-row-level-security"
+              "id": "guides/legacy/video-row-level-security"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-column-level-security"
+              "id": "guides/legacy/video-column-level-security"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-content-deployment"
+              "id": "guides/legacy/video-content-deployment"
             }
           ]
         },
         {
           "type": "category",
-          "label": "For Software Developers",
+          "label": "Software Development",
           "items": [
             {
               "type": "doc",
-              "id": "video-training/legacy/video-widget-overview"
+              "id": "guides/legacy/video-widget-overview"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-jwt-widget"
+              "id": "guides/legacy/video-jwt-widget"
             },
             {
               "type": "doc",
-              "id": "video-training/legacy/video-branding-styling"
+              "id": "guides/legacy/video-branding-styling"
             }
           ]
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Release Demos",
-      "items": [
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.7"
         },
         {
-          "type": "doc",
-          "id": "video-training/release/version-8.6"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.5"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.4"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.3"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.2"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.1"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-8.0"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-7.8"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-7.7"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-7.6"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-7.5"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-7.3"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version71"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version7"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.5"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.4"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.3"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.2"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.1"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-6.0"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.10"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.9"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.8"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.7"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.6"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.5"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.4"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.3"
-        },
-        {
-          "type": "doc",
-          "id": "video-training/release/version-5.2"
+          "type": "category",
+          "label": "API Tutorials",
+          "items": [
+            {
+              "type": "autogenerated",
+              "dirName": "guides/api-tutorials"
+            }
+          ]
         }
       ]
     }

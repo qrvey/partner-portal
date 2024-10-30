@@ -1,7 +1,7 @@
 ---
 id: glossary
-title: Glossary of Common Terms
-sidebar_label: Glossary of Common Terms
+title: Glossary
+sidebar_label: Glossary
 ---
 
 <div style={{textAlign: "justify"}}>
@@ -85,7 +85,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## K
 
-**KPI Charts** - A Key Performance Indicator. A measurable value that demonstrates how effectively something (e.g. a company, or business unit) is achieving key business objectives. KPIs are typically visualized using simple charts and “gauges” such as the Qrvey [Indicator](../composer/07-Creating%20Charts/07-Chart%20Types/indicator.md), [Bullet](../composer/07-Creating%20Charts/07-Chart%20Types/bullet.md), and [Dial](../composer/07-Creating%20Charts/07-Chart%20Types/dial.md) Gauges. 
+**KPI Charts** - A Key Performance Indicator. A measurable value that demonstrates how effectively something (e.g. a company, or business unit) is achieving key business objectives. KPIs are typically visualized using simple charts and “gauges” such as the Qrvey [Indicator](../composer/07-Charts/07-Chart%20Types/indicator.md), [Bullet](../composer/07-Charts/07-Chart%20Types/bullet.md), and [Dial](../composer/07-Charts/07-Chart%20Types/dial.md) Gauges. 
 
 ## L
 
@@ -157,7 +157,7 @@ The Qrvey glossary helps to clarify some of our most commonly used data, analyti
 
 ## X
 
-**XY Charts** - charts that are used to compare data between different groups or categories. They are also used to track changes over time. Look also [Bar](../composer/07-Creating%20Charts/07-Chart%20Types/bar.md), [Line](../composer/07-Creating%20Charts/07-Chart%20Types/line.md), [Symbol](../composer/07-Creating%20Charts/07-Chart%20Types/symbol.md), [Min/Max](../composer/07-Creating%20Charts/07-Chart%20Types/min-max.md) charts.
+**XY Charts** - charts that are used to compare data between different groups or categories. They are also used to track changes over time. Look also [Bar](../composer/07-Charts/07-Chart%20Types/bar.md), [Line](../composer/07-Charts/07-Chart%20Types/line.md), [Symbol](../composer/07-Charts/07-Chart%20Types/symbol.md), [Min/Max](../composer/07-Charts/07-Chart%20Types/min-max.md) charts.
 
 
 ## Y

@@ -1,6 +1,6 @@
 ---
 id: intro-to-qrvey
-title: Introduction to the Qrvey Platform
+title: Introduction to Qrvey
 sidebar_label: Introduction to Qrvey
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 sidebar_position: 1
@@ -61,9 +61,34 @@ The following outline describes the initial onboarding process for new customers
     * Share the application with the organization. 
 4. Embed the application in the host application. 
 
-## Next Steps
-Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation. It is organized based on user persona. Select one of the following personas to learn more:
-* [Solution Architect](../user-persona/solution-architect.md)
-* [Data Analyst](../user-persona/data-analyst.md)
-* [Software Developer](../user-persona/software-developer.md)
-* [CloudOps Engineer](../user-persona/cloudops.md)
+## What to Learn Next
+Now that you’re familiar with the basics of the Qrvey platform, you can further explore the Qrvey Partner Portal documentation.
+
+### Solution Architects 
+Admin Center users that manage the infrastructure, its users, and content, as well as configure Qrvey Composer.
+
+* [Introduction to The Admin Center](../admin/introduction-to-qrvey-admin-center.md)
+* [What is Content Deployment?](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
+* [Intro to Multi-tenant Deployments](../deployment/08-Multi%20Tenant%20Solutions/overview-of-multi-tenant-deployments.md)
+* [Guide - Security Overview](../guides/legacy/security-overview.md)
+
+### CloudOps Engineers
+The AWS gurus that deploy, upgrade, and monitor the instances of the Qrvey platform.
+
+* [Introduction to Qrvey Deployment](../deployment/introduction-to-deployment.md). 
+* [Guide - Multi-tenancy Architecture](../guides/legacy/video-multi-tenancy-architecture).
+
+### Data Analysts 
+Those that Qrvey Composer to set up datasets and create visualizations and dashboards to help end users find trends in their data.
+
+* [Introduction to Qrvey Composer](../composer/introduction-to-qrvey-composer.md)
+* [Tutorial - Design a Dataset](../guides/legacy/dataset-design.md)
+
+### Software Developers
+The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to interact with the platform.
+
+* [Introduction to Development](../software-developer/introduction-to-software-development.md)
+* [Introduction to Widgets](../software-developer/04-Widgets/overview-of-embedding.md)
+* [Tutorial - Widgets Overview](../guides/legacy/video-widget-overview)
+* [API Reference](https://tinyurl.com/atuznk6u)
+* [Tutorial - Qrvey API](../guides/api-tutorials/api-tutorial)

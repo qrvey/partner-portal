@@ -7,7 +7,6 @@ sidebar_position: 7
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 Content Deployment enables you to copy the contents of a source Qrvey application, then pass it into a new target application.
 
@@ -20,7 +19,7 @@ This can be broken into the following high-level steps.
 2. Prepare Target App for Deployment
 3. Deploy the Baseline App
 
-* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/06-Working%20with%20Qrvey%20APIs/generating-security-tokens.md).
+* The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/introduction-to-software-development.md
 * Verify that you have [at least one user account](../managing-users.md) created in the Qrvey Admin Center with “Composer” role permissions.
 
 ## How To Guide
@@ -153,5 +152,3 @@ Here is a consolidated list of the endpoints used in this article.
 * [Create Deployment Job](https://qrvey.stoplight.io/docs/qrvey-api-doc/43d7fa165bb72-create-deployment-job)
 * [Create Deployment Job Block](https://qrvey.stoplight.io/docs/qrvey-api-doc/d5cf25a16aa4c-create-deployment-job-block)
 * [Add Recipients to Deployment Job Block](https://qrvey.stoplight.io/docs/qrvey-api-doc/dq6nwy2k9kpzn-add-recipients-to-deployment-job-block)
-
-</div>

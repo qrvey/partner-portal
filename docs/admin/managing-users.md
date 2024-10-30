@@ -1,13 +1,11 @@
 ---
 id: admin-managing-users
-title: Managing Users of Qrvey Composer
-sidebar_label: Managing Users of Qrvey Composer
+title: Users, Roles, Permissions, & Authentication
+sidebar_label: Users, Roles, Permissions, & Authentication
 tags: [Solution Architect]
 sidebar_position: 6
 displayed_sidebar: getting-started
 ---
-
-<div style={{textAlign: "justify"}}>
 
 The Qrvey Admin Center enables you to create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
 
@@ -26,7 +24,7 @@ Roles and permissions enable you to control access to sections of Qrvey Composer
 
 The following table describes the available permissions:
 
-|          **Section**       |**Admin**                        |**Composer**                        |
+|          **Section**       |**Admin**                        |**Composer**   |
 |----------------|-------------------------------|-----------------------------|
 |**Data**|
 | Connections| ✅ | ✅ |
@@ -144,6 +142,3 @@ You can specify the following types of timeouts:
 2. Under User Session, specify the following times using the fields provided:
     - Maximum Session Timeout
     - Idle Session Timeout
-
-
-</div>

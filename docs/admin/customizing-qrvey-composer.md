@@ -1,7 +1,7 @@
 ---
 id: admin-customizing-composer
-title: Customizing Qrvey Composer
-sidebar_label: Customizing Qrvey Composer
+title: Customize Qrvey Composer
+sidebar_label: Customize Qrvey Composer
 tags: [Solution Architect]
 sidebar_position: 4
 displayed_sidebar: getting-started
@@ -135,7 +135,7 @@ Qrvey Admin Center enables you to specify the default time zone. Changing the ti
     - **Fixed Time Zone**. Use the time zone specified in the dropdown menu below. 
 4. Click **Apply Changes**. 
 
-For additional details on time zone settings, see [Configuring Time Zone Settings](../software-developer/10-Timezone%20Settings/timezone-support.md). 
+For additional details on time zone settings, see [Configuring Time Zone Settings](../software-developer/07-Timezone%20Settings/timezone-support.md). 
 
 ## Features Tab
 The Features tab provides options to enable and disable the features available to users in Qrvey Composer. Keep in mind that, if sections like Datasets and Web Forms are turned off, creators won’t be able to create or have access to any datasets to work within any other section of the application. 
@@ -162,24 +162,24 @@ For more information, see [Data Overview](../composer/05-Working%20with%20Data/D
 #### Pixel-Perfect Reports
 The Pixel-perfect Reports tool enables you to build customizable report templates with precise layout control. The generated reports are optimized for PDF and print, and they can be shared with colleagues, customers, suppliers, or anyone who needs access to the information.
 
-For more information, see [Pixel-perfect Reports Overview](../composer/10-Pixel-perfect%20Reports/overview-of-pixel-perfect-reports.md). 
+For more information, see [Pixel-perfect Reports Overview](../composer/10-Pixel-Perfect%20Reports/overview-of-pixel-perfect-reports.md). 
 
 #### Dashboards
 Enables users to combine Qrvey components, including web forms, charts, and metrics with standard web components like text and images to build beautiful web pages without needing to code a single line of HTML. Dashboards can then be combined to build entire information applications that can be easily shared with others.
 
-For more information, see [Dashboard Builder](../composer/06-Building%20Dashboards/overview-of-dashboards.md). 
+For more information, see [Dashboard Builder](../composer/06-Dashboards/overview-of-dashboards.md). 
 
 #### Automation
 Enables users to add powerful automation to forms, datasets, and dashboards. Automation works in the background, constantly scanning all of the data and forms, ready to take action immediately. 
 
 The Workflow features are divided into Triggers, Conditions, and Actions. You can enable or disable any of the available features depending on your needs. Click the Information icon for more details on the specific options. 
 
-For additional information on Workflows, see [Flow Overview](../composer/09-Automation/overview-of-automation.md). 
+For additional information on Workflows, see [Flow Overview](../composer/09-Automation/introduction-to-automation.md). 
 
 #### Web Forms
 Web Forms are a quick and easy ways to collect new data through forms, surveys, and quizzes. They are an integral part of building web-based data applications.
 
-Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../composer/05-Working%20with%20Data/Web%20Forms/overview-of-web-forms.md). 
+Click the Information icon for more details on the specific options. For additional information on Web Forms, see [Web Forms Overview](../composer/05-Working%20with%20Data/Web%20Forms/introduction-to-web-forms.md). 
 
 #### Settings
 Provide users with access to general application settings as well as to specific features. Options include:

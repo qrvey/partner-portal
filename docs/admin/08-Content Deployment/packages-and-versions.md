@@ -7,7 +7,6 @@ sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 A package enables you to create a snapshot of a selected application with all of its content and dependencies. Each snapshot is called a “version”. You can use the same package to create subsequent versions. This enables you to create different versions of this snapshot over time, as the source application changes.
 
@@ -47,5 +46,3 @@ To delete an existing version, click it’s three-dot menu in the version list a
 
 >**Note**: You cannot delete a package version if a deployment definition is associated with the version.
 
-
-</div>

@@ -20,6 +20,11 @@ Keep these details in mind while using Live Connect Datasets:
 
 ## Create a Live Connect Dataset
 
+<iframe src="//fast.wistia.net/embed/iframe/a47kc85u89?videoFoam=true"
+allowtransparency="true" frameBorder="0" scrolling="no" className="wistia_embed"
+name="wistia_embed" allowFullScreen  width="100%" height="600"></iframe>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+
 To create a new Live Connect Dataset, follow these steps.
 
 1. Click the **New Dataset** button.
@@ -77,7 +82,7 @@ The system will pick a format for displaying date and numeric data in visualizat
 
 If the data in a dataset has to be controlled by Record Level Security or RLS, the columns that play a role in this security have to be identified and given a security name. This name will be used at authentication time and the data will be filtered by the value of the set variable for each authenticated user. The menu item “Enable Record Level Security” in the three-dot menu of each secured column is used to assign a security name to the column. It is important to note that the mere action of giving the column a security name does not in fact “enable” RLS and this has to be done from the Qrvey Admin Center.  
 
-For more information, please see [Record Level Security](../../../../software-developer/03-Security/record-level-security.md).
+For more information, please see [Record Level Security](../../../../software-developer/record-level-security.md).
 
 ## Automatic Column Links​
 

@@ -109,23 +109,6 @@ module.exports = {
           docId: "release-notes/v8/release-last",
         },
         {
-          type: "dropdown",
-          position: "right",
-          label: "Knowledge Base",
-          items: [
-            {
-              type: "doc",
-              docId: "video-training/videos-home",
-              label: "Videos",
-            },
-            {
-              type: "doc",
-              docId: "getting-started/faqs-all-personas",
-              label: "FAQs",
-            },
-          ],
-        },
-        {
           type: "docsVersionDropdown",
           position: "right",
           dropdownActiveClassDisabled: true,

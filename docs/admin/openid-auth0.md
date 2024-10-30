@@ -1,12 +1,12 @@
 ---
 id: authentication-openid-oauth
-title: Using OAuth as the OpenID Provider
-sidebar_label: Using OAuth as the OpenID Provider
+title: OAuth as the OpenID Provider
+sidebar_label: OAuth as the OpenID Provider
 tags: [Solution Architect, CloudOps Engineer]
+sidebar_position: 6.1
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
 
 Before Creators can use the OpenID provider to log in, you must set up your OpenID provider account in order to obtain the OAuth 2.0 credentials: clientid, Client Secret, Realm; set a redirect URL (Return URL); and optionally, customize the branding information that creators will see on the user-consent screen. 
 
@@ -41,5 +41,3 @@ The following steps provide an example of how configure Auth0 as OpenID provider
 
 **See also**:
 [Managing Users of Qrvey Composer](managing-users.md)
-
-</div>
