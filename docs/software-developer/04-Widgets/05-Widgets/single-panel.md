@@ -51,7 +51,7 @@ var config = {
 | **themeId**| `String`, Theme ID to use in the component. For more details please see [Accessing a Theme Programmatically](../../../composer/Creating%20Charts/setting-chart-styles#accessing-a-theme-programmatically).| **Optional** |
 | **authenticatedSession**| `Object`, Contains authenticatedSession.email, which is used to configure scheduled exports. For details, please see [The Authenticated Session Object](#authenticated-session) below. | **Optional** |
 | **featurePermission**| `Object`, Enables you to create a customized view by showing and hiding specific features. For details, please see [The Feature Permission Object](#feature-permission) below.| **Optional** |
-| **customTokens**| `Object`, Enables you to add custom tooltips onto metric panels. For details, please see [Custom Tokens](../customTokens.md). <br /> **Example** `{ "my_header": "The Tooltip Header :)"}`| **Optional** |
+| **customTokens**| `Object`, Enables you to add custom tooltips onto metric panels. For details, please see [Custom Tokens](../custom-tokens.md). <br /> **Example** `{ "my_header": "The Tooltip Header :)"}`| **Optional** |
 
 ### i18n
 

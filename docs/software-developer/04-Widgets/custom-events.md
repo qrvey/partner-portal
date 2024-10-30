@@ -1,7 +1,7 @@
 ---
 id: custom-events
-title: Using Custom Events
-sidebar_label: Using Custom Events
+title: Custom Events
+sidebar_label: Custom Events
 tags: [Software Developer]
 sidebar_position: 3
 displayed_sidebar: getting-started

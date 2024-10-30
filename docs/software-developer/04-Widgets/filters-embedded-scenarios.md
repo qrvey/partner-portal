@@ -1,7 +1,7 @@
 ---
 id: filters-embedded-scenarios
-title: Working With Filters in Widgets
-sidebar_label: Working With Filters in Widgets
+title: Filters in Widgets
+sidebar_label: Filters in Widgets
 tags: [Software Developer]
 sidebar_position: 5
 displayed_sidebar: getting-started

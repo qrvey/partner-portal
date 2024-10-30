@@ -1,7 +1,7 @@
 ---
 id: custom-tokens
-title: Using Custom Tokens
-sidebar_label: Using Custom Tokens
+title: Custom Tokens
+sidebar_label: Custom Tokens
 tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: getting-started

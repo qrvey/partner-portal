@@ -36,6 +36,8 @@ var config = {
 
 ## How to Embed a Widget
 
+Each widget has its own unique tag, configuration options, and launcher. To embed a widget, follow these steps:
+
 1. Get the script for the widget you'd like to embed. You can find scripts in two places:
    - Get the relevant [widget script](#widget-scripts-and-configuration) from the documentation.
    - For most widgets, you can copy/paste the widget script in [Qrvey Composer](#get-widget-script-from-composer), which will include most relevant configuration details.
@@ -43,23 +45,6 @@ var config = {
 5. Set [authentication](./widget-authentication.md) and configure widget parameters as desired.
 
 Refresh your frontend application and your widget should appear in the UI.
-
-## Widget Scripts and Configuration
-
-Each widget has its own unique tag, configuration options, and launcher. For details, please browse the following sections.
-
-|  Widget | Description | Embed Tag |
-| --------------- | --------------------- | 
-| [Single Panel](../04-Embedding%20Qrvey%20Widgets/07-Widgets/single-panel.md) | Embeds a single chart, map, or metric. | 
-| [Dashboard View](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) | Embeds a dashboard containing charts, maps, and metrics. |
-| [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md) | Enables end users to build custom charts and dashboards. | 
-| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/07-Widgets/analytic-suite.md) | Enables end-users to build custom charts. |
-| [Web Form Design](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-forms.md) | Enables end users to create and publish their own web forms. | 
-| [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-form-end-user.md) | Embeds an existing web form (form, survey, or quiz), in which end users can enter data. | 
-| [Analytic Suite](../04-Embedding%20Qrvey%20Widgets/07-Widgets/analytic-suite.md) | Enables end-users to perform their own analysis of their data by embedding a Summary, Tabular, or Custom Analysis view. | 
-| [Pixel-perfect Reports](../04-Embedding%20Qrvey%20Widgets/07-Widgets/pixel-perfect-reports.md) | Embeds a Pixel-perfect report. |
-| [Automation](../04-Embedding%20Qrvey%20Widgets/07-Widgets/automation-widget.md) | Embeds workflow functionality into your application. |
-| [Download Manager](../04-Embedding%20Qrvey%20Widgets/07-Widgets/download-manager.md) | Enables end-users to access Download Manager to manage exported files. |
 
 
 ## Get Widget Script from Composer

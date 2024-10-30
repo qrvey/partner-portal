@@ -48,7 +48,7 @@ The Pixel-perfect Reports widget enables you to embed the [Pixel-perfect Reports
 
 ### Timezone
 
-For more information, see [Configuring Time Zone Settings](../../07-Timezone%20Settings/timezone-support.md).
+For more information, see [Configuring Time Zone Settings](../../timezone-support.md).
 
 | **Parameter** | **Description** | **Required** |
 | --- | --- | --- |
