@@ -421,4 +421,3 @@ Release Date: 2023-02-01
 
 If you wish to upgrade to this version, please contact the CX team.
 
-</div>
