@@ -9,24 +9,24 @@ displayed_sidebar: getting-started
 
 Qrvey’s approach to multi-tenant security architecture is to utilize the **assert model** for both authentication and authorization.  The assert model effectively allows you to maintain your existing user accounts, roles/groups and permissions, and then declare a user’s identity and permissions to the Qrvey platform dynamically at runtime.  The ability to assert/declare a user’s identity and access permissions is favorable when embedding third party platforms in your core application for a multi-tenancy deployment, because it means that you will not need to redefine and replicate your existing security schema.
 
-Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime.  This document discusses best practices for implementing authentication and authorization using these widget configuration properties.  If you are not yet familiar with how to embed and configure Qrvey widgets, review the [Embedded Widgets Overview](../software-developer/04-Widgets/introduction-to-widgets.md).
+Qrvey makes the assert model for security possible by providing a comprehensive set of widget configuration properties that can all be set dynamically at runtime. This document discusses best practices for implementing authentication and authorization using these widget configuration properties.
 
-You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with a Qrvey Token. It is recommended to watch the [JWT Widget Integration training video](../guides/legacy/jwt-widget.md) on the Qrvey Partner Portal.
+You should ensure that whichever type of widget you choose to embed, that all sensitive widget configuration properties are properly encrypted with a Qrvey Token.
 
 ## Authentication
 
 In a multi-tenant production deployment, there could be thousands of tenants and potentially tens of thousands of end users. Using the assert security model for authentication, you would never need to create and maintain a user account for your tenant end users. Furthermore, since your core application is responsible for authenticating all end user access, there is no real need for Qrvey to know exactly who is accessing the embedded dashboards. More likely, it would be more important to determine what that specific tenant end user is allowed to see and do once the dashboard loads.
 
-However, there are two features in Qrvey that track, persist, and recall data; and therefore need to know who the specific tenant end user is: [End User Personalization](../../software-developer/overview-of-personalization.md) and [Download Manager](../../composer/download-manager.md).
+However, there are several features in Qrvey that track, persist, and recall data; and therefore need to know who the specific tenant end user is: [End User Personalization](../../software-developer/eup-dashboards.md), the [Download Manager](../../software-developer/04-Widgets/05-Widgets/download-manager.md), and [Automation](../../software-developer/04-Widgets/05-Widgets/automation-widget.md).
 
-To use one or both of these features in embedded widgets, you define the `clientid` property during [Widget Authentication](../../software-developer/04-Widgets/widget-authentication.md).
+To use one or both of these features in embedded widgets, you define the `clientid` property during Widget Authentication.
 
 
-### What is the clientid?
+### What's a clientid?
 
 In Qrvey, a `clientid` is a unique string value (email, id, token, username, or anything else) that is associated with a specific end user authenticated by the SaaS organization's core application. Therefore, a `clientid` is different from a `userId`, which represents a user of the Qrvey platform. In other words, the `clientid` is associated with a SaaS organization's tenant end users who consume Qrvey's embedded widgets, while the `userId` is associated with an SaaS organization's own team members who build content directly in Qrvey Composer.
 
-For production implementation in widgets, pass `clientid` into the request to [Generate a Qrvey Token](https://qrvey.stoplight.io/docs/qrvey-api-doc/ff0303fef339a-generate-widget-security-token). In dev mode, you can pass `clientid` directly in the widget config object; though this may not be secure and is not recommended in production.
+For production implementation in widgets, pass `clientid` into the request to Generate a Qrvey Token. In dev mode, you can pass `clientid` directly in the widget config object; though this may not be secure and is not recommended in production.
 
 When a `clientid` is passed into Qrvey, the system will check whether the value exists. If it does not, it will be saved within your Qrvey instance. If it does exist, it will be associated with that client and synchronize End User Personalizations and Download Manager content in widgets accordingly.
 
@@ -112,7 +112,7 @@ In the example above, the end user would be restricted to all records dated betw
 
 `Month In Range (6/2020 - 12/2020) AND (Country = “USA” OR Number >= 10000)`
 
-You can read the [Record Level Security](../software-developer/record-level-security.md) article for specific details around implementation and which properties are supported.  There is also a [Record Level Security training video](../guides/legacy/row-level-security.md) that is also recommended.
+You can read the [Record Level Security](../../software-developer/record-level-security.md) article for specific details around implementation and which properties are supported. There is also a [Record Level Security training video](../../guides/legacy/row-level-security.md) that is also recommended.
 
 ### Asset/Object Permissions
 
@@ -124,17 +124,17 @@ Qrvey allows you to restrict the visibility of several types of assets/objects w
 * Summaries
 * Pages/Dashboards
 
-Using asset permissions, you can implement many of the most common scenarios that appear as requirements in a multi-tenant embedded analytics solution.  Some of these common scenarios you would want to support are:
+Using asset permissions, you can implement many of the most common scenarios that appear as requirements in a multi-tenant embedded analytics solution. Some of these common scenarios you would want to support are:
 
 * Controlling access to specific dashboards based on the user’s group/role
 * Toggling the visibility of specific charts within a single dashboard based on the user’s group/role
 * Controlling which datasets a user can build visualizations from based on the user’s group/role
 
-As with RLS data security, asset permissions are also defined and controlled using a special JSON widget configuration property.  The property is called `asset_permissions` and you can review the full documentation for this property by reviewing the [Dashboard Builder Widget](../software-developer/04-Widgets/07-Widgets/dashboard-builder.md) article on the Qrvey Partner Portal.
+As with RLS data security, asset permissions are also defined and controlled using a special JSON widget configuration property.  The property is called `asset_permissions` and you can review the full documentation for this property by reviewing the [Dashboard Builder Widget](../../software-developer/04-Widgets/05-Widgets/dashboard-builder.md) article on the Qrvey Partner Portal.
 
 Here is an example of what the `asset_permissions` property would look like when included in the JSON widget configuration:
 
-```json
+```js
 {
    version: "2",
    appid: "APP_ID_VALUE",
@@ -187,11 +187,11 @@ Qrvey allows you to restrict the visibility of specific UI elements and controls
 * Export/Download Controls
 * Data Filter Controls
 
-The main JSON property to use in the widget configuration object is called `featurePermission`.  You can then utilize several sub-properties to toggle the visibility of specific UI controls.  For the full list of supported JSON properties, please review the [Dashboard View Widget](../software-developer/04-Widgets/07-Widgets/dashboard-view.md) article.
+The main JSON property to use in the widget configuration object is called `featurePermission`.  You can then utilize several sub-properties to toggle the visibility of specific UI controls. For the full list of supported JSON properties, please review the [Dashboard View Widget](../../software-developer/04-Widgets/05-Widgets/dashboard-view.md).
 
 Here is an example of what the `featurePermission` property would look like when included in the JSON widget configuration:
 
-```json
+```js
 {
    domain: "QRVEY_URL_DOMAIN",
    appid: "APP_ID_VALUE",

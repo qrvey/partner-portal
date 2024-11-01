@@ -7,7 +7,6 @@ sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
-<div>
 
 This article applies to all customers upgrading to version 8.4 or later of the Qrvey platform **and** are using a custom domain URL for Qrvey Composer.
 
@@ -90,7 +89,7 @@ These steps can be done via the AWS console, CLI, API or any other similar tool.
 
 1. Log in to your AWS account and select the desired region.
 2. Navigate to AWS Cloudformation service. Click on **Create Stack**. If you had already created this stack (possible when you are deploying your second instance or upgrading an existing instance) then click on Update for the existing stack and select Replace current template.
-3. For the Amazon S3 URL paste the URL for the version you want to deploy/upgrade. To support multiple deployment the URL should have “-Advanced” in it. You can get the latest version of the template from the Qrvey support team or from the [partner portal](../../release-notes/upgrade-notes.md). For example, for [*MultipleDeployments*] you would use the [advanced URL template](https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-Advanced-luxaf.json) but for standard deployment (1 instance per region), you would use the [standard URL](https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-wnzhm.json). 
+3. For the Amazon S3 URL paste the URL for the version you want to deploy/upgrade. To support multiple deployment the URL should have “-Advanced” in it. You can get the latest version of the template from the Qrvey support team or [new release upgrade link](../../release-notes/release-and-upgrade-notes.md). For example, for [*MultipleDeployments*] you would use the [advanced URL template](https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-Advanced-luxaf.json) but for standard deployment (1 instance per region), you would use the [standard URL](https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-wnzhm.json). 
 4. Under **Stack Details**, fill in any stack name and the following parameters:
 
    a. AllowDelete - set this to False unless you plan to delete this instance. Please note that deleting an instance will remove all the data and metadata stored in that instance and it cannot be recovered once the instance is removed.
@@ -221,6 +220,3 @@ With v8.4 a new Cloudformation template called “QrveyxxxxxMainTemplate” has 
    * First call - Request Body = `{ "RequestType": "UpdateEnvFile" }`
    * Second call - Request Body = `{ "RequestType": "UpdateVariables" }`
 
-
-
-</div>
