@@ -106,7 +106,7 @@ module.exports = {
           label: "Release Notes",
           type: "doc",
           position: "right",
-          docId: "release-notes/v8/release-last",
+          docId: "release-notes/release-and-upgrade-notes",
         },
         {
           type: "docsVersionDropdown",

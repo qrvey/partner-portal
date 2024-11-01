@@ -7,7 +7,7 @@ sidebar_position: 3
 ---
 
 
-This article contains frequently asked questions organized by user persona. If you still can't find what you're looking for, [ask us](ask-us.md)!
+This article contains frequently asked questions organized by user persona.
 
 ## Solution Architects
 
@@ -27,7 +27,6 @@ This article contains frequently asked questions organized by user persona. If y
 **A**: In order to enable the side panel for your end-users, you have to insert the filter panel on your dashboard from the **Insert** menu in the top-left corner of the Dashboard Builder.
 
 ![Insert Filter Controls](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/faqs/faq_pub_apps_82.png)
-
 
 ## Software Developers
 
@@ -84,7 +83,7 @@ Both of these components should be able to connect to your data source. For exam
 
 ***How can I speed up my data load?***
 
-**A:** Data load times mostly depend on the Elasticsearch cluster. Since there is a cost associated with Elasticsearch, we normally create the minimum resources possible, however, you can always scale up based on your needs. Currently, we are using **1 node t2.small** (10GB). If you want to increase processing speed, we recommend going with **3 node t2.small** or trying higher-cost options like the **t2.medium** or **m4.large instances**. For more information, see [](../deployment/06-Management/manage-aws-elasticsearch.md).  
+**A:** Data load times mostly depend on the Elasticsearch cluster. Since there is a cost associated with Elasticsearch, we normally create the minimum resources possible, however, you can always scale up based on your needs. Currently, we are using **1 node t2.small** (10GB). If you want to increase processing speed, we recommend going with **3 node t2.small** or trying higher-cost options like the **t2.medium** or **m4.large instances**. For more information, see [Manage AWS Elasticsearch](../deployment/06-Management/manage-aws-elasticsearch.md).  
 
 
 

@@ -1,17 +1,22 @@
 ---
-id: release-last
+id: release-and-upgrade-notes
 title: Release & Upgrade Notes
 sidebar_label: Release & Upgrade Notes
 tags: [Software Developer, Solution Architect, CloudOps Engineer, Data Analyst]
 ---
 
-Release Date: 2024-10-24
 
-> **Upgrade Note:** If you are planning to upgrade to a new version of Qrvey, please read through the Upgrade and release notes on all prior versions, as they may contain platform changes that must be accounted for in the development process. You can follow the steps outlined in [Upgrading to a New Version](../../deployment/07-Upgrades/upgrading-versions.md) to perform your upgrade. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade, please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade. 
+**Upgrade Note:** If you are planning to upgrade to a new version of Qrvey, please read through the Upgrade and release notes on all prior versions, as they may contain platform changes that must be accounted for in the development process. You can follow the steps outlined in [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) and use the upgrade link for the desired version, provided in the relevant section below. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade, please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade. 
 
 ## Version 8.7
 
-Release Date: 2024-09-30 
+
+### Upgrade Details
+
+Release Date: 2024-10-24
+
+> This version has modified how the platform generates JWT tokens, so existing tokens will need to be refreshed. We highly recommend planning upgrades during off-hours to minimize disruptions to your users. If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.7-plbvm.json" target="_blank">this upgrade link</a>.
+
 
 ### New Features & Enhancements
 
@@ -19,8 +24,8 @@ Release Date: 2024-09-30
 - **Support clientid and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientid` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientid`.
 - **Implement Unsubscribe Page for Subscriptions:** An Unsubscribe page was implemented where users can confirm their wish to stop receiving emails from a subscription, scheduled export, and/or flow.
 - **Additional Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
-- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [Pivot and Export Data](../../composer/05-Working%20with%20Data/Datasets/03-Analyze/exporting.md#pivot-and-export-data).
-- **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more details, please see [Area Charts](../../composer/07-Charts/07-Chart%20Types/area.md) or [Multiseries Area Charts](../../composer/07-Charts/07-Chart%20Types/multi-series-area.md).
+- **Pivoting for Export:** A new feature was added allowing users to configure a dataset with the necessary columns for pivoting, and then export the pivoted data to CSV from dashboards. Users can select which columns to include in the export, both from the original dataset columns and those generated from the pivoting. For more information, please see [Pivot and Export Data](../composer/05-Working%20with%20Data/Datasets/03-Analyze/exporting.md).
+- **Area Chart:** The chart builder now includes a new variation of a line chart called the Area Chart, which depicts one dimension and one metric, with the dimension typically being a continuous variable like time. For more details, please see [Area Charts](../composer/07-Charts/07-Chart%20Types/area.md) or [Multiseries Area Charts](../composer/07-Charts/07-Chart%20Types/multi-series-area.md).
 
 ### General Tweaks & Fixes
 
@@ -49,20 +54,19 @@ Release Date: 2024-09-30
 - **Dashboards Stuck in Loading State When Personalization Disabled** — Fixed an issue where dashboards were stuck in a loading state when personalization was set to false.
 - **Sign Up Removal:** This functionality is not used by customers anymore. The option to create new users can now only be done through the API and admin platform.
 
-### Upgrade Link
-
-This version has modified how the platform generates JWT tokens, so existing tokens will need to be refreshed.
-We highly recommend planning upgrades during off-hours to minimize disruptions to your users.
-
-> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.7-plbvm.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s).
 
 ---
 
 ## Version 8.6 
 
+
+### Upgrade Details
+
 Release Date: 2024-07-16
 
-> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes) document for important notes and access to the upgrade link.
+> The 8.6 upgrade may take approximately 1.5 hours. During the upgrade, load data and CD installations are not possible, and the application cannot be used. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.6-rmwpa.json" target="_blank">this upgrade link</a> . If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade.
+
+> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract.
 
 ### New Features & Enhancements
 
@@ -90,19 +94,20 @@ Release Date: 2024-07-16
 - **Date Tokens are saved as static dates in Chart Filters when editing a Chart** — Fixed an issue where tokens were not saved as tokens even when the chart has been edited.
 
 
-### Upgrade Link
 
-The 8.6 upgrade may take approximately 1.5 hours. During the upgrade, load data and CD installations are not possible, and the application cannot be used. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.6-rmwpa.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade.
 
  ---
 
 ## Version 8.5.1 (LTS)
 
+
+### Upgrade Details
+
 Release Date: 2024-05-31
 
-> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes) document for important notes and access to the upgrade link.
+> If you are upgrading the Qrvey Platform from a version older than 8.5 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.5.1-ghtfw.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
+
+> **Note:** If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract.
 
 ### General Tweaks & Fixes
 
@@ -116,19 +121,19 @@ Release Date: 2024-05-31
 - **Favorite Datasets Listed in Response** – Datasets marked as Favorite will now be returned in the Get All Datasets endpoint response.
 - **Join with Flat Transformation Error Resolved** – A composite dataset that joins a source including an array flatten transformation will no longer throw a 'TYPE_MISMATCH' error when loading data if "Automatically add new columns" is selected.
 
-### Upgrade Link
 
-If you are upgrading the Qrvey Platform from a version older than 8.5 LTS (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.5.1-ghtfw.json" target="_blank">this upgrade link</a> and follow the directions in the [Upgrading to a New Version](../deployment/07-Upgrades/upgrading-versions.md) article to upgrade your instance(s). If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 
 ---
 
 ## Version 8.5 (LTS)
 
+### Upgrade Details
+
+Please use version 8.5.1 provided above.
+
 Release Date: 2024-04-10
 
-> Note: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
+> Note: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract.
 
 ### New Features & Enhancements
 
@@ -169,34 +174,28 @@ Release Date: 2024-04-10
 - **Inclusion of Automation Filters in Exports** - Added Automation Filters to the export's additional information for improved data clarity.
 - **Enhanced Logic Object Support in Export Report Endpoint** - Upgraded the support for the logic object in the export report endpoint and refined the API documentation.
 
-### Upgrade Link
 
-Please use version 8.5.1 provided above.
 
 ---
 
 ## Version  8.4
 
+
+### Upgrade Details
+
 Release Date: 2024-02-05
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
+> Version 8.4 implements major architectural improvements that provide multiple benefits to users. The legacy endpoints are listed on a deprecation schedule that you can find on our [End-of-life Schedule](./end-of-life.md) page.  
+ Installation and upgrade times are significantly faster (reduced to around 1 hour). This improvement applies to both new instances and subsequent upgrades from version 8.4. Note that, if you are upgrading from an older version, an automatic script updates your datasets to be compatible with this new architecture. As a result, your installation time may be extended, depending on the number of datasets. In addition, due to the architectural improvements, this version updates many endpoints. While we continue to support the existing endpoints as documented in our API Reference, we encourage you to update those at your convenience to leverage the new enhancements. If you are upgrading the Qrvey Platform from a version older than 8.4 (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-wnzhm.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 
-
-Version 8.4 implements major architectural improvements that provide multiple benefits to users. Installation and upgrade times are significantly faster (reduced to around 1 hour). This improvement applies to both new instances and subsequent upgrades from version 8.4.  
- 
-Note that, if you are upgrading from an older version, an automatic script updates your datasets to be compatible with this new architecture. As a result, your installation time may be extended, depending on the number of datasets.  
-
-In addition, due to the architectural improvements, this version updates many endpoints. While we continue to support the existing endpoints as documented on our [API documentation site](https://qrvey.stoplight.io/docs/qrvey-api-doc/4b0d6d292c0b2-administration), we encourage you to update those at your convenience to leverage the new enhancements. 
-The legacy endpoints are listed on a deprecation schedule that you can find on our [End-of-life Schedule](../end-of-life.md) page.  
 
 ### New Features & Enhancements
 
 * **MongoDB Connector - Aggregation Framework**: Adds support for Aggregation Framework on the MongoDB Connector.
-* **Radar Chart**: Adds a new type of chart that enables end users to compare the performance of multiple values in different areas. <a href="/docs/video-training/release/version-8.4#radar-chart" target="_blank" className="tooltip"><img alt="Radar Chart" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
-* **Chart Positioning and Axis Enhancements**: Adds the option for chart creators to manually control the offsets of X/Y and Pie charts. <a href="/docs/video-training/release/version-8.4#chart-positioning-and-axis-enhancements" target="_blank" className="tooltip"><img alt="Chart Positioning and Axis Enhancements" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
-* **Self-service Table Charts**: Adds the option for end users to manipulate various table chart configurations directly from the Dashboard View widget, without the need to open the Chart Builder. <a href="/docs/video-training/release/version-8.4#self-service-table-charts" target="_blank" className="tooltip"><img alt="Self-Service Table Charts" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
-* **[Schedule Exporting](../../composer/05-Working with Data/Datasets/03-Analyze/scheduling-exports.md)**: Adds additional options to the Export feature, including the option to choose file names as well as configure scheduled exports. Note that these features must be enabled in the Qrvey Admin Center.
-* **Dark Theme**: Adds the Dark theme to the list of out-of-the-box themes available for Qrvey applications. With the addition of this new theme, new properties, such as canvas background color and panel background color were added to all themes. <a href="/docs/video-training/release/version-8.4#dark-theme" target="_blank" className="tooltip"><img alt="Dark Theme" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Radar Chart**: Adds a new type of chart that enables end users to compare the performance of multiple values in different areas.
+* **Self-service Table Charts**: Adds the option for end users to manipulate various table chart configurations directly from the Dashboard View widget, without the need to open the Chart Builder.
+* **Schedule Exporting**: Adds additional options to the Export feature, including the option to choose file names as well as configure scheduled exports. Note that these features must be enabled in the Qrvey Admin Center.
+* **Dark Theme**: Adds the Dark theme to the list of out-of-the-box themes available for Qrvey applications. With the addition of this new theme, new properties, such as canvas background color and panel background color were added to all themes.
 * **Data Load Finish Trigger**: Adds a new trigger in Automation flows to enable the flow to choose a new type of trigger that is activated when a data load job finishes. This trigger is enabled by default on new instances of the Qrvey platform. If you are upgrading from a previous version, please contact Qrvey Customer Support for assistance.
 * **Download Manager Improvements**: Improves the Download Manager user interface to enable end users to better manage and view exports and schedules. Also adds support for Internationalization, Locale Formatting, and Timezones.
 
@@ -232,19 +231,18 @@ The legacy endpoints are listed on a deprecation schedule that you can find on o
 * **Get All Applications endpoint’s POST Body payload shows empty on the API documentation site (bug fix)**.
 
 
-### Upgrade Link
-
-If you are upgrading the Qrvey Platform from a version older than 8.4 (for example, 7.8.x, 8.0, 8.1, 8.2.x or 8.3), you will experience downtime of approximately 45 to 60 minutes while the upgrade is running. We highly recommend planning the upgrade during off-hours to minimize disruptions to your users. 
-
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.4-wnzhm.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
 
 ---
 
 ## Version 8.3
 
+### Upgrade Details
+
 Release Date: 2023-10-04
 
- >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../upgrade-notes.md) document for important notes and access to the upgrade link.
+> If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.3-zouke.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
+
+ >**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract.
 
 ### New Features & Enhancements
 
@@ -253,15 +251,15 @@ Release Date: 2023-10-04
 * **Query Start Time Date Picker Improvement**: In the Data Sync feature of Qrvey Composer, improves the usability of the Query Start Time field under Next Sync Query Window. 
 * **Connection Type in Tooltip**: Adds the Connection Type information to the tooltip that displays when hovering over the Data Source pill.
 * **Concatenate Transformation Improvement**: In the Transformations feature of Qrvey Composer, improves the usability of the Concatenate transformation by adding a second input by default.
-* **[Customizing the Appearance Using CSS](../../software-developer/04-Widgets/css-variables.md)**: Adds the ability to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets. 
-* **Open AI On Charts (beta)**: Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data. <a href="/docs/video-training/release/version-8.3#openai-on-charts-beta" target="_blank" className="tooltip"><img alt="Smart Analyzer" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Customizing the Appearance Using CSS**: Adds the ability to customize the visual theme of embedded widgets, including colors, fonts, borders, positioning, and margins, using CSS style sheets. 
+* **Open AI On Charts (beta)**: Adds the Smart Analyzer feature (in beta) to charts. Smart Analyzer establishes a link between ChatGPT and the data in charts and visualizations, enabling users to ask ChatGPT questions in natural language about their data.
 * **Dynamic Threshold in Dial and Bullet Metrics**: Adds the option to set thresholds as fixed or dynamic values based on the aggregates of a column.
-* **View Modes in Dashboards**: Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View. <a href="/docs/video-training/release/version-8.3#view-modes-in-dashboards" target="_blank" className="tooltip"><img alt="Dashboard View Modes" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
+* **View Modes in Dashboards**: Adds the Interaction mode to Dashboard Builder, enabling users to review and interact with the dashboard just as they would in Dashboard View.
 * **Undo and Redo in Dashboards**: Adds the Undo and Redo options to the Design mode in Dashboard Builder.
-* **See Data Action**: In Dashboard Builder, adds the See Data Action Type, enabling users to see the data in the dataset underlying the chart. <a href="/docs/video-training/release/version-8.3#see-data-action" target="_blank" className="tooltip"><img alt="See Data Action" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **See Data Action**: In Dashboard Builder, adds the See Data Action Type, enabling users to see the data in the dataset underlying the chart.
 * **Custom Tokens In PDF/JPG Export**: In PDF and JPG exports, adds support for custom tokens as values of a metrics's threshold through emails and subscriptions.
 * **Support Conditional Formatting for Crosstab Excel Export**: Adds support for conditional formatting to Excel exports of crosstab.
-* **New Formula Functions**: Adds several new, advanced functions to [Standardized Syntax mode](../../composer/05-Working%20with%20Data/Datasets/03-Analyze/10-Formula%20Builder/using-standardized-syntax.md) in Formula Builder.
+* **New Formula Functions**: Adds several new, advanced functions to [Standardized Syntax Mode](../composer/05-Working%20with%20Data/Datasets/03-Analyze/10-Formula%20Builder/using-standardized-syntax.md) in Formula Builder.
 * **Nested Formulas Support**: Adds support for nested formulas in Formula Builder, enabling users to create formulas inside other formulas without having to repeat the calculations.
 
 ### Administration
@@ -283,31 +281,34 @@ Release Date: 2023-10-04
 * **Excel and CSV Export failing when exporting a lot of columns (bug fix)**: Fixes an error that occurred in some situations when exporting Excel and CSV files. 
 * **Grouped Table Chart Excel export errors with subtotals (bug fix)**: Fixes reference errors that occurred when displaying subtotals above values.
 
-### Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.3-zouke.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
+
 
 ---
 
 ## Version 8.2.2
 
+### Upgrade Details
+
 Release Date: 2023-10-06
+
+If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.2.2-mpmws.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
  
->**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract. Otherwise, please see the [Upgrade Notes](../../../v2-website/versioned_docs/version-8.2/release-notes/upgrade-notes.md) document for important notes and access to the upgrade link.
+>**Note**: If you wish to upgrade to this version, please contact the CX team if you have a Managed Infrastructure contract.
 
 #### General Tweaks & Fixes
 
 * **RLS Support in Flows**: Improves the performance of RLS support for the New Data and Update Data triggers in Flows. Fixes a variety of issues related to RLS that affected the execution of Flows.
 * **Dashboard Email Download with No Filters Applied (bug fix)**: Fixes an issue in which filters were not applied to charts in Dashboard exports.
 
-### Upgrade Link
-
-If you wish to upgrade to this version without the help of the CX team, please use <a href="https://qrvey-autodeployapp.s3.amazonaws.com/deploy/v8/autodeployappCloudformation-enterprise-8.2.2-mpmws.json" target="_blank">this upgrade link</a>. If you have multiple Qrvey instances in the same AWS account AND region or if you deployed the instances in all private subnets (with VPN access) you would have to use the Advanced template to upgrade. Please contact the Qrvey support team to get the Advanced upgrade link and necessary instructions for the upgrade.
-
 ---
 
 ## Version 8.2.1
 
+### Upgrade Details
+
 Release Date: 2023-09-12
+
+If you wish to upgrade to this version without the help of the CX team, please use 8.2.2 given above.
 
 ### New Features & Enhancements
 
@@ -328,23 +329,24 @@ Release Date: 2023-09-12
 * **Datasets Not Listed in Dashboard Builder (bug fix)**: Fixed a bug in Content Deployment that occurred when deploying an application with a Dataset View. The Dataset View was not listed in the dashboard.
 * **Filter Control Data is Not Displayed Correctly When Using Buckets (bug fix)**: Fixed a “No data found” issue that occurred when an application with buckets was deployed with Filter controls added in its dashboards.
 
-### Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please use 8.2.2 given above.
-
 ---
 
 ## Version 8.2
 
+### Upgrade Details
+
 Release Date: 2023-07-31
+
+If you wish to upgrade to this version without the help of the CX team, please 8.2.2 given above.
 
 ### New Features & Enhancements
 * **Improved Performance of Loading Join Results**: Increased the speed of loading very large volumes of data that result from joining by approximately 60 times (60x).
 * **Flatten Transformation Performance Improvement**: Increased the speed of processing Flatten transformations by up to 50 times (50x), which results in significant cost savings.
 * **Live Connect Support for PostgreSQL**: Adds PostgreSQL to the collection of databases supported in Live Connect mode. Analysis can be performed directly from the database, rather than pooling the data in Qrvey’s internal repository.
-* **[Setting the Shard Count](../../composer/05-Working%20with%20Data/Datasets/02-Design/dataset-design-advanced-settings.md)**: Adds the option for users to set the number of shards for their index based on the size of the dataset, which helps optimize the performance of loading and displaying data. 
-* **Additional Options for [Data Sync Scheduling](../../composer/05-Working%20with%20Data/Datasets/02-Designdata-synchronization.md)**: Adds new options to the data sync scheduling feature such as Last Day Of The Month and Every n Days.
-* **[Download Manager](../../composer/download-manager.md)**: The new Download Manager widget provides a central location to access and manage exported files, including images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). It is embeddable and can be accessed at the account level in Qrvey Composer. It is currently in MVP and will have more features in the next few releases. <a href="/docs/video-training/release/version-8.2#download-manager" target="_blank" className="tooltip"><img alt="Download Manager" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
-* **[Standard Formula Syntax](../../composer/05-Working%20with%20Data/Datasets/03-Analyze/10-Formula%20Builder/using-standardized-syntax.md)**: Adds the option in Formula Builder to create formulas using a standardized language that works with any database engine supported by the Qrvey platform. This new syntax is based on the familiar functions used in popular spreadsheet products such as Microsoft Excel and Google Sheets. Formula Builder also retains its existing support for using a database-specific scripting language. <a href="/docs/video-training/release/version-8.2#formula-syntax" target="_blank" className="tooltip"><img alt="Standard Formula Syntax" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a>
+* **Setting the Shard Count**: Adds the option for users to set the number of shards for their index based on the size of the dataset, which helps optimize the performance of loading and displaying data. 
+* **Additional Options for Data Sync Scheduling**: Adds new options to the data sync scheduling feature such as Last Day Of The Month and Every n Days.
+* **Download Manager**: The new Download Manager widget provides a central location to access and manage exported files, including images (JPG, PDF), data (CSV, Excel, PDF), and reports (PDF). It is embeddable and can be accessed at the account level in Qrvey Composer. It is currently in MVP and will have more features in the next few releases.
+* **Standard Formula Syntax**: Adds the option in Formula Builder to create formulas using a standardized language that works with any database engine supported by the Qrvey platform. This new syntax is based on the familiar functions used in popular spreadsheet products such as Microsoft Excel and Google Sheets. Formula Builder also retains its existing support for using a database-specific scripting language.
 * **Modernization of Visualizations**: Improves the look and behavior of a variety of charts. This improvement is part of our Visualization Modernization initiative that will continue throughout this year and provide better, more consistent, and more performant charts.
 * **Support Min/Max as Aggregates for Sorting of Date Type Columns**: Adds Min and Max as aggregate options for datetime columns that are selected for sorting of a chart.
 * **System Tokens in Metric Comparison**: Adds support for system tokens in Metrics comparisons when using date columns.
@@ -364,26 +366,27 @@ Release Date: 2023-07-31
 * **Grouped Table Charts Failing to Export CSV and Excel (bug fix)**
 * **Content Deployment not working with data syncs on (bug fix)**
 
-### Upgrade Link
-If you wish to upgrade to this version without the help of the CX team, please 8.2.2 given above.
+
 
 ---
 
 ## Version 8.1
 
+### Upgrade Details
+
 Release Date: 2023-04-21
 
-Pixel-perfect Reporting is available in version 8.1! The feature is in beta and currently includes MVP-level capabilities. Future versions will include additional tools and visualizations based on the feedback that we gather during the beta phase. This feature may be offered as a premium add-on to the Qrvey platform in the future.
+> Qrvey 8.1 includes important enhancements for validation of dataset settings, attributes and configurations. We have observed that data syncs running in the background during a platform upgrade to 8.1 are affected when the new dataset validation enhancements are put in place. To ensure that your data sync jobs continue to run in the background uninterrupted during the 8.1 platform upgrade, Qrvey Support will assist with a manual pre-upgrade installation of the new dataset validation enhancements. Having these validation enhancements in place prior to performing the platform upgrade will ensure that your data sync jobs continue to run and complete successfully during the upgrade process. If you are interested in upgrading to 8.1, please reach out to Qrvey Support and we will help you get the upgrade process started.
 
 ### New Features & Enhancements
 * **Column Discovery for JSON, Parquet, and CSV files**: We added the column discovery option to (nd)JSON (DynamoDB, S3, MongoDB), Parquet, and CSV data sources in the Dataset design phase.
 * **Prompt Users to Save Draft Changes Before On-demand Data Sync**: We added a verification to let users decide if they want to apply pending changes to a dataset, if any, when they click the **Sync Now** button.
 * **Support for Athena v3**: The Athena default has been v2, which will soon be out of support by AWS. With this enhancement, it’s easy to switch the Athena Workgroup to v3. Athena is used when performing Data Source joins.
-* **[Support Time Zone Offset](../../software-developer/07-Timezone%20Settings/timezone-support.md)**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
+* **Support Time Zone Offset**: The Qrvey platform now supports the time zone offset. It is configurable based on the user’s browser, a chosen time zone, or the system’s default value.
 * **Qrvey Theme 2 with Support for 100 Colors**: With this newly-added theme, we now support color palettes with 100 unique colors in sequence for visualizations with high numbers of data points.
 * **CLS/RLS Support in the Automation Widget**: We implemented Column Level Security and Record Level Security on the Automation (Workflows) widget. Implementers can set these values in the widget’s configuration object when embedding the widget.
 * **Analyze General Downloads and Summary Panels PDF Exports**: PDF export options are now consistent between the Analysis Views and Dashboards.
-* **[Pixel-perfect Report Builder](../../composer/10-Pixel-Perfect%20Reports/overview-of-pixel-perfect-reports.md)**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
+* **Pixel-Perfect Report Builder**: The powerful tool, in development throughout 2022, was introduced in 8.0 and is now available in beta in this version. Pixel-perfect reports enable the creation and distribution of reports that are printable and accurate to the specified position and size. This type of report is ideal for invoices, statements, and forms that have a set layout. This feature can be enabled and disabled using the Features section of the Qrvey Admin Center.
 * **Pixel-perfect Report Tab in the Features Section**: We added the option to enable and disable the new Pixel-perfect Report Builder in the Features section.
 * **Time Zone Configuration**: With the newly-added support for time zones, we added the Time Zone configuration tab under General Settings in Qrvey Admin Center, enabling administrative users to configure the behavior of the feature in their applications.
 * **Application Installation Notification**: As of 8.1, a notification is shown on Application cards when they are being installed or updated from a Content Deployment Job. This prevents users from attempting to change the application while it is being changed by the automatic process.
@@ -394,17 +397,18 @@ Pixel-perfect Reporting is available in version 8.1! The feature is in beta and 
 * **Dots In Columns (enhancement)**: We improved the data loading process to ensure that columns with dots in the name of hierarchical columns work in visualizations.
 * **Table Chart CSV export is limited to Max Rows (enhancement)**: CSV Exports of Table charts, which was limited to Max Data Points, has been enhanced to allow for the export of all rows, up to the data engine’s limits, per a setting.
 
-### Upgrade Link
-Qrvey 8.1 includes important enhancements for validation of dataset settings, attributes and configurations. We have observed that data syncs running in the background during a platform upgrade to 8.1 are affected when the new dataset validation enhancements are put in place. To ensure that your data sync jobs continue to run in the background uninterrupted during the 8.1 platform upgrade, Qrvey Support will assist with a manual pre-upgrade installation of the new dataset validation enhancements. Having these validation enhancements in place prior to performing the platform upgrade will ensure that your data sync jobs continue to run and complete successfully during the upgrade process. If you are interested in upgrading to 8.1, please reach out to Qrvey Support and we will help you get the upgrade process started.
-
 ---
 
 ## Version 8.0
 
+### Upgrade Details
+
 Release Date: 2023-02-01
 
+If you wish to upgrade to this version, please contact the CX team.
+
 ### New Features & Enhancements
-* **[Live Connect Datasets](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/live-connect-datasets.md)**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets. <a href="/docs/video-training/release/version-8.0#live-connections" target="_blank" className="tooltip"><img alt="Live Connect" src="https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/release-notes/video_icon.png#thumbnail-20" className="video-icon-png" /><span className="tooltiptext">Watch video</span></a> 
+* **Live Connect Datasets**: We have added support for Live Connections to make the platform able to analyze data coming directly from Snowflake, and Redshift without loading them into Elasticsearch. Live Connect datasets can be used for analysis the same way as managed datasets.
 * **Geographical Coordinates (Lat/Long)**: We now support latitude and longitude for creating geolocation groups. Bubble maps and Dot maps support these coordinates.
 * **Manage Multiple Geolocations Groups**: With this version we support multiple geolocation groups simultaneously.
 * **Dashboard 2.0**: What was called a Page has been renamed to Dashboard, and redesigned and enriched to support responsive design, single dashboard editing, and more. With the new change it also includes a list of Dashboards that can be searched and individually edited, like all of the other Qrvey content assets.
@@ -416,8 +420,3 @@ Release Date: 2023-02-01
 ### General Tweaks & Bug Fixes
 * **Creating Dataset Issue with MongoDB (bug fix)**: A bug that prevented large rows from a MongoDB collection to be loaded, has been fixed.
 * **Shared Data Tab Waiting Icon (UX change)**: The loading UI of the “Shared Data” tab uses skeleton squares for waiting state, instead of the spinner.
-
-### Upgrade Link
-
-If you wish to upgrade to this version, please contact the CX team.
-

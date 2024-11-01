@@ -22,7 +22,7 @@ For the system to recognize a `clientid`, you must pass it in when you generate 
 
 > **WARNING: This method is for dev-mode only.** Exposing an API Key on the frontend is insecure.
 
-1. [Embed the widget](./overview-of-embedding-and-widgets#how-to-embed-a-widget) and configure as desired.
+1. [Embed the widget](./introduction-to-widgets.md#how-to-embed-a-widget) and configure as desired.
 2. Place the `apiKey`, `domain`, and any other parameters required for the widget directly in its config object.
 3. Configure any other parameters as desired.
 

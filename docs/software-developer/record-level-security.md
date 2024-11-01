@@ -21,7 +21,7 @@ You can use Qrvey RLS if you are using the end-user widget. Your users may be au
 * **Builders widget with Backend authentication**:
 You can use Qrvey RLS if you are using the page or report builder widget. This feature only works if you have your custom login/authentication mechanism, at this time.
 
-If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used (Please see <a href="#generate-a-security-token-with-backend-authentication">generate a security token with backend authentication</a> for more details).
+If you control the login process and store user’s information in your own databases, a backend authentication where you call a Qrvey API to create a security token must be used.
 
 ## How to Use Record-Level Security
 It’s essential to understand four critical elements of record-level security (RLS) in Qrvey if you want to start using it:
@@ -43,12 +43,12 @@ To define security columns, open the Dataset Design page in Qrvey Composer. Clic
 ![2_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/2rls.png#thumbnail)
 
 
-The Record Level Security - Security Name dialog displays. Use this dialog to define the security name with which this column will be identified. Security names are used together with the user's <a href="#step-3---define-users-security-tokens"> security token </a> to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
+The Record Level Security - Security Name dialog displays. Use this dialog to define the security name with which this column will be identified. Security names are used together with the user's security token to establish a mapping that allows the system to filter by these dataset columns. You can assign any name you want but keep in mind that you will use these values when defining user permissions (more details on how to set user permissions in the sections below).
 
 ![3_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/3rls.png#thumbnail-40)
 
 
-Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s <a href="#step-3---define-users-security-tokens"> security token </a>. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
+Once you have saved the security name, you will see a security icon identifying the dataset’s security columns. There is no limit on how many security columns you can define for a dataset. Remember, all columns defined as security columns should be part of the user’s security token. Any missing security column inside the user’s security token will restrict the user’s access to the data, so charts may not render with the intended data.
 
 ![4_record_level_security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Record+Level+Security/4rls.png#thumbnail)
 
@@ -64,7 +64,7 @@ Defining your datasets’ security columns is optional, regardless of the data s
 ### Step 2 - Define User's Security Token(s)
 Finally, you need to grant permission to the users you want to access the dataset by defining their security token(s). It is essential to understand that record-level security requires users to be authenticated, and during the authentication process, the security token is added to the user’s profile.
 
-As described in the <a href="#supported-scenarios">supported scenarios </a> section above, you can define and generate your users’ security tokens in two different ways. In this section, we will explain in detail how to do it with each one.
+As described above, you can define and generate your users’ security tokens in two different ways. In this section, we will explain each process in detail.
 
 ### Generate a Security Token With Backend Authentication
 We recommend using back-end authentication if you control the authentication process and store users’ information outside Qrvey. This method is frequently used in embedded scenarios, and you need to programmatically set users’ security permissions defining a JSON object that complies with the <a href="#security-token-schema"> Security Token Schema</a> definition.
@@ -142,7 +142,7 @@ var config = {
 Once the token is part of the widget’s configuration object, it will contain the security token in every request’s header.
 
 ### Generate a Security Token With OpenId Authentication
-Please review the [Introduction to Qrvey Admin Center](../../admin/introduction-to-qrvey-admin-center.md) for links to articles on how to enable OpenId authentication.
+Please review the [Introduction to Qrvey Admin Center](../admin/introduction-to-qrvey-admin-center.md) for links to articles on how to enable OpenId authentication.
 
 Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">Auth0 </a> as an OpenId provider. You define the security permissions by each user under Auth0 by adding the JSON object to the user_metadata section.
 
@@ -196,15 +196,11 @@ Qrvey RLS is supported when using <a href="https://auth0.com/" target="_blank">A
 
 When users log in into the OpenID Provider, the security permissions previously stored in the user_metadata will be added as part of the user information. They will be redirected to Qrvey, where the permissions will be used to filter the data in all charts if RLS is enabled.
 
-This is similar to what was described in the <a href="#generate-a-security-token-with-backend-authentication">back-end authentication</a> section; with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage all the processes by itself.
+This is similar to what was described in the Back-End Authentication section above, with the only difference being that you don’t need to programmatically request a token and set up the widget’s configuration object. Instead, the OpenId integration will manage all the processes by itself.
 
 
 ## Security Token Schema
 The security token schema is one of the critical pieces in the entire architecture of Qrvey’s row-level security. The schema defines a communication protocol where all users’ information, including the security info, is transmitted and then extracted internally to apply the security filters defined for each user to only expose the data that they are authorized to see.
-
-In this section, the structure of the security token schema has been described.
-
-
 
 | **Claim** | **Type** | **Required** | **Description**
 | --- | --- | --- |--- |
@@ -225,11 +221,11 @@ Permissions Object
 
 Record Filter Object
 
-| **Claim** | **Type** | **Required** | **Description**
-| --- | --- | --- |--- |
-| security_name| _String_| Yes |Name of the security column used to filter the data
-| validation_type| _String_| No| Type of validation for each security object. The possible values are *EQUAL, NOT_EQUAL, CONTAIN, NOT_CONTAIN, RANGE, NOT_RANGE, BETWEEN, DATE, GREATER_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN, LESS_THAN_OR_EQUAL, START_WITH, NOT_START_WITH, END_WITH, NOT_END_WITH, IS_EMPTY, IS_NOT_EMPTY*.<br/><br/>Default: **EQUAL**| 
-| group_value| _String_| No| This field is only valid for DATE columns. The possible values are *SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, SECOND_ONLY, MINUTE_ONLY, HOUR_ONLY, DAY_ONLY, WEEK_ONLY, MONTH_ONLY AND QUARTER_ONLY*. <br/><br/> Default: **day**| 
-| values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3, corresponding to the Company IDs where the user has access. <br /> If you do not want to apply security filters to the users, a wildcard (*) must be used.<br/><br/>**Important Note:** The *validation_type* attribute must be set to *EQUAL* in order to use a wildcard, or otherwise the * character will be treated literally.
+ **Claim** | **Type** | **Required** | **Description**
+ --- | --- | --- |--- 
+ validation_type| _String_| No| Type of validation for each security object. The possible values are *EQUAL, NOT_EQUAL, CONTAIN, NOT_CONTAIN, RANGE, NOT_RANGE, BETWEEN, DATE, GREATER_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN, LESS_THAN_OR_EQUAL, START_WITH, NOT_START_WITH, END_WITH, NOT_END_WITH, IS_EMPTY, IS_NOT_EMPTY*.<br/><br/>Default: **EQUAL**
+ group_value| _String_| No| This field is only valid for DATE columns. The possible values are *SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, SECOND_ONLY, MINUTE_ONLY, HOUR_ONLY, DAY_ONLY, WEEK_ONLY, MONTH_ONLY AND QUARTER_ONLY*. <br/><br/> Default: **day**
+ security_name| _String_| Yes |Name of the security column used to filter the data
+ values | _Array_| Yes | List of values the user has access to see their data, e.g., 1, 2, and 3, corresponding to the Company IDs where the user has access. <br /> If you do not want to apply security filters to the users, a wildcard (*) must be used.<br/><br/>**Important Note:** The *validation_type* attribute must be set to *EQUAL* in order to use a wildcard, or otherwise the * character will be treated literally.
  
 </div>

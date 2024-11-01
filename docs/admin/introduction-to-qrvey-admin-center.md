@@ -40,8 +40,8 @@ Qrvey Admin Center is a web-based application that is installed with every insta
 
 2. Create a Qrvey Administrator Account.  
   You can create a new Administrator account using either of the following methods:
-- In Qrvey Admin Center, use the [User Management](./managing-users.md) feature to assign an account the Administrator role (recommended)
-- [Create a Qrvey Administrator Account in the AWS IAM Service](create-admin-using-aws-iam.md)
+- In Qrvey Admin Center, use the User Management feature to assign an account the Administrator role (recommended)
+- Create a Qrvey Administrator Account in the AWS IAM Service
 
 
 ## Create Admin Account in AWS IAM
@@ -59,21 +59,3 @@ To create a new Administrator account in the AWS IAM service:
 4. Assign the new user to the Qrvey Admin user group. Click the **Next** button to set permissions. On the permissions tab, select the group called **qrvey-admin-dev**.
 
 5. Download the AccessKeys. Make a note of username and Access Key ID for this user. Use these values to log into the Admin Center.
-
-
-<!-- 
-* **[Accessing Qrvey Admin Center](../admin/accessing-admin-center.md)**. Describes how to access the Qrvey Admin Center, including how to create Qrvey Administrator accounts. 
-
-* **[Customizing Qrvey Composer](../admin/customizing-qrvey-composer.md)**. Use the Qrvey Admin Center to configure general settings of Qrvey Composer, including customizing its appearance. You can also enable and disable specific features available to users of Qrvey Composer.
-  * **[Using Google as the OpenID Provider](../admin/openid-google.md)**
-  * **[Using OAuth as the OpenID Provider](../admin/openid-auth0.md)**
-
-* **[Health Dashboard](../admin/health-dashboard.md)**. View the status of the Elasticsearch cluster in this instance of the Qrvey platform.
-
-* **[Managing Users of Qrvey Composer](../admin/managing-users.md)**. Create and manage user accounts in Qrvey Composer, assign roles and permissions, and set up authentication methods. 
-
-* **[Elasticsearch Management](../admin/elasticsearch-management.md)**. Describes how to monitor and manage the Elasticsearch cluster. 
-
-* **[Content Deployment](../admin/08-Content%20Deployment/overview-of-content-deployment.md)**. Learn how to use the Content Deployment feature to copy content from one Qrvey application to another, in the same environment or to a different one. 
-
-  -->

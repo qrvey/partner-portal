@@ -12,7 +12,7 @@ displayed_sidebar: getting-started
 The following steps will walk you through installing the Qrvey platform in your AWS account using a CloudFormation template. Before starting these steps, please confirm your AWS Account ID has been enabled for deployment from Qrvey’s side.
 
 1. Log into your AWS account. Select your desired AWS region.
-2. Find the link to the CloudFormation template for the latest release in the [Release Notes](../../release-notes/v8/release-last). 
+2. Find the link to the CloudFormation template for the latest release in the [Release Notes](../../release-notes/release-and-upgrade-notes). 
 3. Navigate to the AWS Cloudformation console in your AWS Account and click on **Create Stack**. Enter the CloudFormation template URL and click on **Next**. This will take you to CloudFormation's quick create page.
 - Enter values for the following parameters and click on **Create Stack**.
     - **Stack Name** - name this CloudFormation stack. 

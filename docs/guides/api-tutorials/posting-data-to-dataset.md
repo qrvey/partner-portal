@@ -7,12 +7,11 @@ sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 
-<div>
 
-This article describes how to use the Post Data API to update a [Managed Dataset](../../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/managed-datasets.md). Managed Datasets store data in Amazon OpenSearch/Elasticsearch service. The Post Data API is provided by the Qrvey Data Router component. 
+This article describes how to use the Post Data API to update a Managed Dataset. Managed Datasets store data in Amazon OpenSearch/Elasticsearch service. The Post Data API is provided by the Qrvey Data Router component. 
 
 ## Prerequisites
-Gather the following details about your Qrvey instance. This information was provided in the welcome email sent by Qrvey when your environment was first set up. For more information, see [Frequently Asked Questions (FAQ)](../../../getting-started/faqs.md). You can also find this information in AWS, under **CloudFormation** > **Stacks** > **Qrvey`<instance>`MicroservicePipeline** > **Parameters**.
+Gather the following details about your Qrvey instance. This information was provided in the welcome email sent by Qrvey when your environment was first set up. You can also find this information in AWS, under **CloudFormation** > **Stacks** > **Qrvey`<instance>`MicroservicePipeline** > **Parameters**.
 
 Qrvey Data Router details: 
 * Postdata URL
@@ -155,5 +154,3 @@ This call returns the status of the data upsert request. For example:
 }
 ```
 
-
-</div>

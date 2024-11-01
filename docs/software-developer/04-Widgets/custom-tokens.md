@@ -6,11 +6,10 @@ tags: [Software Developer]
 sidebar_position: 4
 displayed_sidebar: getting-started
 ---
-<div style={{textAlign: "justify"}}>
 
-The [Bullet chart](../../composer/07-Charts/07-Chart%20Types/bullet.md) and [Dial chart](../../composer/07-Charts/07-Chart%20Types/dial.md) support the use of custom tokens to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered. 
+The Bullet Chart and Dial Chart support the use of custom tokens to set threshold values. Custom tokens are based on individualized criteria and are set dynamically each time the widget is rendered. 
 
-To create a custom token, use the `customTokens` property in the [Dashboard Builder](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-builder.md) or [Dashboard View](../04-Embedding%20Qrvey%20Widgets/07-Widgets/dashboard-view.md) configuration object. Enter key-value pairs. Use either the basic syntax or expanded syntax.
+To create a custom token, use the `customTokens` property in the Dashboard Builder or Dashboard View widget configuration object. Enter key-value pairs. Use either the basic syntax or expanded syntax.
 
 ## Basic Syntax
 In basic syntax, provide key-value pairs using the following syntax:
@@ -132,4 +131,3 @@ After the `customToken` property is added to the Dashboard Builder or Dashboard 
 7. Continue typing the name of the custom token until it displays in the suggestion box.
 8. Select the custom token.
 
-</div>

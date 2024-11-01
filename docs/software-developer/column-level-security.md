@@ -11,9 +11,9 @@ displayed_sidebar: getting-started
 
 Column Level Security (CLS) allows administrators to restrict data access at the column level within a dataset to users belonging to one or more predefined roles.  Users must be members of at least one of the assigned roles for CLS in order to see data for that column and reference it within any of the supported embedded widgets.  CLS is only supported for embedded widgets at this time and only for the following UI components:
 
-* [Dashboard View](../04-Widgets/07-Widgets/dashboard-view.md)
-* [Dashboard Builder](../04-Widgets/07-Widgets/dashboard-builder.md)
-* [Reports](../04-Widgets/07-Widgets/pixel-perfect-reports.md)
+* Dashboard View
+* Dashboard Builder
+* Pixel Perfect Reports
 
 Column Level Security is particularly useful for hiding entire columns of data from specific groups and/or types of users, and may also help eliminate the need to create separate datasets for specific groups of users. Enabling CLS is a three-step process:
 
@@ -55,8 +55,8 @@ Notice the difference between the screenshots here in step 2 (which demonstrates
 
 ### Step 3:  Pass the User Role(s) in Widget Config Object
 
-The final step is to declare the roles that the user is a member of when constructing the JSON config object for the embedded widget. If you are unfamiliar with embedding widgets, please refer to the [Widgets Quick Start Guide](../04-Widgets/overview-of-embedding.md) article for a good overview of how it works. The JSON widget config object should be constructed on the back-end, so that the widget configuration is properly encrypted with the JWT token for security purposes. Simply define the “roles” property in the JSON config object and set the value to the name of the user role as a string. You can optionally use an array of strings to pass more than one role with the configuration object. The sample JavaScript code below provides an example of what this call looks like.
+The final step is to declare the roles that the user is a member of when constructing the JSON config object for the embedded widget. If you are unfamiliar with embedding widgets, please refer to the [Widgets Quick Start Guide](./04-Widgets/introduction-to-widgets.md) article for a good overview of how it works. The JSON widget config object should be constructed on the back-end, so that the widget configuration is properly encrypted with the JWT token for security purposes. Simply define the “roles” property in the JSON config object and set the value to the name of the user role as a string. You can optionally use an array of strings to pass more than one role with the configuration object. The sample JavaScript code below provides an example of what this call looks like.
 
 ![column-level-security](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/admin/Column-Level-Security/cls3.png#thumbnail-60) 
 
-The sample code above is written in Javascript; however, you can make the JWT call in any back-end server-side web application development language of your choice.  For more information about securely embedding Qrvey platform widgets within external web applications, please see the [Embedding Widgets Using a Security Token](../04-Widgets/widget-authentication.md) article.
+The sample code above is written in Javascript; however, you can make the JWT call in any back-end server-side web application development language of your choice.  For more information about securely embedding Qrvey platform widgets within external web applications, please see the [Embedding Widgets Using a Security Token](./04-Widgets/widget-authentication.md) article.

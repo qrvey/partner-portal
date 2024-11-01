@@ -1,5 +1,5 @@
 ---
-id: overview-of-pixel-perfect-reports
+id: intro-to-pixel-perfect-reports
 title: Intro to Pixel-Perfect Reports
 sidebar_label: Intro to Pixel-Perfect Reports
 tags: [Data Analyst]
@@ -15,7 +15,7 @@ This is important when the output must meet exact specifications, such as in aud
 
 The editor provides a variety of tools for creating reports: including designing the layout, setting up datasets, and configuring settings. When creating fixed templates, the templates do not contain live data. The Preview or Export feature resolves the values, and the output displays with the complete data using as many pages as needed. 
 
-The Toolbar at the top of the page provides a variety of components that you can add to the canvas. On the right side, there are several collapsable configuration panels that enable you to configure the report, including its components, datasets, and filters.  
+The Toolbar at the top of the page provides a variety of components that you can add to the canvas. On the right side, there are several configuration panels that enable you to configure the report, including its components, datasets, and filters.  
 
 
 ![Pixel-perfect Editor](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/partner-portal/qrvey-composer/Pixel-perfect-Reports/Pixel-perfect-Reports-Overview-81.png#thumbnail-80)
@@ -122,7 +122,7 @@ The Send Email action in Workflows/Automation supports Pixel-perfect Reports. It
 For more information, see the "Send an Email" section of [Send Actions](../09-Automation/send-actions.md). 
 
 ### Embed a Report
-The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/04-Widgets/07-Widgets/pixel-perfect-reports.md). 
+The Pixel-perfect Reports widget enables you to embed this feature into applications. For more information, see [Pixel-perfect Reports Widget](../../software-developer/04-Widgets/05-Widgets/pixel-perfect-reports.md). 
 
 
 ## Filter Data
