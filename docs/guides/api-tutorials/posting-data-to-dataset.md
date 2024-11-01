@@ -3,7 +3,7 @@ id: posting-data-api
 title:  Post Data to a Dataset (API)
 sidebar_label: Post Data to a Dataset (API)
 tags: [Software Developer]
-sidebar_position: 3
+sidebar_position: 5
 displayed_sidebar: getting-started
 ---
 

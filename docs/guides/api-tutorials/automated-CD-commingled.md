@@ -1,7 +1,7 @@
 ---
-id: autmated-content-deployment-commingled 
-title: Automated Content Deployment - Commingled Data
-sidebar_label: Automated Content Deployment (Commingled)
+id: automated-content-deployment-commingled 
+title: Content Deployment - Commingled Data
+sidebar_label: Content Deployment - Commingled Data
 tags: [Solution Architect]
 sidebar_position: 6
 displayed_sidebar: getting-started
@@ -22,7 +22,7 @@ This can be broken into the following high-level steps.
 4. Deploy the Master Content App
 
 * The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/introduction-to-software-development.md
-* Verify that you have [at least one user account](../managing-users.md) created in the Qrvey Admin Center with “Composer” role permissions.
+* Verify that you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions.
 
 ## How To Guide
 

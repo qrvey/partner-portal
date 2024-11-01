@@ -3,7 +3,7 @@ id: dataset-view-api
 title: Create a Dataset View (API)
 sidebar_label:  Create a Dataset View (API)
 tags: [Software Developer]
-sidebar_position: 3
+sidebar_position: 2
 displayed_sidebar: getting-started
 ---
 
@@ -23,13 +23,7 @@ Use the following API endpoint to designate the source dataset as a shared datas
 
 `https://{{DOMAIN}}.qrveyapp.com/devapi/v4/user/{{USER_ID}}/app/{{APP_ID}}/qollect/dataset/{{DATASET_ID}}/publishVersion?runPublicTrigger=true`
 
-You must also define a request body with the `isPublic` property set to `true`:
-
-```json
-{
-   “isPublic”: true
-}
-```
+You must also define a request body with the `isPublic` property set to `true`.
 
 The following parameters must be defined for the API endpoint:
 
@@ -61,8 +55,8 @@ You must also define the app ID and user ID of the source application where the 
 
 ```json
 {
-   appId: “{{APP_ID}}”,
-   userId: “{{USER_ID}}”
+   "appId": "APP_ID",
+   "userId": "USER_ID"
 }
 ```
 

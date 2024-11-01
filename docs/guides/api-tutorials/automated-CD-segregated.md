@@ -1,7 +1,7 @@
 ---
 id: autmated-content-deployment-segregated 
-title: Automated Content Deployment - Segregated Data
-sidebar_label: Automated Content Deployment (Segregated)
+title: Content Deployment - Segregated Data
+sidebar_label: Content Deployment - Segregated Data
 tags: [Solution Architect]
 sidebar_position: 7
 displayed_sidebar: getting-started
@@ -20,7 +20,7 @@ This can be broken into the following high-level steps.
 3. Deploy the Baseline App
 
 * The APIs in this tutorial require an encrypted JWT token in the request header. For details, see [Generating Security Tokens](../../software-developer/introduction-to-software-development.md
-* Verify that you have [at least one user account](../managing-users.md) created in the Qrvey Admin Center with “Composer” role permissions.
+* Verify that you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions.
 
 ## How To Guide
 
@@ -73,7 +73,7 @@ From the **Prod** environment, use the API to execute the following steps.
     * `definitionName` = any name you want
     * `description` = any description you want that describes the content you are deploying
 
-Before you continue, please make sure you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions. For more information, see [Managing Users of Qrvey Composer](../managing-users.md).
+Before you continue, please make sure you have at least one user account created in the Qrvey Admin Center with “Composer” role permissions.
 
 ### Deploy the Baseline App
 
@@ -92,7 +92,7 @@ From the **Prod** environment, use the API to execute the following steps.
 8. Call the [GetUserList()](https://qrvey.stoplight.io/docs/qrvey-api-doc/2f4a96d989b65-get-user-list) endpoint, parse the `items` array to find the user metadata for the account that will become the owner of this app, and then extract the value from the corresponding `userid` property.
 9. Call the [AddRecipientsToDeploymentJobBlock()](https://qrvey.stoplight.io/docs/qrvey-api-doc/dq6nwy2k9kpzn-add-recipients-to-deployment-job-block) endpoint, using the `deploymentJobId` and `deploymentJobBlockId` as path parameters for calling the endpoint.  Use the following request body JSON:
 
-```json
+```js
 { 
  "users": [
    {

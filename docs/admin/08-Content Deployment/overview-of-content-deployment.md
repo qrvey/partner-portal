@@ -35,5 +35,5 @@ For video instructions, please watch the [Content Deployment Tutorial](../../gui
 **API-Based Content Deployment**
 
 For details, please read:
-- [Automated Content Deployment - Segregated Data](../08-Content%20Deployment/automated-CD-segregated.md)
-- [Automated Content Deployment - Commingled Data](../08-Content%20Deployment/automated-CD-commingled.md).
+- [Automated Content Deployment - Segregated Data](../../guides/api-tutorials/automated-CD-segregated.md))
+- [Automated Content Deployment - Commingled Data](../../guides/api-tutorials/automated-CD-commingled.md).
