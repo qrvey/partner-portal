@@ -1,27 +1,25 @@
 ---
-id: api-tutorial
-title: Qrvey API Tutorial
-sidebar_label: Qrvey API Tutorial
+id: create-a-quiz-via-api
+title: Create a Quiz via API
+sidebar_label: Create a Quiz via API
 tags: [Software Developer]
 sidebar_position: 1
 displayed_sidebar: getting-started
 ---
 
-<div style={{textAlign: "justify"}}>
-
 This tutorial demonstrates an end-to-end process for using the Qrvey API. It assumes that you have a basic understanding of REST APIs, how to make web requests, and how to work with responses in JSON format. We will use Postman to send requests and view responses.  
 
-In this tutorial, we will use the API to programmatically create a Quiz web form. The process is divided into five sections:
-- Create a new user. This tutorial also shows you how to retrieve an existing user ID. 
-- Create a new application. This tutorial also shows you how to retrieve an existing application ID. 
+In this tutorial, we will use the API to programmatically create a Quiz web form in 5 steps:
+- Create a new user. 
+- Create a new application.
 - Create a Quiz web form.
 - Update the web form and embed the Quiz form widget into your product (note: this step is for informational purposes and does not utilize APIs). 
 - Activate the Quiz form for use in production. 
 
 ## Before You Begin
-In order to get the most value from this tutorial, you should be familiar with performing these tasks in Qrvey Admin and Qrvey Composer. For more details, please see [Introduction to the Qrvey Platform](../../../getting-started/intro-to-qrvey.md).
 
 Before using the Qrvey API, gather the following:
+
 - The base URL of your instance of the Qrvey platform. 
 - Your organization's unique API key. All Qrvey API requests require an API key. It was provided in the welcome email that your organization received when your Qrvey instance was created. To obtain a new API key, contact your Qrvey account representative.
 
@@ -164,7 +162,7 @@ Once you’ve created the Quiz web form, you can update it to contain the quiz q
 
 ![Sample Quiz Web Form](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/api/tutorial/api_tutorial_10.png#thumbnail) 
 
-At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. For more information on embedding and widgets, please see [Widget Quick Start Guide](../../04-Widgets/overview-of-embedding.md)
+At this point, you can embed the web form into your product using the Web form design widget. A widget is a block of HTML and Javascript code that can be inserted into any web application page to render the user interface for building a web form. For more information on embedding and widgets, please see [Widget Quick Start Guide](../../software-developer/04-Widgets/introduction-to-widgets.md)
 
 
 ## Activate the Quiz
@@ -186,5 +184,3 @@ Congratulations! You have completed this tutorial.
 
 **See also**:
 <a href="https://tinyurl.com/atuznk6u">Qrvey API Reference Guide (Stoplight)</a>
-
-</div>

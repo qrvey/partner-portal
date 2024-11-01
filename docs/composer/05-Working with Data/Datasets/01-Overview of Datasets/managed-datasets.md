@@ -50,7 +50,7 @@ Draft mode indicates that your selections have been saved and you can resume wor
 9. Once your dataset is configured, [Load the Data](#load-data).
 
 ## Synchronize Data
-[Data Synchronization](../02-Designdata-synchronization.md) enables you to keep data up-to-date and synchronized.   
+[Data Synchronization](../02-Design/data-synchronization.md) enables you to keep data up-to-date and synchronized.   
 
 ## View Source Data
 
@@ -149,7 +149,7 @@ You can also enter custom Date format with the following syntax:
 
 ![Unique-ID-84](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/datasets/Unique-Id-84.png)
 
-If you are the using [Data Synchronization](../02-Designdata-synchronization.md) feature in *Append and Update* mode, you must select a unique identifier column. The unique ID may consist of a single column or a group of columns.
+If you are the using [Data Synchronization](../02-Design/data-synchronization.md) feature in *Append and Update* mode, you must select a unique identifier column. The unique ID may consist of a single column or a group of columns.
 
 To set a unique identifier on a column:
 1. Click it’s three-dot menu.

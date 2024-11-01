@@ -16,7 +16,7 @@ To open the User Management page, in Qrvey Admin Center, click the **User Manage
 Roles and permissions enable you to control access to sections of Qrvey Composer. The Qrvey platform has two system-defined roles that cannot be deleted or renamed. They are: 
 - **Administrator**. The default administrator role with all permissions enabled. This role cannot be edited. The initial Administrator account was set up when your instance of Qrvey platform was created. You can create a new Administrator account using either of the following methods:
   - Assign an account the Administrator role in Qrvey Admin Center (recommended)
-  - [Create a Qrvey Administrator account in the AWS IAM service](create-admin-using-aws-iam.md) 
+  - Create a Qrvey Administrator account in the AWS IAM service
 - **Composers**. The default user role with access to all Qrvey Composer features. This role can be edited. 
 - **Custom Role**. You can also create additional roles with customized permissions.
 

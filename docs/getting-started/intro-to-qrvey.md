@@ -88,7 +88,7 @@ Those that Qrvey Composer to set up datasets and create visualizations and dashb
 The folks that bring it all together & embed Qrvey widgets in their host applications and use Qrvey APIs to interact with the platform.
 
 * [Introduction to Development](../software-developer/introduction-to-software-development.md)
-* [Introduction to Widgets](../software-developer/04-Widgets/overview-of-embedding.md)
+* [Introduction to Widgets](../software-developer/04-Widgets/introduction-to-widgets.md)
 * [Tutorial - Widgets Overview](../guides/legacy/video-widget-overview)
 * [API Reference](https://tinyurl.com/atuznk6u)
 * [Tutorial - Qrvey API](../guides/api-tutorials/api-tutorial)

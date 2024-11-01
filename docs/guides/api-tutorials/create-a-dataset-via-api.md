@@ -1,5 +1,5 @@
 ---
-id: dataset-api
+id: create-a-dataset-via-api
 title: Create a Dataset (API)
 sidebar_label: Create a Dataset (API)
 tags: [Software Developer]
@@ -7,17 +7,15 @@ sidebar_position: 3
 displayed_sidebar: getting-started
 ---
 
-<div>
+This article describes how to create a dataset from scratch using the Qrvey endpoint, Create Dataset. This endpoint enables you to set the properties of all dataset elements that you want to create. To learn more about how datasets work in Qrvey Composer, see [Overview of Datasets](../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md).  
 
-This article describes how to create a dataset from scratch using the Qrvey endpoint, Create Dataset. This endpoint enables you to set the properties of all dataset elements that you want to create. To learn more about how datasets work in Qrvey Composer, see [Overview of Datasets](../../../composer/05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md).  
-
->**Note**: The endpoint Create Dataset creates a dataset from scratch, including creating the connection. If a connection already exists, you would use the endpoint, [Create a Dataset from Existing Connection](https://qrvey.stoplight.io/docs/qrvey-api-doc/9fed20b516e4d-create-dataset-from-existing-connection). To learn more about how connections work in Qrvey Composer, see [Connections](../../../composer/05-Working%20with%20Data/connections.md).  To learn how to use the API to create a connection, see [Creating a Connection Using the Qrvey API](../Qrvey%20API%20Tutorials/connections-api.md).  
+>**Note**: The endpoint Create Dataset creates a dataset from scratch, including creating the connection. If a connection already exists, you would use the endpoint, [Create a Dataset from Existing Connection](https://qrvey.stoplight.io/docs/qrvey-api-doc/9fed20b516e4d-create-dataset-from-existing-connection). To learn more about how connections work in Qrvey Composer, see [Connections](../../composer/05-Working%20with%20Data/connections.md). To learn how to use the API to create a connection, see [Creating a Connection Using the Qrvey API](./connections-api.md).
 
 Before you begin, review the Qrvey documentation for the following endpoints:
 * [Get Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/2ff17959232b9-get-dataset)
 * [Create Dataset](https://qrvey.stoplight.io/docs/qrvey-api-doc/939f8c281cb8f-create-dataset)
 
->**Note**: The endpoints described in this article require authentication tokens in the header. For more information, see [Generating Security Tokens](../generating-security-tokens.md).
+>**Note**: The endpoints described in this article require authentication tokens in the header.
 
 Gather the information needed for the required parameters in Create Dataset. At a minimum, obtain the following:
 * **name**. The name of the dataset that you will create.
@@ -26,7 +24,7 @@ Gather the information needed for the required parameters in Create Dataset. At 
 * **connectorType**. The type of connection used by the Dataset.
 * **columns**. Object that defines each column, datatype, column name, etc.
 
-If you’d like to familiarize yourself with the structure of an existing dataset, use the Get Dataset endpoint to obtain the structure. For example, You can use Get Dataset to help determine if a datasetId is already taken. However, you can avoid potential naming conflicts by using the UUID function in your code when calling Create Dataset. For more information on UUIDs, see the following article on Wikipedia: [Universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier).
+If you’d like to familiarize yourself with the structure of an existing dataset, use the Get Dataset endpoint to obtain the structure. For example, You can use Get Dataset to help determine if a datasetId is already taken. However, you can avoid potential naming conflicts by using the UUID function in your code when calling Create Dataset.
 
 When creating a dataset, define the following three structures:
 * The dataset object
@@ -77,7 +75,3 @@ Define the columns for each data source that you intend to use in the dataset. F
 ```
 
 The above example provides the minimum information. You can provide additional child objects such as dataSync.
-
-
-
-</div>

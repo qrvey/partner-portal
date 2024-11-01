@@ -33,7 +33,7 @@ The shortcut menu provides the following options:
 * Delete
 * Duplicate
 * Copy Dashboard Link (For more information, see “Preview a Dashboard” later in this article) 
-* Embed (For more information, see [Dashboard Builder Widget](../../../software-developer/04-Widgets/07-Widgets/dashboard-builder.md)). 
+* Embed (For more information, see [Dashboard Builder Widget](../../software-developer/04-Widgets/05-Widgets/dashboard-builder.md)). 
 
 ## View a Dashboard
 To open an existing dashboard, locate its card in the list displayed on the main page of Dashboard Builder, and click on it. The canvas displays with the contents of the dashboard. 
@@ -67,8 +67,6 @@ The Data panel displays the configured datasets that you can work with, and it e
 * Click the arrow icon next to a dataset name to open the design page for the dataset. 
 * Click the blue star to add it to your favorites. Click the orange button at the top of the panel to display only the favorites. 
 
-For more information on datasets, see [Overview of Datasets](../../05-Working%20with%20Data/Datasets/01-Overview%20of%20Datasets/overview-of-datasets.md). 
-
 ### The Filters Panel
 The Filters panel enables you to add filters to the dashboard, so that end-users can interact with them in the published application. 
 
@@ -80,7 +78,7 @@ This panel also provides a variety of options for managing filters. Options incl
 * **Disable All Filters**. To disable all filters, click the three-dot menu in the Filters panel and click Disable All Filters. 
 * **Delete All Filters**. To delete all filters, click the three-dot menu in the Filters panel and click Delete All Filters.
 
-To work with filters, you should be familiar with the various filter components provided in the Qrvey platform. For more information, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md). 
+To work with filters, you should be familiar with the various filter components provided in the Qrvey platform. For more information, see [Overview of Filters](../08-Filtering%20Data/overview-of-filters.md). 
 
 ### The Configuration Options Panel
 The Configuration panel provides options for the object that is currently selected on the canvas. For example:
@@ -167,12 +165,12 @@ You can add buttons to your dashboard to enable end users to easily navigate to 
 ### Themes
 The Themes feature enables you to apply the same look-and-feel to multiple charts. Qrvey Composer provides a default theme that you cannot delete or edit. However, you may create new themes and define your own visual styles. When you create a theme, it is available in all your applications. Every theme has a unique ID that you can reference programmatically. 
 
-For more information on working with Themes, see "Managing Themes" in [Setting Chart Colors and Themes](../../07-Charts/setting-chart-styles.md).
+For more information on working with Themes, please see [Managing Themes](../07-Charts/setting-chart-styles.md#managing-themes).
 
 ### Insert a Filter Control
 The Filter Controls feature enables you to add an object to the dashboard that provides end users with some data filtering capabilities. Options are: Date Picker, Value List, and Input Box.
 
->**Note**: The Filter Controls feature is different than the Filters feature. For more information on configuring filters, see [Overview of Filters](../../08-Filtering%20Data/overview-of-filters.md).
+>**Note**: This Filter Controls feature is different than the Filters feature introduced earlier in the article.
 
 1. Click the **Filter Controls** icon in the toolbar and select: Date Picker, Value List, or Input Box.
 2. Draw a bounding box on the canvas. Size and position the box as desired. The Configuration panel updates to display Filter Control Configuration options. 
@@ -258,7 +256,7 @@ Dashboard Builder provides a preview link that you can use to view an applicatio
 5. To continue editing on application, click **Unpublish**.
 
 ## Publish an Application
-Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see the training video, [Content Publishing](../../../guides/legacy/content-publishing.md). 
+Before an application can be made available to end users, you must publish it. The Publish feature commits the application to the server and enables the Embed and Preview features. For more information on the publishing process, see our guide on [Content Publishing](../../guides/legacy/content-publishing.md). 
 
 1. Verify that the pages you want to preview are included in the Navigation Menu. For more information, see [Overview of Navigation](./navigation.md). 
 2. Verify that you have granted and/or restricted access to the desired users. For more information, see [Overview of User Management](./overview-of-user-management.md). 

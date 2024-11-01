@@ -1,5 +1,5 @@
 ---
-id: overview-of-embedding-and-widgets
+id: introduction-to-widgets.md
 title: Introduction to Widgets
 sidebar_label: Introduction to Widgets
 tags: [Software Developer]
@@ -39,7 +39,7 @@ var config = {
 Each widget has its own unique tag, configuration options, and launcher. To embed a widget, follow these steps:
 
 1. Get the script for the widget you'd like to embed. You can find scripts in two places:
-   - Get the relevant [widget script](#widget-scripts-and-configuration) from the documentation.
+   - Get the relevant widget script from the documentation.
    - For most widgets, you can copy/paste the widget script in [Qrvey Composer](#get-widget-script-from-composer), which will include most relevant configuration details.
 4. Place the code in your frontend application as desired.
 5. Set [authentication](./widget-authentication.md) and configure widget parameters as desired.
@@ -51,7 +51,7 @@ Refresh your frontend application and your widget should appear in the UI.
 
 ![widget-guide](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/embedding/widgets/widget-intro.png#thumbnail-60)
 
-With the exception of [Web Form Design](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-forms.md) and [Web Form (End User)](../04-Embedding%20Qrvey%20Widgets/07-Widgets/web-form-end-user.md), embeddable widget scripts can be also be found in Qrvey Composer.
+With the exception of [Web Form Design](./05-Widgets/web-forms.md) and [Web Form (End User)](./05-Widgets/web-form-end-user.md), embeddable widget scripts can be also be found within the Qrvey Composer UI.
 
 1. Navigate to the Qrvey Composer interface you'd like to embed.
 2. Depending on the widget type, find and click either the **`</>` Embed Widget Options** button or **three-dot menu > Embed** in the right corner of the top bar.
