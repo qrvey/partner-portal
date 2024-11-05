@@ -20,7 +20,7 @@ Release Date: 2024-10-24
 
 ### New Features & Enhancements
 
-- **Make Filters Part of EUP:** A new "filters" property has been added to the End User widget’s configuration.
+- **New param added to Dashboard View's Personalization Object:** A new `autoSaveFilters` property has been added to the [Dashboard View widget’s](../software-developer/04-Widgets/05-Widgets/dashboard-view.md#personalization) configuration.
 - **Support clientid and Personalizations in Automation:** The Automation (Flows) widget will now support the `clientid` property so flows may be saved for each end user. Additionally, when this property is provided users will be able to choose to export the original or personalized versions of the dashboards in case the personalized version has been created under the same `clientid`.
 - **Implement Unsubscribe Page for Subscriptions:** An Unsubscribe page was implemented where users can confirm their wish to stop receiving emails from a subscription, scheduled export, and/or flow.
 - **Additional Self-Service Options for All Charts:** Self-service options like exporting different formats, filtering, and fit-to-panel were added for all charts directly in the chart builder configuration menus.
