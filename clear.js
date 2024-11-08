@@ -7,8 +7,3 @@ if(env === "--staging"){
 if(env === "--prod"){
     indexEnv = process.env.INDEX_PROD;
 }
-const algoliasearch = require('algoliasearch');
-const client = algoliasearch('FKFO2CGR6S', '6b0e7e5081d0df16768a9472e845b284');
-console.log('env', indexEnv);
-const index = client.initIndex(indexEnv);
-index.clearIndex(() => console.log('cleared'));

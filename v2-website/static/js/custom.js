@@ -67,18 +67,6 @@ window.onload =  () => {
 }
 
 
-// let stateCheck = setInterval(() => {
-//     if (document.readyState === 'complete') {
-//         clearInterval(stateCheck);
-//         if (currentPageInfo === "false") {
-//             currentPageInfo = "true";
-//         }
-
-//         ///FIN INIT
-//         /////
-//     }
-// }, 100);
-
 
 
 /// INIT APP
