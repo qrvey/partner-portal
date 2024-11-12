@@ -54,7 +54,7 @@ button:hover {
 }
 
 .notifications-component {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
