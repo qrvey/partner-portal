@@ -46,7 +46,7 @@ If an address is not specified in the configuration object, the exports are sent
 ## Enable and Disable Scheduled Exports
 In Qrvey Composer, the Schedule Exports feature is disabled by default. To use it, your user account must have the Exporting and Scheduling Exports permissions, which is configured in Qrvey Admin Center. For more information, see [Managing Users](../../../../admin/managing-users.md).
 
-In embedded scenarios, the Schedule Exports feature is enabled by default. To disable this feature, set the following parameter to `true` in the widget’s configuration object:
+In embedded scenarios, the Schedule Exports feature is enabled by default, though a [`clientid` must be provided](../../../../software-developer/04-Widgets/widget-authentication.md). To disable this feature, set the following parameter to `true` in the widget’s configuration object:
 
 ```js
 featurePermission: {
