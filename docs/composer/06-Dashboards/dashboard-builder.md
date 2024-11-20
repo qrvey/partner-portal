@@ -12,6 +12,8 @@ Dashboard Builder makes it easy to combine multiple Qrvey Composer components, l
 
 ## Browse Dashboards
 
+![Dashboard Builder](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-20241118A.webp)
+
 1. Click the Dashboard Builder icon in the left navigation bar. The Dashboards page will open, showing all dashboards within the application. Click any dashboard to open it up.
 
 The Dashboard Builder feature consists of three top-level tabs:
@@ -35,7 +37,7 @@ The Dashboard Builder feature consists of three top-level tabs:
 
 1. Click the three-dot menu in the upper-right corner of the desired dashboard card. A shortcut menu appears, enabling you to **Edit**, **Rename**, **Delete**, **Duplicate**, **Copy Dashboard Link** [Dashboard Preview](#preview-a-dashboard), as well as get the code to **Embed** it [as a Widget](../../software-developer/04-Widgets/05-Widgets/dashboard-builder.md).
 
-![Dashboard Builder Options](https://s3.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-builder-options-81.png)
+![Dashboard Builder Options](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/dashboard-general-options-20241118A.webp)
 
 
 ## Design Mode and Interaction Mode
@@ -70,6 +72,8 @@ Panel Options:
 
 ## Canvas Configuration Options
 The following options are available for an object that is currently selected on the canvas.
+
+![Canvas Configuration Options](https://s3.us-east-1.amazonaws.com/cdn.qrvey.com/documentation_assets/ui-docs/builders/dashboard-builder/canvas-configuration-options-20241119A.webp)
 
 ### The Menu Bar
 - **File**
