@@ -60,7 +60,7 @@ class PopularArticlesList extends Component {
     const apiKey = process.env.REACT_APP_X_API_KEY;
 
     const myHeaders = new Headers({
-      "x-api-key": "apiKey",
+      "x-api-key": apiKey,
       "Content-Type": "application/json",
     });
 
