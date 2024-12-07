@@ -69,7 +69,7 @@ Admin Center users that manage the infrastructure, its users, and content, as we
 
 * [Introduction to The Admin Center](../admin/introduction-to-qrvey-admin-center.md)
 * [What is Content Deployment?](../admin/08-Content%20Deployment/overview-of-content-deployment.md)
-* [Intro to Multi-tenant Deployments](../deployment/08-Multi%20Tenant%20Solutions/overview-of-multi-tenant-deployments.md)
+* [Intro to Multi-tenant Deployments](../software-developer/07-Multi%20Tenant%20Solutions/overview-of-multi-tenant-deployments.md)
 * [Guide - Security Overview](../guides/legacy/security-overview.md)
 
 ### CloudOps Engineers
