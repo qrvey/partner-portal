@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 class PopularArticlesList extends Component {
   constructor(props) {
@@ -57,10 +56,8 @@ class PopularArticlesList extends Component {
   };
 
   fetchPopularArticles = async () => {
-    const apiKey = process.env.REACT_APP_X_API_KEY;
-
     const myHeaders = new Headers({
-      "x-api-key": apiKey,
+      "x-api-key": "d41d8cd98f00b204e9800998ecf8427e",
       "Content-Type": "application/json",
     });
 

@@ -133,6 +133,5 @@ module.exports = {
     apiUrlNotificationPost: process.env.PUBLIC_API_URL_NOTIFICATION_POST,
     apiUrlNotificationResult: process.env.PUBLIC_API_URL_NOTIFICATION_RESULTS,
     apiKey: process.env.PUBLIC_API_KEY_QRVEY,
-    xApiKey: process.env.REACT_APP_X_API_KEY,
   },
 };
