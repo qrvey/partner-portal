@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   title: "Qrvey Documentation",
   tagline: "Qrvey Documentation",
-  url: "http://partners.qrvey.com/",
+  url: "http://qrvey-docs.netlify.app",
   baseUrl: "/",
   organizationName: "qrvey",
   projectName: "docs-site",
